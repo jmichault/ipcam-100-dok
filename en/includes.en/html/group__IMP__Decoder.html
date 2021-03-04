@@ -66,14 +66,13 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Module de décodage vidéo ， Actuellement ne prend en charge que JPEG décodage.  
+<p>Video decoding module ， Currently only supports JPEG decoding.  
 <a href="#details">More...</a></p>
 <div class="dynheader">
 Collaboration diagram for IMP_Decoder:</div>
 <div class="dyncontent">
 <center><table><tr><td><img src="group__IMP__Decoder.png" border="0" alt="" usemap="#group____IMP____Decoder"/>
 <map name="group____IMP____Decoder" id="group____IMP____Decoder">
-<area shape="rect" id="node2" href="group__imp.html" title="IMP(Ingenic Media Platform)" alt="" coords="5,5,193,32"/>
 </map>
 </td></tr></table></center>
 </div>
@@ -109,7 +108,7 @@ Functions</h2></td></tr>
 <tr class="separator:ga522ce60cb85c8865cf7304835946639a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Module de décodage vidéo ， Actuellement ne prend en charge que JPEG décodage. </p>
+<p>Video decoding module ， Currently only supports JPEG decoding. </p>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="gaf2847173e6e99d0859782d396431135e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gaf2847173e6e99d0859782d396431135e">&#9670;&nbsp;</a></span>IMP_Decoder_CreateChn()</h2>
@@ -136,23 +135,23 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Créer un décodage Channel</p>
+<p>Create decoding Channel</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">decChn</td><td>Créer un décodage Channel numéro , Gammes : [0, NR_MAX_DEC_CHN - 1] </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">attr</td><td>Gammes Channel Pointeur d'attribut</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">decChn</td><td>Create decoding Channel number , Ranges : [0, NR_MAX_DEC_CHN - 1] </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">attr</td><td>Ranges Channel Attribute pointer</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>Succès </td></tr>
-    <tr><td class="paramname">non-</td><td>0 échec</td></tr>
+    <tr><td class="paramname">0</td><td>success </td></tr>
+    <tr><td class="paramname">non-</td><td>0 failure</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarks</dt><dd>non. </dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>non. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>no. </dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>no. </dd></dl>
 
 </div>
 </div>
@@ -171,22 +170,22 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Détruire le décodage Channel</p>
+<p>Destroy decoding Channel</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">decChn</td><td>Détruire le décodage Channel Détruire le décodage , Détruire le décodage : [0, NR_MAX_DEC_CHN - 1]</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">decChn</td><td>Destroy decoding Channel Destroy decoding , Destroy decoding : [0, NR_MAX_DEC_CHN - 1]</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>Détruire le décodage </td></tr>
-    <tr><td class="paramname">Détruire</td><td>le décodage 0 Détruire le décodage</td></tr>
+    <tr><td class="paramname">0</td><td>Destroy decoding </td></tr>
+    <tr><td class="paramname">Destroy</td><td>decoding 0 Destroy decoding</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarks</dt><dd>Détruire le décodage </dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>Détruire le décodage </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>Destroy decoding </dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Destroy decoding </dd></dl>
 
 </div>
 </div>
@@ -215,23 +214,23 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Obtenir un flux de code décodé</p>
+<p>Get decoded code stream</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">decChn</td><td>Obtenir un flux de code décodé Channel Obtenir un flux de code décodé , Obtenir un flux de code décodé : [0, NR_MAX_DEC_CHN - 1] </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">frame</td><td>Décodage du pointeur de structure de flux</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">decChn</td><td>Get decoded code stream Channel Get decoded code stream , Get decoded code stream : [0, NR_MAX_DEC_CHN - 1] </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">frame</td><td>Decoding stream structure pointer</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>Décodage du pointeur de structure de flux </td></tr>
-    <tr><td class="paramname">Décodage</td><td>du pointeur de structure de flux 0 Décodage du pointeur de structure de flux</td></tr>
+    <tr><td class="paramname">0</td><td>Decoding stream structure pointer </td></tr>
+    <tr><td class="paramname">Decoding</td><td>stream structure pointer 0 Decoding stream structure pointer</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarks</dt><dd>Décodage du pointeur de structure de flux</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>Décoder le flux buffer Appliquer en interne par le décodeur ， Cette fonction n'a besoin que de passer le pointeur de structure. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>Decoding stream structure pointer</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Decode stream buffer Apply internally by the decoder ， This function only needs to pass in the structure pointer. </dd></dl>
 
 </div>
 </div>
@@ -260,23 +259,23 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Polling Tampon de flux de décodage</p>
+<p>Polling Decoding stream buffer</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">decChn</td><td>Tampon de flux de décodage Channel Tampon de flux de décodage , Tampon de flux de décodage : [0, NR_MAX_DEC_CHN - 1] </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">timeoutMsec</td><td>temps supplémentaire temps supplémentaire ms</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">decChn</td><td>Decoding stream buffer Channel Decoding stream buffer , Decoding stream buffer : [0, NR_MAX_DEC_CHN - 1] </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">timeoutMsec</td><td>overtime time overtime time ms</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>temps supplémentaire </td></tr>
-    <tr><td class="paramname">temps</td><td>supplémentaire 0 temps supplémentaire</td></tr>
+    <tr><td class="paramname">0</td><td>overtime time </td></tr>
+    <tr><td class="paramname">overtime</td><td>time 0 overtime time</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarks</dt><dd>temps supplémentaire</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>temps supplémentaire Channel temps supplémentaire ， temps supplémentaire </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>overtime time</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>overtime time Channel overtime time ， overtime time </dd></dl>
 
 </div>
 </div>
@@ -305,23 +304,23 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Libérez le cache du flux de code</p>
+<p>Release the code stream cache</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">decChn</td><td>Libérez le cache du flux de code Channel Libérez le cache du flux de code , Libérez le cache du flux de code : [0, NR_MAX_DEC_CHN - 1] </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">frame</td><td>Libérez le cache du flux de code</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">decChn</td><td>Release the code stream cache Channel Release the code stream cache , Release the code stream cache : [0, NR_MAX_DEC_CHN - 1] </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">frame</td><td>Release the code stream cache</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>Libérez le cache du flux de code </td></tr>
-    <tr><td class="paramname">Libérez</td><td>le cache du flux de code 0 Libérez le cache du flux de code</td></tr>
+    <tr><td class="paramname">0</td><td>Release the code stream cache </td></tr>
+    <tr><td class="paramname">Release</td><td>the code stream cache 0 Release the code stream cache</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarks</dt><dd>Libérez le cache du flux de code</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>Libérez le cache du flux de code </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>Release the code stream cache</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Release the code stream cache </dd></dl>
 
 </div>
 </div>
@@ -356,24 +355,24 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Envoyer les données à décoder</p>
+<p>Send the data to be decoded</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">decChn</td><td>Envoyer les données à décoder Channel Envoyer les données à décoder , Envoyer les données à décoder : [0, NR_MAX_DEC_CHN - 1] </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">stream</td><td>Pointeur de structure de flux de données à décoder </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">timeoutMsec</td><td>Délai de décodage unité ms</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">decChn</td><td>Send the data to be decoded Channel Send the data to be decoded , Send the data to be decoded : [0, NR_MAX_DEC_CHN - 1] </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">stream</td><td>Data stream structure pointer to be decoded </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">timeoutMsec</td><td>Decoding timeout unit ms</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>unité </td></tr>
-    <tr><td class="paramname">unité</td><td>0 unité</td></tr>
+    <tr><td class="paramname">0</td><td>unit </td></tr>
+    <tr><td class="paramname">unit</td><td>0 unit</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarks</dt><dd>unité</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>unité Channel unité ， unité </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>unit</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>unit Channel unit ， unit </dd></dl>
 
 </div>
 </div>
@@ -392,22 +391,22 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Activer le décodage Channel Recevoir l'image</p>
+<p>Turn on decoding Channel Receive image</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">decChn</td><td>Recevoir l'image Channel Recevoir l'image , Recevoir l'image : [0, NR_MAX_DEC_CHN - 1]</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">decChn</td><td>Receive image Channel Receive image , Receive image : [0, NR_MAX_DEC_CHN - 1]</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>Recevoir l'image </td></tr>
-    <tr><td class="paramname">Recevoir</td><td>l'image 0 Recevoir l'image</td></tr>
+    <tr><td class="paramname">0</td><td>Receive image </td></tr>
+    <tr><td class="paramname">Receive</td><td>image 0 Receive image</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarks</dt><dd>Recevoir l'image Channel Le décodage ne peut démarrer qu'après réception de l'image</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>au cas où Channel Non créé ， Manqué </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>Receive image Channel Decoding can only start after receiving images</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>in case Channel Not created ， Failed </dd></dl>
 
 </div>
 </div>
@@ -426,22 +425,22 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Arrêter le décodage Channel Arrêter le décodage</p>
+<p>Stop decoding Channel Stop decoding</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">decChn</td><td>Arrêter le décodage Channel Arrêter le décodage , Arrêter le décodage : [0, NR_MAX_DEC_CHN - 1]</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">decChn</td><td>Stop decoding Channel Stop decoding , Stop decoding : [0, NR_MAX_DEC_CHN - 1]</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>Arrêter le décodage </td></tr>
-    <tr><td class="paramname">Arrêter</td><td>le décodage 0 Arrêter le décodage</td></tr>
+    <tr><td class="paramname">0</td><td>Stop decoding </td></tr>
+    <tr><td class="paramname">Stop</td><td>decoding 0 Stop decoding</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarks</dt><dd>Arrêter le décodage Channel Arrêter le décodage</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>Arrêter le décodage Channel Arrêter le décodage ， Arrêter le décodage </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>Stop decoding Channel Stop decoding</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Stop decoding Channel Stop decoding ， Stop decoding </dd></dl>
 
 </div>
 </div>

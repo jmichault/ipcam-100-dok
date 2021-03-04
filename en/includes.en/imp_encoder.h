@@ -19,35 +19,35 @@ extern "C"
 
 /**
  * @file
- * IMP Fichier d'en-tête de codage vidéo 
+ * IMP Video encoding header file 
  */
 
 /**
  * @defgroup IMP_Encoder
  * @ingroup imp
- * @brief  Encodage vidéo ( H264, JPEG ) Module ， Contient la gestion des canaux d'encodage ， Réglage des paramètres d'encodage et autres fonctions 
- * @section enc_struct 1  Structure du module 
- * Encoder La structure interne du module est la suivante: 
+ * @brief  Video encoding ( H264, JPEG ) Module ， Contains encoding channel management ， Encoding parameter setting and other functions 
+ * @section enc_struct 1  Module structure 
+ * Encoder The internal structure of the module is as follows: 
  * @image html encoder_struct.jpg
- *  Comme le montre la figure ， Le module de codage se compose de plusieurs Group Composition (en T15 Soutenir deux Group ) ， Chaque Group Codé par Channel composition. 
- *  Chaque code Channel Avec un tampon de flux de code de sortie ， Ce tampon se compose de plusieurs buffer Ce tampon se compose de plusieurs 
- * @section enc_channel 2  codage Channel
- *  Un code Channel Peut compléter le codage d'un protocole. Chaque Group Peut en ajouter un H264 Peut en ajouter un Channel Avec un JPEG Avec un Channel . 
- * @section enc_rc 3  Contrôle de taux 
+ *  As shown in FIG ， The coding module consists of several Group Composition (in T15 Support two Group ) ， Each Group Coded by Channel composition. 
+ *  Each code Channel With an output code stream buffer ， This buffer consists of multiple buffer This buffer consists of multiple 
+ * @section enc_channel 2  coding Channel
+ *  A code Channel Can complete the coding of a protocol. Each Group Can add one H264 Can add one Channel With a JPEG With a Channel . 
+ * @section enc_rc 3  Rate control 
  * @subsection enc_cbr 3.1 CBR
- * CBR ( Constent Bit Rate ) Débit constant ， C'est-à-dire que le taux de codage est constant pendant le temps de statistiques de taux. 
- *  À H.264  Codage comme exemple ， L'utilisateur peut définir maxQp，minQp，bitrate Attendre. 
- * maxQp，minQp  Utilisé pour contrôler la plage de qualité de l'image ， bitrate  Il est utilisé pour bloquer le débit de code moyen pendant le temps statistique. 
- *  Lorsque le débit de code est supérieur au débit de code constant ， image QP  Will progressivement maxQp  Ajustement ， Lorsque le taux de codage est bien inférieur au taux constant ， Lorsque le taux de codage est bien inférieur au taux constant QP  Lorsque le taux de codage est bien inférieur au taux constant minQp  Ajustement. 
- *  Lorsque l'image QP  atteindre maxQp  Temps ，QP  Serré au maximum ，bitrate  L'effet de serrage n'est pas valide ， Le taux de codage peut dépasser bitrate Le taux de codage peut dépasser 
- *  Le taux de codage peut dépasser QP  Le taux de codage peut dépasser minQp  Le taux de codage peut dépasser ，QP  Serré au minimum ， A ce moment, le taux de code de l'encodage a atteint la valeur maximale ， Et la qualité d'image est la meilleure. 
+ * CBR ( Constent Bit Rate ) Constant bit rate ， That is, the code rate is constant during the code rate statistics time. 
+ *  To H.264  Coding as an example ， User can set maxQp，minQp，bitrate Wait. 
+ * maxQp，minQp  Used to control the quality range of the image ， bitrate  It is used to clamp the average code rate during the statistical time. 
+ *  When the code rate is greater than the constant code rate ， image QP  Will gradually maxQp  Adjustment ， When the encoding rate is much less than the constant rate ， When the encoding rate is much less than the constant rate QP  When the encoding rate is much less than the constant rate minQp  Adjustment. 
+ *  When the image QP  achieve maxQp  Time ，QP  Clamped to maximum ，bitrate  Clamping effect is invalid ， Encoding rate may exceed bitrate Encoding rate may exceed 
+ *  Encoding rate may exceed QP  Encoding rate may exceed minQp  Encoding rate may exceed ，QP  Clamped to minimum ， At this time, the code rate of the encoding has reached the maximum value ， And the image quality is the best. 
  * @subsection enc_FixQP 3.2 FixQP
- * Fix Qp  fixé Qp  évaluer. Pendant le temps de statistiques de débit binaire ， Encoder tous les macroblocs de l'image Qp  Même valeur ， Utiliser des images définies par l'utilisateur Qp évaluer. 
+ * Fix Qp  fixed Qp  value. During the bit rate statistics time ， Encode all macroblocks of the image Qp  Same value ， Use user-defined images Qp value. 
  * @{
  */
 
 /**
- *  Code de définition Channel Mode contrôleur de débit 
+ *  Define code Channel Rate controller mode 
  */
 typedef enum {
 	ENC_RC_MODE_H264FIXQP               = 0,	/**< H.264 Fixqp  Mode (support)  */
@@ -58,482 +58,482 @@ typedef enum {
 } IMPEncoderRcMode;
 
 /**
- *  mode channel Structure de fréquence d'images ,frmRateNum avec frmRateDen Après avoir été divisé par le plus grand diviseur commun, le plus petit multiple commun entre les deux ne peut pas dépasser 64， Il est préférable d'être divisible par le plus grand diviseur commun avant de définir 
+ *  mode channel Frame rate structure ,frmRateNum with frmRateDen After being divided by the greatest common divisor, the least common multiple between the two cannot exceed 64， It is best to be divisible by the greatest common divisor before setting 
  */
 typedef struct {
-	uint32_t	frmRateNum;				/**<  Le nombre d'unités de temps en une seconde ,  En unités de temps. Le numérateur de la fréquence d'images  */
-	uint32_t	frmRateDen;				/**<  Le nombre d'unités de temps dans une trame ,  En unités de temps. Le dénominateur de la fréquence d'images  */
+	uint32_t	frmRateNum;				/**<  The number of time units in one second ,  In units of time. The numerator of the frame rate  */
+	uint32_t	frmRateDen;				/**<  The number of time units in a frame ,  In units of time. The denominator of the frame rate  */
 } IMPEncoderFrmRate;
 
 /**
- *  définition H.264 définition Channel Fixqp Structure de la propriété 
+ *  definition H.264 definition Channel Fixqp Property structure 
  */
 typedef struct {
-	uint32_t			maxGop;			/**< H.264 gop évaluer ， Doit être un multiple entier de la fréquence d'images  */
-	IMPEncoderFrmRate	outFrmRate;		/**<  Doit être un multiple entier de la fréquence d'images Channel La fréquence d'images de sortie (la fréquence d'images de sortie ne peut pas être supérieure à la fréquence d'images d'entrée) */
-	uint32_t			qp;				/**<  Niveau du cadre Qp Niveau du cadre  */
+	uint32_t			maxGop;			/**< H.264 gop value ， Must be an integer multiple of the frame rate  */
+	IMPEncoderFrmRate	outFrmRate;		/**<  Must be an integer multiple of the frame rate Channel The output frame rate (the output frame rate cannot be greater than the input frame rate) */
+	uint32_t			qp;				/**<  Frame level Qp Frame level  */
 } IMPEncoderAttrH264FixQP;
 
 /**
- *  Niveau du cadre H.264 Niveau du cadre Channel CBR Niveau du cadre 
+ *  Frame level H.264 Frame level Channel CBR Frame level 
  */
 typedef struct {
-	uint32_t			maxGop;			/**< H.264 gop Niveau du cadre ， Niveau du cadre  */
-	IMPEncoderFrmRate	outFrmRate;		/**<  Niveau du cadre Channel Niveau du cadre */
-	uint32_t			maxQp;			/**<  L'encodeur prend en charge la plus grande image QP */
-	uint32_t			minQp;			/**<  L'encodeur prend en charge la plus petite image QP */
-	uint32_t			outBitRate;		/**<  Débit binaire de sortie du codeur , Débit binaire de sortie du codeur kbps En tant qu'unité  */
-	uint32_t			maxFPS;			/**<  Fréquence d'images maximale  */
-	uint32_t			minFPS;			/**<  Fréquence d'images minimale  */
-	int					IBiasLvl;		/**< I Poids du cadre ， Etre prêt (-3~3)，7  Niveaux  */
-	uint32_t			FrmQPStep;		/**<  Intertrame QP Changer l'étape  */
-	uint32_t			GOPQPStep;		/**< GOP compris entre QP compris entre  */
-	bool				AdaptiveMode;	/**<  Mode adaptatif */
-	bool				GOPRelation;	/**< GOP Est-ce lié  */
+	uint32_t			maxGop;			/**< H.264 gop Frame level ， Frame level  */
+	IMPEncoderFrmRate	outFrmRate;		/**<  Frame level Channel Frame level */
+	uint32_t			maxQp;			/**<  Encoder supports the largest image QP */
+	uint32_t			minQp;			/**<  Encoder supports the smallest image QP */
+	uint32_t			outBitRate;		/**<  Encoder output bit rate , Encoder output bit rate kbps As a unit  */
+	uint32_t			maxFPS;			/**<  Maximum frame rate  */
+	uint32_t			minFPS;			/**<  Minimum frame rate  */
+	int					IBiasLvl;		/**< I Frame weight ， stand by (-3~3)，7  Levels  */
+	uint32_t			FrmQPStep;		/**<  Interframe QP Change step  */
+	uint32_t			GOPQPStep;		/**< GOP between QP between  */
+	bool				AdaptiveMode;	/**<  Adaptive mode */
+	bool				GOPRelation;	/**< GOP Is it related  */
 } IMPEncoderAttrH264CBR;
 
 /**
- *  Est-ce lié H.264 Est-ce lié Channel VBR Est-ce lié 
+ *  Is it related H.264 Is it related Channel VBR Is it related 
  */
 typedef struct {
-	uint32_t			maxGop;			/**< H.264 gop Est-ce lié ， Est-ce lié  */
-	IMPEncoderFrmRate	outFrmRate;		/**<  Est-ce lié Channel Est-ce lié */
-	uint32_t			maxQp;			/**<  Est-ce lié QP */
-	uint32_t			minQp;			/**<  Est-ce lié QP */
-	uint32_t			staticTime;		/**<  Temps de statistiques de débit binaire , En secondes  */
-	uint32_t			maxBitRate;		/**<  Débit binaire maximal de la sortie du codeur , Débit binaire maximal de la sortie du codeur kbps Débit binaire maximal de la sortie du codeur  */
-	uint32_t			changePos;		/**< VBR  Commencez à vous ajuster  Qp  Le rapport entre le débit de code à ce moment et le débit de code maximal , Gammes :[50, 100] */
-	uint32_t			FrmQPStep;		/**<  Gammes QP Gammes  */
-	uint32_t			GOPQPStep;		/**< GOP Gammes QP Gammes  */
+	uint32_t			maxGop;			/**< H.264 gop Is it related ， Is it related  */
+	IMPEncoderFrmRate	outFrmRate;		/**<  Is it related Channel Is it related */
+	uint32_t			maxQp;			/**<  Is it related QP */
+	uint32_t			minQp;			/**<  Is it related QP */
+	uint32_t			staticTime;		/**<  Bit rate statistics time , In seconds  */
+	uint32_t			maxBitRate;		/**<  Encoder output maximum bit rate , Encoder output maximum bit rate kbps Encoder output maximum bit rate  */
+	uint32_t			changePos;		/**< VBR  Start to adjust  Qp  The ratio of the code rate at the time to the maximum code rate , Ranges :[50, 100] */
+	uint32_t			FrmQPStep;		/**<  Ranges QP Ranges  */
+	uint32_t			GOPQPStep;		/**< GOP Ranges QP Ranges  */
 } IMPEncoderAttrH264VBR;
 
 /**
- *  Gammes H.264 Gammes Channel Propriétés de dématriçage 
+ *  Ranges H.264 Ranges Channel Demosaicing properties 
  */
 typedef struct {
-	bool				enable;			/**<  Activer ou non la fonction de dématriçage  */
-	bool				isAutoMode;		/**<  Activer le mode de dématriçage automatique ， 0: Manuel ，1 :automatique  */
-	int					demaskCnt;		/**<  Paramètre de temps de maintien du dématriçage  */
-	int					demaskThresd;	/**<  Seuil de dématriçage  */
+	bool				enable;			/**<  Whether to enable the demosaicing function  */
+	bool				isAutoMode;		/**<  Turn on automatic demosaicing mode ， 0: Manual ，1 :automatic  */
+	int					demaskCnt;		/**<  Demosaicing hold time parameter  */
+	int					demaskThresd;	/**<  Demosaicing threshold  */
 } IMPEncoderAttrH264Demask;
 
 /**
- *  Seuil de dématriçage H.264 Seuil de dématriçage Channel Propriétés de débruitage , Ne peut pas être modifié une fois activé , Mais le type de débruitage peut être changé dynamiquement ;
+ *  Demosaicing threshold H.264 Demosaicing threshold Channel Denoising properties , Cannot be changed once enabled , But the denoising type can be changed dynamically ;
  */
 typedef struct {
-	bool				enable;			/**<  Activer ou non la fonction de débruitage , 0: ignorer ,1: Réduction du bruit en fonction du type de trame actuel , Perte maximale d'informations ,2: presse I Débruitage du cadre ， Perte d'informations modérée  */
-	int					dnType;			/**<  Type de débruitage ,0: Type de débruitage ， Pas de réduction du bruit ,1: utilisation IP Réduction du bruit du type de cadre ,2: Réduction du bruit du type de cadre I Réduction du bruit du type de cadre  */
-	int					dnIQp;			/**<  Débruitage I Paramètre de quantification de trame  */
-	int					dnPQp;			/**<  Paramètre de quantification de trame P Paramètre de quantification de trame  */
+	bool				enable;			/**<  Whether to enable the denoising function , 0: ignore ,1: Denoise according to the current frame type , Maximum loss of information ,2: press I Frame denoising ， Moderate information loss  */
+	int					dnType;			/**<  Denoising type ,0: Denoising type ， No noise reduction ,1: use IP Frame type noise reduction ,2: Frame type noise reduction I Frame type noise reduction  */
+	int					dnIQp;			/**<  Denoising I Frame quantization parameter  */
+	int					dnPQp;			/**<  Frame quantization parameter P Frame quantization parameter  */
 } IMPEncoderAttrH264Denoise;
 
 /**
- *  Paramètre de quantification de trame H.264 Paramètre de quantification de trame Channel Mode d'utilisation du cadre d'entrée 
+ *  Frame quantization parameter H.264 Frame quantization parameter Channel Input frame usage mode 
  */
 typedef enum {
-	ENC_FRM_BYPASS	= 0,		/**<  Mode d'utilisation complet séquentiel - Mode par défaut  */
-	ENC_FRM_REUSED	= 1,		/**<  Réutiliser le mode de trame  */
-	ENC_FRM_SKIP	= 2,		/**<  Mode drop frame  */
+	ENC_FRM_BYPASS	= 0,		/**<  Sequential full usage mode - Default mode  */
+	ENC_FRM_REUSED	= 1,		/**<  Reuse frame mode  */
+	ENC_FRM_SKIP	= 2,		/**<  Drop frame mode  */
 } EncFrmUsedMode;
 
 /**
- *  Mode drop frame H.264 Mode drop frame Channel Attributs du mode d'utilisation du cadre d'entrée 
+ *  Drop frame mode H.264 Drop frame mode Channel Input frame usage mode attributes 
  */
 typedef struct {
-	bool				enable;			/**<  Activer ou non le mode d'utilisation du cadre d'entrée  */
-	EncFrmUsedMode		frmUsedMode;	/**<  Activer ou non le mode d'utilisation du cadre d'entrée  */
-	uint32_t			frmUsedTimes;	/**<  Intervalle d'image utilisé à chaque fois en mode image répétée ou en mode image perdue  */
+	bool				enable;			/**<  Whether to enable the input frame usage mode  */
+	EncFrmUsedMode		frmUsedMode;	/**<  Whether to enable the input frame usage mode  */
+	uint32_t			frmUsedTimes;	/**<  Frame interval used each time in repeated frame or dropped frame mode  */
 } IMPEncoderAttrH264FrmUsed;
 
 typedef enum {
-	IMP_H264_STYPE_N11			= 0,	/**< 1 Référence d'image à double saut (instance unique)  */
-	IMP_H264_STYPE_N1X			= 1,	/**< 1 Référence d'image à double saut (multi-instance)  */
-	IMP_H264_STYPE_N2X			= 2,	/**< 2 Référence de cadre à double saut  */
-	IMP_H264_STYPE_N4X			= 3,	/**< 4 Référence de cadre à double saut  */
-	IMP_H264_STYPE_HN1_FALSE	= 4,	/**<  Mode de saut de trame avancé: N,1,HI_FALSE */
-	IMP_H264_STYPE_HN1_TRUE		= 5,	/**<  Mode de saut de trame avancé: NN,1,HI_TURE */
-	IMP_H264_STYPE_H1M_TRUE		= 6,	/**<  Mode de saut de trame avancé: N1,M,HI_TRUE */
+	IMP_H264_STYPE_N11			= 0,	/**< 1 Double skip frame reference (single instance)  */
+	IMP_H264_STYPE_N1X			= 1,	/**< 1 Double skip frame reference (multi-instance)  */
+	IMP_H264_STYPE_N2X			= 2,	/**< 2 Double skip frame reference  */
+	IMP_H264_STYPE_N4X			= 3,	/**< 4 Double skip frame reference  */
+	IMP_H264_STYPE_HN1_FALSE	= 4,	/**<  Advanced frame skip mode: N,1,HI_FALSE */
+	IMP_H264_STYPE_HN1_TRUE		= 5,	/**<  Advanced frame skip mode: NN,1,HI_TURE */
+	IMP_H264_STYPE_H1M_TRUE		= 6,	/**<  Advanced frame skip mode: N1,M,HI_TRUE */
 } IMPH264SkipType;
 
 typedef enum {
-	IMP_H264_FS_IDR		= 0,	/**<  Images clés en mode de saut d'image avancé  */
-	IMP_H264_FS_BASE	= 1,	/**<  Image de référence en mode de saut d'image avancé  */
-	IMP_H264_FS_ENHANCE	= 2,	/**<  Cadre amélioré en mode de saut de cadre avancé  */
+	IMP_H264_FS_IDR		= 0,	/**<  Key frames in advanced frame skipping mode  */
+	IMP_H264_FS_BASE	= 1,	/**<  Reference frame in advanced frame skipping mode  */
+	IMP_H264_FS_ENHANCE	= 2,	/**<  Enhanced frame in advanced frame skipping mode  */
 } IMPH264RefType;
 
 /**
- *  Cadre amélioré en mode de saut de cadre avancé H264 Structure de type de saut de trame avancée 
+ *  Enhanced frame in advanced frame skipping mode H264 Advanced frame skipping type structure 
  */
 typedef struct {
-	IMPH264SkipType	h264SkipType;	/**<  Type de saut de trame  */
-	int				m;				/**<  Intervalle d'image amélioré  */
-	int				n;				/**<  Intervalle de trame de référence  */
+	IMPH264SkipType	h264SkipType;	/**<  Frame skipping type  */
+	int				m;				/**<  Enhanced frame interval  */
+	int				n;				/**<  Reference frame interval  */
 } IMPEncoderAttrH264HSkip;
 
 /**
- *  Intervalle de trame de référence H264 Structure de type de saut de cadre avancé vierge 
+ *  Reference frame interval H264 Blank advanced frame skip type structure 
  */
 typedef struct {
-	int				i_skip_distance;	/**<  Nombre d'images vierges consécutives  */
+	int				i_skip_distance;	/**<  Number of consecutive blank frames  */
 } IMPEncoderAttrH264BSkip;
 
 
 /**
- *  Nombre d'images vierges consécutives Channel Propriétés du contrôleur de taux 
+ *  Number of consecutive blank frames Channel Rate controller properties 
  */
 typedef struct {
-	IMPEncoderRcMode rcMode;						/**< RC  Propriétés du contrôleur de taux  */
+	IMPEncoderRcMode rcMode;						/**< RC  Rate controller properties  */
 	union {
-		IMPEncoderAttrH264FixQP	 attrH264FixQp;		/**< H.264  Codage de protocole Channel Fixqp  Attributs de mode  */
-		IMPEncoderAttrH264CBR	 attrH264Cbr;		/**< H.264  Attributs de mode Channel Cbr  Attributs de mode  */
-		IMPEncoderAttrH264VBR	 attrH264Vbr;		/**< H.264  Attributs de mode Channel Vbr  Attributs de mode  */
+		IMPEncoderAttrH264FixQP	 attrH264FixQp;		/**< H.264  Protocol encoding Channel Fixqp  Mode attributes  */
+		IMPEncoderAttrH264CBR	 attrH264Cbr;		/**< H.264  Mode attributes Channel Cbr  Mode attributes  */
+		IMPEncoderAttrH264VBR	 attrH264Vbr;		/**< H.264  Mode attributes Channel Vbr  Mode attributes  */
 	};
-	IMPEncoderAttrH264FrmUsed	attrH264FrmUsed;	/**<  Attributs de mode  */
-	IMPEncoderAttrH264Demask	attrH264Demask;		/**<  Attributs de mode  */
-	IMPEncoderAttrH264Denoise	attrH264Denoise;	/**<  Attributs de mode  */
-	IMPEncoderAttrH264HSkip		attrH264HSkip;		/**< H264 Propriétés avancées de saut de trame  */
-	IMPEncoderAttrH264BSkip		attrH264BSkip;		/**< H264 Attribut de cadre de saut vide  */
+	IMPEncoderAttrH264FrmUsed	attrH264FrmUsed;	/**<  Mode attributes  */
+	IMPEncoderAttrH264Demask	attrH264Demask;		/**<  Mode attributes  */
+	IMPEncoderAttrH264Denoise	attrH264Denoise;	/**<  Mode attributes  */
+	IMPEncoderAttrH264HSkip		attrH264HSkip;		/**< H264 Advanced frame skipping properties  */
+	IMPEncoderAttrH264BSkip		attrH264BSkip;		/**< H264 Blank skip frame attribute  */
 } IMPEncoderRcAttr;
 
 /**
- * H264 Flux NALU Types de 
+ * H264 Stream NALU Types of 
  */
 typedef enum {
-	IMP_NAL_UNKNOWN		= 0,	/**<  non spécifié  */
-	IMP_NAL_SLICE		= 1,	/**<  Un non IDR Bande de codage d'image   */
-	IMP_NAL_SLICE_DPA	= 2,	/**<  Bloc de segmentation de données de bande codé A */
-	IMP_NAL_SLICE_DPB	= 3,	/**<  Bloc de segmentation de données de bande codé B */
-	IMP_NAL_SLICE_DPC	= 4,	/**<  Bloc de segmentation de données de bande codé C */
-	IMP_NAL_SLICE_IDR	= 5,	/**< IDR Bloc de segmentation de données de bande codé  */
-	IMP_NAL_SEI			= 6,	/**<  Informations sur les améliorations auxiliaires  (SEI) */
-	IMP_NAL_SPS			= 7,	/**<  Jeu de paramètres de séquence  */
-	IMP_NAL_PPS			= 8,	/**<  Jeu de paramètres d'image  */
-	IMP_NAL_AUD			= 9,	/**<  Séparateur d'unité d'accès  */
-	IMP_NAL_FILLER		= 12,	/**<  Entrée de données  */
+	IMP_NAL_UNKNOWN		= 0,	/**<  not specified  */
+	IMP_NAL_SLICE		= 1,	/**<  A non IDR Image coding strip   */
+	IMP_NAL_SLICE_DPA	= 2,	/**<  Encoded strip data segmentation block A */
+	IMP_NAL_SLICE_DPB	= 3,	/**<  Encoded strip data segmentation block B */
+	IMP_NAL_SLICE_DPC	= 4,	/**<  Encoded strip data segmentation block C */
+	IMP_NAL_SLICE_IDR	= 5,	/**< IDR Encoded strip data segmentation block  */
+	IMP_NAL_SEI			= 6,	/**<  Auxiliary enhancement information  (SEI) */
+	IMP_NAL_SPS			= 7,	/**<  Sequence parameter set  */
+	IMP_NAL_PPS			= 8,	/**<  Image parameter set  */
+	IMP_NAL_AUD			= 9,	/**<  Access unit separator  */
+	IMP_NAL_FILLER		= 12,	/**<  Data input  */
 } IMPEncoderH264NaluType;
 
 /**
- *  Définir le type de flux de code 
+ *  Define code stream type 
  */
 typedef union {
-	IMPEncoderH264NaluType		h264Type;		/**< H264E NALU  Type de paquet de flux  */
+	IMPEncoderH264NaluType		h264Type;		/**< H264E NALU  Stream packet type  */
 } IMPEncoderDataType;
 
 /**
- *  Définir la structure du paquet de flux de code de trame 
+ *  Define the frame code stream packet structure 
  */
 typedef struct {
-	uint32_t	phyAddr;						/**<  Adresse physique du paquet de flux  */
-	uint32_t	virAddr;						/**<  Adresse virtuelle du paquet de flux  */
-	uint32_t	length;							/**<  Longueur du paquet de flux  */
+	uint32_t	phyAddr;						/**<  Stream packet physical address  */
+	uint32_t	virAddr;						/**<  Stream packet virtual address  */
+	uint32_t	length;							/**<  Stream packet length  */
 
-	int64_t		timestamp;						/**<  Horodatage ， unité us */
-	bool		frameEnd;						/**<  Indicateur de fin de trame  */
+	int64_t		timestamp;						/**<  Timestamp ， unit us */
+	bool		frameEnd;						/**<  End of frame indicator  */
 
-	IMPEncoderDataType	dataType;				/**<  Type de flux  */
+	IMPEncoderDataType	dataType;				/**<  Stream type  */
 } IMPEncoderPack;
 
 /**
- *  Définir la structure du type de flux de trames 
+ *  Define the frame stream type structure 
  */
 typedef struct {
-	IMPEncoderPack	*pack;				/**<  Structure des paquets de flux de trames  */
-	uint32_t	packCount;				/**<  Le nombre de tous les paquets dans une trame de flux de code  */
-	uint32_t	seq;					/**<  Numéro de série du flux ， Obtenez le numéro d'image par image ， Obtenez le numéro de série du colis par colis  */
+	IMPEncoderPack	*pack;				/**<  Frame stream packet structure  */
+	uint32_t	packCount;				/**<  The number of all packets in one frame of stream  */
+	uint32_t	seq;					/**<  Stream serial number ， Get the frame number by frame ， Get the package serial number by package  */
 	union {
 		IMPH264RefType h264RefType;
 	};
 } IMPEncoderStream;
 
 /**
- *  Définir les propriétés de découpage de l'encodeur ， Commencez par recadrer l'image entrée dans l'encodeur ， Comparer avec la taille du canal d'encodage avant la mise à l'échelle 
+ *  Define encoder clipping properties ， First crop the image input to the encoder ， Compare with the size of the encoding channel before scaling 
  */
 typedef struct {
-    bool		enable;		/**<  Que ce soit pour couper , Que ce soit pour couper :[FALSE, TRUE],TRUE: Activer le découpage ,FALSE: Désactiver le découpage  */
-    uint32_t	x;			/**<  Zone recadrée , Coin supérieur gauche x coordonner  */
-    uint32_t	y;			/**<  coordonner , coordonner y coordonner  */
-    uint32_t	w;			/**<  coordonner , largeur  */
-    uint32_t	h;			/**<  largeur , haut  */
+    bool		enable;		/**<  Whether to cut , Whether to cut :[FALSE, TRUE],TRUE: Enable clipping ,FALSE: Disable clipping  */
+    uint32_t	x;			/**<  Cropped area , Upper left corner x coordinate  */
+    uint32_t	y;			/**<  coordinate , coordinate y coordinate  */
+    uint32_t	w;			/**<  coordinate , width  */
+    uint32_t	h;			/**<  width , high  */
 } IMPEncoderCropCfg;
 
 /**
- *  Définir l'encodeur pour insérer les attributs de données utilisateur , Seulement pour H264
+ *  Define the encoder to insert user data attributes , Only for H264
  */
 typedef struct {
-	uint32_t			maxUserDataCnt;		/**<  Nombre maximum d'utilisateurs pour insérer l'espace du cache de données , gamme: 0-2 */
-	uint32_t			maxUserDataSize;	/**<  Taille maximale de l'espace du cache de données d'insertion par l'utilisateur , Taille maximale de l'espace du cache de données d'insertion par l'utilisateur 16-1024 */
+	uint32_t			maxUserDataCnt;		/**<  Maximum number of users inserting data cache space , range: 0-2 */
+	uint32_t			maxUserDataSize;	/**<  Maximum user insert data cache space size , Maximum user insert data cache space size 16-1024 */
 } IMPEncoderUserDataCfg;
 
 /**
- *  Définir la structure des attributs du codeur 
+ *  Define encoder attribute structure 
  */
 typedef struct {
-	IMPPayloadType			enType;			/**<  Type de protocole de codage  */
-	uint32_t				bufSize;		/**<  Configuration  buffer  Taille ， Taille : Pas moins que le produit de la largeur et de la hauteur de l'image 1.5 Fois. Lors de la définition des propriétés de codage de canal ， Réglez ce paramètre sur 0，IMP La taille est automatiquement calculée en interne  */
-	uint32_t				profile;		/**<  Niveau de codage , 0: baseline; 1:MP; 2:HP */
-	uint32_t				picWidth;		/**<  Largeur de l'image codée  */
-	uint32_t				picHeight;		/**<  Hauteur de l'image codée  */
-	IMPEncoderCropCfg		crop;			/**<  Propriétés de recadrage de l'encodeur  */
-	IMPEncoderUserDataCfg	userData;		/**<  Insérer des attributs de données utilisateur , Insérer des attributs de données utilisateur H264 */
+	IMPPayloadType			enType;			/**<  Encoding protocol type  */
+	uint32_t				bufSize;		/**<  Configuration  buffer  size ， size : Not less than the product of image width and height 1.5 Times. When setting channel encoding properties ， Set this parameter to 0，IMP The size is automatically calculated internally  */
+	uint32_t				profile;		/**<  Coding level , 0: baseline; 1:MP; 2:HP */
+	uint32_t				picWidth;		/**<  Encoded image width  */
+	uint32_t				picHeight;		/**<  Encoded image height  */
+	IMPEncoderCropCfg		crop;			/**<  Encoder cropping properties  */
+	IMPEncoderUserDataCfg	userData;		/**<  Insert user data attributes , Insert user data attributes H264 */
 } IMPEncoderAttr;
 
 /**
- *  Insérer des attributs de données utilisateur Channel Structure d'attribut 
+ *  Insert user data attributes Channel Attribute structure 
  */
 typedef struct {
-	IMPEncoderAttr		encAttr;	/**<  Structure d'attribut du codeur  */
-	IMPEncoderRcAttr	rcAttr;			/**<  Structure d'attribut du contrôleur de débit  */
+	IMPEncoderAttr		encAttr;	/**<  Encoder attribute structure  */
+	IMPEncoderRcAttr	rcAttr;			/**<  Rate controller attribute structure  */
 } IMPEncoderCHNAttr;
 
 /**
- *  Structure d'attribut du contrôleur de débit Channel Structure de l'État 
+ *  Rate controller attribute structure Channel State structure 
  */
 typedef struct {
-	bool		registered;				/**<  Inscrivez-vous à Group Signe ， Signe :{TRUE, FALSE}，TRUE: inscrit ，FALSE: non enregistré  */
-	uint32_t	leftPics;				/**<  Nombre d'images à encoder  */
-	uint32_t	leftStreamBytes;		/**<  Nombre d'images à encoder buffer Restant byte numéro  */
-	uint32_t	leftStreamFrames;		/**<  numéro buffer Images restantes  */
-	uint32_t	curPacks;				/**<  Le nombre de paquets de flux dans la trame actuelle  */
-	uint32_t	work_done;				/**<  État de fonctionnement du programme de canal ，0 :fonctionnement ，1， Ne pas courrir  */
+	bool		registered;				/**<  Register to Group Sign ， Sign :{TRUE, FALSE}，TRUE: registered ，FALSE: unregistered  */
+	uint32_t	leftPics;				/**<  Number of images to be encoded  */
+	uint32_t	leftStreamBytes;		/**<  Number of images to be encoded buffer Remaining byte number  */
+	uint32_t	leftStreamFrames;		/**<  number buffer Remaining frames  */
+	uint32_t	curPacks;				/**<  The number of stream packets in the current frame  */
+	uint32_t	work_done;				/**<  Channel program running status ，0 :running ，1， Not running  */
 } IMPEncoderCHNStat;
 
 /**
- *  Définir la couleur en gris (C2G) paramètre 
+ *  Define color to gray (C2G) parameter 
  */
 typedef struct {
-    bool	enable;			/**<  Activer ou désactiver la fonction de couleur à gris  */
+    bool	enable;			/**<  Turn on or off the color to gray function  */
 } IMPEncoderColor2GreyCfg;
 
 /**
- *  Définir les paramètres EnableIDR Définir les paramètres 
+ *  Define settings EnableIDR Define settings 
  */
 typedef struct {
-    bool	enable;			/**<  Définir ou non EnableIDR */
+    bool	enable;			/**<  Whether to set EnableIDR */
 } IMPEncoderEnIDRCfg;
 
 /**
- *  Définir ou non gopsize Définir ou non 
+ *  Whether to set gopsize Whether to set 
  */
 typedef struct {
-	int		gopsize;			/**< IDR Définir ou non  */
+	int		gopsize;			/**< IDR Whether to set  */
 } IMPEncoderGOPSizeCfg;
 
 /**
- *  Définir ou non ROI Définir ou non 
+ *  Whether to set ROI Whether to set 
  */
 typedef struct {
-	uint32_t	u32Index;	/**< ROI Valeur d'index de zone ， Valeur d'index de zone 0-7 */
-	bool		bEnable;	/**<  Activer ou non cette zone ROI Fonctionnalités  */
-	bool		bRelatedQp;		/**< 0 :absolu ROI，1 :relativement ROI */
-	int			s32Qp;		/**< ROI Aire relative ou absolue qp Aire relative ou absolue  */
-	IMPRect		rect;		/**<  Propriétés des coordonnées de zone  */
+	uint32_t	u32Index;	/**< ROI Area index value ， Area index value 0-7 */
+	bool		bEnable;	/**<  Whether to enable this area ROI Features  */
+	bool		bRelatedQp;		/**< 0 :absolute ROI，1 :relatively ROI */
+	int			s32Qp;		/**< ROI Relative or absolute area qp Relative or absolute area  */
+	IMPRect		rect;		/**<  Area coordinate properties  */
 } IMPEncoderROICfg;
 
 /**
  * @fn int IMP_Encoder_CreateGroup(int encGroup)
  *
- *  Créer du code Group
+ *  Create code Group
  *
- * @param[in] encGroup Group numéro , numéro :[0, @ref NR_MAX_ENC_GROUPS - 1]
+ * @param[in] encGroup Group number , number :[0, @ref NR_MAX_ENC_GROUPS - 1]
  *
- * @retval 0  Succès 
- * @retval  non- 0  échec 
+ * @retval 0  success 
+ * @retval  non- 0  failure 
  *
- * @remarks  Tout le Group Prend en charge une seule résolution ， Différentes résolutions doivent recommencer Group . Tout le Group Soutenez tout le chemin en même temps H264 Et tout le chemin JPEG Se casser 
+ * @remarks  All the way Group Only supports one resolution ， Different resolutions need to start new Group . All the way Group Support all the way at the same time H264 And all the way JPEG Snap 
  *
- * @attention  Si spécifié Group existe déjà ， Manqué 
+ * @attention  If specified Group already exists ， Failed 
  */
 int IMP_Encoder_CreateGroup(int encGroup);
 
 /**
  * @fn int IMP_Encoder_DestroyGroup(int encGroup)
  *
- *  Détruisez le code Grouop.
+ *  Destroy the code Grouop.
  *
- * @param[in] encGroup Group Détruisez le code , Détruisez le code :[0, @ref NR_MAX_ENC_GROUPS - 1]
+ * @param[in] encGroup Group Destroy the code , Destroy the code :[0, @ref NR_MAX_ENC_GROUPS - 1]
  *
- * @retval 0  Détruisez le code 
- * @retval  Détruisez le code 0  Détruisez le code 
+ * @retval 0  Destroy the code 
+ * @retval  Destroy the code 0  Destroy the code 
  *
- * @remarks  détruire Group détruire ， Doit garantir Group Est vide ， C'est-à-dire sans aucun Channel dans Group Inscrivez-vous ， Ou inscrivez-vous à Group dans 
- *  de Channel Annulé ， Sinon, il retourne échoué 
+ * @remarks  destroy Group destroy ， Must guarantee Group Is empty ， I.e. without any Channel in Group Register in ， Or register to Group in 
+ *  of Channel Deregistered ， Otherwise it returns failed 
  *
- * @attention  Détruire inexistant Group， Détruire inexistant 
+ * @attention  Destroy non-existent Group， Destroy non-existent 
  */
 int IMP_Encoder_DestroyGroup(int encGroup);
 
 /**
  * @fn int IMP_Encoder_CreateChn(int encChn, const IMPEncoderCHNAttr *attr)
  *
- *  Détruire inexistant Channel
+ *  Destroy non-existent Channel
  *
- * @param[in] encChn  Détruire inexistant Channel Détruire inexistant , Détruire inexistant : [0, @ref NR_MAX_ENC_CHN - 1]
- * @param[in] attr  Détruire inexistant Channel Pointeur d'attribut 
+ * @param[in] encChn  Destroy non-existent Channel Destroy non-existent , Destroy non-existent : [0, @ref NR_MAX_ENC_CHN - 1]
+ * @param[in] attr  Destroy non-existent Channel Attribute pointer 
  *
- * @retval 0  Pointeur d'attribut 
- * @retval  Pointeur d'attribut 0  Pointeur d'attribut 
+ * @retval 0  Attribute pointer 
+ * @retval  Attribute pointer 0  Attribute pointer 
  *
- * @remarks  Pointeur d'attribut Channel L'attribut se compose de deux parties ， Attributs d'encodeur et attributs de contrôle de débit 
- * @remarks  Les propriétés du codeur doivent d'abord sélectionner le protocole de codage ， Attribuez ensuite des valeurs aux attributs correspondant aux différents protocoles 
+ * @remarks  Attribute pointer Channel The attribute consists of two parts ， Encoder attributes and rate control attributes 
+ * @remarks  Encoder properties first need to select the encoding protocol ， Then assign values ​​to the attributes corresponding to various protocols 
  */
 int IMP_Encoder_CreateChn(int encChn, const IMPEncoderCHNAttr *attr);
 
 /**
  * @fn int IMP_Encoder_DestroyChn(int encChn)
  *
- *  Attribuez ensuite des valeurs aux attributs correspondant aux différents protocoles Channel
+ *  Then assign values ​​to the attributes corresponding to various protocols Channel
  *
- * @param[in] encChn  Attribuez ensuite des valeurs aux attributs correspondant aux différents protocoles Channel Attribuez ensuite des valeurs aux attributs correspondant aux différents protocoles , Attribuez ensuite des valeurs aux attributs correspondant aux différents protocoles : [0, @ref NR_MAX_ENC_CHN - 1]
+ * @param[in] encChn  Then assign values ​​to the attributes corresponding to various protocols Channel Then assign values ​​to the attributes corresponding to various protocols , Then assign values ​​to the attributes corresponding to various protocols : [0, @ref NR_MAX_ENC_CHN - 1]
  *
- * @retval 0  Attribuez ensuite des valeurs aux attributs correspondant aux différents protocoles 
- * @retval  Attribuez ensuite des valeurs aux attributs correspondant aux différents protocoles 0  Attribuez ensuite des valeurs aux attributs correspondant aux différents protocoles 
+ * @retval 0  Then assign values ​​to the attributes corresponding to various protocols 
+ * @retval  Then assign values ​​to the attributes corresponding to various protocols 0  Then assign values ​​to the attributes corresponding to various protocols 
  *
- * @attention  Attribuez ensuite des valeurs aux attributs correspondant aux différents protocoles Channel， Attribuez ensuite des valeurs aux attributs correspondant aux différents protocoles 
- * @attention  Doit garantir avant la destruction Channel Ont été de Group Anti-enregistrement ， Anti-enregistrement 
+ * @attention  Then assign values ​​to the attributes corresponding to various protocols Channel， Then assign values ​​to the attributes corresponding to various protocols 
+ * @attention  Must guarantee before destruction Channel Have been from Group Anti-registration ， Anti-registration 
  */
 int IMP_Encoder_DestroyChn(int encChn);
 
 /**
  * @fn int IMP_Encoder_GetChnAttr(int encChn, IMPEncoderCHNAttr * const attr)
  *
- *  Obtenez le code Channel Attribut de 
+ *  Get the code Channel Attribute of 
  *
- * @param[in] encChn  Attribut de Channel Attribut de , Attribut de : [0, @ref NR_MAX_ENC_CHN - 1]
- * @param[in] attr  Attribut de Channel Les attributs 
+ * @param[in] encChn  Attribute of Channel Attribute of , Attribute of : [0, @ref NR_MAX_ENC_CHN - 1]
+ * @param[in] attr  Attribute of Channel Attributes 
  *
- * @retval 0  Les attributs 
- * @retval  Les attributs 0  Les attributs 
+ * @retval 0  Attributes 
+ * @retval  Attributes 0  Attributes 
  */
 int IMP_Encoder_GetChnAttr(int encChn, IMPEncoderCHNAttr * const attr);
 
 /**
  * @fn int IMP_Encoder_RegisterChn(int encGroup, int encChn)
  *
- *  Code d'enregistrement Channel À Group
+ *  Registration code Channel To Group
  *
- * @param[in] encGroup  À Group À , À : [0, @ref NR_MAX_ENC_GROUPS - 1]
- * @param[in] encChn  À Channel À , À : [0, @ref NR_MAX_ENC_CHN - 1]
+ * @param[in] encGroup  To Group To , To : [0, @ref NR_MAX_ENC_GROUPS - 1]
+ * @param[in] encChn  To Channel To , To : [0, @ref NR_MAX_ENC_CHN - 1]
  *
- * @retval 0  À 
- * @retval  À 0  À 
+ * @retval 0  To 
+ * @retval  To 0  To 
  *
- * @attention  L'enregistrement n'existe pas Channel， L'enregistrement n'existe pas 
- * @attention  L'enregistrement n'existe pas Channel À inexistant Group， À inexistant 
- * @attention  Même code Channel Un seul peut être enregistré Group， Si la Channel Déjà inscrit à un Group， Déjà inscrit à un 
- * @attention  Si un Group Déjà enregistré ， Ensuite ceci Group Je ne peux pas être l'autre Channel Je ne peux pas être l'autre ， Sauf si la relation d'enregistrement précédente est annulée 
+ * @attention  Registration does not exist Channel， Registration does not exist 
+ * @attention  Registration does not exist Channel To non-existent Group， To non-existent 
+ * @attention  Same code Channel Only one can be registered Group， If the Channel Already registered to a Group， Already registered to a 
+ * @attention  If one Group Already registered ， Then this Group Can't be the other Channel Can't be the other ， Unless the previous registration relationship is cancelled 
  */
 
 int IMP_Encoder_RegisterChn(int encGroup, int encChn);
 /**
  * @fn int IMP_Encoder_UnRegisterChn(int encChn)
  *
- *  Code anti-enregistrement Channel Code anti-enregistrement Group
+ *  Anti-registration code Channel Anti-registration code Group
  *
- * @param[in] encChn  Code anti-enregistrement Channel Code anti-enregistrement , Code anti-enregistrement : [0, @ref NR_MAX_ENC_CHN - 1]
+ * @param[in] encChn  Anti-registration code Channel Anti-registration code , Anti-registration code : [0, @ref NR_MAX_ENC_CHN - 1]
  *
- * @retval 0  Code anti-enregistrement 
- * @retval  Code anti-enregistrement 0  Code anti-enregistrement 
+ * @retval 0  Anti-registration code 
+ * @retval  Anti-registration code 0  Anti-registration code 
  *
- * @remarks Channel Après la déconnexion ， Après la déconnexion Channel Sera réinitialisé ， Sera réinitialisé Channel Flux buffer Sera vidé ， Si l'utilisateur utilise toujours 
- *  Streams non diffusés à temps buffer， Ne sera pas garanti buffer Exactitude des données ， L'utilisateur peut utiliser IMP_Encoder_Query Interface à interroger 
- *  code Channel code buffer statut ， Flux de confirmation buffer Se désinscrire après avoir intégré le flux de code Channel
+ * @remarks Channel After logout ， After logout Channel Will be reset ， Will be reset Channel Stream buffer Will be emptied ， If the user is still using 
+ *  Streams not released in time buffer， Will not be guaranteed buffer Correctness of data ， User can use IMP_Encoder_Query Interface to query 
+ *  code Channel code buffer status ， Confirmation code stream buffer Unregister after taking the code stream in Channel
  *
- * @attention  Déconnexion non créée Channel， Déconnexion non créée 
- * @attention  Non enregistré Channel， Non enregistré 
- * @attention  Si code Channel N'arrête pas de recevoir le codage de l'image ， N'arrête pas de recevoir le codage de l'image 
+ * @attention  Logout uncreated Channel， Logout uncreated 
+ * @attention  Unregistered Channel， Unregistered 
+ * @attention  If code Channel Does not stop receiving image encoding ， Does not stop receiving image encoding 
  */
 int IMP_Encoder_UnRegisterChn(int encChn);
 
 /**
  * @fn int IMP_Encoder_StartRecvPic(int encChn)
  *
- *  Activer l'encodage Channel Recevoir l'image 
+ *  Turn on encoding Channel Receive image 
  *
- * @param[in] encChn  Recevoir l'image Channel Recevoir l'image , Recevoir l'image : [0, @ref NR_MAX_ENC_CHN - 1]
+ * @param[in] encChn  Receive image Channel Receive image , Receive image : [0, @ref NR_MAX_ENC_CHN - 1]
  *
- * @retval 0  Recevoir l'image 
- * @retval  Recevoir l'image 0  Recevoir l'image 
+ * @retval 0  Receive image 
+ * @retval  Receive image 0  Receive image 
  *
- * @remarks  Recevoir l'image Channel L'encodage ne peut démarrer qu'après réception de l'image 
+ * @remarks  Receive image Channel Encoding can only start after receiving the image 
  *
- * @attention  au cas où Channel Non créé ， Non créé 
- * @attention  Non créé Channel Non enregistré pour Group， Non enregistré pour 
+ * @attention  in case Channel Not created ， Not created 
+ * @attention  Not created Channel Not registered to Group， Not registered to 
  */
 int IMP_Encoder_StartRecvPic(int encChn);
 
 /**
  * @fn int IMP_Encoder_StopRecvPic(int encChn)
  *
- *  Arrêter le codage Channel Arrêter le codage 
+ *  Stop coding Channel Stop coding 
  *
- * @param[in] encChn  Arrêter le codage Channel Arrêter le codage , Arrêter le codage : [0, @ref NR_MAX_ENC_CHN - 1]
+ * @param[in] encChn  Stop coding Channel Stop coding , Stop coding : [0, @ref NR_MAX_ENC_CHN - 1]
  *
- * @retval 0  Arrêter le codage 
- * @retval  Arrêter le codage 0  Arrêter le codage 
+ * @retval 0  Stop coding 
+ * @retval  Stop coding 0  Stop coding 
  *
- * @remarks  Cette interface ne détermine pas s'il faut arrêter de recevoir actuellement ， Autrement dit, il est permis d'arrêter de recevoir à plusieurs reprises sans renvoyer une erreur 
- * @remarks  L'appel de cette interface arrête uniquement de recevoir le codage des données d'origine ， L'appel de cette interface arrête uniquement de recevoir le codage des données d'origine buffer Ne sera pas éliminé 
+ * @remarks  This interface does not determine whether to stop receiving currently ， That is, it is allowed to stop receiving repeatedly without returning an error 
+ * @remarks  Calling this interface only stops receiving the original data encoding ， Calling this interface only stops receiving the original data encoding buffer Will not be eliminated 
  *
- * @attention  Ne sera pas éliminé Channel Ne sera pas éliminé ， Ne sera pas éliminé 
- * @attention  Ne sera pas éliminé Channel Ne sera pas éliminé Group， Ne sera pas éliminé 
+ * @attention  Will not be eliminated Channel Will not be eliminated ， Will not be eliminated 
+ * @attention  Will not be eliminated Channel Will not be eliminated Group， Will not be eliminated 
  */
 int IMP_Encoder_StopRecvPic(int encChn);
 
 /**
  * @fn int IMP_Encoder_Query(int encChn, IMPEncoderCHNStat *stat)
  *
- *  Code de requête Channel Code de requête 
+ *  Query code Channel Query code 
  *
- * @param[in] encChn  Code de requête Channel Code de requête , Code de requête : [0, @ref NR_MAX_ENC_CHN - 1]
- * @param[out] stat  Code de requête Channel Code de requête 
+ * @param[in] encChn  Query code Channel Query code , Query code : [0, @ref NR_MAX_ENC_CHN - 1]
+ * @param[out] stat  Query code Channel Query code 
  *
- * @retval 0  Code de requête 
- * @retval  Code de requête 0  Code de requête 
+ * @retval 0  Query code 
+ * @retval  Query code 0  Query code 
  *
- * @remarks  non 
+ * @remarks  no 
  *
- * @attention  non 
+ * @attention  no 
  */
 int IMP_Encoder_Query(int encChn, IMPEncoderCHNStat *stat);
 
 /**
  * @fn int IMP_Encoder_GetStream(int encChn, IMPEncoderStream *stream, bool blockFlag)
  *
- *  Obtenez le flux codé 
+ *  Get the coded stream 
  *
- * @param[in] encChn  Obtenez le flux codé Channel Obtenez le flux codé , Obtenez le flux codé : [0, @ref NR_MAX_ENC_CHN - 1]
- * @param[in] stream  Pointeur de structure de flux 
- * @param[in] blockFlag  Utiliser ou non la méthode de blocage pour obtenir ，0 : Non bloquant ，1 :bloquer 
+ * @param[in] encChn  Get the coded stream Channel Get the coded stream , Get the coded stream : [0, @ref NR_MAX_ENC_CHN - 1]
+ * @param[in] stream  Stream structure pointer 
+ * @param[in] blockFlag  Whether to use blocking method to obtain ，0 : Non-blocking ，1 :block 
  *
- * @retval 0  :bloquer 
- * @retval  :bloquer 0  :bloquer 
+ * @retval 0  :block 
+ * @retval  :block 0  :block 
  *
- * @remarks  Obtenez les données d'une image de flux à la fois 
- * @remarks  Si l'utilisateur n'obtient pas le flux de code pendant une longue période , Le tampon de flux sera plein. Un code Channel Si le tampon de flux est plein , Sera après 
- *  L'image reçue est perdue , Jusqu'à ce que l'utilisateur reçoive le flux de code , Il y a donc suffisamment de tampon de flux de code à utiliser pour l'encodage , Commencez simplement à coder. Suggérer des utilisateurs 
- *  L'appel d'interface pour obtenir le flux de code et l'appel d'interface pour libérer le flux de code apparaissent par paires , Et publiez le flux dès que possible , Empêcher le flux de code d'être acquis en raison du mode utilisateur , Relâchez pas 
- *  Flux de code causé dans le temps  buffer  complet , Arrêtez de coder. 
- * @remarks  pour H264 Type de flux ， Obtenez une image de flux de code avec succès en un seul appel ， Cette trame de flux de code peut contenir plusieurs paquets. 
- * @remarks  Cette trame de flux de code peut contenir plusieurs paquets. JPEG Cette trame de flux de code peut contenir plusieurs paquets. ， Cette trame de flux de code peut contenir plusieurs paquets. ， Cette trame de flux de code ne contient qu'un seul paquet ， Ce cadre contient JPEG Les informations complètes du fichier image. 
+ * @remarks  Get data of one frame of stream at a time 
+ * @remarks  If the user does not get the code stream for a long time , The stream buffer will be full. A code Channel If the stream buffer is full , Will be after 
+ *  The received image is lost , Until the user gets the code stream , So there is enough code stream buffer to be used for encoding , Just start coding. Suggest users 
+ *  The interface call to get the code stream and the interface call to release the code stream appear in pairs , And release the stream as soon as possible , Prevent the code stream from being acquired due to user mode , Release not 
+ *  Code stream caused in time  buffer  full , Stop coding. 
+ * @remarks  for H264 Type stream ， Get one frame of code stream successfully in one call ， This frame of code stream may contain multiple packets. 
+ * @remarks  This frame of code stream may contain multiple packets. JPEG This frame of code stream may contain multiple packets. ， This frame of code stream may contain multiple packets. ， This frame of code stream only contains one packet ， This frame contains JPEG The complete information of the picture file. 
  *
- *  Exemple: 
+ *  Example: 
  * @code
  * int ret;
- * ret = IMP_Encoder_PollingStream(ENC_H264_CHANNEL, 1000); //Polling Exemple: Buffer， En attente de disponibilité 
+ * ret = IMP_Encoder_PollingStream(ENC_H264_CHANNEL, 1000); //Polling Example: Buffer， Waiting for availability 
  * if (ret < 0) {
  *     printf("Polling stream timeout\n");
  *     return -1;
  * }
  *
  * IMPEncoderStream stream;
- * ret = IMP_Encoder_GetStream(ENC_H264_CHANNEL, &stream, 1); // Obtenez un flux d'images ， Méthode de blocage 
+ * ret = IMP_Encoder_GetStream(ENC_H264_CHANNEL, &stream, 1); // Get a frame stream ， Blocking method 
  * if (ret < 0) {
  *     printf("Get Stream failed\n");
  *     return -1;
  * }
  *
  * int i, nr_pack = stream.packCount;
- * for (i = 0; i < nr_pack; i++) { // Enregistrez chaque paquet de cette trame de flux de code 
+ * for (i = 0; i < nr_pack; i++) { // Save each packet of this frame of code stream 
  *     ret = write(stream_fd, (void *)stream.pack[i].virAddr,
  *                stream.pack[i].length);
  *     if (ret != stream.pack[i].length) {
@@ -543,452 +543,452 @@ int IMP_Encoder_Query(int encChn, IMPEncoderCHNStat *stat);
  * }
  * @endcode
  *
- * @attention  Enregistrez chaque paquet de cette trame de flux de code pstStream pour NULL, Puis renvoyez l'échec; 
- * @attention  Puis renvoyez l'échec; Channel Puis renvoyez l'échec; ， Puis renvoyez l'échec; 
+ * @attention  Save each packet of this frame of code stream pstStream for NULL, Then return failure; 
+ * @attention  Then return failure; Channel Then return failure; ， Then return failure; 
  */
 int IMP_Encoder_GetStream(int encChn, IMPEncoderStream *stream, bool blockFlag);
 
 /**
  * @fn int IMP_Encoder_ReleaseStream(int encChn, IMPEncoderStream *stream)
  *
- *  Libérez le cache du flux de code 
+ *  Release the code stream cache 
  *
- * @param[in] encChn  Libérez le cache du flux de code Channel Libérez le cache du flux de code , Libérez le cache du flux de code : [0, @ref NR_MAX_ENC_CHN - 1]
- * @param[in] stream  Libérez le cache du flux de code 
+ * @param[in] encChn  Release the code stream cache Channel Release the code stream cache , Release the code stream cache : [0, @ref NR_MAX_ENC_CHN - 1]
+ * @param[in] stream  Release the code stream cache 
  *
- * @retval 0  Libérez le cache du flux de code 
- * @retval  Libérez le cache du flux de code 0  Libérez le cache du flux de code 
+ * @retval 0  Release the code stream cache 
+ * @retval  Release the code stream cache 0  Release the code stream cache 
  *
- * @remarks  Cette interface doit être IMP_Encoder_GetStream Jumeler et utiliser ，\n
- *  Après avoir obtenu le flux de code, l'utilisateur doit libérer le cache de flux de code obtenu à temps ， Sinon, cela peut provoquer un flux de bits buffer Sinon, cela peut provoquer un flux de bits ， Affecte l'encodage de l'encodeur. \n
- *  Et l'utilisateur doit appuyer sur 
- *  Libérez le cache de flux de code qui a été acquis dans l'ordre de libération; 
- * @remarks  Codage Channel Après la désinscription ， Tous les paquets de flux non publiés ne sont pas valides ， Ce tampon de flux de code non valide ne peut plus être utilisé ou libéré. 
+ * @remarks  This interface should be IMP_Encoder_GetStream Pair up and use ，\n
+ *  After obtaining the code stream, the user must release the obtained code stream buffer in time ， Otherwise it may cause bit stream buffer Otherwise it may cause bit stream ， Affect the encoder encoding. \n
+ *  And the user must press 
+ *  Release the code stream cache that has been acquired in the order of release; 
+ * @remarks  Coding Channel After deregistration ， All unreleased stream packets are invalid ， This invalid code stream buffer can no longer be used or released. 
  *
- * @attention  Ce tampon de flux de code non valide ne peut plus être utilisé ou libéré. pstStream Ce tampon de flux de code non valide ne peut plus être utilisé ou libéré. NULL, Ce tampon de flux de code non valide ne peut plus être utilisé ou libéré. 
- * @attention  Ce tampon de flux de code non valide ne peut plus être utilisé ou libéré. Channel Ce tampon de flux de code non valide ne peut plus être utilisé ou libéré. ， Ce tampon de flux de code non valide ne peut plus être utilisé ou libéré. 
- * @attention  La libération du flux de code non valide renverra un échec. 
+ * @attention  This invalid code stream buffer can no longer be used or released. pstStream This invalid code stream buffer can no longer be used or released. NULL, This invalid code stream buffer can no longer be used or released. 
+ * @attention  This invalid code stream buffer can no longer be used or released. Channel This invalid code stream buffer can no longer be used or released. ， This invalid code stream buffer can no longer be used or released. 
+ * @attention  Releasing the invalid code stream will return failure. 
  */
 int IMP_Encoder_ReleaseStream(int encChn, IMPEncoderStream *stream);
 
 /**
  * @fn int IMP_Encoder_PollingStream(int encChn, uint32_t timeoutMsec)
  *
- * Polling Tampon de flux 
+ * Polling Stream buffer 
  *
- * @param[in] encChn  Tampon de flux Channel Tampon de flux , Tampon de flux : [0, @ref NR_MAX_ENC_CHN - 1]
- * @param[in] timeoutMsec  temps supplémentaire ， Unité: millisecondes 
+ * @param[in] encChn  Stream buffer Channel Stream buffer , Stream buffer : [0, @ref NR_MAX_ENC_CHN - 1]
+ * @param[in] timeoutMsec  overtime time ， Unit: milliseconds 
  *
- * @retval 0  Unité: millisecondes 
- * @retval  Unité: millisecondes 0  Unité: millisecondes 
+ * @retval 0  Unit: milliseconds 
+ * @retval  Unit: milliseconds 0  Unit: milliseconds 
  *
- * @remarks  Vous pouvez l'utiliser avant d'obtenir le flux de code API monter Polling， La fonction retourne lorsque le tampon de flux de code n'est pas vide ou lorsqu'il expire. 
+ * @remarks  You can use this before getting the code stream API get on Polling， The function returns when the code stream buffer is not empty or when it times out. 
  *
- * @attention  La fonction retourne lorsque le tampon de flux de code n'est pas vide ou lorsqu'il expire. 
+ * @attention  The function returns when the code stream buffer is not empty or when it times out. 
  */
 int IMP_Encoder_PollingStream(int encChn, uint32_t timeoutMsec);
 
 /**
  * @fn int IMP_Encoder_SetMaxStreamCnt(int encChn, int nrMaxStream)
  *
- *  Définir le cache du flux de code Buffer Nombre 
+ *  Set code stream cache Buffer Number 
  *
- * @param[in] encChn  Nombre Channel Nombre , Nombre : [0, @ref NR_MAX_ENC_CHN - 1]
- * @param[in] nrMaxStream  Nombre Buffer Nombre , Nombre : [1, @ref NR_MAX_ENC_CHN_STREAM]
+ * @param[in] encChn  Number Channel Number , Number : [0, @ref NR_MAX_ENC_CHN - 1]
+ * @param[in] nrMaxStream  Number Buffer Number , Number : [1, @ref NR_MAX_ENC_CHN_STREAM]
  *
- * @retval 0  Nombre 
- * @retval  Nombre 0  Nombre 
+ * @retval 0  Number 
+ * @retval  Number 0  Number 
  *
- * @remarks  En raison de la mise en cache du flux Buffer Le numéro est fixe lors de la création du canal ， Par conséquent API Il doit être appelé avant la création du canal. 
- * @remarks  S'il n'est pas appelé avant la création du canal API S'il n'est pas appelé avant la création du canal Buffer S'il n'est pas appelé avant la création du canal ， alors H264 Le nombre de canaux par défaut est 5，JPEG Le nombre de canaux par défaut est 1 Le nombre de canaux par défaut est 
+ * @remarks  Due to stream caching Buffer The number is fixed when the channel is created ， Therefore API It needs to be called before the channel is created. 
+ * @remarks  If this is not called before the channel is created API If this is not called before the channel is created Buffer If this is not called before the channel is created ， then H264 The default number of channels is 5，JPEG The default number of channels is 1 The default number of channels is 
  *
- * @attention  Le nombre de canaux par défaut est 
+ * @attention  The default number of channels is 
  */
 int IMP_Encoder_SetMaxStreamCnt(int encChn, int nrMaxStream);
 
 /**
  * @fn int IMP_Encoder_GetMaxStreamCnt(int encChn, int *nrMaxStream)
  *
- *  Obtenir le flux de code Buffer Obtenir le flux de code 
+ *  Get code stream Buffer Get code stream 
  *
- * @param[in] encChn  Obtenir le flux de code Channel Obtenir le flux de code , Obtenir le flux de code : [0, @ref NR_MAX_ENC_CHN - 1]
- * @param[out] nrMaxStream  Obtenir le flux de code Buffer Pointeur variable 
+ * @param[in] encChn  Get code stream Channel Get code stream , Get code stream : [0, @ref NR_MAX_ENC_CHN - 1]
+ * @param[out] nrMaxStream  Get code stream Buffer Number variable pointer 
  *
- * @retval 0  Pointeur variable 
- * @retval  Pointeur variable 0  Pointeur variable 
+ * @retval 0  Number variable pointer 
+ * @retval  Number variable pointer 0  Number variable pointer 
  *
- * @remarks  Pointeur variable 
+ * @remarks  Number variable pointer 
  *
- * @attention  Pointeur variable 
+ * @attention  Number variable pointer 
  */
 int IMP_Encoder_GetMaxStreamCnt(int encChn, int *nrMaxStream);
 
 /**
  * @fn int IMP_Encoder_RequestIDR(int encChn)
  *
- *  demander IDR Cadre 
+ *  request IDR frame 
  *
- * @param[in] encChn  Cadre Channel Cadre , Cadre : [0, @ref NR_MAX_ENC_CHN - 1]
+ * @param[in] encChn  frame Channel frame , frame : [0, @ref NR_MAX_ENC_CHN - 1]
  *
- * @retval 0  Cadre 
- * @retval  Cadre 0  Cadre 
+ * @retval 0  frame 
+ * @retval  frame 0  frame 
  *
- * @remarks  Appeler ça API Arrière ， S'appliquera dans la trame d'encodage la plus proche IDR Encodage de trame. 
+ * @remarks  Calling this API Rear ， Will apply in the most recent encoding frame IDR Frame encoding. 
  *
- * @attention  Encodage de trame. 
+ * @attention  Frame encoding. 
  */
 int IMP_Encoder_RequestIDR(int encChn);
 
 /**
  * @fn int IMP_Encoder_FlushStream(int encChn)
  *
- *  Brosser l'ancien flux de code restant dans l'encodeur ， et IDR Codage de début de trame 
+ *  Brush out the old code stream remaining in the encoder ， and IDR Frame start encoding 
  *
- * @param[in] encChn  Codage de début de trame Channel Codage de début de trame , Codage de début de trame : [0, @ref NR_MAX_ENC_CHN - 1]
+ * @param[in] encChn  Frame start encoding Channel Frame start encoding , Frame start encoding : [0, @ref NR_MAX_ENC_CHN - 1]
  *
- * @retval 0  Codage de début de trame 
- * @retval  Codage de début de trame 0  Codage de début de trame 
+ * @retval 0  Frame start encoding 
+ * @retval  Frame start encoding 0  Frame start encoding 
  *
- * @remarks  Codage de début de trame API Codage de début de trame ， Codage de début de trame IDR Codage de début de trame 
+ * @remarks  Frame start encoding API Frame start encoding ， Frame start encoding IDR Frame start encoding 
  *
- * @attention  Codage de début de trame 
+ * @attention  Frame start encoding 
  */
 int IMP_Encoder_FlushStream(int encChn);
 
 /**
  * @fn int IMP_Encoder_SetChnColor2Grey(int encChn, const IMPEncoderColor2GreyCfg *pstColor2Grey).
  *
- *  Réglez la couleur sur la fonction grise 
+ *  Set color to gray function 
  *
- * @param[in] encChn  Réglez la couleur sur la fonction grise Channel Réglez la couleur sur la fonction grise , Réglez la couleur sur la fonction grise : [0, @ref NR_MAX_ENC_CHN - 1]
- * @param[in] pstColor2Grey  Paramètres de la fonction de la couleur au gris 
+ * @param[in] encChn  Set color to gray function Channel Set color to gray function , Set color to gray function : [0, @ref NR_MAX_ENC_CHN - 1]
+ * @param[in] pstColor2Grey  Parameters of the color to gray function 
  *
- * @retval 0  Paramètres de la fonction de la couleur au gris 
- * @retval  Paramètres de la fonction de la couleur au gris 0  Paramètres de la fonction de la couleur au gris 
+ * @retval 0  Parameters of the color to gray function 
+ * @retval  Parameters of the color to gray function 0  Parameters of the color to gray function 
  *
- * @remarks  Appelle ça API Réglez la couleur sur la fonction grise du canal ， Sur le prochain IDR ou P Le cadre prend effet. 
- *  Le cadre prend effet. API Besoin d'un canal existe déjà. 
+ * @remarks  Call this API Set the color to gray function of the channel ， On the next IDR or P The frame takes effect. 
+ *  The frame takes effect. API Need channel already exists. 
  *
- * @attention  Besoin d'un canal existe déjà. 
+ * @attention  Need channel already exists. 
  */
 int IMP_Encoder_SetChnColor2Grey(int encChn, const IMPEncoderColor2GreyCfg *pstColor2Grey);
 
 /**
  * @fn int IMP_Encoder_GetChnColor2Grey(int encChn, IMPEncoderColor2GreyCfg *pstColor2Grey).
  *
- *  Obtenir la couleur des attributs de fonction gris 
+ *  Get color to gray function attributes 
  *
- * @param[in] encChn  Obtenir la couleur des attributs de fonction gris Channel Obtenir la couleur des attributs de fonction gris , Obtenir la couleur des attributs de fonction gris : [0, @ref NR_MAX_ENC_CHN - 1]
- * @param[out] pstColor2Grey  Obtenir la couleur des attributs de fonction gris 
+ * @param[in] encChn  Get color to gray function attributes Channel Get color to gray function attributes , Get color to gray function attributes : [0, @ref NR_MAX_ENC_CHN - 1]
+ * @param[out] pstColor2Grey  Get color to gray function attributes 
  *
- * @retval 0  Obtenir la couleur des attributs de fonction gris 
- * @retval  Obtenir la couleur des attributs de fonction gris 0  Obtenir la couleur des attributs de fonction gris 
+ * @retval 0  Get color to gray function attributes 
+ * @retval  Get color to gray function attributes 0  Get color to gray function attributes 
  *
- * @remarks  Obtenir la couleur des attributs de fonction gris API Obtiendra les attributs de fonction de couleur à gris du canal ， Obtiendra les attributs de fonction de couleur à gris du canal API Obtiendra les attributs de fonction de couleur à gris du canal 
+ * @remarks  Get color to gray function attributes API Will get the channel’s color-to-gray function attributes ， Will get the channel’s color-to-gray function attributes API Will get the channel’s color-to-gray function attributes 
  *
- * @attention  Cette fonction JPEG La chaîne n'a pas de sens. 
+ * @attention  This function JPEG The channel is meaningless. 
  */
 int IMP_Encoder_GetChnColor2Grey(int encChn, IMPEncoderColor2GreyCfg *pstColor2Grey);
 
 /**
  * @fn int IMP_Encoder_SetChnRcAttr(int encChn, const IMPEncoderRcAttr *pstRcCfg).
  *
- *  Définir les propriétés du contrôle de débit 
+ *  Set rate control properties 
  *
- * @param[in] encChn  Définir les propriétés du contrôle de débit Channel Définir les propriétés du contrôle de débit , Définir les propriétés du contrôle de débit : [0, @ref NR_MAX_ENC_CHN - 1]
- * @param[in] pstRcCfg  Paramètres d'attribut de contrôle de débit 
+ * @param[in] encChn  Set rate control properties Channel Set rate control properties , Set rate control properties : [0, @ref NR_MAX_ENC_CHN - 1]
+ * @param[in] pstRcCfg  Rate control attribute parameters 
  *
- * @retval 0  Paramètres d'attribut de contrôle de débit 
- * @retval  Paramètres d'attribut de contrôle de débit 0  Paramètres d'attribut de contrôle de débit 
+ * @retval 0  Rate control attribute parameters 
+ * @retval  Rate control attribute parameters 0  Rate control attribute parameters 
  *
- * @remarks  Paramètres d'attribut de contrôle de débit API Définira les propriétés de contrôle de débit du canal ， Suivant IDR Prendre effet , Prendre effet API Prendre effet 
+ * @remarks  Rate control attribute parameters API Will set the rate control properties of the channel ， Next IDR Take effect , Take effect API Take effect 
  *
- * @attention  Actuellement ， Prise en charge du contrôle de taux ENC_RC_MODE_H264FIXQP contre ENC_RC_MODE_H264CBR contre 
- * ENC_RC_MODE_H264FIXQP Configuration du support qp，ENC_RC_MODE_H264CBR Configuration du support outBitRate Configuration du support 
- * @attention  Configuration du support JPEG Configuration du support 
+ * @attention  Currently ， Rate control support ENC_RC_MODE_H264FIXQP versus ENC_RC_MODE_H264CBR versus 
+ * ENC_RC_MODE_H264FIXQP Support configuration qp，ENC_RC_MODE_H264CBR Support configuration outBitRate Support configuration 
+ * @attention  Support configuration JPEG Support configuration 
  */
 int IMP_Encoder_SetChnRcAttr(int encChn, const IMPEncoderRcAttr *pstRcCfg);
 
 /**
  * @fn int IMP_Encoder_GetChnRcAttr(int encChn, IMPEncoderRcAttr *pstRcCfg).
  *
- *  Obtenir les propriétés du contrôle de débit 
+ *  Get rate control properties 
  *
- * @param[in] encChn  Obtenir les propriétés du contrôle de débit Channel Obtenir les propriétés du contrôle de débit , Obtenir les propriétés du contrôle de débit : [0, @ref NR_MAX_ENC_CHN - 1]
- * @param[out] pstRcCfg  Obtenir les propriétés du contrôle de débit 
+ * @param[in] encChn  Get rate control properties Channel Get rate control properties , Get rate control properties : [0, @ref NR_MAX_ENC_CHN - 1]
+ * @param[out] pstRcCfg  Get rate control properties 
  *
- * @retval 0  Obtenir les propriétés du contrôle de débit 
- * @retval  Obtenir les propriétés du contrôle de débit 0  Obtenir les propriétés du contrôle de débit 
+ * @retval 0  Get rate control properties 
+ * @retval  Get rate control properties 0  Get rate control properties 
  *
- * @remarks  Obtenir les propriétés du contrôle de débit API Obtiendra les propriétés de contrôle de débit du canal ， Obtiendra les propriétés de contrôle de débit du canal API Obtiendra les propriétés de contrôle de débit du canal 
+ * @remarks  Get rate control properties API Will get the rate control properties of the channel ， Will get the rate control properties of the channel API Will get the rate control properties of the channel 
  *
- * @attention  Obtiendra les propriétés de contrôle de débit du canal JPEG Obtiendra les propriétés de contrôle de débit du canal 
+ * @attention  Will get the rate control properties of the channel JPEG Will get the rate control properties of the channel 
  */
 int IMP_Encoder_GetChnRcAttr(int encChn, IMPEncoderRcAttr *pstRcCfg);
 
 /**
  * @fn int IMP_Encoder_SetChnFrmRate(int encChn, const IMPEncoderFrmRate *pstFps)
  *
- *  Définir dynamiquement les propriétés du contrôle de la fréquence d'images 
+ *  Dynamically set frame rate control properties 
  *
- * @param[in] encChn  Définir dynamiquement les propriétés du contrôle de la fréquence d'images Channel Définir dynamiquement les propriétés du contrôle de la fréquence d'images , Définir dynamiquement les propriétés du contrôle de la fréquence d'images : [0, @ref NR_MAX_ENC_CHN - 1]
- * @param[out] pstFpsCfg  Paramètres d'attribut de contrôle de la fréquence d'images 
+ * @param[in] encChn  Dynamically set frame rate control properties Channel Dynamically set frame rate control properties , Dynamically set frame rate control properties : [0, @ref NR_MAX_ENC_CHN - 1]
+ * @param[out] pstFpsCfg  Frame rate control attribute parameters 
  *
- * @retval 0  Paramètres d'attribut de contrôle de la fréquence d'images 
- * @retval  Paramètres d'attribut de contrôle de la fréquence d'images 0  Paramètres d'attribut de contrôle de la fréquence d'images 
+ * @retval 0  Frame rate control attribute parameters 
+ * @retval  Frame rate control attribute parameters 0  Frame rate control attribute parameters 
  *
- * @remarks  Paramètres d'attribut de contrôle de la fréquence d'images API Réinitialise les propriétés de fréquence d'images de l'encodeur ， L'attribut de fréquence d'images est le suivant GOP L'attribut de fréquence d'images est le suivant ， Délai maximum 1 Prenez effet en quelques secondes ， Prenez effet en quelques secondes API Prenez effet en quelques secondes 
- * @remarks  Si vous appelez IMP_FrameSource_SetChnFPS() La fonction modifie dynamiquement la fréquence d'images du système ， Ensuite, vous devez appeler cette fonction pour modifier la fréquence d'images de l'encodeur ， Terminez la configuration correcte des paramètres. 
+ * @remarks  Frame rate control attribute parameters API Will reset the encoder frame rate properties ， The frame rate attribute is next GOP The frame rate attribute is next ， Maximum delay 1 Take effect in seconds ， Take effect in seconds API Take effect in seconds 
+ * @remarks  If you call IMP_FrameSource_SetChnFPS() Function dynamically changes the system frame rate ， Then you need to call this function to modify the encoder frame rate ， Complete the correct parameter configuration. 
  *
- * @attention  non. 
+ * @attention  no. 
  */
 int IMP_Encoder_SetChnFrmRate(int encChn, const IMPEncoderFrmRate *pstFps);
 
 /**
  * @fn int IMP_Encoder_GetChnFrmRate(int encChn, IMPEncoderFrmRate *pstFps)
  *
- *  Obtenir les propriétés du contrôle de la fréquence d'images 
+ *  Get frame rate control properties 
  *
- * @param[in] encChn  Obtenir les propriétés du contrôle de la fréquence d'images Channel Obtenir les propriétés du contrôle de la fréquence d'images , Obtenir les propriétés du contrôle de la fréquence d'images : [0, @ref NR_MAX_ENC_CHN - 1]
- * @param[out] pstFpsCfg  Obtenir les propriétés du contrôle de la fréquence d'images 
+ * @param[in] encChn  Get frame rate control properties Channel Get frame rate control properties , Get frame rate control properties : [0, @ref NR_MAX_ENC_CHN - 1]
+ * @param[out] pstFpsCfg  Get frame rate control properties 
  *
- * @retval 0  Obtenir les propriétés du contrôle de la fréquence d'images 
- * @retval  Obtenir les propriétés du contrôle de la fréquence d'images 0  Obtenir les propriétés du contrôle de la fréquence d'images 
+ * @retval 0  Get frame rate control properties 
+ * @retval  Get frame rate control properties 0  Get frame rate control properties 
  *
- * @remarks  Obtenir les propriétés du contrôle de la fréquence d'images API Obtiendra les propriétés de contrôle de la fréquence d'images du canal ， Obtiendra les propriétés de contrôle de la fréquence d'images du canal API Obtiendra les propriétés de contrôle de la fréquence d'images du canal 
+ * @remarks  Get frame rate control properties API Will get the frame rate control properties of the channel ， Will get the frame rate control properties of the channel API Will get the frame rate control properties of the channel 
  *
- * @attention  Obtiendra les propriétés de contrôle de la fréquence d'images du canal JPEG Obtiendra les propriétés de contrôle de la fréquence d'images du canal 
+ * @attention  Will get the frame rate control properties of the channel JPEG Will get the frame rate control properties of the channel 
  */
 int IMP_Encoder_GetChnFrmRate(int encChn, IMPEncoderFrmRate *pstFps);
 
 /**
  * @fn int IMP_Encoder_SetChnROI(int encChn, const IMPEncoderROICfg *pstVencRoiCfg)
  *
- *  Configurer la chaîne ROI Configurer la chaîne 
+ *  Set up the channel ROI Set up the channel 
  *
- * @param[in] encChn  Configurer la chaîne Channel Configurer la chaîne , Configurer la chaîne : [0, @ref NR_MAX_ENC_CHN - 1]
- * @param[out] pstFpsCfg ROI Paramètre d'attribut 
+ * @param[in] encChn  Set up the channel Channel Set up the channel , Set up the channel : [0, @ref NR_MAX_ENC_CHN - 1]
+ * @param[out] pstFpsCfg ROI Attribute parameter 
  *
- * @retval 0  Paramètre d'attribut 
- * @retval  Paramètre d'attribut 0  Paramètre d'attribut 
+ * @retval 0  Attribute parameter 
+ * @retval  Attribute parameter 0  Attribute parameter 
  *
- * @remarks  Paramètre d'attribut API Configurera la chaîne ROI Configurera la chaîne ， Configurera la chaîne API Configurera la chaîne 
+ * @remarks  Attribute parameter API Will set up the channel ROI Will set up the channel ， Will set up the channel API Will set up the channel 
  *
- * @attention  Configurera la chaîne 
+ * @attention  Will set up the channel 
  */
 int IMP_Encoder_SetChnROI(int encChn, const IMPEncoderROICfg *pstVencRoiCfg);
 
 /**
  * @fn int IMP_Encoder_GetChnROI(int encChn, IMPEncoderROICfg *pstVencRoiCfg)
  *
- *  Obtenir la chaîne ROI Obtenir la chaîne 
+ *  Get channel ROI Get channel 
  *
- * @param[in] encChn  Obtenir la chaîne Channel Obtenir la chaîne , Obtenir la chaîne : [0, @ref NR_MAX_ENC_CHN - 1]
- * @param[out] pstFpsCfg ROI Obtenir la chaîne 
+ * @param[in] encChn  Get channel Channel Get channel , Get channel : [0, @ref NR_MAX_ENC_CHN - 1]
+ * @param[out] pstFpsCfg ROI Get channel 
  *
- * @retval 0  Obtenir la chaîne 
- * @retval  Obtenir la chaîne 0  Obtenir la chaîne 
+ * @retval 0  Get channel 
+ * @retval  Get channel 0  Get channel 
  *
- * @remarks  Obtenir la chaîne API Obtiendra la chaîne ROI Obtiendra la chaîne ， Obtiendra la chaîne API Obtiendra la chaîne 
+ * @remarks  Get channel API Will get the channel ROI Will get the channel ， Will get the channel API Will get the channel 
  *
- * @attention  Obtiendra la chaîne JPEG Obtiendra la chaîne 
+ * @attention  Will get the channel JPEG Will get the channel 
  */
 int IMP_Encoder_GetChnROI(int encChn, IMPEncoderROICfg *pstVencRoiCfg);
 
 /**
  * @fn int IMP_Encoder_GetGOPSize(int encChn, IMPEncoderGOPSizeCfg *pstGOPSizeCfg)
  *
- *  Obtiendra la chaîne GOP Obtiendra la chaîne 
+ *  Will get the channel GOP Will get the channel 
  *
- * @param[in] encChn  Obtiendra la chaîne Channel Obtiendra la chaîne , Obtiendra la chaîne : [0, @ref NR_MAX_ENC_CHN - 1]
- * @param[out] pstGOPSizeCfg GOPSize Obtiendra la chaîne 
+ * @param[in] encChn  Will get the channel Channel Will get the channel , Will get the channel : [0, @ref NR_MAX_ENC_CHN - 1]
+ * @param[out] pstGOPSizeCfg GOPSize Will get the channel 
  *
- * @retval 0  Obtiendra la chaîne 
- * @retval  Obtiendra la chaîne 0  Obtiendra la chaîne 
+ * @retval 0  Will get the channel 
+ * @retval  Will get the channel 0  Will get the channel 
  *
- * @remarks  Obtiendra la chaîne API Obtiendra la chaîne GOPSize Obtiendra la chaîne ， Obtiendra la chaîne API Obtiendra la chaîne 
+ * @remarks  Will get the channel API Will get the channel GOPSize Will get the channel ， Will get the channel API Will get the channel 
  *
- * @attention  Obtiendra la chaîne JPEG Obtiendra la chaîne 
+ * @attention  Will get the channel JPEG Will get the channel 
  */
 int IMP_Encoder_GetGOPSize(int encChn, IMPEncoderGOPSizeCfg *pstGOPSizeCfg);
 
 /**
  * @fn int IMP_Encoder_SetGOPSize(int encChn, const IMPEncoderGOPSizeCfg *pstGOPSizeCfg)
  *
- *  Obtiendra la chaîne GOP Obtiendra la chaîne 
+ *  Will get the channel GOP Will get the channel 
  *
- * @param[in] encChn  Obtiendra la chaîne Channel Obtiendra la chaîne , Obtiendra la chaîne : [0, @ref NR_MAX_ENC_CHN - 1]
- * @param[out] pstGOPSizeCfg GOP Obtiendra la chaîne 
+ * @param[in] encChn  Will get the channel Channel Will get the channel , Will get the channel : [0, @ref NR_MAX_ENC_CHN - 1]
+ * @param[out] pstGOPSizeCfg GOP Will get the channel 
  *
- * @retval 0  Obtiendra la chaîne 
- * @retval  Obtiendra la chaîne 0  Obtiendra la chaîne 
+ * @retval 0  Will get the channel 
+ * @retval  Will get the channel 0  Will get the channel 
  *
- * @remarks  Obtiendra la chaîne API Obtiendra la chaîne GOPSize Obtiendra la chaîne ， Obtiendra la chaîne API Obtiendra la chaîne 
+ * @remarks  Will get the channel API Will get the channel GOPSize Will get the channel ， Will get the channel API Will get the channel 
  *
- * @attention  Obtiendra la chaîne 
+ * @attention  Will get the channel 
  */
 int IMP_Encoder_SetGOPSize(int encChn, const IMPEncoderGOPSizeCfg *pstGOPSizeCfg);
 
 /**
  * @fn int IMP_Encoder_SetChnH264Demask(int encChn, const IMPEncoderAttrH264Demask *pdemaskAttr)
  *
- *  Définir les propriétés de dématriçage des canaux 
+ *  Set channel demosaicing properties 
  *
- * @param[in] encChn  Définir les propriétés de dématriçage des canaux Channel Définir les propriétés de dématriçage des canaux , Définir les propriétés de dématriçage des canaux : [0, @ref NR_MAX_ENC_CHN - 1]
- * @param[out] pdemaskAttr  Paramètres de propriété de dématriçage 
+ * @param[in] encChn  Set channel demosaicing properties Channel Set channel demosaicing properties , Set channel demosaicing properties : [0, @ref NR_MAX_ENC_CHN - 1]
+ * @param[out] pdemaskAttr  Demosaicing property parameters 
  *
- * @retval 0  Paramètres de propriété de dématriçage 
- * @retval  Paramètres de propriété de dématriçage 0  Paramètres de propriété de dématriçage 
+ * @retval 0  Demosaicing property parameters 
+ * @retval  Demosaicing property parameters 0  Demosaicing property parameters 
  *
- * @remarks  Paramètres de propriété de dématriçage API Définira les propriétés de dématriçage du canal ， Définira les propriétés de dématriçage du canal API Définira les propriétés de dématriçage du canal 
+ * @remarks  Demosaicing property parameters API Will set the demosaicing properties of the channel ， Will set the demosaicing properties of the channel API Will set the demosaicing properties of the channel 
  *
- * @attention  Définira les propriétés de dématriçage du canal 
+ * @attention  Will set the demosaicing properties of the channel 
  */
 int IMP_Encoder_SetChnH264Demask(int encChn, const IMPEncoderAttrH264Demask *pdemaskAttr);
 
 /**
  * @fn int IMP_Encoder_GetChnH264Demask(int encChn, IMPEncoderAttrH264Demask *pdemaskAttr)
  *
- *  Obtenir les propriétés de dématriçage des canaux 
+ *  Get channel demosaicing properties 
  *
- * @param[in] encChn  Obtenir les propriétés de dématriçage des canaux Channel Obtenir les propriétés de dématriçage des canaux , Obtenir les propriétés de dématriçage des canaux : [0, @ref NR_MAX_ENC_CHN - 1]
- * @param[out] pdemaskAttr  Obtenir les propriétés de dématriçage des canaux 
+ * @param[in] encChn  Get channel demosaicing properties Channel Get channel demosaicing properties , Get channel demosaicing properties : [0, @ref NR_MAX_ENC_CHN - 1]
+ * @param[out] pdemaskAttr  Get channel demosaicing properties 
  *
- * @retval 0  Obtenir les propriétés de dématriçage des canaux 
- * @retval  Obtenir les propriétés de dématriçage des canaux 0  Obtenir les propriétés de dématriçage des canaux 
+ * @retval 0  Get channel demosaicing properties 
+ * @retval  Get channel demosaicing properties 0  Get channel demosaicing properties 
  *
- * @remarks  Obtenir les propriétés de dématriçage des canaux API Obtiendra les propriétés de dématriçage du canal ， Obtiendra les propriétés de dématriçage du canal API Obtiendra les propriétés de dématriçage du canal 
+ * @remarks  Get channel demosaicing properties API Will get the demosaicing properties of the channel ， Will get the demosaicing properties of the channel API Will get the demosaicing properties of the channel 
  *
- * @attention  Obtiendra les propriétés de dématriçage du canal 
+ * @attention  Will get the demosaicing properties of the channel 
  */
 int IMP_Encoder_GetChnH264Demask(int encChn, IMPEncoderAttrH264Demask *pdemaskAttr);
 
 /**
  * @fn int IMP_Encoder_SetChnH264FrmUsedMode(int encChn, const IMPEncoderAttrH264FrmUsed *pfrmUsedAttr)
  *
- *  Définir l'attribut du mode d'utilisation de la trame d'entrée du canal 
+ *  Set the channel input frame usage mode attribute 
  *
- * @param[in] encChn  Définir l'attribut du mode d'utilisation de la trame d'entrée du canal Channel Définir l'attribut du mode d'utilisation de la trame d'entrée du canal , Définir l'attribut du mode d'utilisation de la trame d'entrée du canal : [0, @ref NR_MAX_ENC_CHN - 1]
- * @param[out] pfrmUsedAttr  Paramètre d'attribut du mode d'utilisation du cadre d'entrée 
+ * @param[in] encChn  Set the channel input frame usage mode attribute Channel Set the channel input frame usage mode attribute , Set the channel input frame usage mode attribute : [0, @ref NR_MAX_ENC_CHN - 1]
+ * @param[out] pfrmUsedAttr  Input frame usage mode attribute parameter 
  *
- * @retval 0  Paramètre d'attribut du mode d'utilisation du cadre d'entrée 
- * @retval  Paramètre d'attribut du mode d'utilisation du cadre d'entrée 0  Paramètre d'attribut du mode d'utilisation du cadre d'entrée 
+ * @retval 0  Input frame usage mode attribute parameter 
+ * @retval  Input frame usage mode attribute parameter 0  Input frame usage mode attribute parameter 
  *
- * @remarks  Paramètre d'attribut du mode d'utilisation du cadre d'entrée API Définira l'attribut de mode d'utilisation de la trame d'entrée du canal ， Définira l'attribut de mode d'utilisation de la trame d'entrée du canal API Définira l'attribut de mode d'utilisation de la trame d'entrée du canal 
+ * @remarks  Input frame usage mode attribute parameter API Will set the input frame usage mode attribute of the channel ， Will set the input frame usage mode attribute of the channel API Will set the input frame usage mode attribute of the channel 
  *
- * @attention  Définira l'attribut de mode d'utilisation de la trame d'entrée du canal 
+ * @attention  Will set the input frame usage mode attribute of the channel 
  */
 int IMP_Encoder_SetChnH264FrmUsedMode(int encChn, const IMPEncoderAttrH264FrmUsed *pfrmUsedAttr);
 
 /**
  * @fn int IMP_Encoder_GetChnH264FrmUsedMode(int encChn, IMPEncoderAttrH264FrmUsed *pfrmUsedAttr)
  *
- *  Obtenir l'attribut du mode d'utilisation de la trame d'entrée du canal 
+ *  Get the attribute of the channel input frame usage mode 
  *
- * @param[in] encChn  Obtenir l'attribut du mode d'utilisation de la trame d'entrée du canal Channel Obtenir l'attribut du mode d'utilisation de la trame d'entrée du canal , Obtenir l'attribut du mode d'utilisation de la trame d'entrée du canal : [0, @ref NR_MAX_ENC_CHN - 1]
- * @param[out] pfrmUsedAttr  Obtenir l'attribut du mode d'utilisation de la trame d'entrée du canal 
+ * @param[in] encChn  Get the attribute of the channel input frame usage mode Channel Get the attribute of the channel input frame usage mode , Get the attribute of the channel input frame usage mode : [0, @ref NR_MAX_ENC_CHN - 1]
+ * @param[out] pfrmUsedAttr  Get the attribute of the channel input frame usage mode 
  *
- * @retval 0  Obtenir l'attribut du mode d'utilisation de la trame d'entrée du canal 
- * @retval  Obtenir l'attribut du mode d'utilisation de la trame d'entrée du canal 0  Obtenir l'attribut du mode d'utilisation de la trame d'entrée du canal 
+ * @retval 0  Get the attribute of the channel input frame usage mode 
+ * @retval  Get the attribute of the channel input frame usage mode 0  Get the attribute of the channel input frame usage mode 
  *
- * @remarks  Obtenir l'attribut du mode d'utilisation de la trame d'entrée du canal API Obtiendra l'attribut de mode d'utilisation de la trame d'entrée du canal ， Obtiendra l'attribut de mode d'utilisation de la trame d'entrée du canal API Obtiendra l'attribut de mode d'utilisation de la trame d'entrée du canal 
+ * @remarks  Get the attribute of the channel input frame usage mode API Will get the input frame usage mode attribute of the channel ， Will get the input frame usage mode attribute of the channel API Will get the input frame usage mode attribute of the channel 
  *
- * @attention  Obtiendra l'attribut de mode d'utilisation de la trame d'entrée du canal 
+ * @attention  Will get the input frame usage mode attribute of the channel 
  */
 int IMP_Encoder_GetChnH264FrmUsedMode(int encChn, IMPEncoderAttrH264FrmUsed *pfrmUsedAttr);
 
 /**
  * @fn int IMP_Encoder_SetChnH264Denoise(int encChn, const IMPEncoderAttrH264Denoise *pdenoiseAttr)
  *
- *  Définir les propriétés de réduction du bruit de canal 
+ *  Set channel denoising properties 
  *
- * @param[in] encChn  Définir les propriétés de réduction du bruit de canal Channel Définir les propriétés de réduction du bruit de canal , Définir les propriétés de réduction du bruit de canal : [0, @ref NR_MAX_ENC_CHN - 1]
- * @param[out] pdenoiseAttr  Paramètres d'attribut de débruitage 
+ * @param[in] encChn  Set channel denoising properties Channel Set channel denoising properties , Set channel denoising properties : [0, @ref NR_MAX_ENC_CHN - 1]
+ * @param[out] pdenoiseAttr  Denoising attribute parameters 
  *
- * @retval 0  Paramètres d'attribut de débruitage 
- * @retval  Paramètres d'attribut de débruitage 0  Paramètres d'attribut de débruitage 
+ * @retval 0  Denoising attribute parameters 
+ * @retval  Denoising attribute parameters 0  Denoising attribute parameters 
  *
- * @remarks  Paramètres d'attribut de débruitage API Définira les propriétés de débruitage du canal ， Définira les propriétés de débruitage du canal API Définira les propriétés de débruitage du canal 
+ * @remarks  Denoising attribute parameters API Will set the denoising properties of the channel ， Will set the denoising properties of the channel API Will set the denoising properties of the channel 
  *
- * @attention  Définira les propriétés de débruitage du canal 
+ * @attention  Will set the denoising properties of the channel 
  */
 int IMP_Encoder_SetChnH264Denoise(int encChn, const IMPEncoderAttrH264Denoise *pdenoiseAttr);
 
 /**
  * @fn int IMP_Encoder_GetChnH264Denoise(int encChn, IMPEncoderAttrH264Denoise *pdenoiseAttr)
  *
- *  Obtenir les propriétés de débruitage du canal 
+ *  Get channel denoising properties 
  *
- * @param[in] encChn  Obtenir les propriétés de débruitage du canal Channel Obtenir les propriétés de débruitage du canal , Obtenir les propriétés de débruitage du canal : [0, @ref NR_MAX_ENC_CHN - 1]
- * @param[out] pdenoiseAttr  Obtenir les propriétés de débruitage du canal 
+ * @param[in] encChn  Get channel denoising properties Channel Get channel denoising properties , Get channel denoising properties : [0, @ref NR_MAX_ENC_CHN - 1]
+ * @param[out] pdenoiseAttr  Get channel denoising properties 
  *
- * @retval 0  Obtenir les propriétés de débruitage du canal 
- * @retval  Obtenir les propriétés de débruitage du canal 0  Obtenir les propriétés de débruitage du canal 
+ * @retval 0  Get channel denoising properties 
+ * @retval  Get channel denoising properties 0  Get channel denoising properties 
  *
- * @remarks  Obtenir les propriétés de débruitage du canal API Obtiendra les propriétés de débruitage du canal ， Obtiendra les propriétés de débruitage du canal API Obtiendra les propriétés de débruitage du canal 
+ * @remarks  Get channel denoising properties API Will get the denoising properties of the channel ， Will get the denoising properties of the channel API Will get the denoising properties of the channel 
  *
- * @attention  Obtiendra les propriétés de débruitage du canal JPEG Obtiendra les propriétés de débruitage du canal 
+ * @attention  Will get the denoising properties of the channel JPEG Will get the denoising properties of the channel 
  */
 int IMP_Encoder_GetChnH264Denoise(int encChn, IMPEncoderAttrH264Denoise *pdenoiseAttr);
 
 /**
  * @fn int IMP_Encoder_InsertUserData(int encChn, void *userData, uint32_t userDataLen)
  *
- *  Insérer les données utilisateur 
+ *  Insert user data 
  *
- * @param[in] encChn  Insérer les données utilisateur Channel Insérer les données utilisateur , Insérer les données utilisateur : [0, @ref NR_MAX_ENC_CHN - 1]
- * @param[in] userData  Pointeur de données utilisateur 
- * @param[in] userDataLen  Longueur des données utilisateur ,  Longueur des données utilisateur :(0, 1024], Longueur des données utilisateur  byte  Longueur des données utilisateur 
+ * @param[in] encChn  Insert user data Channel Insert user data , Insert user data : [0, @ref NR_MAX_ENC_CHN - 1]
+ * @param[in] userData  User data pointer 
+ * @param[in] userDataLen  User data length ,  User data length :(0, 1024], User data length  byte  User data length 
  *
- * @retval 0  Longueur des données utilisateur 
- * @retval  Longueur des données utilisateur 0  Longueur des données utilisateur 
+ * @retval 0  User data length 
+ * @retval  User data length 0  User data length 
  *
- * @remarks  Longueur des données utilisateur API Le canal requis existe déjà 
- * @remarks  Si le canal n'est pas créé , Si le canal n'est pas créé 
- * @remarks  Si le canal n'est pas créé userData Vide ou userDataLen Vide ou 0, Vide ou 
- * @remarks  Vide ou , Supporte uniquement H.264 Protocole d'encodage 
- * @remarks H.264 Les canaux de protocole sont alloués au plus 2 L'espace mémoire de bloc est utilisé pour mettre en cache les données utilisateur , Et la taille de chaque élément de données utilisateur ne dépasse pas 1k byte Et la taille de chaque élément de données utilisateur ne dépasse pas 
- *  Si les données insérées par l'utilisateur sont redondantes 2 Pièce , Ou l'élément de données utilisateur inséré est supérieur à 1k byte  Ou l'élément de données utilisateur inséré est supérieur à , Cette interface renverra une erreur. 
- * @remarks  Chaque élément de données utilisateur est SEI Le format du package est inséré avant le dernier package de flux d'images. Après qu'un certain paquet de données utilisateur est encodé et envoyé ,
- * H.264  L'espace mémoire pour la mise en mémoire tampon de cette donnée utilisateur dans le canal est effacé , Utilisé pour stocker de nouvelles données utilisateur 
+ * @remarks  User data length API Need channel already exists 
+ * @remarks  If the channel is not created , If the channel is not created 
+ * @remarks  If the channel is not created userData Empty or userDataLen Empty or 0, Empty or 
+ * @remarks  Empty or , Only supports H.264 Encoding protocol 
+ * @remarks H.264 Protocol channels are allocated at most 2 Block memory space is used to cache user data , And the size of each piece of user data does not exceed 1k byte And the size of each piece of user data does not exceed 
+ *  If the data inserted by the user is redundant 2 Piece , Or the inserted piece of user data is greater than 1k byte  Or the inserted piece of user data is greater than , This interface will return an error. 
+ * @remarks  Each piece of user data is SEI The packet format is inserted before the latest image stream packet. After a certain user data packet is encoded and sent ,
+ * H.264  The memory space for buffering this piece of user data in the channel is cleared , Used to store new user data 
  *
- * @attention  Utilisé pour stocker de nouvelles données utilisateur 
+ * @attention  Used to store new user data 
  */
 int IMP_Encoder_InsertUserData(int encChn, void *userData, uint32_t userDataLen);
 
 /**
  * @fn int IMP_Encoder_SetFisheyeEnableStatus(int encChn, int enable)
  *
- *  Installation Ingenic L'état activé de l'algorithme de correction fisheye fourni 
+ *  Set up Ingenic The enabled state of the provided fisheye correction algorithm 
  *
- * @param[in] encChn  L'état activé de l'algorithme de correction fisheye fourni Channel L'état activé de l'algorithme de correction fisheye fourni , L'état activé de l'algorithme de correction fisheye fourni : [0, @ref NR_MAX_ENC_CHN - 1]
- * @param[in] enable 0: Désactiver ( défaut ),1: Permettre 
+ * @param[in] encChn  The enabled state of the provided fisheye correction algorithm Channel The enabled state of the provided fisheye correction algorithm , The enabled state of the provided fisheye correction algorithm : [0, @ref NR_MAX_ENC_CHN - 1]
+ * @param[in] enable 0: Disable ( default ),1: Enable 
  *
- * @retval 0  Permettre 
- * @retval  Permettre 0  Permettre 
+ * @retval 0  Enable 
+ * @retval  Enable 0  Enable 
  *
- * @remarks  Étant donné que l'état d'activation de l'algorithme de correction fisheye est fixé lors de la création du canal ， Étant donné que l'état d'activation de l'algorithme de correction fisheye est fixé lors de la création du canal API Étant donné que l'état d'activation de l'algorithme de correction fisheye est fixé lors de la création du canal 
- * @remarks  Étant donné que l'état d'activation de l'algorithme de correction fisheye est fixé lors de la création du canal API Étant donné que l'état d'activation de l'algorithme de correction fisheye est fixé lors de la création du canal Ingenic Étant donné que l'état d'activation de l'algorithme de correction fisheye est fixé lors de la création du canal , N'est pas activé par défaut ， Autrement dit, l'algorithme de correction fisheye fourni par Ingenics ne peut pas être utilisé. 
- * @remarks  ce API s'applique uniquement à H264
+ * @remarks  Since the enable state of the fisheye correction algorithm is fixed when the channel is created ， Since the enable state of the fisheye correction algorithm is fixed when the channel is created API Since the enable state of the fisheye correction algorithm is fixed when the channel is created 
+ * @remarks  Since the enable state of the fisheye correction algorithm is fixed when the channel is created API Since the enable state of the fisheye correction algorithm is fixed when the channel is created Ingenic Since the enable state of the fisheye correction algorithm is fixed when the channel is created , Is not enabled by default ， That is, the fisheye correction algorithm provided by Ingenics cannot be used. 
+ * @remarks  this API only apply to H264
  *
- * @attention  s'applique uniquement à 
+ * @attention  only apply to 
  */
 int IMP_Encoder_SetFisheyeEnableStatus(int encChn, int enable);
 
 /**
  * @fn int IMP_Encoder_GetFisheyeEnableStatus(int encChn, int *enable)
  *
- *  Obtenir Ingenic Obtenir 
+ *  Obtain Ingenic Obtain 
  *
- * @param[in] encChn  Obtenir Channel Obtenir , Obtenir : [0, @ref NR_MAX_ENC_CHN - 1]
- * @param[out] enable  Retour au set Ingenic Retour au set ,0: Pas activé ,1: Activé 
+ * @param[in] encChn  Obtain Channel Obtain , Obtain : [0, @ref NR_MAX_ENC_CHN - 1]
+ * @param[out] enable  Back to set Ingenic Back to set ,0: Not enabled ,1: Enabled 
  *
- * @retval 0  Activé 
- * @retval  Activé 0  Activé 
+ * @retval 0  Enabled 
+ * @retval  Enabled 0  Enabled 
  *
- * @remarks  Activé API Activé H264
+ * @remarks  Enabled API Enabled H264
  *
- * @attention  Activé 
+ * @attention  Enabled 
  */
 int IMP_Encoder_GetFisheyeEnableStatus(int encChn, int *enable);
 

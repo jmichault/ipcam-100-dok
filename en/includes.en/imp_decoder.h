@@ -19,181 +19,181 @@ extern "C"
 
 /**
  * @file
- * IMP Fichier d'en-tête du décodeur 
+ * IMP Decoder header file 
  */
 
 /**
  * @defgroup IMP_Decoder
  * @ingroup imp
- * @brief  Module de décodage vidéo ， Actuellement ne prend en charge que JPEG décodage 
+ * @brief  Video decoding module ， Currently only supports JPEG decoding 
  * @{
  */
 
 /**
- *  Définir les propriétés du décodeur 
+ *  Define decoder properties 
  */
 typedef struct {
-	IMPPayloadType		decType;		/**<  Le type de protocole de données d'origine de la trame décodée  */
-	uint32_t			maxWidth;		/**<  Largeur maximale du cadre décodé  */
-	uint32_t			maxHeight;		/**<  Hauteur maximale du cadre décodé  */
-	IMPPixelFormat		pixelFormat;	/**<  Décoder le type de protocole de données de la cible de trame  */
-	uint32_t			nrKeepStream;	/**<  Nombre de trames tamponnées du décodeur  */
-	uint32_t			frmRateNum;		/**<  Le nombre d'unités de temps en une seconde ,  En unités de temps. Le numérateur de la fréquence d'images  */
-	uint32_t			frmRateDen;		/**<  Le nombre d'unités de temps dans une trame ,  En unités de temps. Le dénominateur de la fréquence d'images  */
+	IMPPayloadType		decType;		/**<  The original data protocol type of the decoded frame  */
+	uint32_t			maxWidth;		/**<  Maximum width of decoded frame  */
+	uint32_t			maxHeight;		/**<  Maximum height of decoded frame  */
+	IMPPixelFormat		pixelFormat;	/**<  Decode frame target data protocol type  */
+	uint32_t			nrKeepStream;	/**<  Number of decoder buffered frames  */
+	uint32_t			frmRateNum;		/**<  The number of time units in one second ,  In units of time. The numerator of the frame rate  */
+	uint32_t			frmRateDen;		/**<  The number of time units in a frame ,  In units of time. The denominator of the frame rate  */
 } IMPDecoderAttr;
 
 /**
- *  Définir le décodage Channel Les attributs 
+ *  Define decoding Channel Attributes 
  */
 typedef struct {
-	IMPDecoderAttr		decAttr;		/**<  Attributs du décodeur  */
+	IMPDecoderAttr		decAttr;		/**<  Decoder attributes  */
 } IMPDecoderCHNAttr;
 
 /**
- *  Définir les attributs de données de trame décodées 
+ *  Define decoded frame data attributes 
  */
 typedef struct {
-	int					i_payload;		/**<  Longueur des données de la trame décodée  */
-	uint8_t				*p_payload;		/**<  Pointeur de données de la trame décodée  */
-	int64_t				timeStamp;		/**<  Horodatage de l'image décodée  */
+	int					i_payload;		/**<  Data length of the decoded frame  */
+	uint8_t				*p_payload;		/**<  Data pointer of decoded frame  */
+	int64_t				timeStamp;		/**<  Timestamp of decoded frame  */
 } IMPDecoderNal;
 
 /**
- *  Définir les attributs du flux de code du décodeur 
+ *  Define decoder code stream attributes 
  */
 typedef struct {
-	IMPDecoderNal	decoderNal; /**<  Structure de données de trame décodée  */
+	IMPDecoderNal	decoderNal; /**<  Decoded frame data structure  */
 } IMPDecoderStream;
 
 /**
  * @fn int IMP_Decoder_CreateChn(int decChn, const IMPDecoderCHNAttr *attr)
  *
- *  Créer un décodage Channel
+ *  Create decoding Channel
  *
- * @param[in] decChn  Créer un décodage Channel numéro , Gammes : [0, @ref NR_MAX_DEC_CHN - 1]
- * @param[in] attr  Gammes Channel Pointeur d'attribut 
+ * @param[in] decChn  Create decoding Channel number , Ranges : [0, @ref NR_MAX_DEC_CHN - 1]
+ * @param[in] attr  Ranges Channel Attribute pointer 
  *
- * @retval 0  Succès 
- * @retval  non- 0  échec 
+ * @retval 0  success 
+ * @retval  non- 0  failure 
  *
- * @remarks  non. 
- * @attention  non. 
+ * @remarks  no. 
+ * @attention  no. 
  */
 int IMP_Decoder_CreateChn(int decChn, const IMPDecoderCHNAttr *attr);
 
 /**
  * @fn int IMP_Decoder_DestroyChn(int decChn)
  *
- *  Détruire le décodage Channel
+ *  Destroy decoding Channel
  *
- * @param[in] decChn  Détruire le décodage Channel Détruire le décodage , Détruire le décodage : [0, @ref NR_MAX_DEC_CHN - 1]
+ * @param[in] decChn  Destroy decoding Channel Destroy decoding , Destroy decoding : [0, @ref NR_MAX_DEC_CHN - 1]
  *
- * @retval 0  Détruire le décodage 
- * @retval  Détruire le décodage 0  Détruire le décodage 
+ * @retval 0  Destroy decoding 
+ * @retval  Destroy decoding 0  Destroy decoding 
  *
- * @remarks  Détruire le décodage 
- * @attention  Détruire le décodage 
+ * @remarks  Destroy decoding 
+ * @attention  Destroy decoding 
  */
 int IMP_Decoder_DestroyChn(int decChn);
 
 /**
  * @fn int IMP_Decoder_StartRecvPic(int decChn)
  *
- *  Activer le décodage Channel Recevoir l'image 
+ *  Turn on decoding Channel Receive image 
  *
- * @param[in] decChn  Recevoir l'image Channel Recevoir l'image , Recevoir l'image : [0, @ref NR_MAX_DEC_CHN - 1]
+ * @param[in] decChn  Receive image Channel Receive image , Receive image : [0, @ref NR_MAX_DEC_CHN - 1]
  *
- * @retval 0  Recevoir l'image 
- * @retval  Recevoir l'image 0  Recevoir l'image 
+ * @retval 0  Receive image 
+ * @retval  Receive image 0  Receive image 
  *
- * @remarks  Recevoir l'image Channel Le décodage ne peut démarrer qu'après réception de l'image 
+ * @remarks  Receive image Channel Decoding can only start after receiving images 
  *
- * @attention  au cas où Channel Non créé ， Manqué 
+ * @attention  in case Channel Not created ， Failed 
  */
 int IMP_Decoder_StartRecvPic(int decChn);
 
 /**
  * @fn int IMP_Decoder_StopRecvPic(int decChn)
  *
- *  Arrêter le décodage Channel Arrêter le décodage 
+ *  Stop decoding Channel Stop decoding 
  *
- * @param[in] decChn  Arrêter le décodage Channel Arrêter le décodage , Arrêter le décodage : [0, @ref NR_MAX_DEC_CHN - 1]
+ * @param[in] decChn  Stop decoding Channel Stop decoding , Stop decoding : [0, @ref NR_MAX_DEC_CHN - 1]
  *
- * @retval 0  Arrêter le décodage 
- * @retval  Arrêter le décodage 0  Arrêter le décodage 
+ * @retval 0  Stop decoding 
+ * @retval  Stop decoding 0  Stop decoding 
  *
- * @remarks  Arrêter le décodage Channel Arrêter le décodage 
+ * @remarks  Stop decoding Channel Stop decoding 
  *
- * @attention  Arrêter le décodage Channel Arrêter le décodage ， Arrêter le décodage 
+ * @attention  Stop decoding Channel Stop decoding ， Stop decoding 
  */
 int IMP_Decoder_StopRecvPic(int decChn);
 
 /**
  * @fn int IMP_Decoder_SendStreamTimeout(int decChn, IMPDecoderStream *stream, uint32_t timeoutMsec)
  *
- *  Envoyer les données à décoder 
+ *  Send the data to be decoded 
  *
- * @param[in] decChn  Envoyer les données à décoder Channel Envoyer les données à décoder , Envoyer les données à décoder : [0, @ref NR_MAX_DEC_CHN - 1]
- * @param[in] stream  Pointeur de structure de flux de données à décoder 
- * @param[in] timeoutMsec  Délai de décodage   unité ms
+ * @param[in] decChn  Send the data to be decoded Channel Send the data to be decoded , Send the data to be decoded : [0, @ref NR_MAX_DEC_CHN - 1]
+ * @param[in] stream  Data stream structure pointer to be decoded 
+ * @param[in] timeoutMsec  Decoding timeout   unit ms
  *
- * @retval 0  unité 
- * @retval  unité 0  unité 
+ * @retval 0  unit 
+ * @retval  unit 0  unit 
  *
- * @remarks  unité 
+ * @remarks  unit 
  *
- * @attention  unité Channel unité ， unité 
+ * @attention  unit Channel unit ， unit 
  */
 int IMP_Decoder_SendStreamTimeout(int decChn, IMPDecoderStream *stream, uint32_t timeoutMsec);
 
 /**
  * @fn int IMP_Decoder_PollingFrame(int decChn, uint32_t timeoutMsec)
  *
- * Polling  Tampon de flux de décodage 
+ * Polling  Decoding stream buffer 
  *
- * @param[in] decChn  Tampon de flux de décodage Channel Tampon de flux de décodage , Tampon de flux de décodage : [0, @ref NR_MAX_DEC_CHN - 1]
- * @param[in] timeoutMsec  temps supplémentaire   temps supplémentaire ms
+ * @param[in] decChn  Decoding stream buffer Channel Decoding stream buffer , Decoding stream buffer : [0, @ref NR_MAX_DEC_CHN - 1]
+ * @param[in] timeoutMsec  overtime time   overtime time ms
  *
- * @retval 0  temps supplémentaire 
- * @retval  temps supplémentaire 0  temps supplémentaire 
+ * @retval 0  overtime time 
+ * @retval  overtime time 0  overtime time 
  *
- * @remarks  temps supplémentaire 
+ * @remarks  overtime time 
  *
- * @attention  temps supplémentaire Channel temps supplémentaire ， temps supplémentaire 
+ * @attention  overtime time Channel overtime time ， overtime time 
  */
 int IMP_Decoder_PollingFrame(int decChn, uint32_t timeoutMsec);
 
 /**
  * @fn int IMP_Decoder_GetFrame(int decChn, IMPFrameInfo **frame)
  *
- *  Obtenir un flux de code décodé 
+ *  Get decoded code stream 
  *
- * @param[in] decChn  Obtenir un flux de code décodé Channel Obtenir un flux de code décodé , Obtenir un flux de code décodé : [0, @ref NR_MAX_DEC_CHN - 1]
- * @param[out] frame  Décodage du pointeur de structure de flux 
+ * @param[in] decChn  Get decoded code stream Channel Get decoded code stream , Get decoded code stream : [0, @ref NR_MAX_DEC_CHN - 1]
+ * @param[out] frame  Decoding stream structure pointer 
  *
- * @retval 0  Décodage du pointeur de structure de flux 
- * @retval  Décodage du pointeur de structure de flux 0  Décodage du pointeur de structure de flux 
+ * @retval 0  Decoding stream structure pointer 
+ * @retval  Decoding stream structure pointer 0  Decoding stream structure pointer 
  *
- * @remarks  Décodage du pointeur de structure de flux 
+ * @remarks  Decoding stream structure pointer 
  *
- * @attention  Décoder le flux buffer Appliquer en interne par le décodeur ， Cette fonction n'a besoin que de passer le pointeur de structure. 
+ * @attention  Decode stream buffer Apply internally by the decoder ， This function only needs to pass in the structure pointer. 
  */
 int IMP_Decoder_GetFrame(int decChn, IMPFrameInfo **frame);
 
 /**
  * @fn int IMP_Decoder_ReleaseFrame(int decChn, IMPFrameInfo *frame)
  *
- *  Libérez le cache du flux de code 
+ *  Release the code stream cache 
  *
- * @param[in] decChn  Libérez le cache du flux de code Channel Libérez le cache du flux de code , Libérez le cache du flux de code : [0, @ref NR_MAX_DEC_CHN - 1]
- * @param[in] frame  Libérez le cache du flux de code 
+ * @param[in] decChn  Release the code stream cache Channel Release the code stream cache , Release the code stream cache : [0, @ref NR_MAX_DEC_CHN - 1]
+ * @param[in] frame  Release the code stream cache 
  *
- * @retval 0  Libérez le cache du flux de code 
- * @retval  Libérez le cache du flux de code 0  Libérez le cache du flux de code 
+ * @retval 0  Release the code stream cache 
+ * @retval  Release the code stream cache 0  Release the code stream cache 
  *
- * @remarks  Libérez le cache du flux de code 
+ * @remarks  Release the code stream cache 
  *
- * @attention  Libérez le cache du flux de code 
+ * @attention  Release the code stream cache 
  */
 int IMP_Decoder_ReleaseFrame(int decChn, IMPFrameInfo *frame);
 

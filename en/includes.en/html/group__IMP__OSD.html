@@ -69,14 +69,13 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>OSD Module ， Peut superposer des images, des bitmaps, des lignes droites, des boîtes rectangulaires sur le flux vidéo.  
+<p>OSD Module ， Can superimpose pictures, bitmaps, straight lines, rectangular boxes on the video stream.  
 <a href="#details">More...</a></p>
 <div class="dynheader">
 Collaboration diagram for IMP_OSD:</div>
 <div class="dyncontent">
 <center><table><tr><td><img src="group__IMP__OSD.png" border="0" alt="" usemap="#group____IMP____OSD"/>
 <map name="group____IMP____OSD" id="group____IMP____OSD">
-<area shape="rect" id="node2" href="group__imp.html" title="IMP(Ingenic Media Platform)" alt="" coords="5,5,193,32"/>
 </map>
 </td></tr></table></center>
 </div>
@@ -164,36 +163,36 @@ Functions</h2></td></tr>
 <tr class="separator:gae44fa63f34dc18d2d539a2563308fd55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>OSD Module ， Peut superposer des images, des bitmaps, des lignes droites, des boîtes rectangulaires sur le flux vidéo. </p>
+<p>OSD Module ， Can superimpose pictures, bitmaps, straight lines, rectangular boxes on the video stream. </p>
 <h1><a class="anchor" id="osd_summary"></a>
-1  Présentation du module</h1>
-<p>OSD Le nom complet est On-Screen Display . La fonction du module est de superposer des informations telles que des lignes et des images dans chaque source de film.</p>
+1  Module introduction</h1>
+<p>OSD The full name is On-Screen Display . The function of the module is to superimpose information such as lines and pictures in each film source.</p>
 <h1><a class="anchor" id="osd_concept"></a>
-2  Concepts associés</h1>
+2  Related concepts</h1>
 <h2><a class="anchor" id="osd_region"></a>
 2.1 Region</h2>
-<p>Region Est-ce que la zone superposée ， dans API Abréviation chinoise Rgn . Chaque Region Avoir certaines informations sur l'image ， Peut passer OSD Une fois les modules superposés ， Combiné avec l'image d'arrière-plan dans une image. Pour la superposition d'image ， Peut également être réalisé Alpha effet. Pour une présentation détaillée des différents types de superposition, veuillez consulter <a class="el" href="group__IMP__OSD.html#osd_region_type">2.1 Region type</a> .</p>
+<p>Region Is the superimposed area ， in API Chinese abbreviation Rgn . Each Region Have certain image information ， Can pass OSD After the modules are superimposed ， Combined with the background image into a picture. For picture overlay ， Can also be achieved Alpha effect. For detailed introduction of various overlay types, please refer to <a class="el" href="group__IMP__OSD.html#osd_region_type">2.1 Region type</a> .</p>
 <h2><a class="anchor" id="osd_region_type"></a>
 2.1 Region type</h2>
-<p>Region Il existe plusieurs types ， Elles sont: <br />
-OSD_REG_LINE :ligne droite <br />
+<p>Region There are several types ， They are: <br />
+OSD_REG_LINE :straight line <br />
 OSD_REG_RECT :Rectangle <br />
-OSD_REG_BITMAP : bitmap <br />
+OSD_REG_BITMAP :bitmap <br />
 OSD_REG_COVER : Occlusion <br />
 OSD_REG_PIC :image <br />
- parmi eux ， La différence entre le bitmap et l'image est ， Bitmap n'effectue qu'une couverture monochrome des pixels ， Et l'image est RGBA Image Alpha Recouvrir.</p>
+ among them ， The difference between bitmap and picture is ， Bitmap only performs monochrome coverage of pixels ， And the picture is RGBA Image Alpha Overlay.</p>
 <h1><a class="anchor" id="osd_fun"></a>
-3  Fonction du module</h1>
-<p>OSD Le module prend en charge les lignes, les boîtes rectangulaires, la superposition bitmap, l'occlusion rectangulaire et la superposition d'image. Les lignes, les boîtes rectangulaires et les bitmaps sont implémentés par logiciel; l'occlusion rectangulaire et les superpositions d'images sont implémentées par le matériel.</p>
+3  Module function</h1>
+<p>OSD The module supports lines, rectangular boxes, bitmap overlay, rectangular occlusion, and image overlay. Lines, rectangular boxes and bitmaps are implemented by software; rectangular occlusion and image overlays are implemented by hardware.</p>
 <h1><a class="anchor" id="osd_use"></a>
-4  Utilisation du module</h1>
-<p>OSD L'utilisation de comporte généralement les étapes suivantes</p><ol type="1">
-<li>créer OSD grouper</li>
-<li>Lier OSD Regrouper dans le système</li>
-<li>Regrouper dans le système OSD surface</li>
-<li>inscrit OSD Zone à OSD Dans le groupe</li>
-<li>Installation OSD Attributs de zone de groupe et attributs de zone</li>
-<li>Attributs de zone de groupe et attributs de zone OSD Commutateur de fonction </li>
+4  Module usage</h1>
+<p>OSD The use of generally has the following steps</p><ol type="1">
+<li>create OSD group</li>
+<li>Bind OSD Group into the system</li>
+<li>Group into the system OSD area</li>
+<li>registered OSD Area to OSD In the group</li>
+<li>Set up OSD Group area attributes and area attributes</li>
+<li>Group area attributes and area attributes OSD Function switch </li>
 </ol>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="gadb17f033bc3cbd6212e32d0b75a0a761"></a>
@@ -207,7 +206,7 @@ OSD_REG_PIC :image <br />
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Valeur de retour d'erreur </p>
+<p>Error return value </p>
 
 </div>
 </div>
@@ -223,7 +222,7 @@ OSD_REG_PIC :image <br />
         </tr>
       </table>
 </div><div class="memdoc">
-<p>OSD Poignée de zone </p>
+<p>OSD Area handle </p>
 
 </div>
 </div>
@@ -239,17 +238,17 @@ OSD_REG_PIC :image <br />
         </tr>
       </table>
 </div><div class="memdoc">
-<p>OSD Type de couleur ， Le format de couleur est bgra </p>
+<p>OSD Color type ， The color format is bgra </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga07a129ad144ef8f2e0df27e448ac6dfba4062b4faf6cfe005ac90c7abcecdfba4"></a>OSD_BLACK&#160;</td><td class="fielddoc"><p>noir </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga07a129ad144ef8f2e0df27e448ac6dfba4062b4faf6cfe005ac90c7abcecdfba4"></a>OSD_BLACK&#160;</td><td class="fielddoc"><p>black </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga07a129ad144ef8f2e0df27e448ac6dfba4a0c4635891f6a2ee0ebbdded19b3317"></a>OSD_WHITE&#160;</td><td class="fielddoc"><p>blanc </p>
+<tr><td class="fieldname"><a id="gga07a129ad144ef8f2e0df27e448ac6dfba4a0c4635891f6a2ee0ebbdded19b3317"></a>OSD_WHITE&#160;</td><td class="fielddoc"><p>white </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga07a129ad144ef8f2e0df27e448ac6dfba34d2fe7ad73b8a94e670df571a9e5adc"></a>OSD_RED&#160;</td><td class="fielddoc"><p>rouge </p>
+<tr><td class="fieldname"><a id="gga07a129ad144ef8f2e0df27e448ac6dfba34d2fe7ad73b8a94e670df571a9e5adc"></a>OSD_RED&#160;</td><td class="fielddoc"><p>red </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga07a129ad144ef8f2e0df27e448ac6dfbadbe20f373ed8b2446e89bfeb76b87917"></a>OSD_GREEN&#160;</td><td class="fielddoc"><p>vert </p>
+<tr><td class="fieldname"><a id="gga07a129ad144ef8f2e0df27e448ac6dfbadbe20f373ed8b2446e89bfeb76b87917"></a>OSD_GREEN&#160;</td><td class="fielddoc"><p>green </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga07a129ad144ef8f2e0df27e448ac6dfba4c85f2a60bcc904c74aa787f5dd2a4d5"></a>OSD_BLUE&#160;</td><td class="fielddoc"><p>bleu </p>
+<tr><td class="fieldname"><a id="gga07a129ad144ef8f2e0df27e448ac6dfba4c85f2a60bcc904c74aa787f5dd2a4d5"></a>OSD_BLUE&#160;</td><td class="fielddoc"><p>blue </p>
 </td></tr>
 </table>
 
@@ -266,19 +265,19 @@ OSD_REG_PIC :image <br />
         </tr>
       </table>
 </div><div class="memdoc">
-<p>OSD Type de zone </p>
+<p>OSD Area type </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga79528856a7d533a7e5ce8f47577beb2ca04ecb838a529cbed99a079c3e88fb159"></a>OSD_REG_INV&#160;</td><td class="fielddoc"><p>Type de zone non défini </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga79528856a7d533a7e5ce8f47577beb2ca04ecb838a529cbed99a079c3e88fb159"></a>OSD_REG_INV&#160;</td><td class="fielddoc"><p>Undefined area type </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga79528856a7d533a7e5ce8f47577beb2ca4d19195a69c1d1717b52f0ef9e716066"></a>OSD_REG_LINE&#160;</td><td class="fielddoc"><p>ligne </p>
+<tr><td class="fieldname"><a id="gga79528856a7d533a7e5ce8f47577beb2ca4d19195a69c1d1717b52f0ef9e716066"></a>OSD_REG_LINE&#160;</td><td class="fielddoc"><p>line </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga79528856a7d533a7e5ce8f47577beb2ca071cc4253393618911f8fb8d0624ff64"></a>OSD_REG_RECT&#160;</td><td class="fielddoc"><p>rectangle </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga79528856a7d533a7e5ce8f47577beb2ca1027eeb5d48d35dadb41e4277bd957d0"></a>OSD_REG_BITMAP&#160;</td><td class="fielddoc"><p>Bitmap </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga79528856a7d533a7e5ce8f47577beb2ca8a43dbf552eb563a9e897744014dc6c6"></a>OSD_REG_COVER&#160;</td><td class="fielddoc"><p>Occlusion rectangulaire </p>
+<tr><td class="fieldname"><a id="gga79528856a7d533a7e5ce8f47577beb2ca8a43dbf552eb563a9e897744014dc6c6"></a>OSD_REG_COVER&#160;</td><td class="fielddoc"><p>Rectangular occlusion </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga79528856a7d533a7e5ce8f47577beb2ca9db8b58618342a2796bda61daf06efe7"></a>OSD_REG_PIC&#160;</td><td class="fielddoc"><p>image ， Convient pour une utilisation comme Logo Ou horodatage </p>
+<tr><td class="fieldname"><a id="gga79528856a7d533a7e5ce8f47577beb2ca9db8b58618342a2796bda61daf06efe7"></a>OSD_REG_PIC&#160;</td><td class="fielddoc"><p>image ， Suitable for use as Logo Or timestamp </p>
 </td></tr>
 </table>
 
@@ -310,23 +309,23 @@ OSD_REG_PIC :image <br />
         </tr>
       </table>
 </div><div class="memdoc">
-<p>volonté OSD Groupe ajouté au système</p>
+<p>will OSD Group added to the system</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">from</td><td>OSD unité </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">to</td><td>Autres unités du système</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">from</td><td>OSD unit </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">to</td><td>Other units in the system</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>Autres unités du système </td></tr>
-    <tr><td class="paramname">Autres</td><td>unités du système 0 Autres unités du système</td></tr>
+    <tr><td class="paramname">0</td><td>Other units in the system </td></tr>
+    <tr><td class="paramname">Other</td><td>units in the system 0 Other units in the system</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarks</dt><dd>Nouvelle version SDK Recommandé dans Bind Le chemin sera OSD Chaîne au flux de données du système ，Attach N'est plus recommandé ， mais API Garder ， Idéalement compatible avec les versions précédentes du logiciel. Pour plus de détails, veuillez consulter <a class="el" href="group__IMP__System.html#bind">2 Liaison de module ( Bind )</a> Exemple de</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>Exemple de </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>New version SDK Recommended in Bind The way will OSD String to the data stream of the system ，Attach Is no longer recommended ， but API Keep ， Conveniently compatible with previous versions of software. For details, please refer to <a class="el" href="group__IMP__System.html#bind">2 Module binding ( Bind )</a> Example of</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Example of </dd></dl>
 
 </div>
 </div>
@@ -345,22 +344,22 @@ OSD_REG_PIC :image <br />
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Afficher la couche OSD Afficher la couche</p>
+<p>Display layer OSD Display layer</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">grpNum</td><td>OSD No de groupe , Gammes : [0, NR_MAX_OSD_GROUPS - 1]</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">grpNum</td><td>OSD Group No , Ranges : [0, NR_MAX_OSD_GROUPS - 1]</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>Succès </td></tr>
-    <tr><td class="paramname">non-</td><td>0 échec</td></tr>
+    <tr><td class="paramname">0</td><td>success </td></tr>
+    <tr><td class="paramname">non-</td><td>0 failure</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarks</dt><dd>non.</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>non. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>no.</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>no. </dd></dl>
 
 </div>
 </div>
@@ -379,22 +378,22 @@ OSD_REG_PIC :image <br />
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Exemple de OSD Exemple de</p>
+<p>Example of OSD Example of</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">prAttr</td><td>OSD Exemple de</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">prAttr</td><td>OSD Example of</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">supérieur</td><td>ou égal à 0 supérieur ou égal à </td></tr>
-    <tr><td class="paramname">Moins</td><td>que 0 Moins que</td></tr>
+    <tr><td class="paramname">greater</td><td>or equal to 0 greater or equal to </td></tr>
+    <tr><td class="paramname">Less</td><td>than 0 Less than</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarks</dt><dd>Moins que</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>Moins que </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>Less than</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Less than </dd></dl>
 
 </div>
 </div>
@@ -413,22 +412,22 @@ OSD_REG_PIC :image <br />
         </tr>
       </table>
 </div><div class="memdoc">
-<p>détruire OSD détruire</p>
+<p>destroy OSD destroy</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">grpNum</td><td>OSD détruire , détruire : [0, NR_MAX_OSD_GROUPS - 1]</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">grpNum</td><td>OSD destroy , destroy : [0, NR_MAX_OSD_GROUPS - 1]</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>détruire </td></tr>
-    <tr><td class="paramname">détruire</td><td>0 détruire</td></tr>
+    <tr><td class="paramname">0</td><td>destroy </td></tr>
+    <tr><td class="paramname">destroy</td><td>0 destroy</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarks</dt><dd>Appelle ça API Il est nécessaire que le groupe correspondant ait été créé.</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>Il est nécessaire que le groupe correspondant ait été créé. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>Call this API It is required that the corresponding group has been created.</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>It is required that the corresponding group has been created. </dd></dl>
 
 </div>
 </div>
@@ -447,21 +446,21 @@ OSD_REG_PIC :image <br />
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Moins que OSD Moins que</p>
+<p>Less than OSD Less than</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">prAttr</td><td>Moins que ，IMP_OSD_CreateRgn La valeur de retour</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">prAttr</td><td>Less than ，IMP_OSD_CreateRgn The return value</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">non</td><td></td></tr>
+    <tr><td class="paramname">no</td><td></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarks</dt><dd>non</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>non </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>no</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>no </dd></dl>
 
 </div>
 </div>
@@ -496,24 +495,24 @@ OSD_REG_PIC :image <br />
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Obtenir OSD Obtenir</p>
+<p>Obtain OSD Obtain</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Obtenir ，IMP_OSD_CreateRgn Obtenir </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">grpNum</td><td>OSD Obtenir </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">pgrAttr</td><td>OSD Obtenir</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Obtain ，IMP_OSD_CreateRgn Obtain </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">grpNum</td><td>OSD Obtain </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">pgrAttr</td><td>OSD Obtain</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>Obtenir </td></tr>
-    <tr><td class="paramname">Obtenir</td><td>0 Obtenir</td></tr>
+    <tr><td class="paramname">0</td><td>Obtain </td></tr>
+    <tr><td class="paramname">Obtain</td><td>0 Obtain</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarks</dt><dd>Obtenir API Obtenir OSD Obtenir , Obtenir</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>Obtenir </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>Obtain API Obtain OSD Obtain , Obtain</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Obtain </dd></dl>
 
 </div>
 </div>
@@ -542,23 +541,23 @@ OSD_REG_PIC :image <br />
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Obtenir des attributs de zone</p>
+<p>Get area attributes</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Obtenir des attributs de zone ，IMP_OSD_CreateRgn Obtenir des attributs de zone </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">prAttr</td><td>OSD Obtenir des attributs de zone</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Get area attributes ，IMP_OSD_CreateRgn Get area attributes </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">prAttr</td><td>OSD Get area attributes</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>Obtenir des attributs de zone </td></tr>
-    <tr><td class="paramname">Obtenir</td><td>des attributs de zone 0 Obtenir des attributs de zone</td></tr>
+    <tr><td class="paramname">0</td><td>Get area attributes </td></tr>
+    <tr><td class="paramname">Get</td><td>area attributes 0 Get area attributes</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarks</dt><dd>Obtenir des attributs de zone API Obtenir des attributs de zone</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>Obtenir des attributs de zone </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>Get area attributes API Get area attributes</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Get area attributes </dd></dl>
 
 </div>
 </div>
@@ -593,24 +592,24 @@ OSD_REG_PIC :image <br />
         </tr>
       </table>
 </div><div class="memdoc">
-<p>non OSD non</p>
+<p>no OSD no</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>non ，IMP_OSD_CreateRgn non </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">grpNum</td><td>OSD non </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">pgrAttr</td><td>OSD Attributs d'affichage de groupe</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>no ，IMP_OSD_CreateRgn no </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">grpNum</td><td>OSD no </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pgrAttr</td><td>OSD Group display attributes</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>Attributs d'affichage de groupe </td></tr>
-    <tr><td class="paramname">Attributs</td><td>d'affichage de groupe 0 Attributs d'affichage de groupe</td></tr>
+    <tr><td class="paramname">0</td><td>Group display attributes </td></tr>
+    <tr><td class="paramname">Group</td><td>display attributes 0 Group display attributes</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarks</dt><dd>Attributs d'affichage de groupe API Lors de la demande du correspondant OSD Le groupe a été créé.</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>Le groupe a été créé. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>Group display attributes API When requesting the corresponding OSD The group has been created.</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>The group has been created. </dd></dl>
 
 </div>
 </div>
@@ -645,24 +644,24 @@ OSD_REG_PIC :image <br />
         </tr>
       </table>
 </div><div class="memdoc">
-<p>ou OSD ou</p>
+<p>or OSD or</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>ou ，IMP_OSD_CreateRgn ou </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">grpNum</td><td>OSD ou </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">pgrAttr</td><td>OSD ou</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>or ，IMP_OSD_CreateRgn or </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">grpNum</td><td>OSD or </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pgrAttr</td><td>OSD or</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>ou </td></tr>
-    <tr><td class="paramname">ou</td><td>0 ou</td></tr>
+    <tr><td class="paramname">0</td><td>or </td></tr>
+    <tr><td class="paramname">or</td><td>0 or</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarks</dt><dd>ou API ou OSD ou , La zone a été créée et enregistrée.</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>La zone a été créée et enregistrée. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>or API or OSD or , The zone has been created and registered.</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>The zone has been created and registered. </dd></dl>
 
 </div>
 </div>
@@ -691,23 +690,23 @@ OSD_REG_PIC :image <br />
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Définir les propriétés de la zone</p>
+<p>Set area properties</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Définir les propriétés de la zone ，IMP_OSD_CreateRgn Définir les propriétés de la zone </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">prAttr</td><td>OSD Définir les propriétés de la zone</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Set area properties ，IMP_OSD_CreateRgn Set area properties </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">prAttr</td><td>OSD Set area properties</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>Définir les propriétés de la zone </td></tr>
-    <tr><td class="paramname">Définir</td><td>les propriétés de la zone 0 Définir les propriétés de la zone</td></tr>
+    <tr><td class="paramname">0</td><td>Set area properties </td></tr>
+    <tr><td class="paramname">Set</td><td>area properties 0 Set area properties</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarks</dt><dd>Définir les propriétés de la zone API Il est nécessaire que la zone correspondante ait été créée.</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>Il est nécessaire que la zone correspondante ait été créée. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>Set area properties API It is required that the corresponding area has been created.</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>It is required that the corresponding area has been created. </dd></dl>
 
 </div>
 </div>
@@ -742,24 +741,24 @@ OSD_REG_PIC :image <br />
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Définir s'il faut afficher la zone de groupe</p>
+<p>Set whether to display the group area</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Définir s'il faut afficher la zone de groupe ，IMP_OSD_CreateRgn Définir s'il faut afficher la zone de groupe </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">grpNum</td><td>OSD Définir s'il faut afficher la zone de groupe </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">showFlag</td><td>OSD Commutateur d'affichage de la zone de groupe</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Set whether to display the group area ，IMP_OSD_CreateRgn Set whether to display the group area </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">grpNum</td><td>OSD Set whether to display the group area </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">showFlag</td><td>OSD Group area display switch</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>Commutateur d'affichage de la zone de groupe </td></tr>
-    <tr><td class="paramname">Commutateur</td><td>d'affichage de la zone de groupe 0 Commutateur d'affichage de la zone de groupe</td></tr>
+    <tr><td class="paramname">0</td><td>Group area display switch </td></tr>
+    <tr><td class="paramname">Group</td><td>area display switch 0 Group area display switch</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarks</dt><dd>Commutateur d'affichage de la zone de groupe API Commutateur d'affichage de la zone de groupe OSD Commutateur d'affichage de la zone de groupe , Commutateur d'affichage de la zone de groupe</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>Commutateur d'affichage de la zone de groupe </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>Group area display switch API Group area display switch OSD Group area display switch , Group area display switch</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Group area display switch </dd></dl>
 
 </div>
 </div>
@@ -778,22 +777,22 @@ OSD_REG_PIC :image <br />
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Installation OSD Affichage de groupe</p>
+<p>Set up OSD Group display</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">grpNum</td><td>OSD Affichage de groupe</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">grpNum</td><td>OSD Group display</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>Affichage de groupe </td></tr>
-    <tr><td class="paramname">Affichage</td><td>de groupe 0 Affichage de groupe</td></tr>
+    <tr><td class="paramname">0</td><td>Group display </td></tr>
+    <tr><td class="paramname">Group</td><td>display 0 Group display</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarks</dt><dd>Affichage de groupe API Affichage de groupe OSD Affichage de groupe</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>Affichage de groupe </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>Group display API Group display OSD Group display</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Group display </dd></dl>
 
 </div>
 </div>
@@ -812,22 +811,22 @@ OSD_REG_PIC :image <br />
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Définir l'arrêt OSD Définir l'arrêt</p>
+<p>Set stop OSD Set stop</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">grpNum</td><td>OSD Définir l'arrêt</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">grpNum</td><td>OSD Set stop</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>Définir l'arrêt </td></tr>
-    <tr><td class="paramname">Définir</td><td>l'arrêt 0 Définir l'arrêt</td></tr>
+    <tr><td class="paramname">0</td><td>Set stop </td></tr>
+    <tr><td class="paramname">Set</td><td>stop 0 Set stop</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarks</dt><dd>Définir l'arrêt API Définir l'arrêt OSD Définir l'arrêt</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>Définir l'arrêt </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>Set stop API Set stop OSD Set stop</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Set stop </dd></dl>
 
 </div>
 </div>
@@ -856,23 +855,23 @@ OSD_REG_PIC :image <br />
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Se déconnecter OSD Se déconnecter</p>
+<p>Logout OSD Logout</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Se déconnecter ，IMP_OSD_CreateRgn Se déconnecter </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">grpNum</td><td>OSD Se déconnecter</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Logout ，IMP_OSD_CreateRgn Logout </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">grpNum</td><td>OSD Logout</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>Se déconnecter </td></tr>
-    <tr><td class="paramname">Se</td><td>déconnecter 0 Se déconnecter</td></tr>
+    <tr><td class="paramname">0</td><td>Logout </td></tr>
+    <tr><td class="paramname">Logout</td><td>0 Logout</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarks</dt><dd>Se déconnecter API Se déconnecter OSD Le groupe a été créé , La zone correspondante a été enregistrée.</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>La zone correspondante a été enregistrée. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>Logout API Logout OSD Group has been created , The corresponding area has been registered.</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>The corresponding area has been registered. </dd></dl>
 
 </div>
 </div>
@@ -901,23 +900,23 @@ OSD_REG_PIC :image <br />
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Mettre à jour les attributs de données de zone ， Seulement pour OSD_REG_BITMAP avec OSD_REG_PIC Type de zone</p>
+<p>Update area data attributes ， Only for OSD_REG_BITMAP with OSD_REG_PIC Type of area</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Type de zone ，IMP_OSD_CreateRgn Type de zone </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">prAttrData</td><td>OSD Attributs de données de zone</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Type of area ，IMP_OSD_CreateRgn Type of area </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">prAttrData</td><td>OSD Area data attributes</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>Attributs de données de zone </td></tr>
-    <tr><td class="paramname">Attributs</td><td>de données de zone 0 Attributs de données de zone</td></tr>
+    <tr><td class="paramname">0</td><td>Area data attributes </td></tr>
+    <tr><td class="paramname">Area</td><td>data attributes 0 Area data attributes</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarks</dt><dd>Attributs de données de zone API Il faut que la zone correspondante ait été créée et que l'attribut de zone ait été défini sur OSD_REG_BITMAP ou OSD_REG_PIC ou</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>ou </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>Area data attributes API It requires that the corresponding area has been created and the area attribute has been set to OSD_REG_BITMAP or OSD_REG_PIC or</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>or </dd></dl>
 
 </div>
 </div>

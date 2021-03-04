@@ -9,7 +9,7 @@
 
 /**
  * @file
- * Log Fichier d'en-tête d'interface 
+ * Log Interface header file 
  */
 
 #ifdef __cplusplus
@@ -74,21 +74,21 @@ enum {
 void imp_log_fun(int le, int op, int out, const char* tag, const char* file, int line, const char* func, const char* fmt, ...);
 
 /**
- *  Définir les options d'impression 
+ *  Set printing options 
  *
  * @fn void IMP_Log_Set_Option(int op);
  *
- * @param[in] op  Définir les options d'impression 
+ * @param[in] op  Set printing options 
  *
  */
 void IMP_Log_Set_Option(int op);
 
 /**
- *  Obtenez des options d'impression 
+ *  Get printing options 
  *
  * @fn int IMP_Log_Get_Option(void );
  *
- * @retval  Revenir aux options d'impression dans le système 
+ * @retval  Return to the print options in the system 
  *
  */
 int  IMP_Log_Get_Option(void);
@@ -112,42 +112,42 @@ int  IMP_Log_Get_Option(void);
 
 /**
  * @def IMP_LOG_UNK
- * UNKNOWN Interface d'impression hiérarchique 
+ * UNKNOWN Hierarchical printing interface 
  */
 #define IMP_LOG_UNK(tag, fmt, ...)		IMP_LOG(tag, IMP_LOG_LEVEL_UNKNOWN, IMP_LOG_GET_OPTION, fmt, ##__VA_ARGS__)
 /**
  * @def IMP_LOG_VERBOSE
- * VERBOSE Interface d'impression hiérarchique 
+ * VERBOSE Hierarchical printing interface 
  */
 #define IMP_LOG_VERBOSE(tag, fmt, ...)		IMP_LOG(tag, IMP_LOG_LEVEL_VERBOSE, IMP_LOG_GET_OPTION, fmt, ##__VA_ARGS__)
 /**
  * @def IMP_LOG_DBG
- * DEBUG Interface d'impression hiérarchique 
+ * DEBUG Hierarchical printing interface 
  */
 #define IMP_LOG_DBG(tag, fmt, ...)		IMP_LOG(tag, IMP_LOG_LEVEL_DEBUG, IMP_LOG_GET_OPTION, fmt, ##__VA_ARGS__)
 /**
  * @def IMP_LOG_INFO
- * INFO Interface d'impression hiérarchique 
+ * INFO Hierarchical printing interface 
  */
 #define IMP_LOG_INFO(tag, fmt, ...)		IMP_LOG(tag, IMP_LOG_LEVEL_INFO, IMP_LOG_GET_OPTION, fmt, ##__VA_ARGS__)
 /**
  * @def IMP_LOG_WAR
- * WARN Interface d'impression hiérarchique 
+ * WARN Hierarchical printing interface 
  */
 #define IMP_LOG_WARN(tag, fmt, ...)		IMP_LOG(tag, IMP_LOG_LEVEL_WARN, IMP_LOG_GET_OPTION, fmt, ##__VA_ARGS__)
 /**
  * @def IMP_LOG_ERR
- * ERROR Interface d'impression hiérarchique 
+ * ERROR Hierarchical printing interface 
  */
 #define IMP_LOG_ERR(tag, fmt, ...)		IMP_LOG(tag, IMP_LOG_LEVEL_ERROR, IMP_LOG_GET_OPTION, fmt, ##__VA_ARGS__)
 /**
  * @def IMP_LOG_FATAL
- * FATAL Interface d'impression hiérarchique 
+ * FATAL Hierarchical printing interface 
  */
 #define IMP_LOG_FATAL(tag, fmt, ...)		IMP_LOG(tag, IMP_LOG_LEVEL_FATAL, IMP_LOG_GET_OPTION, fmt, ##__VA_ARGS__)
 /**
  * @def IMP_LOG_SILENT
- * SILENT Interface d'impression hiérarchique 
+ * SILENT Hierarchical printing interface 
  */
 #define IMP_LOG_SILENT(tag, fmt, ...)		IMP_LOG(tag, IMP_LOG_LEVEL_SILENT, IMP_LOG_GET_OPTION, fmt, ##__VA_ARGS__)
 

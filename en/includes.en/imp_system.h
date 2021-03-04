@@ -18,7 +18,7 @@ extern "C"
 
 /**
  * @file
- * IMP Fichier d'en-tête du module système 
+ * IMP System module header file 
  */
 
 /**
@@ -28,71 +28,71 @@ extern "C"
 /**
  * @defgroup IMP_System
  * @ingroup imp
- * @brief  Module de contrôle du système ， comprendre IMP Fonctions de base et fonctions associées liées entre les modules 
- * @section concept 1  Concepts associés 
- *  Le contrôle du système réalise principalement la connexion de divers modules ， Définissez la fonction du flux de données. Voici quelques concepts importants: 
+ * @brief  System control module ， include IMP Basic functions and related functions bound between modules 
+ * @section concept 1  Related concepts 
+ *  System control mainly realizes the connection of various modules ， Define the function of the data flow. The following are some important concepts: 
  *
  * @subsection device 1.1 Device
- * Device C'est une collection qui complète une certaine fonction (de classe). Tel que FrameSource Terminer la sortie des données de la source vidéo ，Encoder Remplissez la fonction de codage vidéo ou de codage d'image. ici FrameSource avec Encoder Seulement Device le concept de. \n
- * Device Juste un concept de collection ， Ce n'est pas un nœud de flux de données spécifique. 
+ * Device It is a collection to complete a certain (class) function. Such as FrameSource Complete the output of video source data ，Encoder Complete the function of video coding or image coding. here FrameSource with Encoder Just Device the concept of. \n
+ * Device Just a collection concept ， It is not a specific data flow node. 
  *
  * @subsection group 1.2 Group
- * Group C'est la plus petite unité d'entrée de données. Une Device Il peut y avoir plusieurs Group， Chaque Group Une seule entrée de données peut être reçue. Group Peut avoir plusieurs sorties ( @ref output  ). \n
- * Group C'est aussi un conteneur pour des «fonctions» spécifiques ， Tu peux voir @ref channel  Une partie de l'explication. 
+ * Group It is the smallest unit of data input. One Device There can be multiple Group， Each Group Only one data input can be received. Group Can have multiple outputs ( @ref output  ). \n
+ * Group It's also a container for specific \"functions\" ， You can see @ref channel  Part of the explanation. 
  *
  * @subsection output 1.3 Output
- * Output Est un Group La plus petite unité de sortie de données pour un canal. Une Group La plus petite unité de sortie de données pour un canal. Une Output， La plus petite unité de sortie de données pour un canal. Une Output Un seul canal de données peut être émis. 
+ * Output Is an Group The smallest unit of data output for one channel. One Group The smallest unit of data output for one channel. One Output， The smallest unit of data output for one channel. One Output Only one channel of data can be output. 
  *
  * @subsection cell 1.4 Cell
- * Cell Se réfère à contient Device [[[ Group [[[ Output Collecte d'informations. À @ref IMPCell La structure des données est présentée. \n
- * Cell Principalement utilisé Bind ( @ref bind ). selon Device ). selon Group ). selon Output Définition ，Output En tant que nœud de sortie de données ， et Group En tant que nœud d'entrée de données. \n
- *  dans Bind Noeud de sortie des données de temps Cell Index à la sortie Output， Nœud de saisie de données Cell Index à saisir Group (Par conséquent, en tant qu'entrée de données Cell，Output Est une valeur dénuée de sens). 
+ * Cell Refers to contains Device [[[ Group [[[ Output Collection of information. To @ref IMPCell The data structure is presented. \n
+ * Cell Mainly used Bind ( @ref bind ). according to Device ). according to Group ). according to Output Definition ，Output As data output node ， and Group As the data input node. \n
+ *  in Bind Time data output node Cell Index to output Output， Data entry node Cell Index to input Group (Therefore as data input Cell，Output Is a meaningless value). 
  *
  * @subsection channel 1.5 Channel
- * Channel Fait généralement référence à une seule unité fonctionnelle ，Channel Fait généralement référence à une seule unité fonctionnelle Create Temps ( Instancier ) Lorsque la fonction spécifique est attribuée. \n
- *  Par exemple: \n
- * *  pour Encoder， Une Channel Complétez le chemin H264 Code ou JPEG Fonction de codage ， Fonction de codage spécifique ( Types de ， paramètre ) Spécifié lors de la création du canal 
- * *  Spécifié lors de la création du canal IVS， Spécifié lors de la création du canal Channel Compléter la fonction d'un algorithme spécifique ， Les paramètres de type d'algorithme spécifiques sont spécifiés lors de la création du canal 
- * *  Les paramètres de type d'algorithme spécifiques sont spécifiés lors de la création du canal OSD， Avoir le même Channel Concepts similaires Region， Concepts similaires Region Est une zone de chevauchement spécifique ， Peut être PIC( image )，COVER( Occlure ) Attendre 
- * *  Attendre FrameSource， Attendre Channel Sortie d'une image originale ，FrameSource de Channel Est en fait Group
+ * Channel Usually refers to a single function unit ，Channel Usually refers to a single function unit Create Time ( Instantiate ) When the specific function is assigned. \n
+ *  E.g: \n
+ * *  for Encoder， One Channel Complete the way H264 Code or JPEG Coding function ， Specific coding function ( Types of ， parameter ) Specified at channel creation 
+ * *  Specified at channel creation IVS， Specified at channel creation Channel Complete the function of a specific algorithm ， The specific algorithm type parameters are specified when the channel is created 
+ * *  The specific algorithm type parameters are specified when the channel is created OSD， Have the same Channel Similar concepts Region， Similar concepts Region Is a specific overlapping area ， Can be PIC( image )，COVER( Occlude ) Wait 
+ * *  Wait FrameSource， Wait Channel Output one original image ，FrameSource of Channel Is actually Group
  *
- * Channel En tant qu'unité fonctionnelle ， ont généralement besoin Register À Group dans (FrameSource sauf )， Pour recevoir les données. Channel Inscrivez-vous à Group Milieu et arrière ， Aura Group Données saisies. \n
- *  différent Device différent Group peut Register peut Channel Les chiffres sont également différents. 
+ * Channel As a functional unit ， usually need Register To Group in (FrameSource except )， To receive the data. Channel Register to Group Middle and rear ， Will get Group Entered data. \n
+ *  different Device different Group can Register can Channel The numbers are also different. 
  *
- * @section bind 2  Liaison de module ( Bind ) 
- *  Deux Group après Bind Après connexion ， la source Group Les données seront automatiquement envoyées à la destination Group . \n
- *  en raison de Group Est la plus petite unité d'entrée de données ，Output Est la plus petite unité de sortie de données ， donc IMP_System_Bind(IMPCell *srcCell, IMPCell *dstCell) Des deux paramètres srcCell Des deux paramètres deviceID, groupID, outputID C'est vaild 
- *  C'est vaild dstCell seul deviceID seul groupID efficace ，outputID Comme la saisie de données n'a pas de sens. \n
- *  L'image ci-dessous est un simple Bind exemple de. 
+ * @section bind 2  Module binding ( Bind ) 
+ *  Two Group after Bind After connection ， source Group The data will be automatically sent to the destination Group . \n
+ *  due to Group Is the smallest unit of data input ，Output Is the smallest unit of data output ， therefore IMP_System_Bind(IMPCell *srcCell, IMPCell *dstCell) Of the two parameters srcCell Of the two parameters deviceID, groupID, outputID It is vaild 
+ *  It is vaild dstCell only deviceID only groupID effective ，outputID As data input is meaningless. \n
+ *  The picture below is a simple Bind example of. 
  * @image html system_bind0.jpg
- *  Dans l'image ci-dessus ， Atteint FrameSource Une sortie Bind Une sortie Encoder un des Group un des 
- *  un des Encoder Group un des Register J'en ai deux Channel， J'en ai deux Encoder Group Ont H264 Ont JPEG Deux sorties. 
- *  Code de référence: 
+ *  In the picture above ， Achieved FrameSource One output Bind One output Encoder one of Group one of 
+ *  one of Encoder Group one of Register Got two Channel， Got two Encoder Group Have H264 Have JPEG Two outputs. 
+ *  Reference Code: 
  * @code
  * IMPCell fs_chn0 = {DEV_ID_FS, 0, 0};			//FrameSource deviceID:DEV_ID_FS groupID:0 outputID:0
- * IMPCell enc_grp0 = {DEV_ID_ENC, 0, 0};		//ENC deviceID:DEV_ID_ENC groupID:0 outputID:0,  Ici enc_grp0 Le troisième paramètre n'a pas de sens. 
+ * IMPCell enc_grp0 = {DEV_ID_ENC, 0, 0};		//ENC deviceID:DEV_ID_ENC groupID:0 outputID:0,  Here enc_grp0 The third parameter is meaningless. 
  * int ret = IMP_System_Bind(&fs_chn0, &enc_grp0);
  * if (ret < 0)
  *     printf("Bind FrameSource Channel0 and Encoder Group0 failed\n");
  * @endcode
- * Bind Concaténer le flux de données du système ， Selon les différentes exigences fonctionnelles du produit ，Bind La stratégie peut également être différente. 
+ * Bind Concatenate the data stream of the system ， According to different product functional requirements ，Bind The strategy may also be different. 
  *
- *  Ce qui suit est une application de produit de flux de code à double canal typique Bind Diagramme schématique: 
+ *  The following is a typical dual-channel code stream product application Bind Schematic diagram: 
  *
  * @image html typical_application.png
  *
- *  Dans l'image ci-dessus ，FrameSource Il y a deux sorties ， Respectivement sont Channel0 Intégrer (1280x720) Intégrer Channel1 Flux esclave (640x360) Flux esclave \n
- * *  Intégrer: FrameSource Intégrer: Channel0 Bind OSD Group.0，OSD Group.0 Bind Encoder Group.0 . parmi eux: 
- *   * OSD Group.0  Enregistré deux Region， Utilisé pour afficher respectivement les informations d'horodatage et de chaîne 
- *   * Encoder Group.0  Utilisé pour afficher respectivement les informations d'horodatage et de chaîne Channel， Séparément H264 Encodage et JPEG codage. parmi eux JPEG Si la taille d'image du canal d'encodage n'est pas égale au réglage d'entrée ( FrameSource Si la taille d'image du canal d'encodage n'est pas égale au réglage d'entrée ( Channel0 Si la taille d'image du canal d'encodage n'est pas égale au réglage d'entrée ( ， Ensuite, il zoomera (Software at T10)， Atteindre l'objectif de capturer n'importe quelle résolution 
- * *  À partir du flux de code: FrameSource À partir du flux de code: Channel1 Bind IVS Group.0，IVS Group.0 Bind OSD Group.1，OSD Group.1 Bind Encoder Group.1 À partir du flux de code: 
- *   * IVS Group.0  Enregistré un Channel， Utilisé pour la détection de mouvement 
- *   * OSD Group.1  Utilisé pour la détection de mouvement Region， Utilisé pour la détection de mouvement 
- *   * Encoder Group.1  Utilisé pour la détection de mouvement Channel， monter H264 codage 
- *   *  Un point à noter ici est ，IVS Bind  Un point à noter ici est  OSD antérieur à ， En raison de OSD L'horodatage peut provoquer IVS Mauvaise appréciation de la détection de mouvement 
+ *  In the picture above ，FrameSource There are two outputs ， Respectively are Channel0 Main stream (1280x720) Main stream Channel1 Slave stream (640x360) Slave stream \n
+ * *  Main stream: FrameSource Main stream: Channel0 Bind OSD Group.0，OSD Group.0 Bind Encoder Group.0 . among them: 
+ *   * OSD Group.0  Registered two Region， Used to display timestamp and string information respectively 
+ *   * Encoder Group.0  Used to display timestamp and string information respectively Channel， Separately H264 Encoding and JPEG coding. among them JPEG If the image size of the encoding channel is not equal to the input setting ( FrameSource If the image size of the encoding channel is not equal to the input setting ( Channel0 If the image size of the encoding channel is not equal to the input setting ( ， Then it will zoom (Software at T10)， Achieve the purpose of capturing any resolution 
+ * *  From the code stream: FrameSource From the code stream: Channel1 Bind IVS Group.0，IVS Group.0 Bind OSD Group.1，OSD Group.1 Bind Encoder Group.1 From the code stream: 
+ *   * IVS Group.0  Registered one Channel， Used for motion detection 
+ *   * OSD Group.1  Used for motion detection Region， Used for motion detection 
+ *   * Encoder Group.1  Used for motion detection Channel， get on H264 coding 
+ *   *  One point worth noting here is ，IVS Bind  One point worth noting here is  OSD prior to ， Because of OSD Timestamp may cause IVS Misjudgment of motion detection 
  *
- *  Mauvaise appréciation de la détection de mouvement \n
- *  Flux de données du flux principal Bind : 
+ *  Misjudgment of motion detection \n
+ *  Main stream data stream Bind : 
  * @code
  * IMPCell fs_chn0 = {DEV_ID_FS, 0, 0};
  * IMPCell osd_grp0 = {DEV_ID_OSD, 0, 0};
@@ -105,7 +105,7 @@ extern "C"
  * if (ret < 0)
  *     printf("Bind OSD Group0 and Encoder Group0 failed\n");
  * @endcode
- *  Flux de données du flux de code Bind Flux de données du flux de code 
+ *  Data stream from code stream Bind Data stream from code stream 
  * @code
  * IMPCell fs_chn1_output0 = {DEV_ID_FS, 1, 0};
  * IMPCell ivs_grp0 = {DEV_ID_IVS, 0, 0};
@@ -126,96 +126,96 @@ extern "C"
  *
  * @endcode
  *
- * @attention  Suggérer tout Bind L'opération est effectuée lorsque le système est initialisé. 
- * @attention  L'opération est effectuée lorsque le système est initialisé. FrameSource Après avoir activé Bind Après avoir activé UnBind L'opération ne peut pas être appelée dynamiquement ， avoir besoin Disable FrameSource Peut être fait plus tard UnBind Peut être fait plus tard 
- * @attention DestroyGroup En être UnBind Cela ne peut être fait qu'après. 
+ * @attention  Suggest all Bind The operation is carried out when the system is initialized. 
+ * @attention  The operation is carried out when the system is initialized. FrameSource After enabling Bind After enabling UnBind Operation cannot be called dynamically ， need Disable FrameSource Can be done later UnBind Can be done later 
+ * @attention DestroyGroup To be in UnBind It can only be done afterwards. 
  *
- * Bind Peut être une structure arborescente ， La figure suivante est un exemple: 
+ * Bind Can be a tree structure ， The following figure is an example: 
  * @image html different_output.png
- *  La figure suivante est un exemple: ，FrameSource La figure suivante est un exemple: Channel 1(Group.1) Backend respectivement Bind Backend respectivement Group， Séparément de Output.0 Séparément de  Output.1 Des données de sortie. Dans ce cas Bind L'avantage est ，IVS Group Avec OSD Group.1 Travaillez en parallèle. 
- * @attention  Dans cet exemple Bind Les moyens peuvent affecter la détection de mouvement ordinaire ， Par conséquent, cette méthode n'est pas recommandée pour la détection de mouvement normale. 
+ *  The following figure is an example: ，FrameSource The following figure is an example: Channel 1(Group.1) Backend respectively Bind Backend respectively Group， Separately from Output.0 Separately from  Output.1 Output Data. In this case Bind The benefit is ，IVS Group With OSD Group.1 Work in parallel. 
+ * @attention  In this example Bind Ways may affect ordinary motion detection ， Therefore, this method is not recommended for normal motion detection. 
  *
  * @{
  */
 
 /**
- * IMP Définition du numéro de version du système .
+ * IMP System version number definition .
  */
 typedef struct {
-	char aVersion[64];	/**< IMP Numéro de version du système  */
+	char aVersion[64];	/**< IMP System version number  */
 } IMPVersion;
 
 /**
  * @fn int IMP_System_Init(void)
  *
- * IMP initialisation du système .
+ * IMP system initialization .
  *
- * @param  non .
+ * @param  no .
  *
- * @retval 0  Succès .
- * @retval  non- 0  échec .
+ * @retval 0  success .
+ * @retval  non- 0  failure .
  *
- * @remarks  ce API Après l'appel, la structure de données de base sera initialisée ， Mais n'initialise pas l'unité matérielle .
+ * @remarks  this API After the call, the basic data structure will be initialized ， But will not initialize the hardware unit .
  *
- * @attention  Mais n'initialise pas l'unité matérielle IMP Vous devez appeler cette interface pour l'initialiser avant toute opération de .
+ * @attention  But will not initialize the hardware unit IMP You must call this interface to initialize before any operation of .
  */
 int IMP_System_Init(void);
 
 /**
  * @fn int IMP_System_Exit(void)
  *
- * IMP Désinitialisation du système .
+ * IMP System deinitialization .
  *
- * @param  Désinitialisation du système .
+ * @param  System deinitialization .
  *
- * @retval 0  Désinitialisation du système .
- * @retval  Désinitialisation du système 0  Désinitialisation du système .
+ * @retval 0  System deinitialization .
+ * @retval  System deinitialization 0  System deinitialization .
  *
- * @remarks  Cette fonction sera libérée après l'appel IMP Toute la mémoire et les poignées ， Et fermez l'unité matérielle .
+ * @remarks  This function will be released after calling IMP All memory and handles ， And close the hardware unit .
  *
- * @attention  Appeler ça API Arrière ， Pour utiliser à nouveau IMP Vous devez le refaire IMP Vous devez le refaire .
+ * @attention  Calling this API Rear ， To use again IMP You need to do it again IMP You need to do it again .
  */
 int IMP_System_Exit(void);
 
 /**
  * @fn int64_t IMP_System_GetTimeStamp(void)
  *
- *  obtenir IMP Horodatage du système ， L'unité est en microsecondes. 
+ *  obtain IMP System timestamp ， The unit is microseconds. 
  *
- * @param  non. 
+ * @param  no. 
  *
- * @retval  temps (usec)
+ * @retval  time (usec)
  *
- * @remarks  L'horodatage est automatiquement initialisé après l'initialisation du système. L'horodatage devient invalide après la désinitialisation du système. 
+ * @remarks  The time stamp is automatically initialized after the system is initialized. The timestamp becomes invalid after the system is deinitialized. 
  *
- * @attention  L'horodatage est automatiquement initialisé après l'initialisation du système. L'horodatage devient invalide après la désinitialisation du système. 
+ * @attention  The time stamp is automatically initialized after the system is initialized. The timestamp becomes invalid after the system is deinitialized. 
  */
 int64_t IMP_System_GetTimeStamp(void);
 
 /**
  * @fn int IMP_System_RebaseTimeStamp(int64_t basets)
  *
- *  Installation IMP Installation ， Installation 
+ *  Set up IMP Set up ， Set up 
  *
- * @param[in] basets  Temps de base. 
+ * @param[in] basets  Base time. 
  *
- * @retval 0  Temps de base. .
- * @retval  Temps de base. 0  Temps de base. .
+ * @retval 0  Base time. .
+ * @retval  Base time. 0  Base time. .
  *
- * @remarks  Temps de base. 
+ * @remarks  Base time. 
  *
- * @attention  Temps de base. 
+ * @attention  Base time. 
  */
 int IMP_System_RebaseTimeStamp(int64_t basets);
 
 /**
  * @fn uint32_t IMP_System_ReadReg32(uint32_t u32Addr)
  *
- *  Lire 32 La valeur du registre de bits. 
+ *  Read 32 The value of the bit register. 
  *
- * @param[in] regAddr  L'adresse physique du registre. 
+ * @param[in] regAddr  The physical address of the register. 
  *
- * @retval  La valeur du registre ( 32 Bit) 
+ * @retval  The value of the register ( 32 Bit) 
  *
  * @remarks  Bit) 
  *
@@ -226,103 +226,103 @@ uint32_t IMP_System_ReadReg32(uint32_t regAddr);
 /**
  * @fn void IMP_System_WriteReg32(uint32_t regAddr, uint32_t value)
  *
- *  à 32 Écrivez la valeur dans le registre de bits. 
+ *  to 32 Write the value in the bit register. 
  *
- * @param[in] regAddr  Écrivez la valeur dans le registre de bits. 
- * @param[in] value  La valeur à écrire. 
+ * @param[in] regAddr  Write the value in the bit register. 
+ * @param[in] value  The value to be written. 
  *
- * @retval  La valeur à écrire. 
+ * @retval  The value to be written. 
  *
- * @remarks  La valeur à écrire. 
+ * @remarks  The value to be written. 
  *
- * @attention  Veuillez faire attention d'appeler ceci avant que vous ne soyez pas clair sur la signification du registre API， Sinon, des erreurs système peuvent survenir. 
+ * @attention  Please be careful to call this before you are not clear about the meaning of the register API， Otherwise, system errors may result. 
  */
 void IMP_System_WriteReg32(uint32_t regAddr, uint32_t value);
 
 /**
  * @fn int IMP_System_GetVersion(IMPVersion *pstVersion)
  *
- *  Obtenir IMP Obtenir .
+ *  Obtain IMP Obtain .
  *
- * @param[out] pstVersion IMP Pointeur de structure du numéro de version du système .
+ * @param[out] pstVersion IMP System version number structure pointer .
  *
- * @retval 0  Pointeur de structure du numéro de version du système .
- * @retval  Pointeur de structure du numéro de version du système 0  Pointeur de structure du numéro de version du système .
+ * @retval 0  System version number structure pointer .
+ * @retval  System version number structure pointer 0  System version number structure pointer .
  *
- * @remarks  Pointeur de structure du numéro de version du système .
+ * @remarks  System version number structure pointer .
  *
- * @attention  Pointeur de structure du numéro de version du système .
+ * @attention  System version number structure pointer .
  */
 int IMP_System_GetVersion(IMPVersion *pstVersion);
 
 /**
  * @fn const char* IMP_System_GetCPUInfo(void)
  *
- *  Pointeur de structure du numéro de version du système CPU Informations sur le modèle .
+ *  System version number structure pointer CPU Model information .
  *
- * @param  Informations sur le modèle .
+ * @param  Model information .
  *
- * @retval CPU Chaîne de modèle .
+ * @retval CPU Model string .
  *
- * @remarks  La valeur de retour est CPU Chaîne de type de modèle , Par exemple pour T10 Dire , Dire "T10" et "T10-Lite".
+ * @remarks  The return value is CPU Model type string , For example for T10 Say , Say "T10" and "T10-Lite".
  *
- * @attention  et .
+ * @attention  and .
  */
 const char* IMP_System_GetCPUInfo(void);
 
 /**
  * @fn int IMP_System_Bind(IMPCell *srcCell, IMPCell *dstCell)
  *
- *  Source de liaison Cell Et but Cell.
+ *  Binding source Cell And purpose Cell.
  *
- * @param[in] srcCell  Et but Cell aiguille .
- * @param[in] dstCell  but Cell but .
+ * @param[in] srcCell  And purpose Cell pointer .
+ * @param[in] dstCell  purpose Cell purpose .
  *
- * @retval 0  but .
- * @retval  but 0  but .
+ * @retval 0  purpose .
+ * @retval  purpose 0  purpose .
  *
- * @remarks  selon Device selon Group selon Output le concept de ， le concept de Device Il peut y avoir plus d'un Group， Il peut y avoir plus d'un Group Il peut y avoir plus d'un Output，
- * Group Comme Device Interface d'entrée ， Interface d'entrée Output Interface d'entrée Device Interface de sortie . Ainsi, la liaison produit en fait Device De 
- *  UNE Output Connectez-vous à l'entrée Device Une partie de Group sur .
- * @remarks  Une fois la relation de liaison réussie ， Une fois la relation de liaison réussie Cell(Output) Les données générées seront automatiquement transmises à la destination Cell(Group).
+ * @remarks  according to Device according to Group according to Output the concept of ， the concept of Device There may be more than one Group， There may be more than one Group There may be more than one Output，
+ * Group As Device Input interface ， Input interface Output Input interface Device Output interface . So the binding actually outputs Device Of 
+ *  A Output Connect to input Device Some of Group on .
+ * @remarks  After the binding relationship is successful ， After the binding relationship is successful Cell(Output) The generated data will be automatically transmitted to the destination Cell(Group).
  *
- * @attention  Les données générées seront automatiquement transmises à la destination 
+ * @attention  The generated data will be automatically transmitted to the destination 
  */
 int IMP_System_Bind(IMPCell *srcCell, IMPCell *dstCell);
 
 /**
  * @fn int IMP_System_UnBind(IMPCell *srcCell, IMPCell *dstCell)
  *
- *  De-source Cell De-source Cell Obligatoire .
+ *  De-source Cell De-source Cell Binding .
  *
- * @param[in] srcCell  Obligatoire Cell Obligatoire .
- * @param[in] dstCell  Obligatoire Cell Obligatoire .
+ * @param[in] srcCell  Binding Cell Binding .
+ * @param[in] dstCell  Binding Cell Binding .
  *
  *
- * @retval 0  Obligatoire .
- * @retval  Obligatoire 0  Obligatoire .
+ * @retval 0  Binding .
+ * @retval  Binding 0  Binding .
  *
- * @remarks  Obligatoire .
+ * @remarks  Binding .
  *
- * @attention  Obligatoire 
+ * @attention  Binding 
  */
 int IMP_System_UnBind(IMPCell *srcCell, IMPCell *dstCell);
 
 /**
  * @fn int IMP_System_GetBindbyDest(IMPCell *dstCell, IMPCell *srcCell)
  *
- *  Soyez lié dans le but Cell Source de Cell informations .
+ *  Get bound in purpose Cell Source of Cell information .
  *
- * @param[in] dstCell  informations Cell informations .
- * @param[out] srcCell  informations Cell informations .
+ * @param[in] dstCell  information Cell information .
+ * @param[out] srcCell  information Cell information .
  *
  *
- * @retval 0  informations .
- * @retval  informations 0  informations .
+ * @retval 0  information .
+ * @retval  information 0  information .
  *
- * @remarks  informations .
+ * @remarks  information .
  *
- * @attention  informations 
+ * @attention  information 
  */
 int IMP_System_GetBindbyDest(IMPCell *dstCell, IMPCell *srcCell);
 

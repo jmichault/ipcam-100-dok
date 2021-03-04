@@ -20,61 +20,61 @@ extern "C"
 
 /**
  * @file
- * IMP IVS  Module de détection de mouvement 
+ * IMP IVS  Motion detection module 
  */
 
 /**
  * @defgroup MoveDetection
  * @ingroup IMP_IVS
- * @brief  Interface de détection de mouvement 
+ * @brief  Motion detection interface 
  * @{
  */
 
 /**
- *  Structure d'entrée de l'algorithme de détection de mouvement 
+ *  Input structure of motion detection algorithm 
  */
 typedef struct {
-	int             sense[IMP_IVS_MOVE_MAX_ROI_CNT];   /**<  Sensibilité de la détection de mouvement ， La plage est 0-4 */
-	int             skipFrameCnt;                      /*<  Nombre de détections toutes les deux images  */
-	IMPFrameInfo    frameInfo;                         /**<  Informations sur la taille du cadre , Juste besoin de configurer width avec height */
-	IMPRect         roiRect[IMP_IVS_MOVE_MAX_ROI_CNT]; /*<  Besoin d'être détecté roi Informations de coordonnées de zone  */
-	int             roiRectCnt;                        /*<  Informations de coordonnées de zone roi Nombre de régions ， Nombre de régions 0-4， Si 0 : Pas de détection ，1 : Détection roiRect 0
-														  surface ，2 , Détection roiRect 0,1 , Détection ，3 , Détection roiRect 0,1,2 , Détection ， Etc  */
+	int             sense[IMP_IVS_MOVE_MAX_ROI_CNT];   /**<  Sensitivity of motion detection ， Range is 0-4 */
+	int             skipFrameCnt;                      /*<  Number of detections every other frame  */
+	IMPFrameInfo    frameInfo;                         /**<  Frame size information , Just need to configure width with height */
+	IMPRect         roiRect[IMP_IVS_MOVE_MAX_ROI_CNT]; /*<  Need to be detected roi Area coordinate information  */
+	int             roiRectCnt;                        /*<  Area coordinate information roi Number of regions ， Number of regions 0-4， If 0 : No detection ，1 : Detection roiRect 0
+														  area ，2 , Detection roiRect 0,1 , Detection ，3 , Detection roiRect 0,1,2 , Detection ， And so on  */
 } IMP_IVS_MoveParam;
 // I suppose it has something to do with this sequence of bytes which is located in appfs/etc/sensor/jxf22move.txt:
 	// 50 50 14 26 05 2b 3c 96 28 73 14 32 0f 28
 
 /*
- *  La structure de sortie de l'algorithme de détection de mouvement 
+ *  The output structure of the motion detection algorithm 
  */
 typedef struct {
-	int retRoi[IMP_IVS_MOVE_MAX_ROI_CNT];				/*<  Résultat du mouvement de détection de zone ， contre roiRect Correspond strictement aux informations de coordonnées  */
+	int retRoi[IMP_IVS_MOVE_MAX_ROI_CNT];				/*<  Area detection movement result ， versus roiRect Strictly correspond to coordinate information  */
 } IMP_IVS_MoveOutput;
 
 /**
- *  Créer des ressources d'interface de détection de mouvement 
+ *  Create motion detection interface resources 
  *
  * @fn IMPIVSInterface *IMP_IVS_CreateMoveInterface(IMP_IVS_MoveParam *param);
  *
- * @param[in] param  Paramètres de structure d'entrée de l'algorithme de détection de mouvement 
+ * @param[in] param  Input structure parameters of motion detection algorithm 
  *
- * @retval  non- NULL  Succès , Renvoie la poignée du pointeur de l'interface de l'algorithme de détection de mouvement 
- * @retval NULL  échec 
+ * @retval  non- NULL  success , Returns the pointer handle of the motion detection algorithm interface 
+ * @retval NULL  failure 
  *
- * @attention  non 
+ * @attention  no 
  */
 IMPIVSInterface *IMP_IVS_CreateMoveInterface(IMP_IVS_MoveParam *param);
 
 /**
- *  Détruire les ressources de l'interface de détection de mouvement 
+ *  Destroy motion detection interface resources 
  *
  * @fn void IMP_IVS_DestroyMoveInterface(IMPIVSInterface *moveInterface);
  *
- * @param[in] moveInterface  Poignée de pointeur d'interface d'algorithme de détection de mouvement 
+ * @param[in] moveInterface  Motion detection algorithm interface pointer handle 
  *
- * @retval  Aucune valeur de retour 
+ * @retval  No return value 
  *
- * @attention  Aucune valeur de retour 
+ * @attention  No return value 
  */
 void IMP_IVS_DestroyMoveInterface(IMPIVSInterface *moveInterface);
 

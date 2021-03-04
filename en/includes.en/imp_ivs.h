@@ -26,26 +26,26 @@ extern "C"
 /**
  * @defgroup IMP_IVS
  * @ingroup imp
- * @brief IVS Interface universelle d'analyse intelligente API
+ * @brief IVS Intelligent analysis universal interface API
  *
- * @section concept 1  Concepts associés 
- * IMP IVS  par IVS Interface universelle API Appel instancié IMPIVSInterface Pour intégrer des algorithmes d'analyse intelligents dans SDK Analyse entrante SDK milieu frame image. 
+ * @section concept 1  Related concepts 
+ * IMP IVS  by IVS Universal interface API Call instantiated IMPIVSInterface To embed intelligent analysis algorithms into SDK Incoming analysis SDK middle frame image. 
  *
  * @subsection IMPIVSInterface 1.1 IMPIVSInterface
- * IMPIVSInterface  Interface d'algorithme général ， L'algorithme spécifique implémente cette interface et la transmet à IMP IVS Atteindre à SDK Le but de l'exécution d'algorithmes spécifiques dans. \n
- *  Une channel Il n'y a et il n'y a qu'un transporteur pour une seule instance d'algorithme ， L'implémentation spécifique de l'interface de l'algorithme général doit être transmise au channel Capacité à SDK Exécutez l'algorithme dans. 	\n
- * IMPIVSInterface  membre param Fonction membre init Paramètres.  \n
- * IMP_IVS Sera passé à la fonction membre ProcessAsync Paramétrique frame Verrou externe ，ProcessAsync Doit être épuisé frame Appeler après IMP_IVS_ReleaseData libéré frame， Afin d'éviter une impasse. 
+ * IMPIVSInterface  General algorithm interface ， The specific algorithm implements this interface and passes it to IMP IVS Reach at SDK The purpose of running specific algorithms in. \n
+ *  One channel There is and is only a carrier for a single algorithm instance ， The specific implementation of the general algorithm interface must be passed to the specific channel Ability in SDK Run the algorithm in. 	\n
+ * IMPIVSInterface  member param Member function init Parameters.  \n
+ * IMP_IVS Will be passed to the member function ProcessAsync Parametric frame External lock ，ProcessAsync Must be used up frame Call after IMP_IVS_ReleaseData freed frame， In order to avoid deadlock. 
  *
  * @section ivs_usage 2  Instructions 
- *  Prenons l'exemple de l'algorithme de détection de mouvement ， Voir l'implémentation spécifique de la fonction sample-move_c.c déposer \n
- * step.1  Initialiser le système ， Vous pouvez appeler directement l'exemple sample_system_init() fonction. \n
- *  L'application entière ne peut initialiser le système qu'une seule fois ， Si initialisé avant ， Il n'est pas nécessaire de réinitialiser à nouveau. \n
- * step.2  initialisation framesource \n
- *  Si l'algorithme utilisé framesource Chaîne créée ， Utilisez simplement le canal créé directement. \n
- *  Utilisez simplement le canal créé directement. framesource Chaîne non créée ， Vous pouvez appeler le sample_framesource_init(IVS_FS_CHN, &fs_chn_attr) Créez-le. \n
- * step.3  créer ivs Groupe de canaux d'algorithme spécifique. \n
- *  Plusieurs algorithmes peuvent partager un groupe de canaux ， Vous pouvez également utiliser des groupes de canaux séparément ， Pièces spécifiques sample_ivs_move_init() \n
+ *  Take motion detection algorithm as an example ， See the specific implementation of the function sample-move_c.c file \n
+ * step.1  Initialize the system ， You can directly call the example sample_system_init() function. \n
+ *  The entire application can only initialize the system once ， If initialized before ， There is no need to initialize again. \n
+ * step.2  initialization framesource \n
+ *  If the algorithm used framesource Channel created ， Just use the created channel directly. \n
+ *  Just use the created channel directly. framesource Channel not created ， You can call the sample_framesource_init(IVS_FS_CHN, &fs_chn_attr) Create it. \n
+ * step.3  create ivs Specific algorithm channel group. \n
+ *  Multiple algorithms can share a channel group ， You can also use channel groups separately ， Specific pieces sample_ivs_move_init() \n
  * @code
  * int sample_ivs_move_init(int grp_num)
  * {
@@ -59,7 +59,7 @@ extern "C"
  *		return 0;
  * }
  * @endcode
- * step.4  Lier le groupe de canaux de l'algorithme et framesource Groupe de canaux 
+ * step.4  Bind algorithm channel group and framesource Channel group 
  * @code
  *	IMPCell framesource_cell = {DEV_ID_FS, IVS_FS_CHN, 0};
  *	IMPCell ivs_cell = {DEV_ID_IVS, 0, 0};
@@ -69,7 +69,7 @@ extern "C"
  *		return -1;
  *	}
  * @endcode
- * step.5  Commencez framesource Et algorithme. Il est recommandé que le numéro de canal de l'algorithme soit le même ， Pour qu'il puisse correspondre directement à quel algorithme fonctionne actuellement. 
+ * step.5  start up framesource And algorithm. It is recommended that the algorithm channel number is the same as the algorithm number ， So that it can directly correspond to which algorithm is currently operating. 
  * @code
  *	IMP_FrameSource_SetFrameDepth(0, 0);
  *	ret = sample_framesource_streamon(IVS_FS_CHN);
@@ -84,9 +84,9 @@ extern "C"
  *	}
  * @endcode
  *
- * step.6  Obtenir les résultats de l'algorithme  \n
- * Polling Les résultats, les résultats d'acquisition et les résultats de diffusion doivent correspondre strictement ， Pas d'interruption ;
- *  seul Polling Le résultat est renvoyé correctement ， Les résultats obtenus seront mis à jour ， Sinon, les résultats obtenus sont imprévisibles. 
+ * step.6  Get algorithm results  \n
+ * Polling Results, acquisition results, and release results must correspond strictly ， No interruption ;
+ *  only Polling The result is returned correctly ， The obtained results will be updated ， Otherwise, the results obtained are unpredictable. 
  * @code
  *	for (i = 0; i < NR_FRAMES_TO_IVS; i++) {
  *		ret = IMP_IVS_PollingResult(0, IMP_IVS_DEFAULT_TIMEOUTMS);
@@ -108,7 +108,7 @@ extern "C"
  *		}
  *	}
  * @endcode
- * step.7  Libérer les ressources 
+ * step.7  Release resources 
  * @code
  *  sample_ivs_move_stop(0, inteface);
  *  sample_framesource_streamoff(1);
@@ -121,254 +121,254 @@ extern "C"
  */
 
 /**
- * ivs  Interface commune 
+ * ivs  Common interface 
  */
 typedef struct {
-	void  *param;                             /**<  Paramètres d'entrée  */
-	int   paramSize;                          /**<  Taille de l'espace des paramètres  */
-	IMPPixelFormat pixfmt;                    /**<  L'algorithme nécessite un format de données  */
-	int  (*init)(void *param);                /**<  Fonction d'initialisation  */
-	void (*exit)(void);                       /**<  Fonction de déconnexion  */
-	int  (*PreprocessSync)(IMPFrameInfo *frame);/**<  Fonction de prétraitement ， valeur de retour: 0->frame Pas free,1->frame Déjà free;-1-> Erreur ,frame Erreur free */
-	int  (*ProcessAsync)(IMPFrameInfo *frame);/**<  Fonction de traitement , Doit s'assurer que chaque frame Dans free statut , valeur de retour :0-> Le test réel revient normalement ,1-> La détection de saut de trame revient normalement ,-1-> La détection de saut de trame revient normalement  */
-	int  (*GetResult)(void **result);         /**<  Obtenir des ressources sur les résultats  */
-	int  (*ReleaseResult)(void *result);      /**<  Libérer les ressources de résultats  */
-	int	 (*GetParam)(void *param);            /**<  Obtenir les paramètres de l'algorithme  */
-	int	 (*SetParam)(void *param);            /**<  Définir les paramètres de l'algorithme  */
-	int	 (*FlushFrame)(void);                 /**<  Libération par l'extérieur ProcessAsync Tous mis en cache après l'entrée dans l'algorithme frame */
+	void  *param;                             /**<  Input parameters  */
+	int   paramSize;                          /**<  Parameter space size  */
+	IMPPixelFormat pixfmt;                    /**<  Algorithm requires data format  */
+	int  (*init)(void *param);                /**<  Initialization function  */
+	void (*exit)(void);                       /**<  Logout function  */
+	int  (*PreprocessSync)(IMPFrameInfo *frame);/**<  Preprocessing function ， return value: 0->frame Not free,1->frame Already free;-1-> error ,frame error free */
+	int  (*ProcessAsync)(IMPFrameInfo *frame);/**<  Processing function , Must ensure that each used up frame In free status , return value :0-> Actual test returns normally ,1-> Frame skipping detection returns normally ,-1-> Frame skipping detection returns normally  */
+	int  (*GetResult)(void **result);         /**<  Get result resources  */
+	int  (*ReleaseResult)(void *result);      /**<  Release result resources  */
+	int	 (*GetParam)(void *param);            /**<  Get algorithm parameters  */
+	int	 (*SetParam)(void *param);            /**<  Set algorithm parameters  */
+	int	 (*FlushFrame)(void);                 /**<  Release by outside ProcessAsync All cached after input to the algorithm frame */
 } IMPIVSInterface;
 
 /**
- *  Créer un groupe de canaux 
+ *  Create channel group 
  *
  * @fn int IMP_IVS_CreateGroup(int GrpNum);
  *
- * @param[in] GrpNum IVS Numéro de groupe de canaux correspondant à la fonction 
+ * @param[in] GrpNum IVS Channel group number corresponding to the function 
  *
- * @retval 0  Succès 
- * @retval -1  échec 
+ * @retval 0  success 
+ * @retval -1  failure 
  *
- * @remark  non 
+ * @remark  no 
  *
- * @attention  non 
+ * @attention  no 
  */
 int IMP_IVS_CreateGroup(int GrpNum);
 
 /**
- *  Détruire le groupe de canaux 
+ *  Destroy the channel group 
  *
  * @fn int IMP_IVS_DestroyGroup(int GrpNum);
  *
- * @param[in] GrpNum IVS Détruire le groupe de canaux 
+ * @param[in] GrpNum IVS Destroy the channel group 
  *
- * @retval 0  Détruire le groupe de canaux 
- * @retval -1  Détruire le groupe de canaux 
+ * @retval 0  Destroy the channel group 
+ * @retval -1  Destroy the channel group 
  *
- * @remark  Détruire le groupe de canaux 
+ * @remark  Destroy the channel group 
  *
- * @attention  Détruire le groupe de canaux 
+ * @attention  Destroy the channel group 
  */
 int IMP_IVS_DestroyGroup(int GrpNum);
 /**
- *  Détruire le groupe de canaux IVS Fonction canal correspondant 
+ *  Destroy the channel group IVS Function corresponding channel 
  *
  * @fn int IMP_IVS_CreateChn(int ChnNum, IMPIVSInterface *handler);
  *
- * @param[in] ChnNum  Le numéro de canal 
+ * @param[in] ChnNum  Channel number 
  *
- * @param[in] handler IVS Poignée de fonction 
+ * @param[in] handler IVS Function handle 
  *
- * @retval 0  Poignée de fonction 
- * @retval -1  Poignée de fonction 
+ * @retval 0  Function handle 
+ * @retval -1  Function handle 
  *
- * @remark  Poignée de fonction .
+ * @remark  Function handle .
  *
- * @attention  Poignée de fonction 
+ * @attention  Function handle 
  */
 int IMP_IVS_CreateChn(int ChnNum, IMPIVSInterface *handler);
 
 /**
- *  détruire IVS Le canal correspondant à la poignée de fonction 
+ *  destroy IVS The channel corresponding to the function handle 
  *
  * @fn int IMP_IVS_DestroyChn(int ChnNum);
  *
- * @param[in] ChnNum  Le canal correspondant à la poignée de fonction 
+ * @param[in] ChnNum  The channel corresponding to the function handle 
  *
- * @retval 0  Le canal correspondant à la poignée de fonction 
- * @retval -1  Le canal correspondant à la poignée de fonction 
+ * @retval 0  The channel corresponding to the function handle 
+ * @retval -1  The channel corresponding to the function handle 
  *
- * @remark  Le canal correspondant à la poignée de fonction 
+ * @remark  The channel corresponding to the function handle 
  *
- * @attention  Le canal correspondant à la poignée de fonction 
+ * @attention  The channel corresponding to the function handle 
  */
 int IMP_IVS_DestroyChn(int ChnNum);
 
 /**
- *  Enregistrer la chaîne dans le groupe de chaînes 
+ *  Register channel to channel group 
  *
  * @fn int IMP_IVS_RegisterChn(int GrpNum, int ChnNum);
  *
- * @param[in] GrpNum IVS Enregistrer la chaîne dans le groupe de chaînes 
+ * @param[in] GrpNum IVS Register channel to channel group 
  *
- * @param[in] ChnNum IVS Numéro de canal correspondant à la fonction 
+ * @param[in] ChnNum IVS Channel number corresponding to the function 
  *
- * @retval 0  Numéro de canal correspondant à la fonction 
- * @retval -1  Numéro de canal correspondant à la fonction 
+ * @retval 0  Channel number corresponding to the function 
+ * @retval -1  Channel number corresponding to the function 
  *
- * @remark  Sera numéroté Chnnum Le canal enregistré sous le numéro est Grpnum Groupe de canaux 
+ * @remark  Will be numbered Chnnum The channel registered to the number is Grpnum Channel group 
  *
- * @attention  Groupe de canaux 
+ * @attention  Channel group 
  */
 int IMP_IVS_RegisterChn(int GrpNum, int ChnNum);
 
 /**
- *  Annuler la chaîne du groupe de chaînes 
+ *  Cancel channel from channel group 
  *
  * @fn int IMP_IVS_UnRegisterChn(int ChnNum);
  *
- * @param[in] ChnNum IVS Annuler la chaîne du groupe de chaînes 
+ * @param[in] ChnNum IVS Cancel channel from channel group 
  *
- * @retval 0  Annuler la chaîne du groupe de chaînes 
- * @retval -1  Annuler la chaîne du groupe de chaînes 
+ * @retval 0  Cancel channel from channel group 
+ * @retval -1  Cancel channel from channel group 
  *
- * @remark  Le nombre mineur est Grpnum Le numéro de déconnexion dans le groupe de canaux est Chnnum rayon 
+ * @remark  The minor number is Grpnum The logout number in the channel group is Chnnum aisle 
  *
- * @attention  rayon 
+ * @attention  aisle 
  */
 int IMP_IVS_UnRegisterChn(int ChnNum);
 
 /**
- *  La chaîne commence à recevoir des images 
+ *  Channel starts to receive images 
  *
  * @fn int IMP_IVS_StartRecvPic(int ChnNum);
  *
- * @param[in] ChnNum  La chaîne commence à recevoir des images 
+ * @param[in] ChnNum  Channel starts to receive images 
  *
- * @retval 0  La chaîne commence à recevoir des images 
- * @retval -1  La chaîne commence à recevoir des images 
+ * @retval 0  Channel starts to receive images 
+ * @retval -1  Channel starts to receive images 
  *
- * @remark  Le numéro de canal est Chnnum de IVS Le canal de fonction commence à recevoir des images pour une analyse intelligente 
+ * @remark  The channel number is Chnnum of IVS The function channel starts to receive images for intelligent analysis 
  *
- * @attention  Le canal de fonction commence à recevoir des images pour une analyse intelligente 
+ * @attention  The function channel starts to receive images for intelligent analysis 
  */
 int IMP_IVS_StartRecvPic(int ChnNum);
 
 /**
- *  La chaîne cesse de recevoir des images 
+ *  Channel stops receiving images 
  *
  * @fn int IMP_IVS_StopRecvPic(int ChnNum);
  *
- * @param[in] ChnNum  La chaîne cesse de recevoir des images 
+ * @param[in] ChnNum  Channel stops receiving images 
  *
- * @retval 0  La chaîne cesse de recevoir des images 
- * @retval -1  La chaîne cesse de recevoir des images 
+ * @retval 0  Channel stops receiving images 
+ * @retval -1  Channel stops receiving images 
  *
- * @remark  La chaîne cesse de recevoir des images Chnnum La chaîne cesse de recevoir des images IVS Le canal de fonction cesse de recevoir des images ， Suspendre l'analyse intelligente 
+ * @remark  Channel stops receiving images Chnnum Channel stops receiving images IVS Function channel stops receiving images ， Pause intelligent analysis 
  *
- * @attention  Suspendre l'analyse intelligente 
+ * @attention  Pause intelligent analysis 
  */
 int IMP_IVS_StopRecvPic(int ChnNum);
 
 /**
- *  Blocage pour déterminer s'il peut être obtenu IVS Résultat d'analyse intelligent calculé par fonction 
+ *  Blocking to determine whether it can be obtained IVS Intelligent analysis result calculated by function 
  *
  * @fn int IMP_IVS_PollingResult(int ChnNum, int timeoutMs);
  *
- * @param[in] ChnNum IVS Résultat d'analyse intelligent calculé par fonction 
+ * @param[in] ChnNum IVS Intelligent analysis result calculated by function 
  *
- * @param[in] timeout  Temps d'attente maximum ， unité ms; IMP_IVS_DEFAULT_TIMEOUTMS: Temps d'attente par défaut dans la bibliothèque ,0: N'attends pas ,>0: Temps d'attente défini par l'utilisateur 
+ * @param[in] timeout  Maximum waiting time ， unit ms; IMP_IVS_DEFAULT_TIMEOUTMS: Default waiting time inside the library ,0: Don't wait ,>0: Waiting time set by the user 
  *
- * @retval 0  Temps d'attente défini par l'utilisateur 
- * @retval -1  Temps d'attente défini par l'utilisateur 
+ * @retval 0  Waiting time set by the user 
+ * @retval -1  Waiting time set by the user 
  *
- * @remark  Seuls les paramètres lors de la création du canal IMPIVSInterface Structure ProcessAsync Retour du membre de fonction 0 Temps ， Autrement dit, lorsque le test réel revient normalement ， ce Polling La fonction renvoie le succès 
+ * @remark  Only the parameters when the channel is created IMPIVSInterface Structure ProcessAsync Function member return 0 Time ， That is, when the actual test returns normally ， this Polling Function returns success 
  *
- * @attention  La fonction renvoie le succès 
+ * @attention  Function returns success 
  */
 int IMP_IVS_PollingResult(int ChnNum, int timeoutMs);
 
 /**
- *  obtenir IVS Résultat d'analyse intelligent calculé par fonction 
+ *  obtain IVS Intelligent analysis result calculated by function 
  *
  * @fn int IMP_IVS_GetResult(int ChnNum, void **result);
  *
- * @param[in] ChnNum IVS Résultat d'analyse intelligent calculé par fonction 
+ * @param[in] ChnNum IVS Intelligent analysis result calculated by function 
  *
- * @param[in] result IVS Le résultat de sortie du numéro de canal correspondant à la fonction ， Renvoie le pointeur de résultat de l'algorithme d'analyse intelligente correspondant à ce canal ， Les clients externes n'ont pas besoin d'allouer d'espace. 
+ * @param[in] result IVS The output result of the channel number corresponding to the function ， Returns the result pointer of the intelligent analysis algorithm corresponding to this channel ， External customers do not need to allocate space. 
  *
- * @retval 0  Les clients externes n'ont pas besoin d'allouer d'espace. 
- * @retval -1  Les clients externes n'ont pas besoin d'allouer d'espace. 
+ * @retval 0  External customers do not need to allocate space. 
+ * @retval -1  External customers do not need to allocate space. 
  *
- * @remark  Selon différents IVS Canal lié fonctionnellement , Sortir le résultat correspondant .
+ * @remark  According to different IVS Functionally bound channel , Output the corresponding result .
  *
- * @attention  Sortir le résultat correspondant 
+ * @attention  Output the corresponding result 
  */
 int IMP_IVS_GetResult(int ChnNum, void **result);
 
 /**
- *  Sortir le résultat correspondant IVS Ressource de résultat calculée par fonction 
+ *  Output the corresponding result IVS Result resource calculated by function 
  *
  * @fn int IMP_IVS_ReleaseResult(int ChnNum, void *result);
  *
- * @param[in] GrpNum  Numéro de groupe de canaux 
+ * @param[in] GrpNum  Channel group number 
  *
- * @param[in] ChnNum IVS Numéro de groupe de canaux 
+ * @param[in] ChnNum IVS Channel group number 
  *
- * @param[in] result IVS Numéro de groupe de canaux 
+ * @param[in] result IVS Channel group number 
  *
- * @retval 0  Numéro de groupe de canaux 
- * @retval -1  Numéro de groupe de canaux 
+ * @retval 0  Channel group number 
+ * @retval -1  Channel group number 
  *
- * @remark  Numéro de groupe de canaux IVS Numéro de groupe de canaux , Libérer ses ressources de résultat de sortie .
+ * @remark  Channel group number IVS Channel group number , Release its output result resources .
  *
- * @attention  Libérer ses ressources de résultat de sortie 
+ * @attention  Release its output result resources 
  */
 int IMP_IVS_ReleaseResult(int ChnNum, void *result);
 
 /**
- *  Relâchez à Datacallback Paramètres frame
+ *  Release to Datacallback Parameters frame
  *
  * @fn int IMP_IVS_ReleaseData(void *vaddr);
  *
- * @param[in] vaddr  Adresse virtuelle de l'espace libéré 
+ * @param[in] vaddr  Freed space virtual address 
  *
- * @retval 0  Adresse virtuelle de l'espace libéré 
- * @retval -1  Adresse virtuelle de l'espace libéré 
+ * @retval 0  Freed space virtual address 
+ * @retval -1  Freed space virtual address 
  *
- * @remark  Doit utiliser cette fonction pour libérer la passe à Datacallback Doit utiliser cette fonction pour libérer la passe à frame paramètre ， Sinon, cela entraînera certainement une impasse. 
- * @remark  Cette interface est réservée aux fournisseurs d'algorithmes ， Les clients n'ont pas besoin de prêter attention à l'utilisation d'algorithmes. 
+ * @remark  Must use this function to release the pass to Datacallback Must use this function to release the pass to frame parameter ， Otherwise, it will definitely cause a deadlock. 
+ * @remark  This interface is only for algorithm providers ， Customers do not need to pay attention to the use of algorithms. 
  *
- * @attention  Les clients n'ont pas besoin de prêter attention à l'utilisation d'algorithmes. 
+ * @attention  Customers do not need to pay attention to the use of algorithms. 
  */
 int IMP_IVS_ReleaseData(void *vaddr);
 
 /**
- *  Obtenir les paramètres d'algorithme de canal 
+ *  Get channel algorithm parameters 
  *
  * @fn int IMP_IVS_GetParam(int chnNum, void *param);
  *
- * @param[in] ChnNum IVS Obtenir les paramètres d'algorithme de canal 
- * @param[in] param  Pointeur d'adresse virtuelle de paramètre d'algorithme 
+ * @param[in] ChnNum IVS Get channel algorithm parameters 
+ * @param[in] param  Algorithm parameter virtual address pointer 
  *
- * @retval 0  Pointeur d'adresse virtuelle de paramètre d'algorithme 
- * @retval -1  Pointeur d'adresse virtuelle de paramètre d'algorithme 
+ * @retval 0  Algorithm parameter virtual address pointer 
+ * @retval -1  Algorithm parameter virtual address pointer 
  *
- * @attention  Pointeur d'adresse virtuelle de paramètre d'algorithme 
+ * @attention  Algorithm parameter virtual address pointer 
  */
 int IMP_IVS_GetParam(int chnNum, void *param);
 
 /**
- *  Définir les paramètres de l'algorithme de canal 
+ *  Set channel algorithm parameters 
  *
  * @fn int IMP_IVS_SetParam(int chnNum, void *param);
  *
- * @param[in] ChnNum IVS Définir les paramètres de l'algorithme de canal 
- * @param[in] param  Définir les paramètres de l'algorithme de canal 
+ * @param[in] ChnNum IVS Set channel algorithm parameters 
+ * @param[in] param  Set channel algorithm parameters 
  *
- * @retval 0  Définir les paramètres de l'algorithme de canal 
- * @retval -1  Définir les paramètres de l'algorithme de canal 
+ * @retval 0  Set channel algorithm parameters 
+ * @retval -1  Set channel algorithm parameters 
  *
- * @attention  Définir les paramètres de l'algorithme de canal 
+ * @attention  Set channel algorithm parameters 
  */
 int IMP_IVS_SetParam(int chnNum, void *param);
 

@@ -17,7 +17,7 @@ extern "C"{
 
 /**
  * @file
- * IMP utils tête de fichier 
+ * IMP utils head File 
  */
 
 #undef offsetof
