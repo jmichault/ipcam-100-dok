@@ -1,0 +1,66 @@
+#!/bin/bash
+
+. $(dirname $(readlink -f $0))/lib/head
+
+cd "$BASEDIR"
+cd ..
+
+echo "`trad 'ĉi tiu skripto estas uzata por pravalorizi la retejon.'`\n"
+
+if [ $# -ge 1 ] ; then
+  LABORLINGVO="$1"
+else
+  read -p "`trad 'Laborlingvo (2 litero, defaŭlte='`eo) : " LABORLINGVO
+fi
+if [ x$LABORLINGVO != x -a ! -d _locale/$LABORLINGVO ] ; then
+  echo "`trad 'Pardonu, lingvo ne troviĝis'` $LABORLINGVO."
+  sleep 2
+  exit 1
+fi
+if [ x$LABORLINGVO != x ] ; then
+  cat _config.yml |sed "s/^laborlingvo:.*/laborlingvo: $LABORLINGVO/" >_config.$$
+  mv _config.$$ _config.yml
+else
+  LABORLINGVO=eo
+fi
+
+
+if [ $# -ge 2 ] ; then
+  titolo="$2"
+else
+  read -p "`trad 'Titolo :'` " titolo
+fi
+
+mkdir -p $LABORLINGVO/_data
+
+if [ $LABORLINGVO != "eo" ] ; then
+  cd eo
+  cat ../_locale/${LABORLINGVO}/_data/site-translations.yml.po|sed "s/^#, fuzzy/#/" >../_locale/temp$$.po
+  po4a-translate -f yaml -m _data/site-translations.yml --master-charset "UTF-8"  --po ../_locale/temp$$.po --localized ../$LABORLINGVO/_data/site-translations.yml --localized-charset "UTF-8" -k 0
+  rm ../_locale/temp$$.po
+  cd ..
+fi
+
+if [ x"$titolo" != x ] ; then
+  cat $LABORLINGVO/_data/site-translations.yml |sed "s/^  titolo:.*/  titolo: \"$titolo\"/" >$LABORLINGVO/_data/tr.$$
+  mv $LABORLINGVO/_data/tr.$$ $LABORLINGVO/_data/site-translations.yml
+  titolo_eo=`_scripts/lib/traduko.sh $LABORLINGVO eo "$titolo"`
+  cat eo/_data/site-translations.yml |sed "s/^  titolo:.*/  titolo: \"$titolo_eo\"/" >eo/_data/tr.$$
+  mv eo/_data/tr.$$ eo/_data/site-translations.yml
+fi
+
+if [ $# -ge 3 ] ; then
+  priskribo="$3"
+else
+  read -p "`trad 'Priskribo :'` " priskribo
+fi
+
+if [ x"$priskribo" != x ] ; then
+  cat $LABORLINGVO/_data/site-translations.yml |sed "s/^  priskribo:.*/  priskribo: \"$priskribo\"/" >$LABORLINGVO/_data/tr.$$
+  mv $LABORLINGVO/_data/tr.$$ $LABORLINGVO/_data/site-translations.yml
+  priskribo_eo=`_scripts/lib/traduko.sh $LABORLINGVO eo "$priskribo"`
+  cat eo/_data/site-translations.yml |sed "s/^  priskribo:.*/  priskribo: \"$priskribo_eo\"/" >eo/_data/tr.$$
+  mv eo/_data/tr.$$ eo/_data/site-translations.yml
+fi
+
+_scripts/traduki

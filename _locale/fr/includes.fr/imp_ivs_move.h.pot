@@ -1,0 +1,185 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-03-04 16:42+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: ./includes.fr/imp_ivs_move.h:6
+#, markdown-text, no-wrap
+msgid ""
+"/*\n"
+" * IMP IVS Move func header file.\n"
+" *\n"
+" * Copyright (C) 2016 Ingenic Semiconductor Co.,Ltd\n"
+" */\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_ivs_move.h:9
+#, markdown-text, no-wrap
+msgid ""
+"#ifndef __IMP_IVS_MOVE_H__\n"
+"#define __IMP_IVS_MOVE_H__\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_ivs_move.h:16
+#, markdown-text, no-wrap
+msgid ""
+"#ifdef __cplusplus\n"
+"#if __cplusplus\n"
+"extern \"C\"\n"
+"{\n"
+"#endif\n"
+"#endif /* __cplusplus */\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_ivs_move.h:18
+#, markdown-text, no-wrap
+msgid "#define IMP_IVS_MOVE_MAX_ROI_CNT\t\t4\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_ivs_move.h:20
+#, markdown-text, no-wrap
+msgid "#include <imp/imp_ivs.h>\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_ivs_move.h:25
+#, markdown-text, no-wrap
+msgid ""
+"/**\n"
+" * @file\n"
+" * IMP IVS  Module de détection de mouvement \n"
+" */\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_ivs_move.h:32
+#, markdown-text, no-wrap
+msgid ""
+"/**\n"
+" * @defgroup MoveDetection\n"
+" * @ingroup IMP_IVS\n"
+" * @brief  Interface de détection de mouvement \n"
+" * @{\n"
+" */\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_ivs_move.h:46
+#, markdown-text, no-wrap
+msgid ""
+"/**\n"
+" *  Structure d'entrée de l'algorithme de détection de mouvement \n"
+" */\n"
+"typedef struct {\n"
+"\tint             sense[IMP_IVS_MOVE_MAX_ROI_CNT];   /**<  Sensibilité de la "
+"détection de mouvement ， La plage est 0-4 */\n"
+"\tint             skipFrameCnt;                      /*<  Nombre de "
+"détections toutes les deux images  */\n"
+"\tIMPFrameInfo    frameInfo;                         /**<  Informations sur "
+"la taille du cadre , Juste besoin de configurer width avec height */\n"
+"\tIMPRect         roiRect[IMP_IVS_MOVE_MAX_ROI_CNT]; /*<  Besoin d'être "
+"détecté roi Informations de coordonnées de zone  */\n"
+"\tint             roiRectCnt;                        /*<  Informations de "
+"coordonnées de zone roi Nombre de régions ， Nombre de régions 0-4， Si 0 : "
+"Pas de détection ，1 : Détection roiRect 0\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\t\t  surface ，2 , Détection roiRect 0,1 , Détection "
+"，3 , Détection roiRect 0,1,2 , Détection ， Etc  */\n"
+"} IMP_IVS_MoveParam;\n"
+"// I suppose it has something to do with this sequence of bytes which is "
+"located in appfs/etc/sensor/jxf22move.txt:\n"
+"\t// 50 50 14 26 05 2b 3c 96 28 73 14 32 0f 28\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_ivs_move.h:53
+#, markdown-text, no-wrap
+msgid ""
+"/*\n"
+" *  La structure de sortie de l'algorithme de détection de mouvement \n"
+" */\n"
+"typedef struct {\n"
+"\tint retRoi[IMP_IVS_MOVE_MAX_ROI_CNT];\t\t\t\t/*<  Résultat du mouvement de "
+"détection de zone ， contre roiRect Correspond strictement aux informations "
+"de coordonnées  */\n"
+"} IMP_IVS_MoveOutput;\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_ivs_move.h:67
+#, markdown-text, no-wrap
+msgid ""
+"/**\n"
+" *  Créer des ressources d'interface de détection de mouvement \n"
+" *\n"
+" * @fn IMPIVSInterface *IMP_IVS_CreateMoveInterface(IMP_IVS_MoveParam "
+"*param);\n"
+" *\n"
+" * @param[in] param  Paramètres de structure d'entrée de l'algorithme de "
+"détection de mouvement \n"
+" *\n"
+" * @retval  non- NULL  Succès , Renvoie la poignée du pointeur de "
+"l'interface de l'algorithme de détection de mouvement \n"
+" * @retval NULL  échec \n"
+" *\n"
+" * @attention  non \n"
+" */\n"
+"IMPIVSInterface *IMP_IVS_CreateMoveInterface(IMP_IVS_MoveParam *param);\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_ivs_move.h:80
+#, markdown-text, no-wrap
+msgid ""
+"/**\n"
+" *  Détruire les ressources de l'interface de détection de mouvement \n"
+" *\n"
+" * @fn void IMP_IVS_DestroyMoveInterface(IMPIVSInterface *moveInterface);\n"
+" *\n"
+" * @param[in] moveInterface  Poignée de pointeur d'interface d'algorithme de "
+"détection de mouvement \n"
+" *\n"
+" * @retval  Aucune valeur de retour \n"
+" *\n"
+" * @attention  Aucune valeur de retour \n"
+" */\n"
+"void IMP_IVS_DestroyMoveInterface(IMPIVSInterface *moveInterface);\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_ivs_move.h:84
+#, markdown-text, no-wrap
+msgid ""
+"/**\n"
+" * @}\n"
+" */\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_ivs_move.h:90
+#, markdown-text, no-wrap
+msgid ""
+"#ifdef __cplusplus\n"
+"#if __cplusplus\n"
+"}\n"
+"#endif\n"
+"#endif /* __cplusplus */\n"
+"#endif /* __IMP_IVS_MOVE_H__ */\n"
+msgstr ""

@@ -1,0 +1,131 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-03-04 16:44+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: YAML Front Matter: lang
+#: ./elpurigi.md:1
+#, no-wrap
+msgid "fr"
+msgstr ""
+
+#. type: YAML Front Matter: lang-niv
+#: ./elpurigi.md:1
+#, no-wrap
+msgid "fonto"
+msgstr ""
+
+#. type: YAML Front Matter: lang-ref
+#: ./elpurigi.md:1
+#, no-wrap
+msgid "020-elpurigi"
+msgstr ""
+
+#. type: YAML Front Matter: layout
+#: ./elpurigi.md:1
+#, no-wrap
+msgid "page"
+msgstr ""
+
+#. type: YAML Front Matter: title
+#: ./elpurigi.md:1
+#, no-wrap
+msgid "Déboguer"
+msgstr ""
+
+#. type: Plain text
+#: ./elpurigi.md:10
+#, markdown-text, no-wrap
+msgid "avec le micrologiciel d'origine:\n"
+msgstr ""
+
+#. type: Bullet: '* '
+#: ./elpurigi.md:13
+#, markdown-text, no-wrap
+msgid ""
+"Connectez-vous à la caméra via `telnet IP 9527` (utilisateur _root_, mot de "
+"passe _jco66688_) dans les 5 minutes après le démarrage.\n"
+msgstr ""
+
+#. type: Bullet: '* '
+#: ./elpurigi.md:13
+#, markdown-text, no-wrap
+msgid "Faites `killall -9 auto_run.sh` pour éviter de fermer la connexion.\n"
+msgstr ""
+
+#. type: Plain text
+#: ./elpurigi.md:15
+#, markdown-text, no-wrap
+msgid "avec le micrologiciel alternatif:\n"
+msgstr ""
+
+#. type: Bullet: '* '
+#: ./elpurigi.md:19
+#, markdown-text, no-wrap
+msgid "Lancez le service telnet depuis l'interface web\n"
+msgstr ""
+
+#. type: Bullet: '* '
+#: ./elpurigi.md:19
+#, markdown-text, no-wrap
+msgid ""
+"Connectez-vous à la caméra via `telnet IP` (utilisateur _root_, mot de passe "
+"_ismart12_).\n"
+msgstr ""
+
+#. type: Bullet: '* '
+#: ./elpurigi.md:19
+#, markdown-text, no-wrap
+msgid ""
+"Faites `killall -9 run.sh system-emergency-telnet` pour éviter de fermer la "
+"connexion.\n"
+msgstr ""
+
+#. type: Plain text
+#: ./elpurigi.md:21
+#, markdown-text, no-wrap
+msgid "Puis, quel que soit le micrologiciel :\n"
+msgstr ""
+
+#. type: Bullet: '* '
+#: ./elpurigi.md:22
+#, markdown-text, no-wrap
+msgid "démarrer «gdbserver» depuis la caméra, par ex. :  \n"
+msgstr ""
+
+#. type: Plain text
+#: ./elpurigi.md:25
+#, markdown-text, no-wrap
+msgid ""
+"     `/opt/media/mmcblk0p1/bin/gdbserver localhost:2000 "
+"/opt/media/mmcblk0p1/bin/motor`\n"
+"* démarrer gdb sur l'ordinateur, par exemple :\n"
+msgstr ""
+
+#. type: Plain text
+#: ./elpurigi.md:35
+#, markdown-text, no-wrap
+msgid ""
+"    ```\n"
+"    cd programada_medio/toolchain\n"
+"    bin/mips-linux-uclibc-gnu-gdb ../fontoj/motor/motor \n"
+"    target remote 192.168.xxx.xxx:2000\n"
+"    handle SIGPIPE nostop\n"
+"    handle SIG32 nostop\n"
+"    break xxx\n"
+"    continue \n"
+"    ```\n"
+msgstr ""

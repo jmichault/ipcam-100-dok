@@ -1,0 +1,144 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-03-04 16:49+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: pa\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: YAML Front Matter: lang
+#: ./elpurigi.md:1
+#, no-wrap
+msgid "eo"
+msgstr "pa"
+
+#. type: YAML Front Matter: lang-niv
+#: ./elpurigi.md:1
+#, no-wrap
+msgid "auto"
+msgstr "auto"
+
+#. type: YAML Front Matter: lang-ref
+#: ./elpurigi.md:1
+#, no-wrap
+msgid "020-elpurigi"
+msgstr "020-elpurigi"
+
+#. type: YAML Front Matter: layout
+#: ./elpurigi.md:1
+#, no-wrap
+msgid "page"
+msgstr "page"
+
+#. type: YAML Front Matter: title
+#: ./elpurigi.md:1
+#, no-wrap
+#, fuzzy
+msgid "Elpurigi"
+msgstr "ਸ਼ੁੱਧ"
+
+#. type: Plain text
+#: ./elpurigi.md:10
+#, markdown-text, no-wrap
+#, fuzzy
+msgid "kun originala firmvaro:\n"
+msgstr "ਅਸਲ ਫਰਮਵੇਅਰ ਨਾਲ:\n"
+
+#. type: Bullet: '* '
+#: ./elpurigi.md:12
+#, markdown-text, no-wrap
+#, fuzzy
+msgid ""
+"Ensalutu ĉe la fotilo per `telnet IP 9527` (uzanto _root_, pasvorto "
+"_jco66688_) ene de 5 minutoj post ekfunkciigo.\n"
+msgstr "ਸ਼ੁਰੂ ਹੋਣ ਤੋਂ 5 ਮਿੰਟ ਦੇ ਅੰਦਰ ( `telnet IP 9527` (ਉਪਭੋਗਤਾ _root_, ਪਾਸਵਰਡ _jco66688_) ਨਾਲ ਕੈਮਰੇ ਵਿੱਚ ਲੌਗ ਇਨ ਕਰੋ.\n"
+
+#. type: Bullet: '* '
+#: ./elpurigi.md:14
+#, markdown-text, no-wrap
+#, fuzzy
+msgid "Premu `killall -9 auto_run.sh` por eviti fermi la konekton.\n"
+msgstr "ਕਨੈਕਸ਼ਨ ਬੰਦ ਕਰਨ ਤੋਂ ਬਚਣ ਲਈ `killall -9 auto_run.sh` ਦਬਾਓ.\n"
+
+#. type: Plain text
+#: ./elpurigi.md:17
+#, markdown-text, no-wrap
+#, fuzzy
+msgid "kun alternativa firmvaro:\n"
+msgstr "ਵਿਕਲਪਕ ਫਰਮਵੇਅਰ ਦੇ ਨਾਲ:\n"
+
+#. type: Bullet: '* '
+#: ./elpurigi.md:19
+#, markdown-text, no-wrap
+#, fuzzy
+msgid "Lanĉu la telnet-servon de la interreta interfaco\n"
+msgstr "ਵੈਬ ਇੰਟਰਫੇਸ ਟੈਲਨੈੱਟ ਸੇਵਾ ਲਾਂਚ ਕਰੋ\n"
+
+#. type: Bullet: '* '
+#: ./elpurigi.md:21
+#, markdown-text, no-wrap
+#, fuzzy
+msgid ""
+"Ensalutu ĉe la fotilo per `telnet IP` (uzanto _root_, pasvorto "
+"_ismart12_).\n"
+msgstr " `telnet IP` (ਉਪਭੋਗਤਾ _root_, ਪਾਸਵਰਡ _ismart12_)ਨਾਲ ਕੈਮਰਾ ਤੇ ਲੌਗ ਇਨ ਕਰੋ.\n"
+
+#. type: Bullet: '* '
+#: ./elpurigi.md:23
+#, markdown-text, no-wrap
+#, fuzzy
+msgid ""
+"Premu `killall -9 run.sh system-emergency-telnet` por eviti fermi la "
+"konekton.\n"
+msgstr "ਕਨੈਕਸ਼ਨ ਬੰਦ ਕਰਨ ਤੋਂ ਬਚਣ ਲਈ `killall -9 run.sh system-emergency-telnet` ਦਬਾਓ.\n"
+
+#. type: Plain text
+#: ./elpurigi.md:26
+#, markdown-text, no-wrap
+#, fuzzy
+msgid "Tiam, kia ajn la firmvaro:\n"
+msgstr "ਫਿਰ, ਜੋ ਵੀ ਫਰਮਵੇਅਰ ਹੈ:\n"
+
+#. type: Bullet: '* '
+#: ./elpurigi.md:27
+#, markdown-text, no-wrap
+#, fuzzy
+msgid "starti \"gdbserver\" de la fotilo, ekz. :  \n"
+msgstr "ਕੈਮਰੇ ਦਾ ਸਟਾਰਟ \"ਜੀਡੀਬਸਰਵਰ\", ਉਦਾ. :  \n"
+
+#. type: Plain text
+#: ./elpurigi.md:31
+#, markdown-text, no-wrap
+#, fuzzy
+msgid ""
+"     `/opt/media/mmcblk0p1/bin/gdbserver localhost:2000 "
+"/opt/media/mmcblk0p1/bin/motor`\n"
+"* startu gdb en la komputilo, ekzemple:\n"
+msgstr "     `/opt/media/mmcblk0p1/bin/gdbserver localhost:2000 /opt/media/mmcblk0p1/bin/motor`\n* ਕੰਪਿdਟਰ ਤੇ ਜੀਡੀਬੀ ਚਾਲੂ ਕਰੋ, ਉਦਾਹਰਣ ਵਜੋਂ:\n"
+
+#. type: Plain text
+#: ./elpurigi.md:41
+#, markdown-text, no-wrap
+#, fuzzy
+msgid ""
+"    ```\n"
+"    cd programada_medio/toolchain\n"
+"    bin/mips-linux-uclibc-gnu-gdb ../fontoj/motor/motor \n"
+"    target remote 192.168.xxx.xxx:2000\n"
+"    handle SIGPIPE nostop\n"
+"    handle SIG32 nostop\n"
+"    break xxx\n"
+"    continue \n"
+"    ```\n"
+msgstr "    ```\n    cd programada_medio/toolchain\n    bin/mips-linux-uclibc-gnu-gdb ../fontoj/motor/motor \n    target remote 192.168.xxx.xxx:2000\n    handle SIGPIPE nostop\n    handle SIG32 nostop\n    break xxx\n    continue \n    ```\n"
+

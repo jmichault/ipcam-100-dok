@@ -1,0 +1,579 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-03-04 16:45+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: pa\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Title #
+#: ./imp_system_programigo_gvidilo.md:3
+#, markdown-text, no-wrap
+#, fuzzy
+msgid "IMP (Ingenic Media Platform) (vidu imp_system.h)"
+msgstr "ਆਈਐਮਪੀ (ਇਨਜੈਨਿਕ ਮੀਡੀਆ ਪਲੇਟਫਾਰਮ) (ਵੇਖੋ ਇੰਪ_system.h)"
+
+#. type: Title ##
+#: ./imp_system_programigo_gvidilo.md:5
+#, markdown-text, no-wrap
+#, fuzzy
+msgid "bazaj konceptoj"
+msgstr "ਬੁਨਿਆਦੀ ਧਾਰਨਾ"
+
+#. type: Plain text
+#: ./imp_system_programigo_gvidilo.md:7
+#, markdown-text, no-wrap
+#, fuzzy
+msgid ""
+"Programado T20 / T21 baziĝas sur jenaj konceptoj:\n"
+"1. Periferia (= Aparato)  \n"
+msgstr "ਟੀ 20 / ਟੀ 21 ਪ੍ਰੋਗਰਾਮਿੰਗ ਹੇਠ ਲਿਖੀਆਂ ਧਾਰਨਾਵਾਂ 'ਤੇ ਅਧਾਰਤ ਹੈ:\n1. ਪੈਰੀਫਿਰਲ (= ਡਿਵਾਈਸ)  \n"
+
+#. type: Plain text
+#: ./imp_system_programigo_gvidilo.md:11
+#, markdown-text, no-wrap
+#, fuzzy
+msgid ""
+"    La ekstercentra kompletigas funkcion. Ekzemploj:\n"
+"     *  Frama fonto: finas la eliron de videodatenoj.\n"
+"     *  Kodilo: kompletigas la videokodan aŭ bildan kodan funkcion.\n"
+"2. Grupo  \n"
+msgstr "    ਪੈਰੀਫਿਰਲ ਇੱਕ ਕਾਰਜ ਨੂੰ ਪੂਰਾ ਕਰਦਾ ਹੈ. ਉਦਾਹਰਣਾਂ:\n     *  ਫਰੇਮ ਸਰੋਤ: ਵੀਡੀਓ ਡਾਟਾ ਦੇ ਨਤੀਜੇ ਨੂੰ ਖਤਮ ਕਰਦਾ ਹੈ.\n     *  ਏਨਕੋਡਰ: ਵੀਡੀਓ ਏਨਕੋਡਿੰਗ ਜਾਂ ਚਿੱਤਰ ਇੰਕੋਡਿੰਗ ਫੰਕਸ਼ਨ ਨੂੰ ਪੂਰਾ ਕਰਦਾ ਹੈ.\n2. ਸਮੂਹ  \n"
+
+#. type: Plain text
+#: ./imp_system_programigo_gvidilo.md:12
+#, markdown-text, no-wrap
+#, fuzzy
+msgid ""
+"    La grupo estas la plej malgranda datum-eniga unuo. Aparato povas havi "
+"plurajn grupojn kaj ĉiu grupo povas ricevi nur unu datuman enigan "
+"kanalon. La grupo povas havi plurajn rezultojn.  \n"
+msgstr "    ਸਮੂਹ ਸਭ ਤੋਂ ਛੋਟਾ ਡੇਟਾ ਇੰਪੁੱਟ ਇਕਾਈ ਹੈ. ਇੱਕ ਡਿਵਾਈਸ ਵਿੱਚ ਕਈ ਸਮੂਹ ਹੋ ਸਕਦੇ ਹਨ ਅਤੇ ਹਰੇਕ ਸਮੂਹ ਵਿੱਚ ਸਿਰਫ ਇੱਕ ਡਾਟਾ ਇੰਪੁੱਟ ਚੈਨਲ ਪ੍ਰਾਪਤ ਹੋ ਸਕਦਾ ਹੈ. ਸਮੂਹ ਦੇ ਕਈ ਨਤੀਜੇ ਹੋ ਸਕਦੇ ਹਨ.  \n"
+
+#. type: Plain text
+#: ./imp_system_programigo_gvidilo.md:14
+#, markdown-text, no-wrap
+#, fuzzy
+msgid ""
+"    La grupo ankaŭ estas ujo por specifaj \"funkcioj\". Vidu la klarigon en "
+"la kanala sekcio por pliaj detaloj.\n"
+"3. Eliro  \n"
+msgstr "    ਸਮੂਹ ਵਿਸ਼ੇਸ਼ \"ਫੰਕਸ਼ਨਾਂ\"ਲਈ ਵੀ ਇਕ ਕੰਟੇਨਰ ਹੈ. ਵਧੇਰੇ ਜਾਣਕਾਰੀ ਲਈ ਚੈਨਲ ਭਾਗ ਵਿਚ ਵਿਆਖਿਆ ਵੇਖੋ.\n3. ਬੰਦ ਕਰੋ  \n"
+
+#. type: Plain text
+#: ./imp_system_programigo_gvidilo.md:16
+#, markdown-text, no-wrap
+#, fuzzy
+msgid ""
+"    La eligo estas la plej malgranda unuo de datuma eligo por grupo. Grupo "
+"povas havi plurajn elirojn kaj ĉiu eligo povas produkti nur unu datuman "
+"kanalon.\n"
+"4. Ĉelo  \n"
+msgstr "    ਆਉਟਪੁੱਟ ਪ੍ਰਤੀ ਸਮੂਹ ਡਾਟਾ ਆਉਟਪੁੱਟ ਦੀ ਸਭ ਤੋਂ ਛੋਟੀ ਇਕਾਈ ਹੈ. ਇੱਕ ਸਮੂਹ ਵਿੱਚ ਕਈ ਨਤੀਜੇ ਹੋ ਸਕਦੇ ਹਨ ਅਤੇ ਹਰੇਕ ਆਉਟਪੁੱਟ ਸਿਰਫ ਇੱਕ ਡਾਟਾ ਚੈਨਲ ਤਿਆਰ ਕਰ ਸਕਦੀ ਹੈ.\n4. ਸੈੱਲ  \n"
+
+#. type: Plain text
+#: ./imp_system_programigo_gvidilo.md:20
+#, markdown-text, no-wrap
+#, fuzzy
+msgid ""
+"    La ĉelo rilatas al kolekto enhavanta informojn pri la aparato, la grupo "
+"kaj la eligo. Ĝi estas prezentita en la datuma strukturo de IMPCell.\n"
+"La ĉelo estas ĉefe uzata por Bind (@ref bind). Laŭ la difino de Aparato, "
+"Grupo kaj Eligo, Eligo estas la nodo por datuma eligo kaj Grupo estas la "
+"nodo por datuma enigo.\n"
+"En Bind, la ĉela indekso de la datuma eliga nodo estas ĉe la Eliga eligo, "
+"kaj la ĉela indekso de la datuma eniga nodo estas ĉe la eniga grupo (de tiel "
+"ke la Ĉelo, Eliga datuma eniro estas sensenca valoro).\n"
+"5. Kanalo  \n"
+msgstr "    ਸੈੱਲ ਸੰਗ੍ਰਿਹ ਦਾ ਹਵਾਲਾ ਦਿੰਦਾ ਹੈ ਜਿਸ ਵਿੱਚ ਡਿਵਾਈਸ, ਸਮੂਹ ਅਤੇ ਆਉਟਪੁੱਟ ਬਾਰੇ ਜਾਣਕਾਰੀ ਹੁੰਦੀ ਹੈ. ਇਹ ਆਈਐਮਪੀਸਲ ਦੇ ਡੇਟਾ structureਾਂਚੇ ਵਿਚ ਪੇਸ਼ ਕੀਤਾ ਗਿਆ ਹੈ.\nਸੈੱਲ ਮੁੱਖ ਤੌਰ 'ਤੇ ਬੰਨ੍ਹ (@ ਰੀਫਿੰਡ)ਲਈ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ. ਡਿਵਾਈਸ, ਸਮੂਹ ਅਤੇ ਆਉਟਪੁੱਟ ਦੀ ਪਰਿਭਾਸ਼ਾ ਦੇ ਅਨੁਸਾਰ, ਆਉਟਪੁੱਟ ਡੇਟਾ ਆਉਟਪੁੱਟ ਲਈ ਨੋਡ ਹੈ ਅਤੇ ਡੇਟਾ ਇੰਪੁੱਟ ਲਈ ਸਮੂਹ ਨੋਡ ਹੈ.\nਬਿੰਡ ਵਿੱਚ, ਡਾਟਾ ਆਉਟਪੁੱਟ ਨੋਡ ਦਾ ਸੈੱਲ ਇੰਡੈਕਸ ਆਉਟਪੁੱਟ ਆਉਟਪੁੱਟ ਤੇ ਹੁੰਦਾ ਹੈ, ਅਤੇ ਡਾਟਾ ਇੰਪੁੱਟ ਨੋਡ ਦਾ ਸੈੱਲ ਇੰਡੈਕਸ ਇਨਪੁਟ ਸਮੂਹ (ਤੇ ਹੁੰਦਾ ਹੈ ਤਾਂ ਕਿ ਸੈੱਲ, ਆਉਟਪੁੱਟ ਡਾਟਾ ਇੰਪੁੱਟ ਇੱਕ ਗੈਰ ਸੰਵੇਦਨਸ਼ੀਲ ਮੁੱਲ).\n5. ਚੈਨਲ  \n"
+
+#. type: Plain text
+#: ./imp_system_programigo_gvidilo.md:21
+#, markdown-text, no-wrap
+#, fuzzy
+msgid ""
+"    La kanalo ĝenerale rilatas al unuo kun ununura funkcio. La kanalo "
+"ricevas specifan funkcion kiam ĝi estas kreita (instantiation).  \n"
+msgstr "    ਚੈਨਲ ਆਮ ਤੌਰ ਤੇ ਇਕਹਿਰੇ ਫੰਕਸ਼ਨ ਵਾਲੀ ਇਕਾਈ ਦਾ ਹਵਾਲਾ ਦਿੰਦਾ ਹੈ. ਚੈਨਲ ਨੂੰ ਇੱਕ ਵਿਸ਼ੇਸ਼ ਕਾਰਜ ਪ੍ਰਾਪਤ ਹੁੰਦਾ ਹੈ ਜਦੋਂ ਇਹ ਬਣਾਇਆ ਜਾਂਦਾ ਹੈ (ਇੰਸਟੈਂਟੇਸ਼ਨ).  \n"
+
+#. type: Plain text
+#: ./imp_system_programigo_gvidilo.md:22
+#, markdown-text, no-wrap
+#, fuzzy
+msgid "    Ekzemple:  \n"
+msgstr "    ਉਦਾਹਰਣ ਲਈ:  \n"
+
+#. type: Bullet: '     -  '
+#: ./imp_system_programigo_gvidilo.md:24
+#, markdown-text, no-wrap
+#, fuzzy
+msgid ""
+"Por la kodilo, unu kanalo kompletigas la kodon H264 aŭ kodan funkcion "
+"JPEG. La specifa kodiga funkcio (tipo, parametro) estas specifita kiam oni "
+"kreas la kanalon\n"
+msgstr "ਏਨਕੋਡਰ ਲਈ, ਇੱਕ ਚੈਨਲ H264 ਕੋਡ ਜਾਂ ਜੇਪੀਈਜੀ ਏਨਕੋਡਿੰਗ ਫੰਕਸ਼ਨ ਨੂੰ ਪੂਰਾ ਕਰਦਾ ਹੈ. ਚੈਨਲ ਬਣਾਉਣ ਵੇਲੇ ਖਾਸ ਇੰਕੋਡਿੰਗ ਫੰਕਸ਼ਨ (ਪੈਰਾਮੀਟਰ) ਨਿਰਧਾਰਤ ਕੀਤੀ ਜਾਂਦੀ ਹੈ (\n"
+
+#. type: Bullet: '     -  '
+#: ./imp_system_programigo_gvidilo.md:26
+#, markdown-text, no-wrap
+#, fuzzy
+msgid ""
+"Por IVS, kanalo kompletigas la funkcion de specifa algoritmo kaj specifaj "
+"algoritmaj tipparametroj estas specifitaj dum kreado de la kanalo\n"
+msgstr "ਆਈਵੀਐਸ ਲਈ, ਇੱਕ ਚੈਨਲ ਇੱਕ ਖਾਸ ਐਲਗੋਰਿਦਮ ਦਾ ਕੰਮ ਪੂਰਾ ਕਰਦਾ ਹੈ ਅਤੇ ਚੈਨਲ ਬਣਾਉਣ ਵੇਲੇ ਖਾਸ ਐਲਗੋਰਿਦਮਿਕ ਕਿਸਮ ਦੇ ਮਾਪਦੰਡ ਨਿਰਧਾਰਤ ਕੀਤੇ ਜਾਂਦੇ ਹਨ\n"
+
+#. type: Bullet: '     -  '
+#: ./imp_system_programigo_gvidilo.md:28
+#, markdown-text, no-wrap
+#, fuzzy
+msgid ""
+"Por OSD, ekzistas regiono simila al Kanalo, regiono estas specifa "
+"supermetita areo, kiu povas esti PIC (bildo), KOVRILO (fermado), ktp.\n"
+msgstr "ਓਐਸਡੀ ਲਈ, ਇੱਕ ਚੈਨਲ ਦੇ ਸਮਾਨ ਖੇਤਰ ਹੈ, ਖੇਤਰ ਇੱਕ ਖਾਸ ਓਵਰਲੇ ਖੇਤਰ ਹੈ, ਜੋ ਕਿ ਪੀਆਈਸੀ (ਚਿੱਤਰ), ਕਵਰ (ਬੰਦ ਹੋਣ), ਅਤੇ ਹੋਰ ਹੋ ਸਕਦਾ ਹੈ. .\n"
+
+#. type: Bullet: '     -  '
+#: ./imp_system_programigo_gvidilo.md:30
+#, markdown-text, no-wrap
+#, fuzzy
+msgid ""
+"Por FrameSource, kanalo produktas originalan bildon kaj la "
+"FrameSource-kanalo fakte estas grupo\n"
+msgstr "ਫਰੇਮ ਸਰੋਤ ਲਈ, ਇੱਕ ਚੈਨਲ ਇੱਕ ਅਸਲ ਚਿੱਤਰ ਤਿਆਰ ਕਰਦਾ ਹੈ ਅਤੇ ਫ੍ਰੇਮਸੋਰਸ ਚੈਨਲ ਅਸਲ ਵਿੱਚ ਇੱਕ ਸਮੂਹ ਹੁੰਦਾ ਹੈ\n"
+
+#. type: Plain text
+#: ./imp_system_programigo_gvidilo.md:33
+#, markdown-text, no-wrap
+#, fuzzy
+msgid ""
+"     La kanalo, kiel funkcia unuo, devas ĝenerale esti registrita en la "
+"grupo (krom FrameSource) por ricevi datumojn. Post kiam la kanalo estas "
+"registrita en la grupo, ĝi ricevos la datumojn enigitajn de la grupo.\n"
+msgstr "     ਚੈਨਲ, ਇੱਕ ਕਾਰਜਕਾਰੀ ਇਕਾਈ ਦੇ ਰੂਪ ਵਿੱਚ, ਆਮ ਤੌਰ 'ਤੇ ਡੇਟਾ ਪ੍ਰਾਪਤ ਕਰਨ ਲਈ ਫ੍ਰੇਮ ਸਰੋਤ) ਤੋਂ ਇਲਾਵਾ ਸਮੂਹ (ਵਿੱਚ ਰਜਿਸਟਰ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ. ਚੈਨਲ ਦੇ ਸਮੂਹ ਵਿੱਚ ਰਜਿਸਟਰ ਹੋਣ ਤੋਂ ਬਾਅਦ, ਇਹ ਸਮੂਹ ਦੁਆਰਾ ਦਾਖਲ ਕੀਤੇ ਗਏ ਡੇਟਾ ਨੂੰ ਪ੍ਰਾਪਤ ਕਰੇਗਾ.\n"
+
+#. type: Plain text
+#: ./imp_system_programigo_gvidilo.md:35
+#, markdown-text, no-wrap
+#, fuzzy
+msgid ""
+"    La nombro de kanaloj, kiuj povas esti registritaj de la grupo de "
+"diversaj aparatoj, estas ankaŭ malsama.\n"
+msgstr "    ਵੱਖ-ਵੱਖ ਡਿਵਾਈਸਾਂ ਦੇ ਸਮੂਹ ਦੁਆਰਾ ਰਿਕਾਰਡ ਕੀਤੇ ਜਾ ਸਕਦੇ ਚੈਨਲਾਂ ਦੀ ਗਿਣਤੀ ਵੀ ਵੱਖਰੀ ਹੈ.\n"
+
+#. type: Title ##
+#: ./imp_system_programigo_gvidilo.md:36
+#, markdown-text, no-wrap
+#, fuzzy
+msgid "Moduloj ligantaj (Bind)"
+msgstr "ਬਾਈਡਿੰਗ ਮੋਡੀulesਲ (ਬੰਨ੍ਹ)"
+
+#. type: Plain text
+#: ./imp_system_programigo_gvidilo.md:38
+#, markdown-text, no-wrap
+#, fuzzy
+msgid ""
+"Post kiam du grupoj estas konektitaj de Bind, la datumoj de la fonta grupo "
+"aŭtomate estos senditaj al la celloka grupo.  \n"
+msgstr "ਇੱਕ ਵਾਰ ਦੋ ਸਮੂਹ ਬਿੰਦ ਨਾਲ ਜੁੜ ਗਏ, ਸਰੋਤ ਸਮੂਹ ਤੋਂ ਡੇਟਾ ਆਪਣੇ ਆਪ ਹੀ ਮੰਜ਼ਿਲ ਸਮੂਹ ਨੂੰ ਭੇਜਿਆ ਜਾਵੇਗਾ.  \n"
+
+#. type: Plain text
+#: ./imp_system_programigo_gvidilo.md:39
+#, markdown-text, no-wrap
+#, fuzzy
+msgid ""
+"Ĉar la grupo estas la plej malgranda eniga unuo de datumoj kaj la eligo "
+"estas la plej malgranda unuo de datuma eligo, la aparatoID, groupID kaj "
+"outputID de srcCell en ambaŭ parametroj de IMP_System_Bind (IMPCell * "
+"srcCell, IMPCell * dstCell) validas.  \n"
+msgstr "ਕਿਉਂਕਿ ਸਮੂਹ ਸਭ ਤੋਂ ਛੋਟਾ ਡਾਟਾ ਇਨਪੁਟ ਯੂਨਿਟ ਹੈ ਅਤੇ ਆਉਟਪੁੱਟ ਸਭ ਤੋਂ ਛੋਟਾ ਡਾਟਾ ਆਉਟਪੁੱਟ ਇਕਾਈ, ਡਿਵਾਈਸਡ ਆਈਡੀ, ਗਰੁੱਪਆਈਡੀਆਈਡੀ, ਅਤੇ ਆਈ ਆਰ ਪੀ_System_ਬਿੰਦੂ (ਆਈਐਮਪੀਸਲ * ਦੇ ਦੋਵੇਂ ਪੈਰਾਮੀਟਰਾਂ ਵਿੱਚ ਐਸਆਰਸੀਕੈਲ ਦਾ ਆਉਟਪੁੱਟ ID ਹੈ. srcCell, IMPCell * dstCell) ਵੈਧ.  \n"
+
+#. type: Plain text
+#: ./imp_system_programigo_gvidilo.md:42
+#, markdown-text, no-wrap
+#, fuzzy
+msgid ""
+"Dum dstCell validas nur por deviceID kaj groupID, outputID ne havas sencon "
+"kiel datuma eniro.\n"
+msgstr "ਜਦੋਂ ਕਿ dstCell ਸਿਰਫ deviceID ਅਤੇ groupID ਲਈ ਪ੍ਰਮਾਣਕ ਹੈ, ਆਉਟਪੁੱਟ ID ਡਾਟਾ ਇੰਦਰਾਜ਼ ਵਜੋਂ ਕੋਈ ਅਰਥ ਨਹੀਂ ਰੱਖਦੀ.\n"
+
+#. type: Plain text
+#: ./imp_system_programigo_gvidilo.md:44
+#, markdown-text, no-wrap
+#, fuzzy
+msgid "Ekzemplo 1: \n"
+msgstr "ਉਦਾਹਰਨ 1: \n"
+
+#. type: Fenced code block
+#: ./imp_system_programigo_gvidilo.md:44
+#, no-wrap
+msgid ""
+"IMPCell fs_chn0 = {DEV_ID_FS, 0, 0};    // FrameSource deviceID: DEV_ID_FS "
+"groupID: 0 outputID: 0\n"
+"IMPCell enc_grp0 = {DEV_ID_ENC, 0, 0}; // ENC deviceID: DEV_ID_ENC groupID : "
+"0 outputID: 0, où le troisième paramètre de enc_grp0 n'a pas de sens. \n"
+"int ret = IMP_System_Bind (& fs_chn0, & enc_grp0);\n"
+"if(ret <0>)\n"
+"  printf (\"Bind FrameSource Channel0 and Encoder Group0 failed \\ n\");\n"
+"\n"
+msgstr ""
+"IMPCell fs_chn0 = {DEV_ID_FS, 0, 0};    // FrameSource deviceID: DEV_ID_FS "
+"groupID: 0 outputID: 0\n"
+"IMPCell enc_grp0 = {DEV_ID_ENC, 0, 0}; // ENC deviceID: DEV_ID_ENC groupID : "
+"0 outputID: 0, où le troisième paramètre de enc_grp0 n'a pas de sens. \n"
+"int ret = IMP_System_Bind (& fs_chn0, & enc_grp0);\n"
+"if(ret <0>)\n"
+"  printf (\"Bind FrameSource Channel0 and Encoder Group0 failed \\ n\");\n"
+"\n"
+
+#. type: Bullet: '* '
+#: ./imp_system_programigo_gvidilo.md:54
+#, markdown-text, no-wrap
+#, fuzzy
+msgid "realiĝas grupo, kiu generas ligon de FrameSource al Encoder.\n"
+msgstr "ਇੱਕ ਸਮੂਹ ਤਿਆਰ ਕੀਤਾ ਜਾਂਦਾ ਹੈ ਜੋ ਫਰੇਮ ਸਰੋਤ ਤੋਂ ਏਨਕੋਡਰ ਤੱਕ ਇੱਕ ਲਿੰਕ ਤਿਆਰ ਕਰਦਾ ਹੈ.\n"
+
+#. type: Bullet: '* '
+#: ./imp_system_programigo_gvidilo.md:56
+#, markdown-text, no-wrap
+#, fuzzy
+msgid ""
+"Du kanaloj estas registritaj en Encoder Group, do Encoder Group havas du "
+"elirojn H264 kaj JPEG.\n"
+msgstr "ਦੋ ਚੈਨਲ ਇਕੋਡਰ ਸਮੂਹ ਵਿੱਚ ਦਰਜ ਹਨ, ਇਸ ਲਈ ਐਨਕੋਡਰ ਸਮੂਹ ਕੋਲ ਦੋ ਆਉਟਪੁੱਟ ਐਚ 264 ਅਤੇ ਜੇਪੀਈਜੀ ਹਨ.\n"
+
+#. type: Plain text
+#: ./imp_system_programigo_gvidilo.md:59
+#, markdown-text, no-wrap
+#, fuzzy
+msgid "Ekzemplo 2:\n"
+msgstr "ਉਦਾਹਰਣ 2:\n"
+
+#. type: Fenced code block
+#: ./imp_system_programigo_gvidilo.md:59
+#, no-wrap
+msgid ""
+"// flux de données principal\n"
+"IMPCell fs_chn0 = {DEV_ID_FS, 0, 0};\n"
+"IMPCell osd_grp0 = {DEV_ID_OSD, 0, 0};\n"
+"IMPCell enc_grp0 = {DEV_ID_ENC, 0, 0};\n"
+"int ret = IMP_System_Bind(&fs_chn0, &osd_grp0);\n"
+"if (ret < 0)\n"
+"    printf(\"Bind FrameSource Channel0 and OSD Group0 failed\\n\");\n"
+"\n"
+"int ret = IMP_System_Bind(&osd_grp0, &enc_grp0);\n"
+"if (ret < 0)\n"
+"    printf(\"Bind OSD Group0 and Encoder Group0 failed\\n\");\n"
+"\n"
+"// flux de données lié \n"
+"IMPCell fs_chn1_output0 = {DEV_ID_FS, 1, 0};\n"
+"IMPCell ivs_grp0 = {DEV_ID_IVS, 0, 0};\n"
+"IMPCell osd_grp1 = {DEV_ID_OSD, 1, 0};\n"
+"IMPCell enc_grp1 = {DEV_ID_ENC, 1, 0};\n"
+"\n"
+"int ret = IMP_System_Bind(&fs_chn1_output0, &ivs_grp0);\n"
+"if (ret < 0)\n"
+"    printf(\"Bind FrameSource Channel1 and IVS Group0 failed\\n\");\n"
+"\n"
+"int ret = IMP_System_Bind(&ivs_grp0, &osd_grp1);\n"
+"if (ret < 0)\n"
+"    printf(\"Bind IVS Group0 and OSD Group1 failed\\n\");\n"
+"\n"
+"int ret = IMP_System_Bind(&osd_grp1, &enc_grp1);\n"
+"if (ret < 0)\n"
+"    printf(\"Bind OSD Group1 and Encoder Group1 failed\\n\");\n"
+msgstr ""
+"// flux de données principal\n"
+"IMPCell fs_chn0 = {DEV_ID_FS, 0, 0};\n"
+"IMPCell osd_grp0 = {DEV_ID_OSD, 0, 0};\n"
+"IMPCell enc_grp0 = {DEV_ID_ENC, 0, 0};\n"
+"int ret = IMP_System_Bind(&fs_chn0, &osd_grp0);\n"
+"if (ret < 0)\n"
+"    printf(\"Bind FrameSource Channel0 and OSD Group0 failed\\n\");\n"
+"\n"
+"int ret = IMP_System_Bind(&osd_grp0, &enc_grp0);\n"
+"if (ret < 0)\n"
+"    printf(\"Bind OSD Group0 and Encoder Group0 failed\\n\");\n"
+"\n"
+"// flux de données lié \n"
+"IMPCell fs_chn1_output0 = {DEV_ID_FS, 1, 0};\n"
+"IMPCell ivs_grp0 = {DEV_ID_IVS, 0, 0};\n"
+"IMPCell osd_grp1 = {DEV_ID_OSD, 1, 0};\n"
+"IMPCell enc_grp1 = {DEV_ID_ENC, 1, 0};\n"
+"\n"
+"int ret = IMP_System_Bind(&fs_chn1_output0, &ivs_grp0);\n"
+"if (ret < 0)\n"
+"    printf(\"Bind FrameSource Channel1 and IVS Group0 failed\\n\");\n"
+"\n"
+"int ret = IMP_System_Bind(&ivs_grp0, &osd_grp1);\n"
+"if (ret < 0)\n"
+"    printf(\"Bind IVS Group0 and OSD Group1 failed\\n\");\n"
+"\n"
+"int ret = IMP_System_Bind(&osd_grp1, &enc_grp1);\n"
+"if (ret < 0)\n"
+"    printf(\"Bind OSD Group1 and Encoder Group1 failed\\n\");\n"
+
+#. type: Plain text
+#: ./imp_system_programigo_gvidilo.md:95
+#, markdown-text, no-wrap
+#, fuzzy
+msgid ""
+"Ĉi tio estas tipa programo Bind: du-kanala koda fluo.\n"
+" * FrameSource havas du elirojn, nome la ĉefa rivereto Channel0 (1280x720) "
+"kaj la sklava rivereto Channel1 (640x360).\n"
+"   *   Ĉefa rivereto: Channel0 Bind OSD Group.0 de FrameSource, OSD Group.0 "
+"Bind Encoder Group.0. Inter ili: \n"
+"       * OSD-Grupo.0 registris du regionojn, kiuj estas uzataj por montri "
+"informojn pri tempostampo kaj signoŝnuro respektive\n"
+"       * Kodigila Grupo .0 registris du kanalojn. , kiuj estas kodado H264 "
+"kaj kodado JPEG respektive. Inter ili, se la bilda grandeco de la koda "
+"kanalo JPEG ne egalas al la eniga parametro (Kanalo0 de FrameSource), tiam "
+"ĝi estos skalita (programaro ĉe T10) ) atingi la celon kapti ĉe iu ajn "
+"rezolucio.\n"
+msgstr "ਇਹ ਇੱਕ ਖਾਸ ਬਾਈਂਡ ਪ੍ਰੋਗਰਾਮ ਹੈ: ਇੱਕ ਦੋ-ਚੈਨਲ ਕੋਡ ਸਟ੍ਰੀਮ.\n * ਫ੍ਰੇਮ ਸਰੋਤ ਦੇ ਦੋ ਆਉਟਪੁੱਟ ਹਨ, ਅਰਥਾਤ ਮੁੱਖ ਸਟ੍ਰੀਮ ਚੈਨਲ 0 (1280x720) ਅਤੇ ਸਲੇਵ ਸਟ੍ਰੀਮ ਚੈਨਲ 1 (640x360).\n   *   ਮੁੱਖ ਧਾਰਾ: ਫ੍ਰੇਮਸੋਰਸ ਦਾ ਚੈਨਲ 0 ਬਿੰਡ ਓਐਸਡੀ ਸਮੂਹ .0, ਓਐਸਡੀ ਸਮੂਹ .0 ਬਿੰਦ ਏਨਕੋਡਰ ਸਮੂਹ .0. ਉਹਨਾਂ ਵਿਚੋਂ: \n       * ਓਐਸਡੀ ਸਮੂਹ.0 ਨੇ ਦੋ ਖੇਤਰਾਂ ਨੂੰ ਰਿਕਾਰਡ ਕੀਤਾ ਜੋ ਕ੍ਰਮਵਾਰ ਟਾਈਮਸਟੈਂਪ ਅਤੇ ਸਤਰ ਜਾਣਕਾਰੀ ਪ੍ਰਦਰਸ਼ਤ ਕਰਨ ਲਈ ਵਰਤੇ ਜਾਂਦੇ ਹਨ\n       * ਐਨਕੋਡਰ ਸਮੂਹ .0 ਨੇ ਦੋ ਚੈਨਲ ਰਿਕਾਰਡ ਕੀਤੇ. , ਜੋ ਕਿ ਕ੍ਰਮਵਾਰ ਐਚ 264 ਏਨਕੋਡਿੰਗ ਅਤੇ ਜੇਪੀਈਜੀ ਐਨਕੋਡਿੰਗ ਹਨ. ਉਨ੍ਹਾਂ ਵਿੱਚੋਂ, ਜੇ ਜੇਪੀਈਜੀ ਏਨਕੋਡਿੰਗ ਚੈਨਲ ਦਾ ਚਿੱਤਰ ਅਕਾਰ ਫਰੇਮਸੋਰਸ ਚੈਨਲ 0)ਦੇ ਇੰਪੁੱਟ ਪੈਰਾਮੀਟਰ (° 13 match) ਨਾਲ ਮੇਲ ਨਹੀਂ ਖਾਂਦਾ, ਤਾਂ ਇਹ T10) ਤੇ ਸਕੇਲ (ਸਾਫਟਵੇਅਰ ਹੋਵੇਗਾ.) ਕਿਸੇ ਵੀ ਰੈਜ਼ੋਲੂਸ਼ਨ ਤੇ ਕੈਪਚਰ ਕਰਨ ਦੇ ਟੀਚੇ ਨੂੰ ਪ੍ਰਾਪਤ ਕਰੋ.\n"
+
+#. type: Plain text
+#: ./imp_system_programigo_gvidilo.md:99
+#, markdown-text, no-wrap
+#, fuzzy
+msgid ""
+"Notoj:\n"
+"* oni rekomendas, ke ĉiuj ligaj operacioj estu faritaj dum "
+"sistemo-inicialigo.\n"
+"* Operacioj Bind kaj UnBind ne povas esti nomataj dinamike post kiam "
+"_FrameSource_ estas aktivigita. UnBind fariĝas nur post malaktivigo "
+"_FrameSource_.\n"
+msgstr "ਨੋਟ:\n* ਸਿਫਾਰਸ਼ ਕੀਤੀ ਜਾਂਦੀ ਹੈ ਕਿ ਸਾਰੇ ਲਿੰਕ ਓਪਰੇਸ਼ਨ ਸਿਸਟਮ ਆਰਜੀਕਰਨ ਦੇ ਦੌਰਾਨ ਕੀਤੇ ਜਾਣ.\n* ਬਾਈਡ ਅਤੇ ਅਨਬਾਈਂਡ ਓਪਰੇਸ਼ਨਾਂ _FrameSource_ ਦੇ ਚਾਲੂ ਹੋਣ ਤੋਂ ਬਾਅਦ ਆਰਜੀ ਤੌਰ ਤੇ ਨਹੀਂ ਕਹੇ ਜਾ ਸਕਦੇ. ਅਨਬਾਈਂਡ ਸਿਰਫ ਅਯੋਗ _FrameSource_ਤੋਂ ਬਾਅਦ ਕੀਤੀ ਜਾਂਦੀ ਹੈ.\n"
+
+#. type: Title ##
+#: ./imp_system_programigo_gvidilo.md:100
+#, markdown-text, no-wrap
+#, fuzzy
+msgid "Funkcioj"
+msgstr "ਕਾਰਜ"
+
+#. type: Title ###
+#: ./imp_system_programigo_gvidilo.md:102
+#, markdown-text, no-wrap
+#, fuzzy
+msgid "int IMP\\_Sistemo\\_Init (malplena )"
+msgstr "ਇੰਟੈਂਡਰ ਆਈ.ਐਮ.ਪੀ.\\_ਸਿਸਟਮ (° 2 Init) ਇਨਿਸ (ਖਾਲੀ )"
+
+#. type: Plain text
+#: ./imp_system_programigo_gvidilo.md:107
+#, markdown-text, no-wrap
+#, fuzzy
+msgid ""
+"Inicialigo de la IMP-sistemo.\n"
+"redonas 0 se ĝi sukcesas.\n"
+"Post ĉi tiu API-alvoko, la baza datuma strukturo estos pravalorizita, sed la "
+"aparataro ne estos pravalorizita.\n"
+"atento: Ĉi tiu funkcio devas esti alvokita por komencigo antaŭ iu ajn alia "
+"operacio.\n"
+msgstr "ਆਈਐਮਪੀ ਸਿਸਟਮ ਦੀ ਸ਼ੁਰੂਆਤ.\nਸਫਲ ਹੋਣ ਤੇ 0 ਵਾਪਸ ਕਰਦਾ ਹੈ.\nਇਸ API ਕਾਲ ਦੇ ਬਾਅਦ, ਮੁ dataਲੇ ਡੇਟਾ structureਾਂਚੇ ਨੂੰ ਅਰੰਭ ਕੀਤਾ ਜਾਏਗਾ, ਪਰ ਹਾਰਡਵੇਅਰ ਅਰੰਭ ਨਹੀਂ ਕੀਤਾ ਜਾਵੇਗਾ.\nਧਿਆਨ: ਇਸ ਕਾਰਜ ਨੂੰ ਕਿਸੇ ਹੋਰ ਓਪਰੇਸ਼ਨ ਤੋਂ ਪਹਿਲਾਂ ਦੀਖਿਆ ਲਈ ਬੁਲਾਇਆ ਜਾਣਾ ਚਾਹੀਦਾ ਹੈ.\n"
+
+#. type: Title ###
+#: ./imp_system_programigo_gvidilo.md:107
+#, markdown-text, no-wrap
+#, fuzzy
+msgid "int IMP_System_Elirejo (malplena)"
+msgstr "ਇੰਟ ਆਈ ਐਮ ਪੀ_System_ਨਿਕਾਸ (ਖਾਲੀ)"
+
+#. type: Plain text
+#: ./imp_system_programigo_gvidilo.md:111
+#, markdown-text, no-wrap
+#, fuzzy
+msgid ""
+"Post vokado de ĉi tiu funkcio, ĉiu memoro kaj IMP _handles_ estos "
+"liberigitaj, kaj la aparataro estos fermita. \n"
+"Noto: Post voki ĉi tiun API, se vi volas uzi IMP denove, vi devas reagordi "
+"la IMP-sistemon.\n"
+msgstr "ਇਸ ਫੰਕਸ਼ਨ ਨੂੰ ਕਾਲ ਕਰਨ ਤੋਂ ਬਾਅਦ, ਸਾਰੀ ਮੈਮੋਰੀ ਅਤੇ ਆਈਐਮਪੀ _handles_ ਜਾਰੀ ਕੀਤੀ ਜਾਏਗੀ, ਅਤੇ ਹਾਰਡਵੇਅਰ ਬੰਦ ਹੋ ਜਾਣਗੇ. \nਨੋਟ: ਇਸ ਏਪੀਆਈ ਨੂੰ ਕਾਲ ਕਰਨ ਤੋਂ ਬਾਅਦ, ਜੇ ਤੁਸੀਂ ਦੁਬਾਰਾ ਆਈਐਮਪੀ ਵਰਤਣਾ ਚਾਹੁੰਦੇ ਹੋ, ਤਾਂ ਤੁਹਾਨੂੰ ਆਈਐਮਪੀ ਸਿਸਟਮ ਨੂੰ ਰੀਸੈਟ ਕਰਨ ਦੀ ਜ਼ਰੂਰਤ ਹੈ.\n"
+
+#. type: Title ###
+#: ./imp_system_programigo_gvidilo.md:112
+#, markdown-text, no-wrap
+#, fuzzy
+msgid "int64_t IMP_Sistemo_GetTimeStamp (void)"
+msgstr "ਇੰਟ 64_t IMP_ਸਿਸਟਮ_GetTimeStamp (void)"
+
+#. type: Plain text
+#: ./imp_system_programigo_gvidilo.md:114
+#, markdown-text, no-wrap
+#, fuzzy
+msgid "Akiru la IMP-sisteman tempostampon en mikrosekundoj.  \n"
+msgstr "ਮਾਈਕਰੋਸਕਿੰਟ ਵਿਚ ਆਈ ਐਮ ਪੀ ਸਿਸਟਮ ਟਾਈਮ ਸਟੈਂਪ ਪ੍ਰਾਪਤ ਕਰੋ.  \n"
+
+#. type: Plain text
+#: ./imp_system_programigo_gvidilo.md:116
+#, markdown-text, no-wrap
+#, fuzzy
+msgid "Reveno: tempo en mikrosekundoj.\n"
+msgstr "ਵਾਪਸੀ: ਮਾਈਕਰੋਸਕਿੰਟ ਵਿਚ ਸਮਾਂ.\n"
+
+#. type: Title ###
+#: ./imp_system_programigo_gvidilo.md:117
+#, markdown-text, no-wrap
+#, fuzzy
+msgid "int IMP_System_RebaseTimeStamp (bazoj int64_t)"
+msgstr "ਇੰਟ IMP_System_ਰੀਬੇਸ ਟਾਈਮਸਟੈਂਪ (ਅਧਾਰ 64_t)"
+
+#. type: Plain text
+#: ./imp_system_programigo_gvidilo.md:118
+#, markdown-text, no-wrap
+#, fuzzy
+msgid "Agordu la tempan markon de la sistemo IMP en mikrosekundoj.  \n"
+msgstr "ਆਈਐਮਪੀ ਸਿਸਟਮ ਟਾਈਮਸਟੈਂਪ ਨੂੰ ਮਾਈਕ੍ਰੋਸੇਕੰਡਾਂ ਵਿੱਚ ਸੈਟ ਕਰੋ.  \n"
+
+#. type: Plain text
+#: ./imp_system_programigo_gvidilo.md:120
+#, markdown-text, no-wrap
+#, fuzzy
+msgid "Reveno: 0 se sukcesas.\n"
+msgstr "ਵਾਪਸੀ: 0 ਜੇ ਸਫਲ.\n"
+
+#. type: Title ###
+#: ./imp_system_programigo_gvidilo.md:121
+#, markdown-text, no-wrap
+#, fuzzy
+msgid "uint32_t IMP_Sistemo_ReadReg32 (uint32_t u32Addr)"
+msgstr "uint32_t IMP_ਸਿਸਟਮ_ReadReg32 (uint32_t u32Addr)"
+
+#. type: Plain text
+#: ./imp_system_programigo_gvidilo.md:123
+#, markdown-text, no-wrap
+#, fuzzy
+msgid "Legu la valoron de 32-bita registro.  \n"
+msgstr "ਇੱਕ 32-ਬਿੱਟ ਰਜਿਸਟਰ ਦਾ ਮੁੱਲ ਪੜ੍ਹੋ.  \n"
+
+#. type: Title ###
+#: ./imp_system_programigo_gvidilo.md:125
+#, markdown-text, no-wrap
+#, fuzzy
+msgid "malplena IMP_System_WriteReg32 (uint32_t regAddr, valeur uint32_t)"
+msgstr "ਖਾਲੀ ਆਈਐਮਪੀ_System_WritReg32 (uint32_t regAddr, valeur uint32_ਟੀ)"
+
+#. type: Plain text
+#: ./imp_system_programigo_gvidilo.md:127
+#, markdown-text, no-wrap
+#, fuzzy
+msgid "Skribu la valoron al la 32-bita registro.\n"
+msgstr "ਮੁੱਲ 32-ਬਿੱਟ ਰਜਿਸਟਰ ਤੇ ਲਿਖੋ.\n"
+
+#. type: Plain text
+#: ./imp_system_programigo_gvidilo.md:129
+#, markdown-text, no-wrap
+#, fuzzy
+msgid ""
+"Noto: Bonvolu telefoni al ĉi tiu API zorge kaj kontroli la signifon de la "
+"registro, alie ĝi povas kaŭzi sistemajn erarojn.\n"
+msgstr "ਨੋਟ: ਕਿਰਪਾ ਕਰਕੇ ਇਸ API ਨੂੰ ਧਿਆਨ ਨਾਲ ਕਾਲ ਕਰੋ ਅਤੇ ਰਜਿਸਟਰੀ ਦੇ ਅਰਥਾਂ ਦੀ ਜਾਂਚ ਕਰੋ, ਨਹੀਂ ਤਾਂ ਇਹ ਸਿਸਟਮ ਦੀਆਂ ਗਲਤੀਆਂ ਦਾ ਕਾਰਨ ਬਣ ਸਕਦਾ ਹੈ.\n"
+
+#. type: Title ###
+#: ./imp_system_programigo_gvidilo.md:130
+#, markdown-text, no-wrap
+#, fuzzy
+msgid "int IMP_System_GetVersion (IMPVersion * pstVersion) "
+msgstr "INM IMP_System_getVersion (IMPVersion * pstVersion) "
+
+#. type: Plain text
+#: ./imp_system_programigo_gvidilo.md:133
+#, markdown-text, no-wrap
+#, fuzzy
+msgid "Akiru la versian numeron de la IMP-sistemo.\n"
+msgstr "ਆਈਐਮਪੀ ਸਿਸਟਮ ਦਾ ਵਰਜ਼ਨ ਨੰਬਰ ਪ੍ਰਾਪਤ ਕਰੋ.\n"
+
+#. type: Title ###
+#: ./imp_system_programigo_gvidilo.md:134
+#, markdown-text, no-wrap
+#, fuzzy
+msgid "const char * IMP_System_GetCPUInfo (malplena)"
+msgstr "ਕਾਂਸਟ ਚਾਰ * ਆਈ ਐਮ ਪੀ_System_ਗੇਟ ਸੀ ਪੀ ਯੂ ਆਈਐਨਫੋ (ਖਾਲੀ)"
+
+#. type: Plain text
+#: ./imp_system_programigo_gvidilo.md:135
+#, markdown-text, no-wrap
+#, fuzzy
+msgid "Akiru informojn pri la CPU-modelo.  \n"
+msgstr "ਸੀਪੀਯੂ ਮਾਡਲ ਬਾਰੇ ਜਾਣਕਾਰੀ ਪ੍ਰਾਪਤ ਕਰੋ.  \n"
+
+#. type: Plain text
+#: ./imp_system_programigo_gvidilo.md:137
+#, markdown-text, no-wrap
+#, fuzzy
+msgid ""
+"Noto: La revenvaloro estas ĉeno de CPU-modelo, ekzemple, por T10 ekzistas "
+"\"T10\"kaj \"T10-Lite\".\n"
+msgstr "ਨੋਟ: ਵਾਪਸੀ ਮੁੱਲ ਸੀਪੀਯੂ ਮਾਡਲ ਦੀ ਇੱਕ ਸਤਰ ਹੈ, ਉਦਾਹਰਣ ਵਜੋਂ, ਟੀ 10 ਲਈ \"ਟੀ 10\"ਅਤੇ \"ਟੀ 10-ਲਾਈਟ\"ਹੈ.\n"
+
+#. type: Title ###
+#: ./imp_system_programigo_gvidilo.md:138
+#, markdown-text, no-wrap
+#, fuzzy
+msgid "int IMP_System_Bind (IMPCell * srcCell, IMPCell * dstCell)"
+msgstr "ਇੰਟ ਆਈਐਮਪੀ_System_ਬਾਈ (ਆਈਐਮਪੀਸਲ * ਐਸਸੀਆਰਕੈਲ, ਆਈਐਮਪੀਸਲ * ਡੀਐਸਟੀਕੈਲ)"
+
+#. type: Plain text
+#: ./imp_system_programigo_gvidilo.md:141
+#, markdown-text, no-wrap
+#, fuzzy
+msgid "Ligo inter fonta ĉelo kaj celloko.\n"
+msgstr "ਸਰੋਤ ਸੈੱਲ ਅਤੇ ਮੰਜ਼ਿਲ ਦੇ ਵਿਚਕਾਰ ਲਿੰਕ.\n"
+
+#. type: Plain text
+#: ./imp_system_programigo_gvidilo.md:143
+#, markdown-text, no-wrap
+#, fuzzy
+msgid ""
+"Noto 1: Laŭ la konceptoj de Aparato, Grupo kaj Eligo, ĉiu aparato povas havi "
+"plurajn grupojn, kaj ĉiu grupo povas havi plurajn elirojn, Grupo estas uzata "
+"kiel Aparata eniga interfaco, kaj Eliro estas uzata kiel Aparata produkta "
+"interfaco. Tial la ligo fakte konektas certan eliron de la eliga aparato al "
+"certa Grupo de la eniga aparato.\n"
+msgstr "ਨੋਟ 1: ਡਿਵਾਈਸ, ਸਮੂਹ ਅਤੇ ਆਉਟਪੁੱਟ ਦੀਆਂ ਧਾਰਨਾਵਾਂ ਦੇ ਅਨੁਸਾਰ, ਹਰੇਕ ਡਿਵਾਈਸ ਦੇ ਕਈ ਸਮੂਹ ਹੋ ਸਕਦੇ ਹਨ, ਅਤੇ ਹਰੇਕ ਸਮੂਹ ਦੇ ਕਈ ਆਉਟਪੁੱਟ ਹੋ ਸਕਦੇ ਹਨ, ਸਮੂਹ ਨੂੰ ਡਿਵਾਈਸ ਇੰਪੁੱਟ ਇੰਟਰਫੇਸ ਵਜੋਂ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ, ਅਤੇ ਆਉਟਪੁੱਟ ਨੂੰ ਡਿਵਾਈਸ ਉਤਪਾਦ ਇੰਟਰਫੇਸ ਵਜੋਂ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ. ਇਸਲਈ ਲਿੰਕ ਅਸਲ ਵਿੱਚ ਆਉਟਪੁੱਟ ਡਿਵਾਈਸ ਦੇ ਇੱਕ ਖਾਸ ਆਉਟਪੁੱਟ ਨੂੰ ਇਨਪੁਟ ਡਿਵਾਈਸ ਦੇ ਇੱਕ ਸਮੂਹ ਨਾਲ ਜੋੜਦਾ ਹੈ.\n"
+
+#. type: Plain text
+#: ./imp_system_programigo_gvidilo.md:145
+#, markdown-text, no-wrap
+#, fuzzy
+msgid ""
+"Noto 2: Post sukcesa ligilo, la datumoj generitaj de srcCell (Eliro) estos "
+"aŭtomate transdonitaj al la celloka Ĉela (Grupo).\n"
+msgstr "ਨੋਟ 2: ਇੱਕ ਸਫਲ ਲਿੰਕ ਤੋਂ ਬਾਅਦ, srcCell (ਆਉਟਪੁੱਟ) ਦੁਆਰਾ ਤਿਆਰ ਕੀਤਾ ਡਾਟਾ ਆਪਣੇ ਆਪ ਹੀ ਮੰਜ਼ਿਲ ਸੈੱਲ (ਸਮੂਹ)ਵਿੱਚ ਸੰਚਾਰਿਤ ਹੋ ਜਾਵੇਗਾ.\n"
+
+#. type: Title ###
+#: ./imp_system_programigo_gvidilo.md:146
+#, markdown-text, no-wrap
+#, fuzzy
+msgid "int IMP_System_UnBind (IMPCell * srcCell, IMPCell * dstCell)"
+msgstr "ਇੰਟ ਆਈਐਮਪੀ_System_ਅਨਬਾਈਂਡ (ਆਈਐਮਪੀਸਲ * ਐਸਸੀਆਰਕੈਲ, ਆਈਐਮਪੀਸਲ * ਡੀਐਸਟੀਕੈਲ)"
+
+#. type: Plain text
+#: ./imp_system_programigo_gvidilo.md:148
+#, markdown-text, no-wrap
+#, fuzzy
+msgid "Malgrupigu la fontajn kaj cellokojn. \n"
+msgstr "ਸਰੋਤਾਂ ਅਤੇ ਮੰਜ਼ਿਲਾਂ ਦਾ ਸੰਗਠਨ ਕਰੋ. \n"
+
+#. type: Title ###
+#: ./imp_system_programigo_gvidilo.md:149
+#, markdown-text, no-wrap
+#, fuzzy
+msgid "int IMP_System_GetBindbyDest (IMPCell * dstCell, IMPCell * srcCell)"
+msgstr "ਇੰਟ IMP_System_getBindbyDest (D 3 °) IMPCell (P 4 °) dstCell, IMPCell * srcCelll)"
+
+#. type: Plain text
+#: ./imp_system_programigo_gvidilo.md:152
+#, markdown-text, no-wrap
+#, fuzzy
+msgid "Rekuperas informojn de la fonta ĉelo rilate al la celloko.\n"
+msgstr "ਮੰਜ਼ਿਲ ਨਾਲ ਜੁੜੇ ਸਰੋਤ ਸੈੱਲ ਤੋਂ ਜਾਣਕਾਰੀ ਪ੍ਰਾਪਤ ਕਰਦਾ ਹੈ.\n"
+

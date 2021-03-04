@@ -1,0 +1,76 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-01-26 21:53+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Source-Language: eo\n"
+
+#: traduki:37
+#, fuzzy
+msgid "krei traduko"
+msgstr "crear una traducción"
+
+#: fuzzys:8
+#, fuzzy
+msgid ""
+"ĉi tiu skripto estas uzata por administri po-dosierojn en malklara stato."
+msgstr "este script se usa para administrar archivos po en un estado confuso."
+
+#: fuzzys:14
+#, fuzzy
+msgid "Kiu cellingvo ?"
+msgstr "¿Qué idioma de destino?"
+
+#: fuzzys:19 komenci:16
+#, fuzzy
+msgid "Pardonu, lingvo ne troviĝis"
+msgstr "Lo siento, no se encontró el idioma"
+
+#: fuzzys:28
+#, fuzzy
+msgid "Kia ago ?"
+msgstr "¿Que Acción?"
+
+#: fuzzys:52
+#, fuzzy
+msgid "pardonu, ago ne rekonita :"
+msgstr "lo siento, acción no reconocida:"
+
+#: fuzzys:57
+#, fuzzy
+msgid "Premu enigoklavon."
+msgstr "Presione enter."
+
+#: komenci:8
+#, fuzzy
+msgid "ĉi tiu skripto estas uzata por pravalorizi la retejon."
+msgstr "este script se utiliza para inicializar el sitio."
+
+#: komenci:13
+#, fuzzy
+msgid "Laborlingvo (2 litero, defaŭlte="
+msgstr "Idioma de trabajo ("
+
+#: komenci:31
+#, fuzzy
+msgid "Titolo :"
+msgstr "Título:"
+
+#: komenci:42
+#, fuzzy
+msgid "Priskribo :"
+msgstr "Descripción:"
+

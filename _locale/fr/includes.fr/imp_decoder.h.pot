@@ -1,0 +1,361 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-03-04 16:42+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: ./includes.fr/imp_decoder.h:6
+#, markdown-text, no-wrap
+msgid ""
+"/*\n"
+" * IMP Decoder func header file.\n"
+" *\n"
+" * Copyright (C) 2014 Ingenic Semiconductor Co.,Ltd\n"
+" */\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_decoder.h:9
+#, markdown-text, no-wrap
+msgid ""
+"#ifndef __IMP_DECODER_H__\n"
+"#define __IMP_DECODER_H__\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_decoder.h:12
+#, markdown-text, no-wrap
+msgid ""
+"#include <stdint.h>\n"
+"#include <stdbool.h>\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_decoder.h:19
+#, markdown-text, no-wrap
+msgid ""
+"#ifdef __cplusplus\n"
+"#if __cplusplus\n"
+"extern \"C\"\n"
+"{\n"
+"#endif\n"
+"#endif /* __cplusplus */\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_decoder.h:24
+#, markdown-text, no-wrap
+msgid ""
+"/**\n"
+" * @file\n"
+" * IMP Fichier d'en-tête du décodeur \n"
+" */\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_decoder.h:31
+#, markdown-text, no-wrap
+msgid ""
+"/**\n"
+" * @defgroup IMP_Decoder\n"
+" * @ingroup imp\n"
+" * @brief  Module de décodage vidéo ， Actuellement ne prend en charge que "
+"JPEG décodage \n"
+" * @{\n"
+" */\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_decoder.h:44
+#, markdown-text, no-wrap
+msgid ""
+"/**\n"
+" *  Définir les propriétés du décodeur \n"
+" */\n"
+"typedef struct {\n"
+"\tIMPPayloadType\t\tdecType;\t\t/**<  Le type de protocole de données "
+"d'origine de la trame décodée  */\n"
+"\tuint32_t\t\t\tmaxWidth;\t\t/**<  Largeur maximale du cadre décodé  */\n"
+"\tuint32_t\t\t\tmaxHeight;\t\t/**<  Hauteur maximale du cadre décodé  */\n"
+"\tIMPPixelFormat\t\tpixelFormat;\t/**<  Décoder le type de protocole de "
+"données de la cible de trame  */\n"
+"\tuint32_t\t\t\tnrKeepStream;\t/**<  Nombre de trames tamponnées du décodeur  "
+"*/\n"
+"\tuint32_t\t\t\tfrmRateNum;\t\t/**<  Le nombre d'unités de temps en une "
+"seconde ,  En unités de temps. Le numérateur de la fréquence d'images  */\n"
+"\tuint32_t\t\t\tfrmRateDen;\t\t/**<  Le nombre d'unités de temps dans une "
+"trame ,  En unités de temps. Le dénominateur de la fréquence d'images  */\n"
+"} IMPDecoderAttr;\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_decoder.h:51
+#, markdown-text, no-wrap
+msgid ""
+"/**\n"
+" *  Définir le décodage Channel Les attributs \n"
+" */\n"
+"typedef struct {\n"
+"\tIMPDecoderAttr\t\tdecAttr;\t\t/**<  Attributs du décodeur  */\n"
+"} IMPDecoderCHNAttr;\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_decoder.h:60
+#, markdown-text, no-wrap
+msgid ""
+"/**\n"
+" *  Définir les attributs de données de trame décodées \n"
+" */\n"
+"typedef struct {\n"
+"\tint\t\t\t\t\ti_payload;\t\t/**<  Longueur des données de la trame décodée  "
+"*/\n"
+"\tuint8_t\t\t\t\t*p_payload;\t\t/**<  Pointeur de données de la trame "
+"décodée  */\n"
+"\tint64_t\t\t\t\ttimeStamp;\t\t/**<  Horodatage de l'image décodée  */\n"
+"} IMPDecoderNal;\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_decoder.h:67
+#, markdown-text, no-wrap
+msgid ""
+"/**\n"
+" *  Définir les attributs du flux de code du décodeur \n"
+" */\n"
+"typedef struct {\n"
+"\tIMPDecoderNal\tdecoderNal; /**<  Structure de données de trame décodée  "
+"*/\n"
+"} IMPDecoderStream;\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_decoder.h:83
+#, markdown-text, no-wrap
+msgid ""
+"/**\n"
+" * @fn int IMP_Decoder_CreateChn(int decChn, const IMPDecoderCHNAttr "
+"*attr)\n"
+" *\n"
+" *  Créer un décodage Channel\n"
+" *\n"
+" * @param[in] decChn  Créer un décodage Channel numéro , Gammes : [0, @ref "
+"NR_MAX_DEC_CHN - 1]\n"
+" * @param[in] attr  Gammes Channel Pointeur d'attribut \n"
+" *\n"
+" * @retval 0  Succès \n"
+" * @retval  non- 0  échec \n"
+" *\n"
+" * @remarks  non. \n"
+" * @attention  non. \n"
+" */\n"
+"int IMP_Decoder_CreateChn(int decChn, const IMPDecoderCHNAttr *attr);\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_decoder.h:98
+#, markdown-text, no-wrap
+msgid ""
+"/**\n"
+" * @fn int IMP_Decoder_DestroyChn(int decChn)\n"
+" *\n"
+" *  Détruire le décodage Channel\n"
+" *\n"
+" * @param[in] decChn  Détruire le décodage Channel Détruire le décodage , "
+"Détruire le décodage : [0, @ref NR_MAX_DEC_CHN - 1]\n"
+" *\n"
+" * @retval 0  Détruire le décodage \n"
+" * @retval  Détruire le décodage 0  Détruire le décodage \n"
+" *\n"
+" * @remarks  Détruire le décodage \n"
+" * @attention  Détruire le décodage \n"
+" */\n"
+"int IMP_Decoder_DestroyChn(int decChn);\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_decoder.h:114
+#, markdown-text, no-wrap
+msgid ""
+"/**\n"
+" * @fn int IMP_Decoder_StartRecvPic(int decChn)\n"
+" *\n"
+" *  Activer le décodage Channel Recevoir l'image \n"
+" *\n"
+" * @param[in] decChn  Recevoir l'image Channel Recevoir l'image , Recevoir "
+"l'image : [0, @ref NR_MAX_DEC_CHN - 1]\n"
+" *\n"
+" * @retval 0  Recevoir l'image \n"
+" * @retval  Recevoir l'image 0  Recevoir l'image \n"
+" *\n"
+" * @remarks  Recevoir l'image Channel Le décodage ne peut démarrer qu'après "
+"réception de l'image \n"
+" *\n"
+" * @attention  au cas où Channel Non créé ， Manqué \n"
+" */\n"
+"int IMP_Decoder_StartRecvPic(int decChn);\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_decoder.h:130
+#, markdown-text, no-wrap
+msgid ""
+"/**\n"
+" * @fn int IMP_Decoder_StopRecvPic(int decChn)\n"
+" *\n"
+" *  Arrêter le décodage Channel Arrêter le décodage \n"
+" *\n"
+" * @param[in] decChn  Arrêter le décodage Channel Arrêter le décodage , "
+"Arrêter le décodage : [0, @ref NR_MAX_DEC_CHN - 1]\n"
+" *\n"
+" * @retval 0  Arrêter le décodage \n"
+" * @retval  Arrêter le décodage 0  Arrêter le décodage \n"
+" *\n"
+" * @remarks  Arrêter le décodage Channel Arrêter le décodage \n"
+" *\n"
+" * @attention  Arrêter le décodage Channel Arrêter le décodage ， Arrêter le "
+"décodage \n"
+" */\n"
+"int IMP_Decoder_StopRecvPic(int decChn);\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_decoder.h:148
+#, markdown-text, no-wrap
+msgid ""
+"/**\n"
+" * @fn int IMP_Decoder_SendStreamTimeout(int decChn, IMPDecoderStream "
+"*stream, uint32_t timeoutMsec)\n"
+" *\n"
+" *  Envoyer les données à décoder \n"
+" *\n"
+" * @param[in] decChn  Envoyer les données à décoder Channel Envoyer les "
+"données à décoder , Envoyer les données à décoder : [0, @ref NR_MAX_DEC_CHN "
+"- 1]\n"
+" * @param[in] stream  Pointeur de structure de flux de données à décoder \n"
+" * @param[in] timeoutMsec  Délai de décodage   unité ms\n"
+" *\n"
+" * @retval 0  unité \n"
+" * @retval  unité 0  unité \n"
+" *\n"
+" * @remarks  unité \n"
+" *\n"
+" * @attention  unité Channel unité ， unité \n"
+" */\n"
+"int IMP_Decoder_SendStreamTimeout(int decChn, IMPDecoderStream *stream, "
+"uint32_t timeoutMsec);\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_decoder.h:165
+#, markdown-text, no-wrap
+msgid ""
+"/**\n"
+" * @fn int IMP_Decoder_PollingFrame(int decChn, uint32_t timeoutMsec)\n"
+" *\n"
+" * Polling  Tampon de flux de décodage \n"
+" *\n"
+" * @param[in] decChn  Tampon de flux de décodage Channel Tampon de flux de "
+"décodage , Tampon de flux de décodage : [0, @ref NR_MAX_DEC_CHN - 1]\n"
+" * @param[in] timeoutMsec  temps supplémentaire   temps supplémentaire ms\n"
+" *\n"
+" * @retval 0  temps supplémentaire \n"
+" * @retval  temps supplémentaire 0  temps supplémentaire \n"
+" *\n"
+" * @remarks  temps supplémentaire \n"
+" *\n"
+" * @attention  temps supplémentaire Channel temps supplémentaire ， temps "
+"supplémentaire \n"
+" */\n"
+"int IMP_Decoder_PollingFrame(int decChn, uint32_t timeoutMsec);\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_decoder.h:182
+#, markdown-text, no-wrap
+msgid ""
+"/**\n"
+" * @fn int IMP_Decoder_GetFrame(int decChn, IMPFrameInfo **frame)\n"
+" *\n"
+" *  Obtenir un flux de code décodé \n"
+" *\n"
+" * @param[in] decChn  Obtenir un flux de code décodé Channel Obtenir un flux "
+"de code décodé , Obtenir un flux de code décodé : [0, @ref NR_MAX_DEC_CHN - "
+"1]\n"
+" * @param[out] frame  Décodage du pointeur de structure de flux \n"
+" *\n"
+" * @retval 0  Décodage du pointeur de structure de flux \n"
+" * @retval  Décodage du pointeur de structure de flux 0  Décodage du "
+"pointeur de structure de flux \n"
+" *\n"
+" * @remarks  Décodage du pointeur de structure de flux \n"
+" *\n"
+" * @attention  Décoder le flux buffer Appliquer en interne par le décodeur ， "
+"Cette fonction n'a besoin que de passer le pointeur de structure. \n"
+" */\n"
+"int IMP_Decoder_GetFrame(int decChn, IMPFrameInfo **frame);\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_decoder.h:199
+#, markdown-text, no-wrap
+msgid ""
+"/**\n"
+" * @fn int IMP_Decoder_ReleaseFrame(int decChn, IMPFrameInfo *frame)\n"
+" *\n"
+" *  Libérez le cache du flux de code \n"
+" *\n"
+" * @param[in] decChn  Libérez le cache du flux de code Channel Libérez le "
+"cache du flux de code , Libérez le cache du flux de code : [0, @ref "
+"NR_MAX_DEC_CHN - 1]\n"
+" * @param[in] frame  Libérez le cache du flux de code \n"
+" *\n"
+" * @retval 0  Libérez le cache du flux de code \n"
+" * @retval  Libérez le cache du flux de code 0  Libérez le cache du flux de "
+"code \n"
+" *\n"
+" * @remarks  Libérez le cache du flux de code \n"
+" *\n"
+" * @attention  Libérez le cache du flux de code \n"
+" */\n"
+"int IMP_Decoder_ReleaseFrame(int decChn, IMPFrameInfo *frame);\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_decoder.h:203
+#, markdown-text, no-wrap
+msgid ""
+"/**\n"
+" * @}\n"
+" */\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_decoder.h:209
+#, markdown-text, no-wrap
+msgid ""
+"#ifdef __cplusplus\n"
+"#if __cplusplus\n"
+"}\n"
+"#endif\n"
+"#endif /* __cplusplus */\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_decoder.h:210
+#, markdown-text, no-wrap
+msgid "#endif /* __IMP_DECODER_H__ */\n"
+msgstr ""

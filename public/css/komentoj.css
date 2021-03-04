@@ -1,0 +1,115 @@
+.komento {
+  display: flex;
+  flex-direction: row; }
+.komento .komento-uzanto {
+    margin-right: 1rem; }
+.komento .komento-uzanto img {
+      max-width: 50px; }
+.komento .komento-main {
+    border-radius: 0.25rem;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    flex: 1;
+    margin-bottom: 1rem; }
+.komento .komento-main .header {
+    font-size: 0.875rem;
+    color: #6c757d;
+    padding: 0.5rem 0.75rem;
+    margin-bottom: 0.5rem;
+    background: rgba(0, 0, 0, 0.03 );
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+.komento .komento-main .header .uzanto {
+        color: #60686f;
+        font-weight: bold; }
+.komento .komento-main .header .uzanto:hover {
+
+          color: #60686f; }
+.komento .komento-main .header .time {
+        color: #6c757d; }
+.komento .komento-main .header .time:hover {
+          color: #6c757d; }
+.komento .komento-main .body {
+      padding: 1rem;
+      padding-top: 0rem;
+}
+.komento .komento-main .body > *:last-child {
+      margin-bottom: 0; }
+.komento .komento-main .body .rounded-1 {
+      border-radius: 0.25rem !important; }
+.komento .komento-main .body .lh-condensed {
+      line-height: 1.2 !important; }
+.komento .komento-main .body .f6 {
+      font-size: 12px !important; }
+.komento .komento-main .body .blob-wrapper-embedded {
+      max-height: 240px; }
+.komento .komento-main .body .blob-wrapper {
+      border-bottom-right-radius: 0.25rem;
+      border-bottom-left-radius: 0.25rem;
+      overflow: auto;
+      -webkit-overflow-scrolling: touch; }
+.komento .komento-main .body .blob-wrapper > table {
+        overflow: visible; }
+.komento .komento-main .body .blob-num {
+      width: 1%;
+      min-width: 50px;
+      padding-right: 10px;
+      padding-left: 10px;
+      font-family: 'Hack';
+      font-size: 0.875rem;
+      line-height: 1.5;
+      color: #6c757d;
+      text-align: right;
+      white-space: nowrap;
+      vertical-align: top;
+      cursor: pointer;
+      user-select: none; }
+.komento .komento-main .body .blob-num::before {
+        content: attr(data-line-number); }
+.komento .komento-main .body .blob-code-inner {
+      overflow: visible;
+      font-family: 'Hack';
+      font-size: 0.875rem;
+      color: #6c757d;
+      word-wrap: normal;
+      white-space: pre; }
+.komento .komento-main .body .blob-code {
+      position: relative;
+      padding-right: 10px;
+      padding-left: 10px;
+      line-height: 1.5;
+      vertical-align: top; }
+.komento .komento-main .body .bg-white {
+      background-color: !important; }
+.komento .komento-main .body .bg-gray-light {
+      background-color: #f8f9fa !important; }
+.komento .komento-main .body .text-gray-light {
+      color: #6c757d; }
+.komento .komento-main .body .commit-tease-sha {
+      color: #545b62; }
+.komento .komento-main .body blockquote {
+      border-left: 0.5em solid #f8f9fa;
+      color: #6c757d;
+      padding: 0 1em; }
+.komento .komento-main .footer {
+      padding: 0;
+      background: transparent; }
+.komento .komento-main .footer .nav-link {
+        border-right: 1px solid rgba(0, 0, 0, 0.125); }
+
+.komentobtn {
+padding: 0.5rem 1rem;
+font-size: 1.25rem;
+line-height: 1.5;
+border-radius: 0.3rem;
+color: #212529;
+background-color: #f8f9fa;
+border-color: #f8f9fa;
+}
+.komentobtntxt {
+  text-align: center;
+color: #212529;
+}
+.komentobtntxt a:hover, .komentobtntxt a:focus{
+  background-color: #d8d9da;
+}
+

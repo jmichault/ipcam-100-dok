@@ -1,0 +1,111 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-03-04 13:56+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: bn\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Hash Value - Key: Funkciigita
+#: >lang
+#, fuzzy, no-wrap
+msgid "Funkciigita de"
+msgstr "দ্বারা চালিত"
+
+#. type: Hash Value - Key: cxiujAfisxoj
+#: >lang
+#, fuzzy, no-wrap
+msgid "Ĉiuj Afiŝoj"
+msgstr "সমস্ত পোস্ট"
+
+#. type: Hash Value - Key: elektuLingvon
+#: >lang
+#, fuzzy, no-wrap
+msgid "Elektu vian lingvon"
+msgstr "আপনার ভাষা নির্বাচন করুন"
+
+#. type: Hash Value - Key: komentis
+#: >lang
+#, fuzzy, no-wrap
+msgid "komentis:"
+msgstr "মন্তব্য করেছেন:"
+
+#. type: Hash Value - Key: komentoButono
+#: >lang
+#, fuzzy, no-wrap
+msgid "Aldoni vian komenton (pri github)"
+msgstr "গিথুব)এ একটি মন্তব্য (যুক্ত করুন"
+
+#. type: Hash Value - Key: komentoj
+#: >lang
+#, fuzzy, no-wrap
+msgid "Komentoj:"
+msgstr "মন্তব্যসমূহ:"
+
+#. type: Hash Value - Key: malsamaLingvo
+#: >lang
+#, fuzzy, no-wrap
+msgid "Legu ĉi tiun paĝon en alia lingvo"
+msgstr "এই পৃষ্ঠাটি অন্য ভাষায় পড়ুন"
+
+#. type: Hash Value - Key: priskribo
+#: >lang
+#, no-wrap
+#, fuzzy
+msgid "Alternativa firmvaro por ipcam-100-fotilo"
+msgstr "আইপ্যাক্যাম -100 ক্যামেরার জন্য একটি বিকল্প ফার্মওয়্যার"
+
+#. type: Hash Value - Key: rajtoj
+#: >lang
+#, fuzzy, no-wrap
+msgid "Permesilo <a rel=\"license\" href=\"https://creativecommons.org/licenses/by-sa/4.0/\"><img alt=\"Licence Creative Commons\" style=\"display:inline;border-width:0\" src=\"https://i.creativecommons.org/l/by-sa/4.0/88x31.png\" title=\"CC-BY-SA 4.0\"/></a>"
+msgstr "লাইসেন্স <a rel=\"license\" href=\"https://creativecommons.org/licenses/by-sa/4.0/\"><img Alt =\"ক্রিয়েটিভ কমন্স লাইসেন্স\" style=\"display:inline;border-width:0\" src=\"https://i.creativecommons.org/l/by-sa/4.0/88x31.png\" title=\"CC-BY-SA 4.0\"/></ এ>"
+
+#. type: Hash Value - Key: rigardiEn
+#: >lang
+#, fuzzy, no-wrap
+msgid "Rigardi en"
+msgstr "ভিতরে তাকান"
+
+#. type: Hash Value - Key: rilatajAfisxoj
+#: >lang
+#, fuzzy, no-wrap
+msgid "Rilataj Afiŝoj"
+msgstr "সম্পর্কিত পোস্ট"
+
+#. type: Hash Value - Key: sercxi
+#: >lang
+#, fuzzy, no-wrap
+msgid "Serĉu per Google."
+msgstr "গুগল অনুসন্ধান করুন।"
+
+#. type: Hash Value - Key: titolo
+#: >lang
+#, no-wrap
+#, fuzzy
+msgid "Fotilo Ipcam-100"
+msgstr "আইপ্যাক্যাম -100 ক্যামেরা"
+
+#. type: Hash Value - Key: tradukoAverto
+#: >lang
+#, fuzzy, no-wrap
+msgid "Bonvolu noti: ĉi tiu paĝo estis tradukita aŭtomate. Se vi povas, vi devas legi ĝin en unu el ĉi tiuj lingvoj:"
+msgstr "দয়া করে নোট করুন: এই পৃষ্ঠাটি স্বয়ংক্রিয়ভাবে অনুবাদ করা হয়েছে। যদি আপনি পারেন তবে আপনার এটির একটির ভাষায় এটি পড়তে হবে:"
+
+#, fuzzy
+#~ msgid "Priskribo."
+#~ msgstr "বর্ণনা।"
+
+#, fuzzy
+#~ msgid "Titolo."
+#~ msgstr "শিরোনাম."

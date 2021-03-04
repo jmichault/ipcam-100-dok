@@ -1,0 +1,428 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-03-04 17:42+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: hi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: YAML Front Matter: lang
+#: index.md:1
+#, no-wrap
+msgid "eo"
+msgstr "hi"
+
+#. type: YAML Front Matter: lang-niv
+#: index.md:1
+#, no-wrap
+msgid "auto"
+msgstr "auto"
+
+#. type: YAML Front Matter: lang-ref
+#: index.md:1
+#, no-wrap
+msgid "000-indekso"
+msgstr "000-indekso"
+
+#. type: YAML Front Matter: layout
+#: index.md:1
+#, no-wrap
+msgid "page"
+msgstr "page"
+
+#. type: YAML Front Matter: title
+#: index.md:1
+#, fuzzy, no-wrap
+msgid "Prezento"
+msgstr "प्रस्तुतीकरण"
+
+#. type: Plain text
+#: index.md:10
+#, fuzzy, no-wrap
+msgid "La celo de ĉi tiu projekto estas krei alternativan firmvaron por ĉi tiu fotilo:\n"
+msgstr "इस परियोजना का लक्ष्य इस कैमरे के लिए एक वैकल्पिक फर्मवेयर बनाना है:\n"
+
+#. type: Plain text
+#: index.md:11
+#, fuzzy, no-wrap
+msgid "marko = _WIFI CARAM_  \n"
+msgstr "निशान = _WIFI CARAM_  \n"
+
+#. type: Plain text
+#: index.md:12
+#, fuzzy, no-wrap
+msgid "modelo: _WF-HD820-ZS_  \n"
+msgstr "मॉडल: _WF-HD820-ZS_  \n"
+
+#. type: Plain text
+#: index.md:14
+#, fuzzy, no-wrap
+msgid "distingivo: _1080P_\n"
+msgstr "संकल्प: _1080P_\n"
+
+#. type: Plain text
+#: index.md:16
+#, fuzzy, no-wrap
+msgid "Informoj montrataj en la interreta interfaco:\n"
+msgstr "इंटरनेट इंटरफेस पर प्रदर्शित जानकारी:\n"
+
+#. type: Fenced code block
+#: index.md:16
+#, no-wrap
+msgid ""
+"DeviceName: _INGENIC-V01_\n"
+"DeviceModel: _IPCAM-100_\n"
+"DeviceSN: _12345678901_\n"
+"KernelVersion: _Thu Jul 9 15:46:54 CST 2015_\n"
+"ServerVersion: _WS3.53.1243-20190717-DANALE-GEN_\n"
+"WebVersion: _V2.3.4-20190709_\n"
+msgstr ""
+"DeviceName: _INGENIC-V01_\n"
+"DeviceModel: _IPCAM-100_\n"
+"DeviceSN: _12345678901_\n"
+"KernelVersion: _Thu Jul 9 15:46:54 CST 2015_\n"
+"ServerVersion: _WS3.53.1243-20190717-DANALE-GEN_\n"
+"WebVersion: _V2.3.4-20190709_\n"
+
+#. type: Plain text
+#: index.md:27
+#, fuzzy, no-wrap
+msgid ""
+"procesoro: _ingenic T21_\n"
+"videosensilo: _GC2053_\n"
+msgstr ""
+"प्रोसेसर: _ingenic T21_\n"
+"वीडियो सेंसर: _GC2053_\n"
+
+#. type: Plain text
+#: index.md:33
+#, fuzzy, no-wrap
+msgid ""
+"Multa laboro estis farita por fotiloj ekipitaj kun procesoro _ingenic T20_.\n"
+"* modifita firmvaro: <https://github.com/EliasKotlyar/Xiaomi-Dafang-Hacks>\n"
+"* fontoj de modifita firmvaro: <https://github.com/Dafang-Hacks/Main>\n"
+"* alia firmvaro <https://github.com / openmiko / openmiko>\n"
+"* lanĉante programojn sen ŝanĝi la firmvaron: <https://github.com/ThatUsernameAlreadyExist/JCO-PM203-Fisheye-Ingenic- T20 -P2P-fotilo-hakoj>\n"
+msgstr ""
+"प्रोसेसर _ingenic T20_से लैस कैमरों के लिए बहुत काम किया गया है।\n"
+"* संशोधित फर्मवेयर: <https://github.com/EliasKotlyar/Xiaomi-Dafang-Hacks>\n"
+"* स्रोत से संशोधित फर्मवेयर: <https://github.com/Dafang-Hacks/Main>\n"
+"* अन्य फर्मवेयर <https://github.com / Openmiko / Openmiko>\n"
+"* फर्मवेयर को बदले बिना प्रोग्राम लॉन्च कर रहा है: <https://github.com/ThatUsernameAlreadyExist-JCO-PM203-Fisheye-Ingenic- T20 -2P कैमरा हैक्स>\n"
+
+#. type: Plain text
+#: index.md:34
+#, fuzzy, no-wrap
+msgid "API-dokumentaro videblas ĉi tie:  \n"
+msgstr "एपीआई प्रलेखन यहाँ देखा जा सकता है:  \n"
+
+#. type: Bullet: '* '
+#: index.md:36
+#, fuzzy, no-wrap
+msgid "[originala versio en la ĉina](../zh/includes.zh/html/)\n"
+msgstr "[मूल संस्करण चीनी में](../zh/includes.zh/html/)\n"
+
+#. type: Bullet: '* '
+#: index.md:38
+#, fuzzy, no-wrap
+msgid "[Franca versio tradukita de google](../fr/includes.fr/html/)\n"
+msgstr "[फ्रेंच संस्करण Google द्वारा अनुवादित](../fr/includes.fr/html/)\n"
+
+#. type: Bullet: '* '
+#: index.md:40
+#, fuzzy, no-wrap
+msgid "[Angla versio tradukita de google](../en/includes.en/html/)\n"
+msgstr "[Google द्वारा अनुवादित अंग्रेज़ी संस्करण](../en/includes.en/html/)\n"
+
+#. type: Title #
+#: index.md:42
+#, fuzzy, no-wrap
+msgid "Alternativa firmvaro"
+msgstr "वैकल्पिक फर्मवेयर"
+
+#. type: Title ##
+#: index.md:44
+#, fuzzy, no-wrap
+msgid "Kio Funkcias en Alternativa Firmware:"
+msgstr "वैकल्पिक फर्मवेयर में क्या काम करता है:"
+
+#. type: Bullet: '* '
+#: index.md:47
+#, fuzzy, no-wrap
+msgid "LAN kaj WLAN\n"
+msgstr "LAN और WLAN\n"
+
+#. type: Bullet: '* '
+#: index.md:49
+#, fuzzy, no-wrap
+msgid "RTSP MJPEG-servilo\n"
+msgstr "RTSP MJPEG सर्वर\n"
+
+#. type: Bullet: '* '
+#: index.md:51
+#, fuzzy, no-wrap
+msgid "HTTP-servilo\n"
+msgstr "HTTP सर्वर\n"
+
+#. type: Bullet: '* '
+#: index.md:53
+#, fuzzy, no-wrap
+msgid "motora kontrolo\n"
+msgstr "इंजन नियंत्रण\n"
+
+#. type: Bullet: '* '
+#: index.md:55
+#, fuzzy, no-wrap
+msgid "motora kalibrado\n"
+msgstr "इंजन अंशांकन\n"
+
+#. type: Bullet: '* '
+#: index.md:57
+#, fuzzy, no-wrap
+msgid "Agordoj de PTZ\n"
+msgstr "PTZ सेटिंग्स\n"
+
+#. type: Bullet: '* '
+#: index.md:59
+#, fuzzy, no-wrap
+msgid "NTP-kliento\n"
+msgstr "NTP ग्राहक\n"
+
+#. type: Bullet: '* '
+#: index.md:61
+#, fuzzy, no-wrap
+msgid "pasvorta ŝanĝo por http-aliro\n"
+msgstr "http एक्सेस के लिए पासवर्ड परिवर्तन\n"
+
+#. type: Bullet: '* '
+#: index.md:63
+#, fuzzy, no-wrap
+msgid "blua LED kaj IR-kontrolo\n"
+msgstr "नीले एलईडी और आईआर नियंत्रण\n"
+
+#. type: Bullet: '* '
+#: index.md:65
+#, fuzzy, no-wrap
+msgid "Ftp-servilo\n"
+msgstr "फीट सर्वर\n"
+
+#. type: Bullet: '* '
+#: index.md:67
+#, fuzzy, no-wrap
+msgid "Telnet-servilo\n"
+msgstr "टेलनेट सर्वर\n"
+
+#. type: Title ##
+#: index.md:69
+#, fuzzy, no-wrap
+msgid "Kio ne funkcias en alternativa firmvaro:"
+msgstr "वैकल्पिक फर्मवेयर में क्या काम नहीं करता है:"
+
+#. type: Bullet: '* '
+#: index.md:72
+#, fuzzy, no-wrap
+msgid "Vidaj parametroj\n"
+msgstr "दृश्य पैरामीटर\n"
+
+#. type: Bullet: '* '
+#: index.md:74
+#, fuzzy, no-wrap
+msgid "sekundara videorivereto\n"
+msgstr "माध्यमिक वीडियो स्ट्रीम\n"
+
+#. type: Bullet: '* '
+#: index.md:76
+#, fuzzy, no-wrap
+msgid "sondosistemo\n"
+msgstr "साउंड सिस्टम\n"
+
+#. type: Bullet: '* '
+#: index.md:78
+#, fuzzy, no-wrap
+msgid "_OSD_\n"
+msgstr "_OSD_\n"
+
+#. type: Bullet: '* '
+#: index.md:80
+#, fuzzy, no-wrap
+msgid "ĝisdatigo de firmvaro\n"
+msgstr "फर्मवेयर अपडेट\n"
+
+#. type: Bullet: '* '
+#: index.md:82
+#, fuzzy, no-wrap
+msgid "aŭtomata nokta detekto\n"
+msgstr "स्वचालित रात का पता लगाना\n"
+
+#. type: Bullet: '* '
+#: index.md:84
+#, fuzzy, no-wrap
+msgid "movado-detekto\n"
+msgstr "गति का पता लगाना\n"
+
+#. type: Bullet: '* '
+#: index.md:86
+#, fuzzy, no-wrap
+msgid "movado-detekto_ir-cut_\n"
+msgstr "गति का पता लगाना_ir-cut_\n"
+
+#. type: Bullet: '* '
+#: index.md:88
+#, fuzzy, no-wrap
+msgid "sendante retpoŝton\n"
+msgstr "ईमेल भेजना\n"
+
+#. type: Bullet: '* '
+#: index.md:90
+#, fuzzy, no-wrap
+msgid "sendante retpoŝton_mqtt_\n"
+msgstr "ईमेल भेजना_mqtt_\n"
+
+#. type: Bullet: '* '
+#: index.md:92
+#, fuzzy, no-wrap
+msgid "sendante retpoŝton_h264_\n"
+msgstr "ईमेल भेजना_h264_\n"
+
+#. type: Bullet: '* '
+#: index.md:94
+#, fuzzy, no-wrap
+msgid "ktp ...\n"
+msgstr "आदि ...\n"
+
+#. type: Title ##
+#: index.md:96
+#, fuzzy, no-wrap
+msgid "Kamera preparado"
+msgstr "कैमरा तैयार करना"
+
+#. type: Bullet: '* '
+#: index.md:99 index.md:118
+#, fuzzy, no-wrap
+msgid "Konekti la fotilon al via loka reto kaj ŝalti la fotilon.\n"
+msgstr "कैमरे को अपने स्थानीय नेटवर्क से कनेक्ट करें और कैमरा चालू करें।\n"
+
+#. type: Bullet: '* '
+#: index.md:101
+#, fuzzy, no-wrap
+msgid "Trovu la IP-adreson de la fotilo.\n"
+msgstr "कैमरे का आईपी पता खोजें।\n"
+
+#. type: Bullet: '* '
+#: index.md:103
+#, fuzzy, no-wrap
+msgid "Konekti al la fotilo per URL _\"http://IP\"_ (uzanto _admin_, pasvorto _admin_)\n"
+msgstr "URL _\"http://IP\"_ (उपयोगकर्ता _admin_, पासवर्ड _admin_)के साथ कैमरे से कनेक्ट करें\n"
+
+#. type: Bullet: '* '
+#: index.md:105
+#, fuzzy, no-wrap
+msgid "en la langeto \"Aŭdio kaj video\", agordu la ĉefan rivereton al 720p, alklaku \"Konservu\".\n"
+msgstr "टैब में \"ऑडियो और वीडियो\", 720p पर मुख्य स्ट्रीम सेट करें, \"सहेजें\"पर क्लिक करें।\n"
+
+#. type: Bullet: '* '
+#: index.md:107
+#, fuzzy, no-wrap
+msgid "eble agordu la kablan reton en la langeto \"Reto\".\n"
+msgstr "आप \"नेटवर्क\"टैब में केबल नेटवर्क को कॉन्फ़िगर करने में सक्षम हो सकते हैं।\n"
+
+#. type: Title ##
+#: index.md:109
+#, fuzzy, no-wrap
+msgid "Instalante Alternativan Firmware"
+msgstr "वैकल्पिक फर्मवेयर स्थापित करना"
+
+#. type: Bullet: '* '
+#: index.md:112
+#, fuzzy, no-wrap
+msgid "Kopiu ĉion en la dosierujo [ _karto_ ](https://github.com/jmichault/ipcam-100/tree/master/karto) ĉe la radiko de la karto microSD.\n"
+msgstr "माइक्रोएसडी कार्ड की जड़ में सब कुछ [ _karto_ ](https://github.com/jmichault/ipcam-100/tree/master/karto) फ़ोल्डर में कॉपी करें।\n"
+
+#. type: Bullet: '* '
+#: index.md:114
+#, fuzzy, no-wrap
+msgid "laŭvole agordi la reton ( _config/staticip.conf_ , _config/resolv.conf_ , _config/wpa_supplicant.conf_ )\n"
+msgstr "वैकल्पिक रूप से नेटवर्क को कॉन्फ़िगर करें ( _config/staticip.conf_ , _config/resolv.conf_ , _config/wpa_supplicant.conf_ )\n"
+
+#. type: Bullet: '* '
+#: index.md:116
+#, fuzzy, no-wrap
+msgid "Enmetu la karton microSD.\n"
+msgstr "माइक्रोएसडी कार्ड डालें।\n"
+
+#. type: Bullet: '* '
+#: index.md:120
+#, fuzzy, no-wrap
+msgid "Ensalutu ĉe la fotilo per `telnet IP 9527` (uzanto _root_, pasvorto _jco66688_).\n"
+msgstr " `telnet IP 9527` (उपयोगकर्ता _root_, पासवर्ड _jco66688_)के साथ कैमरे में लॉग इन करें।\n"
+
+#. type: Bullet: '* '
+#: index.md:122
+#, fuzzy, no-wrap
+msgid "Premu `killall -9 auto_run.sh` por eviti fermi la konekton.\n"
+msgstr "कनेक्शन बंद करने से बचने के लिए `killall -9 auto_run.sh` दबाएँ।\n"
+
+#. type: Bullet: '* '
+#: index.md:124
+#, fuzzy, no-wrap
+msgid "Faru `cd /opt/media/mmcblk0p1;./install.sh`\n"
+msgstr "फ़ारू `cd /opt/media/mmcblk0p1;./install.sh`\n"
+
+#. type: Bullet: '* '
+#: index.md:126
+#, fuzzy, no-wrap
+msgid "Vi povas konekti al la URL _\"https://IP\"_ (uzanto _admin_, pasvorto _jco66688_).\n"
+msgstr "आप URL _\"https://IP\"_ (उपयोगकर्ता _admin_, पासवर्ड _jco66688_)से कनेक्ट कर सकते हैं।\n"
+
+#. type: Title ##
+#: index.md:128
+#, fuzzy, no-wrap
+msgid "Malinstalanta Alternativan Firmware:"
+msgstr "वैकल्पिक फर्मवेयर की स्थापना रद्द करना:"
+
+#. type: Bullet: '* '
+#: index.md:131
+#, fuzzy, no-wrap
+msgid "komencu la telnet-servon per la fotilo per la interreta interfaco.\n"
+msgstr "इंटरनेट इंटरफेस के माध्यम से कैमरे के साथ टेलनेट सेवा शुरू करें।\n"
+
+#. type: Bullet: '* '
+#: index.md:133
+#, fuzzy, no-wrap
+msgid "komencu la telnet-servon per la fotilo per la interreta interfaco. `telnet IP` \n"
+msgstr "इंटरनेट इंटरफेस के माध्यम से कैमरे के साथ टेलनेट सेवा शुरू करें। `telnet IP` \n"
+
+#. type: Bullet: '* '
+#: index.md:135
+#, fuzzy, no-wrap
+msgid "komencu la telnet-servon per la fotilo per la interreta interfaco. `cd /opt/media/mmcblk0p1;./uninstall.sh;reboot`\n"
+msgstr "इंटरनेट इंटरफेस के माध्यम से कैमरे के साथ टेलनेट सेवा शुरू करें। `cd /opt/media/mmcblk0p1;./uninstall.sh;reboot`\n"
+
+#. type: Bullet: '* '
+#: index.md:138
+#, fuzzy, no-wrap
+msgid "Vi ankaŭ povas simple forigi la karton microSD.\n"
+msgstr "आप बस माइक्रोएसडी कार्ड भी निकाल सकते हैं।\n"
+
+#~ msgid "fonto"
+#~ msgstr "auto"
+
+#~ msgid "indekso"
+#~ msgstr "indekso"
+
+#~ msgid "index"
+#~ msgstr "index"
+
+#, fuzzy
+#~ msgid "Plej novaj afiŝoj"
+#~ msgstr "नवीनतम पोस्ट"

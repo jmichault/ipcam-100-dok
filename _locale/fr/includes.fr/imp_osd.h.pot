@@ -1,0 +1,645 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-03-04 16:42+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: ./includes.fr/imp_osd.h:6
+#, markdown-text, no-wrap
+msgid ""
+"/*\n"
+" * IMP OSD header file.\n"
+" *\n"
+" * Copyright (C) 2015 Ingenic Semiconductor Co.,Ltd\n"
+" */\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_osd.h:9
+#, markdown-text, no-wrap
+msgid ""
+"#ifndef __IMP_OSD_H__\n"
+"#define __IMP_OSD_H__\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_osd.h:11
+#, markdown-text, no-wrap
+msgid "#include \"imp_common.h\"\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_osd.h:22
+#, markdown-text, no-wrap
+msgid ""
+"#ifdef __cplusplus\n"
+"#if __cplusplus\n"
+"extern \"C\"\n"
+"{\n"
+"#endif\n"
+"#endif /* __cplusplus */\n"
+"/**\n"
+" * @file\n"
+" * IMP OSD Fichier d'en-tête du module \n"
+" */\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_osd.h:60
+#, markdown-text, no-wrap
+msgid ""
+"/**\n"
+" * @defgroup IMP_OSD\n"
+" * @ingroup imp\n"
+" * @brief OSD Module ， Peut superposer des images, des bitmaps, des lignes "
+"droites, des boîtes rectangulaires sur le flux vidéo \n"
+" *\n"
+" * @section osd_summary 1  Présentation du module \n"
+" * OSD Le nom complet est On-Screen Display . La fonction du module est de "
+"superposer des informations telles que des lignes et des images dans chaque "
+"source de film. \n"
+" *\n"
+" * @section osd_concept 2  Concepts associés \n"
+" * @subsection osd_region 2.1 Region\n"
+" * Region Est-ce que la zone superposée ， dans API Abréviation chinoise Rgn "
+". Chaque Region Avoir certaines informations sur l'image ， Peut passer OSD "
+"Une fois les modules superposés ， Combiné avec l'image d'arrière-plan dans "
+"une image. \n"
+" *  Pour la superposition d'image ， Peut également être réalisé Alpha "
+"effet. Pour une présentation détaillée des différents types de "
+"superposition, veuillez consulter @ref osd_region_type . \n"
+" *\n"
+" * @subsection osd_region_type 2.1 Region type\n"
+" * Region Il existe plusieurs types ， Elles sont: \\n\n"
+" * OSD_REG_LINE :ligne droite \\n\n"
+" * OSD_REG_RECT :Rectangle \\n\n"
+" * OSD_REG_BITMAP : bitmap \\n\n"
+" * OSD_REG_COVER : Occlusion \\n\n"
+" * OSD_REG_PIC :image \\n\n"
+" *  parmi eux ， La différence entre le bitmap et l'image est ， Bitmap "
+"n'effectue qu'une couverture monochrome des pixels ， Et l'image est RGBA "
+"Image Alpha Recouvrir. \n"
+" *\n"
+" * @section osd_fun 3  Fonction du module \n"
+" * OSD Le module prend en charge les lignes, les boîtes rectangulaires, la "
+"superposition bitmap, l'occlusion rectangulaire et la superposition "
+"d'image. \n"
+" *  Les lignes, les boîtes rectangulaires et les bitmaps sont implémentés "
+"par logiciel; l'occlusion rectangulaire et les superpositions d'images sont "
+"implémentées par le matériel. \n"
+" *\n"
+" * @section osd_use 4  Utilisation du module \n"
+" * OSD L'utilisation de comporte généralement les étapes suivantes \n"
+" * 1.  créer OSD grouper \n"
+" * 2.  Lier OSD Regrouper dans le système \n"
+" * 3.  Regrouper dans le système OSD surface \n"
+" * 4.  inscrit OSD Zone à OSD Dans le groupe \n"
+" * 5.  Installation OSD Attributs de zone de groupe et attributs de zone \n"
+" * 6.  Attributs de zone de groupe et attributs de zone OSD Commutateur de "
+"fonction \n"
+" * @{\n"
+" */\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_osd.h:65
+#, markdown-text, no-wrap
+msgid ""
+"/**\n"
+" *  Valeur de retour d'erreur \n"
+" */\n"
+"#define INVHANDLE\t\t(-1)\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_osd.h:70
+#, markdown-text, no-wrap
+msgid ""
+"/**\n"
+" * OSD  Poignée de zone \n"
+" */\n"
+"typedef int IMPRgnHandle;\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_osd.h:81
+#, markdown-text, no-wrap
+msgid ""
+"/**\n"
+" * OSD Type de couleur ， Le format de couleur est bgra\n"
+" */\n"
+"typedef enum {\n"
+"\tOSD_BLACK\t= 0xff000000, /**<  noir  */\n"
+"\tOSD_WHITE\t= 0xffffffff, /**<  blanc  */\n"
+"\tOSD_RED\t\t= 0xffff0000, /**<  rouge  */\n"
+"\tOSD_GREEN\t= 0xff00ff00, /**<  vert  */\n"
+"\tOSD_BLUE\t= 0xff0000ff, /**<  bleu  */\n"
+"}IMPOsdColour;\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_osd.h:93
+#, markdown-text, no-wrap
+msgid ""
+"/**\n"
+" * OSD Type de zone \n"
+" */\n"
+"typedef enum {\n"
+"\tOSD_REG_INV\t\t\t= 0, /**<  Type de zone non défini  */\n"
+"\tOSD_REG_LINE\t\t= 1, /**<  ligne  */\n"
+"\tOSD_REG_RECT\t\t= 2, /**<  rectangle  */\n"
+"\tOSD_REG_BITMAP\t\t= 3, /**<  Bitmap  */\n"
+"\tOSD_REG_COVER\t\t= 4, /**<  Occlusion rectangulaire  */\n"
+"\tOSD_REG_PIC\t\t\t= 5, /**<  image ， Convient pour une utilisation comme "
+"Logo Ou horodatage  */\n"
+"} IMPOsdRgnType;\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_osd.h:101
+#, markdown-text, no-wrap
+msgid ""
+"/**\n"
+" * OSD Données de ligne de surface et de rectangle \n"
+" */\n"
+"typedef struct {\n"
+"\tuint32_t\t\tcolor;\t\t\t/**<  Couleur ， Supporte uniquement "
+"OSD_WHITE，OSD_BLACK，OSD_RED Trois formats  */\n"
+"\tuint32_t\t\tlinewidth;\t\t/**<  Largeur de ligne  */\n"
+"} lineRectData;\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_osd.h:108
+#, markdown-text, no-wrap
+msgid ""
+"/**\n"
+" * OSD Données d'occlusion de zone \n"
+" */\n"
+"typedef struct {\n"
+"\tuint32_t\t\tcolor;\t\t\t/**<  Données d'occlusion de zone ， Données "
+"d'occlusion de zone bgra Format de couleur  */\n"
+"} coverData;\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_osd.h:116
+#, markdown-text, no-wrap
+msgid ""
+"/**\n"
+" * OSD Données d'image régionales \n"
+" */\n"
+"typedef struct {\n"
+"\tvoid\t\t\t\t*pData;\t\t\t/**<  Pointeur de données d'image  */\n"
+"} picData;\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_osd.h:126
+#, markdown-text, no-wrap
+msgid ""
+"/**\n"
+" * OSD Données d'attribut de zone \n"
+" */\n"
+"typedef union {\n"
+"\tvoid\t\t\t\t*bitmapData;\t\t/**<  Données de matrice de points  */\n"
+"\tlineRectData\t\t\tlineRectData;\t\t/**<  Données de ligne et de rectangle  "
+"*/\n"
+"\tcoverData\t\t\tcoverData;\t\t/**<  Données d'occlusion  */\n"
+"\tpicData\t\t\t\tpicData;\t\t/**<  Données d'image  */\n"
+"} IMPOSDRgnAttrData;\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_osd.h:136
+#, markdown-text, no-wrap
+msgid ""
+"/**\n"
+" * OSD Attributs de zone \n"
+" */\n"
+"typedef struct {\n"
+"\tIMPOsdRgnType\t\ttype;\t\t\t/**< OSD Attributs de zone  */\n"
+"\tIMPRect\t\t\t\trect;\t\t\t/**<  Données rectangulaires  */\n"
+"\tIMPPixelFormat\t\tfmt;\t\t\t/**<  Format de point  */\n"
+"\tIMPOSDRgnAttrData\tdata;\t\t\t/**< OSD Format de point  */\n"
+"} IMPOSDRgnAttr;\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_osd.h:150
+#, markdown-text, no-wrap
+msgid ""
+"/**\n"
+" * OSD Attributs de zone de groupe \n"
+" */\n"
+"typedef struct {\n"
+"\tint\t\t\t\t\tshow;\t\t\t/**<  Que ce soit pour montrer  */\n"
+"\tIMPPoint\t\t\toffPos;\t\t\t/**<  Afficher les coordonnées de départ  */\n"
+"\tfloat\t\t\t\tscalex;\t\t\t/**<  Zoom x paramètre  */\n"
+"\tfloat\t\t\t\tscaley;\t\t\t/**<  paramètre y paramètre  */\n"
+"\tint\t\t\t\t\tgAlphaEn;\t\t/**< Alpha changer  */\n"
+"\tint\t\t\t\t\tfgAlhpa;\t\t/**<  perspective Alpha */\n"
+"\tint\t\t\t\t\tbgAlhpa;\t\t/**<  Contexte Alpha */\n"
+"\tint\t\t\t\t\tlayer;\t\t\t/**<  Afficher la couche  */\n"
+"} IMPOSDGrpRgnAttr;\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_osd.h:167
+#, markdown-text, no-wrap
+msgid ""
+"/**\n"
+" * @fn int IMP_OSD_CreateGroup(int grpNum)\n"
+" *\n"
+" *  Afficher la couche OSD Afficher la couche \n"
+" *\n"
+" * @param[in] grpNum OSD No de groupe , Gammes : [0, @ref NR_MAX_OSD_GROUPS "
+"- 1]\n"
+" *\n"
+" * @retval 0  Succès \n"
+" * @retval  non- 0  échec \n"
+" *\n"
+" * @remarks  non. \n"
+" *\n"
+" * @attention  non. \n"
+" */\n"
+"int IMP_OSD_CreateGroup(int grpNum);\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_osd.h:183
+#, markdown-text, no-wrap
+msgid ""
+"/**\n"
+" * @fn int IMP_OSD_DestroyGroup(int grpNum)\n"
+" *\n"
+" *  détruire OSD détruire \n"
+" *\n"
+" * @param[in] grpNum OSD détruire , détruire : [0, @ref NR_MAX_OSD_GROUPS - "
+"1]\n"
+" *\n"
+" * @retval 0  détruire \n"
+" * @retval  détruire 0  détruire \n"
+" *\n"
+" * @remarks  Appelle ça API Il est nécessaire que le groupe correspondant "
+"ait été créé. \n"
+" *\n"
+" * @attention  Il est nécessaire que le groupe correspondant ait été "
+"créé. \n"
+" */\n"
+"int IMP_OSD_DestroyGroup(int grpNum);\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_osd.h:201
+#, markdown-text, no-wrap
+msgid ""
+"/**\n"
+" * @fn int IMP_OSD_AttachToGroup(IMPCell *from, IMPCell *to)\n"
+" *\n"
+" *  volonté OSD Groupe ajouté au système \n"
+" *\n"
+" * @param[in] from OSD unité \n"
+" * @param[in] to  Autres unités du système \n"
+" *\n"
+" * @retval 0  Autres unités du système \n"
+" * @retval  Autres unités du système 0  Autres unités du système \n"
+" *\n"
+" * @remarks  Nouvelle version SDK Recommandé dans Bind Le chemin sera OSD "
+"Chaîne au flux de données du système ，Attach N'est plus recommandé ， mais "
+"API Garder ， Idéalement compatible avec les versions précédentes du "
+"logiciel. \n"
+" *  Pour plus de détails, veuillez consulter @ref bind  Exemple de \n"
+" *\n"
+" * @attention  Exemple de \n"
+" */\n"
+"int IMP_OSD_AttachToGroup(IMPCell *from, IMPCell *to);\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_osd.h:217
+#, markdown-text, no-wrap
+msgid ""
+"/**\n"
+" * @fn IMPRgnHandle IMP_OSD_CreateRgn(IMPOSDRgnAttr *prAttr)\n"
+" *\n"
+" *  Exemple de OSD Exemple de \n"
+" *\n"
+" * @param[in] prAttr OSD Exemple de \n"
+" *\n"
+" * @retval  supérieur ou égal à 0  supérieur ou égal à \n"
+" * @retval  Moins que 0  Moins que \n"
+" *\n"
+" * @remarks  Moins que \n"
+" *\n"
+" * @attention  Moins que \n"
+" */\n"
+"IMPRgnHandle IMP_OSD_CreateRgn(IMPOSDRgnAttr *prAttr);\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_osd.h:232
+#, markdown-text, no-wrap
+msgid ""
+"/**\n"
+" * @fn void IMP_OSD_DestroyRgn(IMPRgnHandle handle)\n"
+" *\n"
+" *  Moins que OSD Moins que \n"
+" *\n"
+" * @param[in] prAttr  Moins que ，IMP_OSD_CreateRgn La valeur de retour \n"
+" *\n"
+" * @retval  non \n"
+" *\n"
+" * @remarks  non \n"
+" *\n"
+" * @attention  non \n"
+" */\n"
+"void IMP_OSD_DestroyRgn(IMPRgnHandle handle);\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_osd.h:250
+#, markdown-text, no-wrap
+msgid ""
+"/**\n"
+" * @fn int IMP_OSD_RegisterRgn(IMPRgnHandle handle, int grpNum, "
+"IMPOSDGrpRgnAttr *pgrAttr)\n"
+" *\n"
+" *  non OSD non \n"
+" *\n"
+" * @param[in] handle  non ，IMP_OSD_CreateRgn non \n"
+" * @param[in] grpNum OSD non \n"
+" * @param[in] pgrAttr OSD Attributs d'affichage de groupe \n"
+" *\n"
+" * @retval 0  Attributs d'affichage de groupe \n"
+" * @retval  Attributs d'affichage de groupe 0  Attributs d'affichage de "
+"groupe \n"
+" *\n"
+" * @remarks  Attributs d'affichage de groupe API Lors de la demande du "
+"correspondant OSD Le groupe a été créé. \n"
+" *\n"
+" * @attention  Le groupe a été créé. \n"
+" */\n"
+"int IMP_OSD_RegisterRgn(IMPRgnHandle handle, int grpNum, IMPOSDGrpRgnAttr "
+"*pgrAttr);\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_osd.h:267
+#, markdown-text, no-wrap
+msgid ""
+"/**\n"
+" * @fn int IMP_OSD_UnRegisterRgn(IMPRgnHandle handle, int grpNum)\n"
+" *\n"
+" *  Se déconnecter OSD Se déconnecter \n"
+" *\n"
+" * @param[in] handle  Se déconnecter ，IMP_OSD_CreateRgn Se déconnecter \n"
+" * @param[in] grpNum OSD Se déconnecter \n"
+" *\n"
+" * @retval 0  Se déconnecter \n"
+" * @retval  Se déconnecter 0  Se déconnecter \n"
+" *\n"
+" * @remarks  Se déconnecter API Se déconnecter OSD Le groupe a été créé , La "
+"zone correspondante a été enregistrée. \n"
+" *\n"
+" * @attention  La zone correspondante a été enregistrée. \n"
+" */\n"
+"int IMP_OSD_UnRegisterRgn(IMPRgnHandle handle, int grpNum);\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_osd.h:284
+#, markdown-text, no-wrap
+msgid ""
+"/**\n"
+" * @fn int IMP_OSD_SetRgnAttr(IMPRgnHandle handle, IMPOSDRgnAttr *prAttr)\n"
+" *\n"
+" *  Définir les propriétés de la zone \n"
+" *\n"
+" * @param[in] handle  Définir les propriétés de la zone ，IMP_OSD_CreateRgn "
+"Définir les propriétés de la zone \n"
+" * @param[in] prAttr OSD Définir les propriétés de la zone \n"
+" *\n"
+" * @retval 0  Définir les propriétés de la zone \n"
+" * @retval  Définir les propriétés de la zone 0  Définir les propriétés de "
+"la zone \n"
+" *\n"
+" * @remarks  Définir les propriétés de la zone API Il est nécessaire que la "
+"zone correspondante ait été créée. \n"
+" *\n"
+" * @attention  Il est nécessaire que la zone correspondante ait été "
+"créée. \n"
+" */\n"
+"int IMP_OSD_SetRgnAttr(IMPRgnHandle handle, IMPOSDRgnAttr *prAttr);\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_osd.h:301
+#, markdown-text, no-wrap
+msgid ""
+"/**\n"
+" * @fn int IMP_OSD_GetRgnAttr(IMPRgnHandle handle, IMPOSDRgnAttr *prAttr)\n"
+" *\n"
+" *  Obtenir des attributs de zone \n"
+" *\n"
+" * @param[in] handle  Obtenir des attributs de zone ，IMP_OSD_CreateRgn "
+"Obtenir des attributs de zone \n"
+" * @param[out] prAttr OSD Obtenir des attributs de zone \n"
+" *\n"
+" * @retval 0  Obtenir des attributs de zone \n"
+" * @retval  Obtenir des attributs de zone 0  Obtenir des attributs de zone "
+"\n"
+" *\n"
+" * @remarks  Obtenir des attributs de zone API Obtenir des attributs de zone "
+"\n"
+" *\n"
+" * @attention  Obtenir des attributs de zone \n"
+" */\n"
+"int IMP_OSD_GetRgnAttr(IMPRgnHandle handle, IMPOSDRgnAttr *prAttr);\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_osd.h:318
+#, markdown-text, no-wrap
+msgid ""
+"/**\n"
+" * @fn int IMP_OSD_UpdateRgnAttrData(IMPRgnHandle handle, IMPOSDRgnAttrData "
+"*prAttrData)\n"
+" *\n"
+" *  Mettre à jour les attributs de données de zone ， Seulement pour "
+"OSD_REG_BITMAP avec OSD_REG_PIC Type de zone \n"
+" *\n"
+" * @param[in] handle  Type de zone ，IMP_OSD_CreateRgn Type de zone \n"
+" * @param[in] prAttrData OSD Attributs de données de zone \n"
+" *\n"
+" * @retval 0  Attributs de données de zone \n"
+" * @retval  Attributs de données de zone 0  Attributs de données de zone \n"
+" *\n"
+" * @remarks  Attributs de données de zone API Il faut que la zone "
+"correspondante ait été créée et que l'attribut de zone ait été défini sur "
+"OSD_REG_BITMAP ou OSD_REG_PIC ou \n"
+" *\n"
+" * @attention  ou \n"
+" */\n"
+"int IMP_OSD_UpdateRgnAttrData(IMPRgnHandle handle, IMPOSDRgnAttrData "
+"*prAttrData);\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_osd.h:336
+#, markdown-text, no-wrap
+msgid ""
+"/**\n"
+" * @fn int IMP_OSD_SetGrpRgnAttr(IMPRgnHandle handle, int grpNum, "
+"IMPOSDGrpRgnAttr *pgrAttr)\n"
+" *\n"
+" *  ou OSD ou \n"
+" *\n"
+" * @param[in] handle  ou ，IMP_OSD_CreateRgn ou \n"
+" * @param[in] grpNum OSD ou \n"
+" * @param[in] pgrAttr OSD ou \n"
+" *\n"
+" * @retval 0  ou \n"
+" * @retval  ou 0  ou \n"
+" *\n"
+" * @remarks  ou API ou OSD ou , La zone a été créée et enregistrée. \n"
+" *\n"
+" * @attention  La zone a été créée et enregistrée. \n"
+" */\n"
+"int IMP_OSD_SetGrpRgnAttr(IMPRgnHandle handle, int grpNum, IMPOSDGrpRgnAttr "
+"*pgrAttr);\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_osd.h:354
+#, markdown-text, no-wrap
+msgid ""
+"/**\n"
+" * @fn int IMP_OSD_GetGrpRgnAttr(IMPRgnHandle handle, int grpNum, "
+"IMPOSDGrpRgnAttr *pgrAttr)\n"
+" *\n"
+" *  Obtenir OSD Obtenir \n"
+" *\n"
+" * @param[in] handle  Obtenir ，IMP_OSD_CreateRgn Obtenir \n"
+" * @param[in] grpNum OSD Obtenir \n"
+" * @param[out] pgrAttr OSD Obtenir \n"
+" *\n"
+" * @retval 0  Obtenir \n"
+" * @retval  Obtenir 0  Obtenir \n"
+" *\n"
+" * @remarks  Obtenir API Obtenir OSD Obtenir , Obtenir \n"
+" *\n"
+" * @attention  Obtenir \n"
+" */\n"
+"int IMP_OSD_GetGrpRgnAttr(IMPRgnHandle handle, int grpNum, IMPOSDGrpRgnAttr "
+"*pgrAttr);\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_osd.h:372
+#, markdown-text, no-wrap
+msgid ""
+"/**\n"
+" * @fn int IMP_OSD_ShowRgn(IMPRgnHandle handle, int grpNum, int showFlag)\n"
+" *\n"
+" *  Définir s'il faut afficher la zone de groupe \n"
+" *\n"
+" * @param[in] handle  Définir s'il faut afficher la zone de groupe "
+"，IMP_OSD_CreateRgn Définir s'il faut afficher la zone de groupe \n"
+" * @param[in] grpNum OSD Définir s'il faut afficher la zone de groupe \n"
+" * @param[in] showFlag OSD Commutateur d'affichage de la zone de groupe \n"
+" *\n"
+" * @retval 0  Commutateur d'affichage de la zone de groupe \n"
+" * @retval  Commutateur d'affichage de la zone de groupe 0  Commutateur "
+"d'affichage de la zone de groupe \n"
+" *\n"
+" * @remarks  Commutateur d'affichage de la zone de groupe API Commutateur "
+"d'affichage de la zone de groupe OSD Commutateur d'affichage de la zone de "
+"groupe , Commutateur d'affichage de la zone de groupe \n"
+" *\n"
+" * @attention  Commutateur d'affichage de la zone de groupe \n"
+" */\n"
+"int IMP_OSD_ShowRgn(IMPRgnHandle handle, int grpNum, int showFlag);\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_osd.h:388
+#, markdown-text, no-wrap
+msgid ""
+"/**\n"
+" * @fn int IMP_OSD_Start(int grpNum)\n"
+" *\n"
+" *  Installation OSD Affichage de groupe \n"
+" *\n"
+" * @param[in] grpNum OSD Affichage de groupe \n"
+" *\n"
+" * @retval 0  Affichage de groupe \n"
+" * @retval  Affichage de groupe 0  Affichage de groupe \n"
+" *\n"
+" * @remarks  Affichage de groupe API Affichage de groupe OSD Affichage de "
+"groupe \n"
+" *\n"
+" * @attention  Affichage de groupe \n"
+" */\n"
+"int IMP_OSD_Start(int grpNum);\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_osd.h:404
+#, markdown-text, no-wrap
+msgid ""
+"/**\n"
+" * @fn int IMP_OSD_Stop(int grpNum)\n"
+" *\n"
+" *  Définir l'arrêt OSD Définir l'arrêt \n"
+" *\n"
+" * @param[in] grpNum OSD Définir l'arrêt \n"
+" *\n"
+" * @retval 0  Définir l'arrêt \n"
+" * @retval  Définir l'arrêt 0  Définir l'arrêt \n"
+" *\n"
+" * @remarks  Définir l'arrêt API Définir l'arrêt OSD Définir l'arrêt \n"
+" *\n"
+" * @attention  Définir l'arrêt \n"
+" */\n"
+"int IMP_OSD_Stop(int grpNum);\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_osd.h:408
+#, markdown-text, no-wrap
+msgid ""
+"/**\n"
+" * @}\n"
+" */\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_osd.h:414
+#, markdown-text, no-wrap
+msgid ""
+"#ifdef __cplusplus\n"
+"#if __cplusplus\n"
+"}\n"
+"#endif\n"
+"#endif /* __cplusplus */\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_osd.h:415
+#, markdown-text, no-wrap
+msgid "#endif /* __IMP_OSD_H__ */\n"
+msgstr ""

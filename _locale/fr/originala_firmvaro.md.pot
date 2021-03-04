@@ -1,0 +1,215 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-03-04 17:30+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: YAML Front Matter: lang
+#: originala_firmvaro.md:1
+#, no-wrap
+msgid "fr"
+msgstr ""
+
+#. type: YAML Front Matter: lang-niv
+#: originala_firmvaro.md:1
+#, no-wrap
+msgid "fonto"
+msgstr ""
+
+#. type: YAML Front Matter: lang-ref
+#: originala_firmvaro.md:1
+#, no-wrap
+msgid "001-originala_firmvaro"
+msgstr ""
+
+#. type: YAML Front Matter: layout
+#: originala_firmvaro.md:1
+#, no-wrap
+msgid "page"
+msgstr ""
+
+#. type: YAML Front Matter: title
+#: originala_firmvaro.md:1
+#, no-wrap
+msgid "Micrologiciel originel"
+msgstr ""
+
+#. type: Plain text
+#: originala_firmvaro.md:10
+#, no-wrap
+msgid "La mémoire flash est partitionnée comme suit :\n"
+msgstr ""
+
+#. type: Plain text
+#: originala_firmvaro.md:19
+#, no-wrap
+msgid ""
+"partition| description|\n"
+"---|---|\n"
+"mtdblock0 | u-boot loader|\n"
+"mtdblock1 | config de boot|\n"
+"mtdblock2 | u-boot legacy uImage, noyau linux|\n"
+"mtdblock3 | squashfs = /|\n"
+"mtdblock4 | squashfs, monté sur /ipc|\n"
+"mtdblock5 | jffs2, monté sur /opt|\n"
+msgstr ""
+
+#. type: Plain text
+#: originala_firmvaro.md:20
+#, no-wrap
+msgid "u-boot (partition mtdblock0) charge le noyau en mtdblock2.  \n"
+msgstr ""
+
+#. type: Plain text
+#: originala_firmvaro.md:21
+#, no-wrap
+msgid "options par défaut dans le u-boot loader:  \n"
+msgstr ""
+
+#. type: Bullet: '* '
+#: originala_firmvaro.md:32
+#, no-wrap
+msgid "bootargs=console=ttyS1,115200n8 mem=43M@0x0 rmem=21M@0x2B00000 init=/linuxrc rootfstype=squashfs root=/dev/mtdblock3\n"
+msgstr ""
+
+#. type: Bullet: '* '
+#: originala_firmvaro.md:32
+#, no-wrap
+msgid "bootcmd=sf probe;sf read 0x80600000 0x48000 0x280000; bootm 0x80600000\n"
+msgstr ""
+
+#. type: Bullet: '* '
+#: originala_firmvaro.md:32
+#, no-wrap
+msgid "bootdelay=1\n"
+msgstr ""
+
+#. type: Bullet: '* '
+#: originala_firmvaro.md:32
+#, no-wrap
+msgid "baudrate=115200\n"
+msgstr ""
+
+#. type: Bullet: '* '
+#: originala_firmvaro.md:32
+#, no-wrap
+msgid "loads\\_echo=1\n"
+msgstr ""
+
+#. type: Bullet: '* '
+#: originala_firmvaro.md:32
+#, no-wrap
+msgid "ethaddr=00:11:22:33:44:74\n"
+msgstr ""
+
+#. type: Bullet: '* '
+#: originala_firmvaro.md:32
+#, no-wrap
+msgid "ipaddr=192.168.2.84\n"
+msgstr ""
+
+#. type: Bullet: '* '
+#: originala_firmvaro.md:32
+#, no-wrap
+msgid "serverip=192.168.2.81\n"
+msgstr ""
+
+#. type: Bullet: '* '
+#: originala_firmvaro.md:32
+#, no-wrap
+msgid "gatewayip=192.168.2.1\n"
+msgstr ""
+
+#. type: Bullet: '* '
+#: originala_firmvaro.md:32
+#, no-wrap
+msgid "netmask=255.255.255.0\n"
+msgstr ""
+
+#. type: Plain text
+#: originala_firmvaro.md:50
+#, no-wrap
+msgid ""
+"options dans mtdblock1 :\n"
+"* baudrate=115200\n"
+"* bootcmd=sf probe;sf read 0x80600000 0x48000 0x280000; bootm 0x80600000\n"
+"* bootdelay=1\n"
+"* ethact=Jz4775-9161\n"
+"* gatewayip=192.168.2.1\n"
+"* ipaddr=192.168.2.84\n"
+"* loads\\_echo=1\n"
+"* netmask=255.255.255.0\n"
+"* serverip=192.168.2.81\n"
+"* stderr=serial\n"
+"* stdin=serial\n"
+"* stdout=serial\n"
+"* ethaddr=**:**:**:**:**:**\n"
+"* device\\_id=***********\n"
+"* devinfo=jcoxa***************************************************\n"
+"* bootargs=console=ttyS1,115200n8 mem=42M@0x0 rmem=22M@0x2A00000 init=/linuxrc rootfstype=squashfs root=/dev/mtdblock3 flash=SF sensor=GC2053 maxheight=1080 device\\_id=*********** ethaddr=**:**:**:**:**:** devinfo=jcoxa*************************************************** cpu=T21 ddr=64M mtdparts=jz\\_sfc:256K@0K(sf-bootloader),32K@256K(sf-bootenv),1440K@288K(sf-kernel),832K@1728K(sf-rootfs),4928K@2560K(sf-ipcfs),704K@7488K(sf-miscfs)\n"
+msgstr ""
+
+#. type: Plain text
+#: originala_firmvaro.md:52
+#, no-wrap
+msgid "version linux :  \n"
+msgstr ""
+
+#. type: Plain text
+#: originala_firmvaro.md:54
+#, no-wrap
+msgid "Linux version 3.10.14\\_\\_isvp\\_turkey\\_1.0\\_\\_ (root@localhost.localdomain) (gcc version 4.7.2 (Ingenic r2.3.3 2016.12) ) #3 PREEMPT Sat Jun 22 10:40:55 CST 2019\n"
+msgstr ""
+
+#. type: Plain text
+#: originala_firmvaro.md:66
+#, no-wrap
+msgid ""
+"fichiers notables dans / :\n"
+"* _/bin/busybox_ : \n"
+"  *     [, [[, ash, awk, base64, basename, blockdev, bootchartd, bunzip2, bzcat, bzip2, cat, chmod, chown, cmp, cp, cut, date, dd, depmod, devmem, df,\n"
+"  *     dhcprelay, diff, dirname, dmesg, dnsdomainname, du, dumpleases, echo, egrep, expr, fdflush, fdformat, fdisk, fgrep, find, flash\\_eraseall,\n"
+"  *     flock, free, fuser, getty, grep, gzip, halt, hd, head, hexdump, hostname, hwclock, ifconfig, init, insmod, iostat, kill, killall, klogd, less,\n"
+"  *     linuxrc, ln, logger, login, logread, ls, lsmod, md5sum, mdev, mesg, mkdir, mkdosfs, mkfs.vfat, mknod, mktemp, modinfo, modprobe, mount,\n"
+"  *     mountpoint, mpstat, mv, nc, netstat, passwd, ping, pmap, poweroff, powertop, printf, ps, pstree, pwd, pwdx, readahead, reboot, rev, rm, rmdir,\n"
+"  *     rmmod, route, sed, sh, sleep, smemcap, sort, stat, strings, swapoff, swapon, sync, sysctl, syslogd, tail, tar, tee, telnetd, test, tftp, time,\n"
+"  *     timeout, top, touch, tr, true, tty, udhcpc, udhcpd, umount, unxz, unzip, uptime, users, usleep, vi, volname, watch, wc, which, xargs, xz,\n"
+"  *     xzcat\n"
+msgstr ""
+
+#. type: Bullet: '* '
+#: originala_firmvaro.md:68
+#, no-wrap
+msgid "/lib : bibliothèques standards.\n"
+msgstr ""
+
+#. type: Plain text
+#: originala_firmvaro.md:76
+#, no-wrap
+msgid ""
+"fichiers notables dans _/ipc_ :\n"
+"* _/ipc/app/jco\\_server_\n"
+"  * programme principal, fait à la fois serveur http, rtsp, ...\n"
+"* _/ipc/drv_ : drivers linux\n"
+"  * motor.ko\n"
+"* _/ipc/lib_ : bibliothéques\n"
+"  * libimp.so : bibliothèque _ingenic_ _IMP_ ( _Ingenic Media Platform_ )\n"
+msgstr ""
+
+#. type: Plain text
+#: originala_firmvaro.md:78
+#, no-wrap
+msgid "note : libimp.so est différente de celle livrée pour le T20, et celle fournie avec le T20 ne convient pas.\n"
+msgstr ""

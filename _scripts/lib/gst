@@ -1,0 +1,26 @@
+#!/bin/bash
+
+# ĝisdatigito de tradukoj por skriptoj
+
+BASEDIR=$(dirname $(dirname $(readlink -f $0)))
+cd ${BASEDIR}
+
+S=skriptoj
+xgettext -L Shell -ktrad --from-code=UTF-8 `find . -maxdepth 1 -type f -perm /0001 ` -o ../_locale/${S}.pot
+
+for L in `grep "^..:$" ../_data/languages.yml|sed "s/:$//"|grep -v eo`
+ do
+  mkdir -p ../_locale/${L}/LC_MESSAGES/
+  if [ -f ../_locale/${L}/LC_MESSAGES/${S}.po ] ; then
+    msgmerge -U ../_locale/${L}/LC_MESSAGES/${S}.po ../_locale/${S}.pot
+  else
+    cat ../_locale/$S.pot|sed 's/^"Language:.*/"X-Source-Language: eo\\n"\n"Language: '${L}'\\n"/' >../_locale/${L}/LC_MESSAGES/$S.po
+  fi
+  lib/traduki_po.sh ../_locale/${L}/LC_MESSAGES/$S.po
+  if diff ../_locale/${L}/LC_MESSAGES/$S.po ../_locale/${L}/LC_MESSAGES/$S.po.nova >/dev/null ; then
+    rm ../_locale/${L}/LC_MESSAGES/$S.po.nova
+  else
+    mv ../_locale/${L}/LC_MESSAGES/$S.po.nova ../_locale/${L}/LC_MESSAGES/$S.po
+  fi
+  msgfmt -o ../_locale/${L}/LC_MESSAGES/$S.mo ../_locale/${L}/LC_MESSAGES/$S.po
+ done

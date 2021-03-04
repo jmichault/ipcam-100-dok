@@ -1,0 +1,81 @@
+<script src="https://unpkg.com/showdown/dist/showdown.min.js"></script>
+<script>
+const GH_API_URL = 'https://api.github.com/repos/{{ site.gh_uzanto }}{{ site.baseurl }}/issues/{{ page.komentoj_id }}/comments'; 
+
+let peto = new XMLHttpRequest();
+peto.open( 'GET', GH_API_URL, true );
+peto.onload = function() {
+	if ( this.status >= 200 && this.status < 400 ) {
+		let respondo = JSON.parse( this.response );
+
+		for ( let i = 0; i < respondo.length; i++ ) {
+			document.getElementById( 'gh-komentoj-list' ).appendChild( kreiKomenton( respondo[ i ] ) );
+		}
+
+	} else {
+		console.error( this );
+	}
+};
+
+function kreiKomenton( respondo ) {
+  let komento = document.createElement( 'div' );
+    let uzanto = document.createElement( 'div' );
+    uzanto.classList.add( 'komento-uzanto' );
+      let uzantoA = document.createElement( 'a' );
+
+      uzantoA.setAttribute( 'href', respondo.user.url.replace( 'api.github.com/users', 'github.com' ) );
+
+	let uzantoBildo = document.createElement( 'img' );
+	uzantoBildo.setAttribute( 'src', respondo.user.avatar_url );
+
+      uzantoA.appendChild( uzantoBildo );
+      uzanto.appendChild( uzantoA );
+    let komentoMain = document.createElement( 'div' );
+      let komentoMainH = document.createElement( 'div' );
+	let komentoUser = document.createElement( 'a' );
+	komentoUser.setAttribute( 'href', respondo.user.url.replace( 'api.github.com/users', 'github.com' ) );
+	komentoUser.innerHTML = respondo.user.url.replace( 'https://api.github.com/users/', '' );
+	komentoUser.classList.add( 'uzanto' );
+	let komentoLink = document.createElement( 'a' );
+	komentoLink.setAttribute( 'href', respondo.html_url );
+	komentoLink.classList.add( 'komento-url' );
+	let dateC=new Date(respondo.created_at);
+	komentoLink.innerHTML = ' {{ site.data.translations[page.lang].komentis }} ' + dateC.toLocaleDateString()
+		+' '+dateC.toLocaleTimeString();
+      komentoMainH.appendChild( komentoUser );
+      komentoMainH.appendChild( komentoLink );
+      komentoMainH.classList.add( 'header' );
+      let komentoMainB = document.createElement( 'div' );
+      komentoMainB.innerHTML = respondo.body;
+      komentoMainB.classList.add( 'body' );
+      let komentoMainF = document.createElement( 'div' );
+      komentoMainF.classList.add( 'footer' );
+
+    komentoMain.appendChild( komentoMainH );
+    komentoMain.appendChild( komentoMainB );
+    komentoMain.appendChild( komentoMainF );
+
+    komentoMain.classList.add( 'komento-main' );
+    // Progressive enhancement.
+    if ( window.showdown ) {
+    	let converter = new showdown.Converter();
+    	komentoMainB.innerHTML = converter.makeHtml( respondo.body );
+    }
+
+
+  komento.appendChild( uzanto );
+  komento.appendChild( komentoMain );
+  komento.classList.add( 'komento' );
+
+	return komento;
+}
+peto.send();
+</script>
+
+<hr>
+
+	<h2>{{ site.data.translations[page.lang].komentoj }}</h2>
+	<ul id="gh-komentoj-list"></ul>
+	<p class="komentobtntxt">
+	  <a class="komentobtn" target="_blank" href="https://github.com/{{ site.gh_uzanto }}{{ site.baseurl }}/issues/{{page.komentoj_id}}#issue-comment-box" class="button">{{ site.data.translations[page.lang].komentoButono }}</a>
+	</p>

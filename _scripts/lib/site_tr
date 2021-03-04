@@ -1,0 +1,46 @@
+#!/bin/bash
+
+BASEDIR=`dirname $0`
+cd "$BASEDIR"
+cd ../..
+
+LABORLINGVO=`grep "laborlingvo:" _config.yml|awk '{print $2;}'`
+
+FIC=site-translations
+
+if [ ! -d _locale/eo ] ; then
+  mkdir -p _locale/eo
+fi
+
+if [ ! -f _locale/${LABORLINGVO}/${FIC}.pot ] ; then
+  po4a-gettextize -f yaml -m _data/translations.$LABORLINGVO --master-charset "UTF-8" --po _locale/${LABORLINGVO}/${FIC}.pot
+elif [ _locale/${LABORLINGVO}/${FIC}.pot -ot _data/translations.$LABORLINGVO ] ; then
+  po4a-updatepo -f yaml --master-charset "UTF-8"  -m _data/translations.$LABORLINGVO -p _locale/$LABORLINGVO/${FIC}.pot
+fi
+
+cat _data/translations.$LABORLINGVO >_data/translations.yml
+lang0=eo
+cat _data/translations.$lang0 >>_data/translations.yml
+
+for lang in `grep "^..:$" _data/languages.yml|sed "s/:$//"|grep -v eo`
+do
+  if [ ! -d _locale/${lang} ] ; then
+    mkdir _locale/${lang}
+  fi
+  if [ ! -f _locale/${lang}/${FIC}.po ] ; then
+     cat _locale/${lang0}/${FIC}.pot|sed "s/^\"Language: \\\n\"/\"Language: "${lang}"\\\n\"/" > _locale/${lang}/${FIC}.po
+  elif [ _locale/${lang}/${FIC}.po -ot _locale/${lang0}/${FIC}.pot ] ; then
+    po4a-updatepo --msgmerge-opt --no-fuzzy-matching --wrap-po no -f yaml -m _data/translations.$lang0 --master-charset "UTF-8" --po _locale/${lang}/${FIC}.po
+  fi
+  cat _locale/${lang}/${FIC}.po|gawk -v BASEDIR=_scripts/lib -v src=${lang0} -v dst=${lang} -f _scripts/lib/traduki_po.awk >_locale/${lang}/${FIC}.po.nova
+  if diff _locale/${lang}/${FIC}.po.nova _locale/${lang}/${FIC}.po >/dev/null
+  then
+    rm _locale/${lang}/${FIC}.po.nova
+  else
+    echo ĝisdatigi _locale/${lang}/${FIC}.po
+    mv _locale/${lang}/${FIC}.po.nova _locale/${lang}/${FIC}.po
+  fi
+  po4a-translate -f yaml -m _data/translations.$lang0 --master-charset "UTF-8"  --po _locale/${lang}/${FIC}.po --localized _data/translations.$lang --localized-charset "UTF-8" -k 0
+  cat _data/translations.$lang|sed "s/^..:\$/${lang}:/" >> _data/translations.yml
+done
+

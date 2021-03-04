@@ -1,0 +1,290 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-03-04 16:42+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: ./includes.fr/imp_log.h:6
+#, markdown-text, no-wrap
+msgid ""
+"/*\n"
+" * IMP log func header file.\n"
+" *\n"
+" * Copyright (C) 2014 Ingenic Semiconductor Co.,Ltd\n"
+" */\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_log.h:9
+#, markdown-text, no-wrap
+msgid ""
+"#ifndef __IMP_LOG_H__\n"
+"#define __IMP_LOG_H__\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_log.h:14
+#, markdown-text, no-wrap
+msgid ""
+"/**\n"
+" * @file\n"
+" * Log Fichier d'en-tête d'interface \n"
+" */\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_log.h:21
+#, markdown-text, no-wrap
+msgid ""
+"#ifdef __cplusplus\n"
+"#if __cplusplus\n"
+"extern \"C\"\n"
+"{\n"
+"#endif\n"
+"#endif /* __cplusplus */\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_log.h:36
+#, markdown-text, no-wrap
+msgid ""
+"/**\n"
+" * define log level\n"
+" */\n"
+"enum {\n"
+"\tIMP_LOG_LEVEL_UNKNOWN,\n"
+"\tIMP_LOG_LEVEL_RESERVED,\n"
+"\tIMP_LOG_LEVEL_VERBOSE,\n"
+"\tIMP_LOG_LEVEL_DEBUG,\n"
+"\tIMP_LOG_LEVEL_INFO,\n"
+"\tIMP_LOG_LEVEL_WARN,\n"
+"\tIMP_LOG_LEVEL_ERROR,\n"
+"\tIMP_LOG_LEVEL_FATAL,\n"
+"\tIMP_LOG_LEVEL_SILENT\n"
+"};\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_log.h:38
+#, markdown-text, no-wrap
+msgid "#define IMP_LOG_LEVEL_DEFAULT IMP_LOG_LEVEL_DEBUG\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_log.h:47
+#, markdown-text, no-wrap
+msgid ""
+"/**\n"
+" * define log out\n"
+" */\n"
+"#define IMP_LOG_OUT_STDOUT      0\n"
+"#define IMP_LOG_OUT_LOCAL_FILE  1\n"
+"#define IMP_LOG_OUT_SERVER      2\n"
+"//#define IMP_LOG_OUT_DEFAULT IMP_LOG_OUT_SERVER\n"
+"#define IMP_LOG_OUT_DEFAULT IMP_LOG_OUT_STDOUT\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_log.h:57
+#, markdown-text, no-wrap
+msgid ""
+"/**\n"
+" * define log option\n"
+" */\n"
+"#define IMP_LOG_OP_PID_SHIFT     0\n"
+"#define IMP_LOG_OP_USTIME_SHIFT  1\n"
+"#define IMP_LOG_OP_MODULE_SHIFT  2\n"
+"#define IMP_LOG_OP_FILE_SHIFT    3\n"
+"#define IMP_LOG_OP_FUNC_SHIFT    4\n"
+"#define IMP_LOG_OP_LINE_SHIFT    5\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_log.h:67
+#, markdown-text, no-wrap
+msgid ""
+"#define IMP_LOG_OP_PID      (1<<IMP_LOG_OP_PID_SHIFT)\n"
+"#define IMP_LOG_OP_USTIME   (1<<IMP_LOG_OP_USTIME_SHIFT)\n"
+"#define IMP_LOG_OP_MODULE   (1<<IMP_LOG_OP_MODULE_SHIFT)\n"
+"#define IMP_LOG_OP_FILE     (1<<IMP_LOG_OP_FILE_SHIFT)\n"
+"#define IMP_LOG_OP_FUNC     (1<<IMP_LOG_OP_FUNC_SHIFT)\n"
+"#define IMP_LOG_OP_LINE     (1<<IMP_LOG_OP_LINE_SHIFT)\n"
+"#define IMP_LOG_OP_NONE     0\n"
+"#define IMP_LOG_OP_ALL      "
+"(IMP_LOG_OP_PID|IMP_LOG_OP_USTIME|IMP_LOG_OP_MODULE|IMP_LOG_OP_FILE|IMP_LOG_OP_FUNC|IMP_LOG_OP_LINE)\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_log.h:69
+#, markdown-text, no-wrap
+msgid "#define IMP_LOG_OP_DEFAULT  IMP_LOG_OP_ALL\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_log.h:75
+#, markdown-text, no-wrap
+msgid ""
+"/**\n"
+" * used internal\n"
+" */\n"
+"void imp_log_fun(int le, int op, int out, const char* tag, const char* file, "
+"int line, const char* func, const char* fmt, ...);\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_log.h:85
+#, markdown-text, no-wrap
+msgid ""
+"/**\n"
+" *  Définir les options d'impression \n"
+" *\n"
+" * @fn void IMP_Log_Set_Option(int op);\n"
+" *\n"
+" * @param[in] op  Définir les options d'impression \n"
+" *\n"
+" */\n"
+"void IMP_Log_Set_Option(int op);\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_log.h:95
+#, markdown-text, no-wrap
+msgid ""
+"/**\n"
+" *  Obtenez des options d'impression \n"
+" *\n"
+" * @fn int IMP_Log_Get_Option(void );\n"
+" *\n"
+" * @retval  Revenir aux options d'impression dans le système \n"
+" *\n"
+" */\n"
+"int  IMP_Log_Get_Option(void);\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_log.h:101
+#, markdown-text, no-wrap
+msgid ""
+"/**\n"
+" * reserved interface\n"
+" */\n"
+"#define IMP_LOG_PRINT(tag, le, op, fmt, ...) \\\n"
+"\timp_log_fun(le, op, IMP_LOG_OUT_STDOUT, tag, __FILE__, __LINE__, __func__, "
+"fmt, ##__VA_ARGS__)\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_log.h:104
+#, markdown-text, no-wrap
+msgid ""
+"#define IMP_LOG_TO_FILE(tag, le, op, fmt, ...) \\\n"
+"\timp_log_fun(le, op, IMP_LOG_OUT_LOCAL_FILE, tag, __FILE__, __LINE__, "
+"__func__, fmt, ##__VA_ARGS__)\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_log.h:107
+#, markdown-text, no-wrap
+msgid ""
+"#define IMP_LOG_TO_SERVER(tag, le, op, fmt, ...) \\\n"
+"\timp_log_fun(le, op, IMP_LOG_OUT_SERVER, tag, __FILE__, __LINE__, __func__, "
+"fmt, ##__VA_ARGS__)\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_log.h:109
+#, markdown-text, no-wrap
+msgid "#define IMP_LOG_GET_OPTION IMP_Log_Get_Option()\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_log.h:112
+#, markdown-text, no-wrap
+msgid ""
+"/* Default log to logcat */\n"
+"#define IMP_LOG IMP_LOG_PRINT\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_log.h:153
+#, markdown-text, no-wrap
+msgid ""
+"/**\n"
+" * @def IMP_LOG_UNK\n"
+" * UNKNOWN Interface d'impression hiérarchique \n"
+" */\n"
+"#define IMP_LOG_UNK(tag, fmt, ...)\t\tIMP_LOG(tag, IMP_LOG_LEVEL_UNKNOWN, "
+"IMP_LOG_GET_OPTION, fmt, ##__VA_ARGS__)\n"
+"/**\n"
+" * @def IMP_LOG_VERBOSE\n"
+" * VERBOSE Interface d'impression hiérarchique \n"
+" */\n"
+"#define IMP_LOG_VERBOSE(tag, fmt, ...)\t\tIMP_LOG(tag, "
+"IMP_LOG_LEVEL_VERBOSE, IMP_LOG_GET_OPTION, fmt, ##__VA_ARGS__)\n"
+"/**\n"
+" * @def IMP_LOG_DBG\n"
+" * DEBUG Interface d'impression hiérarchique \n"
+" */\n"
+"#define IMP_LOG_DBG(tag, fmt, ...)\t\tIMP_LOG(tag, IMP_LOG_LEVEL_DEBUG, "
+"IMP_LOG_GET_OPTION, fmt, ##__VA_ARGS__)\n"
+"/**\n"
+" * @def IMP_LOG_INFO\n"
+" * INFO Interface d'impression hiérarchique \n"
+" */\n"
+"#define IMP_LOG_INFO(tag, fmt, ...)\t\tIMP_LOG(tag, IMP_LOG_LEVEL_INFO, "
+"IMP_LOG_GET_OPTION, fmt, ##__VA_ARGS__)\n"
+"/**\n"
+" * @def IMP_LOG_WAR\n"
+" * WARN Interface d'impression hiérarchique \n"
+" */\n"
+"#define IMP_LOG_WARN(tag, fmt, ...)\t\tIMP_LOG(tag, IMP_LOG_LEVEL_WARN, "
+"IMP_LOG_GET_OPTION, fmt, ##__VA_ARGS__)\n"
+"/**\n"
+" * @def IMP_LOG_ERR\n"
+" * ERROR Interface d'impression hiérarchique \n"
+" */\n"
+"#define IMP_LOG_ERR(tag, fmt, ...)\t\tIMP_LOG(tag, IMP_LOG_LEVEL_ERROR, "
+"IMP_LOG_GET_OPTION, fmt, ##__VA_ARGS__)\n"
+"/**\n"
+" * @def IMP_LOG_FATAL\n"
+" * FATAL Interface d'impression hiérarchique \n"
+" */\n"
+"#define IMP_LOG_FATAL(tag, fmt, ...)\t\tIMP_LOG(tag, IMP_LOG_LEVEL_FATAL, "
+"IMP_LOG_GET_OPTION, fmt, ##__VA_ARGS__)\n"
+"/**\n"
+" * @def IMP_LOG_SILENT\n"
+" * SILENT Interface d'impression hiérarchique \n"
+" */\n"
+"#define IMP_LOG_SILENT(tag, fmt, ...)\t\tIMP_LOG(tag, IMP_LOG_LEVEL_SILENT, "
+"IMP_LOG_GET_OPTION, fmt, ##__VA_ARGS__)\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_log.h:159
+#, markdown-text, no-wrap
+msgid ""
+"#ifdef __cplusplus\n"
+"#if __cplusplus\n"
+"}\n"
+"#endif\n"
+"#endif /* __cplusplus */\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_log.h:161
+#, markdown-text, no-wrap
+msgid "#endif /* __IMP_LOG_H__ */\n"
+msgstr ""

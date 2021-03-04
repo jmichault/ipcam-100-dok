@@ -1,0 +1,108 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-03-04 13:56+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Hash Value - Key: Funkciigita
+#: >lang
+#, no-wrap
+msgid "Propulsé par"
+msgstr ""
+
+#. type: Hash Value - Key: cxiujAfisxoj
+#: >lang
+#, no-wrap
+msgid "Tous les messages"
+msgstr ""
+
+#. type: Hash Value - Key: elektuLingvon
+#: >lang
+#, no-wrap
+msgid "Choisissez votre langue"
+msgstr ""
+
+#. type: Hash Value - Key: komentis
+#: >lang
+#, no-wrap
+msgid "a commenté le "
+msgstr ""
+
+#. type: Hash Value - Key: komentoButono
+#: >lang
+#, no-wrap
+msgid "Ajouter un commentaire (sur github)"
+msgstr ""
+
+#. type: Hash Value - Key: komentoj
+#: >lang
+#, no-wrap
+msgid "Commentaires :"
+msgstr ""
+
+#. type: Hash Value - Key: malsamaLingvo
+#: >lang
+#, no-wrap
+msgid "Lire cette page dans une autre langue"
+msgstr ""
+
+#. type: Hash Value - Key: priskribo
+#: >lang
+#, no-wrap
+msgid "Micrologiciel alternatif pour la caméra ipcam-100"
+msgstr ""
+
+#. type: Hash Value - Key: rajtoj
+#: >lang
+#, no-wrap
+msgid ""
+"Licence <a rel=\"license\" "
+"href=\"https://creativecommons.org/licenses/by-sa/4.0/\"><img alt =\"Licence "
+"Creative Commons\" style=\"display:inline;border-width:0\" "
+"src=\"https://i.creativecommons.org/l/by-sa/4.0/88x31.png\" title=\"CC-BY-SA "
+"4.0\"/></ a>"
+msgstr ""
+
+#. type: Hash Value - Key: rigardiEn
+#: >lang
+#, no-wrap
+msgid "Regarder dans"
+msgstr ""
+
+#. type: Hash Value - Key: rilatajAfisxoj
+#: >lang
+#, no-wrap
+msgid "Articles Similaires"
+msgstr ""
+
+#. type: Hash Value - Key: sercxi
+#: >lang
+#, no-wrap
+msgid "Recherche google."
+msgstr ""
+
+#. type: Hash Value - Key: titolo
+#: >lang
+#, no-wrap
+msgid "Caméra ipcam-100"
+msgstr ""
+
+#. type: Hash Value - Key: tradukoAverto
+#: >lang
+#, no-wrap
+msgid ""
+"Attention: cette page a été traduite automatiquement. Si vous le pouvez, "
+"vous devriez la lire dans l'une de ces langues:"
+msgstr ""

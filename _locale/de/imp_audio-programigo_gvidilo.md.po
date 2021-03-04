@@ -1,0 +1,105 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-03-04 16:52+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Title #
+#: ./imp_audio-programigo_gvidilo.md:1
+#, markdown-text, no-wrap
+#, fuzzy
+msgid "IMP_Audio (voir imp_audio.h)"
+msgstr "IMP_Audio (voir imp_audio.h)"
+
+#. type: Plain text
+#: ./imp_audio-programigo_gvidilo.md:4
+#, markdown-text, no-wrap
+#, fuzzy
+msgid ""
+"Audio-modulo, inkluzive de registrado kaj reprodukto, audio-kodeko, volumena "
+"kaj gajna agordoj, e echa nuligo, aŭtomata gajno kaj aliaj funkcioj.\n"
+msgstr "Audiomodul, einschließlich Aufnahme und Wiedergabe, Audio-Codec, Lautstärke- und Verstärkungseinstellungen, E-Echo-Unterdrückung, automatische Verstärkung und andere Funktionen.\n"
+
+#. type: Title ##
+#: ./imp_audio-programigo_gvidilo.md:5
+#, markdown-text, no-wrap
+#, fuzzy
+msgid "Prezento"
+msgstr "Präsentation"
+
+#. type: Bullet: '* '
+#: ./imp_audio-programigo_gvidilo.md:7
+#, markdown-text, no-wrap
+#, fuzzy
+msgid ""
+"La sonfunkcio inkluzivas 5 modulojn: aŭd-enigo, aŭd-eliga, eoa nuligo, "
+"aŭd-kodado kaj aŭd-malkodado.\n"
+msgstr "Die Soundfunktion umfasst 5 Module: Audioeingang, Audioausgang, Audioauslöschung, Audiocodierung und Audiodecodierung.\n"
+
+#. type: Bullet: ' * '
+#: ./imp_audio-programigo_gvidilo.md:9
+#, markdown-text, no-wrap
+#, fuzzy
+msgid ""
+"Inter ili, audio-enigo kaj audio-eliro havas la koncepton de aparato kaj "
+"kanalo. Unu el la MICoj estas konsiderata aparato, kaj MIC povas havi "
+"multoblajn kanalajn enigaĵojn.\n"
+msgstr "Unter diesen haben Audioeingang und Audioausgang das Konzept von Gerät und Kanal. Eine der MICs wird als Gerät betrachtet, und eine MIC kann mehrere Kanaleingänge haben.\n"
+
+#. type: Bullet: ' * '
+#: ./imp_audio-programigo_gvidilo.md:11
+#, markdown-text, no-wrap
+#, fuzzy
+msgid ""
+"La sama SPK estas konsiderata reprodukta aparato, kaj SPK ankaŭ povas havi "
+"plurajn kanalajn elirojn.\n"
+msgstr "Dieselbe SPK wird als Zuchtgerät betrachtet, und eine SPK kann auch mehrere Kanalausgänge haben.\n"
+
+#. type: Bullet: ' * '
+#: ./imp_audio-programigo_gvidilo.md:13
+#, markdown-text, no-wrap
+#, fuzzy
+msgid "La nuna versio de la audio API nur subtenas unu kanalon por aparato.\n"
+msgstr "Die Mondversion der Audio-API unterstützt nur einen Kanal pro Gerät.\n"
+
+#. type: Bullet: ' * '
+#: ./imp_audio-programigo_gvidilo.md:15
+#, markdown-text, no-wrap
+#, fuzzy
+msgid ""
+"Echoa nuligo troviĝas en la aŭd-eniga interfaco kaj specifaj instrukcioj "
+"reflektiĝas en la priskribo de la funkcio.\n"
+msgstr "Die Echokompensation befindet sich in der Audioeingangsschnittstelle, und spezifische Anweisungen sind in der Beschreibung der Funktion enthalten.\n"
+
+#. type: Bullet: ' * '
+#: ./imp_audio-programigo_gvidilo.md:17
+#, markdown-text, no-wrap
+#, fuzzy
+msgid ""
+"Audio-kodado: La nuna audio-API subtenas audio-kodadon en formatoj PT_G711A, "
+"PT_G711U kaj PT_G726. Si vous devez ajouter une nouvelle méthode d'encodage, "
+"vous devez enregistrer l'encodeur.\n"
+msgstr "Audiokodierung: Die aktuelle Audio-API unterstützt die Audiokodierung in den Formaten PT_G711A, PT_G711U und PT_G726. Si vous devez ajouter une nouvelle méthode d'encodage, vous devez enregistrer l'encodeur.\n\n"
+
+#. type: Bullet: ' * '
+#: ./imp_audio-programigo_gvidilo.md:20
+#, markdown-text, no-wrap
+#, fuzzy
+msgid ""
+"Audio-malkodado: La nuna audio-API subtenas son-malkodadon en formatoj "
+"PT_G711A, PT_G711U kaj PT_G726. Si vous devez ajouter une nouvelle méthode "
+"de décodage, vous devez enregistrer le décodeur.\n"
+msgstr "Audio-Decodierung: Die aktuelle Audio-API unterstützt die Audio-Decodierung in den Formaten PT_G711A, PT_G711U und PT_G726. Si vous devez ajouter une nouvelle méthode de décodage, vous devez enregistrer le décodeur.\n\n"
+

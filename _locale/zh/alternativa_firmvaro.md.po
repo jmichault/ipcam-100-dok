@@ -1,0 +1,149 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-03-04 16:52+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: YAML Front Matter: lang
+#: ./alternativa_firmvaro.md:1
+#, no-wrap
+msgid "eo"
+msgstr "zh"
+
+#. type: YAML Front Matter: lang-niv
+#: ./alternativa_firmvaro.md:1
+#, no-wrap
+msgid "auto"
+msgstr "auto"
+
+#. type: YAML Front Matter: lang-ref
+#: ./alternativa_firmvaro.md:1
+#, no-wrap
+msgid "099-alternativa_firmvaro"
+msgstr "099-alternativa_firmvaro"
+
+#. type: YAML Front Matter: layout
+#: ./alternativa_firmvaro.md:1
+#, no-wrap
+msgid "page"
+msgstr "page"
+
+#. type: YAML Front Matter: title
+#: ./alternativa_firmvaro.md:1
+#, no-wrap
+#, fuzzy
+msgid "Alternativa firmvaro"
+msgstr "备用固件"
+
+#. type: Title #
+#: ./alternativa_firmvaro.md:9
+#, markdown-text, no-wrap
+#, fuzzy
+msgid "Ekfunkciigo"
+msgstr "启动"
+
+#. type: Bullet: '* '
+#: ./alternativa_firmvaro.md:12
+#, markdown-text, no-wrap
+#, fuzzy
+msgid ""
+"La instalado kreas la dosieron _/opt/etc/local.rc_, kiun lanĉas la originala "
+"firmvaro.\n"
+msgstr "安装过程将创建原始固件启动的文件 _/opt/etc/local.rc_。\n"
+
+#. type: Bullet: '* '
+#: ./alternativa_firmvaro.md:14
+#, markdown-text, no-wrap
+#, fuzzy
+msgid "_local.rc_ lanĉas _run.sh_ de la SD-karto.\n"
+msgstr "_local.rc_ 从SD卡启动 _run.sh_ 。\n"
+
+#. type: Title #
+#: ./alternativa_firmvaro.md:16
+#, markdown-text, no-wrap
+#, fuzzy
+msgid "_run.sh_"
+msgstr "_run.sh_"
+
+#. type: Bullet: '  * '
+#: ./alternativa_firmvaro.md:19
+#, markdown-text, no-wrap
+#, fuzzy
+msgid "malkonekti la reton\n"
+msgstr "断开网络连接\n"
+
+#. type: Bullet: '  * '
+#: ./alternativa_firmvaro.md:21
+#, markdown-text, no-wrap
+#, fuzzy
+msgid "haltigi _jco_servilon_ kaj _autorun.sh_.\n"
+msgstr "停止 _jco_服务器_ 和 _autorun.sh_。\n"
+
+#. type: Bullet: '  * '
+#: ./alternativa_firmvaro.md:23
+#, markdown-text, no-wrap
+#, fuzzy
+msgid "malaktivigas _/dev/watchdog_ kaj _/dev/watchdog0_\n"
+msgstr "停用 _/dev/watchdog_ 和 _/dev/watchdog0_\n"
+
+#. type: Bullet: '  * '
+#: ./alternativa_firmvaro.md:25
+#, markdown-text, no-wrap
+#, fuzzy
+msgid "pravalorizas la LEDojn kaj la motoron\n"
+msgstr "LED和电机已初始化\n"
+
+#. type: Bullet: '  * '
+#: ./alternativa_firmvaro.md:27
+#, markdown-text, no-wrap
+#, fuzzy
+msgid "pravalorizas la adresaron ktp se necese\n"
+msgstr "初始化目录等。如有必要\n"
+
+#. type: Bullet: '  * '
+#: ./alternativa_firmvaro.md:29
+#, markdown-text, no-wrap
+#, fuzzy
+msgid "alidirektiloj _/bin/busybox_ , _/etc_ kaj _/root_ al la SDa karto.\n"
+msgstr "将 _/bin/busybox_ ， _/etc_ 和 _/root_ 重定向到SD卡。\n"
+
+#. type: Bullet: '  * '
+#: ./alternativa_firmvaro.md:31
+#, markdown-text, no-wrap
+#, fuzzy
+msgid "pravalorizi la _CRONTAB_ se necese\n"
+msgstr "如果需要，默认为 _CRONTAB_ \n"
+
+#. type: Bullet: '  * '
+#: ./alternativa_firmvaro.md:33
+#, markdown-text, no-wrap
+#, fuzzy
+msgid "startservo _crond_, reto, servo _ntpd_, reteja servo\n"
+msgstr "启动服务 _crond_，网络，服务 _ntpd_，网络服务\n"
+
+#. type: Bullet: '  * '
+#: ./alternativa_firmvaro.md:35
+#, markdown-text, no-wrap
+#, fuzzy
+msgid "komenci servojn (en _config/autostart_)\n"
+msgstr "启动服务 (在 _config/autostart_)\n"
+
+#. type: Bullet: '  * '
+#: ./alternativa_firmvaro.md:37
+#, markdown-text, no-wrap
+#, fuzzy
+msgid "komenci uzantajn skriptojn (en _config/userscripts_)\n"
+msgstr "开始在 _config/userscripts_)中使用脚本 (\n"
+

@@ -1,0 +1,30 @@
+# Setup
+baseurl:  "/ipcam-100-dok"
+auxtoro: Jean Michault
+# ŝanĝu eo al via lingvo se vi ne laboras rekte en esperanto
+laborlingvo: fr
+# malkomentigu la sekvan linion por forigi la menuon "ĉiuj afiŝoj"
+ne_afisxoj: "true"
+# malkomentigu la sekvan linion por forigi la menuon "serĉu per google"
+#ne_googlesearch: "true"
+# github uzanto por komentoj
+gh_uzanto: "jmichault"
+# Google Analytics tag
+ga_tag: "G-LWXDPT250W"
+
+
+# Dependencies
+highlighter:      rouge
+
+# Permalinks
+permalink:        pretty
+
+exclude: [ _locale , _scripts , "*.backup", "*.bak" , "??/_data", _traduko.jar]
+
+plugins:
+  - jekyll-relative-links
+  - jekyll-sitemap
+
+relative_links:
+  enabled:     true
+  collections: true

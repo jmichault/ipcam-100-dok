@@ -1,0 +1,105 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-03-04 16:52+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Title #
+#: ./imp_audio-programigo_gvidilo.md:1
+#, markdown-text, no-wrap
+#, fuzzy
+msgid "IMP_Audio (voir imp_audio.h)"
+msgstr "IMP_Audio (voir imp_audio.h)"
+
+#. type: Plain text
+#: ./imp_audio-programigo_gvidilo.md:4
+#, markdown-text, no-wrap
+#, fuzzy
+msgid ""
+"Audio-modulo, inkluzive de registrado kaj reprodukto, audio-kodeko, volumena "
+"kaj gajna agordoj, e echa nuligo, aŭtomata gajno kaj aliaj funkcioj.\n"
+msgstr "録音と再生、オーディオコーデック、音量とゲインの設定、エコーキャンセレーション、自動ゲイン、その他の機能を含むオーディオモジュール。\n"
+
+#. type: Title ##
+#: ./imp_audio-programigo_gvidilo.md:5
+#, markdown-text, no-wrap
+#, fuzzy
+msgid "Prezento"
+msgstr "プレゼンテーション"
+
+#. type: Bullet: '* '
+#: ./imp_audio-programigo_gvidilo.md:7
+#, markdown-text, no-wrap
+#, fuzzy
+msgid ""
+"La sonfunkcio inkluzivas 5 modulojn: aŭd-enigo, aŭd-eliga, eoa nuligo, "
+"aŭd-kodado kaj aŭd-malkodado.\n"
+msgstr "サウンド機能には、オーディオ入力、オーディオ出力、オーディオキャンセル、オーディオエンコーディング、オーディオデコーディングの5つのモジュールが含まれています。\n"
+
+#. type: Bullet: ' * '
+#: ./imp_audio-programigo_gvidilo.md:9
+#, markdown-text, no-wrap
+#, fuzzy
+msgid ""
+"Inter ili, audio-enigo kaj audio-eliro havas la koncepton de aparato kaj "
+"kanalo. Unu el la MICoj estas konsiderata aparato, kaj MIC povas havi "
+"multoblajn kanalajn enigaĵojn.\n"
+msgstr "その中で、オーディオ入力とオーディオ出力には、デバイスとチャネルの概念があります。 MICの1つはデバイスと見なされ、MICは複数のチャネル入力を持つことができます。\n"
+
+#. type: Bullet: ' * '
+#: ./imp_audio-programigo_gvidilo.md:11
+#, markdown-text, no-wrap
+#, fuzzy
+msgid ""
+"La sama SPK estas konsiderata reprodukta aparato, kaj SPK ankaŭ povas havi "
+"plurajn kanalajn elirojn.\n"
+msgstr "同じSPKはブリーディングデバイスと見なされ、SPKは複数のチャネル出力を持つこともできます。\n"
+
+#. type: Bullet: ' * '
+#: ./imp_audio-programigo_gvidilo.md:13
+#, markdown-text, no-wrap
+#, fuzzy
+msgid "La nuna versio de la audio API nur subtenas unu kanalon por aparato.\n"
+msgstr "月版のオーディオAPIは、デバイスごとに1つのチャネルのみをサポートします。\n"
+
+#. type: Bullet: ' * '
+#: ./imp_audio-programigo_gvidilo.md:15
+#, markdown-text, no-wrap
+#, fuzzy
+msgid ""
+"Echoa nuligo troviĝas en la aŭd-eniga interfaco kaj specifaj instrukcioj "
+"reflektiĝas en la priskribo de la funkcio.\n"
+msgstr "エコーキャンセルはオーディオ入力インターフェースにあり、特定の指示が機能の説明に反映されています。\n"
+
+#. type: Bullet: ' * '
+#: ./imp_audio-programigo_gvidilo.md:17
+#, markdown-text, no-wrap
+#, fuzzy
+msgid ""
+"Audio-kodado: La nuna audio-API subtenas audio-kodadon en formatoj PT_G711A, "
+"PT_G711U kaj PT_G726. Si vous devez ajouter une nouvelle méthode d'encodage, "
+"vous devez enregistrer l'encodeur.\n"
+msgstr "オーディオエンコーディング：現在のオーディオAPIは、PT_G711A, PT_G711UおよびPT_G726. Si vous devez ajouter une nouvelle méthode d'encodage, vous devez enregistrer l'encodeur.\n形式のオーディオエンコーディングをサポートしています。\n"
+
+#. type: Bullet: ' * '
+#: ./imp_audio-programigo_gvidilo.md:20
+#, markdown-text, no-wrap
+#, fuzzy
+msgid ""
+"Audio-malkodado: La nuna audio-API subtenas son-malkodadon en formatoj "
+"PT_G711A, PT_G711U kaj PT_G726. Si vous devez ajouter une nouvelle méthode "
+"de décodage, vous devez enregistrer le décodeur.\n"
+msgstr "オーディオデコード：現在のオーディオAPIは、PT_G711A, PT_G711UおよびPT_G726. Si vous devez ajouter une nouvelle méthode de décodage, vous devez enregistrer le décodeur.\n形式のオーディオデコードをサポートしています\n"
+

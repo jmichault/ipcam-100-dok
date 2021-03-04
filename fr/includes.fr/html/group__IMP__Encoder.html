@@ -1,0 +1,2023 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Programmation T20: IMP_Encoder</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Programmation T20
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#enum-members">Énumérations</a> &#124;
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<div class="title">IMP_Encoder<div class="ingroups"><a class="el" href="group__imp.html">IMP(Ingenic Media Platform)</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Encodage vidéo ( H264, JPEG ) Module ， Contient la gestion des canaux d'encodage ， Réglage des paramètres d'encodage et autres fonctions.  
+<a href="#details">Plus de détails...</a></p>
+<div class="dynheader">
+Graphe de collaboration de IMP_Encoder:</div>
+<div class="dyncontent">
+<center><table><tr><td><img src="group__IMP__Encoder.png" border="0" alt="" usemap="#group____IMP____Encoder"/>
+<map name="group____IMP____Encoder" id="group____IMP____Encoder">
+<area shape="rect" id="node2" href="group__imp.html" title="IMP(Ingenic Media Platform)" alt="" coords="5,5,193,32"/>
+</map>
+</td></tr></table></center>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIMPEncoderFrmRate.html">IMPEncoderFrmRate</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIMPEncoderAttrH264FixQP.html">IMPEncoderAttrH264FixQP</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIMPEncoderAttrH264CBR.html">IMPEncoderAttrH264CBR</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIMPEncoderAttrH264VBR.html">IMPEncoderAttrH264VBR</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIMPEncoderAttrH264Demask.html">IMPEncoderAttrH264Demask</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIMPEncoderAttrH264Denoise.html">IMPEncoderAttrH264Denoise</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIMPEncoderAttrH264FrmUsed.html">IMPEncoderAttrH264FrmUsed</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIMPEncoderAttrH264HSkip.html">IMPEncoderAttrH264HSkip</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIMPEncoderAttrH264BSkip.html">IMPEncoderAttrH264BSkip</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIMPEncoderRcAttr.html">IMPEncoderRcAttr</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionIMPEncoderDataType.html">IMPEncoderDataType</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIMPEncoderPack.html">IMPEncoderPack</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIMPEncoderStream.html">IMPEncoderStream</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIMPEncoderCropCfg.html">IMPEncoderCropCfg</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIMPEncoderUserDataCfg.html">IMPEncoderUserDataCfg</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIMPEncoderAttr.html">IMPEncoderAttr</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIMPEncoderCHNAttr.html">IMPEncoderCHNAttr</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIMPEncoderCHNStat.html">IMPEncoderCHNStat</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIMPEncoderColor2GreyCfg.html">IMPEncoderColor2GreyCfg</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIMPEncoderEnIDRCfg.html">IMPEncoderEnIDRCfg</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIMPEncoderGOPSizeCfg.html">IMPEncoderGOPSizeCfg</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIMPEncoderROICfg.html">IMPEncoderROICfg</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Énumérations</h2></td></tr>
+<tr class="memitem:gad5eed0dacdb612ee46f7632bfbe84887"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Encoder.html#gad5eed0dacdb612ee46f7632bfbe84887">IMPEncoderRcMode</a> { <br />
+&#160;&#160;<a class="el" href="group__IMP__Encoder.html#ggad5eed0dacdb612ee46f7632bfbe84887acc2e3e2a30ce0ba2985e9c2888581a96">ENC_RC_MODE_H264FIXQP</a> = 0, 
+<a class="el" href="group__IMP__Encoder.html#ggad5eed0dacdb612ee46f7632bfbe84887a9ae81a303dba193d1a5567b6f9b71114">ENC_RC_MODE_H264CBR</a> = 1, 
+<a class="el" href="group__IMP__Encoder.html#ggad5eed0dacdb612ee46f7632bfbe84887a699cac21642c603685f55691f68ab1e0">ENC_RC_MODE_H264ABR</a> = 2, 
+<a class="el" href="group__IMP__Encoder.html#ggad5eed0dacdb612ee46f7632bfbe84887ace8eaba12a5e712a368704fbb7a9041a">ENC_RC_MODE_H264VBR</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="group__IMP__Encoder.html#ggad5eed0dacdb612ee46f7632bfbe84887ae0c329512aa5d7913ce2fd6fb1bcd8cd">ENC_RC_MODE_H264INV</a> = 4
+<br />
+ }</td></tr>
+<tr class="separator:gad5eed0dacdb612ee46f7632bfbe84887"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa6daecd284e71915516b1a1b0beb0539"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Encoder.html#gaa6daecd284e71915516b1a1b0beb0539">EncFrmUsedMode</a> { <a class="el" href="group__IMP__Encoder.html#ggaa6daecd284e71915516b1a1b0beb0539a6cebe0b784335c2e8e9b450aade5bb53">ENC_FRM_BYPASS</a> = 0, 
+<a class="el" href="group__IMP__Encoder.html#ggaa6daecd284e71915516b1a1b0beb0539a72afacc8c9b69e1dbd4a956e47a68cfe">ENC_FRM_REUSED</a> = 1, 
+<a class="el" href="group__IMP__Encoder.html#ggaa6daecd284e71915516b1a1b0beb0539a53e9f5432580b0dd750213a6f3e46af5">ENC_FRM_SKIP</a> = 2
+ }</td></tr>
+<tr class="separator:gaa6daecd284e71915516b1a1b0beb0539"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2d06ca8ebaf229b874ac585f08d60592"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Encoder.html#ga2d06ca8ebaf229b874ac585f08d60592">IMPH264SkipType</a> { <br />
+&#160;&#160;<a class="el" href="group__IMP__Encoder.html#gga2d06ca8ebaf229b874ac585f08d60592a91b81c014a517d1401b3c471b887af6e">IMP_H264_STYPE_N11</a> = 0, 
+<a class="el" href="group__IMP__Encoder.html#gga2d06ca8ebaf229b874ac585f08d60592acb3e88ae5d432a840295c7752c360d88">IMP_H264_STYPE_N1X</a> = 1, 
+<a class="el" href="group__IMP__Encoder.html#gga2d06ca8ebaf229b874ac585f08d60592a3386e5b0e8b0abaebcba0c5d4dd6071c">IMP_H264_STYPE_N2X</a> = 2, 
+<a class="el" href="group__IMP__Encoder.html#gga2d06ca8ebaf229b874ac585f08d60592a9ebaf9ad7fb7fc7d3ad3ea7727e3afda">IMP_H264_STYPE_N4X</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="group__IMP__Encoder.html#gga2d06ca8ebaf229b874ac585f08d60592ab670215a37521e97fae9f4f2b435bcec">IMP_H264_STYPE_HN1_FALSE</a> = 4, 
+<a class="el" href="group__IMP__Encoder.html#gga2d06ca8ebaf229b874ac585f08d60592acdd735f0603b1c51c3542b27f87b26bf">IMP_H264_STYPE_HN1_TRUE</a> = 5, 
+<a class="el" href="group__IMP__Encoder.html#gga2d06ca8ebaf229b874ac585f08d60592a4f4a0ba417b2a848fb6829048f673de7">IMP_H264_STYPE_H1M_TRUE</a> = 6
+<br />
+ }</td></tr>
+<tr class="separator:ga2d06ca8ebaf229b874ac585f08d60592"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6efe3f5c06d92d4c8d2efcfc5c9bcf9e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Encoder.html#ga6efe3f5c06d92d4c8d2efcfc5c9bcf9e">IMPH264RefType</a> { <a class="el" href="group__IMP__Encoder.html#gga6efe3f5c06d92d4c8d2efcfc5c9bcf9ea883bcee0bf7690317f7cdffb3d2b4821">IMP_H264_FS_IDR</a> = 0, 
+<a class="el" href="group__IMP__Encoder.html#gga6efe3f5c06d92d4c8d2efcfc5c9bcf9ea3a1a29c9b83e2d1928bde2c99897c5b3">IMP_H264_FS_BASE</a> = 1, 
+<a class="el" href="group__IMP__Encoder.html#gga6efe3f5c06d92d4c8d2efcfc5c9bcf9eab58b99eaee184473424b288c02032bfa">IMP_H264_FS_ENHANCE</a> = 2
+ }</td></tr>
+<tr class="separator:ga6efe3f5c06d92d4c8d2efcfc5c9bcf9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5878b6210ca20db23cd0ec337fe02256"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Encoder.html#ga5878b6210ca20db23cd0ec337fe02256">IMPEncoderH264NaluType</a> { <br />
+&#160;&#160;<a class="el" href="group__IMP__Encoder.html#gga5878b6210ca20db23cd0ec337fe02256aa3cdebae908c724e7cbddbfb47afd806">IMP_NAL_UNKNOWN</a> = 0, 
+<a class="el" href="group__IMP__Encoder.html#gga5878b6210ca20db23cd0ec337fe02256aa1724f07ff17d7e0abf7a9357d8b5a54">IMP_NAL_SLICE</a> = 1, 
+<a class="el" href="group__IMP__Encoder.html#gga5878b6210ca20db23cd0ec337fe02256a612ebc0180ca61600dc35607d5c7bd42">IMP_NAL_SLICE_DPA</a> = 2, 
+<a class="el" href="group__IMP__Encoder.html#gga5878b6210ca20db23cd0ec337fe02256a5f6e7b958fabdb9aec19f0712f41715f">IMP_NAL_SLICE_DPB</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="group__IMP__Encoder.html#gga5878b6210ca20db23cd0ec337fe02256a14c8c3e7ba0fd7f954a13fc221d69277">IMP_NAL_SLICE_DPC</a> = 4, 
+<a class="el" href="group__IMP__Encoder.html#gga5878b6210ca20db23cd0ec337fe02256a9871468577bec810533ee78f05e9e28c">IMP_NAL_SLICE_IDR</a> = 5, 
+<a class="el" href="group__IMP__Encoder.html#gga5878b6210ca20db23cd0ec337fe02256a3dca5bd23c26d93c5edece1fdec07816">IMP_NAL_SEI</a> = 6, 
+<a class="el" href="group__IMP__Encoder.html#gga5878b6210ca20db23cd0ec337fe02256ae722f384afebe910949d107d276e0af8">IMP_NAL_SPS</a> = 7, 
+<br />
+&#160;&#160;<a class="el" href="group__IMP__Encoder.html#gga5878b6210ca20db23cd0ec337fe02256a5be3d222ad4371a7e453db8df38a8aa8">IMP_NAL_PPS</a> = 8, 
+<a class="el" href="group__IMP__Encoder.html#gga5878b6210ca20db23cd0ec337fe02256a9a0472bfa06d303604df32cba22f0840">IMP_NAL_AUD</a> = 9, 
+<a class="el" href="group__IMP__Encoder.html#gga5878b6210ca20db23cd0ec337fe02256a4431fcbc85b85648dfc7f32ec99384b8">IMP_NAL_FILLER</a> = 12
+<br />
+ }</td></tr>
+<tr class="separator:ga5878b6210ca20db23cd0ec337fe02256"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:ga96199baedda4efe1bb1b1c0d26a2fe76"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Encoder.html#ga96199baedda4efe1bb1b1c0d26a2fe76">IMP_Encoder_CreateGroup</a> (int encGroup)</td></tr>
+<tr class="separator:ga96199baedda4efe1bb1b1c0d26a2fe76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga757f098ab2eabe6c7c4344f73d5bec51"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Encoder.html#ga757f098ab2eabe6c7c4344f73d5bec51">IMP_Encoder_DestroyGroup</a> (int encGroup)</td></tr>
+<tr class="separator:ga757f098ab2eabe6c7c4344f73d5bec51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga83b8af8deb1af4409fabcfeeee4e9f83"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Encoder.html#ga83b8af8deb1af4409fabcfeeee4e9f83">IMP_Encoder_CreateChn</a> (int encChn, const <a class="el" href="structIMPEncoderCHNAttr.html">IMPEncoderCHNAttr</a> *attr)</td></tr>
+<tr class="separator:ga83b8af8deb1af4409fabcfeeee4e9f83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae169e594d5ba0573da4d87b61b23206a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Encoder.html#gae169e594d5ba0573da4d87b61b23206a">IMP_Encoder_DestroyChn</a> (int encChn)</td></tr>
+<tr class="separator:gae169e594d5ba0573da4d87b61b23206a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa3c8bf9ed10ce53d782521eae77cc557"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Encoder.html#gaa3c8bf9ed10ce53d782521eae77cc557">IMP_Encoder_GetChnAttr</a> (int encChn, <a class="el" href="structIMPEncoderCHNAttr.html">IMPEncoderCHNAttr</a> *const attr)</td></tr>
+<tr class="separator:gaa3c8bf9ed10ce53d782521eae77cc557"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab5b49fb276c463b7a62ddfad44a45a93"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Encoder.html#gab5b49fb276c463b7a62ddfad44a45a93">IMP_Encoder_RegisterChn</a> (int encGroup, int encChn)</td></tr>
+<tr class="separator:gab5b49fb276c463b7a62ddfad44a45a93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaa31d5bcd407054992c2a56060a1795d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Encoder.html#gaaa31d5bcd407054992c2a56060a1795d">IMP_Encoder_UnRegisterChn</a> (int encChn)</td></tr>
+<tr class="separator:gaaa31d5bcd407054992c2a56060a1795d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8fe7e5b00167cf122da13f1d2e07eb6d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Encoder.html#ga8fe7e5b00167cf122da13f1d2e07eb6d">IMP_Encoder_StartRecvPic</a> (int encChn)</td></tr>
+<tr class="separator:ga8fe7e5b00167cf122da13f1d2e07eb6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga30a590183b70833aac280a84b153990b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Encoder.html#ga30a590183b70833aac280a84b153990b">IMP_Encoder_StopRecvPic</a> (int encChn)</td></tr>
+<tr class="separator:ga30a590183b70833aac280a84b153990b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga03a1a3a1e81cfd87af27fb48f50f0140"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Encoder.html#ga03a1a3a1e81cfd87af27fb48f50f0140">IMP_Encoder_Query</a> (int encChn, <a class="el" href="structIMPEncoderCHNStat.html">IMPEncoderCHNStat</a> *stat)</td></tr>
+<tr class="separator:ga03a1a3a1e81cfd87af27fb48f50f0140"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6964862ca76079154db97cf135acd320"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Encoder.html#ga6964862ca76079154db97cf135acd320">IMP_Encoder_GetStream</a> (int encChn, <a class="el" href="structIMPEncoderStream.html">IMPEncoderStream</a> *stream, bool blockFlag)</td></tr>
+<tr class="separator:ga6964862ca76079154db97cf135acd320"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad33dd934911cf7bd318bfad4af16dd2f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Encoder.html#gad33dd934911cf7bd318bfad4af16dd2f">IMP_Encoder_ReleaseStream</a> (int encChn, <a class="el" href="structIMPEncoderStream.html">IMPEncoderStream</a> *stream)</td></tr>
+<tr class="separator:gad33dd934911cf7bd318bfad4af16dd2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga489eaff2c945a840054b165011825932"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Encoder.html#ga489eaff2c945a840054b165011825932">IMP_Encoder_PollingStream</a> (int encChn, uint32_t timeoutMsec)</td></tr>
+<tr class="separator:ga489eaff2c945a840054b165011825932"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga26d0491a35a43e156823b2f5f384e4cb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Encoder.html#ga26d0491a35a43e156823b2f5f384e4cb">IMP_Encoder_SetMaxStreamCnt</a> (int encChn, int nrMaxStream)</td></tr>
+<tr class="separator:ga26d0491a35a43e156823b2f5f384e4cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga785e84d3d6acbe878e2c27f54e3d70cb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Encoder.html#ga785e84d3d6acbe878e2c27f54e3d70cb">IMP_Encoder_GetMaxStreamCnt</a> (int encChn, int *nrMaxStream)</td></tr>
+<tr class="separator:ga785e84d3d6acbe878e2c27f54e3d70cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga76af240bb189528c1451acf328448f3a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Encoder.html#ga76af240bb189528c1451acf328448f3a">IMP_Encoder_RequestIDR</a> (int encChn)</td></tr>
+<tr class="separator:ga76af240bb189528c1451acf328448f3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae9b2ff7b20b172bb9a892fe5e0f333c0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Encoder.html#gae9b2ff7b20b172bb9a892fe5e0f333c0">IMP_Encoder_FlushStream</a> (int encChn)</td></tr>
+<tr class="separator:gae9b2ff7b20b172bb9a892fe5e0f333c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga90194e455e8673609a04137fc7a39741"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Encoder.html#ga90194e455e8673609a04137fc7a39741">IMP_Encoder_SetChnColor2Grey</a> (int encChn, const <a class="el" href="structIMPEncoderColor2GreyCfg.html">IMPEncoderColor2GreyCfg</a> *pstColor2Grey)</td></tr>
+<tr class="separator:ga90194e455e8673609a04137fc7a39741"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga08be4837c32bc225a517124802206978"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Encoder.html#ga08be4837c32bc225a517124802206978">IMP_Encoder_GetChnColor2Grey</a> (int encChn, <a class="el" href="structIMPEncoderColor2GreyCfg.html">IMPEncoderColor2GreyCfg</a> *pstColor2Grey)</td></tr>
+<tr class="separator:ga08be4837c32bc225a517124802206978"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga92c7e9c18cd76648fef6037fa46292a2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Encoder.html#ga92c7e9c18cd76648fef6037fa46292a2">IMP_Encoder_SetChnRcAttr</a> (int encChn, const <a class="el" href="structIMPEncoderRcAttr.html">IMPEncoderRcAttr</a> *pstRcCfg)</td></tr>
+<tr class="separator:ga92c7e9c18cd76648fef6037fa46292a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadd0625182442c01687c759b3d889ecd3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Encoder.html#gadd0625182442c01687c759b3d889ecd3">IMP_Encoder_GetChnRcAttr</a> (int encChn, <a class="el" href="structIMPEncoderRcAttr.html">IMPEncoderRcAttr</a> *pstRcCfg)</td></tr>
+<tr class="separator:gadd0625182442c01687c759b3d889ecd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4c8e301e6090fb27bd0bc2f2795229f2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Encoder.html#ga4c8e301e6090fb27bd0bc2f2795229f2">IMP_Encoder_SetChnFrmRate</a> (int encChn, const <a class="el" href="structIMPEncoderFrmRate.html">IMPEncoderFrmRate</a> *pstFps)</td></tr>
+<tr class="separator:ga4c8e301e6090fb27bd0bc2f2795229f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8636080246a8ec7844745b8c6cc862a6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Encoder.html#ga8636080246a8ec7844745b8c6cc862a6">IMP_Encoder_GetChnFrmRate</a> (int encChn, <a class="el" href="structIMPEncoderFrmRate.html">IMPEncoderFrmRate</a> *pstFps)</td></tr>
+<tr class="separator:ga8636080246a8ec7844745b8c6cc862a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8d981749a3f1ee9b482152ce367d9ba2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Encoder.html#ga8d981749a3f1ee9b482152ce367d9ba2">IMP_Encoder_SetChnROI</a> (int encChn, const <a class="el" href="structIMPEncoderROICfg.html">IMPEncoderROICfg</a> *pstVencRoiCfg)</td></tr>
+<tr class="separator:ga8d981749a3f1ee9b482152ce367d9ba2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabe8b833d724ed6ff312390843a5ec98b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Encoder.html#gabe8b833d724ed6ff312390843a5ec98b">IMP_Encoder_GetChnROI</a> (int encChn, <a class="el" href="structIMPEncoderROICfg.html">IMPEncoderROICfg</a> *pstVencRoiCfg)</td></tr>
+<tr class="separator:gabe8b833d724ed6ff312390843a5ec98b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga48eb55dbb0b14c7e4a1416b620e263d1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Encoder.html#ga48eb55dbb0b14c7e4a1416b620e263d1">IMP_Encoder_GetGOPSize</a> (int encChn, <a class="el" href="structIMPEncoderGOPSizeCfg.html">IMPEncoderGOPSizeCfg</a> *pstGOPSizeCfg)</td></tr>
+<tr class="separator:ga48eb55dbb0b14c7e4a1416b620e263d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1b4bd71c5c1828bcfffd88fc6c390b78"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Encoder.html#ga1b4bd71c5c1828bcfffd88fc6c390b78">IMP_Encoder_SetGOPSize</a> (int encChn, const <a class="el" href="structIMPEncoderGOPSizeCfg.html">IMPEncoderGOPSizeCfg</a> *pstGOPSizeCfg)</td></tr>
+<tr class="separator:ga1b4bd71c5c1828bcfffd88fc6c390b78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab411469004836f222e1004994fa30517"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Encoder.html#gab411469004836f222e1004994fa30517">IMP_Encoder_SetChnH264Demask</a> (int encChn, const <a class="el" href="structIMPEncoderAttrH264Demask.html">IMPEncoderAttrH264Demask</a> *pdemaskAttr)</td></tr>
+<tr class="separator:gab411469004836f222e1004994fa30517"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1de6bf93238e99c87e96ad185fcd03cf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Encoder.html#ga1de6bf93238e99c87e96ad185fcd03cf">IMP_Encoder_GetChnH264Demask</a> (int encChn, <a class="el" href="structIMPEncoderAttrH264Demask.html">IMPEncoderAttrH264Demask</a> *pdemaskAttr)</td></tr>
+<tr class="separator:ga1de6bf93238e99c87e96ad185fcd03cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8f6309334d825eaa050719f3a2d435ee"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Encoder.html#ga8f6309334d825eaa050719f3a2d435ee">IMP_Encoder_SetChnH264FrmUsedMode</a> (int encChn, const <a class="el" href="structIMPEncoderAttrH264FrmUsed.html">IMPEncoderAttrH264FrmUsed</a> *pfrmUsedAttr)</td></tr>
+<tr class="separator:ga8f6309334d825eaa050719f3a2d435ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga877a389fe2632b7042a8d0a8d872d4c6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Encoder.html#ga877a389fe2632b7042a8d0a8d872d4c6">IMP_Encoder_GetChnH264FrmUsedMode</a> (int encChn, <a class="el" href="structIMPEncoderAttrH264FrmUsed.html">IMPEncoderAttrH264FrmUsed</a> *pfrmUsedAttr)</td></tr>
+<tr class="separator:ga877a389fe2632b7042a8d0a8d872d4c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafa66a94468da7567b6a9b0e65b8a98ee"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Encoder.html#gafa66a94468da7567b6a9b0e65b8a98ee">IMP_Encoder_SetChnH264Denoise</a> (int encChn, const <a class="el" href="structIMPEncoderAttrH264Denoise.html">IMPEncoderAttrH264Denoise</a> *pdenoiseAttr)</td></tr>
+<tr class="separator:gafa66a94468da7567b6a9b0e65b8a98ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad0f9dd9cb56142bf3869cb8a2735a5e8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Encoder.html#gad0f9dd9cb56142bf3869cb8a2735a5e8">IMP_Encoder_GetChnH264Denoise</a> (int encChn, <a class="el" href="structIMPEncoderAttrH264Denoise.html">IMPEncoderAttrH264Denoise</a> *pdenoiseAttr)</td></tr>
+<tr class="separator:gad0f9dd9cb56142bf3869cb8a2735a5e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac9be6a8b3faf5df3e07346f40d673327"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Encoder.html#gac9be6a8b3faf5df3e07346f40d673327">IMP_Encoder_InsertUserData</a> (int encChn, void *userData, uint32_t userDataLen)</td></tr>
+<tr class="separator:gac9be6a8b3faf5df3e07346f40d673327"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7eddd99abbfeeafa72ef008c8ea24c21"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Encoder.html#ga7eddd99abbfeeafa72ef008c8ea24c21">IMP_Encoder_SetFisheyeEnableStatus</a> (int encChn, int enable)</td></tr>
+<tr class="separator:ga7eddd99abbfeeafa72ef008c8ea24c21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabf6b911bb55ca6806fa0a072d1b7e83a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Encoder.html#gabf6b911bb55ca6806fa0a072d1b7e83a">IMP_Encoder_GetFisheyeEnableStatus</a> (int encChn, int *enable)</td></tr>
+<tr class="separator:gabf6b911bb55ca6806fa0a072d1b7e83a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<p>Encodage vidéo ( H264, JPEG ) Module ， Contient la gestion des canaux d'encodage ， Réglage des paramètres d'encodage et autres fonctions. </p>
+<h1><a class="anchor" id="enc_struct"></a>
+1  Structure du module</h1>
+<p>Encoder La structure interne du module est la suivante: </p><div class="image">
+<img src="encoder_struct.jpg" alt="encoder_struct.jpg"/>
+</div>
+<p> Comme le montre la figure ， Le module de codage se compose de plusieurs Group Composition (en T15 Soutenir deux Group ) ， Chaque Group Codé par Channel composition. Chaque code Channel Avec un tampon de flux de code de sortie ， Ce tampon se compose de plusieurs buffer Ce tampon se compose de plusieurs </p>
+<h1><a class="anchor" id="enc_channel"></a>
+2  codage Channel</h1>
+<p>Un code Channel Peut compléter le codage d'un protocole. Chaque Group Peut en ajouter un H264 Peut en ajouter un Channel Avec un JPEG Avec un Channel . </p>
+<h1><a class="anchor" id="enc_rc"></a>
+3  Contrôle de taux</h1>
+<h2><a class="anchor" id="enc_cbr"></a>
+3.1 CBR</h2>
+<p>CBR ( Constent Bit Rate ) Débit constant ， C'est-à-dire que le taux de codage est constant pendant le temps de statistiques de taux. À H.264 Codage comme exemple ， L'utilisateur peut définir maxQp，minQp，bitrate Attendre. maxQp，minQp Utilisé pour contrôler la plage de qualité de l'image ， bitrate Il est utilisé pour bloquer le débit de code moyen pendant le temps statistique. Lorsque le débit de code est supérieur au débit de code constant ， image QP Will progressivement maxQp Ajustement ， Lorsque le taux de codage est bien inférieur au taux constant ， Lorsque le taux de codage est bien inférieur au taux constant QP Lorsque le taux de codage est bien inférieur au taux constant minQp Ajustement. Lorsque l'image QP atteindre maxQp Temps ，QP Serré au maximum ，bitrate L'effet de serrage n'est pas valide ， Le taux de codage peut dépasser bitrate Le taux de codage peut dépasser Le taux de codage peut dépasser QP Le taux de codage peut dépasser minQp Le taux de codage peut dépasser ，QP Serré au minimum ， A ce moment, le taux de code de l'encodage a atteint la valeur maximale ， Et la qualité d'image est la meilleure. </p>
+<h2><a class="anchor" id="enc_FixQP"></a>
+3.2 FixQP</h2>
+<p>Fix Qp fixé Qp évaluer. Pendant le temps de statistiques de débit binaire ， Encoder tous les macroblocs de l'image Qp Même valeur ， Utiliser des images définies par l'utilisateur Qp évaluer. </p>
+<h2 class="groupheader">Documentation du type de l'énumération</h2>
+<a id="gaa6daecd284e71915516b1a1b0beb0539"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa6daecd284e71915516b1a1b0beb0539">&#9670;&nbsp;</a></span>EncFrmUsedMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__IMP__Encoder.html#gaa6daecd284e71915516b1a1b0beb0539">EncFrmUsedMode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Paramètre de quantification de trame H.264 Paramètre de quantification de trame Channel Mode d'utilisation du cadre d'entrée </p>
+<table class="fieldtable">
+<tr><th colspan="2">Valeurs énumérées</th></tr><tr><td class="fieldname"><a id="ggaa6daecd284e71915516b1a1b0beb0539a6cebe0b784335c2e8e9b450aade5bb53"></a>ENC_FRM_BYPASS&#160;</td><td class="fielddoc"><p>Mode d'utilisation complet séquentiel - Mode par défaut </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa6daecd284e71915516b1a1b0beb0539a72afacc8c9b69e1dbd4a956e47a68cfe"></a>ENC_FRM_REUSED&#160;</td><td class="fielddoc"><p>Réutiliser le mode de trame </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa6daecd284e71915516b1a1b0beb0539a53e9f5432580b0dd750213a6f3e46af5"></a>ENC_FRM_SKIP&#160;</td><td class="fielddoc"><p>Mode drop frame </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga5878b6210ca20db23cd0ec337fe02256"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5878b6210ca20db23cd0ec337fe02256">&#9670;&nbsp;</a></span>IMPEncoderH264NaluType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__IMP__Encoder.html#ga5878b6210ca20db23cd0ec337fe02256">IMPEncoderH264NaluType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>H264 Flux NALU Types de </p>
+<table class="fieldtable">
+<tr><th colspan="2">Valeurs énumérées</th></tr><tr><td class="fieldname"><a id="gga5878b6210ca20db23cd0ec337fe02256aa3cdebae908c724e7cbddbfb47afd806"></a>IMP_NAL_UNKNOWN&#160;</td><td class="fielddoc"><p>non spécifié </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga5878b6210ca20db23cd0ec337fe02256aa1724f07ff17d7e0abf7a9357d8b5a54"></a>IMP_NAL_SLICE&#160;</td><td class="fielddoc"><p>Un non IDR Bande de codage d'image </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga5878b6210ca20db23cd0ec337fe02256a612ebc0180ca61600dc35607d5c7bd42"></a>IMP_NAL_SLICE_DPA&#160;</td><td class="fielddoc"><p>Bloc de segmentation de données de bande codé A </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga5878b6210ca20db23cd0ec337fe02256a5f6e7b958fabdb9aec19f0712f41715f"></a>IMP_NAL_SLICE_DPB&#160;</td><td class="fielddoc"><p>Bloc de segmentation de données de bande codé B </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga5878b6210ca20db23cd0ec337fe02256a14c8c3e7ba0fd7f954a13fc221d69277"></a>IMP_NAL_SLICE_DPC&#160;</td><td class="fielddoc"><p>Bloc de segmentation de données de bande codé C </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga5878b6210ca20db23cd0ec337fe02256a9871468577bec810533ee78f05e9e28c"></a>IMP_NAL_SLICE_IDR&#160;</td><td class="fielddoc"><p>IDR Bloc de segmentation de données de bande codé </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga5878b6210ca20db23cd0ec337fe02256a3dca5bd23c26d93c5edece1fdec07816"></a>IMP_NAL_SEI&#160;</td><td class="fielddoc"><p>Informations sur les améliorations auxiliaires (SEI) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga5878b6210ca20db23cd0ec337fe02256ae722f384afebe910949d107d276e0af8"></a>IMP_NAL_SPS&#160;</td><td class="fielddoc"><p>Jeu de paramètres de séquence </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga5878b6210ca20db23cd0ec337fe02256a5be3d222ad4371a7e453db8df38a8aa8"></a>IMP_NAL_PPS&#160;</td><td class="fielddoc"><p>Jeu de paramètres d'image </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga5878b6210ca20db23cd0ec337fe02256a9a0472bfa06d303604df32cba22f0840"></a>IMP_NAL_AUD&#160;</td><td class="fielddoc"><p>Séparateur d'unité d'accès </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga5878b6210ca20db23cd0ec337fe02256a4431fcbc85b85648dfc7f32ec99384b8"></a>IMP_NAL_FILLER&#160;</td><td class="fielddoc"><p>Entrée de données </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="gad5eed0dacdb612ee46f7632bfbe84887"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad5eed0dacdb612ee46f7632bfbe84887">&#9670;&nbsp;</a></span>IMPEncoderRcMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__IMP__Encoder.html#gad5eed0dacdb612ee46f7632bfbe84887">IMPEncoderRcMode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Code de définition Channel Mode contrôleur de débit </p>
+<table class="fieldtable">
+<tr><th colspan="2">Valeurs énumérées</th></tr><tr><td class="fieldname"><a id="ggad5eed0dacdb612ee46f7632bfbe84887acc2e3e2a30ce0ba2985e9c2888581a96"></a>ENC_RC_MODE_H264FIXQP&#160;</td><td class="fielddoc"><p>H.264 Fixqp Mode (support) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggad5eed0dacdb612ee46f7632bfbe84887a9ae81a303dba193d1a5567b6f9b71114"></a>ENC_RC_MODE_H264CBR&#160;</td><td class="fielddoc"><p>H.264 CBR Mode (support) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggad5eed0dacdb612ee46f7632bfbe84887a699cac21642c603685f55691f68ab1e0"></a>ENC_RC_MODE_H264ABR&#160;</td><td class="fielddoc"><p>H.264 ABR mode </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggad5eed0dacdb612ee46f7632bfbe84887ace8eaba12a5e712a368704fbb7a9041a"></a>ENC_RC_MODE_H264VBR&#160;</td><td class="fielddoc"><p>H.264 VBR mode </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggad5eed0dacdb612ee46f7632bfbe84887ae0c329512aa5d7913ce2fd6fb1bcd8cd"></a>ENC_RC_MODE_H264INV&#160;</td><td class="fielddoc"><p>H.264 INV mode </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga6efe3f5c06d92d4c8d2efcfc5c9bcf9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6efe3f5c06d92d4c8d2efcfc5c9bcf9e">&#9670;&nbsp;</a></span>IMPH264RefType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__IMP__Encoder.html#ga6efe3f5c06d92d4c8d2efcfc5c9bcf9e">IMPH264RefType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Valeurs énumérées</th></tr><tr><td class="fieldname"><a id="gga6efe3f5c06d92d4c8d2efcfc5c9bcf9ea883bcee0bf7690317f7cdffb3d2b4821"></a>IMP_H264_FS_IDR&#160;</td><td class="fielddoc"><p>Images clés en mode de saut d'image avancé </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga6efe3f5c06d92d4c8d2efcfc5c9bcf9ea3a1a29c9b83e2d1928bde2c99897c5b3"></a>IMP_H264_FS_BASE&#160;</td><td class="fielddoc"><p>Image de référence en mode de saut d'image avancé </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga6efe3f5c06d92d4c8d2efcfc5c9bcf9eab58b99eaee184473424b288c02032bfa"></a>IMP_H264_FS_ENHANCE&#160;</td><td class="fielddoc"><p>Cadre amélioré en mode de saut de cadre avancé </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga2d06ca8ebaf229b874ac585f08d60592"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2d06ca8ebaf229b874ac585f08d60592">&#9670;&nbsp;</a></span>IMPH264SkipType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__IMP__Encoder.html#ga2d06ca8ebaf229b874ac585f08d60592">IMPH264SkipType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Valeurs énumérées</th></tr><tr><td class="fieldname"><a id="gga2d06ca8ebaf229b874ac585f08d60592a91b81c014a517d1401b3c471b887af6e"></a>IMP_H264_STYPE_N11&#160;</td><td class="fielddoc"><p>1 Référence d'image à double saut (instance unique) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga2d06ca8ebaf229b874ac585f08d60592acb3e88ae5d432a840295c7752c360d88"></a>IMP_H264_STYPE_N1X&#160;</td><td class="fielddoc"><p>1 Référence d'image à double saut (multi-instance) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga2d06ca8ebaf229b874ac585f08d60592a3386e5b0e8b0abaebcba0c5d4dd6071c"></a>IMP_H264_STYPE_N2X&#160;</td><td class="fielddoc"><p>2 Référence de cadre à double saut </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga2d06ca8ebaf229b874ac585f08d60592a9ebaf9ad7fb7fc7d3ad3ea7727e3afda"></a>IMP_H264_STYPE_N4X&#160;</td><td class="fielddoc"><p>4 Référence de cadre à double saut </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga2d06ca8ebaf229b874ac585f08d60592ab670215a37521e97fae9f4f2b435bcec"></a>IMP_H264_STYPE_HN1_FALSE&#160;</td><td class="fielddoc"><p>Mode de saut de trame avancé: N,1,HI_FALSE </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga2d06ca8ebaf229b874ac585f08d60592acdd735f0603b1c51c3542b27f87b26bf"></a>IMP_H264_STYPE_HN1_TRUE&#160;</td><td class="fielddoc"><p>Mode de saut de trame avancé: NN,1,HI_TURE </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga2d06ca8ebaf229b874ac585f08d60592a4f4a0ba417b2a848fb6829048f673de7"></a>IMP_H264_STYPE_H1M_TRUE&#160;</td><td class="fielddoc"><p>Mode de saut de trame avancé: N1,M,HI_TRUE </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions</h2>
+<a id="ga83b8af8deb1af4409fabcfeeee4e9f83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga83b8af8deb1af4409fabcfeeee4e9f83">&#9670;&nbsp;</a></span>IMP_Encoder_CreateChn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_Encoder_CreateChn </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>encChn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structIMPEncoderCHNAttr.html">IMPEncoderCHNAttr</a> *&#160;</td>
+          <td class="paramname"><em>attr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Détruire inexistant Channel</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">encChn</td><td>Détruire inexistant Channel Détruire inexistant , Détruire inexistant : [0, NR_MAX_ENC_CHN - 1] </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">attr</td><td>Détruire inexistant Channel Pointeur d'attribut</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Pointeur d'attribut </td></tr>
+    <tr><td class="paramname">Pointeur</td><td>d'attribut 0 Pointeur d'attribut</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>Pointeur d'attribut Channel L'attribut se compose de deux parties ， Attributs d'encodeur et attributs de contrôle de débit </dd>
+<dd>
+Les propriétés du codeur doivent d'abord sélectionner le protocole de codage ， Attribuez ensuite des valeurs aux attributs correspondant aux différents protocoles </dd></dl>
+
+</div>
+</div>
+<a id="ga96199baedda4efe1bb1b1c0d26a2fe76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga96199baedda4efe1bb1b1c0d26a2fe76">&#9670;&nbsp;</a></span>IMP_Encoder_CreateGroup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_Encoder_CreateGroup </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>encGroup</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Créer du code Group</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">encGroup</td><td>Group numéro , numéro :[0, NR_MAX_ENC_GROUPS - 1]</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Succès </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>Tout le Group Prend en charge une seule résolution ， Différentes résolutions doivent recommencer Group . Tout le Group Soutenez tout le chemin en même temps H264 Et tout le chemin JPEG Se casser</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Si spécifié Group existe déjà ， Manqué </dd></dl>
+
+</div>
+</div>
+<a id="gae169e594d5ba0573da4d87b61b23206a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae169e594d5ba0573da4d87b61b23206a">&#9670;&nbsp;</a></span>IMP_Encoder_DestroyChn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_Encoder_DestroyChn </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>encChn</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Attribuez ensuite des valeurs aux attributs correspondant aux différents protocoles Channel</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">encChn</td><td>Attribuez ensuite des valeurs aux attributs correspondant aux différents protocoles Channel Attribuez ensuite des valeurs aux attributs correspondant aux différents protocoles , Attribuez ensuite des valeurs aux attributs correspondant aux différents protocoles : [0, NR_MAX_ENC_CHN - 1]</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Attribuez ensuite des valeurs aux attributs correspondant aux différents protocoles </td></tr>
+    <tr><td class="paramname">Attribuez</td><td>ensuite des valeurs aux attributs correspondant aux différents protocoles 0 Attribuez ensuite des valeurs aux attributs correspondant aux différents protocoles</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>Attention</dt><dd>Attribuez ensuite des valeurs aux attributs correspondant aux différents protocoles Channel， Attribuez ensuite des valeurs aux attributs correspondant aux différents protocoles </dd>
+<dd>
+Doit garantir avant la destruction Channel Ont été de Group Anti-enregistrement ， Anti-enregistrement </dd></dl>
+
+</div>
+</div>
+<a id="ga757f098ab2eabe6c7c4344f73d5bec51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga757f098ab2eabe6c7c4344f73d5bec51">&#9670;&nbsp;</a></span>IMP_Encoder_DestroyGroup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_Encoder_DestroyGroup </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>encGroup</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Détruisez le code Grouop.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">encGroup</td><td>Group Détruisez le code , Détruisez le code :[0, NR_MAX_ENC_GROUPS - 1]</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Détruisez le code </td></tr>
+    <tr><td class="paramname">Détruisez</td><td>le code 0 Détruisez le code</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>détruire Group détruire ， Doit garantir Group Est vide ， C'est-à-dire sans aucun Channel dans Group Inscrivez-vous ， Ou inscrivez-vous à Group dans de Channel Annulé ， Sinon, il retourne échoué</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Détruire inexistant Group， Détruire inexistant </dd></dl>
+
+</div>
+</div>
+<a id="gae9b2ff7b20b172bb9a892fe5e0f333c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae9b2ff7b20b172bb9a892fe5e0f333c0">&#9670;&nbsp;</a></span>IMP_Encoder_FlushStream()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_Encoder_FlushStream </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>encChn</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Brosser l'ancien flux de code restant dans l'encodeur ， et IDR Codage de début de trame</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">encChn</td><td>Codage de début de trame Channel Codage de début de trame , Codage de début de trame : [0, NR_MAX_ENC_CHN - 1]</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Codage de début de trame </td></tr>
+    <tr><td class="paramname">Codage</td><td>de début de trame 0 Codage de début de trame</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>Codage de début de trame API Codage de début de trame ， Codage de début de trame IDR Codage de début de trame</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Codage de début de trame </dd></dl>
+
+</div>
+</div>
+<a id="gaa3c8bf9ed10ce53d782521eae77cc557"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa3c8bf9ed10ce53d782521eae77cc557">&#9670;&nbsp;</a></span>IMP_Encoder_GetChnAttr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_Encoder_GetChnAttr </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>encChn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structIMPEncoderCHNAttr.html">IMPEncoderCHNAttr</a> *const&#160;</td>
+          <td class="paramname"><em>attr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Obtenez le code Channel Attribut de</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">encChn</td><td>Attribut de Channel Attribut de , Attribut de : [0, NR_MAX_ENC_CHN - 1] </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">attr</td><td>Attribut de Channel Les attributs</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Les attributs </td></tr>
+    <tr><td class="paramname">Les</td><td>attributs 0 Les attributs </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga08be4837c32bc225a517124802206978"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga08be4837c32bc225a517124802206978">&#9670;&nbsp;</a></span>IMP_Encoder_GetChnColor2Grey()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_Encoder_GetChnColor2Grey </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>encChn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structIMPEncoderColor2GreyCfg.html">IMPEncoderColor2GreyCfg</a> *&#160;</td>
+          <td class="paramname"><em>pstColor2Grey</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Obtenir la couleur des attributs de fonction gris</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">encChn</td><td>Obtenir la couleur des attributs de fonction gris Channel Obtenir la couleur des attributs de fonction gris , Obtenir la couleur des attributs de fonction gris : [0, NR_MAX_ENC_CHN - 1] </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">pstColor2Grey</td><td>Obtenir la couleur des attributs de fonction gris</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Obtenir la couleur des attributs de fonction gris </td></tr>
+    <tr><td class="paramname">Obtenir</td><td>la couleur des attributs de fonction gris 0 Obtenir la couleur des attributs de fonction gris</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>Obtenir la couleur des attributs de fonction gris API Obtiendra les attributs de fonction de couleur à gris du canal ， Obtiendra les attributs de fonction de couleur à gris du canal API Obtiendra les attributs de fonction de couleur à gris du canal</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Cette fonction JPEG La chaîne n'a pas de sens. </dd></dl>
+
+</div>
+</div>
+<a id="ga8636080246a8ec7844745b8c6cc862a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8636080246a8ec7844745b8c6cc862a6">&#9670;&nbsp;</a></span>IMP_Encoder_GetChnFrmRate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_Encoder_GetChnFrmRate </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>encChn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structIMPEncoderFrmRate.html">IMPEncoderFrmRate</a> *&#160;</td>
+          <td class="paramname"><em>pstFps</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Obtenir les propriétés du contrôle de la fréquence d'images</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">encChn</td><td>Obtenir les propriétés du contrôle de la fréquence d'images Channel Obtenir les propriétés du contrôle de la fréquence d'images , Obtenir les propriétés du contrôle de la fréquence d'images : [0, NR_MAX_ENC_CHN - 1] </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">pstFpsCfg</td><td>Obtenir les propriétés du contrôle de la fréquence d'images</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Obtenir les propriétés du contrôle de la fréquence d'images </td></tr>
+    <tr><td class="paramname">Obtenir</td><td>les propriétés du contrôle de la fréquence d'images 0 Obtenir les propriétés du contrôle de la fréquence d'images</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>Obtenir les propriétés du contrôle de la fréquence d'images API Obtiendra les propriétés de contrôle de la fréquence d'images du canal ， Obtiendra les propriétés de contrôle de la fréquence d'images du canal API Obtiendra les propriétés de contrôle de la fréquence d'images du canal</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Obtiendra les propriétés de contrôle de la fréquence d'images du canal JPEG Obtiendra les propriétés de contrôle de la fréquence d'images du canal </dd></dl>
+
+</div>
+</div>
+<a id="ga1de6bf93238e99c87e96ad185fcd03cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1de6bf93238e99c87e96ad185fcd03cf">&#9670;&nbsp;</a></span>IMP_Encoder_GetChnH264Demask()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_Encoder_GetChnH264Demask </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>encChn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structIMPEncoderAttrH264Demask.html">IMPEncoderAttrH264Demask</a> *&#160;</td>
+          <td class="paramname"><em>pdemaskAttr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Obtenir les propriétés de dématriçage des canaux</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">encChn</td><td>Obtenir les propriétés de dématriçage des canaux Channel Obtenir les propriétés de dématriçage des canaux , Obtenir les propriétés de dématriçage des canaux : [0, NR_MAX_ENC_CHN - 1] </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">pdemaskAttr</td><td>Obtenir les propriétés de dématriçage des canaux</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Obtenir les propriétés de dématriçage des canaux </td></tr>
+    <tr><td class="paramname">Obtenir</td><td>les propriétés de dématriçage des canaux 0 Obtenir les propriétés de dématriçage des canaux</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>Obtenir les propriétés de dématriçage des canaux API Obtiendra les propriétés de dématriçage du canal ， Obtiendra les propriétés de dématriçage du canal API Obtiendra les propriétés de dématriçage du canal</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Obtiendra les propriétés de dématriçage du canal </dd></dl>
+
+</div>
+</div>
+<a id="gad0f9dd9cb56142bf3869cb8a2735a5e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad0f9dd9cb56142bf3869cb8a2735a5e8">&#9670;&nbsp;</a></span>IMP_Encoder_GetChnH264Denoise()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_Encoder_GetChnH264Denoise </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>encChn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structIMPEncoderAttrH264Denoise.html">IMPEncoderAttrH264Denoise</a> *&#160;</td>
+          <td class="paramname"><em>pdenoiseAttr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Obtenir les propriétés de débruitage du canal</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">encChn</td><td>Obtenir les propriétés de débruitage du canal Channel Obtenir les propriétés de débruitage du canal , Obtenir les propriétés de débruitage du canal : [0, NR_MAX_ENC_CHN - 1] </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">pdenoiseAttr</td><td>Obtenir les propriétés de débruitage du canal</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Obtenir les propriétés de débruitage du canal </td></tr>
+    <tr><td class="paramname">Obtenir</td><td>les propriétés de débruitage du canal 0 Obtenir les propriétés de débruitage du canal</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>Obtenir les propriétés de débruitage du canal API Obtiendra les propriétés de débruitage du canal ， Obtiendra les propriétés de débruitage du canal API Obtiendra les propriétés de débruitage du canal</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Obtiendra les propriétés de débruitage du canal JPEG Obtiendra les propriétés de débruitage du canal </dd></dl>
+
+</div>
+</div>
+<a id="ga877a389fe2632b7042a8d0a8d872d4c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga877a389fe2632b7042a8d0a8d872d4c6">&#9670;&nbsp;</a></span>IMP_Encoder_GetChnH264FrmUsedMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_Encoder_GetChnH264FrmUsedMode </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>encChn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structIMPEncoderAttrH264FrmUsed.html">IMPEncoderAttrH264FrmUsed</a> *&#160;</td>
+          <td class="paramname"><em>pfrmUsedAttr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Obtenir l'attribut du mode d'utilisation de la trame d'entrée du canal</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">encChn</td><td>Obtenir l'attribut du mode d'utilisation de la trame d'entrée du canal Channel Obtenir l'attribut du mode d'utilisation de la trame d'entrée du canal , Obtenir l'attribut du mode d'utilisation de la trame d'entrée du canal : [0, NR_MAX_ENC_CHN - 1] </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">pfrmUsedAttr</td><td>Obtenir l'attribut du mode d'utilisation de la trame d'entrée du canal</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Obtenir l'attribut du mode d'utilisation de la trame d'entrée du canal </td></tr>
+    <tr><td class="paramname">Obtenir</td><td>l'attribut du mode d'utilisation de la trame d'entrée du canal 0 Obtenir l'attribut du mode d'utilisation de la trame d'entrée du canal</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>Obtenir l'attribut du mode d'utilisation de la trame d'entrée du canal API Obtiendra l'attribut de mode d'utilisation de la trame d'entrée du canal ， Obtiendra l'attribut de mode d'utilisation de la trame d'entrée du canal API Obtiendra l'attribut de mode d'utilisation de la trame d'entrée du canal</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Obtiendra l'attribut de mode d'utilisation de la trame d'entrée du canal </dd></dl>
+
+</div>
+</div>
+<a id="gadd0625182442c01687c759b3d889ecd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadd0625182442c01687c759b3d889ecd3">&#9670;&nbsp;</a></span>IMP_Encoder_GetChnRcAttr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_Encoder_GetChnRcAttr </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>encChn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structIMPEncoderRcAttr.html">IMPEncoderRcAttr</a> *&#160;</td>
+          <td class="paramname"><em>pstRcCfg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Obtenir les propriétés du contrôle de débit</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">encChn</td><td>Obtenir les propriétés du contrôle de débit Channel Obtenir les propriétés du contrôle de débit , Obtenir les propriétés du contrôle de débit : [0, NR_MAX_ENC_CHN - 1] </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">pstRcCfg</td><td>Obtenir les propriétés du contrôle de débit</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Obtenir les propriétés du contrôle de débit </td></tr>
+    <tr><td class="paramname">Obtenir</td><td>les propriétés du contrôle de débit 0 Obtenir les propriétés du contrôle de débit</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>Obtenir les propriétés du contrôle de débit API Obtiendra les propriétés de contrôle de débit du canal ， Obtiendra les propriétés de contrôle de débit du canal API Obtiendra les propriétés de contrôle de débit du canal</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Obtiendra les propriétés de contrôle de débit du canal JPEG Obtiendra les propriétés de contrôle de débit du canal </dd></dl>
+
+</div>
+</div>
+<a id="gabe8b833d724ed6ff312390843a5ec98b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabe8b833d724ed6ff312390843a5ec98b">&#9670;&nbsp;</a></span>IMP_Encoder_GetChnROI()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_Encoder_GetChnROI </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>encChn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structIMPEncoderROICfg.html">IMPEncoderROICfg</a> *&#160;</td>
+          <td class="paramname"><em>pstVencRoiCfg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Obtenir la chaîne ROI Obtenir la chaîne</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">encChn</td><td>Obtenir la chaîne Channel Obtenir la chaîne , Obtenir la chaîne : [0, NR_MAX_ENC_CHN - 1] </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">pstFpsCfg</td><td>ROI Obtenir la chaîne</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Obtenir la chaîne </td></tr>
+    <tr><td class="paramname">Obtenir</td><td>la chaîne 0 Obtenir la chaîne</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>Obtenir la chaîne API Obtiendra la chaîne ROI Obtiendra la chaîne ， Obtiendra la chaîne API Obtiendra la chaîne</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Obtiendra la chaîne JPEG Obtiendra la chaîne </dd></dl>
+
+</div>
+</div>
+<a id="gabf6b911bb55ca6806fa0a072d1b7e83a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabf6b911bb55ca6806fa0a072d1b7e83a">&#9670;&nbsp;</a></span>IMP_Encoder_GetFisheyeEnableStatus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_Encoder_GetFisheyeEnableStatus </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>encChn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>enable</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Obtenir Ingenic Obtenir</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">encChn</td><td>Obtenir Channel Obtenir , Obtenir : [0, NR_MAX_ENC_CHN - 1] </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">enable</td><td>Retour au set Ingenic Retour au set ,0: Pas activé ,1: Activé</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Activé </td></tr>
+    <tr><td class="paramname">Activé</td><td>0 Activé</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>Activé API Activé H264</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Activé </dd></dl>
+
+</div>
+</div>
+<a id="ga48eb55dbb0b14c7e4a1416b620e263d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga48eb55dbb0b14c7e4a1416b620e263d1">&#9670;&nbsp;</a></span>IMP_Encoder_GetGOPSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_Encoder_GetGOPSize </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>encChn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structIMPEncoderGOPSizeCfg.html">IMPEncoderGOPSizeCfg</a> *&#160;</td>
+          <td class="paramname"><em>pstGOPSizeCfg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Obtiendra la chaîne GOP Obtiendra la chaîne</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">encChn</td><td>Obtiendra la chaîne Channel Obtiendra la chaîne , Obtiendra la chaîne : [0, NR_MAX_ENC_CHN - 1] </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">pstGOPSizeCfg</td><td>GOPSize Obtiendra la chaîne</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Obtiendra la chaîne </td></tr>
+    <tr><td class="paramname">Obtiendra</td><td>la chaîne 0 Obtiendra la chaîne</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>Obtiendra la chaîne API Obtiendra la chaîne GOPSize Obtiendra la chaîne ， Obtiendra la chaîne API Obtiendra la chaîne</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Obtiendra la chaîne JPEG Obtiendra la chaîne </dd></dl>
+
+</div>
+</div>
+<a id="ga785e84d3d6acbe878e2c27f54e3d70cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga785e84d3d6acbe878e2c27f54e3d70cb">&#9670;&nbsp;</a></span>IMP_Encoder_GetMaxStreamCnt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_Encoder_GetMaxStreamCnt </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>encChn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>nrMaxStream</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Obtenir le flux de code Buffer Obtenir le flux de code</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">encChn</td><td>Obtenir le flux de code Channel Obtenir le flux de code , Obtenir le flux de code : [0, NR_MAX_ENC_CHN - 1] </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">nrMaxStream</td><td>Obtenir le flux de code Buffer Pointeur variable</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Pointeur variable </td></tr>
+    <tr><td class="paramname">Pointeur</td><td>variable 0 Pointeur variable</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>Pointeur variable</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Pointeur variable </dd></dl>
+
+</div>
+</div>
+<a id="ga6964862ca76079154db97cf135acd320"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6964862ca76079154db97cf135acd320">&#9670;&nbsp;</a></span>IMP_Encoder_GetStream()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_Encoder_GetStream </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>encChn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structIMPEncoderStream.html">IMPEncoderStream</a> *&#160;</td>
+          <td class="paramname"><em>stream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>blockFlag</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Obtenez le flux codé</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">encChn</td><td>Obtenez le flux codé Channel Obtenez le flux codé , Obtenez le flux codé : [0, NR_MAX_ENC_CHN - 1] </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">stream</td><td>Pointeur de structure de flux </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">blockFlag</td><td>Utiliser ou non la méthode de blocage pour obtenir ，0 : Non bloquant ，1 :bloquer</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>:bloquer </td></tr>
+    <tr><td class="paramname">:bloquer</td><td>0 :bloquer</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>Obtenez les données d'une image de flux à la fois </dd>
+<dd>
+Si l'utilisateur n'obtient pas le flux de code pendant une longue période , Le tampon de flux sera plein. Un code Channel Si le tampon de flux est plein , Sera après L'image reçue est perdue , Jusqu'à ce que l'utilisateur reçoive le flux de code , Il y a donc suffisamment de tampon de flux de code à utiliser pour l'encodage , Commencez simplement à coder. Suggérer des utilisateurs L'appel d'interface pour obtenir le flux de code et l'appel d'interface pour libérer le flux de code apparaissent par paires , Et publiez le flux dès que possible , Empêcher le flux de code d'être acquis en raison du mode utilisateur , Relâchez pas Flux de code causé dans le temps buffer complet , Arrêtez de coder. </dd>
+<dd>
+pour H264 Type de flux ， Obtenez une image de flux de code avec succès en un seul appel ， Cette trame de flux de code peut contenir plusieurs paquets. </dd>
+<dd>
+Cette trame de flux de code peut contenir plusieurs paquets. JPEG Cette trame de flux de code peut contenir plusieurs paquets. ， Cette trame de flux de code peut contenir plusieurs paquets. ， Cette trame de flux de code ne contient qu'un seul paquet ， Ce cadre contient JPEG Les informations complètes du fichier image.</dd></dl>
+<p>Exemple: </p><div class="fragment"><div class="line"><span class="keywordtype">int</span> ret;</div><div class="line">ret = <a class="code" href="group__IMP__Encoder.html#ga489eaff2c945a840054b165011825932">IMP_Encoder_PollingStream</a>(ENC_H264_CHANNEL, 1000); <span class="comment">//Polling Exemple: Buffer， En attente de disponibilité </span></div><div class="line"><span class="keywordflow">if</span> (ret &lt; 0) {</div><div class="line">    printf(<span class="stringliteral">&quot;Polling stream timeout\n&quot;</span>);</div><div class="line">    <span class="keywordflow">return</span> -1;</div><div class="line">}</div><div class="line"></div><div class="line"><a class="code" href="structIMPEncoderStream.html">IMPEncoderStream</a> stream;</div><div class="line">ret = <a class="code" href="group__IMP__Encoder.html#ga6964862ca76079154db97cf135acd320">IMP_Encoder_GetStream</a>(ENC_H264_CHANNEL, &amp;stream, 1); <span class="comment">// Obtenez un flux d&#39;images ， Méthode de blocage </span></div><div class="line"><span class="keywordflow">if</span> (ret &lt; 0) {</div><div class="line">    printf(<span class="stringliteral">&quot;Get Stream failed\n&quot;</span>);</div><div class="line">    <span class="keywordflow">return</span> -1;</div><div class="line">}</div><div class="line"></div><div class="line"><span class="keywordtype">int</span> i, nr_pack = stream.<a class="code" href="structIMPEncoderStream.html#aa3513657fb22db479f6707a3f7f1b298">packCount</a>;</div><div class="line"><span class="keywordflow">for</span> (i = 0; i &lt; nr_pack; i++) { <span class="comment">// Enregistrez chaque paquet de cette trame de flux de code </span></div><div class="line">    ret = write(stream_fd, (<span class="keywordtype">void</span> *)stream.<a class="code" href="structIMPEncoderStream.html#ab8558d3528bb1a28d5813a6fc7e08eeb">pack</a>[i].<a class="code" href="structIMPEncoderPack.html#a8e0a18ddadeea5e5b253bd5259d34971">virAddr</a>,</div><div class="line">               stream.<a class="code" href="structIMPEncoderStream.html#ab8558d3528bb1a28d5813a6fc7e08eeb">pack</a>[i].<a class="code" href="structIMPEncoderPack.html#a17c09a1ade9bee681201fa3a28a040a7">length</a>);</div><div class="line">    <span class="keywordflow">if</span> (ret != stream.<a class="code" href="structIMPEncoderStream.html#ab8558d3528bb1a28d5813a6fc7e08eeb">pack</a>[i].<a class="code" href="structIMPEncoderPack.html#a17c09a1ade9bee681201fa3a28a040a7">length</a>) {</div><div class="line">        printf(<span class="stringliteral">&quot;stream write error:%s\n&quot;</span>, strerror(errno));</div><div class="line">        <span class="keywordflow">return</span> -1;</div><div class="line">    }</div><div class="line">}</div></div><!-- fragment --><dl class="section attention"><dt>Attention</dt><dd>Enregistrez chaque paquet de cette trame de flux de code pstStream pour NULL, Puis renvoyez l'échec; </dd>
+<dd>
+Puis renvoyez l'échec; Channel Puis renvoyez l'échec; ， Puis renvoyez l'échec; </dd></dl>
+
+</div>
+</div>
+<a id="gac9be6a8b3faf5df3e07346f40d673327"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac9be6a8b3faf5df3e07346f40d673327">&#9670;&nbsp;</a></span>IMP_Encoder_InsertUserData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_Encoder_InsertUserData </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>encChn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>userData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>userDataLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Insérer les données utilisateur</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">encChn</td><td>Insérer les données utilisateur Channel Insérer les données utilisateur , Insérer les données utilisateur : [0, NR_MAX_ENC_CHN - 1] </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">userData</td><td>Pointeur de données utilisateur </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">userDataLen</td><td>Longueur des données utilisateur , Longueur des données utilisateur :(0, 1024], Longueur des données utilisateur byte Longueur des données utilisateur</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Longueur des données utilisateur </td></tr>
+    <tr><td class="paramname">Longueur</td><td>des données utilisateur 0 Longueur des données utilisateur</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>Longueur des données utilisateur API Le canal requis existe déjà </dd>
+<dd>
+Si le canal n'est pas créé , Si le canal n'est pas créé </dd>
+<dd>
+Si le canal n'est pas créé userData Vide ou userDataLen Vide ou 0, Vide ou </dd>
+<dd>
+Vide ou , Supporte uniquement H.264 Protocole d'encodage </dd>
+<dd>
+H.264 Les canaux de protocole sont alloués au plus 2 L'espace mémoire de bloc est utilisé pour mettre en cache les données utilisateur , Et la taille de chaque élément de données utilisateur ne dépasse pas 1k byte Et la taille de chaque élément de données utilisateur ne dépasse pas Si les données insérées par l'utilisateur sont redondantes 2 Pièce , Ou l'élément de données utilisateur inséré est supérieur à 1k byte Ou l'élément de données utilisateur inséré est supérieur à , Cette interface renverra une erreur. </dd>
+<dd>
+Chaque élément de données utilisateur est SEI Le format du package est inséré avant le dernier package de flux d'images. Après qu'un certain paquet de données utilisateur est encodé et envoyé , H.264 L'espace mémoire pour la mise en mémoire tampon de cette donnée utilisateur dans le canal est effacé , Utilisé pour stocker de nouvelles données utilisateur</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Utilisé pour stocker de nouvelles données utilisateur </dd></dl>
+
+</div>
+</div>
+<a id="ga489eaff2c945a840054b165011825932"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga489eaff2c945a840054b165011825932">&#9670;&nbsp;</a></span>IMP_Encoder_PollingStream()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_Encoder_PollingStream </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>encChn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>timeoutMsec</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Polling Tampon de flux</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">encChn</td><td>Tampon de flux Channel Tampon de flux , Tampon de flux : [0, NR_MAX_ENC_CHN - 1] </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">timeoutMsec</td><td>temps supplémentaire ， Unité: millisecondes</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Unité: millisecondes </td></tr>
+    <tr><td class="paramname">Unité</td><td>millisecondes 0 Unité: millisecondes</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>Vous pouvez l'utiliser avant d'obtenir le flux de code API monter Polling， La fonction retourne lorsque le tampon de flux de code n'est pas vide ou lorsqu'il expire.</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>La fonction retourne lorsque le tampon de flux de code n'est pas vide ou lorsqu'il expire. </dd></dl>
+
+</div>
+</div>
+<a id="ga03a1a3a1e81cfd87af27fb48f50f0140"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga03a1a3a1e81cfd87af27fb48f50f0140">&#9670;&nbsp;</a></span>IMP_Encoder_Query()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_Encoder_Query </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>encChn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structIMPEncoderCHNStat.html">IMPEncoderCHNStat</a> *&#160;</td>
+          <td class="paramname"><em>stat</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Code de requête Channel Code de requête</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">encChn</td><td>Code de requête Channel Code de requête , Code de requête : [0, NR_MAX_ENC_CHN - 1] </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">stat</td><td>Code de requête Channel Code de requête</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Code de requête </td></tr>
+    <tr><td class="paramname">Code</td><td>de requête 0 Code de requête</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>non</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>non </dd></dl>
+
+</div>
+</div>
+<a id="gab5b49fb276c463b7a62ddfad44a45a93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab5b49fb276c463b7a62ddfad44a45a93">&#9670;&nbsp;</a></span>IMP_Encoder_RegisterChn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_Encoder_RegisterChn </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>encGroup</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>encChn</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Code d'enregistrement Channel À Group</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">encGroup</td><td>À Group À , À : [0, NR_MAX_ENC_GROUPS - 1] </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">encChn</td><td>À Channel À , À : [0, NR_MAX_ENC_CHN - 1]</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>À </td></tr>
+    <tr><td class="paramname">À</td><td>0 À</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>Attention</dt><dd>L'enregistrement n'existe pas Channel， L'enregistrement n'existe pas </dd>
+<dd>
+L'enregistrement n'existe pas Channel À inexistant Group， À inexistant </dd>
+<dd>
+Même code Channel Un seul peut être enregistré Group， Si la Channel Déjà inscrit à un Group， Déjà inscrit à un </dd>
+<dd>
+Si un Group Déjà enregistré ， Ensuite ceci Group Je ne peux pas être l'autre Channel Je ne peux pas être l'autre ， Sauf si la relation d'enregistrement précédente est annulée </dd></dl>
+
+</div>
+</div>
+<a id="gad33dd934911cf7bd318bfad4af16dd2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad33dd934911cf7bd318bfad4af16dd2f">&#9670;&nbsp;</a></span>IMP_Encoder_ReleaseStream()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_Encoder_ReleaseStream </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>encChn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structIMPEncoderStream.html">IMPEncoderStream</a> *&#160;</td>
+          <td class="paramname"><em>stream</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Libérez le cache du flux de code</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">encChn</td><td>Libérez le cache du flux de code Channel Libérez le cache du flux de code , Libérez le cache du flux de code : [0, NR_MAX_ENC_CHN - 1] </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">stream</td><td>Libérez le cache du flux de code</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Libérez le cache du flux de code </td></tr>
+    <tr><td class="paramname">Libérez</td><td>le cache du flux de code 0 Libérez le cache du flux de code</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>Cette interface doit être IMP_Encoder_GetStream Jumeler et utiliser ，<br />
+ Après avoir obtenu le flux de code, l'utilisateur doit libérer le cache de flux de code obtenu à temps ， Sinon, cela peut provoquer un flux de bits buffer Sinon, cela peut provoquer un flux de bits ， Affecte l'encodage de l'encodeur. <br />
+ Et l'utilisateur doit appuyer sur Libérez le cache de flux de code qui a été acquis dans l'ordre de libération; </dd>
+<dd>
+Codage Channel Après la désinscription ， Tous les paquets de flux non publiés ne sont pas valides ， Ce tampon de flux de code non valide ne peut plus être utilisé ou libéré.</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Ce tampon de flux de code non valide ne peut plus être utilisé ou libéré. pstStream Ce tampon de flux de code non valide ne peut plus être utilisé ou libéré. NULL, Ce tampon de flux de code non valide ne peut plus être utilisé ou libéré. </dd>
+<dd>
+Ce tampon de flux de code non valide ne peut plus être utilisé ou libéré. Channel Ce tampon de flux de code non valide ne peut plus être utilisé ou libéré. ， Ce tampon de flux de code non valide ne peut plus être utilisé ou libéré. </dd>
+<dd>
+La libération du flux de code non valide renverra un échec. </dd></dl>
+
+</div>
+</div>
+<a id="ga76af240bb189528c1451acf328448f3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga76af240bb189528c1451acf328448f3a">&#9670;&nbsp;</a></span>IMP_Encoder_RequestIDR()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_Encoder_RequestIDR </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>encChn</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>demander IDR Cadre</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">encChn</td><td>Cadre Channel Cadre , Cadre : [0, NR_MAX_ENC_CHN - 1]</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Cadre </td></tr>
+    <tr><td class="paramname">Cadre</td><td>0 Cadre</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>Appeler ça API Arrière ， S'appliquera dans la trame d'encodage la plus proche IDR Encodage de trame.</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Encodage de trame. </dd></dl>
+
+</div>
+</div>
+<a id="ga90194e455e8673609a04137fc7a39741"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga90194e455e8673609a04137fc7a39741">&#9670;&nbsp;</a></span>IMP_Encoder_SetChnColor2Grey()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_Encoder_SetChnColor2Grey </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>encChn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structIMPEncoderColor2GreyCfg.html">IMPEncoderColor2GreyCfg</a> *&#160;</td>
+          <td class="paramname"><em>pstColor2Grey</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Réglez la couleur sur la fonction grise</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">encChn</td><td>Réglez la couleur sur la fonction grise Channel Réglez la couleur sur la fonction grise , Réglez la couleur sur la fonction grise : [0, NR_MAX_ENC_CHN - 1] </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pstColor2Grey</td><td>Paramètres de la fonction de la couleur au gris</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Paramètres de la fonction de la couleur au gris </td></tr>
+    <tr><td class="paramname">Paramètres</td><td>de la fonction de la couleur au gris 0 Paramètres de la fonction de la couleur au gris</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>Appelle ça API Réglez la couleur sur la fonction grise du canal ， Sur le prochain IDR ou P Le cadre prend effet. Le cadre prend effet. API Besoin d'un canal existe déjà.</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Besoin d'un canal existe déjà. </dd></dl>
+
+</div>
+</div>
+<a id="ga4c8e301e6090fb27bd0bc2f2795229f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4c8e301e6090fb27bd0bc2f2795229f2">&#9670;&nbsp;</a></span>IMP_Encoder_SetChnFrmRate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_Encoder_SetChnFrmRate </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>encChn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structIMPEncoderFrmRate.html">IMPEncoderFrmRate</a> *&#160;</td>
+          <td class="paramname"><em>pstFps</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Définir dynamiquement les propriétés du contrôle de la fréquence d'images</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">encChn</td><td>Définir dynamiquement les propriétés du contrôle de la fréquence d'images Channel Définir dynamiquement les propriétés du contrôle de la fréquence d'images , Définir dynamiquement les propriétés du contrôle de la fréquence d'images : [0, NR_MAX_ENC_CHN - 1] </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">pstFpsCfg</td><td>Paramètres d'attribut de contrôle de la fréquence d'images</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Paramètres d'attribut de contrôle de la fréquence d'images </td></tr>
+    <tr><td class="paramname">Paramètres</td><td>d'attribut de contrôle de la fréquence d'images 0 Paramètres d'attribut de contrôle de la fréquence d'images</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>Paramètres d'attribut de contrôle de la fréquence d'images API Réinitialise les propriétés de fréquence d'images de l'encodeur ， L'attribut de fréquence d'images est le suivant GOP L'attribut de fréquence d'images est le suivant ， Délai maximum 1 Prenez effet en quelques secondes ， Prenez effet en quelques secondes API Prenez effet en quelques secondes </dd>
+<dd>
+Si vous appelez IMP_FrameSource_SetChnFPS() La fonction modifie dynamiquement la fréquence d'images du système ， Ensuite, vous devez appeler cette fonction pour modifier la fréquence d'images de l'encodeur ， Terminez la configuration correcte des paramètres.</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>non. </dd></dl>
+
+</div>
+</div>
+<a id="gab411469004836f222e1004994fa30517"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab411469004836f222e1004994fa30517">&#9670;&nbsp;</a></span>IMP_Encoder_SetChnH264Demask()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_Encoder_SetChnH264Demask </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>encChn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structIMPEncoderAttrH264Demask.html">IMPEncoderAttrH264Demask</a> *&#160;</td>
+          <td class="paramname"><em>pdemaskAttr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Définir les propriétés de dématriçage des canaux</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">encChn</td><td>Définir les propriétés de dématriçage des canaux Channel Définir les propriétés de dématriçage des canaux , Définir les propriétés de dématriçage des canaux : [0, NR_MAX_ENC_CHN - 1] </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">pdemaskAttr</td><td>Paramètres de propriété de dématriçage</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Paramètres de propriété de dématriçage </td></tr>
+    <tr><td class="paramname">Paramètres</td><td>de propriété de dématriçage 0 Paramètres de propriété de dématriçage</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>Paramètres de propriété de dématriçage API Définira les propriétés de dématriçage du canal ， Définira les propriétés de dématriçage du canal API Définira les propriétés de dématriçage du canal</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Définira les propriétés de dématriçage du canal </dd></dl>
+
+</div>
+</div>
+<a id="gafa66a94468da7567b6a9b0e65b8a98ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafa66a94468da7567b6a9b0e65b8a98ee">&#9670;&nbsp;</a></span>IMP_Encoder_SetChnH264Denoise()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_Encoder_SetChnH264Denoise </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>encChn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structIMPEncoderAttrH264Denoise.html">IMPEncoderAttrH264Denoise</a> *&#160;</td>
+          <td class="paramname"><em>pdenoiseAttr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Définir les propriétés de réduction du bruit de canal</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">encChn</td><td>Définir les propriétés de réduction du bruit de canal Channel Définir les propriétés de réduction du bruit de canal , Définir les propriétés de réduction du bruit de canal : [0, NR_MAX_ENC_CHN - 1] </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">pdenoiseAttr</td><td>Paramètres d'attribut de débruitage</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Paramètres d'attribut de débruitage </td></tr>
+    <tr><td class="paramname">Paramètres</td><td>d'attribut de débruitage 0 Paramètres d'attribut de débruitage</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>Paramètres d'attribut de débruitage API Définira les propriétés de débruitage du canal ， Définira les propriétés de débruitage du canal API Définira les propriétés de débruitage du canal</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Définira les propriétés de débruitage du canal </dd></dl>
+
+</div>
+</div>
+<a id="ga8f6309334d825eaa050719f3a2d435ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8f6309334d825eaa050719f3a2d435ee">&#9670;&nbsp;</a></span>IMP_Encoder_SetChnH264FrmUsedMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_Encoder_SetChnH264FrmUsedMode </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>encChn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structIMPEncoderAttrH264FrmUsed.html">IMPEncoderAttrH264FrmUsed</a> *&#160;</td>
+          <td class="paramname"><em>pfrmUsedAttr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Définir l'attribut du mode d'utilisation de la trame d'entrée du canal</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">encChn</td><td>Définir l'attribut du mode d'utilisation de la trame d'entrée du canal Channel Définir l'attribut du mode d'utilisation de la trame d'entrée du canal , Définir l'attribut du mode d'utilisation de la trame d'entrée du canal : [0, NR_MAX_ENC_CHN - 1] </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">pfrmUsedAttr</td><td>Paramètre d'attribut du mode d'utilisation du cadre d'entrée</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Paramètre d'attribut du mode d'utilisation du cadre d'entrée </td></tr>
+    <tr><td class="paramname">Paramètre</td><td>d'attribut du mode d'utilisation du cadre d'entrée 0 Paramètre d'attribut du mode d'utilisation du cadre d'entrée</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>Paramètre d'attribut du mode d'utilisation du cadre d'entrée API Définira l'attribut de mode d'utilisation de la trame d'entrée du canal ， Définira l'attribut de mode d'utilisation de la trame d'entrée du canal API Définira l'attribut de mode d'utilisation de la trame d'entrée du canal</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Définira l'attribut de mode d'utilisation de la trame d'entrée du canal </dd></dl>
+
+</div>
+</div>
+<a id="ga92c7e9c18cd76648fef6037fa46292a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga92c7e9c18cd76648fef6037fa46292a2">&#9670;&nbsp;</a></span>IMP_Encoder_SetChnRcAttr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_Encoder_SetChnRcAttr </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>encChn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structIMPEncoderRcAttr.html">IMPEncoderRcAttr</a> *&#160;</td>
+          <td class="paramname"><em>pstRcCfg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Définir les propriétés du contrôle de débit</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">encChn</td><td>Définir les propriétés du contrôle de débit Channel Définir les propriétés du contrôle de débit , Définir les propriétés du contrôle de débit : [0, NR_MAX_ENC_CHN - 1] </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pstRcCfg</td><td>Paramètres d'attribut de contrôle de débit</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Paramètres d'attribut de contrôle de débit </td></tr>
+    <tr><td class="paramname">Paramètres</td><td>d'attribut de contrôle de débit 0 Paramètres d'attribut de contrôle de débit</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>Paramètres d'attribut de contrôle de débit API Définira les propriétés de contrôle de débit du canal ， Suivant IDR Prendre effet , Prendre effet API Prendre effet</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Actuellement ， Prise en charge du contrôle de taux ENC_RC_MODE_H264FIXQP contre ENC_RC_MODE_H264CBR contre ENC_RC_MODE_H264FIXQP Configuration du support qp，ENC_RC_MODE_H264CBR Configuration du support outBitRate Configuration du support </dd>
+<dd>
+Configuration du support JPEG Configuration du support </dd></dl>
+
+</div>
+</div>
+<a id="ga8d981749a3f1ee9b482152ce367d9ba2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8d981749a3f1ee9b482152ce367d9ba2">&#9670;&nbsp;</a></span>IMP_Encoder_SetChnROI()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_Encoder_SetChnROI </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>encChn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structIMPEncoderROICfg.html">IMPEncoderROICfg</a> *&#160;</td>
+          <td class="paramname"><em>pstVencRoiCfg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Configurer la chaîne ROI Configurer la chaîne</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">encChn</td><td>Configurer la chaîne Channel Configurer la chaîne , Configurer la chaîne : [0, NR_MAX_ENC_CHN - 1] </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">pstFpsCfg</td><td>ROI Paramètre d'attribut</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Paramètre d'attribut </td></tr>
+    <tr><td class="paramname">Paramètre</td><td>d'attribut 0 Paramètre d'attribut</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>Paramètre d'attribut API Configurera la chaîne ROI Configurera la chaîne ， Configurera la chaîne API Configurera la chaîne</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Configurera la chaîne </dd></dl>
+
+</div>
+</div>
+<a id="ga7eddd99abbfeeafa72ef008c8ea24c21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7eddd99abbfeeafa72ef008c8ea24c21">&#9670;&nbsp;</a></span>IMP_Encoder_SetFisheyeEnableStatus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_Encoder_SetFisheyeEnableStatus </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>encChn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>enable</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Installation Ingenic L'état activé de l'algorithme de correction fisheye fourni</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">encChn</td><td>L'état activé de l'algorithme de correction fisheye fourni Channel L'état activé de l'algorithme de correction fisheye fourni , L'état activé de l'algorithme de correction fisheye fourni : [0, NR_MAX_ENC_CHN - 1] </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>0: Désactiver ( défaut ),1: Permettre</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Permettre </td></tr>
+    <tr><td class="paramname">Permettre</td><td>0 Permettre</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>Étant donné que l'état d'activation de l'algorithme de correction fisheye est fixé lors de la création du canal ， Étant donné que l'état d'activation de l'algorithme de correction fisheye est fixé lors de la création du canal API Étant donné que l'état d'activation de l'algorithme de correction fisheye est fixé lors de la création du canal </dd>
+<dd>
+Étant donné que l'état d'activation de l'algorithme de correction fisheye est fixé lors de la création du canal API Étant donné que l'état d'activation de l'algorithme de correction fisheye est fixé lors de la création du canal Ingenic Étant donné que l'état d'activation de l'algorithme de correction fisheye est fixé lors de la création du canal , N'est pas activé par défaut ， Autrement dit, l'algorithme de correction fisheye fourni par Ingenics ne peut pas être utilisé. </dd>
+<dd>
+ce API s'applique uniquement à H264</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>s'applique uniquement à </dd></dl>
+
+</div>
+</div>
+<a id="ga1b4bd71c5c1828bcfffd88fc6c390b78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1b4bd71c5c1828bcfffd88fc6c390b78">&#9670;&nbsp;</a></span>IMP_Encoder_SetGOPSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_Encoder_SetGOPSize </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>encChn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structIMPEncoderGOPSizeCfg.html">IMPEncoderGOPSizeCfg</a> *&#160;</td>
+          <td class="paramname"><em>pstGOPSizeCfg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Obtiendra la chaîne GOP Obtiendra la chaîne</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">encChn</td><td>Obtiendra la chaîne Channel Obtiendra la chaîne , Obtiendra la chaîne : [0, NR_MAX_ENC_CHN - 1] </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">pstGOPSizeCfg</td><td>GOP Obtiendra la chaîne</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Obtiendra la chaîne </td></tr>
+    <tr><td class="paramname">Obtiendra</td><td>la chaîne 0 Obtiendra la chaîne</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>Obtiendra la chaîne API Obtiendra la chaîne GOPSize Obtiendra la chaîne ， Obtiendra la chaîne API Obtiendra la chaîne</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Obtiendra la chaîne </dd></dl>
+
+</div>
+</div>
+<a id="ga26d0491a35a43e156823b2f5f384e4cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga26d0491a35a43e156823b2f5f384e4cb">&#9670;&nbsp;</a></span>IMP_Encoder_SetMaxStreamCnt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_Encoder_SetMaxStreamCnt </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>encChn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nrMaxStream</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Définir le cache du flux de code Buffer Nombre</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">encChn</td><td>Nombre Channel Nombre , Nombre : [0, NR_MAX_ENC_CHN - 1] </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nrMaxStream</td><td>Nombre Buffer Nombre , Nombre : [1, NR_MAX_ENC_CHN_STREAM]</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Nombre </td></tr>
+    <tr><td class="paramname">Nombre</td><td>0 Nombre</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>En raison de la mise en cache du flux Buffer Le numéro est fixe lors de la création du canal ， Par conséquent API Il doit être appelé avant la création du canal. </dd>
+<dd>
+S'il n'est pas appelé avant la création du canal API S'il n'est pas appelé avant la création du canal Buffer S'il n'est pas appelé avant la création du canal ， alors H264 Le nombre de canaux par défaut est 5，JPEG Le nombre de canaux par défaut est 1 Le nombre de canaux par défaut est</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Le nombre de canaux par défaut est </dd></dl>
+
+</div>
+</div>
+<a id="ga8fe7e5b00167cf122da13f1d2e07eb6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8fe7e5b00167cf122da13f1d2e07eb6d">&#9670;&nbsp;</a></span>IMP_Encoder_StartRecvPic()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_Encoder_StartRecvPic </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>encChn</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Activer l'encodage Channel Recevoir l'image</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">encChn</td><td>Recevoir l'image Channel Recevoir l'image , Recevoir l'image : [0, NR_MAX_ENC_CHN - 1]</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Recevoir l'image </td></tr>
+    <tr><td class="paramname">Recevoir</td><td>l'image 0 Recevoir l'image</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>Recevoir l'image Channel L'encodage ne peut démarrer qu'après réception de l'image</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>au cas où Channel Non créé ， Non créé </dd>
+<dd>
+Non créé Channel Non enregistré pour Group， Non enregistré pour </dd></dl>
+
+</div>
+</div>
+<a id="ga30a590183b70833aac280a84b153990b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga30a590183b70833aac280a84b153990b">&#9670;&nbsp;</a></span>IMP_Encoder_StopRecvPic()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_Encoder_StopRecvPic </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>encChn</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Arrêter le codage Channel Arrêter le codage</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">encChn</td><td>Arrêter le codage Channel Arrêter le codage , Arrêter le codage : [0, NR_MAX_ENC_CHN - 1]</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Arrêter le codage </td></tr>
+    <tr><td class="paramname">Arrêter</td><td>le codage 0 Arrêter le codage</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>Cette interface ne détermine pas s'il faut arrêter de recevoir actuellement ， Autrement dit, il est permis d'arrêter de recevoir à plusieurs reprises sans renvoyer une erreur </dd>
+<dd>
+L'appel de cette interface arrête uniquement de recevoir le codage des données d'origine ， L'appel de cette interface arrête uniquement de recevoir le codage des données d'origine buffer Ne sera pas éliminé</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Ne sera pas éliminé Channel Ne sera pas éliminé ， Ne sera pas éliminé </dd>
+<dd>
+Ne sera pas éliminé Channel Ne sera pas éliminé Group， Ne sera pas éliminé </dd></dl>
+
+</div>
+</div>
+<a id="gaaa31d5bcd407054992c2a56060a1795d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaaa31d5bcd407054992c2a56060a1795d">&#9670;&nbsp;</a></span>IMP_Encoder_UnRegisterChn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_Encoder_UnRegisterChn </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>encChn</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Code anti-enregistrement Channel Code anti-enregistrement Group</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">encChn</td><td>Code anti-enregistrement Channel Code anti-enregistrement , Code anti-enregistrement : [0, NR_MAX_ENC_CHN - 1]</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Code anti-enregistrement </td></tr>
+    <tr><td class="paramname">Code</td><td>anti-enregistrement 0 Code anti-enregistrement</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>Channel Après la déconnexion ， Après la déconnexion Channel Sera réinitialisé ， Sera réinitialisé Channel Flux buffer Sera vidé ， Si l'utilisateur utilise toujours Streams non diffusés à temps buffer， Ne sera pas garanti buffer Exactitude des données ， L'utilisateur peut utiliser IMP_Encoder_Query Interface à interroger code Channel code buffer statut ， Flux de confirmation buffer Se désinscrire après avoir intégré le flux de code Channel</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Déconnexion non créée Channel， Déconnexion non créée </dd>
+<dd>
+Non enregistré Channel， Non enregistré </dd>
+<dd>
+Si code Channel N'arrête pas de recevoir le codage de l'image ， N'arrête pas de recevoir le codage de l'image </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

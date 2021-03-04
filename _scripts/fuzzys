@@ -1,0 +1,57 @@
+#!/bin/bash
+
+. $(dirname $(readlink -f $0))/lib/head
+
+cd "$BASEDIR"
+cd ..
+
+echo "`trad 'ĉi tiu skripto estas uzata por administri po-dosierojn en malklara stato.'`\n"
+
+if [ $# -ge 1 ]
+then
+  LINGVO=$1
+else
+  read -p "`trad 'Kiu cellingvo ?'` " LINGVO
+fi
+
+if [ ! -d _locale/$LINGVO ]
+then
+  echo "`trad 'Pardonu, lingvo ne troviĝis'` $LINGVO."
+  sleep 2
+  exit
+fi
+
+if [ $# -ge 2 ]
+then
+  ACTION=$2
+else
+  read -p "`trad 'Kia ago ?'` l=ls, z=zip, v=virtaal, p=poedit : " ACTION
+fi
+
+case $ACTION in
+  l)
+    find _locale/$LINGVO -type f -name "*.po" -exec grep -l ", fuzzy" {} \;
+    ;;
+  p)
+    cd _locale/$LINGVO
+    poedit `find . -type f -name "*.po" -exec grep -l ", fuzzy" {} \;`
+    ;;
+  v)
+    cd _locale/$LINGVO
+    for x in `find . -type f -name "*.po" -exec grep -l ", fuzzy" {} \;`;
+     do
+      virtaal "$x" &
+     done
+    ;;
+  z)
+    cd _locale/$LINGVO
+    find . -type f -name "*.po" -exec grep -l ", fuzzy" {} \;|zip ../$LINGVO -@
+    sleep 2
+    ;;
+  *)
+    echo "`trad 'pardonu, ago ne rekonita :'` ${ACTION}"
+    sleep 2
+    ;;
+esac
+
+read -p "`trad 'Premu enigoklavon.'` " 

@@ -1,0 +1,95 @@
+---
+lang: fr
+lang-niv: fonto
+lang-ref: 000-indekso
+layout: page
+title: 'Présentation'
+---
+
+Le but de ce projet est de créer un micrologiciel alternatif pour cette caméra :
+
+marque = _WIFI CARAM_  
+modèle : _WF-HD820-ZS_  
+résolution : _1080P_
+
+Informations affichées dans l'interface web :
+```
+DeviceName: _INGENIC-V01_
+DeviceModel: _IPCAM-100_
+DeviceSN: _12345678901_
+KernelVersion: _Thu Jul 9 15:46:54 CST 2015_
+ServerVersion: _WS3.53.1243-20190717-DANALE-GEN_
+WebVersion: _V2.3.4-20190709_
+```
+
+processeur : _ingenic T21_
+capteur vidéo : _GC2053_
+
+Beaucoup de travail a été fait pour les caméras équipées d'un processeur _ingenic T20_.
+* micrologiciel modifié: <https://github.com/EliasKotlyar/Xiaomi-Dafang-Hacks>
+* sources du micrologiciel modifié: <https://github.com/Dafang-Hacks/Main>
+* autre micrologiciel <https://github.com/openmiko/openmiko>
+* lancement de programmes sans changer le micrologiciel : <https://github.com/ThatUsernameAlreadyExist/JCO-PM203-Fisheye-Ingenic-T20-P2P-camera-hacks>
+
+La documentation des APIs peut être consultée ici :  
+* [version originale en chinois](../zh/includes.zh/html/)
+* [version française traduite par google](../fr/includes.fr/html/)
+* [version anglaise traduite par google](../en/includes.en/html/)
+
+# Micrologiciel alternatif
+
+## Ce qui fonctionne dans le micrologiciel alternatif :
+
+* LAN et WLAN
+* Serveur RTSP MJPEG
+* Serveur HTTP
+* contrôle moteur
+* étalonnage du moteur
+* Paramètres PTZ
+* Client NTP
+* changement de mot de passe pour l'accès http
+* contrôle LED bleu et IR
+* Serveur ftp
+* Serveur telnet
+
+## Ce qui ne fonctionne pas dans le micrologiciel alternatif:
+
+* Paramètres vidéo
+* flux vidéo secondaire
+* systeme audio
+* _OSD_
+* mise à jour du micrologiciel
+* détection nocturne automatique
+* détection de mouvement
+* _ir-cut_
+* envoi de courriel
+* _mqtt_
+* _h264_
+* etc ...
+
+## Préparation de la caméra
+
+* Connectez la caméra à votre réseau local et allumez la caméra.
+* Trouvez l'adresse IP de la caméra.
+* Connectez-vous à la caméra via l'URL _"http://IP"_ (utilisateur _admin_, mot de passe _admin_)
+* dans l'onglet "Audio et vidéo", réglez le flux principal sur 720p, cliquez sur "Enregistrer".
+* éventuellement configurer le réseau filaire dans l'onglet "Réseau".
+
+## Installation du micrologiciel alternatif
+
+* Copiez tout ce qui se trouve dans le dossier [ _karto_ ](https://github.com/jmichault/ipcam-100/tree/master/karto) à la racine de la carte microSD.
+* éventuellement configurez le réseau ( _config/staticip.conf_ , _config/resolv.conf_ , _config/wpa_supplicant.conf_ )
+* Insérez la carte microSD.
+* Connectez la caméra à votre réseau local et allumez la caméra.
+* Connectez-vous à la caméra via `telnet IP 9527` (utilisateur _root_, mot de passe _jco66688_).
+* Faites `killall -9 auto_run.sh` pour éviter de fermer la connexion.
+* Faites `cd /opt/media/mmcblk0p1;./install.sh`
+* Vous pouvez vous connecter à l'URL _"https://IP"_ (utilisateur _admin_, mot de passe _jco66688_).
+
+## Désinstallation du micrologiciel alternatif:
+
+* lancez le service telnet sur la caméra par l'interface web.
+* Connectez-vous à la caméra via `telnet IP` (utilisateur _root_, mot de passe _ismart12_).
+* Faites `cd /opt/media/mmcblk0p1;./uninstall.sh;reboot`
+
+* Vous pouvez aussi simplement retirer la carte microSD.

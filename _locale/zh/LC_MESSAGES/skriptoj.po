@@ -1,0 +1,76 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-01-26 21:53+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Source-Language: eo\n"
+
+#: traduki:37
+#, fuzzy
+msgid "krei traduko"
+msgstr "创建翻译"
+
+#: fuzzys:8
+#, fuzzy
+msgid ""
+"ĉi tiu skripto estas uzata por administri po-dosierojn en malklara stato."
+msgstr "该脚本用于管理处于混乱状态的po文件。"
+
+#: fuzzys:14
+#, fuzzy
+msgid "Kiu cellingvo ?"
+msgstr "哪种目标语言？"
+
+#: fuzzys:19 komenci:16
+#, fuzzy
+msgid "Pardonu, lingvo ne troviĝis"
+msgstr "抱歉，找不到语言"
+
+#: fuzzys:28
+#, fuzzy
+msgid "Kia ago ?"
+msgstr "什么动作"
+
+#: fuzzys:52
+#, fuzzy
+msgid "pardonu, ago ne rekonita :"
+msgstr "抱歉，无法识别的动作："
+
+#: fuzzys:57
+#, fuzzy
+msgid "Premu enigoklavon."
+msgstr "按回车。"
+
+#: komenci:8
+#, fuzzy
+msgid "ĉi tiu skripto estas uzata por pravalorizi la retejon."
+msgstr "该脚本用于初始化站点。"
+
+#: komenci:13
+#, fuzzy
+msgid "Laborlingvo (2 litero, defaŭlte="
+msgstr "工作语言 ("
+
+#: komenci:31
+#, fuzzy
+msgid "Titolo :"
+msgstr "标题："
+
+#: komenci:42
+#, fuzzy
+msgid "Priskribo :"
+msgstr "描述："
+

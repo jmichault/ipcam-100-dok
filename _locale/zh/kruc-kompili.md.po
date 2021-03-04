@@ -1,0 +1,145 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-03-04 17:42+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: YAML Front Matter: lang
+#: kruc-kompili.md:1
+#, no-wrap
+msgid "eo"
+msgstr "zh"
+
+#. type: YAML Front Matter: lang-niv
+#: kruc-kompili.md:1
+#, no-wrap
+msgid "auto"
+msgstr "auto"
+
+#. type: YAML Front Matter: lang-ref
+#: kruc-kompili.md:1
+#, no-wrap
+msgid "005-kruc-compili"
+msgstr "005-kruc-compili"
+
+#. type: YAML Front Matter: layout
+#: kruc-kompili.md:1
+#, no-wrap
+msgid "page"
+msgstr "page"
+
+#. type: YAML Front Matter: title
+#: kruc-kompili.md:1
+#, fuzzy, no-wrap
+msgid "Kruca kompilo"
+msgstr "交叉编译"
+
+#. type: Plain text
+#: kruc-kompili.md:12
+#, fuzzy, no-wrap
+msgid ""
+"fontoj:\n"
+" * <https://znanev.github.io/Cross-compile-tools-for-Ingenic-T20/>  \n"
+msgstr ""
+"来源：\n"
+" * <https://znanev.github.io/Cross-compile-tools-for-Ingenic-T20/>  \n"
+
+#. type: Bullet: ' * '
+#: kruc-kompili.md:14
+#, fuzzy, no-wrap
+msgid "<https://github.com/Dafang-Hacks/Main>\n"
+msgstr "<https://github.com/Dafang-Hacks/Main>\n"
+
+#. type: Title #
+#: kruc-kompili.md:17
+#, fuzzy, no-wrap
+msgid "instalado de kompililoj:"
+msgstr "安装编译器："
+
+#. type: Title ##
+#: kruc-kompili.md:18
+#, fuzzy, no-wrap
+msgid "opcio 1: kun docker (pli rapida por instali, pli malrapida por funkciigi)"
+msgstr "选项1：使用docker (，安装速度更快，启动速度更慢)"
+
+#. type: Fenced code block
+#: kruc-kompili.md:20
+#, no-wrap
+msgid ""
+"sudo apt install docker.io\n"
+"sudo usermod -aG docker mia_uzanto\n"
+" se déconnecter puis se reconnecter\n"
+"mkdir ~/dafang\n"
+"cd ~/dafang\n"
+"docker run --rm -ti -v $(pwd):/root/ daviey/dafang-cross-compile:latest\n"
+msgstr ""
+"sudo apt install docker.io\n"
+"sudo usermod -aG docker mia_uzanto\n"
+" se déconnecter puis se reconnecter\n"
+"mkdir ~/dafang\n"
+"cd ~/dafang\n"
+"docker run --rm -ti -v $(pwd):/root/ daviey/dafang-cross-compile:latest\n"
+
+#. type: Title ##
+#: kruc-kompili.md:29
+#, fuzzy, no-wrap
+msgid "opcio 2: loke (pli longa por instali, pli rapida por ekzekuti)"
+msgstr "选项2：本地安装 (的时间更长，执行速度更快)"
+
+#. type: Fenced code block
+#: kruc-kompili.md:31
+#, no-wrap
+msgid ""
+"sudo apt install build-essential git gcc-mips-linux-gnu autoconf libtool cmake ftp-upload u-boot-tools\n"
+"mkdir -p ~/dafang/Main/mips-gcc472-glibc216-64bit\n"
+"ln -s /usr/bin ~/dafang/Main/mips-gcc472-glibc216-64bit\n"
+msgstr ""
+"sudo apt install build-essential git gcc-mips-linux-gnu autoconf libtool cmake ftp-upload u-boot-tools\n"
+"mkdir -p ~/dafang/Main/mips-gcc472-glibc216-64bit\n"
+"ln -s /usr/bin ~/dafang/Main/mips-gcc472-glibc216-64bit\n"
+
+#. type: Title #
+#: kruc-kompili.md:37
+#, fuzzy, no-wrap
+msgid "kompilo de bibliotekoj kaj _v4l2rtspserver-master_"
+msgstr "库和 _v4l2rtspserver-master_的汇编"
+
+#. type: Fenced code block
+#: kruc-kompili.md:39
+#, no-wrap
+msgid ""
+"git clone --recurse-submodules https://github.com/Dafang-Hacks/Main.git\n"
+"cd Main\n"
+"./compile_libraries.sh\n"
+"cd v4l2rtspserver-master\n"
+"./compile.sh\n"
+msgstr ""
+"git clone --recurse-submodules https://github.com/Dafang-Hacks/Main.git\n"
+"cd Main\n"
+"./compile_libraries.sh\n"
+"cd v4l2rtspserver-master\n"
+"./compile.sh\n"
+
+#, fuzzy
+#~ msgid "Kompili"
+#~ msgstr "编译"
+
+#, fuzzy
+#~ msgid ""
+#~ "fontoj: <https://znanev.github.io/Cross-compile-tools-for-Ingenic-T20/>\n"
+#~ "\t<https: //github.com/Dafang-Hacks/Main>\n"
+#~ msgstr ""
+#~ "来源： <https://znanev.github.io/Cross-compile-tools-for-Ingenic-T20/>\n"
+#~ "\t<https： //github.com/Dafang-Hacks/Main>\n"

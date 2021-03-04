@@ -1,0 +1,135 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-03-04 16:44+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: YAML Front Matter: lang
+#: ./alternativa_firmvaro.md:1
+#, no-wrap
+msgid "fr"
+msgstr ""
+
+#. type: YAML Front Matter: lang-niv
+#: ./alternativa_firmvaro.md:1
+#, no-wrap
+msgid "fonto"
+msgstr ""
+
+#. type: YAML Front Matter: lang-ref
+#: ./alternativa_firmvaro.md:1
+#, no-wrap
+msgid "099-alternativa_firmvaro"
+msgstr ""
+
+#. type: YAML Front Matter: layout
+#: ./alternativa_firmvaro.md:1
+#, no-wrap
+msgid "page"
+msgstr ""
+
+#. type: YAML Front Matter: title
+#: ./alternativa_firmvaro.md:1
+#, no-wrap
+msgid "Le micrologiciel alternatif"
+msgstr ""
+
+#. type: Title #
+#: ./alternativa_firmvaro.md:9
+#, markdown-text, no-wrap
+msgid "Démarrage"
+msgstr ""
+
+#. type: Bullet: '* '
+#: ./alternativa_firmvaro.md:13
+#, markdown-text, no-wrap
+msgid ""
+"L'installation crée le fichier _/opt/etc/local.rc_, qui est lancé par le "
+"micrologiciel d'origine.\n"
+msgstr ""
+
+#. type: Bullet: '* '
+#: ./alternativa_firmvaro.md:13
+#, markdown-text, no-wrap
+msgid "_local.rc_ lance _run.sh_ depuis la carte SD.\n"
+msgstr ""
+
+#. type: Title #
+#: ./alternativa_firmvaro.md:14
+#, markdown-text, no-wrap
+msgid "_run.sh_"
+msgstr ""
+
+#. type: Bullet: '  * '
+#: ./alternativa_firmvaro.md:25
+#, markdown-text, no-wrap
+msgid "déconnecte le réseau\n"
+msgstr ""
+
+#. type: Bullet: '  * '
+#: ./alternativa_firmvaro.md:25
+#, markdown-text, no-wrap
+msgid "arrête _jco_server_ et _autorun.sh_.\n"
+msgstr ""
+
+#. type: Bullet: '  * '
+#: ./alternativa_firmvaro.md:25
+#, markdown-text, no-wrap
+msgid "désactive _/dev/watchdog_ et _/dev/watchdog0_\n"
+msgstr ""
+
+#. type: Bullet: '  * '
+#: ./alternativa_firmvaro.md:25
+#, markdown-text, no-wrap
+msgid "initialise les LED et le moteur\n"
+msgstr ""
+
+#. type: Bullet: '  * '
+#: ./alternativa_firmvaro.md:25
+#, markdown-text, no-wrap
+msgid "initialise le répertoire etc si nécessaire\n"
+msgstr ""
+
+#. type: Bullet: '  * '
+#: ./alternativa_firmvaro.md:25
+#, markdown-text, no-wrap
+msgid "redirige _/bin/busybox_ , _/etc_ et _/root_ vers la carte SD.\n"
+msgstr ""
+
+#. type: Bullet: '  * '
+#: ./alternativa_firmvaro.md:25
+#, markdown-text, no-wrap
+msgid "initialise la _CRONTAB_ si nécessaire\n"
+msgstr ""
+
+#. type: Bullet: '  * '
+#: ./alternativa_firmvaro.md:25
+#, markdown-text, no-wrap
+msgid ""
+"démarre le service _crond_, le réseau, le service _ntpd_, le service de site "
+"Web\n"
+msgstr ""
+
+#. type: Bullet: '  * '
+#: ./alternativa_firmvaro.md:25
+#, markdown-text, no-wrap
+msgid "démarre les services (dans _config/autostart_)\n"
+msgstr ""
+
+#. type: Bullet: '  * '
+#: ./alternativa_firmvaro.md:25
+#, markdown-text, no-wrap
+msgid "démarre les scripts utilisateur (dans _config/userscripts_)\n"
+msgstr ""

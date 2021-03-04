@@ -1,0 +1,133 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-03-04 16:52+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: YAML Front Matter: lang
+#: ./alternativa_firmvaro.md:1
+#, no-wrap
+msgid "eo"
+msgstr ""
+
+#. type: YAML Front Matter: lang-niv
+#: ./alternativa_firmvaro.md:1
+#, no-wrap
+msgid "auto"
+msgstr ""
+
+#. type: YAML Front Matter: lang-ref
+#: ./alternativa_firmvaro.md:1
+#, no-wrap
+msgid "099-alternativa_firmvaro"
+msgstr ""
+
+#. type: YAML Front Matter: layout
+#: ./alternativa_firmvaro.md:1
+#, no-wrap
+msgid "page"
+msgstr ""
+
+#. type: YAML Front Matter: title
+#: ./alternativa_firmvaro.md:1
+#, no-wrap
+msgid "Alternativa firmvaro"
+msgstr ""
+
+#. type: Title #
+#: ./alternativa_firmvaro.md:9
+#, markdown-text, no-wrap
+msgid "Ekfunkciigo"
+msgstr ""
+
+#. type: Bullet: '* '
+#: ./alternativa_firmvaro.md:12
+#, markdown-text, no-wrap
+msgid ""
+"La instalado kreas la dosieron _/opt/etc/local.rc_, kiun lanĉas la originala "
+"firmvaro.\n"
+msgstr ""
+
+#. type: Bullet: '* '
+#: ./alternativa_firmvaro.md:14
+#, markdown-text, no-wrap
+msgid "_local.rc_ lanĉas _run.sh_ de la SD-karto.\n"
+msgstr ""
+
+#. type: Title #
+#: ./alternativa_firmvaro.md:16
+#, markdown-text, no-wrap
+msgid "_run.sh_"
+msgstr ""
+
+#. type: Bullet: '  * '
+#: ./alternativa_firmvaro.md:19
+#, markdown-text, no-wrap
+msgid "malkonekti la reton\n"
+msgstr ""
+
+#. type: Bullet: '  * '
+#: ./alternativa_firmvaro.md:21
+#, markdown-text, no-wrap
+msgid "haltigi _jco_servilon_ kaj _autorun.sh_.\n"
+msgstr ""
+
+#. type: Bullet: '  * '
+#: ./alternativa_firmvaro.md:23
+#, markdown-text, no-wrap
+msgid "malaktivigas _/dev/watchdog_ kaj _/dev/watchdog0_\n"
+msgstr ""
+
+#. type: Bullet: '  * '
+#: ./alternativa_firmvaro.md:25
+#, markdown-text, no-wrap
+msgid "pravalorizas la LEDojn kaj la motoron\n"
+msgstr ""
+
+#. type: Bullet: '  * '
+#: ./alternativa_firmvaro.md:27
+#, markdown-text, no-wrap
+msgid "pravalorizas la adresaron ktp se necese\n"
+msgstr ""
+
+#. type: Bullet: '  * '
+#: ./alternativa_firmvaro.md:29
+#, markdown-text, no-wrap
+msgid "alidirektiloj _/bin/busybox_ , _/etc_ kaj _/root_ al la SDa karto.\n"
+msgstr ""
+
+#. type: Bullet: '  * '
+#: ./alternativa_firmvaro.md:31
+#, markdown-text, no-wrap
+msgid "pravalorizi la _CRONTAB_ se necese\n"
+msgstr ""
+
+#. type: Bullet: '  * '
+#: ./alternativa_firmvaro.md:33
+#, markdown-text, no-wrap
+msgid "startservo _crond_, reto, servo _ntpd_, reteja servo\n"
+msgstr ""
+
+#. type: Bullet: '  * '
+#: ./alternativa_firmvaro.md:35
+#, markdown-text, no-wrap
+msgid "komenci servojn (en _config/autostart_)\n"
+msgstr ""
+
+#. type: Bullet: '  * '
+#: ./alternativa_firmvaro.md:37
+#, markdown-text, no-wrap
+msgid "komenci uzantajn skriptojn (en _config/userscripts_)\n"
+msgstr ""

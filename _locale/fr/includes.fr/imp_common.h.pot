@@ -1,0 +1,393 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-03-04 16:42+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: ./includes.fr/imp_common.h:6
+#, markdown-text, no-wrap
+msgid ""
+"/*\n"
+" * IMP common data structure header file.\n"
+" *\n"
+" * Copyright (C) 2014 Ingenic Semiconductor Co.,Ltd\n"
+" */\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_common.h:9
+#, markdown-text, no-wrap
+msgid ""
+"#ifndef __IMP_COMMON_H__\n"
+"#define __IMP_COMMON_H__\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_common.h:14
+#, markdown-text, no-wrap
+msgid ""
+"#include <stdint.h>\n"
+"#include <pthread.h>\n"
+"#include <linux/videodev2.h>\n"
+"#include <stdio.h>\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_common.h:21
+#, markdown-text, no-wrap
+msgid ""
+"#ifdef __cplusplus\n"
+"#if __cplusplus\n"
+"extern \"C\"\n"
+"{\n"
+"#endif\n"
+"#endif /* __cplusplus */\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_common.h:26
+#, markdown-text, no-wrap
+msgid ""
+"/**\n"
+" * @file\n"
+" * SDK-T15 Fichier d'en-tête de structure de données commun \n"
+" */\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_common.h:41
+#, markdown-text, no-wrap
+msgid ""
+"/**\n"
+" * IMP  équipement ID Définition de l'énumération .\n"
+" */\n"
+"typedef enum {\n"
+"\tDEV_ID_FS,\t\t\t/**<  Source vidéo  */\n"
+"\tDEV_ID_ENC,\t\t\t/**<  Encodeur  */\n"
+"\tDEV_ID_DEC,\t\t\t/**<  décodeur  */\n"
+"\tDEV_ID_IVS,\t\t\t/**<  algorithme  */\n"
+"\tDEV_ID_OSD,\t\t\t/**<  Superposition d'image  */\n"
+"\tDEV_ID_FG1DIRECT,\t\t/**< FB FG1Direct */\n"
+"\tDEV_ID_RESERVED_START,\n"
+"\tDEV_ID_RESERVED_END = 23,\n"
+"\tNR_MAX_DEVICES,\n"
+"} IMPDeviceID;\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_common.h:50
+#, markdown-text, no-wrap
+msgid ""
+"/**\n"
+" * IMPCell Superposition d'image .\n"
+" */\n"
+"typedef struct {\n"
+"\tIMPDeviceID\tdeviceID;\t\t/**<  Superposition d'image ID */\n"
+"\tint\t\t\tgroupID;\t\t/**<  grouper ID */\n"
+"\tint\t\t\toutputID;\t\t/**<  Production ID */\n"
+"} IMPCell;\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_common.h:57
+#, markdown-text, no-wrap
+msgid ""
+"/**\n"
+" * IMP Définition des informations d'image de cadre .\n"
+" */\n"
+"typedef struct {\n"
+"\tint index;\t\t\t/**<  Numéro de cadre  */\n"
+"\tint pool_idx;\t\t/**<  Où est le cadre Pool de ID */\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_common.h:62
+#, markdown-text, no-wrap
+msgid ""
+"\tuint32_t width;\t\t\t/**<  Largeur du cadre  */\n"
+"\tuint32_t height;\t\t\t/**<  Hauteur du cadre  */\n"
+"\tuint32_t pixfmt;\t\t\t/**<  Format d'image du cadre  */\n"
+"\tuint32_t size;\t\t\t/**<  La taille de l'espace occupé par le cadre  */\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_common.h:65
+#, markdown-text, no-wrap
+msgid ""
+"\tuint32_t phyAddr;\t/**<  Adresse physique de la trame  */\n"
+"\tuint32_t virAddr;\t/**<  Adresse virtuelle de la trame  */\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_common.h:69
+#, markdown-text, no-wrap
+msgid ""
+"\tint64_t timeStamp;\t/**<  Horodatage de l'image  */\n"
+"\tuint32_t priv[0];\t/*  Données privées  */\n"
+"} IMPFrameInfo;\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_common.h:77
+#, markdown-text, no-wrap
+msgid ""
+"/**\n"
+" *  Type de protocole d'encodage et de décodage \n"
+" */\n"
+"typedef enum {\n"
+"\tPT_JPEG,\t\t\t\t\t/**< JPEG Type de protocole d'image  */\n"
+"\tPT_H264,\t\t\t\t\t/**< H264 Type de protocole vidéo  */\n"
+"} IMPPayloadType;\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_common.h:92
+#, markdown-text, no-wrap
+msgid ""
+"/**\n"
+" * IMP Définition du format d'image .\n"
+" */\n"
+"typedef enum {\n"
+"\tPIX_FMT_YUV420P,   /**< planar YUV 4:2:0, 12bpp, (1 Cr & Cb sample per 2x2 "
+"Y samples) */\n"
+"\tPIX_FMT_YUYV422,   /**< packed YUV 4:2:2, 16bpp, Y0 Cb Y1 Cr */\n"
+"\tPIX_FMT_UYVY422,   /**< packed YUV 4:2:2, 16bpp, Cb Y0 Cr Y1 */\n"
+"\tPIX_FMT_YUV422P,   /**< planar YUV 4:2:2, 16bpp, (1 Cr & Cb sample per 2x1 "
+"Y samples) */\n"
+"\tPIX_FMT_YUV444P,   /**< planar YUV 4:4:4, 24bpp, (1 Cr & Cb sample per 1x1 "
+"Y samples) */\n"
+"\tPIX_FMT_YUV410P,   /**< planar YUV 4:1:0,  9bpp, (1 Cr & Cb sample per 4x4 "
+"Y samples) */\n"
+"\tPIX_FMT_YUV411P,   /**< planar YUV 4:1:1, 12bpp, (1 Cr & Cb sample per 4x1 "
+"Y samples) */\n"
+"\tPIX_FMT_GRAY8,     /**<\t   Y\t    ,  8bpp */\n"
+"\tPIX_FMT_MONOWHITE, /**<\t   Y\t    ,  1bpp, 0 is white, 1 is black, in "
+"each byte pixels are ordered from the msb to the lsb */\n"
+"\tPIX_FMT_MONOBLACK, /**<\t   Y\t    ,  1bpp, 0 is black, 1 is white, in "
+"each byte pixels are ordered from the msb to the lsb */\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_common.h:95
+#, markdown-text, no-wrap
+msgid ""
+"\tPIX_FMT_NV12,      /**< planar YUV 4:2:0, 12bpp, 1 plane for Y and 1 plane "
+"for the UV components, which are interleaved (first byte U and the following "
+"byte V) */\n"
+"\tPIX_FMT_NV21,      /**< as above, but U and V bytes are swapped */\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_common.h:98
+#, markdown-text, no-wrap
+msgid ""
+"\tPIX_FMT_RGB24,     /**< packed RGB 8:8:8, 24bpp, RGBRGB... */\n"
+"\tPIX_FMT_BGR24,     /**< packed RGB 8:8:8, 24bpp, BGRBGR... */\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_common.h:103
+#, markdown-text, no-wrap
+msgid ""
+"\tPIX_FMT_ARGB,      /**< packed ARGB 8:8:8:8, 32bpp, ARGBARGB... */\n"
+"\tPIX_FMT_RGBA,\t   /**< packed RGBA 8:8:8:8, 32bpp, RGBARGBA... */\n"
+"\tPIX_FMT_ABGR,\t   /**< packed ABGR 8:8:8:8, 32bpp, ABGRABGR... */\n"
+"\tPIX_FMT_BGRA,\t   /**< packed BGRA 8:8:8:8, 32bpp, BGRABGRA... */\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_common.h:108
+#, markdown-text, no-wrap
+msgid ""
+"\tPIX_FMT_RGB565BE,  /**< packed RGB 5:6:5, 16bpp, (msb)\t  5R 6G 5B(lsb), "
+"big-endian */\n"
+"\tPIX_FMT_RGB565LE,  /**< packed RGB 5:6:5, 16bpp, (msb)\t  5R 6G 5B(lsb), "
+"little-endian */\n"
+"\tPIX_FMT_RGB555BE,  /**< packed RGB 5:5:5, 16bpp, (msb)1A 5R 5G 5B(lsb), "
+"big-endian, most significant bit to 0 */\n"
+"\tPIX_FMT_RGB555LE,  /**< packed RGB 5:5:5, 16bpp, (msb)1A 5R 5G 5B(lsb), "
+"little-endian, most significant bit to 0 */\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_common.h:113
+#, markdown-text, no-wrap
+msgid ""
+"\tPIX_FMT_BGR565BE,  /**< packed BGR 5:6:5, 16bpp, (msb)\t 5B 6G 5R(lsb), "
+"big-endian */\n"
+"\tPIX_FMT_BGR565LE,  /**< packed BGR 5:6:5, 16bpp, (msb)\t 5B 6G 5R(lsb), "
+"little-endian */\n"
+"\tPIX_FMT_BGR555BE,  /**< packed BGR 5:5:5, 16bpp, (msb)1A 5B 5G 5R(lsb), "
+"big-endian, most significant bit to 1 */\n"
+"\tPIX_FMT_BGR555LE,  /**< packed BGR 5:5:5, 16bpp, (msb)1A 5B 5G 5R(lsb), "
+"little-endian, most significant bit to 1 */\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_common.h:118
+#, markdown-text, no-wrap
+msgid ""
+"\tPIX_FMT_0RGB,      /**< packed RGB 8:8:8, 32bpp, 0RGB0RGB... */\n"
+"\tPIX_FMT_RGB0,\t   /**< packed RGB 8:8:8, 32bpp, RGB0RGB0... */\n"
+"\tPIX_FMT_0BGR,\t   /**< packed BGR 8:8:8, 32bpp, 0BGR0BGR... */\n"
+"\tPIX_FMT_BGR0,\t   /**< packed BGR 8:8:8, 32bpp, BGR0BGR0... */\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_common.h:123
+#, markdown-text, no-wrap
+msgid ""
+"\tPIX_FMT_BAYER_BGGR8,    /**< bayer, BGBG..(odd line), GRGR..(even line), "
+"8-bit samples */\n"
+"\tPIX_FMT_BAYER_RGGB8,    /**< bayer, RGRG..(odd line), GBGB..(even line), "
+"8-bit samples */\n"
+"\tPIX_FMT_BAYER_GBRG8,    /**< bayer, GBGB..(odd line), RGRG..(even line), "
+"8-bit samples */\n"
+"\tPIX_FMT_BAYER_GRBG8,    /**< bayer, GRGR..(odd line), BGBG..(even line), "
+"8-bit samples */\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_common.h:125
+#, markdown-text, no-wrap
+msgid "\tPIX_FMT_RAW,\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_common.h:128
+#, markdown-text, no-wrap
+msgid ""
+"\tPIX_FMT_NB,        /**< number of pixel formats. */\n"
+"} IMPPixelFormat;\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_common.h:136
+#, markdown-text, no-wrap
+msgid ""
+"/**\n"
+" * IMP Informations de coordonnées de point .\n"
+" */\n"
+"typedef struct {\n"
+"\tint\t\tx;\t\t\t/**< Abscisse   */\n"
+"\tint\t\ty;\t\t\t/**< Axe Y   */\n"
+"} IMPPoint;\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_common.h:155
+#, markdown-text, no-wrap
+msgid ""
+"/**\n"
+" * IMP  Informations sur la zone rectangulaire .\n"
+" *\n"
+" *  Comme indiqué ci-dessous ， lorsque p0(100,100) Comme point de départ ， "
+"Faire width avec height pour 100 Temps ， alors p1 alors (199,199)\n"
+" * width = abs(p1.x-p0.x)+1   height = abs(p1.y-p0.y)+1   Le nombre de "
+"points est égal à la distance +1\n"
+" * p0(100,100) _____100______\n"
+" *            |              |\n"
+" *            |              |\n"
+" *         100|              |\n"
+" *            |              |\n"
+" *            |______________|\n"
+" *                           p1(199,199)\n"
+" *\n"
+" */\n"
+"typedef struct {\n"
+"\tIMPPoint\t\tp0;\t\t/**< Coordonnées du point du coin supérieur gauche   "
+"*/\n"
+"\tIMPPoint\t\tp1;\t\t/**< Coordonnées du point du coin inférieur droit   "
+"*/\n"
+"} IMPRect;\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_common.h:159
+#, markdown-text, no-wrap
+msgid ""
+"static inline int calc_pic_size(int width, int height, IMPPixelFormat "
+"imp_pixfmt)\n"
+"{\n"
+"\tint bpp1 = 0, bpp2 = 1,size;\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_common.h:170
+#, markdown-text, no-wrap
+msgid ""
+"#define BPP(FMT, A, B) case FMT: bpp1 = A;bpp2 = B;break\n"
+"\tswitch (imp_pixfmt) {\n"
+"\t\tBPP(PIX_FMT_NV12, 3, 2);\n"
+"\t\tBPP(PIX_FMT_YUYV422, 2, 1);\n"
+"\t\tBPP(PIX_FMT_UYVY422, 2, 1);\n"
+"\t\tBPP(PIX_FMT_RGB565BE, 2, 1);\n"
+"\tdefault: break;\n"
+"\t}\n"
+"#undef BPP\n"
+"\tsize = width * height * bpp1 / bpp2;\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_common.h:173
+#, markdown-text, no-wrap
+msgid ""
+"\treturn size;\n"
+"}\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_common.h:178
+#, markdown-text, no-wrap
+msgid ""
+"static inline const char *fmt_to_string(IMPPixelFormat imp_pixfmt)\n"
+"{\n"
+"\tstatic const char *nv12 = \"nv12\";\n"
+"\tstatic const char *yuyv422 = \"yuyv422\";\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_common.h:189
+#, markdown-text, no-wrap
+msgid ""
+"\tswitch (imp_pixfmt) {\n"
+"\tcase PIX_FMT_NV12:\n"
+"\t\treturn nv12;\n"
+"\tcase PIX_FMT_YUYV422:\n"
+"\t\treturn yuyv422;\n"
+"\tdefault:\n"
+"\t\tbreak;\n"
+"\t}\n"
+"\treturn NULL;\n"
+"}\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_common.h:195
+#, markdown-text, no-wrap
+msgid ""
+"#ifdef __cplusplus\n"
+"#if __cplusplus\n"
+"}\n"
+"#endif\n"
+"#endif /* __cplusplus */\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_common.h:196
+#, markdown-text, no-wrap
+msgid "#endif /* __IMP_COMMON_H__ */\n"
+msgstr ""

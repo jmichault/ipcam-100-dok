@@ -1,0 +1,22 @@
+{% if page.layout != 'index' %}
+    {% assign posts=site.posts | where:"lang-ref", page.lang-ref | sort: 'lang' %}
+    {% if posts.size == 0 %}
+        {% assign posts=site.pages | where:"lang-ref", page.lang-ref | sort: 'lang' %}
+    {% endif %}
+    {% if posts.size > 1 %}
+    <footer class="lang-options">
+        <em>{{ site.data.translations[page.lang]['malsamaLingvo'] }}:</em>
+        <ul>
+        {% for post in posts %}
+	{% if post.lang == page.lang %}
+	  {% continue %}
+        {% endif %}
+        <li><a title="{{ site.data.translations[page.lang]['viewIn'] }}" class="{{post.lang}}" href="{{ site.baseurl }}{{ post.url }}">{{ site.data.languages[post.lang].icon }} {{ site.data.languages[post.lang].label }}</a></li>
+        {% endfor %}
+        </ul>
+        {% if page.komentoj_id %}
+          {% include komentoj.html %}
+        {% endif %}
+    </div>
+    {% endif %}
+{% endif %}

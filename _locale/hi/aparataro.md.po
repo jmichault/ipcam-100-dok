@@ -1,0 +1,36 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-03-04 16:48+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: hi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: ./aparataro.md:13
+#, markdown-text, no-wrap
+#, fuzzy
+msgid ""
+"procesoro: ingenic T21 (revision 00d00100 = Ingenic Xburst)\n"
+"\tenhavas kaj ethernet kaj wifi\n"
+"video-sentilo: GC2053\n"
+"ram : 42MiB entute, 36 MiB havebla.\n"
+"motoro: ĉe GPIO 18? 38 39 40 41 47 48 49 60?\n"
+"\tadministrita de motor.ko\n"
+"bluaj LEDoj: on GPIO haveno 81\n"
+"infruĝaj LEDoj on GPIO haveno 46\n"
+"CMOS sensor :?\n"
+"mikrofono :?\n"
+"laŭta parolanto :?\n"
+msgstr "प्रोसेसर: इनग्नेटिक T21 (संशोधन 00d00100 = Ingenic Xburst)\n\tमें ईथरनेट और वाईफाई\nदोनों शामिल हैं। वीडियो सेंसर: GC2053\nकुल 42MiB, 36 MiB उपलब्ध।\nइंजन: GPIO 18 पर? 38 39 40 41 47 48 49 60?\n\tको प्रबंधित किया गया।\nमाइक्रोफोन:?\nलाउड स्पीकर:?\n"
+

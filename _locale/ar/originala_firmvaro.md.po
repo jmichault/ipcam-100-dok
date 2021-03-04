@@ -1,0 +1,343 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-03-04 17:42+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: YAML Front Matter: lang
+#: originala_firmvaro.md:1
+#, no-wrap
+msgid "eo"
+msgstr "ar"
+
+#. type: YAML Front Matter: lang-niv
+#: originala_firmvaro.md:1
+#, no-wrap
+msgid "auto"
+msgstr "auto"
+
+#. type: YAML Front Matter: lang-ref
+#: originala_firmvaro.md:1
+#, no-wrap
+msgid "001-originala_firmvaro"
+msgstr "001-originala_firmvaro"
+
+#. type: YAML Front Matter: layout
+#: originala_firmvaro.md:1
+#, no-wrap
+msgid "page"
+msgstr "page"
+
+#. type: YAML Front Matter: title
+#: originala_firmvaro.md:1
+#, fuzzy, no-wrap
+msgid "Originala firmvaro"
+msgstr "البرامج الثابتة الأصلية"
+
+#. type: Plain text
+#: originala_firmvaro.md:10
+#, fuzzy, no-wrap
+msgid "Fulmmemoro estas dispartigita jene:\n"
+msgstr "يتم توزيع ذاكرة الفلاش على النحو التالي:\n"
+
+#. type: Plain text
+#: originala_firmvaro.md:19
+#, fuzzy, no-wrap
+msgid ""
+"poentaro | priskribo |\n"
+"--- | --- |\n"
+"mtdblock0 | u-startŝargilo |\n"
+"mtdblock1 | boot config |\n"
+"mtdblock2 | u-boot hereda uImage, linux-kerno |\n"
+"mtdblock3 | kukurboj = / |\n"
+"mtdblock4 | squashfs, muntita sur / ipc |\n"
+"mtdblock5 | jffs2, muntita sur / opt |\n"
+msgstr ""
+"النتيجة | الوصف |\n"
+"--- | --- |\n"
+"mtdblock0 | u-bootloader |\n"
+"mtdblock1 | تكوين التمهيد |\n"
+"mtdblock2 | وراثة u-boot uImage ، linux-kernel |\n"
+"mtdblock3 | القرع = / |\n"
+"mtdblock4 | سكواشفس ، مثبتة على / ipc |\n"
+"mtdblock5 | jffs2 ، مُركب على / opt |\n"
+
+#. type: Plain text
+#: originala_firmvaro.md:20
+#, fuzzy, no-wrap
+msgid "u-boot (subdisko mtdblock0) ŝarĝas la kernon en mtdblock2.  \n"
+msgstr "u-boot (قسم mtdblock0) يقوم بتحميل kernel إلى mtdblock2.  \n"
+
+#. type: Plain text
+#: originala_firmvaro.md:21
+#, fuzzy, no-wrap
+msgid "defaŭltaj opcioj en u-startŝargilo:  \n"
+msgstr "الخيارات الافتراضية في محمل u-boot:  \n"
+
+#. type: Bullet: '* '
+#: originala_firmvaro.md:23
+#, fuzzy, no-wrap
+msgid "bootargs = konzolo = ttyS1,115200n8 mem = 43M @ 0x0 rmem = 21M @ 0x2B00000 init = / linuxrc rootfstype = squashfs root = / dev / mtdblock3\n"
+msgstr "bootargs = وحدة التحكم = ttyS1،115200n8 mem = 43M @ 0x0 rmem = 21M @ 0x2B00000 init = / linuxrc rootfstype = squashfs root = / dev / mtdblock3\n"
+
+#. type: Bullet: '* '
+#: originala_firmvaro.md:25
+#, fuzzy, no-wrap
+msgid "bootcmd = sf probe; sf read 0x80600000 0x48000 0x280000; bootm 0x80600000\n"
+msgstr "bootcmd = مسبار sf ؛ قراءة sf 0x80600000 0x48000 0x280000 ؛ bootm 0x80600000\n"
+
+#. type: Bullet: '* '
+#: originala_firmvaro.md:27
+#, fuzzy, no-wrap
+msgid "bootdelay = 1\n"
+msgstr "التمهيد = 1 (درجة 1 درجة)\n"
+
+#. type: Bullet: '* '
+#: originala_firmvaro.md:29
+#, fuzzy, no-wrap
+msgid "baudrate = 115200\n"
+msgstr "معدل الباود = 115200 (درجة 1 درجة)\n"
+
+#. type: Bullet: '* '
+#: originala_firmvaro.md:31
+#, fuzzy, no-wrap
+msgid "ŝarĝoj\\_eoo = 1\n"
+msgstr "الأحمال\\_eoo = 1\n"
+
+#. type: Bullet: '* '
+#: originala_firmvaro.md:33
+#, fuzzy, no-wrap
+msgid "ethaddr = 00: 11: 22: 33: 44: 74\n"
+msgstr "ethaddr = 00: 11: 22: 33: 44: 74 (درجة 1 درجة)\n"
+
+#. type: Bullet: '* '
+#: originala_firmvaro.md:35
+#, fuzzy, no-wrap
+msgid "ipaddr = 192.168.2.84\n"
+msgstr "ipaddr = 192.168.2.84 (درجة 1 درجة)\n"
+
+#. type: Bullet: '* '
+#: originala_firmvaro.md:37
+#, fuzzy, no-wrap
+msgid "serverip = 192.168.2.81\n"
+msgstr "serverip = 192.168.2.81\n"
+
+#. type: Bullet: '* '
+#: originala_firmvaro.md:39
+#, fuzzy, no-wrap
+msgid "gatewayip = 192.168.2.1\n"
+msgstr "gatewayip = 192.168.2.1\n"
+
+#. type: Bullet: '* '
+#: originala_firmvaro.md:41
+#, fuzzy, no-wrap
+msgid "retmasko = 255.255.255.0\n"
+msgstr "قناع الشبكة = 255.255.255.0 (درجة 1 درجة)\n"
+
+#. type: Plain text
+#: originala_firmvaro.md:60
+#, fuzzy, no-wrap
+msgid ""
+"opcioj en mtdblock1:\n"
+"* baudrato = 115200\n"
+"* bootcmd = sf probe; sf read 0x80600000 0x48000 0x280000; bootm 0x80600000\n"
+"* bootdelay = 1\n"
+"* ethact = Jz4775-9161\n"
+"* gatewayip = 192.168.2.1\n"
+"* ipaddr = 192.168.2.84\n"
+"* ŝarĝoj\\_eoo = 1\n"
+"* retmasko = 255.255.255.0\n"
+"* serverip = 192.168.2.81\n"
+"* stderr = seria\n"
+"* stdin = seria\n"
+"* stdout = seria\n"
+"* ethaddr =**:**:**:**:**:**\n"
+"* aparato\\_id =***********\n"
+"* devinfo = jcoxa***************************************************\n"
+"* bootargs = konzolo = ttyS1,115200n8 mem = 42M @ 0x0 rmem = 22M @ 0x2A00000 init = / linuxrc rootfstype = squashfs root = / dev / mtdblock3 flash = SF sensor = GC2053 maxheight = 1080 device\\_id =*********** ethaddr =**:**:**:**:**:** devinfo = jcoxa*************************************************** cpu = T21 ddr = 64M mtdparts = jz\\_sfc: 256K @ 0K(sf-bootloader), 32K @ 256K(sf-bootenv), 1440K @ 288K(sf-kernel), 832K @ 1728K(sf-rootfs), 4928K @ 2560K(sf-ipcfs), 704K @ 7488 K(sf-miscfs)\n"
+msgstr ""
+"الخيارات في mtdblock1:\n"
+"* معدل البث بالباود = 115200\n"
+"* bootcmd = مسبار سادس ؛ قراءة sf 0x80600000 0x48000 0x280000 ؛ bootm 0x80600000\n"
+"* bootdelay = 1\n"
+"* ethact = Jz4775-9161\n"
+"* gatewayip = 192.168.2.1\n"
+"* ipaddr = 192.168.2.84\n"
+"* الأحمال\\_eoo = 1\n"
+"* قناع الشبكة = 255.255.255.0\n"
+"* serverip = 192.168.2.81\n"
+"* stderr = سلسلة\n"
+"* ستدين = سلسلة\n"
+"* stdout = سلسلة\n"
+"* ethaddr =**:**:**:**:**:**\n"
+"* معرف الجهاز\\_id =***********\n"
+"* devinfo = jcoxa***************************************************\n"
+"* bootargs = وحدة التحكم = ttyS1،115200n8 mem = 42M @ 0x0 rmem = 22M @ 0x2A00000 init = / linuxrc rootfstype = squashfs root = / dev / mtdblock3 flash = SF sensor = GC2053 maxheight = 1080 جهاز\\_id =*********** ethaddr =**:**:**:**:**:** devinfo = jcoxa*************************************************** cpu = T21 ddr = 64M mtdparts = jz\\_sfc: 256K @ 0K(sf-bootloader)، 32K @ 256K(sf-bootenv)، 1440K @ 288K()) sf-kernel)، 832K @ 172 8K(sf-rootfs)، 4928K @ 2560K(sf-ipcfs)، 704K @ 7488 K(sf-miscfs)( ° 65 درجة)\n"
+
+#. type: Plain text
+#: originala_firmvaro.md:62
+#, fuzzy, no-wrap
+msgid "linuksa versio:  \n"
+msgstr "إصدار Linux:  \n"
+
+#. type: Plain text
+#: originala_firmvaro.md:64
+#, fuzzy, no-wrap
+msgid "Linukso-versio 3.10.14\\_\\_isvp\\_meleagro\\_1.0\\_\\_ (root@localhost.localdomain) (gcc-versio 4.7.2 (Ingenic r2.3.3 2016.12) ) # 3 PREEMPT Sab Jun 22 10:40:55 CST 2019\n"
+msgstr "إصدار Linux 3.10.14\\_\\_isvp\\_تركيا\\_1.0\\_\\_ (root@localhost.localdomain) (إصدار مجلس التعاون الخليجي 4.7.2 (Ingenic r2.3.3 2016.12) ) # 3 PREEMPT السبت 22 يونيو 10:40:55 CST 2019)\n"
+
+#. type: Plain text
+#: originala_firmvaro.md:76
+#, fuzzy, no-wrap
+msgid ""
+"Rimarkindaj dosieroj en /:\n"
+"* _/bin/busybox_ : \n"
+"  *     [, [[, cindro, awk, base64, baznomo , blockdev, bootchartd, bunzip2, bzcat, bzip2, cat, chmod, chown, cmp, cp, cut, date, dd, depmod, devmem, df,\n"
+"  *     dhcprelay, diff, dirname, dmesg , dnsdomainname, du, dumpleases, echo, egrep, expr, fdflush, fdformat, fdisk, fgrep, find, flash\\_eraseall,\n"
+"  *     grego, libera, fandilo, getty, grep , gzip, halt, hd, head, hexdump, hostname, hwclock, ifconfig, init, insmod, iostat, kill, killall, klogd, less,\n"
+"  *     linuxrc, ln, logger, login, logread , ls, lsmod, md5sum, mdev, mesg, mkdir, mkdosfs, mkfs.vfat, mknod, mktemp, modinfo, modprobe, mount,\n"
+"  *     montopunkto, mpstat, mv, nc, netstat, passwd , ping, pmap, poweroff, powertop, printf, ps, pstree, pwd, pwdx, readahead, reboot, rev, rm, rmdir,\n"
+"  *     rmmod, itinero, sed, sh, dormo, smemcap , ordigi, stat, kordoj, interŝanĝi, interŝanĝi, sinkronigi, sistemon, sistemon, voston, gudron, ekrankopion, telnet, teston, tftp, tempon,\n"
+"  *     paŭzo, supro, tuŝo, tr, vera, tty, udhcpc, udhcpd, umount, unxz, unzip, uptime, uzantoj, usleep, vi, volname, watch, wc, kiu, xargs, xz ,\n"
+"  *     xzcat\n"
+msgstr ""
+"الملفات البارزة في /:\n"
+"* _/bin/busybox_ : \n"
+"  *     [، [[، الرماد ، awk ، base64 ، الاسم الأساسي ، blockdev، bootchartd، bunzip2، bzcat، bzip2، cat، chmod، chown، cmp، cp، cut، date، dd، depmod، devmem، df،\n"
+"  *     dhcprelay، diff، dirname، dmesg ، dnsdomainname، du، dumpleases، echo، egrep، expr، fdflush، fdformat، fdisk، fgrep، find، flash\\_eraseall،\n"
+"  *     grego، libera، fandilo، getty، grep ، gzip، halt، hd، head، hexdump، hostname، hwclock، ifconfig، init، insmod، iostat، kill، killall، klogd، less،\n"
+"  *     linuxrc، ln، logger، login، logread ، ls، lsmod، md5sum، mdev، mesg، mkdir، mkdosfs، mkfs.vfat، mknod، mktemp، modinfo، modprobe، mount،\n"
+"  *     montopunkto، mpstat، mv، nc، netstat، passwd ، ping، pmap، poweroff، powertop، printf، ps، pstree، pwd، pwdx، readahead، reboot، rev، rm، rmdir،\n"
+"  *     rmmod، route، sed، sh، dormo، smemcap فرز النظام الأساسي ومبادلة السلاسل والمزامنة ونظام نظام قائمة الانتظار القطران on، screenshot، telnet، test، tftp، time،\n"
+"  *     pause، top، touch، tr، true، tty، udhcpc، udhcpd، umount، unxz، unzip، uptime، users، usleep، vi ، volname ، watch ، wc ، kiu ، xargs ، xz ،\n"
+"  *     xzcat\n"
+
+#. type: Bullet: '* '
+#: originala_firmvaro.md:78
+#, fuzzy, no-wrap
+msgid "/ lib: normaj bibliotekoj.\n"
+msgstr "/ lib: مكتبات قياسية.\n"
+
+#. type: Plain text
+#: originala_firmvaro.md:87
+#, fuzzy, no-wrap
+msgid ""
+"rimarkindaj dosieroj en _/ipc_ :\n"
+"* _/ipc/app/jco\\_server_\n"
+"  * ĉefa programo, farita samtempe servilo http, rtsp, ...\n"
+"* _/ipc/drv_ : linux-peliloj\n"
+"  * motor.ko\n"
+"* _/ipc/lib_ : bibliotekoj\n"
+"  * libimp.so: biblioteko _ingenic_ _IMP_ ( _Ingenic Media Platform_ )\n"
+msgstr ""
+"الملفات البارزة في _/ipc_ :\n"
+"* _/ipc/app/jco\\_server_\n"
+"  * البرنامج الرئيسي ، تم إنشاؤه في نفس الوقت http ، rtsp ، ...\n"
+"* _/ipc/drv_ : سائقي لينكس\n"
+"  * motor.ko\n"
+"* _/ipc/lib_ : المكتبات\n"
+")  * libimp.so: biblioteko _ingenic_ _IMP_ ( _Ingenic Media Platform_ )\n"
+
+#. type: Plain text
+#: originala_firmvaro.md:89
+#, fuzzy, no-wrap
+msgid "noto: libimp.so diferencas de tiu liverita por la T20, kaj tiu liverita kun la T20 ne taŭgas.\n"
+msgstr "ملاحظة: يختلف libimp.so عن الذي تم تسليمه لـ T20 ، والذي تم تسليمه مع T20 غير مناسب.\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "notable files in _/ipc_ :\n"
+#~ "* _/ipc/app/jco\\_server_\n"
+#~ "  * ĉefa programo. \n"
+#~ "* _/ipc/drv_ : linux-peliloj\n"
+#~ "  * motor.ko\n"
+#~ "* _/ipc/lib_ : bibliotekoj\n"
+#~ "  * libimp.so: biblioteko _ingenic_ _IMP_ ( _Ingenic Media Platform_ )\n"
+#~ msgstr ""
+#~ "الملفات البارزة في _/ipc_ :\n"
+#~ "* _/ipc/app/jco\\_server_\n"
+#~ "  * البرنامج الرئيسي. \n"
+#~ "* _/ipc/drv_ : سائقي لينكس\n"
+#~ "  * motor.ko\n"
+#~ "* _/ipc/lib_ : المكتبات\n"
+#~ "  * libimp.so: مكتبة _ingenic_ _IMP_ ( _Ingenic Media Platform_ )\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "Rimarkindaj dosieroj en /:\n"
+#~ "* / bin / busybox: \n"
+#~ "  *     [, [[, cindro, awk, base64, baznomo, blockdev, bootchartd, "
+#~ "bunzip2, bzcat, bzip2, cat, chmod, chown, cmp, cp, cut, date, dd, depmod, "
+#~ "devmem, df,\n"
+#~ "  *     dhcprelay, diff, dirname, dmesg, dnsdomainname, du, dumpleases, "
+#~ "echo, egrep, expr, fdflush, fdformat, fdisk, fgrep, find, flash"
+#~ "\\_eraseall,\n"
+#~ "  *     grego, libera, fuzilo, getty, grep, gzip, halt, hd, head, "
+#~ "hexdump, hostname, hwclock, ifconfig, init, insmod, iostat, kill, "
+#~ "killall, klogd, less,\n"
+#~ "  *     linuxrc, ln, logger, login, logread, ls, lsmod, md5sum, mdev, "
+#~ "mesg, mkdir, mkdosfs, mkfs.vfat, mknod, mktemp, modinfo, modprobe, "
+#~ "mount,\n"
+#~ "  *     mountpoint, mpstat, mv, nc, netstat, passwd, ping, pmap, "
+#~ "poweroff, powertop, printf, ps, pstree, pwd, pwdx, readahead, reboot, "
+#~ "rev, rm, rmdir,\n"
+#~ "  *     rmmod, route, sed, sh, sleep, smemcap, ordigi, stat, kordoj, "
+#~ "interŝanĝi, interŝanĝi, sinkronigi, sistemon, sistemon, voston, gudron, "
+#~ "ekrankopion, telnet, teston, tftp, tim e,\n"
+#~ "  *     paŭzo, supro, tuŝo, tr, vera, tty, udhcpc, udhcpd, umount, unxz, "
+#~ "unzip, uptime, uzantoj, usleep, vi, volname, watch, wc, kiu, xargs, xz,\n"
+#~ "  *     xzcat\n"
+#~ msgstr ""
+#~ "الملفات البارزة في /:\n"
+#~ "* / bin / busybox: \n"
+#~ "  *     [، [[، الرماد ، awk ، base64 ، الاسم الأساسي ، blockdev، "
+#~ "bootchartd، bunzip2، bzcat، bzip2، cat، chmod، chown، cmp، cp، cut، date، "
+#~ "dd، depmod، devmem، df،\n"
+#~ "  *     dhcprelay، diff، dirname، dmesg، dnsdomainname، du، dumpleases، "
+#~ "echo، egrep، expr، fdflush، fdformat، fdisk، fgrep، find، flash"
+#~ "\\_eraseall،\n"
+#~ "  *     grego، libera، rifle، getty، grep، gzip، halt، hd، head، hexdump، "
+#~ "hostname، hwclock، ifconfig، init، insmod، iostat، kill، killall، klogd، "
+#~ "less،\n"
+#~ "  *     linuxrc، ln، logger، login، logread، ls ، lsmod ، md5sum ، mdev ، "
+#~ "mesg ، mkdir ، mkdosfs ، mkfs.vfat ، mknod ، mktemp ، modinfo ، "
+#~ "modprobe ، mount ،\n"
+#~ "  *     mountpoint ، mpstat ، mv ، nc ، netstat ، passwd ، ping ، pmap ، "
+#~ "poweroff ، powertop ، printf ، ps ، pstree ، pwd ، pwdx ، readahead ، "
+#~ "reboot ، rev ، rm ، rmdir ،\n"
+#~ "  *     rmmod ، route ، sed ، sh ، sleep ، smemcap ، فرز ، إحصائيات ، "
+#~ "سلاسل ، مبادلة ، مبادلة ، مزامنة ، نظام ، نظام ، قائمة انتظار ، قطران ، "
+#~ "screenshot، telnet، test، tftp، tim e،\n"
+#~ "  *     pause، top، touch، tr، true، tty، udhcpc، udhcpd، umount، unxz، "
+#~ "unzip، uptime، users، usleep، you ، volname، watch، wc، kiu، xargs، xz،\n"
+#~ "  *     xzcat\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "notable files in _/ipc_ :\n"
+#~ "* / ipc / app / jco\\_server\n"
+#~ "  * ĉefa programo. \n"
+#~ "* / ipc / drv: linux-peliloj\n"
+#~ "  * motor.ko\n"
+#~ "* / ipc / lib: bibliotekoj\n"
+#~ "  * libimp.so: biblioteko _ingenic_ _IMP_ ( _Ingenic Media Platform_ )\n"
+#~ msgstr ""
+#~ "الملفات البارزة في _/ipc_ :\n"
+#~ "* / ipc / app / jco\\_الخادم\n"
+#~ "  * البرنامج الرئيسي. \n"
+#~ "* / ipc / drv: مشغلات linux\n"
+#~ "  * motor.ko\n"
+#~ "* / ipc / lib: المكتبات\n"
+#~ ")  * libimp.so: مكتبة _ingenic_ _IMP_ ( _Ingenic Media Platform_ )\n"

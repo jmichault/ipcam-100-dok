@@ -1,0 +1,181 @@
+---
+lang: ja
+lang-niv: auto
+lang-ref: 000-indekso
+layout: page
+title: プレゼンテーション
+---
+
+このプロジェクトの目標は、このカメラの代替ファームウェアを作成することです：
+
+マーク= _WIFI CARAM_  
+モデル： _WF-HD820-ZS_  
+区別： _1080P_
+
+インターネットインターフェースに表示される情報：
+```
+DeviceName: _INGENIC-V01_
+DeviceModel: _IPCAM-100_
+DeviceSN: _12345678901_
+KernelVersion: _Thu Jul 9 15:46:54 CST 2015_
+ServerVersion: _WS3.53.1243-20190717-DANALE-GEN_
+WebVersion: _V2.3.4-20190709_
+```
+
+プロセッサー： _ingenic T21_
+ビデオセンサー： _GC2053_
+
+プロセッサー _ingenic T20_を搭載したカメラでは、多くの作業が行われています。
+* 変更されたファームウェア： <https://github.com/EliasKotlyar/Xiaomi-Dafang-Hacks>
+* ソースから変更されたファームウェア： <https://github.com/Dafang-Hacks/Main>
+* その他のファームウェア <https://github.com / openmiko / openmiko>
+* ファームウェアを変更せずにプログラムを起動する： <https://github.com/ThatUsernameAlreadyExist/JCO-PM203-Fisheye-Ingenic- T20 -P2Pカメラハック>
+
+APIドキュメントはここで見ることができます：  
+* [中国語のオリジナルバージョン](../zh/includes.zh/html/)
+
+
+* [グーグル翻訳のフランス語版](../fr/includes.fr/html/)
+
+
+* [グーグル翻訳の英語版](../en/includes.en/html/)
+
+
+
+# 代替ファームウェア
+
+## 代替ファームウェアで機能するもの：
+
+* LANおよびWLAN
+
+
+* RTSP MJPEGサーバー
+
+
+* HTTPサーバー
+
+
+* エンジン制御
+
+
+* エンジンキャリブレーション
+
+
+* PTZ設定
+
+
+* NTPクライアント
+
+
+* httpアクセスのパスワード変更
+
+
+* 青色LEDおよびIR制御
+
+
+* FTPサーバー
+
+
+* Telnetサーバー
+
+
+
+## 代替ファームウェアで機能しないもの：
+
+* 視覚的パラメータ
+
+
+* 二次ビデオストリーム
+
+
+* サウンドシステム
+
+
+* _OSD_
+
+
+* ファームウェアアップデート
+
+
+* 自動夜間検出
+
+
+* 動き検出
+
+
+* 動き検出_ir-cut_
+
+
+* メール送信
+
+
+* メールの送信_mqtt_
+
+
+* メールの送信_h264_
+
+
+* など...
+
+
+
+## カメラの準備
+
+* カメラをローカルネットワークに接続し、カメラの電源を入れます。
+
+
+* カメラのIPアドレスを見つけます。
+
+
+* URL _"http://IP"_ (ユーザー _admin_、パスワード _admin_)でカメラに接続します
+
+
+* タブ "オーディオとビデオ"で、メインストリームを720pに設定し、 "保存"をクリックします。
+
+
+* タブ "ネットワーク"でケーブルネットワークを設定できる場合があります。
+
+
+
+## 代替ファームウェアのインストール
+
+* microSDカードのルートにある [ _karto_ ](https://github.com/jmichault/ipcam-100/tree/master/karto) フォルダーにすべてをコピーします。
+
+
+* オプションでネットワークを構成します ( _config/staticip.conf_ 、 _config/resolv.conf_ 、 _config/wpa_supplicant.conf_ )
+
+
+* microSDカードを挿入します。
+
+
+* カメラをローカルネットワークに接続し、カメラの電源を入れます。
+
+
+*  `telnet IP 9527` (ユーザー _root_、パスワード _jco66688_)でカメラにログインします。
+
+
+* 接続が閉じないようにするには、 `killall -9 auto_run.sh` を押します。
+
+
+* ファル `cd /opt/media/mmcblk0p1;./install.sh`
+
+
+* URL _"https://IP"_ (ユーザー _admin_、パスワード _jco66688_)に接続できます。
+
+
+
+## 代替ファームウェアのアンインストール：
+
+* インターネットインターフェイスを介してカメラでtelnetサービスを開始します。
+
+
+* インターネットインターフェイスを介してカメラでtelnetサービスを開始します。 `telnet IP` 
+
+
+* インターネットインターフェイスを介してカメラでtelnetサービスを開始します。 `cd /opt/media/mmcblk0p1;./uninstall.sh;reboot`
+
+
+
+* microSDカードを取り外すこともできます。
+
+

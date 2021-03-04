@@ -1,0 +1,122 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-03-04 16:42+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: ./includes.fr/imp_utils.h:6
+#, markdown-text, no-wrap
+msgid ""
+"/*\n"
+" * IMP utils header file.\n"
+" *\n"
+" * Copyright (C) 2014 Ingenic Semiconductor Co.,Ltd\n"
+" */\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_utils.h:9
+#, markdown-text, no-wrap
+msgid ""
+"#ifndef __IMP_UTILS_H__\n"
+"#define __IMP_UTILS_H__\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_utils.h:11
+#, markdown-text, no-wrap
+msgid "#include \"imp_common.h\"\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_utils.h:17
+#, markdown-text, no-wrap
+msgid ""
+"#ifdef __cplusplus\n"
+"#if __cplusplus\n"
+"extern \"C\"{\n"
+"#endif\n"
+"#endif /* __cplusplus */\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_utils.h:22
+#, markdown-text, no-wrap
+msgid ""
+"/**\n"
+" * @file\n"
+" * IMP utils tête de fichier \n"
+" */\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_utils.h:29
+#, markdown-text, no-wrap
+msgid ""
+"#undef offsetof\n"
+"#ifdef __compiler_offsetof\n"
+"#define offsetof(TYPE,MEMBER) __compiler_offsetof(TYPE,MEMBER)\n"
+"#else\n"
+"#define offsetof(TYPE, MEMBER) ((size_t) &((TYPE *)0)->MEMBER)\n"
+"#endif\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_utils.h:41
+#, markdown-text, no-wrap
+msgid ""
+"/**\n"
+" * container_of - cast a member of a structure out to the containing "
+"structure\n"
+" *                Copy from kernel.h\n"
+" * @ptr:\tthe pointer to the member.\n"
+" * @type:\tthe type of the container struct this is embedded in.\n"
+" * @member:\tthe name of the member within the struct.\n"
+" *\n"
+" */\n"
+"#define container_of(ptr, type, member) ({\t\t\t\\\n"
+"\tconst typeof( ((type *)0)->member ) *__mptr = (ptr);\t\\\n"
+"\t(type *)( (char *)__mptr - offsetof(type,member) );})\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_utils.h:43
+#, markdown-text, no-wrap
+msgid "#define ARRAY_SIZE(arr) (sizeof(arr) / sizeof((arr)[0]))\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_utils.h:45
+#, markdown-text, no-wrap
+msgid "char *IMPPixfmtToString(IMPPixelFormat pixfmt);\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_utils.h:51
+#, markdown-text, no-wrap
+msgid ""
+"#ifdef __cplusplus\n"
+"#if __cplusplus\n"
+"}\n"
+"#endif\n"
+"#endif /* __cplusplus */\n"
+msgstr ""
+
+#. type: Plain text
+#: ./includes.fr/imp_utils.h:52
+#, markdown-text, no-wrap
+msgid "#endif /* __IMP_UTILS_H__ */\n"
+msgstr ""

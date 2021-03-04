@@ -1,0 +1,111 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-03-04 13:56+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Hash Value - Key: Funkciigita
+#: >lang
+#, fuzzy, no-wrap
+msgid "Funkciigita de"
+msgstr "Offerto da"
+
+#. type: Hash Value - Key: cxiujAfisxoj
+#: >lang
+#, fuzzy, no-wrap
+msgid "Ĉiuj Afiŝoj"
+msgstr "Tutti i post"
+
+#. type: Hash Value - Key: elektuLingvon
+#: >lang
+#, fuzzy, no-wrap
+msgid "Elektu vian lingvon"
+msgstr "scegli la tua LINGUA"
+
+#. type: Hash Value - Key: komentis
+#: >lang
+#, fuzzy, no-wrap
+msgid "komentis:"
+msgstr "ha commentato:"
+
+#. type: Hash Value - Key: komentoButono
+#: >lang
+#, fuzzy, no-wrap
+msgid "Aldoni vian komenton (pri github)"
+msgstr "Aggiungi un commento (su github)"
+
+#. type: Hash Value - Key: komentoj
+#: >lang
+#, fuzzy, no-wrap
+msgid "Komentoj:"
+msgstr "Commenti:"
+
+#. type: Hash Value - Key: malsamaLingvo
+#: >lang
+#, fuzzy, no-wrap
+msgid "Legu ĉi tiun paĝon en alia lingvo"
+msgstr "Leggi questa pagina in un'altra lingua"
+
+#. type: Hash Value - Key: priskribo
+#: >lang
+#, no-wrap
+#, fuzzy
+msgid "Alternativa firmvaro por ipcam-100-fotilo"
+msgstr "Un firmware alternativo per la telecamera ipcam-100"
+
+#. type: Hash Value - Key: rajtoj
+#: >lang
+#, fuzzy, no-wrap
+msgid "Permesilo <a rel=\"license\" href=\"https://creativecommons.org/licenses/by-sa/4.0/\"><img alt=\"Licence Creative Commons\" style=\"display:inline;border-width:0\" src=\"https://i.creativecommons.org/l/by-sa/4.0/88x31.png\" title=\"CC-BY-SA 4.0\"/></a>"
+msgstr "Licenza <a rel=\"license\" href=\"https://creativecommons.org/licenses/by-sa/4.0/\"><img alt =\"Licenza Creative Commons\" style=\"display:inline;border-width:0\" src=\"https://i.creativecommons.org/l/by-sa/4.0/88x31.png\" title=\"CC-BY-SA 4.0\"/></ a>"
+
+#. type: Hash Value - Key: rigardiEn
+#: >lang
+#, fuzzy, no-wrap
+msgid "Rigardi en"
+msgstr "Guarda dentro"
+
+#. type: Hash Value - Key: rilatajAfisxoj
+#: >lang
+#, fuzzy, no-wrap
+msgid "Rilataj Afiŝoj"
+msgstr "Post correlati"
+
+#. type: Hash Value - Key: sercxi
+#: >lang
+#, fuzzy, no-wrap
+msgid "Serĉu per Google."
+msgstr "Cerca su Google."
+
+#. type: Hash Value - Key: titolo
+#: >lang
+#, no-wrap
+#, fuzzy
+msgid "Fotilo Ipcam-100"
+msgstr "Fotocamera ipcam-100"
+
+#. type: Hash Value - Key: tradukoAverto
+#: >lang
+#, fuzzy, no-wrap
+msgid "Bonvolu noti: ĉi tiu paĝo estis tradukita aŭtomate. Se vi povas, vi devas legi ĝin en unu el ĉi tiuj lingvoj:"
+msgstr "Nota: questa pagina è stata tradotta automaticamente. Se puoi, dovresti leggerlo in una di queste lingue:"
+
+#, fuzzy
+#~ msgid "Priskribo."
+#~ msgstr "Descrizione."
+
+#, fuzzy
+#~ msgid "Titolo."
+#~ msgstr "Titolo."

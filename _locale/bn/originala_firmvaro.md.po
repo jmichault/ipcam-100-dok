@@ -1,0 +1,341 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-03-04 17:42+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: bn\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: YAML Front Matter: lang
+#: originala_firmvaro.md:1
+#, no-wrap
+msgid "eo"
+msgstr "bn"
+
+#. type: YAML Front Matter: lang-niv
+#: originala_firmvaro.md:1
+#, no-wrap
+msgid "auto"
+msgstr "auto"
+
+#. type: YAML Front Matter: lang-ref
+#: originala_firmvaro.md:1
+#, no-wrap
+msgid "001-originala_firmvaro"
+msgstr "001-originala_firmvaro"
+
+#. type: YAML Front Matter: layout
+#: originala_firmvaro.md:1
+#, no-wrap
+msgid "page"
+msgstr "page"
+
+#. type: YAML Front Matter: title
+#: originala_firmvaro.md:1
+#, fuzzy, no-wrap
+msgid "Originala firmvaro"
+msgstr "আসল ফার্মওয়্যার"
+
+#. type: Plain text
+#: originala_firmvaro.md:10
+#, fuzzy, no-wrap
+msgid "Fulmmemoro estas dispartigita jene:\n"
+msgstr "ফ্ল্যাশ মেমরি নীচে বিতরণ করা হয়:\n"
+
+#. type: Plain text
+#: originala_firmvaro.md:19
+#, fuzzy, no-wrap
+msgid ""
+"poentaro | priskribo |\n"
+"--- | --- |\n"
+"mtdblock0 | u-startŝargilo |\n"
+"mtdblock1 | boot config |\n"
+"mtdblock2 | u-boot hereda uImage, linux-kerno |\n"
+"mtdblock3 | kukurboj = / |\n"
+"mtdblock4 | squashfs, muntita sur / ipc |\n"
+"mtdblock5 | jffs2, muntita sur / opt |\n"
+msgstr ""
+"স্কোর | বিবরণ |\n"
+"--- | --- |\n"
+"mtd block0 | u- বুটলোডার |\n"
+"এমটিডব্লক 1 | বুট কনফিগারেশন |\n"
+"mtd block2 | u বুট উত্তরাধিকার uI छवि, লিনাক্স-কার্নেল |\n"
+"mtd block3 | কুমড়ো = / |\n"
+"এমটিডব্লক 4 | স্কোয়াশফেস, মাউন্ট করা / আইপিসি |\n"
+"এমটিডব্লক 5 | jffs2, মাউন্ট / অপ্ট |\n"
+
+#. type: Plain text
+#: originala_firmvaro.md:20
+#, fuzzy, no-wrap
+msgid "u-boot (subdisko mtdblock0) ŝarĝas la kernon en mtdblock2.  \n"
+msgstr "u-বুট (পার্টিশন mtd block0) কার্নেলকে mtd block2 এ লোড করে।  \n"
+
+#. type: Plain text
+#: originala_firmvaro.md:21
+#, fuzzy, no-wrap
+msgid "defaŭltaj opcioj en u-startŝargilo:  \n"
+msgstr "ইউ-বুট লোডারটিতে ডিফল্ট বিকল্পগুলি:  \n"
+
+#. type: Bullet: '* '
+#: originala_firmvaro.md:23
+#, fuzzy, no-wrap
+msgid "bootargs = konzolo = ttyS1,115200n8 mem = 43M @ 0x0 rmem = 21M @ 0x2B00000 init = / linuxrc rootfstype = squashfs root = / dev / mtdblock3\n"
+msgstr "বুটর্গস = কনসোল = ttyS1,115200n8 মেম = 43 এম @ 0x0 আরমেম = 21 এম @ 0x2B00000 ইন্ডি = / লিনাক্সক্র রুটফ্লাইপ = স্কোয়াশফ রুট = / দেব / এমটিডব্লক 3\n"
+
+#. type: Bullet: '* '
+#: originala_firmvaro.md:25
+#, fuzzy, no-wrap
+msgid "bootcmd = sf probe; sf read 0x80600000 0x48000 0x280000; bootm 0x80600000\n"
+msgstr "বুটসিএমডি = এসএফ অনুসন্ধান; sf 0x80600000 0x48000 0x280000 পড়ুন; বুটম 0x80600000\n"
+
+#. type: Bullet: '* '
+#: originala_firmvaro.md:27
+#, fuzzy, no-wrap
+msgid "bootdelay = 1\n"
+msgstr "বুটডলে = 1\n"
+
+#. type: Bullet: '* '
+#: originala_firmvaro.md:29
+#, fuzzy, no-wrap
+msgid "baudrate = 115200\n"
+msgstr "বাড রেট = 115200\n"
+
+#. type: Bullet: '* '
+#: originala_firmvaro.md:31
+#, fuzzy, no-wrap
+msgid "ŝarĝoj\\_eoo = 1\n"
+msgstr "বোঝা\\_ইও = 1\n"
+
+#. type: Bullet: '* '
+#: originala_firmvaro.md:33
+#, fuzzy, no-wrap
+msgid "ethaddr = 00: 11: 22: 33: 44: 74\n"
+msgstr "এথাদ্দর = 00: 11: 22: 33: 44: 74\n"
+
+#. type: Bullet: '* '
+#: originala_firmvaro.md:35
+#, fuzzy, no-wrap
+msgid "ipaddr = 192.168.2.84\n"
+msgstr "ipaddr = 192.168.2.84\n"
+
+#. type: Bullet: '* '
+#: originala_firmvaro.md:37
+#, fuzzy, no-wrap
+msgid "serverip = 192.168.2.81\n"
+msgstr "সার্ভারিপ = 192.168.2.81\n"
+
+#. type: Bullet: '* '
+#: originala_firmvaro.md:39
+#, fuzzy, no-wrap
+msgid "gatewayip = 192.168.2.1\n"
+msgstr "গেটওয়েপ = 192.168.2.1\n"
+
+#. type: Bullet: '* '
+#: originala_firmvaro.md:41
+#, fuzzy, no-wrap
+msgid "retmasko = 255.255.255.0\n"
+msgstr "নেটমাস্ক = 255.255.255.0\n"
+
+#. type: Plain text
+#: originala_firmvaro.md:60
+#, fuzzy, no-wrap
+msgid ""
+"opcioj en mtdblock1:\n"
+"* baudrato = 115200\n"
+"* bootcmd = sf probe; sf read 0x80600000 0x48000 0x280000; bootm 0x80600000\n"
+"* bootdelay = 1\n"
+"* ethact = Jz4775-9161\n"
+"* gatewayip = 192.168.2.1\n"
+"* ipaddr = 192.168.2.84\n"
+"* ŝarĝoj\\_eoo = 1\n"
+"* retmasko = 255.255.255.0\n"
+"* serverip = 192.168.2.81\n"
+"* stderr = seria\n"
+"* stdin = seria\n"
+"* stdout = seria\n"
+"* ethaddr =**:**:**:**:**:**\n"
+"* aparato\\_id =***********\n"
+"* devinfo = jcoxa***************************************************\n"
+"* bootargs = konzolo = ttyS1,115200n8 mem = 42M @ 0x0 rmem = 22M @ 0x2A00000 init = / linuxrc rootfstype = squashfs root = / dev / mtdblock3 flash = SF sensor = GC2053 maxheight = 1080 device\\_id =*********** ethaddr =**:**:**:**:**:** devinfo = jcoxa*************************************************** cpu = T21 ddr = 64M mtdparts = jz\\_sfc: 256K @ 0K(sf-bootloader), 32K @ 256K(sf-bootenv), 1440K @ 288K(sf-kernel), 832K @ 1728K(sf-rootfs), 4928K @ 2560K(sf-ipcfs), 704K @ 7488 K(sf-miscfs)\n"
+msgstr ""
+"এমটিডব্লক 1 এ বিকল্পগুলি:\n"
+"* বাউড রেট = 115200\n"
+"* বুটমিড = এসএফ অনুসন্ধান; sf 0x80600000 0x48000 0x280000 পড়ুন; বুটম 0x80600000\n"
+"* বুটডেলে = 1\n"
+"* ইথ্যাক্ট = জাজ 4775-9161\n"
+"* গেটওয়েপ = 192.168.2.1\n"
+"* আইপ্যাড্র = 192.168.2.84\n"
+"* লোড\\_ইও = 1\n"
+"* নেটমাস্ক = 255.255.255.0\n"
+"* সার্ভারিপ = 192.168.2.81\n"
+"* স্টারডার = সিরিজ\n"
+"* স্টিডিন = সিরিজ\n"
+"* স্টাডআউট = সিরিজ\n"
+"* এথাদ্দ্র =**:**:**:**:**:**\n"
+"* ডিভাইস\\_আইডি =***********\n"
+"* ডিভিনফো = জকোক্সা***************************************************\n"
+"* বুটর্গস = কনসোল = ttyS1,115200n8 mem = 42M @ 0x0 rmem = 22M @ 0x2A00000 init = / linuxrc rootfstype = স্কোয়াশফ রুট = / দেব / এমটিডব্লক 3 ফ্ল্যাশ = এসএফ সেন্সর = জিসি2053 ম্যাক্সহাইট = 1080 ডিভাইস\\_আইডি =*********** এথ্যাড্র =**:**:**:**:**:** ডিভিনফো = জকোক্সা*************************************************** সিপিইউ = টি 21 ডিডিআর = 64 এম এমডিপিটারস = জেজেড\\_এসএফসি: 256 কে @ 0 কে(এসএফ-বুটলোডার), 32 কে @ 256 কে(এসএফ-বুটেনভ), 1440 কে @ 288 কে()) এসএফ-কার্নেল), 832 কে @ 172 8 কে(এসএফ-রুটফগুলি), 4928 কে @ 2560 কে(এসএফ-আইপিসিএফস), 704 কে @ 7488 কে(এসএফ-মিসকাফস)\n"
+
+#. type: Plain text
+#: originala_firmvaro.md:62
+#, fuzzy, no-wrap
+msgid "linuksa versio:  \n"
+msgstr "লিনাক্স সংস্করণ:  \n"
+
+#. type: Plain text
+#: originala_firmvaro.md:64
+#, fuzzy, no-wrap
+msgid "Linukso-versio 3.10.14\\_\\_isvp\\_meleagro\\_1.0\\_\\_ (root@localhost.localdomain) (gcc-versio 4.7.2 (Ingenic r2.3.3 2016.12) ) # 3 PREEMPT Sab Jun 22 10:40:55 CST 2019\n"
+msgstr "লিনাক্স সংস্করণ 3.10.14\\_\\_isvp\\_টার্কি\\_1.0\\_\\_ (রুট@localhost.localdomain) (জিসিসি সংস্করণ 4.7.2 (ইনজেনিক r2.3.3 2016.12) ) # 3 পূর্বপরিবার শনি 22 জুন 10:40:55 সিএসটি 2019\n"
+
+#. type: Plain text
+#: originala_firmvaro.md:76
+#, fuzzy, no-wrap
+msgid ""
+"Rimarkindaj dosieroj en /:\n"
+"* _/bin/busybox_ : \n"
+"  *     [, [[, cindro, awk, base64, baznomo , blockdev, bootchartd, bunzip2, bzcat, bzip2, cat, chmod, chown, cmp, cp, cut, date, dd, depmod, devmem, df,\n"
+"  *     dhcprelay, diff, dirname, dmesg , dnsdomainname, du, dumpleases, echo, egrep, expr, fdflush, fdformat, fdisk, fgrep, find, flash\\_eraseall,\n"
+"  *     grego, libera, fandilo, getty, grep , gzip, halt, hd, head, hexdump, hostname, hwclock, ifconfig, init, insmod, iostat, kill, killall, klogd, less,\n"
+"  *     linuxrc, ln, logger, login, logread , ls, lsmod, md5sum, mdev, mesg, mkdir, mkdosfs, mkfs.vfat, mknod, mktemp, modinfo, modprobe, mount,\n"
+"  *     montopunkto, mpstat, mv, nc, netstat, passwd , ping, pmap, poweroff, powertop, printf, ps, pstree, pwd, pwdx, readahead, reboot, rev, rm, rmdir,\n"
+"  *     rmmod, itinero, sed, sh, dormo, smemcap , ordigi, stat, kordoj, interŝanĝi, interŝanĝi, sinkronigi, sistemon, sistemon, voston, gudron, ekrankopion, telnet, teston, tftp, tempon,\n"
+"  *     paŭzo, supro, tuŝo, tr, vera, tty, udhcpc, udhcpd, umount, unxz, unzip, uptime, uzantoj, usleep, vi, volname, watch, wc, kiu, xargs, xz ,\n"
+"  *     xzcat\n"
+msgstr ""
+"/:\n"
+"* _/bin/busybox_ : \n"
+"  *     [, [[, ছাই, আওক, বেস 64, বেসনামে উল্লেখযোগ্য ফাইলগুলি , ব্লকদেব, বুটচার্ট, বুঞ্জিপ 2, বিজক্যাট, বিজিপ 2, ক্যাট, চিমড, সিউন, সিএমপি, সিপি, কাট, তারিখ, ডিডি, ডিপোডম, ডিমেমেম, ডিএফ,\n"
+"  *     ডিচক্রিপ্লে, ডিফ, ডারনাম, ডেমসগ , ডিএনএসডোমেন নেম, ডু, ডাম্পলিজ, ইকো, এগ্রিপ, এক্সপ্রেস, এফডিফ্লুশ, এফডি ফর্ম্যাট, এফডিআইএসকি, এফগ্রিপ, সন্ধান, ফ্ল্যাশ\\_ইরেসেল,\n"
+"  *     গ্রিগ, লিবারা, ফ্যানডিলো, গেটি, গ্রেপ , জিজিপ, হোল্ট, এইচডি, হেড, হেক্সডাম্প, হোস্টনাম, এইচডাব্লক, ইফকনফিগ, আরআর, ইনসোড, আইওস্ট্যাট, কিল, কিল্ল, ক্লগড, কম,\n"
+"  *     লিনাক্সক্র, এলএন, লগার, লগইন, লগ্রেড l , পিং, পিএমএপ, পাওয়ার অফ, পাওয়ারফট, প্রিন্টফ, পিএস, pstree, pwd, pwdx, রিডহেড, রিবুট, রেভ, আরএম, আরএমডিির,\n"
+"  *     আরএমমোড, রুট, সেড, শ, ডর্মো, স্মিমক্যাপ , বাছাই, স্ট্যাট, স্ট্রিং, অদলবদল, অদলবদল, সিঙ্ক, সিস্টেম, সিস্টেম, সারি, টার অন, স্ক্রিনশট, টেলনেট, পরীক্ষা, tftp, সময়,\n"
+"  *     বিরতি, শীর্ষ, স্পর্শ, টিআর, সত্য, tty, udhcpc, udcpd, umount, unxz, আনজিপ, আপটাইম, ব্যবহারকারী, usight, vi, ভলিউম, ওয়াচ, ডাব্লুসি, কিউ, এক্সার্গস, এক্সজেড,\n"
+"  *     জ্যাজকাট\n"
+
+#. type: Bullet: '* '
+#: originala_firmvaro.md:78
+#, fuzzy, no-wrap
+msgid "/ lib: normaj bibliotekoj.\n"
+msgstr "/ lib: স্ট্যান্ডার্ড লাইব্রেরি।\n"
+
+#. type: Plain text
+#: originala_firmvaro.md:87
+#, fuzzy, no-wrap
+msgid ""
+"rimarkindaj dosieroj en _/ipc_ :\n"
+"* _/ipc/app/jco\\_server_\n"
+"  * ĉefa programo, farita samtempe servilo http, rtsp, ...\n"
+"* _/ipc/drv_ : linux-peliloj\n"
+"  * motor.ko\n"
+"* _/ipc/lib_ : bibliotekoj\n"
+"  * libimp.so: biblioteko _ingenic_ _IMP_ ( _Ingenic Media Platform_ )\n"
+msgstr ""
+" _/ipc_ :\n"
+"* _/ipc/app/jco\\_server_\n"
+"  * প্রধান প্রোগ্রামে উল্লেখযোগ্য ফাইলগুলি একই সাথে সার্ভারে তৈরি http, rtsp, ...\n"
+"* _/ipc/drv_ : লিনাক্স ড্রাইভার\n"
+"  * মোটর.কো\n"
+"* _/ipc/lib_ : গ্রন্থাগারগুলি\n"
+")  * libimp.so: বিলিওটেকো _ingenic_ _IMP_ ( _Ingenic Media Platform_ )\n"
+
+#. type: Plain text
+#: originala_firmvaro.md:89
+#, fuzzy, no-wrap
+msgid "noto: libimp.so diferencas de tiu liverita por la T20, kaj tiu liverita kun la T20 ne taŭgas.\n"
+msgstr "দ্রষ্টব্য: libimp.so টি 20 এর জন্য বিতরণ করা একের চেয়ে আলাদা এবং টি 20 এর সাথে সরবরাহ করা উপযুক্ত নয়।\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "notable files in _/ipc_ :\n"
+#~ "* _/ipc/app/jco\\_server_\n"
+#~ "  * ĉefa programo. \n"
+#~ "* _/ipc/drv_ : linux-peliloj\n"
+#~ "  * motor.ko\n"
+#~ "* _/ipc/lib_ : bibliotekoj\n"
+#~ "  * libimp.so: biblioteko _ingenic_ _IMP_ ( _Ingenic Media Platform_ )\n"
+#~ msgstr ""
+#~ " _/ipc_ :\n"
+#~ "* _/ipc/app/jco\\_server_\n"
+#~ "  * মূল প্রোগ্রামে উল্লেখযোগ্য ফাইল। \n"
+#~ "* _/ipc/drv_ : লিনাক্স ড্রাইভার\n"
+#~ "  * মোটর.কো\n"
+#~ "* _/ipc/lib_ : গ্রন্থাগার\n"
+#~ "  * libimp.so: গ্রন্থাগার _ingenic_ _IMP_ ( _Ingenic Media Platform_ )\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "Rimarkindaj dosieroj en /:\n"
+#~ "* / bin / busybox: \n"
+#~ "  *     [, [[, cindro, awk, base64, baznomo, blockdev, bootchartd, "
+#~ "bunzip2, bzcat, bzip2, cat, chmod, chown, cmp, cp, cut, date, dd, depmod, "
+#~ "devmem, df,\n"
+#~ "  *     dhcprelay, diff, dirname, dmesg, dnsdomainname, du, dumpleases, "
+#~ "echo, egrep, expr, fdflush, fdformat, fdisk, fgrep, find, flash"
+#~ "\\_eraseall,\n"
+#~ "  *     grego, libera, fuzilo, getty, grep, gzip, halt, hd, head, "
+#~ "hexdump, hostname, hwclock, ifconfig, init, insmod, iostat, kill, "
+#~ "killall, klogd, less,\n"
+#~ "  *     linuxrc, ln, logger, login, logread, ls, lsmod, md5sum, mdev, "
+#~ "mesg, mkdir, mkdosfs, mkfs.vfat, mknod, mktemp, modinfo, modprobe, "
+#~ "mount,\n"
+#~ "  *     mountpoint, mpstat, mv, nc, netstat, passwd, ping, pmap, "
+#~ "poweroff, powertop, printf, ps, pstree, pwd, pwdx, readahead, reboot, "
+#~ "rev, rm, rmdir,\n"
+#~ "  *     rmmod, route, sed, sh, sleep, smemcap, ordigi, stat, kordoj, "
+#~ "interŝanĝi, interŝanĝi, sinkronigi, sistemon, sistemon, voston, gudron, "
+#~ "ekrankopion, telnet, teston, tftp, tim e,\n"
+#~ "  *     paŭzo, supro, tuŝo, tr, vera, tty, udhcpc, udhcpd, umount, unxz, "
+#~ "unzip, uptime, uzantoj, usleep, vi, volname, watch, wc, kiu, xargs, xz,\n"
+#~ "  *     xzcat\n"
+#~ msgstr ""
+#~ "/:\n"
+#~ "* / বিন / ব্যস্তবক্সে উল্লেখযোগ্য ফাইল: \n"
+#~ "  *     [, [[, অ্যাশ, অ্যাজক, বেস 64, বেসনাম, ব্লকদেব, বুটচার্ট, বুঞ্জিপ 2, "
+#~ "বিজেকাট, বিজিপ 2, বিড়াল, ছোমড, শাউন, সিএমপি, সিপি, কাট, তারিখ, ডিডি, "
+#~ "ডিপোডম, ডিমেমেম, ডিএফ,\n"
+#~ "  *     ডিচক্রিপ্লে, ডিফ, ডারনাম, ডেমসগ, ডিএনএসডোমেন নেম, ডু, ডাম্পলিজ, ইকো, "
+#~ "এগ্রিপ, এক্সপ্রেস, এফডিফ্লুশ, এফডি ফর্ম্যাট, এফডিস্ক, এফগ্রিপ, সন্ধান, ফ্ল্যাশ"
+#~ "\\_ইরেসেল,\n"
+#~ "  *     গ্রেগো, লিবারা, রাইফেল, গেটি, গ্রেপ, জিজিপ, হোল্ট, এইচডি, হেড, "
+#~ "হেক্সডাম্প, হোস্টনাম, এইচডাব্লু, ইফকনফিগ, আরআর, ইনসোড, আইওস্ট্যাট, কিল, কিল্ল, "
+#~ "ক্লগড, কম,\n"
+#~ "  *     লিনাক্সক্র, এলএন, লগার, লগইন, লগ্রেড, ls, lsmod, md5sum, mdev, megg, "
+#~ "mkdir, mkdosfs, mkfs.vfat, mknod, mktemp, modinfo, modprobe, মাউন্ট,\n"
+#~ "  *     মাউন্টপয়েন্ট, এমপিস্ট্যাট, এমভি, এনসি, নেটস্যাট, পাস পিং, পিএমএপ, "
+#~ "পাওয়ার অফ, পাওয়ারফট, প্রিন্টফ, পিএস, pstree, pwd, pwdx, readahead, রিবুট, "
+#~ "রেভ, আরএম, rmdir, (r 16 °)  *     আরএমমোড, রুট, সেড, শ, স্লিপ, স্মিমক্যাপ, "
+#~ "বাছাই, স্ট্যাট, স্ট্রিং, অদলবদল, অদলবদল, সিঙ্ক, সিস্টেম, সিস্টেম, সারি, টার, "
+#~ "স্ক্রিনশট, টেলনেট, পরীক্ষা, tftp, টিম ই,\n"
+#~ "  *     বিরতি, শীর্ষ, স্পর্শ, ত্র, সত্য, tty, udhcpc, udcpd, umount, unxz, "
+#~ "আনজিপ, আপটাইম, ব্যবহারকারী, usight, আপনি , ভলনেম, ঘড়ি, ডব্লিউসি, কিউ, "
+#~ "এক্সার্গস, এক্সজেড,\n"
+#~ "  *     জ্যাজকাট\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "notable files in _/ipc_ :\n"
+#~ "* / ipc / app / jco\\_server\n"
+#~ "  * ĉefa programo. \n"
+#~ "* / ipc / drv: linux-peliloj\n"
+#~ "  * motor.ko\n"
+#~ "* / ipc / lib: bibliotekoj\n"
+#~ "  * libimp.so: biblioteko _ingenic_ _IMP_ ( _Ingenic Media Platform_ )\n"
+#~ msgstr ""
+#~ " _/ipc_ :\n"
+#~ "* / আইপিসি / অ্যাপ / জকো\\_সার্ভার\n"
+#~ "  * মূল প্রোগ্রামে উল্লেখযোগ্য ফাইল। \n"
+#~ "* / আইপিসি / ড্রভ: লিনাক্স ড্রাইভার\n"
+#~ "  * মোটর.কো\n"
+#~ "* / আইপিসি / লিবি: গ্রন্থাগারগুলি (\n"
+#~ "  * libimp.so: গ্রন্থাগার _ingenic_ _IMP_ ( _Ingenic Media Platform_ )\n"

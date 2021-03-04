@@ -1,0 +1,23 @@
+digraph "IMP(Ingenic Media Platform)"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir=LR;
+  Node8 [label="IMP_System",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__IMP__System.html",tooltip="系统控制模块，包括IMP的基础功能以及模块间绑定的相关功能 "];
+  Node5 [label="IMP_ISP",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__IMP__ISP.html",tooltip="图像信号处理单元。主要包含图像效果设置、模式切换以及Sensor的注册添加删除等操作 "];
+  Node6 [label="IMP_IVS",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__IMP__IVS.html",tooltip="IVS智能分析通用接口API. "];
+  Node3 [label="IMP_Encoder",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__IMP__Encoder.html",tooltip="视频编码（H264, JPEG）模块，包含编码通道管理，编码参数设置等功能 "];
+  Node2 [label="IMP_Decoder",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__IMP__Decoder.html",tooltip="视频解码模块，当前只支持JPEG解码 "];
+  Node4 [label="IMP_FrameSource",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__IMP__FrameSource.html",tooltip="视频源，是IMP系统的图像数据源，可设置图像的分辨率、裁减、缩放等属性，以及后端降噪功能 ..."];
+  Node7 [label="IMP_OSD",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__IMP__OSD.html",tooltip="OSD模块，可在视频流上叠加图片、位图、直线、矩形框 "];
+  Node0 [label="IMP(Ingenic Media Platform)",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 [label="IMP_Audio",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__IMP__Audio.html",tooltip="音频模块，包含录放音、音频编解码、音量及增益设置、回声消除、自动增益等功能 "];
+  Node0->Node1 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node2 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node3 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node4 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node5 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node6 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node7 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node8 [shape=plaintext, dir="back", style="solid"];
+}

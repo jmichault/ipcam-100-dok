@@ -1,0 +1,29 @@
+#!/bin/false
+
+# alvoku ĉi tiun skripton komence de via per:
+# . $(dirname $(readlink -f $0))/lib/head
+
+# vidu https://tldp.org/LDP/abs/html/localization.html
+#
+export TEXTDOMAINDIR=$(dirname $(readlink -f $0))/../_locale
+#export TEXTDOMAIN=$(basename $0)
+export TEXTDOMAIN=skriptoj
+. gettext.sh
+
+
+BASEDIR=$(dirname $(readlink -f $0))
+
+trad()
+{
+MSG0="$1"
+MSG1=`eval_gettext "$1"`
+if [ "$MSG1" == "$MSG0" ] ; then
+  L2=$(echo $LANG|awk '{print substr($1,1,2);}' )
+  MSG2=`$BASEDIR/lib/traduko.sh eo $L2 "$1"`
+  if [ "MSG2" != "" ] ; then
+    MSG1="$MSG2"
+  fi
+fi
+echo "$MSG1"
+}
+
