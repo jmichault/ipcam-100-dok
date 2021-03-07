@@ -13,7 +13,7 @@ var searchData=
   ['size',['size',['../structIMPFrameInfo.html#acb382adc1aa64866de307b1d92c81542',1,'IMPFrameInfo']]],
   ['slop_5fmax',['slop_max',['../structIMPISPDrcAttr.html#a8e316c49bb4d8032b0d8f99e815bddfb',1,'IMPISPDrcAttr']]],
   ['slop_5fmin',['slop_min',['../structIMPISPDrcAttr.html#a049ae6b9c526f2417c9a9eb0a913b9d3',1,'IMPISPDrcAttr']]],
-  ['soundmode',['soundmode',['../group__IMP__Audio.html#gaec1d2a3fbe53e19bca46206ced9a3730',1,'IMPAudioIOAttr::soundmode()'],['../group__IMP__Audio.html#ga613b85b8d9f998f62f19b328c6fc2c85',1,'IMPAudioFrame::soundmode()']]],
+  ['soundmode',['soundmode',['../group__IMP__Audio.html#gaec1d2a3fbe53e19bca46206ced9a3730',1,'IMPAudioIOAttr']]],
   ['spi',['spi',['../structIMPSensorInfo.html#a7e87d83cee3e0f14fe53172766c13a29',1,'IMPSensorInfo']]],
   ['startx',['startx',['../unionisp__core__ae__roi__select.html#a09a83be769c5c7ee28f3f582d6f45932',1,'isp_core_ae_roi_select']]],
   ['starty',['starty',['../unionisp__core__ae__roi__select.html#a80fccfb53112041c2dacbf25fe4f09e6',1,'isp_core_ae_roi_select']]],

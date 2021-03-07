@@ -62,7 +62,7 @@ $(function() {
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="structIMPEncoderAttrH264VBR-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">IMPEncoderAttrH264VBR Struct Reference<div class="ingroups"><a class="el" href="group__imp.html">IMP(Ingenic Media Platform)</a> &raquo; <a class="el" href="group__IMP__Encoder.html">IMP_Encoder</a></div></div>  </div>
+<div class="title">IMPEncoderAttrH264VBR Struct Reference<div class="ingroups"><a class="el" href="group__IMP__Encoder.html">IMP_Encoder</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -97,7 +97,7 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a4c54489502f18ab2d70bc3108a7a8757"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Is it related H.264 Is it related Channel VBR Is it related </p>
+<div class="textblock"><p>定义 H.264 编码 Channel VBR 属性结构 </p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
 <a id="af7bdd5fa34c26d58455f72c98479750b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af7bdd5fa34c26d58455f72c98479750b">&#9670;&nbsp;</a></span>changePos</h2>
@@ -110,7 +110,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>VBR Start to adjust Qp The ratio of the code rate at the time to the maximum code rate , Ranges :[50, 100] </p>
+<p>VBR Commencez à vous ajuster Qp Le rapport entre le débit de code à ce moment et le débit de code maximal , Gammes :[50, 100] </p>
 
 </div>
 </div>
@@ -125,7 +125,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Ranges QP Ranges </p>
+<p>帧间 QP 变化步长 </p>
 
 </div>
 </div>
@@ -140,7 +140,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>GOP Ranges QP Ranges </p>
+<p>GOP 间 QP 变化步长 </p>
 
 </div>
 </div>
@@ -155,7 +155,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Encoder output maximum bit rate , Encoder output maximum bit rate kbps Encoder output maximum bit rate </p>
+<p>Débit binaire maximal de la sortie du codeur , 以 kbps 为单位 </p>
 
 </div>
 </div>
@@ -170,7 +170,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>H.264 gop Is it related ， Is it related </p>
+<p>H.264 gop 值 ， 必须是帧率的整数倍 </p>
 
 </div>
 </div>
@@ -185,7 +185,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Is it related QP </p>
+<p>编码器支持图像最大 QP </p>
 
 </div>
 </div>
@@ -200,7 +200,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Is it related QP </p>
+<p>编码器支持图像最小 QP </p>
 
 </div>
 </div>
@@ -215,7 +215,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Is it related Channel Is it related </p>
+<p>编码 Channel 的输出帧率（输出帧率不能大于输入帧率） </p>
 
 </div>
 </div>
@@ -230,7 +230,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Bit rate statistics time , In seconds </p>
+<p>Temps de statistiques de débit binaire , En secondes </p>
 
 </div>
 </div>

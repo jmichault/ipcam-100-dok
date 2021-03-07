@@ -166,9 +166,11 @@ Functions</h2></td></tr>
 <tr class="separator:gaba6f0999391cb933b7923d77225d158f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaeec552f5215c68e299e18e7ba23fb354"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Audio.html#gaeec552f5215c68e299e18e7ba23fb354">IMP_AI_DisableChn</a> (int audioDevId, int aiChn)</td></tr>
 <tr class="separator:gaeec552f5215c68e299e18e7ba23fb354"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6f080ad3f52147b7747fe8c5a3737170"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Audio.html#ga6f080ad3f52147b7747fe8c5a3737170">IMP_AI_PollingFrame</a> (int audioDevId, int aiChn, unsigned int timeout_ms)</td></tr>
+<tr class="memitem:ga6f080ad3f52147b7747fe8c5a3737170"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_AI_PollingFrame</b> (int audioDevId, int aiChn, unsigned int timeout_ms)</td></tr>
 <tr class="separator:ga6f080ad3f52147b7747fe8c5a3737170"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab8335839c99279534119273709971414"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Audio.html#gab8335839c99279534119273709971414">IMP_AI_GetFrame</a> (int audioDevId, int aiChn, <a class="el" href="structIMPAudioFrame.html">IMPAudioFrame</a> *frm, <a class="el" href="group__IMP__Audio.html#ga7f9bbf0ae482fa7e68855f4bf68c4a1b">IMPBlock</a> block)</td></tr>
+<tr class="memitem:gab8335839c99279534119273709971414"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_AI_GetFrame</b> (int audioDevId, int aiChn, <a class="el" href="structIMPAudioFrame.html">IMPAudioFrame</a> *frm, <a class="el" href="group__IMP__Audio.html#ga7f9bbf0ae482fa7e68855f4bf68c4a1b">IMPBlock</a> block)</td></tr>
 <tr class="separator:gab8335839c99279534119273709971414"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1233c77454b8a895b02fb0035cbe5bd0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Audio.html#ga1233c77454b8a895b02fb0035cbe5bd0">IMP_AI_ReleaseFrame</a> (int audioDevId, int aiChn, <a class="el" href="structIMPAudioFrame.html">IMPAudioFrame</a> *frm)</td></tr>
 <tr class="separator:ga1233c77454b8a895b02fb0035cbe5bd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -180,25 +182,30 @@ Functions</h2></td></tr>
 <tr class="separator:gac8f128fe324a34bca50896259196867c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae63925b11092f04fe89008bf8aac779e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Audio.html#gae63925b11092f04fe89008bf8aac779e">IMP_AI_DisableAec</a> (int aiDevId, int aiChn)</td></tr>
 <tr class="separator:gae63925b11092f04fe89008bf8aac779e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga57f7097eee1486fade39bc5d38eb09ef"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Audio.html#ga57f7097eee1486fade39bc5d38eb09ef">IMP_AI_EnableNs</a> (<a class="el" href="structIMPAudioIOAttr.html">IMPAudioIOAttr</a> *attr, int mode)</td></tr>
+<tr class="memitem:ga57f7097eee1486fade39bc5d38eb09ef"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_AI_EnableNs</b> (<a class="el" href="structIMPAudioIOAttr.html">IMPAudioIOAttr</a> *attr, int mode)</td></tr>
 <tr class="separator:ga57f7097eee1486fade39bc5d38eb09ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga72afa9dd2bbf005f34ed061d93693bb3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Audio.html#ga72afa9dd2bbf005f34ed061d93693bb3">IMP_AI_DisableNs</a> (void)</td></tr>
 <tr class="separator:ga72afa9dd2bbf005f34ed061d93693bb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gadebd352aca9a64c1c66537725cc967f5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Audio.html#gadebd352aca9a64c1c66537725cc967f5">IMP_AI_EnableAgc</a> (<a class="el" href="structIMPAudioIOAttr.html">IMPAudioIOAttr</a> *attr, <a class="el" href="structIMPAudioAgcConfig.html">IMPAudioAgcConfig</a> agcConfig)</td></tr>
 <tr class="separator:gadebd352aca9a64c1c66537725cc967f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga824ac244870fdeb3bfe40416a450334e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Audio.html#ga824ac244870fdeb3bfe40416a450334e">IMP_AI_DisableAgc</a> (void)</td></tr>
+<tr class="memitem:ga824ac244870fdeb3bfe40416a450334e"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_AI_DisableAgc</b> (void)</td></tr>
 <tr class="separator:ga824ac244870fdeb3bfe40416a450334e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga511a088e377119c0cde504e90fdeecba"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Audio.html#ga511a088e377119c0cde504e90fdeecba">IMP_AO_EnableAgc</a> (<a class="el" href="structIMPAudioIOAttr.html">IMPAudioIOAttr</a> *attr, <a class="el" href="structIMPAudioAgcConfig.html">IMPAudioAgcConfig</a> agcConfig)</td></tr>
 <tr class="separator:ga511a088e377119c0cde504e90fdeecba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga29f93e756e4a28f3f3cc142cc87939ea"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Audio.html#ga29f93e756e4a28f3f3cc142cc87939ea">IMP_AO_DisableAgc</a> (void)</td></tr>
+<tr class="memitem:ga29f93e756e4a28f3f3cc142cc87939ea"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_AO_DisableAgc</b> (void)</td></tr>
 <tr class="separator:ga29f93e756e4a28f3f3cc142cc87939ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga51f0132cb297e3c9d63beabd9fd7a2e0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Audio.html#ga51f0132cb297e3c9d63beabd9fd7a2e0">IMP_AI_EnableHpf</a> (<a class="el" href="structIMPAudioIOAttr.html">IMPAudioIOAttr</a> *attr)</td></tr>
 <tr class="separator:ga51f0132cb297e3c9d63beabd9fd7a2e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae34b85461a391ba8a3a817bf85f732bc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Audio.html#gae34b85461a391ba8a3a817bf85f732bc">IMP_AI_DisableHpf</a> (void)</td></tr>
+<tr class="memitem:gae34b85461a391ba8a3a817bf85f732bc"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_AI_DisableHpf</b> (void)</td></tr>
 <tr class="separator:gae34b85461a391ba8a3a817bf85f732bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7b5d95bf8705b2f92da1e2ad227c5bb4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Audio.html#ga7b5d95bf8705b2f92da1e2ad227c5bb4">IMP_AO_EnableHpf</a> (<a class="el" href="structIMPAudioIOAttr.html">IMPAudioIOAttr</a> *attr)</td></tr>
 <tr class="separator:ga7b5d95bf8705b2f92da1e2ad227c5bb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9a2d6a03748a9bbcb2de56183f7c4b0e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Audio.html#ga9a2d6a03748a9bbcb2de56183f7c4b0e">IMP_AO_DisableHpf</a> (void)</td></tr>
+<tr class="memitem:ga9a2d6a03748a9bbcb2de56183f7c4b0e"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_AO_DisableHpf</b> (void)</td></tr>
 <tr class="separator:ga9a2d6a03748a9bbcb2de56183f7c4b0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab8ac0dbd68ea0a6fc58bd1474dfde138"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Audio.html#gab8ac0dbd68ea0a6fc58bd1474dfde138">IMP_AO_SetPubAttr</a> (int audioDevId, <a class="el" href="structIMPAudioIOAttr.html">IMPAudioIOAttr</a> *attr)</td></tr>
 <tr class="separator:gab8ac0dbd68ea0a6fc58bd1474dfde138"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -212,7 +219,8 @@ Functions</h2></td></tr>
 <tr class="separator:ga3370b8ae41d807a4a8cf52a00ad73a61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf9fb80db5aeeb090883c794d58ad54c6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Audio.html#gaf9fb80db5aeeb090883c794d58ad54c6">IMP_AO_DisableChn</a> (int audioDevId, int aoChn)</td></tr>
 <tr class="separator:gaf9fb80db5aeeb090883c794d58ad54c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga04d4a45bef9a56805af383e2c20c44ea"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Audio.html#ga04d4a45bef9a56805af383e2c20c44ea">IMP_AO_SendFrame</a> (int audioDevId, int aoChn, <a class="el" href="structIMPAudioFrame.html">IMPAudioFrame</a> *data, <a class="el" href="group__IMP__Audio.html#ga7f9bbf0ae482fa7e68855f4bf68c4a1b">IMPBlock</a> block)</td></tr>
+<tr class="memitem:ga04d4a45bef9a56805af383e2c20c44ea"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_AO_SendFrame</b> (int audioDevId, int aoChn, <a class="el" href="structIMPAudioFrame.html">IMPAudioFrame</a> *data, <a class="el" href="group__IMP__Audio.html#ga7f9bbf0ae482fa7e68855f4bf68c4a1b">IMPBlock</a> block)</td></tr>
 <tr class="separator:ga04d4a45bef9a56805af383e2c20c44ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafbcd8674e7ff136200661a1204405dbc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Audio.html#gafbcd8674e7ff136200661a1204405dbc">IMP_AO_PauseChn</a> (int audioDevId, int aoChn)</td></tr>
 <tr class="separator:gafbcd8674e7ff136200661a1204405dbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -228,9 +236,11 @@ Functions</h2></td></tr>
 <tr class="separator:ga73961cdcb2337064ebdc2bf997a594dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5b969ac455db4694936f0114582eb16e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Audio.html#ga5b969ac455db4694936f0114582eb16e">IMP_AENC_SendFrame</a> (int aeChn, <a class="el" href="structIMPAudioFrame.html">IMPAudioFrame</a> *frm)</td></tr>
 <tr class="separator:ga5b969ac455db4694936f0114582eb16e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae1413a194c8c6e3abf14977bc8643eeb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Audio.html#gae1413a194c8c6e3abf14977bc8643eeb">IMP_AENC_PollingStream</a> (int AeChn, unsigned int timeout_ms)</td></tr>
+<tr class="memitem:gae1413a194c8c6e3abf14977bc8643eeb"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_AENC_PollingStream</b> (int AeChn, unsigned int timeout_ms)</td></tr>
 <tr class="separator:gae1413a194c8c6e3abf14977bc8643eeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae6d5a2043a920d31ebafba014ffa69c8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Audio.html#gae6d5a2043a920d31ebafba014ffa69c8">IMP_AENC_GetStream</a> (int aeChn, <a class="el" href="structIMPAudioStream.html">IMPAudioStream</a> *stream, <a class="el" href="group__IMP__Audio.html#ga7f9bbf0ae482fa7e68855f4bf68c4a1b">IMPBlock</a> block)</td></tr>
+<tr class="memitem:gae6d5a2043a920d31ebafba014ffa69c8"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_AENC_GetStream</b> (int aeChn, <a class="el" href="structIMPAudioStream.html">IMPAudioStream</a> *stream, <a class="el" href="group__IMP__Audio.html#ga7f9bbf0ae482fa7e68855f4bf68c4a1b">IMPBlock</a> block)</td></tr>
 <tr class="separator:gae6d5a2043a920d31ebafba014ffa69c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad27d4774779123da4654dad83053bdf0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Audio.html#gad27d4774779123da4654dad83053bdf0">IMP_AENC_ReleaseStream</a> (int aeChn, <a class="el" href="structIMPAudioStream.html">IMPAudioStream</a> *stream)</td></tr>
 <tr class="separator:gad27d4774779123da4654dad83053bdf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -242,11 +252,14 @@ Functions</h2></td></tr>
 <tr class="separator:ga2caf89ce19b5eb9620c73ff0df71e587"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa08a20e319512497576b41e633b0af66"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Audio.html#gaa08a20e319512497576b41e633b0af66">IMP_ADEC_DestroyChn</a> (int adChn)</td></tr>
 <tr class="separator:gaa08a20e319512497576b41e633b0af66"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadf3125601116c6e776eab97133e997f8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Audio.html#gadf3125601116c6e776eab97133e997f8">IMP_ADEC_SendStream</a> (int adChn, <a class="el" href="structIMPAudioStream.html">IMPAudioStream</a> *stream, <a class="el" href="group__IMP__Audio.html#ga7f9bbf0ae482fa7e68855f4bf68c4a1b">IMPBlock</a> block)</td></tr>
+<tr class="memitem:gadf3125601116c6e776eab97133e997f8"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_ADEC_SendStream</b> (int adChn, <a class="el" href="structIMPAudioStream.html">IMPAudioStream</a> *stream, <a class="el" href="group__IMP__Audio.html#ga7f9bbf0ae482fa7e68855f4bf68c4a1b">IMPBlock</a> block)</td></tr>
 <tr class="separator:gadf3125601116c6e776eab97133e997f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga65bca9da47f553dd117778002991f6ef"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Audio.html#ga65bca9da47f553dd117778002991f6ef">IMP_ADEC_PollingStream</a> (int AdChn, unsigned int timeout_ms)</td></tr>
+<tr class="memitem:ga65bca9da47f553dd117778002991f6ef"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_ADEC_PollingStream</b> (int AdChn, unsigned int timeout_ms)</td></tr>
 <tr class="separator:ga65bca9da47f553dd117778002991f6ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga18171fa7357246967054d3fd7964f8c3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Audio.html#ga18171fa7357246967054d3fd7964f8c3">IMP_ADEC_GetStream</a> (int adChn, <a class="el" href="structIMPAudioStream.html">IMPAudioStream</a> *stream, <a class="el" href="group__IMP__Audio.html#ga7f9bbf0ae482fa7e68855f4bf68c4a1b">IMPBlock</a> block)</td></tr>
+<tr class="memitem:ga18171fa7357246967054d3fd7964f8c3"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_ADEC_GetStream</b> (int adChn, <a class="el" href="structIMPAudioStream.html">IMPAudioStream</a> *stream, <a class="el" href="group__IMP__Audio.html#ga7f9bbf0ae482fa7e68855f4bf68c4a1b">IMPBlock</a> block)</td></tr>
 <tr class="separator:ga18171fa7357246967054d3fd7964f8c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga372a867d48475ac17f3a3d4491ca2ad5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Audio.html#ga372a867d48475ac17f3a3d4491ca2ad5">IMP_ADEC_ReleaseStream</a> (int adChn, <a class="el" href="structIMPAudioStream.html">IMPAudioStream</a> *stream)</td></tr>
 <tr class="separator:ga372a867d48475ac17f3a3d4491ca2ad5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -278,9 +291,11 @@ Functions</h2></td></tr>
 <tr class="separator:gacb5edfcaad64b1429ef4b48b182ebce4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf43c178591d6f6f52e07bbe9d85f2143"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Audio.html#gaf43c178591d6f6f52e07bbe9d85f2143">IMP_AO_Soft_Mute</a> (int audioDevId, int aoChn)</td></tr>
 <tr class="separator:gaf43c178591d6f6f52e07bbe9d85f2143"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab2f5ed8136d6dd928f790ee75162ff7c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Audio.html#gab2f5ed8136d6dd928f790ee75162ff7c">IMP_AO_Soft_UNMute</a> (int audioDevId, int aoChn)</td></tr>
+<tr class="memitem:gab2f5ed8136d6dd928f790ee75162ff7c"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_AO_Soft_UNMute</b> (int audioDevId, int aoChn)</td></tr>
 <tr class="separator:gab2f5ed8136d6dd928f790ee75162ff7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3d40f6572878af4a393718bdcd452186"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Audio.html#ga3d40f6572878af4a393718bdcd452186">IMP_AI_GetFrameAndRef</a> (int audioDevId, int aiChn, <a class="el" href="structIMPAudioFrame.html">IMPAudioFrame</a> *frm, <a class="el" href="structIMPAudioFrame.html">IMPAudioFrame</a> *ref, <a class="el" href="group__IMP__Audio.html#ga7f9bbf0ae482fa7e68855f4bf68c4a1b">IMPBlock</a> block)</td></tr>
+<tr class="memitem:ga3d40f6572878af4a393718bdcd452186"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_AI_GetFrameAndRef</b> (int audioDevId, int aiChn, <a class="el" href="structIMPAudioFrame.html">IMPAudioFrame</a> *frm, <a class="el" href="structIMPAudioFrame.html">IMPAudioFrame</a> *ref, <a class="el" href="group__IMP__Audio.html#ga7f9bbf0ae482fa7e68855f4bf68c4a1b">IMPBlock</a> block)</td></tr>
 <tr class="separator:ga3d40f6572878af4a393718bdcd452186"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5f90e62155b035c84b1d964ee702f7af"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Audio.html#ga5f90e62155b035c84b1d964ee702f7af">IMP_AI_EnableAecRefFrame</a> (int audioDevId, int aiChn, int audioAoDevId, int aoChn)</td></tr>
 <tr class="separator:ga5f90e62155b035c84b1d964ee702f7af"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -288,7 +303,7 @@ Functions</h2></td></tr>
 <tr class="separator:ga38f1fd77581199871c583fb5a349538a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>IMP Audio input and output header files </p>
+<div class="textblock"><p>IMP Fichiers d'en-tête d'entrée et de sortie audio </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

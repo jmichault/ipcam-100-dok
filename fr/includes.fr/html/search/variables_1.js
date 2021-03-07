@@ -4,7 +4,7 @@ var searchData=
   ['bgain',['bgain',['../structisp__core__wb__attr.html#a163bf00ad9d6611a72721c23d601036e',1,'isp_core_wb_attr']]],
   ['bgalhpa',['bgAlhpa',['../structIMPOSDGrpRgnAttr.html#ad61e336165a6287aeb543edc60f9a780',1,'IMPOSDGrpRgnAttr']]],
   ['bitmapdata',['bitmapData',['../unionIMPOSDRgnAttrData.html#aef88daf2362bdd491a6a760662314bac',1,'IMPOSDRgnAttrData']]],
-  ['bitwidth',['bitwidth',['../group__IMP__Audio.html#ga45488145ea03519464a386aeb07aaf14',1,'IMPAudioIOAttr::bitwidth()'],['../group__IMP__Audio.html#gab4f4d633f4ddc6f7d2d4e3d56b9a42d4',1,'IMPAudioFrame::bitwidth()']]],
+  ['bitwidth',['bitwidth',['../group__IMP__Audio.html#ga45488145ea03519464a386aeb07aaf14',1,'IMPAudioIOAttr']]],
   ['black_5flevel',['black_level',['../structIMPISPDrcAttr.html#a4cb6a88c683132a236efd39bb92f9e82',1,'IMPISPDrcAttr']]],
   ['brelatedqp',['bRelatedQp',['../structIMPEncoderROICfg.html#a08556b18f482ace6f7937362ac42fb05',1,'IMPEncoderROICfg']]],
   ['bufsize',['bufSize',['../group__IMP__Audio.html#ga27d72a8094d4559ea2d8ddade7fbd901',1,'IMPAudioEncChnAttr::bufSize()'],['../group__IMP__Audio.html#ga1bf04fb15fb561eec7876b6cfc914761',1,'IMPAudioDecChnAttr::bufSize()'],['../structIMPEncoderAttr.html#adbbc3e6be6ed966f9ce0e6496d019682',1,'IMPEncoderAttr::bufSize()']]],

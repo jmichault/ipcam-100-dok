@@ -62,20 +62,12 @@ $(function() {
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">IMP_Decoder<div class="ingroups"><a class="el" href="group__imp.html">IMP(Ingenic Media Platform)</a></div></div>  </div>
+<div class="title">IMP_Decoder</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Video decoding module ， Currently only supports JPEG decoding.  
+<p>Module de décodage vidéo, ne prend actuellement en charge que le décodage JPEG.  
 <a href="#details">More...</a></p>
-<div class="dynheader">
-Collaboration diagram for IMP_Decoder:</div>
-<div class="dyncontent">
-<center><table><tr><td><img src="group__IMP__Decoder.png" border="0" alt="" usemap="#group____IMP____Decoder"/>
-<map name="group____IMP____Decoder" id="group____IMP____Decoder">
-</map>
-</td></tr></table></center>
-</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -108,7 +100,7 @@ Functions</h2></td></tr>
 <tr class="separator:ga522ce60cb85c8865cf7304835946639a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Video decoding module ， Currently only supports JPEG decoding. </p>
+<p>Module de décodage vidéo, ne prend actuellement en charge que le décodage JPEG. </p>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="gaf2847173e6e99d0859782d396431135e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gaf2847173e6e99d0859782d396431135e">&#9670;&nbsp;</a></span>IMP_Decoder_CreateChn()</h2>
@@ -135,23 +127,23 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Create decoding Channel</p>
+<p>Créer un décodage Channel</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">decChn</td><td>Create decoding Channel number , Ranges : [0, NR_MAX_DEC_CHN - 1] </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">attr</td><td>Ranges Channel Attribute pointer</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">decChn</td><td>decode Numéro de canal, plage de valeurs: [0, NR_MAX_DEC_CHN-1] </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">attr</td><td>décoder le pointeur d'attribut de canal</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>success </td></tr>
-    <tr><td class="paramname">non-</td><td>0 failure</td></tr>
+    <tr><td class="paramname">0</td><td>succès </td></tr>
+    <tr><td class="paramname">Échec</td><td>non nul</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarks</dt><dd>no. </dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>no. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>non. </dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>无。 </dd></dl>
 
 </div>
 </div>
@@ -170,22 +162,22 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Destroy decoding Channel</p>
+<p>Détruire le décodage Channel</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">decChn</td><td>Destroy decoding Channel Destroy decoding , Destroy decoding : [0, NR_MAX_DEC_CHN - 1]</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">decChn</td><td>解码Channel号,取值范围: [0, NR_MAX_DEC_CHN - 1]</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>Destroy decoding </td></tr>
-    <tr><td class="paramname">Destroy</td><td>decoding 0 Destroy decoding</td></tr>
+    <tr><td class="paramname">0</td><td>成功 </td></tr>
+    <tr><td class="paramname">非0</td><td>失败</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarks</dt><dd>Destroy decoding </dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>Destroy decoding </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>无。 </dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>无。 </dd></dl>
 
 </div>
 </div>
@@ -214,23 +206,23 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get decoded code stream</p>
+<p>Obtenir un flux de code décodé</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">decChn</td><td>Get decoded code stream Channel Get decoded code stream , Get decoded code stream : [0, NR_MAX_DEC_CHN - 1] </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">frame</td><td>Decoding stream structure pointer</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">decChn</td><td>解码Channel号,取值范围: [0, NR_MAX_DEC_CHN - 1] </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">frame</td><td>Pointeur de structure de flux de décodage</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>Decoding stream structure pointer </td></tr>
-    <tr><td class="paramname">Decoding</td><td>stream structure pointer 0 Decoding stream structure pointer</td></tr>
+    <tr><td class="paramname">0</td><td>成功 </td></tr>
+    <tr><td class="paramname">非0</td><td>失败</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarks</dt><dd>Decoding stream structure pointer</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>Decode stream buffer Apply internally by the decoder ， This function only needs to pass in the structure pointer. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>无。</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Le tampon de flux de code de décodage est demandé en interne par le décodeur, et cette fonction n'a besoin que de passer le pointeur de structure. </dd></dl>
 
 </div>
 </div>
@@ -259,23 +251,23 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Polling Decoding stream buffer</p>
+<p>Polling Tampon de flux de décodage</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">decChn</td><td>Decoding stream buffer Channel Decoding stream buffer , Decoding stream buffer : [0, NR_MAX_DEC_CHN - 1] </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">timeoutMsec</td><td>overtime time overtime time ms</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">decChn</td><td>解码Channel号,取值范围: [0, NR_MAX_DEC_CHN - 1] </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">timeout</td><td>Msec timeout unité de temps ms</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>overtime time </td></tr>
-    <tr><td class="paramname">overtime</td><td>time 0 overtime time</td></tr>
+    <tr><td class="paramname">0</td><td>成功 </td></tr>
+    <tr><td class="paramname">非0</td><td>失败</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarks</dt><dd>overtime time</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>overtime time Channel overtime time ， overtime time </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>无。</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>如果Channel未创建，则返回失败 </dd></dl>
 
 </div>
 </div>
@@ -304,23 +296,23 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Release the code stream cache</p>
+<p>Libérez le cache du flux de code</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">decChn</td><td>Release the code stream cache Channel Release the code stream cache , Release the code stream cache : [0, NR_MAX_DEC_CHN - 1] </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">frame</td><td>Release the code stream cache</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">decChn</td><td>解码Channel号,取值范围: [0, NR_MAX_DEC_CHN - 1] </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">frame</td><td>解码码流结构体指针</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>Release the code stream cache </td></tr>
-    <tr><td class="paramname">Release</td><td>the code stream cache 0 Release the code stream cache</td></tr>
+    <tr><td class="paramname">0</td><td>成功 </td></tr>
+    <tr><td class="paramname">非0</td><td>失败</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarks</dt><dd>Release the code stream cache</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>Release the code stream cache </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>无。</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>无。 </dd></dl>
 
 </div>
 </div>
@@ -355,24 +347,24 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Send the data to be decoded</p>
+<p>Envoyer les données à décoder</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">decChn</td><td>Send the data to be decoded Channel Send the data to be decoded , Send the data to be decoded : [0, NR_MAX_DEC_CHN - 1] </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">stream</td><td>Data stream structure pointer to be decoded </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">timeoutMsec</td><td>Decoding timeout unit ms</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">decChn</td><td>解码Channel号,取值范围: [0, NR_MAX_DEC_CHN - 1] </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pointeur</td><td>de flux vers la structure du flux de données à décoder </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">timeout</td><td>Msec Timeout de décodage unité de temps ms</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>unit </td></tr>
-    <tr><td class="paramname">unit</td><td>0 unit</td></tr>
+    <tr><td class="paramname">0</td><td>成功 </td></tr>
+    <tr><td class="paramname">非0</td><td>失败</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarks</dt><dd>unit</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>unit Channel unit ， unit </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>无。</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>如果Channel未创建，则返回失败 </dd></dl>
 
 </div>
 </div>
@@ -391,22 +383,22 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Turn on decoding Channel Receive image</p>
+<p>Activer le décodage Channel Recevoir l'image</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">decChn</td><td>Receive image Channel Receive image , Receive image : [0, NR_MAX_DEC_CHN - 1]</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">decChn</td><td>解码Channel号,取值范围: [0, NR_MAX_DEC_CHN - 1]</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>Receive image </td></tr>
-    <tr><td class="paramname">Receive</td><td>image 0 Receive image</td></tr>
+    <tr><td class="paramname">0</td><td>成功 </td></tr>
+    <tr><td class="paramname">非0</td><td>失败</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarks</dt><dd>Receive image Channel Decoding can only start after receiving images</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>in case Channel Not created ， Failed </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>Le décodage ne peut démarrer qu'après l'ouverture du canal de décodage pour recevoir l'image</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Si le canal n'est pas créé, il renvoie un échec </dd></dl>
 
 </div>
 </div>
@@ -425,22 +417,22 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Stop decoding Channel Stop decoding</p>
+<p>Arrêter le décodage Channel 接收图像</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">decChn</td><td>Stop decoding Channel Stop decoding , Stop decoding : [0, NR_MAX_DEC_CHN - 1]</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">decChn</td><td>解码Channel号,取值范围: [0, NR_MAX_DEC_CHN - 1]</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>Stop decoding </td></tr>
-    <tr><td class="paramname">Stop</td><td>decoding 0 Stop decoding</td></tr>
+    <tr><td class="paramname">0</td><td>成功 </td></tr>
+    <tr><td class="paramname">非0</td><td>失败</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarks</dt><dd>Stop decoding Channel Stop decoding</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>Stop decoding Channel Stop decoding ， Stop decoding </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>Arrêter le décodage de l'image de réception du canal</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>如果Channel未创建，则返回失败 </dd></dl>
 
 </div>
 </div>

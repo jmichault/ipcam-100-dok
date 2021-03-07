@@ -63,11 +63,11 @@ $(function() {
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">IMP_IVS<div class="ingroups"><a class="el" href="group__imp.html">IMP(Ingenic Media Platform)</a></div></div>  </div>
+<div class="title">IMP_IVS</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>IVS Intelligent analysis universal interface API.  
+<p>API d'interface générale d'analyse intelligente IVS.  
 <a href="#details">More...</a></p>
 <div class="dynheader">
 Collaboration diagram for IMP_IVS:</div>
@@ -81,7 +81,7 @@ Collaboration diagram for IMP_IVS:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="groups"></a>
 Modules</h2></td></tr>
 <tr class="memitem:group__MoveDetection"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__MoveDetection.html">MoveDetection</a></td></tr>
-<tr class="memdesc:group__MoveDetection"><td class="mdescLeft">&#160;</td><td class="mdescRight">Motion detection interface. <br /></td></tr>
+<tr class="memdesc:group__MoveDetection"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interface de détection de mouvement. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
@@ -121,28 +121,28 @@ Functions</h2></td></tr>
 <tr class="separator:ga2a0e9458531fb623d2af6dacfab5acc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>IVS Intelligent analysis universal interface API. </p>
-<h1><a class="anchor" id="concept"></a>
-1  Related concepts</h1>
-<p>IMP IVS by IVS Universal interface API Call instantiated <a class="el" href="structIMPIVSInterface.html">IMPIVSInterface</a> To embed intelligent analysis algorithms into SDK Incoming analysis SDK middle frame image.</p>
+<p>API d'interface générale d'analyse intelligente IVS. </p>
+<h1><a class="anchor" id="concepts"></a>
+liés au concept 1</h1>
+<p>IMP IVS par IVS Interface universelle API Appel instancié <a class="el" href="structIMPIVSInterface.html">IMPIVSInterface</a> Pour intégrer des algorithmes d'analyse intelligents dans SDK Analyse entrante SDK milieu frame image.</p>
 <h2><a class="anchor" id="IMPIVSInterface"></a>
 1.1 IMPIVSInterface</h2>
-<p><a class="el" href="structIMPIVSInterface.html">IMPIVSInterface</a> General algorithm interface ， The specific algorithm implements this interface and passes it to IMP IVS Reach at SDK The purpose of running specific algorithms in. <br />
- One channel There is and is only a carrier for a single algorithm instance ， The specific implementation of the general algorithm interface must be passed to the specific channel Ability in SDK Run the algorithm in. <br />
-<a class="el" href="structIMPIVSInterface.html">IMPIVSInterface</a> member param Member function init Parameters. <br />
-IMP_IVS Will be passed to the member function ProcessAsync Parametric frame External lock ，ProcessAsync Must be used up frame Call after IMP_IVS_ReleaseData freed frame， In order to avoid deadlock.</p>
+<p><a class="el" href="structIMPIVSInterface.html">IMPIVSInterface</a> Interface d'algorithme général ， L'algorithme spécifique implémente cette interface et la transmet à IMP IVS Atteindre à SDK Le but de l'exécution d'algorithmes spécifiques dans. <br />
+ Une channel Il n'y a et il n'y a qu'un transporteur pour une seule instance d'algorithme ， L'implémentation spécifique de l'interface de l'algorithme général doit être transmise au channel Capacité à SDK Exécutez l'algorithme dans. <br />
+<a class="el" href="structIMPIVSInterface.html">IMPIVSInterface</a> membre param Fonction membre init Paramètres. <br />
+IMP_IVS Sera passé à la fonction membre ProcessAsync Paramétrique frame Verrou externe ，ProcessAsync Doit être épuisé frame Appeler après IMP_IVS_ReleaseData libéré frame， Afin d'éviter une impasse.</p>
 <h1><a class="anchor" id="ivs_usage"></a>
-2  Instructions</h1>
-<p>Take motion detection algorithm as an example ， See the specific implementation of the function sample-move_c.c file <br />
-step.1 Initialize the system ， You can directly call the example sample_system_init() function. <br />
- The entire application can only initialize the system once ， If initialized before ， There is no need to initialize again. <br />
-step.2 initialization framesource <br />
- If the algorithm used framesource Channel created ， Just use the created channel directly. <br />
- Just use the created channel directly. framesource Channel not created ， You can call the sample_framesource_init(IVS_FS_CHN, &amp;fs_chn_attr) Create it. <br />
-step.3 create ivs Specific algorithm channel group. <br />
- Multiple algorithms can share a channel group ， You can also use channel groups separately ， Specific pieces sample_ivs_move_init() <br />
-</p><div class="fragment"><div class="line"><span class="keywordtype">int</span> sample_ivs_move_init(<span class="keywordtype">int</span> grp_num)</div><div class="line">{</div><div class="line">    <span class="keywordtype">int</span> ret = 0;</div><div class="line"></div><div class="line">    ret = <a class="code" href="group__IMP__IVS.html#gaf4bb6f49f2a0bf8f0d5f448b6a62e6a5">IMP_IVS_CreateGroup</a>(grp_num);</div><div class="line">    <span class="keywordflow">if</span> (ret &lt; 0) {</div><div class="line">        <a class="code" href="imp__log_8h.html#a59492a06ae7e667b02bda8f246902a7c">IMP_LOG_ERR</a>(TAG, <span class="stringliteral">&quot;IMP_IVS_CreateGroup(%d) failed\n&quot;</span>, grp_num);</div><div class="line">        <span class="keywordflow">return</span> -1;</div><div class="line">    }</div><div class="line">    <span class="keywordflow">return</span> 0;</div><div class="line">}</div></div><!-- fragment --><p> step.4 Bind algorithm channel group and framesource Channel group </p><div class="fragment"><div class="line"><a class="code" href="structIMPCell.html">IMPCell</a> framesource_cell = {<a class="code" href="imp__common_8h.html#a6dadfc8115cc4a18ce760e442584c4e7a162de33439c347ecba2e19b30644b208">DEV_ID_FS</a>, IVS_FS_CHN, 0};</div><div class="line"><a class="code" href="structIMPCell.html">IMPCell</a> ivs_cell = {<a class="code" href="imp__common_8h.html#a6dadfc8115cc4a18ce760e442584c4e7ae0021eea40513cbb341cd5078bca3da6">DEV_ID_IVS</a>, 0, 0};</div><div class="line">ret = <a class="code" href="group__IMP__System.html#gab53c6fd017fab6386696320af29354ed">IMP_System_Bind</a>(&amp;framesource_cell, &amp;ivs_cell);</div><div class="line"><span class="keywordflow">if</span> (ret &lt; 0) {</div><div class="line">   <a class="code" href="imp__log_8h.html#a59492a06ae7e667b02bda8f246902a7c">IMP_LOG_ERR</a>(TAG, <span class="stringliteral">&quot;Bind FrameSource channel%d and ivs0 failed\n&quot;</span>, IVS_FS_CHN);</div><div class="line">   <span class="keywordflow">return</span> -1;</div><div class="line">}</div></div><!-- fragment --><p> step.5 start up framesource And algorithm. It is recommended that the algorithm channel number is the same as the algorithm number ， So that it can directly correspond to which algorithm is currently operating. </p><div class="fragment"><div class="line"><a class="code" href="group__IMP__FrameSource.html#ga5a433ca616cb0c1fe82f400161a411b1">IMP_FrameSource_SetFrameDepth</a>(0, 0);</div><div class="line">ret = sample_framesource_streamon(IVS_FS_CHN);</div><div class="line"><span class="keywordflow">if</span> (ret &lt; 0) {</div><div class="line">   <a class="code" href="imp__log_8h.html#a59492a06ae7e667b02bda8f246902a7c">IMP_LOG_ERR</a>(TAG, <span class="stringliteral">&quot;ImpStreamOn failed\n&quot;</span>);</div><div class="line">   <span class="keywordflow">return</span> -1;</div><div class="line">}</div><div class="line">ret = sample_ivs_move_start(0, 0, &amp;inteface);</div><div class="line"><span class="keywordflow">if</span> (ret &lt; 0) {</div><div class="line">   <a class="code" href="imp__log_8h.html#a59492a06ae7e667b02bda8f246902a7c">IMP_LOG_ERR</a>(TAG, <span class="stringliteral">&quot;sample_ivs_move_start(0, 0) failed\n&quot;</span>);</div><div class="line">   <span class="keywordflow">return</span> -1;</div><div class="line">}</div></div><!-- fragment --><p>step.6 Get algorithm results <br />
-Polling Results, acquisition results, and release results must correspond strictly ， No interruption ; only Polling The result is returned correctly ， The obtained results will be updated ， Otherwise, the results obtained are unpredictable. </p><div class="fragment"><div class="line"><span class="keywordflow">for</span> (i = 0; i &lt; NR_FRAMES_TO_IVS; i++) {</div><div class="line">   ret = <a class="code" href="group__IMP__IVS.html#ga4ff339164b80826f2288766482da907c">IMP_IVS_PollingResult</a>(0, IMP_IVS_DEFAULT_TIMEOUTMS);</div><div class="line">   <span class="keywordflow">if</span> (ret &lt; 0) {</div><div class="line">       <a class="code" href="imp__log_8h.html#a59492a06ae7e667b02bda8f246902a7c">IMP_LOG_ERR</a>(TAG, <span class="stringliteral">&quot;IMP_IVS_PollingResult(%d, %d) failed\n&quot;</span>, 0, IMP_IVS_DEFAULT_TIMEOUTMS);</div><div class="line">       <span class="keywordflow">return</span> -1;</div><div class="line">   }</div><div class="line">   ret = <a class="code" href="group__IMP__IVS.html#ga39b67051ba392735d9719c37968717f6">IMP_IVS_GetResult</a>(0, (<span class="keywordtype">void</span> **)&amp;result);</div><div class="line">   <span class="keywordflow">if</span> (ret &lt; 0) {</div><div class="line">       <a class="code" href="imp__log_8h.html#a59492a06ae7e667b02bda8f246902a7c">IMP_LOG_ERR</a>(TAG, <span class="stringliteral">&quot;IMP_IVS_GetResult(%d) failed\n&quot;</span>, 0);</div><div class="line">       <span class="keywordflow">return</span> -1;</div><div class="line">   }</div><div class="line">   <a class="code" href="imp__log_8h.html#a9403f31ff83a9969c34394b470908a41">IMP_LOG_INFO</a>(TAG, <span class="stringliteral">&quot;frame[%d], result-&gt;ret=%d\n&quot;</span>, i, result-&gt;ret);</div><div class="line"></div><div class="line">   ret = <a class="code" href="group__IMP__IVS.html#ga4c8a0109894c69f3e83ec5c4f73e5e74">IMP_IVS_ReleaseResult</a>(0, (<span class="keywordtype">void</span> *)result);</div><div class="line">   <span class="keywordflow">if</span> (ret &lt; 0) {</div><div class="line">       <a class="code" href="imp__log_8h.html#a59492a06ae7e667b02bda8f246902a7c">IMP_LOG_ERR</a>(TAG, <span class="stringliteral">&quot;IMP_IVS_ReleaseResult(%d) failed\n&quot;</span>, 0);</div><div class="line">       <span class="keywordflow">return</span> -1;</div><div class="line">   }</div><div class="line">}</div></div><!-- fragment --><p> step.7 Release resources </p><div class="fragment"><div class="line">sample_ivs_move_stop(0, inteface);</div><div class="line">sample_framesource_streamoff(1);</div><div class="line"><a class="code" href="group__IMP__System.html#ga759fa36b68ecc83e15362316809ba23d">IMP_System_UnBind</a>(&amp;framesource_cell, &amp;ivs_cell);</div><div class="line">sample_ivs_move_exit(0);</div><div class="line">sample_framesource_exit(IVS_FS_CHN);</div><div class="line">sample_system_exit();</div></div><!-- fragment --> <h2 class="groupheader">Function Documentation</h2>
+2 Comment utiliser</h1>
+<p>Prenons l'exemple de l'algorithme de détection de mouvement ， Voir l'implémentation spécifique de la fonction sample-move_c.c déposer <br />
+step.1 Initialiser le système ， Vous pouvez appeler directement l'exemple sample_system_init() fonction. <br />
+ L'application entière ne peut initialiser le système qu'une seule fois ， Si initialisé avant ， Il n'est pas nécessaire de réinitialiser à nouveau. <br />
+step.2 initialisation framesource <br />
+ Si l'algorithme utilisé framesource Chaîne créée ， Utilisez simplement le canal créé directement. <br />
+ 若算法所使用的 framesource Chaîne non créée ， Vous pouvez appeler le sample_framesource_init(IVS_FS_CHN, &amp;fs_chn_attr) Créez-le. <br />
+step.3 créer ivs Groupe de canaux d'algorithme spécifique. <br />
+ Plusieurs algorithmes peuvent partager un groupe de canaux ， Vous pouvez également utiliser des groupes de canaux séparément ， Pièces spécifiques sample_ivs_move_init() <br />
+</p><div class="fragment"><div class="line"><span class="keywordtype">int</span> sample_ivs_move_init(<span class="keywordtype">int</span> grp_num)</div><div class="line">{</div><div class="line">    <span class="keywordtype">int</span> ret = 0;</div><div class="line"></div><div class="line">    ret = <a class="code" href="group__IMP__IVS.html#gaf4bb6f49f2a0bf8f0d5f448b6a62e6a5">IMP_IVS_CreateGroup</a>(grp_num);</div><div class="line">    <span class="keywordflow">if</span> (ret &lt; 0) {</div><div class="line">        <a class="code" href="imp__log_8h.html#a59492a06ae7e667b02bda8f246902a7c">IMP_LOG_ERR</a>(TAG, <span class="stringliteral">&quot;IMP_IVS_CreateGroup(%d) failed\n&quot;</span>, grp_num);</div><div class="line">        <span class="keywordflow">return</span> -1;</div><div class="line">    }</div><div class="line">    <span class="keywordflow">return</span> 0;</div><div class="line">}</div></div><!-- fragment --><p> step.4 Groupe de canaux d'algorithme de liaison et framesource Groupe de canaux </p><div class="fragment"><div class="line"><a class="code" href="structIMPCell.html">IMPCell</a> framesource_cell = {<a class="code" href="imp__common_8h.html#a6dadfc8115cc4a18ce760e442584c4e7a162de33439c347ecba2e19b30644b208">DEV_ID_FS</a>, IVS_FS_CHN, 0};</div><div class="line"><a class="code" href="structIMPCell.html">IMPCell</a> ivs_cell = {<a class="code" href="imp__common_8h.html#a6dadfc8115cc4a18ce760e442584c4e7ae0021eea40513cbb341cd5078bca3da6">DEV_ID_IVS</a>, 0, 0};</div><div class="line">ret = <a class="code" href="group__IMP__System.html#gab53c6fd017fab6386696320af29354ed">IMP_System_Bind</a>(&amp;framesource_cell, &amp;ivs_cell);</div><div class="line"><span class="keywordflow">if</span> (ret &lt; 0) {</div><div class="line">   <a class="code" href="imp__log_8h.html#a59492a06ae7e667b02bda8f246902a7c">IMP_LOG_ERR</a>(TAG, <span class="stringliteral">&quot;Bind FrameSource channel%d and ivs0 failed\n&quot;</span>, IVS_FS_CHN);</div><div class="line">   <span class="keywordflow">return</span> -1;</div><div class="line">}</div></div><!-- fragment --><p> step.5 Commencez framesource Et algorithme. ， Pour qu'il puisse correspondre directement à quel algorithme fonctionne actuellement. </p><div class="fragment"><div class="line"><a class="code" href="group__IMP__FrameSource.html#ga5a433ca616cb0c1fe82f400161a411b1">IMP_FrameSource_SetFrameDepth</a>(0, 0);</div><div class="line">ret = sample_framesource_streamon(IVS_FS_CHN);</div><div class="line"><span class="keywordflow">if</span> (ret &lt; 0) {</div><div class="line">   <a class="code" href="imp__log_8h.html#a59492a06ae7e667b02bda8f246902a7c">IMP_LOG_ERR</a>(TAG, <span class="stringliteral">&quot;ImpStreamOn failed\n&quot;</span>);</div><div class="line">   <span class="keywordflow">return</span> -1;</div><div class="line">}</div><div class="line">ret = sample_ivs_move_start(0, 0, &amp;inteface);</div><div class="line"><span class="keywordflow">if</span> (ret &lt; 0) {</div><div class="line">   <a class="code" href="imp__log_8h.html#a59492a06ae7e667b02bda8f246902a7c">IMP_LOG_ERR</a>(TAG, <span class="stringliteral">&quot;sample_ivs_move_start(0, 0) failed\n&quot;</span>);</div><div class="line">   <span class="keywordflow">return</span> -1;</div><div class="line">}</div></div><!-- fragment --><p>step.6 Obtenir les résultats de l'algorithme <br />
+Polling Les résultats, les résultats d'acquisition et les résultats de diffusion doivent correspondre strictement ， Pas d'interruption ; seul Polling Le résultat est renvoyé correctement ， Les résultats obtenus seront mis à jour ， Sinon, les résultats obtenus sont imprévisibles. </p><div class="fragment"><div class="line"><span class="keywordflow">for</span> (i = 0; i &lt; NR_FRAMES_TO_IVS; i++) {</div><div class="line">   ret = <a class="code" href="group__IMP__IVS.html#ga4ff339164b80826f2288766482da907c">IMP_IVS_PollingResult</a>(0, IMP_IVS_DEFAULT_TIMEOUTMS);</div><div class="line">   <span class="keywordflow">if</span> (ret &lt; 0) {</div><div class="line">       <a class="code" href="imp__log_8h.html#a59492a06ae7e667b02bda8f246902a7c">IMP_LOG_ERR</a>(TAG, <span class="stringliteral">&quot;IMP_IVS_PollingResult(%d, %d) failed\n&quot;</span>, 0, IMP_IVS_DEFAULT_TIMEOUTMS);</div><div class="line">       <span class="keywordflow">return</span> -1;</div><div class="line">   }</div><div class="line">   ret = <a class="code" href="group__IMP__IVS.html#ga39b67051ba392735d9719c37968717f6">IMP_IVS_GetResult</a>(0, (<span class="keywordtype">void</span> **)&amp;result);</div><div class="line">   <span class="keywordflow">if</span> (ret &lt; 0) {</div><div class="line">       <a class="code" href="imp__log_8h.html#a59492a06ae7e667b02bda8f246902a7c">IMP_LOG_ERR</a>(TAG, <span class="stringliteral">&quot;IMP_IVS_GetResult(%d) failed\n&quot;</span>, 0);</div><div class="line">       <span class="keywordflow">return</span> -1;</div><div class="line">   }</div><div class="line">   <a class="code" href="imp__log_8h.html#a9403f31ff83a9969c34394b470908a41">IMP_LOG_INFO</a>(TAG, <span class="stringliteral">&quot;frame[%d], result-&gt;ret=%d\n&quot;</span>, i, result-&gt;ret);</div><div class="line"></div><div class="line">   ret = <a class="code" href="group__IMP__IVS.html#ga4c8a0109894c69f3e83ec5c4f73e5e74">IMP_IVS_ReleaseResult</a>(0, (<span class="keywordtype">void</span> *)result);</div><div class="line">   <span class="keywordflow">if</span> (ret &lt; 0) {</div><div class="line">       <a class="code" href="imp__log_8h.html#a59492a06ae7e667b02bda8f246902a7c">IMP_LOG_ERR</a>(TAG, <span class="stringliteral">&quot;IMP_IVS_ReleaseResult(%d) failed\n&quot;</span>, 0);</div><div class="line">       <span class="keywordflow">return</span> -1;</div><div class="line">   }</div><div class="line">}</div></div><!-- fragment --><p> step.7 Libérer les ressources </p><div class="fragment"><div class="line">sample_ivs_move_stop(0, inteface);</div><div class="line">sample_framesource_streamoff(1);</div><div class="line"><a class="code" href="group__IMP__System.html#ga759fa36b68ecc83e15362316809ba23d">IMP_System_UnBind</a>(&amp;framesource_cell, &amp;ivs_cell);</div><div class="line">sample_ivs_move_exit(0);</div><div class="line">sample_framesource_exit(IVS_FS_CHN);</div><div class="line">sample_system_exit();</div></div><!-- fragment --> <h2 class="groupheader">Function Documentation</h2>
 <a id="gada895e87ff289b637330935379e081d6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gada895e87ff289b637330935379e081d6">&#9670;&nbsp;</a></span>IMP_IVS_CreateChn()</h2>
 
@@ -168,23 +168,23 @@ Polling Results, acquisition results, and release results must correspond strict
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Destroy the channel group IVS Function corresponding channel</p>
+<p>创建 IVS Fonction canal correspondant</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">ChnNum</td><td>Channel number</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">handler</td><td>IVS Function handle</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">Numéro</td><td>de canal ChnNum</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">gestionnaire</td><td>de fonction IVS handle</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>Function handle </td></tr>
-    <tr><td class="paramname">-1</td><td>Function handle</td></tr>
+    <tr><td class="paramname">0</td><td>成功 </td></tr>
+    <tr><td class="paramname">-1</td><td>失败</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarks</dt><dd>Function handle .</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>Function handle </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>non.</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>无 </dd></dl>
 
 </div>
 </div>
@@ -203,22 +203,22 @@ Polling Results, acquisition results, and release results must correspond strict
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Create channel group</p>
+<p>Créer un groupe de canaux</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">GrpNum</td><td>IVS Channel group number corresponding to the function</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">GrpNum</td><td>IVS fonction numéro de groupe de canaux correspondant</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>success </td></tr>
-    <tr><td class="paramname">-1</td><td>failure</td></tr>
+    <tr><td class="paramname">0</td><td>succès </td></tr>
+    <tr><td class="paramname">-1</td><td>échoué</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarks</dt><dd>no</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>no </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>non</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>无 </dd></dl>
 
 </div>
 </div>
@@ -237,22 +237,22 @@ Polling Results, acquisition results, and release results must correspond strict
         </tr>
       </table>
 </div><div class="memdoc">
-<p>destroy IVS The channel corresponding to the function handle</p>
+<p>détruire IVS Le canal correspondant à la poignée de fonction</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">ChnNum</td><td>The channel corresponding to the function handle</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ChnNum</td><td>通道号</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>The channel corresponding to the function handle </td></tr>
-    <tr><td class="paramname">-1</td><td>The channel corresponding to the function handle</td></tr>
+    <tr><td class="paramname">0</td><td>成功 </td></tr>
+    <tr><td class="paramname">-1</td><td>失败</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarks</dt><dd>The channel corresponding to the function handle</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>The channel corresponding to the function handle </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>无</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>无 </dd></dl>
 
 </div>
 </div>
@@ -271,22 +271,22 @@ Polling Results, acquisition results, and release results must correspond strict
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Destroy the channel group</p>
+<p>Détruire le groupe de canaux</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">GrpNum</td><td>IVS Destroy the channel group</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">GrpNum</td><td>IVS功能对应的通道组号</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>Destroy the channel group </td></tr>
-    <tr><td class="paramname">-1</td><td>Destroy the channel group</td></tr>
+    <tr><td class="paramname">0</td><td>成功 </td></tr>
+    <tr><td class="paramname">-1</td><td>失败</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarks</dt><dd>Destroy the channel group</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>Destroy the channel group </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>无</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>无 </dd></dl>
 
 </div>
 </div>
@@ -315,22 +315,22 @@ Polling Results, acquisition results, and release results must correspond strict
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get channel algorithm parameters</p>
+<p>Obtenir les paramètres d'algorithme de canal</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">ChnNum</td><td>IVS Get channel algorithm parameters </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">param</td><td>Algorithm parameter virtual address pointer</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ChnNum</td><td>IVS功能对应的通道号 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">paramètre</td><td>d'algorithme paramètre pointeur d'adresse virtuelle</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>Algorithm parameter virtual address pointer </td></tr>
-    <tr><td class="paramname">-1</td><td>Algorithm parameter virtual address pointer</td></tr>
+    <tr><td class="paramname">0</td><td>成功 </td></tr>
+    <tr><td class="paramname">-1</td><td>失败</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section attention"><dt>Attention</dt><dd>Algorithm parameter virtual address pointer </dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>无 </dd></dl>
 
 </div>
 </div>
@@ -359,23 +359,23 @@ Polling Results, acquisition results, and release results must correspond strict
         </tr>
       </table>
 </div><div class="memdoc">
-<p>obtain IVS Intelligent analysis result calculated by function</p>
+<p>obtenir IVS Résultat d'analyse intelligent calculé par fonction</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">ChnNum</td><td>IVS Intelligent analysis result calculated by function</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">result</td><td>IVS The output result of the channel number corresponding to the function ， Returns the result pointer of the intelligent analysis algorithm corresponding to this channel ， External customers do not need to allocate space.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ChnNum</td><td>IVS功能对应的通道号</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">result</td><td>Le résultat de sortie du numéro de canal correspondant à la fonction IVS renvoie le pointeur de résultat de l'algorithme d'analyse intelligente correspondant à ce canal, et les clients externes n'ont pas besoin d'allouer d'espace.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>External customers do not need to allocate space. </td></tr>
-    <tr><td class="paramname">-1</td><td>External customers do not need to allocate space.</td></tr>
+    <tr><td class="paramname">0</td><td>成功 </td></tr>
+    <tr><td class="paramname">-1</td><td>失败</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarks</dt><dd>According to different IVS Functionally bound channel , Output the corresponding result .</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>Output the corresponding result </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>Selon les canaux liés par différentes fonctions IVS, les résultats correspondants sont émis.</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>无 </dd></dl>
 
 </div>
 </div>
@@ -404,23 +404,23 @@ Polling Results, acquisition results, and release results must correspond strict
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Blocking to determine whether it can be obtained IVS Intelligent analysis result calculated by function</p>
+<p>Blocage pour déterminer s'il peut être obtenu IVS Résultat d'analyse intelligent calculé par fonction</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">ChnNum</td><td>IVS Intelligent analysis result calculated by function</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">timeout</td><td>Maximum waiting time ， unit ms; IMP_IVS_DEFAULT_TIMEOUTMS: Default waiting time inside the library ,0: Don't wait ,&gt;0: Waiting time set by the user</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ChnNum</td><td>IVS功能对应的通道号</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">timeout</td><td>Temps d'attente maximum, unité ms; IMP_IVS_DEFAULT_TIMEOUTMS: temps d'attente par défaut dans la bibliothèque, 0: pas d'attente,&gt; 0: temps d'attente défini par l'utilisateur</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>Waiting time set by the user </td></tr>
-    <tr><td class="paramname">-1</td><td>Waiting time set by the user</td></tr>
+    <tr><td class="paramname">0</td><td>成功 </td></tr>
+    <tr><td class="paramname">-1</td><td>失败</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarks</dt><dd>Only the parameters when the channel is created <a class="el" href="structIMPIVSInterface.html">IMPIVSInterface</a> Structure ProcessAsync Function member return 0 Time ， That is, when the actual test returns normally ， this Polling Function returns success</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>Function returns success </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>Uniquement lorsque le membre de la fonction ProcessAsync dans le paramètre de structure <a class="el" href="structIMPIVSInterface.html">IMPIVSInterface</a> renvoie 0 lorsque le canal est créé, c'est-à-dire lorsque la détection réelle revient normalement, la fonction d'interrogation renvoie le succès</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>无 </dd></dl>
 
 </div>
 </div>
@@ -449,23 +449,23 @@ Polling Results, acquisition results, and release results must correspond strict
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Register channel to channel group</p>
+<p>Enregistrer la chaîne dans le groupe de chaînes</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">GrpNum</td><td>IVS Register channel to channel group</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">ChnNum</td><td>IVS Channel number corresponding to the function</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">GrpNum</td><td>IVS功能对应的通道组号</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ChnNum</td><td>Fonction IVS numéro de canal correspondant</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>Channel number corresponding to the function </td></tr>
-    <tr><td class="paramname">-1</td><td>Channel number corresponding to the function</td></tr>
+    <tr><td class="paramname">0</td><td>成功 </td></tr>
+    <tr><td class="paramname">-1</td><td>失败</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarks</dt><dd>Will be numbered Chnnum The channel registered to the number is Grpnum Channel group</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>Channel group </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>Enregistrez le numéro de canal Chnnum dans le numéro de groupe de canaux Grpnum</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>无 </dd></dl>
 
 </div>
 </div>
@@ -484,24 +484,24 @@ Polling Results, acquisition results, and release results must correspond strict
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Release to Datacallback Parameters frame</p>
+<p>Relâchez à Datacallback Paramètres frame</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">vaddr</td><td>Freed space virtual address</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">L'adresse</td><td>virtuelle de l'espace libéré par vaddr</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>Freed space virtual address </td></tr>
-    <tr><td class="paramname">-1</td><td>Freed space virtual address</td></tr>
+    <tr><td class="paramname">0</td><td>成功 </td></tr>
+    <tr><td class="paramname">-1</td><td>失败</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarks</dt><dd>Must use this function to release the pass to Datacallback Must use this function to release the pass to frame parameter ， Otherwise, it will definitely cause a deadlock. </dd>
+<dl class="section remark"><dt>Remarks</dt><dd>Cette fonction doit être utilisée pour libérer le paramètre de trame passé au Datacallback, sinon cela provoquera définitivement un blocage. </dd>
 <dd>
-This interface is only for algorithm providers ， Customers do not need to pay attention to the use of algorithms.</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>Customers do not need to pay attention to the use of algorithms. </dd></dl>
+Cette interface n'est utilisée que par les fournisseurs d'algorithmes et les clients qui utilisent des algorithmes n'ont pas besoin d'y prêter attention.</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>无 </dd></dl>
 
 </div>
 </div>
@@ -530,24 +530,24 @@ This interface is only for algorithm providers ， Customers do not need to pay 
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Output the corresponding result IVS Result resource calculated by function</p>
+<p>释放 IVS Ressource de résultat calculée par fonction</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">GrpNum</td><td>Channel group number</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">ChnNum</td><td>IVS Channel group number</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">result</td><td>IVS Channel group number</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">Numéro</td><td>de groupe de canaux GrpNum</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ChnNum</td><td>IVS功能对应的通道号</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">result</td><td>Le résultat de sortie du numéro de canal correspondant à la fonction IVS</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>Channel group number </td></tr>
-    <tr><td class="paramname">-1</td><td>Channel group number</td></tr>
+    <tr><td class="paramname">0</td><td>成功 </td></tr>
+    <tr><td class="paramname">-1</td><td>失败</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarks</dt><dd>Channel group number IVS Channel group number , Release its output result resources .</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>Release its output result resources </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>Selon les canaux liés par différentes fonctions IVS, les ressources de résultat de sortie sont libérées.</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>无 </dd></dl>
 
 </div>
 </div>
@@ -576,22 +576,22 @@ This interface is only for algorithm providers ， Customers do not need to pay 
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Set channel algorithm parameters</p>
+<p>Définir les paramètres de l'algorithme de canal</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">ChnNum</td><td>IVS Set channel algorithm parameters </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">param</td><td>Set channel algorithm parameters</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ChnNum</td><td>IVS功能对应的通道号 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">param</td><td>算法参数虚拟地址指针</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>Set channel algorithm parameters </td></tr>
-    <tr><td class="paramname">-1</td><td>Set channel algorithm parameters</td></tr>
+    <tr><td class="paramname">0</td><td>成功 </td></tr>
+    <tr><td class="paramname">-1</td><td>失败</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section attention"><dt>Attention</dt><dd>Set channel algorithm parameters </dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>无 </dd></dl>
 
 </div>
 </div>
@@ -610,22 +610,22 @@ This interface is only for algorithm providers ， Customers do not need to pay 
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Channel starts to receive images</p>
+<p>La chaîne commence à recevoir des images</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">ChnNum</td><td>Channel starts to receive images</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ChnNum</td><td>通道号</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>Channel starts to receive images </td></tr>
-    <tr><td class="paramname">-1</td><td>Channel starts to receive images</td></tr>
+    <tr><td class="paramname">0</td><td>成功 </td></tr>
+    <tr><td class="paramname">-1</td><td>失败</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarks</dt><dd>The channel number is Chnnum of IVS The function channel starts to receive images for intelligent analysis</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>The function channel starts to receive images for intelligent analysis </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>Le canal de fonction IVS dont le numéro de canal est Chnnum commence à recevoir des images pour une analyse intelligente</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>无 </dd></dl>
 
 </div>
 </div>
@@ -644,22 +644,22 @@ This interface is only for algorithm providers ， Customers do not need to pay 
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Channel stops receiving images</p>
+<p>La chaîne cesse de recevoir des images</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">ChnNum</td><td>Channel stops receiving images</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ChnNum</td><td>通道号</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>Channel stops receiving images </td></tr>
-    <tr><td class="paramname">-1</td><td>Channel stops receiving images</td></tr>
+    <tr><td class="paramname">0</td><td>成功 </td></tr>
+    <tr><td class="paramname">-1</td><td>失败</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarks</dt><dd>Channel stops receiving images Chnnum Channel stops receiving images IVS Function channel stops receiving images ， Pause intelligent analysis</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>Pause intelligent analysis </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>Le canal de fonction IVS dont le numéro de canal est Chnnum cesse de recevoir des images et suspend l'analyse intelligente</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>无 </dd></dl>
 
 </div>
 </div>
@@ -678,22 +678,22 @@ This interface is only for algorithm providers ， Customers do not need to pay 
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Cancel channel from channel group</p>
+<p>Annuler la chaîne du groupe de chaînes</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">ChnNum</td><td>IVS Cancel channel from channel group</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ChnNum</td><td>IVS功能对应的通道号</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>Cancel channel from channel group </td></tr>
-    <tr><td class="paramname">-1</td><td>Cancel channel from channel group</td></tr>
+    <tr><td class="paramname">0</td><td>成功 </td></tr>
+    <tr><td class="paramname">-1</td><td>失败</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarks</dt><dd>The minor number is Grpnum The logout number in the channel group is Chnnum aisle</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>aisle </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>Désenregistrer le canal numéroté Chnnum du groupe de canaux numéroté Grpnum</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>无 </dd></dl>
 
 </div>
 </div>

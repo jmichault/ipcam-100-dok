@@ -63,20 +63,12 @@ $(function() {
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">IMP_FrameSource<div class="ingroups"><a class="el" href="group__imp.html">IMP(Ingenic Media Platform)</a></div></div>  </div>
+<div class="title">IMP_FrameSource</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Video source ， Yes IMP Image data source of the system ， You can set the image resolution, crop, zoom and other attributes ， And the back-end noise reduction function.  
+<p>La source vidéo est la source de données d'image du système IMP. La résolution d'image, le recadrage, la mise à l'échelle et d'autres attributs peuvent être définis, ainsi que la fonction de réduction du bruit d'arrière-plan.  
 <a href="#details">More...</a></p>
-<div class="dynheader">
-Collaboration diagram for IMP_FrameSource:</div>
-<div class="dyncontent">
-<center><table><tr><td><img src="group__IMP__FrameSource.png" border="0" alt="" usemap="#group____IMP____FrameSource"/>
-<map name="group____IMP____FrameSource" id="group____IMP____FrameSource">
-</map>
-</td></tr></table></center>
-</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -118,17 +110,17 @@ Functions</h2></td></tr>
 <tr class="separator:gacbb1d1fe8cc98ed0a4d8b4e3ed74eec7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Video source ， Yes IMP Image data source of the system ， You can set the image resolution, crop, zoom and other attributes ， And the back-end noise reduction function. </p>
-<p>FrameSource Is a data flow related concept ， Image resolution can be set ， Format etc. ， And provide the original image to the back end.</p>
-<p>FrameSource The structure is as follows: </p><div class="image">
+<p>La source vidéo est la source de données d'image du système IMP. La résolution d'image, le recadrage, la mise à l'échelle et d'autres attributs peuvent être définis, ainsi que la fonction de réduction du bruit d'arrière-plan. </p>
+<p>FrameSource Est un concept lié au flux de données ， La résolution de l'image peut être définie ， Format etc. ， Et fournissez l'image originale à l'arrière-plan.</p>
+<p>FrameSource La structure est la suivante: </p><div class="image">
 <img src="FrameSource.png" alt="FrameSource.png"/>
 </div>
-<p> As shown in FIG ，FrameSource There are three outputs ， All three outputs can be used for encoding ， among them:</p><ul>
-<li>Channel 0 Generally as a high-definition video stream</li>
-<li>Channel 1 Generally as a standard definition video stream ， or IVS Only algorithmic data source</li>
-<li>Channel 2 Is to expand the channel ， Use in special applications ， Generally not recommended</li>
+<p> Comme le montre la figure ，FrameSource Il y a trois sorties ， Les trois sorties peuvent être utilisées pour l'encodage ， parmi eux:</p><ul>
+<li>Channel 0 Généralement sous forme de flux vidéo haute définition</li>
+<li>Channel 1 Généralement en tant que flux vidéo de définition standard ， ou IVS Seule source de données algorithmique</li>
+<li>Channel 2 Est d'élargir le canal ， Utilisation dans des applications spéciales ， Généralement déconseillé</li>
 </ul>
-<p>FrameSource The initialization steps are as follows (take two outputs as an example): </p><div class="fragment"><div class="line"><a class="code" href="structIMPFSChnAttr.html">IMPFSChnAttr</a> fs_chn_attr;</div><div class="line">fs_chn_attr.<a class="code" href="structIMPFSChnAttr.html#a904df5e9bf3fdeb216993071f14e8a08">pixFmt</a> = <a class="code" href="imp__common_8h.html#a41dd79af5cc134fac5e24c98272824c0ade518e7f48c29de6b877a63115d970dc">PIX_FMT_NV12</a>;</div><div class="line">fs_chn_attr.<a class="code" href="structIMPFSChnAttr.html#a73f08a5799791ca5d8238c254440281a">outFrmRateNum</a> = SENSOR_FRAME_RATE;</div><div class="line">fs_chn_attr.<a class="code" href="structIMPFSChnAttr.html#ad3d58bb119f3fa6cd97e93fffd8f984f">outFrmRateDen</a> = 1;</div><div class="line">fs_chn_attr.<a class="code" href="structIMPFSChnAttr.html#aa752418a19c20886f7f9cb4108e588c7">nrVBs</a> = 3;</div><div class="line">fs_chn_attr.<a class="code" href="structIMPFSChnAttr.html#a8f2b5574b53fd0af56143b6fecc50a2e">type</a> = <a class="code" href="group__IMP__FrameSource.html#gga155b3408c5b20686f020a351a56d34a1aa44fd626db4a97c40ffc9f231396d67c">FS_PHY_CHANNEL</a>;</div><div class="line"></div><div class="line">fs_chn_attr.<a class="code" href="structIMPFSChnAttr.html#afda01a1a3dddd00113ccf85285806c8c">crop</a>.<a class="code" href="structIMPFSChnCrop.html#a9c4012720caf98c415eacb924641654f">enable</a> = 1;</div><div class="line">fs_chn_attr.<a class="code" href="structIMPFSChnAttr.html#afda01a1a3dddd00113ccf85285806c8c">crop</a>.<a class="code" href="structIMPFSChnCrop.html#a88d91dcc5ae464d3ef50655fba122014">top</a> = 0;</div><div class="line">fs_chn_attr.<a class="code" href="structIMPFSChnAttr.html#afda01a1a3dddd00113ccf85285806c8c">crop</a>.<a class="code" href="structIMPFSChnCrop.html#a6c373b69e17b80f538897131b128cc03">left</a> = 0;</div><div class="line">fs_chn_attr.<a class="code" href="structIMPFSChnAttr.html#afda01a1a3dddd00113ccf85285806c8c">crop</a>.<a class="code" href="structIMPFSChnCrop.html#a73a6138ee22ef20601976e70ec8c3319">width</a> = 960;</div><div class="line">fs_chn_attr.<a class="code" href="structIMPFSChnAttr.html#afda01a1a3dddd00113ccf85285806c8c">crop</a>.<a class="code" href="structIMPFSChnCrop.html#a0b8051634500f1b10f25758ed390a63d">height</a> = 640;</div><div class="line"></div><div class="line">fs_chn_attr.<a class="code" href="structIMPFSChnAttr.html#a62a17931c70bd2f3b6300d6f2997fb97">scaler</a>.<a class="code" href="structIMPFSChnScaler.html#ab85513e7e9f95dc8dea6ba0e04cdd130">enable</a> = 1;</div><div class="line">fs_chn_attr.<a class="code" href="structIMPFSChnAttr.html#a62a17931c70bd2f3b6300d6f2997fb97">scaler</a>.<a class="code" href="structIMPFSChnScaler.html#a71886a39893389b1fdd8863cffb563c3">outwidth</a> = 320;</div><div class="line">fs_chn_attr.<a class="code" href="structIMPFSChnAttr.html#a62a17931c70bd2f3b6300d6f2997fb97">scaler</a>.<a class="code" href="structIMPFSChnScaler.html#a3751423567c22348b71675abdce55f13">outheight</a> = 240;</div><div class="line"></div><div class="line">ret = <a class="code" href="group__IMP__FrameSource.html#ga997d40cc97abc963f96b2ee963f27220">IMP_FrameSource_CreateChn</a>(0, &amp;fs_chn_attr); <span class="comment">//step.1  create Channel 0</span></div><div class="line"><span class="keywordflow">if</span> (ret &lt; 0) {</div><div class="line">    printf(<span class="stringliteral">&quot;FrameSource_CreateChn(0) error\n&quot;</span>);</div><div class="line">    <span class="keywordflow">goto</span> createchn_err;</div><div class="line">}</div><div class="line"></div><div class="line">ret = <a class="code" href="group__IMP__FrameSource.html#ga1c59f4918ceae7635123da1d253b5904">IMP_FrameSource_EnableChn</a>(0); <span class="comment">//step.2 Enable Channel 0，channel 0 Start outputting image </span></div><div class="line"><span class="keywordflow">if</span> (ret &lt; 0) {</div><div class="line">    printf(<span class="stringliteral">&quot;EnableChn(0) error\n&quot;</span>;</div><div class="line">    <span class="keywordflow">return</span> enablechn_err;</div><div class="line">}</div><div class="line"></div><div class="line"><span class="comment">// So far ，FrameSource Start to the back end Group Transfer data </span></div><div class="line"></div><div class="line">ret = <a class="code" href="group__IMP__FrameSource.html#ga9f8c6b444fefa927f0bc02d0031f34d8">IMP_FrameSource_DisableChn</a>(0); <span class="comment">//step.3 Disable channel 0，channel 0 Stop outputting images </span></div><div class="line"><span class="keywordflow">if</span> (ret &lt; 0) {</div><div class="line">    printf(<span class="stringliteral">&quot;FrameSource_DisableChn(0) error\n&quot;</span>);</div><div class="line">    <span class="keywordflow">return</span> disablechn_err;</div><div class="line">}</div><div class="line"></div><div class="line">ret = <a class="code" href="group__IMP__FrameSource.html#gae800f0c0ad967bcd2692087d17ebb685">IMP_FrameSource_DestroyChn</a>(0); <span class="comment">//step.4  destroy channel 0</span></div><div class="line"><span class="keywordflow">if</span> (ret &lt; 0) {</div><div class="line">    printf(<span class="stringliteral">&quot;FrameSource_DestroyChn error\n&quot;</span>);</div><div class="line">    <span class="keywordflow">return</span> destorychn_err;</div><div class="line">}</div></div><!-- fragment --><p> For more usage methods, please refer to Samples </p>
+<p>FrameSource Les étapes d'initialisation sont les suivantes (prenez deux sorties comme exemple): </p><div class="fragment"><div class="line"><a class="code" href="structIMPFSChnAttr.html">IMPFSChnAttr</a> fs_chn_attr;</div><div class="line">fs_chn_attr.<a class="code" href="structIMPFSChnAttr.html#a904df5e9bf3fdeb216993071f14e8a08">pixFmt</a> = <a class="code" href="imp__common_8h.html#a41dd79af5cc134fac5e24c98272824c0ade518e7f48c29de6b877a63115d970dc">PIX_FMT_NV12</a>;</div><div class="line">fs_chn_attr.<a class="code" href="structIMPFSChnAttr.html#a73f08a5799791ca5d8238c254440281a">outFrmRateNum</a> = SENSOR_FRAME_RATE;</div><div class="line">fs_chn_attr.<a class="code" href="structIMPFSChnAttr.html#ad3d58bb119f3fa6cd97e93fffd8f984f">outFrmRateDen</a> = 1;</div><div class="line">fs_chn_attr.<a class="code" href="structIMPFSChnAttr.html#aa752418a19c20886f7f9cb4108e588c7">nrVBs</a> = 3;</div><div class="line">fs_chn_attr.<a class="code" href="structIMPFSChnAttr.html#a8f2b5574b53fd0af56143b6fecc50a2e">type</a> = <a class="code" href="group__IMP__FrameSource.html#gga155b3408c5b20686f020a351a56d34a1aa44fd626db4a97c40ffc9f231396d67c">FS_PHY_CHANNEL</a>;</div><div class="line"></div><div class="line">fs_chn_attr.<a class="code" href="structIMPFSChnAttr.html#afda01a1a3dddd00113ccf85285806c8c">crop</a>.<a class="code" href="structIMPFSChnCrop.html#a9c4012720caf98c415eacb924641654f">enable</a> = 1;</div><div class="line">fs_chn_attr.<a class="code" href="structIMPFSChnAttr.html#afda01a1a3dddd00113ccf85285806c8c">crop</a>.<a class="code" href="structIMPFSChnCrop.html#a88d91dcc5ae464d3ef50655fba122014">top</a> = 0;</div><div class="line">fs_chn_attr.<a class="code" href="structIMPFSChnAttr.html#afda01a1a3dddd00113ccf85285806c8c">crop</a>.<a class="code" href="structIMPFSChnCrop.html#a6c373b69e17b80f538897131b128cc03">left</a> = 0;</div><div class="line">fs_chn_attr.<a class="code" href="structIMPFSChnAttr.html#afda01a1a3dddd00113ccf85285806c8c">crop</a>.<a class="code" href="structIMPFSChnCrop.html#a73a6138ee22ef20601976e70ec8c3319">width</a> = 960;</div><div class="line">fs_chn_attr.<a class="code" href="structIMPFSChnAttr.html#afda01a1a3dddd00113ccf85285806c8c">crop</a>.<a class="code" href="structIMPFSChnCrop.html#a0b8051634500f1b10f25758ed390a63d">height</a> = 640;</div><div class="line"></div><div class="line">fs_chn_attr.<a class="code" href="structIMPFSChnAttr.html#a62a17931c70bd2f3b6300d6f2997fb97">scaler</a>.<a class="code" href="structIMPFSChnScaler.html#ab85513e7e9f95dc8dea6ba0e04cdd130">enable</a> = 1;</div><div class="line">fs_chn_attr.<a class="code" href="structIMPFSChnAttr.html#a62a17931c70bd2f3b6300d6f2997fb97">scaler</a>.<a class="code" href="structIMPFSChnScaler.html#a71886a39893389b1fdd8863cffb563c3">outwidth</a> = 320;</div><div class="line">fs_chn_attr.<a class="code" href="structIMPFSChnAttr.html#a62a17931c70bd2f3b6300d6f2997fb97">scaler</a>.<a class="code" href="structIMPFSChnScaler.html#a3751423567c22348b71675abdce55f13">outheight</a> = 240;</div><div class="line"></div><div class="line">ret = <a class="code" href="group__IMP__FrameSource.html#ga997d40cc97abc963f96b2ee963f27220">IMP_FrameSource_CreateChn</a>(0, &amp;fs_chn_attr); <span class="comment">//step.1  créer Channel 0</span></div><div class="line"><span class="keywordflow">if</span> (ret &lt; 0) {</div><div class="line">    printf(<span class="stringliteral">&quot;FrameSource_CreateChn(0) error\n&quot;</span>);</div><div class="line">    <span class="keywordflow">goto</span> createchn_err;</div><div class="line">}</div><div class="line"></div><div class="line">ret = <a class="code" href="group__IMP__FrameSource.html#ga1c59f4918ceae7635123da1d253b5904">IMP_FrameSource_EnableChn</a>(0); <span class="comment">//step.2 Enable Channel 0，channel 0 Lancer la sortie de l&#39;image </span></div><div class="line"><span class="keywordflow">if</span> (ret &lt; 0) {</div><div class="line">    printf(<span class="stringliteral">&quot;EnableChn(0) error\n&quot;</span>;</div><div class="line">    <span class="keywordflow">return</span> enablechn_err;</div><div class="line">}</div><div class="line"></div><div class="line"><span class="comment">// Jusque là ，FrameSource Commencez par l&#39;arrière Group Transférer des données </span></div><div class="line"></div><div class="line">ret = <a class="code" href="group__IMP__FrameSource.html#ga9f8c6b444fefa927f0bc02d0031f34d8">IMP_FrameSource_DisableChn</a>(0); <span class="comment">//step.3 Disable channel 0，channel 0 Arrêter la sortie des images </span></div><div class="line"><span class="keywordflow">if</span> (ret &lt; 0) {</div><div class="line">    printf(<span class="stringliteral">&quot;FrameSource_DisableChn(0) error\n&quot;</span>);</div><div class="line">    <span class="keywordflow">return</span> disablechn_err;</div><div class="line">}</div><div class="line"></div><div class="line">ret = <a class="code" href="group__IMP__FrameSource.html#gae800f0c0ad967bcd2692087d17ebb685">IMP_FrameSource_DestroyChn</a>(0); <span class="comment">//step.4  détruire channel 0</span></div><div class="line"><span class="keywordflow">if</span> (ret &lt; 0) {</div><div class="line">    printf(<span class="stringliteral">&quot;FrameSource_DestroyChn error\n&quot;</span>);</div><div class="line">    <span class="keywordflow">return</span> destorychn_err;</div><div class="line">}</div></div><!-- fragment --><p> Pour plus de méthodes d'utilisation, veuillez vous référer à Samples </p>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="ga155b3408c5b20686f020a351a56d34a1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga155b3408c5b20686f020a351a56d34a1">&#9670;&nbsp;</a></span>IMPFSChnType</h2>
@@ -142,9 +134,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga155b3408c5b20686f020a351a56d34a1aa44fd626db4a97c40ffc9f231396d67c"></a>FS_PHY_CHANNEL&#160;</td><td class="fielddoc"><p>Physical channel </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga155b3408c5b20686f020a351a56d34a1aa44fd626db4a97c40ffc9f231396d67c"></a>FS_PHY_CHANNEL&#160;</td><td class="fielddoc"><p>Canal physique </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga155b3408c5b20686f020a351a56d34a1aa7d8a412ff0cf06f92fad8b1a976bd9f"></a>FS_EXT_CHANNEL&#160;</td><td class="fielddoc"><p>Expand the channel </p>
+<tr><td class="fieldname"><a id="gga155b3408c5b20686f020a351a56d34a1aa7d8a412ff0cf06f92fad8b1a976bd9f"></a>FS_EXT_CHANNEL&#160;</td><td class="fielddoc"><p>Élargir la chaîne </p>
 </td></tr>
 </table>
 
@@ -176,25 +168,24 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Create channel</p>
+<p>Créer une chaîne</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">chnNum</td><td>Channel number </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">chnAttr</td><td>Channel attribute structure pointer</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">chnNum</td><td>numéro de canal </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">chnAttr</td><td>Pointeur de structure d'attribut de canal</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>success </td></tr>
-    <tr><td class="paramname">non-</td><td>0 failure ， Return error code</td></tr>
+    <tr><td class="paramname">0</td><td>succès </td></tr>
+    <tr><td class="paramname">Échec</td><td>différent de zéro, retour du code d'erreur</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarks</dt><dd>Return error code ， Provide data sources for back-end modules ; <br />
- You can set the relevant attributes of the channel ， Include: image width ， Include: image width ， Include: image width ， The output frame rate of the channel , Cache buf number ， Crop and zoom attributes. <br />
- for T10， aisle 0 [[[ 1 Can only be set as a physical channel ， Can only be set as a physical channel 2,3 Can only be set as an expansion channel.</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>no. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>Créez un canal pour fournir une source de données pour le module principal; Vous pouvez définir les attributs pertinents du canal ， Inclure: largeur de l'image ， 图片高度 ， 图片格式 ， La fréquence d'images de sortie du canal , Cache buf numéro ， Attributs de recadrage et de zoom. <br />
+ pour T10， rayon 0 [[[ 1 Ne peut être défini que comme canal physique ， 通道 2,3 Peut uniquement être défini comme canal d'extension.</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>non. </dd></dl>
 
 </div>
 </div>
@@ -213,22 +204,22 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Destroy channel</p>
+<p>Détruire le canal</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">chnNum</td><td>Destroy channel</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">chnNum</td><td>通道号</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>Destroy channel </td></tr>
-    <tr><td class="paramname">Destroy</td><td>channel 0 Destroy channel ， Destroy channel</td></tr>
+    <tr><td class="paramname">0</td><td>成功 </td></tr>
+    <tr><td class="paramname">非0</td><td>失败，返回错误码</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarks</dt><dd>Destroy channel</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>If the program has called IMP_FrameSource_EnableChn， Must call IMP_FrameSource_DisableChn after that ， Use this function again. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>Détruire le canal</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Si le programme a appelé IMP_FrameSource_EnableChn, vous devez appeler IMP_FrameSource_DisableChn avant d'utiliser cette fonction. </dd></dl>
 
 </div>
 </div>
@@ -247,22 +238,22 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Close the channel</p>
+<p>Fermer la chaîne</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">chnNum</td><td>Close the channel</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">chnNum</td><td>通道号</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>Close the channel </td></tr>
-    <tr><td class="paramname">Close</td><td>the channel 0 Close the channel ， Close the channel</td></tr>
+    <tr><td class="paramname">0</td><td>成功 </td></tr>
+    <tr><td class="paramname">非0</td><td>失败，返回错误码</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarks</dt><dd>Close the channel</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>Close the channel </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>无</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>无 </dd></dl>
 
 </div>
 </div>
@@ -281,22 +272,22 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Enable channel</p>
+<p>Activer le canal</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">chnNum</td><td>Enable channel</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">chnNum</td><td>通道号</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>Enable channel </td></tr>
-    <tr><td class="paramname">Enable</td><td>channel 0 Enable channel ， Enable channel</td></tr>
+    <tr><td class="paramname">0</td><td>成功 </td></tr>
+    <tr><td class="paramname">非0</td><td>失败，返回错误码</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarks</dt><dd>no</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>Before using this function ， It must be ensured that the enabled channel has been created . </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>non</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Avant d'utiliser cette fonction, vous devez vous assurer que le canal activé a été créé. </dd></dl>
 
 </div>
 </div>
@@ -325,23 +316,23 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get channel properties</p>
+<p>Obtenir les propriétés de la chaîne</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">chnNum</td><td>Get channel properties</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">chnAttr</td><td>Get channel properties</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">chnNum</td><td>通道号</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">chnAttr</td><td>通道属性结构体指针</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>Get channel properties </td></tr>
-    <tr><td class="paramname">Get</td><td>channel properties 0 Get channel properties ， Get channel properties</td></tr>
+    <tr><td class="paramname">0</td><td>成功 </td></tr>
+    <tr><td class="paramname">非0</td><td>失败，返回错误码</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarks</dt><dd>Get the relevant attributes of the channel ， Get the relevant attributes of the channel ， Get the relevant attributes of the channel ， Get the relevant attributes of the channel ， Get the relevant attributes of the channel , Get the relevant attributes of the channel buf Get the relevant attributes of the channel ， Crop and zoom properties .</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>Crop and zoom properties </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>Les attributs pertinents du canal peuvent être obtenus, notamment: la largeur de l'image, la hauteur de l'image, le format de l'image, la fréquence d'images de sortie du canal, le nombre de tampons tampons, les attributs de rognage et de mise à l'échelle.</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>无 </dd></dl>
 
 </div>
 </div>
@@ -370,29 +361,29 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Acquired image</p>
+<p>Image acquise</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">chnNum</td><td>Acquired image </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">frame</td><td>Acquired image</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">chnNum</td><td>通道的编号 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">image</td><td>capturée par cadre</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>Acquired image </td></tr>
-    <tr><td class="paramname">Acquired</td><td>image 0 Acquired image ， Acquired image</td></tr>
+    <tr><td class="paramname">0</td><td>成功 </td></tr>
+    <tr><td class="paramname">非0</td><td>失败，返回错误码</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section remark"><dt>Remarks</dt><dd></dd></dl>
 <ol type="1">
-<li>This interface can obtain the video image information of the specified channel. The image information mainly includes: the width, height, pixel format of the image, and the starting address of the image data.</li>
-<li>This interface is valid only after the channel has been enabled.</li>
-<li>Support multiple acquisitions and then release ， However, it is recommended to pair the acquisition and release interfaces.</li>
-<li>The default timeout period of this interface is 2s， The default timeout period of this interface is 2s Still have not got the image inside ， The timeout returns.</li>
+<li>Cette interface peut obtenir les informations d'image vidéo du canal spécifié.</li>
+<li>Cette interface n'est valide qu'après activation du canal.</li>
+<li>Prend en charge plusieurs acquisitions, puis libère ， Cependant, il est recommandé de coupler les interfaces d'acquisition et de libération.</li>
+<li>Le délai d'expiration par défaut de cette interface est 2s， 即 2s Je n'ai toujours pas l'image à l'intérieur ， Le délai d'expiration revient.</li>
 </ol>
-<dl class="section attention"><dt>Attention</dt><dd>The timeout returns. . </dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>无. </dd></dl>
 
 </div>
 </div>
@@ -412,7 +403,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>depth</em>&#160;</td>
+          <td class="paramname"><em>profondeur</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -421,23 +412,23 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Maximum depth of acquired image</p>
+<p>Profondeur maximale de l'image acquise</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">chnNum</td><td>Maximum depth of acquired image </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">depth</td><td>The maximum depth value of the acquired image</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">chnNum</td><td>通道的编号 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">profondeur</td><td>La valeur de profondeur maximale de l'image obtenue</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>The maximum depth value of the acquired image </td></tr>
-    <tr><td class="paramname">The</td><td>maximum depth value of the acquired image 0 The maximum depth value of the acquired image ， The maximum depth value of the acquired image</td></tr>
+    <tr><td class="paramname">0</td><td>成功 </td></tr>
+    <tr><td class="paramname">非0</td><td>失败，返回错误码</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarks</dt><dd>The maximum depth value of the acquired image .</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>The maximum depth value of the acquired image . </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>无.</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>无. </dd></dl>
 
 </div>
 </div>
@@ -466,23 +457,23 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Release the acquired image</p>
+<p>Libérer l'image acquise</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">chnNum</td><td>Release the acquired image </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">frame</td><td>Release the acquired image</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">chnNum</td><td>通道的编号 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">le</td><td>cadre libère l'image acquise</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>Release the acquired image </td></tr>
-    <tr><td class="paramname">Release</td><td>the acquired image 0 Release the acquired image ， Release the acquired image</td></tr>
+    <tr><td class="paramname">0</td><td>成功 </td></tr>
+    <tr><td class="paramname">非0</td><td>失败，返回错误码</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarks</dt><dd>Release the acquired image .</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>Release the acquired image . </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>无.</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>无. </dd></dl>
 
 </div>
 </div>
@@ -511,23 +502,23 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Set channel properties</p>
+<p>Définir les propriétés du canal</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">chnNum</td><td>Set channel properties</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">chnAttr</td><td>Set channel properties</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">chnNum</td><td>通道号</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">chnAttr</td><td>通道属性结构体指针</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>Set channel properties </td></tr>
-    <tr><td class="paramname">Set</td><td>channel properties 0 Set channel properties ， Set channel properties</td></tr>
+    <tr><td class="paramname">0</td><td>成功 </td></tr>
+    <tr><td class="paramname">非0</td><td>失败，返回错误码</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarks</dt><dd>Set channel properties ， Set channel properties ， Set channel properties ， Set channel properties ， Set channel properties , Set channel properties buf Set channel properties ， Set channel properties .</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>Set channel properties </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>Vous pouvez définir les attributs pertinents du canal, notamment: la largeur de l'image, la hauteur de l'image, le format de l'image, la fréquence d'images de sortie du canal, le numéro de tampon du tampon, les attributs de recadrage et de zoom.</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>无 </dd></dl>
 
 </div>
 </div>
@@ -556,31 +547,31 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Set the maximum depth of the image that can be obtained</p>
+<p>Définissez la profondeur maximale de l'image pouvant être obtenue</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">chnNum</td><td>Channel number </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">depth</td><td>Set the maximum depth value of the image that can be obtained</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">chnNum</td><td>numéro de canal </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">profondeur</td><td>Définit la valeur de profondeur maximale de l'image pouvant être obtenue</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>Set the maximum depth value of the image that can be obtained </td></tr>
-    <tr><td class="paramname">Set</td><td>the maximum depth value of the image that can be obtained 0 Set the maximum depth value of the image that can be obtained ， Set the maximum depth value of the image that can be obtained</td></tr>
+    <tr><td class="paramname">0</td><td>成功 </td></tr>
+    <tr><td class="paramname">非0</td><td>失败，返回错误码</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section remark"><dt>Remarks</dt><dd></dd></dl>
 <ol type="1">
-<li>This interface is used to set the number of video image frames buffered in a channel. When the user sets to cache multiple frames of video images ， The user can obtain a certain number of continuous image data.</li>
-<li>If specified depth for 0， Indicates that the system does not need to cache images for this channel ， Therefore, the user cannot obtain the image data of the channel. The system does not cache images for the channel by default ， which is depth The default is 0 .</li>
-<li>The system will automatically update the oldest image data ， To ensure that once users start to get ， You can get the most recent image.</li>
-<li>The system automatically stops caching new images because it cannot get images ， The user also cannot obtain new images. Therefore, users are recommended to ensure that the acquisition and release interfaces are paired.</li>
-<li>The system will automatically update the oldest image data that the user has not yet acquired ， Ensure that the cached image queue is the latest image. Because the user cannot guarantee the speed of acquisition ， The resulting image may not be continuous.</li>
-<li>This function can call location ， There is no requirement. But it can only be used once.</li>
+<li>Cette interface est utilisée pour définir le nombre d'images vidéo mises en mémoire tampon dans un canal. ， L'utilisateur peut obtenir un certain nombre de données d'image en continu.</li>
+<li>Si spécifié depth pour 0， Indique que le système n'a pas besoin de mettre en cache les images pour ce canal ， Par conséquent, l'utilisateur ne peut pas obtenir les données d'image du canal. ， lequel est depth La valeur par défaut est 0 .</li>
+<li>Le système mettra automatiquement à jour les données d'image les plus anciennes ， Pour s'assurer qu'une fois que les utilisateurs commencent à ， Vous pouvez obtenir l'image la plus récente.</li>
+<li>Le système arrête automatiquement de mettre en cache les nouvelles images car il ne peut pas obtenir d'images ， L'utilisateur ne peut pas non plus obtenir de nouvelles images.</li>
+<li>Le système mettra automatiquement à jour les données d'image les plus anciennes que l'utilisateur n'a pas encore acquises ， Assurez-vous que la file d'attente d'images mises en cache est la dernière image. ， L'image résultante peut ne pas être continue.</li>
+<li>Cette fonction peut appeler la localisation ， Il n'y a aucune exigence.</li>
 </ol>
-<dl class="section attention"><dt>Attention</dt><dd>There is no requirement. But it can only be used once. . </dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>non. </dd></dl>
 
 </div>
 </div>

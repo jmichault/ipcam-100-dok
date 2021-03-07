@@ -17,103 +17,103 @@ extern "C"
 #endif /* __cplusplus */
 
 /**
- * @file
- * IMP  Audio input and output header files 
+ * @file 
+ * IMP Fichiers d'en-tête d'entrée et de sortie audio 
  */
 
 /**
  * @defgroup IMP_Audio
- * @ingroup imp
- * @brief  Audio module ， Including recording and playback, audio codec, volume and gain settings, echo cancellation, automatic gain and other functions 
+ * @ingroup lutin
+ * @brief Module audio, comprenant l'enregistrement et la lecture, le codec audio, les paramètres de volume et de gain, l'annulation d'écho, le gain automatique et d'autres fonctions
  *
- * @section audio_summary 1  Overview 
- *  Audio function includes audio input , Audio output , Echo cancellation , Audio encoding and audio decoding 5 Modules . \n
- *  Among them, the audio input and audio output have the concept of equipment and channels . One of the MIC We think it is a Device, And one MIC There can be multiple Channel enter . \n
- *  The same one SPK We think it's an announcement Device, We think it's an announcement SPK There can also be multiple Channel Output . \n
- *  Audio of the current version API One Device Only supports one Channel. \n
- *  Echo cancellation is located in the audio input interface , Specific instructions are reflected in the function description . \n
- *  Audio encoding current audio API Medium support PT_G711A [[[ PT_G711U with PT_G726 Format audio encoding , If you need to add a new encoding method , Need to register the encoder . \n
- *  Audio decoding current audio API Audio decoding current audio PT_G711A Audio decoding current audio PT_G711U Audio decoding current audio PT_G726 Format audio decoding , If you need to add a new decoding method , Need to register decoder . \n
- * @section audio_function_description 2  Function description 
- *  The following is a specific description of each module 
- * @subsection audio_in 2.1  Audio input 
- *  Audio input Device ID  Correspondence , 0:  Corresponding number MIC  1:  Corresponding simulation MIC \n
- *  Corresponding simulation Channel current API Only supports 1 Channels . \n
- *  Audio input volume setting , The range of volume is [-30 ~ 120]. -30 Stands for mute ,120 Means to amplify the sound 30dB, Step size 0.5dB. among them 60 Is a critical point for the volume setting ，\n
- *  The software does not increase or decrease the volume at this value ， When the volume value is less than 60 Time ， Every drop 1， Volume down 0.5dB ; When the volume value is greater than 60 ; When the volume value is greater than ， Increase 1， Volume increase 0.5dB . 
- * @subsection audio_out 2.2  . 
- *  . Device ID  . , 0:  Corresponding to the default SPK 1:  Corresponds to other SPK \n
- *  Corresponds to other Channel Corresponds to other API Corresponds to other 1 Corresponds to other . \n
- *  Audio output volume setting , Audio output volume setting [-30 ~ 120]. -30 Audio output volume setting ,120 Audio output volume setting 30dB, Audio output volume setting 0.5dB. Audio output volume setting 60 Audio output volume setting ，\n
- *  Audio output volume setting ， Audio output volume setting 60 Audio output volume setting ， Audio output volume setting 1， Audio output volume setting 0.5dB Audio output volume setting 60 Audio output volume setting ， Audio output volume setting 1， Audio output volume setting 0.5dB. \n
- * @subsection audio_aec 2.3  Audio output volume setting 
- *  Echo cancellation is a function of the audio input interface , Therefore, the audio input device and channel must be enabled before enabling echo cancellation . \n
- *  Echo cancellation currently supports audio sampling rate 8K Echo cancellation currently supports audio sampling rate 16K， The number of data samples in one frame is 10ms Integer multiples of audio data (such as: 8K Sampling Rate ，  The data sent is: 8000  ×  2 / 100 = 160byte Integer multiples of). \n
- *  Echo cancellation for different devices ， Different packages ， Echo cancellation will have different effects . \n
- *  Echo cancellation currently does not support adaptive ， So there are separate echo cancellation parameters for different devices , \n
- *  The parameter file for echo cancellation is located in /etc/webrtc_profile.ini  Configuration file . \n
- *  The configuration file format is as follows ( The three main parameters that need to be debugged are listed below ): \n
+ * @section Présentation de l'audio_summary 1
+ * La fonction audio comprend une entrée audio , Sortie audio , Annulation d'écho , Encodage audio et décodage audio 5 Modules . \n
+ * Parmi eux, l'entrée audio et la sortie audio ont le concept d'équipement et de canaux . L'un des MIC Nous pensons que c'est un Device, Et une MIC Il peut y avoir plusieurs Channel Entrer . \n
+ * Le même SPK Nous pensons que c'est une annonce Device, And one SPK Il peut également y avoir plusieurs Channel Production . \n
+ * Audio de la version actuelle API Une Device Prend en charge un seul Channel. \n
+ * L'annulation de l'écho est située dans l'interface d'entrée audio , Des instructions spécifiques sont reflétées dans la description de la fonction . \n
+ * Codage audio audio actuel API Support moyen PT_G711A [[[ PT_G711U avec PT_G726 Formater l'encodage audio , Si vous devez ajouter une nouvelle méthode d'encodage , Besoin d'enregistrer l'encodeur . \n
+ * Décodage audio audio actuel API Medium support PT_G711A [[[ PT_G711U with PT_G726 Formater le décodage audio , Si vous devez ajouter une nouvelle méthode de décodage , Besoin d'enregistrer le décodeur . \n
+ * @section audio_function_description 2 Description de la fonction
+ * Ce qui suit est une description spécifique de chaque module 
+ * @subsection entrée audio audio_in 2.1
+ * Entrée audio Device ID Correspondance , 0: Numéro correspondant MIC 1: Simulation correspondante MIC \n
+ * Audio input Channel actuel API Supporte uniquement 1 Canaux . \n
+ * Réglage du volume d'entrée audio , La plage de volume est [-30 ~ 120]. -30 Signifie muet ,120 Moyens d'amplifier le son 30dB, Taille de pas 0.5dB. parmi eux 60 Est un point critique pour le réglage du volume ，\n
+ * Le logiciel n'augmente ni ne diminue le volume à cette valeur ， Lorsque la valeur du volume est inférieure à 60 Temps ， Chaque goutte 1， Baisser le volume 0.5dB ; Lorsque la valeur du volume est supérieure à 60 Time ， Augmenter 1， Augmentation de volume 0.5dB . 
+ * @subsection audio_out 2.2 Sortie audio
+ * Audio output Device ID Correspondence , 0: Correspondant à la valeur par défaut SPK 1: Correspondant à d'autres SPK \n
+ * Audio output Channel current API Only supports 1 Channels . \n
+ * Réglage du volume de sortie audio , The range of volume is [-30 ~ 120]. -30 Stands for mute ,120 Means to amplify the sound 30dB, Step size 0.5dB. among them 60 Is a critical point for the volume setting ，\n
+ * The software does not increase or decrease the volume at this value ， When the volume value is less than 60 Time ， Every drop 1， Volume down 0.5dB ; When the volume value is greater than 60 Time ， Increase 1， Volume increase 0.5dB. \n
+ * @subsection audio_aec 2.3 Annulation de l'écho
+ * L'annulation de l'écho est une fonction de l'interface d'entrée audio , Par conséquent, le périphérique d'entrée audio et le canal doivent être activés avant d'activer l'annulation d'écho . \n
+ * L'annulation de l'écho prend actuellement en charge le taux d'échantillonnage audio 8K with 16K， Le nombre d'échantillons de données dans une trame est 10ms Multiples entiers de données audio (tels que: 8K Taux d'échantillonnage ， Les données envoyées sont: 8000 × 2 / 100 = 160byte Multiples entiers de). \n
+ * Annulation d'écho pour différents appareils ， Différents forfaits ， L'annulation de l'écho aura des effets différents . \n
+ * L'annulation d'écho ne prend actuellement pas en charge la fonction adaptative ， Il existe donc des paramètres d'annulation d'écho distincts pour différents appareils , \n
+ * Le fichier de paramètres pour l'annulation d'écho se trouve dans /etc/webrtc_profile.ini Fichier de configuration . \n
+ * Le format du fichier de configuration est le suivant ( Les trois principaux paramètres à déboguer sont répertoriés ci-dessous ): \n
  * [Set_Far_Frame] \n
  * Frame_V=0.3 \n
  * [Set_Near_Frame] \n
  * Frame_V=0.1 \n
  * delay_ms=150 \n
  *
- *  The first label [Set_Far_Frame] The content in represents the remote parameter , which is SPK End playback data parameters . \n
- * Fram_V  Represents the audio amplitude ratio , Adjust this parameter to adjust the amplitude of the playback data ( This amplitude is only used for echo cancellation ). \n
- *  This amplitude is only used for echo cancellation [Set_Near_Frame] The content in represents the near-end parameter , The content in represents the near-end parameter MIC End recording data parameters . \n
- * Fram_V  End recording data parameters , Adjust this parameter to adjust the amplitude of the recorded data ( Adjust this parameter to adjust the amplitude of the recorded data ). \n
- * delay_ms  Due to the delay of software and hardware , And SPK versus MIC Is placed at a certain distance ,SPK The playback data will be MIC sampling , and so SPK Data in MIC There will be a certain delay in the data . \n
- *  This time represents the time difference between the playback data and the recording data . \n
+ * Le premier label [Set_Far_Frame] Le contenu de représente le paramètre distant , lequel est SPK Terminer les paramètres de données de lecture . \n
+ * Fram_V Représente le rapport d'amplitude audio , Ajustez ce paramètre pour ajuster l'amplitude des données de lecture ( Cette amplitude n'est utilisée que pour l'annulation d'écho ). \n
+ * The first label [Set_Near_Frame] Le contenu dans représente le paramètre proche , which is MIC Terminer l'enregistrement des paramètres de données . \n
+ * Fram_V Represents the audio amplitude ratio , Ajustez ce paramètre pour ajuster l'amplitude des données enregistrées ( This amplitude is only used for echo cancellation ). \n
+ * delay_ms En raison du retard du logiciel et du matériel , Et SPK contre MIC Est placé à une certaine distance ,SPK Les données de lecture seront MIC échantillonnage , et donc SPK Données en MIC Il y aura un certain retard dans les données . \n
+ * Cette heure représente la différence de temps entre les données de lecture et les données d'enregistrement . \n
 
- * @subsection audio_enc 2.4  Audio coding 
- *  Audio encoding current audio API stand by PT_G711A stand by PT_G711U stand by PT_G726 stand by , If you need to add a new encoding method , Need to call IMP_AENC_RegisterEncoder Interface to register encoder .
- * @subsection audio_dec 2.5  Audio decoding 
- *  Audio decoding current audio API Audio decoding current audio PT_G711A Audio decoding current audio PT_G711U Audio decoding current audio PT_G726 Audio decoding current audio , If you need to add a new decoding method , If you need to add a new decoding method IMP_ADEC_RegisterDecoder Interface to register decoder .
+ * @subsection encodage audio audio_enc 2.4
+ * Codage audio audio actuel API Etre prêt PT_G711A [[[ PT_G711U with PT_G726 Format audio encoding , Si vous devez ajouter une nouvelle méthode d'encodage , Besoin d'appeler IMP_AENC_RegisterEncoder Interface pour enregistrer le codeur .
+ * @subsection décodage audio audio_dec 2.5
+ * Décodage audio audio actuel API stand by PT_G711A [[[ PT_G711U with PT_G726 Format audio decoding , Si vous devez ajouter une nouvelle méthode de décodage , Need to call IMP_ADEC_RegisterDecoder Interface pour enregistrer le décodeur .
  * @{
  */
 
 /**
- *  Maximum number of audio frame buffers 
+ * Nombre maximum de tampons de trame audio 
  */
 #define MAX_AUDIO_FRAME_NUM 50
 
 /**
- *  Audio stream blocking type 
+ * Type de blocage du flux audio 
  */
 typedef enum {
-	BLOCK = 0,				/**<  block  */
-	NOBLOCK = 1,			/**<  Non-blocking  */
+	BLOCK = 0,				/**< bloquer */
+	NOBLOCK = 1,			/**< Non bloquant */
 } IMPBlock;
 
 /**
- *  Audio sampling rate definition .
+ * Définition du taux d'échantillonnage audio .
  */
 typedef enum {
-	AUDIO_SAMPLE_RATE_8000	= 8000,		/**< 8KHz Audio sampling rate definition  */
-	AUDIO_SAMPLE_RATE_16000 = 16000,	/**< 16KHz Audio sampling rate definition  */
-	AUDIO_SAMPLE_RATE_44100 = 44100,	/**< 44.1KHz Audio sampling rate definition  */
-	AUDIO_SAMPLE_RATE_48000 = 48000,	/**< 48KHz Audio sampling rate definition  */
-	AUDIO_SAMPLE_RATE_96000 = 96000,	/**< 96KHz Audio sampling rate definition  */
+	AUDIO_SAMPLE_RATE_8000	= 8000,		/**< 8KHz Sampling Rate */
+	AUDIO_SAMPLE_RATE_16000 = 16000,	/**< 16KHz Sampling Rate */
+	AUDIO_SAMPLE_RATE_44100 = 44100,	/**< 44.1KHz Sampling Rate */
+	AUDIO_SAMPLE_RATE_48000 = 48000,	/**< 48KHz Sampling Rate */
+	AUDIO_SAMPLE_RATE_96000 = 96000,	/**< 96KHz Sampling Rate */
 } IMPAudioSampleRate;
 
 /**
- *  Audio sampling accuracy definition .
+ * Définition de la précision d'échantillonnage audio .
  */
 typedef enum {
-	AUDIO_BIT_WIDTH_16 = 16,		/**< 16bit Sampling accuracy  */
+	AUDIO_BIT_WIDTH_16 = 16,		/**< 16bit Précision d'échantillonnage */
 } IMPAudioBitWidth;
 
 /**
- *  Audio channel mode definition .
+ * Définition du mode de canal audio .
  */
 typedef enum {
-	AUDIO_SOUND_MODE_MONO	= 1,	/**<  Mono  */
-	AUDIO_SOUND_MODE_STEREO = 2,	/**<  Two-channel  */
+	AUDIO_SOUND_MODE_MONO	= 1,	/**< Mono */
+	AUDIO_SOUND_MODE_STEREO = 2,	/**< Deux canaux */
 } IMPAudioSoundMode;
 
 /**
- *  Define audio payload type enumeration .
+ * Définir l'énumération du type de charge utile audio .
  */
 typedef enum {
 	PT_PCM		= 0,
@@ -126,82 +126,82 @@ typedef enum {
 } IMPAudioPalyloadType;
 
 /**
- *  Define the decoding method .
+ * Définir la méthode de décodage .
  */
 typedef enum {
-	ADEC_MODE_PACK   = 0,	/**< Pack  Way to decode  */
-	ADEC_MODE_STREAM = 1,	/**< Stream  Way to decode  */
+	ADEC_MODE_PACK = 0,	/**< Pack Façon de décoder */
+	ADEC_MODE_STREAM = 1,	/**< Stream Way to decode */
 } IMPAudioDecMode;
 
 /**
- *  Audio input and output device properties .
+ * Propriétés du périphérique d'entrée et de sortie audio .
  */
 typedef struct {
-	IMPAudioSampleRate samplerate;		/**<  Audio sampling rate  */
-	IMPAudioBitWidth bitwidth;			/**<  Audio sampling accuracy  */
-	IMPAudioSoundMode soundmode;		/**<  Audio channel mode  */
-	int frmNum;							/**<  Number of buffered frames ,  Ranges :[2, MAX_AUDIO_FRAME_NUM] */
-	int numPerFrm;						/**<  Number of sampling points per frame  */
-	int chnCnt;							/**<  Number of channels supported  */
+	IMPAudioSampleRate samplerate;		/**< Taux d'échantillonnage audio */
+	IMPAudioBitWidth bitwidth;			/**< Précision d'échantillonnage audio */
+	IMPAudioSoundMode soundmode;		/**< Mode canal audio */
+	int frmNum;							/**< Nombre de trames tamponnées , Gammes :[2, MAX_AUDIO_FRAME_NUM] */
+	int numPerFrm;						/**< Nombre de points d'échantillonnage par trame */
+	int chnCnt;							/**< Nombre de canaux pris en charge */
 } IMPAudioIOAttr;
 
 /**
- *  Audio frame structure .
+ * Structure de trame audio .
  */
 typedef struct {
-	IMPAudioBitWidth bitwidth;			/**<  Audio frame structure  */
-	IMPAudioSoundMode soundmode;		/**<  Audio frame structure  */
-	uint32_t *virAddr;					/**<  Audio frame data virtual address  */
-	uint32_t phyAddr;					/**<  Audio frame data physical address  */
-	int64_t timeStamp;					/**<  Audio frame data timestamp  */
-	int seq;							/**<  Audio frame number  */
-	int len;							/**<  Audio frame length  */
+	IMPAudioBitWidth bitwidth;			/**< Audio sampling accuracy */
+	IMPAudioSoundMode soundmode;		/**< Audio channel mode */
+	uint32_t *virAddr;					/**< Adresse virtuelle des données de trame audio */
+	uint32_t phyAddr;					/**< Adresse physique des données de trame audio */
+	int64_t timeStamp;					/**< Horodatage des données de trame audio */
+	int seq;							/**< Numéro de trame audio */
+	int len;							/**< Longueur de la trame audio */
 } IMPAudioFrame;
 
 /**
- *  Audio channel parameter structure .
+ * Structure des paramètres du canal audio .
  */
 typedef struct {
-	int usrFrmDepth;					/**<  Audio frame buffer depth  */
-	int Rev;							/**<  Keep  */
+	int usrFrmDepth;					/**< Profondeur de la mémoire tampon d'image audio */
+	int Rev;							/**< Garder */
 } IMPAudioIChnParam;
 
 /**
- *  Data buffer status structure of audio output channel .
+ * Structure de l'état du tampon de données du canal de sortie audio .
  */
 typedef struct {
-	int chnTotalNum;				/**<  The total number of buffer blocks of the output channel  */
-	int chnFreeNum;					/**<  Number of free cache blocks  */
-	int chnBusyNum;					/**<  Number of occupied cache blocks  */
+	int chnTotalNum;				/**< Le nombre total de blocs tampons du canal de sortie */
+	int chnFreeNum;					/**< Nombre de blocs de cache gratuits */
+	int chnBusyNum;					/**< Nombre de blocs de cache occupés */
 } IMPAudioOChnState;
 
 /**
- *  Define audio stream structure .
+ * Définir la structure du flux audio .
  */
 typedef struct {
-	uint8_t *stream;				/**<  Data stream pointer  */
-	uint32_t phyAddr;				/**<  Data stream physical address  */
-	int len;						/**<  Audio stream length  */
-	int64_t timeStamp;				/**<  Timestamp  */
-	int seq;						/**<  Audio stream serial number  */
+	uint8_t *stream;				/**< Pointeur de flux de données */
+	uint32_t phyAddr;				/**< Adresse physique du flux de données */
+	int len;						/**< Longueur du flux audio */
+	int64_t timeStamp;				/**< Horodatage */
+	int seq;						/**< Numéro de série du flux audio */
 } IMPAudioStream;
 
 /**
- *  Define the audio coding channel attribute structure .
+ * Définir la structure d'attribut du canal de codage audio .
  */
 typedef struct {
-	IMPAudioPalyloadType type;				/**<  Audio payload data type  */
-	int bufSize;							/**<  buf  size ， In frames ，[2 ~ MAX_AUDIO_FRAME_NUM] */
-	uint32_t *value;						/**<  Protocol attribute pointer  */
+	IMPAudioPalyloadType type;				/**< Type de données de charge utile audio */
+	int bufSize;							/**< buf Taille ， Dans les cadres ，[2 ~ MAX_AUDIO_FRAME_NUM] */
+	uint32_t *value;						/**< Pointeur d'attribut de protocole */
 } IMPAudioEncChnAttr;
 
 /**
- *  Define encoder attribute structure .
+ * Définir la structure des attributs du codeur .
  */
 typedef struct {
-	IMPAudioPalyloadType type;		/**<  Encoding protocol type  */
-	int maxFrmLen;					/**<  Maximum stream length  */
-	char name[16];					/**<  Encoder name  */
+	IMPAudioPalyloadType type;		/**< Type de protocole de codage */
+	int maxFrmLen;					/**< Longueur maximale du flux */
+	char name[16];					/**< Nom du codeur */
 	int (*openEncoder)(void *encoderAttr, void
 			*encoder);
 	int (*encoderFrm)(void *encoder, IMPAudioFrame
@@ -210,21 +210,21 @@ typedef struct {
 } IMPAudioEncEncoder;
 
 /**
- *  Define the decoding channel attribute structure .
+ * Définir la structure d'attribut du canal de décodage .
  */
 typedef struct {
-	IMPAudioPalyloadType type;			/**<  Audio decoding protocol type  */
-	int bufSize;						/**<  Audio decoding buffer size  */
-	IMPAudioDecMode mode;				/**<  Decoding method  */
-	void *value;						/**<  Specific protocol attribute pointer  */
+	IMPAudioPalyloadType type;			/**< Type de protocole de décodage audio */
+	int bufSize;						/**< Taille du tampon de décodage audio */
+	IMPAudioDecMode mode;				/**< Méthode de décodage */
+	void *value;						/**< Pointeur d'attribut de protocole spécifique */
 } IMPAudioDecChnAttr;
 
 /**
- *  Define decoder attribute structure .
+ * Définir la structure des attributs du décodeur .
  */
 typedef struct {
-	IMPAudioPalyloadType type;		/**<  Define decoder attribute structure  */
-	char name[16];					/**<  Audio decoder name  */
+	IMPAudioPalyloadType type;		/**< Audio decoding protocol type */
+	char name[16];					/**< Nom du décodeur audio */
 	int (*openDecoder)(void *decoderAttr, void
 			*decoder);
 	int (*decodeFrm)(void *decoder, unsigned char
@@ -235,36 +235,36 @@ typedef struct {
 } IMPAudioDecDecoder;
 
 /**
- *  definition AGC Gain structure .
+ * définition AGC Structure de gain .
  */
 typedef struct {
-	int TargetLevelDbfs;	/**<  Gain level , The value is [0, 31],  This refers to the target volume level , the unit is db, Negative . The smaller the value , Louder . */
-	int CompressionGaindB;	/**<  Set the maximum gain value ,[0, 90],0 Means no gain , Higher value , Higher gain . */
+	int TargetLevelDbfs;	/**< Niveau de gain , La valeur est [0, 31], Cela fait référence au niveau de volume cible , l'unité est db, Négatif . Plus la valeur est petite , Plus fort . */
+	int CompressionGaindB;	/**< Définir la valeur de gain maximum ,[0, 90],0 Signifie pas de gain , Valeur plus élevée , Gain plus élevé . */
 } IMPAudioAgcConfig;
 
 /**
- *  Define noise suppression level .
+ * Définir le niveau de suppression du bruit .
  */
 enum Level_ns {
-	NS_LOW,			/**<  Low-level noise suppression  */
-	NS_MODERATE,	/**<  Mid-level noise suppression  */
-	NS_HIGH,		/**<  High-level noise suppression  */
-	NS_VERYHIGH		/**<  The highest level of noise suppression  */
+	NS_LOW,			/**< Suppression du bruit de bas niveau */
+	NS_MODERATE,	/**< Suppression du bruit de niveau moyen */
+	NS_HIGH,		/**< Suppression du bruit de haut niveau */
+	NS_VERYHIGH		/**< Le plus haut niveau de suppression du bruit */
 };
 
 /**
- * @fn int IMP_AI_SetPubAttr(int audioDevId, IMPAudioIOAttr *attr)
+ * @fn int IMP_AI_SetPubAttr (int audioDevId, IMPAudioIOAttr * attr)
  *
- *  Set audio input device properties .
+ * Définir les propriétés du périphérique d'entrée audio .
  *
- * @param[in] audioDevId  Audio device number .
- * @param[in] attr  Audio device attribute pointer .
+ * @param[in] Numéro de périphérique audio audioDevId.
+ * @param[in] attr Pointeur d'attribut de périphérique audio.
  *
- * @retval 0  success .
- * @retval  non- 0  failure .
+ * @retval 0 succès.
+ * @retval Échec non nul.
  *
- * @remarks  Sample code 
- * @code
+ * @remarks Exemple de code
+ * @code 
  * int devID = 1;
  * IMPAudioIOAttr attr;
  * attr.samplerate = AUDIO_SAMPLE_RATE_8000;
@@ -278,183 +278,183 @@ enum Level_ns {
  *		IMP_LOG_ERR(TAG, "Set Audio in %d attr err: %d\n", devID, ret);
  *		return ret;
  * }
- * @endcode
+ * @endcode 
  *
- * @attention  Need to be in IMP_AI_Enable Call before .
+ * @attention Doit être appelé avant IMP_AI_Enable.
  */
 int IMP_AI_SetPubAttr(int audioDevId, IMPAudioIOAttr *attr);
 
 /**
- * @fn int IMP_AI_GetPubAttr(int audioDevId, IMPAudioIOAttr *attr)
+ * @fn int IMP_AI_GetPubAttr (int audioDevId, IMPAudioIOAttr * attr)
  *
- *  Get audio input device properties .
+ * Obtenir les propriétés du périphérique d'entrée audio .
  *
- * @param[in] audioDevId  Get audio input device properties .
- * @param[out] attr  Get audio input device properties .
+ * @param[in] audioDevId Audio device number .
+ * @param[out] attr Audio device attribute pointer .
  *
- * @retval 0  Get audio input device properties .
- * @retval  Get audio input device properties 0  Get audio input device properties .
+ * @retval 0 success .
+ * @retval non- 0 failure .
  *
- * @remarks  no .
+ * @remarks non.
  *
- * @attention  no .
+ * @attention no .
  */
 int IMP_AI_GetPubAttr(int audioDevId, IMPAudioIOAttr *attr);
 
 /**
- * @fn int IMP_AI_Enable(int audioDevId)
+ * @fn int IMP_AI_Enable (int audioDevId)
  *
- *  Enable audio input device .
+ * Activer le périphérique d'entrée audio .
  *
- * @param[in] audioDevId  Enable audio input device .
+ * @param[in] audioDevId Audio device number .
  *
- * @retval 0  Enable audio input device .
- * @retval  Enable audio input device 0  Enable audio input device .
+ * @retval 0 success .
+ * @retval non- 0 failure .
  *
- * @remarks  Enable audio input device .
+ * @remarks no .
  *
- * @attention  Must be called before calling this function  IMP_AI_SetPubAttr().
+ * @attention IMP_AI_SetPubAttr () doit être appelé avant d'appeler cette fonction.
  */
 int IMP_AI_Enable(int audioDevId);
 
 /**
- * @fn int IMP_AI_Disable(int audioDevId)
+ * @fn int IMP_AI_Disable (int audioDevId)
  *
- *  Disable audio input device .
+ * Désactiver le périphérique d'entrée audio .
  *
- * @param[in] audioDevId  Disable audio input device .
+ * @param[in] audioDevId Audio device number .
  *
- * @retval 0  Disable audio input device .
- * @retval  Disable audio input device 0  Disable audio input device .
+ * @retval 0 success .
+ * @retval non- 0 failure .
  *
- * @remarks  Disable audio input device .
+ * @remarks no .
  *
- * @attention  Disable audio input device IMP_AI_Enable Supporting the use of , Must be executed before the system sleeps IMP_AI_Disable.
+ * @attention Utilisé conjointement avec IMP_AI_Enable, IMP_AI_Disable doit être exécuté avant que le système ne se mette en veille.
  */
 int IMP_AI_Disable(int audioDevId);
 
 /**
- * @fn int IMP_AI_EnableChn(int audioDevId, int aiChn)
+ * @fn int IMP_AI_EnableChn (int audioDevId, int aiChn)
  *
- *  Enable audio input channel .
+ * Activer le canal d'entrée audio .
  *
- * @param[in] audioDevId  Enable audio input channel .
- * @param[in] aiChn  Audio input channel number .
+ * @param[in] audioDevId Audio device number .
+ * @param[in] aiChn Numéro de canal d'entrée audio.
  *
- * @retval 0  Audio input channel number .
- * @retval  Audio input channel number 0  Audio input channel number .
+ * @retval 0 success .
+ * @retval non- 0 failure .
  *
- * @remarks  Audio input channel number .
+ * @remarks no .
  *
- * @attention  Must be enabled first device.
+ * @attention L'appareil doit d'abord être activé.
  */
 int IMP_AI_EnableChn(int audioDevId, int aiChn);
 
 /**
- * @fn int IMP_AI_DisableChn(int audioDevId, int aiChn)
+ * @fn int IMP_AI_DisableChn (int audioDevId, int aiChn)
  *
- *  Disable audio input channel .
+ * Désactiver le canal d'entrée audio .
  *
- * @param[in] audioDevId  Disable audio input channel .
- * @param[in] aiChn  Disable audio input channel .
+ * @param[in] audioDevId Audio device number .
+ * @param[in] aiChn Audio input channel number .
  *
- * @retval 0  Disable audio input channel .
- * @retval  Disable audio input channel 0  Disable audio input channel .
+ * @retval 0 success .
+ * @retval non- 0 failure .
  *
- * @remarks  Disable audio input channel .
+ * @remarks no .
  *
- * @attention  Disable audio input channel IMP_AI_EnableChn Disable audio input channel .
+ * @attention Utilisé en conjonction avec IMP_AI_EnableChn.
  */
 int IMP_AI_DisableChn(int audioDevId, int aiChn);
 
 /**
- * @fn int IMP_AI_PollingFrame(int audioDevId, int aiChn, unsigned int timeout_ms)
+ * @fn int IMP_AI_PollingFrame (int audioDevId, int aiChn, non signé int timeout_ms)
  *
- * Polling Audio stream buffer .
+ * Polling Tampon de flux audio .
  *
- * @param[in] audioDevId  Audio stream buffer .
- * @param[in] aiChn  Audio stream buffer .
- * @param[in] timeout_ms Polling overtime time .
+ * @param[in] audioDevId Audio device number .
+ * @param[in] aiChn Audio input channel number .
+ * @param[in] timeout_ms Délai d'expiration de l'interrogation.
  *
- * @retval 0  overtime time .
- * @retval  overtime time 0  overtime time .
+ * @retval 0 success .
+ * @retval non- 0 failure .
  *
- * @remarks  overtime time .
+ * @remarks no .
  *
- * @attention  In use IMP_AI_GetFrame The interface was used before ， When the interface is successfully called, it means audio 
- *			   Data is ready ， can use IMP_AI_GetFrame Get audio data .
+ * @attention Utilisez cette interface avant d'utiliser IMP_AI_GetFrame, lorsque l'interface est appelée avec succès, cela signifie audio
+ *			 Les données sont prêtes ， peut utiliser IMP_AI_GetFrame Obtenez des données audio .
  */
 int IMP_AI_PollingFrame(int audioDevId, int aiChn, unsigned int timeout_ms);
 
 /**
- * @fn int IMP_AI_GetFrame(int audioDevId, int aiChn, IMPAudioFrame *frm, IMPBlock block)
+ * @fn int IMP_AI_GetFrame (int audioDevId, int aiChn, IMPAudioFrame * frm, bloc IMPBlock)
  *
- *  Get audio frame .
+ * Obtenir une image audio .
  *
- * @param[in] audioDevId  Get audio frame .
- * @param[in] aiChn  Get audio frame .
- * @param[out] frm  Audio frame structure pointer .
- * @param[in] block  Audio frame structure pointer / Non-blocking flag .
+ * @param[in] audioDevId Audio device number .
+ * @param[in] aiChn Audio input channel number .
+ * @param[out] frm Pointeur de structure de trame audio.
+ * @param[in] Identification bloquante / non bloquante de bloc.
  *
- * @retval 0  Non-blocking flag .
- * @retval  Non-blocking flag 0  Non-blocking flag .
+ * @retval 0 success .
+ * @retval non- 0 failure .
  *
- * @remarks  Non-blocking flag 
- * @code
+ * @remarks Sample code 
+ * @code 
  * IMPAudioFrame frm;
- * //  Non-blocking flag 
+ * // Get audio frame 
  * ret = IMP_AI_GetFrame(devID, chnID, &frm, BLOCK);
  * if(ret != 0) {
  *		IMP_LOG_ERR(TAG, "Audio Get Frame Data error\n");
  *		return ret;
  * }
  *
- * fwrite(frm.virAddr, 1, frm.len, record_file); //  Use audio frame data 
+ * fwrite(frm.virAddr, 1, frm.len, record_file); // Utiliser les données de trame audio 
  *
- * //  Release audio frame 
+ * // Libérer le cadre audio 
  * ret = IMP_AI_ReleaseFrame(devID, chnID, &frm);
  * if(ret != 0) {
  *		IMP_LOG_ERR(TAG, "Audio release frame data error\n");
  *		return ret;
  * }
- * @endcode
+ * @endcode 
  *
- * @attention  Release audio frame .
+ * @attention no .
  */
 int IMP_AI_GetFrame(int audioDevId, int aiChn, IMPAudioFrame *frm, IMPBlock block);
 
 /**
- * @fn int IMP_AI_ReleaseFrame(int audioDevId, int aiChn, IMPAudioFrame *frm)
+ * @fn int IMP_AI_ReleaseFrame (int audioDevId, int aiChn, IMPAudioFrame * frm)
  *
- *  Release audio frame .
+ * Release audio frame .
  *
- * @param[in] audioDevId  Release audio frame .
- * @param[in] aiChn  Release audio frame .
- * @param[in] frm  Release audio frame .
+ * @param[in] audioDevId Audio device number .
+ * @param[in] aiChn Audio input channel number .
+ * @param[in] frm Audio frame structure pointer .
  *
- * @retval 0  Release audio frame .
- * @retval  Release audio frame 0  Release audio frame .
+ * @retval 0 success .
+ * @retval non- 0 failure .
  *
- * @remarks  Release audio frame .
+ * @remarks no .
  *
- * @attention  Release audio frame IMP_AI_GetFrame Release audio frame .
+ * @attention Utilisé en conjonction avec IMP_AI_GetFrame.
  */
 int IMP_AI_ReleaseFrame(int audioDevId, int aiChn, IMPAudioFrame *frm);
 
 /**
- * @fn int IMP_AI_SetChnParam(int audioDevId, int aiChn, IMPAudioIChnParam *chnParam)
+ * @fn int IMP_AI_SetChnParam (int audioDevId, int aiChn, IMPAudioIChnParam * chnParam)
  *
- *  Set audio input channel parameters .
+ * Définir les paramètres du canal d'entrée audio .
  *
- * @param[in] audioDevId  Set audio input channel parameters .
- * @param[in] aiChn  Set audio input channel parameters .
- * @param[in] chnParam  Audio channel parameters .
+ * @param[in] audioDevId Audio device number .
+ * @param[in] aiChn Audio input channel number .
+ * @param[in] chnParam Paramètres du canal audio.
  *
- * @retval 0  Audio channel parameters .
- * @retval  Audio channel parameters 0  Audio channel parameters .
+ * @retval 0 success .
+ * @retval non- 0 failure .
  *
- * @remarks  Audio channel parameters 
- * @code
+ * @remarks Sample code 
+ * @code 
  * int chnID = 0;
  * IMPAudioIChnParam chnParam;
  * chnParam.usrFrmDepth = 20;	// the range of valid value is [2, MAX_AUDIO_FRAME_NUM].
@@ -463,365 +463,365 @@ int IMP_AI_ReleaseFrame(int audioDevId, int aiChn, IMPAudioFrame *frm);
  *		IMP_LOG_ERR(TAG, "set ai %d channel %d attr err: %d\n", devID, chnID, ret);
  *		return ret;
  * }
- * @endcode
+ * @endcode 
  *
- * @attention  in IMP_AI_EnableChn in .
+ * @attention Appelé avant IMP_AI_EnableChn.
  */
 int IMP_AI_SetChnParam(int audioDevId, int aiChn, IMPAudioIChnParam *chnParam);
 
 /**
- * @fn int IMP_AI_GetChnParam(int audioDevId, int aiChn, IMPAudioIChnParam *chnParam)
+ * @fn int IMP_AI_GetChnParam (int audioDevId, int aiChn, IMPAudioIChnParam * chnParam)
  *
- *  Get audio input channel parameters .
+ * Obtenir les paramètres du canal d'entrée audio .
  *
- * @param[in] audioDevId  Get audio input channel parameters .
- * @param[in] aiChn  Get audio input channel parameters .
- * @param[out] chnParam  Get audio input channel parameters .
+ * @param[in] audioDevId Audio device number .
+ * @param[in] aiChn Audio input channel number .
+ * @param[out] chnParam Audio channel parameters .
  *
- * @retval 0  Get audio input channel parameters .
- * @retval  Get audio input channel parameters 0  Get audio input channel parameters .
+ * @retval 0 success .
+ * @retval non- 0 failure .
  *
- * @remarks  Get audio input channel parameters .
+ * @remarks no .
  *
- * @attention  Get audio input channel parameters .
+ * @attention no .
  */
 int IMP_AI_GetChnParam(int audioDevId, int aiChn, IMPAudioIChnParam *chnParam);
 
 /**
- * @fn int IMP_AI_EnableAec(int aiDevId, int aiChn, int aoDevId, int aoChn)
+ * @fn int IMP_AI_EnableAec (int aiDevId, int aiChn, int aoDevId, int aoChn)
  *
- *  Enable the echo cancellation function of the specified audio input and audio output .
+ * Activer la fonction d'annulation d'écho de l'entrée audio et de la sortie audio spécifiées .
  *
- * @param[in] aiDevId  Audio input device number that needs echo cancellation .
- * @param[in] aiChn  Audio input channel number that needs echo cancellation .
- * @param[in] aoDevId  Audio output device number that needs echo cancellation .
- * @param[in] aoChn  Audio output channel number that needs echo cancellation .
+ * @param[in] aiDevId Le numéro du périphérique d'entrée audio qui nécessite une annulation d'écho.
+ * @param[in] aiChn Le numéro du canal d'entrée audio pour l'annulation de l'écho.
+ * @param[in] aoDevId Le numéro du périphérique de sortie audio qui nécessite une annulation d'écho.
+ * @param[in] aoChn Le numéro du canal de sortie audio pour l'annulation de l'écho.
  *
- * @retval 0  Audio output channel number that needs echo cancellation .
- * @retval  Audio output channel number that needs echo cancellation 0  Audio output channel number that needs echo cancellation .
+ * @retval 0 success .
+ * @retval non- 0 failure .
  *
- * @remarks  Audio output channel number that needs echo cancellation ， Audio output channel number that needs echo cancellation ， Audio output channel number that needs echo cancellation .
- * @remarks  Audio output channel number that needs echo cancellation ， Audio output channel number that needs echo cancellation ,
- * @remarks  Just enabling the function is not necessarily good. 
- * @remarks  Just enabling the function is not necessarily good. /etc/webrtc_profile.ini  Just enabling the function is not necessarily good. .
- * @remarks  Just enabling the function is not necessarily good. ( Just enabling the function is not necessarily good. ):
+ * @remarks L'annulation d'écho aura des effets différents pour différents appareils et différents packages.
+ * @remarks L'annulation d'écho ne prend actuellement pas en charge adaptative, il existe donc des paramètres d'annulation d'écho distincts pour différents appareils,
+ * @remarks Le simple fait d'activer la fonction n'est pas nécessairement bon.
+ * @remarks Le fichier de paramètres d'annulation d'écho se trouve dans le fichier de configuration /etc/webrtc_profile.ini.
+ * @remarks Le format du fichier de configuration est le suivant (les trois principaux paramètres à déboguer sont répertoriés ci-dessous):
  * @remarks [Set_Far_Frame]
- * @remarks Frame_V=0.3
+ * @remarks Frame_V = 0,3
  * @remarks [Set_Near_Frame]
- * @remarks Frame_V=0.1
- * @remarks delay_ms=150
+ * @remarks Frame_V = 0,1
+ * @remarks delay_ms = 150
  *
- * @remarks  Just enabling the function is not necessarily good. [Set_Far_Frame] Just enabling the function is not necessarily good. , Just enabling the function is not necessarily good. SPK Just enabling the function is not necessarily good. .
- * @remarks Fram_V  Just enabling the function is not necessarily good. , Just enabling the function is not necessarily good. ( Just enabling the function is not necessarily good. ).
- * @remarks  Just enabling the function is not necessarily good. [Set_Near_Frame] Just enabling the function is not necessarily good. , Just enabling the function is not necessarily good. MIC Just enabling the function is not necessarily good. .
- * @remarks Fram_V  Just enabling the function is not necessarily good. , Just enabling the function is not necessarily good. ( Just enabling the function is not necessarily good. ).
- * @remarks delay_ms  Just enabling the function is not necessarily good. , Just enabling the function is not necessarily good. SPK Just enabling the function is not necessarily good. MIC Just enabling the function is not necessarily good. ,SPK Just enabling the function is not necessarily good. MIC Just enabling the function is not necessarily good. , Just enabling the function is not necessarily good. SPK Just enabling the function is not necessarily good. MIC Just enabling the function is not necessarily good. .
- * @remarks  Just enabling the function is not necessarily good. .
+ * @remarks Le contenu de la première étiquette [Set_Far_Frame] représente les paramètres distants, c'est-à-dire les paramètres de données de fin de lecture SPK.
+ * @remarks Fram_V représente le rapport d'amplitude audio. Le réglage de ce paramètre peut ajuster l'amplitude des données de lecture (cette amplitude n'est utilisée que pour l'annulation de l'écho).
+ * @remarks Le contenu de la première étiquette [Set_Near_Frame] représente le paramètre d'extrémité proche, c'est-à-dire le paramètre de données d'enregistrement de l'extrémité MIC.
+ * @remarks Fram_V représente le rapport d'amplitude audio. Le réglage de ce paramètre permet d'ajuster l'amplitude des données d'enregistrement (cette amplitude n'est utilisée que pour l'annulation de l'écho).
+ * @remarks delay_ms En raison du retard du logiciel et du matériel, et il y a une certaine distance entre SPK et MIC, les données de lecture SPK seront à nouveau échantillonnées par MIC, il y aura donc un certain retard dans les données SPK reflétées dans les données MIC.
+ * @remarks Cette heure représente la différence de temps entre les données de lecture et les données d'enregistrement.
  *
- * @attention  Actually the interface will only check aiDevId Actually the interface will only check aiChn. But it is best to call after the two channels are enabled at the same time . \n
- *  While closing the audio input channel , The echo cancellation function is turned off at the same time . If you need to use it again, you need to open it again .
+ * @attention En fait, l'interface ne vérifiera que aiDevId et aiChn. Mais il est préférable de l'appeler une fois que les deux canaux sont activés en même temps. 
+ * Lors de la fermeture du canal d'entrée audio , La fonction d'annulation d'écho est désactivée en même temps . Si vous devez l'utiliser à nouveau, vous devez l'ouvrir à nouveau .
  */
 int IMP_AI_EnableAec(int aiDevId, int aiChn, int aoDevId, int aoChn);
 
 /**
- * @fn int IMP_AI_DisableAec(int aiDevId, int aiChn)
+ * @fn int IMP_AI_DisableAec (int aiDevId, int aiChn)
  *
- *  Disable echo cancellation .
+ * Désactiver l'annulation d'écho .
  *
- * @param[in] aiDevId  Audio input device number .
- * @param[in] aiChn  Audio input device number .
+ * @param[in] aiDevId Numéro de périphérique d'entrée audio.
+ * @param[in] aiChn Audio input channel number .
  *
- * @retval 0  Audio input device number .
- * @retval  Audio input device number 0  Audio input device number .
+ * @retval 0 success .
+ * @retval non- 0 failure .
  *
- * @remarks  Audio input device number .
+ * @remarks no .
  *
- * @attention  Audio input device number .
+ * @attention no .
  */
 int IMP_AI_DisableAec(int aiDevId, int aiChn);
 
 /**
- * @fn int IMP_AI_EnableNs(IMPAudioIOAttr *attr, int mode)
+ * @fn int IMP_AI_EnableNs (IMPAudioIOAttr * attr, mode int)
  *
- *  Enable the noise suppression function of the specified audio input .
+ * Activer la fonction de suppression du bruit de l'entrée audio spécifiée .
  *
- * @param[in] attr  Audio attributes that require noise suppression .
- * @param[in] mode  Noise suppression level 0  Noise suppression level  3, See  Level_ns.
+ * @param[in] attr Attributs audio nécessitant une suppression du bruit.
+ * @param[in] mode Niveau de suppression du bruit 0 ~ 3, voir Level_ns.
  *
- * @retval 0  See .
- * @retval  See 0  See .
+ * @retval 0 success .
+ * @retval non- 0 failure .
  *
- * @remarks  Noise suppressed mode The parameter indicates the level of noise suppression , Range is [0 ~ 3], The higher the level , The cleaner the noise suppression .
- * @remarks  however , The cleaner the noise suppression, the more sound details will be lost , So there is a contradiction here , So there is a contradiction here 
- * @remarks  Make trade-offs when using .
+ * @remarks Le paramètre de mode de suppression du bruit indique le niveau de suppression du bruit et la plage est (0 ~ 3). Plus le niveau est élevé, plus la suppression du bruit est nette.
+ * @remarks Cependant, plus la suppression du bruit est propre, plus les détails sonores seront perdus, il y a donc une contradiction ici.
+ * @remarks Faites des compromis lors de l'utilisation.
  *
- * @attention  Echo cancellation includes noise suppression , If echo cancellation is enabled , No need to do noise suppression .
+ * @attention L'annulation de l'écho inclut la suppression du bruit. Si l'annulation de l'écho est activée, la suppression du bruit n'est pas nécessaire.
  */
 int IMP_AI_EnableNs(IMPAudioIOAttr *attr, int mode);
 
 /**
- * @fn int IMP_AI_DisableNs(void)
+ * @fn int IMP_AI_DisableNs (void)
  *
- *  Disable noise suppression .
+ * Désactiver la suppression du bruit .
  *
- * @param  Disable noise suppression .
+ * @param no .
  *
- * @retval 0  Disable noise suppression .
- * @retval  Disable noise suppression 0  Disable noise suppression .
+ * @retval 0 success .
+ * @retval non- 0 failure .
  *
- * @remarks  Disable noise suppression .
+ * @remarks no .
  *
- * @attention  Disable noise suppression .
+ * @attention no .
  */
 int IMP_AI_DisableNs(void);
 
 /**
- * @fn int IMP_AI_EnableAgc(IMPAudioIOAttr *attr, IMPAudioAgcConfig agcConfig)
+ * @fn int IMP_AI_EnableAgc (IMPAudioIOAttr * attr, IMPAudioAgcConfig agcConfig)
  *
- *  Enable the automatic gain function of audio input .
+ * Activer la fonction de gain automatique de l'entrée audio .
  *
- * @param[in] attr  Audio attributes that require automatic gain .
- * @param[in] agcConfig  Parameter configuration of automatic gain , Configure magnification .
+ * @param[in] attr nécessite des attributs audio pour le gain automatique.
+ * @param[in] configuration du paramètre agcConfig du gain automatique, configurez le facteur d'agrandissement.
  *
- * @retval 0  Configure magnification .
- * @retval  Configure magnification 0  Configure magnification .
+ * @retval 0 success .
+ * @retval non- 0 failure .
  *
- * @remarks  requires attention agcConfig Configuration ,AGC The magnification mainly has the parameter configuration , See for specific gains IMPAudioAgcConfig Description .
- * @remarks  have to be aware of is ,AGC Can amplify the gain of the sound , But if the gain parameter is not suitable , It will cause the sound to break, etc. , Please adjust yourself when you use it .
+ * @remarks Il faut faire attention à la configuration de agcConfig, le facteur d'amplification d'AGC a principalement cette configuration de paramètre, et le gain spécifique voit la description de IMPAudioAgcConfig.
+ * @remarks Il convient de noter que l'AGC peut amplifier le gain du son, mais si les paramètres de gain ne sont pas appropriés, cela provoquera une rupture du son, etc., veuillez l'ajuster vous-même lors d'une utilisation spécifique.
  *
- * @attention  Echo cancellation includes  AGC  Features , Features , No need to do automatic gain .
+ * @attention L'annulation d'écho inclut la fonction AGC, si vous activez l'annulation d'écho, vous n'avez pas besoin de faire un gain automatique.
  */
 int IMP_AI_EnableAgc(IMPAudioIOAttr *attr, IMPAudioAgcConfig agcConfig);
 
 /**
- * @fn int IMP_AI_DisableAgc(void)
+ * @fn int IMP_AI_DisableAgc (vide)
  *
- *  Disable AI Automatic gain function .
+ * Désactiver AI Fonction de gain automatique .
  *
- * @param  Automatic gain function .
+ * @param no .
  *
- * @retval 0  Automatic gain function .
- * @retval  Automatic gain function 0  Automatic gain function .
+ * @retval 0 success .
+ * @retval non- 0 failure .
  *
- * @remarks  Automatic gain function .
+ * @remarks no .
  *
- * @attention  Automatic gain function .
+ * @attention no .
  */
 int IMP_AI_DisableAgc(void);
 
 /**
- * @fn int IMP_AO_EnableAgc(IMPAudioIOAttr *attr, IMPAudioAgcConfig agcConfig)
+ * @fn int IMP_AO_EnableAgc (IMPAudioIOAttr * attr, IMPAudioAgcConfig agcConfig)
  *
- *  Enable the automatic gain function of audio output .
+ * Activer la fonction de gain automatique de la sortie audio .
  *
- * @param[in] attr  Enable the automatic gain function of audio output .
- * @param[in] agcConfig  Enable the automatic gain function of audio output , Enable the automatic gain function of audio output .
+ * @param[in] attr Audio attributes that require automatic gain .
+ * @param[in] agcConfig Parameter configuration of automatic gain , Configure magnification .
  *
- * @retval 0  Enable the automatic gain function of audio output .
- * @retval  Enable the automatic gain function of audio output 0  Enable the automatic gain function of audio output .
+ * @retval 0 success .
+ * @retval non- 0 failure .
  *
- * @remarks  Enable the automatic gain function of audio output agcConfig Enable the automatic gain function of audio output ,AGC Enable the automatic gain function of audio output , Enable the automatic gain function of audio output IMPAudioAgcConfig Enable the automatic gain function of audio output .
- * @remarks  Enable the automatic gain function of audio output ,AGC Enable the automatic gain function of audio output , Enable the automatic gain function of audio output , Enable the automatic gain function of audio output , Enable the automatic gain function of audio output .
+ * @remarks requires attention agcConfig Configuration ,AGC The magnification mainly has the parameter configuration , See for specific gains IMPAudioAgcConfig Description .
+ * @remarks have to be aware of is ,AGC Can amplify the gain of the sound , But if the gain parameter is not suitable , It will cause the sound to break, etc. , Please adjust yourself when you use it .
  *
- * @attention  Enable the automatic gain function of audio output  AGC  Enable the automatic gain function of audio output , Enable the automatic gain function of audio output , Enable the automatic gain function of audio output .
+ * @attention Echo cancellation includes AGC Features , If echo cancellation is enabled , No need to do automatic gain .
  */
 int IMP_AO_EnableAgc(IMPAudioIOAttr *attr, IMPAudioAgcConfig agcConfig);
 
 /**
- * @fn int IMP_AO_DisableAgc(void)
+ * @fn int IMP_AO_DisableAgc (vide)
  *
- *  Enable the automatic gain function of audio output AO Enable the automatic gain function of audio output .
+ * Disable AO Automatic gain function .
  *
- * @param  Enable the automatic gain function of audio output .
+ * @param no .
  *
- * @retval 0  Enable the automatic gain function of audio output .
- * @retval  Enable the automatic gain function of audio output 0  Enable the automatic gain function of audio output .
+ * @retval 0 success .
+ * @retval non- 0 failure .
  *
- * @remarks  Enable the automatic gain function of audio output .
+ * @remarks no .
  *
- * @attention  Enable the automatic gain function of audio output .
+ * @attention no .
  */
 int IMP_AO_DisableAgc(void);
 
 /**
- * @fn int IMP_AI_EnableHpf(IMPAudioIOAttr *attr)
+ * @fn int IMP_AI_EnableHpf (IMPAudioIOAttr * attr)
  *
- *  Enable high-pass filtering of audio input .
+ * Activer le filtrage passe-haut de l'entrée audio .
  *
- * @param[in] attr  Audio attributes that require high-pass filtering .
+ * @param[in] attr Attributs audio qui doivent être filtrés passe-haut.
  *
- * @retval 0  Audio attributes that require high-pass filtering .
- * @retval  Audio attributes that require high-pass filtering 0  Audio attributes that require high-pass filtering .
+ * @retval 0 success .
+ * @retval non- 0 failure .
  *
- * @remarks  Audio attributes that require high-pass filtering .
+ * @remarks no .
  *
- * @attention  Audio attributes that require high-pass filtering  HPF  Audio attributes that require high-pass filtering , Audio attributes that require high-pass filtering , No need to do  HPF.
+ * @attention L'annulation d'écho inclut la fonction HPF, si vous activez l'annulation d'écho, vous n'avez pas besoin de faire HPF.
  */
 int IMP_AI_EnableHpf(IMPAudioIOAttr *attr);
 
 /**
- * @fn int IMP_AI_DisableHpf(void)
+ * @fn int IMP_AI_DisableHpf (vide)
  *
- *  No need to do AI High pass filter function .
+ * Disable AI Fonction de filtre passe-haut .
  *
- * @param  High pass filter function .
+ * @param no .
  *
- * @retval 0  High pass filter function .
- * @retval  High pass filter function 0  High pass filter function .
+ * @retval 0 success .
+ * @retval non- 0 failure .
  *
- * @remarks  High pass filter function .
+ * @remarks no .
  *
- * @attention  High pass filter function .
+ * @attention no .
  */
 int IMP_AI_DisableHpf(void);
 
 /**
- * @fn int IMP_AO_EnableHpf(IMPAudioIOAttr *attr)
+ * @fn int IMP_AO_EnableHpf (IMPAudioIOAttr * attr)
  *
- *  Enable high-pass filtering of audio output .
+ * Activer le filtrage passe-haut de la sortie audio .
  *
- * @param[in] attr  Enable high-pass filtering of audio output .
+ * @param[in] attr Audio attributes that require high-pass filtering .
  *
- * @retval 0  Enable high-pass filtering of audio output .
- * @retval  Enable high-pass filtering of audio output 0  Enable high-pass filtering of audio output .
+ * @retval 0 success .
+ * @retval non- 0 failure .
  *
- * @remarks  Enable high-pass filtering of audio output .
+ * @remarks no .
  *
- * @attention  Enable high-pass filtering of audio output  HPF  Enable high-pass filtering of audio output , Enable high-pass filtering of audio output , Enable high-pass filtering of audio output  HPF.
+ * @attention Echo cancellation includes HPF Features , If echo cancellation is enabled , No need to do HPF.
  */
 int IMP_AO_EnableHpf(IMPAudioIOAttr *attr);
 
 /**
- * @fn int IMP_AO_DisableHpf(void)
+ * @fn int IMP_AO_DisableHpf (vide)
  *
- *  Enable high-pass filtering of audio output AO Enable high-pass filtering of audio output .
+ * Disable AO High pass filter function .
  *
- * @param  Enable high-pass filtering of audio output .
+ * @param no .
  *
- * @retval 0  Enable high-pass filtering of audio output .
- * @retval  Enable high-pass filtering of audio output 0  Enable high-pass filtering of audio output .
+ * @retval 0 success .
+ * @retval non- 0 failure .
  *
- * @remarks  Enable high-pass filtering of audio output .
+ * @remarks no .
  *
- * @attention  Enable high-pass filtering of audio output .
+ * @attention no .
  */
 int IMP_AO_DisableHpf(void);
 
 /**
- * @fn int IMP_AO_SetPubAttr(int audioDevId, IMPAudioIOAttr *attr)
+ * @fn int IMP_AO_SetPubAttr (int audioDevId, IMPAudioIOAttr * attr)
  *
- *  Set audio input and output device properties .
+ * Définir les propriétés du périphérique d'entrée et de sortie audio .
  *
- * @param[in] audioDevId  Set audio input and output device properties .
- * @param[in] attr  Audio output device attribute pointer .
+ * @param[in] audioDevId Audio device number .
+ * @param[in] attr Pointeur des attributs du périphérique de sortie audio.
  *
- * @retval 0  Audio output device attribute pointer .
- * @retval  Audio output device attribute pointer 0  Audio output device attribute pointer .
+ * @retval 0 success .
+ * @retval non- 0 failure .
  *
- * @remarks  Audio output device attribute pointer .
+ * @remarks no .
  *
- * @attention  Audio output device attribute pointer .
+ * @attention no .
  */
 int IMP_AO_SetPubAttr(int audioDevId, IMPAudioIOAttr *attr);
 
 /**
- * @fn int IMP_AO_GetPubAttr(int audioDevId, IMPAudioIOAttr *attr)
+ * @fn int IMP_AO_GetPubAttr (int audioDevId, IMPAudioIOAttr * attr)
  *
- *  Get audio input and output device properties .
+ * Obtenir les propriétés du périphérique d'entrée et de sortie audio .
  *
- * @param[in] audioDevId  Get audio input and output device properties .
- * @param[out] attr  Get audio input and output device properties .
+ * @param[in] audioDevId Audio device number .
+ * @param[out] attr Audio output device attribute pointer .
  *
- * @retval 0  Get audio input and output device properties .
- * @retval  Get audio input and output device properties 0  Get audio input and output device properties .
+ * @retval 0 success .
+ * @retval non- 0 failure .
  *
- * @remarks  Get audio input and output device properties .
+ * @remarks no .
  *
- * @attention  Get audio input and output device properties .
+ * @attention no .
  */
 int IMP_AO_GetPubAttr(int audioDevId, IMPAudioIOAttr *attr);
 
 /**
- * @fn int IMP_AO_Enable(int audioDevId)
+ * @fn int IMP_AO_Enable (int audioDevId)
  *
- *  Enable audio output device .
+ * Activer le périphérique de sortie audio .
  *
- * @param[in] audioDevId  Enable audio output device .
+ * @param[in] audioDevId Audio device number .
  *
- * @retval 0  Enable audio output device .
- * @retval  Enable audio output device 0  Enable audio output device .
+ * @retval 0 success .
+ * @retval non- 0 failure .
  *
- * @remarks  Enable audio output device .
+ * @remarks no .
  *
- * @attention  Must be called before enabling IMP_AO_SetPubAttr.
+ * @attention IMP_AO_SetPubAttr doit être appelé avant l'activation.
  */
 int IMP_AO_Enable(int audioDevId);
 
 /**
- * @fn int IMP_AO_Disable(int audioDevId)
+ * @fn int IMP_AO_Disable (int audioDevId)
  *
- *  Disable audio output device .
+ * Désactiver le périphérique de sortie audio .
  *
- * @param[in] audioDevId  Disable audio output device .
+ * @param[in] audioDevId Audio device number .
  *
- * @retval 0  Disable audio output device .
- * @retval  Disable audio output device 0  Disable audio output device .
+ * @retval 0 success .
+ * @retval non- 0 failure .
  *
- * @remarks  Disable audio output device .
+ * @remarks no .
  *
- * @attention  Disable audio output device .
+ * @attention no .
  */
 int IMP_AO_Disable(int audioDevId);
 
 /**
- * @fn int IMP_AO_EnableChn(int audioDevId, int aoChn)
+ * @fn int IMP_AO_EnableChn (int audioDevId, int aoChn)
  *
- *  Enable audio output channel .
+ * Activer le canal de sortie audio .
  *
- * @param[in] audioDevId  Enable audio output channel .
- * @param[in] aoChn  Audio output channel number .
+ * @param[in] audioDevId Audio device number .
+ * @param[in] aoChn Numéro du canal de sortie audio.
  *
- * @retval 0  Audio output channel number .
- * @retval  Audio output channel number 0  Audio output channel number .
+ * @retval 0 success .
+ * @retval non- 0 failure .
  *
- * @remarks  Audio output channel number .
+ * @remarks no .
  *
- * @attention  Audio output channel number .
+ * @attention 无 .
  */
 int IMP_AO_EnableChn(int audioDevId, int aoChn);
 
 /**
- * @fn int IMP_AO_DisableChn(int audioDevId, int aoChn)
+ * @fn int IMP_AO_DisableChn (int audioDevId, int aoChn)
  *
- *  Disable audio output channel .
+ * Désactiver le canal de sortie audio .
  *
- * @param[in] audioDevId  Disable audio output channel .
- * @param[in] aoChn  Disable audio output channel .
+ * @param[in] audioDevId Audio device number .
+ * @param[in] aoChn Audio output channel number .
  *
- * @retval 0  Disable audio output channel .
- * @retval  Disable audio output channel 0  Disable audio output channel .
+ * @retval 0 success .
+ * @retval non- 0 failure .
  *
- * @remarks  Disable audio output channel .
+ * @remarks 无 .
  *
- * @attention  Disable audio output channel .
+ * @attention 无 .
  */
 int IMP_AO_DisableChn(int audioDevId, int aoChn);
 
 /**
- * @fn int IMP_AO_SendFrame(int audioDevId, int aoChn, IMPAudioFrame *data, IMPBlock block)
+ * @fn int IMP_AO_SendFrame (int audioDevId, int aoChn, IMPAudioFrame * données, bloc IMPBlock)
  *
- *  Send audio output frame .
+ * Envoyer une trame de sortie audio .
  *
- * @param[in] audioDevId  Send audio output frame .
- * @param[in] aoChn  Send audio output frame .
- * @param[in] data  Send audio output frame .
- * @param[in] block  Send audio output frame / Send audio output frame .
+ * @param[in] audioDevId Audio device number .
+ * @param[in] aoChn Audio output channel number .
+ * @param[in] pointeur de données vers la structure de la trame audio.
+ * @param[in] block block / Non-blocking flag .
  *
- * @retval 0  Send audio output frame .
- * @retval  Send audio output frame 0  Send audio output frame .
+ * @retval 0 success .
+ * @retval non- 0 failure .
  *
- * @remarks  Send audio output frame 
- * @code
+ * @remarks Sample code 
+ * @code 
  * while(1) {
  *		size = fread(buf, 1, IMP_AUDIO_BUF_SIZE, play_file);
  *		if(size < IMP_AUDIO_BUF_SIZE)
@@ -836,94 +836,94 @@ int IMP_AO_DisableChn(int audioDevId, int aoChn);
  *			return ret;
  *		}
  * }
- * @endcode
+ * @endcode 
  *
- * @attention  Send audio output frame .
+ * @attention 无 .
  */
 int IMP_AO_SendFrame(int audioDevId, int aoChn, IMPAudioFrame *data, IMPBlock block);
 
 /**
- * @fn int IMP_AO_PauseChn(int audioDevId, int aoChn)
+ * @fn int IMP_AO_PauseChn (int audioDevId, int aoChn)
  *
- *  Pause audio output channel .
+ * Suspendre le canal de sortie audio .
  *
- * @param[in] audioDevId  Pause audio output channel .
- * @param[in] aoChn  Pause audio output channel .
+ * @param[in] audioDevId Audio device number .
+ * @param[in] aoChn Audio output channel number .
  *
- * @retval 0  Pause audio output channel .
- * @retval  Pause audio output channel 0  Pause audio output channel .
+ * @retval 0 success .
+ * @retval non- 0 failure .
  *
- * @remarks  Pause audio output channel .
+ * @remarks 无 .
  *
- * @attention  Pause audio output channel .
+ * @attention 无 .
  */
 int IMP_AO_PauseChn(int audioDevId, int aoChn);
 
 /**
- * @fn int IMP_AO_ResumeChn(int audioDevId, int aoChn)
+ * @fn int IMP_AO_ResumeChn (int audioDevId, int aoChn)
  *
- *  Restore audio output channel .
+ * Restaurer le canal de sortie audio .
  *
- * @param[in] audioDevId  Restore audio output channel .
- * @param[in] aoChn  Restore audio output channel .
+ * @param[in] audioDevId Audio device number .
+ * @param[in] aoChn Audio output channel number .
  *
- * @retval 0  Restore audio output channel .
- * @retval  Restore audio output channel 0  Restore audio output channel .
+ * @retval 0 success .
+ * @retval non- 0 failure .
  *
- * @remarks  Restore audio output channel .
+ * @remarks 无 .
  *
- * @attention  Restore audio output channel .
+ * @attention 无 .
  */
 int IMP_AO_ResumeChn(int audioDevId, int aoChn);
 
 /**
- * @fn int IMP_AO_ClearChnBuf(int audioDevId, int aoChn)
+ * @fn int IMP_AO_ClearChnBuf (int audioDevId, int aoChn)
  *
- *  Clear the current audio data buffer in the audio output channel .
+ * Effacer le tampon de données audio actuel dans le canal de sortie audio .
  *
- * @param[in] audioDevId  Clear the current audio data buffer in the audio output channel .
- * @param[in] aoChn  Clear the current audio data buffer in the audio output channel .
+ * @param[in] audioDevId Audio device number .
+ * @param[in] aoChn Audio output channel number .
  *
- * @retval 0  Clear the current audio data buffer in the audio output channel .
- * @retval  Clear the current audio data buffer in the audio output channel 0  Clear the current audio data buffer in the audio output channel .
+ * @retval 0 success .
+ * @retval non- 0 failure .
  *
- * @remarks  Clear the current audio data buffer in the audio output channel .
+ * @remarks 无 .
  *
- * @attention  Clear the current audio data buffer in the audio output channel .
+ * @attention 无 .
  */
 int IMP_AO_ClearChnBuf(int audioDevId, int aoChn);
 
 /**
- * @fn int IMP_AO_QueryChnStat(int audioDevId, int aoChn, IMPAudioOChnState *status)
+ * @fn int IMP_AO_QueryChnStat (int audioDevId, int aoChn, IMPAudioOChnState * statut)
  *
- *  Query the current audio data buffer status in the audio output channel .
+ * Interroger l'état actuel du tampon de données audio dans le canal de sortie audio .
  *
- * @param[in] audioDevId  Query the current audio data buffer status in the audio output channel .
- * @param[in] aoChn  Query the current audio data buffer status in the audio output channel .
- * @param[out] status  Cache state structure pointer .
+ * @param[in] audioDevId Audio device number .
+ * @param[in] aoChn Audio output channel number .
+ * @param[out] status Pointeur de structure d'état du cache.
  *
- * @retval 0  Cache state structure pointer .
- * @retval  Cache state structure pointer 0  Cache state structure pointer .
+ * @retval 0 success .
+ * @retval non- 0 failure .
  *
- * @remarks  Cache state structure pointer .
+ * @remarks 无 .
  *
- * @attention  Cache state structure pointer .
+ * @attention 无 .
  */
 int IMP_AO_QueryChnStat(int audioDevId, int aoChn, IMPAudioOChnState *status);
 
 /**
- * @fn int IMP_AENC_CreateChn(int aeChn, IMPAudioEncChnAttr *attr)
+ * @fn int IMP_AENC_CreateChn (int aeChn, IMPAudioEncChnAttr * attr)
  *
- *  Create audio encoding channel .
+ * Créer un canal d'encodage audio .
  *
- * @param[in] aeChn  Channel number .
- * @param[in] attr  Audio encoding channel attribute pointer .
+ * @param[in] numéro de canal aeChn.
+ * @param[in] attr Pointeur d'attribut de canal de codage audio.
  *
- * @retval 0  Audio encoding channel attribute pointer .
- * @retval  Audio encoding channel attribute pointer 0  Audio encoding channel attribute pointer .
+ * @retval 0 success .
+ * @retval non- 0 failure .
  *
- * @remarks  Audio encoding channel attribute pointer 
- * @code
+ * @remarks Sample code 
+ * @code 
  * int AeChn = 0;
  * IMPAudioEncChnAttr attr;
  * attr.type = PT_G711A;
@@ -933,50 +933,50 @@ int IMP_AO_QueryChnStat(int audioDevId, int aoChn, IMPAudioOChnState *status);
  *		IMP_LOG_ERR(TAG, "Audio encode create channel failed\n");
  *		return ret;
  * }
- * @endcode
+ * @endcode 
  *
- * @attention  Currently SDK Currently PT_G711A Currently PT_G711U Currently PT_G726 coding . \n
- *  So use SDK Encoding in , only need to attr.type = PT_G711A Can . \n
- *  How to use a custom encoder , You need to register the encoder , The sample code is explained in the registration interface .
+ * @attention Le SDK prend actuellement en charge le codage PT_G711A, PT_G711U et PT_G726. 
+ * Alors utilisez SDK Encodage en , juste besoin de attr.type = PT_G711A Peut . \n
+ * Comment utiliser un encodeur personnalisé , Vous devez enregistrer l'encodeur , L'exemple de code est expliqué dans l'interface d'inscription .
  */
  int IMP_AENC_CreateChn(int aeChn, IMPAudioEncChnAttr *attr);
 
 /**
- * @fn int IMP_AENC_DestroyChn(int aeChn)
+ * @fn int IMP_AENC_DestroyChn (int aeChn)
  *
- *  Destroy the audio encoding channel .
+ * Détruire le canal d'encodage audio .
  *
- * @param[in] aeChn  Destroy the audio encoding channel .
+ * @param[in] aeChn Channel number .
  *
- * @retval 0  Destroy the audio encoding channel .
- * @retval  Destroy the audio encoding channel 0  Destroy the audio encoding channel .
+ * @retval 0 success .
+ * @retval non- 0 failure .
  *
- * @remarks  Destroy the audio encoding channel .
+ * @remarks 无 .
  *
- * @attention  Destroy the audio encoding channel IMP_AENC_CreateChn Destroy the audio encoding channel .
+ * @attention Utilisé avec IMP_AENC_CreateChn.
  */
  int IMP_AENC_DestroyChn(int aeChn);
 
 /**
- * @fn int IMP_AENC_SendFrame(int aeChn, IMPAudioFrame *frm)
+ * @fn int IMP_AENC_SendFrame (int aeChn, IMPAudioFrame * frm)
  *
- *  Send audio encoded audio frames .
+ * Envoyer des trames audio encodées audio .
  *
- * @param[in] aeChn  Send audio encoded audio frames .
- * @param[in] frm  Send audio encoded audio frames .
+ * @param[in] aeChn Channel number .
+ * @param[in] frm Audio frame structure pointer .
  *
- * @retval 0  Send audio encoded audio frames .
- * @retval  Send audio encoded audio frames 0  Send audio encoded audio frames .
+ * @retval 0 success .
+ * @retval non- 0 failure .
  *
- * @remarks  Send audio encoded audio frames 
- * @code
+ * @remarks Sample code 
+ * @code 
  * while(1) {
- *		//  Read a frame of data 
+ *		// Lire une trame de données 
  *		ret = fread(buf_pcm, 1, IMP_AUDIO_BUF_SIZE, file_pcm);
  *		if(ret < IMP_AUDIO_BUF_SIZE)
  *			break;
  *
- *		//  Read a frame of data 
+ *		// codage 
  *		IMPAudioFrame frm;
  *		frm.virAddr = (uint32_t *)buf_pcm;
  *		frm.len = ret;
@@ -986,7 +986,7 @@ int IMP_AO_QueryChnStat(int audioDevId, int aoChn, IMPAudioOChnState *status);
  *			return ret;
  *		}
  *
- *		//  Get code stream 
+ *		// Obtenir le flux de code 
  *		IMPAudioStream stream;
  *		ret = IMP_AENC_GetStream(AeChn, &stream, BLOCK);
  *		if(ret != 0) {
@@ -994,95 +994,95 @@ int IMP_AO_QueryChnStat(int audioDevId, int aoChn, IMPAudioOChnState *status);
  *			return ret;
  *		}
  *
- *		//  Use code stream 
+ *		// Utiliser le flux de code 
  *		fwrite(stream.stream, 1, stream.len, file_g711);
  *
- *		//  Release code stream 
+ *		// Diffuser le flux de code 
  *		ret = IMP_AENC_ReleaseStream(AeChn, &stream);
  *		if(ret != 0) {
  *			IMP_LOG_ERR(TAG, "imp audio encode release stream failed\n");
  *			return ret;
  *		}
  * }
- * @endcode
+ * @endcode 
  *
- * @attention  Release code stream .
+ * @attention 无 .
  */
  int IMP_AENC_SendFrame(int aeChn, IMPAudioFrame *frm);
 
 /**
- * @fn int IMP_AENC_PollingStream(int AeChn, unsigned int timeout_ms)
+ * @fn int IMP_AENC_PollingStream (int AeChn, int timeout_ms non signé)
  *
- * Polling Encoded audio stream buffer .
+ * Polling Tampon de flux audio codé .
  *
- * @param[in] AeChn  Audio encoding input channel number .
- * @param[in] timeout_ms Polling Audio encoding input channel number .
+ * @param[in] Numéro de canal d'entrée d'encodage audio AeChn.
+ * @param[in] timeout_ms Polling overtime time .
  *
- * @retval 0  Audio encoding input channel number .
- * @retval  Audio encoding input channel number 0  Audio encoding input channel number .
+ * @retval 0 success .
+ * @retval non- 0 failure .
  *
- * @remarks  Audio encoding input channel number .
+ * @remarks 无 .
  *
- * @attention  Audio encoding input channel number IMP_AENC_GetStream Audio encoding input channel number ， Audio encoding input channel number 
- *			   The encoded data is ready ， The encoded data is ready IMP_AENC_GetStream Get the encoded data .
+ * @attention Utilisez cette interface avant d'utiliser IMP_AENC_GetStream, lorsque l'interface est appelée avec succès, cela signifie audio
+ *			 Les données encodées sont prêtes ， can use IMP_AENC_GetStream Obtenez les données encodées .
  */
 int IMP_AENC_PollingStream(int AeChn, unsigned int timeout_ms);
 
 /**
- * @fn int IMP_AENC_GetStream(int aeChn, IMPAudioStream *stream ,IMPBlock block)
+ * @fn int IMP_AENC_GetStream (int aeChn, IMPAudioStream * flux, bloc IMPBlock)
  *
- *  Get the code stream after encoding .
+ * Obtenez le flux de code après l'encodage .
  *
- * @param[in] aeChn  Get the code stream after encoding .
- * @param[in] stream  Get audio stream .
- * @param[in] block  Get audio stream / Get audio stream .
+ * @param[in] aeChn Channel number .
+ * @param[in] stream Obtenez le flux de code audio.
+ * @param[in] block block / Non-blocking flag .
  *
- * @retval 0  Get audio stream .
- * @retval  Get audio stream 0  Get audio stream .
+ * @retval 0 成功 .
+ * @retval 非 0 失败 .
  *
- * @remarks  See sample code IMP_AENC_SendFrame Function description .
+ * @remarks Consultez la description de la fonction IMP_AENC_SendFrame pour l'exemple de code.
  *
- * @attention  Function description .
+ * @attention 无 .
  */
  int IMP_AENC_GetStream(int aeChn, IMPAudioStream *stream ,IMPBlock block);
 
 /**
- * @fn int IMP_AENC_ReleaseStream(int aeChn,IMPAudioStream *stream)
+ * @fn int IMP_AENC_ReleaseStream (int aeChn, IMPAudioStream * flux)
  *
- *  Release the code stream obtained from the audio encoding channel .
+ * Libérez le flux de code obtenu à partir du canal de codage audio .
  *
- * @param[in] aeChn  Release the code stream obtained from the audio encoding channel .
- * @param[in] stream  Get audio stream pointer .
+ * @param[in] aeChn Channel number .
+ * @param[in] stream Récupère le pointeur du flux audio.
  *
- * @retval 0  Get audio stream pointer .
- * @retval  Get audio stream pointer 0  Get audio stream pointer .
+ * @retval 0 成功 .
+ * @retval 非 0 失败 .
  *
- * @remarks  Get audio stream pointer IMP_AENC_SendFrame Get audio stream pointer .
+ * @remarks See sample code IMP_AENC_SendFrame Function description .
  *
- * @attention  Get audio stream pointer .
+ * @attention 无 .
  */
  int IMP_AENC_ReleaseStream(int aeChn,IMPAudioStream *stream);
 
 /**
- * @fn int IMP_AENC_RegisterEncoder(int *handle, IMPAudioEncEncoder *encoder)
+ * @fn int IMP_AENC_RegisterEncoder (int * handle, IMPAudioEncEncoder * encoder)
  *
- *  Register encoder .
+ * Enregistrer l'encodeur .
  *
- * @param[in] ps32handle  Register handle .
- * @param[in] encoder  Encoder attribute structure .
+ * @param[in] poignée d'enregistrement ps32handle.
+ * @param[in] encoder Structure d'attributs d'encodeur.
  *
- * @retval 0  Encoder attribute structure .
- * @retval  Encoder attribute structure 0  Encoder attribute structure .
+ * @retval 0 成功 .
+ * @retval 非 0 失败 .
  *
- * @remarks  Encoder attribute structure 
- * @code
+ * @remarks Sample code 
+ * @code 
  * int handle_g711a = 0;
  * IMPAudioEncEncoder my_encoder;
  * my_encoder.maxFrmLen = 1024;
  * sprintf(my_encoder.name, "%s", "MY_G711A");
- * my_encoder.openEncoder = NULL; //  Encoder callback function 
- * my_encoder.encoderFrm = MY_G711A_Encode_Frm; //  Encoder callback function 
- * my_encoder.closeEncoder = NULL; //  Encoder callback function 
+ * my_encoder.openEncoder = NULL; // Fonction de rappel de l'encodeur 
+ * my_encoder.encoderFrm = MY_G711A_Encode_Frm; // Encoder callback function 
+ * my_encoder.closeEncoder = NULL; // Encoder callback function 
  *
  * ret = IMP_AENC_RegisterEncoder(&handle_g711a, &my_encoder);
  * if(ret != 0) {
@@ -1090,51 +1090,51 @@ int IMP_AENC_PollingStream(int AeChn, unsigned int timeout_ms);
  *		return ret;
  * }
  *
- * //  Use encoder 
+ * // Utiliser l'encodeur 
  * int AeChn = 0;
  * IMPAudioEncChnAttr attr;
- * attr.type = handle_g711a; //  Encoder type Equal to the return of successful registration handle_g711a The value of .
+ * attr.type = handle_g711a; // Encodeur type Égal au retour d'une inscription réussie handle_g711a La valeur de .
  * attr.bufSize = 20;
  * ret = IMP_AENC_CreateChn(AeChn, &attr);
  * if(ret != 0) {
  *		IMP_LOG_ERR(TAG, "imp audio encode create channel failed\n");
  *		return ret;
  * }
- * @endcode
+ * @endcode 
  *
- * @attention  How to use and use after registration SDK The same as the built-in encoder .
+ * @attention Après l'enregistrement, la méthode d'utilisation est la même que l'utilisation de l'encodeur intégré du SDK.
  */
  int IMP_AENC_RegisterEncoder(int *handle, IMPAudioEncEncoder *encoder);
 
 /**
- * @fn int IMP_AENC_ReleaseEncoder(int *handle)
+ * @fn int IMP_AENC_ReleaseEncoder (int * handle)
  *
- *  Log out of encoder .
+ * Déconnectez-vous de l'encodeur .
  *
- * @param[in] ps32handle  Log out of encoder ( Handle obtained when registering the encoder ).
+ * @param[in] ps32handle registration handle (le handle obtenu lors de l'enregistrement de l'encodeur).
  *
- * @retval 0  Handle obtained when registering the encoder .
- * @retval  Handle obtained when registering the encoder 0  Handle obtained when registering the encoder .
+ * @retval 0 成功 .
+ * @retval 非 0 失败 .
  *
- * @remarks  Handle obtained when registering the encoder .
+ * @remarks 无 .
  *
- * @attention  Handle obtained when registering the encoder .
+ * @attention 无 .
  */
  int IMP_AENC_ReleaseEncoder(int *handle);
 
 /**
- * @fn int IMP_ADEC_CreateChn(int adChn, IMPAudioDecChnAttr *attr)
+ * @fn int IMP_ADEC_CreateChn (int adChn, IMPAudioDecChnAttr * attr)
  *
- *  Create audio decoding channel .
+ * Créer un canal de décodage audio .
  *
- * @param[in] adChn  Create audio decoding channel .
- * @param[in] attr  Channel attribute pointer .
+ * @param[in] numéro de canal adChn.
+ * @param[in] attr Pointeur d'attribut de canal.
  *
- * @retval 0  Channel attribute pointer .
- * @retval  Channel attribute pointer 0  Channel attribute pointer .
+ * @retval 0 成功 .
+ * @retval 非 0 失败 .
  *
- * @remarks  Channel attribute pointer 
- * @code
+ * @remarks Sample code 
+ * @code 
  * int adChn = 0;
  * IMPAudioDecChnAttr attr;
  * attr.type = PT_G711A;
@@ -1145,49 +1145,49 @@ int IMP_AENC_PollingStream(int AeChn, unsigned int timeout_ms);
  *		IMP_LOG_ERR(TAG, "imp audio decoder create channel failed\n");
  *		return ret;
  * }
- * @endcode
+ * @endcode 
  *
- * @attention  Channel attribute pointer .
+ * @attention 无 .
  */
  int IMP_ADEC_CreateChn(int adChn, IMPAudioDecChnAttr *attr);
 
 /**
- * @fn int IMP_ADEC_DestroyChn(int adChn)
+ * @fn int IMP_ADEC_DestroyChn (int adChn)
  *
- *  Destroy audio decoding channel .
+ * Détruire le canal de décodage audio .
  *
- * @param[in] adChn  Destroy audio decoding channel .
+ * @param[in] adChn Channel number .
  *
- * @retval 0  Destroy audio decoding channel .
- * @retval  Destroy audio decoding channel 0  Destroy audio decoding channel .
+ * @retval 0 成功 .
+ * @retval 非 0 失败 .
  *
- * @remarks  Destroy audio decoding channel .
+ * @remarks 无 .
  *
- * @attention  Destroy audio decoding channel .
+ * @attention 无 .
  */
  int IMP_ADEC_DestroyChn(int adChn);
 
 /**
- * @fn int IMP_ADEC_SendStream(int adChn, IMPAudioStream *stream, IMPBlock block)
+ * @fn int IMP_ADEC_SendStream (int adChn, IMPAudioStream * flux, bloc IMPBlock)
  *
- *  Send audio code stream to audio decoding channel .
+ * Envoyer le flux de code audio au canal de décodage audio .
  *
- * @param[in] adChn  Send audio code stream to audio decoding channel .
- * @param[in] stream  Audio stream .
- * @param[in] block  Audio stream / Audio stream .
+ * @param[in] adChn Channel number .
+ * @param[in] stream Flux de code audio.
+ * @param[in] block block / Non-blocking flag .
  *
- * @retval 0  Audio stream .
- * @retval  Audio stream 0  Audio stream .
+ * @retval 0 成功 .
+ * @retval 非 0 失败 .
  *
- * @remarks  Audio stream 
- * @code
+ * @remarks Sample code 
+ * @code 
  * while(1) {
- *		//  Get the data that needs to be decoded 
+ *		// Obtenez les données à décoder 
  *		ret = fread(buf_g711, 1, IMP_AUDIO_BUF_SIZE/2, file_g711);
  *		if(ret < IMP_AUDIO_BUF_SIZE/2)
  *			break;
  *
- *		//  Send decoded data 
+ *		// Envoyer des données décodées 
  *		IMPAudioStream stream_in;
  *		stream_in.stream = (uint8_t *)buf_g711;
  *		stream_in.len = ret;
@@ -1197,7 +1197,7 @@ int IMP_AENC_PollingStream(int AeChn, unsigned int timeout_ms);
  *			return ret;
  *		}
  *
- *		//  Get the decoded data 
+ *		// Obtenez les données décodées 
  *		IMPAudioStream stream_out;
  *		ret = IMP_ADEC_GetStream(adChn, &stream_out, BLOCK);
  *		if(ret != 0) {
@@ -1205,150 +1205,150 @@ int IMP_AENC_PollingStream(int AeChn, unsigned int timeout_ms);
  *			return ret;
  *		}
  *
- *		//  Use decoded data 
+ *		// Utiliser des données décodées 
  *		fwrite(stream_out.stream, 1, stream_out.len, file_pcm);
  *
- *		//  Release the decoded data 
+ *		// Libérez les données décodées 
  *		ret = IMP_ADEC_ReleaseStream(adChn, &stream_out);
  *		if(ret != 0) {
  *			IMP_LOG_ERR(TAG, "imp audio decoder release stream failed\n");
  *			return ret;
  *		}
  * }
- * @endcode
+ * @endcode 
  *
- * @attention  Release the decoded data .
+ * @attention 无 .
  */
  int IMP_ADEC_SendStream(int adChn, IMPAudioStream *stream, IMPBlock block);
 
 /**
- * @fn int IMP_ADEC_PollingStream(int AdChn, unsigned int timeout_ms)
+ * @fn int IMP_ADEC_PollingStream (int AdChn, int timeout_ms non signé)
  *
- * Polling Decode audio stream buffer .
+ * Polling Décoder le tampon de flux audio .
  *
- * @param[in] AdChn  Audio decoding input channel number .
- * @param[in] timeout_ms Polling Audio decoding input channel number .
+ * @param[in] Numéro de canal d'entrée de décodage audio AdChn.
+ * @param[in] timeout_ms Polling overtime time .
  *
- * @retval 0  Audio decoding input channel number .
- * @retval  Audio decoding input channel number 0  Audio decoding input channel number .
+ * @retval 0 成功 .
+ * @retval 非 0 失败 .
  *
- * @remarks  Audio decoding input channel number .
+ * @remarks 无 .
  *
- * @attention  Audio decoding input channel number IMP_ADEC_GetStream Audio decoding input channel number ， Audio decoding input channel number 
- *			   The decoded data is ready ， The decoded data is ready IMP_ADEC_GetStream Get the decoded data .
+ * @attention Utilisez cette interface avant d'utiliser IMP_ADEC_GetStream, lorsque l'interface est appelée avec succès, cela signifie audio
+ *			 Les données décodées sont prêtes ， can use IMP_ADEC_GetStream Obtenez les données décodées .
  */
 int IMP_ADEC_PollingStream(int AdChn, unsigned int timeout_ms);
 
 /**
- * @fn int IMP_ADEC_GetStream(int adChn, IMPAudioStream *stream ,IMPBlock block)
+ * @fn int IMP_ADEC_GetStream (int adChn, IMPAudioStream * flux, bloc IMPBlock)
  *
- *  Get the decoded code stream .
+ * Obtenez le flux de code décodé .
  *
- * @param[in] adChn  Get the decoded code stream .
- * @param[in] stream  Get decoded code stream .
- * @param[in] block  Get decoded code stream / Get decoded code stream .
+ * @param[in] adChn Channel number .
+ * @param[in] stream Récupère le flux de code décodé.
+ * @param[in] block block / Non-blocking flag .
  *
- * @retval 0  Get decoded code stream .
- * @retval  Get decoded code stream 0  Get decoded code stream .
+ * @retval 0 成功 .
+ * @retval 非 0 失败 .
  *
- * @remarks  Get decoded code stream IMP_ADEC_SendStream Get decoded code stream .
+ * @remarks Voir la description de la fonction IMP_ADEC_SendStream pour l'exemple de code.
  *
- * @attention  Get decoded code stream .
+ * @attention 无 .
  */
 int IMP_ADEC_GetStream(int adChn, IMPAudioStream *stream ,IMPBlock block);
 
 /**
- * @fn int IMP_ADEC_ReleaseStream(int adChn,IMPAudioStream *stream)
+ * @fn int IMP_ADEC_ReleaseStream (int adChn, IMPAudioStream * flux)
  *
- *  Release the code stream obtained from the audio decoding channel .
+ * Libérez le flux de code obtenu à partir du canal de décodage audio .
  *
- * @param[in] adChn  Release the code stream obtained from the audio decoding channel .
- * @param[in] stream  Audio stream pointer .
+ * @param[in] adChn Channel number .
+ * @param[in] pointeur de flux de flux de code audio.
  *
- * @retval 0  Audio stream pointer .
- * @retval  Audio stream pointer 0  Audio stream pointer .
+ * @retval 0 成功 .
+ * @retval 非 0 失败 .
  *
- * @remarks  Audio stream pointer IMP_ADEC_SendStream Audio stream pointer .
+ * @remarks See sample code IMP_ADEC_SendStream Function description .
  *
- * @attention  Audio stream pointer .
+ * @attention 无 .
  */
 int IMP_ADEC_ReleaseStream(int adChn,IMPAudioStream *stream);
 
 /**
- * @fn int IMP_ADEC_ClearChnBuf(int adChn)
+ * @fn int IMP_ADEC_ClearChnBuf (int adChn)
  *
- *  Clear the current audio data buffer in the audio decoding channel .
+ * Effacer le tampon de données audio actuel dans le canal de décodage audio .
  *
- * @param[in] adChn  Clear the current audio data buffer in the audio decoding channel .
+ * @param[in] adChn Channel number .
  *
- * @retval 0  Clear the current audio data buffer in the audio decoding channel .
- * @retval  Clear the current audio data buffer in the audio decoding channel 0  Clear the current audio data buffer in the audio decoding channel .
+ * @retval 0 成功 .
+ * @retval 非 0 失败 .
  *
- * @remarks  Clear the current audio data buffer in the audio decoding channel .
+ * @remarks 无 .
  *
- * @attention  Clear the current audio data buffer in the audio decoding channel .
+ * @attention 无 .
  */
  int IMP_ADEC_ClearChnBuf(int adChn);
 
 /**
- * @fn int IMP_ADEC_RegisterDecoder(int *handle, IMPAudioDecDecoder *decoder)
+ * @fn int IMP_ADEC_RegisterDecoder (int * handle, IMPAudioDecDecoder * décodeur)
  *
- *  Register decoder .
+ * Enregistrer le décodeur .
  *
- * @param[in] ps32handle  Register decoder .
- * @param[in] decoder  Decoder attribute structure .
+ * @param[in] ps32handle Register handle .
+ * @param[in] décodeur Structure d'attribut du décodeur.
  *
- * @retval 0  Decoder attribute structure .
- * @retval  Decoder attribute structure 0  Decoder attribute structure .
+ * @retval 0 成功 .
+ * @retval 非 0 失败 .
  *
- * @remarks  Decoder attribute structure 
- * @code
+ * @remarks Sample code 
+ * @code 
  * int handle_g711a = 0;
  * IMPAudioDecDecoder my_decoder;
  * sprintf(my_decoder.name, "%s", "MY_G711A");
- * my_decoder.openDecoder = NULL; //  Decoder callback function 
- * my_decoder.decodeFrm = MY_G711A_Decode_Frm; //  Decoder callback function 
- * my_decoder.getFrmInfo = NULL; //  Decoder callback function 
- * my_decoder.closeDecoder = NULL; //  Decoder callback function 
+ * my_decoder.openDecoder = NULL; // Fonction de rappel du décodeur 
+ * my_decoder.decodeFrm = MY_G711A_Decode_Frm; // Decoder callback function 
+ * my_decoder.getFrmInfo = NULL; // Decoder callback function 
+ * my_decoder.closeDecoder = NULL; // Decoder callback function 
  *
- * //  Decoder callback function 
+ * // Register the decoder 
  * ret = IMP_ADEC_RegisterDecoder(&handle_g711a, &my_decoder);
  * if(ret != 0) {
  *		IMP_LOG_ERR(TAG, "IMP_ADEC_RegisterDecoder failed\n");
  *		return ret;
  * }
  *
- * //  Use decoder 
+ * // Utiliser le décodeur 
  * int adChn = 0;
  * IMPAudioDecChnAttr attr;
- * attr.type = handle_g711a; //  decoding type Equal to that returned by the decoder registration handle_g711a.
+ * attr.type = handle_g711a; // décodage type Égal à celui renvoyé par l'enregistrement du décodeur handle_g711a.
  * attr.bufSize = 20;
  * attr.mode = ADEC_MODE_PACK;
- * //  Create a decoding channel 
+ * // Créer un canal de décodage 
  * ret = IMP_ADEC_CreateChn(adChn, &attr);
  * if(ret != 0) {
  *		IMP_LOG_ERR(TAG, "imp audio decoder create channel failed\n");
  *		return ret;
  * }
- * @endcode
+ * @endcode 
  *
- * @attention  Create a decoding channel SDK The same as the built-in decoder .
+ * @attention Après l'enregistrement, la méthode d'utilisation est la même que l'utilisation du décodeur intégré du SDK.
  */
  int IMP_ADEC_RegisterDecoder(int *handle, IMPAudioDecDecoder *decoder);
 
 /**
- * @fn int IMP_ADEC_ReleaseDecoder(int *handle)
+ * @fn int IMP_ADEC_ReleaseDecoder (int * handle)
  *
- *  Unregister decoder .
+ * Désenregistrer le décodeur .
  *
- * @param[in] ps32handle  Unregister decoder ( Handle obtained when registering the decoder ).
+ * @param[in] ps32handle registration handle (handle obtenu lors de l'enregistrement du décodeur).
  *
- * @retval 0  Handle obtained when registering the decoder .
- * @retval  Handle obtained when registering the decoder 0  Handle obtained when registering the decoder .
+ * @retval 0 成功 .
+ * @retval 非 0 失败 .
  *
- * @remarks  Handle obtained when registering the decoder .
+ * @remarks 无 .
  *
- * @attention  Handle obtained when registering the decoder .
+ * @attention 无 .
  */
  int IMP_ADEC_ReleaseDecoder(int *handle);
 
@@ -1356,307 +1356,307 @@ int IMP_ADEC_ReleaseStream(int adChn,IMPAudioStream *stream);
  * ACODEC Configuration .
  */
 /**
- * @fn int IMP_AI_SetVol(int audioDevId, int aiChn, int aiVol)
+ * @fn int IMP_AI_SetVol (int audioDevId, int aiChn, int aiVol)
  *
- *  Set audio input volume .
+ * Régler le volume d'entrée audio .
  *
- * @param[in] aiDevId  Set audio input volume .
- * @param[in] aiChn  Set audio input volume .
- * @param[in] aiVol  Audio input volume .
+ * @param[in] aiDevId Audio input device number .
+ * @param[in] aiChn Audio input channel number .
+ * @param[in] aiVol Niveau de volume d'entrée audio.
  *
- * @retval 0  Audio input volume .
- * @retval  Audio input volume 0  Audio input volume .
+ * @retval 0 成功 .
+ * @retval 非 0 失败 .
  *
- * @remarks  Audio input volume [-30 ~ 120]. -30 Audio input volume ,120 Audio input volume 30dB, Audio input volume 0.5dB.
- * @remarks  Audio input volume 60 Audio input volume ， Audio input volume ， Audio input volume 60 Audio input volume ， Audio input volume 1， Audio input volume 0.5dB Audio input volume 60 Audio input volume ， Audio input volume 1， Audio input volume 0.5dB Audio input volume 
+ * @remarks La plage de valeurs du volume est [-30 ~ 120]. -30 signifie muet et 120 signifie amplifier le son de 30 dB par pas de 0,5 dB.
+ * @remarks Parmi eux, 60 est un point critique pour le réglage du volume. À cette valeur, le logiciel n'augmente ni ne diminue le volume. Lorsque la valeur de volume est inférieure à 60, le volume diminue de 0,5 dB pour chaque diminution; lorsque la valeur de volume est supérieur à 60, l'augmentation de 1, le volume est augmenté de 0,5 dB.
  *
- *  Audio input volume 
- * @code
+ * Exemple de code 
+ * @code 
  * int volume = 60;
  * ret = IMP_AI_SetVol(devID, chnID, volume);
  * if(ret != 0) {
  *		IMP_LOG_ERR(TAG, "Audio Record set volume failed\n");
  *		return ret;
  * }
- * @endcode
- * @attention  If you enter aiVol exceeded [-30 ~ 120] The scope of , Less than -30 Will take -30, more than the 120 Take 120.
+ * @endcode 
+ * @attention Si l'entrée aiVol dépasse la plage de [-30 ~ 120], la valeur inférieure à -30 sera -30 et la valeur supérieure à 120 sera 120.
  */
  int IMP_AI_SetVol(int audioDevId, int aiChn, int aiVol);
 
 /**
- * @fn int IMP_AI_GetVol(int audioDevId, int aiChn, int *vol)
+ * @fn int IMP_AI_GetVol (int audioDevId, int aiChn, int * vol)
  *
- *  Get audio input volume .
+ * Obtenez le volume d'entrée audio .
  *
- * @param[in] aiDevId  Get audio input volume .
- * @param[in] aiChn  Get audio input volume .
- * @param[out] vol  Audio input channel volume .
+ * @param[in] aiDevId Audio input device number .
+ * @param[in] aiChn Audio input channel number .
+ * @param[out] vol Volume du canal d'entrée audio.
  *
- * @retval 0  Audio input channel volume .
- * @retval  Audio input channel volume 0  Audio input channel volume .
+ * @retval 0 成功 .
+ * @retval 非 0 失败 .
  *
- * @remarks  Audio input channel volume .
+ * @remarks 无 .
  *
- * @attention  Audio input channel volume .
+ * @attention 无 .
  */
  int IMP_AI_GetVol(int audioDevId, int aiChn, int *vol);
 
 /**
- * @fn int IMP_AI_SetVolMute(int audioDevId, int aiChn, int mute)
+ * @fn int IMP_AI_SetVolMute (int audioDevId, int aiChn, int muet)
  *
- *  Set audio input mute .
+ * Régler la sourdine de l'entrée audio .
  *
- * @param[in] aiDevId  Set audio input mute .
- * @param[in] aiChn  Set audio input mute .
- * @param[out] mute  Audio input mute sign , mute = 0: Mute off , mute = 1: Turn on mute .
+ * @param[in] aiDevId Audio input device number .
+ * @param[in] aiChn Audio input channel number .
+ * @param[out] mute Indicateur de mute de l'entrée audio, mute = 0: désactiver le mute, mute = 1: activer le mute.
  *
- * @retval 0  Turn on mute .
- * @retval  Turn on mute 0  Turn on mute .
+ * @retval 0 成功 .
+ * @retval 非 0 失败 .
  *
- * @remarks  Call this interface to mute immediately .
+ * @remarks Appelez cette interface pour couper immédiatement le son.
  *
- * @attention  Call this interface to mute immediately .
+ * @attention 无 .
  */
  int IMP_AI_SetVolMute(int audioDevId, int aiChn, int mute);
 
 /**
- * @fn int IMP_AO_SetVol(int audioDevId, int aoChn, int aoVol)
+ * @fn int IMP_AO_SetVol (int audioDevId, int aoChn, int aoVol)
  *
- *  Set audio output channel volume .
+ * Régler le volume du canal de sortie audio .
  *
- * @param[in] audioDevId  Set audio output channel volume .
- * @param[in] aoChn  Set audio output channel volume .
- * @param[in] aoVol  Audio output volume .
+ * @param[in] audioDevId Audio device number .
+ * @param[in] aoChn Audio output channel number .
+ * @param[in] aoVol Volume de sortie audio.
  *
- * @retval 0  Audio output volume .
- * @retval  Audio output volume 0  Audio output volume .
+ * @retval 0 成功 .
+ * @retval 非 0 失败 .
  *
- * @remarks  Audio output volume [-30 ~ 120]. -30 Audio output volume ,120 Audio output volume 30dB, Audio output volume 0.5dB.
- * @remarks  Audio output volume 60 Audio output volume ， Audio output volume ， Audio output volume 60 Audio output volume ， Audio output volume 1， Audio output volume 0.5dB Audio output volume 60 Audio output volume ， Audio output volume 1， Audio output volume 0.5dB Audio output volume 
+ * @remarks The range of volume is [-30 ~ 120]. -30 Stands for mute ,120 Means to amplify the sound 30dB, Step size 0.5dB.
+ * @remarks among them 60 Is a critical point for the volume setting ， The software does not increase or decrease the volume at this value ， When the volume value is less than 60 Time ， Every drop 1， Volume down 0.5dB ; When the volume value is greater than 60 Time ， Increase 1， Volume increase 0.5dB . 
  *
- * @attention  Audio output volume aoVol Audio output volume [-30 ~ 120] Audio output volume , Audio output volume -30 Audio output volume -30, Audio output volume 120 Audio output volume 120.
+ * @attention Si l'aoVol entré dépasse la plage de [-30 ~ 120], la valeur inférieure à -30 sera -30 et la valeur supérieure à 120 sera 120.
  */
  int IMP_AO_SetVol(int audioDevId, int aoChn, int aoVol);
 
 /**
- * @fn int IMP_AO_GetVol(int audioDevId, int aoChn, int *vol)
+ * @fn int IMP_AO_GetVol (int audioDevId, int aoChn, int * vol)
  *
- *  Get audio output channel volume .
+ * Obtenir le volume du canal de sortie audio .
  *
- * @param[in] audioDevId  Get audio output channel volume .
- * @param[in] aoChn  Get audio output channel volume .
- * @param[out] aoVol  Get audio output channel volume .
+ * @param[in] audioDevId Audio device number .
+ * @param[in] aoChn Audio output channel number .
+ * @param[out] aoVol Audio output volume .
  *
- * @retval 0  Get audio output channel volume .
- * @retval  Get audio output channel volume 0  Get audio output channel volume .
+ * @retval 0 成功 .
+ * @retval 非 0 失败 .
  *
- * @remarks  Get audio output channel volume .
+ * @remarks 无 .
  *
- * @attention  Get audio output channel volume .
+ * @attention 无 .
  */
  int IMP_AO_GetVol(int audioDevId, int aoChn, int *vol);
 
 /**
- * @fn int IMP_AO_SetVolMute(int audioDevId, int aoChn, int mute)
+ * @fn int IMP_AO_SetVolMute (int audioDevId, int aoChn, int mute)
  *
- *  Set audio output mute .
+ * Régler la sourdine de la sortie audio .
  *
- * @param[in] audioDevId  Audio output device number .
- * @param[in] aoChn  Audio output device number .
- * @param[out] mute  Audio output mute sign , mute = 0: Audio output mute sign , mute = 1: Audio output mute sign .
+ * @param[in] audioDevId Numéro du périphérique de sortie audio.
+ * @param[in] aoChn Audio output channel number .
+ * @param[out] mute sortie audio mute flag, mute = 0: désactiver le mute, mute = 1: activer le mute.
  *
- * @retval 0  Audio output mute sign .
- * @retval  Audio output mute sign 0  Audio output mute sign .
+ * @retval 0 成功 .
+ * @retval 非 0 失败 .
  *
- * @remarks  Audio output mute sign .
+ * @remarks Call this interface to mute immediately .
  *
- * @attention  Audio output mute sign .
+ * @attention 无 .
  */
  int IMP_AO_SetVolMute(int audioDevId, int aoChn, int mute);
 
 /**
- * @fn int IMP_AI_SetGain(int audioDevId, int aiChn, int aiGain)
+ * @fn int IMP_AI_SetGain (int audioDevId, int aiChn, int aiGain)
  *
- *  Set audio input gain .
+ * Régler le gain d'entrée audio .
  *
- * @param[in] audioDevId  Set audio input gain .
- * @param[in] aiChn  Set audio input gain .
- * @param[out] aiGain  Audio input gain , range [0 ~ 31].
+ * @param[in] audioDevId Numéro de périphérique d'entrée audio.
+ * @param[in] aiChn Audio input channel number .
+ * @param[out] aiGain gain d'entrée audio, plage [0 ~ 31].
  *
- * @retval 0  range .
- * @retval  range 0  range .
+ * @retval 0 成功 .
+ * @retval 非 0 失败 .
  *
- * @remarks  range .
+ * @remarks 无 .
  *
- * @attention aiGain The range is [0 ~ 31], If the value entered is less than 0, then aiGain The value will be \n
- *  set as 0. If the value is greater than 31,aiGain Will be set to 10.
+ * @attention La plage de aiGain est [0 ~ 31], si la valeur d'entrée est inférieure à 0, la valeur de aiGain sera 
+ * définir comme 0. Si la valeur est supérieure à 31,aiGain Sera réglé sur 10.
  *
  */
  int IMP_AI_SetGain(int audioDevId, int aiChn, int aiGain);
 
 /**
- * @fn int IMP_AI_GetGain(int audioDevId, int aiChn, int *aiGain)
+ * @fn int IMP_AI_GetGain (int audioDevId, int aiChn, int * aiGain)
  *
- *  Obtain AI Gain value .
+ * Obtenir AI Gagner de la valeur .
  *
- * @param[in] audioDevId  Gain value .
- * @param[in] aiChn  Gain value .
- * @param[out] aiGain  Gain value .
+ * @param[in] audioDevId Audio input device number .
+ * @param[in] aiChn Audio input channel number .
+ * @param[out] aiGain Gain d'entrée audio.
  *
- * @retval 0  Gain value .
- * @retval  Gain value 0  Gain value .
+ * @retval 0 成功 .
+ * @retval 非 0 失败 .
  *
- * @remarks  Gain value .
+ * @remarks 无 .
  *
- * @attention  Gain value .
+ * @attention 无 .
  */
  int IMP_AI_GetGain(int audioDevId, int aiChn, int *aiGain);
 
 /**
- * @fn int IMP_AO_SetGain(int audioDevId, int aoChn, int aoGain)
+ * @fn int IMP_AO_SetGain (int audioDevId, int aoChn, int aoGain)
  *
- *  Set audio output gain .
+ * Régler le gain de sortie audio .
  *
- * @param[in] audioDevId  Set audio output gain .
- * @param[in] aoChn  Set audio output gain .
- * @param[out] aoGain  Audio output gain , Audio output gain [0 ~ 0xcb].
+ * @param[in] audioDevId Audio output device number .
+ * @param[in] aoChn Audio output channel number .
+ * @param[out] Gain de sortie audio aoGain, plage [0 ~ 0xcb].
  *
- * @retval 0  Audio output gain .
- * @retval  Audio output gain 0  Audio output gain .
+ * @retval 0 成功 .
+ * @retval 非 0 失败 .
  *
- * @remarks  Audio output gain .
+ * @remarks 无 .
  *
- * @attention aoGain Audio output gain [0 ~ 31], Audio output gain 0, Audio output gain aoGain Audio output gain \n
- *  Audio output gain 0. Audio output gain 31,aoGain Audio output gain 31.
+ * @attention La plage de aoGain est [0 ~ 31], si la valeur d'entrée est inférieure à 0, la valeur de aoGain sera 
+ * set as 0. If the value is greater than 31,aoGain Will be set to 31.
  *
  */
  int IMP_AO_SetGain(int audioDevId, int aoChn, int aoGain);
 
 /**
- * @fn int IMP_AO_GetGain(int audioDevId, int aoChn, int *aoGain)
+ * @fn int IMP_AO_GetGain (int audioDevId, int aoChn, int * aoGain)
  *
- *  Get audio output gain .
+ * Obtenez le gain de sortie audio .
  *
- * @param[in] audioDevId  Get audio output gain .
- * @param[in] aoChn  Get audio output gain .
- * @param[out] aoGain  Get audio output gain .
+ * @param[in] audioDevId Audio output device number .
+ * @param[in] aoChn Audio output channel number .
+ * @param[out] aoGain gain de sortie audio.
  *
- * @retval 0  Get audio output gain .
- * @retval  Get audio output gain 0  Get audio output gain .
+ * @retval 0 成功 .
+ * @retval 非 0 失败 .
  *
- * @remarks  Get audio output gain .
+ * @remarks 无 .
  *
- * @attention  Get audio output gain .
+ * @attention 无 .
  */
  int IMP_AO_GetGain(int audioDevId, int aoChn, int *aoGain);
 
 /**
- * @fn int IMP_AO_Soft_Mute(int audioDevId, int aoChn)
+ * @fn int IMP_AO_Soft_Mute (int audioDevId, int aoChn)
  *
- *  Output soft mute control .
+ * Commande de sourdine douce de sortie .
  *
- * @param[in] audioDevId  Output soft mute control .
- * @param[in] aoChn  Output soft mute control .
+ * @param[in] audioDevId Audio output device number .
+ * @param[in] aoChn Audio output channel number .
  *
- * @retval 0  Output soft mute control .
- * @retval  Output soft mute control 0  Output soft mute control .
+ * @retval 0 成功 .
+ * @retval 非 0 失败 .
  *
- * @remarks  Calling this interface will not immediately mute the sound ， Will slowly lower the volume from the normal playback state ， Until it's really silent .
+ * @remarks L'appel de cette interface ne coupera pas immédiatement le son, mais réduira lentement le volume à partir de l'état de lecture normal jusqu'à ce qu'il soit vraiment coupé.
  *
- * @attention  Until it's really silent .
+ * @attention 无 .
  */
  int IMP_AO_Soft_Mute(int audioDevId, int aoChn);
 
 /**
- * @fn int IMP_AO_Soft_UNMute(int audioDevId, int aoChn)
+ * @fn int imp_AO_soft_UN mute (int audio Devi, int AOC peut aussi)
  *
- *  Output soft unmute control .
+ * Contrôle de mise en sourdine douce de sortie .
  *
- * @param[in] audioDevId  Output soft unmute control .
- * @param[in] aoChn  Output soft unmute control .
+ * @param[in] audioDevId Audio output device number .
+ * @param[in] aoChn Audio output channel number .
  *
- * @retval 0  Output soft unmute control .
- * @retval  Output soft unmute control 0  Output soft unmute control .
+ * @retval 0 成功 .
+ * @retval 非 0 失败 .
  *
- * @remarks  Calling this interface will not immediately restore the current volume ， Will slowly increase the volume from the mute state ， Until the volume reaches the set volume .
+ * @remarks L'appel de cette interface ne restaurera pas immédiatement le volume actuel, mais augmentera lentement le volume à partir de l'état muet jusqu'à ce que le volume atteigne le volume défini.
  *
- * @attention  Until the volume reaches the set volume .
+ * @attention 无 .
  */
  int IMP_AO_Soft_UNMute(int audioDevId, int aoChn);
 
 /**
- * @fn int IMP_AI_GetFrameAndRef(int audioDevId, int aiChn, IMPAudioFrame *frm, IMPAudioFrame *ref, IMPBlock block)
+ * @fn int IMP_AI_GetFrameAndRef (int audioDevId, int aiChn, IMPAudioFrame * frm, IMPAudioFrame * ref, bloc IMPBlock)
  *
- *  Get audio frame and output reference frame .
+ * Obtenir une image audio et une image de référence de sortie .
  *
- * @param[in] audioDevId  Get audio frame and output reference frame .
- * @param[in] aiChn  Get audio frame and output reference frame .
- * @param[out] frm  Get audio frame and output reference frame .
- * @param[out] ref  Reference frame structure pointer .
- * @param[in] block  Reference frame structure pointer / Reference frame structure pointer .
+ * @param[in] audioDevId Audio device number .
+ * @param[in] aiChn Audio input channel number .
+ * @param[out] frm Audio frame structure pointer .
+ * @param[out] ref fait référence au pointeur de la structure du cadre.
+ * @param[in] block block / Non-blocking flag .
  *
- * @retval 0  Reference frame structure pointer .
- * @retval  Reference frame structure pointer 0  Reference frame structure pointer .
+ * @retval 0 成功 .
+ * @retval 非 0 失败 .
  *
- * @remarks  Reference frame structure pointer 
- * @code
+ * @remarks Sample code 
+ * @code 
  * IMPAudioFrame frm;
  * IMPAudioFrame ref;
- * //  Reference frame structure pointer 
+ * // Get audio frame and output reference frame 
  * ret = IMP_AI_GetFrameAndRef(devID, chnID, &frm, &ref, BLOCK);
  * if(ret != 0) {
  *		IMP_LOG_ERR(TAG, "Audio Get Frame Data error\n");
  *		return ret;
  * }
  *
- * fwrite(frm.virAddr, 1, frm.len, record_file); //  Reference frame structure pointer 
- * fwrite(ref.virAddr, 1, ref.len, ref_file); //  Use audio reference frames 
+ * fwrite(frm.virAddr, 1, frm.len, record_file); // Use audio frame data 
+ * fwrite(ref.virAddr, 1, ref.len, ref_file); // Utiliser des cadres de référence audio 
  *
- * //  Use audio reference frames 
+ * // Release audio frame 
  * ret = IMP_AI_ReleaseFrame(devID, chnID, &frm);
  * if(ret != 0) {
  *		IMP_LOG_ERR(TAG, "Audio release frame data error\n");
  *		return ret;
  * }
- * @endcode
+ * @endcode 
  *
- * @attention  Use audio reference frames .
+ * @attention 无 .
  */
  int IMP_AI_GetFrameAndRef(int audioDevId, int aiChn, IMPAudioFrame *frm, IMPAudioFrame *ref, IMPBlock block);
 
 /**
- * @fn int IMP_AI_EnableAecRefFrame(int audioDevId, int aiChn, int audioAoDevId, int aoChn)
+ * @fn int IMP_AI_EnableAecRefFrame (int audioDevId, int aiChn, int audioAoDevId, int aoChn)
  *
- *  Open to get reference frame .
+ * Ouvrir pour obtenir le cadre de référence .
  *
- * @param[in] audioDevId  Open to get reference frame .
- * @param[in] aiChn  Open to get reference frame .
- * @param[in] audioAoDevId  Open to get reference frame .
- * @param[in] aoChn  Open to get reference frame .
+ * @param[in] audioDevId Audio device number .
+ * @param[in] aiChn Audio input channel number .
+ * @param[in] audioAoDevId Numéro du périphérique de sortie audio.
+ * @param[in] aoChn Audio output channel number .
  *
- * @retval 0  Open to get reference frame .
- * @retval  Open to get reference frame 0  Open to get reference frame .
+ * @retval 0 成功 .
+ * @retval 非 0 失败 .
  *
- * @remarks  transfer IMP_AI_GetFrameAndRef Call this interface before .
- * @attention  Call this interface before .
+ * @remarks Appelez cette interface avant d'appeler IMP_AI_GetFrameAndRef.
+ * @attention 无 .
  */
  int IMP_AI_EnableAecRefFrame(int audioDevId, int aiChn, int audioAoDevId, int aoChn);
 
 /**
- * @fn int IMP_AI_DisableAecRefFrame(int audioDevId, int aiChn, int audioAoDevId, int aoChn)
+ * @fn int IMP_AI_DisableAecRefFrame (int audioDevId, int aiChn, int audioAoDevId, int aoChn)
  *
- *  Close Get Reference Frame .
+ * Fermer Obtenir le cadre de référence .
  *
- * @param[in] audioDevId  Close Get Reference Frame .
- * @param[in] aiChn  Close Get Reference Frame .
- * @param[in] audioAoDevId  Close Get Reference Frame .
- * @param[in] aoChn  Close Get Reference Frame .
+ * @param[in] audioDevId Audio device number .
+ * @param[in] aiChn Audio input channel number .
+ * @param[in] audioAoDevId Audio output device number .
+ * @param[in] aoChn Audio output channel number .
  *
- * @retval 0  Close Get Reference Frame .
- * @retval  Close Get Reference Frame 0  Close Get Reference Frame .
+ * @retval 0 成功 .
+ * @retval 非 0 失败 .
  *
- * @remarks  Close Get Reference Frame .
- * @attention  Close Get Reference Frame .
+ * @remarks 无 .
+ * @attention 无 .
  */
  int IMP_AI_DisableAecRefFrame(int audioDevId, int aiChn, int audioAoDevId, int aoChn);
 

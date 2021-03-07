@@ -1,0 +1,12 @@
+digraph "IMP_IVS_MoveParam"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="IMP_IVS_MoveParam",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" roiRect" ,fontname="Helvetica"];
+  Node2 [label="IMPRect",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structIMPRect.html"];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" p0\np1" ,fontname="Helvetica"];
+  Node3 [label="IMPPoint",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structIMPPoint.html"];
+  Node4 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" frameInfo" ,fontname="Helvetica"];
+  Node4 [label="IMPFrameInfo",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structIMPFrameInfo.html"];
+}

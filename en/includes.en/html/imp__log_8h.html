@@ -183,13 +183,14 @@ Enumerations</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a4fd6d2fa42d0501a10de167579a6385d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imp__log_8h.html#a4fd6d2fa42d0501a10de167579a6385d">imp_log_fun</a> (int le, int op, int out, const char *tag, const char *file, int line, const char *func, const char *fmt,...)</td></tr>
 <tr class="separator:a4fd6d2fa42d0501a10de167579a6385d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a09f2431dba86d4a51a4d9c0eefed0c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imp__log_8h.html#a6a09f2431dba86d4a51a4d9c0eefed0c">IMP_Log_Set_Option</a> (int op)</td></tr>
+<tr class="memitem:a6a09f2431dba86d4a51a4d9c0eefed0c"><td class="memItemLeft" align="right" valign="top"><a id="a6a09f2431dba86d4a51a4d9c0eefed0c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_Log_Set_Option</b> (int op)</td></tr>
 <tr class="separator:a6a09f2431dba86d4a51a4d9c0eefed0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab55c0c1c9e7c65932edbc28bf8bb63d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imp__log_8h.html#aab55c0c1c9e7c65932edbc28bf8bb63d">IMP_Log_Get_Option</a> (void)</td></tr>
 <tr class="separator:aab55c0c1c9e7c65932edbc28bf8bb63d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Log Interface header file </p>
+<div class="textblock"><p>Log Fichier d'en-tête d'interface </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a04452638fe72d70f3007a4cd5d8db7bf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a04452638fe72d70f3007a4cd5d8db7bf">&#9670;&nbsp;</a></span>IMP_LOG_DBG</h2>
@@ -222,7 +223,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>DEBUG Hierarchical printing interface </p>
+<p>DEBUG 等級打印接口 </p>
 
 </div>
 </div>
@@ -257,7 +258,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>ERROR Hierarchical printing interface </p>
+<p>ERROR 等級打印接口 </p>
 
 </div>
 </div>
@@ -292,7 +293,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>FATAL Hierarchical printing interface </p>
+<p>FATAL 等級打印接口 </p>
 
 </div>
 </div>
@@ -327,7 +328,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>INFO Hierarchical printing interface </p>
+<p>INFO 等級打印接口 </p>
 
 </div>
 </div>
@@ -439,7 +440,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>SILENT Hierarchical printing interface </p>
+<p>SILENT 等級打印接口 </p>
 
 </div>
 </div>
@@ -474,7 +475,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>UNKNOWN Hierarchical printing interface </p>
+<p>UNKNOWN Interface d'impression hiérarchique </p>
 
 </div>
 </div>
@@ -509,7 +510,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>VERBOSE Hierarchical printing interface </p>
+<p>VERBOSE 等級打印接口 </p>
 
 </div>
 </div>
@@ -616,35 +617,10 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get printing options</p>
+<p>Obtenez des options d'impression</p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">Return</td><td>to the print options in the system </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a6a09f2431dba86d4a51a4d9c0eefed0c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6a09f2431dba86d4a51a4d9c0eefed0c">&#9670;&nbsp;</a></span>IMP_Log_Set_Option()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void IMP_Log_Set_Option </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>op</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Set printing options</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">op</td><td>Set printing options </td></tr>
+    <tr><td class="paramname">Revenir</td><td>aux options d'impression dans le système </td></tr>
   </table>
   </dd>
 </dl>

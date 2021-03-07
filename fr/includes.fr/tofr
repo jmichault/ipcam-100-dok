@@ -1,0 +1,33 @@
+
+
+
+
+gawk 'BEGIN{ ORS="";}{
+  # print("lignezh : " $0 ".\n"); ##
+  ligne="";
+    split ($0, MSGS , "[ -~\t，éèêàçôÉÈÊÀÇÔùÙ×]*", SEPS);
+    MSGSLEN = length(MSGS);
+    for (x=1 ; x<=MSGSLEN ; x++)
+    {
+      #print("MSGS "x " : " MSGS[x] ". sep " x " : "  SEPS[x]"."); ##
+      #print("\n"); ##
+      if(length(MSGS[x])>0)
+      {
+        MSG="";
+        #print ("\n./traduko.sh zh-CN fr \"" MSGS[x] "\"\n");##
+        "./traduko.sh zh-CN fr \"" MSGS[x] "\"" |getline MSG
+        ##print("trad : "MSG".\n");##
+        if (MSG == "")
+        {
+          MSG = MSGS[x]
+        }
+        ligne = ligne " " MSG " ";
+      }
+      ligne = ligne  SEPS[x];
+    }
+  ##print( "lignefr : ");
+  gsub("   "," ",ligne);
+  gsub("  "," ",ligne);
+  print(  ligne "\n");
+
+} '

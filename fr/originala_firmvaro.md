@@ -6,6 +6,65 @@ layout: page
 title: 'Micrologiciel originel'
 ---
 
+# ports ouverts
+
+TCP : 80(http), 443(http aussi !), 554(rtsp), 8004, 8006, 9527(telnetd), 9999
+UDP : 67(dhcp), 3702, 8002, 39642
+
+port 80 : http
+http://IP : login : _admin:_, mot de passe : _admin_
+
+port 443 : http
+http://IP:443 : login : _admin:_, mot de passe : _admin_
+
+port 554 : rtsp
+* flux principal : 
+
+    ```
+    IP=xxx.xxx.xxx.xxx
+    ffplay -i rtsp://admin:admin@$IP/stream1
+    ffplay -i rtsp://admin:admin@$IP/mpeg4/ch0/main/av_stream
+
+    ```
+* flux secondaire :
+
+    ```
+    IP=xxx.xxx.xxx.xxx
+    ffplay -i rtsp://admin:admin@$IP/stream2
+    ffplay -i rtsp://admin:admin@$IP/mpeg4/ch1/main/av_stream
+    ````
+
+port 8004 : ? , ouvert par jco_server
+
+port 8006 : ? , ouvert par jco_server
+
+
+port 9527 : telnet
+`telnetd IP 9527` : login : _root_, mot de passe : _jco66688_, accessible pendant 5 minutes, fermé après.
+pour ne pas être déconnecté au bout des 5 minutes : `killall -9 auto_run.sh`
+pour arrêter jco_server : 
+
+```
+killall -9 auto_run.sh
+killall -9 jco_server;echo 'V'>/dev/watchdog;echo 'V'>/dev/watchdog0
+```
+
+port 9999 : permet de contrôler la caméra, exemple :
+
+```
+IP=xxx.xxx.xxx.xxx
+echo "checkuser -act set -user admin -password admin" | nc $IP 9999
+echo "list" | nc $IP 9999
+echo "pelcod20ctrl -?" | nc $IP 9999
+echo "pelcod20ctrl -type 1" | nc $IP 9999
+```
+
+UDP 67 : ouvert par udhcpd
+
+UDP 3702 : ? , ouvert par jco_server
+
+
+# la mémoire flash interne
 La mémoire flash est partitionnée comme suit :
 
 partition| description|
@@ -75,4 +134,15 @@ fichiers notables dans _/ipc_ :
   * libimp.so : bibliothèque _ingenic_ _IMP_ ( _Ingenic Media Platform_ )
 
 
-note : libimp.so est différente de celle livrée pour le T20, et celle fournie avec le T20 ne convient pas.
+**note : libimp.so est différente de celle livrée pour le T20, et celle fournie avec le T20 ne convient pas.**
+
+# ports GPIO
+
+* ports bloqués par motor.ko : 18? 38 39 40 41 47 48 49 60?
+* ports bloqués par audio.ko : 63?
+* port 46 = LEDS infra-rouge.
+* port 52 = ?
+* port 64 = ?
+* port 81 = LEDS bleues.
+
+

@@ -2,20 +2,53 @@
 
 
 
-awk 'BEGIN{ ORS="";}{
-  split ($0, MSGS , "[ -~\t，]*", SEPS);
-  MSGSLEN = length(MSGS);
-  for (x=1 ; x<=MSGSLEN ; x++)
+gawk 'BEGIN{ ORS="";}{
+  # print("lignezh : " $0 ".\n"); ##
+  ligne="";
+  if(match($0," @(attention|brief|code|def|defgroup|endcode|file|fn|image|ingroup|member:|param|param\\[in\\]|param\\[out\\]|ptr:|ref|remark|remarks|retval|section|subsection|type:)"))
+
   {
-    #print("MSGS "x " : " MSGS[x] ". sep " x " : "  SEPS[x]".");
-    #print("\n");
-    if(length(MSGS[x])>0)
+    # printf(" @ en %d , %d :%s.\n",RSTART,RLENGTH,substr($0,RSTART,RLENGTH)); ##
+    ligne =substr($0,1,RSTART+RLENGTH);
+    fin=substr($0,RSTART+RLENGTH);
+    MSG="";
+    #print ("\n./traduko.sh zh-CN en \"" fin "\"\n");##
+    #"/bin/echo XXXXXX"
+
+    "./traduko.sh zh-CN en \"" fin "\"" |getline MSG;
+
+    #print ("\nMSG=" MSG ".\n");##
+    if (MSG == "")
     {
-      "./traduko.sh zh-CN fr \"" MSGS[x] "\"" |getline MSG
-      print(" "MSG" ");
+      MSG=fin;
+      #print ("\n./traduko.sh zh-CN en \"" fin "\"\n");##
     }
-    print(SEPS[x]);
+    ligne= ligne " " MSG
   }
-  print( "\n");
+  else
+  {
+    split ($0, MSGS , "[ -~\t，]*", SEPS);
+    MSGSLEN = length(MSGS);
+    for (x=1 ; x<=MSGSLEN ; x++)
+    {
+      #print("MSGS "x " : " MSGS[x] ". sep " x " : "  SEPS[x]"."); ##
+      #print("\n"); ##
+      if(length(MSGS[x])>0)
+      {
+        MSG="";
+        #print ("\n./traduko.sh zh-CN en \"" MSGS[x] "\"\n");##
+        "./traduko.sh zh-CN en \"" MSGS[x] "\"" |getline MSG
+        if (MSG == "")
+        {
+          MSG = MSGS[x]
+        }
+        ##print("trad : "MSG".\n");##
+        ligne = ligne " " MSG " ";
+      }
+      ligne = ligne  SEPS[x];
+    }
+  }
+  ##print( "ligneen : ");
+  print(  ligne "\n");
 
 } '
