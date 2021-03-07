@@ -6,6 +6,77 @@ layout: page
 title: 'Firmware original'
 ---
 
+# portas abertas
+
+TCP: 80(http), 443(http também!), 554(rtsp), 8004, 8006, 9527(telnet), 9999
+UDP: 67(dhcp), 3702, 8002, 39642
+
+porta 80: http
+http: // IP: login: _admin:_, senha: _admin_
+
+porta 443: http
+http: // IP: 443: login: _admin:_, senha: _admin_
+
+porta 554: rtsp
+* fluxo principal: 
+
+    ```
+    IP=xxx.xxx.xxx.xxx
+    ffplay -i rtsp://admin:admin@$IP/stream1
+    ffplay -i rtsp://admin:admin@$IP/mpeg4/ch0/main/av_stream
+
+
+
+    ```
+* flux secondaire :
+
+
+
+    ```
+    IP=xxx.xxx.xxx.xxx
+    ffplay -i rtsp://admin:admin@$IP/stream2
+    ffplay -i rtsp://admin:admin@$IP/mpeg4/ch1/main/av_stream
+    ````
+
+porta 8004 :? , aberto por jco_server
+
+
+
+porta 8006 :? , aberto por jco_server
+
+
+
+
+porta 9527: telnet
+`telnetd IP 9527` : login: _root_, senha: _jco66688_, acessível por 5 minutos, fechado após.
+para não ser desconectado após 5 minutos: `killall -9 auto_run.sh`
+para parar o jco_server : 
+ 
+ 
+
+```
+killall -9 auto_run.sh
+killall -9 jco_server;echo 'V'>/dev/watchdog;echo 'V'>/dev/watchdog0
+```
+
+porta 9999: usada para controlar a câmera, exemplo:
+
+```
+IP=xxx.xxx.xxx.xxx
+echo "checkuser -act set -user admin -password admin" | nc $IP 9999
+echo "list" | nc $IP 9999
+echo "pelcod20ctrl -?" | nc $IP 9999
+echo "pelcod20ctrl -type 1" | nc $IP 9999
+```
+
+UDP 67: aberto de udhcpd
+
+UDP 3702 :? , aberto por jco_server
+
+
+
+
+# memória flash interna
 A memória Flash é distribuída da seguinte forma:
 
 pontuação | descrição |
@@ -97,4 +168,27 @@ arquivos notáveis ​​em _/ipc_ :
 )  * libimp.so: biblioteko _ingenic_ _IMP_ ( _Ingenic Media Platform_ )
 
 
-nota: libimp.so difere daquele entregue para o T20, e aquele entregue com o T20 não é adequado.
+**observação: libimp.so difere daquele fornecido com o T20, e o fornecido com o T20 não é adequado.**
+
+# Portas GPIO
+
+* portas bloqueadas por motor.ko: 18? 38 39 40 41 47 48 49 60?
+
+
+* portas bloqueadas por audio.ko: 63?
+
+
+* porta 46 = LEDs infravermelhos.
+
+
+* porta 52 =?
+
+
+* porta 64 =?
+
+
+* porta 81 = LEDs azuis.
+
+
+
+

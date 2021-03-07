@@ -6,6 +6,77 @@ layout: page
 title: 'ਅਸਲ ਫਰਮਵੇਅਰ'
 ---
 
+# ਖੁੱਲੇ ਪੋਰਟਾਂ
+
+ਟੀਸੀਪੀ: 80(http), 443(http ਵੀ!), 554(rtsp), 8004, 8006, 9527(ਟੈਲਨੈੱਟ), 9999
+ਯੂਡੀਪੀ: 67(dhcp), 3702, 8002, 39642
+
+ਪੋਰਟ 80: http
+http: // IP: login: _admin:_, ਪਾਸਵਰਡ: _admin_
+
+ਪੋਰਟ 443: http
+http: // IP: 443: login: _admin:_, ਪਾਸਵਰਡ: _admin_
+
+ਪੋਰਟ 554: rtsp
+* ਮੁੱਖ ਧਾਰਾ: 
+
+    ```
+    IP=xxx.xxx.xxx.xxx
+    ffplay -i rtsp://admin:admin@$IP/stream1
+    ffplay -i rtsp://admin:admin@$IP/mpeg4/ch0/main/av_stream
+
+
+
+    ```
+* flux secondaire :
+
+
+
+    ```
+    IP=xxx.xxx.xxx.xxx
+    ffplay -i rtsp://admin:admin@$IP/stream2
+    ffplay -i rtsp://admin:admin@$IP/mpeg4/ch1/main/av_stream
+    ````
+
+ਪੋਰਟ 8004 :? , ਜੇਕੋ ਦੁਆਰਾ ਖੋਲ੍ਹਿਆ ਗਿਆ_server
+
+
+
+ਪੋਰਟ 8006 :? , ਜੇਕੋ ਦੁਆਰਾ ਖੋਲ੍ਹਿਆ ਗਿਆ_server
+
+
+
+
+ਪੋਰਟ 9527: ਟੈਲਨੈੱਟ
+`telnetd IP 9527` : ਲੌਗਇਨ: _root_, ਪਾਸਵਰਡ: _jco66688_, 5 ਮਿੰਟ ਲਈ ਪਹੁੰਚਯੋਗ, ਬਾਅਦ ਵਿੱਚ ਬੰਦ.
+ਨੂੰ 5 ਮਿੰਟ ਬਾਅਦ ਡਿਸਕਨੈਕਟ ਨਹੀਂ ਕੀਤਾ ਜਾਣਾ: `killall -9 auto_run.sh`
+ਜੇਕੋ ਰੋਕਣ ਲਈ_server : 
+ 
+ 
+
+```
+killall -9 auto_run.sh
+killall -9 jco_server;echo 'V'>/dev/watchdog;echo 'V'>/dev/watchdog0
+```
+
+ਪੋਰਟ 9999: ਕੈਮਰੇ ਨੂੰ ਨਿਯੰਤਰਿਤ ਕਰਨ ਲਈ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ, ਉਦਾਹਰਣ: (example 1 °)
+
+```
+IP=xxx.xxx.xxx.xxx
+echo "checkuser -act set -user admin -password admin" | nc $IP 9999
+echo "list" | nc $IP 9999
+echo "pelcod20ctrl -?" | nc $IP 9999
+echo "pelcod20ctrl -type 1" | nc $IP 9999
+```
+
+UDP 67: udcpd ਦਾ ਖੁੱਲ੍ਹਾ
+
+ਯੂਡੀਪੀ 3702 :? , ਜੇਕੋ ਦੁਆਰਾ ਖੋਲ੍ਹਿਆ ਗਿਆ_server
+
+
+
+
+# ਅੰਦਰੂਨੀ ਫਲੈਸ਼ ਮੈਮੋਰੀ
 ਫਲੈਸ਼ ਮੈਮੋਰੀ ਨੂੰ ਹੇਠਾਂ ਵੰਡਿਆ ਜਾਂਦਾ ਹੈ:
 
 ਸਕੋਰ | ਵੇਰਵਾ |
@@ -97,4 +168,27 @@ mtd block1 ਵਿੱਚ ਵਿਕਲਪ:
 )  * ਲਿਬਿੰਪ.ਸੋ: ਬਿਬਲਿਓਟੇਕੋ _ingenic_ _IMP_ ( _Ingenic Media Platform_ )
 
 
-ਨੋਟ: libimp.so ਟੀ 20 ਲਈ ਦਿੱਤੇ ਗਏ ਇੱਕ ਨਾਲੋਂ ਵੱਖਰਾ ਹੈ, ਅਤੇ ਟੀ ​​20 ਨਾਲ ਦਿੱਤਾ ਗਿਆ suitableੁਕਵਾਂ ਨਹੀਂ ਹੈ.
+**ਨੋਟ: libimp.so ਟੀ 20 ਲਈ ਦਿੱਤੇ ਗਏ ਨਾਲੋਂ ਵੱਖਰਾ ਹੈ, ਅਤੇ ਟੀ ​​20 ਨਾਲ ਦਿੱਤਾ ਇੱਕ suitableੁਕਵਾਂ ਨਹੀਂ ਹੈ.**
+
+# ਜੀਪੀਆਈਓ ਪੋਰਟਾਂ
+
+* ਮੋਟਰਾਂ ਦੁਆਰਾ ਬੰਦ ਪੋਰਟਾਂ ਬੰਦ: 18? 38 39 40 41 47 48 49 60?
+
+
+* ਪੋਰਟਾਂ ਨੂੰ ਆਡੀਓ.ਕੋ ਦੁਆਰਾ ਰੋਕਿਆ ਗਿਆ: 63?
+
+
+* ਪੋਰਟ 46 = ਇਨਫਰਾਰੈੱਡ ਐਲ.ਈ.ਡੀ.
+
+
+* ਪੋਰਟ 52 =?
+
+
+* ਪੋਰਟ 64 =?
+
+
+* ਪੋਰਟ 81 = ਨੀਲੀਆਂ ਐਲ.ਈ.ਡੀ.
+
+
+
+

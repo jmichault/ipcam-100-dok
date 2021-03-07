@@ -6,6 +6,77 @@ layout: page
 title: 'मूल फर्मवेयर'
 ---
 
+# खुले बंदरगाह
+
+टीसीपी: 80(http), 443(http भी!), 554(rtsp), 8004, 8006, 9527(telnet), 9999
+UDP: 67(dhcp), 3702, 8002, 39642
+
+पोर्ट 80: http
+http: // IP: लॉगिन: _admin:_, पासवर्ड: _admin_
+
+पोर्ट 443: http
+http: // IP: 443: लॉगिन: _admin:_, पासवर्ड: _admin_
+
+पोर्ट 554: आरटीएसपी
+* मुख्य धारा: 
+
+    ```
+    IP=xxx.xxx.xxx.xxx
+    ffplay -i rtsp://admin:admin@$IP/stream1
+    ffplay -i rtsp://admin:admin@$IP/mpeg4/ch0/main/av_stream
+
+
+
+    ```
+* flux secondaire :
+
+
+
+    ```
+    IP=xxx.xxx.xxx.xxx
+    ffplay -i rtsp://admin:admin@$IP/stream2
+    ffplay -i rtsp://admin:admin@$IP/mpeg4/ch1/main/av_stream
+    ````
+
+पोर्ट 8004:? , jco द्वारा खोला गया_server
+
+
+
+पोर्ट 8006 :? , jco द्वारा खोला गया_server
+
+
+
+
+पोर्ट 9527: टेलनेट
+`telnetd IP 9527` : लॉगिन: _root_, पासवर्ड: _jco66688_, 5 मिनट के लिए सुलभ, बंद होने के बाद।
+5 मिनट के बाद डिस्कनेक्ट नहीं किया जाना चाहिए: `killall -9 auto_run.sh`
+को jco_server : 
+रोकने के लिए 
+ 
+
+```
+killall -9 auto_run.sh
+killall -9 jco_server;echo 'V'>/dev/watchdog;echo 'V'>/dev/watchdog0
+```
+
+पोर्ट 9999: कैमरे को नियंत्रित करने के लिए उपयोग किया जाता है, उदाहरण:
+
+```
+IP=xxx.xxx.xxx.xxx
+echo "checkuser -act set -user admin -password admin" | nc $IP 9999
+echo "list" | nc $IP 9999
+echo "pelcod20ctrl -?" | nc $IP 9999
+echo "pelcod20ctrl -type 1" | nc $IP 9999
+```
+
+UDP 67: udhcpdद्वारा खुला
+
+यूडीपी 3702:? , jco द्वारा खोला गया_server
+
+
+
+
+# आंतरिक फ्लैश मेमोरी
 फ्लैश मेमोरी को निम्नानुसार वितरित किया जाता है:
 
 स्कोर | विवरण |
@@ -96,4 +167,27 @@ mtdblock1 में विकल्प:
 °)
 
 
-नोट: libimp.so T20 के लिए दिए गए एक से भिन्न होता है, और T20 के साथ दिया जाने वाला उपयुक्त नहीं है।
+**नोट: libimp.so T20 के लिए दिए गए एक से भिन्न होता है, और T20 के साथ दिया जाने वाला उपयुक्त नहीं है।**
+
+# GPIO पोर्ट
+
+* बंदरगाहों द्वारा अवरुद्ध motor.ko: 18? 38 39 40 41 47 48 49 60?
+
+
+* बंदरगाहों द्वारा अवरुद्ध ऑडियो।
+
+
+* पोर्ट 46 = अवरक्त एलईडी।
+
+
+* पोर्ट 52 =?
+
+
+* पोर्ट 64 =?
+
+
+* पोर्ट 81 = नीला एल ई डी।
+
+
+
+

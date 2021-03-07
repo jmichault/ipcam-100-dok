@@ -6,6 +6,77 @@ layout: page
 title: 'Original firmware'
 ---
 
+# open ports
+
+TCP: 80(http), 443(http too!), 554(rtsp), 8004, 8006, 9527(telnet), 9999
+UDP: 67(dhcp), 3702, 8002, 39642
+
+port 80: http
+http: // IP: login: _admin:_, password: _admin_
+
+port 443: http
+http: // IP: 443: login: _admin:_, password: _admin_
+
+port 554: rtsp
+* main stream: 
+
+    ```
+    IP=xxx.xxx.xxx.xxx
+    ffplay -i rtsp://admin:admin@$IP/stream1
+    ffplay -i rtsp://admin:admin@$IP/mpeg4/ch0/main/av_stream
+
+
+
+    ```
+* flux secondaire :
+
+
+
+    ```
+    IP=xxx.xxx.xxx.xxx
+    ffplay -i rtsp://admin:admin@$IP/stream2
+    ffplay -i rtsp://admin:admin@$IP/mpeg4/ch1/main/av_stream
+    ````
+
+port 8004:? , opened by jco_server
+
+
+
+port 8006:? , opened by jco_server
+
+
+
+
+port 9527: telnet
+`telnetd IP 9527` : login: _root_, password: _jco66688_, accessible for 5 minutes, closed after.
+to not be disconnected after 5 minutes: `killall -9 auto_run.sh`
+to stop jco_server : 
+ 
+ 
+
+```
+killall -9 auto_run.sh
+killall -9 jco_server;echo 'V'>/dev/watchdog;echo 'V'>/dev/watchdog0
+```
+
+port 9999: used to control the camera, example:
+
+```
+IP=xxx.xxx.xxx.xxx
+echo "checkuser -act set -user admin -password admin" | nc $IP 9999
+echo "list" | nc $IP 9999
+echo "pelcod20ctrl -?" | nc $IP 9999
+echo "pelcod20ctrl -type 1" | nc $IP 9999
+```
+
+UDP 67: open of udhcpd
+
+UDP 3702:? , opened by jco_server
+
+
+
+
+# internal flash memory
 Flash memory is distributed as follows:
 
 score | description |
@@ -97,4 +168,27 @@ notable files in _/ipc_ :
 )  * libimp.so: biblioteko _ingenic_ _IMP_ ( _Ingenic Media Platform_ )
 
 
-note: libimp.so differs from the one delivered for the T20, and the one delivered with the T20 is not suitable.
+**note: libimp.so differs from the one delivered for the T20, and the one delivered with the T20 is not suitable.**
+
+# GPIO ports
+
+* ports blocked by motor.ko: 18? 38 39 40 41 47 48 49 60?
+
+
+* ports blocked by audio.ko: 63?
+
+
+* port 46 = infrared LEDs.
+
+
+* port 52 =?
+
+
+* port 64 =?
+
+
+* port 81 = blue LEDs.
+
+
+
+

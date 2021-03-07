@@ -6,6 +6,77 @@ layout: page
 title: 'Original Firmware'
 ---
 
+# offene Ports
+
+TCP: 80(http), 443(http auch!), 554(rtsp), 8004, 8006, 9527(Telnet), 9999
+UDP: 67(dhcp), 3702, 8002, 39642
+
+Port 80: http
+http: // IP: Login: _admin:_, Passwort: _admin_
+
+Port 443: http
+http: // IP: 443: Login: _admin:_, Passwort: _admin_
+
+Port 554: RTSP
+* Hauptstrom: 
+
+    ```
+    IP=xxx.xxx.xxx.xxx
+    ffplay -i rtsp://admin:admin@$IP/stream1
+    ffplay -i rtsp://admin:admin@$IP/mpeg4/ch0/main/av_stream
+
+
+
+    ```
+* flux secondaire :
+
+
+
+    ```
+    IP=xxx.xxx.xxx.xxx
+    ffplay -i rtsp://admin:admin@$IP/stream2
+    ffplay -i rtsp://admin:admin@$IP/mpeg4/ch1/main/av_stream
+    ````
+
+Port 8004:? , geöffnet von jco_server
+
+
+
+Port 8006:? , geöffnet von jco_server
+
+
+
+
+Port 9527: Telnet
+`telnetd IP 9527` : Login: _root_, Passwort: _jco66688_, 5 Minuten zugänglich, danach geschlossen.
+darf nach 5 Minuten nicht getrennt werden: `killall -9 auto_run.sh`
+um jco zu stoppen_server : 
+ 
+ 
+
+```
+killall -9 auto_run.sh
+killall -9 jco_server;echo 'V'>/dev/watchdog;echo 'V'>/dev/watchdog0
+```
+
+Port 9999: Dient zur Steuerung der Kamera, Beispiel:
+
+```
+IP=xxx.xxx.xxx.xxx
+echo "checkuser -act set -user admin -password admin" | nc $IP 9999
+echo "list" | nc $IP 9999
+echo "pelcod20ctrl -?" | nc $IP 9999
+echo "pelcod20ctrl -type 1" | nc $IP 9999
+```
+
+UDP 67: offen von udhcpd
+
+UDP 3702:? , geöffnet von jco_server
+
+
+
+
+# interner Flash-Speicher
 Der Flash-Speicher ist wie folgt verteilt:
 
 Punktzahl | Beschreibung |
@@ -97,4 +168,27 @@ Bemerkenswerte Dateien in _/ipc_ :
 )  * libimp.so: biblioteko _ingenic_ _IMP_ ( _Ingenic Media Platform_ )
 
 
-Hinweis: libimp.so unterscheidet sich von dem für den T20 gelieferten und der mit dem T20 gelieferte ist nicht geeignet.
+**Hinweis: libimp.so unterscheidet sich von dem für den T20 gelieferten und der mit dem T20 gelieferte ist nicht geeignet.**
+
+# GPIO-Ports
+
+* Ports von motor.ko blockiert: 18? 38 39 40 41 47 48 49 60?
+
+
+* Ports von audio.ko blockiert: 63?
+
+
+* Port 46 = Infrarot-LEDs.
+
+
+* Port 52 =?
+
+
+* Port 64 =?
+
+
+* Port 81 = blaue LEDs.
+
+
+
+

@@ -6,6 +6,77 @@ layout: page
 title: 元のファームウェア
 ---
 
+# 開いているポート
+
+TCP：80(http)、443(httpも！)、554(rtsp)、8004、8006、9527(telnet)、9999
+UDP：67(dhcp)、3702、8002、39642
+
+ポート80：http
+http：// IP：ログイン： _admin:_、パスワード： _admin_
+
+ポート443：http
+http：// IP：443：ログイン： _admin:_、パスワード： _admin_
+
+ポート554：rtsp
+* メインストリーム： 
+
+    ```
+    IP=xxx.xxx.xxx.xxx
+    ffplay -i rtsp://admin:admin@$IP/stream1
+    ffplay -i rtsp://admin:admin@$IP/mpeg4/ch0/main/av_stream
+
+
+
+    ```
+* flux secondaire :
+
+
+
+    ```
+    IP=xxx.xxx.xxx.xxx
+    ffplay -i rtsp://admin:admin@$IP/stream2
+    ffplay -i rtsp://admin:admin@$IP/mpeg4/ch1/main/av_stream
+    ````
+
+ポート8004 :？ 、jcoによって開かれました_server
+
+
+
+ポート8006 :？ 、jcoによって開かれました_server
+
+
+
+
+ポート9527：telnet
+`telnetd IP 9527` ：ログイン： _root_、パスワード： _jco66688_、5分間アクセス可能、その後閉鎖。
+5分後に切断されない： `killall -9 auto_run.sh`
+jcoを停止する_server : 
+ 
+ 
+
+```
+killall -9 auto_run.sh
+killall -9 jco_server;echo 'V'>/dev/watchdog;echo 'V'>/dev/watchdog0
+```
+
+ポート9999：カメラの制御に使用されます。例：
+
+```
+IP=xxx.xxx.xxx.xxx
+echo "checkuser -act set -user admin -password admin" | nc $IP 9999
+echo "list" | nc $IP 9999
+echo "pelcod20ctrl -?" | nc $IP 9999
+echo "pelcod20ctrl -type 1" | nc $IP 9999
+```
+
+UDP 67：udhcpdのオープン
+
+UDP 3702：？ 、jcoによって開かれました_server
+
+
+
+
+# 内部フラッシュメモリ
 フラッシュメモリは次のように分散されます：
 
 スコア|説明|
@@ -97,4 +168,27 @@ Linuxバージョン3.10.14\_\_isvp\_turkey\_1.0\_\_ (root@localhost.localdomain
 ）  * libimp.so：biblioteko _ingenic_ _IMP_ ( _Ingenic Media Platform_ )
 
 
-注：libimp.soはT20用に提供されたものとは異なり、T20で提供されたものは適切ではありません。
+**注：libimp.soはT20用に提供されたものとは異なり、T20で提供されたものは適切ではありません。**
+
+# GPIOポート
+
+* motor.koによってブロックされたポート：18？ 38 39 40 41 47 48 49 60？
+
+
+* audio.koによってブロックされたポート：63？
+
+
+* ポート46 =赤外線LED。
+
+
+* ポート52 =？
+
+
+* ポート64 =？
+
+
+* ポート81 =青色LED。
+
+
+
+

@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-03-04 17:42+0100\n"
+"POT-Creation-Date: 2021-03-07 20:13+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,14 +46,168 @@ msgstr "page"
 msgid "Originala firmvaro"
 msgstr "আসল ফার্মওয়্যার"
 
+#. type: Title #
+#: originala_firmvaro.md:9
+#, no-wrap
+#, fuzzy
+msgid "malfermaj havenoj"
+msgstr "খোলা বন্দর"
+
 #. type: Plain text
-#: originala_firmvaro.md:10
+#: originala_firmvaro.md:13
+#, no-wrap
+#, fuzzy
+msgid ""
+"TCP: 80(http), 443(http ankaŭ!), 554(rtsp), 8004, 8006, 9527(telnet), 9999\n"
+"UDP: 67(dhcp), 3702, 8002, 39642\n"
+msgstr "টিসিপি: 80(http), 443(পোস্টও!), 554(আরটিএসপি), 8004, 8006, 9527(টেলনেট), 9999\nইউডিপি: 67(ডিএইচসিপি), 3702, 8002, 39642\n"
+
+#. type: Plain text
+#: originala_firmvaro.md:16
+#, no-wrap
+#, fuzzy
+msgid ""
+"haveno 80: http\n"
+"http: // IP: ensaluto: _admin:_, pasvorto: _admin_\n"
+msgstr "পোর্ট 80: http\nhttp: // আইপি: লগইন: _admin:_, পাসওয়ার্ড: _admin_\n"
+
+#. type: Plain text
+#: originala_firmvaro.md:19
+#, no-wrap
+#, fuzzy
+msgid ""
+"haveno 443: http\n"
+"http: // IP: 443: ensaluto: _admin:_, pasvorto: _admin_\n"
+msgstr "পোর্ট 443: http\nhttp: // আইপি: 443: লগইন: _admin:_, পাসওয়ার্ড: _admin_\n"
+
+#. type: Plain text
+#: originala_firmvaro.md:22
+#, no-wrap
+#, fuzzy
+msgid ""
+"haveno 554: rtsp\n"
+"* ĉefa rivereto: \n"
+msgstr "পোর্ট 554: আরটিএসপি\n* মূল স্ট্রিম: \n"
+
+#. type: Plain text
+#: originala_firmvaro.md:27
+#, no-wrap
+#, fuzzy
+msgid ""
+"    ```\n"
+"    IP=xxx.xxx.xxx.xxx\n"
+"    ffplay -i rtsp://admin:admin@$IP/stream1\n"
+"    ffplay -i rtsp://admin:admin@$IP/mpeg4/ch0/main/av_stream\n"
+msgstr "    ```\n    IP=xxx.xxx.xxx.xxx\n    ffplay -i rtsp://admin:admin@$IP/stream1\n    ffplay -i rtsp://admin:admin@$IP/mpeg4/ch0/main/av_stream\n\n"
+
+#. type: Plain text
+#: originala_firmvaro.md:31
+#, no-wrap
+#, fuzzy
+msgid ""
+"    ```\n"
+"* flux secondaire :\n"
+msgstr "    ```\n* flux secondaire :\n\n"
+
+#. type: Plain text
+#: originala_firmvaro.md:38
+#, no-wrap
+#, fuzzy
+msgid ""
+"    ```\n"
+"    IP=xxx.xxx.xxx.xxx\n"
+"    ffplay -i rtsp://admin:admin@$IP/stream2\n"
+"    ffplay -i rtsp://admin:admin@$IP/mpeg4/ch1/main/av_stream\n"
+"    ````\n"
+msgstr "    ```\n    IP=xxx.xxx.xxx.xxx\n    ffplay -i rtsp://admin:admin@$IP/stream2\n    ffplay -i rtsp://admin:admin@$IP/mpeg4/ch1/main/av_stream\n    ````\n"
+
+#. type: Plain text
+#: originala_firmvaro.md:40
+#, no-wrap
+#, fuzzy
+msgid "haveno 8004 :? , malfermita de jco_server\n"
+msgstr "বন্দর 8004 :? , জেসিও দ্বারা খোলা_server\n\n"
+
+#. type: Plain text
+#: originala_firmvaro.md:43
+#, no-wrap
+#, fuzzy
+msgid "haveno 8006 :? , malfermita de jco_server\n"
+msgstr "বন্দর 8006 :? , জেসিও দ্বারা খোলা_server\n\n"
+
+#. type: Plain text
+#: originala_firmvaro.md:50
+#, no-wrap
+#, fuzzy
+msgid ""
+"haveno 9527: telnet\n"
+"`telnetd IP 9527` : ensaluto: _root_, pasvorto: _jco66688_, alirebla dum 5 minutoj, fermita post.\n"
+"por ne esti malkonektita post 5 minutoj: `killall -9 auto_run.sh`\n"
+"por haltigi jco_server : \n"
+msgstr "9527 পোর্ট: টেলনেট\n`telnetd IP 9527` : লগইন: _root_, পাসওয়ার্ড: _jco66688_, 5 মিনিটের জন্য অ্যাক্সেসযোগ্য, পরে বন্ধ হয়ে যায়।\n5 মিনিটের পরে সংযোগ বিচ্ছিন্ন না করা: `killall -9 auto_run.sh`\nজেসিও বন্ধ করতে (_server : \n \n"
+
+#. type: Fenced code block
+#: originala_firmvaro.md:52
+#, no-wrap
+msgid ""
+"killall -9 auto_run.sh\n"
+"killall -9 jco_server;echo 'V'>/dev/watchdog;echo 'V'>/dev/watchdog0\n"
+msgstr ""
+"killall -9 auto_run.sh\n"
+"killall -9 jco_server;echo 'V'>/dev/watchdog;echo 'V'>/dev/watchdog0\n"
+
+#. type: Plain text
+#: originala_firmvaro.md:58
+#, no-wrap
+#, fuzzy
+msgid "haveno 9999: uzata por regi la fotilon, ekzemplo:\n"
+msgstr "9999 পোর্ট: ক্যামেরা নিয়ন্ত্রণ করতে ব্যবহৃত হয়, উদাহরণস্বরূপ:\n"
+
+#. type: Fenced code block
+#: originala_firmvaro.md:59
+#, no-wrap
+msgid ""
+"IP=xxx.xxx.xxx.xxx\n"
+"echo \"checkuser -act set -user admin -password admin\" | nc $IP 9999\n"
+"echo \"list\" | nc $IP 9999\n"
+"echo \"pelcod20ctrl -?\" | nc $IP 9999\n"
+"echo \"pelcod20ctrl -type 1\" | nc $IP 9999\n"
+msgstr ""
+"IP=xxx.xxx.xxx.xxx\n"
+"echo \"checkuser -act set -user admin -password admin\" | nc $IP 9999\n"
+"echo \"list\" | nc $IP 9999\n"
+"echo \"pelcod20ctrl -?\" | nc $IP 9999\n"
+"echo \"pelcod20ctrl -type 1\" | nc $IP 9999\n"
+
+#. type: Plain text
+#: originala_firmvaro.md:68
+#, no-wrap
+#, fuzzy
+msgid "UDP 67: malfermita de udhcpd\n"
+msgstr "ইউডিপি 67: ইউডিসিপিডি খোলা\n"
+
+#. type: Plain text
+#: originala_firmvaro.md:70
+#, no-wrap
+#, fuzzy
+msgid "UDP 3702 :? , malfermita de jco_server\n"
+msgstr "ইউডিপি 3702 :? , জেসিও দ্বারা খোলা_server\n\n"
+
+#. type: Title #
+#: originala_firmvaro.md:73
+#, no-wrap
+#, fuzzy
+msgid "interna fulmmemoro"
+msgstr "অভ্যন্তরীণ ফ্ল্যাশ মেমরি"
+
+#. type: Plain text
+#: originala_firmvaro.md:75
 #, fuzzy, no-wrap
 msgid "Fulmmemoro estas dispartigita jene:\n"
 msgstr "ফ্ল্যাশ মেমরি নীচে বিতরণ করা হয়:\n"
 
 #. type: Plain text
-#: originala_firmvaro.md:19
+#: originala_firmvaro.md:84
 #, fuzzy, no-wrap
 msgid ""
 "poentaro | priskribo |\n"
@@ -75,79 +229,79 @@ msgstr ""
 "এমটিডব্লক 5 | jffs2, মাউন্ট / অপ্ট |\n"
 
 #. type: Plain text
-#: originala_firmvaro.md:20
+#: originala_firmvaro.md:85
 #, fuzzy, no-wrap
 msgid "u-boot (subdisko mtdblock0) ŝarĝas la kernon en mtdblock2.  \n"
 msgstr "u-বুট (পার্টিশন mtd block0) কার্নেলকে mtd block2 এ লোড করে।  \n"
 
 #. type: Plain text
-#: originala_firmvaro.md:21
+#: originala_firmvaro.md:86
 #, fuzzy, no-wrap
 msgid "defaŭltaj opcioj en u-startŝargilo:  \n"
 msgstr "ইউ-বুট লোডারটিতে ডিফল্ট বিকল্পগুলি:  \n"
 
 #. type: Bullet: '* '
-#: originala_firmvaro.md:23
+#: originala_firmvaro.md:88
 #, fuzzy, no-wrap
 msgid "bootargs = konzolo = ttyS1,115200n8 mem = 43M @ 0x0 rmem = 21M @ 0x2B00000 init = / linuxrc rootfstype = squashfs root = / dev / mtdblock3\n"
 msgstr "বুটর্গস = কনসোল = ttyS1,115200n8 মেম = 43 এম @ 0x0 আরমেম = 21 এম @ 0x2B00000 ইন্ডি = / লিনাক্সক্র রুটফ্লাইপ = স্কোয়াশফ রুট = / দেব / এমটিডব্লক 3\n"
 
 #. type: Bullet: '* '
-#: originala_firmvaro.md:25
+#: originala_firmvaro.md:90
 #, fuzzy, no-wrap
 msgid "bootcmd = sf probe; sf read 0x80600000 0x48000 0x280000; bootm 0x80600000\n"
 msgstr "বুটসিএমডি = এসএফ অনুসন্ধান; sf 0x80600000 0x48000 0x280000 পড়ুন; বুটম 0x80600000\n"
 
 #. type: Bullet: '* '
-#: originala_firmvaro.md:27
+#: originala_firmvaro.md:92
 #, fuzzy, no-wrap
 msgid "bootdelay = 1\n"
 msgstr "বুটডলে = 1\n"
 
 #. type: Bullet: '* '
-#: originala_firmvaro.md:29
+#: originala_firmvaro.md:94
 #, fuzzy, no-wrap
 msgid "baudrate = 115200\n"
 msgstr "বাড রেট = 115200\n"
 
 #. type: Bullet: '* '
-#: originala_firmvaro.md:31
+#: originala_firmvaro.md:96
 #, fuzzy, no-wrap
 msgid "ŝarĝoj\\_eoo = 1\n"
 msgstr "বোঝা\\_ইও = 1\n"
 
 #. type: Bullet: '* '
-#: originala_firmvaro.md:33
+#: originala_firmvaro.md:98
 #, fuzzy, no-wrap
 msgid "ethaddr = 00: 11: 22: 33: 44: 74\n"
 msgstr "এথাদ্দর = 00: 11: 22: 33: 44: 74\n"
 
 #. type: Bullet: '* '
-#: originala_firmvaro.md:35
+#: originala_firmvaro.md:100
 #, fuzzy, no-wrap
 msgid "ipaddr = 192.168.2.84\n"
 msgstr "ipaddr = 192.168.2.84\n"
 
 #. type: Bullet: '* '
-#: originala_firmvaro.md:37
+#: originala_firmvaro.md:102
 #, fuzzy, no-wrap
 msgid "serverip = 192.168.2.81\n"
 msgstr "সার্ভারিপ = 192.168.2.81\n"
 
 #. type: Bullet: '* '
-#: originala_firmvaro.md:39
+#: originala_firmvaro.md:104
 #, fuzzy, no-wrap
 msgid "gatewayip = 192.168.2.1\n"
 msgstr "গেটওয়েপ = 192.168.2.1\n"
 
 #. type: Bullet: '* '
-#: originala_firmvaro.md:41
+#: originala_firmvaro.md:106
 #, fuzzy, no-wrap
 msgid "retmasko = 255.255.255.0\n"
 msgstr "নেটমাস্ক = 255.255.255.0\n"
 
 #. type: Plain text
-#: originala_firmvaro.md:60
+#: originala_firmvaro.md:125
 #, fuzzy, no-wrap
 msgid ""
 "opcioj en mtdblock1:\n"
@@ -187,19 +341,19 @@ msgstr ""
 "* বুটর্গস = কনসোল = ttyS1,115200n8 mem = 42M @ 0x0 rmem = 22M @ 0x2A00000 init = / linuxrc rootfstype = স্কোয়াশফ রুট = / দেব / এমটিডব্লক 3 ফ্ল্যাশ = এসএফ সেন্সর = জিসি2053 ম্যাক্সহাইট = 1080 ডিভাইস\\_আইডি =*********** এথ্যাড্র =**:**:**:**:**:** ডিভিনফো = জকোক্সা*************************************************** সিপিইউ = টি 21 ডিডিআর = 64 এম এমডিপিটারস = জেজেড\\_এসএফসি: 256 কে @ 0 কে(এসএফ-বুটলোডার), 32 কে @ 256 কে(এসএফ-বুটেনভ), 1440 কে @ 288 কে()) এসএফ-কার্নেল), 832 কে @ 172 8 কে(এসএফ-রুটফগুলি), 4928 কে @ 2560 কে(এসএফ-আইপিসিএফস), 704 কে @ 7488 কে(এসএফ-মিসকাফস)\n"
 
 #. type: Plain text
-#: originala_firmvaro.md:62
+#: originala_firmvaro.md:127
 #, fuzzy, no-wrap
 msgid "linuksa versio:  \n"
 msgstr "লিনাক্স সংস্করণ:  \n"
 
 #. type: Plain text
-#: originala_firmvaro.md:64
+#: originala_firmvaro.md:129
 #, fuzzy, no-wrap
 msgid "Linukso-versio 3.10.14\\_\\_isvp\\_meleagro\\_1.0\\_\\_ (root@localhost.localdomain) (gcc-versio 4.7.2 (Ingenic r2.3.3 2016.12) ) # 3 PREEMPT Sab Jun 22 10:40:55 CST 2019\n"
 msgstr "লিনাক্স সংস্করণ 3.10.14\\_\\_isvp\\_টার্কি\\_1.0\\_\\_ (রুট@localhost.localdomain) (জিসিসি সংস্করণ 4.7.2 (ইনজেনিক r2.3.3 2016.12) ) # 3 পূর্বপরিবার শনি 22 জুন 10:40:55 সিএসটি 2019\n"
 
 #. type: Plain text
-#: originala_firmvaro.md:76
+#: originala_firmvaro.md:141
 #, fuzzy, no-wrap
 msgid ""
 "Rimarkindaj dosieroj en /:\n"
@@ -224,13 +378,13 @@ msgstr ""
 "  *     জ্যাজকাট\n"
 
 #. type: Bullet: '* '
-#: originala_firmvaro.md:78
+#: originala_firmvaro.md:143
 #, fuzzy, no-wrap
 msgid "/ lib: normaj bibliotekoj.\n"
 msgstr "/ lib: স্ট্যান্ডার্ড লাইব্রেরি।\n"
 
 #. type: Plain text
-#: originala_firmvaro.md:87
+#: originala_firmvaro.md:152
 #, fuzzy, no-wrap
 msgid ""
 "rimarkindaj dosieroj en _/ipc_ :\n"
@@ -250,10 +404,64 @@ msgstr ""
 ")  * libimp.so: বিলিওটেকো _ingenic_ _IMP_ ( _Ingenic Media Platform_ )\n"
 
 #. type: Plain text
-#: originala_firmvaro.md:89
-#, fuzzy, no-wrap
-msgid "noto: libimp.so diferencas de tiu liverita por la T20, kaj tiu liverita kun la T20 ne taŭgas.\n"
-msgstr "দ্রষ্টব্য: libimp.so টি 20 এর জন্য বিতরণ করা একের চেয়ে আলাদা এবং টি 20 এর সাথে সরবরাহ করা উপযুক্ত নয়।\n"
+#: originala_firmvaro.md:155
+#, no-wrap
+#, fuzzy
+msgid "**noto: libimp.so diferencas de tiu liverita por la T20, kaj tiu liverita kun la T20 ne taŭgas.**\n"
+msgstr "**দ্রষ্টব্য: libimp.so টি 20 এর জন্য বিতরণ করা একের চেয়ে পৃথক, এবং T20 দিয়ে সরবরাহ করা উপযুক্ত নয়।**\n"
+
+#. type: Title #
+#: originala_firmvaro.md:156
+#, no-wrap
+#, fuzzy
+msgid "GPIO-havenoj"
+msgstr "জিপিআইও বন্দর"
+
+#. type: Bullet: '* '
+#: originala_firmvaro.md:159
+#, no-wrap
+#, fuzzy
+msgid "havenoj blokitaj de motor.ko: 18? 38 39 40 41 47 48 49 60?\n"
+msgstr "পোর্টগুলি মোটর দ্বারা অবরুদ্ধ.কো: 18? 38 39 40 41 47 48 49 60?\n"
+
+#. type: Bullet: '* '
+#: originala_firmvaro.md:161
+#, no-wrap
+#, fuzzy
+msgid "havenoj blokitaj de audio.ko: 63?\n"
+msgstr "পোর্টগুলি অডিও.কো দ্বারা আটকানো হয়েছে: 63?\n"
+
+#. type: Bullet: '* '
+#: originala_firmvaro.md:163
+#, no-wrap
+#, fuzzy
+msgid "haveno 46 = infraruĝaj LED-oj.\n"
+msgstr "পোর্ট 46 = ইনফ্রারেড এলইডি।\n"
+
+#. type: Bullet: '* '
+#: originala_firmvaro.md:165
+#, no-wrap
+#, fuzzy
+msgid "haveno 52 =?\n"
+msgstr "বন্দর 52 =?\n"
+
+#. type: Bullet: '* '
+#: originala_firmvaro.md:167
+#, no-wrap
+#, fuzzy
+msgid "haveno 64 =?\n"
+msgstr "পোর্ট 64 =?\n"
+
+#. type: Bullet: '* '
+#: originala_firmvaro.md:169
+#, no-wrap
+#, fuzzy
+msgid "haveno 81 = bluaj LEDoj.\n"
+msgstr "পোর্ট 81 = নীল এলইডি।\n"
+
+#, fuzzy
+#~ msgid "noto: libimp.so diferencas de tiu liverita por la T20, kaj tiu liverita kun la T20 ne taŭgas.\n"
+#~ msgstr "দ্রষ্টব্য: libimp.so টি 20 এর জন্য বিতরণ করা একের চেয়ে আলাদা এবং টি 20 এর সাথে সরবরাহ করা উপযুক্ত নয়।\n"
 
 #, fuzzy
 #~ msgid ""

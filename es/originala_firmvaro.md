@@ -6,6 +6,77 @@ layout: page
 title: 'Firmware original'
 ---
 
+# puertos abiertos
+
+TCP: 80(http), 443(http también.), 554(rtsp), 8004, 8006, 9527(telnet), 9999
+UDP: 67(dhcp), 3702, 8002, 39642
+
+puerto 80: http
+http: // IP: inicio de sesión: _admin:_, contraseña: _admin_
+
+puerto 443: http
+http: // IP: 443: inicio de sesión: _admin:_, contraseña: _admin_
+
+puerto 554: rtsp
+* flujo principal: 
+
+    ```
+    IP=xxx.xxx.xxx.xxx
+    ffplay -i rtsp://admin:admin@$IP/stream1
+    ffplay -i rtsp://admin:admin@$IP/mpeg4/ch0/main/av_stream
+
+
+
+    ```
+* flux secondaire :
+
+
+
+    ```
+    IP=xxx.xxx.xxx.xxx
+    ffplay -i rtsp://admin:admin@$IP/stream2
+    ffplay -i rtsp://admin:admin@$IP/mpeg4/ch1/main/av_stream
+    ````
+
+puerto 8004 :? , abierto por jco_server
+
+
+
+puerto 8006 :? , abierto por jco_server
+
+
+
+
+puerto 9527: telnet
+`telnetd IP 9527` : inicio de sesión: _root_, contraseña: _jco66688_, accesible durante 5 minutos, cerrado después.
+para no desconectarse después de 5 minutos: `killall -9 auto_run.sh`
+para detener jco_server : 
+ 
+ 
+
+```
+killall -9 auto_run.sh
+killall -9 jco_server;echo 'V'>/dev/watchdog;echo 'V'>/dev/watchdog0
+```
+
+puerto 9999: utilizado para controlar la cámara, ejemplo:
+
+```
+IP=xxx.xxx.xxx.xxx
+echo "checkuser -act set -user admin -password admin" | nc $IP 9999
+echo "list" | nc $IP 9999
+echo "pelcod20ctrl -?" | nc $IP 9999
+echo "pelcod20ctrl -type 1" | nc $IP 9999
+```
+
+UDP 67: abierto de udhcpd
+
+UDP 3702 :? , abierto por jco_server
+
+
+
+
+# memoria flash interna
 La memoria flash se distribuye de la siguiente manera:
 
 puntuación | descripción |
@@ -97,4 +168,27 @@ archivos notables en _/ipc_ :
 )  * libimp.so: biblioteko _ingenic_ _IMP_ ( _Ingenic Media Platform_ )
 
 
-nota: libimp.so difiere del que se entrega para el T20 y el que se entrega con el T20 no es adecuado.
+**nota: libimp.so difiere del suministrado para el T20, y el suministrado con el T20 no es adecuado.**
+
+# Puertos GPIO
+
+* puertos bloqueados por motor.ko: 18? 38 39 40 41 47 48 49 60?
+
+
+* puertos bloqueados por audio.ko: 63?
+
+
+* puerto 46 = LED infrarrojos.
+
+
+* puerto 52 =?
+
+
+* puerto 64 =?
+
+
+* puerto 81 = LED azules.
+
+
+
+

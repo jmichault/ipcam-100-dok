@@ -6,6 +6,77 @@ layout: page
 title: 'Оригинальная прошивка'
 ---
 
+# открытые порты
+
+TCP: 80(http), 443(тоже http!), 554(rtsp), 8004, 8006, 9527(telnet), 9999
+UDP: 67(dhcp), 3702, 8002, 39642
+
+порт 80: http
+http: // IP: логин: _admin:_, пароль: _admin_
+
+порт 443: http
+http: // IP: 443: логин: _admin:_, пароль: _admin_
+
+порт 554: rtsp
+* основной поток: 
+
+    ```
+    IP=xxx.xxx.xxx.xxx
+    ffplay -i rtsp://admin:admin@$IP/stream1
+    ffplay -i rtsp://admin:admin@$IP/mpeg4/ch0/main/av_stream
+
+
+
+    ```
+* flux secondaire :
+
+
+
+    ```
+    IP=xxx.xxx.xxx.xxx
+    ffplay -i rtsp://admin:admin@$IP/stream2
+    ffplay -i rtsp://admin:admin@$IP/mpeg4/ch1/main/av_stream
+    ````
+
+порт 8004 :? , открыто jco_server
+
+
+
+порт 8006 :? , открыто jco_server
+
+
+
+
+порт 9527: telnet
+`telnetd IP 9527` : логин: _root_, пароль: _jco66688_, доступен в течение 5 минут, закрывается после.
+, чтобы не отключать через 5 минут: `killall -9 auto_run.sh`
+, чтобы остановить jco_server : 
+ 
+ 
+
+```
+killall -9 auto_run.sh
+killall -9 jco_server;echo 'V'>/dev/watchdog;echo 'V'>/dev/watchdog0
+```
+
+порт 9999: используется для управления камерой, например:
+
+```
+IP=xxx.xxx.xxx.xxx
+echo "checkuser -act set -user admin -password admin" | nc $IP 9999
+echo "list" | nc $IP 9999
+echo "pelcod20ctrl -?" | nc $IP 9999
+echo "pelcod20ctrl -type 1" | nc $IP 9999
+```
+
+UDP 67: открытие udhcpd
+
+UDP 3702 :? , открыто jco_server
+
+
+
+
+# внутренняя флеш-память
 Флэш-память распределяется следующим образом:
 
 оценка | описание |
@@ -97,4 +168,27 @@ u-boot (раздел mtdblock0) загружает ядро ​​в mtdblock2.
 )  * libimp.so: biblioteko _ingenic_ _IMP_ ( _Ingenic Media Platform_ )
 
 
-примечание: libimp.so отличается от того, который поставляется для T20, а тот, который поставляется с T20, не подходит.
+**примечание: libimp.so отличается от того, который поставляется с T20, а тот, который поставляется с T20, не подходит.**
+
+# Порты GPIO
+
+* порты заблокированы motor.ko: 18? 38 39 40 41 47 48 49 60?
+
+
+* порты заблокированы audio.ko: 63?
+
+
+* порт 46 = инфракрасные светодиоды.
+
+
+* порт 52 =?
+
+
+* порт 64 =?
+
+
+* порт 81 = синие светодиоды.
+
+
+
+

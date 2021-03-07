@@ -6,6 +6,77 @@ layout: page
 title: 'Firmware asal'
 ---
 
+# pelabuhan terbuka
+
+TCP: 80(http), 443(http juga!), 554(rtsp), 8004, 8006, 9527(telnet), 9999
+UDP: 67(dhcp), 3702, 8002, 39642
+
+port 80: http
+http: // IP: log masuk: _admin:_, kata laluan: _admin_
+
+port 443: http
+http: // IP: 443: log masuk: _admin:_, kata laluan: _admin_
+
+port 554: rtsp
+* aliran utama: 
+
+    ```
+    IP=xxx.xxx.xxx.xxx
+    ffplay -i rtsp://admin:admin@$IP/stream1
+    ffplay -i rtsp://admin:admin@$IP/mpeg4/ch0/main/av_stream
+
+
+
+    ```
+* flux secondaire :
+
+
+
+    ```
+    IP=xxx.xxx.xxx.xxx
+    ffplay -i rtsp://admin:admin@$IP/stream2
+    ffplay -i rtsp://admin:admin@$IP/mpeg4/ch1/main/av_stream
+    ````
+
+port 8004 :? , dibuka oleh jco_server
+
+
+
+pelabuhan 8006:? , dibuka oleh jco_server
+
+
+
+
+port 9527: telnet
+`telnetd IP 9527` : log masuk: _root_, kata laluan: _jco66688_, boleh diakses selama 5 minit, ditutup selepas.
+untuk tidak terputus selepas 5 minit: `killall -9 auto_run.sh`
+untuk menghentikan jco_server : 
+ 
+ 
+
+```
+killall -9 auto_run.sh
+killall -9 jco_server;echo 'V'>/dev/watchdog;echo 'V'>/dev/watchdog0
+```
+
+port 9999: digunakan untuk mengawal kamera, contoh:
+
+```
+IP=xxx.xxx.xxx.xxx
+echo "checkuser -act set -user admin -password admin" | nc $IP 9999
+echo "list" | nc $IP 9999
+echo "pelcod20ctrl -?" | nc $IP 9999
+echo "pelcod20ctrl -type 1" | nc $IP 9999
+```
+
+UDP 67: terbuka udhcpd
+
+UDP 3702:? , dibuka oleh jco_server
+
+
+
+
+# memori kilat dalaman
 Memori kilat diedarkan seperti berikut:
 
 skor | keterangan |
@@ -97,4 +168,27 @@ fail terkenal dalam _/ipc_ :
 )  * libimp.so: biblioteko _ingenic_ _IMP_ ( _Ingenic Media Platform_ )
 
 
-nota: libimp.so berbeza dengan yang dihantar untuk T20, dan yang dihantar dengan T20 tidak sesuai.
+**nota: libimp.so berbeza dari yang dihantar untuk T20, dan yang dihantar dengan T20 tidak sesuai.**
+
+# Pelabuhan GPIO
+
+* pelabuhan disekat oleh motor.ko: 18? 38 39 40 41 47 48 49 60?
+
+
+* port disekat oleh audio.ko: 63?
+
+
+* port 46 = LED inframerah.
+
+
+* pelabuhan 52 =?
+
+
+* port 64 =?
+
+
+* port 81 = LED biru.
+
+
+
+

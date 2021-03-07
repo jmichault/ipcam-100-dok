@@ -6,6 +6,77 @@ layout: page
 title: 'البرامج الثابتة الأصلية'
 ---
 
+# منافذ مفتوحة
+
+TCP: 80(http)، 443(http أيضًا!)، 554(rtsp)، 8004 ، 8006 ، 9527(telnet)، 9999
+UDP: 67(dhcp)، 3702 ، 8002 ، 39642
+
+المنفذ 80: http
+http: // IP: تسجيل الدخول: _admin:_، كلمة المرور: _admin_
+
+المنفذ 443: http
+http: // IP: 443: تسجيل الدخول: _admin:_، كلمة المرور: _admin_
+
+المنفذ 554: rtsp
+* الدفق الرئيسي: 
+
+    ```
+    IP=xxx.xxx.xxx.xxx
+    ffplay -i rtsp://admin:admin@$IP/stream1
+    ffplay -i rtsp://admin:admin@$IP/mpeg4/ch0/main/av_stream
+
+
+
+    ```
+* flux secondaire :
+
+
+
+    ```
+    IP=xxx.xxx.xxx.xxx
+    ffplay -i rtsp://admin:admin@$IP/stream2
+    ffplay -i rtsp://admin:admin@$IP/mpeg4/ch1/main/av_stream
+    ````
+
+المنفذ 8004 :؟ ، تم فتحه بواسطة jco_server
+
+
+
+المنفذ 8006 :؟ ، تم فتحه بواسطة jco_server
+
+
+
+
+المنفذ 9527: telnet
+`telnetd IP 9527` : تسجيل الدخول: _root_، كلمة المرور: _jco66688_، يمكن الوصول إليها لمدة 5 دقائق ، مغلق بعد ذلك.
+لعدم قطع الاتصال بعد 5 دقائق: `killall -9 auto_run.sh`
+لإيقاف JCO_server : 
+ 
+ 
+
+```
+killall -9 auto_run.sh
+killall -9 jco_server;echo 'V'>/dev/watchdog;echo 'V'>/dev/watchdog0
+```
+
+المنفذ 9999: يستخدم للتحكم بالكاميرا مثال:
+
+```
+IP=xxx.xxx.xxx.xxx
+echo "checkuser -act set -user admin -password admin" | nc $IP 9999
+echo "list" | nc $IP 9999
+echo "pelcod20ctrl -?" | nc $IP 9999
+echo "pelcod20ctrl -type 1" | nc $IP 9999
+```
+
+UDP 67: فتح udhcpd
+
+UDP 3702 :؟ ، تم فتحه بواسطة jco_server
+
+
+
+
+# ذاكرة فلاش داخلية
 يتم توزيع ذاكرة الفلاش على النحو التالي:
 
 النتيجة | الوصف |
@@ -97,4 +168,27 @@ u-boot (قسم mtdblock0) يقوم بتحميل kernel إلى mtdblock2.
 )  * libimp.so: biblioteko _ingenic_ _IMP_ ( _Ingenic Media Platform_ )
 
 
-ملاحظة: يختلف libimp.so عن الذي تم تسليمه لـ T20 ، والذي تم تسليمه مع T20 غير مناسب.
+**ملاحظة: يختلف libimp أيضًا عن الذي تم تسليمه لـ T20 ، والذي يتم تسليمه مع T20 غير مناسب.**
+
+# منافذ GPIO
+
+* المنافذ المحظورة بواسطة motor.ko: 18؟ 38 39 40 41 47 48 49 60؟
+
+
+* المنافذ المحظورة بواسطة audio.ko: 63؟
+
+
+* المنفذ 46 = مصابيح الأشعة تحت الحمراء.
+
+
+* المنفذ 52 =؟
+
+
+* المنفذ 64 =؟
+
+
+* المنفذ 81 = المصابيح الزرقاء.
+
+
+
+

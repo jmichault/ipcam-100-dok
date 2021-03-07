@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-03-04 17:30+0100\n"
+"POT-Creation-Date: 2021-03-07 20:13+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,14 +46,146 @@ msgstr ""
 msgid "Micrologiciel originel"
 msgstr ""
 
+#. type: Title #
+#: originala_firmvaro.md:9
+#, no-wrap
+msgid "ports ouverts"
+msgstr ""
+
 #. type: Plain text
-#: originala_firmvaro.md:10
+#: originala_firmvaro.md:13
+#, no-wrap
+msgid ""
+"TCP : 80(http), 443(http aussi !), 554(rtsp), 8004, 8006, 9527(telnetd), 9999\n"
+"UDP : 67(dhcp), 3702, 8002, 39642\n"
+msgstr ""
+
+#. type: Plain text
+#: originala_firmvaro.md:16
+#, no-wrap
+msgid ""
+"port 80 : http\n"
+"http://IP : login : _admin:_, mot de passe : _admin_\n"
+msgstr ""
+
+#. type: Plain text
+#: originala_firmvaro.md:19
+#, no-wrap
+msgid ""
+"port 443 : http\n"
+"http://IP:443 : login : _admin:_, mot de passe : _admin_\n"
+msgstr ""
+
+#. type: Plain text
+#: originala_firmvaro.md:22
+#, no-wrap
+msgid ""
+"port 554 : rtsp\n"
+"* flux principal : \n"
+msgstr ""
+
+#. type: Plain text
+#: originala_firmvaro.md:27
+#, no-wrap
+msgid ""
+"    ```\n"
+"    IP=xxx.xxx.xxx.xxx\n"
+"    ffplay -i rtsp://admin:admin@$IP/stream1\n"
+"    ffplay -i rtsp://admin:admin@$IP/mpeg4/ch0/main/av_stream\n"
+msgstr ""
+
+#. type: Plain text
+#: originala_firmvaro.md:30
+#, no-wrap
+msgid ""
+"    ```\n"
+"* flux secondaire :\n"
+msgstr ""
+
+#. type: Plain text
+#: originala_firmvaro.md:36
+#, no-wrap
+msgid ""
+"    ```\n"
+"    IP=xxx.xxx.xxx.xxx\n"
+"    ffplay -i rtsp://admin:admin@$IP/stream2\n"
+"    ffplay -i rtsp://admin:admin@$IP/mpeg4/ch1/main/av_stream\n"
+"    ````\n"
+msgstr ""
+
+#. type: Plain text
+#: originala_firmvaro.md:38
+#, no-wrap
+msgid "port 8004 : ? , ouvert par jco_server\n"
+msgstr ""
+
+#. type: Plain text
+#: originala_firmvaro.md:40
+#, no-wrap
+msgid "port 8006 : ? , ouvert par jco_server\n"
+msgstr ""
+
+#. type: Plain text
+#: originala_firmvaro.md:46
+#, no-wrap
+msgid ""
+"port 9527 : telnet\n"
+"`telnetd IP 9527` : login : _root_, mot de passe : _jco66688_, accessible pendant 5 minutes, fermé après.\n"
+"pour ne pas être déconnecté au bout des 5 minutes : `killall -9 auto_run.sh`\n"
+"pour arrêter jco_server : \n"
+msgstr ""
+
+#. type: Fenced code block
+#: originala_firmvaro.md:47
+#, no-wrap
+msgid ""
+"killall -9 auto_run.sh\n"
+"killall -9 jco_server;echo 'V'>/dev/watchdog;echo 'V'>/dev/watchdog0\n"
+msgstr ""
+
+#. type: Plain text
+#: originala_firmvaro.md:53
+#, no-wrap
+msgid "port 9999 : permet de contrôler la caméra, exemple :\n"
+msgstr ""
+
+#. type: Fenced code block
+#: originala_firmvaro.md:54
+#, no-wrap
+msgid ""
+"IP=xxx.xxx.xxx.xxx\n"
+"echo \"checkuser -act set -user admin -password admin\" | nc $IP 9999\n"
+"echo \"list\" | nc $IP 9999\n"
+"echo \"pelcod20ctrl -?\" | nc $IP 9999\n"
+"echo \"pelcod20ctrl -type 1\" | nc $IP 9999\n"
+msgstr ""
+
+#. type: Plain text
+#: originala_firmvaro.md:63
+#, no-wrap
+msgid "UDP 67 : ouvert par udhcpd\n"
+msgstr ""
+
+#. type: Plain text
+#: originala_firmvaro.md:65
+#, no-wrap
+msgid "UDP 3702 : ? , ouvert par jco_server\n"
+msgstr ""
+
+#. type: Title #
+#: originala_firmvaro.md:67
+#, no-wrap
+msgid "la mémoire flash interne"
+msgstr ""
+
+#. type: Plain text
+#: originala_firmvaro.md:69
 #, no-wrap
 msgid "La mémoire flash est partitionnée comme suit :\n"
 msgstr ""
 
 #. type: Plain text
-#: originala_firmvaro.md:19
+#: originala_firmvaro.md:78
 #, no-wrap
 msgid ""
 "partition| description|\n"
@@ -67,79 +199,79 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: originala_firmvaro.md:20
+#: originala_firmvaro.md:79
 #, no-wrap
 msgid "u-boot (partition mtdblock0) charge le noyau en mtdblock2.  \n"
 msgstr ""
 
 #. type: Plain text
-#: originala_firmvaro.md:21
+#: originala_firmvaro.md:80
 #, no-wrap
 msgid "options par défaut dans le u-boot loader:  \n"
 msgstr ""
 
 #. type: Bullet: '* '
-#: originala_firmvaro.md:32
+#: originala_firmvaro.md:91
 #, no-wrap
 msgid "bootargs=console=ttyS1,115200n8 mem=43M@0x0 rmem=21M@0x2B00000 init=/linuxrc rootfstype=squashfs root=/dev/mtdblock3\n"
 msgstr ""
 
 #. type: Bullet: '* '
-#: originala_firmvaro.md:32
+#: originala_firmvaro.md:91
 #, no-wrap
 msgid "bootcmd=sf probe;sf read 0x80600000 0x48000 0x280000; bootm 0x80600000\n"
 msgstr ""
 
 #. type: Bullet: '* '
-#: originala_firmvaro.md:32
+#: originala_firmvaro.md:91
 #, no-wrap
 msgid "bootdelay=1\n"
 msgstr ""
 
 #. type: Bullet: '* '
-#: originala_firmvaro.md:32
+#: originala_firmvaro.md:91
 #, no-wrap
 msgid "baudrate=115200\n"
 msgstr ""
 
 #. type: Bullet: '* '
-#: originala_firmvaro.md:32
+#: originala_firmvaro.md:91
 #, no-wrap
 msgid "loads\\_echo=1\n"
 msgstr ""
 
 #. type: Bullet: '* '
-#: originala_firmvaro.md:32
+#: originala_firmvaro.md:91
 #, no-wrap
 msgid "ethaddr=00:11:22:33:44:74\n"
 msgstr ""
 
 #. type: Bullet: '* '
-#: originala_firmvaro.md:32
+#: originala_firmvaro.md:91
 #, no-wrap
 msgid "ipaddr=192.168.2.84\n"
 msgstr ""
 
 #. type: Bullet: '* '
-#: originala_firmvaro.md:32
+#: originala_firmvaro.md:91
 #, no-wrap
 msgid "serverip=192.168.2.81\n"
 msgstr ""
 
 #. type: Bullet: '* '
-#: originala_firmvaro.md:32
+#: originala_firmvaro.md:91
 #, no-wrap
 msgid "gatewayip=192.168.2.1\n"
 msgstr ""
 
 #. type: Bullet: '* '
-#: originala_firmvaro.md:32
+#: originala_firmvaro.md:91
 #, no-wrap
 msgid "netmask=255.255.255.0\n"
 msgstr ""
 
 #. type: Plain text
-#: originala_firmvaro.md:50
+#: originala_firmvaro.md:109
 #, no-wrap
 msgid ""
 "options dans mtdblock1 :\n"
@@ -162,19 +294,19 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: originala_firmvaro.md:52
+#: originala_firmvaro.md:111
 #, no-wrap
 msgid "version linux :  \n"
 msgstr ""
 
 #. type: Plain text
-#: originala_firmvaro.md:54
+#: originala_firmvaro.md:113
 #, no-wrap
 msgid "Linux version 3.10.14\\_\\_isvp\\_turkey\\_1.0\\_\\_ (root@localhost.localdomain) (gcc version 4.7.2 (Ingenic r2.3.3 2016.12) ) #3 PREEMPT Sat Jun 22 10:40:55 CST 2019\n"
 msgstr ""
 
 #. type: Plain text
-#: originala_firmvaro.md:66
+#: originala_firmvaro.md:125
 #, no-wrap
 msgid ""
 "fichiers notables dans / :\n"
@@ -190,13 +322,13 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '* '
-#: originala_firmvaro.md:68
+#: originala_firmvaro.md:127
 #, no-wrap
 msgid "/lib : bibliothèques standards.\n"
 msgstr ""
 
 #. type: Plain text
-#: originala_firmvaro.md:76
+#: originala_firmvaro.md:135
 #, no-wrap
 msgid ""
 "fichiers notables dans _/ipc_ :\n"
@@ -209,7 +341,49 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: originala_firmvaro.md:78
+#: originala_firmvaro.md:138
 #, no-wrap
-msgid "note : libimp.so est différente de celle livrée pour le T20, et celle fournie avec le T20 ne convient pas.\n"
+msgid "**note : libimp.so est différente de celle livrée pour le T20, et celle fournie avec le T20 ne convient pas.**\n"
+msgstr ""
+
+#. type: Title #
+#: originala_firmvaro.md:139
+#, no-wrap
+msgid "ports GPIO"
+msgstr ""
+
+#. type: Bullet: '* '
+#: originala_firmvaro.md:147
+#, no-wrap
+msgid "ports bloqués par motor.ko : 18? 38 39 40 41 47 48 49 60?\n"
+msgstr ""
+
+#. type: Bullet: '* '
+#: originala_firmvaro.md:147
+#, no-wrap
+msgid "ports bloqués par audio.ko : 63?\n"
+msgstr ""
+
+#. type: Bullet: '* '
+#: originala_firmvaro.md:147
+#, no-wrap
+msgid "port 46 = LEDS infra-rouge.\n"
+msgstr ""
+
+#. type: Bullet: '* '
+#: originala_firmvaro.md:147
+#, no-wrap
+msgid "port 52 = ?\n"
+msgstr ""
+
+#. type: Bullet: '* '
+#: originala_firmvaro.md:147
+#, no-wrap
+msgid "port 64 = ?\n"
+msgstr ""
+
+#. type: Bullet: '* '
+#: originala_firmvaro.md:147
+#, no-wrap
+msgid "port 81 = LEDS bleues.\n"
 msgstr ""

@@ -6,6 +6,77 @@ layout: page
 title: 原始固件
 ---
 
+# 打开端口
+
+TCP：80(http)，443(http也！)，554(rtsp)，8004、8006、9527(telnet)，9999
+UDP：67(dhcp)，3702、8002、39642
+
+端口80：http
+http：// IP：登录： _admin:_，密码： _admin_
+
+端口443：HTTP
+HTTP：// IP：443：登录名： _admin:_，密码： _admin_
+
+端口554：rtsp
+* 主码流： 
+
+    ```
+    IP=xxx.xxx.xxx.xxx
+    ffplay -i rtsp://admin:admin@$IP/stream1
+    ffplay -i rtsp://admin:admin@$IP/mpeg4/ch0/main/av_stream
+
+
+
+    ```
+* flux secondaire :
+
+
+
+    ```
+    IP=xxx.xxx.xxx.xxx
+    ffplay -i rtsp://admin:admin@$IP/stream2
+    ffplay -i rtsp://admin:admin@$IP/mpeg4/ch1/main/av_stream
+    ````
+
+端口8004 ：？ ，由jco打开_server
+
+
+
+端口8006 ：？ ，由jco打开_server
+
+
+
+
+端口9527：telnet
+`telnetd IP 9527` ：登录名： _root_，密码： _jco66688_，可访问5分钟，之后关闭。
+5分钟后不能断开连接： `killall -9 auto_run.sh`
+停止jco_server : 
+ 
+ 
+
+```
+killall -9 auto_run.sh
+killall -9 jco_server;echo 'V'>/dev/watchdog;echo 'V'>/dev/watchdog0
+```
+
+端口9999：用于控制摄像机，例如：
+
+```
+IP=xxx.xxx.xxx.xxx
+echo "checkuser -act set -user admin -password admin" | nc $IP 9999
+echo "list" | nc $IP 9999
+echo "pelcod20ctrl -?" | nc $IP 9999
+echo "pelcod20ctrl -type 1" | nc $IP 9999
+```
+
+UDP 67：打开udhcpd
+
+UDP 3702 ：？ ，由jco打开_server
+
+
+
+
+# 内部闪存
 闪存的分配方式如下：
 
 得分|描述|
@@ -97,4 +168,27 @@ Linux版本3.10.14\_\_isvp\_火鸡\_1.0\_\_ (root@localhost.localdomain) (gcc版
 ）  * libimp.so：biblioteko _ingenic_ _IMP_ ( _Ingenic Media Platform_ )
 
 
-注意：libimp.so与T20交付的版本不同，不适用于T20交付的版本。
+**注：libimp.so与为T20交付的交付不一样，并且不随T20交付的交付。**
+
+# GPIO端口
+
+* 由motor.ko阻止的端口：18？ 38 39 40 41 47 48 49 60？
+
+
+* 被audio.ko阻止的端口：63？
+
+
+* 端口46 =红外LED。
+
+
+* 端口52 =？
+
+
+* 端口64 =？
+
+
+* 端口81 =蓝色LED
+
+
+
+

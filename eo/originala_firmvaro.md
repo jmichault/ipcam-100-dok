@@ -6,6 +6,71 @@ layout: page
 title: 'Originala firmvaro'
 ---
 
+# malfermaj havenoj
+
+TCP: 80(http), 443(http ankaŭ!), 554(rtsp), 8004, 8006, 9527(telnet), 9999
+UDP: 67(dhcp), 3702, 8002, 39642
+
+haveno 80: http
+http: // IP: ensaluto: _admin:_, pasvorto: _admin_
+
+haveno 443: http
+http: // IP: 443: ensaluto: _admin:_, pasvorto: _admin_
+
+haveno 554: rtsp
+* ĉefa rivereto: 
+
+    ```
+    IP=xxx.xxx.xxx.xxx
+    ffplay -i rtsp://admin:admin@$IP/stream1
+    ffplay -i rtsp://admin:admin@$IP/mpeg4/ch0/main/av_stream
+
+
+    ```
+* flux secondaire :
+
+
+    ```
+    IP=xxx.xxx.xxx.xxx
+    ffplay -i rtsp://admin:admin@$IP/stream2
+    ffplay -i rtsp://admin:admin@$IP/mpeg4/ch1/main/av_stream
+    ````
+
+haveno 8004 :? , malfermita de jco_server
+
+
+haveno 8006 :? , malfermita de jco_server
+
+
+
+haveno 9527: telnet
+`telnetd IP 9527` : ensaluto: _root_, pasvorto: _jco66688_, alirebla dum 5 minutoj, fermita post.
+por ne esti malkonektita post 5 minutoj: `killall -9 auto_run.sh`
+por haltigi jco_server : 
+ 
+
+```
+killall -9 auto_run.sh
+killall -9 jco_server;echo 'V'>/dev/watchdog;echo 'V'>/dev/watchdog0
+```
+
+haveno 9999: uzata por regi la fotilon, ekzemplo:
+
+```
+IP=xxx.xxx.xxx.xxx
+echo "checkuser -act set -user admin -password admin" | nc $IP 9999
+echo "list" | nc $IP 9999
+echo "pelcod20ctrl -?" | nc $IP 9999
+echo "pelcod20ctrl -type 1" | nc $IP 9999
+```
+
+UDP 67: malfermita de udhcpd
+
+UDP 3702 :? , malfermita de jco_server
+
+
+
+# interna fulmmemoro
 Fulmmemoro estas dispartigita jene:
 
 poentaro | priskribo |
@@ -86,4 +151,21 @@ rimarkindaj dosieroj en _/ipc_ :
   * libimp.so: biblioteko _ingenic_ _IMP_ ( _Ingenic Media Platform_ )
 
 
-noto: libimp.so diferencas de tiu liverita por la T20, kaj tiu liverita kun la T20 ne taŭgas.
+**noto: libimp.so diferencas de tiu liverita por la T20, kaj tiu liverita kun la T20 ne taŭgas.**
+
+# GPIO-havenoj
+
+* havenoj blokitaj de motor.ko: 18? 38 39 40 41 47 48 49 60?
+
+* havenoj blokitaj de audio.ko: 63?
+
+* haveno 46 = infraruĝaj LED-oj.
+
+* haveno 52 =?
+
+* haveno 64 =?
+
+* haveno 81 = bluaj LEDoj.
+
+
+
