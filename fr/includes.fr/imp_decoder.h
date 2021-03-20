@@ -18,14 +18,14 @@ extern "C"
 #endif /* __cplusplus */
 
 /**
- * @file 
+ * @file
  * IMP Fichier d'en-tête du décodeur 
  */
 
 /**
  * @defgroup IMP_Decoder
- * @ingroup lutin
- * @brief Module de décodage vidéo, ne prend actuellement en charge que le décodage JPEG
+ * @ingroup imp
+ * @brief Module de décodage vidéo ， Actuellement ne prend en charge que JPEG décodage 
  * @{
  */
 
@@ -66,23 +66,23 @@ typedef struct {
 } IMPDecoderStream;
 
 /**
- * @fn int IMP_Decoder_CreateChn (int decChn, const IMPDecoderCHNAttr * attr)
+ * @fn int IMP_Decoder_CreateChn(int decChn, const IMPDecoderCHNAttr *attr)
  *
  * Créer un décodage Channel
  *
- * @param[in] decChn decode Numéro de canal, plage de valeurs: [0, @ref NR_MAX_DEC_CHN-1]
- * @param[in] attr décoder le pointeur d'attribut de canal
+ * @param[in] decChn décodage Channel numéro , Gammes : [0, @ref NR_MAX_DEC_CHN - 1]
+ * @param[in] attr décodage Channel Pointeur d'attribut 
  *
- * @retval 0 succès
- * @retval Échec non nul
+ * @retval 0 Succès 
+ * @retval non- 0 échec 
  *
- * @remarks non.
+ * @remarks non. 
  * @attention non. 
  */
 int IMP_Decoder_CreateChn(int decChn, const IMPDecoderCHNAttr *attr);
 
 /**
- * @fn int IMP_Decoder_DestroyChn (int decChn)
+ * @fn int IMP_Decoder_DestroyChn(int decChn)
  *
  * Détruire le décodage Channel
  *
@@ -97,7 +97,7 @@ int IMP_Decoder_CreateChn(int decChn, const IMPDecoderCHNAttr *attr);
 int IMP_Decoder_DestroyChn(int decChn);
 
 /**
- * @fn int IMP_Decoder_StartRecvPic (int decChn)
+ * @fn int IMP_Decoder_StartRecvPic(int decChn)
  *
  * Activer le décodage Channel Recevoir l'image 
  *
@@ -106,14 +106,14 @@ int IMP_Decoder_DestroyChn(int decChn);
  * @retval 0 Succès 
  * @retval non- 0 échec 
  *
- * @remarks Le décodage ne peut démarrer qu'après l'ouverture du canal de décodage pour recevoir l'image
+ * @remarks Activer le décodage Channel Le décodage ne peut démarrer qu'après réception de l'image 
  *
- * @attention Si le canal n'est pas créé, il renvoie un échec
+ * @attention au cas où Channel Non créé ， Manqué 
  */
 int IMP_Decoder_StartRecvPic(int decChn);
 
 /**
- * @fn int IMP_Decoder_StopRecvPic (int decChn)
+ * @fn int IMP_Decoder_StopRecvPic(int decChn)
  *
  * Arrêter le décodage Channel Recevoir l'image 
  *
@@ -122,66 +122,66 @@ int IMP_Decoder_StartRecvPic(int decChn);
  * @retval 0 Succès 
  * @retval non- 0 échec 
  *
- * @remarks Arrêter le décodage de l'image de réception du canal
+ * @remarks Arrêter le décodage Channel Recevoir l'image 
  *
- * @attention au cas o ù Channel Non créé ， Manqué 
+ * @attention au cas où Channel Non créé ， Manqué 
  */
 int IMP_Decoder_StopRecvPic(int decChn);
 
 /**
- * @fn int IMP_Decoder_SendStreamTimeout (int decChn, IMPDecoderStream * stream, uint32_t timeoutMsec)
+ * @fn int IMP_Decoder_SendStreamTimeout(int decChn, IMPDecoderStream *stream, uint32_t timeoutMsec)
  *
  * Envoyer les données à décoder 
  *
  * @param[in] decChn décodage Channel numéro , Gammes : [0, @ref NR_MAX_DEC_CHN - 1]
- * @param[in] pointeur de flux vers la structure du flux de données à décoder
- * @param[in] timeout Msec Timeout de décodage unité de temps ms
+ * @param[in] stream Pointeur de structure de flux de données à décoder 
+ * @param[in] timeoutMsec Délai de décodage unité ms
  *
  * @retval 0 Succès 
  * @retval non- 0 échec 
  *
  * @remarks non. 
  *
- * @attention au cas o ù Channel Non créé ， Manqué 
+ * @attention au cas où Channel Non créé ， Manqué 
  */
 int IMP_Decoder_SendStreamTimeout(int decChn, IMPDecoderStream *stream, uint32_t timeoutMsec);
 
 /**
- * @fn int IMP_Decoder_PollingFrame (int decChn, uint32_t timeoutMsec)
+ * @fn int IMP_Decoder_PollingFrame(int decChn, uint32_t timeoutMsec)
  *
  * Polling Tampon de flux de décodage 
  *
  * @param[in] decChn décodage Channel numéro , Gammes : [0, @ref NR_MAX_DEC_CHN - 1]
- * @param[in] timeout Msec timeout unité de temps ms
+ * @param[in] timeoutMsec temps supplémentaire unité ms
  *
  * @retval 0 Succès 
  * @retval non- 0 échec 
  *
  * @remarks non. 
  *
- * @attention au cas o ù Channel Non créé ， Manqué 
+ * @attention au cas où Channel Non créé ， Manqué 
  */
 int IMP_Decoder_PollingFrame(int decChn, uint32_t timeoutMsec);
 
 /**
- * @fn int IMP_Decoder_GetFrame (int decChn, IMPFrameInfo ** frame)
+ * @fn int IMP_Decoder_GetFrame(int decChn, IMPFrameInfo **frame)
  *
  * Obtenir un flux de code décodé 
  *
  * @param[in] decChn décodage Channel numéro , Gammes : [0, @ref NR_MAX_DEC_CHN - 1]
- * @param[out] frame Pointeur de structure de flux de décodage
+ * @param[out] frame Décodage du pointeur de structure de flux 
  *
  * @retval 0 Succès 
  * @retval non- 0 échec 
  *
  * @remarks non. 
  *
- * @attention Le tampon de flux de code de décodage est demandé en interne par le décodeur, et cette fonction n'a besoin que de passer le pointeur de structure.
+ * @attention Décoder le flux buffer Appliquer en interne par le décodeur ， Cette fonction n'a besoin que de passer le pointeur de structure. 
  */
 int IMP_Decoder_GetFrame(int decChn, IMPFrameInfo **frame);
 
 /**
- * @fn int IMP_Decoder_ReleaseFrame (int decChn, IMPFrameInfo * frame)
+ * @fn int IMP_Decoder_ReleaseFrame(int decChn, IMPFrameInfo *frame)
  *
  * Libérez le cache du flux de code 
  *

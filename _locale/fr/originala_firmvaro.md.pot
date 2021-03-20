@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-03-07 20:13+0100\n"
+"POT-Creation-Date: 2021-03-20 12:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -53,35 +53,51 @@ msgid "ports ouverts"
 msgstr ""
 
 #. type: Plain text
+#: originala_firmvaro.md:11
+#, no-wrap
+msgid "TCP : 80(http), 443(http aussi !), 554(rtsp), 8004, 8006, 9527(telnetd), 9999  \n"
+msgstr ""
+
+#. type: Plain text
 #: originala_firmvaro.md:13
 #, no-wrap
-msgid ""
-"TCP : 80(http), 443(http aussi !), 554(rtsp), 8004, 8006, 9527(telnetd), 9999\n"
-"UDP : 67(dhcp), 3702, 8002, 39642\n"
+msgid "UDP : 67(dhcp), 3702, 8002, 39642\n"
+msgstr ""
+
+#. type: Plain text
+#: originala_firmvaro.md:14
+#, no-wrap
+msgid "port 80 : http  \n"
 msgstr ""
 
 #. type: Plain text
 #: originala_firmvaro.md:16
 #, no-wrap
-msgid ""
-"port 80 : http\n"
-"http://IP : login : _admin:_, mot de passe : _admin_\n"
+msgid "http://IP : login : _admin:_, mot de passe : _admin_\n"
+msgstr ""
+
+#. type: Plain text
+#: originala_firmvaro.md:17
+#, no-wrap
+msgid "port 443 : http  \n"
 msgstr ""
 
 #. type: Plain text
 #: originala_firmvaro.md:19
 #, no-wrap
-msgid ""
-"port 443 : http\n"
-"http://IP:443 : login : _admin:_, mot de passe : _admin_\n"
+msgid "http://IP:443 : login : _admin:_, mot de passe : _admin_\n"
 msgstr ""
 
 #. type: Plain text
+#: originala_firmvaro.md:20
+#, no-wrap
+msgid "port 554 : rtsp  \n"
+msgstr ""
+
+#. type: Bullet: '* '
 #: originala_firmvaro.md:22
 #, no-wrap
-msgid ""
-"port 554 : rtsp\n"
-"* flux principal : \n"
+msgid "flux principal : \n"
 msgstr ""
 
 #. type: Plain text
@@ -126,13 +142,27 @@ msgid "port 8006 : ? , ouvert par jco_server\n"
 msgstr ""
 
 #. type: Plain text
+#: originala_firmvaro.md:42
+#, no-wrap
+msgid "port 9527 : telnet  \n"
+msgstr ""
+
+#. type: Plain text
+#: originala_firmvaro.md:43
+#, no-wrap
+msgid "`telnetd IP 9527` : login : _root_, mot de passe : _jco66688_, accessible pendant 5 minutes, fermé après.  \n"
+msgstr ""
+
+#. type: Plain text
+#: originala_firmvaro.md:44
+#, no-wrap
+msgid "pour ne pas être déconnecté au bout des 5 minutes : `killall -9 auto_run.sh`  \n"
+msgstr ""
+
+#. type: Plain text
 #: originala_firmvaro.md:46
 #, no-wrap
-msgid ""
-"port 9527 : telnet\n"
-"`telnetd IP 9527` : login : _root_, mot de passe : _jco66688_, accessible pendant 5 minutes, fermé après.\n"
-"pour ne pas être déconnecté au bout des 5 minutes : `killall -9 auto_run.sh`\n"
-"pour arrêter jco_server : \n"
+msgid "pour arrêter jco_server : \n"
 msgstr ""
 
 #. type: Fenced code block

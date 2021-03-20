@@ -7,41 +7,30 @@ title: 交叉编译
 ---
 
 
+Transit编译工具在编程_medio/toolchain.
+Ils ont été compilés pour debian buster x64.
+中
 
-来源：
- * <https://znanev.github.io/Cross-compile-tools-for-Ingenic-T20/>  
+
+比较图书馆在Prograde_medio/lib
+中
+
+
+包括在编程_medio/include.
+中
+
+
+如果您需要恢复库，请激励以下脚本：
+* 编程_medio/fontoj/01-buildssl.sh , pour la librairie openssl.
+* programada_环境/源/ 02-Buildive.sh，用于Live555库。
+* Programada_medio/fontoj/03-pcre.sh , pour la librairie pcre.
+
+
+
+
+如果您需要重新出现 _«toolchain»_，您可以检查以下位置：（°3°4°4°4°。用于-Imenic-T20/>  
  * <https://github.com/Dafang-Hacks/Main>
 
 
 
-
-# 安装编译器：
-## 选项1：使用docker (，安装速度更快，启动速度更慢)
-
-```
-sudo apt install docker.io
-sudo usermod -aG docker mia_uzanto
- se déconnecter puis se reconnecter
-mkdir ~/dafang
-cd ~/dafang
-docker run --rm -ti -v $(pwd):/root/ daviey/dafang-cross-compile:latest
-```
-
-## 选项2：本地安装 (的时间更长，执行速度更快)
-
-```
-sudo apt install build-essential git gcc-mips-linux-gnu autoconf libtool cmake ftp-upload u-boot-tools
-mkdir -p ~/dafang/Main/mips-gcc472-glibc216-64bit
-ln -s /usr/bin ~/dafang/Main/mips-gcc472-glibc216-64bit
-```
-
-# 库和 _v4l2rtspserver-master_的汇编
-
-```
-git clone --recurse-submodules https://github.com/Dafang-Hacks/Main.git
-cd Main
-./compile_libraries.sh
-cd v4l2rtspserver-master
-./compile.sh
-```
 

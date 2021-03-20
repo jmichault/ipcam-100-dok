@@ -8,17 +8,19 @@ title: 'Original Firmware'
 
 # offene Ports
 
-TCP: 80(http), 443(http auch!), 554(rtsp), 8004, 8006, 9527(Telnet), 9999
-UDP: 67(dhcp), 3702, 8002, 39642
+TCP: 80(http), 443(HTP auch!), 554(RTSP), 8004, 8006, 9527(, 9999  
+UDP: 67(DHCP), 3702, 8002, 39642 (° 3 ° 3
 
-Port 80: http
+Port 80: HTTP  
 http: // IP: Login: _admin:_, Passwort: _admin_
 
-Port 443: http
+Port 443: http  
 http: // IP: 443: Login: _admin:_, Passwort: _admin_
 
-Port 554: RTSP
+Port 554: RTSP  
 * Hauptstrom: 
+
+
 
     ```
     IP=xxx.xxx.xxx.xxx
@@ -47,11 +49,11 @@ Port 8006:? , geöffnet von jco_server
 
 
 
-Port 9527: Telnet
-`telnetd IP 9527` : Login: _root_, Passwort: _jco66688_, 5 Minuten zugänglich, danach geschlossen.
-darf nach 5 Minuten nicht getrennt werden: `killall -9 auto_run.sh`
-um jco zu stoppen_server : 
- 
+Port 9527: Telnet  
+`telnetd IP 9527` : Login: _root_, Passwort: _jco66688_, 5 Minuten lang zugänglich, danach geschlossen.  
+Nicht nach 5 Minuten getrennt werden: `killall -9 auto_run.sh`  
+Um JCO_server : 
+zu stoppen 
  
 
 ```

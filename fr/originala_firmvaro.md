@@ -8,16 +8,16 @@ title: 'Micrologiciel originel'
 
 # ports ouverts
 
-TCP : 80(http), 443(http aussi !), 554(rtsp), 8004, 8006, 9527(telnetd), 9999
+TCP : 80(http), 443(http aussi !), 554(rtsp), 8004, 8006, 9527(telnetd), 9999  
 UDP : 67(dhcp), 3702, 8002, 39642
 
-port 80 : http
+port 80 : http  
 http://IP : login : _admin:_, mot de passe : _admin_
 
-port 443 : http
+port 443 : http  
 http://IP:443 : login : _admin:_, mot de passe : _admin_
 
-port 554 : rtsp
+port 554 : rtsp  
 * flux principal : 
 
     ```
@@ -39,9 +39,9 @@ port 8004 : ? , ouvert par jco_server
 port 8006 : ? , ouvert par jco_server
 
 
-port 9527 : telnet
-`telnetd IP 9527` : login : _root_, mot de passe : _jco66688_, accessible pendant 5 minutes, fermé après.
-pour ne pas être déconnecté au bout des 5 minutes : `killall -9 auto_run.sh`
+port 9527 : telnet  
+`telnetd IP 9527` : login : _root_, mot de passe : _jco66688_, accessible pendant 5 minutes, fermé après.  
+pour ne pas être déconnecté au bout des 5 minutes : `killall -9 auto_run.sh`  
 pour arrêter jco_server : 
 
 ```

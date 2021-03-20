@@ -65,12 +65,21 @@ $(function() {
 <a href="#enum-members">Énumérations</a> &#124;
 <a href="#func-members">Fonctions</a>  </div>
   <div class="headertitle">
-<div class="title">IMP_OSD</div>  </div>
+<div class="title">IMP_OSD<div class="ingroups"><a class="el" href="group__imp.html">IMP(Ingenic Media Platform)</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Module OSD, peut superposer des images, des bitmaps, des lignes droites et des bo je tes rectangulaires sur le flux vidéo.  
+<p>OSD Module ， Peut superposer des images, des bitmaps, des lignes droites et des cadres rectangulaires sur le flux vidéo.  
 <a href="#details">Plus de détails...</a></p>
+<div class="dynheader">
+Graphe de collaboration de IMP_OSD:</div>
+<div class="dyncontent">
+<center><table><tr><td><img src="group__IMP__OSD.png" border="0" alt="" usemap="#group____IMP____OSD"/>
+<map name="group____IMP____OSD" id="group____IMP____OSD">
+<area shape="rect" id="node2" href="group__imp.html" title="IMP(Ingenic Media Platform)" alt="" coords="5,5,193,32"/>
+</map>
+</td></tr></table></center>
+</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -83,6 +92,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionIMPOSDRgnAttrData.html">IMPOSDRgnAttrData</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIMPOSDRgnAttr.html">IMPOSDRgnAttr</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIMPOSDRgnTimestamp.html">IMPOSDRgnTimestamp</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIMPOSDGrpRgnAttr.html">IMPOSDGrpRgnAttr</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -131,32 +142,25 @@ Fonctions</h2></td></tr>
 <tr class="separator:ga7ee1c973352a6c63a9d94ced838b73d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga64e2cdf694b204d4cdb6f03792271810"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__IMP__OSD.html#gadc0d2d62f9e28e13ca872973e8ff6fa9">IMPRgnHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__OSD.html#ga64e2cdf694b204d4cdb6f03792271810">IMP_OSD_CreateRgn</a> (<a class="el" href="structIMPOSDRgnAttr.html">IMPOSDRgnAttr</a> *prAttr)</td></tr>
 <tr class="separator:ga64e2cdf694b204d4cdb6f03792271810"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae5c2059b379bc06d6a3272fdb638c7f8"><td class="memItemLeft" align="right" valign="top"><a id="gae5c2059b379bc06d6a3272fdb638c7f8"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_OSD_DestroyRgn</b> (<a class="el" href="group__IMP__OSD.html#gadc0d2d62f9e28e13ca872973e8ff6fa9">IMPRgnHandle</a> handle)</td></tr>
+<tr class="memitem:gae5c2059b379bc06d6a3272fdb638c7f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__OSD.html#gae5c2059b379bc06d6a3272fdb638c7f8">IMP_OSD_DestroyRgn</a> (<a class="el" href="group__IMP__OSD.html#gadc0d2d62f9e28e13ca872973e8ff6fa9">IMPRgnHandle</a> handle)</td></tr>
 <tr class="separator:gae5c2059b379bc06d6a3272fdb638c7f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gada9245a734dcec9ad3ff64a8f9f1a379"><td class="memItemLeft" align="right" valign="top"><a id="gada9245a734dcec9ad3ff64a8f9f1a379"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_OSD_RegisterRgn</b> (<a class="el" href="group__IMP__OSD.html#gadc0d2d62f9e28e13ca872973e8ff6fa9">IMPRgnHandle</a> handle, int grpNum, <a class="el" href="structIMPOSDGrpRgnAttr.html">IMPOSDGrpRgnAttr</a> *pgrAttr)</td></tr>
+<tr class="memitem:gada9245a734dcec9ad3ff64a8f9f1a379"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__OSD.html#gada9245a734dcec9ad3ff64a8f9f1a379">IMP_OSD_RegisterRgn</a> (<a class="el" href="group__IMP__OSD.html#gadc0d2d62f9e28e13ca872973e8ff6fa9">IMPRgnHandle</a> handle, int grpNum, <a class="el" href="structIMPOSDGrpRgnAttr.html">IMPOSDGrpRgnAttr</a> *pgrAttr)</td></tr>
 <tr class="separator:gada9245a734dcec9ad3ff64a8f9f1a379"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac6c935a002ba3508e07a159c46543332"><td class="memItemLeft" align="right" valign="top"><a id="gac6c935a002ba3508e07a159c46543332"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_OSD_UnRegisterRgn</b> (<a class="el" href="group__IMP__OSD.html#gadc0d2d62f9e28e13ca872973e8ff6fa9">IMPRgnHandle</a> handle, int grpNum)</td></tr>
+<tr class="memitem:gac6c935a002ba3508e07a159c46543332"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__OSD.html#gac6c935a002ba3508e07a159c46543332">IMP_OSD_UnRegisterRgn</a> (<a class="el" href="group__IMP__OSD.html#gadc0d2d62f9e28e13ca872973e8ff6fa9">IMPRgnHandle</a> handle, int grpNum)</td></tr>
 <tr class="separator:gac6c935a002ba3508e07a159c46543332"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9fa0dcefef685eb851b1457e7a0cafbc"><td class="memItemLeft" align="right" valign="top"><a id="ga9fa0dcefef685eb851b1457e7a0cafbc"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_OSD_SetRgnAttr</b> (<a class="el" href="group__IMP__OSD.html#gadc0d2d62f9e28e13ca872973e8ff6fa9">IMPRgnHandle</a> handle, <a class="el" href="structIMPOSDRgnAttr.html">IMPOSDRgnAttr</a> *prAttr)</td></tr>
+<tr class="memitem:ga9fa0dcefef685eb851b1457e7a0cafbc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__OSD.html#ga9fa0dcefef685eb851b1457e7a0cafbc">IMP_OSD_SetRgnAttr</a> (<a class="el" href="group__IMP__OSD.html#gadc0d2d62f9e28e13ca872973e8ff6fa9">IMPRgnHandle</a> handle, <a class="el" href="structIMPOSDRgnAttr.html">IMPOSDRgnAttr</a> *prAttr)</td></tr>
 <tr class="separator:ga9fa0dcefef685eb851b1457e7a0cafbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga816fe110eda1f2e5bb221f78a6177ade"><td class="memItemLeft" align="right" valign="top"><a id="ga816fe110eda1f2e5bb221f78a6177ade"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_OSD_GetRgnAttr</b> (<a class="el" href="group__IMP__OSD.html#gadc0d2d62f9e28e13ca872973e8ff6fa9">IMPRgnHandle</a> handle, <a class="el" href="structIMPOSDRgnAttr.html">IMPOSDRgnAttr</a> *prAttr)</td></tr>
+<tr class="memitem:ga33af621054ccc4e4387db4945a341345"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__OSD.html#ga33af621054ccc4e4387db4945a341345">IMP_OSD_SetRgnAttrWithTimestamp</a> (<a class="el" href="group__IMP__OSD.html#gadc0d2d62f9e28e13ca872973e8ff6fa9">IMPRgnHandle</a> handle, <a class="el" href="structIMPOSDRgnAttr.html">IMPOSDRgnAttr</a> *prAttr, <a class="el" href="structIMPOSDRgnTimestamp.html">IMPOSDRgnTimestamp</a> *prTs)</td></tr>
+<tr class="separator:ga33af621054ccc4e4387db4945a341345"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga816fe110eda1f2e5bb221f78a6177ade"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__OSD.html#ga816fe110eda1f2e5bb221f78a6177ade">IMP_OSD_GetRgnAttr</a> (<a class="el" href="group__IMP__OSD.html#gadc0d2d62f9e28e13ca872973e8ff6fa9">IMPRgnHandle</a> handle, <a class="el" href="structIMPOSDRgnAttr.html">IMPOSDRgnAttr</a> *prAttr)</td></tr>
 <tr class="separator:ga816fe110eda1f2e5bb221f78a6177ade"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga880823c92f7258f2791aa91725683198"><td class="memItemLeft" align="right" valign="top"><a id="ga880823c92f7258f2791aa91725683198"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_OSD_UpdateRgnAttrData</b> (<a class="el" href="group__IMP__OSD.html#gadc0d2d62f9e28e13ca872973e8ff6fa9">IMPRgnHandle</a> handle, <a class="el" href="unionIMPOSDRgnAttrData.html">IMPOSDRgnAttrData</a> *prAttrData)</td></tr>
+<tr class="memitem:ga880823c92f7258f2791aa91725683198"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__OSD.html#ga880823c92f7258f2791aa91725683198">IMP_OSD_UpdateRgnAttrData</a> (<a class="el" href="group__IMP__OSD.html#gadc0d2d62f9e28e13ca872973e8ff6fa9">IMPRgnHandle</a> handle, <a class="el" href="unionIMPOSDRgnAttrData.html">IMPOSDRgnAttrData</a> *prAttrData)</td></tr>
 <tr class="separator:ga880823c92f7258f2791aa91725683198"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6dfff960bc63be5139a8317fa3c2a1ed"><td class="memItemLeft" align="right" valign="top"><a id="ga6dfff960bc63be5139a8317fa3c2a1ed"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_OSD_SetGrpRgnAttr</b> (<a class="el" href="group__IMP__OSD.html#gadc0d2d62f9e28e13ca872973e8ff6fa9">IMPRgnHandle</a> handle, int grpNum, <a class="el" href="structIMPOSDGrpRgnAttr.html">IMPOSDGrpRgnAttr</a> *pgrAttr)</td></tr>
+<tr class="memitem:ga6dfff960bc63be5139a8317fa3c2a1ed"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__OSD.html#ga6dfff960bc63be5139a8317fa3c2a1ed">IMP_OSD_SetGrpRgnAttr</a> (<a class="el" href="group__IMP__OSD.html#gadc0d2d62f9e28e13ca872973e8ff6fa9">IMPRgnHandle</a> handle, int grpNum, <a class="el" href="structIMPOSDGrpRgnAttr.html">IMPOSDGrpRgnAttr</a> *pgrAttr)</td></tr>
 <tr class="separator:ga6dfff960bc63be5139a8317fa3c2a1ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga72ed932c29bcf7ed54ad8f650403ca12"><td class="memItemLeft" align="right" valign="top"><a id="ga72ed932c29bcf7ed54ad8f650403ca12"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_OSD_GetGrpRgnAttr</b> (<a class="el" href="group__IMP__OSD.html#gadc0d2d62f9e28e13ca872973e8ff6fa9">IMPRgnHandle</a> handle, int grpNum, <a class="el" href="structIMPOSDGrpRgnAttr.html">IMPOSDGrpRgnAttr</a> *pgrAttr)</td></tr>
+<tr class="memitem:ga72ed932c29bcf7ed54ad8f650403ca12"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__OSD.html#ga72ed932c29bcf7ed54ad8f650403ca12">IMP_OSD_GetGrpRgnAttr</a> (<a class="el" href="group__IMP__OSD.html#gadc0d2d62f9e28e13ca872973e8ff6fa9">IMPRgnHandle</a> handle, int grpNum, <a class="el" href="structIMPOSDGrpRgnAttr.html">IMPOSDGrpRgnAttr</a> *pgrAttr)</td></tr>
 <tr class="separator:ga72ed932c29bcf7ed54ad8f650403ca12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafbbc33cd778b48dd78bc97dabfe933c2"><td class="memItemLeft" align="right" valign="top"><a id="gafbbc33cd778b48dd78bc97dabfe933c2"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_OSD_ShowRgn</b> (<a class="el" href="group__IMP__OSD.html#gadc0d2d62f9e28e13ca872973e8ff6fa9">IMPRgnHandle</a> handle, int grpNum, int showFlag)</td></tr>
+<tr class="memitem:gafbbc33cd778b48dd78bc97dabfe933c2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__OSD.html#gafbbc33cd778b48dd78bc97dabfe933c2">IMP_OSD_ShowRgn</a> (<a class="el" href="group__IMP__OSD.html#gadc0d2d62f9e28e13ca872973e8ff6fa9">IMPRgnHandle</a> handle, int grpNum, int showFlag)</td></tr>
 <tr class="separator:gafbbc33cd778b48dd78bc97dabfe933c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab588ad815812fe2da722467b1e602eb3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__OSD.html#gab588ad815812fe2da722467b1e602eb3">IMP_OSD_Start</a> (int grpNum)</td></tr>
 <tr class="separator:gab588ad815812fe2da722467b1e602eb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -164,17 +168,17 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_OSD_ShowRgn</b> (<
 <tr class="separator:gae44fa63f34dc18d2d539a2563308fd55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
-<p>Module OSD, peut superposer des images, des bitmaps, des lignes droites et des bo je tes rectangulaires sur le flux vidéo. </p>
-<h1><a class="anchor" id="Présentation"></a>
-de l'audio_summary 1</h1>
+<p>OSD Module ， Peut superposer des images, des bitmaps, des lignes droites et des cadres rectangulaires sur le flux vidéo. </p>
+<h1><a class="anchor" id="osd_summary"></a>
+1 Présentation du module</h1>
 <p>OSD Le nom complet est On-Screen Display .</p>
 <h1><a class="anchor" id="osd_concept"></a>
-2 concepts associés</h1>
-<h2><a class="anchor" id="Région"></a>
-osd_region 2.1</h2>
-<p>Region Est-ce que la zone superposée ， dans API Abréviation chinoise Rgn . Region Avoir certaines informations sur l'image ， Peut passer OSD Une fois les modules superposés ， Combiné avec l'image d'arrière-plan dans une image. Pour la superposition d'image ， Peut également être réalisé Alpha effet. <a class="el" href="group__IMP__OSD.html#osd_region_type">2.1 Type de région</a> .</p>
+2 Concepts associés</h1>
+<h2><a class="anchor" id="osd_region"></a>
+2.1 Region</h2>
+<p>Region Est-ce que la zone superposée ， dans API Abréviation chinoise Rgn . Region Avoir certaines informations sur l'image ， Peut passer OSD Une fois les modules superposés ， Combiné avec l'image d'arrière-plan dans une image. Pour la superposition d'image ， Peut également être réalisé Alpha effet. <a class="el" href="group__IMP__OSD.html#osd_region_type">2.1 Region type</a> .</p>
 <h2><a class="anchor" id="osd_region_type"></a>
-2.1 Type de région</h2>
+2.1 Region type</h2>
 <p>Region Il existe plusieurs types ， Elles sont: <br />
 OSD_REG_LINE :ligne droite <br />
 OSD_REG_RECT :Rectangle <br />
@@ -182,11 +186,11 @@ OSD_REG_BITMAP : bitmap <br />
 OSD_REG_COVER : Occlusion <br />
 OSD_REG_PIC :image <br />
 parmi eux ， La différence entre le bitmap et l'image est ， Bitmap n'effectue qu'une couverture monochrome des pixels ， Et l'image est RGBA Image Alpha Recouvrir.</p>
-<h1><a class="anchor" id="Fonction"></a>
-du module osd_fun 3</h1>
-<p>OSD Le module prend en charge les lignes, les bo je tes rectangulaires, la superposition bitmap, l'occlusion rectangulaire et la superposition d'image. Les lignes, les bo je tes rectangulaires et les bitmaps sont implémentés par logiciel; l'occlusion rectangulaire et la superposition d'image sont implémentées par le matériel.</p>
-<h1><a class="anchor" id="Utilisation"></a>
-du module osd_use 4</h1>
+<h1><a class="anchor" id="osd_fun"></a>
+3 Fonction du module</h1>
+<p>OSD Le module prend en charge les lignes, les bo je tes rectangulaires, la superposition bitmap, l'occlusion rectangulaire et la superposition d'image. Les lignes, les bo je tes rectangulaires et les bitmaps sont implémentés par logiciel; l'occlusion rectangulaire et les superpositions d'images sont implémentées par le matériel.</p>
+<h1><a class="anchor" id="osd_use"></a>
+4 Utilisation du module</h1>
 <p>OSD L'utilisation de comporte généralement les étapes suivantes</p><ol type="1">
 <li>créer OSD grouper</li>
 <li>Lier OSD Regrouper dans le système</li>
@@ -295,13 +299,13 @@ du module osd_use 4</h1>
           <td class="memname">int IMP_OSD_AttachToGroup </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structIMPCell.html">IMPCell</a> *&#160;</td>
-          <td class="paramname"><em>de</em>, </td>
+          <td class="paramname"><em>from</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="structIMPCell.html">IMPCell</a> *&#160;</td>
-          <td class="paramname"><em>à</em>&#160;</td>
+          <td class="paramname"><em>to</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -313,8 +317,8 @@ du module osd_use 4</h1>
 <p>volonté OSD Groupe ajouté au système</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">depuis</td><td>l'unité OSD </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">vers</td><td>d'autres unités du système</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">from</td><td>OSD unité </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">to</td><td>Autres unités du système</td></tr>
   </table>
   </dd>
 </dl>
@@ -325,7 +329,7 @@ du module osd_use 4</h1>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarques</dt><dd>Dans la nouvelle version du SDK, il est recommandé d'utiliser Bind pour insérer l'OSD dans le flux de données du système. La méthode Attach n'est plus recommandée, mais l'API est réservée à la compatibilité avec les versions précédentes du logiciel. Pour plus de détails, veuillez consulter bind Exemple de</dd></dl>
+<dl class="section remark"><dt>Remarques</dt><dd>Nouvelle version SDK Recommandé dans Bind Le chemin sera OSD Cha je ne au flux de données du système ，Attach N'est plus recommandé ， mais API Garder ， Idéalement compatible avec les versions précédentes du logiciel. Pour plus de détails, veuillez consulter <a class="el" href="group__IMP__System.html#bind">2 Liaison de module ( Bind )</a> Exemple de</dd></dl>
 <dl class="section attention"><dt>Attention</dt><dd>non. </dd></dl>
 
 </div>
@@ -348,14 +352,14 @@ du module osd_use 4</h1>
 <p>créer OSD grouper</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">grpNum</td><td>Numéro de groupe OSD, plage de valeurs: [0, NR_MAX_OSD_GROUPS-1]</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">grpNum</td><td>OSD No de groupe , Gammes : [0, NR_MAX_OSD_GROUPS - 1]</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Valeurs retournées</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>succès </td></tr>
-    <tr><td class="paramname">Échec</td><td>non nul</td></tr>
+    <tr><td class="paramname">0</td><td>Succès </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec</td></tr>
   </table>
   </dd>
 </dl>
@@ -382,14 +386,14 @@ du module osd_use 4</h1>
 <p>créer OSD surface</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">Attributs</td><td>de la zone OSD prAttr</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">prAttr</td><td>OSD Attributs de zone</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Valeurs retournées</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">Succès</td><td>supérieur ou égal à 0 </td></tr>
-    <tr><td class="paramname">Moins</td><td>de 0 a échoué</td></tr>
+    <tr><td class="paramname">supérieur</td><td>ou égal à 0 Succès </td></tr>
+    <tr><td class="paramname">Moins</td><td>que 0 échec</td></tr>
   </table>
   </dd>
 </dl>
@@ -427,7 +431,390 @@ du module osd_use 4</h1>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarques</dt><dd>Lors de l'appel de cette API, le groupe correspondant doit avoir été créé.</dd></dl>
+<dl class="section remark"><dt>Remarques</dt><dd>Appelle ça API Il est nécessaire que le groupe correspondant ait été créé.</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>non. </dd></dl>
+
+</div>
+</div>
+<a id="gae5c2059b379bc06d6a3272fdb638c7f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae5c2059b379bc06d6a3272fdb638c7f8">&#9670;&nbsp;</a></span>IMP_OSD_DestroyRgn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void IMP_OSD_DestroyRgn </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__IMP__OSD.html#gadc0d2d62f9e28e13ca872973e8ff6fa9">IMPRgnHandle</a>&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>détruire OSD surface</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">prAttr</td><td>Poignée de zone ，IMP_OSD_CreateRgn La valeur de retour</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">non</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>non.</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>non. </dd></dl>
+
+</div>
+</div>
+<a id="ga72ed932c29bcf7ed54ad8f650403ca12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga72ed932c29bcf7ed54ad8f650403ca12">&#9670;&nbsp;</a></span>IMP_OSD_GetGrpRgnAttr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_OSD_GetGrpRgnAttr </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__IMP__OSD.html#gadc0d2d62f9e28e13ca872973e8ff6fa9">IMPRgnHandle</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>grpNum</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structIMPOSDGrpRgnAttr.html">IMPOSDGrpRgnAttr</a> *&#160;</td>
+          <td class="paramname"><em>pgrAttr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Obtenir OSD Attributs de zone de groupe</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Poignée de zone ，IMP_OSD_CreateRgn La valeur de retour </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">grpNum</td><td>OSD No de groupe </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">pgrAttr</td><td>OSD Attributs de zone de groupe</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Succès </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>Appelle ça API Lors de la demande du correspondant OSD Le groupe a été créé , La zone a été créée et enregistrée.</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>non. </dd></dl>
+
+</div>
+</div>
+<a id="ga816fe110eda1f2e5bb221f78a6177ade"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga816fe110eda1f2e5bb221f78a6177ade">&#9670;&nbsp;</a></span>IMP_OSD_GetRgnAttr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_OSD_GetRgnAttr </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__IMP__OSD.html#gadc0d2d62f9e28e13ca872973e8ff6fa9">IMPRgnHandle</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structIMPOSDRgnAttr.html">IMPOSDRgnAttr</a> *&#160;</td>
+          <td class="paramname"><em>prAttr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Obtenir des attributs de zone</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Poignée de zone ，IMP_OSD_CreateRgn La valeur de retour </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">prAttr</td><td>OSD Attributs de zone</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Succès </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>Appelle ça API Il est nécessaire que la zone correspondante ait été créée.</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>non. </dd></dl>
+
+</div>
+</div>
+<a id="gada9245a734dcec9ad3ff64a8f9f1a379"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gada9245a734dcec9ad3ff64a8f9f1a379">&#9670;&nbsp;</a></span>IMP_OSD_RegisterRgn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_OSD_RegisterRgn </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__IMP__OSD.html#gadc0d2d62f9e28e13ca872973e8ff6fa9">IMPRgnHandle</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>grpNum</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structIMPOSDGrpRgnAttr.html">IMPOSDGrpRgnAttr</a> *&#160;</td>
+          <td class="paramname"><em>pgrAttr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>inscrit OSD surface</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Poignée de zone ，IMP_OSD_CreateRgn La valeur de retour </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">grpNum</td><td>OSD No de groupe </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pgrAttr</td><td>OSD Attributs d'affichage de groupe</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Succès </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>Appelle ça API Lors de la demande du correspondant OSD Le groupe a été créé.</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>non. </dd></dl>
+
+</div>
+</div>
+<a id="ga6dfff960bc63be5139a8317fa3c2a1ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6dfff960bc63be5139a8317fa3c2a1ed">&#9670;&nbsp;</a></span>IMP_OSD_SetGrpRgnAttr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_OSD_SetGrpRgnAttr </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__IMP__OSD.html#gadc0d2d62f9e28e13ca872973e8ff6fa9">IMPRgnHandle</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>grpNum</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structIMPOSDGrpRgnAttr.html">IMPOSDGrpRgnAttr</a> *&#160;</td>
+          <td class="paramname"><em>pgrAttr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Installation OSD Attributs de zone de groupe</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Poignée de zone ，IMP_OSD_CreateRgn La valeur de retour </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">grpNum</td><td>OSD No de groupe </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pgrAttr</td><td>OSD Attributs de zone de groupe</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Succès </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>Appelle ça API Lors de la demande du correspondant OSD Le groupe a été créé , La zone a été créée et enregistrée.</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>non. </dd></dl>
+
+</div>
+</div>
+<a id="ga9fa0dcefef685eb851b1457e7a0cafbc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9fa0dcefef685eb851b1457e7a0cafbc">&#9670;&nbsp;</a></span>IMP_OSD_SetRgnAttr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_OSD_SetRgnAttr </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__IMP__OSD.html#gadc0d2d62f9e28e13ca872973e8ff6fa9">IMPRgnHandle</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structIMPOSDRgnAttr.html">IMPOSDRgnAttr</a> *&#160;</td>
+          <td class="paramname"><em>prAttr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Définir les propriétés de la zone</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Poignée de zone ，IMP_OSD_CreateRgn La valeur de retour </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">prAttr</td><td>OSD Attributs de zone</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Succès </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>Appelle ça API Il est nécessaire que la zone correspondante ait été créée.</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>non. </dd></dl>
+
+</div>
+</div>
+<a id="ga33af621054ccc4e4387db4945a341345"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga33af621054ccc4e4387db4945a341345">&#9670;&nbsp;</a></span>IMP_OSD_SetRgnAttrWithTimestamp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_OSD_SetRgnAttrWithTimestamp </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__IMP__OSD.html#gadc0d2d62f9e28e13ca872973e8ff6fa9">IMPRgnHandle</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structIMPOSDRgnAttr.html">IMPOSDRgnAttr</a> *&#160;</td>
+          <td class="paramname"><em>prAttr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structIMPOSDRgnTimestamp.html">IMPOSDRgnTimestamp</a> *&#160;</td>
+          <td class="paramname"><em>prTs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Définir les attributs régionaux et l'heure effective</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Poignée de zone ，IMP_OSD_CreateRgn La valeur de retour </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">prAttr</td><td>OSD Attributs de zone </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">prTs</td><td>Temps effectif</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Succès </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>Appelle ça API Il est nécessaire que la zone correspondante ait été créée.</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>non. </dd></dl>
+
+</div>
+</div>
+<a id="gafbbc33cd778b48dd78bc97dabfe933c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafbbc33cd778b48dd78bc97dabfe933c2">&#9670;&nbsp;</a></span>IMP_OSD_ShowRgn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_OSD_ShowRgn </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__IMP__OSD.html#gadc0d2d62f9e28e13ca872973e8ff6fa9">IMPRgnHandle</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>grpNum</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>showFlag</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Définir s'il faut afficher la zone de groupe</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Poignée de zone ，IMP_OSD_CreateRgn La valeur de retour </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">grpNum</td><td>OSD No de groupe </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">showFlag</td><td>OSD Commutateur d'affichage de la zone de groupe</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Succès </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>Appelle ça API Lors de la demande du correspondant OSD Le groupe a été créé , La zone a été créée et enregistrée.</dd></dl>
 <dl class="section attention"><dt>Attention</dt><dd>non. </dd></dl>
 
 </div>
@@ -496,6 +883,96 @@ du module osd_use 4</h1>
   </dd>
 </dl>
 <dl class="section remark"><dt>Remarques</dt><dd>Appelle ça API Lors de la demande du correspondant OSD Le groupe a été créé.</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>non. </dd></dl>
+
+</div>
+</div>
+<a id="gac6c935a002ba3508e07a159c46543332"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac6c935a002ba3508e07a159c46543332">&#9670;&nbsp;</a></span>IMP_OSD_UnRegisterRgn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_OSD_UnRegisterRgn </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__IMP__OSD.html#gadc0d2d62f9e28e13ca872973e8ff6fa9">IMPRgnHandle</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>grpNum</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Se déconnecter OSD surface</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Poignée de zone ，IMP_OSD_CreateRgn La valeur de retour </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">grpNum</td><td>OSD No de groupe</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Succès </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>Appelle ça API Lors de la demande du correspondant OSD Le groupe a été créé , La zone correspondante a été enregistrée.</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>non. </dd></dl>
+
+</div>
+</div>
+<a id="ga880823c92f7258f2791aa91725683198"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga880823c92f7258f2791aa91725683198">&#9670;&nbsp;</a></span>IMP_OSD_UpdateRgnAttrData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_OSD_UpdateRgnAttrData </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__IMP__OSD.html#gadc0d2d62f9e28e13ca872973e8ff6fa9">IMPRgnHandle</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="unionIMPOSDRgnAttrData.html">IMPOSDRgnAttrData</a> *&#160;</td>
+          <td class="paramname"><em>prAttrData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Mettre à jour les attributs de données de zone ， Seulement pour OSD_REG_BITMAP avec OSD_REG_PIC Type de zone</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Poignée de zone ，IMP_OSD_CreateRgn La valeur de retour </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">prAttrData</td><td>OSD Attributs de données de zone</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Succès </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>Appelle ça API Il faut que la zone correspondante ait été créée et que l'attribut de zone ait été défini sur OSD_REG_BITMAP ou OSD_REG_PIC .</dd></dl>
 <dl class="section attention"><dt>Attention</dt><dd>non. </dd></dl>
 
 </div>

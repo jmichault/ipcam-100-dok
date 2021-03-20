@@ -17,14 +17,14 @@ extern "C"
 #endif /* __cplusplus */
 
 /**
- * @file 
+ * @file
  * FrameSource Fichier d'en-tête du module 
  */
 
 /**
  * @defgroup IMP_FrameSource
- * @ingroup lutin
- * @brief La source vidéo est la source de données d'image du système IMP. La résolution d'image, le recadrage, la mise à l'échelle et d'autres attributs peuvent être définis, ainsi que la fonction de réduction du bruit d'arrière-plan
+ * @ingroup imp
+ * @brief Source vidéo ， Oui IMP Source de données d'image du système ， Vous pouvez définir la résolution de l'image, le recadrage, le zoom et d'autres attributs ， Et la fonction de réduction du bruit d'arrière-plan 
  *
  * FrameSource Est un concept lié au flux de données ， La résolution de l'image peut être définie ， Format etc. ， Et fournissez l'image originale à l'arrière-plan. 
  *
@@ -36,7 +36,7 @@ extern "C"
  * * Channel 2 Est d'élargir le canal ， Utilisation dans des applications spéciales ， Généralement déconseillé 
  *
  * FrameSource Les étapes d'initialisation sont les suivantes (prenez deux sorties comme exemple): 
- * @code 
+ * @code
  * IMPFSChnAttr fs_chn_attr;
  * fs_chn_attr.pixFmt = PIX_FMT_NV12;
  * fs_chn_attr.outFrmRateNum = SENSOR_FRAME_RATE;
@@ -79,7 +79,7 @@ extern "C"
  * printf("FrameSource_DestroyChn error\n");
  * return destorychn_err;
  * }
- * @endcode 
+ * @endcode
  * Pour plus de méthodes d'utilisation, veuillez vous référer à Samples
  * @{
  */
@@ -110,6 +110,22 @@ typedef enum {
 } IMPFSChnType;
 
 /**
+* rayon FIFO Types de 
+*/
+typedef enum {
+	FIFO_CACHE_PRIORITY = 0,	/**< FIFO Cache prioritaire ， Puis sortez les données */
+	FIFO_DATA_PRIORITY,			/**< FIFO Données de sortie prioritaires ， Puis cache */
+} IMPFSChnFifoType;
+
+/**
+* rayon FIFO Structure d'attribut 
+*/
+typedef struct {
+	int maxdepth;				/**< FIFO Profondeur maximale */
+	IMPFSChnFifoType type;			/**< rayon FIFO Types de */
+} IMPFSChnFifoAttr;
+
+/**
  * Structure d'attribut de canal 
  */
 typedef struct {
@@ -125,26 +141,26 @@ typedef struct {
 } IMPFSChnAttr;
 
 /**
- * @fn int IMP_FrameSource_CreateChn (int chnNum, IMPFSChnAttr * chnAttr)
+ * @fn int IMP_FrameSource_CreateChn(int chnNum, IMPFSChnAttr *chnAttr)
  *
  * Créer une cha je ne 
  *
- * @param[in] chnNum numéro de canal
- * @param[in] chnAttr Pointeur de structure d'attribut de canal
+ * @param[in] chnNum Le numéro de canal 
+ * @param[in] chnAttr Pointeur de structure d'attribut de canal 
  *
- * @retval 0 succès
- * @retval Échec différent de zéro, retour du code d'erreur
+ * @retval 0 Succès 
+ * @retval non- 0 échec ， Renvoyer le code d'erreur 
  *
- * @remark Créez un canal pour fournir une source de données pour le module principal; 
+ * @remark Créer une cha je ne ， Fournir des sources de données pour les modules back-end ; \n
  * Vous pouvez définir les attributs pertinents du canal ， Inclure: largeur de l'image ， Hauteur de l'image ， Format d'image ， La fréquence d'images de sortie du canal , Cache buf numéro ， Attributs de recadrage et de zoom. \n
  * pour T10， rayon 0 [[[ 1 Ne peut être défini que comme canal physique ， rayon 2,3 Peut uniquement être défini comme canal d'extension. 
  *
- * @attention non.
+ * @attention non. 
  */
 int IMP_FrameSource_CreateChn(int chnNum, IMPFSChnAttr *chn_attr);
 
 /**
- * @fn IMP_FrameSource_DestroyChn (int chnNum)
+ * @fn IMP_FrameSource_DestroyChn(int chnNum)
  *
  * Détruire le canal 
  *
@@ -153,14 +169,14 @@ int IMP_FrameSource_CreateChn(int chnNum, IMPFSChnAttr *chn_attr);
  * @retval 0 Succès 
  * @retval non- 0 échec ， Renvoyer le code d'erreur 
  *
- * @remark Détruire le canal
+ * @remark Détruire le canal 
  *
- * @attention Si le programme a appelé IMP_FrameSource_EnableChn, vous devez appeler IMP_FrameSource_DisableChn avant d'utiliser cette fonction.
+ * @attention Si le programme a appelé IMP_FrameSource_EnableChn， Doit appeler IMP_FrameSource_DisableChn après ， Utilisez à nouveau cette fonction. 
  */
 int IMP_FrameSource_DestroyChn(int chnNum);
 
 /**
- * @fn int IMP_FrameSource_EnableChn (int chnNum)
+ * @fn int IMP_FrameSource_EnableChn(int chnNum)
  *
  * Activer le canal 
  *
@@ -169,14 +185,14 @@ int IMP_FrameSource_DestroyChn(int chnNum);
  * @retval 0 Succès 
  * @retval non- 0 échec ， Renvoyer le code d'erreur 
  *
- * @remark non
+ * @remark non 
  *
- * @attention Avant d'utiliser cette fonction, vous devez vous assurer que le canal activé a été créé.
+ * @attention Avant d'utiliser cette fonction ， Il faut s'assurer que le canal activé a été créé .
  */
 int IMP_FrameSource_EnableChn(int chnNum);
 
 /**
- * @fn int IMP_FrameSource_DisableChn (int chnNum)
+ * @fn int IMP_FrameSource_DisableChn(int chnNum)
  *
  * Fermer la cha je ne 
  *
@@ -192,7 +208,7 @@ int IMP_FrameSource_EnableChn(int chnNum);
 int IMP_FrameSource_DisableChn(int chnNum);
 
 /**
- * @fn int IMP_FrameSource_GetChnAttr (int chnNum, IMPFSChnAttr * chnAttr)
+ * @fn int IMP_FrameSource_GetChnAttr(int chnNum, IMPFSChnAttr *chnAttr)
  *
  * Obtenir les propriétés de la cha je ne 
  *
@@ -203,14 +219,14 @@ int IMP_FrameSource_DisableChn(int chnNum);
  * @retval 0 Succès 
  * @retval non- 0 échec ， Renvoyer le code d'erreur 
  *
- * @remark Les attributs pertinents du canal peuvent être obtenus, notamment: la largeur de l'image, la hauteur de l'image, le format de l'image, la fréquence d'images de sortie du canal, le nombre de tampons tampons, les attributs de rognage et de mise à l'échelle.
+ * @remark Obtenez les attributs pertinents de la cha je ne ， Inclure: largeur de l'image ， Hauteur de l'image ， Format d'image ， La fréquence d'images de sortie du canal , Cache buf numéro ， Propriétés de recadrage et de zoom .
  *
  * @attention non 
  */
 int IMP_FrameSource_GetChnAttr(int chnNum, IMPFSChnAttr *chnAttr);
 
 /**
- * @fn int IMP_FrameSource_SetChnAttr (int chnNum, const IMPFSChnAttr * chnAttr)
+ * @fn int IMP_FrameSource_SetChnAttr(int chnNum, const IMPFSChnAttr *chnAttr)
  *
  * Définir les propriétés du canal 
  *
@@ -221,24 +237,24 @@ int IMP_FrameSource_GetChnAttr(int chnNum, IMPFSChnAttr *chnAttr);
  * @retval 0 Succès 
  * @retval non- 0 échec ， Renvoyer le code d'erreur 
  *
- * @remark Vous pouvez définir les attributs pertinents du canal, notamment: la largeur de l'image, la hauteur de l'image, le format de l'image, la fréquence d'images de sortie du canal, le numéro de tampon du tampon, les attributs de recadrage et de zoom.
+ * @remark Vous pouvez définir les attributs pertinents du canal ， Inclure: largeur de l'image ， Hauteur de l'image ， Format d'image ， La fréquence d'images de sortie du canal , Cache buf numéro ， Propriétés de recadrage et de zoom .
  *
  * @attention non 
  */
 int IMP_FrameSource_SetChnAttr(int chnNum, const IMPFSChnAttr *chnAttr);
 
 /**
- * @fn IMP_FrameSource_SetFrameDepth (int chnNum, int depth)
+ * @fn IMP_FrameSource_SetFrameDepth(int chnNum, int depth)
  *
  * Définissez la profondeur maximale de l'image pouvant être obtenue 
  *
- * @param[in] chnNum numéro de canal
- * @param[in] profondeur Définit la valeur de profondeur maximale de l'image pouvant être obtenue
+ * @param[in] chnNum Le numéro de canal 
+ * @param[in] depth Définissez la valeur de profondeur maximale de l'image pouvant être obtenue 
  *
  * @retval 0 Succès 
  * @retval non- 0 échec ， Renvoyer le code d'erreur 
  *
- * @remark 
+ * @remark
  *
  * 1. Cette interface est utilisée pour définir le nombre d'images vidéo mises en mémoire tampon dans un canal. ， L'utilisateur peut obtenir un certain nombre de données d'image en continu. 
  *
@@ -252,17 +268,17 @@ int IMP_FrameSource_SetChnAttr(int chnNum, const IMPFSChnAttr *chnAttr);
  *
  * 6. Cette fonction peut appeler la localisation ， Il n'y a aucune exigence. 
  *
- * @attention non.
+ * @attention non .
  */
 int IMP_FrameSource_SetFrameDepth(int chnNum, int depth);
 
 /**
- * @fn IMP_FrameSource_GetFrameDepth (int chnNum, int * profondeur);
+ * @fn IMP_FrameSource_GetFrameDepth(int chnNum, int *depth);
  *
  * Profondeur maximale de l'image acquise 
  *
  * @param[in] chnNum Le numéro de canal 
- * @param[out] profondeur La valeur de profondeur maximale de l'image obtenue
+ * @param[out] depth La valeur de profondeur maximale de l'image acquise 
  *
  * @retval 0 Succès 
  * @retval non- 0 échec ， Renvoyer le code d'erreur 
@@ -274,23 +290,23 @@ int IMP_FrameSource_SetFrameDepth(int chnNum, int depth);
 int IMP_FrameSource_GetFrameDepth(int chnNum, int *depth);
 
 /**
- * @fn IMP_FrameSource_GetFrame (int chnNum, IMPFrameInfo ** frame);
+ * @fn IMP_FrameSource_GetFrame(int chnNum, IMPFrameInfo **frame);
  *
  * Image acquise 
  *
  * @param[in] chnNum Le numéro de canal 
- * @param[out] image capturée par cadre
+ * @param[out] frame Image acquise 
  *
  * @retval 0 Succès 
  * @retval non- 0 échec ， Renvoyer le code d'erreur 
  *
- * @remark 
+ * @remark
  *
  * 1. Cette interface peut obtenir les informations d'image vidéo du canal spécifié. 
  *
  * 2. Cette interface n'est valide qu'après activation du canal. 
  *
- * 3. Prend en charge plusieurs acquisitions, puis libère ， Cependant, il est recommandé de coupler les interfaces d'acquisition et de libération. 
+ * 3. Prend en charge plusieurs acquisitions, puis libère ， Cependant, il est recommandé que l'interface d'acquisition et de libération soit associée pour l'utilisation. 
  *
  * 4. Le délai d'expiration par défaut de cette interface est 2s， lequel est 2s Je n'ai toujours pas l'image à l'intérieur ， Le délai d'expiration revient. 
  *
@@ -299,12 +315,38 @@ int IMP_FrameSource_GetFrameDepth(int chnNum, int *depth);
 int IMP_FrameSource_GetFrame(int chnNum, IMPFrameInfo **frame);
 
 /**
- * @fn IMP_FrameSource_ReleaseFrame (int chnNum, IMPFrameInfo * frame);
+ * @fn IMP_FrameSource_GetTimedFrame(int chnNum, IMPFrameTimestamp *framets, int block, void *framedata, IMPFrameInfo *frame);
+ *
+ * Obtenir l'image à l'heure spécifiée 
+ *
+ * @param[in] chnNum Le numéro de canal 
+ * @param[in] framets Informations sur l'heure 
+ * @param[in] block Propriétés de blocage 
+ * @param[in] framedata Copiez le pointeur mémoire de l'image 
+ * @param[in] frame Obtenir des informations sur l'image 
+ *
+ * @retval 0 Succès 
+ * @retval non- 0 échec ， Renvoyer le code d'erreur 
+ *
+ * @remark
+ *
+ * 1. Cette interface peut obtenir les informations d'image vidéo du canal spécifié à l'heure spécifiée. 
+ *
+ * 2. Cette interface n'est valide qu'après activation du canal. 
+ *
+ * 3. Cette interface doit d'abord être configurée IMP_FrameSource_SetMaxDelay avec IMP_FrameSource_SetDelay . 
+ *
+ * @attention non .
+ */
+int IMP_FrameSource_GetTimedFrame(int chnNum, IMPFrameTimestamp *framets, int block, void *framedata, IMPFrameInfo *frame);
+
+/**
+ * @fn IMP_FrameSource_ReleaseFrame(int chnNum, IMPFrameInfo *frame);
  *
  * Libérer l'image acquise 
  *
  * @param[in] chnNum Le numéro de canal 
- * @param[in] le cadre libère l'image acquise
+ * @param[in] frame Libérer l'image acquise 
  *
  * @retval 0 Succès 
  * @retval non- 0 échec ， Renvoyer le code d'erreur 
@@ -314,6 +356,134 @@ int IMP_FrameSource_GetFrame(int chnNum, IMPFrameInfo **frame);
  * @attention non .
  */
 int IMP_FrameSource_ReleaseFrame(int chnNum, IMPFrameInfo *frame);
+
+/**
+ * @fn IMP_FrameSource_SnapFrame(int chnNum, IMPPixelFormat fmt, int width, int height, void *framedata, IMPFrameInfo *frame);
+ *
+ * Obtenir une image 
+ *
+ * @param[in] chnNum Le numéro de canal 
+ * @param[in] fmt Format d'image 
+ * @param[in] width Largeur de l'image 
+ * @param[in] height Hauteur de l'image 
+ * @param[in] framedata Copiez le pointeur mémoire de l'image 
+ * @param[in] frame Obtenir des informations sur l'image 
+ *
+ * @retval 0 Succès 
+ * @retval non- 0 échec ， Renvoyer le code d'erreur 
+ *
+ * @remark
+ *
+ * 1. Cette interface peut obtenir une trame d'images dans un format et une taille spécifiés; le format actuel prend en charge NV12，YUYV422 ; La taille est la même que la résolution du canal; pas besoin d'appeler IMP_FrameSource_SetFrameDepth interface .
+ *
+ * 2. Cette interface n'est valide qu'après activation du canal. 
+ *
+ *
+ * @attention non .
+ */
+int IMP_FrameSource_SnapFrame(int chnNum, IMPPixelFormat fmt, int width, int height, void *framedata, IMPFrameInfo *frame);
+
+/**
+ * @fn IMP_FrameSource_SetMaxDelay(int chnNum, int maxcnt);
+ *
+ * Définir le numéro de trame de retard maximum 
+ *
+ * @param[in] chnNum Le numéro de canal 
+ * @param[in] maxcnt Délai maximum ， Cadre de l'unité 
+ *
+ * @retval 0 Succès 
+ * @retval non- 0 échec ， Renvoyer le code d'erreur 
+ *
+ * @remark non .
+ *
+ * @attention Lors de son utilisation, vous devez utiliser la fonction IMP_FrameSource_CreateChn contre IMP_FrameSource_EnableChn Appeler entre .
+ */
+int IMP_FrameSource_SetMaxDelay(int chnNum, int maxcnt);
+
+/**
+ * @fn IMP_FrameSource_GetMaxDelay(int chnNum, int *maxcnt);
+ *
+ * Obtenez le nombre maximum d'images retardées 
+ *
+ * @param[in] chnNum Le numéro de canal 
+ * @param[out] maxcnt Délai maximum ， Cadre de l'unité 
+ *
+ * @retval 0 Succès 
+ * @retval non- 0 échec ， Renvoyer le code d'erreur 
+ *
+ * @remark non .
+ *
+ * @attention Lors de son utilisation, vous devez utiliser la fonction IMP_FrameSource_CreateChn après .
+ */
+int IMP_FrameSource_GetMaxDelay(int chnNum, int *maxcnt);
+
+/**
+ * @fn IMP_FrameSource_SetDelay(int chnNum, int cnt);
+ *
+ * Définir le nombre d'images retardées 
+ *
+ * @param[in] chnNum Le numéro de canal 
+ * @param[in] cnt retard ， Cadre de l'unité 
+ *
+ * @retval 0 Succès 
+ * @retval non- 0 échec ， Renvoyer le code d'erreur 
+ *
+ * @remark non .
+ *
+ * @attention Lors de son utilisation, vous devez utiliser la fonction IMP_FrameSource_SetMaxDelay Appeler après .
+ */
+int IMP_FrameSource_SetDelay(int chnNum, int cnt);
+
+/**
+ * @fn IMP_FrameSource_GetDelay(int chnNum, int *cnt);
+ *
+ * Obtenez le nombre d'images retardées 
+ *
+ * @param[in] chnNum Le numéro de canal 
+ * @param[out] cnt retard ， Cadre de l'unité 
+ *
+ * @retval 0 Succès 
+ * @retval non- 0 échec ， Renvoyer le code d'erreur 
+ *
+ * @remark non .
+ *
+ * @attention Lors de son utilisation, vous devez utiliser la fonction IMP_FrameSource_CreateChn après .
+ */
+int IMP_FrameSource_GetDelay(int chnNum, int *cnt);
+
+/**
+ * @fn IMP_FrameSource_SetChnFifoAttr(int chnNum, IMPFSChnFifoAttr *attr);
+ *
+ * Définir la mémoire tampon maximale du canal FIFO Les attributs 
+ *
+ * @param[in] chnNum Le numéro de canal 
+ * @param[in] attr	FIFO Les attributs ， comprendre FIFO Profondeur maximale ， Cadre de l'unité FIFO Types de .
+ *
+ * @retval 0 Succès 
+ * @retval non- 0 échec ， Renvoyer le code d'erreur 
+ *
+ * @remark non .
+ *
+ * @attention Lors de son utilisation, vous devez utiliser la fonction IMP_FrameSource_CreateChn contre IMP_FrameSource_EnableChn Appeler entre .
+ */
+int IMP_FrameSource_SetChnFifoAttr(int chnNum, IMPFSChnFifoAttr *attr);
+
+/**
+ * @fn IMP_FrameSource_GetChnFifoAttr(int chnNum, IMPFSChnFifoAttr *attr);
+ *
+ * Obtenir le tampon maximal du canal FIFO Les attributs 
+ *
+ * @param[in] chnNum Le numéro de canal 
+ * @param[out] attr	FIFO Les attributs .
+ *
+ * @retval 0 Succès 
+ * @retval non- 0 échec ， Renvoyer le code d'erreur 
+ *
+ * @remark non .
+ *
+ * @attention Lors de son utilisation, vous devez utiliser la fonction IMP_FrameSource_CreateChn après .
+ */
+int IMP_FrameSource_GetChnFifoAttr(int chnNum, IMPFSChnFifoAttr *attr);
 
 #ifdef __cplusplus
 #if __cplusplus

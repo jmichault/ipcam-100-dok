@@ -62,14 +62,25 @@ $(function() {
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#typedef-members">Définitions de type</a> &#124;
 <a href="#enum-members">Énumérations</a> &#124;
-<a href="#func-members">Fonctions</a>  </div>
+<a href="#enumval-members">Valeurs énumérées</a> &#124;
+<a href="#func-members">Fonctions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
-<div class="title">IMP_ISP</div>  </div>
+<div class="title">IMP_ISP<div class="ingroups"><a class="el" href="group__imp.html">IMP(Ingenic Media Platform)</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Unité de traitement du signal d'image.  
+<p>Unité de traitement du signal d'image. Sensor Enregistrement, ajout, suppression, etc.  
 <a href="#details">Plus de détails...</a></p>
+<div class="dynheader">
+Graphe de collaboration de IMP_ISP:</div>
+<div class="dyncontent">
+<center><table><tr><td><img src="group__IMP__ISP.png" border="0" alt="" usemap="#group____IMP____ISP"/>
+<map name="group____IMP____ISP" id="group____IMP____ISP">
+<area shape="rect" id="node2" href="group__imp.html" title="IMP(Ingenic Media Platform)" alt="" coords="5,5,193,32"/>
+</map>
+</td></tr></table></center>
+</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -93,7 +104,7 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structisp__core__wb__attr.html">isp_core_wb_attr</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIMPISPEVAttr.html">IMPISPEVAttr</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structisp__core__rgb__coefft__wb__attr.html">isp_core_rgb_coefft_wb_attr</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
@@ -106,6 +117,9 @@ Définitions de type</h2></td></tr>
 <tr class="separator:gad50c1f6042c643570d9148832ac60dba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gadb085866bbf4d5576e01762beb11b2e1"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structisp__core__wb__attr.html">isp_core_wb_attr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__ISP.html#gadb085866bbf4d5576e01762beb11b2e1">IMPISPWB</a></td></tr>
 <tr class="separator:gadb085866bbf4d5576e01762beb11b2e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga56f9af7c26bc010f60faa8776339fc3a"><td class="memItemLeft" align="right" valign="top"><a id="ga56f9af7c26bc010f60faa8776339fc3a"></a>
+typedef struct <a class="el" href="structisp__core__rgb__coefft__wb__attr.html">isp_core_rgb_coefft_wb_attr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>IMPISPCOEFFTWB</b></td></tr>
+<tr class="separator:ga56f9af7c26bc010f60faa8776339fc3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Énumérations</h2></td></tr>
@@ -120,6 +134,7 @@ Définitions de type</h2></td></tr>
 <tr class="separator:ga45aca860233255ad78614e2fa38520b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga51cbf4116bb59389dc30a6840764e73e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__ISP.html#ga51cbf4116bb59389dc30a6840764e73e">IMPISPTuningOpsType</a> { <a class="el" href="group__IMP__ISP.html#gga51cbf4116bb59389dc30a6840764e73ea5e63521a46939be32170e2f44596b086">IMPISP_TUNING_OPS_TYPE_AUTO</a>, 
 <a class="el" href="group__IMP__ISP.html#gga51cbf4116bb59389dc30a6840764e73eabc9c9bf5f177c50dbc895ef196d2d825">IMPISP_TUNING_OPS_TYPE_MANUAL</a>, 
+<a class="el" href="group__IMP__ISP.html#gga51cbf4116bb59389dc30a6840764e73ea239ddb7e2689251d0ae4fa012b330bfa">IMPISP_TUNING_OPS_TYPE_RANGE</a>, 
 <a class="el" href="group__IMP__ISP.html#gga51cbf4116bb59389dc30a6840764e73ead55a5e7f03b4cf92f09ca928730d2799">IMPISP_TUNING_OPS_TYPE_BUTT</a>
  }</td></tr>
 <tr class="separator:ga51cbf4116bb59389dc30a6840764e73e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -136,13 +151,15 @@ Définitions de type</h2></td></tr>
 <a class="el" href="group__IMP__ISP.html#ggac26c8dff17c099abd9903e2e87550fcca322d78b393d627de736e27987f34af86">IMPISP_DRC_MEDIUM</a>, 
 <br />
 &#160;&#160;<a class="el" href="group__IMP__ISP.html#ggac26c8dff17c099abd9903e2e87550fcca82189cc8176e8ffeee5d501f20506827">IMPISP_DRC_LOW</a>, 
-<a class="el" href="group__IMP__ISP.html#ggac26c8dff17c099abd9903e2e87550fccae3956c97d333890ebb70ec34b2b6d15e">IMPISP_DRC_DISABLE</a>
+<a class="el" href="group__IMP__ISP.html#ggac26c8dff17c099abd9903e2e87550fccae3956c97d333890ebb70ec34b2b6d15e">IMPISP_DRC_DISABLE</a>, 
+<a class="el" href="group__IMP__ISP.html#ggac26c8dff17c099abd9903e2e87550fcca12d3321cef895ca9413a3ca97c1053f4">IMPISP_DRC_RANGE</a>
 <br />
  }</td></tr>
 <tr class="separator:gac26c8dff17c099abd9903e2e87550fcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga69126b2fc2c675a0f7fc799a95aa24f0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__ISP.html#ga69126b2fc2c675a0f7fc799a95aa24f0">IMPISPTemperMode</a> { <a class="el" href="group__IMP__ISP.html#gga69126b2fc2c675a0f7fc799a95aa24f0a66eeb72afd354abdb8f9fc1c6ab7a17e">IMPISP_TEMPER_DISABLE</a>, 
 <a class="el" href="group__IMP__ISP.html#gga69126b2fc2c675a0f7fc799a95aa24f0ac7734e353079f64eb3411429c7f1043d">IMPISP_TEMPER_AUTO</a>, 
-<a class="el" href="group__IMP__ISP.html#gga69126b2fc2c675a0f7fc799a95aa24f0a140a9107ecaf9573d8c399b81b3c8cca">IMPISP_TEMPER_MANUAL</a>
+<a class="el" href="group__IMP__ISP.html#gga69126b2fc2c675a0f7fc799a95aa24f0a140a9107ecaf9573d8c399b81b3c8cca">IMPISP_TEMPER_MANUAL</a>, 
+<a class="el" href="group__IMP__ISP.html#gga69126b2fc2c675a0f7fc799a95aa24f0aa201dd558a7ac0d5424b4671ba3e050f">IMPISP_TEMPER_RANGE</a>
  }</td></tr>
 <tr class="separator:ga69126b2fc2c675a0f7fc799a95aa24f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga43e34d291aed58536d3e48fe57dc4c7c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__ISP.html#ga43e34d291aed58536d3e48fe57dc4c7c">IMPISPSceneMode</a> { <br />
@@ -208,20 +225,12 @@ Définitions de type</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:ga8322e3086b65300b1aca801a5ad1b22e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1c6ee3079840b5204cf27fce0a6a1058"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__ISP.html#ga1c6ee3079840b5204cf27fce0a6a1058">IMPISPAntiFogAttr</a> { <a class="el" href="group__IMP__ISP.html#gga1c6ee3079840b5204cf27fce0a6a1058aeabcf20ff04d2145bd31adb11befbcff">ANTIFOG_DISABLE</a>, 
-<a class="el" href="group__IMP__ISP.html#gga1c6ee3079840b5204cf27fce0a6a1058a1cac631833ecf5935ddc2bcb07e50f2b">ANTIFOG_STRONG</a>, 
-<a class="el" href="group__IMP__ISP.html#gga1c6ee3079840b5204cf27fce0a6a1058a131450cfb81fc13ac02f1a34acb7357c">ANTIFOG_MEDIUM</a>, 
-<a class="el" href="group__IMP__ISP.html#gga1c6ee3079840b5204cf27fce0a6a1058ae6589ef075b875e897d9954e60e036af">ANTIFOG_WEAK</a>
- }</td></tr>
-<tr class="separator:ga1c6ee3079840b5204cf27fce0a6a1058"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Fonctions</h2></td></tr>
-<tr class="memitem:gac80de0e7f019c1718e58bb9d728203c3"><td class="memItemLeft" align="right" valign="top"><a id="gac80de0e7f019c1718e58bb9d728203c3"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_ISP_Open</b> (void)</td></tr>
+<tr class="memitem:gac80de0e7f019c1718e58bb9d728203c3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__ISP.html#gac80de0e7f019c1718e58bb9d728203c3">IMP_ISP_Open</a> (void)</td></tr>
 <tr class="separator:gac80de0e7f019c1718e58bb9d728203c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5c2fdfdad046856bff32937c5ac05b90"><td class="memItemLeft" align="right" valign="top"><a id="ga5c2fdfdad046856bff32937c5ac05b90"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_ISP_Close</b> (void)</td></tr>
+<tr class="memitem:ga5c2fdfdad046856bff32937c5ac05b90"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__ISP.html#ga5c2fdfdad046856bff32937c5ac05b90">IMP_ISP_Close</a> (void)</td></tr>
 <tr class="separator:ga5c2fdfdad046856bff32937c5ac05b90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8e4d951a6a80e88026f41e310090c44d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__ISP.html#ga8e4d951a6a80e88026f41e310090c44d">IMP_ISP_AddSensor</a> (<a class="el" href="structIMPSensorInfo.html">IMPSensorInfo</a> *pinfo)</td></tr>
 <tr class="separator:ga8e4d951a6a80e88026f41e310090c44d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -231,8 +240,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_ISP_Close</b> (voi
 <tr class="separator:ga72bd61d7ffa8f06b239c1ce43a6b5274"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga823f71e232236129da016cbbd0079295"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__ISP.html#ga823f71e232236129da016cbbd0079295">IMP_ISP_DisableSensor</a> (void)</td></tr>
 <tr class="separator:ga823f71e232236129da016cbbd0079295"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8a86c7fac741e7d38daae9767f06a9f7"><td class="memItemLeft" align="right" valign="top"><a id="ga8a86c7fac741e7d38daae9767f06a9f7"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_ISP_SetSensorRegister</b> (uint32_t reg, uint32_t value)</td></tr>
+<tr class="memitem:ga8a86c7fac741e7d38daae9767f06a9f7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__ISP.html#ga8a86c7fac741e7d38daae9767f06a9f7">IMP_ISP_SetSensorRegister</a> (uint32_t reg, uint32_t value)</td></tr>
 <tr class="separator:ga8a86c7fac741e7d38daae9767f06a9f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga121bb07b3c434d708ff9d2627f230884"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__ISP.html#ga121bb07b3c434d708ff9d2627f230884">IMP_ISP_GetSensorRegister</a> (uint32_t reg, uint32_t *value)</td></tr>
 <tr class="separator:ga121bb07b3c434d708ff9d2627f230884"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -260,72 +268,59 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_ISP_SetSensorRegis
 <tr class="separator:ga311aa474d39dbb4fd38d45914ea9fd3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8e9b4a0b436c9c87a8c96ca4755d77ac"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__ISP.html#ga8e9b4a0b436c9c87a8c96ca4755d77ac">IMP_ISP_Tuning_GetTemperDnsAttr</a> (<a class="el" href="group__IMP__ISP.html#gafeecdffc4d7d1b9a0d6fe7aafd0354e3">IMPISPTemperDenoiseAttr</a> *pinfo)</td></tr>
 <tr class="separator:ga8e9b4a0b436c9c87a8c96ca4755d77ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf0bc7d23d1b03971adf0ff487ca90076"><td class="memItemLeft" align="right" valign="top"><a id="gaf0bc7d23d1b03971adf0ff487ca90076"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_ISP_Tuning_SetWDRAttr</b> (<a class="el" href="group__IMP__ISP.html#ga45aca860233255ad78614e2fa38520b9">IMPISPTuningOpsMode</a> mode)</td></tr>
+<tr class="memitem:gaf0bc7d23d1b03971adf0ff487ca90076"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__ISP.html#gaf0bc7d23d1b03971adf0ff487ca90076">IMP_ISP_Tuning_SetWDRAttr</a> (<a class="el" href="group__IMP__ISP.html#ga45aca860233255ad78614e2fa38520b9">IMPISPTuningOpsMode</a> mode)</td></tr>
 <tr class="separator:gaf0bc7d23d1b03971adf0ff487ca90076"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga14396aecbcec0579a9163045ae77037c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__ISP.html#ga14396aecbcec0579a9163045ae77037c">IMP_ISP_Tuning_GetWDRAttr</a> (<a class="el" href="group__IMP__ISP.html#ga45aca860233255ad78614e2fa38520b9">IMPISPTuningOpsMode</a> *pmode)</td></tr>
 <tr class="separator:ga14396aecbcec0579a9163045ae77037c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf4cc536e10083446015f101b94b23159"><td class="memItemLeft" align="right" valign="top"><a id="gaf4cc536e10083446015f101b94b23159"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_ISP_Tuning_SetSceneMode</b> (<a class="el" href="group__IMP__ISP.html#ga43e34d291aed58536d3e48fe57dc4c7c">IMPISPSceneMode</a> mode)</td></tr>
+<tr class="memitem:gaf4cc536e10083446015f101b94b23159"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__ISP.html#gaf4cc536e10083446015f101b94b23159">IMP_ISP_Tuning_SetSceneMode</a> (<a class="el" href="group__IMP__ISP.html#ga43e34d291aed58536d3e48fe57dc4c7c">IMPISPSceneMode</a> mode)</td></tr>
 <tr class="separator:gaf4cc536e10083446015f101b94b23159"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae11a3c98e598964ca27889e6dbda0937"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__ISP.html#gae11a3c98e598964ca27889e6dbda0937">IMP_ISP_Tuning_GetSceneMode</a> (<a class="el" href="group__IMP__ISP.html#ga43e34d291aed58536d3e48fe57dc4c7c">IMPISPSceneMode</a> *pmode)</td></tr>
 <tr class="separator:gae11a3c98e598964ca27889e6dbda0937"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga015584d806c3dd5bc7f70213b784c90b"><td class="memItemLeft" align="right" valign="top"><a id="ga015584d806c3dd5bc7f70213b784c90b"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_ISP_Tuning_SetColorfxMode</b> (<a class="el" href="group__IMP__ISP.html#ga601945262e25baf0e55e71a754bfd513">IMPISPColorfxMode</a> mode)</td></tr>
+<tr class="memitem:ga015584d806c3dd5bc7f70213b784c90b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__ISP.html#ga015584d806c3dd5bc7f70213b784c90b">IMP_ISP_Tuning_SetColorfxMode</a> (<a class="el" href="group__IMP__ISP.html#ga601945262e25baf0e55e71a754bfd513">IMPISPColorfxMode</a> mode)</td></tr>
 <tr class="separator:ga015584d806c3dd5bc7f70213b784c90b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab0ddcbac4ec14ef6f3493d8125081555"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__ISP.html#gab0ddcbac4ec14ef6f3493d8125081555">IMP_ISP_Tuning_GetColorfxMode</a> (<a class="el" href="group__IMP__ISP.html#ga601945262e25baf0e55e71a754bfd513">IMPISPColorfxMode</a> *pmode)</td></tr>
 <tr class="separator:gab0ddcbac4ec14ef6f3493d8125081555"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa420ab671dc3ac21664e68f7471499ce"><td class="memItemLeft" align="right" valign="top"><a id="gaa420ab671dc3ac21664e68f7471499ce"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_ISP_Tuning_SetBrightness</b> (unsigned char bright)</td></tr>
+<tr class="memitem:gaa420ab671dc3ac21664e68f7471499ce"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__ISP.html#gaa420ab671dc3ac21664e68f7471499ce">IMP_ISP_Tuning_SetBrightness</a> (unsigned char bright)</td></tr>
 <tr class="separator:gaa420ab671dc3ac21664e68f7471499ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga95eace973c2c84c22acd607e1a81292d"><td class="memItemLeft" align="right" valign="top"><a id="ga95eace973c2c84c22acd607e1a81292d"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_ISP_Tuning_GetBrightness</b> (unsigned char *pbright)</td></tr>
+<tr class="memitem:ga95eace973c2c84c22acd607e1a81292d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__ISP.html#ga95eace973c2c84c22acd607e1a81292d">IMP_ISP_Tuning_GetBrightness</a> (unsigned char *pbright)</td></tr>
 <tr class="separator:ga95eace973c2c84c22acd607e1a81292d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9ad8f252ce6bdf00a3682c1ebecfb149"><td class="memItemLeft" align="right" valign="top"><a id="ga9ad8f252ce6bdf00a3682c1ebecfb149"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_ISP_Tuning_SetContrast</b> (unsigned char contrast)</td></tr>
+<tr class="memitem:ga9ad8f252ce6bdf00a3682c1ebecfb149"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__ISP.html#ga9ad8f252ce6bdf00a3682c1ebecfb149">IMP_ISP_Tuning_SetContrast</a> (unsigned char contrast)</td></tr>
 <tr class="separator:ga9ad8f252ce6bdf00a3682c1ebecfb149"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa3571e3f4f0e2a5759f403241dbc1bde"><td class="memItemLeft" align="right" valign="top"><a id="gaa3571e3f4f0e2a5759f403241dbc1bde"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_ISP_Tuning_GetContrast</b> (unsigned char *pcontrast)</td></tr>
+<tr class="memitem:gaa3571e3f4f0e2a5759f403241dbc1bde"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__ISP.html#gaa3571e3f4f0e2a5759f403241dbc1bde">IMP_ISP_Tuning_GetContrast</a> (unsigned char *pcontrast)</td></tr>
 <tr class="separator:gaa3571e3f4f0e2a5759f403241dbc1bde"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga37c58c97c2970aa01e438c189c25ef6d"><td class="memItemLeft" align="right" valign="top"><a id="ga37c58c97c2970aa01e438c189c25ef6d"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_ISP_Tuning_SetSharpness</b> (unsigned char sharpness)</td></tr>
+<tr class="memitem:ga37c58c97c2970aa01e438c189c25ef6d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__ISP.html#ga37c58c97c2970aa01e438c189c25ef6d">IMP_ISP_Tuning_SetSharpness</a> (unsigned char sharpness)</td></tr>
 <tr class="separator:ga37c58c97c2970aa01e438c189c25ef6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1e088f85ea78d4a58df1983fa8c3bbae"><td class="memItemLeft" align="right" valign="top"><a id="ga1e088f85ea78d4a58df1983fa8c3bbae"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_ISP_Tuning_GetSharpness</b> (unsigned char *psharpness)</td></tr>
+<tr class="memitem:ga1e088f85ea78d4a58df1983fa8c3bbae"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__ISP.html#ga1e088f85ea78d4a58df1983fa8c3bbae">IMP_ISP_Tuning_GetSharpness</a> (unsigned char *psharpness)</td></tr>
 <tr class="separator:ga1e088f85ea78d4a58df1983fa8c3bbae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga67c1bce041ce6ba21c81ae86a45d7a49"><td class="memItemLeft" align="right" valign="top"><a id="ga67c1bce041ce6ba21c81ae86a45d7a49"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_ISP_Tuning_SetSaturation</b> (unsigned char sat)</td></tr>
+<tr class="memitem:ga67c1bce041ce6ba21c81ae86a45d7a49"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__ISP.html#ga67c1bce041ce6ba21c81ae86a45d7a49">IMP_ISP_Tuning_SetSaturation</a> (unsigned char sat)</td></tr>
 <tr class="separator:ga67c1bce041ce6ba21c81ae86a45d7a49"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab376dc9de94e58d63d0126ca3e232da3"><td class="memItemLeft" align="right" valign="top"><a id="gab376dc9de94e58d63d0126ca3e232da3"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_ISP_Tuning_GetSaturation</b> (unsigned char *psat)</td></tr>
+<tr class="memitem:gab376dc9de94e58d63d0126ca3e232da3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__ISP.html#gab376dc9de94e58d63d0126ca3e232da3">IMP_ISP_Tuning_GetSaturation</a> (unsigned char *psat)</td></tr>
 <tr class="separator:gab376dc9de94e58d63d0126ca3e232da3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacc802954d9f7881dc18214bd9f6236f1"><td class="memItemLeft" align="right" valign="top"><a id="gacc802954d9f7881dc18214bd9f6236f1"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_ISP_Tuning_SetFWFreeze</b> (<a class="el" href="group__IMP__ISP.html#ga45aca860233255ad78614e2fa38520b9">IMPISPTuningOpsMode</a> mode)</td></tr>
+<tr class="memitem:gacc802954d9f7881dc18214bd9f6236f1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__ISP.html#gacc802954d9f7881dc18214bd9f6236f1">IMP_ISP_Tuning_SetFWFreeze</a> (<a class="el" href="group__IMP__ISP.html#ga45aca860233255ad78614e2fa38520b9">IMPISPTuningOpsMode</a> mode)</td></tr>
 <tr class="separator:gacc802954d9f7881dc18214bd9f6236f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafe130e2a58ee71532dcc4903f56c52e7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__ISP.html#gafe130e2a58ee71532dcc4903f56c52e7">IMP_ISP_Tuning_SaveAllParam</a> (char *path)</td></tr>
 <tr class="separator:gafe130e2a58ee71532dcc4903f56c52e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga02de99774dc0257c7613d9ef4dd7ae94"><td class="memItemLeft" align="right" valign="top"><a id="ga02de99774dc0257c7613d9ef4dd7ae94"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_ISP_Tuning_SetISPBypass</b> (<a class="el" href="group__IMP__ISP.html#ga45aca860233255ad78614e2fa38520b9">IMPISPTuningOpsMode</a> enable)</td></tr>
+<tr class="memitem:ga02de99774dc0257c7613d9ef4dd7ae94"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__ISP.html#ga02de99774dc0257c7613d9ef4dd7ae94">IMP_ISP_Tuning_SetISPBypass</a> (<a class="el" href="group__IMP__ISP.html#ga45aca860233255ad78614e2fa38520b9">IMPISPTuningOpsMode</a> enable)</td></tr>
 <tr class="separator:ga02de99774dc0257c7613d9ef4dd7ae94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0c301c0b728ffee66209fa536866a629"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__ISP.html#ga0c301c0b728ffee66209fa536866a629">IMP_ISP_Tuning_GetTotalGain</a> (uint32_t *gain)</td></tr>
 <tr class="separator:ga0c301c0b728ffee66209fa536866a629"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga663cc368f688229e2766a2cc2a2cdc52"><td class="memItemLeft" align="right" valign="top"><a id="ga663cc368f688229e2766a2cc2a2cdc52"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_ISP_Tuning_SetISPHflip</b> (<a class="el" href="group__IMP__ISP.html#ga45aca860233255ad78614e2fa38520b9">IMPISPTuningOpsMode</a> mode)</td></tr>
+<tr class="memitem:ga663cc368f688229e2766a2cc2a2cdc52"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__ISP.html#ga663cc368f688229e2766a2cc2a2cdc52">IMP_ISP_Tuning_SetISPHflip</a> (<a class="el" href="group__IMP__ISP.html#ga45aca860233255ad78614e2fa38520b9">IMPISPTuningOpsMode</a> mode)</td></tr>
 <tr class="separator:ga663cc368f688229e2766a2cc2a2cdc52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab0ad06b6d923c498476e367bf2e6a401"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__ISP.html#gab0ad06b6d923c498476e367bf2e6a401">IMP_ISP_Tuning_GetISPHflip</a> (<a class="el" href="group__IMP__ISP.html#ga45aca860233255ad78614e2fa38520b9">IMPISPTuningOpsMode</a> *pmode)</td></tr>
 <tr class="separator:gab0ad06b6d923c498476e367bf2e6a401"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf1f07a434ff4d5d0786d713aad2ffc26"><td class="memItemLeft" align="right" valign="top"><a id="gaf1f07a434ff4d5d0786d713aad2ffc26"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_ISP_Tuning_SetISPVflip</b> (<a class="el" href="group__IMP__ISP.html#ga45aca860233255ad78614e2fa38520b9">IMPISPTuningOpsMode</a> mode)</td></tr>
+<tr class="memitem:gaf1f07a434ff4d5d0786d713aad2ffc26"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__ISP.html#gaf1f07a434ff4d5d0786d713aad2ffc26">IMP_ISP_Tuning_SetISPVflip</a> (<a class="el" href="group__IMP__ISP.html#ga45aca860233255ad78614e2fa38520b9">IMPISPTuningOpsMode</a> mode)</td></tr>
 <tr class="separator:gaf1f07a434ff4d5d0786d713aad2ffc26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1b6f33516c68ac7cf293efd247712dfc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__ISP.html#ga1b6f33516c68ac7cf293efd247712dfc">IMP_ISP_Tuning_GetISPVflip</a> (<a class="el" href="group__IMP__ISP.html#ga45aca860233255ad78614e2fa38520b9">IMPISPTuningOpsMode</a> *pmode)</td></tr>
 <tr class="separator:ga1b6f33516c68ac7cf293efd247712dfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9a8ba3dfe858dde56672a5160ec1fdfd"><td class="memItemLeft" align="right" valign="top"><a id="ga9a8ba3dfe858dde56672a5160ec1fdfd"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_ISP_Tuning_SetISPRunningMode</b> (<a class="el" href="group__IMP__ISP.html#ga00373cf71fd22df5eaa2f7eed6973100">IMPISPRunningMode</a> mode)</td></tr>
+<tr class="memitem:gad931a78faafcb184b1bab9fb699e86f4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__ISP.html#gad931a78faafcb184b1bab9fb699e86f4">IMP_ISP_Tuning_SetISPHVflip</a> (<a class="el" href="group__IMP__ISP.html#ga45aca860233255ad78614e2fa38520b9">IMPISPTuningOpsMode</a> hmode, <a class="el" href="group__IMP__ISP.html#ga45aca860233255ad78614e2fa38520b9">IMPISPTuningOpsMode</a> vmode)</td></tr>
+<tr class="separator:gad931a78faafcb184b1bab9fb699e86f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9507173061f6cc577ec3d7f337dd12b2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__ISP.html#ga9507173061f6cc577ec3d7f337dd12b2">IMP_ISP_Tuning_GetISPHVflip</a> (<a class="el" href="group__IMP__ISP.html#ga45aca860233255ad78614e2fa38520b9">IMPISPTuningOpsMode</a> *phmode, <a class="el" href="group__IMP__ISP.html#ga45aca860233255ad78614e2fa38520b9">IMPISPTuningOpsMode</a> *pvmode)</td></tr>
+<tr class="separator:ga9507173061f6cc577ec3d7f337dd12b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9a8ba3dfe858dde56672a5160ec1fdfd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__ISP.html#ga9a8ba3dfe858dde56672a5160ec1fdfd">IMP_ISP_Tuning_SetISPRunningMode</a> (<a class="el" href="group__IMP__ISP.html#ga00373cf71fd22df5eaa2f7eed6973100">IMPISPRunningMode</a> mode)</td></tr>
 <tr class="separator:ga9a8ba3dfe858dde56672a5160ec1fdfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga15176aa01cdc235ea1877154176cda57"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__ISP.html#ga15176aa01cdc235ea1877154176cda57">IMP_ISP_Tuning_GetISPRunningMode</a> (<a class="el" href="group__IMP__ISP.html#ga00373cf71fd22df5eaa2f7eed6973100">IMPISPRunningMode</a> *pmode)</td></tr>
 <tr class="separator:ga15176aa01cdc235ea1877154176cda57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaebfe22a1dc952d6459e0a0d96d068864"><td class="memItemLeft" align="right" valign="top"><a id="gaebfe22a1dc952d6459e0a0d96d068864"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_ISP_Tuning_SetAeStrategy</b> (<a class="el" href="group__IMP__ISP.html#gac3e4bae428eda21cd8cd9446e9b3fa38">IMPISPAeStrategy</a> strategy)</td></tr>
+<tr class="memitem:gaebfe22a1dc952d6459e0a0d96d068864"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__ISP.html#gaebfe22a1dc952d6459e0a0d96d068864">IMP_ISP_Tuning_SetAeStrategy</a> (<a class="el" href="group__IMP__ISP.html#gac3e4bae428eda21cd8cd9446e9b3fa38">IMPISPAeStrategy</a> strategy)</td></tr>
 <tr class="separator:gaebfe22a1dc952d6459e0a0d96d068864"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga51f749dbaaf74c44158c8a9b98e4e7a7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__ISP.html#ga51f749dbaaf74c44158c8a9b98e4e7a7">IMP_ISP_Tuning_GetAeStrategy</a> (<a class="el" href="group__IMP__ISP.html#gac3e4bae428eda21cd8cd9446e9b3fa38">IMPISPAeStrategy</a> *pstrategy)</td></tr>
 <tr class="separator:ga51f749dbaaf74c44158c8a9b98e4e7a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -355,39 +350,164 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_ISP_Tuning_SetAeSt
 <tr class="separator:gaa3163f26fb6466b9ab8d713f5775c769"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga14d497e42aca17c2910ac26b8a0a45b5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__ISP.html#ga14d497e42aca17c2910ac26b8a0a45b5">IMP_ISP_Tuning_Awb_SetCwfShift</a> (<a class="el" href="group__IMP__ISP.html#gadb085866bbf4d5576e01762beb11b2e1">IMPISPWB</a> *isp_wb_attr)</td></tr>
 <tr class="separator:ga14d497e42aca17c2910ac26b8a0a45b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0820554570a63eb90162c6c7f5517dbc"><td class="memItemLeft" align="right" valign="top"><a id="ga0820554570a63eb90162c6c7f5517dbc"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_ISP_Tuning_SetMaxAgain</b> (uint32_t gain)</td></tr>
-<tr class="separator:ga0820554570a63eb90162c6c7f5517dbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8cdf6b9860c9da65862237dd680b081b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__ISP.html#ga8cdf6b9860c9da65862237dd680b081b">IMP_ISP_Tuning_GetMaxAgain</a> (uint32_t *gain)</td></tr>
-<tr class="separator:ga8cdf6b9860c9da65862237dd680b081b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga90b7e9914551eb69a86df246215509a5"><td class="memItemLeft" align="right" valign="top"><a id="ga90b7e9914551eb69a86df246215509a5"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_ISP_Tuning_SetMaxDgain</b> (uint32_t gain)</td></tr>
-<tr class="separator:ga90b7e9914551eb69a86df246215509a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad81e923e3ac738c0419f17edf02e41c8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__ISP.html#gad81e923e3ac738c0419f17edf02e41c8">IMP_ISP_Tuning_GetMaxDgain</a> (uint32_t *gain)</td></tr>
-<tr class="separator:gad81e923e3ac738c0419f17edf02e41c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafe069e5c3207bdf58267062eebe6e32c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__ISP.html#gafe069e5c3207bdf58267062eebe6e32c">IMP_ISP_Tuning_SetVideoDrop</a> (void(*cb)(void))</td></tr>
-<tr class="separator:gafe069e5c3207bdf58267062eebe6e32c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga83fc4b0b60b4d4113c9bc5764edd7edc"><td class="memItemLeft" align="right" valign="top"><a id="ga83fc4b0b60b4d4113c9bc5764edd7edc"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_ISP_Tuning_SetHiLightDepress</b> (uint32_t strength)</td></tr>
-<tr class="separator:ga83fc4b0b60b4d4113c9bc5764edd7edc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5694e1f015f99d9be41c1c65830207c8"><td class="memItemLeft" align="right" valign="top"><a id="ga5694e1f015f99d9be41c1c65830207c8"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_ISP_Tuning_SetTemperStrength</b> (uint32_t ratio)</td></tr>
-<tr class="separator:ga5694e1f015f99d9be41c1c65830207c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga60fbe448743f263c1e990ccaa07c3365"><td class="memItemLeft" align="right" valign="top"><a id="ga60fbe448743f263c1e990ccaa07c3365"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_ISP_Tuning_SetSinterStrength</b> (uint32_t ratio)</td></tr>
-<tr class="separator:ga60fbe448743f263c1e990ccaa07c3365"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab77a9f9ac76c1274220acc4e9699ddc9"><td class="memItemLeft" align="right" valign="top"><a id="gab77a9f9ac76c1274220acc4e9699ddc9"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_ISP_Tuning_SetDPStrength</b> (uint32_t ratio)</td></tr>
-<tr class="separator:gab77a9f9ac76c1274220acc4e9699ddc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaffe4c444f061405d4d83fa6f1733971b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__ISP.html#gaffe4c444f061405d4d83fa6f1733971b">IMP_ISP_Tuning_SetAntiFogAttr</a> (<a class="el" href="group__IMP__ISP.html#ga1c6ee3079840b5204cf27fce0a6a1058">IMPISPAntiFogAttr</a> attr)</td></tr>
-<tr class="separator:gaffe4c444f061405d4d83fa6f1733971b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga985a3366fc38e2d7053b1a9e4e5d7089"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__ISP.html#ga985a3366fc38e2d7053b1a9e4e5d7089">IMP_ISP_Tuning_GetEVAttr</a> (<a class="el" href="structIMPISPEVAttr.html">IMPISPEVAttr</a> *attr)</td></tr>
-<tr class="separator:ga985a3366fc38e2d7053b1a9e4e5d7089"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7eecfde9edb07e017907cf28b9562d1e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__ISP.html#ga7eecfde9edb07e017907cf28b9562d1e">IMP_ISP_Tuning_Awb_GetRgbCoefft</a> (<a class="el" href="structisp__core__rgb__coefft__wb__attr.html">IMPISPCOEFFTWB</a> *<a class="el" href="structisp__core__rgb__coefft__wb__attr.html">isp_core_rgb_coefft_wb_attr</a>)</td></tr>
+<tr class="separator:ga7eecfde9edb07e017907cf28b9562d1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:gac759ee1da3bc24db27b6115f1d01cdc1"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__ISP.html#gac759ee1da3bc24db27b6115f1d01cdc1">IMPI2CInfo::type</a> [20]</td></tr>
+<tr class="separator:gac759ee1da3bc24db27b6115f1d01cdc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa1a39271732c2967bbfe7f69f77db887"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__ISP.html#gaa1a39271732c2967bbfe7f69f77db887">IMPI2CInfo::addr</a></td></tr>
+<tr class="separator:gaa1a39271732c2967bbfe7f69f77db887"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga02830060ed22d8b2bf02d2dab59e7f14"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__ISP.html#ga02830060ed22d8b2bf02d2dab59e7f14">IMPI2CInfo::i2c_adapter_id</a></td></tr>
+<tr class="separator:ga02830060ed22d8b2bf02d2dab59e7f14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaacb3eddae8dfbaa5b844389823ad7fef"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__ISP.html#gaacb3eddae8dfbaa5b844389823ad7fef">IMPSPIInfo::modalias</a> [32]</td></tr>
+<tr class="separator:gaacb3eddae8dfbaa5b844389823ad7fef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7359647aaa00d350995be8d7ed745bd7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__ISP.html#ga7359647aaa00d350995be8d7ed745bd7">IMPSPIInfo::bus_num</a></td></tr>
+<tr class="separator:ga7359647aaa00d350995be8d7ed745bd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga007e699b995070e999087ce4ff3bf22d"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__ISP.html#ga007e699b995070e999087ce4ff3bf22d">IMPSensorInfo::name</a> [32]</td></tr>
+<tr class="separator:ga007e699b995070e999087ce4ff3bf22d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaca9ba438dda11f8d47c813e72dbe9fb6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__IMP__ISP.html#ga38ee4d645812c12b28cd37d5320ccfb2">IMPSensorControlBusType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__ISP.html#gaca9ba438dda11f8d47c813e72dbe9fb6">IMPSensorInfo::cbus_type</a></td></tr>
+<tr class="separator:gaca9ba438dda11f8d47c813e72dbe9fb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf7ae1a26e1721ea594de1b698614fc43"><td class="memItemLeft" ><a class="el" href="structIMPI2CInfo.html">IMPI2CInfo</a>&#160;&#160;&#160;<a class="el" href="group__IMP__ISP.html#gab34a9adf3a8c4c7a8efed67fd830dde4">IMPSensorInfo::i2c</a></td></tr>
+<tr class="separator:gaf7ae1a26e1721ea594de1b698614fc43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa890d74dc0f216632515a1fa9297ee18"><td class="memItemLeft" ><a class="el" href="structIMPSPIInfo.html">IMPSPIInfo</a>&#160;&#160;&#160;<a class="el" href="group__IMP__ISP.html#ga7e87d83cee3e0f14fe53172766c13a29">IMPSensorInfo::spi</a></td></tr>
+<tr class="separator:gaa890d74dc0f216632515a1fa9297ee18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2f85e18b5ccedbc168482e9d1ee0201c"><td class="memItemLeft" ><a id="ga2f85e18b5ccedbc168482e9d1ee0201c"></a>
+union {</td></tr>
+<tr class="memitem:gaf7ae1a26e1721ea594de1b698614fc43"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="structIMPI2CInfo.html">IMPI2CInfo</a>&#160;&#160;&#160;<a class="el" href="group__IMP__ISP.html#gab34a9adf3a8c4c7a8efed67fd830dde4">IMPSensorInfo::i2c</a></td></tr>
+<tr class="separator:gaf7ae1a26e1721ea594de1b698614fc43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa890d74dc0f216632515a1fa9297ee18"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="structIMPSPIInfo.html">IMPSPIInfo</a>&#160;&#160;&#160;<a class="el" href="group__IMP__ISP.html#ga7e87d83cee3e0f14fe53172766c13a29">IMPSensorInfo::spi</a></td></tr>
+<tr class="separator:gaa890d74dc0f216632515a1fa9297ee18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2f85e18b5ccedbc168482e9d1ee0201c"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:ga2f85e18b5ccedbc168482e9d1ee0201c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa6a937be627ce3756beec38f418a5ac3"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__ISP.html#gaa6a937be627ce3756beec38f418a5ac3">IMPSensorInfo::rst_gpio</a></td></tr>
+<tr class="separator:gaa6a937be627ce3756beec38f418a5ac3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3b08b5578b4ee04cfce14c421e12cc4a"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__ISP.html#ga3b08b5578b4ee04cfce14c421e12cc4a">IMPSensorInfo::pwdn_gpio</a></td></tr>
+<tr class="separator:ga3b08b5578b4ee04cfce14c421e12cc4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga517dd0e2b36c39381bba75fdcb7aaf1a"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__ISP.html#ga517dd0e2b36c39381bba75fdcb7aaf1a">IMPSensorInfo::power_gpio</a></td></tr>
+<tr class="separator:ga517dd0e2b36c39381bba75fdcb7aaf1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9240a39088a7e3b1d59175b14ad00fe1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__IMP__ISP.html#gac26c8dff17c099abd9903e2e87550fcc">IMPISPDrcMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__ISP.html#ga9240a39088a7e3b1d59175b14ad00fe1">IMPISPDrcAttr::mode</a></td></tr>
+<tr class="separator:ga9240a39088a7e3b1d59175b14ad00fe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad4be722e755630e29d615157fe9850ce"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__ISP.html#gad4be722e755630e29d615157fe9850ce">IMPISPDrcAttr::drc_strength</a></td></tr>
+<tr class="separator:gad4be722e755630e29d615157fe9850ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabd1caccc1013e2c7d42479532d971330"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__ISP.html#gabd1caccc1013e2c7d42479532d971330">IMPISPDrcAttr::dval_max</a></td></tr>
+<tr class="separator:gabd1caccc1013e2c7d42479532d971330"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga048033af7f96f4048b96071619b8d3b9"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__ISP.html#ga048033af7f96f4048b96071619b8d3b9">IMPISPDrcAttr::dval_min</a></td></tr>
+<tr class="separator:ga048033af7f96f4048b96071619b8d3b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8e316c49bb4d8032b0d8f99e815bddfb"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__ISP.html#ga8e316c49bb4d8032b0d8f99e815bddfb">IMPISPDrcAttr::slop_max</a></td></tr>
+<tr class="separator:ga8e316c49bb4d8032b0d8f99e815bddfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga049ae6b9c526f2417c9a9eb0a913b9d3"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__ISP.html#ga049ae6b9c526f2417c9a9eb0a913b9d3">IMPISPDrcAttr::slop_min</a></td></tr>
+<tr class="separator:ga049ae6b9c526f2417c9a9eb0a913b9d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4cb6a88c683132a236efd39bb92f9e82"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__ISP.html#ga4cb6a88c683132a236efd39bb92f9e82">IMPISPDrcAttr::black_level</a></td></tr>
+<tr class="separator:ga4cb6a88c683132a236efd39bb92f9e82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae3ac0e10c36ee3bf47f4126c2bd689aa"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__ISP.html#gae3ac0e10c36ee3bf47f4126c2bd689aa">IMPISPDrcAttr::white_level</a></td></tr>
+<tr class="separator:gae3ac0e10c36ee3bf47f4126c2bd689aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf6b5a6e33894c7f392ba0e3724e60031"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__IMP__ISP.html#ga45aca860233255ad78614e2fa38520b9">IMPISPTuningOpsMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__ISP.html#gaf6b5a6e33894c7f392ba0e3724e60031">IMPISPSinterDenoiseAttr::enable</a></td></tr>
+<tr class="separator:gaf6b5a6e33894c7f392ba0e3724e60031"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadd3c8758b906438aadfb794313492647"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__IMP__ISP.html#ga51cbf4116bb59389dc30a6840764e73e">IMPISPTuningOpsType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__ISP.html#gadd3c8758b906438aadfb794313492647">IMPISPSinterDenoiseAttr::type</a></td></tr>
+<tr class="separator:gadd3c8758b906438aadfb794313492647"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafcc4078fac6762fb0bcf9e88baa97f13"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__ISP.html#gafcc4078fac6762fb0bcf9e88baa97f13">IMPISPSinterDenoiseAttr::sinter_strength</a></td></tr>
+<tr class="separator:gafcc4078fac6762fb0bcf9e88baa97f13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3cf29e184756cd7efa2eb45753f3c303"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__ISP.html#ga3cf29e184756cd7efa2eb45753f3c303">IMPISPSinterDenoiseAttr::sval_max</a></td></tr>
+<tr class="separator:ga3cf29e184756cd7efa2eb45753f3c303"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4dbb04c621b1932fa13b3a87d455de18"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__ISP.html#ga4dbb04c621b1932fa13b3a87d455de18">IMPISPSinterDenoiseAttr::sval_min</a></td></tr>
+<tr class="separator:ga4dbb04c621b1932fa13b3a87d455de18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga67375459296c076b1bae6c94458ed31c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__IMP__ISP.html#ga69126b2fc2c675a0f7fc799a95aa24f0">IMPISPTemperMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__ISP.html#ga67375459296c076b1bae6c94458ed31c">imp_isp_temper_denoise_attr::type</a></td></tr>
+<tr class="separator:ga67375459296c076b1bae6c94458ed31c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga46f6109a42d781d22af3aa1767559d15"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__ISP.html#ga46f6109a42d781d22af3aa1767559d15">imp_isp_temper_denoise_attr::temper_strength</a></td></tr>
+<tr class="separator:ga46f6109a42d781d22af3aa1767559d15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac9ac4aaecdef195d97238450f158d8a2"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__ISP.html#gac9ac4aaecdef195d97238450f158d8a2">imp_isp_temper_denoise_attr::tval_max</a></td></tr>
+<tr class="separator:gac9ac4aaecdef195d97238450f158d8a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3d83f7ce041e964c435b2c9591461d27"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__ISP.html#ga3d83f7ce041e964c435b2c9591461d27">imp_isp_temper_denoise_attr::tval_min</a></td></tr>
+<tr class="separator:ga3d83f7ce041e964c435b2c9591461d27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaae14ab7794c86a885946e8079d3fe0cf"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__ISP.html#gaae14ab7794c86a885946e8079d3fe0cf">IMPISPGamma::gamma</a> [129]</td></tr>
+<tr class="separator:gaae14ab7794c86a885946e8079d3fe0cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae0598caadd6d365e1a2446dfc6747967"><td class="memItemLeft" >enum <a class="el" href="group__IMP__ISP.html#ga15dbea9727fd70901275c90a3e5ef2d2">isp_core_expr_mode</a>&#160;&#160;&#160;<a class="el" href="group__IMP__ISP.html#ga4c1227d95f3c57f4139a716814555dd4">isp_core_expr_attr::mode</a></td></tr>
+<tr class="separator:gae0598caadd6d365e1a2446dfc6747967"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae1c401fde56b77651e22eb868d05ad4d"><td class="memItemLeft" >enum <a class="el" href="group__IMP__ISP.html#ga119b1782b6d972e38d604528ad72b65e">isp_core_expr_unit</a>&#160;&#160;&#160;<a class="el" href="group__IMP__ISP.html#ga860ab913c4002cce411267774049ceb5">isp_core_expr_attr::unit</a></td></tr>
+<tr class="separator:gae1c401fde56b77651e22eb868d05ad4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga035754a7b37cee7cd4bd1a95c7206e07"><td class="memItemLeft" >
+uint16_t&#160;&#160;&#160;<b>isp_core_expr_attr::time</b></td></tr>
+<tr class="separator:ga035754a7b37cee7cd4bd1a95c7206e07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga737c366b57ad1fb5f8b9726fd18ea7a7"><td class="memItemLeft" ><a id="ga737c366b57ad1fb5f8b9726fd18ea7a7"></a>
+struct {</td></tr>
+<tr class="memitem:gae0598caadd6d365e1a2446dfc6747967"><td class="memItemLeft" >&#160;&#160;&#160;enum <a class="el" href="group__IMP__ISP.html#ga15dbea9727fd70901275c90a3e5ef2d2">isp_core_expr_mode</a>&#160;&#160;&#160;<a class="el" href="group__IMP__ISP.html#ga4c1227d95f3c57f4139a716814555dd4">isp_core_expr_attr::mode</a></td></tr>
+<tr class="separator:gae0598caadd6d365e1a2446dfc6747967"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae1c401fde56b77651e22eb868d05ad4d"><td class="memItemLeft" >&#160;&#160;&#160;enum <a class="el" href="group__IMP__ISP.html#ga119b1782b6d972e38d604528ad72b65e">isp_core_expr_unit</a>&#160;&#160;&#160;<a class="el" href="group__IMP__ISP.html#ga860ab913c4002cce411267774049ceb5">isp_core_expr_attr::unit</a></td></tr>
+<tr class="separator:gae1c401fde56b77651e22eb868d05ad4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga035754a7b37cee7cd4bd1a95c7206e07"><td class="memItemLeft" >
+&#160;&#160;&#160;uint16_t&#160;&#160;&#160;<b>time</b></td></tr>
+<tr class="separator:ga035754a7b37cee7cd4bd1a95c7206e07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga737c366b57ad1fb5f8b9726fd18ea7a7"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>isp_core_expr_attr::s_attr</b></td></tr>
+<tr class="separator:ga737c366b57ad1fb5f8b9726fd18ea7a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae6df574283764d9dabd8a2b801bcbab6"><td class="memItemLeft" >enum <a class="el" href="group__IMP__ISP.html#ga15dbea9727fd70901275c90a3e5ef2d2">isp_core_expr_mode</a>&#160;&#160;&#160;<a class="el" href="group__IMP__ISP.html#ga4c1227d95f3c57f4139a716814555dd4">isp_core_expr_attr::mode</a></td></tr>
+<tr class="separator:gae6df574283764d9dabd8a2b801bcbab6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaccd410a26bbba118ea5e1d5b126c36e1"><td class="memItemLeft" >uint16_t&#160;&#160;&#160;<a class="el" href="group__IMP__ISP.html#gac97c150a51b4888f632f6cd0b63d7df9">isp_core_expr_attr::integration_time</a></td></tr>
+<tr class="separator:gaccd410a26bbba118ea5e1d5b126c36e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga71c8cb596a3b40c193970dcc1a47751a"><td class="memItemLeft" >uint16_t&#160;&#160;&#160;<a class="el" href="group__IMP__ISP.html#ga335a6504f965f1d7a3d5a09859466651">isp_core_expr_attr::integration_time_min</a></td></tr>
+<tr class="separator:ga71c8cb596a3b40c193970dcc1a47751a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga386cce561b29ad7635b5d7f050dbdfa3"><td class="memItemLeft" >uint16_t&#160;&#160;&#160;<a class="el" href="group__IMP__ISP.html#ga48f2c1c598a99d8d042941cfa1003c76">isp_core_expr_attr::integration_time_max</a></td></tr>
+<tr class="separator:ga386cce561b29ad7635b5d7f050dbdfa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3da9726d21bfc456a34e5f108f85d92d"><td class="memItemLeft" >uint16_t&#160;&#160;&#160;<a class="el" href="group__IMP__ISP.html#ga4230ac6ab15041aae8a686f24aa2a9f9">isp_core_expr_attr::one_line_expr_in_us</a></td></tr>
+<tr class="separator:ga3da9726d21bfc456a34e5f108f85d92d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae9e2bfc9f6f89d32fbb4668965712ec2"><td class="memItemLeft" ><a id="gae9e2bfc9f6f89d32fbb4668965712ec2"></a>
+struct {</td></tr>
+<tr class="memitem:gae6df574283764d9dabd8a2b801bcbab6"><td class="memItemLeft" >&#160;&#160;&#160;enum <a class="el" href="group__IMP__ISP.html#ga15dbea9727fd70901275c90a3e5ef2d2">isp_core_expr_mode</a>&#160;&#160;&#160;<a class="el" href="group__IMP__ISP.html#ga4c1227d95f3c57f4139a716814555dd4">isp_core_expr_attr::mode</a></td></tr>
+<tr class="separator:gae6df574283764d9dabd8a2b801bcbab6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaccd410a26bbba118ea5e1d5b126c36e1"><td class="memItemLeft" >&#160;&#160;&#160;uint16_t&#160;&#160;&#160;<a class="el" href="group__IMP__ISP.html#gac97c150a51b4888f632f6cd0b63d7df9">isp_core_expr_attr::integration_time</a></td></tr>
+<tr class="separator:gaccd410a26bbba118ea5e1d5b126c36e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga71c8cb596a3b40c193970dcc1a47751a"><td class="memItemLeft" >&#160;&#160;&#160;uint16_t&#160;&#160;&#160;<a class="el" href="group__IMP__ISP.html#ga335a6504f965f1d7a3d5a09859466651">isp_core_expr_attr::integration_time_min</a></td></tr>
+<tr class="separator:ga71c8cb596a3b40c193970dcc1a47751a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga386cce561b29ad7635b5d7f050dbdfa3"><td class="memItemLeft" >&#160;&#160;&#160;uint16_t&#160;&#160;&#160;<a class="el" href="group__IMP__ISP.html#ga48f2c1c598a99d8d042941cfa1003c76">isp_core_expr_attr::integration_time_max</a></td></tr>
+<tr class="separator:ga386cce561b29ad7635b5d7f050dbdfa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3da9726d21bfc456a34e5f108f85d92d"><td class="memItemLeft" >&#160;&#160;&#160;uint16_t&#160;&#160;&#160;<a class="el" href="group__IMP__ISP.html#ga4230ac6ab15041aae8a686f24aa2a9f9">isp_core_expr_attr::one_line_expr_in_us</a></td></tr>
+<tr class="separator:ga3da9726d21bfc456a34e5f108f85d92d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae9e2bfc9f6f89d32fbb4668965712ec2"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>isp_core_expr_attr::g_attr</b></td></tr>
+<tr class="separator:gae9e2bfc9f6f89d32fbb4668965712ec2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga605bb85ca8be65b80e2964ebd9452287"><td class="memItemLeft" >unsigned&#160;&#160;&#160;<a class="el" href="group__IMP__ISP.html#ga32ecc5113c8d3994a3536bd834455435">isp_core_ae_roi_select::endy</a>:8</td></tr>
+<tr class="separator:ga605bb85ca8be65b80e2964ebd9452287"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadca860a1f3e1365a7ced76eb4a7d20b6"><td class="memItemLeft" >unsigned&#160;&#160;&#160;<a class="el" href="group__IMP__ISP.html#gad9e4e94b27fdc42f6898b4a957bde029">isp_core_ae_roi_select::endx</a>:8</td></tr>
+<tr class="separator:gadca860a1f3e1365a7ced76eb4a7d20b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga03aa2abe97e757595621406bd92092d8"><td class="memItemLeft" >unsigned&#160;&#160;&#160;<a class="el" href="group__IMP__ISP.html#ga80fccfb53112041c2dacbf25fe4f09e6">isp_core_ae_roi_select::starty</a>:8</td></tr>
+<tr class="separator:ga03aa2abe97e757595621406bd92092d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gada72936749c4a4a735bd56cdcca1306d"><td class="memItemLeft" >unsigned&#160;&#160;&#160;<a class="el" href="group__IMP__ISP.html#ga09a83be769c5c7ee28f3f582d6f45932">isp_core_ae_roi_select::startx</a>:8</td></tr>
+<tr class="separator:gada72936749c4a4a735bd56cdcca1306d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6099d629660a80db90fe0ec6075de047"><td class="memItemLeft" ><a id="ga6099d629660a80db90fe0ec6075de047"></a>
+struct {</td></tr>
+<tr class="memitem:ga605bb85ca8be65b80e2964ebd9452287"><td class="memItemLeft" >&#160;&#160;&#160;unsigned&#160;&#160;&#160;<a class="el" href="group__IMP__ISP.html#ga32ecc5113c8d3994a3536bd834455435">isp_core_ae_roi_select::endy</a>:8</td></tr>
+<tr class="separator:ga605bb85ca8be65b80e2964ebd9452287"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadca860a1f3e1365a7ced76eb4a7d20b6"><td class="memItemLeft" >&#160;&#160;&#160;unsigned&#160;&#160;&#160;<a class="el" href="group__IMP__ISP.html#gad9e4e94b27fdc42f6898b4a957bde029">isp_core_ae_roi_select::endx</a>:8</td></tr>
+<tr class="separator:gadca860a1f3e1365a7ced76eb4a7d20b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga03aa2abe97e757595621406bd92092d8"><td class="memItemLeft" >&#160;&#160;&#160;unsigned&#160;&#160;&#160;<a class="el" href="group__IMP__ISP.html#ga80fccfb53112041c2dacbf25fe4f09e6">isp_core_ae_roi_select::starty</a>:8</td></tr>
+<tr class="separator:ga03aa2abe97e757595621406bd92092d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gada72936749c4a4a735bd56cdcca1306d"><td class="memItemLeft" >&#160;&#160;&#160;unsigned&#160;&#160;&#160;<a class="el" href="group__IMP__ISP.html#ga09a83be769c5c7ee28f3f582d6f45932">isp_core_ae_roi_select::startx</a>:8</td></tr>
+<tr class="separator:gada72936749c4a4a735bd56cdcca1306d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6099d629660a80db90fe0ec6075de047"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:ga6099d629660a80db90fe0ec6075de047"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga208574bc252146e0d294741523882224"><td class="memItemLeft" align="right" valign="top"><a id="ga208574bc252146e0d294741523882224"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>isp_core_ae_roi_select::value</b></td></tr>
+<tr class="separator:ga208574bc252146e0d294741523882224"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3c8e85e83b2abce15de4970d342518f6"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="group__IMP__ISP.html#ga8322e3086b65300b1aca801a5ad1b22e">isp_core_wb_mode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__ISP.html#ga3c8e85e83b2abce15de4970d342518f6">isp_core_wb_attr::mode</a></td></tr>
+<tr class="separator:ga3c8e85e83b2abce15de4970d342518f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga238194261724e6a25194143b55ec6325"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__ISP.html#ga238194261724e6a25194143b55ec6325">isp_core_wb_attr::rgain</a></td></tr>
+<tr class="separator:ga238194261724e6a25194143b55ec6325"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga163bf00ad9d6611a72721c23d601036e"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__ISP.html#ga163bf00ad9d6611a72721c23d601036e">isp_core_wb_attr::bgain</a></td></tr>
+<tr class="separator:ga163bf00ad9d6611a72721c23d601036e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6f2fb5733f1659a2380e9a5f454c2f5d"><td class="memItemLeft" align="right" valign="top"><a id="ga6f2fb5733f1659a2380e9a5f454c2f5d"></a>
+unsigned short&#160;</td><td class="memItemRight" valign="bottom"><b>isp_core_rgb_coefft_wb_attr::rgb_coefft_wb_r</b></td></tr>
+<tr class="separator:ga6f2fb5733f1659a2380e9a5f454c2f5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad8cb6a6dc202466fafbaafa5f9e15c69"><td class="memItemLeft" align="right" valign="top"><a id="gad8cb6a6dc202466fafbaafa5f9e15c69"></a>
+unsigned short&#160;</td><td class="memItemRight" valign="bottom"><b>isp_core_rgb_coefft_wb_attr::rgb_coefft_wb_g</b></td></tr>
+<tr class="separator:gad8cb6a6dc202466fafbaafa5f9e15c69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga41a17f372ebb9fb39021cfd33fc38175"><td class="memItemLeft" align="right" valign="top"><a id="ga41a17f372ebb9fb39021cfd33fc38175"></a>
+unsigned short&#160;</td><td class="memItemRight" valign="bottom"><b>isp_core_rgb_coefft_wb_attr::rgb_coefft_wb_b</b></td></tr>
+<tr class="separator:ga41a17f372ebb9fb39021cfd33fc38175"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
-<p>Unité de traitement du signal d'image. </p>
+<p>Unité de traitement du signal d'image. Sensor Enregistrement, ajout, suppression, etc. </p>
 <p>ISP Le module n'a rien à voir avec le flux de données ， Pas besoin de continuer Bind， S'applique uniquement aux réglages des paramètres d'effet et Sensor contrôler.</p>
-<p>ISP Les étapes d'activation du module sont les suivantes: </p><div class="fragment"><div class="line"><span class="keywordtype">int</span> ret = 0;</div><div class="line">ret = IMP_ISP_Open(); <span class="comment">// step.1 créer ISP Module </span></div><div class="line"><span class="keywordflow">if</span>(ret &lt; 0){</div><div class="line">printf(<span class="stringliteral">&quot;Failed to ISPInit\n&quot;</span>);</div><div class="line"><span class="keywordflow">return</span> -1;</div><div class="line">}</div><div class="line"><a class="code" href="structIMPSensorInfo.html">IMPSensorInfo</a> sensor;</div><div class="line">sensor.<a class="code" href="structIMPSensorInfo.html#a007e699b995070e999087ce4ff3bf22d">name</a> = <span class="stringliteral">&quot;xxx&quot;</span>;</div><div class="line">sensor.<a class="code" href="structIMPSensorInfo.html#aca9ba438dda11f8d47c813e72dbe9fb6">cbus_type</a> = SENSOR_CONTROL_INTERFACE_I2C; <span class="comment">// OR SENSOR_CONTROL_INTERFACE_SPI</span></div><div class="line">sensor.<a class="code" href="structIMPSensorInfo.html#ab34a9adf3a8c4c7a8efed67fd830dde4">i2c</a> = {</div><div class="line">    .<a class="code" href="structIMPI2CInfo.html#ac759ee1da3bc24db27b6115f1d01cdc1">type</a> = <span class="stringliteral">&quot;xxx&quot;</span>, <span class="comment">// I2C Nom de l&#39;appareil ， Doit et sensor Conduite struct i2c_device_id milieu name Unanime. </span></div><div class="line"> .addr = xx,    <span class="comment">//I2C adresse </span></div><div class="line"> .i2c_adapter_id = xx, <span class="comment">//sensor L&#39;existant I2C Manette ID</span></div><div class="line">}</div><div class="line">OR</div><div class="line">sensor.<a class="code" href="structIMPSensorInfo.html#a7e87d83cee3e0f14fe53172766c13a29">spi</a> = {</div><div class="line"> .<a class="code" href="structIMPSPIInfo.html#aacb3eddae8dfbaa5b844389823ad7fef">modalias</a> = <span class="stringliteral">&quot;xx&quot;</span>, <span class="comment">//SPI Nom de l&#39;appareil ， Doit et sensor Conduite struct spi_device_id milieu name Unanime. </span></div><div class="line"> .bus_num = xx, <span class="comment">//SPI Adresse de bus </span></div><div class="line">}</div><div class="line">ret = <a class="code" href="group__IMP__ISP.html#ga8e4d951a6a80e88026f41e310090c44d">IMP_ISP_AddSensor</a>(&amp;sensor); <span class="comment">//step.2 ajoute un sensor， Avant cette opération sensor Le pilote a été ajouté au noyau. </span></div><div class="line"><span class="keywordflow">if</span> (ret &lt; 0) {</div><div class="line">printf(<span class="stringliteral">&quot;Failed to Register sensor\n&quot;</span>);</div><div class="line"><span class="keywordflow">return</span> -1;</div><div class="line">}</div><div class="line"></div><div class="line">ret = <a class="code" href="group__IMP__ISP.html#ga72bd61d7ffa8f06b239c1ce43a6b5274">IMP_ISP_EnableSensor</a>(<span class="keywordtype">void</span>); <span class="comment">//step.3 Permettre sensor， à l&#39;heure actuelle sensor Démarrez la sortie des images. </span></div><div class="line"><span class="keywordflow">if</span> (ret &lt; 0) {</div><div class="line">printf(<span class="stringliteral">&quot;Failed to EnableSensor\n&quot;</span>);</div><div class="line"><span class="keywordflow">return</span> -1;</div><div class="line">}</div><div class="line"></div><div class="line">ret = <a class="code" href="group__IMP__ISP.html#ga34e80ddfdcab5e5f1b500d9271e8a332">IMP_ISP_EnableTuning</a>(); <span class="comment">//step.4 Permettre ISP tuning, Avant d&#39;appeler ISP Interface de débogage. </span></div><div class="line"><span class="keywordflow">if</span> (ret &lt; 0) {</div><div class="line">printf(<span class="stringliteral">&quot;Failed to EnableTuning\n&quot;</span>);</div><div class="line"><span class="keywordflow">return</span> -1;</div><div class="line">}</div><div class="line"></div><div class="line">Pour l<span class="stringliteral">&#39;interface de débogage, veuillez vous référer à ISP Documentation de l&#39;</span><span class="keyword">interface </span>de débogage. <span class="comment">//step.5 Débogage des effets. </span></div></div><!-- fragment --><p> ISP Les étapes de désinstallation du module sont les suivantes: </p><div class="fragment"><div class="line"><span class="keywordtype">int</span> ret = 0;</div><div class="line"><a class="code" href="structIMPSensorInfo.html">IMPSensorInfo</a> sensor;</div><div class="line">sensor.<a class="code" href="structIMPSensorInfo.html#a007e699b995070e999087ce4ff3bf22d">name</a> = <span class="stringliteral">&quot;xxx&quot;</span>;</div><div class="line">ret = <a class="code" href="group__IMP__ISP.html#ga75329730dcf100da4839ead7d585662c">IMP_ISP_DisableTuning</a>(); <span class="comment">//step.1 fermer ISP tuning</span></div><div class="line"><span class="keywordflow">if</span> (ret &lt; 0) {</div><div class="line">printf(<span class="stringliteral">&quot;Failed to disable tuning\n&quot;</span>);</div><div class="line"><span class="keywordflow">return</span> -1;</div><div class="line">}</div><div class="line"></div><div class="line">ret = <a class="code" href="group__IMP__ISP.html#ga823f71e232236129da016cbbd0079295">IMP_ISP_DisableSensor</a>(); <span class="comment">//step.2 fermer sensor， à l&#39;heure actuelle sensor Arrêter la sortie des images; avant cette opération FrameSource Tout doit être fermé. </span></div><div class="line"><span class="keywordflow">if</span> (ret &lt; 0) {</div><div class="line">printf(<span class="stringliteral">&quot;Failed to disable sensor\n&quot;</span>);</div><div class="line"><span class="keywordflow">return</span> -1;</div><div class="line">}</div><div class="line"></div><div class="line">ret = <a class="code" href="group__IMP__ISP.html#ga87ea0697f417532c191bf86677e281b5">IMP_ISP_DelSensor</a>(&amp;sensor); <span class="comment">//step.3 effacer sensor， Avant cette opération sensor Doit être fermé. </span></div><div class="line"><span class="keywordflow">if</span> (ret &lt; 0) {</div><div class="line">printf(<span class="stringliteral">&quot;Failed to disable sensor\n&quot;</span>);</div><div class="line"><span class="keywordflow">return</span> -1;</div><div class="line">}</div><div class="line"></div><div class="line">ret = IMP_ISP_Close(); <span class="comment">//step.4 Nettoyer ISP Module ， Tout avant cette opération sensor Doit être supprimé. </span></div><div class="line"><span class="keywordflow">if</span> (ret &lt; 0) {</div><div class="line">printf(<span class="stringliteral">&quot;Failed to disable sensor\n&quot;</span>);</div><div class="line"><span class="keywordflow">return</span> -1;</div><div class="line">}</div></div><!-- fragment --><p> Pour plus de méthodes d'utilisation, veuillez vous référer à Samples </p>
+<p>ISP Les étapes d'activation du module sont les suivantes: </p><div class="fragment"><div class="line"><span class="keywordtype">int</span> ret = 0;</div><div class="line">ret = <a class="code" href="group__IMP__ISP.html#gac80de0e7f019c1718e58bb9d728203c3">IMP_ISP_Open</a>(); <span class="comment">// step.1 créer ISP Module </span></div><div class="line"><span class="keywordflow">if</span>(ret &lt; 0){</div><div class="line">printf(<span class="stringliteral">&quot;Failed to ISPInit\n&quot;</span>);</div><div class="line"><span class="keywordflow">return</span> -1;</div><div class="line">}</div><div class="line"><a class="code" href="structIMPSensorInfo.html">IMPSensorInfo</a> sensor;</div><div class="line">sensor.<a class="code" href="group__IMP__ISP.html#ga007e699b995070e999087ce4ff3bf22d">name</a> = <span class="stringliteral">&quot;xxx&quot;</span>;</div><div class="line">sensor.<a class="code" href="group__IMP__ISP.html#gaca9ba438dda11f8d47c813e72dbe9fb6">cbus_type</a> = SENSOR_CONTROL_INTERFACE_I2C; <span class="comment">// OR SENSOR_CONTROL_INTERFACE_SPI</span></div><div class="line">sensor.<a class="code" href="group__IMP__ISP.html#gab34a9adf3a8c4c7a8efed67fd830dde4">i2c</a> = {</div><div class="line">    .<a class="code" href="group__IMP__ISP.html#gac759ee1da3bc24db27b6115f1d01cdc1">type</a> = <span class="stringliteral">&quot;xxx&quot;</span>, <span class="comment">// I2C Nom de l&#39;appareil ， Doit et sensor Conduite struct i2c_device_id milieu name Unanime. </span></div><div class="line"> .addr = xx,    <span class="comment">//I2C adresse </span></div><div class="line"> .i2c_adapter_id = xx, <span class="comment">//sensor L&#39;existant I2C Manette ID</span></div><div class="line">}</div><div class="line">OR</div><div class="line">sensor.<a class="code" href="group__IMP__ISP.html#ga7e87d83cee3e0f14fe53172766c13a29">spi</a> = {</div><div class="line"> .<a class="code" href="group__IMP__ISP.html#gaacb3eddae8dfbaa5b844389823ad7fef">modalias</a> = <span class="stringliteral">&quot;xx&quot;</span>, <span class="comment">//SPI Nom de l&#39;appareil ， Doit et sensor Conduite struct spi_device_id milieu name Unanime. </span></div><div class="line"> .bus_num = xx, <span class="comment">//SPI Adresse de bus </span></div><div class="line">}</div><div class="line">ret = <a class="code" href="group__IMP__ISP.html#ga8e4d951a6a80e88026f41e310090c44d">IMP_ISP_AddSensor</a>(&amp;sensor); <span class="comment">//step.2 ajoute un sensor， Avant cette opération sensor Le pilote a été ajouté au noyau. </span></div><div class="line"><span class="keywordflow">if</span> (ret &lt; 0) {</div><div class="line">printf(<span class="stringliteral">&quot;Failed to Register sensor\n&quot;</span>);</div><div class="line"><span class="keywordflow">return</span> -1;</div><div class="line">}</div><div class="line"></div><div class="line">ret = <a class="code" href="group__IMP__ISP.html#ga72bd61d7ffa8f06b239c1ce43a6b5274">IMP_ISP_EnableSensor</a>(<span class="keywordtype">void</span>); <span class="comment">//step.3 Permettre sensor， à l&#39;heure actuelle sensor Démarrez la sortie des images. </span></div><div class="line"><span class="keywordflow">if</span> (ret &lt; 0) {</div><div class="line">printf(<span class="stringliteral">&quot;Failed to EnableSensor\n&quot;</span>);</div><div class="line"><span class="keywordflow">return</span> -1;</div><div class="line">}</div><div class="line"></div><div class="line">ret = <a class="code" href="group__IMP__ISP.html#ga34e80ddfdcab5e5f1b500d9271e8a332">IMP_ISP_EnableTuning</a>(); <span class="comment">//step.4 Permettre ISP tuning, Avant d&#39;appeler ISP Interface de débogage. </span></div><div class="line"><span class="keywordflow">if</span> (ret &lt; 0) {</div><div class="line">printf(<span class="stringliteral">&quot;Failed to EnableTuning\n&quot;</span>);</div><div class="line"><span class="keywordflow">return</span> -1;</div><div class="line">}</div><div class="line"></div><div class="line">Pour l<span class="stringliteral">&#39;interface de débogage, veuillez vous référer à ISP Documentation de l&#39;</span><span class="keyword">interface </span>de débogage. <span class="comment">//step.5 Débogage des effets. </span></div></div><!-- fragment --><p> ISP Les étapes de désinstallation du module sont les suivantes: </p><div class="fragment"><div class="line"><span class="keywordtype">int</span> ret = 0;</div><div class="line"><a class="code" href="structIMPSensorInfo.html">IMPSensorInfo</a> sensor;</div><div class="line">sensor.<a class="code" href="group__IMP__ISP.html#ga007e699b995070e999087ce4ff3bf22d">name</a> = <span class="stringliteral">&quot;xxx&quot;</span>;</div><div class="line">ret = <a class="code" href="group__IMP__ISP.html#ga75329730dcf100da4839ead7d585662c">IMP_ISP_DisableTuning</a>(); <span class="comment">//step.1 fermer ISP tuning</span></div><div class="line"><span class="keywordflow">if</span> (ret &lt; 0) {</div><div class="line">printf(<span class="stringliteral">&quot;Failed to disable tuning\n&quot;</span>);</div><div class="line"><span class="keywordflow">return</span> -1;</div><div class="line">}</div><div class="line"></div><div class="line">ret = <a class="code" href="group__IMP__ISP.html#ga823f71e232236129da016cbbd0079295">IMP_ISP_DisableSensor</a>(); <span class="comment">//step.2 fermer sensor， à l&#39;heure actuelle sensor Arrêter la sortie des images; avant cette opération FrameSource Tout doit être fermé. </span></div><div class="line"><span class="keywordflow">if</span> (ret &lt; 0) {</div><div class="line">printf(<span class="stringliteral">&quot;Failed to disable sensor\n&quot;</span>);</div><div class="line"><span class="keywordflow">return</span> -1;</div><div class="line">}</div><div class="line"></div><div class="line">ret = <a class="code" href="group__IMP__ISP.html#ga87ea0697f417532c191bf86677e281b5">IMP_ISP_DelSensor</a>(&amp;sensor); <span class="comment">//step.3 effacer sensor， Avant cette opération sensor Doit être fermé. </span></div><div class="line"><span class="keywordflow">if</span> (ret &lt; 0) {</div><div class="line">printf(<span class="stringliteral">&quot;Failed to disable sensor\n&quot;</span>);</div><div class="line"><span class="keywordflow">return</span> -1;</div><div class="line">}</div><div class="line"></div><div class="line">ret = <a class="code" href="group__IMP__ISP.html#ga5c2fdfdad046856bff32937c5ac05b90">IMP_ISP_Close</a>(); <span class="comment">//step.4 Nettoyer ISP Module ， Tout avant cette opération sensor Doit être supprimé. </span></div><div class="line"><span class="keywordflow">if</span> (ret &lt; 0) {</div><div class="line">printf(<span class="stringliteral">&quot;Failed to disable sensor\n&quot;</span>);</div><div class="line"><span class="keywordflow">return</span> -1;</div><div class="line">}</div></div><!-- fragment --><p> Pour plus de méthodes d'utilisation, veuillez vous référer à Samples </p>
 <h2 class="groupheader">Documentation des définitions de type</h2>
 <a id="gad50c1f6042c643570d9148832ac60dba"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gad50c1f6042c643570d9148832ac60dba">&#9670;&nbsp;</a></span>IMPISPAERoi</h2>
@@ -498,31 +618,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_ISP_Tuning_SetDPSt
 
 </div>
 </div>
-<a id="ga1c6ee3079840b5204cf27fce0a6a1058"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1c6ee3079840b5204cf27fce0a6a1058">&#9670;&nbsp;</a></span>IMPISPAntiFogAttr</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="group__IMP__ISP.html#ga1c6ee3079840b5204cf27fce0a6a1058">IMPISPAntiFogAttr</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>ISP ANTIFOG Mode de fonctionnement. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Valeurs énumérées</th></tr><tr><td class="fieldname"><a id="gga1c6ee3079840b5204cf27fce0a6a1058aeabcf20ff04d2145bd31adb11befbcff"></a>ANTIFOG_DISABLE&#160;</td><td class="fielddoc"><p>fermer </p>
-</td></tr>
-<tr><td class="fieldname"><a id="gga1c6ee3079840b5204cf27fce0a6a1058a1cac631833ecf5935ddc2bcb07e50f2b"></a>ANTIFOG_STRONG&#160;</td><td class="fielddoc"><p>Fort </p>
-</td></tr>
-<tr><td class="fieldname"><a id="gga1c6ee3079840b5204cf27fce0a6a1058a131450cfb81fc13ac02f1a34acb7357c"></a>ANTIFOG_MEDIUM&#160;</td><td class="fielddoc"><p>dans </p>
-</td></tr>
-<tr><td class="fieldname"><a id="gga1c6ee3079840b5204cf27fce0a6a1058ae6589ef075b875e897d9954e60e036af"></a>ANTIFOG_WEAK&#160;</td><td class="fielddoc"><p>faible </p>
-</td></tr>
-</table>
-
-</div>
-</div>
 <a id="ga601945262e25baf0e55e71a754bfd513"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga601945262e25baf0e55e71a754bfd513">&#9670;&nbsp;</a></span>IMPISPColorfxMode</h2>
 
@@ -574,6 +669,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_ISP_Tuning_SetDPSt
 <tr><td class="fieldname"><a id="ggac26c8dff17c099abd9903e2e87550fcca82189cc8176e8ffeee5d501f20506827"></a>IMPISP_DRC_LOW&#160;</td><td class="fielddoc"><p>ISP Mode de compression basse du module de compression de plage dynamique </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ggac26c8dff17c099abd9903e2e87550fccae3956c97d333890ebb70ec34b2b6d15e"></a>IMPISP_DRC_DISABLE&#160;</td><td class="fielddoc"><p>ISP Le module de compression de plage dynamique n'est pas activé </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggac26c8dff17c099abd9903e2e87550fcca12d3321cef895ca9413a3ca97c1053f4"></a>IMPISP_DRC_RANGE&#160;</td><td class="fielddoc"><p>ISP Mode de réglage de la plage du module de compression de plage dynamique </p>
 </td></tr>
 </table>
 
@@ -664,6 +761,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_ISP_Tuning_SetDPSt
 </td></tr>
 <tr><td class="fieldname"><a id="gga69126b2fc2c675a0f7fc799a95aa24f0a140a9107ecaf9573d8c399b81b3c8cca"></a>IMPISP_TEMPER_MANUAL&#160;</td><td class="fielddoc"><p>ISP Mode manuel du module de réduction du bruit dans le domaine temporel </p>
 </td></tr>
+<tr><td class="fieldname"><a id="gga69126b2fc2c675a0f7fc799a95aa24f0aa201dd558a7ac0d5424b4671ba3e050f"></a>IMPISP_TEMPER_RANGE&#160;</td><td class="fielddoc"><p>ISP Mode de réglage de la plage du module de réduction du bruit dans le domaine temporel </p>
+</td></tr>
 </table>
 
 </div>
@@ -705,6 +804,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_ISP_Tuning_SetDPSt
 <tr><th colspan="2">Valeurs énumérées</th></tr><tr><td class="fieldname"><a id="gga51cbf4116bb59389dc30a6840764e73ea5e63521a46939be32170e2f44596b086"></a>IMPISP_TUNING_OPS_TYPE_AUTO&#160;</td><td class="fielddoc"><p>Le fonctionnement du module est en mode automatique </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga51cbf4116bb59389dc30a6840764e73eabc9c9bf5f177c50dbc895ef196d2d825"></a>IMPISP_TUNING_OPS_TYPE_MANUAL&#160;</td><td class="fielddoc"><p>Le fonctionnement de ce module est en mode manuel </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga51cbf4116bb59389dc30a6840764e73ea239ddb7e2689251d0ae4fa012b330bfa"></a>IMPISP_TUNING_OPS_TYPE_RANGE&#160;</td><td class="fielddoc"><p>Le fonctionnement de ce module est le mode de plage de réglage </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga51cbf4116bb59389dc30a6840764e73ead55a5e7f03b4cf92f09ca928730d2799"></a>IMPISP_TUNING_OPS_TYPE_BUTT&#160;</td><td class="fielddoc"><p>Utilisé pour juger de la validité des paramètres ， La taille du paramètre doit être inférieure à cette valeur </p>
 </td></tr>
@@ -829,7 +930,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_ISP_Tuning_SetDPSt
 <p>ajoute un sensor， Habitué ISP Le module fournit la source de données</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">pinfo</td><td>Besoin d'ajouter un pointeur d'informations sur le capteur</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pinfo</td><td>Besoin d'ajouter sensor Pointeur d'information</td></tr>
   </table>
   </dd>
 </dl>
@@ -840,8 +941,42 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_ISP_Tuning_SetDPSt
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarques</dt><dd>Ajoutez une caméra pour fournir des images.</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>Avant d'utiliser cette fonction, vous devez vous assurer que le pilote de l'appareil photo a été enregistré dans le noyau. </dd></dl>
+<dl class="section remark"><dt>Remarques</dt><dd>Ajouter une caméra ， Utilisé pour fournir des images.</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Avant d'utiliser cette fonction ， Il faut s'assurer que le pilote de la caméra a été enregistré dans le noyau . </dd></dl>
+
+</div>
+</div>
+<a id="ga5c2fdfdad046856bff32937c5ac05b90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5c2fdfdad046856bff32937c5ac05b90">&#9670;&nbsp;</a></span>IMP_ISP_Close()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_ISP_Close </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>fermer ISP Module</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">non</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Succès </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec ， Renvoyer le code d'erreur</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>ISP Module ，ISP Le module ne fonctionne plus.</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Avant d'utiliser cette fonction ， Doit garantir tout FrameSource Et la fonction de débogage d'effet a été désactivée ， tout sensor Ont été désinstallés . </dd></dl>
 
 </div>
 </div>
@@ -863,7 +998,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_ISP_Tuning_SetDPSt
 <p>Supprimer un sensor</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">pinfo</td><td>doit supprimer le pointeur d'information du capteur</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pinfo</td><td>Doit être supprimé sensor Pointeur d'information</td></tr>
   </table>
   </dd>
 </dl>
@@ -875,7 +1010,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_ISP_Tuning_SetDPSt
   </dd>
 </dl>
 <dl class="section remark"><dt>Remarques</dt><dd>Supprimer une caméra.</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>Avant d'utiliser cette fonction, vous devez vous assurer que la caméra a cessé de fonctionner, c'est-à-dire que la fonction IMP_ISP_DisableSensor est appelée. </dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Avant d'utiliser cette fonction ， Il faut s'assurer que la caméra a cessé de fonctionner ， Appelé IMP_ISP_DisableSensor fonction . </dd></dl>
 
 </div>
 </div>
@@ -908,8 +1043,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_ISP_Tuning_SetDPSt
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarques</dt><dd>N'activez pas une caméra pour arrêter la transmission d'image, FrameSource ne peut donc pas produire d'images et le FAI ne peut pas effectuer le débogage des effets.</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>Avant d'utiliser cette fonction, vous devez vous assurer que toutes les FrameSources ont arrêté de sortir des images et que le débogage d'effet est également à l'état désactivé. </dd></dl>
+<dl class="section remark"><dt>Remarques</dt><dd>Désactiver une caméra ， Arrêter de transmettre des images , tel FrameSource Impossible de sortir l'image ， à la fois ISP L'effet ne peut pas non plus être débogué.</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Avant d'utiliser cette fonction ， Doit garantir tout FrameSource Ont arrêté de sortir des images ， Dans le même temps, le débogage des effets est également à l'état désactivé . </dd></dl>
 
 </div>
 </div>
@@ -942,7 +1077,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_ISP_Tuning_SetDPSt
   </table>
   </dd>
 </dl>
-<dl class="section attention"><dt>Attention</dt><dd>Avant d'utiliser cette fonction, vous devez vous assurer que le débogage d'effet ISP n'est pas activé (c'est-à-dire que cette fonction est appelée) avant que le capteur ne soit désactivé. </dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Avant d'utiliser cette fonction ， Il faut s'assurer que le sensor antérieur à ， Désactiver d'abord ISP Débogage d'effet (c'est-à-dire, appelez cette fonction) . </dd></dl>
 
 </div>
 </div>
@@ -975,8 +1110,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_ISP_Tuning_SetDPSt
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarques</dt><dd>Permettez à une caméra de commencer à transmettre des images, afin que FrameSource puisse produire des images et que le FAI puisse effectuer le débogage des effets.</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>Avant d'utiliser cette fonction, vous devez vous assurer que la caméra a été ajoutée au module ISP. </dd></dl>
+<dl class="section remark"><dt>Remarques</dt><dd>Activer une caméra ， Faites-le commencer à transférer des images , tel FrameSource Pour sortir l'image ， à la fois ISP Ce n'est qu'alors que l'effet peut être débogué.</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Avant d'utiliser cette fonction ， Il faut s'assurer que la caméra a été ajoutée ISP Module . </dd></dl>
 
 </div>
 </div>
@@ -1009,7 +1144,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_ISP_Tuning_SetDPSt
   </table>
   </dd>
 </dl>
-<dl class="section attention"><dt>Attention</dt><dd>Avant d'utiliser cette fonction, vous devez vous assurer que IMP_ISP_EnableSensor est exécuté et renvoie correctement. </dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Avant d'utiliser cette fonction ， Doit garantir IMP_ISP_EnableSensor A été exécuté et renvoyé avec succès . </dd></dl>
 
 </div>
 </div>
@@ -1029,7 +1164,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_ISP_Tuning_SetDPSt
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint32_t *&#160;</td>
-          <td class="paramname"><em>valeur</em>&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1042,7 +1177,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_ISP_Tuning_SetDPSt
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">reg</td><td>Adresse d'inscription</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">pointeur</td><td>de valeur pour enregistrer la valeur</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>Pointeur pour enregistrer la valeur</td></tr>
   </table>
   </dd>
 </dl>
@@ -1053,7 +1188,86 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_ISP_Tuning_SetDPSt
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarques</dt><dd>Vous pouvez obtenir directement la valeur d'un registre de capteur.</dd></dl>
+<dl class="section remark"><dt>Remarques</dt><dd>Vous pouvez en obtenir un directement sensor La valeur du registre.</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Avant d'utiliser cette fonction ， Il faut s'assurer que la caméra a été activée . </dd></dl>
+
+</div>
+</div>
+<a id="gac80de0e7f019c1718e58bb9d728203c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac80de0e7f019c1718e58bb9d728203c3">&#9670;&nbsp;</a></span>IMP_ISP_Open()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_ISP_Open </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>allumer ISP Module</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">non</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Succès </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec ， Renvoyer le code d'erreur</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>créer ISP Module ， Prêt à ISP Ajouter à sensor， Et allumer ISP Fonction de débogage d'effet.</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Cette fonction doit être ajoutée sensor A été appelé avant. </dd></dl>
+
+</div>
+</div>
+<a id="ga8a86c7fac741e7d38daae9767f06a9f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8a86c7fac741e7d38daae9767f06a9f7">&#9670;&nbsp;</a></span>IMP_ISP_SetSensorRegister()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_ISP_SetSensorRegister </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>reg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Installation sensor La valeur d'un registre</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">reg</td><td>Adresse d'inscription</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>Enregistrer la valeur</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Succès </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec ， Renvoyer le code d'erreur</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>Vous pouvez en définir un directement sensor La valeur du registre.</dd></dl>
 <dl class="section attention"><dt>Attention</dt><dd>Avant d'utiliser cette fonction ， Il faut s'assurer que la caméra a été activée . </dd></dl>
 
 </div>
@@ -1076,14 +1290,14 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_ISP_Tuning_SetDPSt
 <p>Obtenir AE Zone de statistiques.</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">isp_ae_roi</td><td>AE Paramètres de la zone statistique rectangulaire.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">isp_ae_roi</td><td>AE Paramètres de zone statistique rectangulaire.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Valeurs retournées</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>succès </td></tr>
-    <tr><td class="paramname">non-0</td><td>échec ， Renvoyer le code d'erreur</td></tr>
+    <tr><td class="paramname">0</td><td>Succès </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec ， Renvoyer le code d'erreur</td></tr>
   </table>
   </dd>
 </dl>
@@ -1115,8 +1329,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_ISP_Tuning_SetDPSt
 </dl>
 <dl class="retval"><dt>Valeurs retournées</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>succès </td></tr>
-    <tr><td class="paramname">non-0</td><td>échec ， Renvoyer le code d'erreur</td></tr>
+    <tr><td class="paramname">0</td><td>Succès </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec ， Renvoyer le code d'erreur</td></tr>
   </table>
   </dd>
 </dl>
@@ -1142,14 +1356,41 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_ISP_Tuning_SetDPSt
 <p>Obtenir ISP dans AWB de CWF La position de la source lumineuse</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">isp_wb_attr</td><td>Coordonnées de la position de la source lumineuse CWF</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">isp_wb_attr</td><td>CWF Coordonnées de la position de la source lumineuse</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Valeurs retournées</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>succès </td></tr>
-    <tr><td class="paramname">non-0</td><td>échec ， Renvoyer le code d'erreur</td></tr>
+    <tr><td class="paramname">0</td><td>Succès </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec ， Renvoyer le code d'erreur</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>Attention</dt><dd>Avant d'utiliser cette fonction ，IMP_ISP_EnableTuning A été appelé. </dd></dl>
+
+</div>
+</div>
+<a id="ga7eecfde9edb07e017907cf28b9562d1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7eecfde9edb07e017907cf28b9562d1e">&#9670;&nbsp;</a></span>IMP_ISP_Tuning_Awb_GetRgbCoefft()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">IMP_ISP_Tuning_Awb_GetRgbCoefft </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structisp__core__rgb__coefft__wb__attr.html">IMPISPCOEFFTWB</a> *&#160;</td>
+          <td class="paramname"><em>isp_core_rgb_coefft_wb_attr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Obtenir sensor AWB RGB Paramètre de décalage de canal.</p>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Succès </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec ， Renvoyer le code d'erreur</td></tr>
   </table>
   </dd>
 </dl>
@@ -1181,8 +1422,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_ISP_Tuning_SetDPSt
 </dl>
 <dl class="retval"><dt>Valeurs retournées</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>succès </td></tr>
-    <tr><td class="paramname">non-0</td><td>échec ， Renvoyer le code d'erreur Exemple: <div class="fragment"><div class="line">  <a class="code" href="structisp__core__wb__attr.html">IMPISPWB</a> isp_wb_attr;</div><div class="line"> </div><div class="line">*isp_wb_attr.<a class="code" href="structisp__core__wb__attr.html#a238194261724e6a25194143b55ec6325">rgain</a> = x;</div><div class="line">*isp_wb_attr.<a class="code" href="structisp__core__wb__attr.html#a163bf00ad9d6611a72721c23d601036e">bgain</a> = y;</div><div class="line">*<a class="code" href="group__IMP__ISP.html#ga14d497e42aca17c2910ac26b8a0a45b5">IMP_ISP_Tuning_Awb_SetCwfShift</a>(isp_wb_attr);</div><div class="line"><span class="keywordflow">if</span>(ret){</div><div class="line"><a class="code" href="imp__log_8h.html#a59492a06ae7e667b02bda8f246902a7c">IMP_LOG_ERR</a>(TAG, <span class="stringliteral">&quot;IMP_ISP_Tuning_Awb_SetCwfShift error !\n&quot;</span>);</div><div class="line"><span class="keywordflow">return</span> -1;</div><div class="line">}</div></div><!-- fragment --></td></tr>
+    <tr><td class="paramname">0</td><td>Succès </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec ， Renvoyer le code d'erreur Exemple: <div class="fragment"><div class="line">  <a class="code" href="structisp__core__wb__attr.html">IMPISPWB</a> isp_wb_attr;</div><div class="line"> </div><div class="line">*isp_wb_attr.<a class="code" href="group__IMP__ISP.html#ga238194261724e6a25194143b55ec6325">rgain</a> = x;</div><div class="line">*isp_wb_attr.<a class="code" href="group__IMP__ISP.html#ga163bf00ad9d6611a72721c23d601036e">bgain</a> = y;</div><div class="line">*<a class="code" href="group__IMP__ISP.html#ga14d497e42aca17c2910ac26b8a0a45b5">IMP_ISP_Tuning_Awb_SetCwfShift</a>(isp_wb_attr);</div><div class="line"><span class="keywordflow">if</span>(ret){</div><div class="line"><a class="code" href="imp__log_8h.html#a59492a06ae7e667b02bda8f246902a7c">IMP_LOG_ERR</a>(TAG, <span class="stringliteral">&quot;IMP_ISP_Tuning_Awb_SetCwfShift error !\n&quot;</span>);</div><div class="line"><span class="keywordflow">return</span> -1;</div><div class="line">}</div></div><!-- fragment --></td></tr>
   </table>
   </dd>
 </dl>
@@ -1213,8 +1454,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_ISP_Tuning_SetDPSt
 </dl>
 <dl class="retval"><dt>Valeurs retournées</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>succès </td></tr>
-    <tr><td class="paramname">non-0</td><td>échec ， Renvoyer le code d'erreur</td></tr>
+    <tr><td class="paramname">0</td><td>Succès </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec ， Renvoyer le code d'erreur</td></tr>
   </table>
   </dd>
 </dl>
@@ -1239,14 +1480,14 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_ISP_Tuning_SetDPSt
 </div><div class="memdoc">
 <p>Obtenir ISP Configuration de la stratégie d'exposition automatique ， Mode normal ou mode de priorité d'exposition. </p><dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">Pointeur</td><td>de paramètre de stratégie d'exposition automatique pstrategy</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pstrategy</td><td>Pointeur de paramètre de stratégie d'exposition automatique</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Valeurs retournées</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>succès </td></tr>
-    <tr><td class="paramname">non-0</td><td>échec ， Renvoyer le code d'erreur</td></tr>
+    <tr><td class="paramname">0</td><td>Succès </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec ， Renvoyer le code d'erreur</td></tr>
   </table>
   </dd>
 </dl>
@@ -1272,7 +1513,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_ISP_Tuning_SetDPSt
 <p>obtenir ISP Propriétés anti-flash</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">pattr</td><td>Récupère le pointeur de valeur de paramètre</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pattr</td><td>Obtenir le pointeur de valeur de paramètre</td></tr>
   </table>
   </dd>
 </dl>
@@ -1283,6 +1524,40 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_ISP_Tuning_SetDPSt
   </table>
   </dd>
 </dl>
+<dl class="section attention"><dt>Attention</dt><dd>Avant d'utiliser cette fonction ， Doit garantir ISP La fonction de débogage des effets a été activée . </dd></dl>
+
+</div>
+</div>
+<a id="ga95eace973c2c84c22acd607e1a81292d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga95eace973c2c84c22acd607e1a81292d">&#9670;&nbsp;</a></span>IMP_ISP_Tuning_GetBrightness()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_ISP_Tuning_GetBrightness </td>
+          <td>(</td>
+          <td class="paramtype">unsigned char *&#160;</td>
+          <td class="paramname"><em>pbright</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Obtenir ISP Luminosité d'image complète</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">bright</td><td>Pointeur de paramètre de luminosité de l'image</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Succès </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec ， Renvoyer le code d'erreur</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>La valeur par défaut est 128， plus que le 128 Augmenter la luminosité ， Moins que 128 Diminuez la luminosité.</dd></dl>
 <dl class="section attention"><dt>Attention</dt><dd>Avant d'utiliser cette fonction ， Doit garantir ISP La fonction de débogage des effets a été activée . </dd></dl>
 
 </div>
@@ -1305,7 +1580,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_ISP_Tuning_SetDPSt
 <p>Obtenir ISP Mode couleur multi-effets</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">pointeur</td><td>de paramètre de mode couleur pmode</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pmode</td><td>Pointeur de paramètre de mode couleur</td></tr>
   </table>
   </dd>
 </dl>
@@ -1320,35 +1595,37 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_ISP_Tuning_SetDPSt
 
 </div>
 </div>
-<a id="ga985a3366fc38e2d7053b1a9e4e5d7089"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga985a3366fc38e2d7053b1a9e4e5d7089">&#9670;&nbsp;</a></span>IMP_ISP_Tuning_GetEVAttr()</h2>
+<a id="gaa3571e3f4f0e2a5759f403241dbc1bde"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa3571e3f4f0e2a5759f403241dbc1bde">&#9670;&nbsp;</a></span>IMP_ISP_Tuning_GetContrast()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int IMP_ISP_Tuning_GetEVAttr </td>
+          <td class="memname">int IMP_ISP_Tuning_GetContrast </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structIMPISPEVAttr.html">IMPISPEVAttr</a> *&#160;</td>
-          <td class="paramname"><em>attr</em></td><td>)</td>
+          <td class="paramtype">unsigned char *&#160;</td>
+          <td class="paramname"><em>pcontrast</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Obtenir EV Les attributs. </p><dl class="params"><dt>Paramètres</dt><dd>
+<p>Obtenir ISP Contraste d'image complet</p>
+<dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">attr</td><td>Paramètres d'attribut EV</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">contrast</td><td>Pointeur de paramètre de contraste de l'image</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Valeurs retournées</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>succès </td></tr>
-    <tr><td class="paramname">non-0</td><td>échec ， Renvoyer le code d'erreur</td></tr>
+    <tr><td class="paramname">0</td><td>Succès </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec ， Renvoyer le code d'erreur</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section attention"><dt>Attention</dt><dd>Avant d'utiliser cette fonction ，IMP_ISP_EnableTuning A été appelé. </dd></dl>
+<dl class="section remark"><dt>Remarques</dt><dd>La valeur par défaut est 128， plus que le 128 Augmenter le contraste ， Moins que 128 Réduisez le contraste.</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Avant d'utiliser cette fonction ， Doit garantir ISP La fonction de débogage des effets a été activée . </dd></dl>
 
 </div>
 </div>
@@ -1376,8 +1653,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_ISP_Tuning_SetDPSt
 </dl>
 <dl class="retval"><dt>Valeurs retournées</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>succès </td></tr>
-    <tr><td class="paramname">non-0</td><td>échec ， Renvoyer le code d'erreur</td></tr>
+    <tr><td class="paramname">0</td><td>Succès </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec ， Renvoyer le code d'erreur</td></tr>
   </table>
   </dd>
 </dl>
@@ -1408,8 +1685,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_ISP_Tuning_SetDPSt
 </dl>
 <dl class="retval"><dt>Valeurs retournées</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>succès </td></tr>
-    <tr><td class="paramname">non-0</td><td>échec ， Renvoyer le code d'erreur</td></tr>
+    <tr><td class="paramname">0</td><td>Succès </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec ， Renvoyer le code d'erreur</td></tr>
   </table>
   </dd>
 </dl>
@@ -1435,7 +1712,51 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_ISP_Tuning_SetDPSt
 <p>Obtenir ISP L'état de fonctionnement de la fonction d'effet de miroir d'image</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">pointeur</td><td>de paramètre d'opération pmode</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pmode</td><td>Pointeur de paramètre d'opération</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Succès </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec ， Renvoyer le code d'erreur</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>Attention</dt><dd>Avant d'utiliser cette fonction ，IMP_ISP_EnableTuning A été appelé. </dd></dl>
+
+</div>
+</div>
+<a id="ga9507173061f6cc577ec3d7f337dd12b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9507173061f6cc577ec3d7f337dd12b2">&#9670;&nbsp;</a></span>IMP_ISP_Tuning_GetISPHVflip()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_ISP_Tuning_GetISPHVflip </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__IMP__ISP.html#ga45aca860233255ad78614e2fa38520b9">IMPISPTuningOpsMode</a> *&#160;</td>
+          <td class="paramname"><em>phmode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__IMP__ISP.html#ga45aca860233255ad78614e2fa38520b9">IMPISPTuningOpsMode</a> *&#160;</td>
+          <td class="paramname"><em>pvmode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Obtenir ISP image H/V L'état de fonctionnement de la fonction d'effet inverse</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">phmode</td><td>Pointeur de paramètre d'opération </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pvmode</td><td>Pointeur de paramètre d'opération</td></tr>
   </table>
   </dd>
 </dl>
@@ -1468,14 +1789,14 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_ISP_Tuning_SetDPSt
 <p>Obtenir ISP Mode de fonctionnement ， Mode normal ou mode de vision nocturne.</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">pointeur</td><td>de paramètre d'opération pmode</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pmode</td><td>Pointeur de paramètre d'opération</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Valeurs retournées</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>succès </td></tr>
-    <tr><td class="paramname">non-0</td><td>échec ， Renvoyer le code d'erreur</td></tr>
+    <tr><td class="paramname">0</td><td>Succès </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec ， Renvoyer le code d'erreur</td></tr>
   </table>
   </dd>
 </dl>
@@ -1507,74 +1828,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_ISP_Tuning_SetDPSt
 </dl>
 <dl class="retval"><dt>Valeurs retournées</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>succès </td></tr>
-    <tr><td class="paramname">non-0</td><td>échec ， Renvoyer le code d'erreur</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section attention"><dt>Attention</dt><dd>Avant d'utiliser cette fonction ，IMP_ISP_EnableTuning A été appelé. </dd></dl>
-
-</div>
-</div>
-<a id="ga8cdf6b9860c9da65862237dd680b081b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8cdf6b9860c9da65862237dd680b081b">&#9670;&nbsp;</a></span>IMP_ISP_Tuning_GetMaxAgain()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int IMP_ISP_Tuning_GetMaxAgain </td>
-          <td>(</td>
-          <td class="paramtype">uint32_t *&#160;</td>
-          <td class="paramname"><em>gain</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Obtenir sensor Vous pouvez définir le maximum Again .</p>
-<dl class="params"><dt>Paramètres</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">gain</td><td>sensor Le maximum qui peut être défini again.0 Moyens 1x，32 Moyens 2x， Etc.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Valeurs retournées</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">0</td><td>succès </td></tr>
-    <tr><td class="paramname">non-0</td><td>échec ， Renvoyer le code d'erreur</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section attention"><dt>Attention</dt><dd>Avant d'utiliser cette fonction ，IMP_ISP_EnableTuning A été appelé. </dd></dl>
-
-</div>
-</div>
-<a id="gad81e923e3ac738c0419f17edf02e41c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad81e923e3ac738c0419f17edf02e41c8">&#9670;&nbsp;</a></span>IMP_ISP_Tuning_GetMaxDgain()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int IMP_ISP_Tuning_GetMaxDgain </td>
-          <td>(</td>
-          <td class="paramtype">uint32_t *&#160;</td>
-          <td class="paramname"><em>gain</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Obtenir ISP Définir le maximum Dgain .</p>
-<dl class="params"><dt>Paramètres</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">ISP</td><td>Dgain peut obtenir le gain maximum défini.0 signifie 1x, 32 signifie 2x, et ainsi de suite.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Valeurs retournées</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">0</td><td>succès </td></tr>
-    <tr><td class="paramname">non-0</td><td>échec ， Renvoyer le code d'erreur</td></tr>
+    <tr><td class="paramname">0</td><td>Succès </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec ， Renvoyer le code d'erreur</td></tr>
   </table>
   </dd>
 </dl>
@@ -1616,6 +1871,40 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_ISP_Tuning_SetDPSt
 
 </div>
 </div>
+<a id="gab376dc9de94e58d63d0126ca3e232da3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab376dc9de94e58d63d0126ca3e232da3">&#9670;&nbsp;</a></span>IMP_ISP_Tuning_GetSaturation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_ISP_Tuning_GetSaturation </td>
+          <td>(</td>
+          <td class="paramtype">unsigned char *&#160;</td>
+          <td class="paramname"><em>psat</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Obtenir ISP Saturation complète de l'image avec effet</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sat</td><td>Pointeur de paramètre de saturation de l'image</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Succès </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec ， Renvoyer le code d'erreur</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>La valeur par défaut est 128， plus que le 128 Augmenter la saturation ， Moins que 128 Diminue la saturation.</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Avant d'utiliser cette fonction ， Doit garantir ISP La fonction de débogage des effets a été activée . </dd></dl>
+
+</div>
+</div>
 <a id="gae11a3c98e598964ca27889e6dbda0937"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gae11a3c98e598964ca27889e6dbda0937">&#9670;&nbsp;</a></span>IMP_ISP_Tuning_GetSceneMode()</h2>
 
@@ -1634,7 +1923,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_ISP_Tuning_SetDPSt
 <p>Obtenir ISP Mode scène d'effets complet</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">pointeur</td><td>de paramètre de mode scène d'effet pmode</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pmode</td><td>Pointeur de paramètre du mode scène d'effet</td></tr>
   </table>
   </dd>
 </dl>
@@ -1677,8 +1966,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_ISP_Tuning_SetDPSt
 <p>Obtenez la fréquence d'images de sortie de la caméra</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">fps_num</td><td>Récupère le pointeur du paramètre du numérateur de la fréquence d'images </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">fps_den</td><td>Récupère le pointeur du paramètre du dénominateur de fréquence d'images</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fps_num</td><td>Obtenez un pointeur sur les paramètres moléculaires de la fréquence d'images </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fps_den</td><td>Obtenir un pointeur vers le paramètre du dénominateur de la fréquence d'images</td></tr>
   </table>
   </dd>
 </dl>
@@ -1692,6 +1981,40 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_ISP_Tuning_SetDPSt
 <dl class="section attention"><dt>Attention</dt><dd>Avant d'utiliser cette fonction ， Doit garantir IMP_ISP_EnableSensor avec IMP_ISP_EnableTuning A été appelé. </dd>
 <dd>
 Cette fonction doit être appelée pour obtenir la fréquence d'images par défaut de la caméra avant que le canal d'image ne soit activé pour démarrer la transmission des données. </dd></dl>
+
+</div>
+</div>
+<a id="ga1e088f85ea78d4a58df1983fa8c3bbae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1e088f85ea78d4a58df1983fa8c3bbae">&#9670;&nbsp;</a></span>IMP_ISP_Tuning_GetSharpness()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_ISP_Tuning_GetSharpness </td>
+          <td>(</td>
+          <td class="paramtype">unsigned char *&#160;</td>
+          <td class="paramname"><em>psharpness</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Obtenir ISP Netteté d'image complète</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sharpness</td><td>Pointeur de paramètre de netteté de l'image</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Succès </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec ， Renvoyer le code d'erreur</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>La valeur par défaut est 128， plus que le 128 Augmenter la netteté ， Moins que 128 Réduisez la netteté.</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Avant d'utiliser cette fonction ， Doit garantir ISP La fonction de débogage des effets a été activée . </dd></dl>
 
 </div>
 </div>
@@ -1713,7 +2036,7 @@ Cette fonction doit être appelée pour obtenir la fréquence d'images par défa
 <p>Obtenir ISP Paramètres du module de réduction du bruit spatial</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">pointeur</td><td>de paramètre de réduction du bruit de l'espace pinfo</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pinfo</td><td>Pointeur de paramètre de réduction du bruit spatial</td></tr>
   </table>
   </dd>
 </dl>
@@ -1758,7 +2081,7 @@ Cette fonction doit être appelée pour obtenir la fréquence d'images par défa
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarques</dt><dd>Obtenez les paramètres de correction du module de réduction du bruit dans le domaine temporel.</dd></dl>
+<dl class="section remark"><dt>Remarques</dt><dd>Obtenez les paramètres de correction du module de réduction du bruit temporel.</dd></dl>
 <dl class="section attention"><dt>Attention</dt><dd>Avant d'utiliser cette fonction ， Doit garantir ISP La fonction de débogage des effets a été activée . </dd></dl>
 
 </div>
@@ -1781,7 +2104,7 @@ Cette fonction doit être appelée pour obtenir la fréquence d'images par défa
 <p>Obtenir ISP La valeur de gain globale de l'image de sortie</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">gain</td><td>est un pointeur pour obtenir le paramètre de valeur de gain, son format de stockage de données est [24,8], le haut 24 bits est un entier et le bas 8 bits est un décimal.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">gain</td><td>Obtenez le pointeur du paramètre de valeur de gain , Le format de stockage des données est [24.8]， haut 24bit Est un entier ， faible 8bit Est un décimal.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1814,14 +2137,14 @@ Cette fonction doit être appelée pour obtenir la fréquence d'images par défa
 <p>Obtenez le réglage de la fonction de balance des blancs.</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">wb</td><td>Paramètre de balance des blancs obtenu.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">wb</td><td>Les paramètres de balance des blancs obtenus.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Valeurs retournées</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>succès </td></tr>
-    <tr><td class="paramname">non-0</td><td>échec ， Renvoyer le code d'erreur</td></tr>
+    <tr><td class="paramname">0</td><td>Succès </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec ， Renvoyer le code d'erreur</td></tr>
   </table>
   </dd>
 </dl>
@@ -1847,14 +2170,14 @@ Cette fonction doit être appelée pour obtenir la fréquence d'images par défa
 <p>Obtenez des statistiques de balance des blancs.</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">wb</td><td>Statistiques de balance des blancs obtenues.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">wb</td><td>Les statistiques de balance des blancs obtenues.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Valeurs retournées</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>succès </td></tr>
-    <tr><td class="paramname">non-0</td><td>échec ， Renvoyer le code d'erreur</td></tr>
+    <tr><td class="paramname">0</td><td>Succès </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec ， Renvoyer le code d'erreur</td></tr>
   </table>
   </dd>
 </dl>
@@ -1880,7 +2203,7 @@ Cette fonction doit être appelée pour obtenir la fréquence d'images par défa
 <p>Obtenir ISP État actuel du module dynamique large</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">pointeur</td><td>de paramètre de module dynamique large pmode</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pmode</td><td>Large pointeur de paramètres de module dynamique</td></tr>
   </table>
   </dd>
 </dl>
@@ -1906,7 +2229,7 @@ Cette fonction doit être appelée pour obtenir la fréquence d'images par défa
           <td class="memname">int IMP_ISP_Tuning_SaveAllParam </td>
           <td>(</td>
           <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>chemin</em></td><td>)</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1914,7 +2237,7 @@ Cette fonction doit être appelée pour obtenir la fréquence d'images par défa
 <p>sauvegarder ISP Tous les paramètres de débogage du module</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">pointeur</td><td>de paramètre de chemin de chemin</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">path</td><td>Pointeur de paramètre de chemin</td></tr>
   </table>
   </dd>
 </dl>
@@ -1925,7 +2248,7 @@ Cette fonction doit être appelée pour obtenir la fréquence d'images par défa
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarques</dt><dd>Enregistrez tous les paramètres du FAI pour le débogage.</dd></dl>
+<dl class="section remark"><dt>Remarques</dt><dd>Enregistrer tout le débogage ISP paramètre.</dd></dl>
 <dl class="section attention"><dt>Attention</dt><dd>Avant d'utiliser cette fonction ， Doit garantir ISP La fonction de débogage des effets a été activée . </dd></dl>
 
 </div>
@@ -1947,14 +2270,47 @@ Cette fonction doit être appelée pour obtenir la fréquence d'images par défa
 </div><div class="memdoc">
 <p>Installation AE se réconcilier. AE Les paramètres de compensation peuvent ajuster l'image AE target， La plage de réglage recommandée est [90-150]. </p><dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">comp</td><td>Paramètres de compensation AE</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">comp</td><td>AE Paramètre de compensation</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Valeurs retournées</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>succès </td></tr>
-    <tr><td class="paramname">non-0</td><td>échec ， Renvoyer le code d'erreur</td></tr>
+    <tr><td class="paramname">0</td><td>Succès </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec ， Renvoyer le code d'erreur</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>Attention</dt><dd>Avant d'utiliser cette fonction ，IMP_ISP_EnableTuning A été appelé. </dd></dl>
+
+</div>
+</div>
+<a id="gaebfe22a1dc952d6459e0a0d96d068864"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaebfe22a1dc952d6459e0a0d96d068864">&#9670;&nbsp;</a></span>IMP_ISP_Tuning_SetAeStrategy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_ISP_Tuning_SetAeStrategy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__IMP__ISP.html#gac3e4bae428eda21cd8cd9446e9b3fa38">IMPISPAeStrategy</a>&#160;</td>
+          <td class="paramname"><em>strategy</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Installation ISP Mode de fonctionnement ， Configuration de la stratégie d'exposition automatique ， Mode normal ou mode de priorité d'exposition; le mode par défaut est le mode normal.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">strategy</td><td>Paramètres de stratégie d'exposition automatique</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Succès </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec ， Renvoyer le code d'erreur Exemple: <div class="fragment"><div class="line">  <a class="code" href="group__IMP__ISP.html#gac3e4bae428eda21cd8cd9446e9b3fa38">IMPISPAeStrategy</a> strategy;</div><div class="line"> </div><div class="line">  <span class="keywordflow">if</span>( it is a normal scence){</div><div class="line">    mode = <a class="code" href="group__IMP__ISP.html#ggac3e4bae428eda21cd8cd9446e9b3fa38a72d451a5a838a7bce4833374471872ff">IMPISP_AE_STRATEGY_SPLIT_BALANCED</a></div><div class="line">    }<span class="keywordflow">else</span>{</div><div class="line">    mode = <a class="code" href="group__IMP__ISP.html#ggac3e4bae428eda21cd8cd9446e9b3fa38ad8840416f2ec15d513ea27f6de3b62b0">IMPISP_AE_STRATEGY_SPLIT_INTEGRATION_PRIORITY</a>;</div><div class="line">}</div><div class="line">    ret = <a class="code" href="group__IMP__ISP.html#gaebfe22a1dc952d6459e0a0d96d068864">IMP_ISP_Tuning_SetAeStrategy</a>(strategy);</div><div class="line">   <span class="keywordflow">if</span>(ret){</div><div class="line">   <a class="code" href="imp__log_8h.html#a59492a06ae7e667b02bda8f246902a7c">IMP_LOG_ERR</a>(TAG, <span class="stringliteral">&quot;IMP_ISP_Tuning_SetAeStrategy error !\n&quot;</span>);</div><div class="line">   <span class="keywordflow">return</span> -1;</div><div class="line">   }</div></div><!-- fragment --></td></tr>
   </table>
   </dd>
 </dl>
@@ -1980,7 +2336,7 @@ Cette fonction doit être appelée pour obtenir la fréquence d'images par défa
 <p>Installation ISP Propriétés anti-flash</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">attr</td><td>définir la valeur du paramètre</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">attr</td><td>Définir la valeur du paramètre</td></tr>
   </table>
   </dd>
 </dl>
@@ -1991,39 +2347,108 @@ Cette fonction doit être appelée pour obtenir la fréquence d'images par défa
   </table>
   </dd>
 </dl>
-<dl class="section attention"><dt>Attention</dt><dd>Avant d'utiliser cette fonction, vous devez vous assurer que la fonction de débogage d'effet ISP a été activée. </dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Avant d'utiliser cette fonction ， Doit garantir ISP La fonction de débogage des effets a été activée . </dd></dl>
 
 </div>
 </div>
-<a id="gaffe4c444f061405d4d83fa6f1733971b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaffe4c444f061405d4d83fa6f1733971b">&#9670;&nbsp;</a></span>IMP_ISP_Tuning_SetAntiFogAttr()</h2>
+<a id="gaa420ab671dc3ac21664e68f7471499ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa420ab671dc3ac21664e68f7471499ce">&#9670;&nbsp;</a></span>IMP_ISP_Tuning_SetBrightness()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int IMP_ISP_Tuning_SetAntiFogAttr </td>
+          <td class="memname">int IMP_ISP_Tuning_SetBrightness </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__IMP__ISP.html#ga1c6ee3079840b5204cf27fce0a6a1058">IMPISPAntiFogAttr</a>&#160;</td>
-          <td class="paramname"><em>attr</em></td><td>)</td>
+          <td class="paramtype">unsigned char&#160;</td>
+          <td class="paramname"><em>bright</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Installation ANTIFOG Les attributs. </p><dl class="params"><dt>Paramètres</dt><dd>
+<p>Installation ISP Luminosité d'image complète</p>
+<dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">attr</td><td>Paramètres d'attribut ANTIFOG</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bright</td><td>Paramètre de luminosité de l'image</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Valeurs retournées</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>succès </td></tr>
-    <tr><td class="paramname">non-0</td><td>échec ， Renvoyer le code d'erreur</td></tr>
+    <tr><td class="paramname">0</td><td>Succès </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec ， Renvoyer le code d'erreur</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section attention"><dt>Attention</dt><dd>Avant d'utiliser cette fonction ，IMP_ISP_EnableTuning A été appelé. </dd></dl>
+<dl class="section remark"><dt>Remarques</dt><dd>La valeur par défaut est 128， plus que le 128 Augmenter la luminosité ， Moins que 128 Diminuez la luminosité.</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Avant d'utiliser cette fonction ， Doit garantir ISP La fonction de débogage des effets a été activée . </dd></dl>
+
+</div>
+</div>
+<a id="ga015584d806c3dd5bc7f70213b784c90b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga015584d806c3dd5bc7f70213b784c90b">&#9670;&nbsp;</a></span>IMP_ISP_Tuning_SetColorfxMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_ISP_Tuning_SetColorfxMode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__IMP__ISP.html#ga601945262e25baf0e55e71a754bfd513">IMPISPColorfxMode</a>&#160;</td>
+          <td class="paramname"><em>mode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Installation ISP Mode couleur multi-effets</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>Paramètres du mode couleur</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Succès </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec ， Renvoyer le code d'erreur</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>Attention</dt><dd>Avant d'utiliser cette fonction ， Doit garantir ISP La fonction de débogage des effets a été activée . </dd></dl>
+
+</div>
+</div>
+<a id="ga9ad8f252ce6bdf00a3682c1ebecfb149"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9ad8f252ce6bdf00a3682c1ebecfb149">&#9670;&nbsp;</a></span>IMP_ISP_Tuning_SetContrast()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_ISP_Tuning_SetContrast </td>
+          <td>(</td>
+          <td class="paramtype">unsigned char&#160;</td>
+          <td class="paramname"><em>contrast</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Installation ISP Contraste d'image complet</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">contrast</td><td>Paramètre de contraste de l'image</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Succès </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec ， Renvoyer le code d'erreur</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>La valeur par défaut est 128， plus que le 128 Augmenter le contraste ， Moins que 128 Réduisez le contraste.</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Avant d'utiliser cette fonction ， Doit garantir ISP La fonction de débogage des effets a été activée . </dd></dl>
 
 </div>
 </div>
@@ -2045,18 +2470,51 @@ Cette fonction doit être appelée pour obtenir la fréquence d'images par défa
 <p>Installation AE paramètre.</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">paramètre</td><td>expr AE.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">expr</td><td>AE paramètre.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Valeurs retournées</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>succès </td></tr>
-    <tr><td class="paramname">non-0</td><td>échec ， Renvoyer le code d'erreur</td></tr>
+    <tr><td class="paramname">0</td><td>Succès </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec ， Renvoyer le code d'erreur</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section attention"><dt>Attention</dt><dd>Avant d'utiliser cette fonction ，IMP_ISP_EnableTuning A été appelé. </dd></dl>
+
+</div>
+</div>
+<a id="gacc802954d9f7881dc18214bd9f6236f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacc802954d9f7881dc18214bd9f6236f1">&#9670;&nbsp;</a></span>IMP_ISP_Tuning_SetFWFreeze()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_ISP_Tuning_SetFWFreeze </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__IMP__ISP.html#ga45aca860233255ad78614e2fa38520b9">IMPISPTuningOpsMode</a>&#160;</td>
+          <td class="paramname"><em>mode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Geler ISP Fonctionnement du micrologiciel ， Activer signifie geler ISP firmware ， c'est ISP L'algorithme automatique s'arrêtera; s'il n'est pas activé, cela signifie ISP Le firmware fonctionne normalement.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>Est-ce gelé ISP Paramètres du micrologiciel</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Succès </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec ， Renvoyer le code d'erreur</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>Attention</dt><dd>Avant d'utiliser cette fonction ， Doit garantir ISP La fonction de débogage des effets a été activée . </dd></dl>
 
 </div>
 </div>
@@ -2077,14 +2535,191 @@ Cette fonction doit être appelée pour obtenir la fréquence d'images par défa
 </div><div class="memdoc">
 <p>Installation GAMMA paramètre . </p><dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">paramètre</td><td>gamma gamma</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">gamma</td><td>gamma paramètre</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Valeurs retournées</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>succès </td></tr>
-    <tr><td class="paramname">non-0</td><td>échec ， Renvoyer le code d'erreur</td></tr>
+    <tr><td class="paramname">0</td><td>Succès </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec ， Renvoyer le code d'erreur</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>Attention</dt><dd>Avant d'utiliser cette fonction ，IMP_ISP_EnableTuning A été appelé. </dd></dl>
+
+</div>
+</div>
+<a id="ga02de99774dc0257c7613d9ef4dd7ae94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga02de99774dc0257c7613d9ef4dd7ae94">&#9670;&nbsp;</a></span>IMP_ISP_Tuning_SetISPBypass()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_ISP_Tuning_SetISPBypass </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__IMP__ISP.html#ga45aca860233255ad78614e2fa38520b9">IMPISPTuningOpsMode</a>&#160;</td>
+          <td class="paramname"><em>enable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>ISP Si le module bypass</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>qu'il s'agisse bypass Mode de sortie</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Succès </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec ， Renvoyer le code d'erreur</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>non</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Avant d'utiliser cette fonction ， Doit garantir ISP Le module est fermé . </dd></dl>
+
+</div>
+</div>
+<a id="ga663cc368f688229e2766a2cc2a2cdc52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga663cc368f688229e2766a2cc2a2cdc52">&#9670;&nbsp;</a></span>IMP_ISP_Tuning_SetISPHflip()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_ISP_Tuning_SetISPHflip </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__IMP__ISP.html#ga45aca860233255ad78614e2fa38520b9">IMPISPTuningOpsMode</a>&#160;</td>
+          <td class="paramname"><em>mode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Installation ISP Si la fonction d'effet de miroir d'image est activée</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>Activer ou non l'effet miroir</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Succès </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec ， Renvoyer le code d'erreur</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>Attention</dt><dd>Avant d'utiliser cette fonction ，IMP_ISP_EnableTuning A été appelé. </dd></dl>
+
+</div>
+</div>
+<a id="gad931a78faafcb184b1bab9fb699e86f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad931a78faafcb184b1bab9fb699e86f4">&#9670;&nbsp;</a></span>IMP_ISP_Tuning_SetISPHVflip()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_ISP_Tuning_SetISPHVflip </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__IMP__ISP.html#ga45aca860233255ad78614e2fa38520b9">IMPISPTuningOpsMode</a>&#160;</td>
+          <td class="paramname"><em>hmode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__IMP__ISP.html#ga45aca860233255ad78614e2fa38520b9">IMPISPTuningOpsMode</a>&#160;</td>
+          <td class="paramname"><em>vmode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Installation ISP image H/V Si la fonction d'effet inverse est activée</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">hmode</td><td>Activer ou non l'image H Sens inverse </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">vmode</td><td>Activer ou non l'image V Sens inverse</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Succès </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec ， Renvoyer le code d'erreur</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>Attention</dt><dd>Avant d'utiliser cette fonction ，IMP_ISP_EnableTuning A été appelé. </dd></dl>
+
+</div>
+</div>
+<a id="ga9a8ba3dfe858dde56672a5160ec1fdfd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9a8ba3dfe858dde56672a5160ec1fdfd">&#9670;&nbsp;</a></span>IMP_ISP_Tuning_SetISPRunningMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_ISP_Tuning_SetISPRunningMode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__IMP__ISP.html#ga00373cf71fd22df5eaa2f7eed6973100">IMPISPRunningMode</a>&#160;</td>
+          <td class="paramname"><em>mode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Installation ISP Mode de fonctionnement ， Mode normal ou mode de vision nocturne; le mode par défaut est le mode normal.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>Paramètres du mode de fonctionnement</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Succès </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec ， Renvoyer le code d'erreur</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Exemple: </p><div class="fragment"><div class="line"><a class="code" href="group__IMP__ISP.html#ga00373cf71fd22df5eaa2f7eed6973100">IMPISPRunningMode</a> mode;</div><div class="line"></div><div class="line"> <span class="keywordflow">if</span>( it is during a night now){</div><div class="line">    mode = <a class="code" href="group__IMP__ISP.html#gga00373cf71fd22df5eaa2f7eed6973100aca258162fd7afe8a1a81fe5b63723c73">IMPISP_RUNNING_MODE_NIGHT</a></div><div class="line"> }<span class="keywordflow">else</span>{</div><div class="line">    mode = <a class="code" href="group__IMP__ISP.html#gga00373cf71fd22df5eaa2f7eed6973100a3311b00220b304cc33887dc596255633">IMPISP_RUNNING_MODE_DAY</a>;</div><div class="line"> }</div><div class="line"> ret = <a class="code" href="group__IMP__ISP.html#ga9a8ba3dfe858dde56672a5160ec1fdfd">IMP_ISP_Tuning_SetISPRunningMode</a>(mode);</div><div class="line"> <span class="keywordflow">if</span>(ret){</div><div class="line">    <a class="code" href="imp__log_8h.html#a59492a06ae7e667b02bda8f246902a7c">IMP_LOG_ERR</a>(TAG, <span class="stringliteral">&quot;IMP_ISP_Tuning_SetISPRunningMode error !\n&quot;</span>);</div><div class="line">    <span class="keywordflow">return</span> -1;</div><div class="line"> }</div></div><!-- fragment --><dl class="section attention"><dt>Attention</dt><dd>Avant d'utiliser cette fonction ，IMP_ISP_EnableTuning A été appelé. </dd></dl>
+
+</div>
+</div>
+<a id="gaf1f07a434ff4d5d0786d713aad2ffc26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf1f07a434ff4d5d0786d713aad2ffc26">&#9670;&nbsp;</a></span>IMP_ISP_Tuning_SetISPVflip()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_ISP_Tuning_SetISPVflip </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__IMP__ISP.html#ga45aca860233255ad78614e2fa38520b9">IMPISPTuningOpsMode</a>&#160;</td>
+          <td class="paramname"><em>mode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Installation ISP Si la fonction d'effet d'image à l'envers est activée</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>Activer ou non l'image inversée de haut en bas</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Succès </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec ， Renvoyer le code d'erreur</td></tr>
   </table>
   </dd>
 </dl>
@@ -2110,7 +2745,7 @@ Cette fonction doit être appelée pour obtenir la fréquence d'images par défa
 <p>Installation ISP RAW Figure paramètres du module de compression de plage dynamique</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">pointeur</td><td>de paramètre de plage dynamique pinfo</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pinfo</td><td>Pointeur de paramètre de plage dynamique</td></tr>
   </table>
   </dd>
 </dl>
@@ -2121,7 +2756,74 @@ Cette fonction doit être appelée pour obtenir la fréquence d'images par défa
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarques</dt><dd>Définissez le type d'opération et l'intensité de la compression de la plage dynamique des images RVB RAW, ainsi que les valeurs de pixels maximales et minimales qui doivent être améliorées.</dd></dl>
+<dl class="section remark"><dt>Remarques</dt><dd>Installation RGB RAW Type d'opération de compression de plage dynamique graphique ， force ， Les valeurs de pixel maximum et minimum qui doivent être améliorées.</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Avant d'utiliser cette fonction ， Doit garantir ISP La fonction de débogage des effets a été activée . </dd></dl>
+
+</div>
+</div>
+<a id="ga67c1bce041ce6ba21c81ae86a45d7a49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga67c1bce041ce6ba21c81ae86a45d7a49">&#9670;&nbsp;</a></span>IMP_ISP_Tuning_SetSaturation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_ISP_Tuning_SetSaturation </td>
+          <td>(</td>
+          <td class="paramtype">unsigned char&#160;</td>
+          <td class="paramname"><em>sat</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Installation ISP Saturation complète de l'image avec effet</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sat</td><td>Valeur du paramètre de saturation de l'image</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Succès </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec ， Renvoyer le code d'erreur</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>La valeur par défaut est 128， plus que le 128 Augmenter la saturation ， Moins que 128 Diminue la saturation.</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Avant d'utiliser cette fonction ， Doit garantir ISP La fonction de débogage des effets a été activée . </dd></dl>
+
+</div>
+</div>
+<a id="gaf4cc536e10083446015f101b94b23159"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf4cc536e10083446015f101b94b23159">&#9670;&nbsp;</a></span>IMP_ISP_Tuning_SetSceneMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_ISP_Tuning_SetSceneMode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__IMP__ISP.html#ga43e34d291aed58536d3e48fe57dc4c7c">IMPISPSceneMode</a>&#160;</td>
+          <td class="paramname"><em>mode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Installation ISP Mode scène d'effets complet</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>Paramètres du mode scène d'effet</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Succès </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec ， Renvoyer le code d'erreur</td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section attention"><dt>Attention</dt><dd>Avant d'utiliser cette fonction ， Doit garantir ISP La fonction de débogage des effets a été activée . </dd></dl>
 
 </div>
@@ -2154,8 +2856,8 @@ Cette fonction doit être appelée pour obtenir la fréquence d'images par défa
 <p>Définir la fréquence d'images de sortie de la caméra</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">fps_num</td><td>définit le paramètre numérateur de la fréquence d'images </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">fps_den</td><td>définit le paramètre dénominateur de la fréquence d'images</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fps_num</td><td>Définir le paramètre du numérateur de la fréquence d'images </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fps_den</td><td>Définir le paramètre dénominateur de la fréquence d'images</td></tr>
   </table>
   </dd>
 </dl>
@@ -2166,7 +2868,41 @@ Cette fonction doit être appelée pour obtenir la fréquence d'images par défa
   </table>
   </dd>
 </dl>
-<dl class="section attention"><dt>Attention</dt><dd>Avant d'utiliser cette fonction, vous devez vous assurer que IMP_ISP_EnableSensor et IMP_ISP_EnableTuning ont été appelés. </dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Avant d'utiliser cette fonction ， Doit garantir IMP_ISP_EnableSensor avec IMP_ISP_EnableTuning A été appelé. </dd></dl>
+
+</div>
+</div>
+<a id="ga37c58c97c2970aa01e438c189c25ef6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga37c58c97c2970aa01e438c189c25ef6d">&#9670;&nbsp;</a></span>IMP_ISP_Tuning_SetSharpness()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_ISP_Tuning_SetSharpness </td>
+          <td>(</td>
+          <td class="paramtype">unsigned char&#160;</td>
+          <td class="paramname"><em>sharpness</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Installation ISP Netteté d'image complète</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sharpness</td><td>Valeur du paramètre de netteté de l'image</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Succès </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec ， Renvoyer le code d'erreur</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>La valeur par défaut est 128， plus que le 128 Augmenter la netteté ， Moins que 128 Réduisez la netteté.</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Avant d'utiliser cette fonction ， Doit garantir ISP La fonction de débogage des effets a été activée . </dd></dl>
 
 </div>
 </div>
@@ -2188,7 +2924,7 @@ Cette fonction doit être appelée pour obtenir la fréquence d'images par défa
 <p>Installation ISP Paramètres du module de réduction du bruit spatial</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">pointeur</td><td>de paramètre de réduction du bruit dans le domaine temporel pinfo</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pinfo</td><td>Pointeur de paramètre de réduction du bruit dans le domaine temporel</td></tr>
   </table>
   </dd>
 </dl>
@@ -2233,41 +2969,8 @@ Cette fonction doit être appelée pour obtenir la fréquence d'images par défa
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarques</dt><dd>Définissez les paramètres de correction du module de réduction du bruit dans le domaine temporel, et le module est activé par défaut; comme le module nécessite de la mémoire supplémentaire, veuillez éteindre le module si vous n'en avez pas besoin. Une fois la mémoire désactivée, il sera être rel une chée et ne peut plus être remise sous tension.</dd></dl>
+<dl class="section remark"><dt>Remarques</dt><dd>Définissez les paramètres de correction du module de réduction du bruit dans le domaine temporel ， Le module est activé par défaut, car le module nécessite de la mémoire supplémentaire ， Veuillez fermer le module si vous n'en avez pas besoin ， La mémoire est libérée une fois fermée ， Ne peut plus être ouvert.</dd></dl>
 <dl class="section attention"><dt>Attention</dt><dd>Avant d'utiliser cette fonction ， Doit garantir ISP La fonction de débogage des effets a été activée . </dd></dl>
-
-</div>
-</div>
-<a id="gafe069e5c3207bdf58267062eebe6e32c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gafe069e5c3207bdf58267062eebe6e32c">&#9670;&nbsp;</a></span>IMP_ISP_Tuning_SetVideoDrop()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int IMP_ISP_Tuning_SetVideoDrop </td>
-          <td>(</td>
-          <td class="paramtype">void(*)(void)&#160;</td>
-          <td class="paramname"><em>cb</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Réglez la fonction de perte vidéo. sensor En cas de problème avec la ligne de connexion à la carte mère ， La fonction de rappel définie sera exécutée.</p>
-<dl class="params"><dt>Paramètres</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">fonction</td><td>de rappel cb.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Valeurs retournées</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">0</td><td>succès </td></tr>
-    <tr><td class="paramname">non-0</td><td>échec ， Renvoyer le code d'erreur</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section attention"><dt>Attention</dt><dd>Avant d'utiliser cette fonction ，IMP_ISP_EnableTuning A été appelé. </dd></dl>
 
 </div>
 </div>
@@ -2289,18 +2992,894 @@ Cette fonction doit être appelée pour obtenir la fréquence d'images par défa
 <p>Définissez les paramètres de la fonction de balance des blancs. ， Le mode manuel est principalement défini par rgain [[[ bgain atteindre.</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">wb</td><td>Jeu de paramètres de balance des blancs.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">wb</td><td>Réglez les paramètres de balance des blancs.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Valeurs retournées</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>succès </td></tr>
-    <tr><td class="paramname">non-0</td><td>échec ， Renvoyer le code d'erreur</td></tr>
+    <tr><td class="paramname">0</td><td>Succès </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec ， Renvoyer le code d'erreur</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section attention"><dt>Attention</dt><dd>Avant d'utiliser cette fonction ，IMP_ISP_EnableTuning A été appelé. </dd></dl>
+
+</div>
+</div>
+<a id="gaf0bc7d23d1b03971adf0ff487ca90076"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf0bc7d23d1b03971adf0ff487ca90076">&#9670;&nbsp;</a></span>IMP_ISP_Tuning_SetWDRAttr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_ISP_Tuning_SetWDRAttr </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__IMP__ISP.html#ga45aca860233255ad78614e2fa38520b9">IMPISPTuningOpsMode</a>&#160;</td>
+          <td class="paramname"><em>mode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Installation ISP Si le module dynamique large est activé</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>Paramètres de module dynamiques larges</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Succès </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec ， Renvoyer le code d'erreur</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>Définir les paramètres d'étalonnage du module dynamique large ， Le module est activé par défaut, car le module nécessite de la mémoire supplémentaire ， Veuillez fermer le module si vous n'en avez pas besoin ， La mémoire est libérée une fois fermée ， Ne peut plus être ouvert.</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Avant d'utiliser cette fonction ， Doit garantir ISP La fonction de débogage des effets a été activée . </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des variables</h2>
+<a id="gaa1a39271732c2967bbfe7f69f77db887"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa1a39271732c2967bbfe7f69f77db887">&#9670;&nbsp;</a></span>addr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMPI2CInfo::addr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>I2C adresse </p>
+
+</div>
+</div>
+<a id="ga163bf00ad9d6611a72721c23d601036e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga163bf00ad9d6611a72721c23d601036e">&#9670;&nbsp;</a></span>bgain</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t isp_core_wb_attr::bgain</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Gain bleu ， Efficace en mode manuel </p>
+
+</div>
+</div>
+<a id="ga4cb6a88c683132a236efd39bb92f9e82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4cb6a88c683132a236efd39bb92f9e82">&#9670;&nbsp;</a></span>black_level</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned short IMPISPDrcAttr::black_level</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>DRC Valeur de pixel minimale améliorée ， La plage de valeurs est [0, oxfff] </p>
+
+</div>
+</div>
+<a id="ga7359647aaa00d350995be8d7ed745bd7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7359647aaa00d350995be8d7ed745bd7">&#9670;&nbsp;</a></span>bus_num</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMPSPIInfo::bus_num</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>SPI Adresse de bus </p>
+
+</div>
+</div>
+<a id="gaca9ba438dda11f8d47c813e72dbe9fb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaca9ba438dda11f8d47c813e72dbe9fb6">&#9670;&nbsp;</a></span>cbus_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__IMP__ISP.html#ga38ee4d645812c12b28cd37d5320ccfb2">IMPSensorControlBusType</a> IMPSensorInfo::cbus_type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Type de bus de contrôle de caméra </p>
+
+</div>
+</div>
+<a id="gad4be722e755630e29d615157fe9850ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad4be722e755630e29d615157fe9850ce">&#9670;&nbsp;</a></span>drc_strength</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char IMPISPDrcAttr::drc_strength</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Valeur cible définie en mode manuel ， La plage de valeurs est [0, 0xff] </p>
+
+</div>
+</div>
+<a id="gabd1caccc1013e2c7d42479532d971330"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabd1caccc1013e2c7d42479532d971330">&#9670;&nbsp;</a></span>dval_max</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char IMPISPDrcAttr::dval_max</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Mode de portée maximum ， La plage de valeurs est [0, 0xff] </p>
+
+</div>
+</div>
+<a id="ga048033af7f96f4048b96071619b8d3b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga048033af7f96f4048b96071619b8d3b9">&#9670;&nbsp;</a></span>dval_min</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char IMPISPDrcAttr::dval_min</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Mode de portée minimum ， La plage de valeurs est [0, 0xff] </p>
+
+</div>
+</div>
+<a id="gaf6b5a6e33894c7f392ba0e3724e60031"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf6b5a6e33894c7f392ba0e3724e60031">&#9670;&nbsp;</a></span>enable</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__IMP__ISP.html#ga45aca860233255ad78614e2fa38520b9">IMPISPTuningOpsMode</a> IMPISPSinterDenoiseAttr::enable</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Activer la fonction de réduction du bruit spatial </p>
+
+</div>
+</div>
+<a id="gad9e4e94b27fdc42f6898b4a957bde029"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad9e4e94b27fdc42f6898b4a957bde029">&#9670;&nbsp;</a></span>endx <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned isp_core_ae_roi_select::endx</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Point final x coordonner (0 ~ 255) </p>
+
+</div>
+</div>
+<a id="gadca860a1f3e1365a7ced76eb4a7d20b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadca860a1f3e1365a7ced76eb4a7d20b6">&#9670;&nbsp;</a></span>endx <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned { ... } ::endx</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Point final x coordonner (0 ~ 255) </p>
+
+</div>
+</div>
+<a id="ga32ecc5113c8d3994a3536bd834455435"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga32ecc5113c8d3994a3536bd834455435">&#9670;&nbsp;</a></span>endy <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned isp_core_ae_roi_select::endy</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Point final y coordonner (0 ~ 255) </p>
+
+</div>
+</div>
+<a id="ga605bb85ca8be65b80e2964ebd9452287"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga605bb85ca8be65b80e2964ebd9452287">&#9670;&nbsp;</a></span>endy <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned { ... } ::endy</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Point final y coordonner (0 ~ 255) </p>
+
+</div>
+</div>
+<a id="gaae14ab7794c86a885946e8079d3fe0cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaae14ab7794c86a885946e8079d3fe0cf">&#9670;&nbsp;</a></span>gamma</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t IMPISPGamma::gamma[129]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>gamma Tableau de paramètres ， Ont 129 Points </p>
+
+</div>
+</div>
+<a id="gab34a9adf3a8c4c7a8efed67fd830dde4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab34a9adf3a8c4c7a8efed67fd830dde4">&#9670;&nbsp;</a></span>i2c <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structIMPI2CInfo.html">IMPI2CInfo</a> IMPSensorInfo::i2c</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>I2C Informations sur le bus </p>
+
+</div>
+</div>
+<a id="gaf7ae1a26e1721ea594de1b698614fc43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf7ae1a26e1721ea594de1b698614fc43">&#9670;&nbsp;</a></span>i2c <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">IMPI2CInfo { ... } ::i2c</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>I2C Informations sur le bus </p>
+
+</div>
+</div>
+<a id="ga02830060ed22d8b2bf02d2dab59e7f14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga02830060ed22d8b2bf02d2dab59e7f14">&#9670;&nbsp;</a></span>i2c_adapter_id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMPI2CInfo::i2c_adapter_id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>I2C Manette </p>
+
+</div>
+</div>
+<a id="gac97c150a51b4888f632f6cd0b63d7df9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac97c150a51b4888f632f6cd0b63d7df9">&#9670;&nbsp;</a></span>integration_time <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t isp_core_expr_attr::integration_time</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Délai d'exposition ， L'unité est la ligne </p>
+
+</div>
+</div>
+<a id="gaccd410a26bbba118ea5e1d5b126c36e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaccd410a26bbba118ea5e1d5b126c36e1">&#9670;&nbsp;</a></span>integration_time <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t { ... } ::integration_time</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Délai d'exposition ， L'unité est la ligne </p>
+
+</div>
+</div>
+<a id="ga48f2c1c598a99d8d042941cfa1003c76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga48f2c1c598a99d8d042941cfa1003c76">&#9670;&nbsp;</a></span>integration_time_max <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t isp_core_expr_attr::integration_time_max</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Temps d'exposition maximal obtenu ， L'unité est la ligne </p>
+
+</div>
+</div>
+<a id="ga386cce561b29ad7635b5d7f050dbdfa3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga386cce561b29ad7635b5d7f050dbdfa3">&#9670;&nbsp;</a></span>integration_time_max <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t { ... } ::integration_time_max</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Temps d'exposition maximal obtenu ， L'unité est la ligne </p>
+
+</div>
+</div>
+<a id="ga71c8cb596a3b40c193970dcc1a47751a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga71c8cb596a3b40c193970dcc1a47751a">&#9670;&nbsp;</a></span>integration_time_min <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t { ... } ::integration_time_min</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Temps d'exposition minimum obtenu ， L'unité est la ligne </p>
+
+</div>
+</div>
+<a id="ga335a6504f965f1d7a3d5a09859466651"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga335a6504f965f1d7a3d5a09859466651">&#9670;&nbsp;</a></span>integration_time_min <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t isp_core_expr_attr::integration_time_min</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Temps d'exposition minimum obtenu ， L'unité est la ligne </p>
+
+</div>
+</div>
+<a id="gaacb3eddae8dfbaa5b844389823ad7fef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaacb3eddae8dfbaa5b844389823ad7fef">&#9670;&nbsp;</a></span>modalias</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char IMPSPIInfo::modalias[32]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>SPI Nom de l'appareil ， Doit être conduit avec la caméra struct spi_device_id dans name Les variables sont cohérentes </p>
+
+</div>
+</div>
+<a id="ga9240a39088a7e3b1d59175b14ad00fe1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9240a39088a7e3b1d59175b14ad00fe1">&#9670;&nbsp;</a></span>mode <span class="overload">[1/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__IMP__ISP.html#gac26c8dff17c099abd9903e2e87550fcc">IMPISPDrcMode</a> IMPISPDrcAttr::mode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>ISP Sélection du mode de fonctionnement du module de compression de plage dynamique </p>
+
+</div>
+</div>
+<a id="ga4c1227d95f3c57f4139a716814555dd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4c1227d95f3c57f4139a716814555dd4">&#9670;&nbsp;</a></span>mode <span class="overload">[2/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__IMP__ISP.html#ga15dbea9727fd70901275c90a3e5ef2d2">isp_core_expr_mode</a> isp_core_expr_attr::mode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Définir le mode d'exposition</p>
+<p>Mode d'exposition acquis </p>
+
+</div>
+</div>
+<a id="gae0598caadd6d365e1a2446dfc6747967"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae0598caadd6d365e1a2446dfc6747967">&#9670;&nbsp;</a></span>mode <span class="overload">[3/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum { ... } ::mode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Définir le mode d'exposition </p>
+
+</div>
+</div>
+<a id="gae6df574283764d9dabd8a2b801bcbab6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae6df574283764d9dabd8a2b801bcbab6">&#9670;&nbsp;</a></span>mode <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum { ... } ::mode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Mode d'exposition acquis </p>
+
+</div>
+</div>
+<a id="ga3c8e85e83b2abce15de4970d342518f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3c8e85e83b2abce15de4970d342518f6">&#9670;&nbsp;</a></span>mode <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__IMP__ISP.html#ga8322e3086b65300b1aca801a5ad1b22e">isp_core_wb_mode</a> isp_core_wb_attr::mode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Mode de balance des blancs ， Divisé en modes automatique et manuel </p>
+
+</div>
+</div>
+<a id="ga007e699b995070e999087ce4ff3bf22d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga007e699b995070e999087ce4ff3bf22d">&#9670;&nbsp;</a></span>name</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char IMPSensorInfo::name[32]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Nom de la caméra </p>
+
+</div>
+</div>
+<a id="ga4230ac6ab15041aae8a686f24aa2a9f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4230ac6ab15041aae8a686f24aa2a9f9">&#9670;&nbsp;</a></span>one_line_expr_in_us <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t isp_core_expr_attr::one_line_expr_in_us</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Le nombre de microsecondes correspondant au temps d'exposition de la ligne acquise </p>
+
+</div>
+</div>
+<a id="ga3da9726d21bfc456a34e5f108f85d92d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3da9726d21bfc456a34e5f108f85d92d">&#9670;&nbsp;</a></span>one_line_expr_in_us <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t { ... } ::one_line_expr_in_us</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Le nombre de microsecondes correspondant au temps d'exposition de la ligne acquise </p>
+
+</div>
+</div>
+<a id="ga517dd0e2b36c39381bba75fdcb7aaf1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga517dd0e2b36c39381bba75fdcb7aaf1a">&#9670;&nbsp;</a></span>power_gpio</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned short IMPSensorInfo::power_gpio</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>webcam power Lien d'interface GPIO， Remarque: ce paramètre n'est pas activé maintenant </p>
+
+</div>
+</div>
+<a id="ga3b08b5578b4ee04cfce14c421e12cc4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3b08b5578b4ee04cfce14c421e12cc4a">&#9670;&nbsp;</a></span>pwdn_gpio</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned short IMPSensorInfo::pwdn_gpio</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>webcam power down Lien d'interface GPIO， Remarque: ce paramètre n'est pas activé maintenant </p>
+
+</div>
+</div>
+<a id="ga238194261724e6a25194143b55ec6325"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga238194261724e6a25194143b55ec6325">&#9670;&nbsp;</a></span>rgain</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t isp_core_wb_attr::rgain</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Gain rouge ， Efficace en mode manuel </p>
+
+</div>
+</div>
+<a id="gaa6a937be627ce3756beec38f418a5ac3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa6a937be627ce3756beec38f418a5ac3">&#9670;&nbsp;</a></span>rst_gpio</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned short IMPSensorInfo::rst_gpio</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>webcam reset Lien d'interface GPIO， Remarque: ce paramètre n'est pas activé maintenant </p>
+
+</div>
+</div>
+<a id="gafcc4078fac6762fb0bcf9e88baa97f13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafcc4078fac6762fb0bcf9e88baa97f13">&#9670;&nbsp;</a></span>sinter_strength</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char IMPISPSinterDenoiseAttr::sinter_strength</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Intensité de la réduction du bruit spatial ， Le mode manuel est efficace ， La plage de valeurs est [0, 0xff] </p>
+
+</div>
+</div>
+<a id="ga8e316c49bb4d8032b0d8f99e815bddfb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8e316c49bb4d8032b0d8f99e815bddfb">&#9670;&nbsp;</a></span>slop_max</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char IMPISPDrcAttr::slop_max</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Paramètres de contrôle de la force ， La plage de valeurs est [0, oxff] </p>
+
+</div>
+</div>
+<a id="ga049ae6b9c526f2417c9a9eb0a913b9d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga049ae6b9c526f2417c9a9eb0a913b9d3">&#9670;&nbsp;</a></span>slop_min</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char IMPISPDrcAttr::slop_min</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Paramètres de contrôle de la force ， La plage de valeurs est [0, oxff] </p>
+
+</div>
+</div>
+<a id="ga7e87d83cee3e0f14fe53172766c13a29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7e87d83cee3e0f14fe53172766c13a29">&#9670;&nbsp;</a></span>spi <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structIMPSPIInfo.html">IMPSPIInfo</a> IMPSensorInfo::spi</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>SPI Informations sur le bus </p>
+
+</div>
+</div>
+<a id="gaa890d74dc0f216632515a1fa9297ee18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa890d74dc0f216632515a1fa9297ee18">&#9670;&nbsp;</a></span>spi <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">IMPSPIInfo { ... } ::spi</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>SPI Informations sur le bus </p>
+
+</div>
+</div>
+<a id="gada72936749c4a4a735bd56cdcca1306d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gada72936749c4a4a735bd56cdcca1306d">&#9670;&nbsp;</a></span>startx <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned { ... } ::startx</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Point de départ x coordonner (0 ~ 255) </p>
+
+</div>
+</div>
+<a id="ga09a83be769c5c7ee28f3f582d6f45932"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga09a83be769c5c7ee28f3f582d6f45932">&#9670;&nbsp;</a></span>startx <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned isp_core_ae_roi_select::startx</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Point de départ x coordonner (0 ~ 255) </p>
+
+</div>
+</div>
+<a id="ga03aa2abe97e757595621406bd92092d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga03aa2abe97e757595621406bd92092d8">&#9670;&nbsp;</a></span>starty <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned { ... } ::starty</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Point de départ y coordonner (0 ~ 255) </p>
+
+</div>
+</div>
+<a id="ga80fccfb53112041c2dacbf25fe4f09e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga80fccfb53112041c2dacbf25fe4f09e6">&#9670;&nbsp;</a></span>starty <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned isp_core_ae_roi_select::starty</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Point de départ y coordonner (0 ~ 255) </p>
+
+</div>
+</div>
+<a id="ga3cf29e184756cd7efa2eb45753f3c303"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3cf29e184756cd7efa2eb45753f3c303">&#9670;&nbsp;</a></span>sval_max</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char IMPISPSinterDenoiseAttr::sval_max</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Intensité de la réduction du bruit spatial ， Le mode manuel est efficace ， La plage de valeurs est [0, 0xff] </p>
+
+</div>
+</div>
+<a id="ga4dbb04c621b1932fa13b3a87d455de18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4dbb04c621b1932fa13b3a87d455de18">&#9670;&nbsp;</a></span>sval_min</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char IMPISPSinterDenoiseAttr::sval_min</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Intensité de la réduction du bruit spatial ， Le mode manuel est efficace ， La plage de valeurs est [0, 0xff] </p>
+
+</div>
+</div>
+<a id="ga46f6109a42d781d22af3aa1767559d15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga46f6109a42d781d22af3aa1767559d15">&#9670;&nbsp;</a></span>temper_strength</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char imp_isp_temper_denoise_attr::temper_strength</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Intensité de la réduction du bruit dans le domaine temporel ， Le mode manuel est efficace ， La plage de valeurs est [0, 0xff] </p>
+
+</div>
+</div>
+<a id="gac9ac4aaecdef195d97238450f158d8a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac9ac4aaecdef195d97238450f158d8a2">&#9670;&nbsp;</a></span>tval_max</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char imp_isp_temper_denoise_attr::tval_max</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Mode de réglage de la plage de réduction maximale du bruit spatial , La plage de valeurs est [0, 0xff] </p>
+
+</div>
+</div>
+<a id="ga3d83f7ce041e964c435b2c9591461d27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3d83f7ce041e964c435b2c9591461d27">&#9670;&nbsp;</a></span>tval_min</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char imp_isp_temper_denoise_attr::tval_min</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Mode de réglage de la plage de réduction du bruit spatial minimum , La plage de valeurs est [0, 0xff] </p>
+
+</div>
+</div>
+<a id="gac759ee1da3bc24db27b6115f1d01cdc1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac759ee1da3bc24db27b6115f1d01cdc1">&#9670;&nbsp;</a></span>type <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char IMPI2CInfo::type[20]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>I2C Nom de l'appareil ， Doit être conduit avec la caméra struct i2c_device_id dans name Les variables sont cohérentes </p>
+
+</div>
+</div>
+<a id="gadd3c8758b906438aadfb794313492647"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadd3c8758b906438aadfb794313492647">&#9670;&nbsp;</a></span>type <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__IMP__ISP.html#ga51cbf4116bb59389dc30a6840764e73e">IMPISPTuningOpsType</a> IMPISPSinterDenoiseAttr::type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Type d'opération de la fonction de réduction du bruit spatial ， Automatique ou manuel </p>
+
+</div>
+</div>
+<a id="ga67375459296c076b1bae6c94458ed31c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga67375459296c076b1bae6c94458ed31c">&#9670;&nbsp;</a></span>type <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__IMP__ISP.html#ga69126b2fc2c675a0f7fc799a95aa24f0">IMPISPTemperMode</a> imp_isp_temper_denoise_attr::type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Type d'opération de la fonction de réduction du bruit dans le domaine temporel ， Désactiver ， Automatique ou manuel </p>
+
+</div>
+</div>
+<a id="gae1c401fde56b77651e22eb868d05ad4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae1c401fde56b77651e22eb868d05ad4d">&#9670;&nbsp;</a></span>unit <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum { ... } ::unit</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Définir l'unité d'exposition </p>
+
+</div>
+</div>
+<a id="ga860ab913c4002cce411267774049ceb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga860ab913c4002cce411267774049ceb5">&#9670;&nbsp;</a></span>unit <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__IMP__ISP.html#ga119b1782b6d972e38d604528ad72b65e">isp_core_expr_unit</a> isp_core_expr_attr::unit</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Définir l'unité d'exposition </p>
+
+</div>
+</div>
+<a id="gae3ac0e10c36ee3bf47f4126c2bd689aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae3ac0e10c36ee3bf47f4126c2bd689aa">&#9670;&nbsp;</a></span>white_level</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned short IMPISPDrcAttr::white_level</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>DRC Valeur de pixel maximale améliorée ， La plage de valeurs est [0, oxfff] </p>
 
 </div>
 </div>

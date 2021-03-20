@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['imp_20_28plateforme_20média_20ingenic_29',['IMP (Plateforme Média Ingenic)',['../group__imp.html',1,'']]],
+  ['imp_28ingenic_20media_20platform_29',['IMP(Ingenic Media Platform)',['../group__imp.html',1,'']]],
   ['imp_5faudio',['IMP_Audio',['../group__IMP__Audio.html',1,'']]],
   ['imp_5fdecoder',['IMP_Decoder',['../group__IMP__Decoder.html',1,'']]],
   ['imp_5fencoder',['IMP_Encoder',['../group__IMP__Encoder.html',1,'']]],

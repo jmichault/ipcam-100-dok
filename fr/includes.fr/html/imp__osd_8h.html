@@ -74,6 +74,7 @@ Graphe des dépendances par inclusion de imp_osd.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="imp__osd_8h__incl.png" border="0" usemap="#imp__osd_8h" alt=""/></div>
 <map name="imp__osd_8h" id="imp__osd_8h">
+<area shape="rect" id="node2" href="imp__common_8h.html" title="imp_common.h" alt="" coords="139,80,249,107"/>
 </map>
 </div>
 </div>
@@ -90,6 +91,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionIMPOSDRgnAttrData.html">IMPOSDRgnAttrData</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIMPOSDRgnAttr.html">IMPOSDRgnAttr</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIMPOSDRgnTimestamp.html">IMPOSDRgnTimestamp</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIMPOSDGrpRgnAttr.html">IMPOSDGrpRgnAttr</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -138,32 +141,25 @@ Fonctions</h2></td></tr>
 <tr class="separator:ga7ee1c973352a6c63a9d94ced838b73d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga64e2cdf694b204d4cdb6f03792271810"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__IMP__OSD.html#gadc0d2d62f9e28e13ca872973e8ff6fa9">IMPRgnHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__OSD.html#ga64e2cdf694b204d4cdb6f03792271810">IMP_OSD_CreateRgn</a> (<a class="el" href="structIMPOSDRgnAttr.html">IMPOSDRgnAttr</a> *prAttr)</td></tr>
 <tr class="separator:ga64e2cdf694b204d4cdb6f03792271810"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae5c2059b379bc06d6a3272fdb638c7f8"><td class="memItemLeft" align="right" valign="top">
-void&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_OSD_DestroyRgn</b> (<a class="el" href="group__IMP__OSD.html#gadc0d2d62f9e28e13ca872973e8ff6fa9">IMPRgnHandle</a> handle)</td></tr>
+<tr class="memitem:gae5c2059b379bc06d6a3272fdb638c7f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__OSD.html#gae5c2059b379bc06d6a3272fdb638c7f8">IMP_OSD_DestroyRgn</a> (<a class="el" href="group__IMP__OSD.html#gadc0d2d62f9e28e13ca872973e8ff6fa9">IMPRgnHandle</a> handle)</td></tr>
 <tr class="separator:gae5c2059b379bc06d6a3272fdb638c7f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gada9245a734dcec9ad3ff64a8f9f1a379"><td class="memItemLeft" align="right" valign="top">
-int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_OSD_RegisterRgn</b> (<a class="el" href="group__IMP__OSD.html#gadc0d2d62f9e28e13ca872973e8ff6fa9">IMPRgnHandle</a> handle, int grpNum, <a class="el" href="structIMPOSDGrpRgnAttr.html">IMPOSDGrpRgnAttr</a> *pgrAttr)</td></tr>
+<tr class="memitem:gada9245a734dcec9ad3ff64a8f9f1a379"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__OSD.html#gada9245a734dcec9ad3ff64a8f9f1a379">IMP_OSD_RegisterRgn</a> (<a class="el" href="group__IMP__OSD.html#gadc0d2d62f9e28e13ca872973e8ff6fa9">IMPRgnHandle</a> handle, int grpNum, <a class="el" href="structIMPOSDGrpRgnAttr.html">IMPOSDGrpRgnAttr</a> *pgrAttr)</td></tr>
 <tr class="separator:gada9245a734dcec9ad3ff64a8f9f1a379"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac6c935a002ba3508e07a159c46543332"><td class="memItemLeft" align="right" valign="top">
-int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_OSD_UnRegisterRgn</b> (<a class="el" href="group__IMP__OSD.html#gadc0d2d62f9e28e13ca872973e8ff6fa9">IMPRgnHandle</a> handle, int grpNum)</td></tr>
+<tr class="memitem:gac6c935a002ba3508e07a159c46543332"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__OSD.html#gac6c935a002ba3508e07a159c46543332">IMP_OSD_UnRegisterRgn</a> (<a class="el" href="group__IMP__OSD.html#gadc0d2d62f9e28e13ca872973e8ff6fa9">IMPRgnHandle</a> handle, int grpNum)</td></tr>
 <tr class="separator:gac6c935a002ba3508e07a159c46543332"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9fa0dcefef685eb851b1457e7a0cafbc"><td class="memItemLeft" align="right" valign="top">
-int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_OSD_SetRgnAttr</b> (<a class="el" href="group__IMP__OSD.html#gadc0d2d62f9e28e13ca872973e8ff6fa9">IMPRgnHandle</a> handle, <a class="el" href="structIMPOSDRgnAttr.html">IMPOSDRgnAttr</a> *prAttr)</td></tr>
+<tr class="memitem:ga9fa0dcefef685eb851b1457e7a0cafbc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__OSD.html#ga9fa0dcefef685eb851b1457e7a0cafbc">IMP_OSD_SetRgnAttr</a> (<a class="el" href="group__IMP__OSD.html#gadc0d2d62f9e28e13ca872973e8ff6fa9">IMPRgnHandle</a> handle, <a class="el" href="structIMPOSDRgnAttr.html">IMPOSDRgnAttr</a> *prAttr)</td></tr>
 <tr class="separator:ga9fa0dcefef685eb851b1457e7a0cafbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga816fe110eda1f2e5bb221f78a6177ade"><td class="memItemLeft" align="right" valign="top">
-int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_OSD_GetRgnAttr</b> (<a class="el" href="group__IMP__OSD.html#gadc0d2d62f9e28e13ca872973e8ff6fa9">IMPRgnHandle</a> handle, <a class="el" href="structIMPOSDRgnAttr.html">IMPOSDRgnAttr</a> *prAttr)</td></tr>
+<tr class="memitem:ga33af621054ccc4e4387db4945a341345"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__OSD.html#ga33af621054ccc4e4387db4945a341345">IMP_OSD_SetRgnAttrWithTimestamp</a> (<a class="el" href="group__IMP__OSD.html#gadc0d2d62f9e28e13ca872973e8ff6fa9">IMPRgnHandle</a> handle, <a class="el" href="structIMPOSDRgnAttr.html">IMPOSDRgnAttr</a> *prAttr, <a class="el" href="structIMPOSDRgnTimestamp.html">IMPOSDRgnTimestamp</a> *prTs)</td></tr>
+<tr class="separator:ga33af621054ccc4e4387db4945a341345"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga816fe110eda1f2e5bb221f78a6177ade"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__OSD.html#ga816fe110eda1f2e5bb221f78a6177ade">IMP_OSD_GetRgnAttr</a> (<a class="el" href="group__IMP__OSD.html#gadc0d2d62f9e28e13ca872973e8ff6fa9">IMPRgnHandle</a> handle, <a class="el" href="structIMPOSDRgnAttr.html">IMPOSDRgnAttr</a> *prAttr)</td></tr>
 <tr class="separator:ga816fe110eda1f2e5bb221f78a6177ade"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga880823c92f7258f2791aa91725683198"><td class="memItemLeft" align="right" valign="top">
-int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_OSD_UpdateRgnAttrData</b> (<a class="el" href="group__IMP__OSD.html#gadc0d2d62f9e28e13ca872973e8ff6fa9">IMPRgnHandle</a> handle, <a class="el" href="unionIMPOSDRgnAttrData.html">IMPOSDRgnAttrData</a> *prAttrData)</td></tr>
+<tr class="memitem:ga880823c92f7258f2791aa91725683198"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__OSD.html#ga880823c92f7258f2791aa91725683198">IMP_OSD_UpdateRgnAttrData</a> (<a class="el" href="group__IMP__OSD.html#gadc0d2d62f9e28e13ca872973e8ff6fa9">IMPRgnHandle</a> handle, <a class="el" href="unionIMPOSDRgnAttrData.html">IMPOSDRgnAttrData</a> *prAttrData)</td></tr>
 <tr class="separator:ga880823c92f7258f2791aa91725683198"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6dfff960bc63be5139a8317fa3c2a1ed"><td class="memItemLeft" align="right" valign="top">
-int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_OSD_SetGrpRgnAttr</b> (<a class="el" href="group__IMP__OSD.html#gadc0d2d62f9e28e13ca872973e8ff6fa9">IMPRgnHandle</a> handle, int grpNum, <a class="el" href="structIMPOSDGrpRgnAttr.html">IMPOSDGrpRgnAttr</a> *pgrAttr)</td></tr>
+<tr class="memitem:ga6dfff960bc63be5139a8317fa3c2a1ed"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__OSD.html#ga6dfff960bc63be5139a8317fa3c2a1ed">IMP_OSD_SetGrpRgnAttr</a> (<a class="el" href="group__IMP__OSD.html#gadc0d2d62f9e28e13ca872973e8ff6fa9">IMPRgnHandle</a> handle, int grpNum, <a class="el" href="structIMPOSDGrpRgnAttr.html">IMPOSDGrpRgnAttr</a> *pgrAttr)</td></tr>
 <tr class="separator:ga6dfff960bc63be5139a8317fa3c2a1ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga72ed932c29bcf7ed54ad8f650403ca12"><td class="memItemLeft" align="right" valign="top">
-int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_OSD_GetGrpRgnAttr</b> (<a class="el" href="group__IMP__OSD.html#gadc0d2d62f9e28e13ca872973e8ff6fa9">IMPRgnHandle</a> handle, int grpNum, <a class="el" href="structIMPOSDGrpRgnAttr.html">IMPOSDGrpRgnAttr</a> *pgrAttr)</td></tr>
+<tr class="memitem:ga72ed932c29bcf7ed54ad8f650403ca12"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__OSD.html#ga72ed932c29bcf7ed54ad8f650403ca12">IMP_OSD_GetGrpRgnAttr</a> (<a class="el" href="group__IMP__OSD.html#gadc0d2d62f9e28e13ca872973e8ff6fa9">IMPRgnHandle</a> handle, int grpNum, <a class="el" href="structIMPOSDGrpRgnAttr.html">IMPOSDGrpRgnAttr</a> *pgrAttr)</td></tr>
 <tr class="separator:ga72ed932c29bcf7ed54ad8f650403ca12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafbbc33cd778b48dd78bc97dabfe933c2"><td class="memItemLeft" align="right" valign="top">
-int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_OSD_ShowRgn</b> (<a class="el" href="group__IMP__OSD.html#gadc0d2d62f9e28e13ca872973e8ff6fa9">IMPRgnHandle</a> handle, int grpNum, int showFlag)</td></tr>
+<tr class="memitem:gafbbc33cd778b48dd78bc97dabfe933c2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__OSD.html#gafbbc33cd778b48dd78bc97dabfe933c2">IMP_OSD_ShowRgn</a> (<a class="el" href="group__IMP__OSD.html#gadc0d2d62f9e28e13ca872973e8ff6fa9">IMPRgnHandle</a> handle, int grpNum, int showFlag)</td></tr>
 <tr class="separator:gafbbc33cd778b48dd78bc97dabfe933c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab588ad815812fe2da722467b1e602eb3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__OSD.html#gab588ad815812fe2da722467b1e602eb3">IMP_OSD_Start</a> (int grpNum)</td></tr>
 <tr class="separator:gab588ad815812fe2da722467b1e602eb3"><td class="memSeparator" colspan="2">&#160;</td></tr>

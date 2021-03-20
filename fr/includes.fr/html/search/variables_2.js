@@ -1,11 +1,12 @@
 var searchData=
 [
-  ['cbus_5ftype',['cbus_type',['../structIMPSensorInfo.html#aca9ba438dda11f8d47c813e72dbe9fb6',1,'IMPSensorInfo']]],
-  ['changepos',['changePos',['../structIMPEncoderAttrH264VBR.html#af7bdd5fa34c26d58455f72c98479750b',1,'IMPEncoderAttrH264VBR']]],
+  ['cbus_5ftype',['cbus_type',['../group__IMP__ISP.html#gaca9ba438dda11f8d47c813e72dbe9fb6',1,'IMPSensorInfo']]],
+  ['changepos',['changePos',['../structIMPEncoderAttrH264VBR.html#af7bdd5fa34c26d58455f72c98479750b',1,'IMPEncoderAttrH264VBR::changePos()'],['../structIMPEncoderAttrH264Smart.html#a6ec04a588b607cf60c219e9505635a80',1,'IMPEncoderAttrH264Smart::changePos()']]],
   ['chnbusynum',['chnBusyNum',['../group__IMP__Audio.html#gaaa15c3135fb24b9e863c868e65a383f4',1,'IMPAudioOChnState']]],
   ['chncnt',['chnCnt',['../group__IMP__Audio.html#ga43d48a7dd6d4464ec4328b69f63eed1f',1,'IMPAudioIOAttr']]],
   ['chnfreenum',['chnFreeNum',['../group__IMP__Audio.html#ga45f6a0bd2689505e03dfbd7db01d7bab',1,'IMPAudioOChnState']]],
   ['chntotalnum',['chnTotalNum',['../group__IMP__Audio.html#gaef8dab46d341c7614b7a3115ff8ad2c4',1,'IMPAudioOChnState']]],
+  ['chroma_5fqp_5findex_5foffset',['chroma_qp_index_offset',['../structIMPEncoderH264TransCfg.html#aa1b4006b7f4ed3f3138a01742836f45f',1,'IMPEncoderH264TransCfg']]],
   ['color',['color',['../structlineRectData.html#a957d1c9e53e683e87cf4710b07c44ce3',1,'lineRectData::color()'],['../structcoverData.html#a8a4fc7f8fdbfa353be365aaa111808f2',1,'coverData::color()']]],
   ['compressiongaindb',['CompressionGaindB',['../group__IMP__Audio.html#ga389d26b130c78108326eb4e36e73e7f8',1,'IMPAudioAgcConfig']]],
   ['coverdata',['coverData',['../unionIMPOSDRgnAttrData.html#abf4041872223f5503e5cba6093b02f39',1,'IMPOSDRgnAttrData']]],

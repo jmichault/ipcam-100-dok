@@ -63,18 +63,29 @@ $(function() {
 <a href="#enum-members">Énumérations</a> &#124;
 <a href="#func-members">Fonctions</a>  </div>
   <div class="headertitle">
-<div class="title">IMP_FrameSource</div>  </div>
+<div class="title">IMP_FrameSource<div class="ingroups"><a class="el" href="group__imp.html">IMP(Ingenic Media Platform)</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>La source vidéo est la source de données d'image du système IMP. La résolution d'image, le recadrage, la mise à l'échelle et d'autres attributs peuvent être définis, ainsi que la fonction de réduction du bruit d'arrière-plan.  
+<p>Source vidéo ， Oui IMP Source de données d'image du système ， Vous pouvez définir la résolution de l'image, le recadrage, le zoom et d'autres attributs ， Et la fonction de réduction du bruit d'arrière-plan.  
 <a href="#details">Plus de détails...</a></p>
+<div class="dynheader">
+Graphe de collaboration de IMP_FrameSource:</div>
+<div class="dyncontent">
+<center><table><tr><td><img src="group__IMP__FrameSource.png" border="0" alt="" usemap="#group____IMP____FrameSource"/>
+<map name="group____IMP____FrameSource" id="group____IMP____FrameSource">
+<area shape="rect" id="node2" href="group__imp.html" title="IMP(Ingenic Media Platform)" alt="" coords="5,5,193,32"/>
+</map>
+</td></tr></table></center>
+</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIMPFSChnCrop.html">IMPFSChnCrop</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIMPFSChnScaler.html">IMPFSChnScaler</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIMPFSChnFifoAttr.html">IMPFSChnFifoAttr</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIMPFSChnAttr.html">IMPFSChnAttr</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -85,6 +96,10 @@ Classes</h2></td></tr>
 <a class="el" href="group__IMP__FrameSource.html#gga155b3408c5b20686f020a351a56d34a1aa7d8a412ff0cf06f92fad8b1a976bd9f">FS_EXT_CHANNEL</a>
  }</td></tr>
 <tr class="separator:ga155b3408c5b20686f020a351a56d34a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga72b578e493beec1e5a3f76b5ef610d0d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__FrameSource.html#ga72b578e493beec1e5a3f76b5ef610d0d">IMPFSChnFifoType</a> { <a class="el" href="group__IMP__FrameSource.html#gga72b578e493beec1e5a3f76b5ef610d0da3da0484c6dcbe7dbd15aeb8ede545156">FIFO_CACHE_PRIORITY</a> = 0, 
+<a class="el" href="group__IMP__FrameSource.html#gga72b578e493beec1e5a3f76b5ef610d0dad50493f30b5d73b2478eb0b658d8b65f">FIFO_DATA_PRIORITY</a>
+ }</td></tr>
+<tr class="separator:ga72b578e493beec1e5a3f76b5ef610d0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Fonctions</h2></td></tr>
@@ -106,11 +121,27 @@ Fonctions</h2></td></tr>
 <tr class="separator:ga235cece30871f6672a2c69bbcc8926e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga058ab102f6c968ce09bc3bc871a6f56c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__FrameSource.html#ga058ab102f6c968ce09bc3bc871a6f56c">IMP_FrameSource_GetFrame</a> (int chnNum, <a class="el" href="structIMPFrameInfo.html">IMPFrameInfo</a> **frame)</td></tr>
 <tr class="separator:ga058ab102f6c968ce09bc3bc871a6f56c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae91d238a128660f9b47129b1392c5b92"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__FrameSource.html#gae91d238a128660f9b47129b1392c5b92">IMP_FrameSource_GetTimedFrame</a> (int chnNum, <a class="el" href="structIMPFrameTimestamp.html">IMPFrameTimestamp</a> *framets, int block, void *framedata, <a class="el" href="structIMPFrameInfo.html">IMPFrameInfo</a> *frame)</td></tr>
+<tr class="separator:gae91d238a128660f9b47129b1392c5b92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gacbb1d1fe8cc98ed0a4d8b4e3ed74eec7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__FrameSource.html#gacbb1d1fe8cc98ed0a4d8b4e3ed74eec7">IMP_FrameSource_ReleaseFrame</a> (int chnNum, <a class="el" href="structIMPFrameInfo.html">IMPFrameInfo</a> *frame)</td></tr>
 <tr class="separator:gacbb1d1fe8cc98ed0a4d8b4e3ed74eec7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga00eb0fb16264f737157c49acbfa12d50"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__FrameSource.html#ga00eb0fb16264f737157c49acbfa12d50">IMP_FrameSource_SnapFrame</a> (int chnNum, <a class="el" href="imp__common_8h.html#a41dd79af5cc134fac5e24c98272824c0">IMPPixelFormat</a> fmt, int width, int height, void *framedata, <a class="el" href="structIMPFrameInfo.html">IMPFrameInfo</a> *frame)</td></tr>
+<tr class="separator:ga00eb0fb16264f737157c49acbfa12d50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacc51d528d7299e3f34db428cc5653f9e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__FrameSource.html#gacc51d528d7299e3f34db428cc5653f9e">IMP_FrameSource_SetMaxDelay</a> (int chnNum, int maxcnt)</td></tr>
+<tr class="separator:gacc51d528d7299e3f34db428cc5653f9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga69d580c400383dff9270891630091be0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__FrameSource.html#ga69d580c400383dff9270891630091be0">IMP_FrameSource_GetMaxDelay</a> (int chnNum, int *maxcnt)</td></tr>
+<tr class="separator:ga69d580c400383dff9270891630091be0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa66e9bd2b997815812fed85f07e9e381"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__FrameSource.html#gaa66e9bd2b997815812fed85f07e9e381">IMP_FrameSource_SetDelay</a> (int chnNum, int cnt)</td></tr>
+<tr class="separator:gaa66e9bd2b997815812fed85f07e9e381"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad2c2ffbfcc5c519b2454f83eeacf17cb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__FrameSource.html#gad2c2ffbfcc5c519b2454f83eeacf17cb">IMP_FrameSource_GetDelay</a> (int chnNum, int *cnt)</td></tr>
+<tr class="separator:gad2c2ffbfcc5c519b2454f83eeacf17cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga500c1dbb7859b1be6d9d7315b6dc5e2c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__FrameSource.html#ga500c1dbb7859b1be6d9d7315b6dc5e2c">IMP_FrameSource_SetChnFifoAttr</a> (int chnNum, <a class="el" href="structIMPFSChnFifoAttr.html">IMPFSChnFifoAttr</a> *attr)</td></tr>
+<tr class="separator:ga500c1dbb7859b1be6d9d7315b6dc5e2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7e5b70910504171745af254760d3d0d5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__FrameSource.html#ga7e5b70910504171745af254760d3d0d5">IMP_FrameSource_GetChnFifoAttr</a> (int chnNum, <a class="el" href="structIMPFSChnFifoAttr.html">IMPFSChnFifoAttr</a> *attr)</td></tr>
+<tr class="separator:ga7e5b70910504171745af254760d3d0d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
-<p>La source vidéo est la source de données d'image du système IMP. La résolution d'image, le recadrage, la mise à l'échelle et d'autres attributs peuvent être définis, ainsi que la fonction de réduction du bruit d'arrière-plan. </p>
+<p>Source vidéo ， Oui IMP Source de données d'image du système ， Vous pouvez définir la résolution de l'image, le recadrage, le zoom et d'autres attributs ， Et la fonction de réduction du bruit d'arrière-plan. </p>
 <p>FrameSource Est un concept lié au flux de données ， La résolution de l'image peut être définie ， Format etc. ， Et fournissez l'image originale à l'arrière-plan.</p>
 <p>FrameSource La structure est la suivante: </p><div class="image">
 <img src="FrameSource.png" alt="FrameSource.png"/>
@@ -122,6 +153,27 @@ Fonctions</h2></td></tr>
 </ul>
 <p>FrameSource Les étapes d'initialisation sont les suivantes (prenez deux sorties comme exemple): </p><div class="fragment"><div class="line"><a class="code" href="structIMPFSChnAttr.html">IMPFSChnAttr</a> fs_chn_attr;</div><div class="line">fs_chn_attr.<a class="code" href="structIMPFSChnAttr.html#a904df5e9bf3fdeb216993071f14e8a08">pixFmt</a> = <a class="code" href="imp__common_8h.html#a41dd79af5cc134fac5e24c98272824c0ade518e7f48c29de6b877a63115d970dc">PIX_FMT_NV12</a>;</div><div class="line">fs_chn_attr.<a class="code" href="structIMPFSChnAttr.html#a73f08a5799791ca5d8238c254440281a">outFrmRateNum</a> = SENSOR_FRAME_RATE;</div><div class="line">fs_chn_attr.<a class="code" href="structIMPFSChnAttr.html#ad3d58bb119f3fa6cd97e93fffd8f984f">outFrmRateDen</a> = 1;</div><div class="line">fs_chn_attr.<a class="code" href="structIMPFSChnAttr.html#aa752418a19c20886f7f9cb4108e588c7">nrVBs</a> = 3;</div><div class="line">fs_chn_attr.<a class="code" href="structIMPFSChnAttr.html#a8f2b5574b53fd0af56143b6fecc50a2e">type</a> = <a class="code" href="group__IMP__FrameSource.html#gga155b3408c5b20686f020a351a56d34a1aa44fd626db4a97c40ffc9f231396d67c">FS_PHY_CHANNEL</a>;</div><div class="line"></div><div class="line">fs_chn_attr.<a class="code" href="structIMPFSChnAttr.html#afda01a1a3dddd00113ccf85285806c8c">crop</a>.<a class="code" href="structIMPFSChnCrop.html#a9c4012720caf98c415eacb924641654f">enable</a> = 1;</div><div class="line">fs_chn_attr.<a class="code" href="structIMPFSChnAttr.html#afda01a1a3dddd00113ccf85285806c8c">crop</a>.<a class="code" href="structIMPFSChnCrop.html#a88d91dcc5ae464d3ef50655fba122014">top</a> = 0;</div><div class="line">fs_chn_attr.<a class="code" href="structIMPFSChnAttr.html#afda01a1a3dddd00113ccf85285806c8c">crop</a>.<a class="code" href="structIMPFSChnCrop.html#a6c373b69e17b80f538897131b128cc03">left</a> = 0;</div><div class="line">fs_chn_attr.<a class="code" href="structIMPFSChnAttr.html#afda01a1a3dddd00113ccf85285806c8c">crop</a>.<a class="code" href="structIMPFSChnCrop.html#a73a6138ee22ef20601976e70ec8c3319">width</a> = 960;</div><div class="line">fs_chn_attr.<a class="code" href="structIMPFSChnAttr.html#afda01a1a3dddd00113ccf85285806c8c">crop</a>.<a class="code" href="structIMPFSChnCrop.html#a0b8051634500f1b10f25758ed390a63d">height</a> = 640;</div><div class="line"></div><div class="line">fs_chn_attr.<a class="code" href="structIMPFSChnAttr.html#a62a17931c70bd2f3b6300d6f2997fb97">scaler</a>.<a class="code" href="structIMPFSChnScaler.html#ab85513e7e9f95dc8dea6ba0e04cdd130">enable</a> = 1;</div><div class="line">fs_chn_attr.<a class="code" href="structIMPFSChnAttr.html#a62a17931c70bd2f3b6300d6f2997fb97">scaler</a>.<a class="code" href="structIMPFSChnScaler.html#a71886a39893389b1fdd8863cffb563c3">outwidth</a> = 320;</div><div class="line">fs_chn_attr.<a class="code" href="structIMPFSChnAttr.html#a62a17931c70bd2f3b6300d6f2997fb97">scaler</a>.<a class="code" href="structIMPFSChnScaler.html#a3751423567c22348b71675abdce55f13">outheight</a> = 240;</div><div class="line"></div><div class="line">ret = <a class="code" href="group__IMP__FrameSource.html#ga997d40cc97abc963f96b2ee963f27220">IMP_FrameSource_CreateChn</a>(0, &amp;fs_chn_attr); <span class="comment">//step.1 créer Channel 0</span></div><div class="line"><span class="keywordflow">if</span> (ret &lt; 0) {</div><div class="line">printf(<span class="stringliteral">&quot;FrameSource_CreateChn(0) error\n&quot;</span>);</div><div class="line"><span class="keywordflow">goto</span> createchn_err;</div><div class="line">}</div><div class="line"></div><div class="line">ret = <a class="code" href="group__IMP__FrameSource.html#ga1c59f4918ceae7635123da1d253b5904">IMP_FrameSource_EnableChn</a>(0); <span class="comment">//step.2 Enable Channel 0，channel 0 Lancer la sortie de l&#39;image </span></div><div class="line"><span class="keywordflow">if</span> (ret &lt; 0) {</div><div class="line">printf(<span class="stringliteral">&quot;EnableChn(0) error\n&quot;</span>;</div><div class="line"><span class="keywordflow">return</span> enablechn_err;</div><div class="line">}</div><div class="line"></div><div class="line"><span class="comment">// Jusque là ，FrameSource Commencez par l&#39;arrière Group Transférer des données </span></div><div class="line"></div><div class="line">ret = <a class="code" href="group__IMP__FrameSource.html#ga9f8c6b444fefa927f0bc02d0031f34d8">IMP_FrameSource_DisableChn</a>(0); <span class="comment">//step.3 Disable channel 0，channel 0 Arrêter la sortie des images </span></div><div class="line"><span class="keywordflow">if</span> (ret &lt; 0) {</div><div class="line">printf(<span class="stringliteral">&quot;FrameSource_DisableChn(0) error\n&quot;</span>);</div><div class="line"><span class="keywordflow">return</span> disablechn_err;</div><div class="line">}</div><div class="line"></div><div class="line">ret = <a class="code" href="group__IMP__FrameSource.html#gae800f0c0ad967bcd2692087d17ebb685">IMP_FrameSource_DestroyChn</a>(0); <span class="comment">//step.4 détruire channel 0</span></div><div class="line"><span class="keywordflow">if</span> (ret &lt; 0) {</div><div class="line">printf(<span class="stringliteral">&quot;FrameSource_DestroyChn error\n&quot;</span>);</div><div class="line"><span class="keywordflow">return</span> destorychn_err;</div><div class="line">}</div></div><!-- fragment --><p> Pour plus de méthodes d'utilisation, veuillez vous référer à Samples </p>
 <h2 class="groupheader">Documentation du type de l'énumération</h2>
+<a id="ga72b578e493beec1e5a3f76b5ef610d0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga72b578e493beec1e5a3f76b5ef610d0d">&#9670;&nbsp;</a></span>IMPFSChnFifoType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__IMP__FrameSource.html#ga72b578e493beec1e5a3f76b5ef610d0d">IMPFSChnFifoType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>rayon FIFO Types de </p>
+<table class="fieldtable">
+<tr><th colspan="2">Valeurs énumérées</th></tr><tr><td class="fieldname"><a id="gga72b578e493beec1e5a3f76b5ef610d0da3da0484c6dcbe7dbd15aeb8ede545156"></a>FIFO_CACHE_PRIORITY&#160;</td><td class="fielddoc"><p>FIFO Cache prioritaire ， Puis sortez les données </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga72b578e493beec1e5a3f76b5ef610d0dad50493f30b5d73b2478eb0b658d8b65f"></a>FIFO_DATA_PRIORITY&#160;</td><td class="fielddoc"><p>FIFO Données de sortie prioritaires ， Puis cache </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <a id="ga155b3408c5b20686f020a351a56d34a1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga155b3408c5b20686f020a351a56d34a1">&#9670;&nbsp;</a></span>IMPFSChnType</h2>
 
@@ -171,19 +223,20 @@ Fonctions</h2></td></tr>
 <p>Créer une cha je ne</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">chnNum</td><td>numéro de canal </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">chnNum</td><td>Le numéro de canal </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">chnAttr</td><td>Pointeur de structure d'attribut de canal</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Valeurs retournées</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>succès </td></tr>
-    <tr><td class="paramname">Échec</td><td>différent de zéro, retour du code d'erreur</td></tr>
+    <tr><td class="paramname">0</td><td>Succès </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec ， Renvoyer le code d'erreur</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarques</dt><dd>Créez un canal pour fournir une source de données pour le module principal; Vous pouvez définir les attributs pertinents du canal ， Inclure: largeur de l'image ， Hauteur de l'image ， Format d'image ， La fréquence d'images de sortie du canal , Cache buf numéro ， Attributs de recadrage et de zoom. <br />
+<dl class="section remark"><dt>Remarques</dt><dd>Créer une cha je ne ， Fournir des sources de données pour les modules back-end ; <br />
+Vous pouvez définir les attributs pertinents du canal ， Inclure: largeur de l'image ， Hauteur de l'image ， Format d'image ， La fréquence d'images de sortie du canal , Cache buf numéro ， Attributs de recadrage et de zoom. <br />
 pour T10， rayon 0 [[[ 1 Ne peut être défini que comme canal physique ， rayon 2,3 Peut uniquement être défini comme canal d'extension.</dd></dl>
 <dl class="section attention"><dt>Attention</dt><dd>non. </dd></dl>
 
@@ -219,7 +272,7 @@ pour T10， rayon 0 [[[ 1 Ne peut être défini que comme canal physique ， ray
   </dd>
 </dl>
 <dl class="section remark"><dt>Remarques</dt><dd>Détruire le canal</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>Si le programme a appelé IMP_FrameSource_EnableChn, vous devez appeler IMP_FrameSource_DisableChn avant d'utiliser cette fonction. </dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Si le programme a appelé IMP_FrameSource_EnableChn， Doit appeler IMP_FrameSource_DisableChn après ， Utilisez à nouveau cette fonction. </dd></dl>
 
 </div>
 </div>
@@ -287,7 +340,7 @@ pour T10， rayon 0 [[[ 1 Ne peut être défini que comme canal physique ， ray
   </dd>
 </dl>
 <dl class="section remark"><dt>Remarques</dt><dd>non</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>Avant d'utiliser cette fonction, vous devez vous assurer que le canal activé a été créé. </dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Avant d'utiliser cette fonction ， Il faut s'assurer que le canal activé a été créé . </dd></dl>
 
 </div>
 </div>
@@ -331,8 +384,98 @@ pour T10， rayon 0 [[[ 1 Ne peut être défini que comme canal physique ， ray
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarques</dt><dd>Les attributs pertinents du canal peuvent être obtenus, notamment: la largeur de l'image, la hauteur de l'image, le format de l'image, la fréquence d'images de sortie du canal, le nombre de tampons tampons, les attributs de rognage et de mise à l'échelle.</dd></dl>
+<dl class="section remark"><dt>Remarques</dt><dd>Obtenez les attributs pertinents de la cha je ne ， Inclure: largeur de l'image ， Hauteur de l'image ， Format d'image ， La fréquence d'images de sortie du canal , Cache buf numéro ， Propriétés de recadrage et de zoom .</dd></dl>
 <dl class="section attention"><dt>Attention</dt><dd>non </dd></dl>
+
+</div>
+</div>
+<a id="ga7e5b70910504171745af254760d3d0d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7e5b70910504171745af254760d3d0d5">&#9670;&nbsp;</a></span>IMP_FrameSource_GetChnFifoAttr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">IMP_FrameSource_GetChnFifoAttr </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>chnNum</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structIMPFSChnFifoAttr.html">IMPFSChnFifoAttr</a> *&#160;</td>
+          <td class="paramname"><em>attr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Obtenir le tampon maximal du canal FIFO Les attributs</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">chnNum</td><td>Le numéro de canal </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">attr</td><td>FIFO Les attributs .</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Succès </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec ， Renvoyer le code d'erreur</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>non .</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Lors de son utilisation, vous devez utiliser la fonction IMP_FrameSource_CreateChn après . </dd></dl>
+
+</div>
+</div>
+<a id="gad2c2ffbfcc5c519b2454f83eeacf17cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad2c2ffbfcc5c519b2454f83eeacf17cb">&#9670;&nbsp;</a></span>IMP_FrameSource_GetDelay()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">IMP_FrameSource_GetDelay </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>chnNum</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>cnt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Obtenez le nombre d'images retardées</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">chnNum</td><td>Le numéro de canal </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">cnt</td><td>retard ， Cadre de l'unité</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Succès </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec ， Renvoyer le code d'erreur</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>non .</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Lors de son utilisation, vous devez utiliser la fonction IMP_FrameSource_CreateChn après . </dd></dl>
 
 </div>
 </div>
@@ -365,7 +508,7 @@ pour T10， rayon 0 [[[ 1 Ne peut être défini que comme canal physique ， ray
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">chnNum</td><td>Le numéro de canal </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">image</td><td>capturée par cadre</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">frame</td><td>Image acquise</td></tr>
   </table>
   </dd>
 </dl>
@@ -380,7 +523,7 @@ pour T10， rayon 0 [[[ 1 Ne peut être défini que comme canal physique ， ray
 <ol type="1">
 <li>Cette interface peut obtenir les informations d'image vidéo du canal spécifié.</li>
 <li>Cette interface n'est valide qu'après activation du canal.</li>
-<li>Prend en charge plusieurs acquisitions, puis libère ， Cependant, il est recommandé de coupler les interfaces d'acquisition et de libération.</li>
+<li>Prend en charge plusieurs acquisitions, puis libère ， Cependant, il est recommandé que l'interface d'acquisition et de libération soit associée pour l'utilisation.</li>
 <li>Le délai d'expiration par défaut de cette interface est 2s， lequel est 2s Je n'ai toujours pas l'image à l'intérieur ， Le délai d'expiration revient.</li>
 </ol>
 <dl class="section attention"><dt>Attention</dt><dd>non . </dd></dl>
@@ -403,7 +546,7 @@ pour T10， rayon 0 [[[ 1 Ne peut être défini que comme canal physique ， ray
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>profondeur</em>&#160;</td>
+          <td class="paramname"><em>depth</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -416,7 +559,7 @@ pour T10， rayon 0 [[[ 1 Ne peut être défini que comme canal physique ， ray
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">chnNum</td><td>Le numéro de canal </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">profondeur</td><td>La valeur de profondeur maximale de l'image obtenue</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">depth</td><td>La valeur de profondeur maximale de l'image acquise</td></tr>
   </table>
   </dd>
 </dl>
@@ -428,6 +571,122 @@ pour T10， rayon 0 [[[ 1 Ne peut être défini que comme canal physique ， ray
   </dd>
 </dl>
 <dl class="section remark"><dt>Remarques</dt><dd>non .</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>non . </dd></dl>
+
+</div>
+</div>
+<a id="ga69d580c400383dff9270891630091be0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga69d580c400383dff9270891630091be0">&#9670;&nbsp;</a></span>IMP_FrameSource_GetMaxDelay()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">IMP_FrameSource_GetMaxDelay </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>chnNum</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>maxcnt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Obtenez le nombre maximum d'images retardées</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">chnNum</td><td>Le numéro de canal </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">maxcnt</td><td>Délai maximum ， Cadre de l'unité</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Succès </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec ， Renvoyer le code d'erreur</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>non .</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Lors de son utilisation, vous devez utiliser la fonction IMP_FrameSource_CreateChn après . </dd></dl>
+
+</div>
+</div>
+<a id="gae91d238a128660f9b47129b1392c5b92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae91d238a128660f9b47129b1392c5b92">&#9670;&nbsp;</a></span>IMP_FrameSource_GetTimedFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">IMP_FrameSource_GetTimedFrame </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>chnNum</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structIMPFrameTimestamp.html">IMPFrameTimestamp</a> *&#160;</td>
+          <td class="paramname"><em>framets</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>block</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>framedata</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structIMPFrameInfo.html">IMPFrameInfo</a> *&#160;</td>
+          <td class="paramname"><em>frame</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Obtenir l'image à l'heure spécifiée</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">chnNum</td><td>Le numéro de canal </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">framets</td><td>Informations sur l'heure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">block</td><td>Propriétés de blocage </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">framedata</td><td>Copiez le pointeur mémoire de l'image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">frame</td><td>Obtenir des informations sur l'image</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Succès </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec ， Renvoyer le code d'erreur</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd></dd></dl>
+<ol type="1">
+<li>Cette interface peut obtenir les informations d'image vidéo du canal spécifié à l'heure spécifiée.</li>
+<li>Cette interface n'est valide qu'après activation du canal.</li>
+<li>Cette interface doit d'abord être configurée IMP_FrameSource_SetMaxDelay avec IMP_FrameSource_SetDelay .</li>
+</ol>
 <dl class="section attention"><dt>Attention</dt><dd>non . </dd></dl>
 
 </div>
@@ -461,7 +720,7 @@ pour T10， rayon 0 [[[ 1 Ne peut être défini que comme canal physique ， ray
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">chnNum</td><td>Le numéro de canal </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">le</td><td>cadre libère l'image acquise</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">frame</td><td>Libérer l'image acquise</td></tr>
   </table>
   </dd>
 </dl>
@@ -517,8 +776,98 @@ pour T10， rayon 0 [[[ 1 Ne peut être défini que comme canal physique ， ray
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarques</dt><dd>Vous pouvez définir les attributs pertinents du canal, notamment: la largeur de l'image, la hauteur de l'image, le format de l'image, la fréquence d'images de sortie du canal, le numéro de tampon du tampon, les attributs de recadrage et de zoom.</dd></dl>
+<dl class="section remark"><dt>Remarques</dt><dd>Vous pouvez définir les attributs pertinents du canal ， Inclure: largeur de l'image ， Hauteur de l'image ， Format d'image ， La fréquence d'images de sortie du canal , Cache buf numéro ， Propriétés de recadrage et de zoom .</dd></dl>
 <dl class="section attention"><dt>Attention</dt><dd>non </dd></dl>
+
+</div>
+</div>
+<a id="ga500c1dbb7859b1be6d9d7315b6dc5e2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga500c1dbb7859b1be6d9d7315b6dc5e2c">&#9670;&nbsp;</a></span>IMP_FrameSource_SetChnFifoAttr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">IMP_FrameSource_SetChnFifoAttr </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>chnNum</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structIMPFSChnFifoAttr.html">IMPFSChnFifoAttr</a> *&#160;</td>
+          <td class="paramname"><em>attr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Définir la mémoire tampon maximale du canal FIFO Les attributs</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">chnNum</td><td>Le numéro de canal </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">attr</td><td>FIFO Les attributs ， comprendre FIFO Profondeur maximale ， Cadre de l'unité FIFO Types de .</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Succès </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec ， Renvoyer le code d'erreur</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>non .</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Lors de son utilisation, vous devez utiliser la fonction IMP_FrameSource_CreateChn contre IMP_FrameSource_EnableChn Appeler entre . </dd></dl>
+
+</div>
+</div>
+<a id="gaa66e9bd2b997815812fed85f07e9e381"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa66e9bd2b997815812fed85f07e9e381">&#9670;&nbsp;</a></span>IMP_FrameSource_SetDelay()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">IMP_FrameSource_SetDelay </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>chnNum</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>cnt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Définir le nombre d'images retardées</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">chnNum</td><td>Le numéro de canal </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cnt</td><td>retard ， Cadre de l'unité</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Succès </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec ， Renvoyer le code d'erreur</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>non .</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Lors de son utilisation, vous devez utiliser la fonction IMP_FrameSource_SetMaxDelay Appeler après . </dd></dl>
 
 </div>
 </div>
@@ -550,8 +899,8 @@ pour T10， rayon 0 [[[ 1 Ne peut être défini que comme canal physique ， ray
 <p>Définissez la profondeur maximale de l'image pouvant être obtenue</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">chnNum</td><td>numéro de canal </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">profondeur</td><td>Définit la valeur de profondeur maximale de l'image pouvant être obtenue</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">chnNum</td><td>Le numéro de canal </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">depth</td><td>Définissez la valeur de profondeur maximale de l'image pouvant être obtenue</td></tr>
   </table>
   </dd>
 </dl>
@@ -571,7 +920,129 @@ pour T10， rayon 0 [[[ 1 Ne peut être défini que comme canal physique ， ray
 <li>Le système mettra automatiquement à jour les données d'image les plus anciennes que l'utilisateur n'a pas encore acquises ， Assurez-vous que la file d'attente d'images mises en cache est la dernière image. ， L'image résultante peut ne pas être continue.</li>
 <li>Cette fonction peut appeler la localisation ， Il n'y a aucune exigence.</li>
 </ol>
-<dl class="section attention"><dt>Attention</dt><dd>non. </dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>non . </dd></dl>
+
+</div>
+</div>
+<a id="gacc51d528d7299e3f34db428cc5653f9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacc51d528d7299e3f34db428cc5653f9e">&#9670;&nbsp;</a></span>IMP_FrameSource_SetMaxDelay()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">IMP_FrameSource_SetMaxDelay </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>chnNum</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>maxcnt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Définir le numéro de trame de retard maximum</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">chnNum</td><td>Le numéro de canal </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">maxcnt</td><td>Délai maximum ， Cadre de l'unité</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Succès </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec ， Renvoyer le code d'erreur</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>non .</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Lors de son utilisation, vous devez utiliser la fonction IMP_FrameSource_CreateChn contre IMP_FrameSource_EnableChn Appeler entre . </dd></dl>
+
+</div>
+</div>
+<a id="ga00eb0fb16264f737157c49acbfa12d50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga00eb0fb16264f737157c49acbfa12d50">&#9670;&nbsp;</a></span>IMP_FrameSource_SnapFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">IMP_FrameSource_SnapFrame </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>chnNum</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="imp__common_8h.html#a41dd79af5cc134fac5e24c98272824c0">IMPPixelFormat</a>&#160;</td>
+          <td class="paramname"><em>fmt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>framedata</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structIMPFrameInfo.html">IMPFrameInfo</a> *&#160;</td>
+          <td class="paramname"><em>frame</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Obtenir une image</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">chnNum</td><td>Le numéro de canal </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fmt</td><td>Format d'image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">width</td><td>Largeur de l'image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">height</td><td>Hauteur de l'image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">framedata</td><td>Copiez le pointeur mémoire de l'image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">frame</td><td>Obtenir des informations sur l'image</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Succès </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec ， Renvoyer le code d'erreur</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd></dd></dl>
+<ol type="1">
+<li>Cette interface peut obtenir une trame d'images dans un format et une taille spécifiés; le format actuel prend en charge NV12，YUYV422 ; La taille est la même que la résolution du canal; pas besoin d'appeler IMP_FrameSource_SetFrameDepth interface .</li>
+<li>Cette interface n'est valide qu'après activation du canal.</li>
+</ol>
+<dl class="section attention"><dt>Attention</dt><dd>non . </dd></dl>
 
 </div>
 </div>

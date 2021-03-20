@@ -7,41 +7,30 @@ title: Kreuzzusammenstellung
 ---
 
 
+Die Transit-Compilations-Tools sind in der Programmierung_medio/toolchain.
+Ils ont été compilés pour debian buster x64.
 
-Quellen:
- * <https://znanev.github.io/Cross-compile-tools-for-Ingenic-T20/>  
+
+
+Vergleichsbibliotheken sind in der Täglich_medio/lib
+
+
+
+Inklusive ist in der Programmierung_medio/include.
+
+
+
+Wenn Sie eine Bibliothek wiederherstellen müssen, inspirieren Sie die folgenden Skripts:
+* programmiert_medio/fontoj/01-buildssl.sh , pour la librairie openssl.
+* programada_Umwelt / Quellen / 02-buildive.sh, für eine Live555-Bibliothek.
+* Programada_medio/fontoj/03-pcre.sh , pour la librairie pcre.
+
+
+
+
+Wenn Sie jemals die _«toolchain»_wieder auftauchen müssen, können Sie die folgenden Orte überprüfen: (° 3 ° 4 ° 4 °. Für Ingenic-T20/>  
  * <https://github.com/Dafang-Hacks/Main>
 
 
 
-
-# Installation von Compilern:
-## Option 1: Mit Docker (schneller zu installieren, langsamer zu starten)
-
-```
-sudo apt install docker.io
-sudo usermod -aG docker mia_uzanto
- se déconnecter puis se reconnecter
-mkdir ~/dafang
-cd ~/dafang
-docker run --rm -ti -v $(pwd):/root/ daviey/dafang-cross-compile:latest
-```
-
-## Option 2: lokal (länger zu installieren, schneller auszuführen)
-
-```
-sudo apt install build-essential git gcc-mips-linux-gnu autoconf libtool cmake ftp-upload u-boot-tools
-mkdir -p ~/dafang/Main/mips-gcc472-glibc216-64bit
-ln -s /usr/bin ~/dafang/Main/mips-gcc472-glibc216-64bit
-```
-
-# Zusammenstellung von Bibliotheken und _v4l2rtspserver-master_
-
-```
-git clone --recurse-submodules https://github.com/Dafang-Hacks/Main.git
-cd Main
-./compile_libraries.sh
-cd v4l2rtspserver-master
-./compile.sh
-```
 

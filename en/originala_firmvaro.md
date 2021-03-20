@@ -8,17 +8,19 @@ title: 'Original firmware'
 
 # open ports
 
-TCP: 80(http), 443(http too!), 554(rtsp), 8004, 8006, 9527(telnet), 9999
-UDP: 67(dhcp), 3702, 8002, 39642
+TCP: 80(HTTP), 443(HTP too!), 554(RTSP), 8004, 8006, 9527(, 9999  
+UDP: 67(DHCP), 3702, 8002, 39642 (° 3 ° 3
 
-port 80: http
-http: // IP: login: _admin:_, password: _admin_
+Port 80: HTTP  
+http: // IP: login: _admin:_, Password: _admin_
 
-port 443: http
-http: // IP: 443: login: _admin:_, password: _admin_
+Port 443: HTTP  
+http: // IP: 443: login: _admin:_, Password: _admin_
 
-port 554: rtsp
-* main stream: 
+Port 554: RTSP  
+* Main current: 
+
+
 
     ```
     IP=xxx.xxx.xxx.xxx
@@ -47,10 +49,10 @@ port 8006:? , opened by jco_server
 
 
 
-port 9527: telnet
-`telnetd IP 9527` : login: _root_, password: _jco66688_, accessible for 5 minutes, closed after.
-to not be disconnected after 5 minutes: `killall -9 auto_run.sh`
-to stop jco_server : 
+Port 9527: Telnet  
+`telnetd IP 9527` : Login: _root_, Password: _jco66688_, accessible for 5 minutes, closed after.  
+Not be disconnected after 5 minutes: `killall -9 auto_run.sh`  (° 4 ° 4
+To stop JCO_server : 
  
  
 

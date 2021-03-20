@@ -7,41 +7,30 @@ title: Кросс-компиляция
 ---
 
 
+Инструменты Transit Compilations в программировании_medio/toolchain.
+Ils ont été compilés pour debian buster x64.
 
-источники:
- * <https://znanev.github.io/Cross-compile-tools-for-Ingenic-T20/>  
+
+
+Сравнительные библиотеки в программах_medio/lib
+
+
+
+Включает в себя программирование_medio/include.
+
+
+
+Если вам нужно восстановить библиотеку, вдохновляйте следующие скрипты:
+* , запрограммированные_medio/fontoj/01-buildssl.sh , pour la librairie openssl.
+* programada_Среда / источники / 02-buildive.sh, для библиотеки Live555.
+* Программадада_medio/fontoj/03-pcre.sh , pour la librairie pcre.
+
+
+
+
+Если вам когда-нибудь понадобится вновь появиться _«toolchain»_, вы можете проверить следующие места: (° 3 ° 4 ° 4 °. Для-ergenic-T20/>  
  * <https://github.com/Dafang-Hacks/Main>
 
 
 
-
-# установка компиляторов:
-## вариант 1: с докером (быстрее устанавливается, медленнее запускается)
-
-```
-sudo apt install docker.io
-sudo usermod -aG docker mia_uzanto
- se déconnecter puis se reconnecter
-mkdir ~/dafang
-cd ~/dafang
-docker run --rm -ti -v $(pwd):/root/ daviey/dafang-cross-compile:latest
-```
-
-## вариант 2: локально (дольше устанавливать, быстрее выполнять)
-
-```
-sudo apt install build-essential git gcc-mips-linux-gnu autoconf libtool cmake ftp-upload u-boot-tools
-mkdir -p ~/dafang/Main/mips-gcc472-glibc216-64bit
-ln -s /usr/bin ~/dafang/Main/mips-gcc472-glibc216-64bit
-```
-
-# компиляция библиотек и _v4l2rtspserver-master_
-
-```
-git clone --recurse-submodules https://github.com/Dafang-Hacks/Main.git
-cd Main
-./compile_libraries.sh
-cd v4l2rtspserver-master
-./compile.sh
-```
 

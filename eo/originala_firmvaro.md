@@ -8,17 +8,18 @@ title: 'Originala firmvaro'
 
 # malfermaj havenoj
 
-TCP: 80(http), 443(http ankaŭ!), 554(rtsp), 8004, 8006, 9527(telnet), 9999
-UDP: 67(dhcp), 3702, 8002, 39642
+TCP: 80(http), 443(HTP ankaŭ!), 554(RTSP), 8004, 8006, 9527(Telnetd), 9999  
+UDP: 67(DHCP), 3702, 8002, 39642
 
-haveno 80: http
-http: // IP: ensaluto: _admin:_, pasvorto: _admin_
+Haveno 80: HTTP  
+http: // ip: ensaluto: _admin:_, pasvorto: _admin_
 
-haveno 443: http
-http: // IP: 443: ensaluto: _admin:_, pasvorto: _admin_
+Haveno 443: HTTP  
+http: // ip: 443: ensaluto: _admin:_, pasvorto: _admin_
 
-haveno 554: rtsp
-* ĉefa rivereto: 
+Haveno 554: RTSP  
+* Ĉefa fluo: 
+
 
     ```
     IP=xxx.xxx.xxx.xxx
@@ -43,10 +44,10 @@ haveno 8006 :? , malfermita de jco_server
 
 
 
-haveno 9527: telnet
-`telnetd IP 9527` : ensaluto: _root_, pasvorto: _jco66688_, alirebla dum 5 minutoj, fermita post.
-por ne esti malkonektita post 5 minutoj: `killall -9 auto_run.sh`
-por haltigi jco_server : 
+Haveno 9527: Telnet  
+`telnetd IP 9527` : Ensalutu: _root_, pasvorto: _jco66688_, alirebla dum 5 minutoj, fermiĝis post.  
+Ne esti malkonektita post 5 minutoj: `killall -9 auto_run.sh`  
+Ĉesi JCO_server : 
  
 
 ```

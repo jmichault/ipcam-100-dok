@@ -8,17 +8,19 @@ title: 'Firmware original'
 
 # puertos abiertos
 
-TCP: 80(http), 443(http también.), 554(rtsp), 8004, 8006, 9527(telnet), 9999
-UDP: 67(dhcp), 3702, 8002, 39642
+TCP: 80(HTTP), 443(¡HTP también!), 554(RTSP), 8004, 8006, 9527(, 9999  
+UDP: 67(DHCP), 3702, 8002, 39642 (° 3 ° 3
 
-puerto 80: http
-http: // IP: inicio de sesión: _admin:_, contraseña: _admin_
+Puerto 80: http  
+http: // IP: Iniciar sesión: _admin:_, contraseña: _admin_
 
-puerto 443: http
-http: // IP: 443: inicio de sesión: _admin:_, contraseña: _admin_
+Puerto 443: http  
+http: // IP: 443: Iniciar sesión: _admin:_, contraseña: _admin_
 
-puerto 554: rtsp
-* flujo principal: 
+Puerto 554: RTSP  
+* Corriente principal: 
+
+
 
     ```
     IP=xxx.xxx.xxx.xxx
@@ -47,10 +49,10 @@ puerto 8006 :? , abierto por jco_server
 
 
 
-puerto 9527: telnet
-`telnetd IP 9527` : inicio de sesión: _root_, contraseña: _jco66688_, accesible durante 5 minutos, cerrado después.
-para no desconectarse después de 5 minutos: `killall -9 auto_run.sh`
-para detener jco_server : 
+Puerto 9527: Telnet  
+`telnetd IP 9527` : Iniciar sesión: _root_, contraseña: _jco66688_, accesible durante 5 minutos, cerrado después.  
+No se desconecte después de 5 minutos: `killall -9 auto_run.sh`  (° 4 ° 4
+Para detener a JCO_server : 
  
  
 

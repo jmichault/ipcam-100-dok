@@ -17,19 +17,19 @@ extern "C"
 #endif /* __cplusplus */
 
 /**
- * @file 
+ * @file
  * ISP Fichier d'en-tête du module 
  */
 
 /**
  * @defgroup IMP_ISP
- * @ingroup lutin
- * @brief Unité de traitement du signal d'image. 
+ * @ingroup imp
+ * @brief Unité de traitement du signal d'image. Sensor Enregistrement, ajout, suppression, etc. 
  *
  * ISP Le module n'a rien à voir avec le flux de données ， Pas besoin de continuer Bind， S'applique uniquement aux réglages des paramètres d'effet et Sensor contrôler. 
  *
  * ISP Les étapes d'activation du module sont les suivantes: 
- * @code 
+ * @code
  * int ret = 0;
  * ret = IMP_ISP_Open(); // step.1 créer ISP Module 
  * if(ret < 0){
@@ -69,9 +69,9 @@ extern "C"
  *
  * Pour l'interface de débogage, veuillez vous référer à ISP Documentation de l'interface de débogage. //step.5 Débogage des effets. 
  *
- * @endcode 
+ * @endcode
  * ISP Les étapes de désinstallation du module sont les suivantes: 
- * @code 
+ * @code
  * int ret = 0;
  * IMPSensorInfo sensor;
  * sensor.name = "xxx";
@@ -98,7 +98,7 @@ extern "C"
  * printf("Failed to disable sensor\n");
  * return -1;
  * }
- * @endcode 
+ * @endcode
  * Pour plus de méthodes d'utilisation, veuillez vous référer à Samples
  * @{
  */
@@ -112,7 +112,7 @@ typedef enum {
 } IMPSensorControlBusType;
 
 /**
-* Le type de bus de contrôle de la caméra est I2C Temps ， Structure des paramètres à configurer 
+* Le type de bus de contrôle de la caméra est I2C Temps ， La structure des paramètres à configurer 
 */
 typedef struct {
 	char type[20];		/**< I2C Nom de l'appareil ， Doit être conduit avec la caméra struct i2c_device_id dans name Les variables sont cohérentes */
@@ -120,7 +120,7 @@ typedef struct {
 	int i2c_adapter_id;	/**< I2C Manette */
 } IMPI2CInfo;
 /**
-* Le type de bus de contrôle de la caméra est SPI Temps ， Structure des paramètres à configurer 
+* Le type de bus de contrôle de la caméra est SPI Temps ， La structure des paramètres à configurer 
 */
 typedef struct {
 	char modalias[32];	/**< SPI Nom de l'appareil ， Doit être conduit avec la caméra struct spi_device_id dans name Les variables sont cohérentes */
@@ -143,23 +143,23 @@ typedef struct {
 } IMPSensorInfo;
 
 /**
- * @fn int IMP_ISP_Open (vide)
+ * @fn int IMP_ISP_Open(void)
  *
  * allumer ISP Module 
  *
- * @param non
+ * @param non 
  *
- * @retval 0 succès
- * @retval Échec différent de zéro, retour du code d'erreur
+ * @retval 0 Succès 
+ * @retval non- 0 échec ， Renvoyer le code d'erreur 
  *
- * @remark Créez un module ISP, préparez-vous à ajouter un capteur au FAI et activez la fonction de débogage d'effet ISP.
+ * @remark créer ISP Module ， Prêt à ISP Ajouter à sensor， Et allumer ISP Fonction de débogage d'effet. 
  *
- * @attention Cette fonction doit être appelée avant d'ajouter le capteur.
+ * @attention Cette fonction doit être ajoutée sensor A été appelé avant. 
  */
 int IMP_ISP_Open(void);
 
 /**
- * @fn int IMP_ISP_Close (vide)
+ * @fn int IMP_ISP_Close(void)
  *
  * fermer ISP Module 
  *
@@ -168,46 +168,46 @@ int IMP_ISP_Open(void);
  * @retval 0 Succès 
  * @retval non- 0 échec ， Renvoyer le code d'erreur 
  *
- * @remark Module ISP, le module ISP ne fonctionne plus.
+ * @remark ISP Module ，ISP Le module ne fonctionne plus. 
  *
- * @attention Avant d'utiliser cette fonction, vous devez vous assurer que toutes les fonctions de débogage FrameSource et d'effets ont été fermées et que tous les capteurs ont été désinstallés.
+ * @attention Avant d'utiliser cette fonction ， Doit garantir tout FrameSource Et la fonction de débogage d'effet a été désactivée ， tout sensor Ont été désinstallés .
  */
 int IMP_ISP_Close(void);
 
 /**
- * @fn int IMP_ISP_AddSensor (IMPSensorInfo * pinfo)
+ * @fn int IMP_ISP_AddSensor(IMPSensorInfo *pinfo)
  *
  * ajoute un sensor， Habitué ISP Le module fournit la source de données 
  *
- * @param[in] pinfo Besoin d'ajouter un pointeur d'informations sur le capteur
+ * @param[in] pinfo Besoin d'ajouter sensor Pointeur d'information 
  *
  * @retval 0 Succès 
  * @retval non- 0 échec ， Renvoyer le code d'erreur 
  *
- * @remark Ajoutez une caméra pour fournir des images.
+ * @remark Ajouter une caméra ， Utilisé pour fournir des images. 
  *
- * @attention Avant d'utiliser cette fonction, vous devez vous assurer que le pilote de l'appareil photo a été enregistré dans le noyau.
+ * @attention Avant d'utiliser cette fonction ， Il faut s'assurer que le pilote de la caméra a été enregistré dans le noyau .
  */
 int IMP_ISP_AddSensor(IMPSensorInfo *pinfo);
 
 /**
- * @fn int IMP_ISP_DelSensor (IMPSensorInfo * pinfo)
+ * @fn int IMP_ISP_DelSensor(IMPSensorInfo *pinfo)
  *
  * Supprimer un sensor
  *
- * @param[in] pinfo doit supprimer le pointeur d'information du capteur
+ * @param[in] pinfo Doit être supprimé sensor Pointeur d'information 
  *
  * @retval 0 Succès 
  * @retval non- 0 échec ， Renvoyer le code d'erreur 
  *
- * @remark Supprimer une caméra.
+ * @remark Supprimer une caméra. 
  *
- * @attention Avant d'utiliser cette fonction, vous devez vous assurer que la caméra a cessé de fonctionner, c'est-à-dire que la fonction IMP_ISP_DisableSensor est appelée.
+ * @attention Avant d'utiliser cette fonction ， Il faut s'assurer que la caméra a cessé de fonctionner ， Appelé IMP_ISP_DisableSensor fonction .
  */
 int IMP_ISP_DelSensor(IMPSensorInfo *pinfo);
 
 /**
- * @fn int IMP_ISP_EnableSensor (void)
+ * @fn int IMP_ISP_EnableSensor(void)
  *
  * Activer un sensor
  *
@@ -216,14 +216,14 @@ int IMP_ISP_DelSensor(IMPSensorInfo *pinfo);
  * @retval 0 Succès 
  * @retval non- 0 échec ， Renvoyer le code d'erreur 
  *
- * @remark Permettez à une caméra de commencer à transmettre des images, afin que FrameSource puisse produire des images et que le FAI puisse effectuer le débogage des effets.
+ * @remark Activer une caméra ， Faites-le commencer à transférer des images , tel FrameSource Pour sortir l'image ， à la fois ISP Ce n'est qu'alors que l'effet peut être débogué. 
  *
- * @attention Avant d'utiliser cette fonction, vous devez vous assurer que la caméra a été ajoutée au module ISP.
+ * @attention Avant d'utiliser cette fonction ， Il faut s'assurer que la caméra a été ajoutée ISP Module .
  */
 int IMP_ISP_EnableSensor(void);
 
 /**
- * @fn int IMP_ISP_DisableSensor (void)
+ * @fn int IMP_ISP_DisableSensor(void)
  *
  * Désactiver un sensor
  *
@@ -232,43 +232,43 @@ int IMP_ISP_EnableSensor(void);
  * @retval 0 Succès 
  * @retval non- 0 échec ， Renvoyer le code d'erreur 
  *
- * @remark N'activez pas une caméra pour arrêter la transmission d'image, FrameSource ne peut donc pas produire d'images et le FAI ne peut pas effectuer le débogage des effets.
+ * @remark Désactiver une caméra ， Arrêter de transmettre des images , tel FrameSource Impossible de sortir l'image ， à la fois ISP L'effet ne peut pas non plus être débogué. 
  *
- * @attention Avant d'utiliser cette fonction, vous devez vous assurer que toutes les FrameSources ont arrêté de sortir des images et que le débogage d'effet est également à l'état désactivé.
+ * @attention Avant d'utiliser cette fonction ， Doit garantir tout FrameSource Ont arrêté de sortir des images ， Dans le même temps, le débogage des effets est également à l'état désactivé .
  */
 int IMP_ISP_DisableSensor(void);
 
 /**
- * @fn int IMP_ISP_SetSensorRegister (uint32_t reg, valeur uint32_t)
+ * @fn int IMP_ISP_SetSensorRegister(uint32_t reg, uint32_t value)
  *
  * Installation sensor La valeur d'un registre 
  *
- * @param[in] adresse de registre d'enregistrement
+ * @param[in] reg Adresse d'inscription 
  *
- * @param[in] valeur du registre valeur
+ * @param[in] value Enregistrer la valeur 
  *
  * @retval 0 Succès 
  * @retval non- 0 échec ， Renvoyer le code d'erreur 
  *
- * @remark Vous pouvez régler directement la valeur d'un registre de capteur.
+ * @remark Vous pouvez en définir un directement sensor La valeur du registre. 
  *
- * @attention Avant d'utiliser cette fonction, vous devez vous assurer que la caméra a été activée.
+ * @attention Avant d'utiliser cette fonction ， Il faut s'assurer que la caméra a été activée .
  */
 int IMP_ISP_SetSensorRegister(uint32_t reg, uint32_t value);
 
 /**
- * @fn int IMP_ISP_GetSensorRegister (uint32_t reg, uint32_t * valeur)
+ * @fn int IMP_ISP_GetSensorRegister(uint32_t reg, uint32_t *value)
  *
  * Obtenir sensor La valeur d'un registre 
  *
  * @param[in] reg Adresse d'inscription 
  *
- * @param[in] pointeur de valeur pour enregistrer la valeur
+ * @param[in] value Pointeur pour enregistrer la valeur 
  *
  * @retval 0 Succès 
  * @retval non- 0 échec ， Renvoyer le code d'erreur 
  *
- * @remark Vous pouvez obtenir directement la valeur d'un registre de capteur.
+ * @remark Vous pouvez en obtenir un directement sensor La valeur du registre. 
  *
  * @attention Avant d'utiliser cette fonction ， Il faut s'assurer que la caméra a été activée .
  */
@@ -283,11 +283,12 @@ typedef enum {
 typedef enum {
 	IMPISP_TUNING_OPS_TYPE_AUTO,			/**< Le fonctionnement du module est en mode automatique */
 	IMPISP_TUNING_OPS_TYPE_MANUAL,			/**< Le fonctionnement de ce module est en mode manuel */
+	IMPISP_TUNING_OPS_TYPE_RANGE, /**< Le fonctionnement de ce module est le mode de plage de réglage */
 	IMPISP_TUNING_OPS_TYPE_BUTT,			/**< Utilisé pour juger de la validité des paramètres ， La taille du paramètre doit être inférieure à cette valeur */
 } IMPISPTuningOpsType;
 
 /**
- * @fn int IMP_ISP_EnableTuning (void)
+ * @fn int IMP_ISP_EnableTuning(void)
  *
  * Permettre ISP Fonction de débogage d'effet 
  *
@@ -296,12 +297,12 @@ typedef enum {
  * @retval 0 Succès 
  * @retval non- 0 échec ， Renvoyer le code d'erreur 
  *
- * @attention Avant d'utiliser cette fonction, vous devez vous assurer que IMP_ISP_EnableSensor est exécuté et renvoie correctement.
+ * @attention Avant d'utiliser cette fonction ， Doit garantir IMP_ISP_EnableSensor A été exécuté et renvoyé avec succès .
  */
 int IMP_ISP_EnableTuning(void);
 
 /**
- * @fn int IMP_ISP_DisableTuning (void)
+ * @fn int IMP_ISP_DisableTuning(void)
  *
  * Désactiver ISP Fonction de débogage d'effet 
  *
@@ -310,38 +311,38 @@ int IMP_ISP_EnableTuning(void);
  * @retval 0 Succès 
  * @retval non- 0 échec ， Renvoyer le code d'erreur 
  *
- * @attention Avant d'utiliser cette fonction, vous devez vous assurer que le débogage d'effet ISP n'est pas activé (c'est-à-dire que cette fonction est appelée) avant que le capteur ne soit désactivé.
+ * @attention Avant d'utiliser cette fonction ， Il faut s'assurer que le sensor antérieur à ， Désactiver d'abord ISP Débogage d'effet (c'est-à-dire, appelez cette fonction) .
  */
 int IMP_ISP_DisableTuning(void);
 
 /**
- * @fn int IMP_ISP_Tuning_SetSensorFPS (uint32_t fps_num, uint32_t fps_den)
+ * @fn int IMP_ISP_Tuning_SetSensorFPS(uint32_t fps_num, uint32_t fps_den)
  *
  * Définir la fréquence d'images de sortie de la caméra 
  *
- * @param[in] fps_num définit le paramètre numérateur de la fréquence d'images
- * @param[in] fps_den définit le paramètre dénominateur de la fréquence d'images
- *
- * @retval 0 Succès 
- * @retval non- 0 échec ， Renvoyer le code d'erreur 
- *
- * @attention Avant d'utiliser cette fonction, vous devez vous assurer que IMP_ISP_EnableSensor et IMP_ISP_EnableTuning ont été appelés.
- */
-int IMP_ISP_Tuning_SetSensorFPS(uint32_t fps_num, uint32_t fps_den);
-
-/**
- * @fn int IMP_ISP_Tuning_GetSensorFPS (uint32_t * fps_num, uint32_t * fps_den)
- *
- * Obtenez la fréquence d'images de sortie de la caméra 
- *
- * @param[in] fps_num Récupère le pointeur du paramètre du numérateur de la fréquence d'images
- * @param[in] fps_den Récupère le pointeur du paramètre du dénominateur de fréquence d'images
+ * @param[in] fps_num Définir le paramètre du numérateur de la fréquence d'images 
+ * @param[in] fps_den Définir le paramètre dénominateur de la fréquence d'images 
  *
  * @retval 0 Succès 
  * @retval non- 0 échec ， Renvoyer le code d'erreur 
  *
  * @attention Avant d'utiliser cette fonction ， Doit garantir IMP_ISP_EnableSensor avec IMP_ISP_EnableTuning A été appelé. 
- * @attention Cette fonction doit être appelée pour obtenir la fréquence d'images par défaut de la caméra avant que le canal d'image ne soit activé pour démarrer la transmission des données.
+ */
+int IMP_ISP_Tuning_SetSensorFPS(uint32_t fps_num, uint32_t fps_den);
+
+/**
+ * @fn int IMP_ISP_Tuning_GetSensorFPS(uint32_t *fps_num, uint32_t *fps_den)
+ *
+ * Obtenez la fréquence d'images de sortie de la caméra 
+ *
+ * @param[in] fps_num Obtenez un pointeur sur les paramètres moléculaires de la fréquence d'images 
+ * @param[in] fps_den Obtenir un pointeur vers le paramètre du dénominateur de la fréquence d'images 
+ *
+ * @retval 0 Succès 
+ * @retval non- 0 échec ， Renvoyer le code d'erreur 
+ *
+ * @attention Avant d'utiliser cette fonction ， Doit garantir IMP_ISP_EnableSensor avec IMP_ISP_EnableTuning A été appelé. 
+ * @attention Cette fonction doit être appelée pour obtenir la fréquence d'images par défaut de la caméra avant que le canal d'image ne soit activé pour démarrer la transmission des données. 
  */
 int IMP_ISP_Tuning_GetSensorFPS(uint32_t *fps_num, uint32_t *fps_den);
 
@@ -356,25 +357,25 @@ typedef enum {
 } IMPISPAntiflickerAttr;
 
 /**
- * @fn int IMP_ISP_Tuning_SetAntiFlickerAttr (IMPISPAntiflickerAttr attr)
+ * @fn int IMP_ISP_Tuning_SetAntiFlickerAttr(IMPISPAntiflickerAttr attr)
  *
  * Installation ISP Propriétés anti-flash 
  *
- * @param[in] attr définir la valeur du paramètre
+ * @param[in] attr Définir la valeur du paramètre 
  *
  * @retval 0 Succès 
  * @retval non- 0 échec ， Renvoyer le code d'erreur 
  *
- * @attention Avant d'utiliser cette fonction, vous devez vous assurer que la fonction de débogage d'effet ISP a été activée.
+ * @attention Avant d'utiliser cette fonction ， Doit garantir ISP La fonction de débogage des effets a été activée .
  */
 int IMP_ISP_Tuning_SetAntiFlickerAttr(IMPISPAntiflickerAttr attr);
 
 /**
- * @fn int IMP_ISP_Tuning_GetAntiFlickerAttr (IMPISPAntiflickerAttr * pattr)
+ * @fn int IMP_ISP_Tuning_GetAntiFlickerAttr(IMPISPAntiflickerAttr *pattr)
  *
  * obtenir ISP Propriétés anti-flash 
  *
- * @param[in] pattr Récupère le pointeur de valeur de paramètre
+ * @param[in] pattr Obtenir le pointeur de valeur de paramètre 
  *
  * @retval 0 Succès 
  * @retval non- 0 échec ， Renvoyer le code d'erreur 
@@ -393,6 +394,7 @@ typedef enum {
 	IMPISP_DRC_MEDIUM,				/**< ISP Mode de compression dans le module de compression de plage dynamique */
 	IMPISP_DRC_LOW,					/**< ISP Mode de compression basse du module de compression de plage dynamique */
 	IMPISP_DRC_DISABLE,				/**< ISP Le module de compression de plage dynamique n'est pas activé */
+	IMPISP_DRC_RANGE,				/**< ISP Mode de réglage de la plage du module de compression de plage dynamique */
 } IMPISPDrcMode;
 
 /**
@@ -401,6 +403,8 @@ typedef enum {
 typedef struct {
 	IMPISPDrcMode mode;				/**< ISP Sélection du mode de fonctionnement du module de compression de plage dynamique */
 	unsigned char drc_strength;			/**< Valeur cible définie en mode manuel ， La plage de valeurs est [0, 0xff] */
+	unsigned char dval_max;				/**< Mode de portée maximum ， La plage de valeurs est [0, 0xff] */
+	unsigned char dval_min;				/**< Mode de portée minimum ， La plage de valeurs est [0, 0xff] */
 	unsigned char slop_max;				/**< Paramètres de contrôle de la force ， La plage de valeurs est [0, oxff] */
 	unsigned char slop_min;				/**< Paramètres de contrôle de la force ， La plage de valeurs est [0, oxff] */
 	unsigned short black_level;			/**< DRC Valeur de pixel minimale améliorée ， La plage de valeurs est [0, oxfff] */
@@ -408,23 +412,23 @@ typedef struct {
 } IMPISPDrcAttr;
 
 /**
- * @fn int IMP_ISP_Tuning_SetRawDRC (IMPISPDrcAttr * pinfo)
+ * @fn int IMP_ISP_Tuning_SetRawDRC(IMPISPDrcAttr *pinfo)
  *
  * Installation ISP RAW Figure paramètres du module de compression de plage dynamique 
  *
- * @param[in] pointeur de paramètre de plage dynamique pinfo
+ * @param[in] pinfo Pointeur de paramètre de plage dynamique 
  *
  * @retval 0 Succès 
  * @retval non- 0 échec ， Renvoyer le code d'erreur 
  *
- * @remark Définissez le type d'opération et l'intensité de la compression de la plage dynamique des images RVB RAW, ainsi que les valeurs de pixels maximales et minimales qui doivent être améliorées.
+ * @remark Installation RGB RAW Type d'opération de compression de plage dynamique graphique ， force ， Les valeurs de pixel maximum et minimum qui doivent être améliorées. 
  *
  * @attention Avant d'utiliser cette fonction ， Doit garantir ISP La fonction de débogage des effets a été activée .
  */
 int IMP_ISP_Tuning_SetRawDRC(IMPISPDrcAttr *pinfo);
 
 /**
- * @fn int IMP_ISP_Tuning_GetRawDRC (IMPISPDrcAttr * pinfo)
+ * @fn int IMP_ISP_Tuning_GetRawDRC(IMPISPDrcAttr *pinfo)
  *
  * Obtenir ISP RAW Figure paramètres du module de compression de plage dynamique 
  *
@@ -446,6 +450,8 @@ typedef struct {
 	IMPISPTuningOpsMode enable;			/**< Activer la fonction de réduction du bruit spatial */
 	IMPISPTuningOpsType type;				/**< Type d'opération de la fonction de réduction du bruit spatial ， Automatique ou manuel */
 	unsigned char sinter_strength;				/**< Intensité de la réduction du bruit spatial ， Le mode manuel est efficace ， La plage de valeurs est [0, 0xff] */
+	unsigned char sval_max;				/**< Intensité de la réduction du bruit spatial ， Le mode manuel est efficace ， La plage de valeurs est [0, 0xff] */
+	unsigned char sval_min;				/**< Intensité de la réduction du bruit spatial ， Le mode manuel est efficace ， La plage de valeurs est [0, 0xff] */
 } IMPISPSinterDenoiseAttr;
 
 /**
@@ -455,6 +461,7 @@ typedef enum {
 	IMPISP_TEMPER_DISABLE,				/**< ISP Le module de réduction du bruit dans le domaine temporel n'est pas activé */
 	IMPISP_TEMPER_AUTO,					/**< ISP Mode automatique du module de réduction du bruit dans le domaine temporel */
 	IMPISP_TEMPER_MANUAL,				/**< ISP Mode manuel du module de réduction du bruit dans le domaine temporel */
+	IMPISP_TEMPER_RANGE,				/**< ISP Mode de réglage de la plage du module de réduction du bruit dans le domaine temporel */
 } IMPISPTemperMode;
 
 /**
@@ -463,43 +470,45 @@ typedef enum {
 typedef struct imp_isp_temper_denoise_attr {
 	IMPISPTemperMode type;					/**< Type d'opération de la fonction de réduction du bruit dans le domaine temporel ， Désactiver ， Automatique ou manuel */
 	unsigned char temper_strength;				/**< Intensité de la réduction du bruit dans le domaine temporel ， Le mode manuel est efficace ， La plage de valeurs est [0, 0xff] */
+	unsigned char tval_max;						/**< Mode de réglage de la plage de réduction maximale du bruit spatial , La plage de valeurs est [0, 0xff] */
+	unsigned char tval_min;						/**< Mode de réglage de la plage de réduction du bruit spatial minimum , La plage de valeurs est [0, 0xff] */
 } IMPISPTemperDenoiseAttr;
 
 
 /**
- * @fn int IMP_ISP_Tuning_SetSinterDnsAttr (IMPISPSinterDenoiseAttr * pinfo)
+ * @fn int IMP_ISP_Tuning_SetSinterDnsAttr(IMPISPSinterDenoiseAttr *pinfo)
  *
  * Installation ISP Paramètres du module de réduction du bruit spatial 
  *
- * @param[in] pointeur de paramètre de réduction du bruit dans le domaine temporel pinfo
+ * @param[in] pinfo Pointeur de paramètre de réduction du bruit dans le domaine temporel 
  *
  * @retval 0 Succès 
  * @retval non- 0 échec ， Renvoyer le code d'erreur 
  *
- * @remark Définissez les paramètres de correction du module de réduction du bruit spatial.
+ * @remark Définissez les paramètres de correction du module de réduction du bruit spatial. 
  *
  * @attention Avant d'utiliser cette fonction ， Doit garantir ISP La fonction de débogage des effets a été activée .
  */
 int IMP_ISP_Tuning_SetSinterDnsAttr(IMPISPSinterDenoiseAttr *pinfo);
 
 /**
- * @fn int IMP_ISP_Tuning_GetSinterDnsAttr (IMPISPSinterDenoiseAttr * pinfo)
+ * @fn int IMP_ISP_Tuning_GetSinterDnsAttr(IMPISPSinterDenoiseAttr *pinfo)
  *
  * Obtenir ISP Paramètres du module de réduction du bruit spatial 
  *
- * @param[in] pointeur de paramètre de réduction du bruit de l'espace pinfo
+ * @param[in] pinfo Pointeur de paramètre de réduction du bruit spatial 
  *
  * @retval 0 Succès 
  * @retval non- 0 échec ， Renvoyer le code d'erreur 
  *
- * @remark Obtenez les paramètres de correction du module de réduction du bruit spatial.
+ * @remark Obtenez les paramètres de correction du module de réduction du bruit spatial. 
  *
  * @attention Avant d'utiliser cette fonction ， Doit garantir ISP La fonction de débogage des effets a été activée .
  */
 int IMP_ISP_Tuning_GetSinterDnsAttr(IMPISPSinterDenoiseAttr *pinfo);
 #if 0
 /**
-* @fn int IMP_ISP_Tuning_SetTemperDnsCtl (IMPISPTemperDenoiseAttr * pinfo);
+* @fn int IMP_ISP_Tuning_SetTemperDnsCtl(IMPISPTemperDenoiseAttr *pinfo);
 *
 * Installation ISP Mode du module de réduction du bruit dans le domaine temporel 
 *
@@ -508,14 +517,14 @@ int IMP_ISP_Tuning_GetSinterDnsAttr(IMPISPSinterDenoiseAttr *pinfo);
 * @retval 0 Succès 
 * @retval non- 0 échec ， Renvoyer le code d'erreur 
 *
-* @remark Définissez les paramètres de mode du module de réduction du bruit dans le domaine temporel, le mode automatique par défaut.
+* @remark Définir les paramètres du mode du module de réduction du bruit dans le domaine temporel ， Le mode automatique par défaut. 
 *
 * @attention Avant d'utiliser cette fonction ， Doit garantir ISP La fonction de débogage des effets a été activée .
 */
 int IMP_ISP_Tuning_SetTemperDnsCtl(IMPISPTemperDenoiseAttr *pinfo);
 #endif
 /**
- * @fn int IMP_ISP_Tuning_SetTemperDnsAttr (IMPISPTemperDenoiseAttr * pinfo)
+ * @fn int IMP_ISP_Tuning_SetTemperDnsAttr(IMPISPTemperDenoiseAttr *pinfo)
  *
  * Installation ISP Paramètres du module de réduction du bruit dans le domaine temporel 
  *
@@ -524,55 +533,55 @@ int IMP_ISP_Tuning_SetTemperDnsCtl(IMPISPTemperDenoiseAttr *pinfo);
  * @retval 0 Succès 
  * @retval non- 0 échec ， Renvoyer le code d'erreur 
  *
- * @remark Définissez les paramètres de correction du module de réduction du bruit dans le domaine temporel, et le module est activé par défaut; comme le module nécessite de la mémoire supplémentaire, veuillez éteindre le module si vous n'en avez pas besoin. Une fois la mémoire désactivée, il sera être rel une chée et ne peut plus être remise sous tension.
+ * @remark Définissez les paramètres de correction du module de réduction du bruit dans le domaine temporel ， Le module est activé par défaut, car le module nécessite de la mémoire supplémentaire ， Veuillez fermer le module si vous n'en avez pas besoin ， La mémoire est libérée une fois fermée ， Ne peut plus être ouvert. 
  *
  * @attention Avant d'utiliser cette fonction ， Doit garantir ISP La fonction de débogage des effets a été activée .
  */
 int IMP_ISP_Tuning_SetTemperDnsAttr(IMPISPTemperDenoiseAttr *pinfo);
 
 /**
- * @fn int IMP_ISP_Tuning_GetTemperDnsAttr (IMPISPTemperDenoiseAttr * pinfo)
+ * @fn int IMP_ISP_Tuning_GetTemperDnsAttr(IMPISPTemperDenoiseAttr *pinfo)
  *
  * Obtenir ISP Paramètres du module de réduction du bruit dans le domaine temporel 
  *
- * @param[in] pinfo Pointeur de paramètre du module de réduction du bruit dans le domaine temporel
+ * @param[in] pinfo Pointeur de paramètre du module de réduction du bruit dans le domaine temporel 
  *
  * @retval 0 Succès 
  * @retval non- 0 échec ， Renvoyer le code d'erreur 
  *
- * @remark Obtenez les paramètres de correction du module de réduction du bruit dans le domaine temporel.
+ * @remark Obtenez les paramètres de correction du module de réduction du bruit temporel. 
  *
  * @attention Avant d'utiliser cette fonction ， Doit garantir ISP La fonction de débogage des effets a été activée .
  */
 int IMP_ISP_Tuning_GetTemperDnsAttr(IMPISPTemperDenoiseAttr *pinfo);
 
 /**
- * @fn int IMP_ISP_Tuning_SetWDRAttr (mode IMPISPTuningOpsMode)
+ * @fn int IMP_ISP_Tuning_SetWDRAttr(IMPISPTuningOpsMode mode)
  *
  * Installation ISP Si le module dynamique large est activé 
  *
- * @param[in] paramètres du module dynamique à l'échelle du mode
+ * @param[in] mode Paramètres de module dynamiques larges 
  *
  * @retval 0 Succès 
  * @retval non- 0 échec ， Renvoyer le code d'erreur 
  *
- * @remark Définissez les paramètres d'étalonnage du module dynamique large, le module est activé par défaut; parce que le module nécessite de la mémoire supplémentaire, veuillez éteindre le module si vous n'en avez pas besoin. Une fois que vous éteignez la mémoire, elle sera libérée et ne pourra plus être rallumé.
+ * @remark Définir les paramètres d'étalonnage du module dynamique large ， Le module est activé par défaut, car le module nécessite de la mémoire supplémentaire ， Veuillez fermer le module si vous n'en avez pas besoin ， La mémoire est libérée une fois fermée ， Ne peut plus être ouvert. 
  *
  * @attention Avant d'utiliser cette fonction ， Doit garantir ISP La fonction de débogage des effets a été activée .
  */
 int IMP_ISP_Tuning_SetWDRAttr(IMPISPTuningOpsMode mode);
 
 /**
- * @fn int IMP_ISP_Tuning_GetWDRAttr (IMPISPTuningOpsMode * pmode)
+ * @fn int IMP_ISP_Tuning_GetWDRAttr(IMPISPTuningOpsMode *pmode)
  *
  * Obtenir ISP État actuel du module dynamique large 
  *
- * @param[in] pointeur de paramètre de module dynamique large pmode
+ * @param[in] pmode Large pointeur de paramètres de module dynamique 
  *
  * @retval 0 Succès 
  * @retval non- 0 échec ， Renvoyer le code d'erreur 
  *
- * @remark Obtenez les paramètres de correction du module dynamique large.
+ * @remark Obtenez les paramètres de correction du module dynamique large. 
  *
  * @attention Avant d'utiliser cette fonction ， Doit garantir ISP La fonction de débogage des effets a été activée .
  */
@@ -598,11 +607,11 @@ typedef enum {
 } IMPISPSceneMode;
 
 /**
- * @fn int IMP_ISP_Tuning_SetSceneMode (mode IMPISPSceneMode)
+ * @fn int IMP_ISP_Tuning_SetSceneMode(IMPISPSceneMode mode)
  *
  * Installation ISP Mode scène d'effets complet 
  *
- * @param[in] mode Paramètre de mode de scène d'effet
+ * @param[in] mode Paramètres du mode scène d'effet 
  *
  * @retval 0 Succès 
  * @retval non- 0 échec ， Renvoyer le code d'erreur 
@@ -612,11 +621,11 @@ typedef enum {
 int IMP_ISP_Tuning_SetSceneMode(IMPISPSceneMode mode);
 
 /**
- * @fn int IMP_ISP_Tuning_GetSceneMode (IMPISPSceneMode * pmode)
+ * @fn int IMP_ISP_Tuning_GetSceneMode(IMPISPSceneMode *pmode)
  *
  * Obtenir ISP Mode scène d'effets complet 
  *
- * @param[in] pointeur de paramètre de mode scène d'effet pmode
+ * @param[in] pmode Pointeur de paramètre du mode scène d'effet 
  *
  * @retval 0 Succès 
  * @retval non- 0 échec ， Renvoyer le code d'erreur 
@@ -637,11 +646,11 @@ typedef enum {
 } IMPISPColorfxMode;
 
 /**
- * @fn int IMP_ISP_Tuning_SetColorfxMode (mode IMPISPColorfxMode)
+ * @fn int IMP_ISP_Tuning_SetColorfxMode(IMPISPColorfxMode mode)
  *
  * Installation ISP Mode couleur multi-effets 
  *
- * @param[in] paramètre de mode couleur
+ * @param[in] mode Paramètres du mode couleur 
  *
  * @retval 0 Succès 
  * @retval non- 0 échec ， Renvoyer le code d'erreur 
@@ -651,11 +660,11 @@ typedef enum {
 int IMP_ISP_Tuning_SetColorfxMode(IMPISPColorfxMode mode);
 
 /**
- * @fn int IMP_ISP_Tuning_GetColorfxMode (IMPISPColorfxMode * pmode)
+ * @fn int IMP_ISP_Tuning_GetColorfxMode(IMPISPColorfxMode *pmode)
  *
  * Obtenir ISP Mode couleur multi-effets 
  *
- * @param[in] pointeur de paramètre de mode couleur pmode
+ * @param[in] pmode Pointeur de paramètre de mode couleur 
  *
  * @retval 0 Succès 
  * @retval non- 0 échec ， Renvoyer le code d'erreur 
@@ -665,27 +674,27 @@ int IMP_ISP_Tuning_SetColorfxMode(IMPISPColorfxMode mode);
 int IMP_ISP_Tuning_GetColorfxMode(IMPISPColorfxMode *pmode);
 
 /**
- * @fn int IMP_ISP_Tuning_SetBrightness (caractère non signé brillant)
+ * @fn int IMP_ISP_Tuning_SetBrightness(unsigned char bright)
  *
  * Installation ISP Luminosité d'image complète 
  *
- * @param[in] Paramètre de luminosité de l'image lumineuse
+ * @param[in] bright Paramètre de luminosité de l'image 
  *
  * @retval 0 Succès 
  * @retval non- 0 échec ， Renvoyer le code d'erreur 
  *
- * @remark La valeur par défaut est 128, plus de 128 augmente la luminosité, moins de 128 diminue la luminosité.
+ * @remark La valeur par défaut est 128， plus que le 128 Augmenter la luminosité ， Moins que 128 Diminuez la luminosité. 
  *
  * @attention Avant d'utiliser cette fonction ， Doit garantir ISP La fonction de débogage des effets a été activée .
  */
 int IMP_ISP_Tuning_SetBrightness(unsigned char bright);
 
 /**
- * @fn int IMP_ISP_Tuning_GetBrightness (caractère non signé * pbright)
+ * @fn int IMP_ISP_Tuning_GetBrightness(unsigned char *pbright)
  *
  * Obtenir ISP Luminosité d'image complète 
  *
- * @param[in] Pointeur de paramètre de luminosité de l'image lumineuse
+ * @param[in] bright Pointeur de paramètre de luminosité de l'image 
  *
  * @retval 0 Succès 
  * @retval non- 0 échec ， Renvoyer le code d'erreur 
@@ -697,27 +706,27 @@ int IMP_ISP_Tuning_SetBrightness(unsigned char bright);
 int IMP_ISP_Tuning_GetBrightness(unsigned char *pbright);
 
 /**
- * @fn int IMP_ISP_Tuning_SetContrast (contraste de caractères non signé)
+ * @fn int IMP_ISP_Tuning_SetContrast(unsigned char contrast)
  *
  * Installation ISP Contraste d'image complet 
  *
- * @param[in] contraste paramètre de contraste de l'image
+ * @param[in] contrast Paramètre de contraste de l'image 
  *
  * @retval 0 Succès 
  * @retval non- 0 échec ， Renvoyer le code d'erreur 
  *
- * @remark La valeur par défaut est 128, plus de 128 augmente le contraste, moins de 128 réduit le contraste.
+ * @remark La valeur par défaut est 128， plus que le 128 Augmenter le contraste ， Moins que 128 Réduisez le contraste. 
  *
  * @attention Avant d'utiliser cette fonction ， Doit garantir ISP La fonction de débogage des effets a été activée .
  */
 int IMP_ISP_Tuning_SetContrast(unsigned char contrast);
 
 /**
- * @fn int IMP_ISP_Tuning_GetContrast (caractère non signé * pcontrast)
+ * @fn int IMP_ISP_Tuning_GetContrast(unsigned char *pcontrast)
  *
  * Obtenir ISP Contraste d'image complet 
  *
- * @param[in] pointeur de paramètre de contraste de l'image de contraste
+ * @param[in] contrast Pointeur de paramètre de contraste de l'image 
  *
  * @retval 0 Succès 
  * @retval non- 0 échec ， Renvoyer le code d'erreur 
@@ -729,27 +738,27 @@ int IMP_ISP_Tuning_SetContrast(unsigned char contrast);
 int IMP_ISP_Tuning_GetContrast(unsigned char *pcontrast);
 
  /**
- * @fn int IMP_ISP_Tuning_SetSharpness (netteté des caractères non signés)
+ * @fn int IMP_ISP_Tuning_SetSharpness(unsigned char sharpness)
  *
  * Installation ISP Netteté d'image complète 
  *
- * @param[in] netteté image valeur du paramètre de netteté
+ * @param[in] sharpness Valeur du paramètre de netteté de l'image 
  *
  * @retval 0 Succès 
  * @retval non- 0 échec ， Renvoyer le code d'erreur 
  *
- * @remark La valeur par défaut est 128, plus de 128 augmente la netteté, moins de 128 diminue la netteté.
+ * @remark La valeur par défaut est 128， plus que le 128 Augmenter la netteté ， Moins que 128 Réduisez la netteté. 
  *
  * @attention Avant d'utiliser cette fonction ， Doit garantir ISP La fonction de débogage des effets a été activée .
  */
 int IMP_ISP_Tuning_SetSharpness(unsigned char sharpness);
 
 /**
- * @fn int IMP_ISP_Tuning_GetSharpness (caractère non signé * psharpness)
+ * @fn int IMP_ISP_Tuning_GetSharpness(unsigned char *psharpness)
  *
  * Obtenir ISP Netteté d'image complète 
  *
- * @param[in] pointeur de paramètre de netteté de l'image de netteté
+ * @param[in] sharpness Pointeur de paramètre de netteté de l'image 
  *
  * @retval 0 Succès 
  * @retval non- 0 échec ， Renvoyer le code d'erreur 
@@ -761,27 +770,27 @@ int IMP_ISP_Tuning_SetSharpness(unsigned char sharpness);
 int IMP_ISP_Tuning_GetSharpness(unsigned char *psharpness);
 
 /**
- * @fn int IMP_ISP_Tuning_SetSaturation (caractère non signé sat)
+ * @fn int IMP_ISP_Tuning_SetSaturation(unsigned char sat)
  *
  * Installation ISP Saturation complète de l'image avec effet 
  *
- * @param[in] saturation de l'image valeur du paramètre de saturation
+ * @param[in] sat Valeur du paramètre de saturation de l'image 
  *
  * @retval 0 Succès 
  * @retval non- 0 échec ， Renvoyer le code d'erreur 
  *
- * @remark La valeur par défaut est 128, plus de 128 augmente la saturation, moins de 128 diminue la saturation.
+ * @remark La valeur par défaut est 128， plus que le 128 Augmenter la saturation ， Moins que 128 Diminue la saturation. 
  *
  * @attention Avant d'utiliser cette fonction ， Doit garantir ISP La fonction de débogage des effets a été activée .
  */
 int IMP_ISP_Tuning_SetSaturation(unsigned char sat);
 
 /**
- * @fn int IMP_ISP_Tuning_GetSaturation (caractère non signé * psat)
+ * @fn int IMP_ISP_Tuning_GetSaturation(unsigned char *psat)
  *
  * Obtenir ISP Saturation complète de l'image avec effet 
  *
- * @param[in] pointeur de paramètre de saturation d'image sat
+ * @param[in] sat Pointeur de paramètre de saturation de l'image 
  *
  * @retval 0 Succès 
  * @retval non- 0 échec ， Renvoyer le code d'erreur 
@@ -793,27 +802,27 @@ int IMP_ISP_Tuning_SetSaturation(unsigned char sat);
 int IMP_ISP_Tuning_GetSaturation(unsigned char *psat);
 #if 0
 /**
- * @fn int IMP_ISP_Tuning_SetISPProcess (mode IMPISPTuningOpsMode)
+ * @fn int IMP_ISP_Tuning_SetISPProcess(IMPISPTuningOpsMode mode)
  *
  * contourne ISP Manipulation des modules ， Sortie directe sensor image 
  *
- * @param[in] mode s'il faut contourner les paramètres de traitement du module ISP
+ * @param[in] mode Que ce soit pour contourner ISP Paramètres de traitement du module 
  *
  * @retval 0 Succès 
  * @retval non- 0 échec ， Renvoyer le code d'erreur 
  *
- * @remark Si cette fonction est activée, l'image sortie par le capteur sera sortie directement sans aucun traitement par le module ISP.
+ * @remark Si la fonction est activée ，sensor L'image de sortie ne passera pas ISP Tout traitement du module ， Sortie directe. 
  *
  * @attention Avant d'utiliser cette fonction ， Doit garantir ISP La fonction de débogage des effets a été activée .
  */
 int IMP_ISP_Tuning_SetISPProcess(IMPISPTuningOpsMode mode);
 #endif
 /**
- * @fn int IMP_ISP_Tuning_SetFWFreeze (mode IMPISPTuningOpsMode)
+ * @fn int IMP_ISP_Tuning_SetFWFreeze(IMPISPTuningOpsMode mode)
  *
  * Geler ISP Fonctionnement du micrologiciel ， Activer signifie geler ISP firmware ， c'est ISP L'algorithme automatique s'arrêtera; s'il n'est pas activé, cela signifie ISP Le firmware fonctionne normalement. 
  *
- * @param[in] mode s'il faut geler les paramètres du micrologiciel du FAI
+ * @param[in] mode Est-ce gelé ISP Paramètres du micrologiciel 
  *
  * @retval 0 Succès 
  * @retval non- 0 échec ， Renvoyer le code d'erreur 
@@ -824,43 +833,43 @@ int IMP_ISP_Tuning_SetFWFreeze(IMPISPTuningOpsMode mode);
 
 
 /**
- * @fn int IMP_ISP_Tuning_SaveAllParam (char * chemin)
+ * @fn int IMP_ISP_Tuning_SaveAllParam(char *path)
  *
  * sauvegarder ISP Tous les paramètres de débogage du module 
  *
- * @param[in] pointeur de paramètre de chemin de chemin
+ * @param[in] path Pointeur de paramètre de chemin 
  *
  * @retval 0 Succès 
  * @retval non- 0 échec ， Renvoyer le code d'erreur 
  *
- * @remark Enregistrez tous les paramètres du FAI pour le débogage.
+ * @remark Enregistrer tout le débogage ISP paramètre. 
  *
  * @attention Avant d'utiliser cette fonction ， Doit garantir ISP La fonction de débogage des effets a été activée .
  */
 int IMP_ISP_Tuning_SaveAllParam(char *path);
 
 /**
- * @fn int IMP_ISP_Tuning_SetISPBypass (activation IMPISPTuningOpsMode)
+ * @fn int IMP_ISP_Tuning_SetISPBypass(IMPISPTuningOpsMode enable)
  *
  * ISP Si le module bypass
  *
- * @param[in] activer s'il faut contourner le mode de sortie
+ * @param[in] enable qu'il s'agisse bypass Mode de sortie 
  *
  * @retval 0 Succès 
  * @retval non- 0 échec ， Renvoyer le code d'erreur 
  *
  * @remark non 
  *
- * @attention Avant d'utiliser cette fonction, vous devez vous assurer que le module ISP est fermé.
+ * @attention Avant d'utiliser cette fonction ， Doit garantir ISP Le module est fermé .
  */
 int IMP_ISP_Tuning_SetISPBypass(IMPISPTuningOpsMode enable);
 
 /**
- * @fn int IMP_ISP_Tuning_GetTotalGain (uint32_t * gain)
+ * @fn int IMP_ISP_Tuning_GetTotalGain(uint32_t *gain)
  *
  * Obtenir ISP La valeur de gain globale de l'image de sortie 
  *
- * @param[in] gain est un pointeur pour obtenir le paramètre de valeur de gain, son format de stockage de données est [24,8], le haut 24 bits est un entier et le bas 8 bits est un décimal.
+ * @param[in] gain Obtenez le pointeur du paramètre de valeur de gain , Le format de stockage des données est [24.8]， haut 24bit Est un entier ， faible 8bit Est un décimal. 
  *
  * @retval 0 Succès 
  * @retval non- 0 échec ， Renvoyer le code d'erreur 
@@ -872,23 +881,23 @@ int IMP_ISP_Tuning_GetTotalGain(uint32_t *gain);
 /**
  * Installation ISP Si la fonction d'effet de miroir d'image est activée 
  *
- * @fn int IMP_ISP_Tuning_SetISPHflip (mode IMPISPTuningOpsMode)
+ * @fn int IMP_ISP_Tuning_SetISPHflip(IMPISPTuningOpsMode mode)
  *
- * @param[in] mode s'il faut activer l'effet miroir
+ * @param[in] mode Activer ou non l'effet miroir 
  *
  * @retval 0 Succès 
  * @retval non- 0 échec ， Renvoyer le code d'erreur 
  *
- * @attention Avant d'utiliser cette fonction, IMP_ISP_EnableTuning a été appelé.
+ * @attention Avant d'utiliser cette fonction ，IMP_ISP_EnableTuning A été appelé. 
  */
 int IMP_ISP_Tuning_SetISPHflip(IMPISPTuningOpsMode mode);
 
 /**
- * @fn int IMP_ISP_Tuning_GetISPHflip (IMPISPTuningOpsMode * pmode)
+ * @fn int IMP_ISP_Tuning_GetISPHflip(IMPISPTuningOpsMode *pmode)
  *
  * Obtenir ISP L'état de fonctionnement de la fonction d'effet de miroir d'image 
  *
- * @param[in] pointeur de paramètre d'opération pmode
+ * @param[in] pmode Pointeur de paramètre d'opération 
  *
  * @retval 0 Succès 
  * @retval non- 0 échec ， Renvoyer le code d'erreur 
@@ -898,11 +907,11 @@ int IMP_ISP_Tuning_SetISPHflip(IMPISPTuningOpsMode mode);
 int IMP_ISP_Tuning_GetISPHflip(IMPISPTuningOpsMode *pmode);
 
 /**
- * @fn int IMP_ISP_Tuning_SetISPVflip (mode IMPISPTuningOpsMode)
+ * @fn int IMP_ISP_Tuning_SetISPVflip(IMPISPTuningOpsMode mode)
  *
- * Installation ISP Si la fonction d'effet inverse de l'image vers le haut et vers le bas est activée 
+ * Installation ISP Si la fonction d'effet d'image à l'envers est activée 
  *
- * @param[in] mode s'il faut activer l'inversion de l'image vers le haut et vers le bas
+ * @param[in] mode Activer ou non l'image inversée de haut en bas 
  *
  * @retval 0 Succès 
  * @retval non- 0 échec ， Renvoyer le code d'erreur 
@@ -912,18 +921,48 @@ int IMP_ISP_Tuning_GetISPHflip(IMPISPTuningOpsMode *pmode);
 int IMP_ISP_Tuning_SetISPVflip(IMPISPTuningOpsMode mode);
 
 /**
- * @fn int IMP_ISP_Tuning_GetISPVflip (IMPISPTuningOpsMode * pmode)
+ * @fn int IMP_ISP_Tuning_GetISPVflip(IMPISPTuningOpsMode *pmode)
  *
  * Obtenir ISP L'état de fonctionnement de l'image de haut en bas de la fonction d'effet inverse 
  *
  * @param[in] pmode Pointeur de paramètre d'opération 
  *
- * @retval 0 succès 
- * @retval non-0 échec ， Renvoyer le code d'erreur 
+ * @retval 0 Succès 
+ * @retval non- 0 échec ， Renvoyer le code d'erreur 
  *
  * @attention Avant d'utiliser cette fonction ，IMP_ISP_EnableTuning A été appelé. 
  */
 int IMP_ISP_Tuning_GetISPVflip(IMPISPTuningOpsMode *pmode);
+
+/**
+ * @fn int IMP_ISP_Tuning_SetISPHVflip(IMPISPTuningOpsMode hmode, IMPISPTuningOpsMode vmode)
+ *
+ * Installation ISP image H/V Si la fonction d'effet inverse est activée 
+ *
+ * @param[in] hmode Activer ou non l'image H Sens inverse 
+ * @param[in] vmode Activer ou non l'image V Sens inverse 
+ *
+ * @retval 0 Succès 
+ * @retval non- 0 échec ， Renvoyer le code d'erreur 
+ *
+ * @attention Avant d'utiliser cette fonction ，IMP_ISP_EnableTuning A été appelé. 
+ */
+int IMP_ISP_Tuning_SetISPHVflip(IMPISPTuningOpsMode hmode, IMPISPTuningOpsMode vmode);
+
+/**
+ * @fn int IMP_ISP_Tuning_GetISPHVflip(IMPISPTuningOpsMode *phmode, IMPISPTuningOpsMode *pvmode)
+ *
+ * Obtenir ISP image H/V L'état de fonctionnement de la fonction d'effet inverse 
+ *
+ * @param[in] phmode Pointeur de paramètre d'opération 
+ * @param[in] pvmode Pointeur de paramètre d'opération 
+ *
+ * @retval 0 Succès 
+ * @retval non- 0 échec ， Renvoyer le code d'erreur 
+ *
+ * @attention Avant d'utiliser cette fonction ，IMP_ISP_EnableTuning A été appelé. 
+ */
+int IMP_ISP_Tuning_GetISPHVflip(IMPISPTuningOpsMode *phmode, IMPISPTuningOpsMode *pvmode);
 
 /**
  * ISP Configuration du mode de fonctionnement ， Mode normal ou mode de vision nocturne. 
@@ -935,17 +974,17 @@ typedef enum {
 } IMPISPRunningMode;
 
 /**
- * @fn int IMP_ISP_Tuning_SetISPRunningMode (mode IMPISPRunningMode)
+ * @fn int IMP_ISP_Tuning_SetISPRunningMode(IMPISPRunningMode mode)
  *
  * Installation ISP Mode de fonctionnement ， Mode normal ou mode de vision nocturne; le mode par défaut est le mode normal. 
  *
- * @param[in] paramètre de mode de fonctionnement de mode
+ * @param[in] mode Paramètres du mode de fonctionnement 
  *
- * @retval 0 succès 
- * @retval non-0 échec ， Renvoyer le code d'erreur 
+ * @retval 0 Succès 
+ * @retval non- 0 échec ， Renvoyer le code d'erreur 
  *
  * Exemple: 
- * @code 
+ * @code
  * IMPISPRunningMode mode;
  *
  *	if( it is during a night now){
@@ -959,21 +998,21 @@ typedef enum {
 		return -1;
 	}
  *
- * @endcode 
+ * @endcode
  *
  * @attention Avant d'utiliser cette fonction ，IMP_ISP_EnableTuning A été appelé. 
  */
 int IMP_ISP_Tuning_SetISPRunningMode(IMPISPRunningMode mode);
 
 /**
- * @fn int IMP_ISP_Tuning_GetISPRunningMode (IMPISPRunningMode * pmode)
+ * @fn int IMP_ISP_Tuning_GetISPRunningMode(IMPISPRunningMode *pmode)
  *
  * Obtenir ISP Mode de fonctionnement ， Mode normal ou mode de vision nocturne. 
  *
- * @param[in] pointeur de paramètre d'opération pmode
+ * @param[in] pmode Pointeur de paramètre d'opération 
  *
- * @retval 0 succès 
- * @retval non-0 échec ， Renvoyer le code d'erreur 
+ * @retval 0 Succès 
+ * @retval non- 0 échec ， Renvoyer le code d'erreur 
  *
  * @attention Avant d'utiliser cette fonction ，IMP_ISP_EnableTuning A été appelé. 
  */
@@ -989,16 +1028,16 @@ typedef enum {
 } IMPISPAeStrategy;
 
 /**
- * @fn int IMP_ISP_Tuning_SetAeStrategy (stratégie IMPISPAeStrategy)
+ * @fn int IMP_ISP_Tuning_SetAeStrategy(IMPISPAeStrategy strategy)
  *
  * Installation ISP Mode de fonctionnement ， Configuration de la stratégie d'exposition automatique ， Mode normal ou mode de priorité d'exposition; le mode par défaut est le mode normal. 
  *
- * @param[in] stratégie Paramètres de stratégie d'exposition automatique
+ * @param[in] strategy Paramètres de stratégie d'exposition automatique 
  *
- * @retval 0 succès 
- * @retval non-0 échec ， Renvoyer le code d'erreur 
+ * @retval 0 Succès 
+ * @retval non- 0 échec ， Renvoyer le code d'erreur 
  * Exemple: 
- * @code 
+ * @code
  * IMPISPAeStrategy strategy;
  *
  * if( it is a normal scence){
@@ -1012,20 +1051,20 @@ typedef enum {
 	return -1;
 	}
 *
-* @endcode 
+* @endcode
 *
 * @attention Avant d'utiliser cette fonction ，IMP_ISP_EnableTuning A été appelé. 
 */
 int IMP_ISP_Tuning_SetAeStrategy(IMPISPAeStrategy strategy);
 
 /**
-* @fn int IMP_ISP_Tuning_GetAeStrategy (IMPISPAeStrategy * pstrategy)
+* @fn int IMP_ISP_Tuning_GetAeStrategy(IMPISPAeStrategy *pstrategy)
 *
 * Obtenir ISP Configuration de la stratégie d'exposition automatique ， Mode normal ou mode de priorité d'exposition. 
-* @param[in] Pointeur de paramètre de stratégie d'exposition automatique pstrategy
+* @param[in] pstrategy Pointeur de paramètre de stratégie d'exposition automatique 
 *
-* @retval 0 succès 
-* @retval non-0 échec ， Renvoyer le code d'erreur 
+* @retval 0 Succès 
+* @retval non- 0 échec ， Renvoyer le code d'erreur 
 *
 * @attention Avant d'utiliser cette fonction ，IMP_ISP_EnableTuning A été appelé. 
 */
@@ -1039,52 +1078,52 @@ typedef struct {
 } IMPISPGamma;
 
 /**
-* @fn int IMP_ISP_Tuning_SetGamma (IMPISPGamma * gamma)
+* @fn int IMP_ISP_Tuning_SetGamma(IMPISPGamma *gamma)
 *
 * Installation GAMMA paramètre .
-* @param[in] paramètre gamma gamma
+* @param[in] gamma gamma paramètre 
 *
-* @retval 0 succès 
-* @retval non-0 échec ， Renvoyer le code d'erreur 
+* @retval 0 Succès 
+* @retval non- 0 échec ， Renvoyer le code d'erreur 
 *
 * @attention Avant d'utiliser cette fonction ，IMP_ISP_EnableTuning A été appelé. 
 */
 int IMP_ISP_Tuning_SetGamma(IMPISPGamma *gamma);
 
 /**
-* @fn int IMP_ISP_Tuning_GetGamma (IMPISPGamma * gamma)
+* @fn int IMP_ISP_Tuning_GetGamma(IMPISPGamma *gamma)
 *
 * Obtenir GAMMA paramètre .
 * @param[out] gamma gamma paramètre 
 *
-* @retval 0 succès 
-* @retval non-0 échec ， Renvoyer le code d'erreur 
+* @retval 0 Succès 
+* @retval non- 0 échec ， Renvoyer le code d'erreur 
 *
 * @attention Avant d'utiliser cette fonction ，IMP_ISP_EnableTuning A été appelé. 
 */
 int IMP_ISP_Tuning_GetGamma(IMPISPGamma *gamma);
 
 /**
-* @fn int IMP_ISP_Tuning_SetAeComp (int comp)
+* @fn int IMP_ISP_Tuning_SetAeComp(int comp)
 *
 * Installation AE se réconcilier. AE Les paramètres de compensation peuvent ajuster l'image AE target， La plage de réglage recommandée est [90-150].
-* @param[in] comp Paramètres de compensation AE
+* @param[in] comp AE Paramètre de compensation 
 *
-* @retval 0 succès 
-* @retval non-0 échec ， Renvoyer le code d'erreur 
+* @retval 0 Succès 
+* @retval non- 0 échec ， Renvoyer le code d'erreur 
 *
 * @attention Avant d'utiliser cette fonction ，IMP_ISP_EnableTuning A été appelé. 
 */
 int IMP_ISP_Tuning_SetAeComp(int comp);
 
 /**
-* @fn int IMP_ISP_Tuning_GetAeComp (int * comp)
+* @fn int IMP_ISP_Tuning_GetAeComp(int *comp)
 *
 * Obtenir AE se réconcilier. 
 * @param[out] comp AE Paramètre de compensation 
 *
-* @retval 0 succès 
-* @retval non-0 échec ， Renvoyer le code d'erreur 
+* @retval 0 Succès 
+* @retval non- 0 échec ， Renvoyer le code d'erreur 
 *
 * @attention Avant d'utiliser cette fonction ，IMP_ISP_EnableTuning A été appelé. 
 */
@@ -1126,28 +1165,28 @@ typedef union isp_core_expr_attr{
 
 
 /**
- * @fn int IMP_ISP_Tuning_SetExpr (IMPISPExpr * expr)
+ * @fn int IMP_ISP_Tuning_SetExpr(IMPISPExpr *expr)
  *
  * Installation AE paramètre. 
  *
- * @param[in] paramètre expr AE.
+ * @param[in] expr AE paramètre. 
  *
- * @retval 0 succès 
- * @retval non-0 échec ， Renvoyer le code d'erreur 
+ * @retval 0 Succès 
+ * @retval non- 0 échec ， Renvoyer le code d'erreur 
  *
  * @attention Avant d'utiliser cette fonction ，IMP_ISP_EnableTuning A été appelé. 
  */
 int IMP_ISP_Tuning_SetExpr(IMPISPExpr *expr);
 
 /**
- * @fn int IMP_ISP_Tuning_GetExpr (IMPISPExpr * expr)
+ * @fn int IMP_ISP_Tuning_GetExpr(IMPISPExpr *expr)
  *
  * Obtenir AE paramètre. 
  *
  * @param[out] expr AE paramètre. 
  *
- * @retval 0 succès 
- * @retval non-0 échec ， Renvoyer le code d'erreur 
+ * @retval 0 Succès 
+ * @retval non- 0 échec ， Renvoyer le code d'erreur 
  *
  * @attention Avant d'utiliser cette fonction ，IMP_ISP_EnableTuning A été appelé. 
  */
@@ -1167,28 +1206,28 @@ typedef union isp_core_ae_roi_select{
 } IMPISPAERoi;
 
 /**
- * @fn int IMP_ISP_Tuning_AE_GetROI (IMPISPAERoi * isp_ae_roi)
+ * @fn int IMP_ISP_Tuning_AE_GetROI(IMPISPAERoi *isp_ae_roi)
  *
  * Obtenir AE Zone de statistiques. 
  *
- * @param[out] isp_ae_roi AE Paramètres de la zone statistique rectangulaire.
+ * @param[out] isp_ae_roi AE Paramètres de zone statistique rectangulaire. 
  *
- * @retval 0 succès 
- * @retval non-0 échec ， Renvoyer le code d'erreur 
+ * @retval 0 Succès 
+ * @retval non- 0 échec ， Renvoyer le code d'erreur 
  *
  * @attention Avant d'utiliser cette fonction ，IMP_ISP_EnableTuning A été appelé. 
  */
 int IMP_ISP_Tuning_AE_GetROI(IMPISPAERoi *isp_ae_roi);
 
 /**
- * @fn int IMP_ISP_Tuning_AE_SetROI (IMPISPAERoi * isp_ae_roi)
+ * @fn int IMP_ISP_Tuning_AE_SetROI(IMPISPAERoi *isp_ae_roi)
  *
  * Installation AE Zone de statistiques. 
  *
  * @param[in] isp_ae_roi AE Paramètres de zone statistique rectangulaire. 
  *
- * @retval 0 succès 
- * @retval non-0 échec ， Renvoyer le code d'erreur 
+ * @retval 0 Succès 
+ * @retval non- 0 échec ， Renvoyer le code d'erreur 
  *
  * @attention Avant d'utiliser cette fonction ，IMP_ISP_EnableTuning A été appelé. 
  */
@@ -1219,72 +1258,72 @@ typedef struct isp_core_wb_attr{
 }IMPISPWB;
 
 /**
- * @fn int IMP_ISP_Tuning_SetWB (IMPISPWB * wb)
+ * @fn int IMP_ISP_Tuning_SetWB(IMPISPWB *wb)
  *
  * Définissez les paramètres de la fonction de balance des blancs. ， Le mode manuel est principalement défini par rgain [[[ bgain atteindre. 
  *
- * @param[in] wb Jeu de paramètres de balance des blancs.
+ * @param[in] wb Réglez les paramètres de balance des blancs. 
  *
- * @retval 0 succès 
- * @retval non-0 échec ， Renvoyer le code d'erreur 
+ * @retval 0 Succès 
+ * @retval non- 0 échec ， Renvoyer le code d'erreur 
  *
  * @attention Avant d'utiliser cette fonction ，IMP_ISP_EnableTuning A été appelé. 
  */
 int IMP_ISP_Tuning_SetWB(IMPISPWB *wb);
 
 /**
- * @fn int IMP_ISP_Tuning_GetWB (IMPISPWB * wb)
+ * @fn int IMP_ISP_Tuning_GetWB(IMPISPWB *wb)
  *
  * Obtenez le réglage de la fonction de balance des blancs. 
  *
- * @param[out] wb Paramètre de balance des blancs obtenu.
+ * @param[out] wb Les paramètres de balance des blancs obtenus. 
  *
- * @retval 0 succès 
- * @retval non-0 échec ， Renvoyer le code d'erreur 
+ * @retval 0 Succès 
+ * @retval non- 0 échec ， Renvoyer le code d'erreur 
  *
  * @attention Avant d'utiliser cette fonction ，IMP_ISP_EnableTuning A été appelé. 
  */
 int IMP_ISP_Tuning_GetWB(IMPISPWB *wb);
 
 /**
- * @fn IMP_ISP_Tuning_GetWB_Statis (IMPISPWB * wb)
+ * @fn IMP_ISP_Tuning_GetWB_Statis(IMPISPWB *wb)
  *
  * Obtenez des statistiques de balance des blancs. 
  *
- * @param[out] wb Statistiques de balance des blancs obtenues.
+ * @param[out] wb Les statistiques de balance des blancs obtenues. 
  *
- * @retval 0 succès 
- * @retval non-0 échec ， Renvoyer le code d'erreur 
+ * @retval 0 Succès 
+ * @retval non- 0 échec ， Renvoyer le code d'erreur 
  *
  * @attention Avant d'utiliser cette fonction ，IMP_ISP_EnableTuning A été appelé. 
  */
 int IMP_ISP_Tuning_GetWB_Statis(IMPISPWB *wb);
 
 /**
- * @fn int IMP_ISP_Tuning_Awb_GetCwfShift (IMPISPWB * isp_wb_attr)
+ * @fn int IMP_ISP_Tuning_Awb_GetCwfShift(IMPISPWB* isp_wb_attr)
  *
  * Obtenir ISP dans AWB de CWF La position de la source lumineuse 
  *
- * @param[out] isp_wb_attr Coordonnées de la position de la source lumineuse CWF
+ * @param[out] isp_wb_attr CWF Coordonnées de la position de la source lumineuse 
  *
- * @retval 0 succès 
- * @retval non-0 échec ， Renvoyer le code d'erreur 
+ * @retval 0 Succès 
+ * @retval non- 0 échec ， Renvoyer le code d'erreur 
  *
  * @attention Avant d'utiliser cette fonction ，IMP_ISP_EnableTuning A été appelé. 
  */
 int IMP_ISP_Tuning_Awb_GetCwfShift(IMPISPWB *isp_wb_attr);
 
 /**
- * @fn int IMP_ISP_Tuning_Awb_SetCwfShift (IMPISPWB * isp_wb_attr)
+ * @fn int IMP_ISP_Tuning_Awb_SetCwfShift(IMPISPWB *isp_wb_attr)
  *
  * Installation ISP dans AWB de CWF La position de la source lumineuse 
  *
  * @param[in] isp_wb_attr CWF Coordonnées de la position de la source lumineuse 
  *
- * @retval 0 succès 
- * @retval non-0 échec ， Renvoyer le code d'erreur 
+ * @retval 0 Succès 
+ * @retval non- 0 échec ， Renvoyer le code d'erreur 
  * Exemple: 
- * @code 
+ * @code
  * IMPISPWB isp_wb_attr;
  *
  *isp_wb_attr.rgain = x;
@@ -1295,133 +1334,176 @@ int IMP_ISP_Tuning_Awb_GetCwfShift(IMPISPWB *isp_wb_attr);
  return -1;
  }
  *
- * @endcode 
+ * @endcode
  *
  * @attention Avant d'utiliser cette fonction ，IMP_ISP_EnableTuning A été appelé. 
  */
 int IMP_ISP_Tuning_Awb_SetCwfShift(IMPISPWB *isp_wb_attr);
 
 /**
- * @fn int IMP_ISP_Tuning_SetMaxAgain (gain uint32_t)
+ * @fn int IMP_ISP_Tuning_SetMaxAgain(uint32_t gain)
  *
  * Installation sensor Vous pouvez définir le maximum Again . 
  *
- * @param[in] Le maximum que le capteur de gain peut régler est de nouveau: 0 signifie 1x, 32 signifie 2x, et ainsi de suite.
+ * @param[in] gain sensor Le maximum qui peut être défini again.0 Moyens 1x，32 Moyens 2x， Etc. 
  *
- * @retval 0 succès 
- * @retval non-0 échec ， Renvoyer le code d'erreur 
+ * @retval 0 Succès 
+ * @retval non- 0 échec ， Renvoyer le code d'erreur 
  *
  * @attention Avant d'utiliser cette fonction ，IMP_ISP_EnableTuning A été appelé. 
  */
+
+typedef struct isp_core_rgb_coefft_wb_attr {
+		unsigned short rgb_coefft_wb_r;
+		unsigned short rgb_coefft_wb_g;
+		unsigned short rgb_coefft_wb_b;
+
+}IMPISPCOEFFTWB;
+/**
+ * @fn IMP_ISP_Tuning_Awb_GetRgbCoefft(IMPISPCOEFFTWB *isp_core_rgb_coefft_wb_attr)
+ *
+ * Obtenir sensor AWB RGB Paramètre de décalage de canal. 
+ *
+ * @retval 0 Succès 
+ * @retval non- 0 échec ， Renvoyer le code d'erreur 
+ *
+ * @attention Avant d'utiliser cette fonction ，IMP_ISP_EnableTuning A été appelé. 
+ */
+int IMP_ISP_Tuning_Awb_GetRgbCoefft(IMPISPCOEFFTWB *isp_core_rgb_coefft_wb_attr);
+/**
+ * @fn IMP_ISP_Tuning_Awb_SetRgbCoefft(IMPISPCOEFFTWB *isp_core_rgb_coefft_wb_attr)
+ *
+ * Installation sensor Peut être mis en place AWB RGB Paramètre de décalage de canal. 
+ *
+ * @retval 0 Succès 
+ * @retval non- 0 échec ， Renvoyer le code d'erreur 
+ *
+ * @attention Avant d'utiliser cette fonction ，IMP_ISP_EnableTuning A été appelé. 
+ *
+ * Exemple: 
+ * @code
+ * IMPISPCOEFFTWB isp_core_rgb_coefft_wb_attr;
+ *
+ *isp_core_rgb_coefft_wb_attr.rgb_coefft_wb_r=x;
+ *isp_core_rgb_coefft_wb_attr.rgb_coefft_wb_g=y;
+ *isp_core_rgb_coefft_wb_attr.rgb_coefft_wb_b=z;
+ *IMP_ISP_Tuning_Awb_SetRgbCoefft(&isp_core_rgb_coefft_wb_attr);
+ if(ret){
+ IMP_LOG_ERR(TAG, "IMP_ISP_Tuning_Awb_SetRgbCoefft error !\n");
+ return -1;
+ }
+*/
+int IMP_ISP_Tuning_Awb_SetRgbCoefft(IMPISPCOEFFTWB *isp_core_rgb_coefft_wb_attr);
+
 int IMP_ISP_Tuning_SetMaxAgain(uint32_t gain);
 
 /**
- * @fn int IMP_ISP_Tuning_GetMaxAgain (uint32_t * gain)
+ * @fn int IMP_ISP_Tuning_GetMaxAgain(uint32_t *gain)
  *
  * Obtenir sensor Vous pouvez définir le maximum Again . 
  *
  * @param[out] gain sensor Le maximum qui peut être défini again.0 Moyens 1x，32 Moyens 2x， Etc. 
  *
- * @retval 0 succès 
- * @retval non-0 échec ， Renvoyer le code d'erreur 
+ * @retval 0 Succès 
+ * @retval non- 0 échec ， Renvoyer le code d'erreur 
  *
  * @attention Avant d'utiliser cette fonction ，IMP_ISP_EnableTuning A été appelé. 
  */
 int IMP_ISP_Tuning_GetMaxAgain(uint32_t *gain);
 
 /**
- * @fn int IMP_ISP_Tuning_SetMaxDgain (gain uint32_t)
+ * @fn int IMP_ISP_Tuning_SetMaxDgain(uint32_t gain)
  *
  * Installation ISP Le maximum qui peut être défini Dgain . 
  *
- * @param[in] Le gain maximal qui peut être défini par le FAI Dgain.0 signifie 1x, 32 signifie 2x, et ainsi de suite.
+ * @param[in] ISP Dgain Le maximum qui peut être défini dgain.0 Moyens 1x，32 Moyens 2x， Etc. 
  *
- * @retval 0 succès 
- * @retval non-0 échec ， Renvoyer le code d'erreur 
+ * @retval 0 Succès 
+ * @retval non- 0 échec ， Renvoyer le code d'erreur 
  *
  * @attention Avant d'utiliser cette fonction ，IMP_ISP_EnableTuning A été appelé. 
  */
 int IMP_ISP_Tuning_SetMaxDgain(uint32_t gain);
 
 /**
- * @fn int IMP_ISP_Tuning_GetMaxDgain (uint32_t * gain)
+ * @fn int IMP_ISP_Tuning_GetMaxDgain(uint32_t *gain)
  *
  * Obtenir ISP Définir le maximum Dgain . 
  *
- * @param[out] ISP Dgain peut obtenir le gain maximum défini.0 signifie 1x, 32 signifie 2x, et ainsi de suite.
+ * @param[out] ISP Dgain Peut obtenir le plus grand ensemble dgain.0 Moyens 1x，32 Moyens 2x， Etc. 
  *
- * @retval 0 succès 
- * @retval non-0 échec ， Renvoyer le code d'erreur 
+ * @retval 0 Succès 
+ * @retval non- 0 échec ， Renvoyer le code d'erreur 
  *
  * @attention Avant d'utiliser cette fonction ，IMP_ISP_EnableTuning A été appelé. 
  */
 int IMP_ISP_Tuning_GetMaxDgain(uint32_t *gain);
 
 /**
- * @fn int IMP_ISP_Tuning_SetVideoDrop (void (* cb) (void))
+ * @fn int IMP_ISP_Tuning_SetVideoDrop(void (*cb)(void))
  *
  * Réglez la fonction de perte vidéo. sensor En cas de problème avec la ligne de connexion à la carte mère ， La fonction de rappel définie sera exécutée. 
  *
- * @param[in] fonction de rappel cb.
+ * @param[in] cb Rappeler. 
  *
- * @retval 0 succès 
- * @retval non-0 échec ， Renvoyer le code d'erreur 
+ * @retval 0 Succès 
+ * @retval non- 0 échec ， Renvoyer le code d'erreur 
  *
  * @attention Avant d'utiliser cette fonction ，IMP_ISP_EnableTuning A été appelé. 
  */
 int IMP_ISP_Tuning_SetVideoDrop(void (*cb)(void));
 
 /**
- * @fn int IMP_ISP_Tuning_SetHiLightDepress (force uint32_t)
+ * @fn int IMP_ISP_Tuning_SetHiLightDepress(uint32_t strength)
  *
  * Réglez l'intensité de la forte suppression de la lumière. 
  *
- * @param[in] force Le paramètre d'intensité de suppression de la lumière forte La plage de valeurs est [0-10], 0 signifie que la fonction est désactivée.
+ * @param[in] strength Paramètre d'intensité de suppression de la lumière forte . La plage de valeurs est [ 0-10], 0 Indique que la fonction est désactivée. 
  *
- * @retval 0 succès 
- * @retval non-0 échec ， Renvoyer le code d'erreur 
+ * @retval 0 Succès 
+ * @retval non- 0 échec ， Renvoyer le code d'erreur 
  *
  * @attention Avant d'utiliser cette fonction ，IMP_ISP_EnableTuning A été appelé. 
  */
 int IMP_ISP_Tuning_SetHiLightDepress(uint32_t strength);
 
 /**
- * @fn int IMP_ISP_Tuning_SetTemperStrength (rapport uint32_t)
+ * @fn int IMP_ISP_Tuning_SetTemperStrength(uint32_t ratio)
  *
  * Installation 3D Intensité de la réduction du bruit. 
  *
- * @param[in] ratio: Le rapport de réglage de l'intensité. S'il est réglé sur 90, cela signifie qu'il est réglé sur 90% de la valeur par défaut. La plage de valeurs est [50-150].
+ * @param[in] ratio Rapport d'ajustement d'intensité . Si défini sur 90 Moyens définis sur la valeur par défaut 90%. La plage de valeurs est [ 50-150].
  *
- * @retval 0 succès 
- * @retval non-0 échec ， Renvoyer le code d'erreur 
+ * @retval 0 Succès 
+ * @retval non- 0 échec ， Renvoyer le code d'erreur 
  *
  * @attention Avant d'utiliser cette fonction ，IMP_ISP_EnableTuning A été appelé. 
  */
 int IMP_ISP_Tuning_SetTemperStrength(uint32_t ratio);
 
 /**
- * @fn int IMP_ISP_Tuning_SetSinterStrength (rapport uint32_t)
+ * @fn int IMP_ISP_Tuning_SetSinterStrength(uint32_t ratio)
  *
  * Installation 2D Intensité de la réduction du bruit. 
  *
  * @param[in] ratio Rapport d'ajustement d'intensité . Si défini sur 90 Moyens définis sur la valeur par défaut 90%. La plage de valeurs est [ 50-150].
  *
- * @retval 0 succès 
- * @retval non-0 échec ， Renvoyer le code d'erreur 
+ * @retval 0 Succès 
+ * @retval non- 0 échec ， Renvoyer le code d'erreur 
  *
  * @attention Avant d'utiliser cette fonction ，IMP_ISP_EnableTuning A été appelé. 
  */
 int IMP_ISP_Tuning_SetSinterStrength(uint32_t ratio);
 
 /**
- * @fn int IMP_ISP_Tuning_SetDPStrength (rapport uint32_t)
+ * @fn int IMP_ISP_Tuning_SetDPStrength(uint32_t ratio)
  *
  * Installation DPC force. 
  *
  * @param[in] ratio Rapport d'ajustement d'intensité . Si défini sur 90 Moyens définis sur la valeur par défaut 90%. La plage de valeurs est [ 50-150].
  *
- * @retval 0 succès 
- * @retval non-0 échec ， Renvoyer le code d'erreur 
+ * @retval 0 Succès 
+ * @retval non- 0 échec ， Renvoyer le code d'erreur 
  *
  * @attention Avant d'utiliser cette fonction ，IMP_ISP_EnableTuning A été appelé. 
  */
@@ -1438,13 +1520,13 @@ typedef enum {
 }IMPISPAntiFogAttr;
 
 /**
-* @fn int IMP_ISP_Tuning_SetAntiFogAttr (IMPISPAntiFogAttr attr)
+* @fn int IMP_ISP_Tuning_SetAntiFogAttr(IMPISPAntiFogAttr attr)
 *
 * Installation ANTIFOG Les attributs. 
-* @param[in] attr Paramètres d'attribut ANTIFOG
+* @param[in] attr ANTIFOG Paramètre d'attribut 
 *
-* @retval 0 succès 
-* @retval non-0 échec ， Renvoyer le code d'erreur 
+* @retval 0 Succès 
+* @retval non- 0 échec ， Renvoyer le code d'erreur 
 *
 * @attention Avant d'utiliser cette fonction ，IMP_ISP_EnableTuning A été appelé. 
 */
@@ -1463,17 +1545,392 @@ typedef struct {
 }IMPISPEVAttr;
 
 /**
-* @fn int IMP_ISP_Tuning_GetEVAttr (IMPISPEVAttr * attr)
+* @fn int IMP_ISP_Tuning_GetEVAttr(IMPISPEVAttr *attr)
 *
 * Obtenir EV Les attributs. 
-* @param[out] attr Paramètres d'attribut EV
+* @param[out] attr EV Paramètre d'attribut 
 *
-* @retval 0 succès 
-* @retval non-0 échec ， Renvoyer le code d'erreur 
+* @retval 0 Succès 
+* @retval non- 0 échec ， Renvoyer le code d'erreur 
 *
 * @attention Avant d'utiliser cette fonction ，IMP_ISP_EnableTuning A été appelé. 
 */
 int IMP_ISP_Tuning_GetEVAttr(IMPISPEVAttr *attr);
+
+/**
+* @fn int IMP_ISP_Tuning_EnableMovestate(void)
+*
+* lorsque sensor Pendant l'exercice ， Installation ISP Entrez l'état de l'exercice. 
+*
+* @retval 0 Succès 
+* @retval non- 0 échec ， Renvoyer le code d'erreur 
+*
+* @attention Avant d'utiliser cette fonction ，IMP_ISP_EnableTuning A été appelé. 
+*/
+int IMP_ISP_Tuning_EnableMovestate(void);
+
+/**
+* @fn int IMP_ISP_Tuning_DisableMovestate(void)
+*
+* lorsque sensor Retour du mouvement au repos ， Installation ISP Désactivez l'état de mouvement. 
+*
+* @retval 0 Succès 
+* @retval non- 0 échec ， Renvoyer le code d'erreur 
+*
+* @attention Avant d'utiliser cette fonction ，IMP_ISP_Tuning_EnableMovestate A été appelé. 
+*/
+int IMP_ISP_Tuning_DisableMovestate(void);
+
+/**
+* Options de sélection de mode 
+*/
+typedef enum {
+	IMPISP_TUNING_MODE_AUTO, /**< Le fonctionnement du module est en mode automatique */
+	IMPISP_TUNING_MODE_MANUAL, /**< Le fonctionnement de ce module est en mode manuel */
+	IMPISP_TUNING_MODE_RANGE, /**< Le fonctionnement de ce module est le mode de plage de réglage */
+	IMPISP_TUNING_MODE_BUTT, /**< Utilisé pour juger de la validité des paramètres ， La taille du paramètre doit être inférieure à cette valeur */
+} IMPISPTuningMode;
+
+/**
+* Paramètres d'exposition 
+*/
+typedef struct {
+	IMPISPTuningMode mode; /**< Mode d'exposition ， Divisé en mode automatique, mode manuel et mode de plage de réglage */
+	uint16_t integration_time; /** Délai d'exposition */
+	uint16_t max_integration_time; /**< Temps d'exposition maximum */
+} IMPISPITAttr;
+
+/**
+ * @fn int IMP_ISP_Tuning_SetIntegrationTime(IMPISPITAttr *itattr)
+ *
+ * Installation AE paramètre. 
+ *
+ * @param[in] itattr Paramètres d'exposition. 
+ *
+ * @retval 0 Succès 
+ * @retval non- 0 échec ， Renvoyer le code d'erreur 
+ *
+ * @attention Avant d'utiliser cette fonction ，IMP_ISP_EnableTuning A été appelé. 
+ */
+int IMP_ISP_Tuning_SetIntegrationTime(IMPISPITAttr *itattr);
+
+/**
+ * @fn int IMP_ISP_Tuning_GetIntegrationTime(IMPISPITAttr *itattr)
+ *
+ * Obtenez les paramètres liés à l'exposition. 
+ *
+ * @param[out] itattr Paramètres d'exposition. 
+ *
+ * @retval 0 Succès 
+ * @retval non- 0 échec ， Renvoyer le code d'erreur 
+ *
+ * @attention Avant d'utiliser cette fonction ，IMP_ISP_EnableTuning A été appelé. 
+ */
+int IMP_ISP_Tuning_GetIntegrationTime(IMPISPITAttr *itattr);
+
+/**
+* Informations sur le poids 
+*/
+typedef struct {
+	unsigned char weight[15][15]; /**< Informations de poids de chaque zone [0 ~ 15]*/
+} IMPISPWeight;
+
+/**
+ * @fn int IMP_ISP_Tuning_SetAeWeight(IMPISPWeight *ae_weight)
+ *
+ * Installation AE Le poids de la zone statistique. 
+ *
+ * @param[in] ae_weight Informations de poids pour chaque zone. 
+ *
+ * @retval 0 Succès 
+ * @retval non- 0 échec ， Renvoyer le code d'erreur 
+ *
+ * @attention Avant d'utiliser cette fonction ，IMP_ISP_EnableTuning A été appelé. 
+ */
+int IMP_ISP_Tuning_SetAeWeight(IMPISPWeight *ae_weight);
+
+/**
+ * @fn int IMP_ISP_Tuning_GetAeWeight(IMPISPWeight *ae_weight)
+ *
+ * Obtenir AE Le poids de la zone statistique. 
+ *
+ * @param[out] ae_weight Informations de poids pour chaque zone. 
+ *
+ * @retval 0 Succès 
+ * @retval non- 0 échec ， Renvoyer le code d'erreur 
+ *
+ * @attention Avant d'utiliser cette fonction ，IMP_ISP_EnableTuning A été appelé. 
+ */
+int IMP_ISP_Tuning_GetAeWeight(IMPISPWeight *ae_weight);
+
+/**
+ * @fn int IMP_ISP_Tuning_SetAwbWeight(IMPISPWeight *awb_weight)
+ *
+ * Installation AWB Le poids de la zone statistique. 
+ *
+ * @param[in] awb_weight Informations de poids pour chaque zone. 
+ *
+ * @retval 0 Succès 
+ * @retval non- 0 échec ， Renvoyer le code d'erreur 
+ *
+ * @attention Avant d'utiliser cette fonction ，IMP_ISP_EnableTuning A été appelé. 
+ */
+int IMP_ISP_Tuning_SetAwbWeight(IMPISPWeight *awb_weight);
+
+/**
+ * @fn int IMP_ISP_Tuning_GetAwbWeight(IMPISPWeight *awb_weight)
+ *
+ * Obtenir AWB Le poids de la zone statistique. 
+ *
+ * @param[out] awb_weight Informations de poids pour chaque zone. 
+ *
+ * @retval 0 Succès 
+ * @retval non- 0 échec ， Renvoyer le code d'erreur 
+ *
+ * @attention Avant d'utiliser cette fonction ，IMP_ISP_EnableTuning A été appelé. 
+ */
+int IMP_ISP_Tuning_GetAwbWeight(IMPISPWeight *awb_weight);
+
+/**
+* AE Paramètre statistique 
+*/
+typedef struct {
+	unsigned char ae_histhresh[4]; /**< AE Histogramme statistique bin frontière [0 ~ 255]*/
+	unsigned short ae_hist[5]; /**< AE Histogramme statistique bin évaluer [0 ~ 65535]*/
+	unsigned char ae_stat_nodeh; /**< Nombre de zones statistiques effectives dans le sens horizontal [0 ~ 15]*/
+	unsigned char ae_stat_nodev; /**< Nombre de zones statistiques effectives dans le sens vertical [0 ~ 15]*/
+} IMPISPAEHist;
+
+/**
+ * @fn int IMP_ISP_Tuning_SetAeHist(IMPISPAEHist *ae_hist)
+ *
+ * Installation AE Paramètres liés aux statistiques. 
+ *
+ * @param[in] ae_hist AE Paramètres liés aux statistiques. 
+ *
+ * @retval 0 Succès 
+ * @retval non- 0 échec ， Renvoyer le code d'erreur 
+ *
+ * @attention Avant d'utiliser cette fonction ，IMP_ISP_EnableTuning A été appelé. 
+ */
+int IMP_ISP_Tuning_SetAeHist(IMPISPAEHist *ae_hist);
+
+/**
+ * @fn int IMP_ISP_Tuning_GetAeHist(IMPISPAEHist *ae_hist)
+ *
+ * Obtenir AE Statistiques. 
+ *
+ * @param[out] ae_hist AE Informations statistiques. 
+ *
+ * @retval 0 Succès 
+ * @retval non- 0 échec ， Renvoyer le code d'erreur 
+ *
+ * @attention Avant d'utiliser cette fonction ，IMP_ISP_EnableTuning A été appelé. 
+ */
+int IMP_ISP_Tuning_GetAeHist(IMPISPAEHist *ae_hist);
+
+typedef struct {
+	unsigned short ae_sta_zone[15*15];		/**AE Statistiques pour chaque bloc */
+} IMPISPAEZone;
+
+/**
+ * @fn int IMP_ISP_Tuning_GetAeZone(IMPISPAEZone *ae_zone)
+ *
+ * Obtenir AE Statistiques pour chaque bloc 
+ *
+ * @param[out] ae_zone AE La valeur statistique de chaque bloc. 
+ *
+ * @retval 0 Succès 
+ * @retval non- 0 échec ， Renvoyer le code d'erreur 
+ *
+ * @attention Avant d'utiliser cette fonction ，IMP_ISP_EnableTuning A été appelé. 
+ */
+int IMP_ISP_Tuning_GetAeZone(IMPISPAEZone *ae_zone);
+
+/**
+* AWB Statistiques 
+*/
+struct isp_core_awb_sta_info{
+	unsigned short r_gain; /**< AWB Pondéré r/g valeur moyenne [0 ~ 4095]*/
+	unsigned short b_gain; /**< AWB Pondéré b/g valeur moyenne [0 ~ 4095]*/
+	unsigned int awb_sum; /**< Utilisé pour AWB Pixels comptés [0 ~ 4294967295]*/
+};
+/**
+* AWB Mode statistique 
+*/
+enum isp_core_awb_stats_mode{
+	IMPISP_AWB_STATS_LEGACY_MODE = 0, /**< Mode retard */
+	IMPISP_AWB_STATS_CURRENT_MODE = 1, /**< Mode actuel */
+	IMPISP_AWB_STATS_MODE_BUTT,
+};
+/**
+* AWB Paramètre statistique 
+*/
+typedef struct {
+	struct isp_core_awb_sta_info awb_stat; /**< AWB Statistiques */
+	enum isp_core_awb_stats_mode awb_stats_mode; /**< AWB Mode statistique */
+	unsigned short awb_whitelevel; /**< AWB Limite supérieure des statistiques [0 ~ 1023]*/
+	unsigned short awb_blacklevel; /**< AWB Limite inférieure de la valeur statistique [0 ~ 1023]*/
+	unsigned short cr_ref_max; /**< AWB Zone de tache blanche statistique r/g Max [0 ~ 4095]*/
+	unsigned short cr_ref_min; /**< AWB Zone de tache blanche statistique r/g Le minimum [0 ~ 4095]*/
+	unsigned short cb_ref_max; /**< AWB Zone de tache blanche statistique b/g Max [0 ~ 4095]*/
+	unsigned short cb_ref_min; /**< AWB Zone de tache blanche statistique b/g Max [0 ~ 4095]*/
+	unsigned char awb_stat_nodeh; /**< Nombre de zones statistiques effectives dans le sens horizontal [0 ~ 15]*/
+	unsigned char awb_stat_nodev; /**< Nombre de zones statistiques effectives dans le sens vertical [0 ~ 15]*/
+} IMPISPAWBHist;
+
+struct isp_core_wb_zone_info{
+	unsigned short red_green; 	/**< r_gain*/
+	unsigned short blue_green; 	/**< b_gain*/
+	unsigned int sum; 			/**< Nombre de pixels utilisés pour les statistiques */
+};
+
+typedef struct {
+	struct isp_core_wb_zone_info awb_sta_zone[15][15];		/** AWB Statistiques pour chaque bloc */
+} IMPISPAWBZone;
+
+/**
+ * @fn int int IMP_ISP_Tuning_GetAwbZone(IMPISPAWBZone *awb_zone)
+ *
+ * Obtenir AWB La valeur statistique de chaque bloc. 
+ *
+ * @param[out] awb_zone AWB Statistiques pour chaque bloc 
+ *
+ * @retval 0 Succès 
+ * @retval non- 0 échec ， Renvoyer le code d'erreur 
+ *
+ * @attention Avant d'utiliser cette fonction ，IMP_ISP_EnableTuning A été appelé. 
+ */
+int IMP_ISP_Tuning_GetAwbZone(IMPISPAWBZone *awb_zone);
+
+/**
+ * @fn int IMP_ISP_Tuning_GetAwbHist(IMPISPAWBHist *awb_hist)
+ *
+ * Obtenir AWB Statistiques. 
+ *
+ * @param[out] awb_hist AWB Informations statistiques. 
+ *
+ * @retval 0 Succès 
+ * @retval non- 0 échec ， Renvoyer le code d'erreur 
+ *
+ * @attention Avant d'utiliser cette fonction ，IMP_ISP_EnableTuning A été appelé. 
+ */
+int IMP_ISP_Tuning_GetAwbHist(IMPISPAWBHist *awb_hist);
+
+/**
+ * @fn int IMP_ISP_Tuning_SetAwbHist(IMPISPAWBHist *awb_hist)
+ *
+ * Installation AWB Paramètres liés aux statistiques. 
+ *
+ * @param[in] awb_hist AWB Paramètres liés aux statistiques. 
+ *
+ * @retval 0 Succès 
+ * @retval non- 0 échec ， Renvoyer le code d'erreur 
+ *
+ * @attention Avant d'utiliser cette fonction ，IMP_ISP_EnableTuning A été appelé. 
+ */
+int IMP_ISP_Tuning_SetAwbHist(IMPISPAWBHist *awb_hist);
+
+/**
+* AF Statistiques 
+*/
+struct isp_core_af_sta_info{
+	unsigned short af_metrics;/**< AF Statistique principale [0 ~ 65535]*/
+	unsigned short af_metrics_alt;/**< AWB Sous-statistiques [0 ~ 65535]*/
+	unsigned short af_thresh_read;/**< AF Seuil statistique principal [0 ~ 65535]*/
+	unsigned short af_intensity_read;/**< AF Valeur statistique [0 ~ 65535]*/
+	unsigned short af_intensity_zone;/**< AF Valeur statistique valeur de la zone de luminosité [0 ~ 65535]*/
+	unsigned int af_total_pixels;/**< Utilisé pour AF Pixels comptés [0 ~ 4294967295]*/
+	unsigned int af_counted_pixels;/**< Utilisé pour AF Valeur cumulée des pixels comptés [0 ~ 4294967295]*/
+};
+/**
+* AF Paramètre statistique 
+*/
+typedef struct {
+	struct isp_core_af_sta_info af_stat; /**< AF Principales informations statistiques */
+	unsigned char af_metrics_shift; /**< AF Principal paramètre de réduction de la valeur statistique [0 ~ 15]*/
+	unsigned short af_thresh; /**< AF Seuil statistique principal [0 ~ 65535]*/
+	unsigned short af_thresh_alt; /**< AF Seuil statistique secondaire [0 ~ 65535]*/
+	unsigned char af_stat_nodeh; /**< Nombre de zones statistiques effectives dans le sens horizontal [0 ~ 15]*/
+	unsigned char af_stat_nodev; /**< Nombre de zones statistiques effectives dans le sens vertical [0 · 15]*/
+	unsigned char af_np_offset; /**< AF Changement de caractéristique de bruit statistique [0 ~ 255]*/
+	unsigned char af_intensity_mode; /**< AF Mode de normalisation de la légèreté [0 ~ 7]*/
+	unsigned char af_skipx; /**< direction horizontale AF Statistiques de saut [0 ~ 5]*/
+	unsigned char af_offsetx; /**< direction horizontale AF Statistiques de décalage [0 ~ 1]*/
+	unsigned char af_skipy; /**< Direction verticale AF Statistiques de saut [0 ~ 6]*/
+	unsigned char af_offsety; /**< Direction verticale AF Statistiques de décalage [0 ~ 1]*/
+	unsigned char af_scale_top; /**< Moitié inférieure des paramètres réduits [0 ~ 4]*/
+	unsigned char af_scale_bottom; /**< Paramètres de réduction de la moitié supérieure [0 ~ 4]*/
+} IMPISPAFHist;
+
+/**
+ * @fn int IMP_ISP_Tuning_GetAfHist(IMPISPAFHist *af_hist);
+ *
+ * Obtenir AF Statistiques. 
+ *
+ * @param[out] af_hist AF Informations statistiques. 
+ *
+ * @retval 0 Succès 
+ * @retval non- 0 échec ， Renvoyer le code d'erreur 
+ *
+ * @attention Avant d'utiliser cette fonction ，IMP_ISP_EnableTuning A été appelé. 
+ */
+int IMP_ISP_Tuning_GetAfHist(IMPISPAFHist *af_hist);
+
+/**
+ * @fn int IMP_ISP_Tuning_SetAfHist(IMPISPAFHist *af_hist)
+ *
+ * Installation AF Paramètres liés aux statistiques. 
+ *
+ * @param[in] af_hist AF Paramètres liés aux statistiques. 
+ *
+ * @retval 0 Succès 
+ * @retval non- 0 échec ， Renvoyer le code d'erreur 
+ *
+ * @attention Avant d'utiliser cette fonction ，IMP_ISP_EnableTuning A été appelé. 
+ */
+int IMP_ISP_Tuning_SetAfHist(IMPISPAFHist *af_hist);
+
+/**
+ * ISP Wait Frame paramètre. 
+ */
+typedef struct {
+	uint32_t timeout;		/**< temps supplémentaire ， unité ms */
+	uint64_t cnt;			/**< Frame statistiques */
+}IMPISPWaitFrameAttr;
+
+/**
+* @fn int IMP_ISP_Tuning_WaitFrame(IMPISPWaitFrameAttr *attr)
+* Attendez la fin du cadre 
+*
+* @param[out] attr Attendre l'attribut de fin de trame 
+*
+* @retval 0 Succès 
+* @retval non- 0 échec ， Renvoyer le code d'erreur 
+*
+* @attention Avant d'utiliser cette fonction ，IMP_ISP_EnableTuning A été appelé. 
+*/
+int IMP_ISP_Tuning_WaitFrame(IMPISPWaitFrameAttr *attr);
+
+typedef enum {
+	IMPISP_SHAD_SCALE_L,		/**< Mesh Shading Facteur de zoom 0 */
+	IMPISP_SHAD_SCALE_M,		/**< Mesh Shading Facteur de zoom 1 */
+	IMPISP_SHAD_SCALE_H,		/**< Mesh Shading Facteur de zoom 2 */
+	IMPISP_SHAD_SCALE_U,		/**< Mesh Shading Facteur de zoom 3 */
+} IMPISPMeshShadingScale;
+
+/**
+* @fn int IMP_ISP_Tuning_SetMeshShadingScale(IMPISPMeshShadingScale scale)
+* Installation Mesh Shading Facteur de zoom 
+*
+* @param[out] scale Mesh Shading Facteur de zoom 
+*
+* @retval 0 Succès 
+* @retval non- 0 échec ， Renvoyer le code d'erreur 
+*
+* @attention Avant d'utiliser cette fonction ，IMP_ISP_EnableTuning A été appelé. 
+*/
+int IMP_ISP_Tuning_SetMeshShadingScale(IMPISPMeshShadingScale scale);
 
 #ifdef __cplusplus
 #if __cplusplus

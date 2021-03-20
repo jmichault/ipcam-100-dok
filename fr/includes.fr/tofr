@@ -1,8 +1,16 @@
 
 
+for x in *.h
+do
+
+delta=1
+echo "traitement $x."
+
+while [ $delta -gt 0 ]
+do
 
 
-gawk 'BEGIN{ ORS="";}{
+cat $x|gawk 'BEGIN{ ORS="";}{
   # print("lignezh : " $0 ".\n"); ##
   ligne="";
     split ($0, MSGS , "[ -~\t，éèêàçôÉÈÊÀÇÔùÙ×]*", SEPS);
@@ -30,4 +38,14 @@ gawk 'BEGIN{ ORS="";}{
   gsub("  "," ",ligne);
   print(  ligne "\n");
 
-} '
+} ' >tmp/$x
+
+delta=$( diff $x tmp/$x|wc -l )
+echo delta=$delta"."
+mv tmp/$x $x
+
+done
+
+
+
+done

@@ -7,41 +7,28 @@ title: 'ਪਾਰ ਸੰਕਲਨ'
 ---
 
 
+ਪਾਰਗਮਨ ਸੰਗ੍ਰਿਹ ਸੰਦ ਪ੍ਰੋਗਰਾਮਿੰਗ ਵਿੱਚ ਹਨ_medio/toolchain.
+Ils ont été compilés pour debian buster x64.
 
-ਸਰੋਤ:
- * <https://znanev.github.io/Cross-compile-tools-for-Ingenic-T20/>  
+
+
+ਤੁਲਨਾਤਮਕ ਲਾਇਬ੍ਰੇਰੀਆਂ,_medio/lib
+ਵਿੱਚ ਹਨ
+
+
+ਸ਼ਾਮਲ ਕਰਨਾ_medio/include.
+
+
+
+ਜੇ ਤੁਹਾਨੂੰ ਕਿਸੇ ਲਾਇਬ੍ਰੇਰੀ ਨੂੰ ਮੁੜ ਪ੍ਰਾਪਤ ਕਰਨ ਦੀ ਜ਼ਰੂਰਤ ਹੈ, ਤਾਂ ਹੇਠ ਲਿਖੀਆਂ ਸਕ੍ਰਿਪਟਾਂ ਨੂੰ ਪ੍ਰੇਰਿਤ ਕਰੋ:
+* ਪ੍ਰੋਗਰਾਮਾਂ_medio/fontoj/03-pcre.sh , pour la librairie pcre.
+
+
+
+
+ਜੇ ਤੁਹਾਨੂੰ ਕਦੇ _«toolchain»_ਨੂੰ ਦੁਬਾਰਾ ਪ੍ਰਗਟ ਕਰਨ ਦੀ ਜ਼ਰੂਰਤ ਹੈ, ਤਾਂ ਤੁਸੀਂ ਹੇਠਲੀਆਂ ਥਾਵਾਂ ਦੀ ਜਾਂਚ ਕਰ ਸਕਦੇ ਹੋ: (° 3 ° 4 ° 4 °. ਲਈ  
  * <https://github.com/Dafang-Hacks/Main>
 
 
 
-
-# ਕੰਪਾਈਲਰ ਲਗਾਉਣਾ:
-## ਵਿਕਲਪ 1: ਡੌਕਰ ਦੇ ਨਾਲ (ਤੇਜ਼ੀ ਨਾਲ ਸਥਾਪਤ ਕਰਨ ਲਈ, ਹੌਲੀ ਹੌਲੀ ਚਾਲੂ)
-
-```
-sudo apt install docker.io
-sudo usermod -aG docker mia_uzanto
- se déconnecter puis se reconnecter
-mkdir ~/dafang
-cd ~/dafang
-docker run --rm -ti -v $(pwd):/root/ daviey/dafang-cross-compile:latest
-```
-
-## ਵਿਕਲਪ 2: ਸਥਾਨਕ ਤੌਰ ਤੇ (ਸਥਾਪਤ ਕਰਨ ਲਈ ਲੰਬਾ, ਚਲਾਉਣ ਲਈ ਤੇਜ਼)
-
-```
-sudo apt install build-essential git gcc-mips-linux-gnu autoconf libtool cmake ftp-upload u-boot-tools
-mkdir -p ~/dafang/Main/mips-gcc472-glibc216-64bit
-ln -s /usr/bin ~/dafang/Main/mips-gcc472-glibc216-64bit
-```
-
-# ਲਾਇਬ੍ਰੇਰੀਆਂ ਦਾ ਸੰਗ੍ਰਹਿ ਅਤੇ _v4l2rtspserver-master_
-
-```
-git clone --recurse-submodules https://github.com/Dafang-Hacks/Main.git
-cd Main
-./compile_libraries.sh
-cd v4l2rtspserver-master
-./compile.sh
-```
 

@@ -7,41 +7,22 @@ title: 'क्रॉस संकलन'
 ---
 
 
+ट्रांजिट संकलन उपकरण प्रोग्रामिंग में हैं (° ° 0001 डिग्री)
 
-स्रोत:
- * <https://znanev.github.io/Cross-compile-tools-for-Ingenic-T20/>  
+
+तुलनात्मक पुस्तकालय प्रोग्रेस में हैं (° ° 0001 डिग्री)
+
+
+शामिल है प्रोग्रामिंग में (° ° 0001 डिग्री)
+
+
+यदि आपको लाइब्रेरी को पुन: संयोजित करने की आवश्यकता है, तो निम्न स्क्रिप्ट को प्रेरित करें: (° ° 0001 डिग्री) (डिग्री 0002 डिग्री) प्रोग्रामडा (डिग्री 0003 डिग्री) पर्यावरण / स्रोत / 02-buildive.sh, Live555 लाइब्रेरी के लिए। (° 0007 डिग्री) (° 0008 डिग्री) प्रोग्रामडा (डिग्री 000 9 डिग्री डिग्री)
+
+
+
+यदि आपको कभी भीको फिर से करने की आवश्यकता होती है, तो आप निम्न स्थानों की जांच कर सकते हैं: (° ° 0004 डिग्री) (° 0004 डिग्री) (° 0004 डिग्री) (° 0005 डिग्री) HTTPS: / /zanev.github.io/cross-compile उपकरण - के लिए इंजेनिक-टी 20 (डिग्री 0006 डिग्री) (डिग्री 0007 डिग्री)  
  * <https://github.com/Dafang-Hacks/Main>
 
 
 
-
-# संकलक की स्थापना:
-## विकल्प 1: डॉक के साथ (तेजी से स्थापित करने के लिए, संचालित करने के लिए धीमा)
-
-```
-sudo apt install docker.io
-sudo usermod -aG docker mia_uzanto
- se déconnecter puis se reconnecter
-mkdir ~/dafang
-cd ~/dafang
-docker run --rm -ti -v $(pwd):/root/ daviey/dafang-cross-compile:latest
-```
-
-## विकल्प 2: स्थानीय रूप से (लंबे समय तक स्थापित होना, तेजी से निष्पादित करने के लिए)
-
-```
-sudo apt install build-essential git gcc-mips-linux-gnu autoconf libtool cmake ftp-upload u-boot-tools
-mkdir -p ~/dafang/Main/mips-gcc472-glibc216-64bit
-ln -s /usr/bin ~/dafang/Main/mips-gcc472-glibc216-64bit
-```
-
-# पुस्तकालयों का संकलन और _v4l2rtspserver-master_
-
-```
-git clone --recurse-submodules https://github.com/Dafang-Hacks/Main.git
-cd Main
-./compile_libraries.sh
-cd v4l2rtspserver-master
-./compile.sh
-```
 

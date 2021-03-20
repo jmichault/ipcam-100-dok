@@ -66,12 +66,21 @@ $(function() {
 <a href="#func-members">Fonctions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
-<div class="title">IMP_Audio</div>  </div>
+<div class="title">IMP_Audio<div class="ingroups"><a class="el" href="group__imp.html">IMP(Ingenic Media Platform)</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Module audio, comprenant l'enregistrement et la lecture, le codec audio, les paramètres de volume et de gain, l'annulation d'écho, le gain automatique et d'autres fonctions.  
+<p>Module audio ， Y compris l'enregistrement et la lecture, le codec audio, les paramètres de volume et de gain, l'annulation d'écho, le gain automatique et d'autres fonctions.  
 <a href="#details">Plus de détails...</a></p>
+<div class="dynheader">
+Graphe de collaboration de IMP_Audio:</div>
+<div class="dyncontent">
+<center><table><tr><td><img src="group__IMP__Audio.png" border="0" alt="" usemap="#group____IMP____Audio"/>
+<map name="group____IMP____Audio" id="group____IMP____Audio">
+<area shape="rect" id="node1" href="group__imp.html" title="IMP(Ingenic Media Platform)" alt="" coords="5,5,193,32"/>
+</map>
+</td></tr></table></center>
+</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -110,10 +119,11 @@ Macros</h2></td></tr>
 <tr class="memitem:ga3ef9a733efca625c908fb5cb8b319538"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Audio.html#ga3ef9a733efca625c908fb5cb8b319538">IMPAudioSampleRate</a> { <br />
 &#160;&#160;<a class="el" href="group__IMP__Audio.html#gga3ef9a733efca625c908fb5cb8b319538a69a08037564ba399c3143ec5587c7006">AUDIO_SAMPLE_RATE_8000</a> = 8000, 
 <a class="el" href="group__IMP__Audio.html#gga3ef9a733efca625c908fb5cb8b319538ac0e21b9652cf7f8c167b077205360951">AUDIO_SAMPLE_RATE_16000</a> = 16000, 
+<a class="el" href="group__IMP__Audio.html#gga3ef9a733efca625c908fb5cb8b319538acb14a6d3b93b9bc2beb09e3a6cf3209f">AUDIO_SAMPLE_RATE_24000</a> = 24000, 
 <a class="el" href="group__IMP__Audio.html#gga3ef9a733efca625c908fb5cb8b319538a1d7722c568db12e6eb254aef04f1c930">AUDIO_SAMPLE_RATE_44100</a> = 44100, 
-<a class="el" href="group__IMP__Audio.html#gga3ef9a733efca625c908fb5cb8b319538a276dbfe6b831de49d68b383b9573a722">AUDIO_SAMPLE_RATE_48000</a> = 48000, 
 <br />
-&#160;&#160;<a class="el" href="group__IMP__Audio.html#gga3ef9a733efca625c908fb5cb8b319538a17e0ee9612a8cad3d761e496f9904897">AUDIO_SAMPLE_RATE_96000</a> = 96000
+&#160;&#160;<a class="el" href="group__IMP__Audio.html#gga3ef9a733efca625c908fb5cb8b319538a276dbfe6b831de49d68b383b9573a722">AUDIO_SAMPLE_RATE_48000</a> = 48000, 
+<a class="el" href="group__IMP__Audio.html#gga3ef9a733efca625c908fb5cb8b319538a17e0ee9612a8cad3d761e496f9904897">AUDIO_SAMPLE_RATE_96000</a> = 96000
 <br />
  }</td></tr>
 <tr class="separator:ga3ef9a733efca625c908fb5cb8b319538"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -161,11 +171,9 @@ Fonctions</h2></td></tr>
 <tr class="separator:gaba6f0999391cb933b7923d77225d158f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaeec552f5215c68e299e18e7ba23fb354"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Audio.html#gaeec552f5215c68e299e18e7ba23fb354">IMP_AI_DisableChn</a> (int audioDevId, int aiChn)</td></tr>
 <tr class="separator:gaeec552f5215c68e299e18e7ba23fb354"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6f080ad3f52147b7747fe8c5a3737170"><td class="memItemLeft" align="right" valign="top"><a id="ga6f080ad3f52147b7747fe8c5a3737170"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_AI_PollingFrame</b> (int audioDevId, int aiChn, unsigned int timeout_ms)</td></tr>
+<tr class="memitem:ga6f080ad3f52147b7747fe8c5a3737170"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Audio.html#ga6f080ad3f52147b7747fe8c5a3737170">IMP_AI_PollingFrame</a> (int audioDevId, int aiChn, unsigned int timeout_ms)</td></tr>
 <tr class="separator:ga6f080ad3f52147b7747fe8c5a3737170"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab8335839c99279534119273709971414"><td class="memItemLeft" align="right" valign="top"><a id="gab8335839c99279534119273709971414"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_AI_GetFrame</b> (int audioDevId, int aiChn, <a class="el" href="structIMPAudioFrame.html">IMPAudioFrame</a> *frm, <a class="el" href="group__IMP__Audio.html#ga7f9bbf0ae482fa7e68855f4bf68c4a1b">IMPBlock</a> block)</td></tr>
+<tr class="memitem:gab8335839c99279534119273709971414"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Audio.html#gab8335839c99279534119273709971414">IMP_AI_GetFrame</a> (int audioDevId, int aiChn, <a class="el" href="structIMPAudioFrame.html">IMPAudioFrame</a> *frm, <a class="el" href="group__IMP__Audio.html#ga7f9bbf0ae482fa7e68855f4bf68c4a1b">IMPBlock</a> block)</td></tr>
 <tr class="separator:gab8335839c99279534119273709971414"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1233c77454b8a895b02fb0035cbe5bd0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Audio.html#ga1233c77454b8a895b02fb0035cbe5bd0">IMP_AI_ReleaseFrame</a> (int audioDevId, int aiChn, <a class="el" href="structIMPAudioFrame.html">IMPAudioFrame</a> *frm)</td></tr>
 <tr class="separator:ga1233c77454b8a895b02fb0035cbe5bd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -177,30 +185,25 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_AI_GetFrame</b> (i
 <tr class="separator:gac8f128fe324a34bca50896259196867c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae63925b11092f04fe89008bf8aac779e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Audio.html#gae63925b11092f04fe89008bf8aac779e">IMP_AI_DisableAec</a> (int aiDevId, int aiChn)</td></tr>
 <tr class="separator:gae63925b11092f04fe89008bf8aac779e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga57f7097eee1486fade39bc5d38eb09ef"><td class="memItemLeft" align="right" valign="top"><a id="ga57f7097eee1486fade39bc5d38eb09ef"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_AI_EnableNs</b> (<a class="el" href="structIMPAudioIOAttr.html">IMPAudioIOAttr</a> *attr, int mode)</td></tr>
+<tr class="memitem:ga57f7097eee1486fade39bc5d38eb09ef"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Audio.html#ga57f7097eee1486fade39bc5d38eb09ef">IMP_AI_EnableNs</a> (<a class="el" href="structIMPAudioIOAttr.html">IMPAudioIOAttr</a> *attr, int mode)</td></tr>
 <tr class="separator:ga57f7097eee1486fade39bc5d38eb09ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga72afa9dd2bbf005f34ed061d93693bb3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Audio.html#ga72afa9dd2bbf005f34ed061d93693bb3">IMP_AI_DisableNs</a> (void)</td></tr>
 <tr class="separator:ga72afa9dd2bbf005f34ed061d93693bb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gadebd352aca9a64c1c66537725cc967f5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Audio.html#gadebd352aca9a64c1c66537725cc967f5">IMP_AI_EnableAgc</a> (<a class="el" href="structIMPAudioIOAttr.html">IMPAudioIOAttr</a> *attr, <a class="el" href="structIMPAudioAgcConfig.html">IMPAudioAgcConfig</a> agcConfig)</td></tr>
 <tr class="separator:gadebd352aca9a64c1c66537725cc967f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga824ac244870fdeb3bfe40416a450334e"><td class="memItemLeft" align="right" valign="top"><a id="ga824ac244870fdeb3bfe40416a450334e"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_AI_DisableAgc</b> (void)</td></tr>
+<tr class="memitem:ga824ac244870fdeb3bfe40416a450334e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Audio.html#ga824ac244870fdeb3bfe40416a450334e">IMP_AI_DisableAgc</a> (void)</td></tr>
 <tr class="separator:ga824ac244870fdeb3bfe40416a450334e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga511a088e377119c0cde504e90fdeecba"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Audio.html#ga511a088e377119c0cde504e90fdeecba">IMP_AO_EnableAgc</a> (<a class="el" href="structIMPAudioIOAttr.html">IMPAudioIOAttr</a> *attr, <a class="el" href="structIMPAudioAgcConfig.html">IMPAudioAgcConfig</a> agcConfig)</td></tr>
 <tr class="separator:ga511a088e377119c0cde504e90fdeecba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga29f93e756e4a28f3f3cc142cc87939ea"><td class="memItemLeft" align="right" valign="top"><a id="ga29f93e756e4a28f3f3cc142cc87939ea"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_AO_DisableAgc</b> (void)</td></tr>
+<tr class="memitem:ga29f93e756e4a28f3f3cc142cc87939ea"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Audio.html#ga29f93e756e4a28f3f3cc142cc87939ea">IMP_AO_DisableAgc</a> (void)</td></tr>
 <tr class="separator:ga29f93e756e4a28f3f3cc142cc87939ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga51f0132cb297e3c9d63beabd9fd7a2e0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Audio.html#ga51f0132cb297e3c9d63beabd9fd7a2e0">IMP_AI_EnableHpf</a> (<a class="el" href="structIMPAudioIOAttr.html">IMPAudioIOAttr</a> *attr)</td></tr>
 <tr class="separator:ga51f0132cb297e3c9d63beabd9fd7a2e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae34b85461a391ba8a3a817bf85f732bc"><td class="memItemLeft" align="right" valign="top"><a id="gae34b85461a391ba8a3a817bf85f732bc"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_AI_DisableHpf</b> (void)</td></tr>
+<tr class="memitem:gae34b85461a391ba8a3a817bf85f732bc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Audio.html#gae34b85461a391ba8a3a817bf85f732bc">IMP_AI_DisableHpf</a> (void)</td></tr>
 <tr class="separator:gae34b85461a391ba8a3a817bf85f732bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7b5d95bf8705b2f92da1e2ad227c5bb4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Audio.html#ga7b5d95bf8705b2f92da1e2ad227c5bb4">IMP_AO_EnableHpf</a> (<a class="el" href="structIMPAudioIOAttr.html">IMPAudioIOAttr</a> *attr)</td></tr>
 <tr class="separator:ga7b5d95bf8705b2f92da1e2ad227c5bb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9a2d6a03748a9bbcb2de56183f7c4b0e"><td class="memItemLeft" align="right" valign="top"><a id="ga9a2d6a03748a9bbcb2de56183f7c4b0e"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_AO_DisableHpf</b> (void)</td></tr>
+<tr class="memitem:ga9a2d6a03748a9bbcb2de56183f7c4b0e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Audio.html#ga9a2d6a03748a9bbcb2de56183f7c4b0e">IMP_AO_DisableHpf</a> (void)</td></tr>
 <tr class="separator:ga9a2d6a03748a9bbcb2de56183f7c4b0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab8ac0dbd68ea0a6fc58bd1474dfde138"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Audio.html#gab8ac0dbd68ea0a6fc58bd1474dfde138">IMP_AO_SetPubAttr</a> (int audioDevId, <a class="el" href="structIMPAudioIOAttr.html">IMPAudioIOAttr</a> *attr)</td></tr>
 <tr class="separator:gab8ac0dbd68ea0a6fc58bd1474dfde138"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -214,8 +217,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_AO_DisableHpf</b> 
 <tr class="separator:ga3370b8ae41d807a4a8cf52a00ad73a61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf9fb80db5aeeb090883c794d58ad54c6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Audio.html#gaf9fb80db5aeeb090883c794d58ad54c6">IMP_AO_DisableChn</a> (int audioDevId, int aoChn)</td></tr>
 <tr class="separator:gaf9fb80db5aeeb090883c794d58ad54c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga04d4a45bef9a56805af383e2c20c44ea"><td class="memItemLeft" align="right" valign="top"><a id="ga04d4a45bef9a56805af383e2c20c44ea"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_AO_SendFrame</b> (int audioDevId, int aoChn, <a class="el" href="structIMPAudioFrame.html">IMPAudioFrame</a> *data, <a class="el" href="group__IMP__Audio.html#ga7f9bbf0ae482fa7e68855f4bf68c4a1b">IMPBlock</a> block)</td></tr>
+<tr class="memitem:ga04d4a45bef9a56805af383e2c20c44ea"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Audio.html#ga04d4a45bef9a56805af383e2c20c44ea">IMP_AO_SendFrame</a> (int audioDevId, int aoChn, <a class="el" href="structIMPAudioFrame.html">IMPAudioFrame</a> *data, <a class="el" href="group__IMP__Audio.html#ga7f9bbf0ae482fa7e68855f4bf68c4a1b">IMPBlock</a> block)</td></tr>
 <tr class="separator:ga04d4a45bef9a56805af383e2c20c44ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafbcd8674e7ff136200661a1204405dbc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Audio.html#gafbcd8674e7ff136200661a1204405dbc">IMP_AO_PauseChn</a> (int audioDevId, int aoChn)</td></tr>
 <tr class="separator:gafbcd8674e7ff136200661a1204405dbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -231,11 +233,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_AO_SendFrame</b> (
 <tr class="separator:ga73961cdcb2337064ebdc2bf997a594dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5b969ac455db4694936f0114582eb16e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Audio.html#ga5b969ac455db4694936f0114582eb16e">IMP_AENC_SendFrame</a> (int aeChn, <a class="el" href="structIMPAudioFrame.html">IMPAudioFrame</a> *frm)</td></tr>
 <tr class="separator:ga5b969ac455db4694936f0114582eb16e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae1413a194c8c6e3abf14977bc8643eeb"><td class="memItemLeft" align="right" valign="top"><a id="gae1413a194c8c6e3abf14977bc8643eeb"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_AENC_PollingStream</b> (int AeChn, unsigned int timeout_ms)</td></tr>
+<tr class="memitem:gae1413a194c8c6e3abf14977bc8643eeb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Audio.html#gae1413a194c8c6e3abf14977bc8643eeb">IMP_AENC_PollingStream</a> (int AeChn, unsigned int timeout_ms)</td></tr>
 <tr class="separator:gae1413a194c8c6e3abf14977bc8643eeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae6d5a2043a920d31ebafba014ffa69c8"><td class="memItemLeft" align="right" valign="top"><a id="gae6d5a2043a920d31ebafba014ffa69c8"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_AENC_GetStream</b> (int aeChn, <a class="el" href="structIMPAudioStream.html">IMPAudioStream</a> *stream, <a class="el" href="group__IMP__Audio.html#ga7f9bbf0ae482fa7e68855f4bf68c4a1b">IMPBlock</a> block)</td></tr>
+<tr class="memitem:gae6d5a2043a920d31ebafba014ffa69c8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Audio.html#gae6d5a2043a920d31ebafba014ffa69c8">IMP_AENC_GetStream</a> (int aeChn, <a class="el" href="structIMPAudioStream.html">IMPAudioStream</a> *stream, <a class="el" href="group__IMP__Audio.html#ga7f9bbf0ae482fa7e68855f4bf68c4a1b">IMPBlock</a> block)</td></tr>
 <tr class="separator:gae6d5a2043a920d31ebafba014ffa69c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad27d4774779123da4654dad83053bdf0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Audio.html#gad27d4774779123da4654dad83053bdf0">IMP_AENC_ReleaseStream</a> (int aeChn, <a class="el" href="structIMPAudioStream.html">IMPAudioStream</a> *stream)</td></tr>
 <tr class="separator:gad27d4774779123da4654dad83053bdf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -247,14 +247,11 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_AENC_GetStream</b>
 <tr class="separator:ga2caf89ce19b5eb9620c73ff0df71e587"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa08a20e319512497576b41e633b0af66"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Audio.html#gaa08a20e319512497576b41e633b0af66">IMP_ADEC_DestroyChn</a> (int adChn)</td></tr>
 <tr class="separator:gaa08a20e319512497576b41e633b0af66"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadf3125601116c6e776eab97133e997f8"><td class="memItemLeft" align="right" valign="top"><a id="gadf3125601116c6e776eab97133e997f8"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_ADEC_SendStream</b> (int adChn, <a class="el" href="structIMPAudioStream.html">IMPAudioStream</a> *stream, <a class="el" href="group__IMP__Audio.html#ga7f9bbf0ae482fa7e68855f4bf68c4a1b">IMPBlock</a> block)</td></tr>
+<tr class="memitem:gadf3125601116c6e776eab97133e997f8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Audio.html#gadf3125601116c6e776eab97133e997f8">IMP_ADEC_SendStream</a> (int adChn, <a class="el" href="structIMPAudioStream.html">IMPAudioStream</a> *stream, <a class="el" href="group__IMP__Audio.html#ga7f9bbf0ae482fa7e68855f4bf68c4a1b">IMPBlock</a> block)</td></tr>
 <tr class="separator:gadf3125601116c6e776eab97133e997f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga65bca9da47f553dd117778002991f6ef"><td class="memItemLeft" align="right" valign="top"><a id="ga65bca9da47f553dd117778002991f6ef"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_ADEC_PollingStream</b> (int AdChn, unsigned int timeout_ms)</td></tr>
+<tr class="memitem:ga65bca9da47f553dd117778002991f6ef"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Audio.html#ga65bca9da47f553dd117778002991f6ef">IMP_ADEC_PollingStream</a> (int AdChn, unsigned int timeout_ms)</td></tr>
 <tr class="separator:ga65bca9da47f553dd117778002991f6ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga18171fa7357246967054d3fd7964f8c3"><td class="memItemLeft" align="right" valign="top"><a id="ga18171fa7357246967054d3fd7964f8c3"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_ADEC_GetStream</b> (int adChn, <a class="el" href="structIMPAudioStream.html">IMPAudioStream</a> *stream, <a class="el" href="group__IMP__Audio.html#ga7f9bbf0ae482fa7e68855f4bf68c4a1b">IMPBlock</a> block)</td></tr>
+<tr class="memitem:ga18171fa7357246967054d3fd7964f8c3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Audio.html#ga18171fa7357246967054d3fd7964f8c3">IMP_ADEC_GetStream</a> (int adChn, <a class="el" href="structIMPAudioStream.html">IMPAudioStream</a> *stream, <a class="el" href="group__IMP__Audio.html#ga7f9bbf0ae482fa7e68855f4bf68c4a1b">IMPBlock</a> block)</td></tr>
 <tr class="separator:ga18171fa7357246967054d3fd7964f8c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga372a867d48475ac17f3a3d4491ca2ad5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Audio.html#ga372a867d48475ac17f3a3d4491ca2ad5">IMP_ADEC_ReleaseStream</a> (int adChn, <a class="el" href="structIMPAudioStream.html">IMPAudioStream</a> *stream)</td></tr>
 <tr class="separator:ga372a867d48475ac17f3a3d4491ca2ad5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -286,16 +283,18 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_ADEC_GetStream</b>
 <tr class="separator:gacb5edfcaad64b1429ef4b48b182ebce4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf43c178591d6f6f52e07bbe9d85f2143"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Audio.html#gaf43c178591d6f6f52e07bbe9d85f2143">IMP_AO_Soft_Mute</a> (int audioDevId, int aoChn)</td></tr>
 <tr class="separator:gaf43c178591d6f6f52e07bbe9d85f2143"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab2f5ed8136d6dd928f790ee75162ff7c"><td class="memItemLeft" align="right" valign="top"><a id="gab2f5ed8136d6dd928f790ee75162ff7c"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_AO_Soft_UNMute</b> (int audioDevId, int aoChn)</td></tr>
+<tr class="memitem:gab2f5ed8136d6dd928f790ee75162ff7c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Audio.html#gab2f5ed8136d6dd928f790ee75162ff7c">IMP_AO_Soft_UNMute</a> (int audioDevId, int aoChn)</td></tr>
 <tr class="separator:gab2f5ed8136d6dd928f790ee75162ff7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3d40f6572878af4a393718bdcd452186"><td class="memItemLeft" align="right" valign="top"><a id="ga3d40f6572878af4a393718bdcd452186"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>IMP_AI_GetFrameAndRef</b> (int audioDevId, int aiChn, <a class="el" href="structIMPAudioFrame.html">IMPAudioFrame</a> *frm, <a class="el" href="structIMPAudioFrame.html">IMPAudioFrame</a> *ref, <a class="el" href="group__IMP__Audio.html#ga7f9bbf0ae482fa7e68855f4bf68c4a1b">IMPBlock</a> block)</td></tr>
+<tr class="memitem:ga3d40f6572878af4a393718bdcd452186"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Audio.html#ga3d40f6572878af4a393718bdcd452186">IMP_AI_GetFrameAndRef</a> (int audioDevId, int aiChn, <a class="el" href="structIMPAudioFrame.html">IMPAudioFrame</a> *frm, <a class="el" href="structIMPAudioFrame.html">IMPAudioFrame</a> *ref, <a class="el" href="group__IMP__Audio.html#ga7f9bbf0ae482fa7e68855f4bf68c4a1b">IMPBlock</a> block)</td></tr>
 <tr class="separator:ga3d40f6572878af4a393718bdcd452186"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5f90e62155b035c84b1d964ee702f7af"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Audio.html#ga5f90e62155b035c84b1d964ee702f7af">IMP_AI_EnableAecRefFrame</a> (int audioDevId, int aiChn, int audioAoDevId, int aoChn)</td></tr>
 <tr class="separator:ga5f90e62155b035c84b1d964ee702f7af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga38f1fd77581199871c583fb5a349538a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Audio.html#ga38f1fd77581199871c583fb5a349538a">IMP_AI_DisableAecRefFrame</a> (int audioDevId, int aiChn, int audioAoDevId, int aoChn)</td></tr>
 <tr class="separator:ga38f1fd77581199871c583fb5a349538a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7712f06442d36d43f4a890baf2a5fa15"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Audio.html#ga7712f06442d36d43f4a890baf2a5fa15">IMP_AO_CacheSwitch</a> (int audioDevId, int aoChn, int cache_en)</td></tr>
+<tr class="separator:ga7712f06442d36d43f4a890baf2a5fa15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadcadfa4310cf3d322f94cef7d9610773"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Audio.html#gadcadfa4310cf3d322f94cef7d9610773">IMP_AO_FlushChnBuf</a> (int audioDevId, int aoChn)</td></tr>
+<tr class="separator:gadcadfa4310cf3d322f94cef7d9610773"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -311,11 +310,9 @@ Variables</h2></td></tr>
 <tr class="separator:ga31d834d7f652caa55136f75bbf46dc9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga43d48a7dd6d4464ec4328b69f63eed1f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Audio.html#ga43d48a7dd6d4464ec4328b69f63eed1f">IMPAudioIOAttr::chnCnt</a></td></tr>
 <tr class="separator:ga43d48a7dd6d4464ec4328b69f63eed1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab4f4d633f4ddc6f7d2d4e3d56b9a42d4"><td class="memItemLeft" align="right" valign="top"><a id="gab4f4d633f4ddc6f7d2d4e3d56b9a42d4"></a>
-<a class="el" href="group__IMP__Audio.html#gad0c53f3d873672b040af8e2163f10567">IMPAudioBitWidth</a>&#160;</td><td class="memItemRight" valign="bottom"><b>IMPAudioFrame::bitwidth</b></td></tr>
+<tr class="memitem:gab4f4d633f4ddc6f7d2d4e3d56b9a42d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__IMP__Audio.html#gad0c53f3d873672b040af8e2163f10567">IMPAudioBitWidth</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Audio.html#gab4f4d633f4ddc6f7d2d4e3d56b9a42d4">IMPAudioFrame::bitwidth</a></td></tr>
 <tr class="separator:gab4f4d633f4ddc6f7d2d4e3d56b9a42d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga613b85b8d9f998f62f19b328c6fc2c85"><td class="memItemLeft" align="right" valign="top"><a id="ga613b85b8d9f998f62f19b328c6fc2c85"></a>
-<a class="el" href="group__IMP__Audio.html#gab930bb2e1619f803e108bec84ea8724e">IMPAudioSoundMode</a>&#160;</td><td class="memItemRight" valign="bottom"><b>IMPAudioFrame::soundmode</b></td></tr>
+<tr class="memitem:ga613b85b8d9f998f62f19b328c6fc2c85"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__IMP__Audio.html#gab930bb2e1619f803e108bec84ea8724e">IMPAudioSoundMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Audio.html#ga613b85b8d9f998f62f19b328c6fc2c85">IMPAudioFrame::soundmode</a></td></tr>
 <tr class="separator:ga613b85b8d9f998f62f19b328c6fc2c85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8609060af2c840c7f81341c8ee4a8b7f"><td class="memItemLeft" align="right" valign="top">uint32_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Audio.html#ga8609060af2c840c7f81341c8ee4a8b7f">IMPAudioFrame::virAddr</a></td></tr>
 <tr class="separator:ga8609060af2c840c7f81341c8ee4a8b7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -376,8 +373,7 @@ int(*&#160;</td><td class="memItemRight" valign="bottom"><b>IMPAudioEncEncoder::
 <tr class="separator:ga02fbcd184d3bae12446c915943cf8390"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5ed1c53acd7c4d59dbec1a258c1951e7"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Audio.html#ga5ed1c53acd7c4d59dbec1a258c1951e7">IMPAudioDecChnAttr::value</a></td></tr>
 <tr class="separator:ga5ed1c53acd7c4d59dbec1a258c1951e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac51f99688f7586c8922fe475e1615fc7"><td class="memItemLeft" align="right" valign="top"><a id="gac51f99688f7586c8922fe475e1615fc7"></a>
-<a class="el" href="group__IMP__Audio.html#ga70f33e818e870d815be3dba23d5cd813">IMPAudioPalyloadType</a>&#160;</td><td class="memItemRight" valign="bottom"><b>IMPAudioDecDecoder::type</b></td></tr>
+<tr class="memitem:gac51f99688f7586c8922fe475e1615fc7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__IMP__Audio.html#ga70f33e818e870d815be3dba23d5cd813">IMPAudioPalyloadType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Audio.html#gac51f99688f7586c8922fe475e1615fc7">IMPAudioDecDecoder::type</a></td></tr>
 <tr class="separator:gac51f99688f7586c8922fe475e1615fc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabb8a3b0076c4d4991c4053e8e11cb67a"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Audio.html#gabb8a3b0076c4d4991c4053e8e11cb67a">IMPAudioDecDecoder::name</a> [16]</td></tr>
 <tr class="separator:gabb8a3b0076c4d4991c4053e8e11cb67a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -399,37 +395,37 @@ int(*&#160;</td><td class="memItemRight" valign="bottom"><b>IMPAudioDecDecoder::
 <tr class="separator:ga389d26b130c78108326eb4e36e73e7f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
-<p>Module audio, comprenant l'enregistrement et la lecture, le codec audio, les paramètres de volume et de gain, l'annulation d'écho, le gain automatique et d'autres fonctions. </p>
-<h1><a class="anchor" id="Présentation"></a>
-de l'audio_summary 1</h1>
+<p>Module audio ， Y compris l'enregistrement et la lecture, le codec audio, les paramètres de volume et de gain, l'annulation d'écho, le gain automatique et d'autres fonctions. </p>
+<h1><a class="anchor" id="audio_summary"></a>
+1 Aperçu</h1>
 <p>La fonction audio comprend une entrée audio , Sortie audio , Annulation d'écho , Encodage audio et décodage audio 5 Modules . <br />
 Parmi eux, l'entrée audio et la sortie audio ont le concept d'équipement et de canaux . L'un des MIC Nous pensons que c'est un Device, Et une MIC Il peut y avoir plusieurs Channel Entrer . <br />
-Le même SPK Nous pensons que c'est une annonce Device, SPK Il peut également y avoir plusieurs Channel Production . <br />
+Le même SPK Nous pensons que c'est une annonce Device, Et une SPK Il peut également y avoir plusieurs Channel Production . <br />
 Audio de la version actuelle API Une Device Prend en charge un seul Channel. <br />
 L'annulation de l'écho est située dans l'interface d'entrée audio , Des instructions spécifiques sont reflétées dans la description de la fonction . <br />
 Codage audio audio actuel API Support moyen PT_G711A [[[ PT_G711U avec PT_G726 Formater l'encodage audio , Si vous devez ajouter une nouvelle méthode d'encodage , Besoin d'enregistrer l'encodeur . <br />
-Décodage audio audio actuel API PT_G711A PT_G711U PT_G726 Formater le décodage audio , Si vous devez ajouter une nouvelle méthode de décodage , Besoin d'enregistrer le décodeur . <br />
+Décodage audio audio actuel API Support moyen PT_G711A [[[ PT_G711U avec PT_G726 Formater le décodage audio , Si vous devez ajouter une nouvelle méthode de décodage , Besoin d'enregistrer le décodeur . <br />
 </p>
 <h1><a class="anchor" id="audio_function_description"></a>
 2 Description de la fonction</h1>
 <p>Ce qui suit est une description spécifique de chaque module </p>
-<h2><a class="anchor" id="entrée"></a>
-audio audio_in 2.1</h2>
+<h2><a class="anchor" id="audio_in"></a>
+2.1 Entrée audio</h2>
 <p>Entrée audio Device ID Correspondance , 0: Numéro correspondant MIC 1: Simulation correspondante MIC <br />
-Channel actuel API Supporte uniquement 1 Canaux . <br />
+Entrée audio Channel actuel API Supporte uniquement 1 Canaux . <br />
 Réglage du volume d'entrée audio , La plage de volume est [-30 ~ 120]. -30 Signifie muet ,120 Moyens d'amplifier le son 30dB, Taille de pas 0.5dB. parmi eux 60 Est un point critique pour le réglage du volume ，<br />
-Le logiciel n'augmente ni ne diminue le volume à cette valeur ， Lorsque la valeur du volume est inférieure à 60 Temps ， Chaque goutte 1， Baisser le volume 0.5dB ; Lorsque la valeur du volume est supérieure à 60 ， Augmenter 1， Augmentation de volume 0.5dB . </p>
+Le logiciel n'augmente ni ne diminue le volume à cette valeur ， Lorsque la valeur du volume est inférieure à 60 Temps ， Chaque goutte 1， Baisser le volume 0.5dB ; Lorsque la valeur du volume est supérieure à 60 Temps ， Augmenter 1， Augmentation de volume 0.5dB . </p>
 <h2><a class="anchor" id="audio_out"></a>
 2.2 Sortie audio</h2>
-<p>Device ID , 0: Correspondant à la valeur par défaut SPK 1: Correspondant à d'autres SPK <br />
-Channel API 1 . <br />
-Réglage du volume de sortie audio , [-30 ~ 120]. -30 ,120 30dB, 0.5dB. 60 ，<br />
-， 60 ， 1， 0.5dB 60 ， 1， 0.5dB. <br />
+<p>Sortie audio Device ID Correspondance , 0: Correspondant à la valeur par défaut SPK 1: Correspondant à d'autres SPK <br />
+Sortie audio Channel actuel API Supporte uniquement 1 Canaux . <br />
+Réglage du volume de sortie audio , La plage de volume est [-30 ~ 120]. -30 Signifie muet ,120 Moyens d'amplifier le son 30dB, Taille de pas 0.5dB. parmi eux 60 Est un point critique pour le réglage du volume ，<br />
+Le logiciel n'augmente ni ne diminue le volume à cette valeur ， Lorsque la valeur du volume est inférieure à 60 Temps ， Chaque goutte 1， Baisser le volume 0.5dB ; Lorsque la valeur du volume est supérieure à 60 Temps ， Augmenter 1， Augmentation de volume 0.5dB. <br />
 </p>
 <h2><a class="anchor" id="audio_aec"></a>
-2.3 Annulation de l'écho</h2>
+2.3 Annulation d'écho</h2>
 <p>L'annulation de l'écho est une fonction de l'interface d'entrée audio , Par conséquent, le périphérique d'entrée audio et le canal doivent être activés avant d'activer l'annulation d'écho . <br />
-L'annulation de l'écho prend actuellement en charge le taux d'échantillonnage audio 8K 16K， Le nombre d'échantillons de données dans une trame est 10ms Multiples entiers de données audio (tels que: 8K Taux d'échantillonnage ， Les données envoyées sont: 8000 × 2 / 100 = 160byte Multiples entiers de). <br />
+L'annulation de l'écho prend actuellement en charge le taux d'échantillonnage audio 8K avec 16K， Le nombre d'échantillons de données dans une trame est 10ms Multiples entiers de données audio (tels que: 8K Taux d'échantillonnage ， Les données envoyées sont: 8000 × 2 / 100 = 160byte Multiples entiers de). <br />
 Annulation d'écho pour différents appareils ， Différents forfaits ， L'annulation de l'écho aura des effets différents . <br />
 L'annulation d'écho ne prend actuellement pas en charge la fonction adaptative ， Il existe donc des paramètres d'annulation d'écho distincts pour différents appareils , <br />
 Le fichier de paramètres pour l'annulation d'écho se trouve dans /etc/webrtc_profile.ini Fichier de configuration . <br />
@@ -441,17 +437,17 @@ Frame_V=0.1 <br />
 delay_ms=150 <br />
  Le premier label [Set_Far_Frame] Le contenu de représente le paramètre distant , lequel est SPK Terminer les paramètres de données de lecture . <br />
 Fram_V Représente le rapport d'amplitude audio , Ajustez ce paramètre pour ajuster l'amplitude des données de lecture ( Cette amplitude n'est utilisée que pour l'annulation d'écho ). <br />
-[Set_Near_Frame] Le contenu dans représente le paramètre proche , MIC Terminer l'enregistrement des paramètres de données . <br />
-Fram_V , Ajustez ce paramètre pour ajuster l'amplitude des données enregistrées ( ). <br />
+Le premier label [Set_Near_Frame] Le contenu dans représente le paramètre proche , lequel est MIC Terminer l'enregistrement des paramètres de données . <br />
+Fram_V Représente le rapport d'amplitude audio , Ajustez ce paramètre pour ajuster l'amplitude des données enregistrées ( Cette amplitude n'est utilisée que pour l'annulation d'écho ). <br />
 delay_ms En raison du retard du logiciel et du matériel , Et SPK contre MIC Est placé à une certaine distance ,SPK Les données de lecture seront MIC échantillonnage , et donc SPK Données en MIC Il y aura un certain retard dans les données . <br />
 Cette heure représente la différence de temps entre les données de lecture et les données d'enregistrement . <br />
  </p>
-<h2><a class="anchor" id="encodage"></a>
-audio audio_enc 2.4</h2>
-<p>Codage audio audio actuel API Etre prêt PT_G711A PT_G711U PT_G726 , Si vous devez ajouter une nouvelle méthode d'encodage , Besoin d'appeler IMP_AENC_RegisterEncoder Interface pour enregistrer le codeur . </p>
-<h2><a class="anchor" id="décodage"></a>
-audio audio_dec 2.5</h2>
-<p>Décodage audio audio actuel API PT_G711A PT_G711U PT_G726 , Si vous devez ajouter une nouvelle méthode de décodage , IMP_ADEC_RegisterDecoder Interface pour enregistrer le décodeur . </p>
+<h2><a class="anchor" id="audio_enc"></a>
+2.4 Codage audio</h2>
+<p>Codage audio audio actuel API Etre prêt PT_G711A [[[ PT_G711U avec PT_G726 Formater l'encodage audio , Si vous devez ajouter une nouvelle méthode d'encodage , Besoin d'appeler IMP_AENC_RegisterEncoder Interface pour enregistrer le codeur . </p>
+<h2><a class="anchor" id="audio_dec"></a>
+2.5 Décodage audio</h2>
+<p>Décodage audio audio actuel API Etre prêt PT_G711A [[[ PT_G711U avec PT_G726 Formater le décodage audio , Si vous devez ajouter une nouvelle méthode de décodage , Besoin d'appeler IMP_ADEC_RegisterDecoder Interface pour enregistrer le décodeur . </p>
 <h2 class="groupheader">Documentation des macros</h2>
 <a id="ga1f4605a2927d3cdf35d8ce1b00e30f1c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga1f4605a2927d3cdf35d8ce1b00e30f1c">&#9670;&nbsp;</a></span>MAX_AUDIO_FRAME_NUM</h2>
@@ -503,7 +499,7 @@ audio audio_dec 2.5</h2>
 <table class="fieldtable">
 <tr><th colspan="2">Valeurs énumérées</th></tr><tr><td class="fieldname"><a id="ggadd8203e0f091956e90bb731343011b56aa6b274a825102f01b1aa08ab7bf79563"></a>ADEC_MODE_PACK&#160;</td><td class="fielddoc"><p>Pack Façon de décoder </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggadd8203e0f091956e90bb731343011b56a30e46ec4cb97eee12e1db4fd0db4a1c4"></a>ADEC_MODE_STREAM&#160;</td><td class="fielddoc"><p>Stream </p>
+<tr><td class="fieldname"><a id="ggadd8203e0f091956e90bb731343011b56a30e46ec4cb97eee12e1db4fd0db4a1c4"></a>ADEC_MODE_STREAM&#160;</td><td class="fielddoc"><p>Stream Façon de décoder </p>
 </td></tr>
 </table>
 
@@ -537,15 +533,17 @@ audio audio_dec 2.5</h2>
 </div><div class="memdoc">
 <p>Définition du taux d'échantillonnage audio . </p>
 <table class="fieldtable">
-<tr><th colspan="2">Valeurs énumérées</th></tr><tr><td class="fieldname"><a id="gga3ef9a733efca625c908fb5cb8b319538a69a08037564ba399c3143ec5587c7006"></a>AUDIO_SAMPLE_RATE_8000&#160;</td><td class="fielddoc"><p>8KHz </p>
+<tr><th colspan="2">Valeurs énumérées</th></tr><tr><td class="fieldname"><a id="gga3ef9a733efca625c908fb5cb8b319538a69a08037564ba399c3143ec5587c7006"></a>AUDIO_SAMPLE_RATE_8000&#160;</td><td class="fielddoc"><p>8KHz Taux d'échantillonnage </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga3ef9a733efca625c908fb5cb8b319538ac0e21b9652cf7f8c167b077205360951"></a>AUDIO_SAMPLE_RATE_16000&#160;</td><td class="fielddoc"><p>16KHz </p>
+<tr><td class="fieldname"><a id="gga3ef9a733efca625c908fb5cb8b319538ac0e21b9652cf7f8c167b077205360951"></a>AUDIO_SAMPLE_RATE_16000&#160;</td><td class="fielddoc"><p>16KHz Taux d'échantillonnage </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga3ef9a733efca625c908fb5cb8b319538a1d7722c568db12e6eb254aef04f1c930"></a>AUDIO_SAMPLE_RATE_44100&#160;</td><td class="fielddoc"><p>44.1KHz </p>
+<tr><td class="fieldname"><a id="gga3ef9a733efca625c908fb5cb8b319538acb14a6d3b93b9bc2beb09e3a6cf3209f"></a>AUDIO_SAMPLE_RATE_24000&#160;</td><td class="fielddoc"><p>24KHz Taux d'échantillonnage </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga3ef9a733efca625c908fb5cb8b319538a276dbfe6b831de49d68b383b9573a722"></a>AUDIO_SAMPLE_RATE_48000&#160;</td><td class="fielddoc"><p>48KHz </p>
+<tr><td class="fieldname"><a id="gga3ef9a733efca625c908fb5cb8b319538a1d7722c568db12e6eb254aef04f1c930"></a>AUDIO_SAMPLE_RATE_44100&#160;</td><td class="fielddoc"><p>44.1KHz Taux d'échantillonnage </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga3ef9a733efca625c908fb5cb8b319538a17e0ee9612a8cad3d761e496f9904897"></a>AUDIO_SAMPLE_RATE_96000&#160;</td><td class="fielddoc"><p>96KHz </p>
+<tr><td class="fieldname"><a id="gga3ef9a733efca625c908fb5cb8b319538a276dbfe6b831de49d68b383b9573a722"></a>AUDIO_SAMPLE_RATE_48000&#160;</td><td class="fielddoc"><p>48KHz Taux d'échantillonnage </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga3ef9a733efca625c908fb5cb8b319538a17e0ee9612a8cad3d761e496f9904897"></a>AUDIO_SAMPLE_RATE_96000&#160;</td><td class="fielddoc"><p>96KHz Taux d'échantillonnage </p>
 </td></tr>
 </table>
 
@@ -637,19 +635,19 @@ audio audio_dec 2.5</h2>
 <p>Effacer le tampon de données audio actuel dans le canal de décodage audio .</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">adChn</td><td>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">adChn</td><td>Le numéro de canal .</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Valeurs retournées</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>. </td></tr>
-    <tr><td class="paramname">0</td><td>.</td></tr>
+    <tr><td class="paramname">0</td><td>Succès . </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec .</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarques</dt><dd>.</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>. </dd></dl>
+<dl class="section remark"><dt>Remarques</dt><dd>non .</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>non . </dd></dl>
 
 </div>
 </div>
@@ -681,20 +679,20 @@ audio audio_dec 2.5</h2>
 <p>Créer un canal de décodage audio .</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">numéro</td><td>de canal adChn. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">attr</td><td>Pointeur d'attribut de canal.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">adChn</td><td>Le numéro de canal . </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">attr</td><td>Pointeur d'attribut de canal .</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Valeurs retournées</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>. </td></tr>
-    <tr><td class="paramname">0</td><td>.</td></tr>
+    <tr><td class="paramname">0</td><td>Succès . </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec .</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarques</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">int</span> adChn = 0;</div><div class="line"><a class="code" href="structIMPAudioDecChnAttr.html">IMPAudioDecChnAttr</a> attr;</div><div class="line">attr.<a class="code" href="group__IMP__Audio.html#gac19d7c0e2391c69dc3931110bb23679b">type</a> = PT_G711A;</div><div class="line">attr.<a class="code" href="group__IMP__Audio.html#ga1bf04fb15fb561eec7876b6cfc914761">bufSize</a> = 20;</div><div class="line">attr.<a class="code" href="group__IMP__Audio.html#ga02fbcd184d3bae12446c915943cf8390">mode</a> = <a class="code" href="group__IMP__Audio.html#ggadd8203e0f091956e90bb731343011b56aa6b274a825102f01b1aa08ab7bf79563">ADEC_MODE_PACK</a>;</div><div class="line">ret = <a class="code" href="group__IMP__Audio.html#ga2caf89ce19b5eb9620c73ff0df71e587">IMP_ADEC_CreateChn</a>(adChn, &amp;attr);</div><div class="line"><span class="keywordflow">if</span>(ret != 0) {</div><div class="line">    <a class="code" href="imp__log_8h.html#a59492a06ae7e667b02bda8f246902a7c">IMP_LOG_ERR</a>(TAG, <span class="stringliteral">&quot;imp audio decoder create channel failed\n&quot;</span>);</div><div class="line">    <span class="keywordflow">return</span> ret;</div><div class="line">}</div></div><!-- fragment --></dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>. </dd></dl>
+<dl class="section remark"><dt>Remarques</dt><dd>Exemple de code <div class="fragment"><div class="line"><span class="keywordtype">int</span> adChn = 0;</div><div class="line"><a class="code" href="structIMPAudioDecChnAttr.html">IMPAudioDecChnAttr</a> attr;</div><div class="line">attr.<a class="code" href="group__IMP__Audio.html#gac19d7c0e2391c69dc3931110bb23679b">type</a> = PT_G711A;</div><div class="line">attr.<a class="code" href="group__IMP__Audio.html#ga1bf04fb15fb561eec7876b6cfc914761">bufSize</a> = 20;</div><div class="line">attr.<a class="code" href="group__IMP__Audio.html#ga02fbcd184d3bae12446c915943cf8390">mode</a> = <a class="code" href="group__IMP__Audio.html#ggadd8203e0f091956e90bb731343011b56aa6b274a825102f01b1aa08ab7bf79563">ADEC_MODE_PACK</a>;</div><div class="line">ret = <a class="code" href="group__IMP__Audio.html#ga2caf89ce19b5eb9620c73ff0df71e587">IMP_ADEC_CreateChn</a>(adChn, &amp;attr);</div><div class="line"><span class="keywordflow">if</span>(ret != 0) {</div><div class="line">    <a class="code" href="imp__log_8h.html#a59492a06ae7e667b02bda8f246902a7c">IMP_LOG_ERR</a>(TAG, <span class="stringliteral">&quot;imp audio decoder create channel failed\n&quot;</span>);</div><div class="line">    <span class="keywordflow">return</span> ret;</div><div class="line">}</div></div><!-- fragment --></dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>non . </dd></dl>
 
 </div>
 </div>
@@ -716,19 +714,116 @@ audio audio_dec 2.5</h2>
 <p>Détruire le canal de décodage audio .</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">adChn</td><td>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">adChn</td><td>Le numéro de canal .</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Valeurs retournées</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>. </td></tr>
-    <tr><td class="paramname">0</td><td>.</td></tr>
+    <tr><td class="paramname">0</td><td>Succès . </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec .</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarques</dt><dd>.</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>. </dd></dl>
+<dl class="section remark"><dt>Remarques</dt><dd>non .</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>non . </dd></dl>
+
+</div>
+</div>
+<a id="ga18171fa7357246967054d3fd7964f8c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga18171fa7357246967054d3fd7964f8c3">&#9670;&nbsp;</a></span>IMP_ADEC_GetStream()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_ADEC_GetStream </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>adChn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structIMPAudioStream.html">IMPAudioStream</a> *&#160;</td>
+          <td class="paramname"><em>stream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__IMP__Audio.html#ga7f9bbf0ae482fa7e68855f4bf68c4a1b">IMPBlock</a>&#160;</td>
+          <td class="paramname"><em>block</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Obtenez le flux de code décodé .</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">adChn</td><td>Le numéro de canal . </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">stream</td><td>Obtenir un flux de code décodé . </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">block</td><td>bloquer / Drapeau non bloquant .</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Succès . </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec .</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>Voir un exemple de code IMP_ADEC_SendStream Description de la fonction .</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>non . </dd></dl>
+
+</div>
+</div>
+<a id="ga65bca9da47f553dd117778002991f6ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga65bca9da47f553dd117778002991f6ef">&#9670;&nbsp;</a></span>IMP_ADEC_PollingStream()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_ADEC_PollingStream </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>AdChn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>timeout_ms</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Polling Décoder le tampon de flux audio .</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">AdChn</td><td>Numéro de canal d'entrée de décodage audio . </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">timeout_ms</td><td>Polling temps supplémentaire .</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Succès . </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec .</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>non .</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Utilisé IMP_ADEC_GetStream L'interface était utilisée avant ， Lorsque l'interface est appelée avec succès, cela signifie audio Les données décodées sont prêtes ， peut utiliser IMP_ADEC_GetStream Obtenez les données décodées . </dd></dl>
 
 </div>
 </div>
@@ -748,7 +843,7 @@ audio audio_dec 2.5</h2>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="structIMPAudioDecDecoder.html">IMPAudioDecDecoder</a> *&#160;</td>
-          <td class="paramname"><em>décodeur</em>&#160;</td>
+          <td class="paramname"><em>decoder</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -761,19 +856,19 @@ audio audio_dec 2.5</h2>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">ps32handle</td><td>Enregistrer la poignée . </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">décodeur</td><td>Structure d'attribut du décodeur.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">decoder</td><td>Structure d'attribut du décodeur .</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Valeurs retournées</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>. </td></tr>
-    <tr><td class="paramname">0</td><td>.</td></tr>
+    <tr><td class="paramname">0</td><td>Succès . </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec .</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarques</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">int</span> handle_g711a = 0;</div><div class="line"><a class="code" href="structIMPAudioDecDecoder.html">IMPAudioDecDecoder</a> my_decoder;</div><div class="line">sprintf(my_decoder.<a class="code" href="group__IMP__Audio.html#gabb8a3b0076c4d4991c4053e8e11cb67a">name</a>, <span class="stringliteral">&quot;%s&quot;</span>, <span class="stringliteral">&quot;MY_G711A&quot;</span>);</div><div class="line">my_decoder.openDecoder = NULL; <span class="comment">// Fonction de rappel du décodeur </span></div><div class="line">my_decoder.decodeFrm = MY_G711A_Decode_Frm; <span class="comment">// </span></div><div class="line">my_decoder.getFrmInfo = NULL; <span class="comment">// </span></div><div class="line">my_decoder.closeDecoder = NULL; <span class="comment">// </span></div><div class="line"></div><div class="line"><span class="comment">// </span></div><div class="line">ret = <a class="code" href="group__IMP__Audio.html#ga299230124f348a678c74b96d82c37d81">IMP_ADEC_RegisterDecoder</a>(&amp;handle_g711a, &amp;my_decoder);</div><div class="line"><span class="keywordflow">if</span>(ret != 0) {</div><div class="line">    <a class="code" href="imp__log_8h.html#a59492a06ae7e667b02bda8f246902a7c">IMP_LOG_ERR</a>(TAG, <span class="stringliteral">&quot;IMP_ADEC_RegisterDecoder failed\n&quot;</span>);</div><div class="line">    <span class="keywordflow">return</span> ret;</div><div class="line">}</div><div class="line"></div><div class="line"><span class="comment">// Utiliser le décodeur </span></div><div class="line"><span class="keywordtype">int</span> adChn = 0;</div><div class="line"><a class="code" href="structIMPAudioDecChnAttr.html">IMPAudioDecChnAttr</a> attr;</div><div class="line">attr.<a class="code" href="group__IMP__Audio.html#gac19d7c0e2391c69dc3931110bb23679b">type</a> = handle_g711a; <span class="comment">// décodage type gal à celui renvoyé par l&#39;enregistrement du décodeur handle_g711a.</span></div><div class="line">attr.<a class="code" href="group__IMP__Audio.html#ga1bf04fb15fb561eec7876b6cfc914761">bufSize</a> = 20;</div><div class="line">attr.<a class="code" href="group__IMP__Audio.html#ga02fbcd184d3bae12446c915943cf8390">mode</a> = <a class="code" href="group__IMP__Audio.html#ggadd8203e0f091956e90bb731343011b56aa6b274a825102f01b1aa08ab7bf79563">ADEC_MODE_PACK</a>;</div><div class="line"><span class="comment">// Créer un canal de décodage </span></div><div class="line">ret = <a class="code" href="group__IMP__Audio.html#ga2caf89ce19b5eb9620c73ff0df71e587">IMP_ADEC_CreateChn</a>(adChn, &amp;attr);</div><div class="line"><span class="keywordflow">if</span>(ret != 0) {</div><div class="line">    <a class="code" href="imp__log_8h.html#a59492a06ae7e667b02bda8f246902a7c">IMP_LOG_ERR</a>(TAG, <span class="stringliteral">&quot;imp audio decoder create channel failed\n&quot;</span>);</div><div class="line">    <span class="keywordflow">return</span> ret;</div><div class="line">}</div></div><!-- fragment --></dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>Après l'enregistrement, la méthode d'utilisation est la même que l'utilisation du décodeur intégré du SDK. </dd></dl>
+<dl class="section remark"><dt>Remarques</dt><dd>Exemple de code <div class="fragment"><div class="line"><span class="keywordtype">int</span> handle_g711a = 0;</div><div class="line"><a class="code" href="structIMPAudioDecDecoder.html">IMPAudioDecDecoder</a> my_decoder;</div><div class="line">sprintf(my_decoder.<a class="code" href="group__IMP__Audio.html#gabb8a3b0076c4d4991c4053e8e11cb67a">name</a>, <span class="stringliteral">&quot;%s&quot;</span>, <span class="stringliteral">&quot;MY_G711A&quot;</span>);</div><div class="line">my_decoder.openDecoder = NULL; <span class="comment">// Fonction de rappel du décodeur </span></div><div class="line">my_decoder.decodeFrm = MY_G711A_Decode_Frm; <span class="comment">// Fonction de rappel du décodeur </span></div><div class="line">my_decoder.getFrmInfo = NULL; <span class="comment">// Fonction de rappel du décodeur </span></div><div class="line">my_decoder.closeDecoder = NULL; <span class="comment">// Fonction de rappel du décodeur </span></div><div class="line"></div><div class="line"><span class="comment">// Enregistrer le décodeur </span></div><div class="line">ret = <a class="code" href="group__IMP__Audio.html#ga299230124f348a678c74b96d82c37d81">IMP_ADEC_RegisterDecoder</a>(&amp;handle_g711a, &amp;my_decoder);</div><div class="line"><span class="keywordflow">if</span>(ret != 0) {</div><div class="line">    <a class="code" href="imp__log_8h.html#a59492a06ae7e667b02bda8f246902a7c">IMP_LOG_ERR</a>(TAG, <span class="stringliteral">&quot;IMP_ADEC_RegisterDecoder failed\n&quot;</span>);</div><div class="line">    <span class="keywordflow">return</span> ret;</div><div class="line">}</div><div class="line"></div><div class="line"><span class="comment">// Utiliser le décodeur </span></div><div class="line"><span class="keywordtype">int</span> adChn = 0;</div><div class="line"><a class="code" href="structIMPAudioDecChnAttr.html">IMPAudioDecChnAttr</a> attr;</div><div class="line">attr.<a class="code" href="group__IMP__Audio.html#gac19d7c0e2391c69dc3931110bb23679b">type</a> = handle_g711a; <span class="comment">// décodage type Égal à celui renvoyé par l&#39;enregistrement du décodeur handle_g711a.</span></div><div class="line">attr.<a class="code" href="group__IMP__Audio.html#ga1bf04fb15fb561eec7876b6cfc914761">bufSize</a> = 20;</div><div class="line">attr.<a class="code" href="group__IMP__Audio.html#ga02fbcd184d3bae12446c915943cf8390">mode</a> = <a class="code" href="group__IMP__Audio.html#ggadd8203e0f091956e90bb731343011b56aa6b274a825102f01b1aa08ab7bf79563">ADEC_MODE_PACK</a>;</div><div class="line"><span class="comment">// Créer un canal de décodage </span></div><div class="line">ret = <a class="code" href="group__IMP__Audio.html#ga2caf89ce19b5eb9620c73ff0df71e587">IMP_ADEC_CreateChn</a>(adChn, &amp;attr);</div><div class="line"><span class="keywordflow">if</span>(ret != 0) {</div><div class="line">    <a class="code" href="imp__log_8h.html#a59492a06ae7e667b02bda8f246902a7c">IMP_LOG_ERR</a>(TAG, <span class="stringliteral">&quot;imp audio decoder create channel failed\n&quot;</span>);</div><div class="line">    <span class="keywordflow">return</span> ret;</div><div class="line">}</div></div><!-- fragment --></dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Comment utiliser et utiliser après l'enregistrement SDK Identique au décodeur intégré . </dd></dl>
 
 </div>
 </div>
@@ -795,19 +890,19 @@ audio audio_dec 2.5</h2>
 <p>Désenregistrer le décodeur .</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">ps32handle</td><td>registration handle (handle obtenu lors de l'enregistrement du décodeur).</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ps32handle</td><td>Enregistrer la poignée ( Handle obtenu lors de l'enregistrement du décodeur ).</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Valeurs retournées</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>. </td></tr>
-    <tr><td class="paramname">0</td><td>.</td></tr>
+    <tr><td class="paramname">0</td><td>Succès . </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec .</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarques</dt><dd>.</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>. </dd></dl>
+<dl class="section remark"><dt>Remarques</dt><dd>non .</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>non . </dd></dl>
 
 </div>
 </div>
@@ -827,7 +922,7 @@ audio audio_dec 2.5</h2>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="structIMPAudioStream.html">IMPAudioStream</a> *&#160;</td>
-          <td class="paramname"><em>flux</em>&#160;</td>
+          <td class="paramname"><em>stream</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -839,20 +934,72 @@ audio audio_dec 2.5</h2>
 <p>Libérez le flux de code obtenu à partir du canal de décodage audio .</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">adChn</td><td>. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">pointeur</td><td>de flux de flux de code audio.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">adChn</td><td>Le numéro de canal . </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">stream</td><td>Pointeur de flux audio .</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Valeurs retournées</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>. </td></tr>
-    <tr><td class="paramname">0</td><td>.</td></tr>
+    <tr><td class="paramname">0</td><td>Succès . </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec .</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarques</dt><dd>IMP_ADEC_SendStream .</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>. </dd></dl>
+<dl class="section remark"><dt>Remarques</dt><dd>Voir un exemple de code IMP_ADEC_SendStream Description de la fonction .</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>non . </dd></dl>
+
+</div>
+</div>
+<a id="gadf3125601116c6e776eab97133e997f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadf3125601116c6e776eab97133e997f8">&#9670;&nbsp;</a></span>IMP_ADEC_SendStream()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_ADEC_SendStream </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>adChn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structIMPAudioStream.html">IMPAudioStream</a> *&#160;</td>
+          <td class="paramname"><em>stream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__IMP__Audio.html#ga7f9bbf0ae482fa7e68855f4bf68c4a1b">IMPBlock</a>&#160;</td>
+          <td class="paramname"><em>block</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Envoyer le flux de code audio au canal de décodage audio .</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">adChn</td><td>Le numéro de canal . </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">stream</td><td>Flux audio . </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">block</td><td>bloquer / Drapeau non bloquant .</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Succès . </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec .</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>Exemple de code <div class="fragment"><div class="line"><span class="keywordflow">while</span>(1) {</div><div class="line">    <span class="comment">// Obtenez les données à décoder </span></div><div class="line">    ret = fread(buf_g711, 1, IMP_AUDIO_BUF_SIZE/2, file_g711);</div><div class="line">    <span class="keywordflow">if</span>(ret &lt; IMP_AUDIO_BUF_SIZE/2)</div><div class="line">        <span class="keywordflow">break</span>;</div><div class="line"></div><div class="line">    <span class="comment">// Envoyer des données décodées </span></div><div class="line">    <a class="code" href="structIMPAudioStream.html">IMPAudioStream</a> stream_in;</div><div class="line">    stream_in.<a class="code" href="group__IMP__Audio.html#ga66a80500658a0f3753209cfbff5a5ec8">stream</a> = (uint8_t *)buf_g711;</div><div class="line">    stream_in.<a class="code" href="group__IMP__Audio.html#ga8f08295a706383aa77c4bfbb9a0d7903">len</a> = ret;</div><div class="line">    ret = <a class="code" href="group__IMP__Audio.html#gadf3125601116c6e776eab97133e997f8">IMP_ADEC_SendStream</a>(adChn, &amp;stream_in, <a class="code" href="group__IMP__Audio.html#gga7f9bbf0ae482fa7e68855f4bf68c4a1ba02fc27068fe9a3c151ffcc08ec5bb65d">BLOCK</a>);</div><div class="line">    <span class="keywordflow">if</span>(ret != 0) {</div><div class="line">        <a class="code" href="imp__log_8h.html#a59492a06ae7e667b02bda8f246902a7c">IMP_LOG_ERR</a>(TAG, <span class="stringliteral">&quot;imp audio encode send frame failed\n&quot;</span>);</div><div class="line">        <span class="keywordflow">return</span> ret;</div><div class="line">    }</div><div class="line"></div><div class="line">    <span class="comment">// Obtenez les données décodées </span></div><div class="line">    <a class="code" href="structIMPAudioStream.html">IMPAudioStream</a> stream_out;</div><div class="line">    ret = <a class="code" href="group__IMP__Audio.html#ga18171fa7357246967054d3fd7964f8c3">IMP_ADEC_GetStream</a>(adChn, &amp;stream_out, <a class="code" href="group__IMP__Audio.html#gga7f9bbf0ae482fa7e68855f4bf68c4a1ba02fc27068fe9a3c151ffcc08ec5bb65d">BLOCK</a>);</div><div class="line">    <span class="keywordflow">if</span>(ret != 0) {</div><div class="line">        <a class="code" href="imp__log_8h.html#a59492a06ae7e667b02bda8f246902a7c">IMP_LOG_ERR</a>(TAG, <span class="stringliteral">&quot;imp audio decoder get stream failed\n&quot;</span>);</div><div class="line">        <span class="keywordflow">return</span> ret;</div><div class="line">    }</div><div class="line"></div><div class="line">    <span class="comment">// Utiliser des données décodées </span></div><div class="line">    fwrite(stream_out.<a class="code" href="group__IMP__Audio.html#ga66a80500658a0f3753209cfbff5a5ec8">stream</a>, 1, stream_out.<a class="code" href="group__IMP__Audio.html#ga8f08295a706383aa77c4bfbb9a0d7903">len</a>, file_pcm);</div><div class="line"></div><div class="line">    <span class="comment">// Libérez les données décodées </span></div><div class="line">    ret = <a class="code" href="group__IMP__Audio.html#ga372a867d48475ac17f3a3d4491ca2ad5">IMP_ADEC_ReleaseStream</a>(adChn, &amp;stream_out);</div><div class="line">    <span class="keywordflow">if</span>(ret != 0) {</div><div class="line">        <a class="code" href="imp__log_8h.html#a59492a06ae7e667b02bda8f246902a7c">IMP_LOG_ERR</a>(TAG, <span class="stringliteral">&quot;imp audio decoder release stream failed\n&quot;</span>);</div><div class="line">        <span class="keywordflow">return</span> ret;</div><div class="line">    }</div><div class="line">}</div></div><!-- fragment --></dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>non . </dd></dl>
 
 </div>
 </div>
@@ -884,20 +1031,21 @@ audio audio_dec 2.5</h2>
 <p>Créer un canal d'encodage audio .</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">numéro</td><td>de canal aeChn. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">attr</td><td>Pointeur d'attribut de canal de codage audio.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aeChn</td><td>Le numéro de canal . </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">attr</td><td>Pointeur d'attribut de canal de codage audio .</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Valeurs retournées</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>. </td></tr>
-    <tr><td class="paramname">0</td><td>.</td></tr>
+    <tr><td class="paramname">0</td><td>Succès . </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec .</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarques</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">int</span> AeChn = 0;</div><div class="line"><a class="code" href="structIMPAudioEncChnAttr.html">IMPAudioEncChnAttr</a> attr;</div><div class="line">attr.<a class="code" href="group__IMP__Audio.html#ga9ba2abe0ff93685cf8f39e0a2a073913">type</a> = PT_G711A;</div><div class="line">attr.<a class="code" href="group__IMP__Audio.html#ga27d72a8094d4559ea2d8ddade7fbd901">bufSize</a> = 20;</div><div class="line">ret = <a class="code" href="group__IMP__Audio.html#ga7b22c5e939dd3ea2b8fdadafbb20d0c4">IMP_AENC_CreateChn</a>(AeChn, &amp;attr);</div><div class="line"><span class="keywordflow">if</span>(ret != 0) {</div><div class="line">    <a class="code" href="imp__log_8h.html#a59492a06ae7e667b02bda8f246902a7c">IMP_LOG_ERR</a>(TAG, <span class="stringliteral">&quot;Audio encode create channel failed\n&quot;</span>);</div><div class="line">    <span class="keywordflow">return</span> ret;</div><div class="line">}</div></div><!-- fragment --></dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>Le SDK prend actuellement en charge le codage PT_G711A, PT_G711U et PT_G726. Alors utilisez SDK Encodage en , juste besoin de attr.type = PT_G711A Peut . <br />
+<dl class="section remark"><dt>Remarques</dt><dd>Exemple de code <div class="fragment"><div class="line"><span class="keywordtype">int</span> AeChn = 0;</div><div class="line"><a class="code" href="structIMPAudioEncChnAttr.html">IMPAudioEncChnAttr</a> attr;</div><div class="line">attr.<a class="code" href="group__IMP__Audio.html#ga9ba2abe0ff93685cf8f39e0a2a073913">type</a> = PT_G711A;</div><div class="line">attr.<a class="code" href="group__IMP__Audio.html#ga27d72a8094d4559ea2d8ddade7fbd901">bufSize</a> = 20;</div><div class="line">ret = <a class="code" href="group__IMP__Audio.html#ga7b22c5e939dd3ea2b8fdadafbb20d0c4">IMP_AENC_CreateChn</a>(AeChn, &amp;attr);</div><div class="line"><span class="keywordflow">if</span>(ret != 0) {</div><div class="line">    <a class="code" href="imp__log_8h.html#a59492a06ae7e667b02bda8f246902a7c">IMP_LOG_ERR</a>(TAG, <span class="stringliteral">&quot;Audio encode create channel failed\n&quot;</span>);</div><div class="line">    <span class="keywordflow">return</span> ret;</div><div class="line">}</div></div><!-- fragment --></dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Actuellement SDK Etre prêt PT_G711A [[[ PT_G711U avec PT_G726 codage . <br />
+Alors utilisez SDK Encodage en , juste besoin de attr.type = PT_G711A Peut . <br />
 Comment utiliser un encodeur personnalisé , Vous devez enregistrer l'encodeur , L'exemple de code est expliqué dans l'interface d'inscription . </dd></dl>
 
 </div>
@@ -926,13 +1074,110 @@ Comment utiliser un encodeur personnalisé , Vous devez enregistrer l'encodeur ,
 </dl>
 <dl class="retval"><dt>Valeurs retournées</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>. </td></tr>
-    <tr><td class="paramname">0</td><td>.</td></tr>
+    <tr><td class="paramname">0</td><td>Succès . </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec .</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarques</dt><dd>.</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>Utilisé avec IMP_AENC_CreateChn. </dd></dl>
+<dl class="section remark"><dt>Remarques</dt><dd>non .</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>contre IMP_AENC_CreateChn Soutenir l'utilisation de . </dd></dl>
+
+</div>
+</div>
+<a id="gae6d5a2043a920d31ebafba014ffa69c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae6d5a2043a920d31ebafba014ffa69c8">&#9670;&nbsp;</a></span>IMP_AENC_GetStream()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_AENC_GetStream </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>aeChn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structIMPAudioStream.html">IMPAudioStream</a> *&#160;</td>
+          <td class="paramname"><em>stream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__IMP__Audio.html#ga7f9bbf0ae482fa7e68855f4bf68c4a1b">IMPBlock</a>&#160;</td>
+          <td class="paramname"><em>block</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Obtenez le flux de code après l'encodage .</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aeChn</td><td>Le numéro de canal . </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">stream</td><td>Obtenir un flux audio . </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">block</td><td>bloquer / Drapeau non bloquant .</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Succès . </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec .</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>Voir un exemple de code IMP_AENC_SendFrame Description de la fonction .</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>non . </dd></dl>
+
+</div>
+</div>
+<a id="gae1413a194c8c6e3abf14977bc8643eeb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae1413a194c8c6e3abf14977bc8643eeb">&#9670;&nbsp;</a></span>IMP_AENC_PollingStream()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_AENC_PollingStream </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>AeChn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>timeout_ms</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Polling Tampon de flux audio codé .</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">AeChn</td><td>Numéro de canal d'entrée de codage audio . </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">timeout_ms</td><td>Polling temps supplémentaire .</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Succès . </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec .</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>non .</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Utilisé IMP_AENC_GetStream L'interface était utilisée avant ， Lorsque l'interface est appelée avec succès, cela signifie audio Les données encodées sont prêtes ， peut utiliser IMP_AENC_GetStream Obtenez les données encodées . </dd></dl>
 
 </div>
 </div>
@@ -964,20 +1209,20 @@ Comment utiliser un encodeur personnalisé , Vous devez enregistrer l'encodeur ,
 <p>Enregistrer l'encodeur .</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">poignée</td><td>d'enregistrement ps32handle. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">encoder</td><td>Structure d'attributs d'encodeur.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ps32handle</td><td>Enregistrer la poignée . </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">encoder</td><td>Structure d'attribut du codeur .</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Valeurs retournées</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>. </td></tr>
-    <tr><td class="paramname">0</td><td>.</td></tr>
+    <tr><td class="paramname">0</td><td>Succès . </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec .</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarques</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">int</span> handle_g711a = 0;</div><div class="line"><a class="code" href="structIMPAudioEncEncoder.html">IMPAudioEncEncoder</a> my_encoder;</div><div class="line">my_encoder.<a class="code" href="group__IMP__Audio.html#gae40287b3c3db315d751b60550a12eb24">maxFrmLen</a> = 1024;</div><div class="line">sprintf(my_encoder.<a class="code" href="group__IMP__Audio.html#ga4a9a61ee141ad74670a1a372b05479f7">name</a>, <span class="stringliteral">&quot;%s&quot;</span>, <span class="stringliteral">&quot;MY_G711A&quot;</span>);</div><div class="line">my_encoder.openEncoder = NULL; <span class="comment">// Fonction de rappel de l&#39;encodeur </span></div><div class="line">my_encoder.encoderFrm = MY_G711A_Encode_Frm; <span class="comment">// </span></div><div class="line">my_encoder.closeEncoder = NULL; <span class="comment">// </span></div><div class="line"></div><div class="line">ret = <a class="code" href="group__IMP__Audio.html#gab3c8f9f9dc80b12476e3d95333bc3ea8">IMP_AENC_RegisterEncoder</a>(&amp;handle_g711a, &amp;my_encoder);</div><div class="line"><span class="keywordflow">if</span>(ret != 0) {</div><div class="line">    <a class="code" href="imp__log_8h.html#a59492a06ae7e667b02bda8f246902a7c">IMP_LOG_ERR</a>(TAG, <span class="stringliteral">&quot;IMP_AENC_RegisterEncoder failed\n&quot;</span>);</div><div class="line">    <span class="keywordflow">return</span> ret;</div><div class="line">}</div><div class="line"></div><div class="line"><span class="comment">// Utiliser l&#39;encodeur </span></div><div class="line"><span class="keywordtype">int</span> AeChn = 0;</div><div class="line"><a class="code" href="structIMPAudioEncChnAttr.html">IMPAudioEncChnAttr</a> attr;</div><div class="line">attr.<a class="code" href="group__IMP__Audio.html#ga9ba2abe0ff93685cf8f39e0a2a073913">type</a> = handle_g711a; <span class="comment">// Encodeur type gal au retour d&#39;une inscription réussie handle_g711a La valeur de .</span></div><div class="line">attr.<a class="code" href="group__IMP__Audio.html#ga27d72a8094d4559ea2d8ddade7fbd901">bufSize</a> = 20;</div><div class="line">ret = <a class="code" href="group__IMP__Audio.html#ga7b22c5e939dd3ea2b8fdadafbb20d0c4">IMP_AENC_CreateChn</a>(AeChn, &amp;attr);</div><div class="line"><span class="keywordflow">if</span>(ret != 0) {</div><div class="line">    <a class="code" href="imp__log_8h.html#a59492a06ae7e667b02bda8f246902a7c">IMP_LOG_ERR</a>(TAG, <span class="stringliteral">&quot;imp audio encode create channel failed\n&quot;</span>);</div><div class="line">    <span class="keywordflow">return</span> ret;</div><div class="line">}</div></div><!-- fragment --></dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>Après l'enregistrement, la méthode d'utilisation est la même que l'utilisation de l'encodeur intégré du SDK. </dd></dl>
+<dl class="section remark"><dt>Remarques</dt><dd>Exemple de code <div class="fragment"><div class="line"><span class="keywordtype">int</span> handle_g711a = 0;</div><div class="line"><a class="code" href="structIMPAudioEncEncoder.html">IMPAudioEncEncoder</a> my_encoder;</div><div class="line">my_encoder.<a class="code" href="group__IMP__Audio.html#gae40287b3c3db315d751b60550a12eb24">maxFrmLen</a> = 1024;</div><div class="line">sprintf(my_encoder.<a class="code" href="group__IMP__Audio.html#ga4a9a61ee141ad74670a1a372b05479f7">name</a>, <span class="stringliteral">&quot;%s&quot;</span>, <span class="stringliteral">&quot;MY_G711A&quot;</span>);</div><div class="line">my_encoder.openEncoder = NULL; <span class="comment">// Fonction de rappel de l&#39;encodeur </span></div><div class="line">my_encoder.encoderFrm = MY_G711A_Encode_Frm; <span class="comment">// Fonction de rappel de l&#39;encodeur </span></div><div class="line">my_encoder.closeEncoder = NULL; <span class="comment">// Fonction de rappel de l&#39;encodeur </span></div><div class="line"></div><div class="line">ret = <a class="code" href="group__IMP__Audio.html#gab3c8f9f9dc80b12476e3d95333bc3ea8">IMP_AENC_RegisterEncoder</a>(&amp;handle_g711a, &amp;my_encoder);</div><div class="line"><span class="keywordflow">if</span>(ret != 0) {</div><div class="line">    <a class="code" href="imp__log_8h.html#a59492a06ae7e667b02bda8f246902a7c">IMP_LOG_ERR</a>(TAG, <span class="stringliteral">&quot;IMP_AENC_RegisterEncoder failed\n&quot;</span>);</div><div class="line">    <span class="keywordflow">return</span> ret;</div><div class="line">}</div><div class="line"></div><div class="line"><span class="comment">// Utiliser l&#39;encodeur </span></div><div class="line"><span class="keywordtype">int</span> AeChn = 0;</div><div class="line"><a class="code" href="structIMPAudioEncChnAttr.html">IMPAudioEncChnAttr</a> attr;</div><div class="line">attr.<a class="code" href="group__IMP__Audio.html#ga9ba2abe0ff93685cf8f39e0a2a073913">type</a> = handle_g711a; <span class="comment">// Encodeur type Égal au retour d&#39;une inscription réussie handle_g711a La valeur de .</span></div><div class="line">attr.<a class="code" href="group__IMP__Audio.html#ga27d72a8094d4559ea2d8ddade7fbd901">bufSize</a> = 20;</div><div class="line">ret = <a class="code" href="group__IMP__Audio.html#ga7b22c5e939dd3ea2b8fdadafbb20d0c4">IMP_AENC_CreateChn</a>(AeChn, &amp;attr);</div><div class="line"><span class="keywordflow">if</span>(ret != 0) {</div><div class="line">    <a class="code" href="imp__log_8h.html#a59492a06ae7e667b02bda8f246902a7c">IMP_LOG_ERR</a>(TAG, <span class="stringliteral">&quot;imp audio encode create channel failed\n&quot;</span>);</div><div class="line">    <span class="keywordflow">return</span> ret;</div><div class="line">}</div></div><!-- fragment --></dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Comment utiliser et utiliser après l'enregistrement SDK Identique à l'encodeur intégré . </dd></dl>
 
 </div>
 </div>
@@ -999,19 +1244,19 @@ Comment utiliser un encodeur personnalisé , Vous devez enregistrer l'encodeur ,
 <p>Déconnectez-vous de l'encodeur .</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">ps32handle</td><td>registration handle (le handle obtenu lors de l'enregistrement de l'encodeur).</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ps32handle</td><td>Enregistrer la poignée ( Handle obtenu lors de l'enregistrement du codeur ).</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Valeurs retournées</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>. </td></tr>
-    <tr><td class="paramname">0</td><td>.</td></tr>
+    <tr><td class="paramname">0</td><td>Succès . </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec .</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarques</dt><dd>.</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>. </dd></dl>
+<dl class="section remark"><dt>Remarques</dt><dd>non .</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>non . </dd></dl>
 
 </div>
 </div>
@@ -1031,7 +1276,7 @@ Comment utiliser un encodeur personnalisé , Vous devez enregistrer l'encodeur ,
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="structIMPAudioStream.html">IMPAudioStream</a> *&#160;</td>
-          <td class="paramname"><em>flux</em>&#160;</td>
+          <td class="paramname"><em>stream</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1043,20 +1288,20 @@ Comment utiliser un encodeur personnalisé , Vous devez enregistrer l'encodeur ,
 <p>Libérez le flux de code obtenu à partir du canal de codage audio .</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">aeChn</td><td>. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">stream</td><td>Récupère le pointeur du flux audio.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aeChn</td><td>Le numéro de canal . </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">stream</td><td>Obtenir un pointeur de flux audio .</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Valeurs retournées</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>. </td></tr>
-    <tr><td class="paramname">0</td><td>.</td></tr>
+    <tr><td class="paramname">0</td><td>Succès . </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec .</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section remark"><dt>Remarques</dt><dd>Voir un exemple de code IMP_AENC_SendFrame Description de la fonction .</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>. </dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>non . </dd></dl>
 
 </div>
 </div>
@@ -1088,20 +1333,20 @@ Comment utiliser un encodeur personnalisé , Vous devez enregistrer l'encodeur ,
 <p>Envoyer des trames audio encodées audio .</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">aeChn</td><td>. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">frm</td><td>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aeChn</td><td>Le numéro de canal . </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">frm</td><td>Pointeur de structure de trame audio .</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Valeurs retournées</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>. </td></tr>
-    <tr><td class="paramname">0</td><td>.</td></tr>
+    <tr><td class="paramname">0</td><td>Succès . </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec .</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarques</dt><dd><div class="fragment"><div class="line"><span class="keywordflow">while</span>(1) {</div><div class="line">    <span class="comment">// Lire une trame de données </span></div><div class="line">    ret = fread(buf_pcm, 1, IMP_AUDIO_BUF_SIZE, file_pcm);</div><div class="line">    <span class="keywordflow">if</span>(ret &lt; IMP_AUDIO_BUF_SIZE)</div><div class="line">        <span class="keywordflow">break</span>;</div><div class="line"></div><div class="line">    <span class="comment">// codage </span></div><div class="line">    <a class="code" href="structIMPAudioFrame.html">IMPAudioFrame</a> frm;</div><div class="line">    frm.<a class="code" href="group__IMP__Audio.html#ga8609060af2c840c7f81341c8ee4a8b7f">virAddr</a> = (uint32_t *)buf_pcm;</div><div class="line">    frm.<a class="code" href="group__IMP__Audio.html#ga4547b8766e639edfcc60d4d545cdd08a">len</a> = ret;</div><div class="line">    ret = <a class="code" href="group__IMP__Audio.html#ga5b969ac455db4694936f0114582eb16e">IMP_AENC_SendFrame</a>(AeChn, &amp;frm);</div><div class="line">    <span class="keywordflow">if</span>(ret != 0) {</div><div class="line">        <a class="code" href="imp__log_8h.html#a59492a06ae7e667b02bda8f246902a7c">IMP_LOG_ERR</a>(TAG, <span class="stringliteral">&quot;imp audio encode send frame failed\n&quot;</span>);</div><div class="line">        <span class="keywordflow">return</span> ret;</div><div class="line">    }</div><div class="line"></div><div class="line">    <span class="comment">// Obtenir le flux de code </span></div><div class="line">    <a class="code" href="structIMPAudioStream.html">IMPAudioStream</a> stream;</div><div class="line">    ret = IMP_AENC_GetStream(AeChn, &amp;stream, <a class="code" href="group__IMP__Audio.html#gga7f9bbf0ae482fa7e68855f4bf68c4a1ba02fc27068fe9a3c151ffcc08ec5bb65d">BLOCK</a>);</div><div class="line">    <span class="keywordflow">if</span>(ret != 0) {</div><div class="line">        <a class="code" href="imp__log_8h.html#a59492a06ae7e667b02bda8f246902a7c">IMP_LOG_ERR</a>(TAG, <span class="stringliteral">&quot;imp audio encode get stream failed\n&quot;</span>);</div><div class="line">        <span class="keywordflow">return</span> ret;</div><div class="line">    }</div><div class="line"></div><div class="line">    <span class="comment">// Utiliser le flux de code </span></div><div class="line">    fwrite(stream.<a class="code" href="group__IMP__Audio.html#ga66a80500658a0f3753209cfbff5a5ec8">stream</a>, 1, stream.<a class="code" href="group__IMP__Audio.html#ga8f08295a706383aa77c4bfbb9a0d7903">len</a>, file_g711);</div><div class="line"></div><div class="line">    <span class="comment">// Diffuser le flux de code </span></div><div class="line">    ret = <a class="code" href="group__IMP__Audio.html#gad27d4774779123da4654dad83053bdf0">IMP_AENC_ReleaseStream</a>(AeChn, &amp;stream);</div><div class="line">    <span class="keywordflow">if</span>(ret != 0) {</div><div class="line">        <a class="code" href="imp__log_8h.html#a59492a06ae7e667b02bda8f246902a7c">IMP_LOG_ERR</a>(TAG, <span class="stringliteral">&quot;imp audio encode release stream failed\n&quot;</span>);</div><div class="line">        <span class="keywordflow">return</span> ret;</div><div class="line">    }</div><div class="line">}</div></div><!-- fragment --></dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>. </dd></dl>
+<dl class="section remark"><dt>Remarques</dt><dd>Exemple de code <div class="fragment"><div class="line"><span class="keywordflow">while</span>(1) {</div><div class="line">    <span class="comment">// Lire une trame de données </span></div><div class="line">    ret = fread(buf_pcm, 1, IMP_AUDIO_BUF_SIZE, file_pcm);</div><div class="line">    <span class="keywordflow">if</span>(ret &lt; IMP_AUDIO_BUF_SIZE)</div><div class="line">        <span class="keywordflow">break</span>;</div><div class="line"></div><div class="line">    <span class="comment">// codage </span></div><div class="line">    <a class="code" href="structIMPAudioFrame.html">IMPAudioFrame</a> frm;</div><div class="line">    frm.<a class="code" href="group__IMP__Audio.html#ga8609060af2c840c7f81341c8ee4a8b7f">virAddr</a> = (uint32_t *)buf_pcm;</div><div class="line">    frm.<a class="code" href="group__IMP__Audio.html#ga4547b8766e639edfcc60d4d545cdd08a">len</a> = ret;</div><div class="line">    ret = <a class="code" href="group__IMP__Audio.html#ga5b969ac455db4694936f0114582eb16e">IMP_AENC_SendFrame</a>(AeChn, &amp;frm);</div><div class="line">    <span class="keywordflow">if</span>(ret != 0) {</div><div class="line">        <a class="code" href="imp__log_8h.html#a59492a06ae7e667b02bda8f246902a7c">IMP_LOG_ERR</a>(TAG, <span class="stringliteral">&quot;imp audio encode send frame failed\n&quot;</span>);</div><div class="line">        <span class="keywordflow">return</span> ret;</div><div class="line">    }</div><div class="line"></div><div class="line">    <span class="comment">// Obtenir le flux de code </span></div><div class="line">    <a class="code" href="structIMPAudioStream.html">IMPAudioStream</a> stream;</div><div class="line">    ret = <a class="code" href="group__IMP__Audio.html#gae6d5a2043a920d31ebafba014ffa69c8">IMP_AENC_GetStream</a>(AeChn, &amp;stream, <a class="code" href="group__IMP__Audio.html#gga7f9bbf0ae482fa7e68855f4bf68c4a1ba02fc27068fe9a3c151ffcc08ec5bb65d">BLOCK</a>);</div><div class="line">    <span class="keywordflow">if</span>(ret != 0) {</div><div class="line">        <a class="code" href="imp__log_8h.html#a59492a06ae7e667b02bda8f246902a7c">IMP_LOG_ERR</a>(TAG, <span class="stringliteral">&quot;imp audio encode get stream failed\n&quot;</span>);</div><div class="line">        <span class="keywordflow">return</span> ret;</div><div class="line">    }</div><div class="line"></div><div class="line">    <span class="comment">// Utiliser le flux de code </span></div><div class="line">    fwrite(stream.<a class="code" href="group__IMP__Audio.html#ga66a80500658a0f3753209cfbff5a5ec8">stream</a>, 1, stream.<a class="code" href="group__IMP__Audio.html#ga8f08295a706383aa77c4bfbb9a0d7903">len</a>, file_g711);</div><div class="line"></div><div class="line">    <span class="comment">// Diffuser le flux de code </span></div><div class="line">    ret = <a class="code" href="group__IMP__Audio.html#gad27d4774779123da4654dad83053bdf0">IMP_AENC_ReleaseStream</a>(AeChn, &amp;stream);</div><div class="line">    <span class="keywordflow">if</span>(ret != 0) {</div><div class="line">        <a class="code" href="imp__log_8h.html#a59492a06ae7e667b02bda8f246902a7c">IMP_LOG_ERR</a>(TAG, <span class="stringliteral">&quot;imp audio encode release stream failed\n&quot;</span>);</div><div class="line">        <span class="keywordflow">return</span> ret;</div><div class="line">    }</div><div class="line">}</div></div><!-- fragment --></dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>non . </dd></dl>
 
 </div>
 </div>
@@ -1123,19 +1368,19 @@ Comment utiliser un encodeur personnalisé , Vous devez enregistrer l'encodeur ,
 <p>Désactiver le périphérique d'entrée audio .</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">audioDevId</td><td>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">audioDevId</td><td>Numéro du périphérique audio .</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Valeurs retournées</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>. </td></tr>
-    <tr><td class="paramname">0</td><td>.</td></tr>
+    <tr><td class="paramname">0</td><td>Succès . </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec .</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarques</dt><dd>.</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>Utilisé conjointement avec IMP_AI_Enable, IMP_AI_Disable doit être exécuté avant que le système ne se mette en veille. </dd></dl>
+<dl class="section remark"><dt>Remarques</dt><dd>non .</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>contre IMP_AI_Enable Soutenir l'utilisation de , Doit être exécuté avant que le système ne se mette en veille IMP_AI_Disable. </dd></dl>
 
 </div>
 </div>
@@ -1167,20 +1412,20 @@ Comment utiliser un encodeur personnalisé , Vous devez enregistrer l'encodeur ,
 <p>Désactiver l'annulation d'écho .</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">aiDevId</td><td>Numéro de périphérique d'entrée audio. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aiChn</td><td>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aiDevId</td><td>Numéro de périphérique d'entrée audio . </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aiChn</td><td>Numéro de canal d'entrée audio .</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Valeurs retournées</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>. </td></tr>
-    <tr><td class="paramname">0</td><td>.</td></tr>
+    <tr><td class="paramname">0</td><td>Succès . </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec .</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarques</dt><dd>.</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>. </dd></dl>
+<dl class="section remark"><dt>Remarques</dt><dd>non .</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>non . </dd></dl>
 
 </div>
 </div>
@@ -1224,22 +1469,56 @@ Comment utiliser un encodeur personnalisé , Vous devez enregistrer l'encodeur ,
 <p>Fermer Obtenir le cadre de référence .</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">audioDevId</td><td>. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aiChn</td><td>. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">audioAoDevId</td><td>. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aoChn</td><td>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">audioDevId</td><td>Numéro du périphérique audio . </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aiChn</td><td>Numéro de canal d'entrée audio . </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">audioAoDevId</td><td>Numéro du périphérique de sortie audio . </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aoChn</td><td>Numéro de canal de sortie audio .</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Valeurs retournées</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>. </td></tr>
-    <tr><td class="paramname">0</td><td>.</td></tr>
+    <tr><td class="paramname">0</td><td>Succès . </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec .</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarques</dt><dd>. </dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>. </dd></dl>
+<dl class="section remark"><dt>Remarques</dt><dd>non . </dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>non . </dd></dl>
+
+</div>
+</div>
+<a id="ga824ac244870fdeb3bfe40416a450334e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga824ac244870fdeb3bfe40416a450334e">&#9670;&nbsp;</a></span>IMP_AI_DisableAgc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_AI_DisableAgc </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Désactiver AI Fonction de gain automatique .</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">non</td><td>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Succès . </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec .</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>non .</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>non . </dd></dl>
 
 </div>
 </div>
@@ -1271,20 +1550,54 @@ Comment utiliser un encodeur personnalisé , Vous devez enregistrer l'encodeur ,
 <p>Désactiver le canal d'entrée audio .</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">audioDevId</td><td>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">audioDevId</td><td>Numéro du périphérique audio . </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">aiChn</td><td>Numéro de canal d'entrée audio .</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Valeurs retournées</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>. </td></tr>
-    <tr><td class="paramname">0</td><td>.</td></tr>
+    <tr><td class="paramname">0</td><td>Succès . </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec .</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarques</dt><dd>.</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>Utilisé en conjonction avec IMP_AI_EnableChn. </dd></dl>
+<dl class="section remark"><dt>Remarques</dt><dd>non .</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>contre IMP_AI_EnableChn Soutenir l'utilisation de . </dd></dl>
+
+</div>
+</div>
+<a id="gae34b85461a391ba8a3a817bf85f732bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae34b85461a391ba8a3a817bf85f732bc">&#9670;&nbsp;</a></span>IMP_AI_DisableHpf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_AI_DisableHpf </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Désactiver AI Fonction de filtre passe-haut .</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">non</td><td>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Succès . </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec .</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>non .</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>non . </dd></dl>
 
 </div>
 </div>
@@ -1306,19 +1619,19 @@ Comment utiliser un encodeur personnalisé , Vous devez enregistrer l'encodeur ,
 <p>Désactiver la suppression du bruit .</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramname">.</td><td></td></tr>
+    <tr><td class="paramname">non</td><td>.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Valeurs retournées</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>. </td></tr>
-    <tr><td class="paramname">0</td><td>.</td></tr>
+    <tr><td class="paramname">0</td><td>Succès . </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec .</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarques</dt><dd>.</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>. </dd></dl>
+<dl class="section remark"><dt>Remarques</dt><dd>non .</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>non . </dd></dl>
 
 </div>
 </div>
@@ -1340,19 +1653,19 @@ Comment utiliser un encodeur personnalisé , Vous devez enregistrer l'encodeur ,
 <p>Activer le périphérique d'entrée audio .</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">audioDevId</td><td>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">audioDevId</td><td>Numéro du périphérique audio .</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Valeurs retournées</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>. </td></tr>
-    <tr><td class="paramname">0</td><td>.</td></tr>
+    <tr><td class="paramname">0</td><td>Succès . </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec .</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarques</dt><dd>.</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>IMP_AI_SetPubAttr () doit être appelé avant d'appeler cette fonction. </dd></dl>
+<dl class="section remark"><dt>Remarques</dt><dd>non .</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Doit être appelé avant d'appeler cette fonction <a class="el" href="group__IMP__Audio.html#gad8c75d7c39d406c3d6c863bd179b54e1">IMP_AI_SetPubAttr()</a>. </dd></dl>
 
 </div>
 </div>
@@ -1396,52 +1709,53 @@ Comment utiliser un encodeur personnalisé , Vous devez enregistrer l'encodeur ,
 <p>Activer la fonction d'annulation d'écho de l'entrée audio et de la sortie audio spécifiées .</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">aiDevId</td><td>Le numéro du périphérique d'entrée audio qui nécessite une annulation d'écho. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aiChn</td><td>Le numéro du canal d'entrée audio pour l'annulation de l'écho. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aoDevId</td><td>Le numéro du périphérique de sortie audio qui nécessite une annulation d'écho. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aoChn</td><td>Le numéro du canal de sortie audio pour l'annulation de l'écho.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aiDevId</td><td>Numéro de périphérique d'entrée audio nécessitant une annulation d'écho . </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aiChn</td><td>Numéro de canal d'entrée audio nécessitant une annulation d'écho . </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aoDevId</td><td>Numéro du périphérique de sortie audio nécessitant une annulation d'écho . </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aoChn</td><td>Numéro de canal de sortie audio nécessitant une annulation d'écho .</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Valeurs retournées</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>. </td></tr>
-    <tr><td class="paramname">0</td><td>.</td></tr>
+    <tr><td class="paramname">0</td><td>Succès . </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec .</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarques</dt><dd>L'annulation d'écho aura des effets différents pour différents appareils et différents packages. </dd>
+<dl class="section remark"><dt>Remarques</dt><dd>Annulation d'écho pour différents appareils ， Différents forfaits ， L'annulation de l'écho aura des effets différents . </dd>
 <dd>
-L'annulation d'écho ne prend actuellement pas en charge adaptative, il existe donc des paramètres d'annulation d'écho distincts pour différents appareils, </dd>
+L'annulation d'écho ne prend actuellement pas en charge la fonction adaptative ， Il existe donc des paramètres d'annulation d'écho distincts pour différents appareils , </dd>
 <dd>
 Le simple fait d'activer la fonction n'est pas nécessairement bon. </dd>
 <dd>
-Le fichier de paramètres d'annulation d'écho se trouve dans le fichier de configuration /etc/webrtc_profile.ini. </dd>
+Le fichier de paramètres pour l'annulation d'écho se trouve dans /etc/webrtc_profile.ini Fichier de configuration . </dd>
 <dd>
-Le format du fichier de configuration est le suivant (les trois principaux paramètres à déboguer sont répertoriés ci-dessous): </dd>
+Le format du fichier de configuration est le suivant ( Les trois principaux paramètres à déboguer sont répertoriés ci-dessous ): </dd>
 <dd>
 [Set_Far_Frame] </dd>
 <dd>
-Frame_V = 0,3 </dd>
+Frame_V=0.3 </dd>
 <dd>
 [Set_Near_Frame] </dd>
 <dd>
-Frame_V = 0,1 </dd>
+Frame_V=0.1 </dd>
 <dd>
-delay_ms = 150</dd>
+delay_ms=150</dd>
 <dd>
-Le contenu de la première étiquette [Set_Far_Frame] représente les paramètres distants, c'est-à-dire les paramètres de données de fin de lecture SPK. </dd>
+Le premier label [Set_Far_Frame] Le contenu de représente le paramètre distant , lequel est SPK Terminer les paramètres de données de lecture . </dd>
 <dd>
-Fram_V représente le rapport d'amplitude audio. Le réglage de ce paramètre peut ajuster l'amplitude des données de lecture (cette amplitude n'est utilisée que pour l'annulation de l'écho). </dd>
+Fram_V Représente le rapport d'amplitude audio , Ajustez ce paramètre pour ajuster l'amplitude des données de lecture ( Cette amplitude n'est utilisée que pour l'annulation d'écho ). </dd>
 <dd>
-Le contenu de la première étiquette [Set_Near_Frame] représente le paramètre d'extrémité proche, c'est-à-dire le paramètre de données d'enregistrement de l'extrémité MIC. </dd>
+Le premier label [Set_Near_Frame] Le contenu dans représente le paramètre proche , lequel est MIC Terminer l'enregistrement des paramètres de données . </dd>
 <dd>
-Fram_V représente le rapport d'amplitude audio. Le réglage de ce paramètre permet d'ajuster l'amplitude des données d'enregistrement (cette amplitude n'est utilisée que pour l'annulation de l'écho). </dd>
+Fram_V Représente le rapport d'amplitude audio , Ajustez ce paramètre pour ajuster l'amplitude des données enregistrées ( Cette amplitude n'est utilisée que pour l'annulation d'écho ). </dd>
 <dd>
-delay_ms En raison du retard du logiciel et du matériel, et il y a une certaine distance entre SPK et MIC, les données de lecture SPK seront à nouveau échantillonnées par MIC, il y aura donc un certain retard dans les données SPK reflétées dans les données MIC. </dd>
+delay_ms En raison du retard du logiciel et du matériel , Et SPK contre MIC Est placé à une certaine distance ,SPK Les données de lecture seront MIC échantillonnage , et donc SPK Données en MIC Il y aura un certain retard dans les données . </dd>
 <dd>
-Cette heure représente la différence de temps entre les données de lecture et les données d'enregistrement.</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>En fait, l'interface ne vérifiera que aiDevId et aiChn. Mais il est préférable de l'appeler une fois que les deux canaux sont activés en même temps. Lors de la fermeture du canal d'entrée audio , La fonction d'annulation d'écho est désactivée en même temps . Si vous devez l'utiliser à nouveau, vous devez l'ouvrir à nouveau . </dd></dl>
+Cette heure représente la différence de temps entre les données de lecture et les données d'enregistrement .</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>En fait, l'interface ne vérifiera que aiDevId avec aiChn. Mais il est préférable d'appeler une fois que les deux canaux sont activés en même temps . <br />
+Lors de la fermeture du canal d'entrée audio , La fonction d'annulation d'écho est désactivée en même temps . Si vous l'utilisez à nouveau, vous devez l'ouvrir à nouveau . </dd></dl>
 
 </div>
 </div>
@@ -1485,22 +1799,22 @@ Cette heure représente la différence de temps entre les données de lecture et
 <p>Ouvrir pour obtenir le cadre de référence .</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">audioDevId</td><td>. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aiChn</td><td>. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">audioAoDevId</td><td>Numéro du périphérique de sortie audio. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aoChn</td><td>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">audioDevId</td><td>Numéro du périphérique audio . </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aiChn</td><td>Numéro de canal d'entrée audio . </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">audioAoDevId</td><td>Numéro du périphérique de sortie audio . </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aoChn</td><td>Numéro de canal de sortie audio .</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Valeurs retournées</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>. </td></tr>
-    <tr><td class="paramname">0</td><td>.</td></tr>
+    <tr><td class="paramname">0</td><td>Succès . </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec .</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarques</dt><dd>Appelez cette interface avant d'appeler IMP_AI_GetFrameAndRef. </dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>. </dd></dl>
+<dl class="section remark"><dt>Remarques</dt><dd>transfert IMP_AI_GetFrameAndRef Appelez cette interface avant . </dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>non . </dd></dl>
 
 </div>
 </div>
@@ -1532,22 +1846,22 @@ Cette heure représente la différence de temps entre les données de lecture et
 <p>Activer la fonction de gain automatique de l'entrée audio .</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">attr</td><td>nécessite des attributs audio pour le gain automatique. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">configuration</td><td>du paramètre agcConfig du gain automatique, configurez le facteur d'agrandissement.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">attr</td><td>Attributs audio nécessitant un gain automatique . </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">agcConfig</td><td>Configuration des paramètres du gain automatique , Configurer le grossissement .</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Valeurs retournées</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>. </td></tr>
-    <tr><td class="paramname">0</td><td>.</td></tr>
+    <tr><td class="paramname">0</td><td>Succès . </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec .</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarques</dt><dd>Il faut faire attention à la configuration de agcConfig, le facteur d'amplification d'AGC a principalement cette configuration de paramètre, et le gain spécifique voit la description de <a class="el" href="structIMPAudioAgcConfig.html">IMPAudioAgcConfig</a>. </dd>
+<dl class="section remark"><dt>Remarques</dt><dd>nécessite de l'attention agcConfig Configuration ,AGC Le grossissement a principalement la configuration des paramètres , Voir pour des gains spécifiques <a class="el" href="structIMPAudioAgcConfig.html">IMPAudioAgcConfig</a> Description . </dd>
 <dd>
-Il convient de noter que l'AGC peut amplifier le gain du son, mais si les paramètres de gain ne sont pas appropriés, cela provoquera une rupture du son, etc., veuillez l'ajuster vous-même lors d'une utilisation spécifique.</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>L'annulation d'écho inclut la fonction AGC, si vous activez l'annulation d'écho, vous n'avez pas besoin de faire un gain automatique. </dd></dl>
+doit être conscient de ,AGC Peut amplifier le gain du son , Mais si le paramètre de gain ne convient pas , Cela provoquera la rupture du son, etc. , Veuillez vous ajuster lorsque vous l'utilisez .</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>L'annulation de l'écho comprend AGC Fonctionnalités , Si l'annulation d'écho est activée , Pas besoin de faire de gain automatique . </dd></dl>
 
 </div>
 </div>
@@ -1579,20 +1893,20 @@ Il convient de noter que l'AGC peut amplifier le gain du son, mais si les param�
 <p>Activer le canal d'entrée audio .</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">audioDevId</td><td>. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aiChn</td><td>Numéro de canal d'entrée audio.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">audioDevId</td><td>Numéro du périphérique audio . </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aiChn</td><td>Numéro de canal d'entrée audio .</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Valeurs retournées</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>. </td></tr>
-    <tr><td class="paramname">0</td><td>.</td></tr>
+    <tr><td class="paramname">0</td><td>Succès . </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec .</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarques</dt><dd>.</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>L'appareil doit d'abord être activé. </dd></dl>
+<dl class="section remark"><dt>Remarques</dt><dd>non .</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Doit être activé en premier device. </dd></dl>
 
 </div>
 </div>
@@ -1614,19 +1928,68 @@ Il convient de noter que l'AGC peut amplifier le gain du son, mais si les param�
 <p>Activer le filtrage passe-haut de l'entrée audio .</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">attr</td><td>Attributs audio qui doivent être filtrés passe-haut.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">attr</td><td>Attributs audio nécessitant un filtrage passe-haut .</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Valeurs retournées</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>. </td></tr>
-    <tr><td class="paramname">0</td><td>.</td></tr>
+    <tr><td class="paramname">0</td><td>Succès . </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec .</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarques</dt><dd>.</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>L'annulation d'écho inclut la fonction HPF, si vous activez l'annulation d'écho, vous n'avez pas besoin de faire HPF. </dd></dl>
+<dl class="section remark"><dt>Remarques</dt><dd>non .</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>L'annulation de l'écho comprend HPF Fonctionnalités , Si l'annulation d'écho est activée , Pas besoin de faire HPF. </dd></dl>
+
+</div>
+</div>
+<a id="ga57f7097eee1486fade39bc5d38eb09ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga57f7097eee1486fade39bc5d38eb09ef">&#9670;&nbsp;</a></span>IMP_AI_EnableNs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_AI_EnableNs </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structIMPAudioIOAttr.html">IMPAudioIOAttr</a> *&#160;</td>
+          <td class="paramname"><em>attr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>mode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Activer la fonction de suppression du bruit de l'entrée audio spécifiée .</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">attr</td><td>Attributs audio nécessitant une suppression du bruit . </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>Niveau de suppression du bruit 0 ~ 3, Voir Level_ns.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Succès . </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec .</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>Bruit supprimé mode Le paramètre indique le niveau de suppression du bruit , La plage est [0 ~ 3], Plus le niveau est élevé , Le plus propre la suppression du bruit . </dd>
+<dd>
+toutefois , Plus la suppression du bruit est propre, plus les détails sonores seront perdus , Il y a donc une contradiction ici , Besoin d'être dans </dd>
+<dd>
+Faites des compromis lors de l'utilisation .</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>L'annulation de l'écho inclut la suppression du bruit , Si l'annulation d'écho est activée , Pas besoin de supprimer le bruit . </dd></dl>
 
 </div>
 </div>
@@ -1664,21 +2027,146 @@ Il convient de noter que l'AGC peut amplifier le gain du son, mais si les param�
 <p>Obtenir les paramètres du canal d'entrée audio .</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">audioDevId</td><td>. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aiChn</td><td>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">audioDevId</td><td>Numéro du périphérique audio . </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aiChn</td><td>Numéro de canal d'entrée audio . </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">chnParam</td><td>Paramètres du canal audio .</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Valeurs retournées</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>. </td></tr>
-    <tr><td class="paramname">0</td><td>.</td></tr>
+    <tr><td class="paramname">0</td><td>Succès . </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec .</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarques</dt><dd>.</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>. </dd></dl>
+<dl class="section remark"><dt>Remarques</dt><dd>non .</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>non . </dd></dl>
+
+</div>
+</div>
+<a id="gab8335839c99279534119273709971414"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab8335839c99279534119273709971414">&#9670;&nbsp;</a></span>IMP_AI_GetFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_AI_GetFrame </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>audioDevId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>aiChn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structIMPAudioFrame.html">IMPAudioFrame</a> *&#160;</td>
+          <td class="paramname"><em>frm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__IMP__Audio.html#ga7f9bbf0ae482fa7e68855f4bf68c4a1b">IMPBlock</a>&#160;</td>
+          <td class="paramname"><em>block</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Obtenir une image audio .</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">audioDevId</td><td>Numéro du périphérique audio . </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aiChn</td><td>Numéro de canal d'entrée audio . </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">frm</td><td>Pointeur de structure de trame audio . </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">block</td><td>bloquer / Drapeau non bloquant .</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Succès . </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec .</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>Exemple de code <div class="fragment"><div class="line"><a class="code" href="structIMPAudioFrame.html">IMPAudioFrame</a> frm;</div><div class="line"><span class="comment">// Obtenir une image audio </span></div><div class="line">ret = <a class="code" href="group__IMP__Audio.html#gab8335839c99279534119273709971414">IMP_AI_GetFrame</a>(devID, chnID, &amp;frm, <a class="code" href="group__IMP__Audio.html#gga7f9bbf0ae482fa7e68855f4bf68c4a1ba02fc27068fe9a3c151ffcc08ec5bb65d">BLOCK</a>);</div><div class="line"><span class="keywordflow">if</span>(ret != 0) {</div><div class="line">    <a class="code" href="imp__log_8h.html#a59492a06ae7e667b02bda8f246902a7c">IMP_LOG_ERR</a>(TAG, <span class="stringliteral">&quot;Audio Get Frame Data error\n&quot;</span>);</div><div class="line">    <span class="keywordflow">return</span> ret;</div><div class="line">}</div><div class="line"></div><div class="line">fwrite(frm.<a class="code" href="group__IMP__Audio.html#ga8609060af2c840c7f81341c8ee4a8b7f">virAddr</a>, 1, frm.<a class="code" href="group__IMP__Audio.html#ga4547b8766e639edfcc60d4d545cdd08a">len</a>, record_file); <span class="comment">// Utiliser les données de trame audio </span></div><div class="line"></div><div class="line"><span class="comment">// Libérer le cadre audio </span></div><div class="line">ret = <a class="code" href="group__IMP__Audio.html#ga1233c77454b8a895b02fb0035cbe5bd0">IMP_AI_ReleaseFrame</a>(devID, chnID, &amp;frm);</div><div class="line"><span class="keywordflow">if</span>(ret != 0) {</div><div class="line">    <a class="code" href="imp__log_8h.html#a59492a06ae7e667b02bda8f246902a7c">IMP_LOG_ERR</a>(TAG, <span class="stringliteral">&quot;Audio release frame data error\n&quot;</span>);</div><div class="line">    <span class="keywordflow">return</span> ret;</div><div class="line">}</div></div><!-- fragment --></dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>non . </dd></dl>
+
+</div>
+</div>
+<a id="ga3d40f6572878af4a393718bdcd452186"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3d40f6572878af4a393718bdcd452186">&#9670;&nbsp;</a></span>IMP_AI_GetFrameAndRef()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_AI_GetFrameAndRef </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>audioDevId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>aiChn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structIMPAudioFrame.html">IMPAudioFrame</a> *&#160;</td>
+          <td class="paramname"><em>frm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structIMPAudioFrame.html">IMPAudioFrame</a> *&#160;</td>
+          <td class="paramname"><em>ref</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__IMP__Audio.html#ga7f9bbf0ae482fa7e68855f4bf68c4a1b">IMPBlock</a>&#160;</td>
+          <td class="paramname"><em>block</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Obtenir une image audio et une image de référence de sortie .</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">audioDevId</td><td>Numéro du périphérique audio . </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aiChn</td><td>Numéro de canal d'entrée audio . </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">frm</td><td>Pointeur de structure de trame audio . </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">ref</td><td>Pointeur de structure du cadre de référence . </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">block</td><td>bloquer / Drapeau non bloquant .</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Succès . </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec .</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>Exemple de code <div class="fragment"><div class="line"><a class="code" href="structIMPAudioFrame.html">IMPAudioFrame</a> frm;</div><div class="line"><a class="code" href="structIMPAudioFrame.html">IMPAudioFrame</a> ref;</div><div class="line"><span class="comment">// Obtenir une image audio et une image de référence de sortie </span></div><div class="line">ret = <a class="code" href="group__IMP__Audio.html#ga3d40f6572878af4a393718bdcd452186">IMP_AI_GetFrameAndRef</a>(devID, chnID, &amp;frm, &amp;ref, <a class="code" href="group__IMP__Audio.html#gga7f9bbf0ae482fa7e68855f4bf68c4a1ba02fc27068fe9a3c151ffcc08ec5bb65d">BLOCK</a>);</div><div class="line"><span class="keywordflow">if</span>(ret != 0) {</div><div class="line">    <a class="code" href="imp__log_8h.html#a59492a06ae7e667b02bda8f246902a7c">IMP_LOG_ERR</a>(TAG, <span class="stringliteral">&quot;Audio Get Frame Data error\n&quot;</span>);</div><div class="line">    <span class="keywordflow">return</span> ret;</div><div class="line">}</div><div class="line"></div><div class="line">fwrite(frm.<a class="code" href="group__IMP__Audio.html#ga8609060af2c840c7f81341c8ee4a8b7f">virAddr</a>, 1, frm.<a class="code" href="group__IMP__Audio.html#ga4547b8766e639edfcc60d4d545cdd08a">len</a>, record_file); <span class="comment">// Utiliser les données de trame audio </span></div><div class="line">fwrite(ref.<a class="code" href="group__IMP__Audio.html#ga8609060af2c840c7f81341c8ee4a8b7f">virAddr</a>, 1, ref.<a class="code" href="group__IMP__Audio.html#ga4547b8766e639edfcc60d4d545cdd08a">len</a>, ref_file); <span class="comment">// Utiliser des cadres de référence audio </span></div><div class="line"></div><div class="line"><span class="comment">// Libérer le cadre audio </span></div><div class="line">ret = <a class="code" href="group__IMP__Audio.html#ga1233c77454b8a895b02fb0035cbe5bd0">IMP_AI_ReleaseFrame</a>(devID, chnID, &amp;frm);</div><div class="line"><span class="keywordflow">if</span>(ret != 0) {</div><div class="line">    <a class="code" href="imp__log_8h.html#a59492a06ae7e667b02bda8f246902a7c">IMP_LOG_ERR</a>(TAG, <span class="stringliteral">&quot;Audio release frame data error\n&quot;</span>);</div><div class="line">    <span class="keywordflow">return</span> ret;</div><div class="line">}</div></div><!-- fragment --></dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>non . </dd></dl>
 
 </div>
 </div>
@@ -1716,21 +2204,21 @@ Il convient de noter que l'AGC peut amplifier le gain du son, mais si les param�
 <p>Obtenir AI Gagner de la valeur .</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">audioDevId</td><td>. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aiChn</td><td>. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">aiGain</td><td>Gain d'entrée audio.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">audioDevId</td><td>Numéro de périphérique d'entrée audio . </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aiChn</td><td>Numéro de canal d'entrée audio . </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">aiGain</td><td>Gain d'entrée audio .</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Valeurs retournées</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>. </td></tr>
-    <tr><td class="paramname">0</td><td>.</td></tr>
+    <tr><td class="paramname">0</td><td>Succès . </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec .</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarques</dt><dd>.</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>. </dd></dl>
+<dl class="section remark"><dt>Remarques</dt><dd>non .</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>non . </dd></dl>
 
 </div>
 </div>
@@ -1774,7 +2262,7 @@ Il convient de noter que l'AGC peut amplifier le gain du son, mais si les param�
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarques</dt><dd>non.</dd></dl>
+<dl class="section remark"><dt>Remarques</dt><dd>non .</dd></dl>
 <dl class="section attention"><dt>Attention</dt><dd>non . </dd></dl>
 
 </div>
@@ -1813,21 +2301,73 @@ Il convient de noter que l'AGC peut amplifier le gain du son, mais si les param�
 <p>Obtenez le volume d'entrée audio .</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">aiDevId</td><td>. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aiChn</td><td>. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">vol</td><td>Volume du canal d'entrée audio.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aiDevId</td><td>Numéro de périphérique d'entrée audio . </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aiChn</td><td>Numéro de canal d'entrée audio . </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">vol</td><td>Volume du canal d'entrée audio .</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Valeurs retournées</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>. </td></tr>
-    <tr><td class="paramname">0</td><td>.</td></tr>
+    <tr><td class="paramname">0</td><td>Succès . </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec .</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarques</dt><dd>.</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>. </dd></dl>
+<dl class="section remark"><dt>Remarques</dt><dd>non .</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>non . </dd></dl>
+
+</div>
+</div>
+<a id="ga6f080ad3f52147b7747fe8c5a3737170"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6f080ad3f52147b7747fe8c5a3737170">&#9670;&nbsp;</a></span>IMP_AI_PollingFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_AI_PollingFrame </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>audioDevId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>aiChn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>timeout_ms</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Polling Tampon de flux audio .</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">audioDevId</td><td>Numéro du périphérique audio . </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aiChn</td><td>Numéro de canal d'entrée audio . </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">timeout_ms</td><td>Polling temps supplémentaire .</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Succès . </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec .</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>non .</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Utilisé IMP_AI_GetFrame L'interface était utilisée avant ， Lorsque l'interface est appelée avec succès, cela signifie audio Les données sont prêtes ， peut utiliser IMP_AI_GetFrame Obtenez des données audio . </dd></dl>
 
 </div>
 </div>
@@ -1862,23 +2402,24 @@ Il convient de noter que l'AGC peut amplifier le gain du son, mais si les param�
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Libérer le cadre audio .</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">audioDevId</td><td>. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aiChn</td><td>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">audioDevId</td><td>Numéro du périphérique audio . </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aiChn</td><td>Numéro de canal d'entrée audio . </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">frm</td><td>Pointeur de structure de trame audio .</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Valeurs retournées</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>. </td></tr>
-    <tr><td class="paramname">0</td><td>.</td></tr>
+    <tr><td class="paramname">0</td><td>Succès . </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec .</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarques</dt><dd>.</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>Utilisé en conjonction avec IMP_AI_GetFrame. </dd></dl>
+<dl class="section remark"><dt>Remarques</dt><dd>non .</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>contre IMP_AI_GetFrame Soutenir l'utilisation de . </dd></dl>
 
 </div>
 </div>
@@ -1916,21 +2457,21 @@ Il convient de noter que l'AGC peut amplifier le gain du son, mais si les param�
 <p>Définir les paramètres du canal d'entrée audio .</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">audioDevId</td><td>. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aiChn</td><td>. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">chnParam</td><td>Paramètres du canal audio.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">audioDevId</td><td>Numéro du périphérique audio . </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aiChn</td><td>Numéro de canal d'entrée audio . </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">chnParam</td><td>Paramètres du canal audio .</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Valeurs retournées</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>. </td></tr>
-    <tr><td class="paramname">0</td><td>.</td></tr>
+    <tr><td class="paramname">0</td><td>Succès . </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec .</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarques</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">int</span> chnID = 0;</div><div class="line"><a class="code" href="structIMPAudioIChnParam.html">IMPAudioIChnParam</a> chnParam;</div><div class="line">chnParam.<a class="code" href="group__IMP__Audio.html#ga4464b56e8dbfe868133932aaaefe7ac2">usrFrmDepth</a> = 20;  <span class="comment">// the range of valid value is [2, MAX_AUDIO_FRAME_NUM].</span></div><div class="line">ret = <a class="code" href="group__IMP__Audio.html#ga498b982cac5532d1f853ea3356941d02">IMP_AI_SetChnParam</a>(devID, chnID, &amp;chnParam);</div><div class="line"><span class="keywordflow">if</span>(ret != 0) {</div><div class="line">    <a class="code" href="imp__log_8h.html#a59492a06ae7e667b02bda8f246902a7c">IMP_LOG_ERR</a>(TAG, <span class="stringliteral">&quot;set ai %d channel %d attr err: %d\n&quot;</span>, devID, chnID, ret);</div><div class="line">    <span class="keywordflow">return</span> ret;</div><div class="line">}</div></div><!-- fragment --></dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>Appelé avant IMP_AI_EnableChn. </dd></dl>
+<dl class="section remark"><dt>Remarques</dt><dd>Exemple de code <div class="fragment"><div class="line"><span class="keywordtype">int</span> chnID = 0;</div><div class="line"><a class="code" href="structIMPAudioIChnParam.html">IMPAudioIChnParam</a> chnParam;</div><div class="line">chnParam.<a class="code" href="group__IMP__Audio.html#ga4464b56e8dbfe868133932aaaefe7ac2">usrFrmDepth</a> = 20;  <span class="comment">// the range of valid value is [2, MAX_AUDIO_FRAME_NUM].</span></div><div class="line">ret = <a class="code" href="group__IMP__Audio.html#ga498b982cac5532d1f853ea3356941d02">IMP_AI_SetChnParam</a>(devID, chnID, &amp;chnParam);</div><div class="line"><span class="keywordflow">if</span>(ret != 0) {</div><div class="line">    <a class="code" href="imp__log_8h.html#a59492a06ae7e667b02bda8f246902a7c">IMP_LOG_ERR</a>(TAG, <span class="stringliteral">&quot;set ai %d channel %d attr err: %d\n&quot;</span>, devID, chnID, ret);</div><div class="line">    <span class="keywordflow">return</span> ret;</div><div class="line">}</div></div><!-- fragment --></dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>dans IMP_AI_EnableChn Appelez avant . </dd></dl>
 
 </div>
 </div>
@@ -1968,21 +2509,22 @@ Il convient de noter que l'AGC peut amplifier le gain du son, mais si les param�
 <p>Régler le gain d'entrée audio .</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">audioDevId</td><td>Numéro de périphérique d'entrée audio. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aiChn</td><td>. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">aiGain</td><td>gain d'entrée audio, plage [0 ~ 31].</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">audioDevId</td><td>Numéro de périphérique d'entrée audio . </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aiChn</td><td>Numéro de canal d'entrée audio . </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">aiGain</td><td>Gain d'entrée audio , gamme [0 ~ 31].</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Valeurs retournées</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>. </td></tr>
-    <tr><td class="paramname">0</td><td>.</td></tr>
+    <tr><td class="paramname">0</td><td>Succès . </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec .</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarques</dt><dd>.</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>La plage de aiGain est [0 ~ 31], si la valeur d'entrée est inférieure à 0, la valeur de aiGain sera définir comme 0. Si la valeur est supérieure à 31,aiGain Sera réglé sur 10. </dd></dl>
+<dl class="section remark"><dt>Remarques</dt><dd>non .</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>aiGain La gamme est [0 ~ 31], Si la valeur saisie est inférieure à 0, alors aiGain La valeur sera <br />
+définir comme 0. Si la valeur est supérieure à 31,aiGain Sera réglé sur 10. </dd></dl>
 
 </div>
 </div>
@@ -2014,20 +2556,20 @@ Il convient de noter que l'AGC peut amplifier le gain du son, mais si les param�
 <p>Définir les propriétés du périphérique d'entrée audio .</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">Numéro</td><td>de périphérique audio audioDevId. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">attr</td><td>Pointeur d'attribut de périphérique audio.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">audioDevId</td><td>Numéro du périphérique audio . </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">attr</td><td>Pointeur d'attribut de périphérique audio .</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Valeurs retournées</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>succès. </td></tr>
-    <tr><td class="paramname">Échec</td><td>non nul.</td></tr>
+    <tr><td class="paramname">0</td><td>Succès . </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec .</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section remark"><dt>Remarques</dt><dd>Exemple de code <div class="fragment"><div class="line"><span class="keywordtype">int</span> devID = 1;</div><div class="line"><a class="code" href="structIMPAudioIOAttr.html">IMPAudioIOAttr</a> attr;</div><div class="line">attr.<a class="code" href="group__IMP__Audio.html#gab594cc1e39226e0fd3224cec35018eb6">samplerate</a> = <a class="code" href="group__IMP__Audio.html#gga3ef9a733efca625c908fb5cb8b319538a69a08037564ba399c3143ec5587c7006">AUDIO_SAMPLE_RATE_8000</a>;</div><div class="line">attr.<a class="code" href="group__IMP__Audio.html#ga45488145ea03519464a386aeb07aaf14">bitwidth</a> = <a class="code" href="group__IMP__Audio.html#ggad0c53f3d873672b040af8e2163f10567ae4fe6b8ad9ccd205f42fc897d7989adb">AUDIO_BIT_WIDTH_16</a>;</div><div class="line">attr.<a class="code" href="group__IMP__Audio.html#gaec1d2a3fbe53e19bca46206ced9a3730">soundmode</a> = <a class="code" href="group__IMP__Audio.html#ggab930bb2e1619f803e108bec84ea8724eaa8195ed0d999b396c0d3a927e33debd2">AUDIO_SOUND_MODE_MONO</a>;</div><div class="line">attr.<a class="code" href="group__IMP__Audio.html#ga6ea7ed3fc7f83a47cd9bf5cbab460b6a">frmNum</a> = 20;</div><div class="line">attr.<a class="code" href="group__IMP__Audio.html#ga31d834d7f652caa55136f75bbf46dc9b">numPerFrm</a> = 400;</div><div class="line">attr.<a class="code" href="group__IMP__Audio.html#ga43d48a7dd6d4464ec4328b69f63eed1f">chnCnt</a> = 1;</div><div class="line">ret = <a class="code" href="group__IMP__Audio.html#gad8c75d7c39d406c3d6c863bd179b54e1">IMP_AI_SetPubAttr</a>(devID, &amp;attr);</div><div class="line"><span class="keywordflow">if</span>(ret != 0) {</div><div class="line">    <a class="code" href="imp__log_8h.html#a59492a06ae7e667b02bda8f246902a7c">IMP_LOG_ERR</a>(TAG, <span class="stringliteral">&quot;Set Audio in %d attr err: %d\n&quot;</span>, devID, ret);</div><div class="line">    <span class="keywordflow">return</span> ret;</div><div class="line">}</div></div><!-- fragment --></dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>Doit être appelé avant IMP_AI_Enable. </dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Besoin d'être dans IMP_AI_Enable Appelez avant . </dd></dl>
 
 </div>
 </div>
@@ -2067,22 +2609,22 @@ Il convient de noter que l'AGC peut amplifier le gain du son, mais si les param�
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">aiDevId</td><td>Numéro de périphérique d'entrée audio . </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aiChn</td><td>. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aiVol</td><td>Niveau de volume d'entrée audio.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aiChn</td><td>Numéro de canal d'entrée audio . </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aiVol</td><td>Volume d'entrée audio .</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Valeurs retournées</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>. </td></tr>
-    <tr><td class="paramname">0</td><td>.</td></tr>
+    <tr><td class="paramname">0</td><td>Succès . </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec .</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarques</dt><dd>La plage de valeurs du volume est [-30 ~ 120]. -30 signifie muet et 120 signifie amplifier le son de 30 dB par pas de 0,5 dB. </dd>
+<dl class="section remark"><dt>Remarques</dt><dd>La plage de volume est [-30 ~ 120]. -30 Signifie muet ,120 Moyens d'amplifier le son 30dB, Taille de pas 0.5dB. </dd>
 <dd>
-Parmi eux, 60 est un point critique pour le réglage du volume. UNE cette valeur, le logiciel n'augmente ni ne diminue le volume. Lorsque la valeur de volume est inférieure à 60, le volume diminue de 0,5 dB pour chaque diminution; lorsque la valeur de volume est supérieur à 60, l'augmentation de 1, le volume est augmenté de 0,5 dB.</dd></dl>
-<p>Exemple de code </p><div class="fragment"><div class="line"><span class="keywordtype">int</span> volume = 60;</div><div class="line">ret = <a class="code" href="group__IMP__Audio.html#ga70d7c4db2a8edb35334c9fcdf5cb0a5e">IMP_AI_SetVol</a>(devID, chnID, volume);</div><div class="line"><span class="keywordflow">if</span>(ret != 0) {</div><div class="line">    <a class="code" href="imp__log_8h.html#a59492a06ae7e667b02bda8f246902a7c">IMP_LOG_ERR</a>(TAG, <span class="stringliteral">&quot;Audio Record set volume failed\n&quot;</span>);</div><div class="line">    <span class="keywordflow">return</span> ret;</div><div class="line">}</div></div><!-- fragment --> <dl class="section attention"><dt>Attention</dt><dd>Si l'entrée aiVol dépasse la plage de [-30 ~ 120], la valeur inférieure à -30 sera -30 et la valeur supérieure à 120 sera 120. </dd></dl>
+parmi eux 60 Est un point critique pour le réglage du volume ， Le logiciel n'augmente ni ne diminue le volume à cette valeur ， Lorsque la valeur du volume est inférieure à 60 Temps ， Chaque goutte 1， Baisser le volume 0.5dB ; Lorsque la valeur du volume est supérieure à 60 Temps ， Augmenter 1， Augmentation de volume 0.5dB .</dd></dl>
+<p>Exemple de code </p><div class="fragment"><div class="line"><span class="keywordtype">int</span> volume = 60;</div><div class="line">ret = <a class="code" href="group__IMP__Audio.html#ga70d7c4db2a8edb35334c9fcdf5cb0a5e">IMP_AI_SetVol</a>(devID, chnID, volume);</div><div class="line"><span class="keywordflow">if</span>(ret != 0) {</div><div class="line">    <a class="code" href="imp__log_8h.html#a59492a06ae7e667b02bda8f246902a7c">IMP_LOG_ERR</a>(TAG, <span class="stringliteral">&quot;Audio Record set volume failed\n&quot;</span>);</div><div class="line">    <span class="keywordflow">return</span> ret;</div><div class="line">}</div></div><!-- fragment --> <dl class="section attention"><dt>Attention</dt><dd>Si vous entrez aiVol dépassé [-30 ~ 120] La portée de , Moins que -30 Prendra -30, plus que le 120 Prendre 120. </dd></dl>
 
 </div>
 </div>
@@ -2108,7 +2650,7 @@ Parmi eux, 60 est un point critique pour le réglage du volume. UNE cette valeur
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>muet</em>&#160;</td>
+          <td class="paramname"><em>mute</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2120,21 +2662,72 @@ Parmi eux, 60 est un point critique pour le réglage du volume. UNE cette valeur
 <p>Régler la sourdine de l'entrée audio .</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">aiDevId</td><td>. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aiChn</td><td>. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">mute</td><td>Indicateur de mute de l'entrée audio, mute = 0: désactiver le mute, mute = 1: activer le mute.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aiDevId</td><td>Numéro de périphérique d'entrée audio . </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aiChn</td><td>Numéro de canal d'entrée audio . </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">mute</td><td>Signe de sourdine d'entrée audio , mute = 0: Couper le son , mute = 1: Activer le son .</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Valeurs retournées</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>. </td></tr>
-    <tr><td class="paramname">0</td><td>.</td></tr>
+    <tr><td class="paramname">0</td><td>Succès . </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec .</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarques</dt><dd>Appelez cette interface pour couper immédiatement le son.</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>. </dd></dl>
+<dl class="section remark"><dt>Remarques</dt><dd>Appelez cette interface pour couper le son immédiatement .</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>non . </dd></dl>
+
+</div>
+</div>
+<a id="ga7712f06442d36d43f4a890baf2a5fa15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7712f06442d36d43f4a890baf2a5fa15">&#9670;&nbsp;</a></span>IMP_AO_CacheSwitch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_AO_CacheSwitch </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>audioDevId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>aoChn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>cache_en</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Désactivez le mécanisme de mise en cache de la lecture audio </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">audioDevId</td><td>Numéro du périphérique audio . </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aoChn</td><td>Numéro de canal de sortie audio . </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cache_en</td><td>Mécanisme de mise en cache sur l'interrupteur</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Succès . </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec .</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>non . </dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>non . </dd></dl>
 
 </div>
 </div>
@@ -2166,20 +2759,20 @@ Parmi eux, 60 est un point critique pour le réglage du volume. UNE cette valeur
 <p>Effacer le tampon de données audio actuel dans le canal de sortie audio .</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">audioDevId</td><td>. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aoChn</td><td>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">audioDevId</td><td>Numéro du périphérique audio . </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aoChn</td><td>Numéro de canal de sortie audio .</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Valeurs retournées</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>. </td></tr>
-    <tr><td class="paramname">0</td><td>.</td></tr>
+    <tr><td class="paramname">0</td><td>Succès . </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec .</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarques</dt><dd>.</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>. </dd></dl>
+<dl class="section remark"><dt>Remarques</dt><dd>non .</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>non . </dd></dl>
 
 </div>
 </div>
@@ -2201,19 +2794,53 @@ Parmi eux, 60 est un point critique pour le réglage du volume. UNE cette valeur
 <p>Désactiver le périphérique de sortie audio .</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">audioDevId</td><td>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">audioDevId</td><td>Numéro du périphérique audio .</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Valeurs retournées</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>. </td></tr>
-    <tr><td class="paramname">0</td><td>.</td></tr>
+    <tr><td class="paramname">0</td><td>Succès . </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec .</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarques</dt><dd>.</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>. </dd></dl>
+<dl class="section remark"><dt>Remarques</dt><dd>non .</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>non . </dd></dl>
+
+</div>
+</div>
+<a id="ga29f93e756e4a28f3f3cc142cc87939ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga29f93e756e4a28f3f3cc142cc87939ea">&#9670;&nbsp;</a></span>IMP_AO_DisableAgc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_AO_DisableAgc </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Désactiver AO Fonction de gain automatique .</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">non</td><td>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Succès . </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec .</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>non .</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>non . </dd></dl>
 
 </div>
 </div>
@@ -2245,20 +2872,54 @@ Parmi eux, 60 est un point critique pour le réglage du volume. UNE cette valeur
 <p>Désactiver le canal de sortie audio .</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">audioDevId</td><td>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">audioDevId</td><td>Numéro du périphérique audio . </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">aoChn</td><td>Numéro de canal de sortie audio .</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Valeurs retournées</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>. </td></tr>
-    <tr><td class="paramname">0</td><td>.</td></tr>
+    <tr><td class="paramname">0</td><td>Succès . </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec .</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarques</dt><dd>.</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>. </dd></dl>
+<dl class="section remark"><dt>Remarques</dt><dd>non .</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>non . </dd></dl>
+
+</div>
+</div>
+<a id="ga9a2d6a03748a9bbcb2de56183f7c4b0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9a2d6a03748a9bbcb2de56183f7c4b0e">&#9670;&nbsp;</a></span>IMP_AO_DisableHpf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_AO_DisableHpf </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Désactiver AO Fonction de filtre passe-haut .</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">non</td><td>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Succès . </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec .</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>non .</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>non . </dd></dl>
 
 </div>
 </div>
@@ -2280,19 +2941,19 @@ Parmi eux, 60 est un point critique pour le réglage du volume. UNE cette valeur
 <p>Activer le périphérique de sortie audio .</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">audioDevId</td><td>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">audioDevId</td><td>Numéro du périphérique audio .</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Valeurs retournées</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>. </td></tr>
-    <tr><td class="paramname">0</td><td>.</td></tr>
+    <tr><td class="paramname">0</td><td>Succès . </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec .</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarques</dt><dd>.</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>IMP_AO_SetPubAttr doit être appelé avant l'activation. </dd></dl>
+<dl class="section remark"><dt>Remarques</dt><dd>non .</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Doit être appelé avant l'activation IMP_AO_SetPubAttr. </dd></dl>
 
 </div>
 </div>
@@ -2331,8 +2992,8 @@ Parmi eux, 60 est un point critique pour le réglage du volume. UNE cette valeur
 </dl>
 <dl class="retval"><dt>Valeurs retournées</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>. </td></tr>
-    <tr><td class="paramname">0</td><td>.</td></tr>
+    <tr><td class="paramname">0</td><td>Succès . </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec .</td></tr>
   </table>
   </dd>
 </dl>
@@ -2371,20 +3032,20 @@ doit être conscient de ,AGC Peut amplifier le gain du son , Mais si le paramèt
 <p>Activer le canal de sortie audio .</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">audioDevId</td><td>. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aoChn</td><td>Numéro du canal de sortie audio.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">audioDevId</td><td>Numéro du périphérique audio . </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aoChn</td><td>Numéro de canal de sortie audio .</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Valeurs retournées</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>. </td></tr>
-    <tr><td class="paramname">0</td><td>.</td></tr>
+    <tr><td class="paramname">0</td><td>Succès . </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec .</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarques</dt><dd>.</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>. </dd></dl>
+<dl class="section remark"><dt>Remarques</dt><dd>non .</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>non . </dd></dl>
 
 </div>
 </div>
@@ -2412,13 +3073,57 @@ doit être conscient de ,AGC Peut amplifier le gain du son , Mais si le paramèt
 </dl>
 <dl class="retval"><dt>Valeurs retournées</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>. </td></tr>
-    <tr><td class="paramname">0</td><td>.</td></tr>
+    <tr><td class="paramname">0</td><td>Succès . </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec .</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarques</dt><dd>.</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>HPF , , Pas besoin de faire HPF. </dd></dl>
+<dl class="section remark"><dt>Remarques</dt><dd>non .</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>L'annulation de l'écho comprend HPF Fonctionnalités , Si l'annulation d'écho est activée , Pas besoin de faire HPF. </dd></dl>
+
+</div>
+</div>
+<a id="gadcadfa4310cf3d322f94cef7d9610773"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadcadfa4310cf3d322f94cef7d9610773">&#9670;&nbsp;</a></span>IMP_AO_FlushChnBuf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_AO_FlushChnBuf </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>audioDevId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>aoChn</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Attendez que le dernier morceau de données audio soit lu ; </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">audioDevId</td><td>Numéro du périphérique audio . </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aoChn</td><td>Numéro de canal de sortie audio .</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Succès . </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec .</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>non . </dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>non . </dd></dl>
 
 </div>
 </div>
@@ -2456,21 +3161,21 @@ doit être conscient de ,AGC Peut amplifier le gain du son , Mais si le paramèt
 <p>Obtenez le gain de sortie audio .</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">audioDevId</td><td>. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aoChn</td><td>. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">aoGain</td><td>gain de sortie audio.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">audioDevId</td><td>Numéro du périphérique de sortie audio . </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aoChn</td><td>Numéro de canal de sortie audio . </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">aoGain</td><td>Gain de sortie audio .</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Valeurs retournées</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>. </td></tr>
-    <tr><td class="paramname">0</td><td>.</td></tr>
+    <tr><td class="paramname">0</td><td>Succès . </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec .</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarques</dt><dd>.</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>. </dd></dl>
+<dl class="section remark"><dt>Remarques</dt><dd>non .</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>non . </dd></dl>
 
 </div>
 </div>
@@ -2502,20 +3207,20 @@ doit être conscient de ,AGC Peut amplifier le gain du son , Mais si le paramèt
 <p>Obtenir les propriétés du périphérique d'entrée et de sortie audio .</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">audioDevId</td><td>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">audioDevId</td><td>Numéro du périphérique audio . </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">attr</td><td>Pointeur d'attribut du périphérique de sortie audio .</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Valeurs retournées</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>. </td></tr>
-    <tr><td class="paramname">0</td><td>.</td></tr>
+    <tr><td class="paramname">0</td><td>Succès . </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec .</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarques</dt><dd>.</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>. </dd></dl>
+<dl class="section remark"><dt>Remarques</dt><dd>non .</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>non . </dd></dl>
 
 </div>
 </div>
@@ -2553,21 +3258,21 @@ doit être conscient de ,AGC Peut amplifier le gain du son , Mais si le paramèt
 <p>Obtenir le volume du canal de sortie audio .</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">audioDevId</td><td>. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aoChn</td><td>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">audioDevId</td><td>Numéro du périphérique audio . </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aoChn</td><td>Numéro de canal de sortie audio . </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">aoVol</td><td>Volume de sortie audio .</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Valeurs retournées</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>. </td></tr>
-    <tr><td class="paramname">0</td><td>.</td></tr>
+    <tr><td class="paramname">0</td><td>Succès . </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec .</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarques</dt><dd>.</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>. </dd></dl>
+<dl class="section remark"><dt>Remarques</dt><dd>non .</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>non . </dd></dl>
 
 </div>
 </div>
@@ -2599,20 +3304,20 @@ doit être conscient de ,AGC Peut amplifier le gain du son , Mais si le paramèt
 <p>Suspendre le canal de sortie audio .</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">audioDevId</td><td>. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aoChn</td><td>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">audioDevId</td><td>Numéro du périphérique audio . </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aoChn</td><td>Numéro de canal de sortie audio .</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Valeurs retournées</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>. </td></tr>
-    <tr><td class="paramname">0</td><td>.</td></tr>
+    <tr><td class="paramname">0</td><td>Succès . </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec .</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarques</dt><dd>.</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>. </dd></dl>
+<dl class="section remark"><dt>Remarques</dt><dd>non .</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>non . </dd></dl>
 
 </div>
 </div>
@@ -2638,7 +3343,7 @@ doit être conscient de ,AGC Peut amplifier le gain du son , Mais si le paramèt
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="structIMPAudioOChnState.html">IMPAudioOChnState</a> *&#160;</td>
-          <td class="paramname"><em>statut</em>&#160;</td>
+          <td class="paramname"><em>status</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2650,21 +3355,21 @@ doit être conscient de ,AGC Peut amplifier le gain du son , Mais si le paramèt
 <p>Interroger l'état actuel du tampon de données audio dans le canal de sortie audio .</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">audioDevId</td><td>. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aoChn</td><td>. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Pointeur de structure d'état du cache.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">audioDevId</td><td>Numéro du périphérique audio . </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aoChn</td><td>Numéro de canal de sortie audio . </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Pointeur de structure d'état du cache .</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Valeurs retournées</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>. </td></tr>
-    <tr><td class="paramname">0</td><td>.</td></tr>
+    <tr><td class="paramname">0</td><td>Succès . </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec .</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarques</dt><dd>.</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>. </dd></dl>
+<dl class="section remark"><dt>Remarques</dt><dd>non .</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>non . </dd></dl>
 
 </div>
 </div>
@@ -2696,20 +3401,79 @@ doit être conscient de ,AGC Peut amplifier le gain du son , Mais si le paramèt
 <p>Restaurer le canal de sortie audio .</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">audioDevId</td><td>. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aoChn</td><td>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">audioDevId</td><td>Numéro du périphérique audio . </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aoChn</td><td>Numéro de canal de sortie audio .</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Valeurs retournées</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>. </td></tr>
-    <tr><td class="paramname">0</td><td>.</td></tr>
+    <tr><td class="paramname">0</td><td>Succès . </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec .</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarques</dt><dd>.</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>. </dd></dl>
+<dl class="section remark"><dt>Remarques</dt><dd>non .</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>non . </dd></dl>
+
+</div>
+</div>
+<a id="ga04d4a45bef9a56805af383e2c20c44ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga04d4a45bef9a56805af383e2c20c44ea">&#9670;&nbsp;</a></span>IMP_AO_SendFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_AO_SendFrame </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>audioDevId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>aoChn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structIMPAudioFrame.html">IMPAudioFrame</a> *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__IMP__Audio.html#ga7f9bbf0ae482fa7e68855f4bf68c4a1b">IMPBlock</a>&#160;</td>
+          <td class="paramname"><em>block</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Envoyer une trame de sortie audio .</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">audioDevId</td><td>Numéro du périphérique audio . </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aoChn</td><td>Numéro de canal de sortie audio . </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>Pointeur de structure de trame audio . </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">block</td><td>bloquer / Drapeau non bloquant .</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Succès . </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec .</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>Exemple de code <div class="fragment"><div class="line"><span class="keywordflow">while</span>(1) {</div><div class="line">    size = fread(buf, 1, IMP_AUDIO_BUF_SIZE, play_file);</div><div class="line">    <span class="keywordflow">if</span>(size &lt; IMP_AUDIO_BUF_SIZE)</div><div class="line">        <span class="keywordflow">break</span>;</div><div class="line"></div><div class="line">    <a class="code" href="structIMPAudioFrame.html">IMPAudioFrame</a> frm;</div><div class="line">    frm.<a class="code" href="group__IMP__Audio.html#ga8609060af2c840c7f81341c8ee4a8b7f">virAddr</a> = (uint32_t *)buf;</div><div class="line">    frm.<a class="code" href="group__IMP__Audio.html#ga4547b8766e639edfcc60d4d545cdd08a">len</a> = size;</div><div class="line">    ret = <a class="code" href="group__IMP__Audio.html#ga04d4a45bef9a56805af383e2c20c44ea">IMP_AO_SendFrame</a>(devID, chnID, &amp;frm, <a class="code" href="group__IMP__Audio.html#gga7f9bbf0ae482fa7e68855f4bf68c4a1ba02fc27068fe9a3c151ffcc08ec5bb65d">BLOCK</a>);</div><div class="line">    <span class="keywordflow">if</span>(ret != 0) {</div><div class="line">        <a class="code" href="imp__log_8h.html#a59492a06ae7e667b02bda8f246902a7c">IMP_LOG_ERR</a>(TAG, <span class="stringliteral">&quot;send Frame Data error\n&quot;</span>);</div><div class="line">        <span class="keywordflow">return</span> ret;</div><div class="line">    }</div><div class="line">}</div></div><!-- fragment --></dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>non . </dd></dl>
 
 </div>
 </div>
@@ -2748,20 +3512,21 @@ doit être conscient de ,AGC Peut amplifier le gain du son , Mais si le paramèt
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">audioDevId</td><td>Numéro du périphérique de sortie audio . </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aoChn</td><td>. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">Gain</td><td>de sortie audio aoGain, plage [0 ~ 0xcb].</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aoChn</td><td>Numéro de canal de sortie audio . </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">aoGain</td><td>Gain de sortie audio , gamme [0 ~ 0xcb].</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Valeurs retournées</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>. </td></tr>
-    <tr><td class="paramname">0</td><td>.</td></tr>
+    <tr><td class="paramname">0</td><td>Succès . </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec .</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarques</dt><dd>.</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>La plage de aoGain est [0 ~ 31], si la valeur d'entrée est inférieure à 0, la valeur de aoGain sera 0. 31,aoGain 31. </dd></dl>
+<dl class="section remark"><dt>Remarques</dt><dd>non .</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>aoGain La gamme est [0 ~ 31], Si la valeur saisie est inférieure à 0, alors aoGain La valeur sera <br />
+définir comme 0. Si la valeur est supérieure à 31,aoGain Sera réglé sur 31. </dd></dl>
 
 </div>
 </div>
@@ -2793,20 +3558,20 @@ doit être conscient de ,AGC Peut amplifier le gain du son , Mais si le paramèt
 <p>Définir les propriétés du périphérique d'entrée et de sortie audio .</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">audioDevId</td><td>. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">attr</td><td>Pointeur des attributs du périphérique de sortie audio.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">audioDevId</td><td>Numéro du périphérique audio . </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">attr</td><td>Pointeur d'attribut du périphérique de sortie audio .</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Valeurs retournées</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>. </td></tr>
-    <tr><td class="paramname">0</td><td>.</td></tr>
+    <tr><td class="paramname">0</td><td>Succès . </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec .</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarques</dt><dd>.</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>. </dd></dl>
+<dl class="section remark"><dt>Remarques</dt><dd>non .</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>non . </dd></dl>
 
 </div>
 </div>
@@ -2844,23 +3609,23 @@ doit être conscient de ,AGC Peut amplifier le gain du son , Mais si le paramèt
 <p>Régler le volume du canal de sortie audio .</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">audioDevId</td><td>. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aoChn</td><td>. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aoVol</td><td>Volume de sortie audio.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">audioDevId</td><td>Numéro du périphérique audio . </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aoChn</td><td>Numéro de canal de sortie audio . </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aoVol</td><td>Volume de sortie audio .</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Valeurs retournées</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>. </td></tr>
-    <tr><td class="paramname">0</td><td>.</td></tr>
+    <tr><td class="paramname">0</td><td>Succès . </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec .</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section remark"><dt>Remarques</dt><dd>La plage de volume est [-30 ~ 120]. -30 Signifie muet ,120 Moyens d'amplifier le son 30dB, Taille de pas 0.5dB. </dd>
 <dd>
-parmi eux 60 Est un point critique pour le réglage du volume ， Le logiciel n'augmente ni ne diminue le volume à cette valeur ， Lorsque la valeur du volume est inférieure à 60 Temps ， Chaque goutte 1， Baisser le volume 0.5dB ; Lorsque la valeur du volume est supérieure à 60 ， Augmenter 1， Augmentation de volume 0.5dB .</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>Si l'aoVol entré dépasse la plage de [-30 ~ 120], la valeur inférieure à -30 sera -30 et la valeur supérieure à 120 sera 120. </dd></dl>
+parmi eux 60 Est un point critique pour le réglage du volume ， Le logiciel n'augmente ni ne diminue le volume à cette valeur ， Lorsque la valeur du volume est inférieure à 60 Temps ， Chaque goutte 1， Baisser le volume 0.5dB ; Lorsque la valeur du volume est supérieure à 60 Temps ， Augmenter 1， Augmentation de volume 0.5dB .</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Si vous entrez aoVol dépassé [-30 ~ 120] La portée de , Moins que -30 Prendra -30, plus que le 120 Prendre 120. </dd></dl>
 
 </div>
 </div>
@@ -2895,24 +3660,24 @@ parmi eux 60 Est un point critique pour le réglage du volume ， Le logiciel n'
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Régler la sourdine de la sortie audio .</p>
+<p>Régler le son de la sortie audio .</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">audioDevId</td><td>Numéro du périphérique de sortie audio. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aoChn</td><td>. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">mute</td><td>sortie audio mute flag, mute = 0: désactiver le mute, mute = 1: activer le mute.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">audioDevId</td><td>Numéro du périphérique de sortie audio . </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aoChn</td><td>Numéro de canal de sortie audio . </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">mute</td><td>Signe de sourdine de sortie audio , mute = 0: Couper le son , mute = 1: Activer le son .</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Valeurs retournées</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>. </td></tr>
-    <tr><td class="paramname">0</td><td>.</td></tr>
+    <tr><td class="paramname">0</td><td>Succès . </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec .</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section remark"><dt>Remarques</dt><dd>Appelez cette interface pour couper le son immédiatement .</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>. </dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>non . </dd></dl>
 
 </div>
 </div>
@@ -2944,32 +3709,92 @@ parmi eux 60 Est un point critique pour le réglage du volume ， Le logiciel n'
 <p>Commande de sourdine douce de sortie .</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">audioDevId</td><td>. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aoChn</td><td>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">audioDevId</td><td>Numéro du périphérique de sortie audio . </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aoChn</td><td>Numéro de canal de sortie audio .</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Valeurs retournées</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>. </td></tr>
-    <tr><td class="paramname">0</td><td>.</td></tr>
+    <tr><td class="paramname">0</td><td>Succès . </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec .</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarques</dt><dd>L'appel de cette interface ne coupera pas immédiatement le son, mais réduira lentement le volume à partir de l'état de lecture normal jusqu'à ce qu'il soit vraiment coupé.</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>. </dd></dl>
+<dl class="section remark"><dt>Remarques</dt><dd>L'appel de cette interface ne coupera pas immédiatement le son ， Réduira lentement le volume à partir de l'état de lecture normal ， Jusqu'à ce que ce soit vraiment silencieux .</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>non . </dd></dl>
+
+</div>
+</div>
+<a id="gab2f5ed8136d6dd928f790ee75162ff7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab2f5ed8136d6dd928f790ee75162ff7c">&#9670;&nbsp;</a></span>IMP_AO_Soft_UNMute()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_AO_Soft_UNMute </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>audioDevId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>aoChn</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Contrôle de mise en sourdine douce de sortie .</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">audioDevId</td><td>Numéro du périphérique de sortie audio . </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aoChn</td><td>Numéro de canal de sortie audio .</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Succès . </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec .</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>L'appel de cette interface ne restaure pas immédiatement le volume actuel ， Augmentera lentement le volume à partir de l'état muet ， Jusqu'à ce que le volume atteigne le volume réglé .</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>non . </dd></dl>
 
 </div>
 </div>
 <h2 class="groupheader">Documentation des variables</h2>
 <a id="ga45488145ea03519464a386aeb07aaf14"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga45488145ea03519464a386aeb07aaf14">&#9670;&nbsp;</a></span>bitwidth</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga45488145ea03519464a386aeb07aaf14">&#9670;&nbsp;</a></span>bitwidth <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="group__IMP__Audio.html#gad0c53f3d873672b040af8e2163f10567">IMPAudioBitWidth</a> IMPAudioIOAttr::bitwidth</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Précision d'échantillonnage audio </p>
+
+</div>
+</div>
+<a id="gab4f4d633f4ddc6f7d2d4e3d56b9a42d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab4f4d633f4ddc6f7d2d4e3d56b9a42d4">&#9670;&nbsp;</a></span>bitwidth <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__IMP__Audio.html#gad0c53f3d873672b040af8e2163f10567">IMPAudioBitWidth</a> IMPAudioFrame::bitwidth</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -3293,13 +4118,28 @@ parmi eux 60 Est un point critique pour le réglage du volume ， Le logiciel n'
 </div>
 </div>
 <a id="gaec1d2a3fbe53e19bca46206ced9a3730"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaec1d2a3fbe53e19bca46206ced9a3730">&#9670;&nbsp;</a></span>soundmode</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaec1d2a3fbe53e19bca46206ced9a3730">&#9670;&nbsp;</a></span>soundmode <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="group__IMP__Audio.html#gab930bb2e1619f803e108bec84ea8724e">IMPAudioSoundMode</a> IMPAudioIOAttr::soundmode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Mode canal audio </p>
+
+</div>
+</div>
+<a id="ga613b85b8d9f998f62f19b328c6fc2c85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga613b85b8d9f998f62f19b328c6fc2c85">&#9670;&nbsp;</a></span>soundmode <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__IMP__Audio.html#gab930bb2e1619f803e108bec84ea8724e">IMPAudioSoundMode</a> IMPAudioFrame::soundmode</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -3368,7 +4208,7 @@ parmi eux 60 Est un point critique pour le réglage du volume ， Le logiciel n'
 </div>
 </div>
 <a id="ga9ba2abe0ff93685cf8f39e0a2a073913"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga9ba2abe0ff93685cf8f39e0a2a073913">&#9670;&nbsp;</a></span>type <span class="overload">[1/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9ba2abe0ff93685cf8f39e0a2a073913">&#9670;&nbsp;</a></span>type <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3383,7 +4223,7 @@ parmi eux 60 Est un point critique pour le réglage du volume ， Le logiciel n'
 </div>
 </div>
 <a id="ga214dae03d6748e59676e7b5bb827ea53"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga214dae03d6748e59676e7b5bb827ea53">&#9670;&nbsp;</a></span>type <span class="overload">[2/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga214dae03d6748e59676e7b5bb827ea53">&#9670;&nbsp;</a></span>type <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3398,13 +4238,28 @@ parmi eux 60 Est un point critique pour le réglage du volume ， Le logiciel n'
 </div>
 </div>
 <a id="gac19d7c0e2391c69dc3931110bb23679b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac19d7c0e2391c69dc3931110bb23679b">&#9670;&nbsp;</a></span>type <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gac19d7c0e2391c69dc3931110bb23679b">&#9670;&nbsp;</a></span>type <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="group__IMP__Audio.html#ga70f33e818e870d815be3dba23d5cd813">IMPAudioPalyloadType</a> IMPAudioDecChnAttr::type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Type de protocole de décodage audio </p>
+
+</div>
+</div>
+<a id="gac51f99688f7586c8922fe475e1615fc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac51f99688f7586c8922fe475e1615fc7">&#9670;&nbsp;</a></span>type <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__IMP__Audio.html#ga70f33e818e870d815be3dba23d5cd813">IMPAudioPalyloadType</a> IMPAudioDecDecoder::type</td>
         </tr>
       </table>
 </div><div class="memdoc">

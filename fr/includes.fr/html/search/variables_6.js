@@ -1,12 +1,11 @@
 var searchData=
 [
-  ['gain_5flog2',['gain_log2',['../structIMPISPEVAttr.html#aa264077f4c259dc32c5daaaa3f107f32',1,'IMPISPEVAttr']]],
   ['galphaen',['gAlphaEn',['../structIMPOSDGrpRgnAttr.html#a1b57dc490757666b70e11aa6de474fba',1,'IMPOSDGrpRgnAttr']]],
-  ['gamma',['gamma',['../structIMPISPGamma.html#aae14ab7794c86a885946e8079d3fe0cf',1,'IMPISPGamma']]],
-  ['getparam',['GetParam',['../structIMPIVSInterface.html#a44e718c2eb2db2b7a745e08b076883b5',1,'IMPIVSInterface']]],
-  ['getresult',['GetResult',['../structIMPIVSInterface.html#a10dfcd7bf4ed805924d9b94bc3940889',1,'IMPIVSInterface']]],
-  ['gopqpstep',['GOPQPStep',['../structIMPEncoderAttrH264CBR.html#a073e4f9aff9d4105b6ca65fd453a7b08',1,'IMPEncoderAttrH264CBR::GOPQPStep()'],['../structIMPEncoderAttrH264VBR.html#a4c54489502f18ab2d70bc3108a7a8757',1,'IMPEncoderAttrH264VBR::GOPQPStep()']]],
-  ['goprelation',['GOPRelation',['../structIMPEncoderAttrH264CBR.html#ad94f39b8291a56b1f878d9944766a58e',1,'IMPEncoderAttrH264CBR']]],
+  ['gamma',['gamma',['../group__IMP__ISP.html#gaae14ab7794c86a885946e8079d3fe0cf',1,'IMPISPGamma']]],
+  ['getparam',['getParam',['../structIMPIVSInterface.html#a55f0ad0e085edfa7822f0976d32209ab',1,'IMPIVSInterface']]],
+  ['getresult',['getResult',['../structIMPIVSInterface.html#a341a538cc7abb7c3411cb6962fc1c09e',1,'IMPIVSInterface']]],
+  ['gopqpstep',['gopQPStep',['../structIMPEncoderAttrH264CBR.html#a615a7800f5b032a416decfc207476aa2',1,'IMPEncoderAttrH264CBR::gopQPStep()'],['../structIMPEncoderAttrH264VBR.html#a458a90c6ed21416e2ef575dac13b943b',1,'IMPEncoderAttrH264VBR::gopQPStep()'],['../structIMPEncoderAttrH264Smart.html#a139ff7b12e4669cb35ba831b9b4ec4ac',1,'IMPEncoderAttrH264Smart::gopQPStep()']]],
+  ['goprelation',['gopRelation',['../structIMPEncoderAttrH264CBR.html#ab17debeee0d18eb865a70374033dc1d7',1,'IMPEncoderAttrH264CBR::gopRelation()'],['../structIMPEncoderAttrH264VBR.html#a29a1288ad978fd743bf1a7bba39da813',1,'IMPEncoderAttrH264VBR::gopRelation()'],['../structIMPEncoderAttrH264Smart.html#ae736b79bdfe27746df4d5ae5e2081f71',1,'IMPEncoderAttrH264Smart::gopRelation()']]],
   ['gopsize',['gopsize',['../structIMPEncoderGOPSizeCfg.html#ac32e2dbe9034facbf2dbf852f6057038',1,'IMPEncoderGOPSizeCfg']]],
   ['groupid',['groupID',['../structIMPCell.html#a494d3d117d65bcff468bf79d0386bdeb',1,'IMPCell']]]
 ];

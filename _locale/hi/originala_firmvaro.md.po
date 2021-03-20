@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-03-07 20:14+0100\n"
+"POT-Creation-Date: 2021-03-20 12:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -48,106 +48,154 @@ msgstr "मूल फर्मवेयर"
 
 #. type: Title #
 #: originala_firmvaro.md:9
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "malfermaj havenoj"
 msgstr "खुले बंदरगाह"
+
+#. type: Plain text
+#: originala_firmvaro.md:11
+#, no-wrap
+#, fuzzy
+msgid "TCP: 80(http), 443(HTP ankaŭ!), 554(RTSP), 8004, 8006, 9527(Telnetd), 9999  \n"
+msgstr "टीसीपी: 80 (डिग्री 0001 डिग्री) HTTP (° 0002 डिग्री), 443 (डिग्री 0003 डिग्री) एचटीपी भी! (° 0004 डिग्री), 554 (000 0005 डिग्री) आरटीएसपी (डिग्री 0006 डिग्री), 8004, 8006, 9527 (डिग्री 0007 डिग्री) टेलिडीड (डिग्री 0008 डिग्री), 99 99 (डिग्री 000 9 डिग्री)  \n"
 
 #. type: Plain text
 #: originala_firmvaro.md:13
 #, no-wrap
 #, fuzzy
-msgid ""
-"TCP: 80(http), 443(http ankaŭ!), 554(rtsp), 8004, 8006, 9527(telnet), 9999\n"
-"UDP: 67(dhcp), 3702, 8002, 39642\n"
-msgstr "टीसीपी: 80(http), 443(http भी!), 554(rtsp), 8004, 8006, 9527(telnet), 9999\nUDP: 67(dhcp), 3702, 8002, 39642\n"
+msgid "UDP: 67(DHCP), 3702, 8002, 39642\n"
+msgstr "यूडीपी: 67 (डिग्री 0001 डिग्री) डीएचसीपी (डिग्री 0002 डिग्री), 3702, 8002, 39642 (डिग्री 0003 डिग्री)\n"
+
+#. type: Plain text
+#: originala_firmvaro.md:14
+#, no-wrap
+#, fuzzy
+msgid "Haveno 80: HTTP  \n"
+msgstr "पोर्ट 80: HTTP  \n"
 
 #. type: Plain text
 #: originala_firmvaro.md:16
 #, no-wrap
 #, fuzzy
-msgid ""
-"haveno 80: http\n"
-"http: // IP: ensaluto: _admin:_, pasvorto: _admin_\n"
-msgstr "पोर्ट 80: http\nhttp: // IP: लॉगिन: _admin:_, पासवर्ड: _admin_\n"
+msgid "http: // ip: ensaluto: _admin:_, pasvorto: _admin_\n"
+msgstr "http: // आईपी: लॉगिन: (डिग्री डिग्री 0001 डिग्री), पासवर्ड: (डिग्री 0003 डिग्री) (डिग्री 0005 डिग्री)\n"
+
+#. type: Plain text
+#: originala_firmvaro.md:17
+#, no-wrap
+#, fuzzy
+msgid "Haveno 443: HTTP  \n"
+msgstr "पोर्ट 443: HTTP  \n"
 
 #. type: Plain text
 #: originala_firmvaro.md:19
 #, no-wrap
 #, fuzzy
-msgid ""
-"haveno 443: http\n"
-"http: // IP: 443: ensaluto: _admin:_, pasvorto: _admin_\n"
-msgstr "पोर्ट 443: http\nhttp: // IP: 443: लॉगिन: _admin:_, पासवर्ड: _admin_\n"
+msgid "http: // ip: 443: ensaluto: _admin:_, pasvorto: _admin_\n"
+msgstr "http: // आईपी: 443: लॉगिन: (डिग्री 0001 डिग्री), पासवर्ड: (° 0003 डिग्री) (डिग्री 0005 डिग्री)\n"
 
 #. type: Plain text
+#: originala_firmvaro.md:20
+#, no-wrap
+#, fuzzy
+msgid "Haveno 554: RTSP  \n"
+msgstr "पोर्ट 554: आरटीएसपी (डिग्री 0001 डिग्री)  \n"
+
+#. type: Bullet: '* '
 #: originala_firmvaro.md:22
 #, no-wrap
 #, fuzzy
-msgid ""
-"haveno 554: rtsp\n"
-"* ĉefa rivereto: \n"
-msgstr "पोर्ट 554: आरटीएसपी\n* मुख्य धारा: \n"
+msgid "Ĉefa fluo: \n"
+msgstr "मुख्य वर्तमान: (° 0001 डिग्री) \n"
 
 #. type: Plain text
-#: originala_firmvaro.md:27
-#, no-wrap
-#, fuzzy
+#: originala_firmvaro.md:28
+#, fuzzy, no-wrap
 msgid ""
 "    ```\n"
 "    IP=xxx.xxx.xxx.xxx\n"
 "    ffplay -i rtsp://admin:admin@$IP/stream1\n"
 "    ffplay -i rtsp://admin:admin@$IP/mpeg4/ch0/main/av_stream\n"
-msgstr "    ```\n    IP=xxx.xxx.xxx.xxx\n    ffplay -i rtsp://admin:admin@$IP/stream1\n    ffplay -i rtsp://admin:admin@$IP/mpeg4/ch0/main/av_stream\n\n"
+msgstr ""
+"    ```\n"
+"    IP=xxx.xxx.xxx.xxx\n"
+"    ffplay -i rtsp://admin:admin@$IP/stream1\n"
+"    ffplay -i rtsp://admin:admin@$IP/mpeg4/ch0/main/av_stream\n"
+"\n"
 
 #. type: Plain text
-#: originala_firmvaro.md:31
-#, no-wrap
-#, fuzzy
+#: originala_firmvaro.md:32
+#, fuzzy, no-wrap
 msgid ""
 "    ```\n"
 "* flux secondaire :\n"
-msgstr "    ```\n* flux secondaire :\n\n"
+msgstr ""
+"    ```\n"
+"* flux secondaire :\n"
+"\n"
 
 #. type: Plain text
-#: originala_firmvaro.md:38
-#, no-wrap
-#, fuzzy
+#: originala_firmvaro.md:39
+#, fuzzy, no-wrap
 msgid ""
 "    ```\n"
 "    IP=xxx.xxx.xxx.xxx\n"
 "    ffplay -i rtsp://admin:admin@$IP/stream2\n"
 "    ffplay -i rtsp://admin:admin@$IP/mpeg4/ch1/main/av_stream\n"
 "    ````\n"
-msgstr "    ```\n    IP=xxx.xxx.xxx.xxx\n    ffplay -i rtsp://admin:admin@$IP/stream2\n    ffplay -i rtsp://admin:admin@$IP/mpeg4/ch1/main/av_stream\n    ````\n"
+msgstr ""
+"    ```\n"
+"    IP=xxx.xxx.xxx.xxx\n"
+"    ffplay -i rtsp://admin:admin@$IP/stream2\n"
+"    ffplay -i rtsp://admin:admin@$IP/mpeg4/ch1/main/av_stream\n"
+"    ````\n"
 
 #. type: Plain text
-#: originala_firmvaro.md:40
-#, no-wrap
-#, fuzzy
+#: originala_firmvaro.md:41
+#, fuzzy, no-wrap
 msgid "haveno 8004 :? , malfermita de jco_server\n"
-msgstr "पोर्ट 8004:? , jco द्वारा खोला गया_server\n\n"
+msgstr ""
+"पोर्ट 8004:? , jco द्वारा खोला गया_server\n"
+"\n"
 
 #. type: Plain text
-#: originala_firmvaro.md:43
-#, no-wrap
-#, fuzzy
+#: originala_firmvaro.md:44
+#, fuzzy, no-wrap
 msgid "haveno 8006 :? , malfermita de jco_server\n"
-msgstr "पोर्ट 8006 :? , jco द्वारा खोला गया_server\n\n"
+msgstr ""
+"पोर्ट 8006 :? , jco द्वारा खोला गया_server\n"
+"\n"
 
 #. type: Plain text
-#: originala_firmvaro.md:50
+#: originala_firmvaro.md:47
 #, no-wrap
 #, fuzzy
-msgid ""
-"haveno 9527: telnet\n"
-"`telnetd IP 9527` : ensaluto: _root_, pasvorto: _jco66688_, alirebla dum 5 minutoj, fermita post.\n"
-"por ne esti malkonektita post 5 minutoj: `killall -9 auto_run.sh`\n"
-"por haltigi jco_server : \n"
-msgstr "पोर्ट 9527: टेलनेट\n`telnetd IP 9527` : लॉगिन: _root_, पासवर्ड: _jco66688_, 5 मिनट के लिए सुलभ, बंद होने के बाद।\n5 मिनट के बाद डिस्कनेक्ट नहीं किया जाना चाहिए: `killall -9 auto_run.sh`\nको jco_server : \nरोकने के लिए \n"
+msgid "Haveno 9527: Telnet  \n"
+msgstr "पोर्ट 9527: टेलनेट (डिग्री 0001 डिग्री)  \n"
+
+#. type: Plain text
+#: originala_firmvaro.md:48
+#, no-wrap
+#, fuzzy
+msgid "`telnetd IP 9527` : Ensalutu: _root_, pasvorto: _jco66688_, alirebla dum 5 minutoj, fermiĝis post.  \n"
+msgstr "`telnetd IP 9527` : लॉगिन: (° 0003 डिग्री), पासवर्ड: (डिग्री 0005 डिग्री), 5 मिनट के लिए सुलभ, के बाद बंद।  \n"
+
+#. type: Plain text
+#: originala_firmvaro.md:49
+#, no-wrap
+#, fuzzy
+msgid "Ne esti malkonektita post 5 minutoj: `killall -9 auto_run.sh`  \n"
+msgstr "5 मिनट के बाद डिस्कनेक्ट नहीं होना चाहिए: (° 0001 डिग्री) (° ° 0004 डिग्री)\n"
+
+#. type: Plain text
+#: originala_firmvaro.md:51
+#, no-wrap
+#, fuzzy
+msgid "Ĉesi JCO_server : \n"
+msgstr "JCO को रोकने के लिए_server : \n \n"
 
 #. type: Fenced code block
-#: originala_firmvaro.md:52
+#: originala_firmvaro.md:53
 #, no-wrap
 msgid ""
 "killall -9 auto_run.sh\n"
@@ -157,14 +205,13 @@ msgstr ""
 "killall -9 jco_server;echo 'V'>/dev/watchdog;echo 'V'>/dev/watchdog0\n"
 
 #. type: Plain text
-#: originala_firmvaro.md:58
-#, no-wrap
-#, fuzzy
+#: originala_firmvaro.md:59
+#, fuzzy, no-wrap
 msgid "haveno 9999: uzata por regi la fotilon, ekzemplo:\n"
 msgstr "पोर्ट 9999: कैमरे को नियंत्रित करने के लिए उपयोग किया जाता है, उदाहरण:\n"
 
 #. type: Fenced code block
-#: originala_firmvaro.md:59
+#: originala_firmvaro.md:60
 #, no-wrap
 msgid ""
 "IP=xxx.xxx.xxx.xxx\n"
@@ -180,34 +227,33 @@ msgstr ""
 "echo \"pelcod20ctrl -type 1\" | nc $IP 9999\n"
 
 #. type: Plain text
-#: originala_firmvaro.md:68
-#, no-wrap
-#, fuzzy
+#: originala_firmvaro.md:69
+#, fuzzy, no-wrap
 msgid "UDP 67: malfermita de udhcpd\n"
 msgstr "UDP 67: udhcpdद्वारा खुला\n"
 
 #. type: Plain text
-#: originala_firmvaro.md:70
-#, no-wrap
-#, fuzzy
+#: originala_firmvaro.md:71
+#, fuzzy, no-wrap
 msgid "UDP 3702 :? , malfermita de jco_server\n"
-msgstr "यूडीपी 3702:? , jco द्वारा खोला गया_server\n\n"
+msgstr ""
+"यूडीपी 3702:? , jco द्वारा खोला गया_server\n"
+"\n"
 
 #. type: Title #
-#: originala_firmvaro.md:73
-#, no-wrap
-#, fuzzy
+#: originala_firmvaro.md:74
+#, fuzzy, no-wrap
 msgid "interna fulmmemoro"
 msgstr "आंतरिक फ्लैश मेमोरी"
 
 #. type: Plain text
-#: originala_firmvaro.md:75
+#: originala_firmvaro.md:76
 #, fuzzy, no-wrap
 msgid "Fulmmemoro estas dispartigita jene:\n"
 msgstr "फ्लैश मेमोरी को निम्नानुसार वितरित किया जाता है:\n"
 
 #. type: Plain text
-#: originala_firmvaro.md:84
+#: originala_firmvaro.md:85
 #, fuzzy, no-wrap
 msgid ""
 "poentaro | priskribo |\n"
@@ -229,79 +275,79 @@ msgstr ""
 "mtdblock5 | jffs2, घुड़सवार / ऑप्ट |\n"
 
 #. type: Plain text
-#: originala_firmvaro.md:85
+#: originala_firmvaro.md:86
 #, fuzzy, no-wrap
 msgid "u-boot (subdisko mtdblock0) ŝarĝas la kernon en mtdblock2.  \n"
 msgstr "u-boot (विभाजन mtdblock0) कर्नेल को mtdblock2 में लोड करता है।  \n"
 
 #. type: Plain text
-#: originala_firmvaro.md:86
+#: originala_firmvaro.md:87
 #, fuzzy, no-wrap
 msgid "defaŭltaj opcioj en u-startŝargilo:  \n"
 msgstr "यू-बूट लोडर में डिफ़ॉल्ट विकल्प:  \n"
 
 #. type: Bullet: '* '
-#: originala_firmvaro.md:88
+#: originala_firmvaro.md:89
 #, fuzzy, no-wrap
 msgid "bootargs = konzolo = ttyS1,115200n8 mem = 43M @ 0x0 rmem = 21M @ 0x2B00000 init = / linuxrc rootfstype = squashfs root = / dev / mtdblock3\n"
 msgstr "bootargs = कंसोल = ttyS1,115200n8 mem = 43M @ 0x0 rmem = 21M @ 0x2B00000 init = / linuxrc rootfstype = squashfs root = / dev / mbblock3\n"
 
 #. type: Bullet: '* '
-#: originala_firmvaro.md:90
+#: originala_firmvaro.md:91
 #, fuzzy, no-wrap
 msgid "bootcmd = sf probe; sf read 0x80600000 0x48000 0x280000; bootm 0x80600000\n"
 msgstr "bootcmd = sf जांच; sf 0x80600000 0x48000 0x280000 पढ़ें; बूटम 0x80600000\n"
 
 #. type: Bullet: '* '
-#: originala_firmvaro.md:92
+#: originala_firmvaro.md:93
 #, fuzzy, no-wrap
 msgid "bootdelay = 1\n"
 msgstr "बूटडेल = 1\n"
 
 #. type: Bullet: '* '
-#: originala_firmvaro.md:94
+#: originala_firmvaro.md:95
 #, fuzzy, no-wrap
 msgid "baudrate = 115200\n"
 msgstr "बॉड दर = 115200\n"
 
 #. type: Bullet: '* '
-#: originala_firmvaro.md:96
+#: originala_firmvaro.md:97
 #, fuzzy, no-wrap
 msgid "ŝarĝoj\\_eoo = 1\n"
 msgstr "भार\\_eoo = 1\n"
 
 #. type: Bullet: '* '
-#: originala_firmvaro.md:98
+#: originala_firmvaro.md:99
 #, fuzzy, no-wrap
 msgid "ethaddr = 00: 11: 22: 33: 44: 74\n"
 msgstr "एत्माद्र्द = 00: 11: 22: 33: 44: 74\n"
 
 #. type: Bullet: '* '
-#: originala_firmvaro.md:100
+#: originala_firmvaro.md:101
 #, fuzzy, no-wrap
 msgid "ipaddr = 192.168.2.84\n"
 msgstr "ipaddr = 192.168.2.84\n"
 
 #. type: Bullet: '* '
-#: originala_firmvaro.md:102
+#: originala_firmvaro.md:103
 #, fuzzy, no-wrap
 msgid "serverip = 192.168.2.81\n"
 msgstr "सर्वरिप = 192.168.2.81\n"
 
 #. type: Bullet: '* '
-#: originala_firmvaro.md:104
+#: originala_firmvaro.md:105
 #, fuzzy, no-wrap
 msgid "gatewayip = 192.168.2.1\n"
 msgstr "गेटवे = 192.168.2.1\n"
 
 #. type: Bullet: '* '
-#: originala_firmvaro.md:106
+#: originala_firmvaro.md:107
 #, fuzzy, no-wrap
 msgid "retmasko = 255.255.255.0\n"
 msgstr "नेटमास्क = 255.255.255.0\n"
 
 #. type: Plain text
-#: originala_firmvaro.md:125
+#: originala_firmvaro.md:126
 #, fuzzy, no-wrap
 msgid ""
 "opcioj en mtdblock1:\n"
@@ -339,19 +385,19 @@ msgstr ""
 "* devinfo = jcoxa**************************************************************) बूटारग्स = कंसोल = ttyS1,115200n8 मेम = 42M @ 0x0 rmem = 22M @ 0x2A00000 init = / linuxrc rootfstype = squashfs root = / dev / mtdblock3 फ़्लैश = SF सेंसर = GC2053 मैक्सहाइट = 1080 डिवाइस\\_आईडी = = 00044 °) ethaddr =**:**:**:**:**:**:** : devinfo = jcoxa*************************************************** cpu = T21 ddr = 64M mtdparts = j z\\_sfc: 256K @ 0K(sf-bootloader), 32K @ 256K(sf-bootenv (° 00056 °, 1440K @ 288K() sf-kernel), 832K @ 1728K(sf-rootfs), 4928K @ 2560K(sf-ipcfs), 704K @ 7488 K() °) sf-miscfs)\n"
 
 #. type: Plain text
-#: originala_firmvaro.md:127
+#: originala_firmvaro.md:128
 #, fuzzy, no-wrap
 msgid "linuksa versio:  \n"
 msgstr "लिनक्स संस्करण:  \n"
 
 #. type: Plain text
-#: originala_firmvaro.md:129
+#: originala_firmvaro.md:130
 #, fuzzy, no-wrap
 msgid "Linukso-versio 3.10.14\\_\\_isvp\\_meleagro\\_1.0\\_\\_ (root@localhost.localdomain) (gcc-versio 4.7.2 (Ingenic r2.3.3 2016.12) ) # 3 PREEMPT Sab Jun 22 10:40:55 CST 2019\n"
 msgstr "लिनक्स संस्करण 3.10.14\\_\\_isvp\\_टर्की\\_1.0\\_\\_ (मूल -localhost.localdomain0008 °)(gcc संस्करण 4.7.2 (Ingenic r2.3.3 2016.12) ) # 3 PREEMPT शनि 22 जून 10:40:55 CBS 2019)\n"
 
 #. type: Plain text
-#: originala_firmvaro.md:141
+#: originala_firmvaro.md:142
 #, fuzzy, no-wrap
 msgid ""
 "Rimarkindaj dosieroj en /:\n"
@@ -378,13 +424,13 @@ msgstr ""
 "  *     xzcat\n"
 
 #. type: Bullet: '* '
-#: originala_firmvaro.md:143
+#: originala_firmvaro.md:144
 #, fuzzy, no-wrap
 msgid "/ lib: normaj bibliotekoj.\n"
 msgstr "/ lib: मानक पुस्तकालय।\n"
 
 #. type: Plain text
-#: originala_firmvaro.md:152
+#: originala_firmvaro.md:153
 #, fuzzy, no-wrap
 msgid ""
 "rimarkindaj dosieroj en _/ipc_ :\n"
@@ -404,64 +450,109 @@ msgstr ""
 "°)\n"
 
 #. type: Plain text
-#: originala_firmvaro.md:155
-#, no-wrap
-#, fuzzy
+#: originala_firmvaro.md:156
+#, fuzzy, no-wrap
 msgid "**noto: libimp.so diferencas de tiu liverita por la T20, kaj tiu liverita kun la T20 ne taŭgas.**\n"
 msgstr "**नोट: libimp.so T20 के लिए दिए गए एक से भिन्न होता है, और T20 के साथ दिया जाने वाला उपयुक्त नहीं है।**\n"
 
 #. type: Title #
-#: originala_firmvaro.md:156
-#, no-wrap
-#, fuzzy
+#: originala_firmvaro.md:157
+#, fuzzy, no-wrap
 msgid "GPIO-havenoj"
 msgstr "GPIO पोर्ट"
 
 #. type: Bullet: '* '
-#: originala_firmvaro.md:159
-#, no-wrap
-#, fuzzy
+#: originala_firmvaro.md:160
+#, fuzzy, no-wrap
 msgid "havenoj blokitaj de motor.ko: 18? 38 39 40 41 47 48 49 60?\n"
 msgstr "बंदरगाहों द्वारा अवरुद्ध motor.ko: 18? 38 39 40 41 47 48 49 60?\n"
 
 #. type: Bullet: '* '
-#: originala_firmvaro.md:161
-#, no-wrap
-#, fuzzy
+#: originala_firmvaro.md:162
+#, fuzzy, no-wrap
 msgid "havenoj blokitaj de audio.ko: 63?\n"
 msgstr "बंदरगाहों द्वारा अवरुद्ध ऑडियो।\n"
 
 #. type: Bullet: '* '
-#: originala_firmvaro.md:163
-#, no-wrap
-#, fuzzy
+#: originala_firmvaro.md:164
+#, fuzzy, no-wrap
 msgid "haveno 46 = infraruĝaj LED-oj.\n"
 msgstr "पोर्ट 46 = अवरक्त एलईडी।\n"
 
 #. type: Bullet: '* '
-#: originala_firmvaro.md:165
-#, no-wrap
-#, fuzzy
+#: originala_firmvaro.md:166
+#, fuzzy, no-wrap
 msgid "haveno 52 =?\n"
 msgstr "पोर्ट 52 =?\n"
 
 #. type: Bullet: '* '
-#: originala_firmvaro.md:167
-#, no-wrap
-#, fuzzy
+#: originala_firmvaro.md:168
+#, fuzzy, no-wrap
 msgid "haveno 64 =?\n"
 msgstr "पोर्ट 64 =?\n"
 
 #. type: Bullet: '* '
-#: originala_firmvaro.md:169
-#, no-wrap
-#, fuzzy
+#: originala_firmvaro.md:170
+#, fuzzy, no-wrap
 msgid "haveno 81 = bluaj LEDoj.\n"
 msgstr "पोर्ट 81 = नीला एल ई डी।\n"
 
 #, fuzzy
-#~ msgid "noto: libimp.so diferencas de tiu liverita por la T20, kaj tiu liverita kun la T20 ne taŭgas.\n"
-#~ msgstr "नोट: libimp.so T20 के लिए दिए गए एक से भिन्न होता है, और T20 के साथ दिया जाने वाला उपयुक्त नहीं है।\n"
+#~ msgid ""
+#~ "TCP: 80(http), 443(http ankaŭ!), 554(rtsp), 8004, 8006, 9527(telnet), "
+#~ "9999\n"
+#~ "UDP: 67(dhcp), 3702, 8002, 39642\n"
+#~ msgstr ""
+#~ "टीसीपी: 80(http), 443(http भी!), 554(rtsp), 8004, 8006, 9527(telnet), "
+#~ "9999\n"
+#~ "UDP: 67(dhcp), 3702, 8002, 39642\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "haveno 80: http\n"
+#~ "http: // IP: ensaluto: _admin:_, pasvorto: _admin_\n"
+#~ msgstr ""
+#~ "पोर्ट 80: http\n"
+#~ "http: // IP: लॉगिन: _admin:_, पासवर्ड: _admin_\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "haveno 443: http\n"
+#~ "http: // IP: 443: ensaluto: _admin:_, pasvorto: _admin_\n"
+#~ msgstr ""
+#~ "पोर्ट 443: http\n"
+#~ "http: // IP: 443: लॉगिन: _admin:_, पासवर्ड: _admin_\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "haveno 554: rtsp\n"
+#~ "* ĉefa rivereto: \n"
+#~ msgstr ""
+#~ "पोर्ट 554: आरटीएसपी\n"
+#~ "* मुख्य धारा: \n"
+
+#, fuzzy
+#~ msgid ""
+#~ "haveno 9527: telnet\n"
+#~ "`telnetd IP 9527` : ensaluto: _root_, pasvorto: _jco66688_, alirebla dum "
+#~ "5 minutoj, fermita post.\n"
+#~ "por ne esti malkonektita post 5 minutoj: `killall -9 auto_run.sh`\n"
+#~ "por haltigi jco_server : \n"
+#~ msgstr ""
+#~ "पोर्ट 9527: टेलनेट\n"
+#~ "`telnetd IP 9527` : लॉगिन: _root_, पासवर्ड: _jco66688_, 5 मिनट के लिए सुलभ, "
+#~ "बंद होने के बाद।\n"
+#~ "5 मिनट के बाद डिस्कनेक्ट नहीं किया जाना चाहिए: `killall -9 auto_run.sh`\n"
+#~ "को jco_server : \n"
+#~ "रोकने के लिए \n"
+
+#, fuzzy
+#~ msgid ""
+#~ "noto: libimp.so diferencas de tiu liverita por la T20, kaj tiu liverita "
+#~ "kun la T20 ne taŭgas.\n"
+#~ msgstr ""
+#~ "नोट: libimp.so T20 के लिए दिए गए एक से भिन्न होता है, और T20 के साथ दिया जाने "
+#~ "वाला उपयुक्त नहीं है।\n"
 
 #, fuzzy
 #~ msgid ""

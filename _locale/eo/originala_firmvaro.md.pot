@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-03-07 20:13+0100\n"
+"POT-Creation-Date: 2021-03-20 12:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -53,39 +53,55 @@ msgid "malfermaj havenoj"
 msgstr ""
 
 #. type: Plain text
+#: originala_firmvaro.md:11
+#, no-wrap
+msgid "TCP: 80(http), 443(HTP ankaŭ!), 554(RTSP), 8004, 8006, 9527(Telnetd), 9999  \n"
+msgstr ""
+
+#. type: Plain text
 #: originala_firmvaro.md:13
 #, no-wrap
-msgid ""
-"TCP: 80(http), 443(http ankaŭ!), 554(rtsp), 8004, 8006, 9527(telnet), 9999\n"
-"UDP: 67(dhcp), 3702, 8002, 39642\n"
+msgid "UDP: 67(DHCP), 3702, 8002, 39642\n"
+msgstr ""
+
+#. type: Plain text
+#: originala_firmvaro.md:14
+#, no-wrap
+msgid "Haveno 80: HTTP  \n"
 msgstr ""
 
 #. type: Plain text
 #: originala_firmvaro.md:16
 #, no-wrap
-msgid ""
-"haveno 80: http\n"
-"http: // IP: ensaluto: _admin:_, pasvorto: _admin_\n"
+msgid "http: // ip: ensaluto: _admin:_, pasvorto: _admin_\n"
+msgstr ""
+
+#. type: Plain text
+#: originala_firmvaro.md:17
+#, no-wrap
+msgid "Haveno 443: HTTP  \n"
 msgstr ""
 
 #. type: Plain text
 #: originala_firmvaro.md:19
 #, no-wrap
-msgid ""
-"haveno 443: http\n"
-"http: // IP: 443: ensaluto: _admin:_, pasvorto: _admin_\n"
+msgid "http: // ip: 443: ensaluto: _admin:_, pasvorto: _admin_\n"
 msgstr ""
 
 #. type: Plain text
+#: originala_firmvaro.md:20
+#, no-wrap
+msgid "Haveno 554: RTSP  \n"
+msgstr ""
+
+#. type: Bullet: '* '
 #: originala_firmvaro.md:22
 #, no-wrap
-msgid ""
-"haveno 554: rtsp\n"
-"* ĉefa rivereto: \n"
+msgid "Ĉefa fluo: \n"
 msgstr ""
 
 #. type: Plain text
-#: originala_firmvaro.md:27
+#: originala_firmvaro.md:28
 #, no-wrap
 msgid ""
 "    ```\n"
@@ -95,7 +111,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: originala_firmvaro.md:31
+#: originala_firmvaro.md:32
 #, no-wrap
 msgid ""
 "    ```\n"
@@ -103,7 +119,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: originala_firmvaro.md:38
+#: originala_firmvaro.md:39
 #, no-wrap
 msgid ""
 "    ```\n"
@@ -114,29 +130,43 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: originala_firmvaro.md:40
+#: originala_firmvaro.md:41
 #, no-wrap
 msgid "haveno 8004 :? , malfermita de jco_server\n"
 msgstr ""
 
 #. type: Plain text
-#: originala_firmvaro.md:43
+#: originala_firmvaro.md:44
 #, no-wrap
 msgid "haveno 8006 :? , malfermita de jco_server\n"
 msgstr ""
 
 #. type: Plain text
-#: originala_firmvaro.md:50
+#: originala_firmvaro.md:47
 #, no-wrap
-msgid ""
-"haveno 9527: telnet\n"
-"`telnetd IP 9527` : ensaluto: _root_, pasvorto: _jco66688_, alirebla dum 5 minutoj, fermita post.\n"
-"por ne esti malkonektita post 5 minutoj: `killall -9 auto_run.sh`\n"
-"por haltigi jco_server : \n"
+msgid "Haveno 9527: Telnet  \n"
+msgstr ""
+
+#. type: Plain text
+#: originala_firmvaro.md:48
+#, no-wrap
+msgid "`telnetd IP 9527` : Ensalutu: _root_, pasvorto: _jco66688_, alirebla dum 5 minutoj, fermiĝis post.  \n"
+msgstr ""
+
+#. type: Plain text
+#: originala_firmvaro.md:49
+#, no-wrap
+msgid "Ne esti malkonektita post 5 minutoj: `killall -9 auto_run.sh`  \n"
+msgstr ""
+
+#. type: Plain text
+#: originala_firmvaro.md:51
+#, no-wrap
+msgid "Ĉesi JCO_server : \n"
 msgstr ""
 
 #. type: Fenced code block
-#: originala_firmvaro.md:52
+#: originala_firmvaro.md:53
 #, no-wrap
 msgid ""
 "killall -9 auto_run.sh\n"
@@ -144,13 +174,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: originala_firmvaro.md:58
+#: originala_firmvaro.md:59
 #, no-wrap
 msgid "haveno 9999: uzata por regi la fotilon, ekzemplo:\n"
 msgstr ""
 
 #. type: Fenced code block
-#: originala_firmvaro.md:59
+#: originala_firmvaro.md:60
 #, no-wrap
 msgid ""
 "IP=xxx.xxx.xxx.xxx\n"
@@ -161,31 +191,31 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: originala_firmvaro.md:68
+#: originala_firmvaro.md:69
 #, no-wrap
 msgid "UDP 67: malfermita de udhcpd\n"
 msgstr ""
 
 #. type: Plain text
-#: originala_firmvaro.md:70
+#: originala_firmvaro.md:71
 #, no-wrap
 msgid "UDP 3702 :? , malfermita de jco_server\n"
 msgstr ""
 
 #. type: Title #
-#: originala_firmvaro.md:73
+#: originala_firmvaro.md:74
 #, no-wrap
 msgid "interna fulmmemoro"
 msgstr ""
 
 #. type: Plain text
-#: originala_firmvaro.md:75
+#: originala_firmvaro.md:76
 #, no-wrap
 msgid "Fulmmemoro estas dispartigita jene:\n"
 msgstr ""
 
 #. type: Plain text
-#: originala_firmvaro.md:84
+#: originala_firmvaro.md:85
 #, no-wrap
 msgid ""
 "poentaro | priskribo |\n"
@@ -199,79 +229,79 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: originala_firmvaro.md:85
+#: originala_firmvaro.md:86
 #, no-wrap
 msgid "u-boot (subdisko mtdblock0) ŝarĝas la kernon en mtdblock2.  \n"
 msgstr ""
 
 #. type: Plain text
-#: originala_firmvaro.md:86
+#: originala_firmvaro.md:87
 #, no-wrap
 msgid "defaŭltaj opcioj en u-startŝargilo:  \n"
 msgstr ""
 
 #. type: Bullet: '* '
-#: originala_firmvaro.md:88
+#: originala_firmvaro.md:89
 #, no-wrap
 msgid "bootargs = konzolo = ttyS1,115200n8 mem = 43M @ 0x0 rmem = 21M @ 0x2B00000 init = / linuxrc rootfstype = squashfs root = / dev / mtdblock3\n"
 msgstr ""
 
 #. type: Bullet: '* '
-#: originala_firmvaro.md:90
+#: originala_firmvaro.md:91
 #, no-wrap
 msgid "bootcmd = sf probe; sf read 0x80600000 0x48000 0x280000; bootm 0x80600000\n"
 msgstr ""
 
 #. type: Bullet: '* '
-#: originala_firmvaro.md:92
+#: originala_firmvaro.md:93
 #, no-wrap
 msgid "bootdelay = 1\n"
 msgstr ""
 
 #. type: Bullet: '* '
-#: originala_firmvaro.md:94
+#: originala_firmvaro.md:95
 #, no-wrap
 msgid "baudrate = 115200\n"
 msgstr ""
 
 #. type: Bullet: '* '
-#: originala_firmvaro.md:96
+#: originala_firmvaro.md:97
 #, no-wrap
 msgid "ŝarĝoj\\_eoo = 1\n"
 msgstr ""
 
 #. type: Bullet: '* '
-#: originala_firmvaro.md:98
+#: originala_firmvaro.md:99
 #, no-wrap
 msgid "ethaddr = 00: 11: 22: 33: 44: 74\n"
 msgstr ""
 
 #. type: Bullet: '* '
-#: originala_firmvaro.md:100
+#: originala_firmvaro.md:101
 #, no-wrap
 msgid "ipaddr = 192.168.2.84\n"
 msgstr ""
 
 #. type: Bullet: '* '
-#: originala_firmvaro.md:102
+#: originala_firmvaro.md:103
 #, no-wrap
 msgid "serverip = 192.168.2.81\n"
 msgstr ""
 
 #. type: Bullet: '* '
-#: originala_firmvaro.md:104
+#: originala_firmvaro.md:105
 #, no-wrap
 msgid "gatewayip = 192.168.2.1\n"
 msgstr ""
 
 #. type: Bullet: '* '
-#: originala_firmvaro.md:106
+#: originala_firmvaro.md:107
 #, no-wrap
 msgid "retmasko = 255.255.255.0\n"
 msgstr ""
 
 #. type: Plain text
-#: originala_firmvaro.md:125
+#: originala_firmvaro.md:126
 #, no-wrap
 msgid ""
 "opcioj en mtdblock1:\n"
@@ -294,19 +324,19 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: originala_firmvaro.md:127
+#: originala_firmvaro.md:128
 #, no-wrap
 msgid "linuksa versio:  \n"
 msgstr ""
 
 #. type: Plain text
-#: originala_firmvaro.md:129
+#: originala_firmvaro.md:130
 #, no-wrap
 msgid "Linukso-versio 3.10.14\\_\\_isvp\\_meleagro\\_1.0\\_\\_ (root@localhost.localdomain) (gcc-versio 4.7.2 (Ingenic r2.3.3 2016.12) ) # 3 PREEMPT Sab Jun 22 10:40:55 CST 2019\n"
 msgstr ""
 
 #. type: Plain text
-#: originala_firmvaro.md:141
+#: originala_firmvaro.md:142
 #, no-wrap
 msgid ""
 "Rimarkindaj dosieroj en /:\n"
@@ -322,13 +352,13 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '* '
-#: originala_firmvaro.md:143
+#: originala_firmvaro.md:144
 #, no-wrap
 msgid "/ lib: normaj bibliotekoj.\n"
 msgstr ""
 
 #. type: Plain text
-#: originala_firmvaro.md:152
+#: originala_firmvaro.md:153
 #, no-wrap
 msgid ""
 "rimarkindaj dosieroj en _/ipc_ :\n"
@@ -341,49 +371,49 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: originala_firmvaro.md:155
+#: originala_firmvaro.md:156
 #, no-wrap
 msgid "**noto: libimp.so diferencas de tiu liverita por la T20, kaj tiu liverita kun la T20 ne taŭgas.**\n"
 msgstr ""
 
 #. type: Title #
-#: originala_firmvaro.md:156
+#: originala_firmvaro.md:157
 #, no-wrap
 msgid "GPIO-havenoj"
 msgstr ""
 
 #. type: Bullet: '* '
-#: originala_firmvaro.md:159
+#: originala_firmvaro.md:160
 #, no-wrap
 msgid "havenoj blokitaj de motor.ko: 18? 38 39 40 41 47 48 49 60?\n"
 msgstr ""
 
 #. type: Bullet: '* '
-#: originala_firmvaro.md:161
+#: originala_firmvaro.md:162
 #, no-wrap
 msgid "havenoj blokitaj de audio.ko: 63?\n"
 msgstr ""
 
 #. type: Bullet: '* '
-#: originala_firmvaro.md:163
+#: originala_firmvaro.md:164
 #, no-wrap
 msgid "haveno 46 = infraruĝaj LED-oj.\n"
 msgstr ""
 
 #. type: Bullet: '* '
-#: originala_firmvaro.md:165
+#: originala_firmvaro.md:166
 #, no-wrap
 msgid "haveno 52 =?\n"
 msgstr ""
 
 #. type: Bullet: '* '
-#: originala_firmvaro.md:167
+#: originala_firmvaro.md:168
 #, no-wrap
 msgid "haveno 64 =?\n"
 msgstr ""
 
 #. type: Bullet: '* '
-#: originala_firmvaro.md:169
+#: originala_firmvaro.md:170
 #, no-wrap
 msgid "haveno 81 = bluaj LEDoj.\n"
 msgstr ""

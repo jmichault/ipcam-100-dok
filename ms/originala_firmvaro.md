@@ -8,17 +8,19 @@ title: 'Firmware asal'
 
 # pelabuhan terbuka
 
-TCP: 80(http), 443(http juga!), 554(rtsp), 8004, 8006, 9527(telnet), 9999
-UDP: 67(dhcp), 3702, 8002, 39642
+TCP: 80(HTTP), 443(HTP juga!), 554(RTSP), 8004, 8006, 9527(, 9999  
+UDP: 67(DHCP), 3702, 8002, 39642 (° 3 ° 3
 
-port 80: http
-http: // IP: log masuk: _admin:_, kata laluan: _admin_
+Port 80: http  
+http: // ip: Log masuk: _admin:_, Kata laluan: _admin_
 
-port 443: http
-http: // IP: 443: log masuk: _admin:_, kata laluan: _admin_
+Port 443: http  
+http: // ip: 443: Log Masuk: _admin:_
 
-port 554: rtsp
-* aliran utama: 
+Port 554: RTSP  
+* Semasa Utama: 
+
+
 
     ```
     IP=xxx.xxx.xxx.xxx
@@ -47,10 +49,10 @@ pelabuhan 8006:? , dibuka oleh jco_server
 
 
 
-port 9527: telnet
-`telnetd IP 9527` : log masuk: _root_, kata laluan: _jco66688_, boleh diakses selama 5 minit, ditutup selepas.
-untuk tidak terputus selepas 5 minit: `killall -9 auto_run.sh`
-untuk menghentikan jco_server : 
+Port 9527: Telnet  
+`telnetd IP 9527` : Log masuk: _root_, Kata laluan: _jco66688_, boleh diakses selama 5 minit, ditutup selepas.  
+Tidak boleh diputuskan selepas 5 minit: `killall -9 auto_run.sh`  (° 4 ° 4
+Untuk menghentikan JCO_server : 
  
  
 

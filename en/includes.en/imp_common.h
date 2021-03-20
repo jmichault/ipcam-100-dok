@@ -20,19 +20,19 @@ extern "C"
 #endif /* __cplusplus */
 
 /**
- * @file 
- * SDK-T15 Fichier d'en-tête de structure de données commun 
+ * @file
+ * SDK-T15 Common data structure header file 
  */
 
 /**
- * IMP équipement ID Définition de l'énumération .
+ * IMP equipment ID Enumeration definition .
  */
 typedef enum {
-	DEV_ID_FS,			/**< Source vidéo */
-	DEV_ID_ENC,			/**< Encodeur */
-	DEV_ID_DEC,			/**< décodeur */
-	DEV_ID_IVS,			/**< algorithme */
-	DEV_ID_OSD,			/**< Superposition d'image */
+	DEV_ID_FS,			/**< Video source */
+	DEV_ID_ENC,			/**< Encoder */
+	DEV_ID_DEC,			/**< decoder */
+	DEV_ID_IVS,			/**< algorithm */
+	DEV_ID_OSD,			/**< Image overlay */
 	DEV_ID_FG1DIRECT,		/**< FB FG1Direct */
 	DEV_ID_RESERVED_START,
 	DEV_ID_RESERVED_END = 23,
@@ -44,39 +44,48 @@ typedef enum {
  */
 typedef struct {
 	IMPDeviceID	deviceID;		/**< equipment ID */
-	int			groupID;		/**< grouper ID */
-	int			outputID;		/**< Production ID */
+	int			groupID;		/**< group ID */
+	int			outputID;		/**< Output ID */
 } IMPCell;
 
 /**
- * IMP Définition des informations d'image de cadre .
+ * IMP Frame image information definition .
  */
 typedef struct {
-	int index;			/**< Numéro de cadre */
-	int pool_idx;		/**< Où est le cadre Pool de ID */
+	int index;			/**< Frame number */
+	int pool_idx;		/**< Where the frame is Pool of ID */
 
-	uint32_t width;			/**< Largeur du cadre */
-	uint32_t height;			/**< Hauteur du cadre */
-	uint32_t pixfmt;			/**< Format d'image du cadre */
-	uint32_t size;			/**< La taille de l'espace occupé par le cadre */
+	uint32_t width;			/**< Frame width */
+	uint32_t height;			/**< Frame height */
+	uint32_t pixfmt;			/**< Frame image format */
+	uint32_t size;			/**< The size of the space occupied by the frame */
 
-	uint32_t phyAddr;	/**< Adresse physique de la trame */
-	uint32_t virAddr;	/**< Adresse virtuelle de la trame */
+	uint32_t phyAddr;	/**< Physical address of the frame */
+	uint32_t virAddr;	/**< Virtual address of the frame */
 
-	int64_t timeStamp;	/**< Horodatage de l'image */
-	uint32_t priv[0];	/* Données privées */
+	int64_t timeStamp;	/**< Timestamp of frame */
+	uint32_t priv[0];	/* Private data */
 } IMPFrameInfo;
 
 /**
- * Type de protocole d'encodage et de décodage 
+ * IMP Frame time parameter .
+ */
+typedef struct {
+	uint64_t ts;						/**< time */
+	uint64_t minus;						/**< Lower limit */
+	uint64_t plus;						/**< Upper limit */
+} IMPFrameTimestamp;
+
+/**
+ * Encoding and decoding protocol type 
  */
 typedef enum {
-	PT_JPEG,					/**< JPEG Type de protocole d'image */
-	PT_H264,					/**< H264 Type de protocole vidéo */
+	PT_JPEG,					/**< JPEG Image protocol type */
+	PT_H264,					/**< H264 Video protocol type */
 } IMPPayloadType;
 
 /**
- * IMP Définition du format d'image .
+ * IMP Image format definition .
  */
 typedef enum {
 	PIX_FMT_YUV420P, /**< planar YUV 4:2:0, 12bpp, (1 Cr & Cb sample per 2x2 Y samples) */
@@ -123,22 +132,24 @@ typedef enum {
 
 	PIX_FMT_RAW,
 
+	PIX_FMT_HSV,
+
 	PIX_FMT_NB, /**< number of pixel formats. */
 } IMPPixelFormat;
 
 /**
- * IMP Informations de coordonnées de point .
+ * IMP Point coordinate information .
  */
 typedef struct {
-	int		x;			/**< Abscisse */
-	int		y;			/**< Axe Y */
+	int		x;			/**< Abscissa */
+	int		y;			/**< Y-axis */
 } IMPPoint;
 
 /**
- * IMP Informations sur la zone rectangulaire .
+ * IMP Rectangular area information .
  *
- * Comme indiqué ci-dessous ， lorsque p0(100,100) Comme point de départ ， Faire width avec height pour 100 Temps ， alors p1 for (199,199)
- * width = abs(p1.x-p0.x)+1 height = abs(p1.y-p0.y)+1 Le nombre de points est égal à la distance +1
+ * As shown below ， when p0(100,100) As a starting point ， To make width with height for 100 Time ， then p1 for (199,199)
+ * width = abs(p1.x-p0.x)+1 height = abs(p1.y-p0.y)+1 The number of points equals the distance +1
  * p0(100,100) _____100______
  * | |
  * | |
@@ -149,8 +160,8 @@ typedef struct {
  *
  */
 typedef struct {
-	IMPPoint		p0;		/**< Coordonnées du point du coin supérieur gauche */
-	IMPPoint		p1;		/**< Coordonnées du point du coin inférieur droit */
+	IMPPoint		p0;		/**< Coordinate information of the upper left corner point */
+	IMPPoint		p1;		/**< Coordinate information of the lower right corner point */
 } IMPRect;
 
 static inline int calc_pic_size(int width, int height, IMPPixelFormat imp_pixfmt)
@@ -163,6 +174,10 @@ static inline int calc_pic_size(int width, int height, IMPPixelFormat imp_pixfmt
 		BPP(PIX_FMT_YUYV422, 2, 1);
 		BPP(PIX_FMT_UYVY422, 2, 1);
 		BPP(PIX_FMT_RGB565BE, 2, 1);
+		BPP(PIX_FMT_BGR0, 4, 1);
+		BPP(PIX_FMT_BGR24, 3, 1);
+		BPP(PIX_FMT_HSV, 4, 1);
+		BPP(PIX_FMT_BGRA, 4, 1);
 	default: break;
 	}
 #undef BPP

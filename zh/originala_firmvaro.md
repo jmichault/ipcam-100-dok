@@ -8,17 +8,19 @@ title: 原始固件
 
 # 打开端口
 
-TCP：80(http)，443(http也！)，554(rtsp)，8004、8006、9527(telnet)，9999
-UDP：67(dhcp)，3702、8002、39642
+TCP：80(HTTP)，443(HTP也！)，554(RTSP)，8004,8006,9527(，9999  
+UDP：67(DHCP)，3702,8002,39642（°3°3
 
-端口80：http
-http：// IP：登录： _admin:_，密码： _admin_
+端口80：HTTP  
+http：// ip：登录: _admin:_，密码： _admin_
 
-端口443：HTTP
-HTTP：// IP：443：登录名： _admin:_，密码： _admin_
+端口443：HTTP  
+http：// ip：443：登录: _admin:_，密码： _admin_
 
-端口554：rtsp
-* 主码流： 
+端口554：RTSP  
+* 主电流： 
+
+
 
     ```
     IP=xxx.xxx.xxx.xxx
@@ -47,10 +49,10 @@ HTTP：// IP：443：登录名： _admin:_，密码： _admin_
 
 
 
-端口9527：telnet
-`telnetd IP 9527` ：登录名： _root_，密码： _jco66688_，可访问5分钟，之后关闭。
-5分钟后不能断开连接： `killall -9 auto_run.sh`
-停止jco_server : 
+端口9527：Telnet  
+`telnetd IP 9527` ：登录: _root_，密码： _jco66688_，可访问5分钟，关闭后。  
+5分钟后不断开： `killall -9 auto_run.sh`  （°4°4
+停止JCO_server : 
  
  
 

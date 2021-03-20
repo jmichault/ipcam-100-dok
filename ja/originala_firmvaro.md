@@ -8,17 +8,19 @@ title: 元のファームウェア
 
 # 開いているポート
 
-TCP：80(http)、443(httpも！)、554(rtsp)、8004、8006、9527(telnet)、9999
-UDP：67(dhcp)、3702、8002、39642
+TCP：80(HTTP)、443(HTPも！)、554(RTSP)、8004,8006,9527(、9999  
+UDP：67(DHCP)、3702,8002,39642
 
-ポート80：http
+ポート80：HTTP  
 http：// IP：ログイン： _admin:_、パスワード： _admin_
 
-ポート443：http
+ポート443：HTTP  
 http：// IP：443：ログイン： _admin:_、パスワード： _admin_
 
-ポート554：rtsp
-* メインストリーム： 
+ポート554：RTSP  
+* 主流: 
+
+
 
     ```
     IP=xxx.xxx.xxx.xxx
@@ -47,11 +49,11 @@ http：// IP：443：ログイン： _admin:_、パスワード： _admin_
 
 
 
-ポート9527：telnet
-`telnetd IP 9527` ：ログイン： _root_、パスワード： _jco66688_、5分間アクセス可能、その後閉鎖。
-5分後に切断されない： `killall -9 auto_run.sh`
-jcoを停止する_server : 
- 
+ポート9527：Telnet  
+`telnetd IP 9527` ：ログイン： _root_、パスワード： _jco66688_、5分間アクセス可能で、後に閉じます。  
+5分後に切断されない： `killall -9 auto_run.sh`  （°4°4
+JCO_server : 
+を停止する 
  
 
 ```

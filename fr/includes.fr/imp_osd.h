@@ -16,25 +16,25 @@ extern "C"
 #endif
 #endif /* __cplusplus */
 /**
- * @file 
+ * @file
  * IMP OSD Fichier d'en-tête du module 
  */
 
 
 /**
  * @defgroup IMP_OSD
- * @ingroup lutin
- * @brief Module OSD, peut superposer des images, des bitmaps, des lignes droites et des bo je tes rectangulaires sur le flux vidéo
+ * @ingroup imp
+ * @brief OSD Module ， Peut superposer des images, des bitmaps, des lignes droites et des cadres rectangulaires sur le flux vidéo 
  *
- * @section Présentation du module osd_summary 1
+ * @section osd_summary 1 Présentation du module 
  * OSD Le nom complet est On-Screen Display . 
  *
- * @section osd_concept 2 concepts associés
- * @subsection Région osd_region 2.1
+ * @section osd_concept 2 Concepts associés 
+ * @subsection osd_region 2.1 Region
  * Region Est-ce que la zone superposée ， dans API Abréviation chinoise Rgn . Region Avoir certaines informations sur l'image ， Peut passer OSD Une fois les modules superposés ， Combiné avec l'image d'arrière-plan dans une image. 
  * Pour la superposition d'image ， Peut également être réalisé Alpha effet. @ref osd_region_type . 
  *
- * @subsection osd_region_type 2.1 Type de région
+ * @subsection osd_region_type 2.1 Region type
  * Region Il existe plusieurs types ， Elles sont: \n
  * OSD_REG_LINE :ligne droite \n
  * OSD_REG_RECT :Rectangle \n
@@ -43,11 +43,11 @@ extern "C"
  * OSD_REG_PIC :image \n
  * parmi eux ， La différence entre le bitmap et l'image est ， Bitmap n'effectue qu'une couverture monochrome des pixels ， Et l'image est RGBA Image Alpha Recouvrir. 
  *
- * @section Fonction du module osd_fun 3
+ * @section osd_fun 3 Fonction du module 
  * OSD Le module prend en charge les lignes, les bo je tes rectangulaires, la superposition bitmap, l'occlusion rectangulaire et la superposition d'image. 
- * Les lignes, les bo je tes rectangulaires et les bitmaps sont implémentés par logiciel; l'occlusion rectangulaire et la superposition d'image sont implémentées par le matériel. 
+ * Les lignes, les bo je tes rectangulaires et les bitmaps sont implémentés par logiciel; l'occlusion rectangulaire et les superpositions d'images sont implémentées par le matériel. 
  *
- * @section Utilisation du module osd_use 4
+ * @section osd_use 4 Utilisation du module 
  * OSD L'utilisation de comporte généralement les étapes suivantes 
  * 1. créer OSD grouper 
  * 2. Lier OSD Regrouper dans le système 
@@ -135,6 +135,15 @@ typedef struct {
 } IMPOSDRgnAttr;
 
 /**
+ * OSD Horodatage effectif de la zone 
+ */
+typedef struct {
+	uint64_t ts;						/**< Horodatage */
+	uint64_t minus;						/**< Limite inférieure */
+	uint64_t plus;						/**< Limite supérieure */
+} IMPOSDRgnTimestamp;
+
+/**
  * OSD Attributs de zone de groupe 
  */
 typedef struct {
@@ -150,23 +159,23 @@ typedef struct {
 
 
 /**
- * @fn int IMP_OSD_CreateGroup (int grpNum)
+ * @fn int IMP_OSD_CreateGroup(int grpNum)
  *
  * créer OSD grouper 
  *
- * @param[in] grpNum Numéro de groupe OSD, plage de valeurs: [0, @ref NR_MAX_OSD_GROUPS-1]
+ * @param[in] grpNum OSD No de groupe , Gammes : [0, @ref NR_MAX_OSD_GROUPS - 1]
  *
- * @retval 0 succès
- * @retval Échec non nul
+ * @retval 0 Succès 
+ * @retval non- 0 échec 
  *
- * @remarks non.
+ * @remarks non. 
  *
  * @attention non. 
  */
 int IMP_OSD_CreateGroup(int grpNum);
 
 /**
- * @fn int IMP_OSD_DestroyGroup (int grpNum)
+ * @fn int IMP_OSD_DestroyGroup(int grpNum)
  *
  * détruire OSD grouper 
  *
@@ -175,24 +184,24 @@ int IMP_OSD_CreateGroup(int grpNum);
  * @retval 0 Succès 
  * @retval non- 0 échec 
  *
- * @remarks Lors de l'appel de cette API, le groupe correspondant doit avoir été créé.
+ * @remarks Appelle ça API Il est nécessaire que le groupe correspondant ait été créé. 
  *
  * @attention non. 
  */
 int IMP_OSD_DestroyGroup(int grpNum);
 
 /**
- * @fn int IMP_OSD_AttachToGroup (IMPCell * de, IMPCell * à)
+ * @fn int IMP_OSD_AttachToGroup(IMPCell *from, IMPCell *to)
  *
  * volonté OSD Groupe ajouté au système 
  *
- * @param[in] depuis l'unité OSD
- * @param[in] vers d'autres unités du système
+ * @param[in] from OSD unité 
+ * @param[in] to Autres unités du système 
  *
  * @retval 0 Succès 
  * @retval non- 0 échec 
  *
- * @remarks Dans la nouvelle version du SDK, il est recommandé d'utiliser Bind pour insérer l'OSD dans le flux de données du système. La méthode Attach n'est plus recommandée, mais l'API est réservée à la compatibilité avec les versions précédentes du logiciel.
+ * @remarks Nouvelle version SDK Recommandé dans Bind Le chemin sera OSD Cha je ne au flux de données du système ，Attach N'est plus recommandé ， mais API Garder ， Idéalement compatible avec les versions précédentes du logiciel. 
  * Pour plus de détails, veuillez consulter @ref bind Exemple de 
  *
  * @attention non. 
@@ -200,14 +209,14 @@ int IMP_OSD_DestroyGroup(int grpNum);
 int IMP_OSD_AttachToGroup(IMPCell *from, IMPCell *to);
 
 /**
- * @fn IMPRgnHandle IMP_OSD_CreateRgn (IMPOSDRgnAttr * prAttr)
+ * @fn IMPRgnHandle IMP_OSD_CreateRgn(IMPOSDRgnAttr *prAttr)
  *
  * créer OSD surface 
  *
- * @param[in] Attributs de la zone OSD prAttr
+ * @param[in] prAttr OSD Attributs de zone 
  *
- * @retval Succès supérieur ou égal à 0
- * @retval Moins de 0 a échoué
+ * @retval supérieur ou égal à 0 Succès 
+ * @retval Moins que 0 échec 
  *
  * @remarks non. 
  *
@@ -216,13 +225,13 @@ int IMP_OSD_AttachToGroup(IMPCell *from, IMPCell *to);
 IMPRgnHandle IMP_OSD_CreateRgn(IMPOSDRgnAttr *prAttr);
 
 /**
- * @fn void IMP_OSD_DestroyRgn (poignée IMPRgnHandle)
+ * @fn void IMP_OSD_DestroyRgn(IMPRgnHandle handle)
  *
  * détruire OSD surface 
  *
- * @param[in] Poignée de zone prAttr, valeur de retour de IMP_OSD_CreateRgn
+ * @param[in] prAttr Poignée de zone ，IMP_OSD_CreateRgn La valeur de retour 
  *
- * @retval non
+ * @retval non 
  *
  * @remarks non. 
  *
@@ -231,25 +240,25 @@ IMPRgnHandle IMP_OSD_CreateRgn(IMPOSDRgnAttr *prAttr);
 void IMP_OSD_DestroyRgn(IMPRgnHandle handle);
 
 /**
- * @fn int IMP_OSD_RegisterRgn (poignée IMPRgnHandle, int grpNum, IMPOSDGrpRgnAttr * pgrAttr)
+ * @fn int IMP_OSD_RegisterRgn(IMPRgnHandle handle, int grpNum, IMPOSDGrpRgnAttr *pgrAttr)
  *
  * inscrit OSD surface 
  *
- * @param[in] handle de zone, valeur de retour de IMP_OSD_CreateRgn
- * @param[in] grpNum Numéro de groupe OSD
- * @param[in] Attributs d'affichage du groupe OSD pgrAttr
+ * @param[in] handle Poignée de zone ，IMP_OSD_CreateRgn La valeur de retour 
+ * @param[in] grpNum OSD No de groupe 
+ * @param[in] pgrAttr OSD Attributs d'affichage de groupe 
  *
  * @retval 0 Succès 
  * @retval non- 0 échec 
  *
- * @remarks Lors de l'appel de cette API, le groupe OSD correspondant doit avoir été créé.
+ * @remarks Appelle ça API Lors de la demande du correspondant OSD Le groupe a été créé. 
  *
  * @attention non. 
  */
 int IMP_OSD_RegisterRgn(IMPRgnHandle handle, int grpNum, IMPOSDGrpRgnAttr *pgrAttr);
 
 /**
- * @fn int IMP_OSD_UnRegisterRgn (poignée IMPRgnHandle, int grpNum)
+ * @fn int IMP_OSD_UnRegisterRgn(IMPRgnHandle handle, int grpNum)
  *
  * Se déconnecter OSD surface 
  *
@@ -259,14 +268,14 @@ int IMP_OSD_RegisterRgn(IMPRgnHandle handle, int grpNum, IMPOSDGrpRgnAttr *pgrAt
  * @retval 0 Succès 
  * @retval non- 0 échec 
  *
- * @remarks Lors de l'appel de cette API, il est nécessaire que le groupe OSD correspondant ait été créé et que la zone correspondante ait été enregistrée.
+ * @remarks Appelle ça API Lors de la demande du correspondant OSD Le groupe a été créé , La zone correspondante a été enregistrée. 
  *
  * @attention non. 
  */
 int IMP_OSD_UnRegisterRgn(IMPRgnHandle handle, int grpNum);
 
 /**
- * @fn int IMP_OSD_SetRgnAttr (poignée IMPRgnHandle, IMPOSDRgnAttr * prAttr)
+ * @fn int IMP_OSD_SetRgnAttr(IMPRgnHandle handle, IMPOSDRgnAttr *prAttr)
  *
  * Définir les propriétés de la zone 
  *
@@ -276,14 +285,32 @@ int IMP_OSD_UnRegisterRgn(IMPRgnHandle handle, int grpNum);
  * @retval 0 Succès 
  * @retval non- 0 échec 
  *
- * @remarks Lors de l'appel de cette API, la zone correspondante doit avoir été créée.
+ * @remarks Appelle ça API Il est nécessaire que la zone correspondante ait été créée. 
  *
  * @attention non. 
  */
 int IMP_OSD_SetRgnAttr(IMPRgnHandle handle, IMPOSDRgnAttr *prAttr);
 
 /**
- * @fn int IMP_OSD_GetRgnAttr (poignée IMPRgnHandle, IMPOSDRgnAttr * prAttr)
+ * @fn int IMP_OSD_SetRgnAttrWithTimestamp(IMPRgnHandle handle, IMPOSDRgnAttr *prAttr, IMPOSDRgnTimestamp *prTs)
+ *
+ * Définir les attributs régionaux et l'heure effective 
+ *
+ * @param[in] handle Poignée de zone ，IMP_OSD_CreateRgn La valeur de retour 
+ * @param[in] prAttr OSD Attributs de zone 
+ * @param[in] prTs Temps effectif 
+ *
+ * @retval 0 Succès 
+ * @retval non- 0 échec 
+ *
+ * @remarks Appelle ça API Il est nécessaire que la zone correspondante ait été créée. 
+ *
+ * @attention non. 
+ */
+int IMP_OSD_SetRgnAttrWithTimestamp(IMPRgnHandle handle, IMPOSDRgnAttr *prAttr, IMPOSDRgnTimestamp *prTs);
+
+/**
+ * @fn int IMP_OSD_GetRgnAttr(IMPRgnHandle handle, IMPOSDRgnAttr *prAttr)
  *
  * Obtenir des attributs de zone 
  *
@@ -300,42 +327,42 @@ int IMP_OSD_SetRgnAttr(IMPRgnHandle handle, IMPOSDRgnAttr *prAttr);
 int IMP_OSD_GetRgnAttr(IMPRgnHandle handle, IMPOSDRgnAttr *prAttr);
 
 /**
- * @fn int IMP_OSD_UpdateRgnAttrData (poignée IMPRgnHandle, IMPOSDRgnAttrData * prAttrData)
+ * @fn int IMP_OSD_UpdateRgnAttrData(IMPRgnHandle handle, IMPOSDRgnAttrData *prAttrData)
  *
  * Mettre à jour les attributs de données de zone ， Seulement pour OSD_REG_BITMAP avec OSD_REG_PIC Type de zone 
  *
  * @param[in] handle Poignée de zone ，IMP_OSD_CreateRgn La valeur de retour 
- * @param[in] Attributs de données de la zone OSD prAttrData
+ * @param[in] prAttrData OSD Attributs de données de zone 
  *
  * @retval 0 Succès 
  * @retval non- 0 échec 
  *
- * @remarks Lors de l'appel de cette API, il est nécessaire que la zone correspondante ait été créée et que l'attribut de zone ait été défini sur OSD_REG_BITMAP ou OSD_REG_PIC.
+ * @remarks Appelle ça API Il faut que la zone correspondante ait été créée et que l'attribut de zone ait été défini sur OSD_REG_BITMAP ou OSD_REG_PIC . 
  *
  * @attention non. 
  */
 int IMP_OSD_UpdateRgnAttrData(IMPRgnHandle handle, IMPOSDRgnAttrData *prAttrData);
 
 /**
- * @fn int IMP_OSD_SetGrpRgnAttr (poignée IMPRgnHandle, int grpNum, IMPOSDGrpRgnAttr * pgrAttr)
+ * @fn int IMP_OSD_SetGrpRgnAttr(IMPRgnHandle handle, int grpNum, IMPOSDGrpRgnAttr *pgrAttr)
  *
  * Installation OSD Attributs de zone de groupe 
  *
  * @param[in] handle Poignée de zone ，IMP_OSD_CreateRgn La valeur de retour 
  * @param[in] grpNum OSD No de groupe 
- * @param[in] Attributs de zone de groupe OSD pgrAttr
+ * @param[in] pgrAttr OSD Attributs de zone de groupe 
  *
  * @retval 0 Succès 
  * @retval non- 0 échec 
  *
- * @remarks Lors de l'appel de cette API, le groupe OSD correspondant doit avoir été créé et la zone doit avoir été créée et enregistrée.
+ * @remarks Appelle ça API Lors de la demande du correspondant OSD Le groupe a été créé , La zone a été créée et enregistrée. 
  *
  * @attention non. 
  */
 int IMP_OSD_SetGrpRgnAttr(IMPRgnHandle handle, int grpNum, IMPOSDGrpRgnAttr *pgrAttr);
 
 /**
- * @fn int IMP_OSD_GetGrpRgnAttr (poignée IMPRgnHandle, int grpNum, IMPOSDGrpRgnAttr * pgrAttr)
+ * @fn int IMP_OSD_GetGrpRgnAttr(IMPRgnHandle handle, int grpNum, IMPOSDGrpRgnAttr *pgrAttr)
  *
  * Obtenir OSD Attributs de zone de groupe 
  *
@@ -353,13 +380,13 @@ int IMP_OSD_SetGrpRgnAttr(IMPRgnHandle handle, int grpNum, IMPOSDGrpRgnAttr *pgr
 int IMP_OSD_GetGrpRgnAttr(IMPRgnHandle handle, int grpNum, IMPOSDGrpRgnAttr *pgrAttr);
 
 /**
- * @fn int IMP_OSD_ShowRgn (poignée IMPRgnHandle, int grpNum, int showFlag)
+ * @fn int IMP_OSD_ShowRgn(IMPRgnHandle handle, int grpNum, int showFlag)
  *
  * Définir s'il faut afficher la zone de groupe 
  *
  * @param[in] handle Poignée de zone ，IMP_OSD_CreateRgn La valeur de retour 
  * @param[in] grpNum OSD No de groupe 
- * @param[in] Commutateur d'affichage de la zone de groupe OSD showFlag
+ * @param[in] showFlag OSD Commutateur d'affichage de la zone de groupe 
  *
  * @retval 0 Succès 
  * @retval non- 0 échec 
@@ -371,7 +398,7 @@ int IMP_OSD_GetGrpRgnAttr(IMPRgnHandle handle, int grpNum, IMPOSDGrpRgnAttr *pgr
 int IMP_OSD_ShowRgn(IMPRgnHandle handle, int grpNum, int showFlag);
 
 /**
- * @fn int IMP_OSD_Start (int grpNum)
+ * @fn int IMP_OSD_Start(int grpNum)
  *
  * Installation OSD Affichage de groupe 
  *
@@ -387,7 +414,7 @@ int IMP_OSD_ShowRgn(IMPRgnHandle handle, int grpNum, int showFlag);
 int IMP_OSD_Start(int grpNum);
 
 /**
- * @fn int IMP_OSD_Stop (int grpNum)
+ * @fn int IMP_OSD_Stop(int grpNum)
  *
  * Définir l'arrêt OSD Affichage de groupe 
  *

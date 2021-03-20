@@ -14,10 +14,12 @@ var searchData=
   ['picwidth',['picWidth',['../structIMPEncoderAttr.html#a5c813828392375549b5a59982e1369e0',1,'IMPEncoderAttr::picWidth()'],['../structIMPFSChnAttr.html#a9ec2bdd0c7511c484aaacaa1f8c105f9',1,'IMPFSChnAttr::picWidth()']]],
   ['pixelformat',['pixelFormat',['../structIMPDecoderAttr.html#aae56e73f280b67f0c41c2d74b0b55976',1,'IMPDecoderAttr']]],
   ['pixfmt',['pixFmt',['../structIMPFSChnAttr.html#a904df5e9bf3fdeb216993071f14e8a08',1,'IMPFSChnAttr::pixFmt()'],['../structIMPFrameInfo.html#ae864f35837e4578c12c82fd96ac741fd',1,'IMPFrameInfo::pixfmt()'],['../structIMPIVSInterface.html#aa795c6e1e8962bc6067b7045effc0715',1,'IMPIVSInterface::pixfmt()']]],
+  ['plus',['plus',['../structIMPFrameTimestamp.html#a029ac6d5c9c8ae1b908bfb2afba3a404',1,'IMPFrameTimestamp::plus()'],['../structIMPOSDRgnTimestamp.html#a86626e61a321eaed9c7fc17764ac927c',1,'IMPOSDRgnTimestamp::plus()']]],
   ['pool_5fidx',['pool_idx',['../structIMPFrameInfo.html#a842919e0d3f8a5c2e6d767219c53940a',1,'IMPFrameInfo']]],
-  ['power_5fgpio',['power_gpio',['../structIMPSensorInfo.html#a517dd0e2b36c39381bba75fdcb7aaf1a',1,'IMPSensorInfo']]],
-  ['preprocesssync',['PreprocessSync',['../structIMPIVSInterface.html#a8655d367549bac201f24fa5d1a443c97',1,'IMPIVSInterface']]],
-  ['processasync',['ProcessAsync',['../structIMPIVSInterface.html#a72355adc7ccf55d5aa77a70d9dd8a626',1,'IMPIVSInterface']]],
+  ['power_5fgpio',['power_gpio',['../group__IMP__ISP.html#ga517dd0e2b36c39381bba75fdcb7aaf1a',1,'IMPSensorInfo']]],
+  ['preprocesssync',['preProcessSync',['../structIMPIVSInterface.html#a2cb0ceb6876236be3865be7a41bd020a',1,'IMPIVSInterface']]],
+  ['priv',['priv',['../structIMPIVSInterface.html#a193cfafe3b040c7cc1fafab3a4962bd8',1,'IMPIVSInterface']]],
+  ['processasync',['processAsync',['../structIMPIVSInterface.html#ad75e6f59eb017f016df4e45452aa4611',1,'IMPIVSInterface']]],
   ['profile',['profile',['../structIMPEncoderAttr.html#ab9b07e9a9db1158d91239664ec802dd8',1,'IMPEncoderAttr']]],
-  ['pwdn_5fgpio',['pwdn_gpio',['../structIMPSensorInfo.html#a3b08b5578b4ee04cfce14c421e12cc4a',1,'IMPSensorInfo']]]
+  ['pwdn_5fgpio',['pwdn_gpio',['../group__IMP__ISP.html#ga3b08b5578b4ee04cfce14c421e12cc4a',1,'IMPSensorInfo']]]
 ];

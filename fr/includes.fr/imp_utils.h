@@ -16,7 +16,7 @@ extern "C"{
 #endif /* __cplusplus */
 
 /**
- * @file 
+ * @file
  * IMP utils tête de fichier 
  */
 
@@ -30,9 +30,9 @@ extern "C"{
 /**
  * container_of - cast a member of a structure out to the containing structure
  * Copy from kernel.h
- * @ptr:	 le pointeur vers le membre.
- * @type:	 le type de la structure de conteneur dans laquelle il est incorporé.
- * @member:	 le nom du membre dans la structure.
+ * @ptr:	the pointer to the member.
+ * @type:	the type of the container struct this is embedded in.
+ * @member:	the name of the member within the struct.
  *
  */
 #define container_of(ptr, type, member) ({			\

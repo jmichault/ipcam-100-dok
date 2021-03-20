@@ -8,7 +8,7 @@
 #define __IMP_LOG_H__
 
 /**
- * @file 
+ * @file
  * Log Fichier d'en-tête d'interface 
  */
 
@@ -76,9 +76,9 @@ void imp_log_fun(int le, int op, int out, const char* tag, const char* file, int
 /**
  * Définir les options d'impression 
  *
- * @fn void IMP_Log_Set_Option (op int);
+ * @fn void IMP_Log_Set_Option(int op);
  *
- * @param[in] options d'impression réglées
+ * @param[in] op Définir les options d'impression 
  *
  */
 void IMP_Log_Set_Option(int op);
@@ -86,9 +86,9 @@ void IMP_Log_Set_Option(int op);
 /**
  * Obtenez des options d'impression 
  *
- * @fn int IMP_Log_Get_Option (void);
+ * @fn int IMP_Log_Get_Option(void );
  *
- * @retval Revenir aux options d'impression dans le système
+ * @retval Revenir aux options d'impression dans le système 
  *
  */
 int IMP_Log_Get_Option(void);
@@ -108,7 +108,7 @@ int IMP_Log_Get_Option(void);
 #define IMP_LOG_GET_OPTION IMP_Log_Get_Option()
 
 /* Default log to logcat */
-#define IMP_LOG IMP_LOG_PRINT
+#define IMP_LOG IMP_LOG_TO_SERVER
 
 /**
  * @def IMP_LOG_UNK

@@ -20,7 +20,7 @@ extern "C"
 #endif /* __cplusplus */
 
 /**
- * @file 
+ * @file
  * SDK-T15 Fichier d'en-tête de structure de données commun 
  */
 
@@ -53,7 +53,7 @@ typedef struct {
  */
 typedef struct {
 	int index;			/**< Numéro de cadre */
-	int pool_idx;		/**< O ù est le cadre Pool de ID */
+	int pool_idx;		/**< Où est le cadre Pool de ID */
 
 	uint32_t width;			/**< Largeur du cadre */
 	uint32_t height;			/**< Hauteur du cadre */
@@ -66,6 +66,15 @@ typedef struct {
 	int64_t timeStamp;	/**< Horodatage de l'image */
 	uint32_t priv[0];	/* Données privées */
 } IMPFrameInfo;
+
+/**
+ * IMP Paramètre de temps de trame .
+ */
+typedef struct {
+	uint64_t ts;						/**< temps */
+	uint64_t minus;						/**< Limite inférieure */
+	uint64_t plus;						/**< Limite supérieure */
+} IMPFrameTimestamp;
 
 /**
  * Type de protocole d'encodage et de décodage 
@@ -123,6 +132,8 @@ typedef enum {
 
 	PIX_FMT_RAW,
 
+	PIX_FMT_HSV,
+
 	PIX_FMT_NB, /**< number of pixel formats. */
 } IMPPixelFormat;
 
@@ -163,6 +174,10 @@ static inline int calc_pic_size(int width, int height, IMPPixelFormat imp_pixfmt
 		BPP(PIX_FMT_YUYV422, 2, 1);
 		BPP(PIX_FMT_UYVY422, 2, 1);
 		BPP(PIX_FMT_RGB565BE, 2, 1);
+		BPP(PIX_FMT_BGR0, 4, 1);
+		BPP(PIX_FMT_BGR24, 3, 1);
+		BPP(PIX_FMT_HSV, 4, 1);
+		BPP(PIX_FMT_BGRA, 4, 1);
 	default: break;
 	}
 #undef BPP

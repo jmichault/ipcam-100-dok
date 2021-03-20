@@ -7,40 +7,26 @@ title: 'Kruca kompilo'
 ---
 
 
+La transiritaj kompilaĵoj iloj estas en programado_medio/toolchain.
+Ils ont été compilés pour debian buster x64.
 
-fontoj:
- * <https://znanev.github.io/Cross-compile-tools-for-Ingenic-T20/>  
+
+Komparaj bibliotekoj estas en prograda_medio/lib
+
+
+Inkluzivas estas en programado_medio/include.
+
+
+Se vi bezonas rekompili bibliotekon, inspiri la sekvajn skriptojn:
+* Programada_medio/fontoj/01-buildssl.sh , pour la librairie openssl.
+* programada_Medio / fontoj / 02-buildive.sh, por Live555-biblioteko.
+* Programada_medio/fontoj/03-pcre.sh , pour la librairie pcre.
+
+
+
+Se vi iam bezonos rekompili la _«toolchain»_, vi povas kontroli la sekvajn lokojn:
+ *  * https://zanev.github.io/cross-compile- iloj -For-ingenic-T20/>  
  * <https://github.com/Dafang-Hacks/Main>
 
 
-
-# instalado de kompililoj:
-## opcio 1: kun docker (pli rapida por instali, pli malrapida por funkciigi)
-
-```
-sudo apt install docker.io
-sudo usermod -aG docker mia_uzanto
- se déconnecter puis se reconnecter
-mkdir ~/dafang
-cd ~/dafang
-docker run --rm -ti -v $(pwd):/root/ daviey/dafang-cross-compile:latest
-```
-
-## opcio 2: loke (pli longa por instali, pli rapida por ekzekuti)
-
-```
-sudo apt install build-essential git gcc-mips-linux-gnu autoconf libtool cmake ftp-upload u-boot-tools
-mkdir -p ~/dafang/Main/mips-gcc472-glibc216-64bit
-ln -s /usr/bin ~/dafang/Main/mips-gcc472-glibc216-64bit
-```
-
-# kompilo de bibliotekoj kaj _v4l2rtspserver-master_
-
-```
-git clone --recurse-submodules https://github.com/Dafang-Hacks/Main.git
-cd Main
-./compile_libraries.sh
-cd v4l2rtspserver-master
-./compile.sh
-```
 

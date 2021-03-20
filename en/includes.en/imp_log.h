@@ -8,8 +8,8 @@
 #define __IMP_LOG_H__
 
 /**
- * @file 
- * Log Fichier d'en-tête d'interface 
+ * @file
+ * Log Interface header file 
  */
 
 #ifdef __cplusplus
@@ -74,21 +74,21 @@ enum {
 void imp_log_fun(int le, int op, int out, const char* tag, const char* file, int line, const char* func, const char* fmt, ...);
 
 /**
- * Définir les options d'impression 
+ * Set printing options 
  *
- * @fn void IMP_Log_Set_Option (op int);
+ * @fn void IMP_Log_Set_Option(int op);
  *
- * @param[in] options d'impression réglées
+ * @param[in] op Set printing options 
  *
  */
 void IMP_Log_Set_Option(int op);
 
 /**
- * Obtenez des options d'impression 
+ * Get printing options 
  *
- * @fn int IMP_Log_Get_Option (void);
+ * @fn int IMP_Log_Get_Option(void );
  *
- * @retval Revenir aux options d'impression dans le système
+ * @retval Return to the print options in the system 
  *
  */
 int IMP_Log_Get_Option(void);
@@ -108,11 +108,11 @@ int IMP_Log_Get_Option(void);
 #define IMP_LOG_GET_OPTION IMP_Log_Get_Option()
 
 /* Default log to logcat */
-#define IMP_LOG IMP_LOG_PRINT
+#define IMP_LOG IMP_LOG_TO_SERVER
 
 /**
  * @def IMP_LOG_UNK
- * UNKNOWN Interface d'impression hiérarchique 
+ * UNKNOWN Hierarchical printing interface 
  */
 #define IMP_LOG_UNK(tag, fmt, ...)		IMP_LOG(tag, IMP_LOG_LEVEL_UNKNOWN, IMP_LOG_GET_OPTION, fmt, ##__VA_ARGS__)
 /**

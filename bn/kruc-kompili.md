@@ -7,41 +7,30 @@ title: 'ক্রস সংকলন'
 ---
 
 
+ট্রানজিট কম্পাইলালেশন সরঞ্জাম প্রোগ্রামিং হয়_medio/toolchain.
+Ils ont été compilés pour debian buster x64.
 
-উত্স:
- * <https://znanev.github.io/Cross-compile-tools-for-Ingenic-T20/>  
+
+
+তুলনামূলক লাইব্রেরি প্রগতিতে_medio/lib
+হয়
+
+
+অন্তর্ভুক্ত প্রোগ্রামিং_medio/include.
+
+
+
+যদি আপনি একটি লাইব্রেরি পুনরুদ্ধার করতে চান তবে নিম্নলিখিত স্ক্রিপ্টগুলি অনুপ্রাণিত করুন:
+* প্রোগ্রামেড_medio/fontoj/01-buildssl.sh , pour la librairie openssl.
+* programada_এনভায়রনমেন্ট / সোর্স / 02-buildive.sh, Live555 লাইব্রেরির জন্য।
+* Programada_medio/fontoj/03-pcre.sh , pour la librairie pcre.
+
+
+
+
+আপনি যদি কখনও _«toolchain»_পুনরায় আবির্ভূত করতে হবে, আপনি নিম্নলিখিত অবস্থানগুলি পরীক্ষা করতে পারেন: (° 3 ° 4 ° 4 ° 420/>।  
  * <https://github.com/Dafang-Hacks/Main>
 
 
 
-
-# সংকলক ইনস্টলেশন:
-## বিকল্প 1: ইনস্টল করতে ডকারের সাথে (° 1 faster) দ্রুত, শুরু করতে ধীর)
-
-```
-sudo apt install docker.io
-sudo usermod -aG docker mia_uzanto
- se déconnecter puis se reconnecter
-mkdir ~/dafang
-cd ~/dafang
-docker run --rm -ti -v $(pwd):/root/ daviey/dafang-cross-compile:latest
-```
-
-## বিকল্প 2: স্থানীয়ভাবে (ইনস্টল করতে দীর্ঘতর, কার্যকর করার জন্য দ্রুত)
-
-```
-sudo apt install build-essential git gcc-mips-linux-gnu autoconf libtool cmake ftp-upload u-boot-tools
-mkdir -p ~/dafang/Main/mips-gcc472-glibc216-64bit
-ln -s /usr/bin ~/dafang/Main/mips-gcc472-glibc216-64bit
-```
-
-# গ্রন্থাগার সংকলন এবং _v4l2rtspserver-master_
-
-```
-git clone --recurse-submodules https://github.com/Dafang-Hacks/Main.git
-cd Main
-./compile_libraries.sh
-cd v4l2rtspserver-master
-./compile.sh
-```
 

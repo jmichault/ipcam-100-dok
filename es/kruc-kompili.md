@@ -7,41 +7,30 @@ title: 'Compilación cruzada'
 ---
 
 
+Las herramientas de las compilaciones de tránsito están en la programación_medio/toolchain.
+Ils ont été compilés pour debian buster x64.
 
-fuentes:
- * <https://znanev.github.io/Cross-compile-tools-for-Ingenic-T20/>  
+
+
+Las bibliotecas comparativas están en Programa_medio/lib
+
+
+
+Incluye está en programación_medio/include.
+
+
+
+Si necesita recuperar una biblioteca, inspire los siguientes scripts:
+* programado_medio/fontoj/01-buildssl.sh , pour la librairie openssl.
+* programada_Medio ambiente / fuentes / 02-buildive.sh, para una biblioteca LIVE555.
+* Programado_medio/fontoj/03-pcre.sh , pour la librairie pcre.
+
+
+
+
+Si alguna vez necesita reaparecer el _«toolchain»_, puede verificar las siguientes ubicaciones: (° 3 ° 4 ° 4 °. Para-Ingenic-T20/>  
  * <https://github.com/Dafang-Hacks/Main>
 
 
 
-
-# instalación de compiladores:
-## opción 1: con Docker (más rápido de instalar, más lento de comenzar)
-
-```
-sudo apt install docker.io
-sudo usermod -aG docker mia_uzanto
- se déconnecter puis se reconnecter
-mkdir ~/dafang
-cd ~/dafang
-docker run --rm -ti -v $(pwd):/root/ daviey/dafang-cross-compile:latest
-```
-
-## opción 2: localmente (más de instalar, más rápido de ejecutar)
-
-```
-sudo apt install build-essential git gcc-mips-linux-gnu autoconf libtool cmake ftp-upload u-boot-tools
-mkdir -p ~/dafang/Main/mips-gcc472-glibc216-64bit
-ln -s /usr/bin ~/dafang/Main/mips-gcc472-glibc216-64bit
-```
-
-# recopilación de bibliotecas y _v4l2rtspserver-master_
-
-```
-git clone --recurse-submodules https://github.com/Dafang-Hacks/Main.git
-cd Main
-./compile_libraries.sh
-cd v4l2rtspserver-master
-./compile.sh
-```
 
