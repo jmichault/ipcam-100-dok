@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-03-20 13:00+0100\n"
+"POT-Creation-Date: 2021-03-22 23:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -164,9 +164,10 @@ msgstr "LAN和WLAN\n"
 
 #. type: Bullet: '* '
 #: index.md:49
-#, fuzzy, no-wrap
-msgid "RTSP MJPEG-servilo\n"
-msgstr "RTSP MJPEG服务器\n"
+#, no-wrap
+#, fuzzy
+msgid "RTSP-duobla-flua servilo: 1280x720 H264 kaj 640x360 MJpeg\n"
+msgstr "RTSP双流体服务器：1280x720 H264和640x360 MJPEG\n"
 
 #. type: Bullet: '* '
 #: index.md:51
@@ -222,23 +223,24 @@ msgstr "ftp服务器\n"
 msgid "Telnet-servilo\n"
 msgstr "Telnet服务器\n"
 
-#. type: Title ##
+#. type: Bullet: '* '
 #: index.md:69
+#, no-wrap
+#, fuzzy
+msgid "SSH-servilo kaj kliento\n"
+msgstr "SSH服务器和客户端\n"
+
+#. type: Title ##
+#: index.md:71
 #, fuzzy, no-wrap
 msgid "Kio ne funkcias en alternativa firmvaro:"
 msgstr "在备用固件中什么不起作用："
 
 #. type: Bullet: '* '
-#: index.md:72
+#: index.md:74
 #, fuzzy, no-wrap
 msgid "Vidaj parametroj\n"
 msgstr "视觉参数\n"
-
-#. type: Bullet: '* '
-#: index.md:74
-#, fuzzy, no-wrap
-msgid "sekundara videorivereto\n"
-msgstr "辅助视频流\n"
 
 #. type: Bullet: '* '
 #: index.md:76
@@ -291,128 +293,134 @@ msgstr "发送电子邮件_mqtt_\n"
 #. type: Bullet: '* '
 #: index.md:92
 #, fuzzy, no-wrap
-msgid "sendante retpoŝton_h264_\n"
-msgstr "发送电子邮件_h264_\n"
-
-#. type: Bullet: '* '
-#: index.md:94
-#, fuzzy, no-wrap
 msgid "ktp ...\n"
 msgstr "等...\n"
 
 #. type: Title ##
-#: index.md:96
+#: index.md:94
 #, fuzzy, no-wrap
 msgid "Kamera preparado"
 msgstr "相机准备"
 
 #. type: Bullet: '* '
-#: index.md:99 index.md:118
+#: index.md:97 index.md:116
 #, fuzzy, no-wrap
 msgid "Konekti la fotilon al via loka reto kaj ŝalti la fotilon.\n"
 msgstr "将相机连接到本地网络，然后打开相机电源。\n"
 
 #. type: Bullet: '* '
-#: index.md:101
+#: index.md:99
 #, fuzzy, no-wrap
 msgid "Trovu la IP-adreson de la fotilo.\n"
 msgstr "查找摄像机的IP地址。\n"
 
 #. type: Bullet: '* '
-#: index.md:103
+#: index.md:101
 #, fuzzy, no-wrap
 msgid "Konekti al la fotilo per URL _\"http://IP\"_ (uzanto _admin_, pasvorto _admin_)\n"
 msgstr "通过URL _\"http://IP\"_ (用户 _admin_，密码 _admin_)连接到摄像机\n"
 
 #. type: Bullet: '* '
-#: index.md:105
+#: index.md:103
 #, fuzzy, no-wrap
 msgid "en la langeto \"Aŭdio kaj video\", agordu la ĉefan rivereton al 720p, alklaku \"Konservu\".\n"
 msgstr "在选项卡 \"音频和视频\"中，将主流设置为720p，单击 \"保存\"。\n"
 
 #. type: Bullet: '* '
-#: index.md:107
+#: index.md:105
 #, fuzzy, no-wrap
 msgid "eble agordu la kablan reton en la langeto \"Reto\".\n"
 msgstr "您可以在选项卡 \"网络\"中设置电缆网络。\n"
 
 #. type: Title ##
-#: index.md:109
+#: index.md:107
 #, fuzzy, no-wrap
 msgid "Instalante Alternativan Firmware"
 msgstr "安装备用固件"
 
 #. type: Bullet: '* '
-#: index.md:112
+#: index.md:110
 #, fuzzy, no-wrap
 msgid "Kopiu ĉion en la dosierujo [ _karto_ ](https://github.com/jmichault/ipcam-100/tree/master/karto) ĉe la radiko de la karto microSD.\n"
 msgstr "将所有内容复制到microSD卡根目录下的 [ _karto_ ](https://github.com/jmichault/ipcam-100/tree/master/karto) 文件夹中。\n"
 
 #. type: Bullet: '* '
-#: index.md:114
+#: index.md:112
 #, fuzzy, no-wrap
 msgid "laŭvole agordi la reton ( _config/staticip.conf_ , _config/resolv.conf_ , _config/wpa_supplicant.conf_ )\n"
 msgstr "可选配置网络 ( _config/staticip.conf_ ， _config/resolv.conf_ ， _config/wpa_请求方.conf_ )\n"
 
 #. type: Bullet: '* '
-#: index.md:116
+#: index.md:114
 #, fuzzy, no-wrap
 msgid "Enmetu la karton microSD.\n"
 msgstr "插入microSD卡。\n"
 
 #. type: Bullet: '* '
-#: index.md:120
+#: index.md:118
 #, fuzzy, no-wrap
 msgid "Ensalutu ĉe la fotilo per `telnet IP 9527` (uzanto _root_, pasvorto _jco66688_).\n"
 msgstr "以 `telnet IP 9527` (用户 _root_，密码 _jco66688_)登录到摄像机。\n"
 
 #. type: Bullet: '* '
-#: index.md:122
+#: index.md:120
 #, fuzzy, no-wrap
 msgid "Premu `killall -9 auto_run.sh` por eviti fermi la konekton.\n"
 msgstr "按 `killall -9 auto_run.sh` 避免关闭连接。\n"
 
 #. type: Bullet: '* '
-#: index.md:124
+#: index.md:122
 #, fuzzy, no-wrap
 msgid "Faru `cd /opt/media/mmcblk0p1;./install.sh`\n"
 msgstr "Faru `cd /opt/media/mmcblk0p1;./install.sh`\n"
 
 #. type: Bullet: '* '
-#: index.md:126
+#: index.md:124
 #, fuzzy, no-wrap
 msgid "Vi povas konekti al la URL _\"https://IP\"_ (uzanto _admin_, pasvorto _jco66688_).\n"
 msgstr "您可以连接到URL _\"https://IP\"_ (用户 _admin_，密码 _jco66688_)。\n"
 
 #. type: Title ##
-#: index.md:128
+#: index.md:126
 #, fuzzy, no-wrap
 msgid "Malinstalanta Alternativan Firmware:"
 msgstr "卸载备用固件："
 
 #. type: Bullet: '* '
-#: index.md:131
+#: index.md:129
 #, fuzzy, no-wrap
 msgid "komencu la telnet-servon per la fotilo per la interreta interfaco.\n"
 msgstr "通过互联网接口用摄像机启动telnet服务。\n"
 
 #. type: Bullet: '* '
-#: index.md:133
+#: index.md:131
 #, fuzzy, no-wrap
 msgid "komencu la telnet-servon per la fotilo per la interreta interfaco. `telnet IP` \n"
 msgstr "通过互联网接口用摄像机启动telnet服务。 `telnet IP` \n"
 
 #. type: Bullet: '* '
-#: index.md:135
+#: index.md:133
 #, fuzzy, no-wrap
 msgid "komencu la telnet-servon per la fotilo per la interreta interfaco. `cd /opt/media/mmcblk0p1;./uninstall.sh;reboot`\n"
 msgstr "通过互联网接口用摄像机启动telnet服务。 `cd /opt/media/mmcblk0p1;./uninstall.sh;reboot`\n"
 
 #. type: Bullet: '* '
-#: index.md:138
+#: index.md:136
 #, fuzzy, no-wrap
 msgid "Vi ankaŭ povas simple forigi la karton microSD.\n"
 msgstr "您也可以简单地卸下microSD卡。\n"
+
+#, fuzzy
+#~ msgid "RTSP MJPEG-servilo\n"
+#~ msgstr "RTSP MJPEG服务器\n"
+
+#, fuzzy
+#~ msgid "sekundara videorivereto\n"
+#~ msgstr "辅助视频流\n"
+
+#, fuzzy
+#~ msgid "sendante retpoŝton_h264_\n"
+#~ msgstr "发送电子邮件_h264_\n"
 
 #~ msgid "fonto"
 #~ msgstr "auto"

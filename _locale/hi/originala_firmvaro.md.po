@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-03-20 12:59+0100\n"
+"POT-Creation-Date: 2021-03-22 23:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -54,57 +54,49 @@ msgstr "खुले बंदरगाह"
 
 #. type: Plain text
 #: originala_firmvaro.md:11
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "TCP: 80(http), 443(HTP ankaŭ!), 554(RTSP), 8004, 8006, 9527(Telnetd), 9999  \n"
 msgstr "टीसीपी: 80 (डिग्री 0001 डिग्री) HTTP (° 0002 डिग्री), 443 (डिग्री 0003 डिग्री) एचटीपी भी! (° 0004 डिग्री), 554 (000 0005 डिग्री) आरटीएसपी (डिग्री 0006 डिग्री), 8004, 8006, 9527 (डिग्री 0007 डिग्री) टेलिडीड (डिग्री 0008 डिग्री), 99 99 (डिग्री 000 9 डिग्री)  \n"
 
 #. type: Plain text
 #: originala_firmvaro.md:13
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "UDP: 67(DHCP), 3702, 8002, 39642\n"
 msgstr "यूडीपी: 67 (डिग्री 0001 डिग्री) डीएचसीपी (डिग्री 0002 डिग्री), 3702, 8002, 39642 (डिग्री 0003 डिग्री)\n"
 
 #. type: Plain text
 #: originala_firmvaro.md:14
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Haveno 80: HTTP  \n"
 msgstr "पोर्ट 80: HTTP  \n"
 
 #. type: Plain text
 #: originala_firmvaro.md:16
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "http: // ip: ensaluto: _admin:_, pasvorto: _admin_\n"
 msgstr "http: // आईपी: लॉगिन: (डिग्री डिग्री 0001 डिग्री), पासवर्ड: (डिग्री 0003 डिग्री) (डिग्री 0005 डिग्री)\n"
 
 #. type: Plain text
 #: originala_firmvaro.md:17
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Haveno 443: HTTP  \n"
 msgstr "पोर्ट 443: HTTP  \n"
 
 #. type: Plain text
 #: originala_firmvaro.md:19
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "http: // ip: 443: ensaluto: _admin:_, pasvorto: _admin_\n"
 msgstr "http: // आईपी: 443: लॉगिन: (डिग्री 0001 डिग्री), पासवर्ड: (° 0003 डिग्री) (डिग्री 0005 डिग्री)\n"
 
 #. type: Plain text
 #: originala_firmvaro.md:20
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Haveno 554: RTSP  \n"
 msgstr "पोर्ट 554: आरटीएसपी (डिग्री 0001 डिग्री)  \n"
 
 #. type: Bullet: '* '
 #: originala_firmvaro.md:22
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Ĉefa fluo: \n"
 msgstr "मुख्य वर्तमान: (° 0001 डिग्री) \n"
 
@@ -168,31 +160,29 @@ msgstr ""
 
 #. type: Plain text
 #: originala_firmvaro.md:47
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Haveno 9527: Telnet  \n"
 msgstr "पोर्ट 9527: टेलनेट (डिग्री 0001 डिग्री)  \n"
 
 #. type: Plain text
 #: originala_firmvaro.md:48
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "`telnetd IP 9527` : Ensalutu: _root_, pasvorto: _jco66688_, alirebla dum 5 minutoj, fermiĝis post.  \n"
 msgstr "`telnetd IP 9527` : लॉगिन: (° 0003 डिग्री), पासवर्ड: (डिग्री 0005 डिग्री), 5 मिनट के लिए सुलभ, के बाद बंद।  \n"
 
 #. type: Plain text
 #: originala_firmvaro.md:49
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Ne esti malkonektita post 5 minutoj: `killall -9 auto_run.sh`  \n"
 msgstr "5 मिनट के बाद डिस्कनेक्ट नहीं होना चाहिए: (° 0001 डिग्री) (° ° 0004 डिग्री)\n"
 
 #. type: Plain text
 #: originala_firmvaro.md:51
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Ĉesi JCO_server : \n"
-msgstr "JCO को रोकने के लिए_server : \n \n"
+msgstr ""
+"JCO को रोकने के लिए_server : \n"
+" \n"
 
 #. type: Fenced code block
 #: originala_firmvaro.md:53

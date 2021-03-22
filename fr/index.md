@@ -41,7 +41,7 @@ La documentation des APIs peut être consultée ici :
 ## Ce qui fonctionne dans le micrologiciel alternatif :
 
 * LAN et WLAN
-* Serveur RTSP MJPEG
+* Serveur RTSP double-flux : 1280x720 H264 et 640x360 MJPEG
 * Serveur HTTP
 * contrôle moteur
 * étalonnage du moteur
@@ -51,11 +51,11 @@ La documentation des APIs peut être consultée ici :
 * contrôle LED bleu et IR
 * Serveur ftp
 * Serveur telnet
+* Serveur et client ssh
 
 ## Ce qui ne fonctionne pas dans le micrologiciel alternatif:
 
 * Paramètres vidéo
-* flux vidéo secondaire
 * systeme audio
 * _OSD_
 * mise à jour du micrologiciel
@@ -64,7 +64,6 @@ La documentation des APIs peut être consultée ici :
 * _ir-cut_
 * envoi de courriel
 * _mqtt_
-* _h264_
 * etc ...
 
 ## Préparation de la caméra

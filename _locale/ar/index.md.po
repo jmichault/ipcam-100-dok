@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-03-20 13:00+0100\n"
+"POT-Creation-Date: 2021-03-22 23:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -164,9 +164,10 @@ msgstr "LAN و WLAN\n"
 
 #. type: Bullet: '* '
 #: index.md:49
-#, fuzzy, no-wrap
-msgid "RTSP MJPEG-servilo\n"
-msgstr "خادم RTSP MJPEG\n"
+#, no-wrap
+#, fuzzy
+msgid "RTSP-duobla-flua servilo: 1280x720 H264 kaj 640x360 MJpeg\n"
+msgstr "خادم RTSP-Double-Fluid: 1280x720 H264 و 640 × 360 MJPEG\n"
 
 #. type: Bullet: '* '
 #: index.md:51
@@ -222,23 +223,24 @@ msgstr "خادم بروتوكول نقل الملفات\n"
 msgid "Telnet-servilo\n"
 msgstr "خادم Telnet\n"
 
-#. type: Title ##
+#. type: Bullet: '* '
 #: index.md:69
+#, no-wrap
+#, fuzzy
+msgid "SSH-servilo kaj kliento\n"
+msgstr "خادم SSH والعميل\n"
+
+#. type: Title ##
+#: index.md:71
 #, fuzzy, no-wrap
 msgid "Kio ne funkcias en alternativa firmvaro:"
 msgstr "ما الذي لا يعمل في البرامج الثابتة البديلة:"
 
 #. type: Bullet: '* '
-#: index.md:72
+#: index.md:74
 #, fuzzy, no-wrap
 msgid "Vidaj parametroj\n"
 msgstr "المعلمات المرئية\n"
-
-#. type: Bullet: '* '
-#: index.md:74
-#, fuzzy, no-wrap
-msgid "sekundara videorivereto\n"
-msgstr "دفق الفيديو الثانوي\n"
 
 #. type: Bullet: '* '
 #: index.md:76
@@ -291,128 +293,134 @@ msgstr "إرسال بريد إلكتروني_mqtt_\n"
 #. type: Bullet: '* '
 #: index.md:92
 #, fuzzy, no-wrap
-msgid "sendante retpoŝton_h264_\n"
-msgstr "إرسال بريد إلكتروني_h264_\n"
-
-#. type: Bullet: '* '
-#: index.md:94
-#, fuzzy, no-wrap
 msgid "ktp ...\n"
 msgstr "إلخ ...\n"
 
 #. type: Title ##
-#: index.md:96
+#: index.md:94
 #, fuzzy, no-wrap
 msgid "Kamera preparado"
 msgstr "إعداد الكاميرا"
 
 #. type: Bullet: '* '
-#: index.md:99 index.md:118
+#: index.md:97 index.md:116
 #, fuzzy, no-wrap
 msgid "Konekti la fotilon al via loka reto kaj ŝalti la fotilon.\n"
 msgstr "قم بتوصيل الكاميرا بشبكتك المحلية وقم بتشغيل الكاميرا.\n"
 
 #. type: Bullet: '* '
-#: index.md:101
+#: index.md:99
 #, fuzzy, no-wrap
 msgid "Trovu la IP-adreson de la fotilo.\n"
 msgstr "ابحث عن عنوان IP الخاص بالكاميرا.\n"
 
 #. type: Bullet: '* '
-#: index.md:103
+#: index.md:101
 #, fuzzy, no-wrap
 msgid "Konekti al la fotilo per URL _\"http://IP\"_ (uzanto _admin_, pasvorto _admin_)\n"
 msgstr "الاتصال بالكاميرا عن طريق URL _\"http://IP\"_ (المستخدم _admin_، كلمة المرور _admin_)\n"
 
 #. type: Bullet: '* '
-#: index.md:105
+#: index.md:103
 #, fuzzy, no-wrap
 msgid "en la langeto \"Aŭdio kaj video\", agordu la ĉefan rivereton al 720p, alklaku \"Konservu\".\n"
 msgstr "في علامة التبويب \"الصوت والفيديو\"، اضبط الدفق الرئيسي على 720 بكسل ، انقر فوق \"حفظ\".\n"
 
 #. type: Bullet: '* '
-#: index.md:107
+#: index.md:105
 #, fuzzy, no-wrap
 msgid "eble agordu la kablan reton en la langeto \"Reto\".\n"
 msgstr "قد تتمكن من ضبط شبكة الكبل في علامة التبويب \"الشبكة\".\n"
 
 #. type: Title ##
-#: index.md:109
+#: index.md:107
 #, fuzzy, no-wrap
 msgid "Instalante Alternativan Firmware"
 msgstr "تثبيت البرامج الثابتة البديلة"
 
 #. type: Bullet: '* '
-#: index.md:112
+#: index.md:110
 #, fuzzy, no-wrap
 msgid "Kopiu ĉion en la dosierujo [ _karto_ ](https://github.com/jmichault/ipcam-100/tree/master/karto) ĉe la radiko de la karto microSD.\n"
 msgstr "انسخ كل شيء إلى المجلد [ _karto_ ](https://github.com/jmichault/ipcam-100/tree/master/karto) في جذر بطاقة microSD.\n"
 
 #. type: Bullet: '* '
-#: index.md:114
+#: index.md:112
 #, fuzzy, no-wrap
 msgid "laŭvole agordi la reton ( _config/staticip.conf_ , _config/resolv.conf_ , _config/wpa_supplicant.conf_ )\n"
 msgstr "قم بتكوين الشبكة اختياريًا ( _config/staticip.conf_ ، _config/resolv.conf_ ، _config/wpa_supplicant.conf_ )\n"
 
 #. type: Bullet: '* '
-#: index.md:116
+#: index.md:114
 #, fuzzy, no-wrap
 msgid "Enmetu la karton microSD.\n"
 msgstr "أدخل بطاقة microSD.\n"
 
 #. type: Bullet: '* '
-#: index.md:120
+#: index.md:118
 #, fuzzy, no-wrap
 msgid "Ensalutu ĉe la fotilo per `telnet IP 9527` (uzanto _root_, pasvorto _jco66688_).\n"
 msgstr "قم بتسجيل الدخول إلى الكاميرا باستخدام `telnet IP 9527` (مستخدم _root_، كلمة مرور _jco66688_).\n"
 
 #. type: Bullet: '* '
-#: index.md:122
+#: index.md:120
 #, fuzzy, no-wrap
 msgid "Premu `killall -9 auto_run.sh` por eviti fermi la konekton.\n"
 msgstr "اضغط `killall -9 auto_run.sh` لتجنب إغلاق الاتصال.\n"
 
 #. type: Bullet: '* '
-#: index.md:124
+#: index.md:122
 #, fuzzy, no-wrap
 msgid "Faru `cd /opt/media/mmcblk0p1;./install.sh`\n"
 msgstr "فارو `cd /opt/media/mmcblk0p1;./install.sh`\n"
 
 #. type: Bullet: '* '
-#: index.md:126
+#: index.md:124
 #, fuzzy, no-wrap
 msgid "Vi povas konekti al la URL _\"https://IP\"_ (uzanto _admin_, pasvorto _jco66688_).\n"
 msgstr "يمكنك الاتصال بـ URL _\"https://IP\"_ (المستخدم _admin_، كلمة المرور _jco66688_).\n"
 
 #. type: Title ##
-#: index.md:128
+#: index.md:126
 #, fuzzy, no-wrap
 msgid "Malinstalanta Alternativan Firmware:"
 msgstr "إلغاء تثبيت البرامج الثابتة البديلة:"
 
 #. type: Bullet: '* '
-#: index.md:131
+#: index.md:129
 #, fuzzy, no-wrap
 msgid "komencu la telnet-servon per la fotilo per la interreta interfaco.\n"
 msgstr "ابدأ خدمة telnet بالكاميرا عبر واجهة الإنترنت.\n"
 
 #. type: Bullet: '* '
-#: index.md:133
+#: index.md:131
 #, fuzzy, no-wrap
 msgid "komencu la telnet-servon per la fotilo per la interreta interfaco. `telnet IP` \n"
 msgstr "ابدأ خدمة telnet بالكاميرا عبر واجهة الإنترنت. `telnet IP` \n"
 
 #. type: Bullet: '* '
-#: index.md:135
+#: index.md:133
 #, fuzzy, no-wrap
 msgid "komencu la telnet-servon per la fotilo per la interreta interfaco. `cd /opt/media/mmcblk0p1;./uninstall.sh;reboot`\n"
 msgstr "ابدأ خدمة telnet بالكاميرا عبر واجهة الإنترنت. `cd /opt/media/mmcblk0p1;./uninstall.sh;reboot`\n"
 
 #. type: Bullet: '* '
-#: index.md:138
+#: index.md:136
 #, fuzzy, no-wrap
 msgid "Vi ankaŭ povas simple forigi la karton microSD.\n"
 msgstr "يمكنك أيضًا إزالة بطاقة microSD ببساطة.\n"
+
+#, fuzzy
+#~ msgid "RTSP MJPEG-servilo\n"
+#~ msgstr "خادم RTSP MJPEG\n"
+
+#, fuzzy
+#~ msgid "sekundara videorivereto\n"
+#~ msgstr "دفق الفيديو الثانوي\n"
+
+#, fuzzy
+#~ msgid "sendante retpoŝton_h264_\n"
+#~ msgstr "إرسال بريد إلكتروني_h264_\n"
 
 #~ msgid "fonto"
 #~ msgstr "auto"

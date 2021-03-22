@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-03-20 13:00+0100\n"
+"POT-Creation-Date: 2021-03-22 23:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -164,9 +164,10 @@ msgstr "LANおよびWLAN\n"
 
 #. type: Bullet: '* '
 #: index.md:49
-#, fuzzy, no-wrap
-msgid "RTSP MJPEG-servilo\n"
-msgstr "RTSP MJPEGサーバー\n"
+#, no-wrap
+#, fuzzy
+msgid "RTSP-duobla-flua servilo: 1280x720 H264 kaj 640x360 MJpeg\n"
+msgstr "RTSP二重流体サーバ：1280×720 H 264および640×360 MJPEG\n"
 
 #. type: Bullet: '* '
 #: index.md:51
@@ -222,23 +223,24 @@ msgstr "FTPサーバー\n"
 msgid "Telnet-servilo\n"
 msgstr "Telnetサーバー\n"
 
-#. type: Title ##
+#. type: Bullet: '* '
 #: index.md:69
+#, no-wrap
+#, fuzzy
+msgid "SSH-servilo kaj kliento\n"
+msgstr "SSHサーバーとクライアント\n"
+
+#. type: Title ##
+#: index.md:71
 #, fuzzy, no-wrap
 msgid "Kio ne funkcias en alternativa firmvaro:"
 msgstr "代替ファームウェアで機能しないもの："
 
 #. type: Bullet: '* '
-#: index.md:72
+#: index.md:74
 #, fuzzy, no-wrap
 msgid "Vidaj parametroj\n"
 msgstr "視覚的パラメータ\n"
-
-#. type: Bullet: '* '
-#: index.md:74
-#, fuzzy, no-wrap
-msgid "sekundara videorivereto\n"
-msgstr "二次ビデオストリーム\n"
 
 #. type: Bullet: '* '
 #: index.md:76
@@ -291,128 +293,134 @@ msgstr "メールの送信_mqtt_\n"
 #. type: Bullet: '* '
 #: index.md:92
 #, fuzzy, no-wrap
-msgid "sendante retpoŝton_h264_\n"
-msgstr "メールの送信_h264_\n"
-
-#. type: Bullet: '* '
-#: index.md:94
-#, fuzzy, no-wrap
 msgid "ktp ...\n"
 msgstr "など...\n"
 
 #. type: Title ##
-#: index.md:96
+#: index.md:94
 #, fuzzy, no-wrap
 msgid "Kamera preparado"
 msgstr "カメラの準備"
 
 #. type: Bullet: '* '
-#: index.md:99 index.md:118
+#: index.md:97 index.md:116
 #, fuzzy, no-wrap
 msgid "Konekti la fotilon al via loka reto kaj ŝalti la fotilon.\n"
 msgstr "カメラをローカルネットワークに接続し、カメラの電源を入れます。\n"
 
 #. type: Bullet: '* '
-#: index.md:101
+#: index.md:99
 #, fuzzy, no-wrap
 msgid "Trovu la IP-adreson de la fotilo.\n"
 msgstr "カメラのIPアドレスを見つけます。\n"
 
 #. type: Bullet: '* '
-#: index.md:103
+#: index.md:101
 #, fuzzy, no-wrap
 msgid "Konekti al la fotilo per URL _\"http://IP\"_ (uzanto _admin_, pasvorto _admin_)\n"
 msgstr "URL _\"http://IP\"_ (ユーザー _admin_、パスワード _admin_)でカメラに接続します\n"
 
 #. type: Bullet: '* '
-#: index.md:105
+#: index.md:103
 #, fuzzy, no-wrap
 msgid "en la langeto \"Aŭdio kaj video\", agordu la ĉefan rivereton al 720p, alklaku \"Konservu\".\n"
 msgstr "タブ \"オーディオとビデオ\"で、メインストリームを720pに設定し、 \"保存\"をクリックします。\n"
 
 #. type: Bullet: '* '
-#: index.md:107
+#: index.md:105
 #, fuzzy, no-wrap
 msgid "eble agordu la kablan reton en la langeto \"Reto\".\n"
 msgstr "タブ \"ネットワーク\"でケーブルネットワークを設定できる場合があります。\n"
 
 #. type: Title ##
-#: index.md:109
+#: index.md:107
 #, fuzzy, no-wrap
 msgid "Instalante Alternativan Firmware"
 msgstr "代替ファームウェアのインストール"
 
 #. type: Bullet: '* '
-#: index.md:112
+#: index.md:110
 #, fuzzy, no-wrap
 msgid "Kopiu ĉion en la dosierujo [ _karto_ ](https://github.com/jmichault/ipcam-100/tree/master/karto) ĉe la radiko de la karto microSD.\n"
 msgstr "microSDカードのルートにある [ _karto_ ](https://github.com/jmichault/ipcam-100/tree/master/karto) フォルダーにすべてをコピーします。\n"
 
 #. type: Bullet: '* '
-#: index.md:114
+#: index.md:112
 #, fuzzy, no-wrap
 msgid "laŭvole agordi la reton ( _config/staticip.conf_ , _config/resolv.conf_ , _config/wpa_supplicant.conf_ )\n"
 msgstr "オプションでネットワークを構成します ( _config/staticip.conf_ 、 _config/resolv.conf_ 、 _config/wpa_supplicant.conf_ )\n"
 
 #. type: Bullet: '* '
-#: index.md:116
+#: index.md:114
 #, fuzzy, no-wrap
 msgid "Enmetu la karton microSD.\n"
 msgstr "microSDカードを挿入します。\n"
 
 #. type: Bullet: '* '
-#: index.md:120
+#: index.md:118
 #, fuzzy, no-wrap
 msgid "Ensalutu ĉe la fotilo per `telnet IP 9527` (uzanto _root_, pasvorto _jco66688_).\n"
 msgstr " `telnet IP 9527` (ユーザー _root_、パスワード _jco66688_)でカメラにログインします。\n"
 
 #. type: Bullet: '* '
-#: index.md:122
+#: index.md:120
 #, fuzzy, no-wrap
 msgid "Premu `killall -9 auto_run.sh` por eviti fermi la konekton.\n"
 msgstr "接続が閉じないようにするには、 `killall -9 auto_run.sh` を押します。\n"
 
 #. type: Bullet: '* '
-#: index.md:124
+#: index.md:122
 #, fuzzy, no-wrap
 msgid "Faru `cd /opt/media/mmcblk0p1;./install.sh`\n"
 msgstr "ファル `cd /opt/media/mmcblk0p1;./install.sh`\n"
 
 #. type: Bullet: '* '
-#: index.md:126
+#: index.md:124
 #, fuzzy, no-wrap
 msgid "Vi povas konekti al la URL _\"https://IP\"_ (uzanto _admin_, pasvorto _jco66688_).\n"
 msgstr "URL _\"https://IP\"_ (ユーザー _admin_、パスワード _jco66688_)に接続できます。\n"
 
 #. type: Title ##
-#: index.md:128
+#: index.md:126
 #, fuzzy, no-wrap
 msgid "Malinstalanta Alternativan Firmware:"
 msgstr "代替ファームウェアのアンインストール："
 
 #. type: Bullet: '* '
-#: index.md:131
+#: index.md:129
 #, fuzzy, no-wrap
 msgid "komencu la telnet-servon per la fotilo per la interreta interfaco.\n"
 msgstr "インターネットインターフェイスを介してカメラでtelnetサービスを開始します。\n"
 
 #. type: Bullet: '* '
-#: index.md:133
+#: index.md:131
 #, fuzzy, no-wrap
 msgid "komencu la telnet-servon per la fotilo per la interreta interfaco. `telnet IP` \n"
 msgstr "インターネットインターフェイスを介してカメラでtelnetサービスを開始します。 `telnet IP` \n"
 
 #. type: Bullet: '* '
-#: index.md:135
+#: index.md:133
 #, fuzzy, no-wrap
 msgid "komencu la telnet-servon per la fotilo per la interreta interfaco. `cd /opt/media/mmcblk0p1;./uninstall.sh;reboot`\n"
 msgstr "インターネットインターフェイスを介してカメラでtelnetサービスを開始します。 `cd /opt/media/mmcblk0p1;./uninstall.sh;reboot`\n"
 
 #. type: Bullet: '* '
-#: index.md:138
+#: index.md:136
 #, fuzzy, no-wrap
 msgid "Vi ankaŭ povas simple forigi la karton microSD.\n"
 msgstr "microSDカードを取り外すこともできます。\n"
+
+#, fuzzy
+#~ msgid "RTSP MJPEG-servilo\n"
+#~ msgstr "RTSP MJPEGサーバー\n"
+
+#, fuzzy
+#~ msgid "sekundara videorivereto\n"
+#~ msgstr "二次ビデオストリーム\n"
+
+#, fuzzy
+#~ msgid "sendante retpoŝton_h264_\n"
+#~ msgstr "メールの送信_h264_\n"
 
 #~ msgid "fonto"
 #~ msgstr "auto"

@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-03-04 16:44+0100\n"
+"POT-Creation-Date: 2021-03-22 23:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,69 +17,67 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. type: YAML Front Matter: lang
-#: ./index.md:1
+#: index.md:1
 #, no-wrap
 msgid "fr"
 msgstr ""
 
 #. type: YAML Front Matter: lang-niv
-#: ./index.md:1
+#: index.md:1
 #, no-wrap
 msgid "fonto"
 msgstr ""
 
 #. type: YAML Front Matter: lang-ref
-#: ./index.md:1
+#: index.md:1
 #, no-wrap
 msgid "000-indekso"
 msgstr ""
 
 #. type: YAML Front Matter: layout
-#: ./index.md:1
+#: index.md:1
 #, no-wrap
 msgid "page"
 msgstr ""
 
 #. type: YAML Front Matter: title
-#: ./index.md:1
+#: index.md:1
 #, no-wrap
 msgid "Présentation"
 msgstr ""
 
 #. type: Plain text
-#: ./index.md:10
-#, markdown-text, no-wrap
-msgid ""
-"Le but de ce projet est de créer un micrologiciel alternatif pour cette "
-"caméra :\n"
+#: index.md:10
+#, no-wrap
+msgid "Le but de ce projet est de créer un micrologiciel alternatif pour cette caméra :\n"
 msgstr ""
 
 #. type: Plain text
-#: ./index.md:11
-#, markdown-text, no-wrap
+#: index.md:11
+#, no-wrap
 msgid "marque = _WIFI CARAM_  \n"
 msgstr ""
 
 #. type: Plain text
-#: ./index.md:12
-#, markdown-text, no-wrap
+#: index.md:12
+#, no-wrap
 msgid "modèle : _WF-HD820-ZS_  \n"
 msgstr ""
 
 #. type: Plain text
-#: ./index.md:14
-#, markdown-text, no-wrap
+#: index.md:14
+#, no-wrap
 msgid "résolution : _1080P_\n"
 msgstr ""
 
 #. type: Plain text
-#: ./index.md:16
-#, markdown-text, no-wrap
+#: index.md:16
+#, no-wrap
 msgid "Informations affichées dans l'interface web :\n"
 msgstr ""
 
 #. type: Fenced code block
-#: ./index.md:16
+#: index.md:16
 #, no-wrap
 msgid ""
 "DeviceName: _INGENIC-V01_\n"
@@ -91,332 +89,308 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: ./index.md:27
-#, markdown-text, no-wrap
+#: index.md:27
+#, no-wrap
 msgid ""
 "processeur : _ingenic T21_\n"
 "capteur vidéo : _GC2053_\n"
 msgstr ""
 
 #. type: Plain text
-#: ./index.md:33
-#, markdown-text, no-wrap
+#: index.md:33
+#, no-wrap
 msgid ""
-"Beaucoup de travail a été fait pour les caméras équipées d'un processeur "
-"_ingenic T20_.\n"
-"* micrologiciel modifié: "
-"<https://github.com/EliasKotlyar/Xiaomi-Dafang-Hacks>\n"
+"Beaucoup de travail a été fait pour les caméras équipées d'un processeur _ingenic T20_.\n"
+"* micrologiciel modifié: <https://github.com/EliasKotlyar/Xiaomi-Dafang-Hacks>\n"
 "* sources du micrologiciel modifié: <https://github.com/Dafang-Hacks/Main>\n"
 "* autre micrologiciel <https://github.com/openmiko/openmiko>\n"
-"* lancement de programmes sans changer le micrologiciel : "
-"<https://github.com/ThatUsernameAlreadyExist/JCO-PM203-Fisheye-Ingenic-T20-P2P-camera-hacks>\n"
+"* lancement de programmes sans changer le micrologiciel : <https://github.com/ThatUsernameAlreadyExist/JCO-PM203-Fisheye-Ingenic-T20-P2P-camera-hacks>\n"
 msgstr ""
 
 #. type: Plain text
-#: ./index.md:34
-#, markdown-text, no-wrap
+#: index.md:34
+#, no-wrap
 msgid "La documentation des APIs peut être consultée ici :  \n"
 msgstr ""
 
 #. type: Bullet: '* '
-#: ./index.md:38
-#, markdown-text, no-wrap
+#: index.md:38
+#, no-wrap
 msgid "[version originale en chinois](../zh/includes.zh/html/)\n"
 msgstr ""
 
 #. type: Bullet: '* '
-#: ./index.md:38
-#, markdown-text, no-wrap
+#: index.md:38
+#, no-wrap
 msgid "[version française traduite par google](../fr/includes.fr/html/)\n"
 msgstr ""
 
 #. type: Bullet: '* '
-#: ./index.md:38
-#, markdown-text, no-wrap
+#: index.md:38
+#, no-wrap
 msgid "[version anglaise traduite par google](../en/includes.en/html/)\n"
 msgstr ""
 
 #. type: Title #
-#: ./index.md:39
-#, markdown-text, no-wrap
+#: index.md:39
+#, no-wrap
 msgid "Micrologiciel alternatif"
 msgstr ""
 
 #. type: Title ##
-#: ./index.md:41
-#, markdown-text, no-wrap
+#: index.md:41
+#, no-wrap
 msgid "Ce qui fonctionne dans le micrologiciel alternatif :"
 msgstr ""
 
 #. type: Bullet: '* '
-#: ./index.md:54
-#, markdown-text, no-wrap
+#: index.md:55
+#, no-wrap
 msgid "LAN et WLAN\n"
 msgstr ""
 
 #. type: Bullet: '* '
-#: ./index.md:54
-#, markdown-text, no-wrap
-msgid "Serveur RTSP MJPEG\n"
+#: index.md:55
+#, no-wrap
+msgid "Serveur RTSP double-flux : 1280x720 H264 et 640x360 MJPEG\n"
 msgstr ""
 
 #. type: Bullet: '* '
-#: ./index.md:54
-#, markdown-text, no-wrap
+#: index.md:55
+#, no-wrap
 msgid "Serveur HTTP\n"
 msgstr ""
 
 #. type: Bullet: '* '
-#: ./index.md:54
-#, markdown-text, no-wrap
+#: index.md:55
+#, no-wrap
 msgid "contrôle moteur\n"
 msgstr ""
 
 #. type: Bullet: '* '
-#: ./index.md:54
-#, markdown-text, no-wrap
+#: index.md:55
+#, no-wrap
 msgid "étalonnage du moteur\n"
 msgstr ""
 
 #. type: Bullet: '* '
-#: ./index.md:54
-#, markdown-text, no-wrap
+#: index.md:55
+#, no-wrap
 msgid "Paramètres PTZ\n"
 msgstr ""
 
 #. type: Bullet: '* '
-#: ./index.md:54
-#, markdown-text, no-wrap
+#: index.md:55
+#, no-wrap
 msgid "Client NTP\n"
 msgstr ""
 
 #. type: Bullet: '* '
-#: ./index.md:54
-#, markdown-text, no-wrap
+#: index.md:55
+#, no-wrap
 msgid "changement de mot de passe pour l'accès http\n"
 msgstr ""
 
 #. type: Bullet: '* '
-#: ./index.md:54
-#, markdown-text, no-wrap
+#: index.md:55
+#, no-wrap
 msgid "contrôle LED bleu et IR\n"
 msgstr ""
 
 #. type: Bullet: '* '
-#: ./index.md:54
-#, markdown-text, no-wrap
+#: index.md:55
+#, no-wrap
 msgid "Serveur ftp\n"
 msgstr ""
 
 #. type: Bullet: '* '
-#: ./index.md:54
-#, markdown-text, no-wrap
+#: index.md:55
+#, no-wrap
 msgid "Serveur telnet\n"
 msgstr ""
 
+#. type: Bullet: '* '
+#: index.md:55
+#, no-wrap
+msgid "Serveur et client ssh\n"
+msgstr ""
+
 #. type: Title ##
-#: ./index.md:55
-#, markdown-text, no-wrap
+#: index.md:56
+#, no-wrap
 msgid "Ce qui ne fonctionne pas dans le micrologiciel alternatif:"
 msgstr ""
 
 #. type: Bullet: '* '
-#: ./index.md:69
-#, markdown-text, no-wrap
+#: index.md:68
+#, no-wrap
 msgid "Paramètres vidéo\n"
 msgstr ""
 
 #. type: Bullet: '* '
-#: ./index.md:69
-#, markdown-text, no-wrap
-msgid "flux vidéo secondaire\n"
-msgstr ""
-
-#. type: Bullet: '* '
-#: ./index.md:69
-#, markdown-text, no-wrap
+#: index.md:68
+#, no-wrap
 msgid "systeme audio\n"
 msgstr ""
 
 #. type: Bullet: '* '
-#: ./index.md:69
-#, markdown-text, no-wrap
+#: index.md:68
+#, no-wrap
 msgid "_OSD_\n"
 msgstr ""
 
 #. type: Bullet: '* '
-#: ./index.md:69
-#, markdown-text, no-wrap
+#: index.md:68
+#, no-wrap
 msgid "mise à jour du micrologiciel\n"
 msgstr ""
 
 #. type: Bullet: '* '
-#: ./index.md:69
-#, markdown-text, no-wrap
+#: index.md:68
+#, no-wrap
 msgid "détection nocturne automatique\n"
 msgstr ""
 
 #. type: Bullet: '* '
-#: ./index.md:69
-#, markdown-text, no-wrap
+#: index.md:68
+#, no-wrap
 msgid "détection de mouvement\n"
 msgstr ""
 
 #. type: Bullet: '* '
-#: ./index.md:69
-#, markdown-text, no-wrap
+#: index.md:68
+#, no-wrap
 msgid "_ir-cut_\n"
 msgstr ""
 
 #. type: Bullet: '* '
-#: ./index.md:69
-#, markdown-text, no-wrap
+#: index.md:68
+#, no-wrap
 msgid "envoi de courriel\n"
 msgstr ""
 
 #. type: Bullet: '* '
-#: ./index.md:69
-#, markdown-text, no-wrap
+#: index.md:68
+#, no-wrap
 msgid "_mqtt_\n"
 msgstr ""
 
 #. type: Bullet: '* '
-#: ./index.md:69
-#, markdown-text, no-wrap
-msgid "_h264_\n"
-msgstr ""
-
-#. type: Bullet: '* '
-#: ./index.md:69
-#, markdown-text, no-wrap
+#: index.md:68
+#, no-wrap
 msgid "etc ...\n"
 msgstr ""
 
 #. type: Title ##
-#: ./index.md:70
-#, markdown-text, no-wrap
+#: index.md:69
+#, no-wrap
 msgid "Préparation de la caméra"
 msgstr ""
 
 #. type: Bullet: '* '
-#: ./index.md:77 ./index.md:88
-#, markdown-text, no-wrap
+#: index.md:76 index.md:87
+#, no-wrap
 msgid "Connectez la caméra à votre réseau local et allumez la caméra.\n"
 msgstr ""
 
 #. type: Bullet: '* '
-#: ./index.md:77
-#, markdown-text, no-wrap
+#: index.md:76
+#, no-wrap
 msgid "Trouvez l'adresse IP de la caméra.\n"
 msgstr ""
 
 #. type: Bullet: '* '
-#: ./index.md:77
-#, markdown-text, no-wrap
-msgid ""
-"Connectez-vous à la caméra via l'URL _\"http://IP\"_ (utilisateur _admin_, "
-"mot de passe _admin_)\n"
+#: index.md:76
+#, no-wrap
+msgid "Connectez-vous à la caméra via l'URL _\"http://IP\"_ (utilisateur _admin_, mot de passe _admin_)\n"
 msgstr ""
 
 #. type: Bullet: '* '
-#: ./index.md:77
-#, markdown-text, no-wrap
-msgid ""
-"dans l'onglet \"Audio et vidéo\", réglez le flux principal sur 720p, cliquez "
-"sur \"Enregistrer\".\n"
+#: index.md:76
+#, no-wrap
+msgid "dans l'onglet \"Audio et vidéo\", réglez le flux principal sur 720p, cliquez sur \"Enregistrer\".\n"
 msgstr ""
 
 #. type: Bullet: '* '
-#: ./index.md:77
-#, markdown-text, no-wrap
+#: index.md:76
+#, no-wrap
 msgid "éventuellement configurer le réseau filaire dans l'onglet \"Réseau\".\n"
 msgstr ""
 
 #. type: Title ##
-#: ./index.md:78
-#, markdown-text, no-wrap
+#: index.md:77
+#, no-wrap
 msgid "Installation du micrologiciel alternatif"
 msgstr ""
 
 #. type: Bullet: '* '
-#: ./index.md:88
-#, markdown-text, no-wrap
-msgid ""
-"Copiez tout ce qui se trouve dans le dossier [ _karto_ "
-"](https://github.com/jmichault/ipcam-100/tree/master/karto) à la racine de "
-"la carte microSD.\n"
+#: index.md:87
+#, no-wrap
+msgid "Copiez tout ce qui se trouve dans le dossier [ _karto_ ](https://github.com/jmichault/ipcam-100/tree/master/karto) à la racine de la carte microSD.\n"
 msgstr ""
 
 #. type: Bullet: '* '
-#: ./index.md:88
-#, markdown-text, no-wrap
-msgid ""
-"éventuellement configurez le réseau ( _config/staticip.conf_ , "
-"_config/resolv.conf_ , _config/wpa_supplicant.conf_ )\n"
+#: index.md:87
+#, no-wrap
+msgid "éventuellement configurez le réseau ( _config/staticip.conf_ , _config/resolv.conf_ , _config/wpa_supplicant.conf_ )\n"
 msgstr ""
 
 #. type: Bullet: '* '
-#: ./index.md:88
-#, markdown-text, no-wrap
+#: index.md:87
+#, no-wrap
 msgid "Insérez la carte microSD.\n"
 msgstr ""
 
 #. type: Bullet: '* '
-#: ./index.md:88
-#, markdown-text, no-wrap
-msgid ""
-"Connectez-vous à la caméra via `telnet IP 9527` (utilisateur _root_, mot de "
-"passe _jco66688_).\n"
+#: index.md:87
+#, no-wrap
+msgid "Connectez-vous à la caméra via `telnet IP 9527` (utilisateur _root_, mot de passe _jco66688_).\n"
 msgstr ""
 
 #. type: Bullet: '* '
-#: ./index.md:88
-#, markdown-text, no-wrap
+#: index.md:87
+#, no-wrap
 msgid "Faites `killall -9 auto_run.sh` pour éviter de fermer la connexion.\n"
 msgstr ""
 
 #. type: Bullet: '* '
-#: ./index.md:88
-#, markdown-text, no-wrap
+#: index.md:87
+#, no-wrap
 msgid "Faites `cd /opt/media/mmcblk0p1;./install.sh`\n"
 msgstr ""
 
 #. type: Bullet: '* '
-#: ./index.md:88
-#, markdown-text, no-wrap
-msgid ""
-"Vous pouvez vous connecter à l'URL _\"https://IP\"_ (utilisateur _admin_, "
-"mot de passe _jco66688_).\n"
+#: index.md:87
+#, no-wrap
+msgid "Vous pouvez vous connecter à l'URL _\"https://IP\"_ (utilisateur _admin_, mot de passe _jco66688_).\n"
 msgstr ""
 
 #. type: Title ##
-#: ./index.md:89
-#, markdown-text, no-wrap
+#: index.md:88
+#, no-wrap
 msgid "Désinstallation du micrologiciel alternatif:"
 msgstr ""
 
 #. type: Bullet: '* '
-#: ./index.md:94
-#, markdown-text, no-wrap
+#: index.md:93
+#, no-wrap
 msgid "lancez le service telnet sur la caméra par l'interface web.\n"
 msgstr ""
 
 #. type: Bullet: '* '
-#: ./index.md:94
-#, markdown-text, no-wrap
-msgid ""
-"Connectez-vous à la caméra via `telnet IP` (utilisateur _root_, mot de passe "
-"_ismart12_).\n"
+#: index.md:93
+#, no-wrap
+msgid "Connectez-vous à la caméra via `telnet IP` (utilisateur _root_, mot de passe _ismart12_).\n"
 msgstr ""
 
 #. type: Bullet: '* '
-#: ./index.md:94
-#, markdown-text, no-wrap
+#: index.md:93
+#, no-wrap
 msgid "Faites `cd /opt/media/mmcblk0p1;./uninstall.sh;reboot`\n"
 msgstr ""
 
 #. type: Bullet: '* '
-#: ./index.md:95
-#, markdown-text, no-wrap
+#: index.md:94
+#, no-wrap
 msgid "Vous pouvez aussi simplement retirer la carte microSD.\n"
 msgstr ""

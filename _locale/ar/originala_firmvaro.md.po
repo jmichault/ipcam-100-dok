@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-03-20 12:59+0100\n"
+"POT-Creation-Date: 2021-03-22 23:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -54,57 +54,49 @@ msgstr "منافذ مفتوحة"
 
 #. type: Plain text
 #: originala_firmvaro.md:11
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "TCP: 80(http), 443(HTP ankaŭ!), 554(RTSP), 8004, 8006, 9527(Telnetd), 9999  \n"
 msgstr "TCP: 80(http)، 443(HTP أيضا!)، 554(RTSP)، 8004، 8006، 9527 (° 7 ° 7 ° 7 ° 7 ° شرعة)، 9999  \n"
 
 #. type: Plain text
 #: originala_firmvaro.md:13
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "UDP: 67(DHCP), 3702, 8002, 39642\n"
 msgstr "UDP: 67(DHCP)، 3702، 8002، 39642 (° 3 ° 3\n"
 
 #. type: Plain text
 #: originala_firmvaro.md:14
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Haveno 80: HTTP  \n"
 msgstr "ميناء 80: http  \n"
 
 #. type: Plain text
 #: originala_firmvaro.md:16
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "http: // ip: ensaluto: _admin:_, pasvorto: _admin_\n"
 msgstr "http: // ip: تسجيل الدخول: _admin:_، كلمة المرور: _admin_\n"
 
 #. type: Plain text
 #: originala_firmvaro.md:17
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Haveno 443: HTTP  \n"
 msgstr "ميناء 443: http  \n"
 
 #. type: Plain text
 #: originala_firmvaro.md:19
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "http: // ip: 443: ensaluto: _admin:_, pasvorto: _admin_\n"
 msgstr "http: // ip: 443: تسجيل الدخول: _admin:_، كلمة المرور: _admin_\n"
 
 #. type: Plain text
 #: originala_firmvaro.md:20
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Haveno 554: RTSP  \n"
 msgstr "ميناء 554: RTSP  \n"
 
 #. type: Bullet: '* '
 #: originala_firmvaro.md:22
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Ĉefa fluo: \n"
 msgstr "الحالي الحالي: \n"
 
@@ -168,31 +160,29 @@ msgstr ""
 
 #. type: Plain text
 #: originala_firmvaro.md:47
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Haveno 9527: Telnet  \n"
 msgstr "ميناء 9527: Telnet  \n"
 
 #. type: Plain text
 #: originala_firmvaro.md:48
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "`telnetd IP 9527` : Ensalutu: _root_, pasvorto: _jco66688_, alirebla dum 5 minutoj, fermiĝis post.  \n"
 msgstr "`telnetd IP 9527` : تسجيل الدخول: _root_، كلمة المرور: _jco66688_، يمكن الوصول إليها لمدة 5 دقائق، مغلقة بعد.  \n"
 
 #. type: Plain text
 #: originala_firmvaro.md:49
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Ne esti malkonektita post 5 minutoj: `killall -9 auto_run.sh`  \n"
 msgstr "لا يتم قطع اتصالها بعد 5 دقائق: `killall -9 auto_run.sh`  (° 4 ° 4\n"
 
 #. type: Plain text
 #: originala_firmvaro.md:51
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Ĉesi JCO_server : \n"
-msgstr "لوقف JCO_server : \n \n"
+msgstr ""
+"لوقف JCO_server : \n"
+" \n"
 
 #. type: Fenced code block
 #: originala_firmvaro.md:53

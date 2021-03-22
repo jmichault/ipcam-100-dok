@@ -49,7 +49,7 @@ A documentação da API pode ser vista aqui:
 * LAN e WLAN
 
 
-* Servidor RTSP MJPEG
+* RTSP-Double-Fluid Server: 1280x720 H264 e 640x360 MJPEG
 
 
 * Servidor HTTP
@@ -79,13 +79,13 @@ A documentação da API pode ser vista aqui:
 * Servidor Telnet
 
 
+* Servidor SSH e Cliente
+
+
 
 ## O que não funciona em firmware alternativo:
 
 * Parâmetros visuais
-
-
-* stream de vídeo secundário
 
 
 * sistema de som
@@ -110,9 +110,6 @@ A documentação da API pode ser vista aqui:
 
 
 * enviando e-mail_mqtt_
-
-
-* enviando e-mail_h264_
 
 
 * etc ...

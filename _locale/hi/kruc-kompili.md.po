@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-03-20 13:00+0100\n"
+"POT-Creation-Date: 2021-03-22 23:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -48,8 +48,7 @@ msgstr "क्रॉस संकलन"
 
 #. type: Plain text
 #: kruc-kompili.md:12
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "La transiritaj kompilaĵoj iloj estas en programado_medio/toolchain.\n"
 "Ils ont été compilés pour debian buster x64.\n"
@@ -57,22 +56,19 @@ msgstr "ट्रांजिट संकलन उपकरण प्रोग
 
 #. type: Plain text
 #: kruc-kompili.md:15
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Komparaj bibliotekoj estas en prograda_medio/lib\n"
 msgstr "तुलनात्मक पुस्तकालय प्रोग्रेस में हैं (° ° 0001 डिग्री)\n"
 
 #. type: Plain text
 #: kruc-kompili.md:18
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Inkluzivas estas en programado_medio/include.\n"
 msgstr "शामिल है प्रोग्रामिंग में (° ° 0001 डिग्री)\n"
 
 #. type: Plain text
 #: kruc-kompili.md:24
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "Se vi bezonas rekompili bibliotekon, inspiri la sekvajn skriptojn:\n"
 "* Programada_medio/fontoj/01-buildssl.sh , pour la librairie openssl.\n"
@@ -82,8 +78,7 @@ msgstr "यदि आपको लाइब्रेरी को पुन: स
 
 #. type: Plain text
 #: kruc-kompili.md:28
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "Se vi iam bezonos rekompili la _«toolchain»_, vi povas kontroli la sekvajn lokojn:\n"
 " *  * https://zanev.github.io/cross-compile- iloj -For-ingenic-T20/>  \n"
@@ -108,7 +103,8 @@ msgstr "<https://github.com/Dafang-Hacks/Main>\n"
 #~ msgstr "संकलक की स्थापना:"
 
 #, fuzzy
-#~ msgid "opcio 1: kun docker (pli rapida por instali, pli malrapida por funkciigi)"
+#~ msgid ""
+#~ "opcio 1: kun docker (pli rapida por instali, pli malrapida por funkciigi)"
 #~ msgstr "विकल्प 1: डॉक के साथ (तेजी से स्थापित करने के लिए, संचालित करने के लिए धीमा)"
 
 #~ msgid ""
@@ -128,14 +124,17 @@ msgstr "<https://github.com/Dafang-Hacks/Main>\n"
 
 #, fuzzy
 #~ msgid "opcio 2: loke (pli longa por instali, pli rapida por ekzekuti)"
-#~ msgstr "विकल्प 2: स्थानीय रूप से (लंबे समय तक स्थापित होना, तेजी से निष्पादित करने के लिए)"
+#~ msgstr ""
+#~ "विकल्प 2: स्थानीय रूप से (लंबे समय तक स्थापित होना, तेजी से निष्पादित करने के लिए)"
 
 #~ msgid ""
-#~ "sudo apt install build-essential git gcc-mips-linux-gnu autoconf libtool cmake ftp-upload u-boot-tools\n"
+#~ "sudo apt install build-essential git gcc-mips-linux-gnu autoconf libtool "
+#~ "cmake ftp-upload u-boot-tools\n"
 #~ "mkdir -p ~/dafang/Main/mips-gcc472-glibc216-64bit\n"
 #~ "ln -s /usr/bin ~/dafang/Main/mips-gcc472-glibc216-64bit\n"
 #~ msgstr ""
-#~ "sudo apt install build-essential git gcc-mips-linux-gnu autoconf libtool cmake ftp-upload u-boot-tools\n"
+#~ "sudo apt install build-essential git gcc-mips-linux-gnu autoconf libtool "
+#~ "cmake ftp-upload u-boot-tools\n"
 #~ "mkdir -p ~/dafang/Main/mips-gcc472-glibc216-64bit\n"
 #~ "ln -s /usr/bin ~/dafang/Main/mips-gcc472-glibc216-64bit\n"
 

@@ -49,7 +49,7 @@ Dokumentasi API boleh dilihat di sini:
 * LAN dan WLAN
 
 
-* Pelayan RTSP MJPEG
+* Pelayan RTSP-Double-Fluid: 1280x720 H264 dan 640X360 MJPEG
 
 
 * Pelayan HTTP
@@ -79,13 +79,13 @@ Dokumentasi API boleh dilihat di sini:
 * Pelayan Telnet
 
 
+* SSH Server dan Client
+
+
 
 ## Apa yang tidak berfungsi dalam firmware alternatif:
 
 * Parameter visual
-
-
-* aliran video sekunder
 
 
 * sistem bunyi
@@ -110,9 +110,6 @@ Dokumentasi API boleh dilihat di sini:
 
 
 * menghantar e-mel_mqtt_
-
-
-* menghantar e-mel_h264_
 
 
 * dll ...

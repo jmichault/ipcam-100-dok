@@ -45,7 +45,7 @@ API-dokumentaro videblas ĉi tie:
 
 * LAN kaj WLAN
 
-* RTSP MJPEG-servilo
+* RTSP-duobla-flua servilo: 1280x720 H264 kaj 640x360 MJpeg
 
 * HTTP-servilo
 
@@ -65,12 +65,12 @@ API-dokumentaro videblas ĉi tie:
 
 * Telnet-servilo
 
+* SSH-servilo kaj kliento
+
 
 ## Kio ne funkcias en alternativa firmvaro:
 
 * Vidaj parametroj
-
-* sekundara videorivereto
 
 * sondosistemo
 
@@ -87,8 +87,6 @@ API-dokumentaro videblas ĉi tie:
 * sendante retpoŝton
 
 * sendante retpoŝton_mqtt_
-
-* sendante retpoŝton_h264_
 
 * ktp ...
 

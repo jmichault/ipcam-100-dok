@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-03-20 13:00+0100\n"
+"POT-Creation-Date: 2021-03-22 23:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -164,9 +164,10 @@ msgstr "LAN und WLAN\n"
 
 #. type: Bullet: '* '
 #: index.md:49
-#, fuzzy, no-wrap
-msgid "RTSP MJPEG-servilo\n"
-msgstr "RTSP MJPEG Server\n"
+#, no-wrap
+#, fuzzy
+msgid "RTSP-duobla-flua servilo: 1280x720 H264 kaj 640x360 MJpeg\n"
+msgstr "RTSP-Doppelflüssigkeitsserver: 1280x720 H264 und 640x360 MJPEG\n"
 
 #. type: Bullet: '* '
 #: index.md:51
@@ -222,23 +223,24 @@ msgstr "FTP-Server\n"
 msgid "Telnet-servilo\n"
 msgstr "Telnet-Server\n"
 
-#. type: Title ##
+#. type: Bullet: '* '
 #: index.md:69
+#, no-wrap
+#, fuzzy
+msgid "SSH-servilo kaj kliento\n"
+msgstr "SSH-Server und Client\n"
+
+#. type: Title ##
+#: index.md:71
 #, fuzzy, no-wrap
 msgid "Kio ne funkcias en alternativa firmvaro:"
 msgstr "Was bei alternativer Firmware nicht funktioniert:"
 
 #. type: Bullet: '* '
-#: index.md:72
+#: index.md:74
 #, fuzzy, no-wrap
 msgid "Vidaj parametroj\n"
 msgstr "Visuelle Parameter\n"
-
-#. type: Bullet: '* '
-#: index.md:74
-#, fuzzy, no-wrap
-msgid "sekundara videorivereto\n"
-msgstr "sekundärer Videostream\n"
 
 #. type: Bullet: '* '
 #: index.md:76
@@ -291,128 +293,134 @@ msgstr "E-Mail senden_mqtt_\n"
 #. type: Bullet: '* '
 #: index.md:92
 #, fuzzy, no-wrap
-msgid "sendante retpoŝton_h264_\n"
-msgstr "E-Mail senden_h264_\n"
-
-#. type: Bullet: '* '
-#: index.md:94
-#, fuzzy, no-wrap
 msgid "ktp ...\n"
 msgstr "etc ...\n"
 
 #. type: Title ##
-#: index.md:96
+#: index.md:94
 #, fuzzy, no-wrap
 msgid "Kamera preparado"
 msgstr "Kameravorbereitung"
 
 #. type: Bullet: '* '
-#: index.md:99 index.md:118
+#: index.md:97 index.md:116
 #, fuzzy, no-wrap
 msgid "Konekti la fotilon al via loka reto kaj ŝalti la fotilon.\n"
 msgstr "Schließen Sie die Kamera an Ihr lokales Netzwerk an und schalten Sie die Kamera ein.\n"
 
 #. type: Bullet: '* '
-#: index.md:101
+#: index.md:99
 #, fuzzy, no-wrap
 msgid "Trovu la IP-adreson de la fotilo.\n"
 msgstr "Suchen Sie die IP-Adresse der Kamera.\n"
 
 #. type: Bullet: '* '
-#: index.md:103
+#: index.md:101
 #, fuzzy, no-wrap
 msgid "Konekti al la fotilo per URL _\"http://IP\"_ (uzanto _admin_, pasvorto _admin_)\n"
 msgstr "Stellen Sie eine Verbindung zur Kamera her, indem Sie die URL _\"http://IP\"_ (, den Benutzer _admin_und das Passwort _admin_)eingeben.\n"
 
 #. type: Bullet: '* '
-#: index.md:105
+#: index.md:103
 #, fuzzy, no-wrap
 msgid "en la langeto \"Aŭdio kaj video\", agordu la ĉefan rivereton al 720p, alklaku \"Konservu\".\n"
 msgstr "Stellen Sie auf der Registerkarte \"Audio und Video\"den Hauptstrom auf 720p ein und klicken Sie auf \"Speichern\".\n"
 
 #. type: Bullet: '* '
-#: index.md:107
+#: index.md:105
 #, fuzzy, no-wrap
 msgid "eble agordu la kablan reton en la langeto \"Reto\".\n"
 msgstr "Möglicherweise können Sie das Kabelnetzwerk auf der Registerkarte \"Netzwerk\"einstellen.\n"
 
 #. type: Title ##
-#: index.md:109
+#: index.md:107
 #, fuzzy, no-wrap
 msgid "Instalante Alternativan Firmware"
 msgstr "Alternative Firmware installieren"
 
 #. type: Bullet: '* '
-#: index.md:112
+#: index.md:110
 #, fuzzy, no-wrap
 msgid "Kopiu ĉion en la dosierujo [ _karto_ ](https://github.com/jmichault/ipcam-100/tree/master/karto) ĉe la radiko de la karto microSD.\n"
 msgstr "Kopieren Sie alles in den Ordner [ _karto_ ](https://github.com/jmichault/ipcam-100/tree/master/karto) im Stammverzeichnis der microSD-Karte.\n"
 
 #. type: Bullet: '* '
-#: index.md:114
+#: index.md:112
 #, fuzzy, no-wrap
 msgid "laŭvole agordi la reton ( _config/staticip.conf_ , _config/resolv.conf_ , _config/wpa_supplicant.conf_ )\n"
 msgstr "Optional können Sie das Netzwerk ( _config/staticip.conf_ , _config/resolv.conf_ , _config/wpa_Supplicant.conf_ )konfigurieren.\n"
 
 #. type: Bullet: '* '
-#: index.md:116
+#: index.md:114
 #, fuzzy, no-wrap
 msgid "Enmetu la karton microSD.\n"
 msgstr "Legen Sie die microSD-Karte ein.\n"
 
 #. type: Bullet: '* '
-#: index.md:120
+#: index.md:118
 #, fuzzy, no-wrap
 msgid "Ensalutu ĉe la fotilo per `telnet IP 9527` (uzanto _root_, pasvorto _jco66688_).\n"
 msgstr "Melden Sie sich mit dem Benutzer `telnet IP 9527` ( _root_und dem Passwort _jco66688_)bei der Kamera an.\n"
 
 #. type: Bullet: '* '
-#: index.md:122
+#: index.md:120
 #, fuzzy, no-wrap
 msgid "Premu `killall -9 auto_run.sh` por eviti fermi la konekton.\n"
 msgstr "Drücken Sie `killall -9 auto_run.sh` , um ein Schließen der Verbindung zu vermeiden.\n"
 
 #. type: Bullet: '* '
-#: index.md:124
+#: index.md:122
 #, fuzzy, no-wrap
 msgid "Faru `cd /opt/media/mmcblk0p1;./install.sh`\n"
 msgstr "Faru `cd /opt/media/mmcblk0p1;./install.sh`\n"
 
 #. type: Bullet: '* '
-#: index.md:126
+#: index.md:124
 #, fuzzy, no-wrap
 msgid "Vi povas konekti al la URL _\"https://IP\"_ (uzanto _admin_, pasvorto _jco66688_).\n"
 msgstr "Sie können eine Verbindung zum Benutzer der URL _\"https://IP\"_ ( _admin_und zum Kennwort _jco66688_)herstellen.\n"
 
 #. type: Title ##
-#: index.md:128
+#: index.md:126
 #, fuzzy, no-wrap
 msgid "Malinstalanta Alternativan Firmware:"
 msgstr "Alternative Firmware deinstallieren:"
 
 #. type: Bullet: '* '
-#: index.md:131
+#: index.md:129
 #, fuzzy, no-wrap
 msgid "komencu la telnet-servon per la fotilo per la interreta interfaco.\n"
 msgstr "Starten Sie den Telnet-Dienst mit der Kamera über die Internetschnittstelle.\n"
 
 #. type: Bullet: '* '
-#: index.md:133
+#: index.md:131
 #, fuzzy, no-wrap
 msgid "komencu la telnet-servon per la fotilo per la interreta interfaco. `telnet IP` \n"
 msgstr "Starten Sie den Telnet-Dienst mit der Kamera über die Internetschnittstelle. `telnet IP` \n"
 
 #. type: Bullet: '* '
-#: index.md:135
+#: index.md:133
 #, fuzzy, no-wrap
 msgid "komencu la telnet-servon per la fotilo per la interreta interfaco. `cd /opt/media/mmcblk0p1;./uninstall.sh;reboot`\n"
 msgstr "Starten Sie den Telnet-Dienst mit der Kamera über die Internetschnittstelle. `cd /opt/media/mmcblk0p1;./uninstall.sh;reboot`\n"
 
 #. type: Bullet: '* '
-#: index.md:138
+#: index.md:136
 #, fuzzy, no-wrap
 msgid "Vi ankaŭ povas simple forigi la karton microSD.\n"
 msgstr "Sie können die microSD-Karte auch einfach entfernen.\n"
+
+#, fuzzy
+#~ msgid "RTSP MJPEG-servilo\n"
+#~ msgstr "RTSP MJPEG Server\n"
+
+#, fuzzy
+#~ msgid "sekundara videorivereto\n"
+#~ msgstr "sekundärer Videostream\n"
+
+#, fuzzy
+#~ msgid "sendante retpoŝton_h264_\n"
+#~ msgstr "E-Mail senden_h264_\n"
 
 #~ msgid "fonto"
 #~ msgstr "auto"

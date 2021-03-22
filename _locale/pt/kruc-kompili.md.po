@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-03-20 13:01+0100\n"
+"POT-Creation-Date: 2021-03-22 23:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -48,42 +48,49 @@ msgstr "Compilação cruzada"
 
 #. type: Plain text
 #: kruc-kompili.md:12
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "La transiritaj kompilaĵoj iloj estas en programado_medio/toolchain.\n"
 "Ils ont été compilés pour debian buster x64.\n"
-msgstr "As ferramentas de compilações de trânsito estão em programação_medio/toolchain.\nIls ont été compilés pour debian buster x64.\n\n"
+msgstr ""
+"As ferramentas de compilações de trânsito estão em programação_medio/toolchain.\n"
+"Ils ont été compilés pour debian buster x64.\n"
+"\n"
 
 #. type: Plain text
 #: kruc-kompili.md:15
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Komparaj bibliotekoj estas en prograda_medio/lib\n"
-msgstr "Bibliotecas comparativas estão em Prograde_medio/lib\n\n"
+msgstr ""
+"Bibliotecas comparativas estão em Prograde_medio/lib\n"
+"\n"
 
 #. type: Plain text
 #: kruc-kompili.md:18
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Inkluzivas estas en programado_medio/include.\n"
-msgstr "Inclui está na programação_medio/include.\n\n"
+msgstr ""
+"Inclui está na programação_medio/include.\n"
+"\n"
 
 #. type: Plain text
 #: kruc-kompili.md:24
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "Se vi bezonas rekompili bibliotekon, inspiri la sekvajn skriptojn:\n"
 "* Programada_medio/fontoj/01-buildssl.sh , pour la librairie openssl.\n"
 "* programada_Medio / fontoj / 02-buildive.sh, por Live555-biblioteko.\n"
 "* Programada_medio/fontoj/03-pcre.sh , pour la librairie pcre.\n"
-msgstr "Se você precisar recuperar uma biblioteca, inspire os seguintes scripts:\n* Programado_medio/fontoj/01-buildssl.sh , pour la librairie openssl.\n* programada_Ambiente / fontes / 02-buildive.sh, para uma biblioteca ao vivo555.\n* Programada_medio/fontoj/03-pcre.sh , pour la librairie pcre.\n\n"
+msgstr ""
+"Se você precisar recuperar uma biblioteca, inspire os seguintes scripts:\n"
+"* Programado_medio/fontoj/01-buildssl.sh , pour la librairie openssl.\n"
+"* programada_Ambiente / fontes / 02-buildive.sh, para uma biblioteca ao vivo555.\n"
+"* Programada_medio/fontoj/03-pcre.sh , pour la librairie pcre.\n"
+"\n"
 
 #. type: Plain text
 #: kruc-kompili.md:28
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "Se vi iam bezonos rekompili la _«toolchain»_, vi povas kontroli la sekvajn lokojn:\n"
 " *  * https://zanev.github.io/cross-compile- iloj -For-ingenic-T20/>  \n"
@@ -108,8 +115,10 @@ msgstr "<https://github.com/Dafang-Hacks/Main>\n"
 #~ msgstr "instalação de compiladores:"
 
 #, fuzzy
-#~ msgid "opcio 1: kun docker (pli rapida por instali, pli malrapida por funkciigi)"
-#~ msgstr "opção 1: com docker (mais rápido para instalar, mais lento para começar)"
+#~ msgid ""
+#~ "opcio 1: kun docker (pli rapida por instali, pli malrapida por funkciigi)"
+#~ msgstr ""
+#~ "opção 1: com docker (mais rápido para instalar, mais lento para começar)"
 
 #~ msgid ""
 #~ "sudo apt install docker.io\n"
@@ -128,14 +137,17 @@ msgstr "<https://github.com/Dafang-Hacks/Main>\n"
 
 #, fuzzy
 #~ msgid "opcio 2: loke (pli longa por instali, pli rapida por ekzekuti)"
-#~ msgstr "opção 2: localmente (mais tempo para instalar, mais rápido para executar)"
+#~ msgstr ""
+#~ "opção 2: localmente (mais tempo para instalar, mais rápido para executar)"
 
 #~ msgid ""
-#~ "sudo apt install build-essential git gcc-mips-linux-gnu autoconf libtool cmake ftp-upload u-boot-tools\n"
+#~ "sudo apt install build-essential git gcc-mips-linux-gnu autoconf libtool "
+#~ "cmake ftp-upload u-boot-tools\n"
 #~ "mkdir -p ~/dafang/Main/mips-gcc472-glibc216-64bit\n"
 #~ "ln -s /usr/bin ~/dafang/Main/mips-gcc472-glibc216-64bit\n"
 #~ msgstr ""
-#~ "sudo apt install build-essential git gcc-mips-linux-gnu autoconf libtool cmake ftp-upload u-boot-tools\n"
+#~ "sudo apt install build-essential git gcc-mips-linux-gnu autoconf libtool "
+#~ "cmake ftp-upload u-boot-tools\n"
 #~ "mkdir -p ~/dafang/Main/mips-gcc472-glibc216-64bit\n"
 #~ "ln -s /usr/bin ~/dafang/Main/mips-gcc472-glibc216-64bit\n"
 
