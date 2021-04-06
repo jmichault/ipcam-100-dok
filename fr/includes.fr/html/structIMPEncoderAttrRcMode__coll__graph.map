@@ -1,0 +1,6 @@
+<map id="IMPEncoderAttrRcMode" name="IMPEncoderAttrRcMode">
+<area shape="rect" id="node2" href="$structIMPEncoderAttrH264VBR.html" title="IMPEncoderAttrH264VBR" alt="" coords="9,5,184,32"/>
+<area shape="rect" id="node3" href="$structIMPEncoderAttrH264FixQP.html" title="IMPEncoderAttrH264FixQP" alt="" coords="5,56,188,83"/>
+<area shape="rect" id="node4" href="$structIMPEncoderAttrH264CBR.html" title="IMPEncoderAttrH264CBR" alt="" coords="9,107,184,133"/>
+<area shape="rect" id="node5" href="$structIMPEncoderAttrH264Smart.html" title="IMPEncoderAttrH264Smart" alt="" coords="6,157,187,184"/>
+</map>

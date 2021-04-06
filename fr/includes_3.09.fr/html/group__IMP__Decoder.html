@@ -1,0 +1,447 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Programmation T20: IMP_Decoder</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Programmation T20
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<div class="title">IMP_Decoder</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Module de décodage vidéo, ne prend actuellement en charge que le décodage JPEG.  
+<a href="#details">Plus de détails...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIMPDecoderAttr.html">IMPDecoderAttr</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIMPDecoderCHNAttr.html">IMPDecoderCHNAttr</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIMPDecoderNal.html">IMPDecoderNal</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIMPDecoderStream.html">IMPDecoderStream</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:gaf2847173e6e99d0859782d396431135e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Decoder.html#gaf2847173e6e99d0859782d396431135e">IMP_Decoder_CreateChn</a> (int decChn, const <a class="el" href="structIMPDecoderCHNAttr.html">IMPDecoderCHNAttr</a> *attr)</td></tr>
+<tr class="separator:gaf2847173e6e99d0859782d396431135e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga00a630779788c07c9daf523443c5abb0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Decoder.html#ga00a630779788c07c9daf523443c5abb0">IMP_Decoder_DestroyChn</a> (int decChn)</td></tr>
+<tr class="separator:ga00a630779788c07c9daf523443c5abb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga45b743d81c9e6a5b529c7cf52a12fedf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Decoder.html#ga45b743d81c9e6a5b529c7cf52a12fedf">IMP_Decoder_StartRecvPic</a> (int decChn)</td></tr>
+<tr class="separator:ga45b743d81c9e6a5b529c7cf52a12fedf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3ee251bcb7ac2b55f8ef67dfd43d0429"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Decoder.html#ga3ee251bcb7ac2b55f8ef67dfd43d0429">IMP_Decoder_StopRecvPic</a> (int decChn)</td></tr>
+<tr class="separator:ga3ee251bcb7ac2b55f8ef67dfd43d0429"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac2bc3fa07236594a07ca630cf1cb437c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Decoder.html#gac2bc3fa07236594a07ca630cf1cb437c">IMP_Decoder_SendStreamTimeout</a> (int decChn, <a class="el" href="structIMPDecoderStream.html">IMPDecoderStream</a> *stream, uint32_t timeoutMsec)</td></tr>
+<tr class="separator:gac2bc3fa07236594a07ca630cf1cb437c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae42cbf89e1e1cf4b8fa1b84ab0ac41e7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Decoder.html#gae42cbf89e1e1cf4b8fa1b84ab0ac41e7">IMP_Decoder_PollingFrame</a> (int decChn, uint32_t timeoutMsec)</td></tr>
+<tr class="separator:gae42cbf89e1e1cf4b8fa1b84ab0ac41e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga396b6cbf537d265617ab2ee13ac17c4e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Decoder.html#ga396b6cbf537d265617ab2ee13ac17c4e">IMP_Decoder_GetFrame</a> (int decChn, <a class="el" href="structIMPFrameInfo.html">IMPFrameInfo</a> **frame)</td></tr>
+<tr class="separator:ga396b6cbf537d265617ab2ee13ac17c4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga522ce60cb85c8865cf7304835946639a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMP__Decoder.html#ga522ce60cb85c8865cf7304835946639a">IMP_Decoder_ReleaseFrame</a> (int decChn, <a class="el" href="structIMPFrameInfo.html">IMPFrameInfo</a> *frame)</td></tr>
+<tr class="separator:ga522ce60cb85c8865cf7304835946639a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<p>Module de décodage vidéo, ne prend actuellement en charge que le décodage JPEG. </p>
+<h2 class="groupheader">Documentation des fonctions</h2>
+<a id="gaf2847173e6e99d0859782d396431135e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf2847173e6e99d0859782d396431135e">&#9670;&nbsp;</a></span>IMP_Decoder_CreateChn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_Decoder_CreateChn </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>decChn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structIMPDecoderCHNAttr.html">IMPDecoderCHNAttr</a> *&#160;</td>
+          <td class="paramname"><em>attr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Créer un décodage Channel</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">decChn</td><td>decode Numéro de canal, plage de valeurs: [0, NR_MAX_DEC_CHN-1] </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">attr</td><td>décoder le pointeur d'attribut de canal</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>succès </td></tr>
+    <tr><td class="paramname">Échec</td><td>non nul</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>non. </dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>non. </dd></dl>
+
+</div>
+</div>
+<a id="ga00a630779788c07c9daf523443c5abb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga00a630779788c07c9daf523443c5abb0">&#9670;&nbsp;</a></span>IMP_Decoder_DestroyChn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_Decoder_DestroyChn </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>decChn</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Détruire le décodage Channel</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">decChn</td><td>décodage Channel numéro , Gammes : [0, NR_MAX_DEC_CHN - 1]</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Succès </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>non. </dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>non. </dd></dl>
+
+</div>
+</div>
+<a id="ga396b6cbf537d265617ab2ee13ac17c4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga396b6cbf537d265617ab2ee13ac17c4e">&#9670;&nbsp;</a></span>IMP_Decoder_GetFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_Decoder_GetFrame </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>decChn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structIMPFrameInfo.html">IMPFrameInfo</a> **&#160;</td>
+          <td class="paramname"><em>frame</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Obtenir un flux de code décodé</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">decChn</td><td>décodage Channel numéro , Gammes : [0, NR_MAX_DEC_CHN - 1] </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">frame</td><td>Pointeur de structure de flux de décodage</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Succès </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>non.</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Le tampon de flux de code de décodage est demandé en interne par le décodeur, et cette fonction n'a besoin que de passer le pointeur de structure. </dd></dl>
+
+</div>
+</div>
+<a id="gae42cbf89e1e1cf4b8fa1b84ab0ac41e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae42cbf89e1e1cf4b8fa1b84ab0ac41e7">&#9670;&nbsp;</a></span>IMP_Decoder_PollingFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_Decoder_PollingFrame </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>decChn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>timeoutMsec</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Polling Tampon de flux de décodage</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">decChn</td><td>décodage Channel numéro , Gammes : [0, NR_MAX_DEC_CHN - 1] </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">timeout</td><td>Msec timeout unité de temps ms</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Succès </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>non.</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>au cas o ù Channel Non créé ， Manqué </dd></dl>
+
+</div>
+</div>
+<a id="ga522ce60cb85c8865cf7304835946639a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga522ce60cb85c8865cf7304835946639a">&#9670;&nbsp;</a></span>IMP_Decoder_ReleaseFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_Decoder_ReleaseFrame </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>decChn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structIMPFrameInfo.html">IMPFrameInfo</a> *&#160;</td>
+          <td class="paramname"><em>frame</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Libérez le cache du flux de code</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">decChn</td><td>décodage Channel numéro , Gammes : [0, NR_MAX_DEC_CHN - 1] </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">frame</td><td>Décodage du pointeur de structure de flux</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Succès </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>non.</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>non. </dd></dl>
+
+</div>
+</div>
+<a id="gac2bc3fa07236594a07ca630cf1cb437c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac2bc3fa07236594a07ca630cf1cb437c">&#9670;&nbsp;</a></span>IMP_Decoder_SendStreamTimeout()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_Decoder_SendStreamTimeout </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>decChn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structIMPDecoderStream.html">IMPDecoderStream</a> *&#160;</td>
+          <td class="paramname"><em>stream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>timeoutMsec</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Envoyer les données à décoder</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">decChn</td><td>décodage Channel numéro , Gammes : [0, NR_MAX_DEC_CHN - 1] </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pointeur</td><td>de flux vers la structure du flux de données à décoder </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">timeout</td><td>Msec Timeout de décodage unité de temps ms</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Succès </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>non.</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>au cas o ù Channel Non créé ， Manqué </dd></dl>
+
+</div>
+</div>
+<a id="ga45b743d81c9e6a5b529c7cf52a12fedf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga45b743d81c9e6a5b529c7cf52a12fedf">&#9670;&nbsp;</a></span>IMP_Decoder_StartRecvPic()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_Decoder_StartRecvPic </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>decChn</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Activer le décodage Channel Recevoir l'image</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">decChn</td><td>décodage Channel numéro , Gammes : [0, NR_MAX_DEC_CHN - 1]</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Succès </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>Le décodage ne peut démarrer qu'après l'ouverture du canal de décodage pour recevoir l'image</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Si le canal n'est pas créé, il renvoie un échec </dd></dl>
+
+</div>
+</div>
+<a id="ga3ee251bcb7ac2b55f8ef67dfd43d0429"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3ee251bcb7ac2b55f8ef67dfd43d0429">&#9670;&nbsp;</a></span>IMP_Decoder_StopRecvPic()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_Decoder_StopRecvPic </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>decChn</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Arrêter le décodage Channel Recevoir l'image</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">decChn</td><td>décodage Channel numéro , Gammes : [0, NR_MAX_DEC_CHN - 1]</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valeurs retournées</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Succès </td></tr>
+    <tr><td class="paramname">non-</td><td>0 échec</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarques</dt><dd>Arrêter le décodage de l'image de réception du canal</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>au cas o ù Channel Non créé ， Manqué </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>
