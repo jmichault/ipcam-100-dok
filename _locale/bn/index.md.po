@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-04-07 16:08+0200\n"
+"POT-Creation-Date: 2021-04-07 22:54+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -134,8 +134,7 @@ msgstr "[চীনা মূল সংস্করণ](../zh/includes.zh/html/)(
 
 #. type: Bullet: '* '
 #: index.md:38
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "[Angla versio](../en/includes.en/html/)\n"
 msgstr "[ইংরেজি সংস্করণ](../en/includes.en/html/)\n"
 
@@ -165,81 +164,82 @@ msgstr "ল্যান এবং ডাব্লুএলএএন\n"
 
 #. type: Bullet: '* '
 #: index.md:49
-#, fuzzy, no-wrap
-msgid "RTSP-duobla-flua servilo: 1280x720 H264 kaj 640x360 MJpeg\n"
-msgstr "RTSP-DIAL-FLUID সার্ভার: 1280x720 H264 এবং 640x360 MJPEG\n"
+#, no-wrap
+#, fuzzy
+msgid "DRTSP Dual Flow Server: 1920x1080 H264 kaj 640x360 MJpeg defaŭlte.\n"
+msgstr "DRTTSP ডুয়াল ফ্লো সার্ভার: 1920x1080 H264 এবং 640x360 MJPEG ডিফল্টরূপে।\n"
 
 #. type: Bullet: '* '
 #: index.md:51
+#, fuzzy, no-wrap
+msgid "Vidaj parametroj\n"
+msgstr "ভিজ্যুয়াল পরামিতি\n"
+
+#. type: Bullet: '* '
+#: index.md:53
 #, fuzzy, no-wrap
 msgid "HTTP-servilo\n"
 msgstr "এইচটিটিপি সার্ভার\n"
 
 #. type: Bullet: '* '
-#: index.md:53
+#: index.md:55
 #, fuzzy, no-wrap
 msgid "motora kontrolo\n"
 msgstr "ইঞ্জিন নিয়ন্ত্রণ\n"
 
 #. type: Bullet: '* '
-#: index.md:55
+#: index.md:57
 #, fuzzy, no-wrap
 msgid "motora kalibrado\n"
 msgstr "ইঞ্জিন ক্রমাঙ্কন\n"
 
 #. type: Bullet: '* '
-#: index.md:57
+#: index.md:59
 #, fuzzy, no-wrap
 msgid "Agordoj de PTZ\n"
 msgstr "পিটিজেড সেটিংস\n"
 
 #. type: Bullet: '* '
-#: index.md:59
+#: index.md:61
 #, fuzzy, no-wrap
 msgid "NTP-kliento\n"
 msgstr "এনটিপি ক্লায়েন্ট\n"
 
 #. type: Bullet: '* '
-#: index.md:61
+#: index.md:63
 #, fuzzy, no-wrap
 msgid "pasvorta ŝanĝo por http-aliro\n"
 msgstr "HTTP অ্যাক্সেসের জন্য পাসওয়ার্ড পরিবর্তন\n"
 
 #. type: Bullet: '* '
-#: index.md:63
+#: index.md:65
 #, fuzzy, no-wrap
 msgid "blua LED kaj IR-kontrolo\n"
 msgstr "নীল এলইডি এবং আইআর নিয়ন্ত্রণ\n"
 
 #. type: Bullet: '* '
-#: index.md:65
+#: index.md:67
 #, fuzzy, no-wrap
 msgid "Ftp-servilo\n"
 msgstr "Ftp সার্ভার\n"
 
 #. type: Bullet: '* '
-#: index.md:67
+#: index.md:69
 #, fuzzy, no-wrap
 msgid "Telnet-servilo\n"
 msgstr "টেলনেট সার্ভার\n"
 
 #. type: Bullet: '* '
-#: index.md:69
+#: index.md:71
 #, fuzzy, no-wrap
 msgid "SSH-servilo kaj kliento\n"
 msgstr "এসএসএইচ সার্ভার এবং ক্লায়েন্ট\n"
 
 #. type: Title ##
-#: index.md:71
+#: index.md:73
 #, fuzzy, no-wrap
 msgid "Kio ne funkcias en alternativa firmvaro:"
 msgstr "বিকল্প ফার্মওয়্যারটিতে কী কাজ করে না:"
-
-#. type: Bullet: '* '
-#: index.md:74
-#, fuzzy, no-wrap
-msgid "Vidaj parametroj\n"
-msgstr "ভিজ্যুয়াল পরামিতি\n"
 
 #. type: Bullet: '* '
 #: index.md:76
@@ -255,159 +255,184 @@ msgstr "_OSD_\n"
 
 #. type: Bullet: '* '
 #: index.md:80
+#, no-wrap
+#, fuzzy
+msgid "Administrado de pasvorto.\n"
+msgstr "পাসওয়ার্ড ব্যবস্থাপনা।\n"
+
+#. type: Bullet: '* '
+#: index.md:82
 #, fuzzy, no-wrap
 msgid "ĝisdatigo de firmvaro\n"
 msgstr "ফার্মওয়্যার আপডেট\n"
 
 #. type: Bullet: '* '
-#: index.md:82
+#: index.md:84
 #, fuzzy, no-wrap
 msgid "aŭtomata nokta detekto\n"
 msgstr "স্বয়ংক্রিয় রাত সনাক্তকরণ\n"
 
 #. type: Bullet: '* '
-#: index.md:84
+#: index.md:86
 #, fuzzy, no-wrap
 msgid "movado-detekto\n"
 msgstr "গতি সনাক্তকরণ\n"
 
 #. type: Bullet: '* '
-#: index.md:86
+#: index.md:88
 #, fuzzy, no-wrap
 msgid "movado-detekto_ir-cut_\n"
 msgstr "গতি সনাক্তকরণ_ir-cut_\n"
 
 #. type: Bullet: '* '
-#: index.md:88
+#: index.md:90
 #, fuzzy, no-wrap
 msgid "sendante retpoŝton\n"
 msgstr "ইমেল প্রেরণ\n"
 
 #. type: Bullet: '* '
-#: index.md:90
+#: index.md:92
 #, fuzzy, no-wrap
 msgid "sendante retpoŝton_mqtt_\n"
 msgstr "ইমেল প্রেরণ_mqtt_\n"
 
 #. type: Bullet: '* '
-#: index.md:92
+#: index.md:94
 #, fuzzy, no-wrap
 msgid "ktp ...\n"
 msgstr "ইত্যাদি ...\n"
 
 #. type: Title ##
-#: index.md:94
+#: index.md:96
 #, fuzzy, no-wrap
 msgid "Kamera preparado"
 msgstr "ক্যামেরা প্রস্তুতি"
 
 #. type: Bullet: '* '
-#: index.md:97 index.md:116
+#: index.md:99 index.md:118
 #, fuzzy, no-wrap
 msgid "Konekti la fotilon al via loka reto kaj ŝalti la fotilon.\n"
 msgstr "আপনার স্থানীয় নেটওয়ার্কে ক্যামেরাটি সংযুক্ত করুন এবং ক্যামেরাটি চালু করুন।\n"
 
 #. type: Bullet: '* '
-#: index.md:99
+#: index.md:101
 #, fuzzy, no-wrap
 msgid "Trovu la IP-adreson de la fotilo.\n"
 msgstr "ক্যামেরার আইপি ঠিকানাটি সন্ধান করুন।\n"
 
 #. type: Bullet: '* '
-#: index.md:101
+#: index.md:103
 #, fuzzy, no-wrap
 msgid "Konekti al la fotilo per URL _\"http://IP\"_ (uzanto _admin_, pasvorto _admin_)\n"
 msgstr "ইউআরএল _\"http://IP\"_ (ব্যবহারকারী _admin_, পাসওয়ার্ড _admin_)দ্বারা ক্যামেরায় সংযুক্ত করুন\n"
 
 #. type: Bullet: '* '
-#: index.md:103
+#: index.md:105
 #, fuzzy, no-wrap
 msgid "en la langeto \"Aŭdio kaj video\", agordu la ĉefan rivereton al 720p, alklaku \"Konservu\".\n"
 msgstr "ট্যাবে \"অডিও এবং ভিডিও\", মূল স্ট্রিমটি 720p এ সেট করুন, \"সংরক্ষণ করুন\"ক্লিক করুন।\n"
 
 #. type: Bullet: '* '
-#: index.md:105
+#: index.md:107
 #, fuzzy, no-wrap
 msgid "eble agordu la kablan reton en la langeto \"Reto\".\n"
 msgstr "আপনি ট্যাবে \"নেটওয়ার্ক\"এর কেবল নেটওয়ার্ক সেট করতে সক্ষম হতে পারেন।\n"
 
 #. type: Title ##
-#: index.md:107
+#: index.md:109
 #, fuzzy, no-wrap
 msgid "Instalante Alternativan Firmware"
 msgstr "বিকল্প ফার্মওয়্যার ইনস্টল করা হচ্ছে"
 
 #. type: Bullet: '* '
-#: index.md:110
+#: index.md:112
 #, fuzzy, no-wrap
 msgid "Kopiu ĉion en la dosierujo [ _karto_ ](https://github.com/jmichault/ipcam-100/tree/master/karto) ĉe la radiko de la karto microSD.\n"
 msgstr "মাইক্রোএসডি কার্ডের মূলটিতে [ _karto_ ](https://github.com/jmichault/ipcam-100/tree/master/karto) ফোল্ডারে সবকিছু অনুলিপি করুন।\n"
 
 #. type: Bullet: '* '
-#: index.md:112
+#: index.md:114
 #, fuzzy, no-wrap
 msgid "laŭvole agordi la reton ( _config/staticip.conf_ , _config/resolv.conf_ , _config/wpa_supplicant.conf_ )\n"
 msgstr "allyচ্ছিকভাবে নেটওয়ার্কটি কনফিগার করুন ( _config/staticip.conf_ , _config/resolv.conf_ , _config/wpa_supplicant.conf_ )\n"
 
 #. type: Bullet: '* '
-#: index.md:114
+#: index.md:116
 #, fuzzy, no-wrap
 msgid "Enmetu la karton microSD.\n"
 msgstr "মাইক্রোএসডি কার্ড .োকান।\n"
 
 #. type: Bullet: '* '
-#: index.md:118
+#: index.md:120
 #, fuzzy, no-wrap
 msgid "Ensalutu ĉe la fotilo per `telnet IP 9527` (uzanto _root_, pasvorto _jco66688_).\n"
 msgstr " `telnet IP 9527` (ব্যবহারকারী _root_, পাসওয়ার্ড _jco66688_)দিয়ে ক্যামেরায় লগ ইন করুন।\n"
 
 #. type: Bullet: '* '
-#: index.md:120
+#: index.md:122
 #, fuzzy, no-wrap
 msgid "Premu `killall -9 auto_run.sh` por eviti fermi la konekton.\n"
 msgstr "সংযোগটি বন্ধ না করার জন্য `killall -9 auto_run.sh` টিপুন।\n"
 
 #. type: Bullet: '* '
-#: index.md:122
+#: index.md:124
 #, fuzzy, no-wrap
 msgid "Faru `cd /opt/media/mmcblk0p1;./install.sh`\n"
 msgstr "ফারু `cd /opt/media/mmcblk0p1;./install.sh`\n"
 
 #. type: Bullet: '* '
-#: index.md:124
+#: index.md:126
 #, fuzzy, no-wrap
 msgid "Vi povas konekti al la URL _\"https://IP\"_ (uzanto _admin_, pasvorto _jco66688_).\n"
 msgstr "আপনি ইউআরএল _\"https://IP\"_ (ব্যবহারকারী _admin_, পাসওয়ার্ড _jco66688_)এর সাথে সংযোগ করতে পারেন।\n"
 
+#. type: Bullet: '* '
+#: index.md:128
+#, no-wrap
+#, fuzzy
+msgid "La primara video-fluo estas alirebla ĉe _rtsp://admin:ismart21@IP/stream1_.\n"
+msgstr "প্রাথমিক ভিডিও বর্তমান _rtsp://admin:ismart21@IP/stream1_এ অ্যাক্সেসযোগ্য। (° 3 ° 3\n"
+
+#. type: Bullet: '* '
+#: index.md:130
+#, no-wrap
+#, fuzzy
+msgid "La sekundara video-fluo estas alirebla ĉe _rtsp://admin:ismart21@IP/stream2_.\n"
+msgstr "মাধ্যমিক ভিডিও বর্তমান _rtsp://admin:ismart21@IP/stream2_এ অ্যাক্সেসযোগ্য। (° 3 ° 3\n"
+
 #. type: Title ##
-#: index.md:126
+#: index.md:132
 #, fuzzy, no-wrap
 msgid "Malinstalanta Alternativan Firmware:"
 msgstr "বিকল্প ফার্মওয়্যার আনইনস্টল করা:"
 
 #. type: Bullet: '* '
-#: index.md:129
+#: index.md:135
 #, fuzzy, no-wrap
 msgid "komencu la telnet-servon per la fotilo per la interreta interfaco.\n"
 msgstr "ইন্টারনেট ইন্টারফেসের মাধ্যমে ক্যামেরা দিয়ে টেলনেট পরিষেবা শুরু করুন।\n"
 
 #. type: Bullet: '* '
-#: index.md:131
+#: index.md:137
 #, fuzzy, no-wrap
 msgid "komencu la telnet-servon per la fotilo per la interreta interfaco. `telnet IP` \n"
 msgstr "ইন্টারনেট ইন্টারফেসের মাধ্যমে ক্যামেরা দিয়ে টেলনেট পরিষেবা শুরু করুন। `telnet IP` \n"
 
 #. type: Bullet: '* '
-#: index.md:133
+#: index.md:139
 #, fuzzy, no-wrap
 msgid "komencu la telnet-servon per la fotilo per la interreta interfaco. `cd /opt/media/mmcblk0p1;./uninstall.sh;reboot`\n"
 msgstr "ইন্টারনেট ইন্টারফেসের মাধ্যমে ক্যামেরা দিয়ে টেলনেট পরিষেবা শুরু করুন। `cd /opt/media/mmcblk0p1;./uninstall.sh;reboot`\n"
 
 #. type: Bullet: '* '
-#: index.md:136
+#: index.md:142
 #, fuzzy, no-wrap
 msgid "Vi ankaŭ povas simple forigi la karton microSD.\n"
 msgstr "আপনি কেবল মাইক্রোএসডি কার্ডটি সরাতে পারেন।\n"
+
+#, fuzzy, no-wrap
+#~ msgid "RTSP-duobla-flua servilo: 1280x720 H264 kaj 640x360 MJpeg\n"
+#~ msgstr "RTSP-DIAL-FLUID সার্ভার: 1280x720 H264 এবং 640x360 MJPEG\n"
 
 #, fuzzy, no-wrap
 #~ msgid "[Angla versio tradukita de google](../en/includes.en/html/)\n"

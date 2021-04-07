@@ -45,7 +45,9 @@ API-dokumentaro videblas ĉi tie:
 
 * LAN kaj WLAN
 
-* RTSP-duobla-flua servilo: 1280x720 H264 kaj 640x360 MJpeg
+* DRTSP Dual Flow Server: 1920x1080 H264 kaj 640x360 MJpeg defaŭlte.
+
+* Vidaj parametroj
 
 * HTTP-servilo
 
@@ -70,11 +72,11 @@ API-dokumentaro videblas ĉi tie:
 
 ## Kio ne funkcias en alternativa firmvaro:
 
-* Vidaj parametroj
-
 * sondosistemo
 
 * _OSD_
+
+* Administrado de pasvorto.
 
 * ĝisdatigo de firmvaro
 
@@ -121,6 +123,10 @@ API-dokumentaro videblas ĉi tie:
 * Faru `cd /opt/media/mmcblk0p1;./install.sh`
 
 * Vi povas konekti al la URL _"https://IP"_ (uzanto _admin_, pasvorto _jco66688_).
+
+* La primara video-fluo estas alirebla ĉe _rtsp://admin:ismart21@IP/stream1_.
+
+* La sekundara video-fluo estas alirebla ĉe _rtsp://admin:ismart21@IP/stream2_.
 
 
 ## Malinstalanta Alternativan Firmware:

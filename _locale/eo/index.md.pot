@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-04-07 16:08+0200\n"
+"POT-Creation-Date: 2021-04-07 22:54+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -152,79 +152,79 @@ msgstr ""
 #. type: Bullet: '* '
 #: index.md:49
 #, no-wrap
-msgid "RTSP-duobla-flua servilo: 1280x720 H264 kaj 640x360 MJpeg\n"
+msgid "DRTSP Dual Flow Server: 1920x1080 H264 kaj 640x360 MJpeg defaŭlte.\n"
 msgstr ""
 
 #. type: Bullet: '* '
 #: index.md:51
 #, no-wrap
-msgid "HTTP-servilo\n"
+msgid "Vidaj parametroj\n"
 msgstr ""
 
 #. type: Bullet: '* '
 #: index.md:53
 #, no-wrap
-msgid "motora kontrolo\n"
+msgid "HTTP-servilo\n"
 msgstr ""
 
 #. type: Bullet: '* '
 #: index.md:55
 #, no-wrap
-msgid "motora kalibrado\n"
+msgid "motora kontrolo\n"
 msgstr ""
 
 #. type: Bullet: '* '
 #: index.md:57
 #, no-wrap
-msgid "Agordoj de PTZ\n"
+msgid "motora kalibrado\n"
 msgstr ""
 
 #. type: Bullet: '* '
 #: index.md:59
 #, no-wrap
-msgid "NTP-kliento\n"
+msgid "Agordoj de PTZ\n"
 msgstr ""
 
 #. type: Bullet: '* '
 #: index.md:61
 #, no-wrap
-msgid "pasvorta ŝanĝo por http-aliro\n"
+msgid "NTP-kliento\n"
 msgstr ""
 
 #. type: Bullet: '* '
 #: index.md:63
 #, no-wrap
-msgid "blua LED kaj IR-kontrolo\n"
+msgid "pasvorta ŝanĝo por http-aliro\n"
 msgstr ""
 
 #. type: Bullet: '* '
 #: index.md:65
 #, no-wrap
-msgid "Ftp-servilo\n"
+msgid "blua LED kaj IR-kontrolo\n"
 msgstr ""
 
 #. type: Bullet: '* '
 #: index.md:67
 #, no-wrap
-msgid "Telnet-servilo\n"
+msgid "Ftp-servilo\n"
 msgstr ""
 
 #. type: Bullet: '* '
 #: index.md:69
 #, no-wrap
+msgid "Telnet-servilo\n"
+msgstr ""
+
+#. type: Bullet: '* '
+#: index.md:71
+#, no-wrap
 msgid "SSH-servilo kaj kliento\n"
 msgstr ""
 
 #. type: Title ##
-#: index.md:71
+#: index.md:73
 #, no-wrap
 msgid "Kio ne funkcias en alternativa firmvaro:"
-msgstr ""
-
-#. type: Bullet: '* '
-#: index.md:74
-#, no-wrap
-msgid "Vidaj parametroj\n"
 msgstr ""
 
 #. type: Bullet: '* '
@@ -242,155 +242,173 @@ msgstr ""
 #. type: Bullet: '* '
 #: index.md:80
 #, no-wrap
-msgid "ĝisdatigo de firmvaro\n"
+msgid "Administrado de pasvorto.\n"
 msgstr ""
 
 #. type: Bullet: '* '
 #: index.md:82
 #, no-wrap
-msgid "aŭtomata nokta detekto\n"
+msgid "ĝisdatigo de firmvaro\n"
 msgstr ""
 
 #. type: Bullet: '* '
 #: index.md:84
 #, no-wrap
-msgid "movado-detekto\n"
+msgid "aŭtomata nokta detekto\n"
 msgstr ""
 
 #. type: Bullet: '* '
 #: index.md:86
 #, no-wrap
-msgid "movado-detekto_ir-cut_\n"
+msgid "movado-detekto\n"
 msgstr ""
 
 #. type: Bullet: '* '
 #: index.md:88
 #, no-wrap
-msgid "sendante retpoŝton\n"
+msgid "movado-detekto_ir-cut_\n"
 msgstr ""
 
 #. type: Bullet: '* '
 #: index.md:90
 #, no-wrap
-msgid "sendante retpoŝton_mqtt_\n"
+msgid "sendante retpoŝton\n"
 msgstr ""
 
 #. type: Bullet: '* '
 #: index.md:92
 #, no-wrap
+msgid "sendante retpoŝton_mqtt_\n"
+msgstr ""
+
+#. type: Bullet: '* '
+#: index.md:94
+#, no-wrap
 msgid "ktp ...\n"
 msgstr ""
 
 #. type: Title ##
-#: index.md:94
+#: index.md:96
 #, no-wrap
 msgid "Kamera preparado"
 msgstr ""
 
 #. type: Bullet: '* '
-#: index.md:97 index.md:116
+#: index.md:99 index.md:118
 #, no-wrap
 msgid "Konekti la fotilon al via loka reto kaj ŝalti la fotilon.\n"
 msgstr ""
 
 #. type: Bullet: '* '
-#: index.md:99
+#: index.md:101
 #, no-wrap
 msgid "Trovu la IP-adreson de la fotilo.\n"
 msgstr ""
 
 #. type: Bullet: '* '
-#: index.md:101
+#: index.md:103
 #, no-wrap
 msgid "Konekti al la fotilo per URL _\"http://IP\"_ (uzanto _admin_, pasvorto _admin_)\n"
 msgstr ""
 
 #. type: Bullet: '* '
-#: index.md:103
+#: index.md:105
 #, no-wrap
 msgid "en la langeto \"Aŭdio kaj video\", agordu la ĉefan rivereton al 720p, alklaku \"Konservu\".\n"
 msgstr ""
 
 #. type: Bullet: '* '
-#: index.md:105
+#: index.md:107
 #, no-wrap
 msgid "eble agordu la kablan reton en la langeto \"Reto\".\n"
 msgstr ""
 
 #. type: Title ##
-#: index.md:107
+#: index.md:109
 #, no-wrap
 msgid "Instalante Alternativan Firmware"
 msgstr ""
 
 #. type: Bullet: '* '
-#: index.md:110
+#: index.md:112
 #, no-wrap
 msgid "Kopiu ĉion en la dosierujo [ _karto_ ](https://github.com/jmichault/ipcam-100/tree/master/karto) ĉe la radiko de la karto microSD.\n"
 msgstr ""
 
 #. type: Bullet: '* '
-#: index.md:112
+#: index.md:114
 #, no-wrap
 msgid "laŭvole agordi la reton ( _config/staticip.conf_ , _config/resolv.conf_ , _config/wpa_supplicant.conf_ )\n"
 msgstr ""
 
 #. type: Bullet: '* '
-#: index.md:114
+#: index.md:116
 #, no-wrap
 msgid "Enmetu la karton microSD.\n"
 msgstr ""
 
 #. type: Bullet: '* '
-#: index.md:118
+#: index.md:120
 #, no-wrap
 msgid "Ensalutu ĉe la fotilo per `telnet IP 9527` (uzanto _root_, pasvorto _jco66688_).\n"
 msgstr ""
 
 #. type: Bullet: '* '
-#: index.md:120
+#: index.md:122
 #, no-wrap
 msgid "Premu `killall -9 auto_run.sh` por eviti fermi la konekton.\n"
 msgstr ""
 
 #. type: Bullet: '* '
-#: index.md:122
+#: index.md:124
 #, no-wrap
 msgid "Faru `cd /opt/media/mmcblk0p1;./install.sh`\n"
 msgstr ""
 
 #. type: Bullet: '* '
-#: index.md:124
+#: index.md:126
 #, no-wrap
 msgid "Vi povas konekti al la URL _\"https://IP\"_ (uzanto _admin_, pasvorto _jco66688_).\n"
 msgstr ""
 
+#. type: Bullet: '* '
+#: index.md:128
+#, no-wrap
+msgid "La primara video-fluo estas alirebla ĉe _rtsp://admin:ismart21@IP/stream1_.\n"
+msgstr ""
+
+#. type: Bullet: '* '
+#: index.md:130
+#, no-wrap
+msgid "La sekundara video-fluo estas alirebla ĉe _rtsp://admin:ismart21@IP/stream2_.\n"
+msgstr ""
+
 #. type: Title ##
-#: index.md:126
+#: index.md:132
 #, no-wrap
 msgid "Malinstalanta Alternativan Firmware:"
 msgstr ""
 
 #. type: Bullet: '* '
-#: index.md:129
+#: index.md:135
 #, no-wrap
 msgid "komencu la telnet-servon per la fotilo per la interreta interfaco.\n"
 msgstr ""
 
 #. type: Bullet: '* '
-#: index.md:131
+#: index.md:137
 #, no-wrap
 msgid "komencu la telnet-servon per la fotilo per la interreta interfaco. `telnet IP` \n"
 msgstr ""
 
 #. type: Bullet: '* '
-#: index.md:133
+#: index.md:139
 #, no-wrap
 msgid "komencu la telnet-servon per la fotilo per la interreta interfaco. `cd /opt/media/mmcblk0p1;./uninstall.sh;reboot`\n"
 msgstr ""
 
 #. type: Bullet: '* '
-#: index.md:136
+#: index.md:142
 #, no-wrap
 msgid "Vi ankaŭ povas simple forigi la karton microSD.\n"
 msgstr ""

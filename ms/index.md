@@ -49,7 +49,10 @@ Dokumentasi API boleh dilihat di sini:
 * LAN dan WLAN
 
 
-* Pelayan RTSP-Double-Fluid: 1280x720 H264 dan 640X360 MJPEG
+* Pelayan aliran Dwi DRTTSP: 1920x1080 H264 dan 640X360 MJPEG secara lalai.
+
+
+* Parameter visual
 
 
 * Pelayan HTTP
@@ -85,13 +88,13 @@ Dokumentasi API boleh dilihat di sini:
 
 ## Apa yang tidak berfungsi dalam firmware alternatif:
 
-* Parameter visual
-
-
 * sistem bunyi
 
 
 * _OSD_
+
+
+* Pengurusan Kata Laluan.
 
 
 * kemas kini firmware
@@ -158,6 +161,12 @@ Dokumentasi API boleh dilihat di sini:
 
 
 * Anda boleh menyambung ke pengguna URL _"https://IP"_ ( _admin_, kata laluan _jco66688_).
+
+
+* Arus video utama boleh diakses pada _rtsp://admin:ismart21@IP/stream1_. (° 3 ° 3
+
+
+* Arus video menengah boleh diakses pada _rtsp://admin:ismart21@IP/stream2_. (° 3 ° 3
 
 
 

@@ -49,7 +49,10 @@ Die API-Dokumentation kann hier eingesehen werden:
 * LAN und WLAN
 
 
-* RTSP-Doppelflüssigkeitsserver: 1280x720 H264 und 640x360 MJPEG
+* DRTTSP Dual Flow Server: 1920x1080 H264 und 640x360 MJPEG standardmäßig.
+
+
+* Visuelle Parameter
 
 
 * HTTP-Server
@@ -85,13 +88,13 @@ Die API-Dokumentation kann hier eingesehen werden:
 
 ## Was bei alternativer Firmware nicht funktioniert:
 
-* Visuelle Parameter
-
-
 * Soundsystem
 
 
 * _OSD_
+
+
+* Passwortmanagement.
 
 
 * Firmware-Update
@@ -158,6 +161,12 @@ Die API-Dokumentation kann hier eingesehen werden:
 
 
 * Sie können eine Verbindung zum Benutzer der URL _"https://IP"_ ( _admin_und zum Kennwort _jco66688_)herstellen.
+
+
+* Der primäre Videostrom ist bei _rtsp://admin:ismart21@IP/stream1_erreichbar. (° 3 ° 3
+
+
+* Der sekundäre Videostrom ist bei _rtsp://admin:ismart21@IP/stream2_erreichbar. (° 3 ° 3
 
 
 

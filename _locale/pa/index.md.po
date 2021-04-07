@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-04-07 16:09+0200\n"
+"POT-Creation-Date: 2021-04-07 22:54+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -134,8 +134,7 @@ msgstr "[ਚੀਨੀ ਵਿਚ ਮੂਲ ਸੰਸਕਰਣ](../zh/includes.zh/
 
 #. type: Bullet: '* '
 #: index.md:38
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "[Angla versio](../en/includes.en/html/)\n"
 msgstr "[ਇੰਗਲਿਸ਼ ਵਰਜ਼ਨ](../en/includes.en/html/)\n"
 
@@ -165,81 +164,82 @@ msgstr "LAN ਅਤੇ WLAN\n"
 
 #. type: Bullet: '* '
 #: index.md:49
-#, fuzzy, no-wrap
-msgid "RTSP-duobla-flua servilo: 1280x720 H264 kaj 640x360 MJpeg\n"
-msgstr "ਆਰਟੀਐਸਪੀ-ਡਬਲ-ਫਲਾਈਡ ਸਰਵਰ: 1280x720 H264 ਅਤੇ 640x360 MJPEG\n"
+#, no-wrap
+#, fuzzy
+msgid "DRTSP Dual Flow Server: 1920x1080 H264 kaj 640x360 MJpeg defaŭlte.\n"
+msgstr "ਡੀਟੀਟੀਟੀਐਸਪੀ ਡਿ ual ਲ ਫਲੋ ਸਰਵਰ: 1920x1080 H264 ਅਤੇ 640x360 ਐਮਜੇਪੀਜੀ ਮੂਲ ਰੂਪ ਵਿੱਚ.\n"
 
 #. type: Bullet: '* '
 #: index.md:51
+#, fuzzy, no-wrap
+msgid "Vidaj parametroj\n"
+msgstr "ਵਿਜ਼ੂਅਲ ਪੈਰਾਮੀਟਰ\n"
+
+#. type: Bullet: '* '
+#: index.md:53
 #, fuzzy, no-wrap
 msgid "HTTP-servilo\n"
 msgstr "HTTP ਸਰਵਰ\n"
 
 #. type: Bullet: '* '
-#: index.md:53
+#: index.md:55
 #, fuzzy, no-wrap
 msgid "motora kontrolo\n"
 msgstr "ਇੰਜਣ ਨਿਯੰਤਰਣ\n"
 
 #. type: Bullet: '* '
-#: index.md:55
+#: index.md:57
 #, fuzzy, no-wrap
 msgid "motora kalibrado\n"
 msgstr "ਇੰਜਨ ਕੈਲੀਬ੍ਰੇਸ਼ਨ\n"
 
 #. type: Bullet: '* '
-#: index.md:57
+#: index.md:59
 #, fuzzy, no-wrap
 msgid "Agordoj de PTZ\n"
 msgstr "PTZ ਸੈਟਿੰਗਜ਼\n"
 
 #. type: Bullet: '* '
-#: index.md:59
+#: index.md:61
 #, fuzzy, no-wrap
 msgid "NTP-kliento\n"
 msgstr "ਐਨਟੀਪੀ ਕਲਾਇੰਟ\n"
 
 #. type: Bullet: '* '
-#: index.md:61
+#: index.md:63
 #, fuzzy, no-wrap
 msgid "pasvorta ŝanĝo por http-aliro\n"
 msgstr "http ਐਕਸੈਸ ਲਈ ਪਾਸਵਰਡ ਬਦਲਾਓ\n"
 
 #. type: Bullet: '* '
-#: index.md:63
+#: index.md:65
 #, fuzzy, no-wrap
 msgid "blua LED kaj IR-kontrolo\n"
 msgstr "ਨੀਲੀ LED ਅਤੇ IR ਨਿਯੰਤਰਣ\n"
 
 #. type: Bullet: '* '
-#: index.md:65
+#: index.md:67
 #, fuzzy, no-wrap
 msgid "Ftp-servilo\n"
 msgstr "Ftp ਸਰਵਰ\n"
 
 #. type: Bullet: '* '
-#: index.md:67
+#: index.md:69
 #, fuzzy, no-wrap
 msgid "Telnet-servilo\n"
 msgstr "ਟੈਲਨੈੱਟ ਸਰਵਰ\n"
 
 #. type: Bullet: '* '
-#: index.md:69
+#: index.md:71
 #, fuzzy, no-wrap
 msgid "SSH-servilo kaj kliento\n"
 msgstr "ਐਸਐਸਐਚ ਸਰਵਰ ਅਤੇ ਕਲਾਇੰਟ\n"
 
 #. type: Title ##
-#: index.md:71
+#: index.md:73
 #, fuzzy, no-wrap
 msgid "Kio ne funkcias en alternativa firmvaro:"
 msgstr "ਵਿਕਲਪਕ ਫਰਮਵੇਅਰ ਵਿੱਚ ਕੀ ਕੰਮ ਨਹੀਂ ਕਰਦਾ:"
-
-#. type: Bullet: '* '
-#: index.md:74
-#, fuzzy, no-wrap
-msgid "Vidaj parametroj\n"
-msgstr "ਵਿਜ਼ੂਅਲ ਪੈਰਾਮੀਟਰ\n"
 
 #. type: Bullet: '* '
 #: index.md:76
@@ -255,159 +255,184 @@ msgstr "_OSD_\n"
 
 #. type: Bullet: '* '
 #: index.md:80
+#, no-wrap
+#, fuzzy
+msgid "Administrado de pasvorto.\n"
+msgstr "ਪਾਸਵਰਡ ਪ੍ਰਬੰਧਨ.\n"
+
+#. type: Bullet: '* '
+#: index.md:82
 #, fuzzy, no-wrap
 msgid "ĝisdatigo de firmvaro\n"
 msgstr "ਫਰਮਵੇਅਰ ਅਪਡੇਟ\n"
 
 #. type: Bullet: '* '
-#: index.md:82
+#: index.md:84
 #, fuzzy, no-wrap
 msgid "aŭtomata nokta detekto\n"
 msgstr "ਰਾਤ ਨੂੰ ਸਵੈਚਾਲਤ ਖੋਜ\n"
 
 #. type: Bullet: '* '
-#: index.md:84
+#: index.md:86
 #, fuzzy, no-wrap
 msgid "movado-detekto\n"
 msgstr "ਮੋਸ਼ਨ ਖੋਜ\n"
 
 #. type: Bullet: '* '
-#: index.md:86
+#: index.md:88
 #, fuzzy, no-wrap
 msgid "movado-detekto_ir-cut_\n"
 msgstr "ਮੋਸ਼ਨ ਖੋਜ_ir-cut_\n"
 
 #. type: Bullet: '* '
-#: index.md:88
+#: index.md:90
 #, fuzzy, no-wrap
 msgid "sendante retpoŝton\n"
 msgstr "ਈਮੇਲ ਭੇਜਣਾ\n"
 
 #. type: Bullet: '* '
-#: index.md:90
+#: index.md:92
 #, fuzzy, no-wrap
 msgid "sendante retpoŝton_mqtt_\n"
 msgstr "ਈਮੇਲ ਭੇਜਣਾ_mqtt_\n"
 
 #. type: Bullet: '* '
-#: index.md:92
+#: index.md:94
 #, fuzzy, no-wrap
 msgid "ktp ...\n"
 msgstr "ਆਦਿ ...\n"
 
 #. type: Title ##
-#: index.md:94
+#: index.md:96
 #, fuzzy, no-wrap
 msgid "Kamera preparado"
 msgstr "ਕੈਮਰਾ ਤਿਆਰੀ"
 
 #. type: Bullet: '* '
-#: index.md:97 index.md:116
+#: index.md:99 index.md:118
 #, fuzzy, no-wrap
 msgid "Konekti la fotilon al via loka reto kaj ŝalti la fotilon.\n"
 msgstr "ਕੈਮਰਾ ਨੂੰ ਆਪਣੇ ਸਥਾਨਕ ਨੈਟਵਰਕ ਨਾਲ ਕਨੈਕਟ ਕਰੋ ਅਤੇ ਕੈਮਰਾ ਚਾਲੂ ਕਰੋ.\n"
 
 #. type: Bullet: '* '
-#: index.md:99
+#: index.md:101
 #, fuzzy, no-wrap
 msgid "Trovu la IP-adreson de la fotilo.\n"
 msgstr "ਕੈਮਰੇ ਦਾ IP ਪਤਾ ਲੱਭੋ.\n"
 
 #. type: Bullet: '* '
-#: index.md:101
+#: index.md:103
 #, fuzzy, no-wrap
 msgid "Konekti al la fotilo per URL _\"http://IP\"_ (uzanto _admin_, pasvorto _admin_)\n"
 msgstr "ਯੂਆਰਐਲ _\"http://IP\"_ (ਉਪਭੋਗਤਾ _admin_, ਪਾਸਵਰਡ _admin_)ਦੁਆਰਾ ਕੈਮਰਾ ਨਾਲ ਕਨੈਕਟ ਕਰੋ\n"
 
 #. type: Bullet: '* '
-#: index.md:103
+#: index.md:105
 #, fuzzy, no-wrap
 msgid "en la langeto \"Aŭdio kaj video\", agordu la ĉefan rivereton al 720p, alklaku \"Konservu\".\n"
 msgstr "ਟੈਬ ਵਿਚ \"ਆਡੀਓ ਅਤੇ ਵੀਡੀਓ\", ਮੁੱਖ ਧਾਰਾ ਨੂੰ 720p ਸੈੱਟ ਕਰੋ, \"ਸੇਵ\"ਤੇ ਕਲਿਕ ਕਰੋ.\n"
 
 #. type: Bullet: '* '
-#: index.md:105
+#: index.md:107
 #, fuzzy, no-wrap
 msgid "eble agordu la kablan reton en la langeto \"Reto\".\n"
 msgstr "ਤੁਸੀਂ ਕੇਬਲ ਨੈਟਵਰਕ ਨੂੰ ਟੈਬ \"ਨੈਟਵਰਕ\"ਵਿੱਚ ਸੈਟ ਕਰਨ ਦੇ ਯੋਗ ਹੋ ਸਕਦੇ ਹੋ.\n"
 
 #. type: Title ##
-#: index.md:107
+#: index.md:109
 #, fuzzy, no-wrap
 msgid "Instalante Alternativan Firmware"
 msgstr "ਵਿਕਲਪਿਕ ਫਰਮਵੇਅਰ ਸਥਾਪਤ ਕਰਨਾ"
 
 #. type: Bullet: '* '
-#: index.md:110
+#: index.md:112
 #, fuzzy, no-wrap
 msgid "Kopiu ĉion en la dosierujo [ _karto_ ](https://github.com/jmichault/ipcam-100/tree/master/karto) ĉe la radiko de la karto microSD.\n"
 msgstr "ਮਾਈਕ੍ਰੋ ਐਸਡੀ ਕਾਰਡ ਦੇ ਰੂਟ ਤੇ [ _karto_ ](https://github.com/jmichault/ipcam-100/tree/master/karto) ਫੋਲਡਰ ਵਿੱਚ ਹਰ ਚੀਜ਼ ਦੀ ਨਕਲ ਕਰੋ.\n"
 
 #. type: Bullet: '* '
-#: index.md:112
+#: index.md:114
 #, fuzzy, no-wrap
 msgid "laŭvole agordi la reton ( _config/staticip.conf_ , _config/resolv.conf_ , _config/wpa_supplicant.conf_ )\n"
 msgstr "ਵਿਕਲਪਿਕ ਤੌਰ ਤੇ ਨੈਟਵਰਕ ( _config/staticip.conf_ , _config/resolv.conf_ , _config/wpa_supplicant.conf_ )\n"
 
 #. type: Bullet: '* '
-#: index.md:114
+#: index.md:116
 #, fuzzy, no-wrap
 msgid "Enmetu la karton microSD.\n"
 msgstr "ਮਾਈਕ੍ਰੋ ਐਸਡੀ ਕਾਰਡ ਪਾਓ.\n"
 
 #. type: Bullet: '* '
-#: index.md:118
+#: index.md:120
 #, fuzzy, no-wrap
 msgid "Ensalutu ĉe la fotilo per `telnet IP 9527` (uzanto _root_, pasvorto _jco66688_).\n"
 msgstr " `telnet IP 9527` (ਉਪਭੋਗਤਾ _root_, ਪਾਸਵਰਡ _jco66688_)ਨਾਲ ਕੈਮਰਾ ਤੇ ਲੌਗ ਇਨ ਕਰੋ.\n"
 
 #. type: Bullet: '* '
-#: index.md:120
+#: index.md:122
 #, fuzzy, no-wrap
 msgid "Premu `killall -9 auto_run.sh` por eviti fermi la konekton.\n"
 msgstr "ਕਨੈਕਸ਼ਨ ਬੰਦ ਕਰਨ ਤੋਂ ਬਚਣ ਲਈ `killall -9 auto_run.sh` ਦਬਾਓ.\n"
 
 #. type: Bullet: '* '
-#: index.md:122
+#: index.md:124
 #, fuzzy, no-wrap
 msgid "Faru `cd /opt/media/mmcblk0p1;./install.sh`\n"
 msgstr "ਫਰੂ `cd /opt/media/mmcblk0p1;./install.sh`\n"
 
 #. type: Bullet: '* '
-#: index.md:124
+#: index.md:126
 #, fuzzy, no-wrap
 msgid "Vi povas konekti al la URL _\"https://IP\"_ (uzanto _admin_, pasvorto _jco66688_).\n"
 msgstr "ਤੁਸੀਂ ਯੂਆਰਐਲ _\"https://IP\"_ (ਉਪਭੋਗਤਾ _admin_, ਪਾਸਵਰਡ _jco66688_)ਨਾਲ ਜੁੜ ਸਕਦੇ ਹੋ.\n"
 
+#. type: Bullet: '* '
+#: index.md:128
+#, no-wrap
+#, fuzzy
+msgid "La primara video-fluo estas alirebla ĉe _rtsp://admin:ismart21@IP/stream1_.\n"
+msgstr "ਪ੍ਰਾਇਮਰੀ ਵੀਡੀਓ ਮੌਜੂਦਾ _rtsp://admin:ismart21@IP/stream1_ਤੇ ਪਹੁੰਚਯੋਗ ਹੈ.\n"
+
+#. type: Bullet: '* '
+#: index.md:130
+#, no-wrap
+#, fuzzy
+msgid "La sekundara video-fluo estas alirebla ĉe _rtsp://admin:ismart21@IP/stream2_.\n"
+msgstr "ਸੈਕੰਡਰੀ ਵੀਡੀਓ ਮੌਜੂਦਾ _rtsp://admin:ismart21@IP/stream2_ਤੇ ਪਹੁੰਚਯੋਗ ਹੈ.\n"
+
 #. type: Title ##
-#: index.md:126
+#: index.md:132
 #, fuzzy, no-wrap
 msgid "Malinstalanta Alternativan Firmware:"
 msgstr "ਵਿਕਲਪਕ ਫਰਮਵੇਅਰ ਨੂੰ ਅਣਇੰਸਟੌਲ ਕਰਨਾ:"
 
 #. type: Bullet: '* '
-#: index.md:129
+#: index.md:135
 #, fuzzy, no-wrap
 msgid "komencu la telnet-servon per la fotilo per la interreta interfaco.\n"
 msgstr "ਇੰਟਰਨੈਟ ਇੰਟਰਫੇਸ ਦੁਆਰਾ ਕੈਮਰਾ ਨਾਲ ਟੈਲਨੈੱਟ ਸੇਵਾ ਅਰੰਭ ਕਰੋ.\n"
 
 #. type: Bullet: '* '
-#: index.md:131
+#: index.md:137
 #, fuzzy, no-wrap
 msgid "komencu la telnet-servon per la fotilo per la interreta interfaco. `telnet IP` \n"
 msgstr "ਇੰਟਰਨੈਟ ਇੰਟਰਫੇਸ ਦੁਆਰਾ ਕੈਮਰਾ ਨਾਲ ਟੈਲਨੈੱਟ ਸੇਵਾ ਅਰੰਭ ਕਰੋ. `telnet IP` \n"
 
 #. type: Bullet: '* '
-#: index.md:133
+#: index.md:139
 #, fuzzy, no-wrap
 msgid "komencu la telnet-servon per la fotilo per la interreta interfaco. `cd /opt/media/mmcblk0p1;./uninstall.sh;reboot`\n"
 msgstr "ਇੰਟਰਨੈਟ ਇੰਟਰਫੇਸ ਦੁਆਰਾ ਕੈਮਰਾ ਨਾਲ ਟੈਲਨੈੱਟ ਸੇਵਾ ਅਰੰਭ ਕਰੋ. `cd /opt/media/mmcblk0p1;./uninstall.sh;reboot`\n"
 
 #. type: Bullet: '* '
-#: index.md:136
+#: index.md:142
 #, fuzzy, no-wrap
 msgid "Vi ankaŭ povas simple forigi la karton microSD.\n"
 msgstr "ਤੁਸੀਂ ਆਸਾਨੀ ਨਾਲ ਮਾਈਕ੍ਰੋ ਐਸਡੀ ਕਾਰਡ ਨੂੰ ਵੀ ਹਟਾ ਸਕਦੇ ਹੋ.\n"
+
+#, fuzzy, no-wrap
+#~ msgid "RTSP-duobla-flua servilo: 1280x720 H264 kaj 640x360 MJpeg\n"
+#~ msgstr "ਆਰਟੀਐਸਪੀ-ਡਬਲ-ਫਲਾਈਡ ਸਰਵਰ: 1280x720 H264 ਅਤੇ 640x360 MJPEG\n"
 
 #, fuzzy, no-wrap
 #~ msgid "[Angla versio tradukita de google](../en/includes.en/html/)\n"
