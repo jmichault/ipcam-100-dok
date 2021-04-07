@@ -35,10 +35,10 @@ APIドキュメントはここで見ることができます：
 * [中国語のオリジナルバージョン](../zh/includes.zh/html/)
 
 
+* [英語版](../en/includes.en/html/)
+
+
 * [グーグル翻訳のフランス語版](../fr/includes.fr/html/)
-
-
-* [グーグル翻訳の英語版](../en/includes.en/html/)
 
 
 

@@ -1,16 +1,17 @@
 var searchData=
 [
-  ['data',['data',['../structIMPOSDRgnAttr.html#a4fa6000e0b69560733ee6eb37a953236',1,'IMPOSDRgnAttr']]],
-  ['datatype',['dataType',['../structIMPEncoderPack.html#af9ccb5a00217b1e4a041a0431339d7ff',1,'IMPEncoderPack']]],
-  ['decattr',['decAttr',['../structIMPDecoderCHNAttr.html#aca3b5645462554695652cb31ef0809c8',1,'IMPDecoderCHNAttr']]],
-  ['decodernal',['decoderNal',['../structIMPDecoderStream.html#ab1de2e01da4518d307ebec8fce7ace7f',1,'IMPDecoderStream']]],
-  ['dectype',['decType',['../structIMPDecoderAttr.html#a8bbadf5951d973a1b977ab288ee07d9e',1,'IMPDecoderAttr']]],
-  ['demaskcnt',['demaskCnt',['../structIMPEncoderAttrH264Demask.html#a0106f71243f206e71767f5bf6e9a6450',1,'IMPEncoderAttrH264Demask']]],
-  ['demaskthresd',['demaskThresd',['../structIMPEncoderAttrH264Demask.html#ad6742d638f060448d6d6dc9cc68bbb37',1,'IMPEncoderAttrH264Demask']]],
-  ['deviceid',['deviceID',['../structIMPCell.html#a358ba42dca9762ae9e35473ff423dfa2',1,'IMPCell']]],
-  ['dgain',['dgain',['../structIMPISPEVAttr.html#a99dc319f4fcdc4cfbd8b1ba14b65a5c7',1,'IMPISPEVAttr']]],
-  ['dniqp',['dnIQp',['../structIMPEncoderAttrH264Denoise.html#a9af1cb3a2a6d0f33e620b833af08708b',1,'IMPEncoderAttrH264Denoise']]],
-  ['dnpqp',['dnPQp',['../structIMPEncoderAttrH264Denoise.html#a66712cbafbf36945d87a27c942dcc213',1,'IMPEncoderAttrH264Denoise']]],
-  ['dntype',['dnType',['../structIMPEncoderAttrH264Denoise.html#a7f4212bd68d27aa4d2750a60c9a4dee2',1,'IMPEncoderAttrH264Denoise']]],
-  ['drc_5fstrength',['drc_strength',['../structIMPISPDrcAttr.html#ad4be722e755630e29d615157fe9850ce',1,'IMPISPDrcAttr']]]
+  ['data',['data',['../struct_i_m_p_o_s_d_rgn_attr.html#a7d65fefb322442fb37da6d16990027ac',1,'IMPOSDRgnAttr']]],
+  ['datatype',['dataType',['../struct_i_m_p_encoder_pack.html#a825c4f7c0ed45f1a4bab7530de62d76a',1,'IMPEncoderPack']]],
+  ['decattr',['decAttr',['../struct_i_m_p_decoder_c_h_n_attr.html#a382cdb979dda46d85a33be1dcb197b91',1,'IMPDecoderCHNAttr']]],
+  ['decodernal',['decoderNal',['../struct_i_m_p_decoder_stream.html#a83af695d9e992b6e60361b26781b9d18',1,'IMPDecoderStream']]],
+  ['dectype',['decType',['../struct_i_m_p_decoder_attr.html#aaca5f82d924a74f24e4559d531479ced',1,'IMPDecoderAttr']]],
+  ['demaskcnt',['demaskCnt',['../struct_i_m_p_encoder_attr_demask.html#a256478de947ff6253375ecfe8a92a954',1,'IMPEncoderAttrDemask']]],
+  ['demaskthresd',['demaskThresd',['../struct_i_m_p_encoder_attr_demask.html#a36545eaa4bb6511cb3b8cb159365dc32',1,'IMPEncoderAttrDemask']]],
+  ['deviceid',['deviceID',['../struct_i_m_p_cell.html#a3ff2f370b9d3dfdcdc73230be37ddcb6',1,'IMPCell']]],
+  ['dniqp',['dnIQp',['../struct_i_m_p_encoder_attr_denoise.html#ae915d8bb4c1d2d6ddddf1e0bd2ac823e',1,'IMPEncoderAttrDenoise']]],
+  ['dnpqp',['dnPQp',['../struct_i_m_p_encoder_attr_denoise.html#a17ef3c00e33d6bd65fe0b558ff99e4d3',1,'IMPEncoderAttrDenoise']]],
+  ['dntype',['dnType',['../struct_i_m_p_encoder_attr_denoise.html#ab621559721ed430d2b9137d6807a4bf1',1,'IMPEncoderAttrDenoise']]],
+  ['drc_5fstrength',['drc_strength',['../group___i_m_p___i_s_p.html#gaf48d2ff007d96c2a2aa9cb697865ce1e',1,'IMPISPDrcAttr']]],
+  ['dval_5fmax',['dval_max',['../group___i_m_p___i_s_p.html#ga1c1c7324f12683a251405aa349b1ca80',1,'IMPISPDrcAttr']]],
+  ['dval_5fmin',['dval_min',['../group___i_m_p___i_s_p.html#ga4c52a2b4adcc22c6174a3a7d55b09436',1,'IMPISPDrcAttr']]]
 ];

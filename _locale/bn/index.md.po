@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-03-22 23:58+0100\n"
+"POT-Creation-Date: 2021-04-07 16:08+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -134,15 +134,16 @@ msgstr "[চীনা মূল সংস্করণ](../zh/includes.zh/html/)(
 
 #. type: Bullet: '* '
 #: index.md:38
-#, fuzzy, no-wrap
-msgid "[Franca versio tradukita de google](../fr/includes.fr/html/)\n"
-msgstr "[ফরাসী সংস্করণ গুগল](../fr/includes.fr/html/)দ্বারা অনুবাদ\n"
+#, no-wrap
+#, fuzzy
+msgid "[Angla versio](../en/includes.en/html/)\n"
+msgstr "[ইংরেজি সংস্করণ](../en/includes.en/html/)\n"
 
 #. type: Bullet: '* '
 #: index.md:40
 #, fuzzy, no-wrap
-msgid "[Angla versio tradukita de google](../en/includes.en/html/)\n"
-msgstr "[ইংরেজি সংস্করণ গুগল](../en/includes.en/html/)দ্বারা অনুবাদ\n"
+msgid "[Franca versio tradukita de google](../fr/includes.fr/html/)\n"
+msgstr "[ফরাসী সংস্করণ গুগল](../fr/includes.fr/html/)দ্বারা অনুবাদ\n"
 
 #. type: Title #
 #: index.md:42
@@ -164,8 +165,7 @@ msgstr "ল্যান এবং ডাব্লুএলএএন\n"
 
 #. type: Bullet: '* '
 #: index.md:49
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "RTSP-duobla-flua servilo: 1280x720 H264 kaj 640x360 MJpeg\n"
 msgstr "RTSP-DIAL-FLUID সার্ভার: 1280x720 H264 এবং 640x360 MJPEG\n"
 
@@ -225,8 +225,7 @@ msgstr "টেলনেট সার্ভার\n"
 
 #. type: Bullet: '* '
 #: index.md:69
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "SSH-servilo kaj kliento\n"
 msgstr "এসএসএইচ সার্ভার এবং ক্লায়েন্ট\n"
 
@@ -409,6 +408,10 @@ msgstr "ইন্টারনেট ইন্টারফেসের মাধ�
 #, fuzzy, no-wrap
 msgid "Vi ankaŭ povas simple forigi la karton microSD.\n"
 msgstr "আপনি কেবল মাইক্রোএসডি কার্ডটি সরাতে পারেন।\n"
+
+#, fuzzy, no-wrap
+#~ msgid "[Angla versio tradukita de google](../en/includes.en/html/)\n"
+#~ msgstr "[ইংরেজি সংস্করণ গুগল](../en/includes.en/html/)দ্বারা অনুবাদ\n"
 
 #, fuzzy
 #~ msgid "RTSP MJPEG-servilo\n"

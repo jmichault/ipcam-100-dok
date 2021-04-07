@@ -1,14 +1,14 @@
 var searchData=
 [
-  ['fgalhpa',['fgAlhpa',['../structIMPOSDGrpRgnAttr.html#a650abe89fe1cade77ef441de3a40057d',1,'IMPOSDGrpRgnAttr']]],
-  ['flushframe',['FlushFrame',['../structIMPIVSInterface.html#a5e3449dc6216e90d94dd4fd070d9691b',1,'IMPIVSInterface']]],
-  ['fmt',['fmt',['../structIMPOSDRgnAttr.html#a2d914a8fe368466431347f4ff76fe4e7',1,'IMPOSDRgnAttr']]],
-  ['frameend',['frameEnd',['../structIMPEncoderPack.html#a43c7a8c41862ba08bb58f48a2fa9d1d3',1,'IMPEncoderPack']]],
-  ['frameinfo',['frameInfo',['../structIMP__IVS__MoveParam.html#a7c9a6d18220ab58560efb38df63773e7',1,'IMP_IVS_MoveParam']]],
-  ['frmnum',['frmNum',['../group__IMP__Audio.html#ga6ea7ed3fc7f83a47cd9bf5cbab460b6a',1,'IMPAudioIOAttr']]],
-  ['frmqpstep',['FrmQPStep',['../structIMPEncoderAttrH264CBR.html#af29d47dbd83933ecfd346c9dd1367737',1,'IMPEncoderAttrH264CBR::FrmQPStep()'],['../structIMPEncoderAttrH264VBR.html#a82927d8aa23f26b7b69837396eeef835',1,'IMPEncoderAttrH264VBR::FrmQPStep()']]],
-  ['frmrateden',['frmRateDen',['../structIMPDecoderAttr.html#aa1b76a3dabb8b4429e9c7d1d9b24abdf',1,'IMPDecoderAttr::frmRateDen()'],['../structIMPEncoderFrmRate.html#af8d316a91973a7a111a4fb7f7d4950c3',1,'IMPEncoderFrmRate::frmRateDen()']]],
-  ['frmratenum',['frmRateNum',['../structIMPDecoderAttr.html#a5f5a084909f6c813891c6a05d6d52fb1',1,'IMPDecoderAttr::frmRateNum()'],['../structIMPEncoderFrmRate.html#a2326e3fdf51a597b3f63223325d53a2f',1,'IMPEncoderFrmRate::frmRateNum()']]],
-  ['frmusedmode',['frmUsedMode',['../structIMPEncoderAttrH264FrmUsed.html#a353bdd14f2056d6fb94a6ba44381d754',1,'IMPEncoderAttrH264FrmUsed']]],
-  ['frmusedtimes',['frmUsedTimes',['../structIMPEncoderAttrH264FrmUsed.html#ad658e711846628a3db1b74cb2cfe011c',1,'IMPEncoderAttrH264FrmUsed']]]
+  ['fgalhpa',['fgAlhpa',['../struct_i_m_p_o_s_d_grp_rgn_attr.html#afba219c9cdafe17b0b4b16e5bfb5d3e8',1,'IMPOSDGrpRgnAttr']]],
+  ['flushframe',['flushFrame',['../struct_i_m_p_i_v_s_interface.html#a173e8bd0f8f70493b7bb793b9e01e5f4',1,'IMPIVSInterface']]],
+  ['fmt',['fmt',['../struct_i_m_p_o_s_d_rgn_attr.html#a4f6c11c557397431854a096d7282aa27',1,'IMPOSDRgnAttr']]],
+  ['frameend',['frameEnd',['../struct_i_m_p_encoder_pack.html#aeaf3f508be930b0e2240ac271d76403b',1,'IMPEncoderPack']]],
+  ['frameinfo',['frameInfo',['../struct_i_m_p___i_v_s___move_param.html#adf580d1d1a9e891e5fbda6b88c2f5ef0',1,'IMP_IVS_MoveParam']]],
+  ['frmnum',['frmNum',['../group___i_m_p___audio.html#gae35e3f3748865c159696d539ada1dcb9',1,'IMPAudioIOAttr']]],
+  ['frmqpstep',['frmQPStep',['../struct_i_m_p_encoder_attr_h264_c_b_r.html#a799a77955063875de7c7ac0807ba30ad',1,'IMPEncoderAttrH264CBR::frmQPStep()'],['../struct_i_m_p_encoder_attr_h264_v_b_r.html#a799a77955063875de7c7ac0807ba30ad',1,'IMPEncoderAttrH264VBR::frmQPStep()'],['../struct_i_m_p_encoder_attr_h264_smart.html#a799a77955063875de7c7ac0807ba30ad',1,'IMPEncoderAttrH264Smart::frmQPStep()']]],
+  ['frmrateden',['frmRateDen',['../struct_i_m_p_encoder_frm_rate.html#ae61c4eb850d46ad1517b2df6fb4aa25f',1,'IMPEncoderFrmRate::frmRateDen()'],['../struct_i_m_p_decoder_attr.html#ae61c4eb850d46ad1517b2df6fb4aa25f',1,'IMPDecoderAttr::frmRateDen()']]],
+  ['frmratenum',['frmRateNum',['../struct_i_m_p_encoder_frm_rate.html#a444b5b7bad848213bb503c8c43170239',1,'IMPEncoderFrmRate::frmRateNum()'],['../struct_i_m_p_decoder_attr.html#a444b5b7bad848213bb503c8c43170239',1,'IMPDecoderAttr::frmRateNum()']]],
+  ['frmusedmode',['frmUsedMode',['../struct_i_m_p_encoder_attr_frm_used.html#adc3d540d20d396be786c991d56835001',1,'IMPEncoderAttrFrmUsed']]],
+  ['frmusedtimes',['frmUsedTimes',['../struct_i_m_p_encoder_attr_frm_used.html#afe95c53b69d92c7182a44e1463983fe3',1,'IMPEncoderAttrFrmUsed']]]
 ];

@@ -35,10 +35,10 @@ WebVersion: _V2.3.4-20190709_
 * [النسخة الأصلية بالصينية](../zh/includes.zh/html/)
 
 
+* [إصدار اللغة الإنجليزية](../en/includes.en/html/)
+
+
 * [النسخة الفرنسية المترجمة بواسطة google](../fr/includes.fr/html/)
-
-
-* [النسخة الإنجليزية المترجمة بواسطة google](../en/includes.en/html/)
 
 
 

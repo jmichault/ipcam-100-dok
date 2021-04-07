@@ -1,22 +1,12 @@
 var searchData=
 [
-  ['s32qp',['s32Qp',['../structIMPEncoderROICfg.html#a04662e5fbaacb73d3f0477a87e3fbca3',1,'IMPEncoderROICfg']]],
-  ['samplerate',['samplerate',['../group__IMP__Audio.html#gab594cc1e39226e0fd3224cec35018eb6',1,'IMPAudioIOAttr']]],
-  ['scaler',['scaler',['../structIMPFSChnAttr.html#a62a17931c70bd2f3b6300d6f2997fb97',1,'IMPFSChnAttr']]],
-  ['scalex',['scalex',['../structIMPOSDGrpRgnAttr.html#ac113a37d1401954e60a75b05346f1631',1,'IMPOSDGrpRgnAttr']]],
-  ['scaley',['scaley',['../structIMPOSDGrpRgnAttr.html#a49e66ca00154275792270b68b7fb156a',1,'IMPOSDGrpRgnAttr']]],
-  ['sense',['sense',['../structIMP__IVS__MoveParam.html#ae2c9872fc0f9e92447b711eba1ddbd1b',1,'IMP_IVS_MoveParam']]],
-  ['seq',['seq',['../group__IMP__Audio.html#gac4e28a2f32466d723455c080ab0d58a3',1,'IMPAudioFrame::seq()'],['../group__IMP__Audio.html#gac46555bef484a33228516df6a6e27300',1,'IMPAudioStream::seq()'],['../structIMPEncoderStream.html#af675dec98594ca54dfd7cd12b4d43e89',1,'IMPEncoderStream::seq()']]],
-  ['setparam',['SetParam',['../structIMPIVSInterface.html#a8d94e0a99462a232e3afd4bffa86f30d',1,'IMPIVSInterface']]],
-  ['show',['show',['../structIMPOSDGrpRgnAttr.html#a0e088bf666665b84c7ed8ea6d666a286',1,'IMPOSDGrpRgnAttr']]],
-  ['sinter_5fstrength',['sinter_strength',['../structIMPISPSinterDenoiseAttr.html#afcc4078fac6762fb0bcf9e88baa97f13',1,'IMPISPSinterDenoiseAttr']]],
-  ['size',['size',['../structIMPFrameInfo.html#acb382adc1aa64866de307b1d92c81542',1,'IMPFrameInfo']]],
-  ['slop_5fmax',['slop_max',['../structIMPISPDrcAttr.html#a8e316c49bb4d8032b0d8f99e815bddfb',1,'IMPISPDrcAttr']]],
-  ['slop_5fmin',['slop_min',['../structIMPISPDrcAttr.html#a049ae6b9c526f2417c9a9eb0a913b9d3',1,'IMPISPDrcAttr']]],
-  ['soundmode',['soundmode',['../group__IMP__Audio.html#gaec1d2a3fbe53e19bca46206ced9a3730',1,'IMPAudioIOAttr::soundmode()'],['../group__IMP__Audio.html#ga613b85b8d9f998f62f19b328c6fc2c85',1,'IMPAudioFrame::soundmode()']]],
-  ['spi',['spi',['../structIMPSensorInfo.html#a7e87d83cee3e0f14fe53172766c13a29',1,'IMPSensorInfo']]],
-  ['startx',['startx',['../unionisp__core__ae__roi__select.html#a09a83be769c5c7ee28f3f582d6f45932',1,'isp_core_ae_roi_select']]],
-  ['starty',['starty',['../unionisp__core__ae__roi__select.html#a80fccfb53112041c2dacbf25fe4f09e6',1,'isp_core_ae_roi_select']]],
-  ['statictime',['staticTime',['../structIMPEncoderAttrH264VBR.html#abbc11e0b5742e33933b7a9313d4a8dc6',1,'IMPEncoderAttrH264VBR']]],
-  ['stream',['stream',['../group__IMP__Audio.html#ga66a80500658a0f3753209cfbff5a5ec8',1,'IMPAudioStream']]]
+  ['rcattr',['rcAttr',['../struct_i_m_p_encoder_c_h_n_attr.html#aa2cb706e09215ae909af55ae2b4051cc',1,'IMPEncoderCHNAttr']]],
+  ['rcmode',['rcMode',['../struct_i_m_p_encoder_attr_rc_mode.html#a9e0004110f773abaef50e84b91932aa7',1,'IMPEncoderAttrRcMode']]],
+  ['rcpriority',['rcPriority',['../struct_i_m_p_encoder_super_frm_cfg.html#aa2dd73b3cc487e9d0ed38de8ff900925',1,'IMPEncoderSuperFrmCfg']]],
+  ['rect',['rect',['../struct_i_m_p_encoder_r_o_i_cfg.html#a1b58d18ece5ec331d26eb49692211d25',1,'IMPEncoderROICfg::rect()'],['../struct_i_m_p_o_s_d_rgn_attr.html#a1b58d18ece5ec331d26eb49692211d25',1,'IMPOSDRgnAttr::rect()']]],
+  ['registered',['registered',['../struct_i_m_p_encoder_c_h_n_stat.html#a32f2643fcbe23cdff8e2da2214c6404a',1,'IMPEncoderCHNStat']]],
+  ['releaseresult',['releaseResult',['../struct_i_m_p_i_v_s_interface.html#adba315bd4fc5c92a18bac51ca0cb37be',1,'IMPIVSInterface']]],
+  ['rev',['Rev',['../group___i_m_p___audio.html#ga3bb3a54b7e974ce2db03e58a8c681dd2',1,'IMPAudioIChnParam']]],
+  ['rgain',['rgain',['../group___i_m_p___i_s_p.html#ga6077cc12a1bb17d6eb6085a0b6c50bef',1,'isp_core_wb_attr']]],
+  ['rst_5fgpio',['rst_gpio',['../group___i_m_p___i_s_p.html#gaaf62e57667339f400a1dcaf969601f05',1,'IMPSensorInfo']]]
 ];

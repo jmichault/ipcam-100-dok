@@ -1,23 +1,13 @@
 var searchData=
 [
-  ['offpos',['offPos',['../structIMPOSDGrpRgnAttr.html#a167384b1b974d5cd6f8cb92af9047683',1,'IMPOSDGrpRgnAttr']]],
-  ['one_5fline_5fexpr_5fin_5fus',['one_line_expr_in_us',['../unionisp__core__expr__attr.html#a4230ac6ab15041aae8a686f24aa2a9f9',1,'isp_core_expr_attr']]],
-  ['osd_5fblack',['OSD_BLACK',['../group__IMP__OSD.html#gga07a129ad144ef8f2e0df27e448ac6dfba4062b4faf6cfe005ac90c7abcecdfba4',1,'imp_osd.h']]],
-  ['osd_5fblue',['OSD_BLUE',['../group__IMP__OSD.html#gga07a129ad144ef8f2e0df27e448ac6dfba4c85f2a60bcc904c74aa787f5dd2a4d5',1,'imp_osd.h']]],
-  ['osd_5fgreen',['OSD_GREEN',['../group__IMP__OSD.html#gga07a129ad144ef8f2e0df27e448ac6dfbadbe20f373ed8b2446e89bfeb76b87917',1,'imp_osd.h']]],
-  ['osd_5fred',['OSD_RED',['../group__IMP__OSD.html#gga07a129ad144ef8f2e0df27e448ac6dfba34d2fe7ad73b8a94e670df571a9e5adc',1,'imp_osd.h']]],
-  ['osd_5freg_5fbitmap',['OSD_REG_BITMAP',['../group__IMP__OSD.html#gga79528856a7d533a7e5ce8f47577beb2ca1027eeb5d48d35dadb41e4277bd957d0',1,'imp_osd.h']]],
-  ['osd_5freg_5fcover',['OSD_REG_COVER',['../group__IMP__OSD.html#gga79528856a7d533a7e5ce8f47577beb2ca8a43dbf552eb563a9e897744014dc6c6',1,'imp_osd.h']]],
-  ['osd_5freg_5finv',['OSD_REG_INV',['../group__IMP__OSD.html#gga79528856a7d533a7e5ce8f47577beb2ca04ecb838a529cbed99a079c3e88fb159',1,'imp_osd.h']]],
-  ['osd_5freg_5fline',['OSD_REG_LINE',['../group__IMP__OSD.html#gga79528856a7d533a7e5ce8f47577beb2ca4d19195a69c1d1717b52f0ef9e716066',1,'imp_osd.h']]],
-  ['osd_5freg_5fpic',['OSD_REG_PIC',['../group__IMP__OSD.html#gga79528856a7d533a7e5ce8f47577beb2ca9db8b58618342a2796bda61daf06efe7',1,'imp_osd.h']]],
-  ['osd_5freg_5frect',['OSD_REG_RECT',['../group__IMP__OSD.html#gga79528856a7d533a7e5ce8f47577beb2ca071cc4253393618911f8fb8d0624ff64',1,'imp_osd.h']]],
-  ['osd_5fwhite',['OSD_WHITE',['../group__IMP__OSD.html#gga07a129ad144ef8f2e0df27e448ac6dfba4a0c4635891f6a2ee0ebbdded19b3317',1,'imp_osd.h']]],
-  ['outbitrate',['outBitRate',['../structIMPEncoderAttrH264CBR.html#a8d9843af26ab1878734be36c8c5dafb5',1,'IMPEncoderAttrH264CBR']]],
-  ['outfrmrate',['outFrmRate',['../structIMPEncoderAttrH264FixQP.html#a48b856fdb2946d9d241d9fb1e7dead51',1,'IMPEncoderAttrH264FixQP::outFrmRate()'],['../structIMPEncoderAttrH264CBR.html#a3e955c0212ed3b34ce5cb588fe4a1c91',1,'IMPEncoderAttrH264CBR::outFrmRate()'],['../structIMPEncoderAttrH264VBR.html#ac03dbb4822585b87e5d73ce0f66034a5',1,'IMPEncoderAttrH264VBR::outFrmRate()']]],
-  ['outfrmrateden',['outFrmRateDen',['../structIMPFSChnAttr.html#ad3d58bb119f3fa6cd97e93fffd8f984f',1,'IMPFSChnAttr']]],
-  ['outfrmratenum',['outFrmRateNum',['../structIMPFSChnAttr.html#a73f08a5799791ca5d8238c254440281a',1,'IMPFSChnAttr']]],
-  ['outheight',['outheight',['../structIMPFSChnScaler.html#a3751423567c22348b71675abdce55f13',1,'IMPFSChnScaler']]],
-  ['outputid',['outputID',['../structIMPCell.html#afbb4e5388fff2b0b00f201850e0e79ff',1,'IMPCell']]],
-  ['outwidth',['outwidth',['../structIMPFSChnScaler.html#a71886a39893389b1fdd8863cffb563c3',1,'IMPFSChnScaler']]]
+  ['n',['n',['../struct_i_m_p_encoder_attr_h_skip.html#a76f11d9a0a47b94f72c2d0e77fb32240',1,'IMPEncoderAttrHSkip']]],
+  ['name',['name',['../group___i_m_p___i_s_p.html#gabc1e86d7c344fe34ff09e72d4595ab7e',1,'IMPSensorInfo::name()'],['../group___i_m_p___audio.html#gacd328517a6cf718155c2e6e22b671ca9',1,'IMPAudioEncEncoder::name()'],['../group___i_m_p___audio.html#gacd328517a6cf718155c2e6e22b671ca9',1,'IMPAudioDecDecoder::name()']]],
+  ['noblock',['NOBLOCK',['../group___i_m_p___audio.html#gga7f9bbf0ae482fa7e68855f4bf68c4a1ba2be9044f7a5785fb4db63bae7d099a9b',1,'imp_audio.h']]],
+  ['nrkeepstream',['nrKeepStream',['../struct_i_m_p_decoder_attr.html#a38b94b5b869ebb6a9cdb3220f647253f',1,'IMPDecoderAttr']]],
+  ['nrvbs',['nrVBs',['../struct_i_m_p_f_s_chn_attr.html#a61fe3b4b83d96315a6004dabac08d4f7',1,'IMPFSChnAttr']]],
+  ['ns_5fhigh',['NS_HIGH',['../group___i_m_p___audio.html#gga6685d9ae470366ad2d95e8e32c7527fcadacc47f47a5a05d646fc33b7ec007fbb',1,'imp_audio.h']]],
+  ['ns_5flow',['NS_LOW',['../group___i_m_p___audio.html#gga6685d9ae470366ad2d95e8e32c7527fcac734df19993daf3396374b293197ea71',1,'imp_audio.h']]],
+  ['ns_5fmoderate',['NS_MODERATE',['../group___i_m_p___audio.html#gga6685d9ae470366ad2d95e8e32c7527fca6767e6362ab12a700ef3fe57374ff867',1,'imp_audio.h']]],
+  ['ns_5fveryhigh',['NS_VERYHIGH',['../group___i_m_p___audio.html#gga6685d9ae470366ad2d95e8e32c7527fcafde6cb5dee40e524af25ad55d44d9379',1,'imp_audio.h']]],
+  ['numperfrm',['numPerFrm',['../group___i_m_p___audio.html#gae510449fcca6e2545e60579e5380dea8',1,'IMPAudioIOAttr']]]
 ];

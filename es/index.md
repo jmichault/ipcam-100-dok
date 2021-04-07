@@ -35,10 +35,10 @@ La documentación de la API se puede ver aquí:
 * [versión original en chino](../zh/includes.zh/html/)
 
 
+* [versión en inglés](../en/includes.en/html/)
+
+
 * [Versión francesa traducida por google](../fr/includes.fr/html/)
-
-
-* [Versión en inglés traducida por google](../en/includes.en/html/)
 
 
 

@@ -35,10 +35,10 @@ API文档可以在这里查看：
 * [中文原始版本](../zh/includes.zh/html/)
 
 
+* [英文版](../en/includes.en/html/)
+
+
 * [法语版本由Google翻译](../fr/includes.fr/html/)
-
-
-* [谷歌翻译的英语版本](../en/includes.en/html/)
 
 
 

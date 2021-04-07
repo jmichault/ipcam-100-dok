@@ -1,12 +1,11 @@
 var searchData=
 [
-  ['gain_5flog2',['gain_log2',['../structIMPISPEVAttr.html#aa264077f4c259dc32c5daaaa3f107f32',1,'IMPISPEVAttr']]],
-  ['galphaen',['gAlphaEn',['../structIMPOSDGrpRgnAttr.html#a1b57dc490757666b70e11aa6de474fba',1,'IMPOSDGrpRgnAttr']]],
-  ['gamma',['gamma',['../structIMPISPGamma.html#aae14ab7794c86a885946e8079d3fe0cf',1,'IMPISPGamma']]],
-  ['getparam',['GetParam',['../structIMPIVSInterface.html#a44e718c2eb2db2b7a745e08b076883b5',1,'IMPIVSInterface']]],
-  ['getresult',['GetResult',['../structIMPIVSInterface.html#a10dfcd7bf4ed805924d9b94bc3940889',1,'IMPIVSInterface']]],
-  ['gopqpstep',['GOPQPStep',['../structIMPEncoderAttrH264CBR.html#a073e4f9aff9d4105b6ca65fd453a7b08',1,'IMPEncoderAttrH264CBR::GOPQPStep()'],['../structIMPEncoderAttrH264VBR.html#a4c54489502f18ab2d70bc3108a7a8757',1,'IMPEncoderAttrH264VBR::GOPQPStep()']]],
-  ['goprelation',['GOPRelation',['../structIMPEncoderAttrH264CBR.html#ad94f39b8291a56b1f878d9944766a58e',1,'IMPEncoderAttrH264CBR']]],
-  ['gopsize',['gopsize',['../structIMPEncoderGOPSizeCfg.html#ac32e2dbe9034facbf2dbf852f6057038',1,'IMPEncoderGOPSizeCfg']]],
-  ['groupid',['groupID',['../structIMPCell.html#a494d3d117d65bcff468bf79d0386bdeb',1,'IMPCell']]]
+  ['galphaen',['gAlphaEn',['../struct_i_m_p_o_s_d_grp_rgn_attr.html#aa6dc0fcaed7b3c7408f00695454605db',1,'IMPOSDGrpRgnAttr']]],
+  ['gamma',['gamma',['../group___i_m_p___i_s_p.html#ga938265016058f7e4d028d8a81ec1187a',1,'IMPISPGamma']]],
+  ['getparam',['getParam',['../struct_i_m_p_i_v_s_interface.html#a92bdcdee4e1167048a831a995e551244',1,'IMPIVSInterface']]],
+  ['getresult',['getResult',['../struct_i_m_p_i_v_s_interface.html#ad4f5697675d3767f1237a70112766cd4',1,'IMPIVSInterface']]],
+  ['gopqpstep',['gopQPStep',['../struct_i_m_p_encoder_attr_h264_c_b_r.html#a32286eb7b8d8248bd2a74190d1b51777',1,'IMPEncoderAttrH264CBR::gopQPStep()'],['../struct_i_m_p_encoder_attr_h264_v_b_r.html#a32286eb7b8d8248bd2a74190d1b51777',1,'IMPEncoderAttrH264VBR::gopQPStep()'],['../struct_i_m_p_encoder_attr_h264_smart.html#a32286eb7b8d8248bd2a74190d1b51777',1,'IMPEncoderAttrH264Smart::gopQPStep()']]],
+  ['goprelation',['gopRelation',['../struct_i_m_p_encoder_attr_h264_c_b_r.html#a601e47ec6c0d5cd8eefb3b0c40521a43',1,'IMPEncoderAttrH264CBR::gopRelation()'],['../struct_i_m_p_encoder_attr_h264_v_b_r.html#a601e47ec6c0d5cd8eefb3b0c40521a43',1,'IMPEncoderAttrH264VBR::gopRelation()'],['../struct_i_m_p_encoder_attr_h264_smart.html#a601e47ec6c0d5cd8eefb3b0c40521a43',1,'IMPEncoderAttrH264Smart::gopRelation()']]],
+  ['gopsize',['gopsize',['../struct_i_m_p_encoder_g_o_p_size_cfg.html#ad09932e39efcb8aef9c2d344fbedffea',1,'IMPEncoderGOPSizeCfg']]],
+  ['groupid',['groupID',['../struct_i_m_p_cell.html#a0faf27666324d237d67722b9fe517a69',1,'IMPCell']]]
 ];

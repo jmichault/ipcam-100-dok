@@ -33,8 +33,8 @@ Beaucoup de travail a été fait pour les caméras équipées d'un processeur _i
 
 La documentation des APIs peut être consultée ici :  
 * [version originale en chinois](../zh/includes.zh/html/)
+* [version anglaise](../en/includes.en/html/)
 * [version française traduite par google](../fr/includes.fr/html/)
-* [version anglaise traduite par google](../en/includes.en/html/)
 
 # Micrologiciel alternatif
 

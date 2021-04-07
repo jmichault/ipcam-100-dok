@@ -35,10 +35,10 @@ Dokumentasi API boleh dilihat di sini:
 * [versi asal dalam bahasa Cina](../zh/includes.zh/html/)
 
 
+* [Versi Bahasa Inggeris](../en/includes.en/html/)
+
+
 * [Versi Perancis diterjemahkan oleh google](../fr/includes.fr/html/)
-
-
-* [Versi Inggeris diterjemahkan oleh google](../en/includes.en/html/)
 
 
 

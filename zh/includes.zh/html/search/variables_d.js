@@ -1,23 +1,12 @@
 var searchData=
 [
-  ['p0',['p0',['../structIMPRect.html#af01aade7d8d198a0f9e5bb190416bfcf',1,'IMPRect']]],
-  ['p1',['p1',['../structIMPRect.html#a448c45601d0a3cd7166c7407ac94c658',1,'IMPRect']]],
-  ['p_5fpayload',['p_payload',['../structIMPDecoderNal.html#a2f52e5bc0f2b26a7ef69e1dc9c78f9c1',1,'IMPDecoderNal']]],
-  ['pack',['pack',['../structIMPEncoderStream.html#ab8558d3528bb1a28d5813a6fc7e08eeb',1,'IMPEncoderStream']]],
-  ['packcount',['packCount',['../structIMPEncoderStream.html#aa3513657fb22db479f6707a3f7f1b298',1,'IMPEncoderStream']]],
-  ['param',['param',['../structIMPIVSInterface.html#ac87d36c182d597041b9191d9b61aa8bb',1,'IMPIVSInterface']]],
-  ['paramsize',['paramSize',['../structIMPIVSInterface.html#a1fdfba0cb78d6aac81c081b10a7494c5',1,'IMPIVSInterface']]],
-  ['pdata',['pData',['../structpicData.html#a46e7f09ea4ac9ee21ed6c34933b98e41',1,'picData']]],
-  ['phyaddr',['phyAddr',['../group__IMP__Audio.html#gaee055c15fe3702364a6d6aded8adf020',1,'IMPAudioFrame::phyAddr()'],['../group__IMP__Audio.html#gae8ecd48a107bcba608aa9c9a95a49dd2',1,'IMPAudioStream::phyAddr()'],['../structIMPFrameInfo.html#a9d84cd45fe708afd50153b91f5505dd4',1,'IMPFrameInfo::phyAddr()'],['../structIMPEncoderPack.html#aa2f602add74fe5f4f3a154ae68e9ce2f',1,'IMPEncoderPack::phyAddr()']]],
-  ['picdata',['picData',['../unionIMPOSDRgnAttrData.html#a5cf0cbb281505e3a66ff17e92d7028a9',1,'IMPOSDRgnAttrData']]],
-  ['picheight',['picHeight',['../structIMPEncoderAttr.html#a62e35402cd983d4d05d6888356869c75',1,'IMPEncoderAttr::picHeight()'],['../structIMPFSChnAttr.html#a23f20779826b664e7565957f640f7984',1,'IMPFSChnAttr::picHeight()']]],
-  ['picwidth',['picWidth',['../structIMPEncoderAttr.html#a5c813828392375549b5a59982e1369e0',1,'IMPEncoderAttr::picWidth()'],['../structIMPFSChnAttr.html#a9ec2bdd0c7511c484aaacaa1f8c105f9',1,'IMPFSChnAttr::picWidth()']]],
-  ['pixelformat',['pixelFormat',['../structIMPDecoderAttr.html#aae56e73f280b67f0c41c2d74b0b55976',1,'IMPDecoderAttr']]],
-  ['pixfmt',['pixFmt',['../structIMPFSChnAttr.html#a904df5e9bf3fdeb216993071f14e8a08',1,'IMPFSChnAttr::pixFmt()'],['../structIMPFrameInfo.html#ae864f35837e4578c12c82fd96ac741fd',1,'IMPFrameInfo::pixfmt()'],['../structIMPIVSInterface.html#aa795c6e1e8962bc6067b7045effc0715',1,'IMPIVSInterface::pixfmt()']]],
-  ['pool_5fidx',['pool_idx',['../structIMPFrameInfo.html#a842919e0d3f8a5c2e6d767219c53940a',1,'IMPFrameInfo']]],
-  ['power_5fgpio',['power_gpio',['../structIMPSensorInfo.html#a517dd0e2b36c39381bba75fdcb7aaf1a',1,'IMPSensorInfo']]],
-  ['preprocesssync',['PreprocessSync',['../structIMPIVSInterface.html#a8655d367549bac201f24fa5d1a443c97',1,'IMPIVSInterface']]],
-  ['processasync',['ProcessAsync',['../structIMPIVSInterface.html#a72355adc7ccf55d5aa77a70d9dd8a626',1,'IMPIVSInterface']]],
-  ['profile',['profile',['../structIMPEncoderAttr.html#ab9b07e9a9db1158d91239664ec802dd8',1,'IMPEncoderAttr']]],
-  ['pwdn_5fgpio',['pwdn_gpio',['../structIMPSensorInfo.html#a3b08b5578b4ee04cfce14c421e12cc4a',1,'IMPSensorInfo']]]
+  ['offpos',['offPos',['../struct_i_m_p_o_s_d_grp_rgn_attr.html#ab24573f94a01670e80f0a2a59da7733e',1,'IMPOSDGrpRgnAttr']]],
+  ['one_5fline_5fexpr_5fin_5fus',['one_line_expr_in_us',['../group___i_m_p___i_s_p.html#gabae4cbcea455fe602d251e31fbbe84cb',1,'isp_core_expr_attr::one_line_expr_in_us()'],['../group___i_m_p___i_s_p.html#gabae4cbcea455fe602d251e31fbbe84cb',1,'isp_core_expr_attr::@3::one_line_expr_in_us()']]],
+  ['outbitrate',['outBitRate',['../struct_i_m_p_encoder_attr_h264_c_b_r.html#a8f55324569ee8067eceea4e8f8f03017',1,'IMPEncoderAttrH264CBR']]],
+  ['outfrmrate',['outFrmRate',['../struct_i_m_p_encoder_rc_attr.html#a6a677771850b257770542117479183ba',1,'IMPEncoderRcAttr']]],
+  ['outfrmrateden',['outFrmRateDen',['../struct_i_m_p_f_s_chn_attr.html#a46676e90e8ca012e2e55c1532d660664',1,'IMPFSChnAttr']]],
+  ['outfrmratenum',['outFrmRateNum',['../struct_i_m_p_f_s_chn_attr.html#a5dda74212a795147e1a8764fb7c5f65e',1,'IMPFSChnAttr']]],
+  ['outheight',['outheight',['../struct_i_m_p_f_s_chn_scaler.html#aa93786d3896a9d890b828f67c30e6c34',1,'IMPFSChnScaler']]],
+  ['outputid',['outputID',['../struct_i_m_p_cell.html#a1e5ec9abcc427a018f6deeb6e7d83ff3',1,'IMPCell']]],
+  ['outwidth',['outwidth',['../struct_i_m_p_f_s_chn_scaler.html#a3042e73882a061536d789d65465aec77',1,'IMPFSChnScaler']]]
 ];

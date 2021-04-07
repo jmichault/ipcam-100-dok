@@ -35,10 +35,10 @@ WebVersion: _V2.3.4-20190709_
 * [চীনা মূল সংস্করণ](../zh/includes.zh/html/)(
 
 
+* [ইংরেজি সংস্করণ](../en/includes.en/html/)
+
+
 * [ফরাসী সংস্করণ গুগল](../fr/includes.fr/html/)দ্বারা অনুবাদ
-
-
-* [ইংরেজি সংস্করণ গুগল](../en/includes.en/html/)দ্বারা অনুবাদ
 
 
 

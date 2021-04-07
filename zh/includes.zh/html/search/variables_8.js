@@ -1,14 +1,18 @@
 var searchData=
 [
-  ['i2c',['i2c',['../structIMPSensorInfo.html#ab34a9adf3a8c4c7a8efed67fd830dde4',1,'IMPSensorInfo']]],
-  ['i2c_5fadapter_5fid',['i2c_adapter_id',['../structIMPI2CInfo.html#a02830060ed22d8b2bf02d2dab59e7f14',1,'IMPI2CInfo']]],
-  ['i_5fpayload',['i_payload',['../structIMPDecoderNal.html#a32990fd437f26507a1fab3e4ae638598',1,'IMPDecoderNal']]],
-  ['i_5fskip_5fdistance',['i_skip_distance',['../structIMPEncoderAttrH264BSkip.html#afa70769d076c6e97647992f872863fe4',1,'IMPEncoderAttrH264BSkip']]],
-  ['ibiaslvl',['IBiasLvl',['../structIMPEncoderAttrH264CBR.html#a8239632fca2742be167fa8bed318db2d',1,'IMPEncoderAttrH264CBR']]],
-  ['index',['index',['../structIMPFrameInfo.html#ae64db78ed24b5e431d3a09035c54534b',1,'IMPFrameInfo']]],
-  ['init',['init',['../structIMPIVSInterface.html#a3a009dea195a046510e58a773dd1e137',1,'IMPIVSInterface']]],
-  ['integration_5ftime',['integration_time',['../unionisp__core__expr__attr.html#ac97c150a51b4888f632f6cd0b63d7df9',1,'isp_core_expr_attr']]],
-  ['integration_5ftime_5fmax',['integration_time_max',['../unionisp__core__expr__attr.html#a48f2c1c598a99d8d042941cfa1003c76',1,'isp_core_expr_attr']]],
-  ['integration_5ftime_5fmin',['integration_time_min',['../unionisp__core__expr__attr.html#a335a6504f965f1d7a3d5a09859466651',1,'isp_core_expr_attr']]],
-  ['isautomode',['isAutoMode',['../structIMPEncoderAttrH264Demask.html#a6b82882bd23462f5df0821df8f966789',1,'IMPEncoderAttrH264Demask']]]
+  ['i2c',['i2c',['../group___i_m_p___i_s_p.html#ga180f8a04199e6b151a28f0eb4c35e3bb',1,'IMPSensorInfo::i2c()'],['../group___i_m_p___i_s_p.html#ga180f8a04199e6b151a28f0eb4c35e3bb',1,'IMPSensorInfo::@0::i2c()']]],
+  ['i2c_5fadapter_5fid',['i2c_adapter_id',['../group___i_m_p___i_s_p.html#gaf44d63ecdfdf0d44e6e584848fb170a2',1,'IMPI2CInfo']]],
+  ['i_5fpayload',['i_payload',['../struct_i_m_p_decoder_nal.html#afff0759f6f7c97c7c6c45803a80d343a',1,'IMPDecoderNal']]],
+  ['ibiaslvl',['iBiasLvl',['../struct_i_m_p_encoder_attr_h264_c_b_r.html#a94cc2fd3f82f06e0c7c05b1d46afa6f4',1,'IMPEncoderAttrH264CBR::iBiasLvl()'],['../struct_i_m_p_encoder_attr_h264_v_b_r.html#abf422ebfcb529edb3ae5a8c4586b541b',1,'IMPEncoderAttrH264VBR::iBiasLvl()'],['../struct_i_m_p_encoder_attr_h264_smart.html#abf422ebfcb529edb3ae5a8c4586b541b',1,'IMPEncoderAttrH264Smart::iBiasLvl()']]],
+  ['index',['index',['../struct_i_m_p_frame_info.html#a750b5d744c39a06bfb13e6eb010e35d0',1,'IMPFrameInfo']]],
+  ['init',['init',['../struct_i_m_p_i_v_s_interface.html#af901b54394602da1dcc6a8c08ac11ba5',1,'IMPIVSInterface']]],
+  ['integration_5ftime',['integration_time',['../group___i_m_p___i_s_p.html#ga96980ba333fab92cd7644b36ba95bfc5',1,'isp_core_expr_attr::integration_time()'],['../group___i_m_p___i_s_p.html#ga96980ba333fab92cd7644b36ba95bfc5',1,'isp_core_expr_attr::@3::integration_time()']]],
+  ['integration_5ftime_5fmax',['integration_time_max',['../group___i_m_p___i_s_p.html#ga46a6f04217cc911114612141031d7f30',1,'isp_core_expr_attr::integration_time_max()'],['../group___i_m_p___i_s_p.html#ga46a6f04217cc911114612141031d7f30',1,'isp_core_expr_attr::@3::integration_time_max()']]],
+  ['integration_5ftime_5fmin',['integration_time_min',['../group___i_m_p___i_s_p.html#gaeccca892064ffc76ae67ac0a6e107d33',1,'isp_core_expr_attr::integration_time_min()'],['../group___i_m_p___i_s_p.html#gaeccca892064ffc76ae67ac0a6e107d33',1,'isp_core_expr_attr::@3::integration_time_min()']]],
+  ['interscalinglist8x8',['interScalingList8X8',['../struct_i_m_p_encoder_h264_trans_cfg.html#a9174891f766ec7fe66e87a799df4b1f7',1,'IMPEncoderH264TransCfg']]],
+  ['intertransmode',['interTransMode',['../struct_i_m_p_encoder_h264_trans_cfg.html#a1d29981cf672e1f14b4d780883b981c3',1,'IMPEncoderH264TransCfg']]],
+  ['intrascalinglist8x8',['intraScalingList8X8',['../struct_i_m_p_encoder_h264_trans_cfg.html#ab4d1faaf08f01082f732a989d6094fa0',1,'IMPEncoderH264TransCfg']]],
+  ['intratransmode',['intraTransMode',['../struct_i_m_p_encoder_h264_trans_cfg.html#a0ca4c1e2a1003412a235f008f8bc2d94',1,'IMPEncoderH264TransCfg']]],
+  ['isautomode',['isAutoMode',['../struct_i_m_p_encoder_attr_demask.html#a3f449c8d6549f2c08b7a2b3f4ff3a182',1,'IMPEncoderAttrDemask']]],
+  ['iv',['IV',['../struct_i_n___u_n_f___c_i_p_h_e_r___c_t_r_l___s.html#a78ca9c1e3abc1103773c63dcc3feb64b',1,'IN_UNF_CIPHER_CTRL_S']]]
 ];

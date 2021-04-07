@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['coverdata',['coverData',['../structcoverData.html',1,'']]]
+  ['coverdata',['coverData',['../structcover_data.html',1,'']]]
 ];

@@ -1,5 +1,8 @@
 var searchData=
 [
-  ['value',['value',['../group__IMP__Audio.html#gaa6e04010b58867dec55b4fc874e1a8e6',1,'IMPAudioEncChnAttr::value()'],['../group__IMP__Audio.html#ga5ed1c53acd7c4d59dbec1a258c1951e7',1,'IMPAudioDecChnAttr::value()']]],
-  ['viraddr',['virAddr',['../group__IMP__Audio.html#ga8609060af2c840c7f81341c8ee4a8b7f',1,'IMPAudioFrame::virAddr()'],['../structIMPFrameInfo.html#a1f7b687b19d28cb2cc1ab706e13bcc31',1,'IMPFrameInfo::virAddr()'],['../structIMPEncoderPack.html#a8e0a18ddadeea5e5b253bd5259d34971',1,'IMPEncoderPack::virAddr()']]]
+  ['u32index',['u32Index',['../struct_i_m_p_encoder_r_o_i_cfg.html#ad87a4ce12f0ad456af47055bc10370be',1,'IMPEncoderROICfg']]],
+  ['unit',['unit',['../group___i_m_p___i_s_p.html#ga4a2606244fcaa169a4cee6637b23b631',1,'isp_core_expr_attr::unit()'],['../group___i_m_p___i_s_p.html#ga4a2606244fcaa169a4cee6637b23b631',1,'isp_core_expr_attr::@2::unit()']]],
+  ['user_5fql_5fen',['user_ql_en',['../struct_i_m_p_encoder_jpege_ql.html#aedc9e689b3eeef531be5956b3cf6ef3a',1,'IMPEncoderJpegeQl']]],
+  ['userdata',['userData',['../struct_i_m_p_encoder_attr.html#a90ebdc484698566e8d47609a1654e186',1,'IMPEncoderAttr']]],
+  ['usrfrmdepth',['usrFrmDepth',['../group___i_m_p___audio.html#ga47fed37462d72910adc81dacc1f50aef',1,'IMPAudioIChnParam']]]
 ];

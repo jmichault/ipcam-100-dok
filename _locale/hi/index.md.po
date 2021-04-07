@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-03-22 23:58+0100\n"
+"POT-Creation-Date: 2021-04-07 16:09+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -134,15 +134,16 @@ msgstr "[मूल संस्करण चीनी में](../zh/includes.
 
 #. type: Bullet: '* '
 #: index.md:38
-#, fuzzy, no-wrap
-msgid "[Franca versio tradukita de google](../fr/includes.fr/html/)\n"
-msgstr "[फ्रेंच संस्करण Google द्वारा अनुवादित](../fr/includes.fr/html/)\n"
+#, no-wrap
+#, fuzzy
+msgid "[Angla versio](../en/includes.en/html/)\n"
+msgstr "(° 0001 डिग्री) अंग्रेजी संस्करण (° 0002 डिग्री) (डिग्री ° ° 0004 डिग्री)\n"
 
 #. type: Bullet: '* '
 #: index.md:40
 #, fuzzy, no-wrap
-msgid "[Angla versio tradukita de google](../en/includes.en/html/)\n"
-msgstr "[Google द्वारा अनुवादित अंग्रेज़ी संस्करण](../en/includes.en/html/)\n"
+msgid "[Franca versio tradukita de google](../fr/includes.fr/html/)\n"
+msgstr "[फ्रेंच संस्करण Google द्वारा अनुवादित](../fr/includes.fr/html/)\n"
 
 #. type: Title #
 #: index.md:42
@@ -164,8 +165,7 @@ msgstr "LAN और WLAN\n"
 
 #. type: Bullet: '* '
 #: index.md:49
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "RTSP-duobla-flua servilo: 1280x720 H264 kaj 640x360 MJpeg\n"
 msgstr "आरटीएसपी-डबल-तरल सर्वर: 1280x720 एच 264 और 640x360 एमजेपीईजी (डिग्री डिग्री 0001 डिग्री)\n"
 
@@ -225,8 +225,7 @@ msgstr "टेलनेट सर्वर\n"
 
 #. type: Bullet: '* '
 #: index.md:69
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "SSH-servilo kaj kliento\n"
 msgstr "एसएसएच सर्वर और ग्राहक (° ° 0001 डिग्री)\n"
 
@@ -409,6 +408,10 @@ msgstr "इंटरनेट इंटरफेस के माध्यम �
 #, fuzzy, no-wrap
 msgid "Vi ankaŭ povas simple forigi la karton microSD.\n"
 msgstr "आप बस माइक्रोएसडी कार्ड भी निकाल सकते हैं।\n"
+
+#, fuzzy, no-wrap
+#~ msgid "[Angla versio tradukita de google](../en/includes.en/html/)\n"
+#~ msgstr "[Google द्वारा अनुवादित अंग्रेज़ी संस्करण](../en/includes.en/html/)\n"
 
 #, fuzzy
 #~ msgid "RTSP MJPEG-servilo\n"

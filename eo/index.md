@@ -34,9 +34,9 @@ Multa laboro estis farita por fotiloj ekipitaj kun procesoro _ingenic T20_.
 API-dokumentaro videblas ĉi tie:  
 * [originala versio en la ĉina](../zh/includes.zh/html/)
 
-* [Franca versio tradukita de google](../fr/includes.fr/html/)
+* [Angla versio](../en/includes.en/html/)
 
-* [Angla versio tradukita de google](../en/includes.en/html/)
+* [Franca versio tradukita de google](../fr/includes.fr/html/)
 
 
 # Alternativa firmvaro

@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['w',['w',['../structIMPEncoderCropCfg.html#a921c0a90cd8eda9811569bfeeb709395',1,'IMPEncoderCropCfg']]],
-  ['white_5flevel',['white_level',['../structIMPISPDrcAttr.html#ae3ac0e10c36ee3bf47f4126c2bd689aa',1,'IMPISPDrcAttr']]],
-  ['width',['width',['../structIMPFrameInfo.html#acae7606eabf67fc8f71c82445e926299',1,'IMPFrameInfo::width()'],['../structIMPFSChnCrop.html#a73a6138ee22ef20601976e70ec8c3319',1,'IMPFSChnCrop::width()']]],
-  ['work_5fdone',['work_done',['../structIMPEncoderCHNStat.html#ab33f150e4618aad89ee01e32fa57baf1',1,'IMPEncoderCHNStat']]]
+  ['value',['value',['../group___i_m_p___audio.html#gac46c8086251567041d7c04cf1952a1b2',1,'IMPAudioEncChnAttr::value()'],['../group___i_m_p___audio.html#ga0f61d63b009d0880a89c843bd50d8d76',1,'IMPAudioDecChnAttr::value()']]],
+  ['viraddr',['virAddr',['../struct_i_m_p_encoder_pack.html#a7a19562dfad92a97a8ef4cc1b8e1e70b',1,'IMPEncoderPack::virAddr()'],['../group___i_m_p___audio.html#ga912a6acbb0f6ff6b6b77aae747534534',1,'IMPAudioFrame::virAddr()'],['../struct_i_m_p_frame_info.html#a7a19562dfad92a97a8ef4cc1b8e1e70b',1,'IMPFrameInfo::virAddr()']]]
 ];

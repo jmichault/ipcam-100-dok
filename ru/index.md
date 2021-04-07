@@ -35,10 +35,10 @@ WebVersion: _V2.3.4-20190709_
 * [исходная версия на китайском языке](../zh/includes.zh/html/)
 
 
+* [Английская версия](../en/includes.en/html/)
+
+
 * [Французская версия переведена Google](../fr/includes.fr/html/)
-
-
-* [Английская версия в переводе с Google](../en/includes.en/html/)
 
 
 
