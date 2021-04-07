@@ -41,7 +41,8 @@ La documentation des APIs peut être consultée ici :
 ## Ce qui fonctionne dans le micrologiciel alternatif :
 
 * LAN et WLAN
-* Serveur RTSP double-flux : 1280x720 H264 et 640x360 MJPEG
+* Serveur RTSP double-flux : 1920x1080 H264 et 640x360 MJPEG par défaut.
+* Paramètres vidéo
 * Serveur HTTP
 * contrôle moteur
 * étalonnage du moteur
@@ -55,9 +56,9 @@ La documentation des APIs peut être consultée ici :
 
 ## Ce qui ne fonctionne pas dans le micrologiciel alternatif:
 
-* Paramètres vidéo
 * systeme audio
 * _OSD_
+* gestion des mots de passe.
 * mise à jour du micrologiciel
 * détection nocturne automatique
 * détection de mouvement
@@ -84,6 +85,8 @@ La documentation des APIs peut être consultée ici :
 * Faites `killall -9 auto_run.sh` pour éviter de fermer la connexion.
 * Faites `cd /opt/media/mmcblk0p1;./install.sh`
 * Vous pouvez vous connecter à l'URL _"https://IP"_ (utilisateur _admin_, mot de passe _jco66688_).
+* le flux vidéo primaire est accessible à _rtsp://admin:ismart21@IP/stream1_.
+* le flux vidéo secondaire est accessible à _rtsp://admin:ismart21@IP/stream2_.
 
 ## Désinstallation du micrologiciel alternatif:
 
