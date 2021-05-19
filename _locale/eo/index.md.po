@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-04-07 22:53+0200\n"
+"POT-Creation-Date: 2021-05-19 18:52+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -157,86 +157,97 @@ msgid "Ce qui fonctionne dans le micrologiciel alternatif :"
 msgstr "Kio Funkcias en Alternativa Firmware:"
 
 #. type: Bullet: '* '
-#: index.md:56
+#: index.md:58
 #, fuzzy, no-wrap
 msgid "LAN et WLAN\n"
 msgstr "LAN kaj WLAN\n"
 
 #. type: Bullet: '* '
-#: index.md:56
-#, no-wrap
-#, fuzzy
+#: index.md:58
+#, fuzzy, no-wrap
 msgid "Serveur RTSP double-flux : 1920x1080 H264 et 640x360 MJPEG par défaut.\n"
 msgstr "DRTSP Dual Flow Server: 1920x1080 H264 kaj 640x360 MJpeg defaŭlte.\n"
 
 #. type: Bullet: '* '
-#: index.md:56
+#: index.md:58
 #, fuzzy, no-wrap
 msgid "Paramètres vidéo\n"
 msgstr "Vidaj parametroj\n"
 
 #. type: Bullet: '* '
-#: index.md:56
+#: index.md:58
 #, fuzzy, no-wrap
 msgid "Serveur HTTP\n"
 msgstr "HTTP-servilo\n"
 
 #. type: Bullet: '* '
-#: index.md:56
+#: index.md:58
 #, fuzzy, no-wrap
 msgid "contrôle moteur\n"
 msgstr "motora kontrolo\n"
 
 #. type: Bullet: '* '
-#: index.md:56
+#: index.md:58
 #, fuzzy, no-wrap
 msgid "étalonnage du moteur\n"
 msgstr "motora kalibrado\n"
 
 #. type: Bullet: '* '
-#: index.md:56
+#: index.md:58
 #, fuzzy, no-wrap
 msgid "Paramètres PTZ\n"
 msgstr "Agordoj de PTZ\n"
 
 #. type: Bullet: '* '
-#: index.md:56
+#: index.md:58
 #, fuzzy, no-wrap
 msgid "Client NTP\n"
 msgstr "NTP-kliento\n"
 
 #. type: Bullet: '* '
-#: index.md:56
+#: index.md:58
 #, fuzzy, no-wrap
 msgid "changement de mot de passe pour l'accès http\n"
 msgstr "pasvorta ŝanĝo por http-aliro\n"
 
 #. type: Bullet: '* '
-#: index.md:56
+#: index.md:58
 #, fuzzy, no-wrap
 msgid "contrôle LED bleu et IR\n"
 msgstr "blua LED kaj IR-kontrolo\n"
 
 #. type: Bullet: '* '
-#: index.md:56
+#: index.md:58
 #, fuzzy, no-wrap
 msgid "Serveur ftp\n"
 msgstr "Ftp-servilo\n"
 
 #. type: Bullet: '* '
-#: index.md:56
+#: index.md:58
 #, fuzzy, no-wrap
 msgid "Serveur telnet\n"
 msgstr "Telnet-servilo\n"
 
 #. type: Bullet: '* '
-#: index.md:56
+#: index.md:58
 #, fuzzy, no-wrap
 msgid "Serveur et client ssh\n"
 msgstr "SSH-servilo kaj kliento\n"
 
+#. type: Bullet: '* '
+#: index.md:58
+#, fuzzy, no-wrap
+msgid "détection de mouvement\n"
+msgstr "movado-detekto\n"
+
+#. type: Bullet: '* '
+#: index.md:58
+#, fuzzy, no-wrap
+msgid "envoi de courriel\n"
+msgstr "sendante retpoŝton\n"
+
 #. type: Title ##
-#: index.md:57
+#: index.md:59
 #, fuzzy, no-wrap
 msgid "Ce qui ne fonctionne pas dans le micrologiciel alternatif:"
 msgstr "Kio ne funkcias en alternativa firmvaro:"
@@ -255,8 +266,7 @@ msgstr "_OSD_\n"
 
 #. type: Bullet: '* '
 #: index.md:69
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "gestion des mots de passe.\n"
 msgstr "Administrado de pasvorto.\n"
 
@@ -275,20 +285,8 @@ msgstr "aŭtomata nokta detekto\n"
 #. type: Bullet: '* '
 #: index.md:69
 #, fuzzy, no-wrap
-msgid "détection de mouvement\n"
-msgstr "movado-detekto\n"
-
-#. type: Bullet: '* '
-#: index.md:69
-#, fuzzy, no-wrap
 msgid "_ir-cut_\n"
 msgstr "movado-detekto_ir-cut_\n"
-
-#. type: Bullet: '* '
-#: index.md:69
-#, fuzzy, no-wrap
-msgid "envoi de courriel\n"
-msgstr "sendante retpoŝton\n"
 
 #. type: Bullet: '* '
 #: index.md:69
@@ -309,7 +307,7 @@ msgid "Préparation de la caméra"
 msgstr "Kamera preparado"
 
 #. type: Bullet: '* '
-#: index.md:77 index.md:90
+#: index.md:77 index.md:91
 #, fuzzy, no-wrap
 msgid "Connectez la caméra à votre réseau local et allumez la caméra.\n"
 msgstr "Konekti la fotilon al via loka reto kaj ŝalti la fotilon.\n"
@@ -345,90 +343,110 @@ msgid "Installation du micrologiciel alternatif"
 msgstr "Instalante Alternativan Firmware"
 
 #. type: Bullet: '* '
-#: index.md:90
+#: index.md:91
 #, fuzzy, no-wrap
 msgid "Copiez tout ce qui se trouve dans le dossier [ _karto_ ](https://github.com/jmichault/ipcam-100/tree/master/karto) à la racine de la carte microSD.\n"
 msgstr "Kopiu ĉion en la dosierujo [ _karto_ ](https://github.com/jmichault/ipcam-100/tree/master/karto) ĉe la radiko de la karto microSD.\n"
 
 #. type: Bullet: '* '
-#: index.md:90
+#: index.md:91
 #, fuzzy, no-wrap
 msgid "éventuellement configurez le réseau ( _config/staticip.conf_ , _config/resolv.conf_ , _config/wpa_supplicant.conf_ )\n"
 msgstr "laŭvole agordi la reton ( _config/staticip.conf_ , _config/resolv.conf_ , _config/wpa_supplicant.conf_ )\n"
 
 #. type: Bullet: '* '
-#: index.md:90
+#: index.md:91
 #, fuzzy, no-wrap
 msgid "Insérez la carte microSD.\n"
 msgstr "Enmetu la karton microSD.\n"
 
 #. type: Bullet: '* '
-#: index.md:90
-#, fuzzy, no-wrap
-msgid "Connectez-vous à la caméra via `telnet IP 9527` (utilisateur _root_, mot de passe _jco66688_).\n"
-msgstr "Ensalutu ĉe la fotilo per `telnet IP 9527` (uzanto _root_, pasvorto _jco66688_).\n"
+#: index.md:91
+#, no-wrap
+#, fuzzy
+msgid "Connectez-vous à la caméra via `telnet IP 9527` (utilisateur _root_, mot de passe _jco66688_), dans les 5 minutes après avoir allumé la caméra.\n"
+msgstr "Konekti al la fotilo per `telnet IP 9527` (uzanto _root_, pasvorto _jco66688_), ene de 5 minutoj post turnado sur la fotilo.\n"
 
 #. type: Bullet: '* '
-#: index.md:90
-#, fuzzy, no-wrap
-msgid "Faites `killall -9 auto_run.sh` pour éviter de fermer la connexion.\n"
-msgstr "Premu `killall -9 auto_run.sh` por eviti fermi la konekton.\n"
+#: index.md:91
+#, no-wrap
+#, fuzzy
+msgid "Faites `killall -9 auto_run.sh` pour éviter de perdre la connexion.\n"
+msgstr "Faru `killall -9 auto_run.sh` por eviti perdi la ligon.\n"
 
 #. type: Bullet: '* '
-#: index.md:90
+#: index.md:91
 #, fuzzy, no-wrap
 msgid "Faites `cd /opt/media/mmcblk0p1;./install.sh`\n"
 msgstr "Faru `cd /opt/media/mmcblk0p1;./install.sh`\n"
 
 #. type: Bullet: '* '
-#: index.md:90
-#, fuzzy, no-wrap
-msgid "Vous pouvez vous connecter à l'URL _\"https://IP\"_ (utilisateur _admin_, mot de passe _jco66688_).\n"
-msgstr "Vi povas konekti al la URL _\"https://IP\"_ (uzanto _admin_, pasvorto _jco66688_).\n"
-
-#. type: Bullet: '* '
-#: index.md:90
+#: index.md:91
 #, no-wrap
 #, fuzzy
+msgid "Vous pouvez vous connecter à l'URL _\"https://IP\"_ (utilisateur _admin_, mot de passe _ismart21_).\n"
+msgstr "Vi povas konektiĝi al la URL (° 1 ° uzanto( _admin_, pasvorto _ismart21_).\n"
+
+#. type: Bullet: '* '
+#: index.md:91
+#, no-wrap
+#, fuzzy
+msgid "Vous pouvej vous connecter en ssh (utilisateur _admin_, mot de passe _ismart12_).\n"
+msgstr "Vi povas konekti al SSH (uzanto _admin_, pasvorto _ismart12_).\n"
+
+#. type: Bullet: '* '
+#: index.md:91
+#, fuzzy, no-wrap
 msgid "le flux vidéo primaire est accessible à _rtsp://admin:ismart21@IP/stream1_.\n"
 msgstr "La primara video-fluo estas alirebla ĉe _rtsp://admin:ismart21@IP/stream1_.\n"
 
 #. type: Bullet: '* '
-#: index.md:90
-#, no-wrap
-#, fuzzy
+#: index.md:91
+#, fuzzy, no-wrap
 msgid "le flux vidéo secondaire est accessible à _rtsp://admin:ismart21@IP/stream2_.\n"
 msgstr "La sekundara video-fluo estas alirebla ĉe _rtsp://admin:ismart21@IP/stream2_.\n"
 
 #. type: Title ##
-#: index.md:91
+#: index.md:92
 #, fuzzy, no-wrap
 msgid "Désinstallation du micrologiciel alternatif:"
 msgstr "Malinstalanta Alternativan Firmware:"
 
 #. type: Bullet: '* '
-#: index.md:96
+#: index.md:97
 #, fuzzy, no-wrap
 msgid "lancez le service telnet sur la caméra par l'interface web.\n"
 msgstr "komencu la telnet-servon per la fotilo per la interreta interfaco.\n"
 
 #. type: Bullet: '* '
-#: index.md:96
+#: index.md:97
 #, fuzzy, no-wrap
 msgid "Connectez-vous à la caméra via `telnet IP` (utilisateur _root_, mot de passe _ismart12_).\n"
 msgstr "komencu la telnet-servon per la fotilo per la interreta interfaco. `telnet IP` \n"
 
 #. type: Bullet: '* '
-#: index.md:96
+#: index.md:97
 #, fuzzy, no-wrap
 msgid "Faites `cd /opt/media/mmcblk0p1;./uninstall.sh;reboot`\n"
 msgstr "komencu la telnet-servon per la fotilo per la interreta interfaco. `cd /opt/media/mmcblk0p1;./uninstall.sh;reboot`\n"
 
 #. type: Bullet: '* '
-#: index.md:97
+#: index.md:98
 #, fuzzy, no-wrap
 msgid "Vous pouvez aussi simplement retirer la carte microSD.\n"
 msgstr "Vi ankaŭ povas simple forigi la karton microSD.\n"
+
+#, fuzzy, no-wrap
+#~ msgid "Connectez-vous à la caméra via `telnet IP 9527` (utilisateur _root_, mot de passe _jco66688_).\n"
+#~ msgstr "Ensalutu ĉe la fotilo per `telnet IP 9527` (uzanto _root_, pasvorto _jco66688_).\n"
+
+#, fuzzy, no-wrap
+#~ msgid "Faites `killall -9 auto_run.sh` pour éviter de fermer la connexion.\n"
+#~ msgstr "Premu `killall -9 auto_run.sh` por eviti fermi la konekton.\n"
+
+#, fuzzy, no-wrap
+#~ msgid "Vous pouvez vous connecter à l'URL _\"https://IP\"_ (utilisateur _admin_, mot de passe _jco66688_).\n"
+#~ msgstr "Vi povas konekti al la URL _\"https://IP\"_ (uzanto _admin_, pasvorto _jco66688_).\n"
 
 #, fuzzy, no-wrap
 #~ msgid "Serveur RTSP double-flux : 1280x720 H264 et 640x360 MJPEG\n"

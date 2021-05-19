@@ -85,6 +85,12 @@ La documentazione API può essere visualizzata qui:
 * Server ssh e client
 
 
+* rilevamento del movimento
+
+
+* invio email
+
+
 
 ## Cosa non funziona nel firmware alternativo:
 
@@ -103,13 +109,7 @@ La documentazione API può essere visualizzata qui:
 * rilevamento notturno automatico
 
 
-* rilevamento del movimento
-
-
 * rilevamento del movimento_ir-cut_
-
-
-* invio email
 
 
 * invio email_mqtt_
@@ -151,16 +151,19 @@ La documentazione API può essere visualizzata qui:
 * Collega la videocamera alla rete locale e accendi la videocamera.
 
 
-* Accedi alla telecamera con `telnet IP 9527` (utente _root_, password _jco66688_).
+* Collegare alla fotocamera da `telnet IP 9527` (Utente _root_, password _jco66688_), entro 5 minuti dopo aver rotante sulla fotocamera.
 
 
-* Premere `killall -9 auto_run.sh` per evitare di chiudere la connessione.
+* Fare `killall -9 auto_run.sh` per evitare di perdere la lega.
 
 
 * Faru `cd /opt/media/mmcblk0p1;./install.sh`
 
 
-* È possibile connettersi all'URL _"https://IP"_ (utente _admin_, password _jco66688_).
+* È possibile collegare all'URL (° 1 ° utente( _admin_, password _ismart21_).
+
+
+* È possibile collegarsi all'utente SSH ( _admin_, password _ismart12_).
 
 
 * La corrente video primaria è accessibile a _rtsp://admin:ismart21@IP/stream1_. (° 3 ° 3

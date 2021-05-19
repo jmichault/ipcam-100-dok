@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-04-07 22:54+0200\n"
+"POT-Creation-Date: 2021-05-19 18:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -164,8 +164,7 @@ msgstr "LAN ਅਤੇ WLAN\n"
 
 #. type: Bullet: '* '
 #: index.md:49
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "DRTSP Dual Flow Server: 1920x1080 H264 kaj 640x360 MJpeg defaŭlte.\n"
 msgstr "ਡੀਟੀਟੀਟੀਐਸਪੀ ਡਿ ual ਲ ਫਲੋ ਸਰਵਰ: 1920x1080 H264 ਅਤੇ 640x360 ਐਮਜੇਪੀਜੀ ਮੂਲ ਰੂਪ ਵਿੱਚ.\n"
 
@@ -235,60 +234,59 @@ msgstr "ਟੈਲਨੈੱਟ ਸਰਵਰ\n"
 msgid "SSH-servilo kaj kliento\n"
 msgstr "ਐਸਐਸਐਚ ਸਰਵਰ ਅਤੇ ਕਲਾਇੰਟ\n"
 
-#. type: Title ##
+#. type: Bullet: '* '
 #: index.md:73
-#, fuzzy, no-wrap
-msgid "Kio ne funkcias en alternativa firmvaro:"
-msgstr "ਵਿਕਲਪਕ ਫਰਮਵੇਅਰ ਵਿੱਚ ਕੀ ਕੰਮ ਨਹੀਂ ਕਰਦਾ:"
-
-#. type: Bullet: '* '
-#: index.md:76
-#, fuzzy, no-wrap
-msgid "sondosistemo\n"
-msgstr "ਆਵਾਜ਼ ਸਿਸਟਮ\n"
-
-#. type: Bullet: '* '
-#: index.md:78
-#, fuzzy, no-wrap
-msgid "_OSD_\n"
-msgstr "_OSD_\n"
-
-#. type: Bullet: '* '
-#: index.md:80
-#, no-wrap
-#, fuzzy
-msgid "Administrado de pasvorto.\n"
-msgstr "ਪਾਸਵਰਡ ਪ੍ਰਬੰਧਨ.\n"
-
-#. type: Bullet: '* '
-#: index.md:82
-#, fuzzy, no-wrap
-msgid "ĝisdatigo de firmvaro\n"
-msgstr "ਫਰਮਵੇਅਰ ਅਪਡੇਟ\n"
-
-#. type: Bullet: '* '
-#: index.md:84
-#, fuzzy, no-wrap
-msgid "aŭtomata nokta detekto\n"
-msgstr "ਰਾਤ ਨੂੰ ਸਵੈਚਾਲਤ ਖੋਜ\n"
-
-#. type: Bullet: '* '
-#: index.md:86
 #, fuzzy, no-wrap
 msgid "movado-detekto\n"
 msgstr "ਮੋਸ਼ਨ ਖੋਜ\n"
 
 #. type: Bullet: '* '
+#: index.md:75
+#, fuzzy, no-wrap
+msgid "sendante retpoŝton\n"
+msgstr "ਈਮੇਲ ਭੇਜਣਾ\n"
+
+#. type: Title ##
+#: index.md:77
+#, fuzzy, no-wrap
+msgid "Kio ne funkcias en alternativa firmvaro:"
+msgstr "ਵਿਕਲਪਕ ਫਰਮਵੇਅਰ ਵਿੱਚ ਕੀ ਕੰਮ ਨਹੀਂ ਕਰਦਾ:"
+
+#. type: Bullet: '* '
+#: index.md:80
+#, fuzzy, no-wrap
+msgid "sondosistemo\n"
+msgstr "ਆਵਾਜ਼ ਸਿਸਟਮ\n"
+
+#. type: Bullet: '* '
+#: index.md:82
+#, fuzzy, no-wrap
+msgid "_OSD_\n"
+msgstr "_OSD_\n"
+
+#. type: Bullet: '* '
+#: index.md:84
+#, fuzzy, no-wrap
+msgid "Administrado de pasvorto.\n"
+msgstr "ਪਾਸਵਰਡ ਪ੍ਰਬੰਧਨ.\n"
+
+#. type: Bullet: '* '
+#: index.md:86
+#, fuzzy, no-wrap
+msgid "ĝisdatigo de firmvaro\n"
+msgstr "ਫਰਮਵੇਅਰ ਅਪਡੇਟ\n"
+
+#. type: Bullet: '* '
 #: index.md:88
 #, fuzzy, no-wrap
-msgid "movado-detekto_ir-cut_\n"
-msgstr "ਮੋਸ਼ਨ ਖੋਜ_ir-cut_\n"
+msgid "aŭtomata nokta detekto\n"
+msgstr "ਰਾਤ ਨੂੰ ਸਵੈਚਾਲਤ ਖੋਜ\n"
 
 #. type: Bullet: '* '
 #: index.md:90
 #, fuzzy, no-wrap
-msgid "sendante retpoŝton\n"
-msgstr "ਈਮੇਲ ਭੇਜਣਾ\n"
+msgid "movado-detekto_ir-cut_\n"
+msgstr "ਮੋਸ਼ਨ ਖੋਜ_ir-cut_\n"
 
 #. type: Bullet: '* '
 #: index.md:92
@@ -364,15 +362,17 @@ msgstr "ਮਾਈਕ੍ਰੋ ਐਸਡੀ ਕਾਰਡ ਪਾਓ.\n"
 
 #. type: Bullet: '* '
 #: index.md:120
-#, fuzzy, no-wrap
-msgid "Ensalutu ĉe la fotilo per `telnet IP 9527` (uzanto _root_, pasvorto _jco66688_).\n"
-msgstr " `telnet IP 9527` (ਉਪਭੋਗਤਾ _root_, ਪਾਸਵਰਡ _jco66688_)ਨਾਲ ਕੈਮਰਾ ਤੇ ਲੌਗ ਇਨ ਕਰੋ.\n"
+#, no-wrap
+#, fuzzy
+msgid "Konekti al la fotilo per `telnet IP 9527` (uzanto _root_, pasvorto _jco66688_), ene de 5 minutoj post turnado sur la fotilo.\n"
+msgstr " `telnet IP 9527`  `telnet IP 9527` ਦੁਆਰਾ ਕੈਮਰਾ ਨਾਲ ਜੁੜੋ(ਉਪਭੋਗਤਾ _root_, ਪਾਸਵਰਡ _jco66688_)ਕੈਮਰਾ 'ਤੇ ਘੁੰਮਾਉਣ ਤੋਂ ਬਾਅਦ 5 ਮਿੰਟ ਦੇ ਅੰਦਰ.\n"
 
 #. type: Bullet: '* '
 #: index.md:122
-#, fuzzy, no-wrap
-msgid "Premu `killall -9 auto_run.sh` por eviti fermi la konekton.\n"
-msgstr "ਕਨੈਕਸ਼ਨ ਬੰਦ ਕਰਨ ਤੋਂ ਬਚਣ ਲਈ `killall -9 auto_run.sh` ਦਬਾਓ.\n"
+#, no-wrap
+#, fuzzy
+msgid "Faru `killall -9 auto_run.sh` por eviti perdi la ligon.\n"
+msgstr "ਲੀਗ ਨੂੰ ਗੁਆਉਣ ਤੋਂ ਬਚਣ ਲਈ `killall -9 auto_run.sh` ਬਣਾਓ.\n"
 
 #. type: Bullet: '* '
 #: index.md:124
@@ -382,53 +382,71 @@ msgstr "ਫਰੂ `cd /opt/media/mmcblk0p1;./install.sh`\n"
 
 #. type: Bullet: '* '
 #: index.md:126
-#, fuzzy, no-wrap
-msgid "Vi povas konekti al la URL _\"https://IP\"_ (uzanto _admin_, pasvorto _jco66688_).\n"
-msgstr "ਤੁਸੀਂ ਯੂਆਰਐਲ _\"https://IP\"_ (ਉਪਭੋਗਤਾ _admin_, ਪਾਸਵਰਡ _jco66688_)ਨਾਲ ਜੁੜ ਸਕਦੇ ਹੋ.\n"
+#, no-wrap
+#, fuzzy
+msgid "Vi povas konektiĝi al la URL (° 1 ° uzanto( _admin_, pasvorto _ismart21_).\n"
+msgstr "ਤੁਸੀਂ URL (° 1) ਯੂਜ਼ਰ ° ਉਪਭੋਗਤਾ( _admin_, ਪਾਸਵਰਡ_admin_ਨਾਲ ਜੁੜ ਸਕਦੇ ਹੋ.\n"
 
 #. type: Bullet: '* '
 #: index.md:128
 #, no-wrap
 #, fuzzy
+msgid "Vi povas konekti al SSH (uzanto _admin_, pasvorto _ismart12_).\n"
+msgstr "ਤੁਸੀਂ ਐਸਐਸਐਚ (ਉਪਭੋਗਤਾ _admin_, ਪਾਸਵਰਡ _ismart12_)ਨਾਲ ਜੁੜ ਸਕਦੇ ਹੋ.\n"
+
+#. type: Bullet: '* '
+#: index.md:130
+#, fuzzy, no-wrap
 msgid "La primara video-fluo estas alirebla ĉe _rtsp://admin:ismart21@IP/stream1_.\n"
 msgstr "ਪ੍ਰਾਇਮਰੀ ਵੀਡੀਓ ਮੌਜੂਦਾ _rtsp://admin:ismart21@IP/stream1_ਤੇ ਪਹੁੰਚਯੋਗ ਹੈ.\n"
 
 #. type: Bullet: '* '
-#: index.md:130
-#, no-wrap
-#, fuzzy
+#: index.md:132
+#, fuzzy, no-wrap
 msgid "La sekundara video-fluo estas alirebla ĉe _rtsp://admin:ismart21@IP/stream2_.\n"
 msgstr "ਸੈਕੰਡਰੀ ਵੀਡੀਓ ਮੌਜੂਦਾ _rtsp://admin:ismart21@IP/stream2_ਤੇ ਪਹੁੰਚਯੋਗ ਹੈ.\n"
 
 #. type: Title ##
-#: index.md:132
+#: index.md:134
 #, fuzzy, no-wrap
 msgid "Malinstalanta Alternativan Firmware:"
 msgstr "ਵਿਕਲਪਕ ਫਰਮਵੇਅਰ ਨੂੰ ਅਣਇੰਸਟੌਲ ਕਰਨਾ:"
 
 #. type: Bullet: '* '
-#: index.md:135
+#: index.md:137
 #, fuzzy, no-wrap
 msgid "komencu la telnet-servon per la fotilo per la interreta interfaco.\n"
 msgstr "ਇੰਟਰਨੈਟ ਇੰਟਰਫੇਸ ਦੁਆਰਾ ਕੈਮਰਾ ਨਾਲ ਟੈਲਨੈੱਟ ਸੇਵਾ ਅਰੰਭ ਕਰੋ.\n"
 
 #. type: Bullet: '* '
-#: index.md:137
+#: index.md:139
 #, fuzzy, no-wrap
 msgid "komencu la telnet-servon per la fotilo per la interreta interfaco. `telnet IP` \n"
 msgstr "ਇੰਟਰਨੈਟ ਇੰਟਰਫੇਸ ਦੁਆਰਾ ਕੈਮਰਾ ਨਾਲ ਟੈਲਨੈੱਟ ਸੇਵਾ ਅਰੰਭ ਕਰੋ. `telnet IP` \n"
 
 #. type: Bullet: '* '
-#: index.md:139
+#: index.md:141
 #, fuzzy, no-wrap
 msgid "komencu la telnet-servon per la fotilo per la interreta interfaco. `cd /opt/media/mmcblk0p1;./uninstall.sh;reboot`\n"
 msgstr "ਇੰਟਰਨੈਟ ਇੰਟਰਫੇਸ ਦੁਆਰਾ ਕੈਮਰਾ ਨਾਲ ਟੈਲਨੈੱਟ ਸੇਵਾ ਅਰੰਭ ਕਰੋ. `cd /opt/media/mmcblk0p1;./uninstall.sh;reboot`\n"
 
 #. type: Bullet: '* '
-#: index.md:142
+#: index.md:144
 #, fuzzy, no-wrap
 msgid "Vi ankaŭ povas simple forigi la karton microSD.\n"
 msgstr "ਤੁਸੀਂ ਆਸਾਨੀ ਨਾਲ ਮਾਈਕ੍ਰੋ ਐਸਡੀ ਕਾਰਡ ਨੂੰ ਵੀ ਹਟਾ ਸਕਦੇ ਹੋ.\n"
+
+#, fuzzy, no-wrap
+#~ msgid "Ensalutu ĉe la fotilo per `telnet IP 9527` (uzanto _root_, pasvorto _jco66688_).\n"
+#~ msgstr " `telnet IP 9527` (ਉਪਭੋਗਤਾ _root_, ਪਾਸਵਰਡ _jco66688_)ਨਾਲ ਕੈਮਰਾ ਤੇ ਲੌਗ ਇਨ ਕਰੋ.\n"
+
+#, fuzzy, no-wrap
+#~ msgid "Premu `killall -9 auto_run.sh` por eviti fermi la konekton.\n"
+#~ msgstr "ਕਨੈਕਸ਼ਨ ਬੰਦ ਕਰਨ ਤੋਂ ਬਚਣ ਲਈ `killall -9 auto_run.sh` ਦਬਾਓ.\n"
+
+#, fuzzy, no-wrap
+#~ msgid "Vi povas konekti al la URL _\"https://IP\"_ (uzanto _admin_, pasvorto _jco66688_).\n"
+#~ msgstr "ਤੁਸੀਂ ਯੂਆਰਐਲ _\"https://IP\"_ (ਉਪਭੋਗਤਾ _admin_, ਪਾਸਵਰਡ _jco66688_)ਨਾਲ ਜੁੜ ਸਕਦੇ ਹੋ.\n"
 
 #, fuzzy, no-wrap
 #~ msgid "RTSP-duobla-flua servilo: 1280x720 H264 kaj 640x360 MJpeg\n"

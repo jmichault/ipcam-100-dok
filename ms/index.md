@@ -85,6 +85,12 @@ Dokumentasi API boleh dilihat di sini:
 * SSH Server dan Client
 
 
+* pengesanan gerakan
+
+
+* menghantar e-mel
+
+
 
 ## Apa yang tidak berfungsi dalam firmware alternatif:
 
@@ -103,13 +109,7 @@ Dokumentasi API boleh dilihat di sini:
 * pengesanan malam automatik
 
 
-* pengesanan gerakan
-
-
 * pengesanan gerakan_ir-cut_
-
-
-* menghantar e-mel
 
 
 * menghantar e-mel_mqtt_
@@ -151,16 +151,19 @@ Dokumentasi API boleh dilihat di sini:
 * Sambungkan kamera ke rangkaian tempatan anda dan hidupkan kamera.
 
 
-* Log masuk ke kamera dengan pengguna `telnet IP 9527` ( _root_, kata laluan _jco66688_).
+* Sambungkan ke kamera dengan pengguna `telnet IP 9527` ( _root_, kata laluan _jco66688_), dalam masa 5 minit selepas berputar pada kamera.
 
 
-* Tekan `killall -9 auto_run.sh` untuk mengelakkan penutupan sambungan.
+* Buat `killall -9 auto_run.sh` untuk mengelakkan kehilangan liga.
 
 
 * Faru `cd /opt/media/mmcblk0p1;./install.sh`
 
 
-* Anda boleh menyambung ke pengguna URL _"https://IP"_ ( _admin_, kata laluan _jco66688_).
+* Anda boleh menyambung ke URL (° 1 ° Pengguna( _admin_, Kata laluan_admin_.
+
+
+* Anda boleh menyambung ke SSH (pengguna _admin_, kata laluan _ismart12_).
 
 
 * Arus video utama boleh diakses pada _rtsp://admin:ismart21@IP/stream1_. (° 3 ° 3

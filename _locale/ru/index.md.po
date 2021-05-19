@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-04-07 22:54+0200\n"
+"POT-Creation-Date: 2021-05-19 18:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -164,8 +164,7 @@ msgstr "LAN и WLAN\n"
 
 #. type: Bullet: '* '
 #: index.md:49
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "DRTSP Dual Flow Server: 1920x1080 H264 kaj 640x360 MJpeg defaŭlte.\n"
 msgstr "DRTTSP Dual Feat Server: 1920x1080 H264 и 640x360 MJPEG по умолчанию.\n"
 
@@ -235,60 +234,59 @@ msgstr "Telnet-сервер\n"
 msgid "SSH-servilo kaj kliento\n"
 msgstr "SSH сервер и клиент\n"
 
-#. type: Title ##
+#. type: Bullet: '* '
 #: index.md:73
-#, fuzzy, no-wrap
-msgid "Kio ne funkcias en alternativa firmvaro:"
-msgstr "Что не работает в альтернативных прошивках:"
-
-#. type: Bullet: '* '
-#: index.md:76
-#, fuzzy, no-wrap
-msgid "sondosistemo\n"
-msgstr "звуковая система\n"
-
-#. type: Bullet: '* '
-#: index.md:78
-#, fuzzy, no-wrap
-msgid "_OSD_\n"
-msgstr "_OSD_\n"
-
-#. type: Bullet: '* '
-#: index.md:80
-#, no-wrap
-#, fuzzy
-msgid "Administrado de pasvorto.\n"
-msgstr "Управление паролем.\n"
-
-#. type: Bullet: '* '
-#: index.md:82
-#, fuzzy, no-wrap
-msgid "ĝisdatigo de firmvaro\n"
-msgstr "обновление прошивки\n"
-
-#. type: Bullet: '* '
-#: index.md:84
-#, fuzzy, no-wrap
-msgid "aŭtomata nokta detekto\n"
-msgstr "автоматическое определение ночи\n"
-
-#. type: Bullet: '* '
-#: index.md:86
 #, fuzzy, no-wrap
 msgid "movado-detekto\n"
 msgstr "обнаружение движения\n"
 
 #. type: Bullet: '* '
+#: index.md:75
+#, fuzzy, no-wrap
+msgid "sendante retpoŝton\n"
+msgstr "отправка электронной почты\n"
+
+#. type: Title ##
+#: index.md:77
+#, fuzzy, no-wrap
+msgid "Kio ne funkcias en alternativa firmvaro:"
+msgstr "Что не работает в альтернативных прошивках:"
+
+#. type: Bullet: '* '
+#: index.md:80
+#, fuzzy, no-wrap
+msgid "sondosistemo\n"
+msgstr "звуковая система\n"
+
+#. type: Bullet: '* '
+#: index.md:82
+#, fuzzy, no-wrap
+msgid "_OSD_\n"
+msgstr "_OSD_\n"
+
+#. type: Bullet: '* '
+#: index.md:84
+#, fuzzy, no-wrap
+msgid "Administrado de pasvorto.\n"
+msgstr "Управление паролем.\n"
+
+#. type: Bullet: '* '
+#: index.md:86
+#, fuzzy, no-wrap
+msgid "ĝisdatigo de firmvaro\n"
+msgstr "обновление прошивки\n"
+
+#. type: Bullet: '* '
 #: index.md:88
 #, fuzzy, no-wrap
-msgid "movado-detekto_ir-cut_\n"
-msgstr "обнаружение движения_ir-cut_\n"
+msgid "aŭtomata nokta detekto\n"
+msgstr "автоматическое определение ночи\n"
 
 #. type: Bullet: '* '
 #: index.md:90
 #, fuzzy, no-wrap
-msgid "sendante retpoŝton\n"
-msgstr "отправка электронной почты\n"
+msgid "movado-detekto_ir-cut_\n"
+msgstr "обнаружение движения_ir-cut_\n"
 
 #. type: Bullet: '* '
 #: index.md:92
@@ -364,15 +362,17 @@ msgstr "Вставьте карту microSD.\n"
 
 #. type: Bullet: '* '
 #: index.md:120
-#, fuzzy, no-wrap
-msgid "Ensalutu ĉe la fotilo per `telnet IP 9527` (uzanto _root_, pasvorto _jco66688_).\n"
-msgstr "Войдите в камеру, используя `telnet IP 9527` (пользователя _root_, пароль _jco66688_).\n"
+#, no-wrap
+#, fuzzy
+msgid "Konekti al la fotilo per `telnet IP 9527` (uzanto _root_, pasvorto _jco66688_), ene de 5 minutoj post turnado sur la fotilo.\n"
+msgstr "Подключитесь к камере `telnet IP 9527` (, пользователя _root_, пароль _jco66688_), в течение 5 минут после вращения на камере.\n"
 
 #. type: Bullet: '* '
 #: index.md:122
-#, fuzzy, no-wrap
-msgid "Premu `killall -9 auto_run.sh` por eviti fermi la konekton.\n"
-msgstr "Нажмите `killall -9 auto_run.sh` , чтобы не закрывать соединение.\n"
+#, no-wrap
+#, fuzzy
+msgid "Faru `killall -9 auto_run.sh` por eviti perdi la ligon.\n"
+msgstr "Сделайте `killall -9 auto_run.sh` , чтобы не потерять лигу.\n"
 
 #. type: Bullet: '* '
 #: index.md:124
@@ -382,53 +382,71 @@ msgstr "Фару `cd /opt/media/mmcblk0p1;./install.sh`\n"
 
 #. type: Bullet: '* '
 #: index.md:126
-#, fuzzy, no-wrap
-msgid "Vi povas konekti al la URL _\"https://IP\"_ (uzanto _admin_, pasvorto _jco66688_).\n"
-msgstr "Вы можете подключиться к URL _\"https://IP\"_ (пользователю _admin_, паролю _jco66688_).\n"
+#, no-wrap
+#, fuzzy
+msgid "Vi povas konektiĝi al la URL (° 1 ° uzanto( _admin_, pasvorto _ismart21_).\n"
+msgstr "Вы можете подключиться к пользователю URL (° 1 °( _admin_, пароль _ismart21_).\n"
 
 #. type: Bullet: '* '
 #: index.md:128
 #, no-wrap
 #, fuzzy
+msgid "Vi povas konekti al SSH (uzanto _admin_, pasvorto _ismart12_).\n"
+msgstr "Вы можете подключиться к пользователю SSH ( _admin_, паролем _ismart12_).\n"
+
+#. type: Bullet: '* '
+#: index.md:130
+#, fuzzy, no-wrap
 msgid "La primara video-fluo estas alirebla ĉe _rtsp://admin:ismart21@IP/stream1_.\n"
 msgstr "Первичный видео ток доступен в _rtsp://admin:ismart21@IP/stream1_. (° 3 ° 3\n"
 
 #. type: Bullet: '* '
-#: index.md:130
-#, no-wrap
-#, fuzzy
+#: index.md:132
+#, fuzzy, no-wrap
 msgid "La sekundara video-fluo estas alirebla ĉe _rtsp://admin:ismart21@IP/stream2_.\n"
 msgstr "Вторичный ток видео доступен в _rtsp://admin:ismart21@IP/stream2_. (° 3 ° 3\n"
 
 #. type: Title ##
-#: index.md:132
+#: index.md:134
 #, fuzzy, no-wrap
 msgid "Malinstalanta Alternativan Firmware:"
 msgstr "Удаление альтернативной прошивки:"
 
 #. type: Bullet: '* '
-#: index.md:135
+#: index.md:137
 #, fuzzy, no-wrap
 msgid "komencu la telnet-servon per la fotilo per la interreta interfaco.\n"
 msgstr "запустите службу Telnet с камерой через интернет-интерфейс.\n"
 
 #. type: Bullet: '* '
-#: index.md:137
+#: index.md:139
 #, fuzzy, no-wrap
 msgid "komencu la telnet-servon per la fotilo per la interreta interfaco. `telnet IP` \n"
 msgstr "запустите службу Telnet с камерой через интернет-интерфейс. `telnet IP` \n"
 
 #. type: Bullet: '* '
-#: index.md:139
+#: index.md:141
 #, fuzzy, no-wrap
 msgid "komencu la telnet-servon per la fotilo per la interreta interfaco. `cd /opt/media/mmcblk0p1;./uninstall.sh;reboot`\n"
 msgstr "запустите службу Telnet с камерой через интернет-интерфейс. `cd /opt/media/mmcblk0p1;./uninstall.sh;reboot`\n"
 
 #. type: Bullet: '* '
-#: index.md:142
+#: index.md:144
 #, fuzzy, no-wrap
 msgid "Vi ankaŭ povas simple forigi la karton microSD.\n"
 msgstr "Вы также можете просто извлечь карту microSD.\n"
+
+#, fuzzy, no-wrap
+#~ msgid "Ensalutu ĉe la fotilo per `telnet IP 9527` (uzanto _root_, pasvorto _jco66688_).\n"
+#~ msgstr "Войдите в камеру, используя `telnet IP 9527` (пользователя _root_, пароль _jco66688_).\n"
+
+#, fuzzy, no-wrap
+#~ msgid "Premu `killall -9 auto_run.sh` por eviti fermi la konekton.\n"
+#~ msgstr "Нажмите `killall -9 auto_run.sh` , чтобы не закрывать соединение.\n"
+
+#, fuzzy, no-wrap
+#~ msgid "Vi povas konekti al la URL _\"https://IP\"_ (uzanto _admin_, pasvorto _jco66688_).\n"
+#~ msgstr "Вы можете подключиться к URL _\"https://IP\"_ (пользователю _admin_, паролю _jco66688_).\n"
 
 #, fuzzy, no-wrap
 #~ msgid "RTSP-duobla-flua servilo: 1280x720 H264 kaj 640x360 MJpeg\n"

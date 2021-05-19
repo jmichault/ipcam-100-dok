@@ -85,6 +85,12 @@ Die API-Dokumentation kann hier eingesehen werden:
 * SSH-Server und Client
 
 
+* Bewegungserkennung
+
+
+* E-Mail senden
+
+
 
 ## Was bei alternativer Firmware nicht funktioniert:
 
@@ -103,13 +109,7 @@ Die API-Dokumentation kann hier eingesehen werden:
 * automatische Nachterkennung
 
 
-* Bewegungserkennung
-
-
 * Bewegungserkennung_ir-cut_
-
-
-* E-Mail senden
 
 
 * E-Mail senden_mqtt_
@@ -151,16 +151,19 @@ Die API-Dokumentation kann hier eingesehen werden:
 * Schließen Sie die Kamera an Ihr lokales Netzwerk an und schalten Sie die Kamera ein.
 
 
-* Melden Sie sich mit dem Benutzer `telnet IP 9527` ( _root_und dem Passwort _jco66688_)bei der Kamera an.
+* Verbinden Sie sich mit der Kamera mit `telnet IP 9527`  _root_ _root_, Passwort _jco66688_), innerhalb von 5 Minuten nach dem Drehen der Kamera.
 
 
-* Drücken Sie `killall -9 auto_run.sh` , um ein Schließen der Verbindung zu vermeiden.
+* Verdienen `killall -9 auto_run.sh` , um die Liga zu vermeiden.
 
 
 * Faru `cd /opt/media/mmcblk0p1;./install.sh`
 
 
-* Sie können eine Verbindung zum Benutzer der URL _"https://IP"_ ( _admin_und zum Kennwort _jco66688_)herstellen.
+* Sie können eine Verbindung mit der URL (° 1 ° -Unternehmen( _admin_, Kennwort _ismart21_)) herstellen.
+
+
+* Sie können mit SSH (Benutzer _admin_verbunden, Passwort _ismart12_).
 
 
 * Der primäre Videostrom ist bei _rtsp://admin:ismart21@IP/stream1_erreichbar. (° 3 ° 3

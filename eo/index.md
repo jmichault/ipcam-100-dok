@@ -69,6 +69,10 @@ API-dokumentaro videblas ĉi tie:
 
 * SSH-servilo kaj kliento
 
+* movado-detekto
+
+* sendante retpoŝton
+
 
 ## Kio ne funkcias en alternativa firmvaro:
 
@@ -82,11 +86,7 @@ API-dokumentaro videblas ĉi tie:
 
 * aŭtomata nokta detekto
 
-* movado-detekto
-
 * movado-detekto_ir-cut_
-
-* sendante retpoŝton
 
 * sendante retpoŝton_mqtt_
 
@@ -116,13 +116,15 @@ API-dokumentaro videblas ĉi tie:
 
 * Konekti la fotilon al via loka reto kaj ŝalti la fotilon.
 
-* Ensalutu ĉe la fotilo per `telnet IP 9527` (uzanto _root_, pasvorto _jco66688_).
+* Konekti al la fotilo per `telnet IP 9527` (uzanto _root_, pasvorto _jco66688_), ene de 5 minutoj post turnado sur la fotilo.
 
-* Premu `killall -9 auto_run.sh` por eviti fermi la konekton.
+* Faru `killall -9 auto_run.sh` por eviti perdi la ligon.
 
 * Faru `cd /opt/media/mmcblk0p1;./install.sh`
 
-* Vi povas konekti al la URL _"https://IP"_ (uzanto _admin_, pasvorto _jco66688_).
+* Vi povas konektiĝi al la URL (° 1 ° uzanto( _admin_, pasvorto _ismart21_).
+
+* Vi povas konekti al SSH (uzanto _admin_, pasvorto _ismart12_).
 
 * La primara video-fluo estas alirebla ĉe _rtsp://admin:ismart21@IP/stream1_.
 

@@ -85,6 +85,12 @@ API文档可以在这里查看：
 * SSH服务器和客户端
 
 
+* 移动侦测
+
+
+* 发送电子邮件
+
+
 
 ## 在备用固件中什么不起作用：
 
@@ -103,13 +109,7 @@ API文档可以在这里查看：
 * 自动夜间检测
 
 
-* 移动侦测
-
-
 * 运动检测_ir-cut_
-
-
-* 发送电子邮件
 
 
 * 发送电子邮件_mqtt_
@@ -151,16 +151,19 @@ API文档可以在这里查看：
 * 将相机连接到本地网络，然后打开相机电源。
 
 
-* 以 `telnet IP 9527` (用户 _root_，密码 _jco66688_)登录到摄像机。
+* 通过 `telnet IP 9527` ( _root_，密码 _jco66688_)，在相机上旋转后的5分钟内连接到相机。
 
 
-* 按 `killall -9 auto_run.sh` 避免关闭连接。
+* 制作 `killall -9 auto_run.sh` 以避免失去联盟。
 
 
 * Faru `cd /opt/media/mmcblk0p1;./install.sh`
 
 
-* 您可以连接到URL _"https://IP"_ (用户 _admin_，密码 _jco66688_)。
+* 您可以连接到URL (°1°用户( _admin_，密码 _ismart21_)。
+
+
+* 您可以连接到SSH (用户 _admin_，密码 _ismart12_)。
 
 
 * 初级视频电流可在 _rtsp://admin:ismart21@IP/stream1_上访问。 （°3°3

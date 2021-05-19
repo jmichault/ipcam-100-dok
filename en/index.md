@@ -85,6 +85,12 @@ API documentation can be viewed here:
 * SSH server and client
 
 
+* motion detection
+
+
+* sending email
+
+
 
 ## What doesn't work in alternative firmware:
 
@@ -103,13 +109,7 @@ API documentation can be viewed here:
 * automatic night detection
 
 
-* motion detection
-
-
 * motion detection_ir-cut_
-
-
-* sending email
 
 
 * sending email_mqtt_
@@ -151,16 +151,19 @@ API documentation can be viewed here:
 * Connect the camera to your local network and turn on the camera.
 
 
-* Log in to the camera with `telnet IP 9527` (user _root_, password _jco66688_).
+* Connect to the camera by `telnet IP 9527` (User _root_, Password _jco66688_), within 5 minutes after rotating on the camera.
 
 
-* Press `killall -9 auto_run.sh` to avoid closing the connection.
+* Make `killall -9 auto_run.sh` to avoid losing the league.
 
 
 * Faru `cd /opt/media/mmcblk0p1;./install.sh`
 
 
-* You can connect to the URL _"https://IP"_ (user _admin_, password _jco66688_).
+* You can connect to the URL (° 1 ° User( _admin_, Password _ismart21_).
+
+
+* You can connect to ssh (user _admin_, password _ismart12_).
 
 
 * The primary video current is accessible at _rtsp://admin:ismart21@IP/stream1_. (° 3 ° 3

@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-04-07 22:54+0200\n"
+"POT-Creation-Date: 2021-05-19 18:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -164,8 +164,7 @@ msgstr "LAN und WLAN\n"
 
 #. type: Bullet: '* '
 #: index.md:49
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "DRTSP Dual Flow Server: 1920x1080 H264 kaj 640x360 MJpeg defaŭlte.\n"
 msgstr "DRTTSP Dual Flow Server: 1920x1080 H264 und 640x360 MJPEG standardmäßig.\n"
 
@@ -235,60 +234,59 @@ msgstr "Telnet-Server\n"
 msgid "SSH-servilo kaj kliento\n"
 msgstr "SSH-Server und Client\n"
 
-#. type: Title ##
+#. type: Bullet: '* '
 #: index.md:73
-#, fuzzy, no-wrap
-msgid "Kio ne funkcias en alternativa firmvaro:"
-msgstr "Was bei alternativer Firmware nicht funktioniert:"
-
-#. type: Bullet: '* '
-#: index.md:76
-#, fuzzy, no-wrap
-msgid "sondosistemo\n"
-msgstr "Soundsystem\n"
-
-#. type: Bullet: '* '
-#: index.md:78
-#, fuzzy, no-wrap
-msgid "_OSD_\n"
-msgstr "_OSD_\n"
-
-#. type: Bullet: '* '
-#: index.md:80
-#, no-wrap
-#, fuzzy
-msgid "Administrado de pasvorto.\n"
-msgstr "Passwortmanagement.\n"
-
-#. type: Bullet: '* '
-#: index.md:82
-#, fuzzy, no-wrap
-msgid "ĝisdatigo de firmvaro\n"
-msgstr "Firmware-Update\n"
-
-#. type: Bullet: '* '
-#: index.md:84
-#, fuzzy, no-wrap
-msgid "aŭtomata nokta detekto\n"
-msgstr "automatische Nachterkennung\n"
-
-#. type: Bullet: '* '
-#: index.md:86
 #, fuzzy, no-wrap
 msgid "movado-detekto\n"
 msgstr "Bewegungserkennung\n"
 
 #. type: Bullet: '* '
+#: index.md:75
+#, fuzzy, no-wrap
+msgid "sendante retpoŝton\n"
+msgstr "E-Mail senden\n"
+
+#. type: Title ##
+#: index.md:77
+#, fuzzy, no-wrap
+msgid "Kio ne funkcias en alternativa firmvaro:"
+msgstr "Was bei alternativer Firmware nicht funktioniert:"
+
+#. type: Bullet: '* '
+#: index.md:80
+#, fuzzy, no-wrap
+msgid "sondosistemo\n"
+msgstr "Soundsystem\n"
+
+#. type: Bullet: '* '
+#: index.md:82
+#, fuzzy, no-wrap
+msgid "_OSD_\n"
+msgstr "_OSD_\n"
+
+#. type: Bullet: '* '
+#: index.md:84
+#, fuzzy, no-wrap
+msgid "Administrado de pasvorto.\n"
+msgstr "Passwortmanagement.\n"
+
+#. type: Bullet: '* '
+#: index.md:86
+#, fuzzy, no-wrap
+msgid "ĝisdatigo de firmvaro\n"
+msgstr "Firmware-Update\n"
+
+#. type: Bullet: '* '
 #: index.md:88
 #, fuzzy, no-wrap
-msgid "movado-detekto_ir-cut_\n"
-msgstr "Bewegungserkennung_ir-cut_\n"
+msgid "aŭtomata nokta detekto\n"
+msgstr "automatische Nachterkennung\n"
 
 #. type: Bullet: '* '
 #: index.md:90
 #, fuzzy, no-wrap
-msgid "sendante retpoŝton\n"
-msgstr "E-Mail senden\n"
+msgid "movado-detekto_ir-cut_\n"
+msgstr "Bewegungserkennung_ir-cut_\n"
 
 #. type: Bullet: '* '
 #: index.md:92
@@ -364,15 +362,17 @@ msgstr "Legen Sie die microSD-Karte ein.\n"
 
 #. type: Bullet: '* '
 #: index.md:120
-#, fuzzy, no-wrap
-msgid "Ensalutu ĉe la fotilo per `telnet IP 9527` (uzanto _root_, pasvorto _jco66688_).\n"
-msgstr "Melden Sie sich mit dem Benutzer `telnet IP 9527` ( _root_und dem Passwort _jco66688_)bei der Kamera an.\n"
+#, no-wrap
+#, fuzzy
+msgid "Konekti al la fotilo per `telnet IP 9527` (uzanto _root_, pasvorto _jco66688_), ene de 5 minutoj post turnado sur la fotilo.\n"
+msgstr "Verbinden Sie sich mit der Kamera mit `telnet IP 9527`  _root_ _root_, Passwort _jco66688_), innerhalb von 5 Minuten nach dem Drehen der Kamera.\n"
 
 #. type: Bullet: '* '
 #: index.md:122
-#, fuzzy, no-wrap
-msgid "Premu `killall -9 auto_run.sh` por eviti fermi la konekton.\n"
-msgstr "Drücken Sie `killall -9 auto_run.sh` , um ein Schließen der Verbindung zu vermeiden.\n"
+#, no-wrap
+#, fuzzy
+msgid "Faru `killall -9 auto_run.sh` por eviti perdi la ligon.\n"
+msgstr "Verdienen `killall -9 auto_run.sh` , um die Liga zu vermeiden.\n"
 
 #. type: Bullet: '* '
 #: index.md:124
@@ -382,53 +382,71 @@ msgstr "Faru `cd /opt/media/mmcblk0p1;./install.sh`\n"
 
 #. type: Bullet: '* '
 #: index.md:126
-#, fuzzy, no-wrap
-msgid "Vi povas konekti al la URL _\"https://IP\"_ (uzanto _admin_, pasvorto _jco66688_).\n"
-msgstr "Sie können eine Verbindung zum Benutzer der URL _\"https://IP\"_ ( _admin_und zum Kennwort _jco66688_)herstellen.\n"
+#, no-wrap
+#, fuzzy
+msgid "Vi povas konektiĝi al la URL (° 1 ° uzanto( _admin_, pasvorto _ismart21_).\n"
+msgstr "Sie können eine Verbindung mit der URL (° 1 ° -Unternehmen( _admin_, Kennwort _ismart21_)) herstellen.\n"
 
 #. type: Bullet: '* '
 #: index.md:128
 #, no-wrap
 #, fuzzy
+msgid "Vi povas konekti al SSH (uzanto _admin_, pasvorto _ismart12_).\n"
+msgstr "Sie können mit SSH (Benutzer _admin_verbunden, Passwort _ismart12_).\n"
+
+#. type: Bullet: '* '
+#: index.md:130
+#, fuzzy, no-wrap
 msgid "La primara video-fluo estas alirebla ĉe _rtsp://admin:ismart21@IP/stream1_.\n"
 msgstr "Der primäre Videostrom ist bei _rtsp://admin:ismart21@IP/stream1_erreichbar. (° 3 ° 3\n"
 
 #. type: Bullet: '* '
-#: index.md:130
-#, no-wrap
-#, fuzzy
+#: index.md:132
+#, fuzzy, no-wrap
 msgid "La sekundara video-fluo estas alirebla ĉe _rtsp://admin:ismart21@IP/stream2_.\n"
 msgstr "Der sekundäre Videostrom ist bei _rtsp://admin:ismart21@IP/stream2_erreichbar. (° 3 ° 3\n"
 
 #. type: Title ##
-#: index.md:132
+#: index.md:134
 #, fuzzy, no-wrap
 msgid "Malinstalanta Alternativan Firmware:"
 msgstr "Alternative Firmware deinstallieren:"
 
 #. type: Bullet: '* '
-#: index.md:135
+#: index.md:137
 #, fuzzy, no-wrap
 msgid "komencu la telnet-servon per la fotilo per la interreta interfaco.\n"
 msgstr "Starten Sie den Telnet-Dienst mit der Kamera über die Internetschnittstelle.\n"
 
 #. type: Bullet: '* '
-#: index.md:137
+#: index.md:139
 #, fuzzy, no-wrap
 msgid "komencu la telnet-servon per la fotilo per la interreta interfaco. `telnet IP` \n"
 msgstr "Starten Sie den Telnet-Dienst mit der Kamera über die Internetschnittstelle. `telnet IP` \n"
 
 #. type: Bullet: '* '
-#: index.md:139
+#: index.md:141
 #, fuzzy, no-wrap
 msgid "komencu la telnet-servon per la fotilo per la interreta interfaco. `cd /opt/media/mmcblk0p1;./uninstall.sh;reboot`\n"
 msgstr "Starten Sie den Telnet-Dienst mit der Kamera über die Internetschnittstelle. `cd /opt/media/mmcblk0p1;./uninstall.sh;reboot`\n"
 
 #. type: Bullet: '* '
-#: index.md:142
+#: index.md:144
 #, fuzzy, no-wrap
 msgid "Vi ankaŭ povas simple forigi la karton microSD.\n"
 msgstr "Sie können die microSD-Karte auch einfach entfernen.\n"
+
+#, fuzzy, no-wrap
+#~ msgid "Ensalutu ĉe la fotilo per `telnet IP 9527` (uzanto _root_, pasvorto _jco66688_).\n"
+#~ msgstr "Melden Sie sich mit dem Benutzer `telnet IP 9527` ( _root_und dem Passwort _jco66688_)bei der Kamera an.\n"
+
+#, fuzzy, no-wrap
+#~ msgid "Premu `killall -9 auto_run.sh` por eviti fermi la konekton.\n"
+#~ msgstr "Drücken Sie `killall -9 auto_run.sh` , um ein Schließen der Verbindung zu vermeiden.\n"
+
+#, fuzzy, no-wrap
+#~ msgid "Vi povas konekti al la URL _\"https://IP\"_ (uzanto _admin_, pasvorto _jco66688_).\n"
+#~ msgstr "Sie können eine Verbindung zum Benutzer der URL _\"https://IP\"_ ( _admin_und zum Kennwort _jco66688_)herstellen.\n"
 
 #, fuzzy, no-wrap
 #~ msgid "RTSP-duobla-flua servilo: 1280x720 H264 kaj 640x360 MJpeg\n"
