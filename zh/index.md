@@ -6,7 +6,7 @@ layout: page
 title: 介绍
 ---
 
-该项目的目标是为该相机创建替代固件：
+该项目的目的是为此相机创建替代固件：（°1°1
 
 标记= _WIFI CARAM_  
 型号： _WF-HD820-ZS_  
@@ -119,24 +119,6 @@ API文档可以在这里查看：
 
 
 
-## 相机准备
-
-* 将相机连接到本地网络，然后打开相机电源。
-
-
-* 查找摄像机的IP地址。
-
-
-* 通过URL _"http://IP"_ (用户 _admin_，密码 _admin_)连接到摄像机
-
-
-* 在选项卡 "音频和视频"中，将主流设置为720p，单击 "保存"。
-
-
-* 您可以在选项卡 "网络"中设置电缆网络。
-
-
-
 ## 安装备用固件
 
 * 将所有内容复制到microSD卡根目录下的 [ _karto_ ](https://github.com/jmichault/ipcam-100/tree/master/karto) 文件夹中。
@@ -151,6 +133,9 @@ API文档可以在这里查看：
 * 将相机连接到本地网络，然后打开相机电源。
 
 
+* 找到相机的IP地址。您还可以连接到相机WiFi (SSID： _HSIPC-******_), en tiu kazo la IP-adreso estas _172.25.0.1_。
+
+
 * 通过 `telnet IP 9527` ( _root_，密码 _jco66688_)，在相机上旋转后的5分钟内连接到相机。
 
 
@@ -160,10 +145,10 @@ API文档可以在这里查看：
 * Faru `cd /opt/media/mmcblk0p1;./install.sh`
 
 
-* 您可以连接到URL (°1°用户( _admin_，密码 _ismart21_)。
+* 您可以连接到URL _https://IP_ (用户 _admin_，密码 _ismart21_)。
 
 
-* 您可以连接到SSH (用户 _admin_，密码 _ismart12_)。
+* 您可以在SSH (用户 _admin_，密码 _ismart12_)中连接。
 
 
 * 初级视频电流可在 _rtsp://admin:ismart21@IP/stream1_上访问。 （°3°3

@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-05-19 18:53+0200\n"
+"POT-Creation-Date: 2021-05-19 19:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -49,8 +49,8 @@ msgstr "Презентация"
 #. type: Plain text
 #: index.md:10
 #, fuzzy, no-wrap
-msgid "La celo de ĉi tiu projekto estas krei alternativan firmvaron por ĉi tiu fotilo:\n"
-msgstr "Цель этого проекта - создать альтернативную прошивку для этой камеры:\n"
+msgid "La celo de ĉi tiu projekto estas krei alternativan firmvaron por ĉi tiu kamerao:\n"
+msgstr "Цель этого проекта состоит в том, чтобы создать альтернативную прошивку для этой камеры: (° 1 ° 1\n"
 
 #. type: Plain text
 #: index.md:11
@@ -303,138 +303,153 @@ msgstr "и т.д ...\n"
 #. type: Title ##
 #: index.md:96
 #, fuzzy, no-wrap
-msgid "Kamera preparado"
-msgstr "Подготовка камеры"
-
-#. type: Bullet: '* '
-#: index.md:99 index.md:118
-#, fuzzy, no-wrap
-msgid "Konekti la fotilon al via loka reto kaj ŝalti la fotilon.\n"
-msgstr "Подключите камеру к локальной сети и включите камеру.\n"
-
-#. type: Bullet: '* '
-#: index.md:101
-#, fuzzy, no-wrap
-msgid "Trovu la IP-adreson de la fotilo.\n"
-msgstr "Найдите IP-адрес камеры.\n"
-
-#. type: Bullet: '* '
-#: index.md:103
-#, fuzzy, no-wrap
-msgid "Konekti al la fotilo per URL _\"http://IP\"_ (uzanto _admin_, pasvorto _admin_)\n"
-msgstr "Подключиться к камере по URL-адресу _\"http://IP\"_ (, пользователю _admin_, паролю _admin_)\n"
-
-#. type: Bullet: '* '
-#: index.md:105
-#, fuzzy, no-wrap
-msgid "en la langeto \"Aŭdio kaj video\", agordu la ĉefan rivereton al 720p, alklaku \"Konservu\".\n"
-msgstr "во вкладке \"Аудио и видео\"установите основной поток на 720p, нажмите \"Сохранить\".\n"
-
-#. type: Bullet: '* '
-#: index.md:107
-#, fuzzy, no-wrap
-msgid "eble agordu la kablan reton en la langeto \"Reto\".\n"
-msgstr "вы можете настроить кабельную сеть на вкладке \"Сеть\".\n"
-
-#. type: Title ##
-#: index.md:109
-#, fuzzy, no-wrap
 msgid "Instalante Alternativan Firmware"
 msgstr "Установка альтернативной прошивки"
 
 #. type: Bullet: '* '
-#: index.md:112
+#: index.md:99
 #, fuzzy, no-wrap
 msgid "Kopiu ĉion en la dosierujo [ _karto_ ](https://github.com/jmichault/ipcam-100/tree/master/karto) ĉe la radiko de la karto microSD.\n"
 msgstr "Скопируйте все в папку [ _karto_ ](https://github.com/jmichault/ipcam-100/tree/master/karto) в корне карты microSD.\n"
 
 #. type: Bullet: '* '
-#: index.md:114
+#: index.md:101
 #, fuzzy, no-wrap
 msgid "laŭvole agordi la reton ( _config/staticip.conf_ , _config/resolv.conf_ , _config/wpa_supplicant.conf_ )\n"
 msgstr "дополнительно настроить сеть ( _config/staticip.conf_ , _config/resolv.conf_ , _config/wpa_supplicant.conf_ )\n"
 
 #. type: Bullet: '* '
-#: index.md:116
+#: index.md:103
 #, fuzzy, no-wrap
 msgid "Enmetu la karton microSD.\n"
 msgstr "Вставьте карту microSD.\n"
 
 #. type: Bullet: '* '
-#: index.md:120
-#, no-wrap
-#, fuzzy
+#: index.md:105
+#, fuzzy, no-wrap
+msgid "Konekti la fotilon al via loka reto kaj ŝalti la fotilon.\n"
+msgstr "Подключите камеру к локальной сети и включите камеру.\n"
+
+#. type: Bullet: '* '
+#: index.md:107
+#, fuzzy, no-wrap
+msgid "Trovu la IP-adreson de la fotilo. Vi ankaŭ povas konektiĝi al la WiFi de la fotilo (SSID: _HSIPC-******_), en tiu kazo la IP-adreso estas _172.25.0.1_.\n"
+msgstr "Найдите IP-адрес камеры. Вы также можете подключиться к Wi-Fi камеры (SSID: _HSIPC-******_), en tiu kazo la IP-adreso estas _172.25.0.1_.\n"
+
+#. type: Bullet: '* '
+#: index.md:109
+#, fuzzy, no-wrap
 msgid "Konekti al la fotilo per `telnet IP 9527` (uzanto _root_, pasvorto _jco66688_), ene de 5 minutoj post turnado sur la fotilo.\n"
 msgstr "Подключитесь к камере `telnet IP 9527` (, пользователя _root_, пароль _jco66688_), в течение 5 минут после вращения на камере.\n"
 
 #. type: Bullet: '* '
-#: index.md:122
-#, no-wrap
-#, fuzzy
+#: index.md:111
+#, fuzzy, no-wrap
 msgid "Faru `killall -9 auto_run.sh` por eviti perdi la ligon.\n"
 msgstr "Сделайте `killall -9 auto_run.sh` , чтобы не потерять лигу.\n"
 
 #. type: Bullet: '* '
-#: index.md:124
+#: index.md:113
 #, fuzzy, no-wrap
 msgid "Faru `cd /opt/media/mmcblk0p1;./install.sh`\n"
 msgstr "Фару `cd /opt/media/mmcblk0p1;./install.sh`\n"
 
 #. type: Bullet: '* '
-#: index.md:126
+#: index.md:115
 #, no-wrap
 #, fuzzy
-msgid "Vi povas konektiĝi al la URL (° 1 ° uzanto( _admin_, pasvorto _ismart21_).\n"
-msgstr "Вы можете подключиться к пользователю URL (° 1 °( _admin_, пароль _ismart21_).\n"
+msgid "Vi povas konektiĝi al la URL _https://IP_ (uzanto _admin_, pasvorto _ismart21_).\n"
+msgstr "Вы можете подключиться к URL-адресу _https://IP_ ( _admin_, пароль _ismart21_).\n"
 
 #. type: Bullet: '* '
-#: index.md:128
-#, no-wrap
-#, fuzzy
-msgid "Vi povas konekti al SSH (uzanto _admin_, pasvorto _ismart12_).\n"
+#: index.md:117
+#, fuzzy, no-wrap
+msgid "Vi povas konektiĝi en SSH (uzanto _admin_, pasvorto _ismart12_).\n"
 msgstr "Вы можете подключиться к пользователю SSH ( _admin_, паролем _ismart12_).\n"
 
 #. type: Bullet: '* '
-#: index.md:130
+#: index.md:119
 #, fuzzy, no-wrap
 msgid "La primara video-fluo estas alirebla ĉe _rtsp://admin:ismart21@IP/stream1_.\n"
 msgstr "Первичный видео ток доступен в _rtsp://admin:ismart21@IP/stream1_. (° 3 ° 3\n"
 
 #. type: Bullet: '* '
-#: index.md:132
+#: index.md:121
 #, fuzzy, no-wrap
 msgid "La sekundara video-fluo estas alirebla ĉe _rtsp://admin:ismart21@IP/stream2_.\n"
 msgstr "Вторичный ток видео доступен в _rtsp://admin:ismart21@IP/stream2_. (° 3 ° 3\n"
 
 #. type: Title ##
-#: index.md:134
+#: index.md:123
 #, fuzzy, no-wrap
 msgid "Malinstalanta Alternativan Firmware:"
 msgstr "Удаление альтернативной прошивки:"
 
 #. type: Bullet: '* '
-#: index.md:137
+#: index.md:126
 #, fuzzy, no-wrap
 msgid "komencu la telnet-servon per la fotilo per la interreta interfaco.\n"
 msgstr "запустите службу Telnet с камерой через интернет-интерфейс.\n"
 
 #. type: Bullet: '* '
-#: index.md:139
+#: index.md:128
 #, fuzzy, no-wrap
 msgid "komencu la telnet-servon per la fotilo per la interreta interfaco. `telnet IP` \n"
 msgstr "запустите службу Telnet с камерой через интернет-интерфейс. `telnet IP` \n"
 
 #. type: Bullet: '* '
-#: index.md:141
+#: index.md:130
 #, fuzzy, no-wrap
 msgid "komencu la telnet-servon per la fotilo per la interreta interfaco. `cd /opt/media/mmcblk0p1;./uninstall.sh;reboot`\n"
 msgstr "запустите службу Telnet с камерой через интернет-интерфейс. `cd /opt/media/mmcblk0p1;./uninstall.sh;reboot`\n"
 
 #. type: Bullet: '* '
-#: index.md:144
+#: index.md:133
 #, fuzzy, no-wrap
 msgid "Vi ankaŭ povas simple forigi la karton microSD.\n"
 msgstr "Вы также можете просто извлечь карту microSD.\n"
+
+#, fuzzy, no-wrap
+#~ msgid "Vi povas konektiĝi al la URL (° 1 ° uzanto( _admin_, pasvorto _ismart21_).\n"
+#~ msgstr "Вы можете подключиться к пользователю URL (° 1 °( _admin_, пароль _ismart21_).\n"
+
+#, fuzzy, no-wrap
+#~ msgid "La celo de ĉi tiu projekto estas krei alternativan firmvaron por ĉi tiu fotilo:\n"
+#~ msgstr "Цель этого проекта - создать альтернативную прошивку для этой камеры:\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "Trovu la IP-adreson de la fotilo. Vi ankaŭ povas konektiĝi al la WiFi de "
+#~ "la fotilo (SSID: _HSIPC-******_), dans ce cas l'IP est _172.25.0.1_.\n"
+#~ msgstr ""
+#~ "Найдите IP-адрес камеры. Вы также можете подключиться к Wi-Fi камеры "
+#~ "(SSID: _HSIPC-******_), dans ce cas l'IP est _172.25.0.1_.\n"
+
+#, fuzzy, no-wrap
+#~ msgid "Kamera preparado"
+#~ msgstr "Подготовка камеры"
+
+#, fuzzy, no-wrap
+#~ msgid "Trovu la IP-adreson de la fotilo.\n"
+#~ msgstr "Найдите IP-адрес камеры.\n"
+
+#, fuzzy, no-wrap
+#~ msgid "Konekti al la fotilo per URL _\"http://IP\"_ (uzanto _admin_, pasvorto _admin_)\n"
+#~ msgstr "Подключиться к камере по URL-адресу _\"http://IP\"_ (, пользователю _admin_, паролю _admin_)\n"
+
+#, fuzzy, no-wrap
+#~ msgid "en la langeto \"Aŭdio kaj video\", agordu la ĉefan rivereton al 720p, alklaku \"Konservu\".\n"
+#~ msgstr "во вкладке \"Аудио и видео\"установите основной поток на 720p, нажмите \"Сохранить\".\n"
+
+#, fuzzy, no-wrap
+#~ msgid "eble agordu la kablan reton en la langeto \"Reto\".\n"
+#~ msgstr "вы можете настроить кабельную сеть на вкладке \"Сеть\".\n"
+
+#, fuzzy
+#~ msgid "Vi povas konekti al SSH (uzanto _admin_, pasvorto _ismart12_).\n"
+#~ msgstr ""
+#~ "Вы можете подключиться к пользователю SSH ( _admin_, паролем "
+#~ "_ismart12_).\n"
 
 #, fuzzy, no-wrap
 #~ msgid "Ensalutu ĉe la fotilo per `telnet IP 9527` (uzanto _root_, pasvorto _jco66688_).\n"

@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-05-19 18:53+0200\n"
+"POT-Creation-Date: 2021-05-19 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -49,8 +49,8 @@ msgstr "عرض"
 #. type: Plain text
 #: index.md:10
 #, fuzzy, no-wrap
-msgid "La celo de ĉi tiu projekto estas krei alternativan firmvaron por ĉi tiu fotilo:\n"
-msgstr "الهدف من هذا المشروع هو إنشاء برنامج ثابت بديل لهذه الكاميرا:\n"
+msgid "La celo de ĉi tiu projekto estas krei alternativan firmvaron por ĉi tiu kamerao:\n"
+msgstr "الغرض من هذا المشروع هو إنشاء برامج ثابتة بديلة لهذه الكاميرا: (° 1 ° 1\n"
 
 #. type: Plain text
 #: index.md:11
@@ -303,138 +303,152 @@ msgstr "إلخ ...\n"
 #. type: Title ##
 #: index.md:96
 #, fuzzy, no-wrap
-msgid "Kamera preparado"
-msgstr "إعداد الكاميرا"
-
-#. type: Bullet: '* '
-#: index.md:99 index.md:118
-#, fuzzy, no-wrap
-msgid "Konekti la fotilon al via loka reto kaj ŝalti la fotilon.\n"
-msgstr "قم بتوصيل الكاميرا بشبكتك المحلية وقم بتشغيل الكاميرا.\n"
-
-#. type: Bullet: '* '
-#: index.md:101
-#, fuzzy, no-wrap
-msgid "Trovu la IP-adreson de la fotilo.\n"
-msgstr "ابحث عن عنوان IP الخاص بالكاميرا.\n"
-
-#. type: Bullet: '* '
-#: index.md:103
-#, fuzzy, no-wrap
-msgid "Konekti al la fotilo per URL _\"http://IP\"_ (uzanto _admin_, pasvorto _admin_)\n"
-msgstr "الاتصال بالكاميرا عن طريق URL _\"http://IP\"_ (المستخدم _admin_، كلمة المرور _admin_)\n"
-
-#. type: Bullet: '* '
-#: index.md:105
-#, fuzzy, no-wrap
-msgid "en la langeto \"Aŭdio kaj video\", agordu la ĉefan rivereton al 720p, alklaku \"Konservu\".\n"
-msgstr "في علامة التبويب \"الصوت والفيديو\"، اضبط الدفق الرئيسي على 720 بكسل ، انقر فوق \"حفظ\".\n"
-
-#. type: Bullet: '* '
-#: index.md:107
-#, fuzzy, no-wrap
-msgid "eble agordu la kablan reton en la langeto \"Reto\".\n"
-msgstr "قد تتمكن من ضبط شبكة الكبل في علامة التبويب \"الشبكة\".\n"
-
-#. type: Title ##
-#: index.md:109
-#, fuzzy, no-wrap
 msgid "Instalante Alternativan Firmware"
 msgstr "تثبيت البرامج الثابتة البديلة"
 
 #. type: Bullet: '* '
-#: index.md:112
+#: index.md:99
 #, fuzzy, no-wrap
 msgid "Kopiu ĉion en la dosierujo [ _karto_ ](https://github.com/jmichault/ipcam-100/tree/master/karto) ĉe la radiko de la karto microSD.\n"
 msgstr "انسخ كل شيء إلى المجلد [ _karto_ ](https://github.com/jmichault/ipcam-100/tree/master/karto) في جذر بطاقة microSD.\n"
 
 #. type: Bullet: '* '
-#: index.md:114
+#: index.md:101
 #, fuzzy, no-wrap
 msgid "laŭvole agordi la reton ( _config/staticip.conf_ , _config/resolv.conf_ , _config/wpa_supplicant.conf_ )\n"
 msgstr "قم بتكوين الشبكة اختياريًا ( _config/staticip.conf_ ، _config/resolv.conf_ ، _config/wpa_supplicant.conf_ )\n"
 
 #. type: Bullet: '* '
-#: index.md:116
+#: index.md:103
 #, fuzzy, no-wrap
 msgid "Enmetu la karton microSD.\n"
 msgstr "أدخل بطاقة microSD.\n"
 
 #. type: Bullet: '* '
-#: index.md:120
-#, no-wrap
-#, fuzzy
+#: index.md:105
+#, fuzzy, no-wrap
+msgid "Konekti la fotilon al via loka reto kaj ŝalti la fotilon.\n"
+msgstr "قم بتوصيل الكاميرا بشبكتك المحلية وقم بتشغيل الكاميرا.\n"
+
+#. type: Bullet: '* '
+#: index.md:107
+#, fuzzy, no-wrap
+msgid "Trovu la IP-adreson de la fotilo. Vi ankaŭ povas konektiĝi al la WiFi de la fotilo (SSID: _HSIPC-******_), en tiu kazo la IP-adreso estas _172.25.0.1_.\n"
+msgstr "ابحث عن عنوان IP للكاميرا. يمكنك أيضا الاتصال بالكاميرا WiFi (SSID: _HSIPC-******_), en tiu kazo la IP-adreso estas _172.25.0.1_.\n"
+
+#. type: Bullet: '* '
+#: index.md:109
+#, fuzzy, no-wrap
 msgid "Konekti al la fotilo per `telnet IP 9527` (uzanto _root_, pasvorto _jco66688_), ene de 5 minutoj post turnado sur la fotilo.\n"
 msgstr "قم بالاتصال بالكاميرا بواسطة مستخدم (° 1 درجة) (° 3 درجة) _root_، كلمة المرور _jco66688_)، في غضون 5 دقائق بعد التدوير على الكاميرا.\n"
 
 #. type: Bullet: '* '
-#: index.md:122
-#, no-wrap
-#, fuzzy
+#: index.md:111
+#, fuzzy, no-wrap
 msgid "Faru `killall -9 auto_run.sh` por eviti perdi la ligon.\n"
 msgstr "جعل (° 1 درجة) لتجنب فقدان الدوري.\n"
 
 #. type: Bullet: '* '
-#: index.md:124
+#: index.md:113
 #, fuzzy, no-wrap
 msgid "Faru `cd /opt/media/mmcblk0p1;./install.sh`\n"
 msgstr "فارو `cd /opt/media/mmcblk0p1;./install.sh`\n"
 
 #. type: Bullet: '* '
-#: index.md:126
+#: index.md:115
 #, no-wrap
 #, fuzzy
-msgid "Vi povas konektiĝi al la URL (° 1 ° uzanto( _admin_, pasvorto _ismart21_).\n"
-msgstr "يمكنك الاتصال بعنوان URL (° المستخدم 1 °( _admin_، كلمة المرور _ismart21_).\n"
+msgid "Vi povas konektiĝi al la URL _https://IP_ (uzanto _admin_, pasvorto _ismart21_).\n"
+msgstr "يمكنك الاتصال بعنوان URL (° 1 درجة)(المستخدم _admin_، كلمة المرور _ismart21_).\n"
 
 #. type: Bullet: '* '
-#: index.md:128
-#, no-wrap
-#, fuzzy
-msgid "Vi povas konekti al SSH (uzanto _admin_, pasvorto _ismart12_).\n"
-msgstr "يمكنك الاتصال بمستخدم SSH (° 1 درجة) _admin_، كلمة المرور _ismart12_).\n"
+#: index.md:117
+#, fuzzy, no-wrap
+msgid "Vi povas konektiĝi en SSH (uzanto _admin_, pasvorto _ismart12_).\n"
+msgstr "يمكنك الاتصال في مستخدم SSH (° 1 درجة) _admin_، كلمة المرور _ismart12_).\n"
 
 #. type: Bullet: '* '
-#: index.md:130
+#: index.md:119
 #, fuzzy, no-wrap
 msgid "La primara video-fluo estas alirebla ĉe _rtsp://admin:ismart21@IP/stream1_.\n"
 msgstr "يمكن الوصول إلى تيار الفيديو الأساسي عند (° 1 درجة). (° 3 ° 3\n"
 
 #. type: Bullet: '* '
-#: index.md:132
+#: index.md:121
 #, fuzzy, no-wrap
 msgid "La sekundara video-fluo estas alirebla ĉe _rtsp://admin:ismart21@IP/stream2_.\n"
 msgstr "يتم الوصول إلى الفيديو الثانوي الحالي عند _rtsp://admin:ismart21@IP/stream2_. (° 3 ° 3\n"
 
 #. type: Title ##
-#: index.md:134
+#: index.md:123
 #, fuzzy, no-wrap
 msgid "Malinstalanta Alternativan Firmware:"
 msgstr "إلغاء تثبيت البرامج الثابتة البديلة:"
 
 #. type: Bullet: '* '
-#: index.md:137
+#: index.md:126
 #, fuzzy, no-wrap
 msgid "komencu la telnet-servon per la fotilo per la interreta interfaco.\n"
 msgstr "ابدأ خدمة telnet بالكاميرا عبر واجهة الإنترنت.\n"
 
 #. type: Bullet: '* '
-#: index.md:139
+#: index.md:128
 #, fuzzy, no-wrap
 msgid "komencu la telnet-servon per la fotilo per la interreta interfaco. `telnet IP` \n"
 msgstr "ابدأ خدمة telnet بالكاميرا عبر واجهة الإنترنت. `telnet IP` \n"
 
 #. type: Bullet: '* '
-#: index.md:141
+#: index.md:130
 #, fuzzy, no-wrap
 msgid "komencu la telnet-servon per la fotilo per la interreta interfaco. `cd /opt/media/mmcblk0p1;./uninstall.sh;reboot`\n"
 msgstr "ابدأ خدمة telnet بالكاميرا عبر واجهة الإنترنت. `cd /opt/media/mmcblk0p1;./uninstall.sh;reboot`\n"
 
 #. type: Bullet: '* '
-#: index.md:144
+#: index.md:133
 #, fuzzy, no-wrap
 msgid "Vi ankaŭ povas simple forigi la karton microSD.\n"
 msgstr "يمكنك أيضًا إزالة بطاقة microSD ببساطة.\n"
+
+#, fuzzy, no-wrap
+#~ msgid "Vi povas konektiĝi al la URL (° 1 ° uzanto( _admin_, pasvorto _ismart21_).\n"
+#~ msgstr "يمكنك الاتصال بعنوان URL (° المستخدم 1 °( _admin_، كلمة المرور _ismart21_).\n"
+
+#, fuzzy, no-wrap
+#~ msgid "La celo de ĉi tiu projekto estas krei alternativan firmvaron por ĉi tiu fotilo:\n"
+#~ msgstr "الهدف من هذا المشروع هو إنشاء برنامج ثابت بديل لهذه الكاميرا:\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "Trovu la IP-adreson de la fotilo. Vi ankaŭ povas konektiĝi al la WiFi de "
+#~ "la fotilo (SSID: _HSIPC-******_), dans ce cas l'IP est _172.25.0.1_.\n"
+#~ msgstr ""
+#~ "ابحث عن عنوان IP للكاميرا. يمكنك أيضا الاتصال بالكاميرا WiFi (SSID: "
+#~ "_HSIPC-******_), dans ce cas l'IP est _172.25.0.1_.\n"
+
+#, fuzzy, no-wrap
+#~ msgid "Kamera preparado"
+#~ msgstr "إعداد الكاميرا"
+
+#, fuzzy, no-wrap
+#~ msgid "Trovu la IP-adreson de la fotilo.\n"
+#~ msgstr "ابحث عن عنوان IP الخاص بالكاميرا.\n"
+
+#, fuzzy, no-wrap
+#~ msgid "Konekti al la fotilo per URL _\"http://IP\"_ (uzanto _admin_, pasvorto _admin_)\n"
+#~ msgstr "الاتصال بالكاميرا عن طريق URL _\"http://IP\"_ (المستخدم _admin_، كلمة المرور _admin_)\n"
+
+#, fuzzy, no-wrap
+#~ msgid "en la langeto \"Aŭdio kaj video\", agordu la ĉefan rivereton al 720p, alklaku \"Konservu\".\n"
+#~ msgstr "في علامة التبويب \"الصوت والفيديو\"، اضبط الدفق الرئيسي على 720 بكسل ، انقر فوق \"حفظ\".\n"
+
+#, fuzzy, no-wrap
+#~ msgid "eble agordu la kablan reton en la langeto \"Reto\".\n"
+#~ msgstr "قد تتمكن من ضبط شبكة الكبل في علامة التبويب \"الشبكة\".\n"
+
+#, fuzzy
+#~ msgid "Vi povas konekti al SSH (uzanto _admin_, pasvorto _ismart12_).\n"
+#~ msgstr ""
+#~ "يمكنك الاتصال بمستخدم SSH (° 1 درجة) _admin_، كلمة المرور _ismart12_).\n"
 
 #, fuzzy, no-wrap
 #~ msgid "Ensalutu ĉe la fotilo per `telnet IP 9527` (uzanto _root_, pasvorto _jco66688_).\n"

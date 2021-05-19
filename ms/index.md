@@ -6,7 +6,7 @@ layout: page
 title: Pembentangan
 ---
 
-Matlamat projek ini adalah untuk membuat firmware alternatif untuk kamera ini:
+Tujuan projek ini adalah untuk mewujudkan firmware alternatif untuk kamera ini: (° 1 ° 1
 
 tanda = _WIFI CARAM_  
 model: _WF-HD820-ZS_  
@@ -119,24 +119,6 @@ Dokumentasi API boleh dilihat di sini:
 
 
 
-## Penyediaan kamera
-
-* Sambungkan kamera ke rangkaian tempatan anda dan hidupkan kamera.
-
-
-* Cari alamat IP kamera.
-
-
-* Sambungkan ke kamera melalui URL _"http://IP"_ (pengguna _admin_, kata laluan _admin_)
-
-
-* di tab "Audio dan video", tetapkan aliran utama ke 720p, klik "Simpan".
-
-
-* anda mungkin dapat mengatur rangkaian kabel di tab "Rangkaian".
-
-
-
 ## Memasang Firmware Alternatif
 
 * Salin semuanya ke folder [ _karto_ ](https://github.com/jmichault/ipcam-100/tree/master/karto) di akar kad microSD.
@@ -151,6 +133,9 @@ Dokumentasi API boleh dilihat di sini:
 * Sambungkan kamera ke rangkaian tempatan anda dan hidupkan kamera.
 
 
+* Cari alamat IP kamera. Anda juga boleh menyambung ke kamera WiFi (SSID: _HSIPC-******_), en tiu kazo la IP-adreso estas _172.25.0.1_.
+
+
 * Sambungkan ke kamera dengan pengguna `telnet IP 9527` ( _root_, kata laluan _jco66688_), dalam masa 5 minit selepas berputar pada kamera.
 
 
@@ -160,10 +145,10 @@ Dokumentasi API boleh dilihat di sini:
 * Faru `cd /opt/media/mmcblk0p1;./install.sh`
 
 
-* Anda boleh menyambung ke URL (° 1 ° Pengguna( _admin_, Kata laluan_admin_.
+* Anda boleh menyambung ke URL _https://IP_ (, kata laluan _admin_, kata laluan _ismart21_).
 
 
-* Anda boleh menyambung ke SSH (pengguna _admin_, kata laluan _ismart12_).
+* Anda boleh menyambung dalam SSH (pengguna _admin_, kata laluan _ismart12_).
 
 
 * Arus video utama boleh diakses pada _rtsp://admin:ismart21@IP/stream1_. (° 3 ° 3

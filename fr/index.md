@@ -67,25 +67,18 @@ La documentation des APIs peut être consultée ici :
 * _mqtt_
 * etc ...
 
-## Préparation de la caméra
-
-* Connectez la caméra à votre réseau local et allumez la caméra.
-* Trouvez l'adresse IP de la caméra.
-* Connectez-vous à la caméra via l'URL _"http://IP"_ (utilisateur _admin_, mot de passe _admin_)
-* dans l'onglet "Audio et vidéo", réglez le flux principal sur 720p, cliquez sur "Enregistrer".
-* éventuellement configurer le réseau filaire dans l'onglet "Réseau".
-
 ## Installation du micrologiciel alternatif
 
 * Copiez tout ce qui se trouve dans le dossier [ _karto_ ](https://github.com/jmichault/ipcam-100/tree/master/karto) à la racine de la carte microSD.
 * éventuellement configurez le réseau ( _config/staticip.conf_ , _config/resolv.conf_ , _config/wpa_supplicant.conf_ )
 * Insérez la carte microSD.
 * Connectez la caméra à votre réseau local et allumez la caméra.
+* Trouvez l'adresse IP de la caméra. Vous pouvez aussi vous connecter au wifi de la caméra (SSID : _HSIPC-******_), dans ce cas l'IP est _172.25.0.1_.
 * Connectez-vous à la caméra via `telnet IP 9527` (utilisateur _root_, mot de passe _jco66688_), dans les 5 minutes après avoir allumé la caméra.
 * Faites `killall -9 auto_run.sh` pour éviter de perdre la connexion.
 * Faites `cd /opt/media/mmcblk0p1;./install.sh`
-* Vous pouvez vous connecter à l'URL _"https://IP"_ (utilisateur _admin_, mot de passe _ismart21_).
-* Vous pouvej vous connecter en ssh (utilisateur _admin_, mot de passe _ismart12_).
+* Vous pouvez vous connecter à l'URL _https://IP_ (utilisateur _admin_, mot de passe _ismart21_).
+* Vous pouvez vous connecter en ssh (utilisateur _admin_, mot de passe _ismart12_).
 * le flux vidéo primaire est accessible à _rtsp://admin:ismart21@IP/stream1_.
 * le flux vidéo secondaire est accessible à _rtsp://admin:ismart21@IP/stream2_.
 

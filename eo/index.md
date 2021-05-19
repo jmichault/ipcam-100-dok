@@ -6,7 +6,7 @@ layout: page
 title: Prezento
 ---
 
-La celo de ĉi tiu projekto estas krei alternativan firmvaron por ĉi tiu fotilo:
+La celo de ĉi tiu projekto estas krei alternativan firmvaron por ĉi tiu kamerao:
 
 marko = _WIFI CARAM_  
 modelo: _WF-HD820-ZS_  
@@ -93,19 +93,6 @@ API-dokumentaro videblas ĉi tie:
 * ktp ...
 
 
-## Kamera preparado
-
-* Konekti la fotilon al via loka reto kaj ŝalti la fotilon.
-
-* Trovu la IP-adreson de la fotilo.
-
-* Konekti al la fotilo per URL _"http://IP"_ (uzanto _admin_, pasvorto _admin_)
-
-* en la langeto "Aŭdio kaj video", agordu la ĉefan rivereton al 720p, alklaku "Konservu".
-
-* eble agordu la kablan reton en la langeto "Reto".
-
-
 ## Instalante Alternativan Firmware
 
 * Kopiu ĉion en la dosierujo [ _karto_ ](https://github.com/jmichault/ipcam-100/tree/master/karto) ĉe la radiko de la karto microSD.
@@ -116,15 +103,17 @@ API-dokumentaro videblas ĉi tie:
 
 * Konekti la fotilon al via loka reto kaj ŝalti la fotilon.
 
+* Trovu la IP-adreson de la fotilo. Vi ankaŭ povas konektiĝi al la WiFi de la fotilo (SSID: _HSIPC-******_), en tiu kazo la IP-adreso estas _172.25.0.1_.
+
 * Konekti al la fotilo per `telnet IP 9527` (uzanto _root_, pasvorto _jco66688_), ene de 5 minutoj post turnado sur la fotilo.
 
 * Faru `killall -9 auto_run.sh` por eviti perdi la ligon.
 
 * Faru `cd /opt/media/mmcblk0p1;./install.sh`
 
-* Vi povas konektiĝi al la URL (° 1 ° uzanto( _admin_, pasvorto _ismart21_).
+* Vi povas konektiĝi al la URL _https://IP_ (uzanto _admin_, pasvorto _ismart21_).
 
-* Vi povas konekti al SSH (uzanto _admin_, pasvorto _ismart12_).
+* Vi povas konektiĝi en SSH (uzanto _admin_, pasvorto _ismart12_).
 
 * La primara video-fluo estas alirebla ĉe _rtsp://admin:ismart21@IP/stream1_.
 

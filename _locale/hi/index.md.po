@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-05-19 18:53+0200\n"
+"POT-Creation-Date: 2021-05-19 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -49,8 +49,8 @@ msgstr "प्रस्तुतीकरण"
 #. type: Plain text
 #: index.md:10
 #, fuzzy, no-wrap
-msgid "La celo de ĉi tiu projekto estas krei alternativan firmvaron por ĉi tiu fotilo:\n"
-msgstr "इस परियोजना का लक्ष्य इस कैमरे के लिए एक वैकल्पिक फर्मवेयर बनाना है:\n"
+msgid "La celo de ĉi tiu projekto estas krei alternativan firmvaron por ĉi tiu kamerao:\n"
+msgstr "इस परियोजना का उद्देश्य इस कैमरे के लिए एक वैकल्पिक फर्मवेयर बनाना है: (° ° 0001 डिग्री)\n"
 
 #. type: Plain text
 #: index.md:11
@@ -303,138 +303,153 @@ msgstr "आदि ...\n"
 #. type: Title ##
 #: index.md:96
 #, fuzzy, no-wrap
-msgid "Kamera preparado"
-msgstr "कैमरा तैयार करना"
-
-#. type: Bullet: '* '
-#: index.md:99 index.md:118
-#, fuzzy, no-wrap
-msgid "Konekti la fotilon al via loka reto kaj ŝalti la fotilon.\n"
-msgstr "कैमरे को अपने स्थानीय नेटवर्क से कनेक्ट करें और कैमरा चालू करें।\n"
-
-#. type: Bullet: '* '
-#: index.md:101
-#, fuzzy, no-wrap
-msgid "Trovu la IP-adreson de la fotilo.\n"
-msgstr "कैमरे का आईपी पता खोजें।\n"
-
-#. type: Bullet: '* '
-#: index.md:103
-#, fuzzy, no-wrap
-msgid "Konekti al la fotilo per URL _\"http://IP\"_ (uzanto _admin_, pasvorto _admin_)\n"
-msgstr "URL _\"http://IP\"_ (उपयोगकर्ता _admin_, पासवर्ड _admin_)के साथ कैमरे से कनेक्ट करें\n"
-
-#. type: Bullet: '* '
-#: index.md:105
-#, fuzzy, no-wrap
-msgid "en la langeto \"Aŭdio kaj video\", agordu la ĉefan rivereton al 720p, alklaku \"Konservu\".\n"
-msgstr "टैब में \"ऑडियो और वीडियो\", 720p पर मुख्य स्ट्रीम सेट करें, \"सहेजें\"पर क्लिक करें।\n"
-
-#. type: Bullet: '* '
-#: index.md:107
-#, fuzzy, no-wrap
-msgid "eble agordu la kablan reton en la langeto \"Reto\".\n"
-msgstr "आप \"नेटवर्क\"टैब में केबल नेटवर्क को कॉन्फ़िगर करने में सक्षम हो सकते हैं।\n"
-
-#. type: Title ##
-#: index.md:109
-#, fuzzy, no-wrap
 msgid "Instalante Alternativan Firmware"
 msgstr "वैकल्पिक फर्मवेयर स्थापित करना"
 
 #. type: Bullet: '* '
-#: index.md:112
+#: index.md:99
 #, fuzzy, no-wrap
 msgid "Kopiu ĉion en la dosierujo [ _karto_ ](https://github.com/jmichault/ipcam-100/tree/master/karto) ĉe la radiko de la karto microSD.\n"
 msgstr "माइक्रोएसडी कार्ड की जड़ में सब कुछ [ _karto_ ](https://github.com/jmichault/ipcam-100/tree/master/karto) फ़ोल्डर में कॉपी करें।\n"
 
 #. type: Bullet: '* '
-#: index.md:114
+#: index.md:101
 #, fuzzy, no-wrap
 msgid "laŭvole agordi la reton ( _config/staticip.conf_ , _config/resolv.conf_ , _config/wpa_supplicant.conf_ )\n"
 msgstr "वैकल्पिक रूप से नेटवर्क को कॉन्फ़िगर करें ( _config/staticip.conf_ , _config/resolv.conf_ , _config/wpa_supplicant.conf_ )\n"
 
 #. type: Bullet: '* '
-#: index.md:116
+#: index.md:103
 #, fuzzy, no-wrap
 msgid "Enmetu la karton microSD.\n"
 msgstr "माइक्रोएसडी कार्ड डालें।\n"
 
 #. type: Bullet: '* '
-#: index.md:120
-#, no-wrap
-#, fuzzy
+#: index.md:105
+#, fuzzy, no-wrap
+msgid "Konekti la fotilon al via loka reto kaj ŝalti la fotilon.\n"
+msgstr "कैमरे को अपने स्थानीय नेटवर्क से कनेक्ट करें और कैमरा चालू करें।\n"
+
+#. type: Bullet: '* '
+#: index.md:107
+#, fuzzy, no-wrap
+msgid "Trovu la IP-adreson de la fotilo. Vi ankaŭ povas konektiĝi al la WiFi de la fotilo (SSID: _HSIPC-******_), en tiu kazo la IP-adreso estas _172.25.0.1_.\n"
+msgstr "कैमरा का आईपी पता खोजें। आप कैमरे वाईफाई (डिग्री ° 0001 डिग्री) SSID से भी कनेक्ट कर सकते हैं: (° 0002 डिग्री)।\n"
+
+#. type: Bullet: '* '
+#: index.md:109
+#, fuzzy, no-wrap
 msgid "Konekti al la fotilo per `telnet IP 9527` (uzanto _root_, pasvorto _jco66688_), ene de 5 minutoj post turnado sur la fotilo.\n"
 msgstr "कैमरे पर घूमने के 5 मिनट के भीतर, (° ° 0001 डिग्री ° ° ° 0004 डिग्री), पासवर्ड (° 0006 डिग्री) द्वारा कैमरे से कनेक्ट करें।\n"
 
 #. type: Bullet: '* '
-#: index.md:122
-#, no-wrap
-#, fuzzy
+#: index.md:111
+#, fuzzy, no-wrap
 msgid "Faru `killall -9 auto_run.sh` por eviti perdi la ligon.\n"
 msgstr "लीग खोने से बचने के लिए (0001 डिग्री) बनाएं।\n"
 
 #. type: Bullet: '* '
-#: index.md:124
+#: index.md:113
 #, fuzzy, no-wrap
 msgid "Faru `cd /opt/media/mmcblk0p1;./install.sh`\n"
 msgstr "फ़ारू `cd /opt/media/mmcblk0p1;./install.sh`\n"
 
 #. type: Bullet: '* '
-#: index.md:126
+#: index.md:115
 #, no-wrap
 #, fuzzy
-msgid "Vi povas konektiĝi al la URL (° 1 ° uzanto( _admin_, pasvorto _ismart21_).\n"
-msgstr "आप यूआरएल (° ° ° ° ° ° ° 1 ° ° 0002 डिग्री) (° 0003 डिग्री), पासवर्ड (° 0005 डिग्री) से कनेक्ट कर सकते हैं।\n"
+msgid "Vi povas konektiĝi al la URL _https://IP_ (uzanto _admin_, pasvorto _ismart21_).\n"
+msgstr "आप यूआरएल (° ° ° ° 0003 डिग्री) उपयोगकर्ता (° ° 0004 डिग्री), पासवर्ड (° ° 0006 डिग्री) से कनेक्ट कर सकते हैं।\n"
 
 #. type: Bullet: '* '
-#: index.md:128
-#, no-wrap
-#, fuzzy
-msgid "Vi povas konekti al SSH (uzanto _admin_, pasvorto _ismart12_).\n"
-msgstr "आप एसएसएच (डिग्री 0001 डिग्री) उपयोगकर्ता (° 0002 डिग्री), पासवर्ड (° ° 0004 डिग्री) से कनेक्ट कर सकते हैं।\n"
+#: index.md:117
+#, fuzzy, no-wrap
+msgid "Vi povas konektiĝi en SSH (uzanto _admin_, pasvorto _ismart12_).\n"
+msgstr "आप एसएसएच (° ° 0001 डिग्री) उपयोगकर्ता (° ° 0002 डिग्री), पासवर्ड (° ° 0004 डिग्री) में जोड़ सकते हैं।\n"
 
 #. type: Bullet: '* '
-#: index.md:130
+#: index.md:119
 #, fuzzy, no-wrap
 msgid "La primara video-fluo estas alirebla ĉe _rtsp://admin:ismart21@IP/stream1_.\n"
 msgstr "प्राथमिक वीडियो प्रवाह (° ° 0001 डिग्री) पर पहुंच योग्य है।\n"
 
 #. type: Bullet: '* '
-#: index.md:132
+#: index.md:121
 #, fuzzy, no-wrap
 msgid "La sekundara video-fluo estas alirebla ĉe _rtsp://admin:ismart21@IP/stream2_.\n"
 msgstr "माध्यमिक वीडियो प्रवाह (° ° 0001 डिग्री) पर पहुंच योग्य है।\n"
 
 #. type: Title ##
-#: index.md:134
+#: index.md:123
 #, fuzzy, no-wrap
 msgid "Malinstalanta Alternativan Firmware:"
 msgstr "वैकल्पिक फर्मवेयर की स्थापना रद्द करना:"
 
 #. type: Bullet: '* '
-#: index.md:137
+#: index.md:126
 #, fuzzy, no-wrap
 msgid "komencu la telnet-servon per la fotilo per la interreta interfaco.\n"
 msgstr "इंटरनेट इंटरफेस के माध्यम से कैमरे के साथ टेलनेट सेवा शुरू करें।\n"
 
 #. type: Bullet: '* '
-#: index.md:139
+#: index.md:128
 #, fuzzy, no-wrap
 msgid "komencu la telnet-servon per la fotilo per la interreta interfaco. `telnet IP` \n"
 msgstr "इंटरनेट इंटरफेस के माध्यम से कैमरे के साथ टेलनेट सेवा शुरू करें। `telnet IP` \n"
 
 #. type: Bullet: '* '
-#: index.md:141
+#: index.md:130
 #, fuzzy, no-wrap
 msgid "komencu la telnet-servon per la fotilo per la interreta interfaco. `cd /opt/media/mmcblk0p1;./uninstall.sh;reboot`\n"
 msgstr "इंटरनेट इंटरफेस के माध्यम से कैमरे के साथ टेलनेट सेवा शुरू करें। `cd /opt/media/mmcblk0p1;./uninstall.sh;reboot`\n"
 
 #. type: Bullet: '* '
-#: index.md:144
+#: index.md:133
 #, fuzzy, no-wrap
 msgid "Vi ankaŭ povas simple forigi la karton microSD.\n"
 msgstr "आप बस माइक्रोएसडी कार्ड भी निकाल सकते हैं।\n"
+
+#, fuzzy, no-wrap
+#~ msgid "Vi povas konektiĝi al la URL (° 1 ° uzanto( _admin_, pasvorto _ismart21_).\n"
+#~ msgstr "आप यूआरएल (° ° ° ° ° ° ° 1 ° ° 0002 डिग्री) (° 0003 डिग्री), पासवर्ड (° 0005 डिग्री) से कनेक्ट कर सकते हैं।\n"
+
+#, fuzzy, no-wrap
+#~ msgid "La celo de ĉi tiu projekto estas krei alternativan firmvaron por ĉi tiu fotilo:\n"
+#~ msgstr "इस परियोजना का लक्ष्य इस कैमरे के लिए एक वैकल्पिक फर्मवेयर बनाना है:\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "Trovu la IP-adreson de la fotilo. Vi ankaŭ povas konektiĝi al la WiFi de "
+#~ "la fotilo (SSID: _HSIPC-******_), dans ce cas l'IP est _172.25.0.1_.\n"
+#~ msgstr ""
+#~ "कैमरा का आईपी पता खोजें। आप कैमरे वाईफाई (डिग्री ° 0001 डिग्री) SSID से भी कनेक्ट "
+#~ "कर सकते हैं: (° 0002 डिग्री)।\n"
+
+#, fuzzy, no-wrap
+#~ msgid "Kamera preparado"
+#~ msgstr "कैमरा तैयार करना"
+
+#, fuzzy, no-wrap
+#~ msgid "Trovu la IP-adreson de la fotilo.\n"
+#~ msgstr "कैमरे का आईपी पता खोजें।\n"
+
+#, fuzzy, no-wrap
+#~ msgid "Konekti al la fotilo per URL _\"http://IP\"_ (uzanto _admin_, pasvorto _admin_)\n"
+#~ msgstr "URL _\"http://IP\"_ (उपयोगकर्ता _admin_, पासवर्ड _admin_)के साथ कैमरे से कनेक्ट करें\n"
+
+#, fuzzy, no-wrap
+#~ msgid "en la langeto \"Aŭdio kaj video\", agordu la ĉefan rivereton al 720p, alklaku \"Konservu\".\n"
+#~ msgstr "टैब में \"ऑडियो और वीडियो\", 720p पर मुख्य स्ट्रीम सेट करें, \"सहेजें\"पर क्लिक करें।\n"
+
+#, fuzzy, no-wrap
+#~ msgid "eble agordu la kablan reton en la langeto \"Reto\".\n"
+#~ msgstr "आप \"नेटवर्क\"टैब में केबल नेटवर्क को कॉन्फ़िगर करने में सक्षम हो सकते हैं।\n"
+
+#, fuzzy
+#~ msgid "Vi povas konekti al SSH (uzanto _admin_, pasvorto _ismart12_).\n"
+#~ msgstr ""
+#~ "आप एसएसएच (डिग्री 0001 डिग्री) उपयोगकर्ता (° 0002 डिग्री), पासवर्ड (° ° 0004 "
+#~ "डिग्री) से कनेक्ट कर सकते हैं।\n"
 
 #, fuzzy, no-wrap
 #~ msgid "Ensalutu ĉe la fotilo per `telnet IP 9527` (uzanto _root_, pasvorto _jco66688_).\n"

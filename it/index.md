@@ -6,7 +6,7 @@ layout: page
 title: Presentazione
 ---
 
-L'obiettivo di questo progetto è creare un firmware alternativo per questa fotocamera:
+Lo scopo di questo progetto è creare firmware alternativo per questa fotocamera: (° 1 ° 1
 
 segno = _WIFI CARAM_  
 modello: _WF-HD820-ZS_  
@@ -119,24 +119,6 @@ La documentazione API può essere visualizzata qui:
 
 
 
-## Preparazione della fotocamera
-
-* Collega la videocamera alla rete locale e accendi la videocamera.
-
-
-* Trova l'indirizzo IP della telecamera.
-
-
-* Connessione alla telecamera tramite URL _"http://IP"_ (utente _admin_, password _admin_)
-
-
-* nella scheda "Audio e video", impostare lo stream principale a 720p, fare clic su "Salva".
-
-
-* potresti essere in grado di impostare la rete via cavo nella scheda "Rete".
-
-
-
 ## Installazione di firmware alternativo
 
 * Copia tutto nella cartella [ _karto_ ](https://github.com/jmichault/ipcam-100/tree/master/karto) nella radice della scheda microSD.
@@ -151,6 +133,9 @@ La documentazione API può essere visualizzata qui:
 * Collega la videocamera alla rete locale e accendi la videocamera.
 
 
+* Trova l'indirizzo IP della fotocamera. È anche possibile collegare anche alla fotocamera WiFi (SSID: _HSIPC-******_), en tiu kazo la IP-adreso estas _172.25.0.1_.
+
+
 * Collegare alla fotocamera da `telnet IP 9527` (Utente _root_, password _jco66688_), entro 5 minuti dopo aver rotante sulla fotocamera.
 
 
@@ -160,10 +145,10 @@ La documentazione API può essere visualizzata qui:
 * Faru `cd /opt/media/mmcblk0p1;./install.sh`
 
 
-* È possibile collegare all'URL (° 1 ° utente( _admin_, password _ismart21_).
+* È possibile collegare all'URL _https://IP_ (utente _admin_, password _ismart21_).
 
 
-* È possibile collegarsi all'utente SSH ( _admin_, password _ismart12_).
+* È possibile connettersi in Utente SSH ( _admin_, password _ismart12_).
 
 
 * La corrente video primaria è accessibile a _rtsp://admin:ismart21@IP/stream1_. (° 3 ° 3

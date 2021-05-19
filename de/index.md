@@ -6,7 +6,7 @@ layout: page
 title: Präsentation
 ---
 
-Das Ziel dieses Projekts ist es, eine alternative Firmware für diese Kamera zu erstellen:
+Der Zweck dieses Projekts besteht darin, alternative Firmware für diese Kamera zu erstellen:
 
 Markierung = _WIFI CARAM_  
 Modell: _WF-HD820-ZS_  
@@ -119,24 +119,6 @@ Die API-Dokumentation kann hier eingesehen werden:
 
 
 
-## Kameravorbereitung
-
-* Schließen Sie die Kamera an Ihr lokales Netzwerk an und schalten Sie die Kamera ein.
-
-
-* Suchen Sie die IP-Adresse der Kamera.
-
-
-* Stellen Sie eine Verbindung zur Kamera her, indem Sie die URL _"http://IP"_ (, den Benutzer _admin_und das Passwort _admin_)eingeben.
-
-
-* Stellen Sie auf der Registerkarte "Audio und Video"den Hauptstrom auf 720p ein und klicken Sie auf "Speichern".
-
-
-* Möglicherweise können Sie das Kabelnetzwerk auf der Registerkarte "Netzwerk"einstellen.
-
-
-
 ## Alternative Firmware installieren
 
 * Kopieren Sie alles in den Ordner [ _karto_ ](https://github.com/jmichault/ipcam-100/tree/master/karto) im Stammverzeichnis der microSD-Karte.
@@ -151,6 +133,9 @@ Die API-Dokumentation kann hier eingesehen werden:
 * Schließen Sie die Kamera an Ihr lokales Netzwerk an und schalten Sie die Kamera ein.
 
 
+* Finden Sie die IP-Adresse der Kamera. Sie können auch eine Verbindung zur Kamera-WiFi (SSID herstellen: _HSIPC-******_), en tiu kazo la IP-adreso estas _172.25.0.1_.
+
+
 * Verbinden Sie sich mit der Kamera mit `telnet IP 9527`  _root_ _root_, Passwort _jco66688_), innerhalb von 5 Minuten nach dem Drehen der Kamera.
 
 
@@ -160,10 +145,10 @@ Die API-Dokumentation kann hier eingesehen werden:
 * Faru `cd /opt/media/mmcblk0p1;./install.sh`
 
 
-* Sie können eine Verbindung mit der URL (° 1 ° -Unternehmen( _admin_, Kennwort _ismart21_)) herstellen.
+* Sie können eine Verbindung mit der URL _https://IP_ (benutzer _admin_verbinden, Passwort _ismart21_).
 
 
-* Sie können mit SSH (Benutzer _admin_verbunden, Passwort _ismart12_).
+* Sie können in SSH (Benutzer _admin_, Passwort _ismart12_)verbinden.
 
 
 * Der primäre Videostrom ist bei _rtsp://admin:ismart21@IP/stream1_erreichbar. (° 3 ° 3

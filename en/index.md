@@ -6,7 +6,7 @@ layout: page
 title: Presentation
 ---
 
-The goal of this project is to create an alternative firmware for this camera:
+The purpose of this project is to create alternative firmware for this camera: (° 1 ° 1
 
 mark = _WIFI CARAM_  
 model: _WF-HD820-ZS_  
@@ -119,24 +119,6 @@ API documentation can be viewed here:
 
 
 
-## Camera preparation
-
-* Connect the camera to your local network and turn on the camera.
-
-
-* Find the IP address of the camera.
-
-
-* Connect to the camera with URL _"http://IP"_ (user _admin_, password _admin_)
-
-
-* in the tab "Audio and video", set the main stream to 720p, click "Save".
-
-
-* you may be able to set the cable network in the tab "Network".
-
-
-
 ## Installing Alternative Firmware
 
 * Copy everything to the [ _karto_ ](https://github.com/jmichault/ipcam-100/tree/master/karto) folder at the root of the microSD card.
@@ -151,6 +133,9 @@ API documentation can be viewed here:
 * Connect the camera to your local network and turn on the camera.
 
 
+* Find the camera's IP address. You can also connect to the camera wifi (SSID: _HSIPC-******_), en tiu kazo la IP-adreso estas _172.25.0.1_.
+
+
 * Connect to the camera by `telnet IP 9527` (User _root_, Password _jco66688_), within 5 minutes after rotating on the camera.
 
 
@@ -160,10 +145,10 @@ API documentation can be viewed here:
 * Faru `cd /opt/media/mmcblk0p1;./install.sh`
 
 
-* You can connect to the URL (° 1 ° User( _admin_, Password _ismart21_).
+* You can connect to the URL _https://IP_ (user _admin_, password _ismart21_).
 
 
-* You can connect to ssh (user _admin_, password _ismart12_).
+* You can connect in SSH (user _admin_, password _ismart12_).
 
 
 * The primary video current is accessible at _rtsp://admin:ismart21@IP/stream1_. (° 3 ° 3
