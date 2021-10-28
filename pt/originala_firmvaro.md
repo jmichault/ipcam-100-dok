@@ -193,4 +193,30 @@ arquivos notáveis ​​em _/ipc_ :
 
 
 
+# Revisão Core:
+(° 1 ° 1 ° Informações:
+    `binwalk mtdblock2.bin`
+    * 
+--------------------------------------------------------------------------------
+0 0x0 Uimage Cabeçalho, cabeçalho Tamanho: 64 bytes, cabeçalho CRC: 0x7b9de864, criado: 2019-06-22 02:41:00, Tamanho da imagem: 1466358 bytes, endereço de dados: 0x80010000, ponto de entrada: 0x80388340, CRC Dados: 0xb83dca15, OS: Linux, CPU: MIPS, tipo de imagem: imagem do kernel, tipo de compactação: lzma, nome da imagem: "Linux-3.10.14__.
 
+(° 1 ° 1 ° 1 ° Extração de dados de MTDBLOCK2:
+    `tail -c+65  < mtdblock2.bin >mtdblock2.dataz`
+
+Extração principal:
+
+(° 5 ° 6 ° 6 ° 13 ° 13 ° Lista de condutores incluídos: (° 7 ° 7 ° 11 ° 11 ° 11 ° 11 ° 11 ° 11 ° 11 ° 11 °
+
+Lista de arquivos:
+    `strings kernel|grep "\.[cChTsS]$"`
+
+
+
+
+
+
+
+
+
+(° 1 °. Alcance
+.

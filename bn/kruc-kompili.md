@@ -28,9 +28,7 @@ Ils ont été compilés pour debian buster x64.
 
 
 
-আপনি যদি কখনও _«toolchain»_পুনরায় আবির্ভূত করতে হবে, আপনি নিম্নলিখিত অবস্থানগুলি পরীক্ষা করতে পারেন: (° 3 ° 4 ° 4 ° 420/>।  
- * <https://github.com/Dafang-Hacks/Main>
-
-
+আপনি যদি কখনও কখনও _«toolchain»_কম্পাইল করতে পারেন:
+ * https://github.com/anmped/Openfang
 
 

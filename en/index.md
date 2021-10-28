@@ -25,12 +25,6 @@ WebVersion: _V2.3.4-20190709_
 processor: _ingenic T21_
 video sensor: _GC2053_
 
-A lot of work has been done for cameras equipped with a processor _ingenic T20_.
-* modified firmware: <https://github.com/EliasKotlyar/Xiaomi-Dafang-Hacks>
-* sources from modified firmware: <https://github.com/Dafang-Hacks/Main>
-* other firmware <https://github.com / openmiko / openmiko>
-* launching programs without changing the firmware: <https://github.com/ThatUsernameAlreadyExist/JCO-PM203-Fisheye-Ingenic- T20 -P2P camera hacks>
-
 API documentation can be viewed here:  
 * [original version in Chinese](../zh/includes.zh/html/)
 
@@ -92,7 +86,7 @@ API documentation can be viewed here:
 
 
 
-## What doesn't work in alternative firmware:
+## What is not carried out in the alternative firmware:
 
 * sound system
 
@@ -100,7 +94,7 @@ API documentation can be viewed here:
 * _OSD_
 
 
-* Password management.
+* Administration management and RTSP system.
 
 
 * firmware update
@@ -124,7 +118,7 @@ API documentation can be viewed here:
 * Copy everything to the [ _karto_ ](https://github.com/jmichault/ipcam-100/tree/master/karto) folder at the root of the microSD card.
 
 
-* optionally configure the network ( _config/staticip.conf_ , _config/resolv.conf_ , _config/wpa_supplicant.conf_ )
+* Perhaps set the network ( _www/ipcam/config.dist/reto.conf_ )
 
 
 * Insert the microSD card.
@@ -157,13 +151,16 @@ API documentation can be viewed here:
 * The secondary video current is accessible at _rtsp://admin:ismart21@IP/stream2_. (° 3 ° 3
 
 
+(° 1 ° 1 ° 1 WiFi AP mode is activated by default:
+** SSID: ipcam100-xxxxxx
+** WPA2 key: ismart21 (° 6 ° 6 ° 6
 
 ## Uninstalling Alternative Firmware:
 
-* start the telnet service with the camera via the internet interface.
+* Launch the SSH service on the camera through the default interface).
 
 
-* start the telnet service with the camera via the internet interface. `telnet IP` 
+* Login to the camera by `ssh root@IP` (Password _ismart12_).
 
 
 * start the telnet service with the camera via the internet interface. `cd /opt/media/mmcblk0p1;./uninstall.sh;reboot`
@@ -172,4 +169,10 @@ API documentation can be viewed here:
 
 * You can also simply remove the microSD card.
 
+
+
+## Interesting documents
+
+Much work was made for cameras equipped with a processor _ingenic T20_ :
+* modified firmware: <https://github.com/Ilílístotlyar/xiaomi- Dafang -Haks (°
 

@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-03-20 12:59+0100\n"
+"POT-Creation-Date: 2021-10-28 22:28+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -416,4 +416,45 @@ msgstr ""
 #: originala_firmvaro.md:147
 #, no-wrap
 msgid "port 81 = LEDS bleues.\n"
+msgstr ""
+
+#. type: Title #
+#: originala_firmvaro.md:148
+#, no-wrap
+msgid "examen du noyau :"
+msgstr ""
+
+#. type: Plain text
+#: originala_firmvaro.md:153
+#, no-wrap
+msgid ""
+"* informations :\n"
+"    `binwalk mtdblock2.bin`\n"
+"    * résultat :\n"
+"DECIMAL       HEXADECIMAL     DESCRIPTION\n"
+msgstr ""
+
+#. type: Plain text
+#: originala_firmvaro.md:156
+#, no-wrap
+msgid ""
+"0             0x0             uImage header, header size: 64 bytes, header CRC: 0x7B9DE864, created: 2019-06-22 02:41:00, image size: 1466358 bytes, Data Address: 0x80010000, Entry Point: 0x80388340, data CRC: 0xB83DCA15, OS: Linux, CPU: MIPS, image type: OS Kernel Image, compression type: lzma, image name: \"Linux-3.10.14__isvp_turkey_1.0__]\"\n"
+"64            0x40            LZMA compressed data, properties: 0x5D, dictionary size: 16777216 bytes, uncompressed size: -1 bytes\n"
+msgstr ""
+
+#. type: Plain text
+#: originala_firmvaro.md:167
+#, no-wrap
+msgid ""
+"* extraction des données de mtdblock2 :\n"
+"    `tail -c+65  < mtdblock2.bin >mtdblock2.dataz`\n"
+"* extraction du noyau :\n"
+"    `cat mtdblock2.dataz|lzma -d -c -f - >kernel`\n"
+"* liste des drivers inclus :\n"
+"    `strings kernel|grep \"^drivers\"`\n"
+"* liste des fichiers source :\n"
+"    `strings kernel|grep \"\\.[cChTsS]$\"`\n"
+"* liste des symboles\n"
+"https://github.com/marin-m/vmlinux-to-elf devrait permettre de trouver les symboles, mais il n'y arrive pas\n"
+"début possible de kallsyms_token_table : 0x3AA1B4\n"
 msgstr ""

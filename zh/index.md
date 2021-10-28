@@ -25,12 +25,6 @@ WebVersion: _V2.3.4-20190709_
 处理器： _ingenic T21_
 视频传感器： _GC2053_
 
-配备处理器 _ingenic T20_的相机已经做了很多工作。
-* 修改的固件： <https://github.com/EliasKotlyar/Xiaomi-Dafang-Hacks>
-* 来源修改后的固件： <https://github.com/Dafang-Hacks/Main>
-* 其他固件 <https://github.com / openmiko / openmiko>
-* 在不更改固件的情况下启动程序： <https://github.com/ThatUsernameAlreadyExist/JCO-PM203-Fisheye-Ingenic- T20 -P2P相机镜头>
-
 API文档可以在这里查看：  
 * [中文原始版本](../zh/includes.zh/html/)
 
@@ -92,7 +86,7 @@ API文档可以在这里查看：
 
 
 
-## 在备用固件中什么不起作用：
+## 什么不是在替代固件中执行的：
 
 * 音响系统
 
@@ -100,7 +94,7 @@ API文档可以在这里查看：
 * _OSD_
 
 
-* 密码管理。
+* 管理管理和RTSP系统。
 
 
 * 固件更新
@@ -124,7 +118,7 @@ API文档可以在这里查看：
 * 将所有内容复制到microSD卡根目录下的 [ _karto_ ](https://github.com/jmichault/ipcam-100/tree/master/karto) 文件夹中。
 
 
-* 可选配置网络 ( _config/staticip.conf_ ， _config/resolv.conf_ ， _config/wpa_请求方.conf_ )
+* 也许设置网络 ( _www/ipcam/config.dist/reto.conf_ ))
 
 
 * 插入microSD卡。
@@ -157,13 +151,17 @@ API文档可以在这里查看：
 * 辅助视频电流可在 _rtsp://admin:ismart21@IP/stream2_处访问。 （°3°3
 
 
+（°1°1°1°1 WiFi AP模式默认激活：
+** SSID：IPCAM100-XXXXXX
+** WPA2键：ISMart21
+相机的IP地址：172.25.0.1
 
 ## 卸载备用固件：
 
-* 通过互联网接口用摄像机启动telnet服务。
+* 通过默认接口)在相机上启动SSH服务。
 
 
-* 通过互联网接口用摄像机启动telnet服务。 `telnet IP` 
+* 通过 `ssh root@IP` (密码 _ismart12_)登录相机。
 
 
 * 通过互联网接口用摄像机启动telnet服务。 `cd /opt/media/mmcblk0p1;./uninstall.sh;reboot`
@@ -172,4 +170,12 @@ API文档可以在这里查看：
 
 * 您也可以简单地卸下microSD卡。
 
+
+
+## 有趣的文件
+
+适用于配备处理器 _ingenic T20_ 的摄像机
+* 修改固件： <https://github.com/ilílístotlyar/xiaomi-大法 - 哈哈>>修改固件的源: <https：//github.com/dafang-hacks/main>>
+其他固件 <https://github.com/openmiko/openmiko>
+* * 在不改变固件的情况下发射节目：（°17° 17°17：// https://github.com/thathenameanameexist/jco -pm203-fisheyeo -ininitinennic-t20-p2p-camera-hacks>
 

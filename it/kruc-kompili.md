@@ -28,9 +28,7 @@ Se è necessario recuperare una libreria, ispirare i seguenti script:
 
 
 
-Se è mai necessario riapparire _«toolchain»_, è possibile controllare le seguenti posizioni: (° 3 ° 4 ° 4 °. Per-Ingenic-T20/>  
- * <https://github.com/Dafang-Hacks/Main>
-
-
+Se è mai necessario compilare il _«toolchain»_, è possibile verificare il seguente sito web:
+ * https://github.com/anmped/openfang
 
 

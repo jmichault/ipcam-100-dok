@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-05-23 12:35+0200\n"
+"POT-Creation-Date: 2021-10-28 22:37+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -77,15 +77,9 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: kruc-kompili.md:28
+#: kruc-kompili.md:29
 #, no-wrap
 msgid ""
-"Se vi iam bezonos rekompili la _«toolchain»_, vi povas kontroli la sekvajn lokojn:\n"
-" *  * https://zanev.github.io/cross-compile- iloj -For-ingenic-T20/>  \n"
-msgstr ""
-
-#. type: Bullet: ' * '
-#: kruc-kompili.md:30
-#, no-wrap
-msgid "<https://github.com/Dafang-Hacks/Main>\n"
+"Se vi iam bezonos kompili la _«toolchain»_, vi povas konsulti la sekvan retejon:\n"
+" * https://github.com/anmped/openfang\n"
 msgstr ""

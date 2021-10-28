@@ -193,4 +193,28 @@ fail terkenal dalam _/ipc_ :
 
 
 
+# Kajian Teras:
+(
 
+--------------------------------------------------------------------------------
+0 0x0 Header Uimage, Saiz Header: 64 Bytes, Header CRC: 0x7b9de864, Dibuat: 2019-06-22 02:41:00, Saiz Imej: 1466358 Bytes, Data Alamat: 0x80010000, Point Entrance: 0xb83dca15, OS: Linux, CPU: MIPS, Jenis Imej: Imej Kernel OS, Jenis Pemampatan: LZMA, Nama imej: "Linux-3.10.14__.
+
+(° 1 ° 1 ° 1 ° Pengekstrakan data mtdblock2:
+    `tail -c+65  < mtdblock2.bin >mtdblock2.dataz`
+
+Core Extraction:
+(° 5 ° 5 ° 6 ° 13 ° 13 ° Senarai konduktor termasuk:    `strings kernel|grep "^drivers"`
+
+Senarai fail:
+    `strings kernel|grep "\.[cChTsS]$"`
+
+
+
+
+
+
+
+
+
+(° 1 °. Reaches
+.

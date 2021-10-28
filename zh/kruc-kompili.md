@@ -28,9 +28,7 @@ Ils ont été compilés pour debian buster x64.
 
 
 
-如果您需要重新出现 _«toolchain»_，您可以检查以下位置：（°3°4°4°4°。用于-Imenic-T20/>  
- * <https://github.com/Dafang-Hacks/Main>
-
-
+如果您需要编译 _«toolchain»_，可以查看以下网站：
+ * https://github.com/anmed/openfang
 
 

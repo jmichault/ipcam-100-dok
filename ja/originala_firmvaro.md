@@ -193,4 +193,31 @@ Linuxバージョン3.10.14\_\_isvp\_turkey\_1.0\_\_ (root@localhost.localdomain
 
 
 
+# コアレビュー：
+（°1°1°情報：
+    `binwalk mtdblock2.bin`
 
+    * 
+--------------------------------------------------------------------------------
+0 0x0 uimageヘッダー、ヘッダーサイズ：64バイト、ヘッダーCRC：0x7b9de864、作成：2019-06-22 02:41:00、画像サイズ：1466358バイト、データアドレス：0x80010000、エントランスポイント：0x8038340、CRCデータ：0xB83DCA15、 OS：Linux、CPU：MIPS、画像タイプ：OSカーネル画像、圧縮タイプ：LZMA、画像名： "Linux-3.10.14__。
+
+（°1°1°1°1°MTDBLOCK2のデータの抽出：
+    `tail -c+65  < mtdblock2.bin >mtdblock2.dataz`
+
+コア抽出：
+
+
+（°5°5°6°13°13°13°含まれる導体の一覧：    `strings kernel|grep "^drivers"`
+
+ファイルのリスト：
+    `strings kernel|grep "\.[cChTsS]$"`
+
+
+
+
+
+
+
+
+
+(。

@@ -193,4 +193,30 @@ Bemerkenswerte Dateien in _/ipc_ :
 
 
 
+# Kernprüfung:
+(° 1 ° 1 ° Information:
+    `binwalk mtdblock2.bin`
+    * 
+--------------------------------------------------------------------------------
+0 0x0 UIMAGE-Header, Kopfzeile Größe: 64 Bytes, Header CRC: 0x7B9DE864, Erstellt: 2019-06-22 02:41:00, Bildgröße: 1466358 Bytes, Datenadresse: 0x80010000, Eingangspunkt: 0x80388340, CRC-Daten: 0xB83DCA15, OS: Linux, CPU: MIPS, Bildtyp: OS Kernel Image, Komprimierungstyp: LZMA, Bildname: "Linux-3.10.14__.
 
+(° 1 ° 1 ° 1 ° Extraktion von Daten von MTDBLOCK2:
+    `tail -c+65  < mtdblock2.bin >mtdblock2.dataz`
+
+Kern-Extraktion:
+
+(° 5 ° 5 ° 6 ° 13 ° 13 ° Liste der Leitern enthalten:    `strings kernel|grep "^drivers"`
+
+Liste der Dateien:
+    `strings kernel|grep "\.[cChTsS]$"`
+
+
+
+
+
+
+
+
+
+(° 1 °. Reicht
+.

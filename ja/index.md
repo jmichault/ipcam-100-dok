@@ -25,12 +25,6 @@ WebVersion: _V2.3.4-20190709_
 プロセッサー： _ingenic T21_
 ビデオセンサー： _GC2053_
 
-プロセッサー _ingenic T20_を搭載したカメラでは、多くの作業が行われています。
-* 変更されたファームウェア： <https://github.com/EliasKotlyar/Xiaomi-Dafang-Hacks>
-* ソースから変更されたファームウェア： <https://github.com/Dafang-Hacks/Main>
-* その他のファームウェア <https://github.com / openmiko / openmiko>
-* ファームウェアを変更せずにプログラムを起動する： <https://github.com/ThatUsernameAlreadyExist/JCO-PM203-Fisheye-Ingenic- T20 -P2Pカメラハック>
-
 APIドキュメントはここで見ることができます：  
 * [中国語のオリジナルバージョン](../zh/includes.zh/html/)
 
@@ -92,7 +86,7 @@ APIドキュメントはここで見ることができます：
 
 
 
-## 代替ファームウェアで機能しないもの：
+## 代替ファームウェアでは何が実行されていないもの：
 
 * サウンドシステム
 
@@ -100,7 +94,7 @@ APIドキュメントはここで見ることができます：
 * _OSD_
 
 
-* パスワード管理
+* 管理管理とRTSPシステム
 
 
 * ファームウェアアップデート
@@ -124,7 +118,7 @@ APIドキュメントはここで見ることができます：
 * microSDカードのルートにある [ _karto_ ](https://github.com/jmichault/ipcam-100/tree/master/karto) フォルダーにすべてをコピーします。
 
 
-* オプションでネットワークを構成します ( _config/staticip.conf_ 、 _config/resolv.conf_ 、 _config/wpa_supplicant.conf_ )
+* おそらくネットワーク ( _www/ipcam/config.dist/reto.conf_ )を設定します
 
 
 * microSDカードを挿入します。
@@ -157,13 +151,17 @@ APIドキュメントはここで見ることができます：
 * 二次ビデオ電流は _rtsp://admin:ismart21@IP/stream2_でアクセス可能です。 （°3°3
 
 
+（°1°1°1 WiFi APモードがデフォルトで活性化されます。
+** SSID：IPCAM100-XXXXXX
+** °5°）WPA2キー：ISMART21
+カメラのIPアドレス：172.25.0.1
 
 ## 代替ファームウェアのアンインストール：
 
-* インターネットインターフェイスを介してカメラでtelnetサービスを開始します。
+* デフォルトインターフェイス)を介してカメラ上のSSHサービスを起動します。
 
 
-* インターネットインターフェイスを介してカメラでtelnetサービスを開始します。 `telnet IP` 
+*  `ssh root@IP` (パスワード _ismart12_)でカメラにログインします。
 
 
 * インターネットインターフェイスを介してカメラでtelnetサービスを開始します。 `cd /opt/media/mmcblk0p1;./uninstall.sh;reboot`
@@ -172,4 +170,12 @@ APIドキュメントはここで見ることができます：
 
 * microSDカードを取り外すこともできます。
 
+
+
+## 興味深い文書
+
+プロセッサ _ingenic T20_ を搭載したカメラ用の多くの作業が行われました。
+* 修正ファームウェア： <https://github.com/ilílístotlyar/xiaomi- Dafang -Haks>>
+修正ファームウェアのソース： <https://github.com/dafang-hacks/main>11°12°）その他のファームウェア <https://github.com/openmiko/openmiko>
+* * ファームウェアを変更せずにプログラムを起動します：（°17° 17°17：// https://github.com/thatusenameAnameexist/ju-pm203-fisheye-iningEnic-t20-p2p-Camera-Hacks>
 

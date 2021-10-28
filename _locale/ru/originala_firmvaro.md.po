@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-05-23 12:35+0200\n"
+"POT-Creation-Date: 2021-10-28 22:37+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -487,6 +487,76 @@ msgstr "порт 64 =?\n"
 #, fuzzy, no-wrap
 msgid "haveno 81 = bluaj LEDoj.\n"
 msgstr "порт 81 = синие светодиоды.\n"
+
+#. type: Title #
+#: originala_firmvaro.md:172
+#, fuzzy, no-wrap
+msgid "Kerna recenzo:"
+msgstr "Основной обзор:"
+
+#. type: Plain text
+#: originala_firmvaro.md:177
+#, fuzzy, no-wrap
+msgid ""
+"(° 1 ° Informo:\n"
+"    `binwalk mtdblock2.bin`\n"
+"    * Rezulto:\n"
+"decimala deksesuma priskribo\n"
+msgstr ""
+"(° 1 ° 1 ° Информация:\n"
+"    `binwalk mtdblock2.bin`\n"
+"\n"
+"\n"
+"\n"
+
+#. type: Plain text
+#: originala_firmvaro.md:179
+#, fuzzy, no-wrap
+msgid "0 0x0 Uimage Header, Header Grandeco: 64 Bajtoj, Header CRC: 0x7b9DE864, kreita: 2019-06-22 02:41:00, Bildo Grandeco: 1466358 BYTES, DATA Adreso: 0x80010000, Eniro Punkto: 0x80388340, Datumoj CRC: 0xb83DCA15, OS: Linukso, CPU: MIPS, Bildo Tipo: OS Kernel Bildo, Kunpremo Tipo: LZMA, Bildo Nomo: \"Linukso-3.10.14__. 1.0__]\"(° 7 ° 7 ° 64 0x40 lzma kunpremitaj datumoj, ecoj: 0x5d, vortaro Grandeco: 16777216 bajtoj, nekompresita grandeco: -1 bajtoj\n"
+msgstr "0 0x0 UImage Header, Размер заголовка: 64 байта, заголовок CRC: 0x7b9de864, создан: 2019b9de864, создан: 2019b9de864, создано: 2019b9de864, создано: 2019b9de864, создано: 2019b9de864, созданный: 2019b9de864, созданный: 2019b9de864, созданный: 2019b9de864, ОС: Linux, CPU: MIPS, Тип изображения: ОС Ядра ОС, Тип сжатия: LZMA, Имя изображения: \"Linux-3.10.14__.\n"
+
+#. type: Plain text
+#: originala_firmvaro.md:182
+#, fuzzy, no-wrap
+msgid ""
+"(° 1 ° eltiro de datumoj de MTDBlock2:\n"
+"    `tail -c+65  < mtdblock2.bin >mtdblock2.dataz`\n"
+msgstr ""
+"(° 1 ° 1 ° 1 ° Extraction данных MTDBlock2:\n"
+"    `tail -c+65  < mtdblock2.bin >mtdblock2.dataz`\n"
+
+#. type: Plain text
+#: originala_firmvaro.md:186
+#, fuzzy, no-wrap
+msgid ""
+"Kerna eltiro:\n"
+"    `cat mtdblock2.dataz|lzma -d -c -f - >kernel`\n"
+"(° 13 ° ° Listo de ŝoforoj inkluzivita:    `strings kernel|grep \"^drivers\"`\n"
+msgstr ""
+"Выделение ядра:\n"
+"\n"
+"\n"
+"(° 5 ° 5 ° 6 ° 13 ° 13 ° Список проводников включены:    `strings kernel|grep \"^drivers\"`\n"
+
+#. type: Plain text
+#: originala_firmvaro.md:189
+#, fuzzy, no-wrap
+msgid ""
+"Listo de dosieroj:\n"
+"    `strings kernel|grep \"\\.[cChTsS]$\"`\n"
+msgstr ""
+"Список файлов:\n"
+"    `strings kernel|grep \"\\.[cChTsS]$\"`\n"
+
+#. type: Plain text
+#: originala_firmvaro.md:199
+#, fuzzy, no-wrap
+msgid ""
+"(° 30 ° ° 31 ° Listo de simboloj (° 32 ° 32 ° Https://github.com/marin-m/vmlinux-to-lf devus permesi trovi la simbolojn, sed ĝi ne atingas\n"
+". Tablo_token_: 0x3AA1B4\n"
+msgstr ""
+"(° 1 °. Доступны\n"
+".\n"
 
 #, fuzzy
 #~ msgid ""

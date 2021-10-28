@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-05-23 12:35+0200\n"
+"POT-Creation-Date: 2021-10-28 22:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -486,6 +486,67 @@ msgstr "पोर्ट 64 =?\n"
 #, fuzzy, no-wrap
 msgid "haveno 81 = bluaj LEDoj.\n"
 msgstr "पोर्ट 81 = नीला एल ई डी।\n"
+
+#. type: Title #
+#: originala_firmvaro.md:172
+#, fuzzy, no-wrap
+msgid "Kerna recenzo:"
+msgstr "कोर समीक्षा:"
+
+#. type: Plain text
+#: originala_firmvaro.md:177
+#, fuzzy, no-wrap
+msgid ""
+"(° 1 ° Informo:\n"
+"    `binwalk mtdblock2.bin`\n"
+"    * Rezulto:\n"
+"decimala deksesuma priskribo\n"
+msgstr ""
+"(° 1 ° 1 ° 1 ° सूचना:\n"
+"    `binwalk mtdblock2.bin`\n"
+"    * परिणाम:\n"
+"परिणाम: दशमलव हेक्साडेसिमल विवरण\n"
+
+#. type: Plain text
+#: originala_firmvaro.md:179
+#, fuzzy, no-wrap
+msgid "0 0x0 Uimage Header, Header Grandeco: 64 Bajtoj, Header CRC: 0x7b9DE864, kreita: 2019-06-22 02:41:00, Bildo Grandeco: 1466358 BYTES, DATA Adreso: 0x80010000, Eniro Punkto: 0x80388340, Datumoj CRC: 0xb83DCA15, OS: Linukso, CPU: MIPS, Bildo Tipo: OS Kernel Bildo, Kunpremo Tipo: LZMA, Bildo Nomo: \"Linukso-3.10.14__. 1.0__]\"(° 7 ° 7 ° 64 0x40 lzma kunpremitaj datumoj, ecoj: 0x5d, vortaro Grandeco: 16777216 bajtoj, nekompresita grandeco: -1 bajtoj\n"
+msgstr "0 0x0 uiMage हेडर, हेडर आकार: 64 बाइट्स, हेडर सीआरसी: 0x7b9de864, बनाया गया: 2019-06-22 02:41:00, छवि का आकार: 1466358 बाइट्स, डेटा पता: 0x80010000, प्रवेश बिंदु: 0x80388340, सीआरसी डेटा: 0xb83dca15, ओएस: लिनक्स, सीपीयू: एमआईपीएस, छवि का प्रकार: ओएस कर्नेल छवि, संपीड़न प्रकार: एलजेएमए, छवि का नाम: (डिग्री 0001 डिग्री) लिनक्स -3.10.14 (डिग्री 0002 डिग्री)।\n"
+
+#. type: Plain text
+#: originala_firmvaro.md:182
+#, fuzzy, no-wrap
+msgid ""
+"(° 1 ° eltiro de datumoj de MTDBlock2:\n"
+"    `tail -c+65  < mtdblock2.bin >mtdblock2.dataz`\n"
+msgstr "(° 1 MTDBLOCK2 डेटा का निष्कर्षण: (° 0002 डिग्री) (डिग्री 0003 डिग्री) (डिग्री 0007 डिग्री)\n"
+
+#. type: Plain text
+#: originala_firmvaro.md:186
+#, fuzzy, no-wrap
+msgid ""
+"Kerna eltiro:\n"
+"    `cat mtdblock2.dataz|lzma -d -c -f - >kernel`\n"
+"(° 13 ° ° Listo de ŝoforoj inkluzivita:    `strings kernel|grep \"^drivers\"`\n"
+msgstr "कोर निष्कर्षण: (° 0001 डिग्री) (° 0002 डिग्री) (° 0005 डिग्री) (° 0006 डिग्री)((डिग्री 0006 डिग्री)((° 0006 ° 0 ° 13 ° 13 डिग्री ड्राइवरों की सूची शामिल हैं:    `strings kernel|grep \"^drivers\"`\n"
+
+#. type: Plain text
+#: originala_firmvaro.md:189
+#, fuzzy, no-wrap
+msgid ""
+"Listo de dosieroj:\n"
+"    `strings kernel|grep \"\\.[cChTsS]$\"`\n"
+msgstr "फ़ाइलों की सूची: (° 0001 डिग्री) (डिग्री 0002 डिग्री) (डिग्री 000 9 डिग्री डिग्री)\n"
+
+#. type: Plain text
+#: originala_firmvaro.md:199
+#, fuzzy, no-wrap
+msgid ""
+"(° 30 ° ° 31 ° Listo de simboloj (° 32 ° 32 ° Https://github.com/marin-m/vmlinux-to-lf devus permesi trovi la simbolojn, sed ĝi ne atingas\n"
+". Tablo_token_: 0x3AA1B4\n"
+msgstr ""
+"(° ° ° ° ° ° °। पहुँचता है\n"
+"।\n"
 
 #, fuzzy
 #~ msgid ""

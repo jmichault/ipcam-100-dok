@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-03-20 12:59+0100\n"
+"POT-Creation-Date: 2021-10-28 22:28+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -54,57 +54,49 @@ msgstr "malfermaj havenoj"
 
 #. type: Plain text
 #: originala_firmvaro.md:11
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "TCP : 80(http), 443(http aussi !), 554(rtsp), 8004, 8006, 9527(telnetd), 9999  \n"
 msgstr "TCP: 80(http), 443(HTP ankaŭ!), 554(RTSP), 8004, 8006, 9527(Telnetd), 9999  \n"
 
 #. type: Plain text
 #: originala_firmvaro.md:13
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "UDP : 67(dhcp), 3702, 8002, 39642\n"
 msgstr "UDP: 67(DHCP), 3702, 8002, 39642\n"
 
 #. type: Plain text
 #: originala_firmvaro.md:14
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "port 80 : http  \n"
 msgstr "Haveno 80: HTTP  \n"
 
 #. type: Plain text
 #: originala_firmvaro.md:16
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "http://IP : login : _admin:_, mot de passe : _admin_\n"
 msgstr "http: // ip: ensaluto: _admin:_, pasvorto: _admin_\n"
 
 #. type: Plain text
 #: originala_firmvaro.md:17
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "port 443 : http  \n"
 msgstr "Haveno 443: HTTP  \n"
 
 #. type: Plain text
 #: originala_firmvaro.md:19
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "http://IP:443 : login : _admin:_, mot de passe : _admin_\n"
 msgstr "http: // ip: 443: ensaluto: _admin:_, pasvorto: _admin_\n"
 
 #. type: Plain text
 #: originala_firmvaro.md:20
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "port 554 : rtsp  \n"
 msgstr "Haveno 554: RTSP  \n"
 
 #. type: Bullet: '* '
 #: originala_firmvaro.md:22
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "flux principal : \n"
 msgstr "Ĉefa fluo: \n"
 
@@ -168,31 +160,29 @@ msgstr ""
 
 #. type: Plain text
 #: originala_firmvaro.md:42
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "port 9527 : telnet  \n"
 msgstr "Haveno 9527: Telnet  \n"
 
 #. type: Plain text
 #: originala_firmvaro.md:43
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "`telnetd IP 9527` : login : _root_, mot de passe : _jco66688_, accessible pendant 5 minutes, fermé après.  \n"
 msgstr "`telnetd IP 9527` : Ensalutu: _root_, pasvorto: _jco66688_, alirebla dum 5 minutoj, fermiĝis post.  \n"
 
 #. type: Plain text
 #: originala_firmvaro.md:44
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "pour ne pas être déconnecté au bout des 5 minutes : `killall -9 auto_run.sh`  \n"
 msgstr "Ne esti malkonektita post 5 minutoj: `killall -9 auto_run.sh`  \n"
 
 #. type: Plain text
 #: originala_firmvaro.md:46
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "pour arrêter jco_server : \n"
-msgstr "Ĉesi JCO_server : \n \n"
+msgstr ""
+"Ĉesi JCO_server : \n"
+" \n"
 
 #. type: Fenced code block
 #: originala_firmvaro.md:47
@@ -497,6 +487,51 @@ msgstr "haveno 64 =?\n"
 #, fuzzy, no-wrap
 msgid "port 81 = LEDS bleues.\n"
 msgstr "haveno 81 = bluaj LEDoj.\n"
+
+#. type: Title #
+#: originala_firmvaro.md:148
+#, no-wrap
+#, fuzzy
+msgid "examen du noyau :"
+msgstr "Kerna recenzo:"
+
+#. type: Plain text
+#: originala_firmvaro.md:153
+#, no-wrap
+#, fuzzy
+msgid ""
+"* informations :\n"
+"    `binwalk mtdblock2.bin`\n"
+"    * résultat :\n"
+"DECIMAL       HEXADECIMAL     DESCRIPTION\n"
+msgstr "(° 1 ° Informo:\n    `binwalk mtdblock2.bin`\n    * Rezulto:\ndecimala deksesuma priskribo\n"
+
+#. type: Plain text
+#: originala_firmvaro.md:156
+#, no-wrap
+#, fuzzy
+msgid ""
+"0             0x0             uImage header, header size: 64 bytes, header CRC: 0x7B9DE864, created: 2019-06-22 02:41:00, image size: 1466358 bytes, Data Address: 0x80010000, Entry Point: 0x80388340, data CRC: 0xB83DCA15, OS: Linux, CPU: MIPS, image type: OS Kernel Image, compression type: lzma, image name: \"Linux-3.10.14__isvp_turkey_1.0__]\"\n"
+"64            0x40            LZMA compressed data, properties: 0x5D, dictionary size: 16777216 bytes, uncompressed size: -1 bytes\n"
+msgstr "0 0x0 Uimage Header, Header Grandeco: 64 Bajtoj, Header CRC: 0x7b9DE864, kreita: 2019-06-22 02:41:00, Bildo Grandeco: 1466358 BYTES, DATA Adreso: 0x80010000, Eniro Punkto: 0x80388340, Datumoj CRC: 0xb83DCA15, OS: Linukso, CPU: MIPS, Bildo Tipo: OS Kernel Bildo, Kunpremo Tipo: LZMA, Bildo Nomo: \"Linukso-3.10.14__. 1.0__]\"(° 7 ° 7 ° 64 0x40 lzma kunpremitaj datumoj, ecoj: 0x5d, vortaro Grandeco: 16777216 bajtoj, nekompresita grandeco: -1 bajtoj\n"
+
+#. type: Plain text
+#: originala_firmvaro.md:167
+#, no-wrap
+#, fuzzy
+msgid ""
+"* extraction des données de mtdblock2 :\n"
+"    `tail -c+65  < mtdblock2.bin >mtdblock2.dataz`\n"
+"* extraction du noyau :\n"
+"    `cat mtdblock2.dataz|lzma -d -c -f - >kernel`\n"
+"* liste des drivers inclus :\n"
+"    `strings kernel|grep \"^drivers\"`\n"
+"* liste des fichiers source :\n"
+"    `strings kernel|grep \"\\.[cChTsS]$\"`\n"
+"* liste des symboles\n"
+"https://github.com/marin-m/vmlinux-to-elf devrait permettre de trouver les symboles, mais il n'y arrive pas\n"
+"début possible de kallsyms_token_table : 0x3AA1B4\n"
+msgstr "(° 1 ° eltiro de datumoj de MTDBlock2:\n    `tail -c+65  < mtdblock2.bin >mtdblock2.dataz`\n\nKerna eltiro:\n    `cat mtdblock2.dataz|lzma -d -c -f - >kernel`\n(° 13 ° ° Listo de ŝoforoj inkluzivita:    `strings kernel|grep \"^drivers\"`\n\nListo de dosieroj:\n    `strings kernel|grep \"\\.[cChTsS]$\"`\n\n\n\n\n\n\n\n\n\n(° 30 ° ° 31 ° Listo de simboloj (° 32 ° 32 ° Https://github.com/marin-m/vmlinux-to-lf devus permesi trovi la simbolojn, sed ĝi ne atingas\n. Tablo_token_: 0x3AA1B4\n"
 
 #, fuzzy
 #~ msgid ""

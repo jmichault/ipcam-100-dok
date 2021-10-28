@@ -17,13 +17,10 @@ com firmware original:
 
 com firmware alternativo:
 
-* Inicie o serviço telnet da interface da web
+* Inicie o serviço SSH da interface da Internet
 
 
-* Faça login na câmera com `telnet IP` (usuário _root_, senha _ismart12_).
-
-
-* Pressione `killall -9 run.sh system-emergency-telnet` para evitar o fechamento da conexão.
+* Conecte-se à câmera por `ssh IP` (usuário _root_, senha _ismart12_).
 
 
 

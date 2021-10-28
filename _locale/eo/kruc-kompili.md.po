@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-03-20 12:59+0100\n"
+"POT-Creation-Date: 2021-10-28 22:29+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -48,52 +48,68 @@ msgstr "Kruca kompilo"
 
 #. type: Plain text
 #: kruc-kompili.md:12
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "Les outils de compilation croisés se trouvent dans programada_medio/toolchain.\n"
 "Ils ont été compilés pour debian buster x64.\n"
-msgstr "La transiritaj kompilaĵoj iloj estas en programado_medio/toolchain.\nIls ont été compilés pour debian buster x64.\n\n"
+msgstr ""
+"La transiritaj kompilaĵoj iloj estas en programado_medio/toolchain.\n"
+"Ils ont été compilés pour debian buster x64.\n"
+"\n"
 
 #. type: Plain text
 #: kruc-kompili.md:14
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "les librairies partagées sont dans programada_medio/lib\n"
-msgstr "Komparaj bibliotekoj estas en prograda_medio/lib\n\n"
+msgstr ""
+"Komparaj bibliotekoj estas en prograda_medio/lib\n"
+"\n"
 
 #. type: Plain text
 #: kruc-kompili.md:16
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "les include sont dans programada_medio/include.\n"
-msgstr "Inkluzivas estas en programado_medio/include.\n\n"
+msgstr ""
+"Inkluzivas estas en programado_medio/include.\n"
+"\n"
 
 #. type: Plain text
 #: kruc-kompili.md:21
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "Si vous avez besoin de recompiler une librairie, inspirez-vous des scripts suivants :\n"
 "* programada_medio/fontoj/01-buildssl.sh , pour la librairie openssl.\n"
 "* programada_medio/fontoj/02-buildlive.sh , pour la librairie live555.\n"
 "* programada_medio/fontoj/03-pcre.sh , pour la librairie pcre.\n"
-msgstr "Se vi bezonas rekompili bibliotekon, inspiri la sekvajn skriptojn:\n* Programada_medio/fontoj/01-buildssl.sh , pour la librairie openssl.\n* programada_Medio / fontoj / 02-buildive.sh, por Live555-biblioteko.\n* Programada_medio/fontoj/03-pcre.sh , pour la librairie pcre.\n\n"
+msgstr ""
+"Se vi bezonas rekompili bibliotekon, inspiri la sekvajn skriptojn:\n"
+"* Programada_medio/fontoj/01-buildssl.sh , pour la librairie openssl.\n"
+"* programada_Medio / fontoj / 02-buildive.sh, por Live555-biblioteko.\n"
+"* Programada_medio/fontoj/03-pcre.sh , pour la librairie pcre.\n"
+"\n"
 
 #. type: Plain text
-#: kruc-kompili.md:24
+#: kruc-kompili.md:25
 #, no-wrap
 #, fuzzy
 msgid ""
-"Si jamais vous avez besoin de recompiler la _«toolchain»_, vous pouvez consulter les sites suivants :\n"
-" * <https://znanev.github.io/Cross-compile-tools-for-Ingenic-T20/>  \n"
-msgstr "Se vi iam bezonos rekompili la _«toolchain»_, vi povas kontroli la sekvajn lokojn:\n *  * https://zanev.github.io/cross-compile- iloj -For-ingenic-T20/>  \n"
+"Si jamais vous avez besoin de recompiler la _«toolchain»_, vous pouvez consulter le site suivant :\n"
+" * https://github.com/anmaped/openfang\n"
+msgstr "Se vi iam bezonos kompili la _«toolchain»_, vi povas konsulti la sekvan retejon:\n * https://github.com/anmped/openfang\n"
 
-#. type: Bullet: ' * '
-#: kruc-kompili.md:26
+#, fuzzy
+#~ msgid ""
+#~ "Si jamais vous avez besoin de recompiler la _«toolchain»_, vous pouvez "
+#~ "consulter les sites suivants :\n"
+#~ " * <https://znanev.github.io/Cross-compile-tools-for-Ingenic-T20/>  \n"
+#~ msgstr ""
+#~ "Se vi iam bezonos rekompili la _«toolchain»_, vi povas kontroli la "
+#~ "sekvajn lokojn:\n"
+#~ " *  * https://zanev.github.io/cross-compile- iloj -For-ingenic-T20/>  \n"
+
 #, fuzzy, no-wrap
-msgid "<https://github.com/Dafang-Hacks/Main>\n"
-msgstr "<https://github.com/Dafang-Hacks/Main>\n"
+#~ msgid "<https://github.com/Dafang-Hacks/Main>\n"
+#~ msgstr "<https://github.com/Dafang-Hacks/Main>\n"
 
 #, fuzzy
 #~ msgid ""
@@ -108,8 +124,10 @@ msgstr "<https://github.com/Dafang-Hacks/Main>\n"
 #~ msgstr "instalado de kompililoj:"
 
 #, fuzzy
-#~ msgid "option 1 : avec docker (plus rapide à installer, plus lent à exécuter)"
-#~ msgstr "opcio 1: kun docker (pli rapida por instali, pli malrapida por funkciigi)"
+#~ msgid ""
+#~ "option 1 : avec docker (plus rapide à installer, plus lent à exécuter)"
+#~ msgstr ""
+#~ "opcio 1: kun docker (pli rapida por instali, pli malrapida por funkciigi)"
 
 #~ msgid ""
 #~ "sudo apt install docker.io\n"
@@ -131,11 +149,13 @@ msgstr "<https://github.com/Dafang-Hacks/Main>\n"
 #~ msgstr "opcio 2: loke (pli longa por instali, pli rapida por ekzekuti)"
 
 #~ msgid ""
-#~ "sudo apt install build-essential git gcc-mips-linux-gnu autoconf libtool cmake ftp-upload u-boot-tools\n"
+#~ "sudo apt install build-essential git gcc-mips-linux-gnu autoconf libtool "
+#~ "cmake ftp-upload u-boot-tools\n"
 #~ "mkdir -p ~/dafang/Main/mips-gcc472-glibc216-64bit\n"
 #~ "ln -s /usr/bin ~/dafang/Main/mips-gcc472-glibc216-64bit\n"
 #~ msgstr ""
-#~ "sudo apt install build-essential git gcc-mips-linux-gnu autoconf libtool cmake ftp-upload u-boot-tools\n"
+#~ "sudo apt install build-essential git gcc-mips-linux-gnu autoconf libtool "
+#~ "cmake ftp-upload u-boot-tools\n"
 #~ "mkdir -p ~/dafang/Main/mips-gcc472-glibc216-64bit\n"
 #~ "ln -s /usr/bin ~/dafang/Main/mips-gcc472-glibc216-64bit\n"
 

@@ -193,4 +193,33 @@ file importanti in _/ipc_ :
 
 
 
+# Revisione principale:
+(° 1 ° 1 ° Informazioni:
+    `binwalk mtdblock2.bin`
 
+
+    * 
+--------------------------------------------------------------------------------
+0 0x0 Intestazione di uImage, Intestazione Dimensione: 64 Bytes, intestazione CRC: 0x7b9de864, Creato: 2019-06-22 02:41:00, Dimensione dell'immagine: 1466358 Bytes, Indirizzo dati: 0x80010000, Punto d'ingresso: 0x80388340, CRC Dati: 0xb83dca15, OS: Linux, CPU: MIPS, Tipo di immagine: OS Kernel Image, Tipo di compressione: LZMA, Nome immagine: "Linux-3.10.14__.
+
+(° 1 ° 1 ° 1 ° Estrazione di dati di MTDBLOCK2:
+    `tail -c+65  < mtdblock2.bin >mtdblock2.dataz`
+
+Estrazione del nucleo:
+
+
+(° 5 ° 5 ° 6 ° 13 ° 13 ° Elenco dei conduttori inclusi:    `strings kernel|grep "^drivers"`
+
+Elenco dei file:
+    `strings kernel|grep "\.[cChTsS]$"`
+
+
+
+
+
+
+
+
+
+(° 1 °. Raggiunge
+.

@@ -28,9 +28,7 @@ Jika anda perlu memulihkan perpustakaan, memberi inspirasi skrip berikut:
 
 
 
-Jika anda perlu muncul semula _«toolchain»_, anda boleh menyemak lokasi berikut: (° 3 ° 4 ° 4 °. Untuk-Ingen-T20/>  
- * <https://github.com/Dafang-Hacks/Main>
-
-
+Jika anda perlu menyusun _«toolchain»_, anda boleh menyemak laman web berikut:
+ * https://github.com/anmped/openfang
 
 

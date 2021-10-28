@@ -25,12 +25,6 @@ WebVersion: _V2.3.4-20190709_
 pemproses: _ingenic T21_
 sensor video: _GC2053_
 
-Banyak kerja telah dilakukan untuk kamera yang dilengkapi dengan pemproses _ingenic T20_.
-* firmware yang diubah: <https://github.com/EliasKotlyar/Xiaomi-Dafang-Hacks>
-* sumber dari firmware yang diubah suai: <https://github.com/Dafang-Hacks/Main>
-* firmware lain <https://github.com / openmiko / openmiko>
-* melancarkan program tanpa mengubah firmware: <https://github.com/ThatUsernameAlreadyExist/JCO-PM203-Fisheye-Ingenic- T20 -Godam kamera P2P>
-
 Dokumentasi API boleh dilihat di sini:  
 * [versi asal dalam bahasa Cina](../zh/includes.zh/html/)
 
@@ -92,7 +86,7 @@ Dokumentasi API boleh dilihat di sini:
 
 
 
-## Apa yang tidak berfungsi dalam firmware alternatif:
+## Apa yang tidak dilakukan dalam firmware alternatif:
 
 * sistem bunyi
 
@@ -100,7 +94,7 @@ Dokumentasi API boleh dilihat di sini:
 * _OSD_
 
 
-* Pengurusan Kata Laluan.
+* Pengurusan Pentadbiran dan sistem RTSP.
 
 
 * kemas kini firmware
@@ -124,7 +118,7 @@ Dokumentasi API boleh dilihat di sini:
 * Salin semuanya ke folder [ _karto_ ](https://github.com/jmichault/ipcam-100/tree/master/karto) di akar kad microSD.
 
 
-* konfigurasikan rangkaian secara pilihan ( _config/staticip.conf_ , _config/resolv.conf_ , _config/wpa_supplicant.conf_ )
+* Mungkin menetapkan rangkaian ( _www/ipcam/config.dist/reto.conf_ )
 
 
 * Masukkan kad microSD.
@@ -157,13 +151,17 @@ Dokumentasi API boleh dilihat di sini:
 * Arus video menengah boleh diakses pada _rtsp://admin:ismart21@IP/stream2_. (° 3 ° 3
 
 
+(° 1 ° 1 ° 1 Wifi AP Mode diaktifkan oleh lalai:
+SSID: IPCAM100-XXXXXX
+** WPA2 Key: Ismart21
+Alamat IP kamera: 172.25.0.1
 
 ## Menyahpasang Firmware Alternatif:
 
-* mulakan perkhidmatan telnet dengan kamera melalui antara muka internet.
+* Lancarkan perkhidmatan SSH pada kamera melalui antara muka lalai).
 
 
-* mulakan perkhidmatan telnet dengan kamera melalui antara muka internet. `telnet IP` 
+* Masuk ke kamera dengan `ssh root@IP` (Kata laluan _ismart12_).
 
 
 * mulakan perkhidmatan telnet dengan kamera melalui antara muka internet. `cd /opt/media/mmcblk0p1;./uninstall.sh;reboot`
@@ -172,4 +170,12 @@ Dokumentasi API boleh dilihat di sini:
 
 * Anda juga boleh mengeluarkan kad microSD dengan mudah.
 
+
+
+## Dokumen yang menarik
+
+Banyak kerja dibuat untuk kamera yang dilengkapi dengan pemproses _ingenic T20_ :* Diubahsuai firmware: <https://github.com/ilítístotlyar/xiaomi- Dafang -haks>
+Sumber firmware yang diubahsuai: <https://github.com/dafang-hacks/main>
+firmware lain <https://github.com/openmiko/openmiko>
+* Pelancaran program Tanpa menukar firmware: (° 17 ° 17 ° 17: // https://github.com/thuatenameanameexist/jco-pm203-ffishere-iningenic-t20-p2p-camera-hacks>
 

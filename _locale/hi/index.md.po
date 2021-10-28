@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-05-19 19:14+0200\n"
+"POT-Creation-Date: 2021-10-28 22:37+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -105,309 +105,358 @@ msgstr ""
 "वीडियो सेंसर: _GC2053_\n"
 
 #. type: Plain text
-#: index.md:33
-#, fuzzy, no-wrap
-msgid ""
-"Multa laboro estis farita por fotiloj ekipitaj kun procesoro _ingenic T20_.\n"
-"* modifita firmvaro: <https://github.com/EliasKotlyar/Xiaomi-Dafang-Hacks>\n"
-"* fontoj de modifita firmvaro: <https://github.com/Dafang-Hacks/Main>\n"
-"* alia firmvaro <https://github.com / openmiko / openmiko>\n"
-"* lanĉante programojn sen ŝanĝi la firmvaron: <https://github.com/ThatUsernameAlreadyExist/JCO-PM203-Fisheye-Ingenic- T20 -P2P-fotilo-hakoj>\n"
-msgstr ""
-"प्रोसेसर _ingenic T20_से लैस कैमरों के लिए बहुत काम किया गया है।\n"
-"* संशोधित फर्मवेयर: <https://github.com/EliasKotlyar/Xiaomi-Dafang-Hacks>\n"
-"* स्रोत से संशोधित फर्मवेयर: <https://github.com/Dafang-Hacks/Main>\n"
-"* अन्य फर्मवेयर <https://github.com / Openmiko / Openmiko>\n"
-"* फर्मवेयर को बदले बिना प्रोग्राम लॉन्च कर रहा है: <https://github.com/ThatUsernameAlreadyExist-JCO-PM203-Fisheye-Ingenic- T20 -2P कैमरा हैक्स>\n"
-
-#. type: Plain text
-#: index.md:34
+#: index.md:28
 #, fuzzy, no-wrap
 msgid "API-dokumentaro videblas ĉi tie:  \n"
 msgstr "एपीआई प्रलेखन यहाँ देखा जा सकता है:  \n"
 
 #. type: Bullet: '* '
-#: index.md:36
+#: index.md:30
 #, fuzzy, no-wrap
 msgid "[originala versio en la ĉina](../zh/includes.zh/html/)\n"
 msgstr "[मूल संस्करण चीनी में](../zh/includes.zh/html/)\n"
 
 #. type: Bullet: '* '
-#: index.md:38
+#: index.md:32
 #, fuzzy, no-wrap
 msgid "[Angla versio](../en/includes.en/html/)\n"
 msgstr "(° 0001 डिग्री) अंग्रेजी संस्करण (° 0002 डिग्री) (डिग्री ° ° 0004 डिग्री)\n"
 
 #. type: Bullet: '* '
-#: index.md:40
+#: index.md:34
 #, fuzzy, no-wrap
 msgid "[Franca versio tradukita de google](../fr/includes.fr/html/)\n"
 msgstr "[फ्रेंच संस्करण Google द्वारा अनुवादित](../fr/includes.fr/html/)\n"
 
 #. type: Title #
-#: index.md:42
+#: index.md:36
 #, fuzzy, no-wrap
 msgid "Alternativa firmvaro"
 msgstr "वैकल्पिक फर्मवेयर"
 
 #. type: Title ##
-#: index.md:44
+#: index.md:38
 #, fuzzy, no-wrap
 msgid "Kio Funkcias en Alternativa Firmware:"
 msgstr "वैकल्पिक फर्मवेयर में क्या काम करता है:"
 
 #. type: Bullet: '* '
-#: index.md:47
+#: index.md:41
 #, fuzzy, no-wrap
 msgid "LAN kaj WLAN\n"
 msgstr "LAN और WLAN\n"
 
 #. type: Bullet: '* '
-#: index.md:49
+#: index.md:43
 #, fuzzy, no-wrap
 msgid "DRTSP Dual Flow Server: 1920x1080 H264 kaj 640x360 MJpeg defaŭlte.\n"
 msgstr "DRTTSP दोहरी प्रवाह सर्वर: डिफ़ॉल्ट रूप से 1920x1080 H264 और 640x360 mjpeg।\n"
 
 #. type: Bullet: '* '
-#: index.md:51
+#: index.md:45
 #, fuzzy, no-wrap
 msgid "Vidaj parametroj\n"
 msgstr "दृश्य पैरामीटर\n"
 
 #. type: Bullet: '* '
-#: index.md:53
+#: index.md:47
 #, fuzzy, no-wrap
 msgid "HTTP-servilo\n"
 msgstr "HTTP सर्वर\n"
 
 #. type: Bullet: '* '
-#: index.md:55
+#: index.md:49
 #, fuzzy, no-wrap
 msgid "motora kontrolo\n"
 msgstr "इंजन नियंत्रण\n"
 
 #. type: Bullet: '* '
-#: index.md:57
+#: index.md:51
 #, fuzzy, no-wrap
 msgid "motora kalibrado\n"
 msgstr "इंजन अंशांकन\n"
 
 #. type: Bullet: '* '
-#: index.md:59
+#: index.md:53
 #, fuzzy, no-wrap
 msgid "Agordoj de PTZ\n"
 msgstr "PTZ सेटिंग्स\n"
 
 #. type: Bullet: '* '
-#: index.md:61
+#: index.md:55
 #, fuzzy, no-wrap
 msgid "NTP-kliento\n"
 msgstr "NTP ग्राहक\n"
 
 #. type: Bullet: '* '
-#: index.md:63
+#: index.md:57
 #, fuzzy, no-wrap
 msgid "pasvorta ŝanĝo por http-aliro\n"
 msgstr "http एक्सेस के लिए पासवर्ड परिवर्तन\n"
 
 #. type: Bullet: '* '
-#: index.md:65
+#: index.md:59
 #, fuzzy, no-wrap
 msgid "blua LED kaj IR-kontrolo\n"
 msgstr "नीले एलईडी और आईआर नियंत्रण\n"
 
 #. type: Bullet: '* '
-#: index.md:67
+#: index.md:61
 #, fuzzy, no-wrap
 msgid "Ftp-servilo\n"
 msgstr "फीट सर्वर\n"
 
 #. type: Bullet: '* '
-#: index.md:69
+#: index.md:63
 #, fuzzy, no-wrap
 msgid "Telnet-servilo\n"
 msgstr "टेलनेट सर्वर\n"
 
 #. type: Bullet: '* '
-#: index.md:71
+#: index.md:65
 #, fuzzy, no-wrap
 msgid "SSH-servilo kaj kliento\n"
 msgstr "एसएसएच सर्वर और ग्राहक (° ° 0001 डिग्री)\n"
 
 #. type: Bullet: '* '
-#: index.md:73
+#: index.md:67
 #, fuzzy, no-wrap
 msgid "movado-detekto\n"
 msgstr "गति का पता लगाना\n"
 
 #. type: Bullet: '* '
-#: index.md:75
+#: index.md:69
 #, fuzzy, no-wrap
 msgid "sendante retpoŝton\n"
 msgstr "ईमेल भेजना\n"
 
 #. type: Title ##
-#: index.md:77
+#: index.md:71
 #, fuzzy, no-wrap
-msgid "Kio ne funkcias en alternativa firmvaro:"
-msgstr "वैकल्पिक फर्मवेयर में क्या काम नहीं करता है:"
+msgid "Kio ne estas efektivigita en la alternativa firmware:"
+msgstr "वैकल्पिक फर्मवेयर में क्या नहीं किया जाता है:"
 
 #. type: Bullet: '* '
-#: index.md:80
+#: index.md:74
 #, fuzzy, no-wrap
 msgid "sondosistemo\n"
 msgstr "साउंड सिस्टम\n"
 
 #. type: Bullet: '* '
-#: index.md:82
+#: index.md:76
 #, fuzzy, no-wrap
 msgid "_OSD_\n"
 msgstr "_OSD_\n"
 
 #. type: Bullet: '* '
-#: index.md:84
+#: index.md:78
 #, fuzzy, no-wrap
-msgid "Administrado de pasvorto.\n"
-msgstr "पासवर्ड प्रबंधन।\n"
+msgid "Administrado de Pasvortoj kaj Sistemo de RTSP.\n"
+msgstr "प्रशासन प्रबंधन और आरटीएसपी प्रणाली।\n"
 
 #. type: Bullet: '* '
-#: index.md:86
+#: index.md:80
 #, fuzzy, no-wrap
 msgid "ĝisdatigo de firmvaro\n"
 msgstr "फर्मवेयर अपडेट\n"
 
 #. type: Bullet: '* '
-#: index.md:88
+#: index.md:82
 #, fuzzy, no-wrap
 msgid "aŭtomata nokta detekto\n"
 msgstr "स्वचालित रात का पता लगाना\n"
 
 #. type: Bullet: '* '
-#: index.md:90
+#: index.md:84
 #, fuzzy, no-wrap
 msgid "movado-detekto_ir-cut_\n"
 msgstr "गति का पता लगाना_ir-cut_\n"
 
 #. type: Bullet: '* '
-#: index.md:92
+#: index.md:86
 #, fuzzy, no-wrap
 msgid "sendante retpoŝton_mqtt_\n"
 msgstr "ईमेल भेजना_mqtt_\n"
 
 #. type: Bullet: '* '
-#: index.md:94
+#: index.md:88
 #, fuzzy, no-wrap
 msgid "ktp ...\n"
 msgstr "आदि ...\n"
 
 #. type: Title ##
-#: index.md:96
+#: index.md:90
 #, fuzzy, no-wrap
 msgid "Instalante Alternativan Firmware"
 msgstr "वैकल्पिक फर्मवेयर स्थापित करना"
 
 #. type: Bullet: '* '
-#: index.md:99
+#: index.md:93
 #, fuzzy, no-wrap
 msgid "Kopiu ĉion en la dosierujo [ _karto_ ](https://github.com/jmichault/ipcam-100/tree/master/karto) ĉe la radiko de la karto microSD.\n"
 msgstr "माइक्रोएसडी कार्ड की जड़ में सब कुछ [ _karto_ ](https://github.com/jmichault/ipcam-100/tree/master/karto) फ़ोल्डर में कॉपी करें।\n"
 
 #. type: Bullet: '* '
-#: index.md:101
+#: index.md:95
 #, fuzzy, no-wrap
-msgid "laŭvole agordi la reton ( _config/staticip.conf_ , _config/resolv.conf_ , _config/wpa_supplicant.conf_ )\n"
-msgstr "वैकल्पिक रूप से नेटवर्क को कॉन्फ़िगर करें ( _config/staticip.conf_ , _config/resolv.conf_ , _config/wpa_supplicant.conf_ )\n"
+msgid "Eble agordi la reton ( _www/ipcam/config.dist/reto.conf_ )\n"
+msgstr "शायद नेटवर्क (° ° ° 0001 डिग्री) (° 0002 डिग्री) (डिग्री 0004 डिग्री) (डिग्री 0005 डिग्री) सेट करें\n"
 
 #. type: Bullet: '* '
-#: index.md:103
+#: index.md:97
 #, fuzzy, no-wrap
 msgid "Enmetu la karton microSD.\n"
 msgstr "माइक्रोएसडी कार्ड डालें।\n"
 
 #. type: Bullet: '* '
-#: index.md:105
+#: index.md:99
 #, fuzzy, no-wrap
 msgid "Konekti la fotilon al via loka reto kaj ŝalti la fotilon.\n"
 msgstr "कैमरे को अपने स्थानीय नेटवर्क से कनेक्ट करें और कैमरा चालू करें।\n"
 
 #. type: Bullet: '* '
-#: index.md:107
+#: index.md:101
 #, fuzzy, no-wrap
 msgid "Trovu la IP-adreson de la fotilo. Vi ankaŭ povas konektiĝi al la WiFi de la fotilo (SSID: _HSIPC-******_), en tiu kazo la IP-adreso estas _172.25.0.1_.\n"
 msgstr "कैमरा का आईपी पता खोजें। आप कैमरे वाईफाई (डिग्री ° 0001 डिग्री) SSID से भी कनेक्ट कर सकते हैं: (° 0002 डिग्री)।\n"
 
 #. type: Bullet: '* '
-#: index.md:109
+#: index.md:103
 #, fuzzy, no-wrap
 msgid "Konekti al la fotilo per `telnet IP 9527` (uzanto _root_, pasvorto _jco66688_), ene de 5 minutoj post turnado sur la fotilo.\n"
 msgstr "कैमरे पर घूमने के 5 मिनट के भीतर, (° ° 0001 डिग्री ° ° ° 0004 डिग्री), पासवर्ड (° 0006 डिग्री) द्वारा कैमरे से कनेक्ट करें।\n"
 
 #. type: Bullet: '* '
-#: index.md:111
+#: index.md:105
 #, fuzzy, no-wrap
 msgid "Faru `killall -9 auto_run.sh` por eviti perdi la ligon.\n"
 msgstr "लीग खोने से बचने के लिए (0001 डिग्री) बनाएं।\n"
 
 #. type: Bullet: '* '
-#: index.md:113
+#: index.md:107
 #, fuzzy, no-wrap
 msgid "Faru `cd /opt/media/mmcblk0p1;./install.sh`\n"
 msgstr "फ़ारू `cd /opt/media/mmcblk0p1;./install.sh`\n"
 
 #. type: Bullet: '* '
-#: index.md:115
-#, no-wrap
-#, fuzzy
+#: index.md:109
+#, fuzzy, no-wrap
 msgid "Vi povas konektiĝi al la URL _https://IP_ (uzanto _admin_, pasvorto _ismart21_).\n"
 msgstr "आप यूआरएल (° ° ° ° 0003 डिग्री) उपयोगकर्ता (° ° 0004 डिग्री), पासवर्ड (° ° 0006 डिग्री) से कनेक्ट कर सकते हैं।\n"
 
 #. type: Bullet: '* '
-#: index.md:117
+#: index.md:111
 #, fuzzy, no-wrap
 msgid "Vi povas konektiĝi en SSH (uzanto _admin_, pasvorto _ismart12_).\n"
 msgstr "आप एसएसएच (° ° 0001 डिग्री) उपयोगकर्ता (° ° 0002 डिग्री), पासवर्ड (° ° 0004 डिग्री) में जोड़ सकते हैं।\n"
 
 #. type: Bullet: '* '
-#: index.md:119
+#: index.md:113
 #, fuzzy, no-wrap
 msgid "La primara video-fluo estas alirebla ĉe _rtsp://admin:ismart21@IP/stream1_.\n"
 msgstr "प्राथमिक वीडियो प्रवाह (° ° 0001 डिग्री) पर पहुंच योग्य है।\n"
 
 #. type: Bullet: '* '
-#: index.md:121
+#: index.md:115
 #, fuzzy, no-wrap
 msgid "La sekundara video-fluo estas alirebla ĉe _rtsp://admin:ismart21@IP/stream2_.\n"
 msgstr "माध्यमिक वीडियो प्रवाह (° ° 0001 डिग्री) पर पहुंच योग्य है।\n"
 
+#. type: Plain text
+#: index.md:120
+#, fuzzy, no-wrap
+msgid ""
+"(° 1 ° WiFi AP-reĝimo estas aktivigita defaŭlte:\n"
+"** SSID: IPCAM100-XXXXXX\n"
+"** WPA2-ŝlosilo: ismart21\n"
+"IP-adreso de la fotilo: 172.25.0.1\n"
+msgstr ""
+"(° ° ° ° ° ° 1 ° 1 वाईफ़ाई एपी मोड डिफ़ॉल्ट रूप से सक्रिय होता है: (° ° ° 0002 डिग्री)** SSID: IPCAM100-XXXXXX\n"
+"** ** WPA2 कुंजी: ISMART21\n"
+"कैमरे का आईपी पता: 172.25.0.1 (डिग्री ° 0007 डिग्री)\n"
+
 #. type: Title ##
-#: index.md:123
+#: index.md:121
 #, fuzzy, no-wrap
 msgid "Malinstalanta Alternativan Firmware:"
 msgstr "वैकल्पिक फर्मवेयर की स्थापना रद्द करना:"
 
 #. type: Bullet: '* '
+#: index.md:124
+#, fuzzy, no-wrap
+msgid "Lanĉu la servon SSH sur la fotilo tra la defaŭlta interfaco).\n"
+msgstr "डिफ़ॉल्ट इंटरफ़ेस (° ° ° 0001 डिग्री) के माध्यम से कैमरे पर एसएसएच सेवा लॉन्च करें।\n"
+
+#. type: Bullet: '* '
 #: index.md:126
 #, fuzzy, no-wrap
-msgid "komencu la telnet-servon per la fotilo per la interreta interfaco.\n"
-msgstr "इंटरनेट इंटरफेस के माध्यम से कैमरे के साथ टेलनेट सेवा शुरू करें।\n"
+msgid "Ensalutu al la fotilo per `ssh root@IP` (pasvorto _ismart12_).\n"
+msgstr "(° ° 0001 डिग्री) (° ° 0003 डिग्री) पासवर्ड _ismart12_)द्वारा कैमरे में लॉगिन करें।\n"
 
 #. type: Bullet: '* '
 #: index.md:128
-#, fuzzy, no-wrap
-msgid "komencu la telnet-servon per la fotilo per la interreta interfaco. `telnet IP` \n"
-msgstr "इंटरनेट इंटरफेस के माध्यम से कैमरे के साथ टेलनेट सेवा शुरू करें। `telnet IP` \n"
-
-#. type: Bullet: '* '
-#: index.md:130
 #, fuzzy, no-wrap
 msgid "komencu la telnet-servon per la fotilo per la interreta interfaco. `cd /opt/media/mmcblk0p1;./uninstall.sh;reboot`\n"
 msgstr "इंटरनेट इंटरफेस के माध्यम से कैमरे के साथ टेलनेट सेवा शुरू करें। `cd /opt/media/mmcblk0p1;./uninstall.sh;reboot`\n"
 
 #. type: Bullet: '* '
-#: index.md:133
+#: index.md:131
 #, fuzzy, no-wrap
 msgid "Vi ankaŭ povas simple forigi la karton microSD.\n"
 msgstr "आप बस माइक्रोएसडी कार्ड भी निकाल सकते हैं।\n"
+
+#. type: Title ##
+#: index.md:133
+#, fuzzy, no-wrap
+msgid "Interesaj dokumentoj"
+msgstr "दिलचस्प दस्तावेज"
+
+#. type: Plain text
+#: index.md:140
+#, fuzzy, no-wrap
+msgid ""
+"Multa laboro estis farita por fotiloj ekipitaj per procesoro _ingenic T20_ :\n"
+"* modifita firmware: <https://github.com/eliaskotlyar/xiaomi- dafang -Hacks>\n"
+"* Fontoj de la modifita firmware: <https://github.com/dafang-hacks/main>\n"
+"* Aliaj firmware <https://github.com/openmiko/openmiko>\n"
+"* lanĉo de programoj sen ŝanĝi la firmware: (° 17 ° Https://github.com/thatusenameAlreadyExist/jco-pm203-fisheye-ingenic-t20-p2p-camera-hacks>\n"
+msgstr ""
+"एक प्रोसेसर (° ° ° ° 0003 डिग्री) (° ° 0004 डिग्री) (° ° 0004 डिग्री) (° ° 0004 डिग्री) (° ° 000 ° ° 0005 °) https://github.com/ilicultoutallyar के साथ बहुत अधिक काम किया गया था / xiaomi- dafang -haks>\n"
+"(डिग्री 0008 डिग्री) (डिग्री 0008 डिग्री) संशोधित फर्मवेयर के स्रोत: (° 000 9 °) https://github.com/dafang-hacks/main (° 00010 डिग्री) (° 00011 डिग्री) (° 00012 डिग्री) अन्य फर्मवेयर <https://github.com/openmiko/openmiko (° ° 00014 डिग्री) (° ° 00015 डिग्री) (डिग्री 00016 डिग्री) बदलने के बिना कार्यक्रमों का शुभारंभ फर्मवेयर: (° 17: // https://github.com/thatusenameanamexist/jco-pm203-fisheyee-ininc-t20-p2p-camera-hacks (° ° 00018 डिग्री)\n"
+
+#, fuzzy, no-wrap
+#~ msgid ""
+#~ "Multa laboro estis farita por fotiloj ekipitaj kun procesoro _ingenic T20_.\n"
+#~ "* modifita firmvaro: <https://github.com/EliasKotlyar/Xiaomi-Dafang-Hacks>\n"
+#~ "* fontoj de modifita firmvaro: <https://github.com/Dafang-Hacks/Main>\n"
+#~ "* alia firmvaro <https://github.com / openmiko / openmiko>\n"
+#~ "* lanĉante programojn sen ŝanĝi la firmvaron: <https://github.com/ThatUsernameAlreadyExist/JCO-PM203-Fisheye-Ingenic- T20 -P2P-fotilo-hakoj>\n"
+#~ msgstr ""
+#~ "प्रोसेसर _ingenic T20_से लैस कैमरों के लिए बहुत काम किया गया है।\n"
+#~ "* संशोधित फर्मवेयर: <https://github.com/EliasKotlyar/Xiaomi-Dafang-Hacks>\n"
+#~ "* स्रोत से संशोधित फर्मवेयर: <https://github.com/Dafang-Hacks/Main>\n"
+#~ "* अन्य फर्मवेयर <https://github.com / Openmiko / Openmiko>\n"
+#~ "* फर्मवेयर को बदले बिना प्रोग्राम लॉन्च कर रहा है: <https://github.com/ThatUsernameAlreadyExist-JCO-PM203-Fisheye-Ingenic- T20 -2P कैमरा हैक्स>\n"
+
+#, fuzzy, no-wrap
+#~ msgid "Kio ne funkcias en alternativa firmvaro:"
+#~ msgstr "वैकल्पिक फर्मवेयर में क्या काम नहीं करता है:"
+
+#, fuzzy, no-wrap
+#~ msgid "Administrado de pasvorto.\n"
+#~ msgstr "पासवर्ड प्रबंधन।\n"
+
+#, fuzzy, no-wrap
+#~ msgid "laŭvole agordi la reton ( _config/staticip.conf_ , _config/resolv.conf_ , _config/wpa_supplicant.conf_ )\n"
+#~ msgstr "वैकल्पिक रूप से नेटवर्क को कॉन्फ़िगर करें ( _config/staticip.conf_ , _config/resolv.conf_ , _config/wpa_supplicant.conf_ )\n"
+
+#, fuzzy, no-wrap
+#~ msgid "komencu la telnet-servon per la fotilo per la interreta interfaco.\n"
+#~ msgstr "इंटरनेट इंटरफेस के माध्यम से कैमरे के साथ टेलनेट सेवा शुरू करें।\n"
+
+#, fuzzy, no-wrap
+#~ msgid "komencu la telnet-servon per la fotilo per la interreta interfaco. `telnet IP` \n"
+#~ msgstr "इंटरनेट इंटरफेस के माध्यम से कैमरे के साथ टेलनेट सेवा शुरू करें। `telnet IP` \n"
 
 #, fuzzy, no-wrap
 #~ msgid "Vi povas konektiĝi al la URL (° 1 ° uzanto( _admin_, pasvorto _ismart21_).\n"

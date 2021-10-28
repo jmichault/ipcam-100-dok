@@ -28,9 +28,7 @@ Wenn Sie eine Bibliothek wiederherstellen müssen, inspirieren Sie die folgenden
 
 
 
-Wenn Sie jemals die _«toolchain»_wieder auftauchen müssen, können Sie die folgenden Orte überprüfen: (° 3 ° 4 ° 4 °. Für Ingenic-T20/>  
- * <https://github.com/Dafang-Hacks/Main>
-
-
+Wenn Sie jemals die _«toolchain»_kompilieren müssen, können Sie die folgende Website überprüfen:
+ * https://github.com/anmped/openfang
 
 

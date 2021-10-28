@@ -28,9 +28,7 @@ Ils ont été compilés pour debian buster x64.
 
 
 
-إذا كنت بحاجة إلى الظهور مرة أخرى إلى الظهور (° 1 درجة)، فيمكنك التحقق من المواقع التالية: (° 3 ° 4 ° 4 ° For-Ingenic-T20/>  
- * <https://github.com/Dafang-Hacks/Main>
-
-
+إذا كنت بحاجة إلى ترجمة _«toolchain»_، يمكنك التحقق من موقع الويب التالي:
+ * https://github.com/anmped/openfang
 
 

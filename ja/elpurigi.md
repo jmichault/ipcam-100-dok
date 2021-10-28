@@ -17,13 +17,10 @@ title: 清める
 
 代替ファームウェアの場合：
 
-* Webインターフェイスtelnetサービスを起動します
+* インターネットインターフェースのSSHサービスを起動する
 
 
-*  `telnet IP` (ユーザー _root_、パスワード _ismart12_)でカメラにログインします。
-
-
-* 接続が閉じないようにするには、 `killall -9 run.sh system-emergency-telnet` を押します。
+*  `ssh IP` (ユーザー _root_、パスワード _ismart12_)でカメラに接続します。
 
 
 

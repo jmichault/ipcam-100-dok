@@ -25,12 +25,6 @@ WebVersion: _V2.3.4-20190709_
 processore: _ingenic T21_
 sensore video: _GC2053_
 
-Molto lavoro è stato fatto per le telecamere dotate di processore _ingenic T20_.
-* firmware modificato: <https://github.com/EliasKotlyar/Xiaomi-Dafang-Hacks>
-* fonti da firmware modificato: <https://github.com/Dafang-Hacks/Main>
-* altro firmware <https://github.com / openmiko / openmiko>
-* avvio di programmi senza modificare il firmware: <https://github.com/ThatUsernameAlreadyExist/JCO-PM203-Fisheye-Ingenic- T20 -Hack fotocamera P2P>
-
 La documentazione API può essere visualizzata qui:  
 * [versione originale in cinese](../zh/includes.zh/html/)
 
@@ -92,7 +86,7 @@ La documentazione API può essere visualizzata qui:
 
 
 
-## Cosa non funziona nel firmware alternativo:
+## Ciò che non viene effettuato nel firmware alternativo:
 
 * diffusione sonora
 
@@ -100,7 +94,7 @@ La documentazione API può essere visualizzata qui:
 * _OSD_
 
 
-* Gestione della password.
+* Gestione amministrativa e sistema RTSP.
 
 
 * aggiornamento firmware
@@ -124,7 +118,7 @@ La documentazione API può essere visualizzata qui:
 * Copia tutto nella cartella [ _karto_ ](https://github.com/jmichault/ipcam-100/tree/master/karto) nella radice della scheda microSD.
 
 
-* opzionalmente configurare la rete ( _config/staticip.conf_ , _config/resolv.conf_ , _config/wpa_supplicant.conf_ )
+* Forse impostare la rete ( _www/ipcam/config.dist/reto.conf_ )
 
 
 * Inserisci la scheda microSD.
@@ -157,13 +151,17 @@ La documentazione API può essere visualizzata qui:
 * La corrente video secondaria è accessibile a _rtsp://admin:ismart21@IP/stream2_. (° 3 ° 3
 
 
+(° 1 ° 1 ° 1 WiFi Modalità AP è attivata per impostazione predefinita:
+** SSID: IPCAM100-XXXXXX
+** Chiave WPA2: ISMART21
+Indirizzo IP della fotocamera: 172.25.0.1
 
 ## Disinstallazione del firmware alternativo:
 
-* avviare il servizio telnet con la telecamera tramite l'interfaccia Internet.
+* Avviare il servizio SSH sulla fotocamera tramite l'interfaccia predefinita).
 
 
-* avviare il servizio telnet con la telecamera tramite l'interfaccia Internet. `telnet IP` 
+* Accedere alla fotocamera di `ssh root@IP` (password _ismart12_).
 
 
 * avviare il servizio telnet con la telecamera tramite l'interfaccia Internet. `cd /opt/media/mmcblk0p1;./uninstall.sh;reboot`
@@ -172,4 +170,13 @@ La documentazione API può essere visualizzata qui:
 
 * Puoi anche rimuovere semplicemente la scheda microSD.
 
+
+
+## Documenti interessanti
+
+Molto lavoro è stato realizzato per telecamere dotato di un processore _ingenic T20_ :
+* Firmware modificato: <https://github.com/ilílístotlyar/xiaomi- Dafang -Haks>
+Fonti del firmware modificato: <https://github.com/dafang-hacks/main>>
+Altro firmware <https://github.com/openmiko/openmiko>
+* Avvio dei programmi senza modificare il firmware: (° 17 ° 17 ° 17: // https://github.com/thatusenameanameexist/jco-pm203-fiseye-ingenic-t20-P2P-camera-Hacks>
 

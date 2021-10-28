@@ -28,9 +28,7 @@ Ils ont été compilés pour debian buster x64.
 
 
 
-Если вам когда-нибудь понадобится вновь появиться _«toolchain»_, вы можете проверить следующие места: (° 3 ° 4 ° 4 °. Для-ergenic-T20/>  
- * <https://github.com/Dafang-Hacks/Main>
-
-
+Если вам когда-либо нужно скомпилировать _«toolchain»_, вы можете проверить следующий веб-сайт:
+ * https://github.com/anmped/Openfang
 
 

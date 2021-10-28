@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-03-04 16:49+0100\n"
+"POT-Creation-Date: 2021-10-28 22:37+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,119 +17,96 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. type: YAML Front Matter: lang
-#: ./elpurigi.md:1
+#: elpurigi.md:1
 #, no-wrap
 msgid "eo"
 msgstr "es"
 
 #. type: YAML Front Matter: lang-niv
-#: ./elpurigi.md:1
+#: elpurigi.md:1
 #, no-wrap
 msgid "auto"
 msgstr "auto"
 
 #. type: YAML Front Matter: lang-ref
-#: ./elpurigi.md:1
+#: elpurigi.md:1
 #, no-wrap
 msgid "020-elpurigi"
 msgstr "020-elpurigi"
 
 #. type: YAML Front Matter: layout
-#: ./elpurigi.md:1
+#: elpurigi.md:1
 #, no-wrap
 msgid "page"
 msgstr "page"
 
 #. type: YAML Front Matter: title
-#: ./elpurigi.md:1
-#, no-wrap
-#, fuzzy
+#: elpurigi.md:1
+#, fuzzy, no-wrap
 msgid "Elpurigi"
 msgstr "Purificar"
 
 #. type: Plain text
-#: ./elpurigi.md:10
-#, markdown-text, no-wrap
-#, fuzzy
+#: elpurigi.md:10
+#, fuzzy, no-wrap
 msgid "kun originala firmvaro:\n"
 msgstr "con firmware original:\n"
 
 #. type: Bullet: '* '
-#: ./elpurigi.md:12
-#, markdown-text, no-wrap
-#, fuzzy
-msgid ""
-"Ensalutu ĉe la fotilo per `telnet IP 9527` (uzanto _root_, pasvorto "
-"_jco66688_) ene de 5 minutoj post ekfunkciigo.\n"
+#: elpurigi.md:12
+#, fuzzy, no-wrap
+msgid "Ensalutu ĉe la fotilo per `telnet IP 9527` (uzanto _root_, pasvorto _jco66688_) ene de 5 minutoj post ekfunkciigo.\n"
 msgstr "Inicie sesión en la cámara con `telnet IP 9527` (usuario _root_, contraseña _jco66688_) dentro de los 5 minutos posteriores al inicio.\n"
 
 #. type: Bullet: '* '
-#: ./elpurigi.md:14
-#, markdown-text, no-wrap
-#, fuzzy
+#: elpurigi.md:14
+#, fuzzy, no-wrap
 msgid "Premu `killall -9 auto_run.sh` por eviti fermi la konekton.\n"
 msgstr "Presione `killall -9 auto_run.sh` para evitar cerrar la conexión.\n"
 
 #. type: Plain text
-#: ./elpurigi.md:17
-#, markdown-text, no-wrap
-#, fuzzy
+#: elpurigi.md:17
+#, fuzzy, no-wrap
 msgid "kun alternativa firmvaro:\n"
 msgstr "con firmware alternativo:\n"
 
 #. type: Bullet: '* '
-#: ./elpurigi.md:19
-#, markdown-text, no-wrap
-#, fuzzy
-msgid "Lanĉu la telnet-servon de la interreta interfaco\n"
-msgstr "Inicie el servicio telnet de la interfaz web\n"
+#: elpurigi.md:19
+#, fuzzy, no-wrap
+msgid "Lanĉu la SSH-servon de la interreta interfaco\n"
+msgstr "Inicie el servicio SSH de la interfaz de Internet\n"
 
 #. type: Bullet: '* '
-#: ./elpurigi.md:21
-#, markdown-text, no-wrap
-#, fuzzy
-msgid ""
-"Ensalutu ĉe la fotilo per `telnet IP` (uzanto _root_, pasvorto "
-"_ismart12_).\n"
-msgstr "Inicie sesión en la cámara con `telnet IP` (usuario _root_, contraseña _ismart12_).\n"
-
-#. type: Bullet: '* '
-#: ./elpurigi.md:23
-#, markdown-text, no-wrap
-#, fuzzy
-msgid ""
-"Premu `killall -9 run.sh system-emergency-telnet` por eviti fermi la "
-"konekton.\n"
-msgstr "Presione `killall -9 run.sh system-emergency-telnet` para evitar cerrar la conexión.\n"
+#: elpurigi.md:21
+#, fuzzy, no-wrap
+msgid "Konekti al la fotilo per `ssh IP` (uzanto _root_, pasvorto _ismart12_).\n"
+msgstr "Conecte a la cámara `ssh IP` (usuario _root_, contraseña _ismart12_).\n"
 
 #. type: Plain text
-#: ./elpurigi.md:26
-#, markdown-text, no-wrap
-#, fuzzy
+#: elpurigi.md:24
+#, fuzzy, no-wrap
 msgid "Tiam, kia ajn la firmvaro:\n"
 msgstr "Entonces, sea cual sea el firmware:\n"
 
 #. type: Bullet: '* '
-#: ./elpurigi.md:27
-#, markdown-text, no-wrap
-#, fuzzy
+#: elpurigi.md:25
+#, fuzzy, no-wrap
 msgid "starti \"gdbserver\" de la fotilo, ekz. :  \n"
 msgstr "iniciar \"gdbserver\"de la cámara, p. ej. :  \n"
 
 #. type: Plain text
-#: ./elpurigi.md:31
-#, markdown-text, no-wrap
-#, fuzzy
+#: elpurigi.md:29
+#, fuzzy, no-wrap
 msgid ""
-"     `/opt/media/mmcblk0p1/bin/gdbserver localhost:2000 "
-"/opt/media/mmcblk0p1/bin/motor`\n"
+"     `/opt/media/mmcblk0p1/bin/gdbserver localhost:2000 /opt/media/mmcblk0p1/bin/motor`\n"
 "* startu gdb en la komputilo, ekzemple:\n"
-msgstr "     `/opt/media/mmcblk0p1/bin/gdbserver localhost:2000 /opt/media/mmcblk0p1/bin/motor`\n* inicie gdb en la computadora, por ejemplo:\n"
+msgstr ""
+"     `/opt/media/mmcblk0p1/bin/gdbserver localhost:2000 /opt/media/mmcblk0p1/bin/motor`\n"
+"* inicie gdb en la computadora, por ejemplo:\n"
 
 #. type: Plain text
-#: ./elpurigi.md:41
-#, markdown-text, no-wrap
-#, fuzzy
+#: elpurigi.md:39
+#, fuzzy, no-wrap
 msgid ""
 "    ```\n"
 "    cd programada_medio/toolchain\n"
@@ -140,5 +117,33 @@ msgid ""
 "    break xxx\n"
 "    continue \n"
 "    ```\n"
-msgstr "    ```\n    cd programada_medio/toolchain\n    bin/mips-linux-uclibc-gnu-gdb ../fontoj/motor/motor \n    target remote 192.168.xxx.xxx:2000\n    handle SIGPIPE nostop\n    handle SIG32 nostop\n    break xxx\n    continue \n    ```\n"
+msgstr ""
+"    ```\n"
+"    cd programada_medio/toolchain\n"
+"    bin/mips-linux-uclibc-gnu-gdb ../fontoj/motor/motor \n"
+"    target remote 192.168.xxx.xxx:2000\n"
+"    handle SIGPIPE nostop\n"
+"    handle SIG32 nostop\n"
+"    break xxx\n"
+"    continue \n"
+"    ```\n"
 
+#, fuzzy
+#~ msgid "Lanĉu la telnet-servon de la interreta interfaco\n"
+#~ msgstr "Inicie el servicio telnet de la interfaz web\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "Ensalutu ĉe la fotilo per `telnet IP` (uzanto _root_, pasvorto "
+#~ "_ismart12_).\n"
+#~ msgstr ""
+#~ "Inicie sesión en la cámara con `telnet IP` (usuario _root_, contraseña "
+#~ "_ismart12_).\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "Premu `killall -9 run.sh system-emergency-telnet` por eviti fermi la "
+#~ "konekton.\n"
+#~ msgstr ""
+#~ "Presione `killall -9 run.sh system-emergency-telnet` para evitar cerrar "
+#~ "la conexión.\n"

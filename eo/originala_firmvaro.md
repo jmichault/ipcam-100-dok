@@ -169,4 +169,31 @@ rimarkindaj dosieroj en _/ipc_ :
 * haveno 81 = bluaj LEDoj.
 
 
+# Kerna recenzo:
+(° 1 ° Informo:
+    `binwalk mtdblock2.bin`
+    * Rezulto:
+decimala deksesuma priskribo
+--------------------------------------------------------------------------------
+0 0x0 Uimage Header, Header Grandeco: 64 Bajtoj, Header CRC: 0x7b9DE864, kreita: 2019-06-22 02:41:00, Bildo Grandeco: 1466358 BYTES, DATA Adreso: 0x80010000, Eniro Punkto: 0x80388340, Datumoj CRC: 0xb83DCA15, OS: Linukso, CPU: MIPS, Bildo Tipo: OS Kernel Bildo, Kunpremo Tipo: LZMA, Bildo Nomo: "Linukso-3.10.14__. 1.0__]"(° 7 ° 7 ° 64 0x40 lzma kunpremitaj datumoj, ecoj: 0x5d, vortaro Grandeco: 16777216 bajtoj, nekompresita grandeco: -1 bajtoj
 
+(° 1 ° eltiro de datumoj de MTDBlock2:
+    `tail -c+65  < mtdblock2.bin >mtdblock2.dataz`
+
+Kerna eltiro:
+    `cat mtdblock2.dataz|lzma -d -c -f - >kernel`
+(° 13 ° ° Listo de ŝoforoj inkluzivita:    `strings kernel|grep "^drivers"`
+
+Listo de dosieroj:
+    `strings kernel|grep "\.[cChTsS]$"`
+
+
+
+
+
+
+
+
+
+(° 30 ° ° 31 ° Listo de simboloj (° 32 ° 32 ° Https://github.com/marin-m/vmlinux-to-lf devus permesi trovi la simbolojn, sed ĝi ne atingas
+. Tablo_token_: 0x3AA1B4

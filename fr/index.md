@@ -25,12 +25,6 @@ WebVersion: _V2.3.4-20190709_
 processeur : _ingenic T21_
 capteur vidéo : _GC2053_
 
-Beaucoup de travail a été fait pour les caméras équipées d'un processeur _ingenic T20_.
-* micrologiciel modifié: <https://github.com/EliasKotlyar/Xiaomi-Dafang-Hacks>
-* sources du micrologiciel modifié: <https://github.com/Dafang-Hacks/Main>
-* autre micrologiciel <https://github.com/openmiko/openmiko>
-* lancement de programmes sans changer le micrologiciel : <https://github.com/ThatUsernameAlreadyExist/JCO-PM203-Fisheye-Ingenic-T20-P2P-camera-hacks>
-
 La documentation des APIs peut être consultée ici :  
 * [version originale en chinois](../zh/includes.zh/html/)
 * [version anglaise](../en/includes.en/html/)
@@ -70,7 +64,7 @@ La documentation des APIs peut être consultée ici :
 ## Installation du micrologiciel alternatif
 
 * Copiez tout ce qui se trouve dans le dossier [ _karto_ ](https://github.com/jmichault/ipcam-100/tree/master/karto) à la racine de la carte microSD.
-* éventuellement configurez le réseau ( _config/staticip.conf_ , _config/resolv.conf_ , _config/wpa_supplicant.conf_ )
+* éventuellement configurez le réseau ( _www/ipcam/config.dist/reto.conf_ )
 * Insérez la carte microSD.
 * Connectez la caméra à votre réseau local et allumez la caméra.
 * Trouvez l'adresse IP de la caméra. Vous pouvez aussi vous connecter au wifi de la caméra (SSID : _HSIPC-******_), dans ce cas l'IP est _172.25.0.1_.
@@ -88,8 +82,17 @@ La documentation des APIs peut être consultée ici :
 
 ## Désinstallation du micrologiciel alternatif:
 
-* lancez le service telnet sur la caméra par l'interface web.
-* Connectez-vous à la caméra via `telnet IP` (utilisateur _root_, mot de passe _ismart12_).
+* lancez le service ssh sur la caméra par l'interface web (lancé par défaut).
+* Connectez-vous à la caméra via `ssh root@IP` (mot de passe _ismart12_).
 * Faites `cd /opt/media/mmcblk0p1;./uninstall.sh;reboot`
 
 * Vous pouvez aussi simplement retirer la carte microSD.
+
+## Documents intéressants
+
+Beaucoup de travail a été fait pour les caméras équipées d'un processeur _ingenic T20_ :
+* micrologiciel modifié: <https://github.com/EliasKotlyar/Xiaomi-Dafang-Hacks>
+* sources du micrologiciel modifié: <https://github.com/Dafang-Hacks/Main>
+* autre micrologiciel <https://github.com/openmiko/openmiko>
+* lancement de programmes sans changer le micrologiciel : <https://github.com/ThatUsernameAlreadyExist/JCO-PM203-Fisheye-Ingenic-T20-P2P-camera-hacks>
+

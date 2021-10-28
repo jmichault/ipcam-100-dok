@@ -24,9 +24,7 @@ Se vi bezonas rekompili bibliotekon, inspiri la sekvajn skriptojn:
 
 
 
-Se vi iam bezonos rekompili la _«toolchain»_, vi povas kontroli la sekvajn lokojn:
- *  * https://zanev.github.io/cross-compile- iloj -For-ingenic-T20/>  
- * <https://github.com/Dafang-Hacks/Main>
-
+Se vi iam bezonos kompili la _«toolchain»_, vi povas konsulti la sekvan retejon:
+ * https://github.com/anmped/openfang
 
 

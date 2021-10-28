@@ -17,13 +17,10 @@ title: 净化
 
 带有备用固件：
 
-* 启动Web界面telnet服务
+* 启动Internet接口的SSH服务
 
 
-* 以 `telnet IP` (用户 _root_，密码 _ismart12_)登录到摄像机。
-
-
-* 按 `killall -9 run.sh system-emergency-telnet` 避免关闭连接。
+* 通过 `ssh IP` (，用户 _root_，密码 _ismart12_)连接到相机。
 
 
 

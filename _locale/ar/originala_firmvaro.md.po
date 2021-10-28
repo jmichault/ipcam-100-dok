@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-05-23 12:35+0200\n"
+"POT-Creation-Date: 2021-10-28 22:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -487,6 +487,73 @@ msgstr "المنفذ 64 =؟\n"
 #, fuzzy, no-wrap
 msgid "haveno 81 = bluaj LEDoj.\n"
 msgstr "المنفذ 81 = المصابيح الزرقاء.\n"
+
+#. type: Title #
+#: originala_firmvaro.md:172
+#, fuzzy, no-wrap
+msgid "Kerna recenzo:"
+msgstr "الاستعراض الأساسي:"
+
+#. type: Plain text
+#: originala_firmvaro.md:177
+#, fuzzy, no-wrap
+msgid ""
+"(° 1 ° Informo:\n"
+"    `binwalk mtdblock2.bin`\n"
+"    * Rezulto:\n"
+"decimala deksesuma priskribo\n"
+msgstr ""
+"(° 1 ° 1 ° 1 ° معلومات:\n"
+"    `binwalk mtdblock2.bin`\n"
+"    * \n"
+
+#. type: Plain text
+#: originala_firmvaro.md:179
+#, fuzzy, no-wrap
+msgid "0 0x0 Uimage Header, Header Grandeco: 64 Bajtoj, Header CRC: 0x7b9DE864, kreita: 2019-06-22 02:41:00, Bildo Grandeco: 1466358 BYTES, DATA Adreso: 0x80010000, Eniro Punkto: 0x80388340, Datumoj CRC: 0xb83DCA15, OS: Linukso, CPU: MIPS, Bildo Tipo: OS Kernel Bildo, Kunpremo Tipo: LZMA, Bildo Nomo: \"Linukso-3.10.14__. 1.0__]\"(° 7 ° 7 ° 64 0x40 lzma kunpremitaj datumoj, ecoj: 0x5d, vortaro Grandeco: 16777216 bajtoj, nekompresita grandeco: -1 bajtoj\n"
+msgstr "0 0x0 Uimage Header، رأس رأس: 64 بايت، رأس CRC: 0x7b9de864، تم الإنشاء: 2019-06-22 02:41:00، صورة الحجم: 1466358 بايت، عنوان البيانات: 0x80010000، نقطة المدخل: 0x80388340، بيانات CRC: 0xb83dca15، نظام التشغيل: Linux، وحدة المعالجة المركزية: MIPS، نوع الصورة: صورة نواة OS، نوع الضغط: LZMA، اسم الصورة: \"Linux-3.10.14__.\n"
+
+#. type: Plain text
+#: originala_firmvaro.md:182
+#, fuzzy, no-wrap
+msgid ""
+"(° 1 ° eltiro de datumoj de MTDBlock2:\n"
+"    `tail -c+65  < mtdblock2.bin >mtdblock2.dataz`\n"
+msgstr ""
+"(° 1 ° 1 ° 1 ° استخراج بيانات mtdblock2:\n"
+"    `tail -c+65  < mtdblock2.bin >mtdblock2.dataz`\n"
+
+#. type: Plain text
+#: originala_firmvaro.md:186
+#, fuzzy, no-wrap
+msgid ""
+"Kerna eltiro:\n"
+"    `cat mtdblock2.dataz|lzma -d -c -f - >kernel`\n"
+"(° 13 ° ° Listo de ŝoforoj inkluzivita:    `strings kernel|grep \"^drivers\"`\n"
+msgstr ""
+"استخراج الأساس:\n"
+"\n"
+"(° 5 ° 5 ° 13 ° 13 ° مكونة من 13 درجات الموصلات المدرجة: (° 7 ° 7 ° 7 ° 11 ° 11 °\n"
+
+#. type: Plain text
+#: originala_firmvaro.md:189
+#, fuzzy, no-wrap
+msgid ""
+"Listo de dosieroj:\n"
+"    `strings kernel|grep \"\\.[cChTsS]$\"`\n"
+msgstr ""
+"قائمة الملفات:\n"
+"    `strings kernel|grep \"\\.[cChTsS]$\"`\n"
+
+#. type: Plain text
+#: originala_firmvaro.md:199
+#, fuzzy, no-wrap
+msgid ""
+"(° 30 ° ° 31 ° Listo de simboloj (° 32 ° 32 ° Https://github.com/marin-m/vmlinux-to-lf devus permesi trovi la simbolojn, sed ĝi ne atingas\n"
+". Tablo_token_: 0x3AA1B4\n"
+msgstr ""
+"(° 1 ° الوصول إليها\n"
+".\n"
 
 #, fuzzy
 #~ msgid ""

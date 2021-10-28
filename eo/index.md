@@ -25,12 +25,6 @@ WebVersion: _V2.3.4-20190709_
 procesoro: _ingenic T21_
 videosensilo: _GC2053_
 
-Multa laboro estis farita por fotiloj ekipitaj kun procesoro _ingenic T20_.
-* modifita firmvaro: <https://github.com/EliasKotlyar/Xiaomi-Dafang-Hacks>
-* fontoj de modifita firmvaro: <https://github.com/Dafang-Hacks/Main>
-* alia firmvaro <https://github.com / openmiko / openmiko>
-* lanĉante programojn sen ŝanĝi la firmvaron: <https://github.com/ThatUsernameAlreadyExist/JCO-PM203-Fisheye-Ingenic- T20 -P2P-fotilo-hakoj>
-
 API-dokumentaro videblas ĉi tie:  
 * [originala versio en la ĉina](../zh/includes.zh/html/)
 
@@ -74,13 +68,13 @@ API-dokumentaro videblas ĉi tie:
 * sendante retpoŝton
 
 
-## Kio ne funkcias en alternativa firmvaro:
+## Kio ne estas efektivigita en la alternativa firmware:
 
 * sondosistemo
 
 * _OSD_
 
-* Administrado de pasvorto.
+* Administrado de Pasvortoj kaj Sistemo de RTSP.
 
 * ĝisdatigo de firmvaro
 
@@ -97,7 +91,7 @@ API-dokumentaro videblas ĉi tie:
 
 * Kopiu ĉion en la dosierujo [ _karto_ ](https://github.com/jmichault/ipcam-100/tree/master/karto) ĉe la radiko de la karto microSD.
 
-* laŭvole agordi la reton ( _config/staticip.conf_ , _config/resolv.conf_ , _config/wpa_supplicant.conf_ )
+* Eble agordi la reton ( _www/ipcam/config.dist/reto.conf_ )
 
 * Enmetu la karton microSD.
 
@@ -119,15 +113,28 @@ API-dokumentaro videblas ĉi tie:
 
 * La sekundara video-fluo estas alirebla ĉe _rtsp://admin:ismart21@IP/stream2_.
 
+(° 1 ° WiFi AP-reĝimo estas aktivigita defaŭlte:
+** SSID: IPCAM100-XXXXXX
+** WPA2-ŝlosilo: ismart21
+IP-adreso de la fotilo: 172.25.0.1
 
 ## Malinstalanta Alternativan Firmware:
 
-* komencu la telnet-servon per la fotilo per la interreta interfaco.
+* Lanĉu la servon SSH sur la fotilo tra la defaŭlta interfaco).
 
-* komencu la telnet-servon per la fotilo per la interreta interfaco. `telnet IP` 
+* Ensalutu al la fotilo per `ssh root@IP` (pasvorto _ismart12_).
 
 * komencu la telnet-servon per la fotilo per la interreta interfaco. `cd /opt/media/mmcblk0p1;./uninstall.sh;reboot`
 
 
 * Vi ankaŭ povas simple forigi la karton microSD.
+
+
+## Interesaj dokumentoj
+
+Multa laboro estis farita por fotiloj ekipitaj per procesoro _ingenic T20_ :
+* modifita firmware: <https://github.com/eliaskotlyar/xiaomi- dafang -Hacks>
+* Fontoj de la modifita firmware: <https://github.com/dafang-hacks/main>
+* Aliaj firmware <https://github.com/openmiko/openmiko>
+* lanĉo de programoj sen ŝanĝi la firmware: (° 17 ° Https://github.com/thatusenameAlreadyExist/jco-pm203-fisheye-ingenic-t20-p2p-camera-hacks>
 

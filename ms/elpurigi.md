@@ -17,13 +17,10 @@ dengan firmware asal:
 
 dengan firmware alternatif:
 
-* Lancarkan perkhidmatan telnet antara muka web
+* Lancarkan perkhidmatan SSH antara muka Internet
 
 
-* Log masuk ke kamera dengan pengguna `telnet IP` ( _root_, kata laluan _ismart12_).
-
-
-* Tekan `killall -9 run.sh system-emergency-telnet` untuk mengelakkan penutupan sambungan.
+* Sambungkan ke kamera dengan `ssh IP` (, kata laluan _root_, kata laluan _ismart12_).
 
 
 

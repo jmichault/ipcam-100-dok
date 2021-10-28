@@ -25,12 +25,6 @@ WebVersion: _V2.3.4-20190709_
 المعالج: _ingenic T21_
 مستشعر الفيديو: _GC2053_
 
-تم إنجاز الكثير من العمل للكاميرات المجهزة بمعالج _ingenic T20_.
-* تعديل البرامج الثابتة: <https://github.com/EliasKotlyar/Xiaomi-Dafang-Hacks>
-* من المصادر من البرامج الثابتة المعدلة: <https://github.com/Dafang-Hacks/Main>
-* البرامج الثابتة الأخرى <https://github.com / openmiko / openmiko>
-* تشغيل البرامج دون تغيير البرامج الثابتة: <https://github.com/ThatUsernameAlreadyExist/JCO-PM203-Fisheye-Ingenic- T20 - اختراق كاميرا P2P>
-
 يمكن الاطلاع على وثائق API هنا:  
 * [النسخة الأصلية بالصينية](../zh/includes.zh/html/)
 
@@ -92,7 +86,7 @@ WebVersion: _V2.3.4-20190709_
 
 
 
-## ما الذي لا يعمل في البرامج الثابتة البديلة:
+## ما لا يتم تنفيذه في البرامج الثابتة البديلة:
 
 * نظام الصوت
 
@@ -100,7 +94,7 @@ WebVersion: _V2.3.4-20190709_
 * _OSD_
 
 
-* إدارة كلمة المرور.
+* إدارة الإدارة ونظام RTSP.
 
 
 * تحديث البرنامج الثابت
@@ -124,7 +118,7 @@ WebVersion: _V2.3.4-20190709_
 * انسخ كل شيء إلى المجلد [ _karto_ ](https://github.com/jmichault/ipcam-100/tree/master/karto) في جذر بطاقة microSD.
 
 
-* قم بتكوين الشبكة اختياريًا ( _config/staticip.conf_ ، _config/resolv.conf_ ، _config/wpa_supplicant.conf_ )
+* ربما تعيين الشبكة ( _www/ipcam/config.dist/reto.conf_ )
 
 
 * أدخل بطاقة microSD.
@@ -157,13 +151,17 @@ WebVersion: _V2.3.4-20190709_
 * يتم الوصول إلى الفيديو الثانوي الحالي عند _rtsp://admin:ismart21@IP/stream2_. (° 3 ° 3
 
 
+(° 1 ° 1 ° 1 ° 1 ° افتراضي:
+** SSID: IPCAM100-XXXXXX
+** مفتاح WPA2: ISMART21
+عنوان IP للكاميرا: 172.25.0.1
 
 ## إلغاء تثبيت البرامج الثابتة البديلة:
 
-* ابدأ خدمة telnet بالكاميرا عبر واجهة الإنترنت.
+* قم بتشغيل خدمة SSH على الكاميرا من خلال الواجهة الافتراضية (° 1 درجة).
 
 
-* ابدأ خدمة telnet بالكاميرا عبر واجهة الإنترنت. `telnet IP` 
+* تسجيل الدخول إلى الكاميرا بواسطة (° 1 درجة)(كلمة المرور _ismart12_).
 
 
 * ابدأ خدمة telnet بالكاميرا عبر واجهة الإنترنت. `cd /opt/media/mmcblk0p1;./uninstall.sh;reboot`
@@ -172,4 +170,12 @@ WebVersion: _V2.3.4-20190709_
 
 * يمكنك أيضًا إزالة بطاقة microSD ببساطة.
 
+
+
+## وثائق مثيرة للاهتمام
+
+تم صنع الكثير من الأعمال لكاميرات مجهزة معالج _ingenic T20_ :
+* البرامج الثابتة المعدلة: <https://github.com/ilílístotlyar/xiaomi- Dafang -haks>
+مصادر البرامج الثابتة المعدلة: <https://github.com/dafang-hacks/main>
+البرامج الثابتة الأخرى (° 13 درجة) https://github.com/openmiko/openmiko (° 14 درجة) (° 15 درجة)* إطلاق البرامج دون تغيير البرامج الثابتة: (° 17 ° 17 ° 17 ° 17 ° 17 °
 

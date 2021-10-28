@@ -28,9 +28,7 @@ If you need to recover a library, inspire the following scripts:
 
 
 
-If you ever need to reappear the _«toolchain»_, you can check the following locations: (° 3 ° 4 ° 4 °. For-Ingenic-T20/>  
- * <https://github.com/Dafang-Hacks/Main>
-
-
+If you ever need to compile the _«toolchain»_, you can check the following website:
+ * https://github.com/anmped/openfang
 
 

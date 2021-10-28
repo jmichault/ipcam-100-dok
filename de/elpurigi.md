@@ -17,13 +17,10 @@ mit Original-Firmware:
 
 mit alternativer Firmware:
 
-* Starten Sie den Webinterface-Telnet-Dienst.
+* Starten Sie den SSH-Dienst der Internet-Schnittstelle
 
 
-* Melden Sie sich mit dem Benutzer `telnet IP` ( _root_und dem Passwort _ismart12_)bei der Kamera an.
-
-
-* Drücken Sie `killall -9 run.sh system-emergency-telnet` , um ein Schließen der Verbindung zu vermeiden.
+* Verbinden Sie sich mit der Kamera mit `ssh IP`  _root_ _root_, Passwort _ismart12_).
 
 
 

@@ -15,11 +15,9 @@ kun originala firmvaro:
 
 kun alternativa firmvaro:
 
-* Lanĉu la telnet-servon de la interreta interfaco
+* Lanĉu la SSH-servon de la interreta interfaco
 
-* Ensalutu ĉe la fotilo per `telnet IP` (uzanto _root_, pasvorto _ismart12_).
-
-* Premu `killall -9 run.sh system-emergency-telnet` por eviti fermi la konekton.
+* Konekti al la fotilo per `ssh IP` (uzanto _root_, pasvorto _ismart12_).
 
 
 Tiam, kia ajn la firmvaro:

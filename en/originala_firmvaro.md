@@ -193,4 +193,29 @@ notable files in _/ipc_ :
 
 
 
+# Core review:
+(° 1 ° 1 ° Information:
+    `binwalk mtdblock2.bin`
+    * 
+--------------------------------------------------------------------------------
+0 0x0 UIMAGE Header, Header Size: 64 bytes, Header CRC: 0x7b9de864, Created: 2019-06-22 02:41:00, Image Size: 1466358 bytes, Data Address: 0x80010000, Entrance point: 0x80388340, CRC data: 0xb83dca15,
 
+(° 1 ° 1 ° 1 ° Extraction of data of Mtdblock2:
+    `tail -c+65  < mtdblock2.bin >mtdblock2.dataz`
+
+Core extraction:
+
+(° 5 ° 5 ° 6 ° 13 ° 13 ° List of conductors included:    `strings kernel|grep "^drivers"`
+
+List of files:
+    `strings kernel|grep "\.[cChTsS]$"`
+
+
+
+
+
+
+
+
+
+(° 1 °.

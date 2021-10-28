@@ -28,9 +28,7 @@ Si necesita recuperar una biblioteca, inspire los siguientes scripts:
 
 
 
-Si alguna vez necesita reaparecer el _«toolchain»_, puede verificar las siguientes ubicaciones: (° 3 ° 4 ° 4 °. Para-Ingenic-T20/>  
- * <https://github.com/Dafang-Hacks/Main>
-
-
+Si alguna vez necesita compilar el _«toolchain»_, puede verificar el siguiente sitio web:
+ * https://github.com/anmped/openfang
 
 

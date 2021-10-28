@@ -193,4 +193,30 @@ Linux版本3.10.14\_\_isvp\_火鸡\_1.0\_\_ (root@localhost.localdomain) (gcc版
 
 
 
+# 核心审查：
+（°1°1°的信息：
+    `binwalk mtdblock2.bin`
+    * 
+--------------------------------------------------------------------------------
+0 0x0 uimage标题，标题大小：64字节，标题CRC：0x7b9de864，创建：2019-06-22 02:41:00，图像尺寸：1466358字节，数据地址：0x80010000，入口点：0x80388340，CRC数据：0xB83DCA15， OS：Linux，CPU：MIPS，图像类型：OS内核图像，压缩类型：LZMA，图像名称： "Linux-3.10.14__。
 
+（°1°1°1°1°提取MTDBLOCK2的数据：
+    `tail -c+65  < mtdblock2.bin >mtdblock2.dataz`
+
+核心提取：
+
+（°5°5°6°13°13°13°导体列表：    `strings kernel|grep "^drivers"`
+
+文件列表：
+    `strings kernel|grep "\.[cChTsS]$"`
+
+
+
+
+
+
+
+
+
+（°1°。到达
+。

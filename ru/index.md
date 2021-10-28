@@ -25,12 +25,6 @@ WebVersion: _V2.3.4-20190709_
 процессор: _ingenic T21_
 видеосенсор: _GC2053_
 
-Проделана большая работа для камер, оснащенных процессором _ingenic T20_.
-* модифицированная прошивка: <https://github.com/EliasKotlyar/Xiaomi-Dafang-Hacks>
-* исходники из модифицированная прошивка: <https://github.com/Dafang-Hacks/Main>
-* другая прошивка <https://github.com / openmiko / openmiko>
-* запуск программ без изменения прошивки: <https://github.com/ThatUsernameAlreadyExist/JCO-PM203-Fisheye-Ingenic- T20 -P2P камера рубит>
-
 Документацию по API можно посмотреть здесь:  
 * [исходная версия на китайском языке](../zh/includes.zh/html/)
 
@@ -92,7 +86,7 @@ WebVersion: _V2.3.4-20190709_
 
 
 
-## Что не работает в альтернативных прошивках:
+## Что не проводится в альтернативной прошивке:
 
 * звуковая система
 
@@ -100,7 +94,7 @@ WebVersion: _V2.3.4-20190709_
 * _OSD_
 
 
-* Управление паролем.
+* Управление администрированием и система RTSP.
 
 
 * обновление прошивки
@@ -124,7 +118,7 @@ WebVersion: _V2.3.4-20190709_
 * Скопируйте все в папку [ _karto_ ](https://github.com/jmichault/ipcam-100/tree/master/karto) в корне карты microSD.
 
 
-* дополнительно настроить сеть ( _config/staticip.conf_ , _config/resolv.conf_ , _config/wpa_supplicant.conf_ )
+* Возможно установить сеть ( _www/ipcam/config.dist/reto.conf_ )
 
 
 * Вставьте карту microSD.
@@ -157,13 +151,17 @@ WebVersion: _V2.3.4-20190709_
 * Вторичный ток видео доступен в _rtsp://admin:ismart21@IP/stream2_. (° 3 ° 3
 
 
+(° 1 ° 1 ° 1 Режим AP WiFi активирован по умолчанию:
+** ** SSID: IPCAM100-XXXXXX
+** Ключ WPA2: ISMART21
+IP-адрес камеры: 172.25.0.1
 
 ## Удаление альтернативной прошивки:
 
-* запустите службу Telnet с камерой через интернет-интерфейс.
+* Запустите сервис SSH на камеру через интерфейс по умолчанию).
 
 
-* запустите службу Telnet с камерой через интернет-интерфейс. `telnet IP` 
+* Войдите в камеру по `ssh root@IP` (( _ismart12_).
 
 
 * запустите службу Telnet с камерой через интернет-интерфейс. `cd /opt/media/mmcblk0p1;./uninstall.sh;reboot`
@@ -172,4 +170,14 @@ WebVersion: _V2.3.4-20190709_
 
 * Вы также можете просто извлечь карту microSD.
 
+
+
+## Интересные документы
+
+Большая работа была сделана для камер, оснащенных процессором _ingenic T20_ :
+
+* Модифицированная прошивка: <https://github.com/ilílístotlyar/xiaomi- Dafang -haks>
+Источники модифицированной прошивки: <https://github.com/dafang-hacks/main>11 ° 12 °) Другая прошивка <https://github.com/Openmiko/Openmiko>
+* 
+* . Запуск программ без изменения прошивки: (° 17 ° 17 ° 17: // https://github.com/thatusenameAmeexist/jco-pm203-fisheye-iniangeenic-t20-p2p-camera-hacks>
 

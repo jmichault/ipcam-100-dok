@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-05-23 12:35+0200\n"
+"POT-Creation-Date: 2021-10-28 22:37+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -77,18 +77,24 @@ msgid ""
 msgstr "यदि आपको लाइब्रेरी को पुन: संयोजित करने की आवश्यकता है, तो निम्न स्क्रिप्ट को प्रेरित करें: (° ° 0001 डिग्री) (डिग्री 0002 डिग्री) प्रोग्रामडा (डिग्री 0003 डिग्री) पर्यावरण / स्रोत / 02-buildive.sh, Live555 लाइब्रेरी के लिए। (° 0007 डिग्री) (° 0008 डिग्री) प्रोग्रामडा (डिग्री 000 9 डिग्री डिग्री)\n"
 
 #. type: Plain text
-#: kruc-kompili.md:28
+#: kruc-kompili.md:29
 #, fuzzy, no-wrap
 msgid ""
-"Se vi iam bezonos rekompili la _«toolchain»_, vi povas kontroli la sekvajn lokojn:\n"
-" *  * https://zanev.github.io/cross-compile- iloj -For-ingenic-T20/>  \n"
-msgstr "यदि आपको कभी भीको फिर से करने की आवश्यकता होती है, तो आप निम्न स्थानों की जांच कर सकते हैं: (° ° 0004 डिग्री) (° 0004 डिग्री) (° 0004 डिग्री) (° 0005 डिग्री) HTTPS: / /zanev.github.io/cross-compile उपकरण - के लिए इंजेनिक-टी 20 (डिग्री 0006 डिग्री) (डिग्री 0007 डिग्री)  \n"
+"Se vi iam bezonos kompili la _«toolchain»_, vi povas konsulti la sekvan retejon:\n"
+" * https://github.com/anmped/openfang\n"
+msgstr ""
+"यदि आप कभी\n"
+"https://github.com/anmped/openfang\n"
 
-#. type: Bullet: ' * '
-#: kruc-kompili.md:30
 #, fuzzy, no-wrap
-msgid "<https://github.com/Dafang-Hacks/Main>\n"
-msgstr "<https://github.com/Dafang-Hacks/Main>\n"
+#~ msgid ""
+#~ "Se vi iam bezonos rekompili la _«toolchain»_, vi povas kontroli la sekvajn lokojn:\n"
+#~ " *  * https://zanev.github.io/cross-compile- iloj -For-ingenic-T20/>  \n"
+#~ msgstr "यदि आपको कभी भीको फिर से करने की आवश्यकता होती है, तो आप निम्न स्थानों की जांच कर सकते हैं: (° ° 0004 डिग्री) (° 0004 डिग्री) (° 0004 डिग्री) (° 0005 डिग्री) HTTPS: / /zanev.github.io/cross-compile उपकरण - के लिए इंजेनिक-टी 20 (डिग्री 0006 डिग्री) (डिग्री 0007 डिग्री)  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "<https://github.com/Dafang-Hacks/Main>\n"
+#~ msgstr "<https://github.com/Dafang-Hacks/Main>\n"
 
 #, fuzzy
 #~ msgid ""

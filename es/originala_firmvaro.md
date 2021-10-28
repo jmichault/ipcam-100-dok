@@ -193,4 +193,30 @@ archivos notables en _/ipc_ :
 
 
 
+# Revisión del núcleo:
+(° 1 ° 1 ° Información:
+    `binwalk mtdblock2.bin`
+    * 
+--------------------------------------------------------------------------------
+0 0x0 UIMage Encabezado, encabezado Tamaño: 64 bytes, encabezado CRC: 0x7b9de864, Creado: 2019-06-22 02:41:00, Tamaño de la imagen: 1466358 Bytes, Bytes, Discurso de datos: 0x80010000, Punto de entrada: 0x80388340, Datos de CRC: 0xb83dca15, OS: Linux, CPU: MIPS, Tipo de imagen: Imagen del kernel de OS, Tipo de compresión: LZMA, Nombre de la imagen: "Linux-3.10.14__.
 
+(° 1 ° 1 ° 1 ° Extracción de datos de MTDBLOCK2:
+    `tail -c+65  < mtdblock2.bin >mtdblock2.dataz`
+
+Extracción del núcleo:
+
+(° 5 ° 5 ° 6 ° 6 ° 13 ° 13 ° Lista de conductores incluidos:    `strings kernel|grep "^drivers"`
+
+Lista de archivos:
+    `strings kernel|grep "\.[cChTsS]$"`
+
+
+
+
+
+
+
+
+
+(° 1 °. Alcanza
+.
