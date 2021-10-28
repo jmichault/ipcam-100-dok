@@ -56,11 +56,11 @@ La documentation des APIs peut être consultée ici :
 * détection de mouvement
 * envoi de courriel
 
-## Ce qui ne fonctionne pas dans le micrologiciel alternatif:
+## Ce qui n'est pas implémenté dans le micrologiciel alternatif:
 
 * systeme audio
 * _OSD_
-* gestion des mots de passe.
+* gestion des mots de passe rtsp et système.
 * mise à jour du micrologiciel
 * détection nocturne automatique
 * _ir-cut_
@@ -81,6 +81,10 @@ La documentation des APIs peut être consultée ici :
 * Vous pouvez vous connecter en ssh (utilisateur _admin_, mot de passe _ismart12_).
 * le flux vidéo primaire est accessible à _rtsp://admin:ismart21@IP/stream1_.
 * le flux vidéo secondaire est accessible à _rtsp://admin:ismart21@IP/stream2_.
+* le mode WiFi AP est activé par défaut :
+** SSID : ipcam100-xxxxxx
+** clé WPA2 : ismart21
+** adresse IP de la caméra : 172.25.0.1
 
 ## Désinstallation du micrologiciel alternatif:
 

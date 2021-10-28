@@ -13,9 +13,8 @@ avec le micrologiciel d'origine:
 
 avec le micrologiciel alternatif:
 
-* Lancez le service telnet depuis l'interface web
-* Connectez-vous à la caméra via `telnet IP` (utilisateur _root_, mot de passe _ismart12_).
-* Faites `killall -9 run.sh system-emergency-telnet` pour éviter de fermer la connexion.
+* Lancez le service ssh depuis l'interface web
+* Connectez-vous à la caméra via `ssh IP` (utilisateur _root_, mot de passe _ismart12_).
 
 Puis, quel que soit le micrologiciel :
 

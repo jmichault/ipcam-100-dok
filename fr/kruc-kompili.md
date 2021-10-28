@@ -20,8 +20,7 @@ Si vous avez besoin de recompiler une librairie, inspirez-vous des scripts suiva
 * programada_medio/fontoj/03-pcre.sh , pour la librairie pcre.
 
 
-Si jamais vous avez besoin de recompiler la _«toolchain»_, vous pouvez consulter les sites suivants :
- * <https://znanev.github.io/Cross-compile-tools-for-Ingenic-T20/>  
- * <https://github.com/Dafang-Hacks/Main>
+Si jamais vous avez besoin de recompiler la _«toolchain»_, vous pouvez consulter le site suivant :
+ * https://github.com/anmaped/openfang
 
 

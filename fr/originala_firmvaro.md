@@ -145,4 +145,23 @@ fichiers notables dans _/ipc_ :
 * port 64 = ?
 * port 81 = LEDS bleues.
 
+# examen du noyau :
+* informations :
+    `binwalk mtdblock2.bin`
+    * résultat :
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             uImage header, header size: 64 bytes, header CRC: 0x7B9DE864, created: 2019-06-22 02:41:00, image size: 1466358 bytes, Data Address: 0x80010000, Entry Point: 0x80388340, data CRC: 0xB83DCA15, OS: Linux, CPU: MIPS, image type: OS Kernel Image, compression type: lzma, image name: "Linux-3.10.14__isvp_turkey_1.0__]"
+64            0x40            LZMA compressed data, properties: 0x5D, dictionary size: 16777216 bytes, uncompressed size: -1 bytes
 
+* extraction des données de mtdblock2 :
+    `tail -c+65  < mtdblock2.bin >mtdblock2.dataz`
+* extraction du noyau :
+    `cat mtdblock2.dataz|lzma -d -c -f - >kernel`
+* liste des drivers inclus :
+    `strings kernel|grep "^drivers"`
+* liste des fichiers source :
+    `strings kernel|grep "\.[cChTsS]$"`
+* liste des symboles
+https://github.com/marin-m/vmlinux-to-elf devrait permettre de trouver les symboles, mais il n'y arrive pas
+début possible de kallsyms_token_table : 0x3AA1B4
