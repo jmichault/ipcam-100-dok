@@ -172,7 +172,7 @@ API文档可以在这里查看：
 
 
 
-## 有趣的文件
+# 有趣的文件
 
 适用于配备处理器 _ingenic T20_ 的摄像机
 * 修改固件： <https://github.com/ilílístotlyar/xiaomi-大法 - 哈哈>>修改固件的源: <https：//github.com/dafang-hacks/main>>

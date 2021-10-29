@@ -88,7 +88,7 @@ La documentation des APIs peut être consultée ici :
 
 * Vous pouvez aussi simplement retirer la carte microSD.
 
-## Documents intéressants
+# Documents intéressants
 
 Beaucoup de travail a été fait pour les caméras équipées d'un processeur _ingenic T20_ :
 * micrologiciel modifié: <https://github.com/EliasKotlyar/Xiaomi-Dafang-Hacks>

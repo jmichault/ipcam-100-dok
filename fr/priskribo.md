@@ -81,11 +81,13 @@ noto: ŝanĝu la defaŭltan itineron metante tiun de la interreta skatolo.
 
 haltigi jco_server sen kaŭzi restartigi:
 ## stop_cloud :
+```
 ps | awk '/[a]uto_run.sh/ {print $1}' | while read PID; do kill -9 $PID; done;
 ps | awk '/[j]co_server/ {print $1}' | xargs kill -9 &>/dev/null
 echo 'V'>/dev/watchdog
 echo 'V'>/dev/watchdog0
 rm '/opt/media/mmcblk0p1/cid.txt' &>/dev/null
+```
 
 vi povas vidi la ĉefan video-rivereton (laŭ 1080P aŭ alia agordo) per:
 ffplay -i rtsp://admin:admin@192.168.24.111/stream1

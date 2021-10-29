@@ -172,7 +172,7 @@ Dirección IP de la cámara: 172.25.0.1
 
 
 
-## Documentos interesantes
+# Documentos interesantes
 
 Se hizo mucho trabajo para cámaras equipadas con un procesador _ingenic T20_ :
 * * Firmware modificado: <https://github.com/ilílístotlyar/xiomi- Dafang -Haks>

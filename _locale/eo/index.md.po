@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-10-28 22:29+0200\n"
+"POT-Creation-Date: 2021-10-28 23:31+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -231,8 +231,7 @@ msgstr "sendante retpoŝton\n"
 
 #. type: Title ##
 #: index.md:53
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Ce qui n'est pas implémenté dans le micrologiciel alternatif:"
 msgstr "Kio ne estas efektivigita en la alternativa firmware:"
 
@@ -251,7 +250,6 @@ msgstr "_OSD_\n"
 #. type: Bullet: '* '
 #: index.md:63
 #, fuzzy, no-wrap
-#, fuzzy
 msgid "gestion des mots de passe rtsp et système.\n"
 msgstr "Administrado de Pasvortoj kaj Sistemo de RTSP.\n"
 
@@ -299,8 +297,7 @@ msgstr "Kopiu ĉion en la dosierujo [ _karto_ ](https://github.com/jmichault/ipc
 
 #. type: Bullet: '* '
 #: index.md:82
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "éventuellement configurez le réseau ( _www/ipcam/config.dist/reto.conf_ )\n"
 msgstr "Eble agordi la reton ( _www/ipcam/config.dist/reto.conf_ )\n"
 
@@ -367,13 +364,16 @@ msgstr "La sekundara video-fluo estas alirebla ĉe _rtsp://admin:ismart21@IP/str
 #. type: Plain text
 #: index.md:82
 #, fuzzy, no-wrap
-#, fuzzy
 msgid ""
 "* le mode WiFi AP est activé par défaut :\n"
 "** SSID : ipcam100-xxxxxx\n"
 "** clé WPA2 : ismart21\n"
 "** adresse IP de la caméra : 172.25.0.1\n"
-msgstr "(° 1 ° WiFi AP-reĝimo estas aktivigita defaŭlte:\n** SSID: IPCAM100-XXXXXX\n** WPA2-ŝlosilo: ismart21\nIP-adreso de la fotilo: 172.25.0.1\n"
+msgstr ""
+"(° 1 ° WiFi AP-reĝimo estas aktivigita defaŭlte:\n"
+"** SSID: IPCAM100-XXXXXX\n"
+"** WPA2-ŝlosilo: ismart21\n"
+"IP-adreso de la fotilo: 172.25.0.1\n"
 
 #. type: Title ##
 #: index.md:83
@@ -383,15 +383,13 @@ msgstr "Malinstalanta Alternativan Firmware:"
 
 #. type: Bullet: '* '
 #: index.md:88
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "lancez le service ssh sur la caméra par l'interface web (lancé par défaut).\n"
 msgstr "Lanĉu la servon SSH sur la fotilo tra la defaŭlta interfaco).\n"
 
 #. type: Bullet: '* '
 #: index.md:88
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Connectez-vous à la caméra via `ssh root@IP` (mot de passe _ismart12_).\n"
 msgstr "Ensalutu al la fotilo per `ssh root@IP` (pasvorto _ismart12_).\n"
 
@@ -407,24 +405,27 @@ msgstr "komencu la telnet-servon per la fotilo per la interreta interfaco. `cd /
 msgid "Vous pouvez aussi simplement retirer la carte microSD.\n"
 msgstr "Vi ankaŭ povas simple forigi la karton microSD.\n"
 
-#. type: Title ##
+#. type: Title #
 #: index.md:91
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Documents intéressants"
 msgstr "Interesaj dokumentoj"
 
 #. type: Plain text
 #: index.md:98
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "Beaucoup de travail a été fait pour les caméras équipées d'un processeur _ingenic T20_ :\n"
 "* micrologiciel modifié: <https://github.com/EliasKotlyar/Xiaomi-Dafang-Hacks>\n"
 "* sources du micrologiciel modifié: <https://github.com/Dafang-Hacks/Main>\n"
 "* autre micrologiciel <https://github.com/openmiko/openmiko>\n"
 "* lancement de programmes sans changer le micrologiciel : <https://github.com/ThatUsernameAlreadyExist/JCO-PM203-Fisheye-Ingenic-T20-P2P-camera-hacks>\n"
-msgstr "Multa laboro estis farita por fotiloj ekipitaj per procesoro _ingenic T20_ :\n* modifita firmware: <https://github.com/eliaskotlyar/xiaomi- dafang -Hacks>\n* Fontoj de la modifita firmware: <https://github.com/dafang-hacks/main>\n* Aliaj firmware <https://github.com/openmiko/openmiko>\n* lanĉo de programoj sen ŝanĝi la firmware: (° 17 ° Https://github.com/thatusenameAlreadyExist/jco-pm203-fisheye-ingenic-t20-p2p-camera-hacks>\n"
+msgstr ""
+"Multa laboro estis farita por fotiloj ekipitaj per procesoro _ingenic T20_ :\n"
+"* modifita firmware: <https://github.com/eliaskotlyar/xiaomi- dafang -Hacks>\n"
+"* Fontoj de la modifita firmware: <https://github.com/dafang-hacks/main>\n"
+"* Aliaj firmware <https://github.com/openmiko/openmiko>\n"
+"* lanĉo de programoj sen ŝanĝi la firmware: (° 17 ° Https://github.com/thatusenameAlreadyExist/jco-pm203-fisheye-ingenic-t20-p2p-camera-hacks>\n"
 
 #, fuzzy, no-wrap
 #~ msgid ""

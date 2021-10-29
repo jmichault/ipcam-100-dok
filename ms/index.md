@@ -172,7 +172,7 @@ Alamat IP kamera: 172.25.0.1
 
 
 
-## Dokumen yang menarik
+# Dokumen yang menarik
 
 Banyak kerja dibuat untuk kamera yang dilengkapi dengan pemproses _ingenic T20_ :* Diubahsuai firmware: <https://github.com/ilítístotlyar/xiaomi- Dafang -haks>
 Sumber firmware yang diubahsuai: <https://github.com/dafang-hacks/main>

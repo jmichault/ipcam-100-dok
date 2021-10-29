@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-10-28 22:37+0200\n"
+"POT-Creation-Date: 2021-10-29 14:46+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -402,7 +402,7 @@ msgstr "ਇੰਟਰਨੈਟ ਇੰਟਰਫੇਸ ਦੁਆਰਾ ਕੈਮਰ
 msgid "Vi ankaŭ povas simple forigi la karton microSD.\n"
 msgstr "ਤੁਸੀਂ ਆਸਾਨੀ ਨਾਲ ਮਾਈਕ੍ਰੋ ਐਸਡੀ ਕਾਰਡ ਨੂੰ ਵੀ ਹਟਾ ਸਕਦੇ ਹੋ.\n"
 
-#. type: Title ##
+#. type: Title #
 #: index.md:133
 #, fuzzy, no-wrap
 msgid "Interesaj dokumentoj"

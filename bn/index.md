@@ -171,7 +171,7 @@ WebVersion: _V2.3.4-20190709_
 
 
 
-## আকর্ষণীয় নথি
+# আকর্ষণীয় নথি
 
 একটি প্রসেসর _ingenic T20_ সংশোধিত ক্যামেরাগুলির জন্য অনেক কাজ করা হয়েছে:* সংশোধিত ফার্মওয়্যার: <https://github.com/ilílístototlyar/xiaomi- Dafang -haks>সংশোধিত ফার্মওয়্যারের উত্স: <https://github.com/dafang-hacks/main>>
 অন্যান্য ফার্মওয়্যার <https://github.com/openmiko/openmiko>

@@ -130,7 +130,7 @@ IP-adreso de la fotilo: 172.25.0.1
 * Vi ankaŭ povas simple forigi la karton microSD.
 
 
-## Interesaj dokumentoj
+# Interesaj dokumentoj
 
 Multa laboro estis farita por fotiloj ekipitaj per procesoro _ingenic T20_ :
 * modifita firmware: <https://github.com/eliaskotlyar/xiaomi- dafang -Hacks>

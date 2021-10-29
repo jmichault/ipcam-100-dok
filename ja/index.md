@@ -172,7 +172,7 @@ APIドキュメントはここで見ることができます：
 
 
 
-## 興味深い文書
+# 興味深い文書
 
 プロセッサ _ingenic T20_ を搭載したカメラ用の多くの作業が行われました。
 * 修正ファームウェア： <https://github.com/ilílístotlyar/xiaomi- Dafang -Haks>>
