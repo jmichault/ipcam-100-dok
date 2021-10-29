@@ -14,42 +14,31 @@ title: 介绍
 
 Internet界面中显示的信息：
 ```
-DeviceName: _INGENIC-V01_
-DeviceModel: _IPCAM-100_
-DeviceSN: _12345678901_
-KernelVersion: _Thu Jul 9 15:46:54 CST 2015_
-ServerVersion: _WS3.53.1243-20190717-DANALE-GEN_
-WebVersion: _V2.3.4-20190709_
+DeviceName: INGENIC-V01
+DeviceModel: IPCAM-100
+DeviceSN: 12345678901
+KernelVersion: Thu Jul 9 15:46:54 CST 2015
+ServerVersion: WS3.53.1243-20190717-DANALE-GEN
+WebVersion: V2.3.4-20190709
 ```
 
 处理器： _ingenic T21_
 视频传感器： _GC2053_
 
-API文档可以在这里查看：  
-* [中文原始版本](../zh/includes.zh/html/)
-
-
-* [英文版](../en/includes.en/html/)
-
-
-* [法语版本由Google翻译](../fr/includes.fr/html/)
-
-
-
 # 备用固件
 
 ## 在替代固件中有效的方法：
 
-* LAN和WLAN
+* _LAN_ 和 _WLAN_
 
 
-* DRTTSP双流服务器：默认情况下，1920x1080 H264和640x360 MJPEG。
+* 服务器 (°1°双流： _1920x1080 H264_ 和 _640x360 MJPEG_ 默认情况下。  
 
 
 * 视觉参数
 
 
-* HTTP服务器
+* 服务器 _HTTP_
 
 
 * 发动机控制
@@ -58,31 +47,37 @@ API文档可以在这里查看：
 * 发动机校准
 
 
-* 云台设置
+* 参数 _PTZ_（°3°3
 
 
-* NTP客户端
+* 客户 _NTP_（°3°3
 
 
-* http访问的密码更改
+* 密码管理 _http_， _rtsp_ 和系统。  
 
 
-* 蓝色LED和IR控制
+* 白色LED控制和IR
 
 
-* ftp服务器
+* 白色LED控制和IR _ftp_
 
 
-* Telnet服务器
+* 白色LED控制和IR _telnet_
 
 
-* SSH服务器和客户端
+* 服务器和客户端 _ssh_（°3°3
 
 
 * 移动侦测
 
 
 * 发送电子邮件
+
+
+* 发送 _«telegram»_
+
+
+* 自动夜间政权
 
 
 
@@ -94,19 +89,16 @@ API文档可以在这里查看：
 * _OSD_
 
 
-* 管理管理和RTSP系统。
-
-
 * 固件更新
-
-
-* 自动夜间检测
 
 
 * 运动检测_ir-cut_
 
 
 * 发送电子邮件_mqtt_
+
+
+* 在云中发送图像和视频（°1°1
 
 
 * 等...
@@ -121,7 +113,7 @@ API文档可以在这里查看：
 * 也许设置网络 ( _www/ipcam/config.dist/reto.conf_ ))
 
 
-* 插入microSD卡。
+* 在相机中输入卡 _microSD_ 。  
 
 
 * 将相机连接到本地网络，然后打开相机电源。
@@ -139,21 +131,24 @@ API文档可以在这里查看：
 * Faru `cd /opt/media/mmcblk0p1;./install.sh`
 
 
-* 您可以连接到URL _https://IP_ (用户 _admin_，密码 _ismart21_)。
+* 相机简历，现在：（°1°1
 
 
-* 您可以在SSH (用户 _admin_，密码 _ismart12_)中连接。
+    * 您可以连接到URL _https://IP_ (用户 _admin_，密码 _ismart21_)。
 
 
-* 初级视频电流可在 _rtsp://admin:ismart21@IP/stream1_上访问。 （°3°3
+    * 您可以在SSH (用户 _admin_，密码 _ismart12_)中连接。
 
 
-* 辅助视频电流可在 _rtsp://admin:ismart21@IP/stream2_处访问。 （°3°3
+    * 初级视频电流可在 _rtsp://admin:ismart21@IP/stream1_上访问。 （°3°3
+
+
+    * 辅助视频电流可在 _rtsp://admin:ismart21@IP/stream2_处访问。 （°3°3
 
 
 （°1°1°1°1 WiFi AP模式默认激活：
-** SSID：IPCAM100-XXXXXX
-** WPA2键：ISMart21
+    ** SSID：IPCAM100-XXXXXX
+    ** WPA2键：ISMart21
 相机的IP地址：172.25.0.1
 
 ## 卸载备用固件：
@@ -175,7 +170,7 @@ API文档可以在这里查看：
 # 有趣的文件
 
 适用于配备处理器 _ingenic T20_ 的摄像机
-* 修改固件： <https://github.com/ilílístotlyar/xiaomi-大法 - 哈哈>>修改固件的源: <https：//github.com/dafang-hacks/main>>
-其他固件 <https://github.com/openmiko/openmiko>
-* * 在不改变固件的情况下发射节目：（°17° 17°17：// https://github.com/thathenameanameexist/jco -pm203-fisheyeo -ininitinennic-t20-p2p-camera-hacks>
+* 修改固件： <https://github.com/ilílístotlyar/xiaomi-大丰 - 哈哈>>
+修改固件的来源： <https://github.com/dafang-hacks/main>
+17°) https://github.com/thatusenameanamexist/jco-pm203-fisheye-ininic-t20-p2p-camera-hacks>
 

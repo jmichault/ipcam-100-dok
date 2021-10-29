@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-03-04 16:44+0100\n"
+"POT-Creation-Date: 2021-10-29 23:10+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,135 +17,109 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. type: YAML Front Matter: lang
-#: ./alternativa_firmvaro.md:1
+#: alternativa_firmvaro.md:1
 #, no-wrap
 msgid "fr"
 msgstr "eo"
 
 #. type: YAML Front Matter: lang-niv
-#: ./alternativa_firmvaro.md:1
+#: alternativa_firmvaro.md:1
 #, no-wrap
 msgid "fonto"
 msgstr "auto"
 
 #. type: YAML Front Matter: lang-ref
-#: ./alternativa_firmvaro.md:1
+#: alternativa_firmvaro.md:1
 #, no-wrap
-msgid "099-alternativa_firmvaro"
-msgstr "099-alternativa_firmvaro"
+msgid "010-alternativa_firmvaro"
+msgstr "010-alternativa_firmvaro"
 
 #. type: YAML Front Matter: layout
-#: ./alternativa_firmvaro.md:1
+#: alternativa_firmvaro.md:1
 #, no-wrap
 msgid "page"
 msgstr "page"
 
 #. type: YAML Front Matter: title
-#: ./alternativa_firmvaro.md:1
-#, no-wrap
-#, fuzzy
+#: alternativa_firmvaro.md:1
+#, fuzzy, no-wrap
 msgid "Le micrologiciel alternatif"
 msgstr "Alternativa firmvaro"
 
 #. type: Title #
-#: ./alternativa_firmvaro.md:9
-#, markdown-text, no-wrap
-#, fuzzy
+#: alternativa_firmvaro.md:9
+#, fuzzy, no-wrap
 msgid "Démarrage"
 msgstr "Ekfunkciigo"
 
 #. type: Bullet: '* '
-#: ./alternativa_firmvaro.md:13
-#, markdown-text, no-wrap
-#, fuzzy
-msgid ""
-"L'installation crée le fichier _/opt/etc/local.rc_, qui est lancé par le "
-"micrologiciel d'origine.\n"
+#: alternativa_firmvaro.md:13
+#, fuzzy, no-wrap
+msgid "L'installation crée le fichier _/opt/etc/local.rc_, qui est lancé par le micrologiciel d'origine.\n"
 msgstr "La instalado kreas la dosieron _/opt/etc/local.rc_, kiun lanĉas la originala firmvaro.\n"
 
 #. type: Bullet: '* '
-#: ./alternativa_firmvaro.md:13
-#, markdown-text, no-wrap
-#, fuzzy
+#: alternativa_firmvaro.md:13
+#, fuzzy, no-wrap
 msgid "_local.rc_ lance _run.sh_ depuis la carte SD.\n"
 msgstr "_local.rc_ lanĉas _run.sh_ de la SD-karto.\n"
 
 #. type: Title #
-#: ./alternativa_firmvaro.md:14
-#, markdown-text, no-wrap
-#, fuzzy
+#: alternativa_firmvaro.md:14
+#, fuzzy, no-wrap
 msgid "_run.sh_"
 msgstr "_run.sh_"
 
 #. type: Bullet: '  * '
-#: ./alternativa_firmvaro.md:25
-#, markdown-text, no-wrap
-#, fuzzy
+#: alternativa_firmvaro.md:24
+#, fuzzy, no-wrap
 msgid "déconnecte le réseau\n"
 msgstr "malkonekti la reton\n"
 
 #. type: Bullet: '  * '
-#: ./alternativa_firmvaro.md:25
-#, markdown-text, no-wrap
-#, fuzzy
+#: alternativa_firmvaro.md:24
+#, fuzzy, no-wrap
 msgid "arrête _jco_server_ et _autorun.sh_.\n"
 msgstr "haltigi _jco_servilon_ kaj _autorun.sh_.\n"
 
 #. type: Bullet: '  * '
-#: ./alternativa_firmvaro.md:25
-#, markdown-text, no-wrap
-#, fuzzy
+#: alternativa_firmvaro.md:24
+#, fuzzy, no-wrap
 msgid "désactive _/dev/watchdog_ et _/dev/watchdog0_\n"
 msgstr "malaktivigas _/dev/watchdog_ kaj _/dev/watchdog0_\n"
 
 #. type: Bullet: '  * '
-#: ./alternativa_firmvaro.md:25
-#, markdown-text, no-wrap
-#, fuzzy
+#: alternativa_firmvaro.md:24
+#, fuzzy, no-wrap
 msgid "initialise les LED et le moteur\n"
 msgstr "pravalorizas la LEDojn kaj la motoron\n"
 
 #. type: Bullet: '  * '
-#: ./alternativa_firmvaro.md:25
-#, markdown-text, no-wrap
-#, fuzzy
+#: alternativa_firmvaro.md:24
+#, fuzzy, no-wrap
 msgid "initialise le répertoire etc si nécessaire\n"
 msgstr "pravalorizas la adresaron ktp se necese\n"
 
 #. type: Bullet: '  * '
-#: ./alternativa_firmvaro.md:25
-#, markdown-text, no-wrap
-#, fuzzy
+#: alternativa_firmvaro.md:24
+#, fuzzy, no-wrap
 msgid "redirige _/bin/busybox_ , _/etc_ et _/root_ vers la carte SD.\n"
 msgstr "alidirektiloj _/bin/busybox_ , _/etc_ kaj _/root_ al la SDa karto.\n"
 
 #. type: Bullet: '  * '
-#: ./alternativa_firmvaro.md:25
-#, markdown-text, no-wrap
-#, fuzzy
+#: alternativa_firmvaro.md:24
+#, fuzzy, no-wrap
 msgid "initialise la _CRONTAB_ si nécessaire\n"
 msgstr "pravalorizi la _CRONTAB_ se necese\n"
 
 #. type: Bullet: '  * '
-#: ./alternativa_firmvaro.md:25
-#, markdown-text, no-wrap
-#, fuzzy
-msgid ""
-"démarre le service _crond_, le réseau, le service _ntpd_, le service de site "
-"Web\n"
-msgstr "startservo _crond_, reto, servo _ntpd_, reteja servo\n"
-
-#. type: Bullet: '  * '
-#: ./alternativa_firmvaro.md:25
-#, markdown-text, no-wrap
-#, fuzzy
+#: alternativa_firmvaro.md:24
+#, fuzzy, no-wrap
 msgid "démarre les services (dans _config/autostart_)\n"
 msgstr "komenci servojn (en _config/autostart_)\n"
 
 #. type: Bullet: '  * '
-#: ./alternativa_firmvaro.md:25
-#, markdown-text, no-wrap
-#, fuzzy
+#: alternativa_firmvaro.md:24
+#, fuzzy, no-wrap
 msgid "démarre les scripts utilisateur (dans _config/userscripts_)\n"
 msgstr "komenci uzantajn skriptojn (en _config/userscripts_)\n"
-

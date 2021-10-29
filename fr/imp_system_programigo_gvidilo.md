@@ -1,3 +1,16 @@
+---
+lang: fr
+lang-niv: fonto
+lang-ref: 051-IMP-programigo_gvidilo
+layout: page
+title: 'Guide de programmation IMP'
+---
+
+
+La documentation des APIs peut être consultée ici :  
+* [version originale en chinois](../../zh/includes.zh/html/)
+* [version anglaise](../../en/includes.en/html/)
+* [version française traduite par google](../../fr/includes.fr/html/)
 
 
 # IMP (Ingenic Media Platform) (voir imp_system.h)

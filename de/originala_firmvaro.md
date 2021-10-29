@@ -1,7 +1,7 @@
 ---
 lang: de
 lang-niv: auto
-lang-ref: 001-originala_firmvaro
+lang-ref: 071-originala_firmvaro
 layout: page
 title: 'Original Firmware'
 ---

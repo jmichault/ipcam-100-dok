@@ -1,3 +1,11 @@
+---
+lang: en
+lang-niv: auto
+lang-ref: 052-ISP-programigo_gvidilo
+layout: page
+title: 'Video programming guide'
+---
+
 # IMP_ISP (voir imp_isp.h)
 Image processing. Mainly includes settings of image effects, mode switch and recording, addition and removal of sensor.
 

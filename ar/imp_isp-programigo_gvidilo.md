@@ -1,3 +1,11 @@
+---
+lang: ar
+lang-niv: auto
+lang-ref: 052-ISP-programigo_gvidilo
+layout: page
+title: 'دليل برمجة الفيديو'
+---
+
 # IMP_ISP (voir imp_isp.h)
 معالجة الصورة. يتضمن بشكل أساسي إعدادات تأثيرات الصورة ومفتاح الوضع والتسجيل وإضافة وإزالة المستشعر.
 

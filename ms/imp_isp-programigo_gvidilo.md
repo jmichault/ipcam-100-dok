@@ -1,3 +1,11 @@
+---
+lang: ms
+lang-niv: auto
+lang-ref: 052-ISP-programigo_gvidilo
+layout: page
+title: 'Panduan pengaturcaraan video'
+---
+
 # IMP_ISP (voir imp_isp.h)
 Pemprosesan imej. Terutamanya merangkumi tetapan kesan gambar, pertukaran mod dan rakaman, penambahan dan penghapusan sensor.
 

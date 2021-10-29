@@ -14,42 +14,31 @@ distinção: _1080P_
 
 Informações exibidas na interface da Internet:
 ```
-DeviceName: _INGENIC-V01_
-DeviceModel: _IPCAM-100_
-DeviceSN: _12345678901_
-KernelVersion: _Thu Jul 9 15:46:54 CST 2015_
-ServerVersion: _WS3.53.1243-20190717-DANALE-GEN_
-WebVersion: _V2.3.4-20190709_
+DeviceName: INGENIC-V01
+DeviceModel: IPCAM-100
+DeviceSN: 12345678901
+KernelVersion: Thu Jul 9 15:46:54 CST 2015
+ServerVersion: WS3.53.1243-20190717-DANALE-GEN
+WebVersion: V2.3.4-20190709
 ```
 
 processador: _ingenic T21_
 sensor de vídeo: _GC2053_
 
-A documentação da API pode ser vista aqui:  
-* [versão original em chinês](../zh/includes.zh/html/)
-
-
-* [Versão em inglês](../en/includes.en/html/)
-
-
-* [Versão francesa traduzida pelo google](../fr/includes.fr/html/)
-
-
-
 # Firmware alternativo
 
 ## O que funciona no firmware alternativo:
 
-* LAN e WLAN
+* _LAN_ e _WLAN_
 
 
-* DRTTSP Dual Flow Server: 1920x1080 H264 e 640x360 MJPEG por padrão.
+* Servidor (° 1 ° Fluxo duplo: _1920x1080 H264_ e _640x360 MJPEG_ por padrão.  
 
 
 * Parâmetros visuais
 
 
-* Servidor HTTP
+* Servidor _HTTP_
 
 
 * controle do motor
@@ -58,31 +47,37 @@ A documentação da API pode ser vista aqui:
 * calibração do motor
 
 
-* Configurações de PTZ
+* Parâmetros _PTZ_(° 3 ° 3
 
 
-* Cliente NTP
+* Cliente _NTP_(° 3 ° 3
 
 
-* alteração de senha para acesso http
+* Administração de Senha _http_, _rtsp_ e sistema.  
 
 
-* LED azul e controle IR
+* Controle de LED branco e IR
 
 
-* Servidor ftp
+* Controle de LED branco e IR _ftp_
 
 
-* Servidor Telnet
+* Controle de LED branco e IR _telnet_
 
 
-* Servidor SSH e Cliente
+* Servidor e cliente _ssh_(° 3 ° 3
 
 
 * detecção de movimento
 
 
 * enviando e-mail
+
+
+* Enviar _«telegram»_
+
+
+* Regime Noturno Automático
 
 
 
@@ -94,19 +89,16 @@ A documentação da API pode ser vista aqui:
 * _OSD_
 
 
-* Gerenciamento de administração e sistema RTSP.
-
-
 * atualização de firmware
-
-
-* detecção noturna automática
 
 
 * detecção de movimento_ir-cut_
 
 
 * enviando e-mail_mqtt_
+
+
+* Envio de imagens e vídeos em nuvem (° 1 ° 1
 
 
 * etc ...
@@ -121,7 +113,7 @@ A documentação da API pode ser vista aqui:
 * Talvez defina a rede ( _www/ipcam/config.dist/reto.conf_ )
 
 
-* Insira o cartão microSD.
+* Digite o cartão _microSD_ na câmera.  
 
 
 * Conecte a câmera à sua rede local e ligue a câmera.
@@ -139,20 +131,23 @@ A documentação da API pode ser vista aqui:
 * Faru `cd /opt/media/mmcblk0p1;./install.sh`
 
 
-* Você pode se conectar ao URL _https://IP_ (usuário _admin_, Senha _ismart21_).
+* A câmera retoma, agora: (° 1 ° 1
 
 
-* Você pode se conectar no usuário SSH ( _admin_, senha _ismart12_).
+    * Você pode se conectar ao URL _https://IP_ (usuário _admin_, Senha _ismart21_).
 
 
-* A corrente de vídeo principal é acessível a _rtsp://admin:ismart21@IP/stream1_. (° 3 ° 3
+    * Você pode se conectar no usuário SSH ( _admin_, senha _ismart12_).
 
 
-* A corrente de vídeo secundária é acessível a _rtsp://admin:ismart21@IP/stream2_. (° 3 ° 3
+    * A corrente de vídeo principal é acessível a _rtsp://admin:ismart21@IP/stream1_. (° 3 ° 3
+
+
+    * A corrente de vídeo secundária é acessível a _rtsp://admin:ismart21@IP/stream2_. (° 3 ° 3
 
 
 (° 1 ° 1 ° 1 Modo AP WiFi é ativado por padrão:
-** SSID: IPCAM100-XXXXXX
+    ** SSID: IPCAM100-XXXXXX
 WPA2 Key: ismart21
 Endereço IP da câmera: 172.25.0.1
 
@@ -176,6 +171,5 @@ Endereço IP da câmera: 172.25.0.1
 
 Muito trabalho foi feito para câmeras equipadas com um processador _ingenic T20_ :
 * Firmware modificado: <https://github.com/ilílístotlyar/xiaomi- Dafang -haks>
-Fontes do firmware modificado: <https://github.com/dafang-hacks/main>11 ° 12 °) Outros firmware <https://github.com/openmiko/openmiko>
-* Lançamento de programas sem alterar o firmware: (° 17 ° 17 ° 17: // https://github.com/thatusenameanameexist/jco-pm203-fisheye-iningenic-t20-p2p-camera-packs>
+Fontes do firmware modificado: <https://github.com/dafang-hacks/main>) 17 °) https://github.com/thatusenameanamexist/jco-pm203-fishe-ininic-t20-p2p-camera-hacks>
 

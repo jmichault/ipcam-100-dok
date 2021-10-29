@@ -1,3 +1,22 @@
+---
+lang: pa
+lang-niv: auto
+lang-ref: 051-IMP-programigo_gvidilo
+layout: page
+title: 'ਇਮ ਪ੍ਰੋਗਰਾਮਿੰਗ ਗਾਈਡ'
+---
+
+
+ਅਪਿਸ ਦੇ ਦਸਤਾਵੇਜ਼ ਇੱਥੇ ਵੇਖੇ ਜਾ ਸਕਦੇ ਹਨ:  
+* [ਚੀਨੀ](../../zh/includes.zh/html/)ਵਿੱਚ ਅਸਲ ਰੂਪ](../../zh/includes.zh/html/)ਵਿੱਚ ਅਸਲ ਰੂਪ
+
+
+* [ਅੰਗਰੇਜ਼ੀ ਸੰਸਕਰਣ](../../en/includes.en/html/)
+
+
+* (ਅਨੁਵਾਦ ਕਰੋ](../../fr/includes.fr/html/)
+
+
 
 
 # ਆਈਐਮਪੀ (ਇਨਜੈਨਿਕ ਮੀਡੀਆ ਪਲੇਟਫਾਰਮ) (ਵੇਖੋ ਇੰਪ_system.h)

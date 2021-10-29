@@ -1,3 +1,22 @@
+---
+lang: zh
+lang-niv: auto
+lang-ref: 051-IMP-programigo_gvidilo
+layout: page
+title: IMP编程指南
+---
+
+
+这里可以看到API的文件：（°1°1  
+* [原始版本中文](../../zh/includes.zh/html/)
+
+
+* [英文版](../../en/includes.en/html/)
+
+
+* （°1°1°1°1°1°1°法式版由谷歌](../../fr/includes.fr/html/)翻译
+
+
 
 
 # IMP (Ingenic Media Platform) (参见imp_system.h)

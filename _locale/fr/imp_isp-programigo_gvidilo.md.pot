@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-03-04 16:43+0100\n"
+"POT-Creation-Date: 2021-10-29 23:09+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,46 +16,70 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+#. type: YAML Front Matter: lang
+#: imp_isp-programigo_gvidilo.md:1
+#, no-wrap
+msgid "fr"
+msgstr ""
+
+#. type: YAML Front Matter: lang-niv
+#: imp_isp-programigo_gvidilo.md:1
+#, no-wrap
+msgid "fonto"
+msgstr ""
+
+#. type: YAML Front Matter: lang-ref
+#: imp_isp-programigo_gvidilo.md:1
+#, no-wrap
+msgid "052-ISP-programigo_gvidilo"
+msgstr ""
+
+#. type: YAML Front Matter: layout
+#: imp_isp-programigo_gvidilo.md:1
+#, no-wrap
+msgid "page"
+msgstr ""
+
+#. type: YAML Front Matter: title
+#: imp_isp-programigo_gvidilo.md:1
+#, no-wrap
+msgid "Guide de programmation vidéo"
+msgstr ""
+
 #. type: Title #
-#: ./imp_isp-programigo_gvidilo.md:1
-#, markdown-text, no-wrap
+#: imp_isp-programigo_gvidilo.md:9
+#, no-wrap
 msgid "IMP_ISP (voir imp_isp.h)"
 msgstr ""
 
 #. type: Plain text
-#: ./imp_isp-programigo_gvidilo.md:3
-#, markdown-text, no-wrap
-msgid ""
-"Unité de traitement du signal d'image. Inclut principalement les paramètres "
-"d'effet d'image, le changement de mode et l'enregistrement, l'ajout et la "
-"suppression du capteur.\n"
+#: imp_isp-programigo_gvidilo.md:11
+#, no-wrap
+msgid "Unité de traitement du signal d'image. Inclut principalement les paramètres d'effet d'image, le changement de mode et l'enregistrement, l'ajout et la suppression du capteur.\n"
 msgstr ""
 
 #. type: Plain text
-#: ./imp_isp-programigo_gvidilo.md:5
-#, markdown-text, no-wrap
-msgid ""
-"Le module ISP n'a rien à voir avec le flux de données et n'a pas besoin "
-"d'être lié, il n'agit que sur le paramétrage de l'effet et le contrôle du "
-"capteur.\n"
+#: imp_isp-programigo_gvidilo.md:13
+#, no-wrap
+msgid "Le module ISP n'a rien à voir avec le flux de données et n'a pas besoin d'être lié, il n'agit que sur le paramétrage de l'effet et le contrôle du capteur.\n"
 msgstr ""
 
 #. type: Title ##
-#: ./imp_isp-programigo_gvidilo.md:6
-#, markdown-text, no-wrap
+#: imp_isp-programigo_gvidilo.md:14
+#, no-wrap
 msgid "Activation"
 msgstr ""
 
 #. type: Plain text
-#: ./imp_isp-programigo_gvidilo.md:10
-#, markdown-text, no-wrap
+#: imp_isp-programigo_gvidilo.md:18
+#, no-wrap
 msgid ""
 "Les étapes d'activation du module ISP sont les suivantes:\n"
 "* étape 1 : Créer un module ISP\n"
 msgstr ""
 
 #. type: Fenced code block
-#: ./imp_isp-programigo_gvidilo.md:11
+#: imp_isp-programigo_gvidilo.md:19
 #, no-wrap
 msgid ""
 "int ret = 0;\n"
@@ -68,31 +92,26 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '* '
-#: ./imp_isp-programigo_gvidilo.md:21
-#, markdown-text, no-wrap
-msgid ""
-"étape 2 : Ajouter un capteur, le pilote du capteur a été ajouté au noyau "
-"avant cette opération.\n"
+#: imp_isp-programigo_gvidilo.md:29
+#, no-wrap
+msgid "étape 2 : Ajouter un capteur, le pilote du capteur a été ajouté au noyau avant cette opération.\n"
 msgstr ""
 
 #. type: Fenced code block
-#: ./imp_isp-programigo_gvidilo.md:22
+#: imp_isp-programigo_gvidilo.md:30
 #, no-wrap
 msgid ""
 "  IMPSensorInfo sensor[2];\n"
 "  sensor[0].name = \"xxx\";\n"
-"  sensor[0].cbus_type = SENSOR_CONTROL_INTERFACE_I2C; // OU "
-"SENSOR_CONTROL_INTERFACE_SPI\n"
+"  sensor[0].cbus_type = SENSOR_CONTROL_INTERFACE_I2C; // OU SENSOR_CONTROL_INTERFACE_SPI\n"
 "  sensor[0].i2c = {\n"
-"    .type = \"xxx\", // nom du périphérique I2C, qui doit être cohérent avec "
-"le nom de la structure i2c_device_id dans le pilote du capteur.\n"
+"    .type = \"xxx\", // nom du périphérique I2C, qui doit être cohérent avec le nom de la structure i2c_device_id dans le pilote du capteur.\n"
 "    .addr = xx, // adresse I2C\n"
 "    .i2c_adapter_id = xx, // ID du contrôleur I2C où se trouve le capteur\n"
 "  }\n"
 "  /* OU\n"
 "   * sensor[0].spi = {\n"
-"   *   .modalias = \"xx\", // nom du périphérique SPI, doit être cohérent "
-"avec le nom de la structure spi_device_id dans le pilote du capteur.\n"
+"   *   .modalias = \"xx\", // nom du périphérique SPI, doit être cohérent avec le nom de la structure spi_device_id dans le pilote du capteur.\n"
 "   *     .bus_num = xx, // adresse du bus SPI\n"
 "   *}\n"
 "   */\n"
@@ -105,13 +124,13 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '* '
-#: ./imp_isp-programigo_gvidilo.md:45
-#, markdown-text, no-wrap
+#: imp_isp-programigo_gvidilo.md:53
+#, no-wrap
 msgid "étape 3 : Activer le capteur, il va commencer à produire des images.\n"
 msgstr ""
 
 #. type: Fenced code block
-#: ./imp_isp-programigo_gvidilo.md:46
+#: imp_isp-programigo_gvidilo.md:54
 #, no-wrap
 msgid ""
 "  ret = IMP_ISP_EnableSensor (void);\n"
@@ -122,13 +141,13 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '* '
-#: ./imp_isp-programigo_gvidilo.md:54
-#, markdown-text, no-wrap
+#: imp_isp-programigo_gvidilo.md:62
+#, no-wrap
 msgid "étape 4 : Activer les réglages :\n"
 msgstr ""
 
 #. type: Fenced code block
-#: ./imp_isp-programigo_gvidilo.md:55
+#: imp_isp-programigo_gvidilo.md:63
 #, no-wrap
 msgid ""
 "  ret = IMP_ISP_EnableTuning (); \n"
@@ -139,29 +158,27 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '* '
-#: ./imp_isp-programigo_gvidilo.md:63
-#, markdown-text, no-wrap
-msgid ""
-"étape 5 : appeler l'interface de débogage ISP :  veuillez vous référer à la "
-"documentation de l'interface de débogage ISP.\n"
+#: imp_isp-programigo_gvidilo.md:71
+#, no-wrap
+msgid "étape 5 : appeler l'interface de débogage ISP :  veuillez vous référer à la documentation de l'interface de débogage ISP.\n"
 msgstr ""
 
 #. type: Title ##
-#: ./imp_isp-programigo_gvidilo.md:65
-#, markdown-text, no-wrap
+#: imp_isp-programigo_gvidilo.md:73
+#, no-wrap
 msgid "désactivation du module ISP"
 msgstr ""
 
 #. type: Plain text
-#: ./imp_isp-programigo_gvidilo.md:69
-#, markdown-text, no-wrap
+#: imp_isp-programigo_gvidilo.md:77
+#, no-wrap
 msgid ""
 "Les étapes de désinstallation du module ISP sont les suivantes:\n"
 "* étape 1 : Désactiver le réglage ISP\n"
 msgstr ""
 
 #. type: Fenced code block
-#: ./imp_isp-programigo_gvidilo.md:70
+#: imp_isp-programigo_gvidilo.md:78
 #, no-wrap
 msgid ""
 "int ret = 0;\n"
@@ -176,15 +193,13 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '* '
-#: ./imp_isp-programigo_gvidilo.md:82
-#, markdown-text, no-wrap
-msgid ""
-"étape 2 : fermer les capteurs. (FrameSource doit être fermé avant cette "
-"opération)\n"
+#: imp_isp-programigo_gvidilo.md:90
+#, no-wrap
+msgid "étape 2 : fermer les capteurs. (FrameSource doit être fermé avant cette opération)\n"
 msgstr ""
 
 #. type: Fenced code block
-#: ./imp_isp-programigo_gvidilo.md:83
+#: imp_isp-programigo_gvidilo.md:91
 #, no-wrap
 msgid ""
 "ret = IMP_ISP_DisableSensor (); \n"
@@ -195,15 +210,13 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '* '
-#: ./imp_isp-programigo_gvidilo.md:92
-#, markdown-text, no-wrap
-msgid ""
-"étape 3 : supprimer les capteurs, les capteurs doivent être fermés avant "
-"cette opération.\n"
+#: imp_isp-programigo_gvidilo.md:100
+#, no-wrap
+msgid "étape 3 : supprimer les capteurs, les capteurs doivent être fermés avant cette opération.\n"
 msgstr ""
 
 #. type: Fenced code block
-#: ./imp_isp-programigo_gvidilo.md:93
+#: imp_isp-programigo_gvidilo.md:101
 #, no-wrap
 msgid ""
 "ret = IMP_ISP_DelSensor (& sensor); \n"
@@ -214,15 +227,13 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '* '
-#: ./imp_isp-programigo_gvidilo.md:101
-#, markdown-text, no-wrap
-msgid ""
-"étape 4 : Nettoyer le module ISP, tous les capteurs doivent être supprimés "
-"avant cette opération.\n"
+#: imp_isp-programigo_gvidilo.md:109
+#, no-wrap
+msgid "étape 4 : Nettoyer le module ISP, tous les capteurs doivent être supprimés avant cette opération.\n"
 msgstr ""
 
 #. type: Fenced code block
-#: ./imp_isp-programigo_gvidilo.md:102
+#: imp_isp-programigo_gvidilo.md:110
 #, no-wrap
 msgid ""
 "ret = IMP_ISP_Close ();\n"
@@ -233,14 +244,14 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: ./imp_isp-programigo_gvidilo.md:112
-#, markdown-text, no-wrap
+#: imp_isp-programigo_gvidilo.md:120
+#, no-wrap
 msgid "liste des fonctions"
 msgstr ""
 
 #. type: Plain text
-#: ./imp_isp-programigo_gvidilo.md:186
-#, markdown-text, no-wrap
+#: imp_isp-programigo_gvidilo.md:194
+#, no-wrap
 msgid ""
 "int IMP_ISP_Open(void);\n"
 "int IMP_ISP_Close(void);\n"

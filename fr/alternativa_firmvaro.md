@@ -1,7 +1,7 @@
 ---
 lang: fr
 lang-niv: fonto
-lang-ref: 099-alternativa_firmvaro
+lang-ref: 010-alternativa_firmvaro
 layout: page
 title: 'Le micrologiciel alternatif'
 ---
@@ -20,6 +20,5 @@ title: 'Le micrologiciel alternatif'
   * initialise le répertoire etc si nécessaire
   * redirige _/bin/busybox_ , _/etc_ et _/root_ vers la carte SD.
   * initialise la _CRONTAB_ si nécessaire
-  * démarre le service _crond_, le réseau, le service _ntpd_, le service de site Web
   * démarre les services (dans _config/autostart_)
   * démarre les scripts utilisateur (dans _config/userscripts_)

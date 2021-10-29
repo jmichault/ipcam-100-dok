@@ -1,3 +1,11 @@
+---
+lang: de
+lang-niv: auto
+lang-ref: 052-ISP-programigo_gvidilo
+layout: page
+title: Video-Programmieranleitung.
+---
+
 # IMP_ISP (voir imp_isp.h)
 Bildverarbeitung. Enthält hauptsächlich Einstellungen für Bildeffekte, Moduswechsel und Aufnahme, Hinzufügen und Entfernen des Sensors.
 

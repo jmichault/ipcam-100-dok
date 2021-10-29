@@ -1,3 +1,11 @@
+---
+lang: fr
+lang-niv: fonto
+lang-ref: 052-ISP-programigo_gvidilo
+layout: page
+title: 'Guide de programmation vidéo'
+---
+
 # IMP_ISP (voir imp_isp.h)
 Unité de traitement du signal d'image. Inclut principalement les paramètres d'effet d'image, le changement de mode et l'enregistrement, l'ajout et la suppression du capteur.
 

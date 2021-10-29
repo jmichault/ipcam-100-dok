@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-03-04 16:43+0100\n"
+"POT-Creation-Date: 2021-10-29 23:09+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,47 +17,45 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. type: YAML Front Matter: lang
-#: ./motoro.md:1
+#: motoro.md:1
 #, no-wrap
 msgid "fr"
 msgstr ""
 
 #. type: YAML Front Matter: lang-niv
-#: ./motoro.md:1
+#: motoro.md:1
 #, no-wrap
 msgid "fonto"
 msgstr ""
 
 #. type: YAML Front Matter: lang-ref
-#: ./motoro.md:1
+#: motoro.md:1
 #, no-wrap
-msgid "010-motoro"
+msgid "054-motoro"
 msgstr ""
 
 #. type: YAML Front Matter: layout
-#: ./motoro.md:1
+#: motoro.md:1
 #, no-wrap
 msgid "page"
 msgstr ""
 
 #. type: YAML Front Matter: title
-#: ./motoro.md:1
+#: motoro.md:1
 #, no-wrap
 msgid "Le moteur"
 msgstr ""
 
 #. type: Plain text
-#: ./motoro.md:12
-#, markdown-text, no-wrap
+#: motoro.md:12
+#, no-wrap
 msgid ""
 "driver : /ipc/drv/motor.ko\n"
 "device : /dev/motor\n"
 msgstr ""
 
 #. type: Plain text
-#: ./motoro.md:13
-#, markdown-text, no-wrap
-msgid ""
-"Voir "
-"<https://github.com/jmichault/ipcam-100/tree/master/programada_medio/fontoj/motor/motor.c>\n"
+#: motoro.md:13
+#, no-wrap
+msgid "Voir <https://github.com/jmichault/ipcam-100/tree/master/programada_medio/fontoj/motor/motor.c>\n"
 msgstr ""

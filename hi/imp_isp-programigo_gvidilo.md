@@ -1,3 +1,11 @@
+---
+lang: hi
+lang-niv: auto
+lang-ref: 052-ISP-programigo_gvidilo
+layout: page
+title: 'वीडियो प्रोग्रामिंग गाइड'
+---
+
 # IMP_ISP (voir imp_isp.h)
 इमेज प्रोसेसिंग। मुख्य रूप से छवि प्रभाव, मोड स्विच और रिकॉर्डिंग, इसके अलावा और सेंसर को हटाने की सेटिंग्स शामिल हैं।
 

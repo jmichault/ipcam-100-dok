@@ -1,3 +1,19 @@
+---
+lang: eo
+lang-niv: auto
+lang-ref: 051-IMP-programigo_gvidilo
+layout: page
+title: IMP-Programado-Gvidilo
+---
+
+
+La dokumentado de APIs povas esti vidata ĉi tie:  
+* [originala versio en la ĉina](../../zh/includes.zh/html/)
+
+* [Angla versio](../../en/includes.en/html/)
+
+* (° 1 ° 1 ° franca versio Tradukita per google](../../fr/includes.fr/html/)
+
 
 
 # IMP (Ingenic Media Platform) (vidu imp_system.h)

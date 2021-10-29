@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-03-04 16:45+0100\n"
+"POT-Creation-Date: 2021-10-29 23:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,29 +16,83 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+#. type: YAML Front Matter: lang
+#: imp_system_programigo_gvidilo.md:1
+#, no-wrap
+msgid "eo"
+msgstr ""
+
+#. type: YAML Front Matter: lang-niv
+#: imp_system_programigo_gvidilo.md:1
+#, no-wrap
+msgid "auto"
+msgstr ""
+
+#. type: YAML Front Matter: lang-ref
+#: imp_system_programigo_gvidilo.md:1
+#, no-wrap
+msgid "051-IMP-programigo_gvidilo"
+msgstr ""
+
+#. type: YAML Front Matter: layout
+#: imp_system_programigo_gvidilo.md:1
+#, no-wrap
+msgid "page"
+msgstr ""
+
+#. type: YAML Front Matter: title
+#: imp_system_programigo_gvidilo.md:1
+#, no-wrap
+msgid "IMP-Programado-Gvidilo"
+msgstr ""
+
+#. type: Plain text
+#: imp_system_programigo_gvidilo.md:10
+#, no-wrap
+msgid "La dokumentado de APIs povas esti vidata ĉi tie:  \n"
+msgstr ""
+
+#. type: Bullet: '* '
+#: imp_system_programigo_gvidilo.md:12
+#, no-wrap
+msgid "[originala versio en la ĉina](../../zh/includes.zh/html/)\n"
+msgstr ""
+
+#. type: Bullet: '* '
+#: imp_system_programigo_gvidilo.md:14
+#, no-wrap
+msgid "[Angla versio](../../en/includes.en/html/)\n"
+msgstr ""
+
+#. type: Bullet: '* '
+#: imp_system_programigo_gvidilo.md:16
+#, no-wrap
+msgid "(° 1 ° 1 ° franca versio Tradukita per google](../../fr/includes.fr/html/)\n"
+msgstr ""
+
 #. type: Title #
-#: ./imp_system_programigo_gvidilo.md:3
-#, markdown-text, no-wrap
+#: imp_system_programigo_gvidilo.md:19
+#, no-wrap
 msgid "IMP (Ingenic Media Platform) (vidu imp_system.h)"
 msgstr ""
 
 #. type: Title ##
-#: ./imp_system_programigo_gvidilo.md:5
-#, markdown-text, no-wrap
+#: imp_system_programigo_gvidilo.md:21
+#, no-wrap
 msgid "bazaj konceptoj"
 msgstr ""
 
 #. type: Plain text
-#: ./imp_system_programigo_gvidilo.md:7
-#, markdown-text, no-wrap
+#: imp_system_programigo_gvidilo.md:23
+#, no-wrap
 msgid ""
 "Programado T20 / T21 baziĝas sur jenaj konceptoj:\n"
 "1. Periferia (= Aparato)  \n"
 msgstr ""
 
 #. type: Plain text
-#: ./imp_system_programigo_gvidilo.md:11
-#, markdown-text, no-wrap
+#: imp_system_programigo_gvidilo.md:27
+#, no-wrap
 msgid ""
 "    La ekstercentra kompletigas funkcion. Ekzemploj:\n"
 "     *  Frama fonto: finas la eliron de videodatenoj.\n"
@@ -47,158 +101,121 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: ./imp_system_programigo_gvidilo.md:12
-#, markdown-text, no-wrap
-msgid ""
-"    La grupo estas la plej malgranda datum-eniga unuo. Aparato povas havi "
-"plurajn grupojn kaj ĉiu grupo povas ricevi nur unu datuman enigan "
-"kanalon. La grupo povas havi plurajn rezultojn.  \n"
+#: imp_system_programigo_gvidilo.md:28
+#, no-wrap
+msgid "    La grupo estas la plej malgranda datum-eniga unuo. Aparato povas havi plurajn grupojn kaj ĉiu grupo povas ricevi nur unu datuman enigan kanalon. La grupo povas havi plurajn rezultojn.  \n"
 msgstr ""
 
 #. type: Plain text
-#: ./imp_system_programigo_gvidilo.md:14
-#, markdown-text, no-wrap
+#: imp_system_programigo_gvidilo.md:30
+#, no-wrap
 msgid ""
-"    La grupo ankaŭ estas ujo por specifaj \"funkcioj\". Vidu la klarigon en "
-"la kanala sekcio por pliaj detaloj.\n"
+"    La grupo ankaŭ estas ujo por specifaj \"funkcioj\". Vidu la klarigon en la kanala sekcio por pliaj detaloj.\n"
 "3. Eliro  \n"
 msgstr ""
 
 #. type: Plain text
-#: ./imp_system_programigo_gvidilo.md:16
-#, markdown-text, no-wrap
+#: imp_system_programigo_gvidilo.md:32
+#, no-wrap
 msgid ""
-"    La eligo estas la plej malgranda unuo de datuma eligo por grupo. Grupo "
-"povas havi plurajn elirojn kaj ĉiu eligo povas produkti nur unu datuman "
-"kanalon.\n"
+"    La eligo estas la plej malgranda unuo de datuma eligo por grupo. Grupo povas havi plurajn elirojn kaj ĉiu eligo povas produkti nur unu datuman kanalon.\n"
 "4. Ĉelo  \n"
 msgstr ""
 
 #. type: Plain text
-#: ./imp_system_programigo_gvidilo.md:20
-#, markdown-text, no-wrap
+#: imp_system_programigo_gvidilo.md:36
+#, no-wrap
 msgid ""
-"    La ĉelo rilatas al kolekto enhavanta informojn pri la aparato, la grupo "
-"kaj la eligo. Ĝi estas prezentita en la datuma strukturo de IMPCell.\n"
-"La ĉelo estas ĉefe uzata por Bind (@ref bind). Laŭ la difino de Aparato, "
-"Grupo kaj Eligo, Eligo estas la nodo por datuma eligo kaj Grupo estas la "
-"nodo por datuma enigo.\n"
-"En Bind, la ĉela indekso de la datuma eliga nodo estas ĉe la Eliga eligo, "
-"kaj la ĉela indekso de la datuma eniga nodo estas ĉe la eniga grupo (de tiel "
-"ke la Ĉelo, Eliga datuma eniro estas sensenca valoro).\n"
+"    La ĉelo rilatas al kolekto enhavanta informojn pri la aparato, la grupo kaj la eligo. Ĝi estas prezentita en la datuma strukturo de IMPCell.\n"
+"La ĉelo estas ĉefe uzata por Bind (@ref bind). Laŭ la difino de Aparato, Grupo kaj Eligo, Eligo estas la nodo por datuma eligo kaj Grupo estas la nodo por datuma enigo.\n"
+"En Bind, la ĉela indekso de la datuma eliga nodo estas ĉe la Eliga eligo, kaj la ĉela indekso de la datuma eniga nodo estas ĉe la eniga grupo (de tiel ke la Ĉelo, Eliga datuma eniro estas sensenca valoro).\n"
 "5. Kanalo  \n"
 msgstr ""
 
 #. type: Plain text
-#: ./imp_system_programigo_gvidilo.md:21
-#, markdown-text, no-wrap
-msgid ""
-"    La kanalo ĝenerale rilatas al unuo kun ununura funkcio. La kanalo "
-"ricevas specifan funkcion kiam ĝi estas kreita (instantiation).  \n"
+#: imp_system_programigo_gvidilo.md:37
+#, no-wrap
+msgid "    La kanalo ĝenerale rilatas al unuo kun ununura funkcio. La kanalo ricevas specifan funkcion kiam ĝi estas kreita (instantiation).  \n"
 msgstr ""
 
 #. type: Plain text
-#: ./imp_system_programigo_gvidilo.md:22
-#, markdown-text, no-wrap
+#: imp_system_programigo_gvidilo.md:38
+#, no-wrap
 msgid "    Ekzemple:  \n"
 msgstr ""
 
 #. type: Bullet: '     -  '
-#: ./imp_system_programigo_gvidilo.md:24
-#, markdown-text, no-wrap
-msgid ""
-"Por la kodilo, unu kanalo kompletigas la kodon H264 aŭ kodan funkcion "
-"JPEG. La specifa kodiga funkcio (tipo, parametro) estas specifita kiam oni "
-"kreas la kanalon\n"
+#: imp_system_programigo_gvidilo.md:40
+#, no-wrap
+msgid "Por la kodilo, unu kanalo kompletigas la kodon H264 aŭ kodan funkcion JPEG. La specifa kodiga funkcio (tipo, parametro) estas specifita kiam oni kreas la kanalon\n"
 msgstr ""
 
 #. type: Bullet: '     -  '
-#: ./imp_system_programigo_gvidilo.md:26
-#, markdown-text, no-wrap
-msgid ""
-"Por IVS, kanalo kompletigas la funkcion de specifa algoritmo kaj specifaj "
-"algoritmaj tipparametroj estas specifitaj dum kreado de la kanalo\n"
+#: imp_system_programigo_gvidilo.md:42
+#, no-wrap
+msgid "Por IVS, kanalo kompletigas la funkcion de specifa algoritmo kaj specifaj algoritmaj tipparametroj estas specifitaj dum kreado de la kanalo\n"
 msgstr ""
 
 #. type: Bullet: '     -  '
-#: ./imp_system_programigo_gvidilo.md:28
-#, markdown-text, no-wrap
-msgid ""
-"Por OSD, ekzistas regiono simila al Kanalo, regiono estas specifa "
-"supermetita areo, kiu povas esti PIC (bildo), KOVRILO (fermado), ktp.\n"
+#: imp_system_programigo_gvidilo.md:44
+#, no-wrap
+msgid "Por OSD, ekzistas regiono simila al Kanalo, regiono estas specifa supermetita areo, kiu povas esti PIC (bildo), KOVRILO (fermado), ktp.\n"
 msgstr ""
 
 #. type: Bullet: '     -  '
-#: ./imp_system_programigo_gvidilo.md:30
-#, markdown-text, no-wrap
-msgid ""
-"Por FrameSource, kanalo produktas originalan bildon kaj la "
-"FrameSource-kanalo fakte estas grupo\n"
+#: imp_system_programigo_gvidilo.md:46
+#, no-wrap
+msgid "Por FrameSource, kanalo produktas originalan bildon kaj la FrameSource-kanalo fakte estas grupo\n"
 msgstr ""
 
 #. type: Plain text
-#: ./imp_system_programigo_gvidilo.md:33
-#, markdown-text, no-wrap
-msgid ""
-"     La kanalo, kiel funkcia unuo, devas ĝenerale esti registrita en la "
-"grupo (krom FrameSource) por ricevi datumojn. Post kiam la kanalo estas "
-"registrita en la grupo, ĝi ricevos la datumojn enigitajn de la grupo.\n"
+#: imp_system_programigo_gvidilo.md:49
+#, no-wrap
+msgid "     La kanalo, kiel funkcia unuo, devas ĝenerale esti registrita en la grupo (krom FrameSource) por ricevi datumojn. Post kiam la kanalo estas registrita en la grupo, ĝi ricevos la datumojn enigitajn de la grupo.\n"
 msgstr ""
 
 #. type: Plain text
-#: ./imp_system_programigo_gvidilo.md:35
-#, markdown-text, no-wrap
-msgid ""
-"    La nombro de kanaloj, kiuj povas esti registritaj de la grupo de "
-"diversaj aparatoj, estas ankaŭ malsama.\n"
+#: imp_system_programigo_gvidilo.md:51
+#, no-wrap
+msgid "    La nombro de kanaloj, kiuj povas esti registritaj de la grupo de diversaj aparatoj, estas ankaŭ malsama.\n"
 msgstr ""
 
 #. type: Title ##
-#: ./imp_system_programigo_gvidilo.md:36
-#, markdown-text, no-wrap
+#: imp_system_programigo_gvidilo.md:52
+#, no-wrap
 msgid "Moduloj ligantaj (Bind)"
 msgstr ""
 
 #. type: Plain text
-#: ./imp_system_programigo_gvidilo.md:38
-#, markdown-text, no-wrap
-msgid ""
-"Post kiam du grupoj estas konektitaj de Bind, la datumoj de la fonta grupo "
-"aŭtomate estos senditaj al la celloka grupo.  \n"
+#: imp_system_programigo_gvidilo.md:54
+#, no-wrap
+msgid "Post kiam du grupoj estas konektitaj de Bind, la datumoj de la fonta grupo aŭtomate estos senditaj al la celloka grupo.  \n"
 msgstr ""
 
 #. type: Plain text
-#: ./imp_system_programigo_gvidilo.md:39
-#, markdown-text, no-wrap
-msgid ""
-"Ĉar la grupo estas la plej malgranda eniga unuo de datumoj kaj la eligo "
-"estas la plej malgranda unuo de datuma eligo, la aparatoID, groupID kaj "
-"outputID de srcCell en ambaŭ parametroj de IMP_System_Bind (IMPCell * "
-"srcCell, IMPCell * dstCell) validas.  \n"
+#: imp_system_programigo_gvidilo.md:55
+#, no-wrap
+msgid "Ĉar la grupo estas la plej malgranda eniga unuo de datumoj kaj la eligo estas la plej malgranda unuo de datuma eligo, la aparatoID, groupID kaj outputID de srcCell en ambaŭ parametroj de IMP_System_Bind (IMPCell * srcCell, IMPCell * dstCell) validas.  \n"
 msgstr ""
 
 #. type: Plain text
-#: ./imp_system_programigo_gvidilo.md:42
-#, markdown-text, no-wrap
-msgid ""
-"Dum dstCell validas nur por deviceID kaj groupID, outputID ne havas sencon "
-"kiel datuma eniro.\n"
+#: imp_system_programigo_gvidilo.md:58
+#, no-wrap
+msgid "Dum dstCell validas nur por deviceID kaj groupID, outputID ne havas sencon kiel datuma eniro.\n"
 msgstr ""
 
 #. type: Plain text
-#: ./imp_system_programigo_gvidilo.md:44
-#, markdown-text, no-wrap
+#: imp_system_programigo_gvidilo.md:60
+#, no-wrap
 msgid "Ekzemplo 1: \n"
 msgstr ""
 
 #. type: Fenced code block
-#: ./imp_system_programigo_gvidilo.md:44
+#: imp_system_programigo_gvidilo.md:60
 #, no-wrap
 msgid ""
-"IMPCell fs_chn0 = {DEV_ID_FS, 0, 0};    // FrameSource deviceID: DEV_ID_FS "
-"groupID: 0 outputID: 0\n"
-"IMPCell enc_grp0 = {DEV_ID_ENC, 0, 0}; // ENC deviceID: DEV_ID_ENC groupID : "
-"0 outputID: 0, où le troisième paramètre de enc_grp0 n'a pas de sens. \n"
+"IMPCell fs_chn0 = {DEV_ID_FS, 0, 0};    // FrameSource deviceID: DEV_ID_FS groupID: 0 outputID: 0\n"
+"IMPCell enc_grp0 = {DEV_ID_ENC, 0, 0}; // ENC deviceID: DEV_ID_ENC groupID : 0 outputID: 0, où le troisième paramètre de enc_grp0 n'a pas de sens. \n"
 "int ret = IMP_System_Bind (& fs_chn0, & enc_grp0);\n"
 "if(ret <0>)\n"
 "  printf (\"Bind FrameSource Channel0 and Encoder Group0 failed \\ n\");\n"
@@ -206,27 +223,25 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '* '
-#: ./imp_system_programigo_gvidilo.md:54
-#, markdown-text, no-wrap
+#: imp_system_programigo_gvidilo.md:70
+#, no-wrap
 msgid "realiĝas grupo, kiu generas ligon de FrameSource al Encoder.\n"
 msgstr ""
 
 #. type: Bullet: '* '
-#: ./imp_system_programigo_gvidilo.md:56
-#, markdown-text, no-wrap
-msgid ""
-"Du kanaloj estas registritaj en Encoder Group, do Encoder Group havas du "
-"elirojn H264 kaj JPEG.\n"
+#: imp_system_programigo_gvidilo.md:72
+#, no-wrap
+msgid "Du kanaloj estas registritaj en Encoder Group, do Encoder Group havas du elirojn H264 kaj JPEG.\n"
 msgstr ""
 
 #. type: Plain text
-#: ./imp_system_programigo_gvidilo.md:59
-#, markdown-text, no-wrap
+#: imp_system_programigo_gvidilo.md:75
+#, no-wrap
 msgid "Ekzemplo 2:\n"
 msgstr ""
 
 #. type: Fenced code block
-#: ./imp_system_programigo_gvidilo.md:59
+#: imp_system_programigo_gvidilo.md:75
 #, no-wrap
 msgid ""
 "// flux de données principal\n"
@@ -261,226 +276,201 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: ./imp_system_programigo_gvidilo.md:95
-#, markdown-text, no-wrap
+#: imp_system_programigo_gvidilo.md:111
+#, no-wrap
 msgid ""
 "Ĉi tio estas tipa programo Bind: du-kanala koda fluo.\n"
-" * FrameSource havas du elirojn, nome la ĉefa rivereto Channel0 (1280x720) "
-"kaj la sklava rivereto Channel1 (640x360).\n"
-"   *   Ĉefa rivereto: Channel0 Bind OSD Group.0 de FrameSource, OSD Group.0 "
-"Bind Encoder Group.0. Inter ili: \n"
-"       * OSD-Grupo.0 registris du regionojn, kiuj estas uzataj por montri "
-"informojn pri tempostampo kaj signoŝnuro respektive\n"
-"       * Kodigila Grupo .0 registris du kanalojn. , kiuj estas kodado H264 "
-"kaj kodado JPEG respektive. Inter ili, se la bilda grandeco de la koda "
-"kanalo JPEG ne egalas al la eniga parametro (Kanalo0 de FrameSource), tiam "
-"ĝi estos skalita (programaro ĉe T10) ) atingi la celon kapti ĉe iu ajn "
-"rezolucio.\n"
+" * FrameSource havas du elirojn, nome la ĉefa rivereto Channel0 (1280x720) kaj la sklava rivereto Channel1 (640x360).\n"
+"   *   Ĉefa rivereto: Channel0 Bind OSD Group.0 de FrameSource, OSD Group.0 Bind Encoder Group.0. Inter ili: \n"
+"       * OSD-Grupo.0 registris du regionojn, kiuj estas uzataj por montri informojn pri tempostampo kaj signoŝnuro respektive\n"
+"       * Kodigila Grupo .0 registris du kanalojn. , kiuj estas kodado H264 kaj kodado JPEG respektive. Inter ili, se la bilda grandeco de la koda kanalo JPEG ne egalas al la eniga parametro (Kanalo0 de FrameSource), tiam ĝi estos skalita (programaro ĉe T10) ) atingi la celon kapti ĉe iu ajn rezolucio.\n"
 msgstr ""
 
 #. type: Plain text
-#: ./imp_system_programigo_gvidilo.md:99
-#, markdown-text, no-wrap
+#: imp_system_programigo_gvidilo.md:115
+#, no-wrap
 msgid ""
 "Notoj:\n"
-"* oni rekomendas, ke ĉiuj ligaj operacioj estu faritaj dum "
-"sistemo-inicialigo.\n"
-"* Operacioj Bind kaj UnBind ne povas esti nomataj dinamike post kiam "
-"_FrameSource_ estas aktivigita. UnBind fariĝas nur post malaktivigo "
-"_FrameSource_.\n"
+"* oni rekomendas, ke ĉiuj ligaj operacioj estu faritaj dum sistemo-inicialigo.\n"
+"* Operacioj Bind kaj UnBind ne povas esti nomataj dinamike post kiam _FrameSource_ estas aktivigita. UnBind fariĝas nur post malaktivigo _FrameSource_.\n"
 msgstr ""
 
 #. type: Title ##
-#: ./imp_system_programigo_gvidilo.md:100
-#, markdown-text, no-wrap
+#: imp_system_programigo_gvidilo.md:116
+#, no-wrap
 msgid "Funkcioj"
 msgstr ""
 
 #. type: Title ###
-#: ./imp_system_programigo_gvidilo.md:102
-#, markdown-text, no-wrap
+#: imp_system_programigo_gvidilo.md:118
+#, no-wrap
 msgid "int IMP\\_Sistemo\\_Init (malplena )"
 msgstr ""
 
 #. type: Plain text
-#: ./imp_system_programigo_gvidilo.md:107
-#, markdown-text, no-wrap
+#: imp_system_programigo_gvidilo.md:123
+#, no-wrap
 msgid ""
 "Inicialigo de la IMP-sistemo.\n"
 "redonas 0 se ĝi sukcesas.\n"
-"Post ĉi tiu API-alvoko, la baza datuma strukturo estos pravalorizita, sed la "
-"aparataro ne estos pravalorizita.\n"
-"atento: Ĉi tiu funkcio devas esti alvokita por komencigo antaŭ iu ajn alia "
-"operacio.\n"
+"Post ĉi tiu API-alvoko, la baza datuma strukturo estos pravalorizita, sed la aparataro ne estos pravalorizita.\n"
+"atento: Ĉi tiu funkcio devas esti alvokita por komencigo antaŭ iu ajn alia operacio.\n"
 msgstr ""
 
 #. type: Title ###
-#: ./imp_system_programigo_gvidilo.md:107
-#, markdown-text, no-wrap
+#: imp_system_programigo_gvidilo.md:123
+#, no-wrap
 msgid "int IMP_System_Elirejo (malplena)"
 msgstr ""
 
 #. type: Plain text
-#: ./imp_system_programigo_gvidilo.md:111
-#, markdown-text, no-wrap
+#: imp_system_programigo_gvidilo.md:127
+#, no-wrap
 msgid ""
-"Post vokado de ĉi tiu funkcio, ĉiu memoro kaj IMP _handles_ estos "
-"liberigitaj, kaj la aparataro estos fermita. \n"
-"Noto: Post voki ĉi tiun API, se vi volas uzi IMP denove, vi devas reagordi "
-"la IMP-sistemon.\n"
+"Post vokado de ĉi tiu funkcio, ĉiu memoro kaj IMP _handles_ estos liberigitaj, kaj la aparataro estos fermita. \n"
+"Noto: Post voki ĉi tiun API, se vi volas uzi IMP denove, vi devas reagordi la IMP-sistemon.\n"
 msgstr ""
 
 #. type: Title ###
-#: ./imp_system_programigo_gvidilo.md:112
-#, markdown-text, no-wrap
+#: imp_system_programigo_gvidilo.md:128
+#, no-wrap
 msgid "int64_t IMP_Sistemo_GetTimeStamp (void)"
 msgstr ""
 
 #. type: Plain text
-#: ./imp_system_programigo_gvidilo.md:114
-#, markdown-text, no-wrap
+#: imp_system_programigo_gvidilo.md:130
+#, no-wrap
 msgid "Akiru la IMP-sisteman tempostampon en mikrosekundoj.  \n"
 msgstr ""
 
 #. type: Plain text
-#: ./imp_system_programigo_gvidilo.md:116
-#, markdown-text, no-wrap
+#: imp_system_programigo_gvidilo.md:132
+#, no-wrap
 msgid "Reveno: tempo en mikrosekundoj.\n"
 msgstr ""
 
 #. type: Title ###
-#: ./imp_system_programigo_gvidilo.md:117
-#, markdown-text, no-wrap
+#: imp_system_programigo_gvidilo.md:133
+#, no-wrap
 msgid "int IMP_System_RebaseTimeStamp (bazoj int64_t)"
 msgstr ""
 
 #. type: Plain text
-#: ./imp_system_programigo_gvidilo.md:118
-#, markdown-text, no-wrap
+#: imp_system_programigo_gvidilo.md:134
+#, no-wrap
 msgid "Agordu la tempan markon de la sistemo IMP en mikrosekundoj.  \n"
 msgstr ""
 
 #. type: Plain text
-#: ./imp_system_programigo_gvidilo.md:120
-#, markdown-text, no-wrap
+#: imp_system_programigo_gvidilo.md:136
+#, no-wrap
 msgid "Reveno: 0 se sukcesas.\n"
 msgstr ""
 
 #. type: Title ###
-#: ./imp_system_programigo_gvidilo.md:121
-#, markdown-text, no-wrap
+#: imp_system_programigo_gvidilo.md:137
+#, no-wrap
 msgid "uint32_t IMP_Sistemo_ReadReg32 (uint32_t u32Addr)"
 msgstr ""
 
 #. type: Plain text
-#: ./imp_system_programigo_gvidilo.md:123
-#, markdown-text, no-wrap
+#: imp_system_programigo_gvidilo.md:139
+#, no-wrap
 msgid "Legu la valoron de 32-bita registro.  \n"
 msgstr ""
 
 #. type: Title ###
-#: ./imp_system_programigo_gvidilo.md:125
-#, markdown-text, no-wrap
+#: imp_system_programigo_gvidilo.md:141
+#, no-wrap
 msgid "malplena IMP_System_WriteReg32 (uint32_t regAddr, valeur uint32_t)"
 msgstr ""
 
 #. type: Plain text
-#: ./imp_system_programigo_gvidilo.md:127
-#, markdown-text, no-wrap
+#: imp_system_programigo_gvidilo.md:143
+#, no-wrap
 msgid "Skribu la valoron al la 32-bita registro.\n"
 msgstr ""
 
 #. type: Plain text
-#: ./imp_system_programigo_gvidilo.md:129
-#, markdown-text, no-wrap
-msgid ""
-"Noto: Bonvolu telefoni al ĉi tiu API zorge kaj kontroli la signifon de la "
-"registro, alie ĝi povas kaŭzi sistemajn erarojn.\n"
+#: imp_system_programigo_gvidilo.md:145
+#, no-wrap
+msgid "Noto: Bonvolu telefoni al ĉi tiu API zorge kaj kontroli la signifon de la registro, alie ĝi povas kaŭzi sistemajn erarojn.\n"
 msgstr ""
 
 #. type: Title ###
-#: ./imp_system_programigo_gvidilo.md:130
-#, markdown-text, no-wrap
+#: imp_system_programigo_gvidilo.md:146
+#, no-wrap
 msgid "int IMP_System_GetVersion (IMPVersion * pstVersion) "
 msgstr ""
 
 #. type: Plain text
-#: ./imp_system_programigo_gvidilo.md:133
-#, markdown-text, no-wrap
+#: imp_system_programigo_gvidilo.md:149
+#, no-wrap
 msgid "Akiru la versian numeron de la IMP-sistemo.\n"
 msgstr ""
 
 #. type: Title ###
-#: ./imp_system_programigo_gvidilo.md:134
-#, markdown-text, no-wrap
+#: imp_system_programigo_gvidilo.md:150
+#, no-wrap
 msgid "const char * IMP_System_GetCPUInfo (malplena)"
 msgstr ""
 
 #. type: Plain text
-#: ./imp_system_programigo_gvidilo.md:135
-#, markdown-text, no-wrap
+#: imp_system_programigo_gvidilo.md:151
+#, no-wrap
 msgid "Akiru informojn pri la CPU-modelo.  \n"
 msgstr ""
 
 #. type: Plain text
-#: ./imp_system_programigo_gvidilo.md:137
-#, markdown-text, no-wrap
-msgid ""
-"Noto: La revenvaloro estas ĉeno de CPU-modelo, ekzemple, por T10 ekzistas "
-"\"T10\"kaj \"T10-Lite\".\n"
+#: imp_system_programigo_gvidilo.md:153
+#, no-wrap
+msgid "Noto: La revenvaloro estas ĉeno de CPU-modelo, ekzemple, por T10 ekzistas \"T10\"kaj \"T10-Lite\".\n"
 msgstr ""
 
 #. type: Title ###
-#: ./imp_system_programigo_gvidilo.md:138
-#, markdown-text, no-wrap
+#: imp_system_programigo_gvidilo.md:154
+#, no-wrap
 msgid "int IMP_System_Bind (IMPCell * srcCell, IMPCell * dstCell)"
 msgstr ""
 
 #. type: Plain text
-#: ./imp_system_programigo_gvidilo.md:141
-#, markdown-text, no-wrap
+#: imp_system_programigo_gvidilo.md:157
+#, no-wrap
 msgid "Ligo inter fonta ĉelo kaj celloko.\n"
 msgstr ""
 
 #. type: Plain text
-#: ./imp_system_programigo_gvidilo.md:143
-#, markdown-text, no-wrap
-msgid ""
-"Noto 1: Laŭ la konceptoj de Aparato, Grupo kaj Eligo, ĉiu aparato povas havi "
-"plurajn grupojn, kaj ĉiu grupo povas havi plurajn elirojn, Grupo estas uzata "
-"kiel Aparata eniga interfaco, kaj Eliro estas uzata kiel Aparata produkta "
-"interfaco. Tial la ligo fakte konektas certan eliron de la eliga aparato al "
-"certa Grupo de la eniga aparato.\n"
+#: imp_system_programigo_gvidilo.md:159
+#, no-wrap
+msgid "Noto 1: Laŭ la konceptoj de Aparato, Grupo kaj Eligo, ĉiu aparato povas havi plurajn grupojn, kaj ĉiu grupo povas havi plurajn elirojn, Grupo estas uzata kiel Aparata eniga interfaco, kaj Eliro estas uzata kiel Aparata produkta interfaco. Tial la ligo fakte konektas certan eliron de la eliga aparato al certa Grupo de la eniga aparato.\n"
 msgstr ""
 
 #. type: Plain text
-#: ./imp_system_programigo_gvidilo.md:145
-#, markdown-text, no-wrap
-msgid ""
-"Noto 2: Post sukcesa ligilo, la datumoj generitaj de srcCell (Eliro) estos "
-"aŭtomate transdonitaj al la celloka Ĉela (Grupo).\n"
+#: imp_system_programigo_gvidilo.md:161
+#, no-wrap
+msgid "Noto 2: Post sukcesa ligilo, la datumoj generitaj de srcCell (Eliro) estos aŭtomate transdonitaj al la celloka Ĉela (Grupo).\n"
 msgstr ""
 
 #. type: Title ###
-#: ./imp_system_programigo_gvidilo.md:146
-#, markdown-text, no-wrap
+#: imp_system_programigo_gvidilo.md:162
+#, no-wrap
 msgid "int IMP_System_UnBind (IMPCell * srcCell, IMPCell * dstCell)"
 msgstr ""
 
 #. type: Plain text
-#: ./imp_system_programigo_gvidilo.md:148
-#, markdown-text, no-wrap
+#: imp_system_programigo_gvidilo.md:164
+#, no-wrap
 msgid "Malgrupigu la fontajn kaj cellokojn. \n"
 msgstr ""
 
 #. type: Title ###
-#: ./imp_system_programigo_gvidilo.md:149
-#, markdown-text, no-wrap
+#: imp_system_programigo_gvidilo.md:165
+#, no-wrap
 msgid "int IMP_System_GetBindbyDest (IMPCell * dstCell, IMPCell * srcCell)"
 msgstr ""
 
 #. type: Plain text
-#: ./imp_system_programigo_gvidilo.md:152
-#, markdown-text, no-wrap
+#: imp_system_programigo_gvidilo.md:168
+#, no-wrap
 msgid "Rekuperas informojn de la fonta ĉelo rilate al la celloko.\n"
 msgstr ""

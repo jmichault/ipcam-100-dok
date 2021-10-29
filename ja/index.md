@@ -14,42 +14,31 @@ title: プレゼンテーション
 
 インターネットインターフェースに表示される情報：
 ```
-DeviceName: _INGENIC-V01_
-DeviceModel: _IPCAM-100_
-DeviceSN: _12345678901_
-KernelVersion: _Thu Jul 9 15:46:54 CST 2015_
-ServerVersion: _WS3.53.1243-20190717-DANALE-GEN_
-WebVersion: _V2.3.4-20190709_
+DeviceName: INGENIC-V01
+DeviceModel: IPCAM-100
+DeviceSN: 12345678901
+KernelVersion: Thu Jul 9 15:46:54 CST 2015
+ServerVersion: WS3.53.1243-20190717-DANALE-GEN
+WebVersion: V2.3.4-20190709
 ```
 
 プロセッサー： _ingenic T21_
 ビデオセンサー： _GC2053_
 
-APIドキュメントはここで見ることができます：  
-* [中国語のオリジナルバージョン](../zh/includes.zh/html/)
-
-
-* [英語版](../en/includes.en/html/)
-
-
-* [グーグル翻訳のフランス語版](../fr/includes.fr/html/)
-
-
-
 # 代替ファームウェア
 
 ## 代替ファームウェアで機能するもの：
 
-* LANおよびWLAN
+* _LAN_ と _WLAN_
 
 
-* DRTTSPデュアルフローサーバー：デフォルトで1920 x 1080 H 264および640 x 360 MJPEG。
+* サーバー (°1°二重流： _1920x1080 H264_ 、 _640x360 MJPEG_ デフォルトで。  
 
 
 * 視覚的パラメータ
 
 
-* HTTPサーバー
+* サーバー _HTTP_
 
 
 * エンジン制御
@@ -58,31 +47,37 @@ APIドキュメントはここで見ることができます：
 * エンジンキャリブレーション
 
 
-* PTZ設定
+* パラメータ _PTZ_
 
 
-* NTPクライアント
+* クライアント _NTP_（°3°3
 
 
-* httpアクセスのパスワード変更
+* パスワード管理 _http_、 _rtsp_ およびシステム。  
 
 
-* 青色LEDおよびIR制御
+* 白色LED制御とIR
 
 
-* FTPサーバー
+* 白色LED制御とIR _ftp_
 
 
-* Telnetサーバー
+* 白色LED制御とIR _telnet_
 
 
-* SSHサーバーとクライアント
+* サーバーとクライアント _ssh_（°3°3
 
 
 * 動き検出
 
 
 * メール送信
+
+
+*  _«telegram»_を送る
+
+
+* 自動ナイトレジーム
 
 
 
@@ -94,19 +89,16 @@ APIドキュメントはここで見ることができます：
 * _OSD_
 
 
-* 管理管理とRTSPシステム
-
-
 * ファームウェアアップデート
-
-
-* 自動夜間検出
 
 
 * 動き検出_ir-cut_
 
 
 * メールの送信_mqtt_
+
+
+* 画像とビデオをクラウドで送信する（°1°1
 
 
 * など...
@@ -121,7 +113,7 @@ APIドキュメントはここで見ることができます：
 * おそらくネットワーク ( _www/ipcam/config.dist/reto.conf_ )を設定します
 
 
-* microSDカードを挿入します。
+* カメラにカード _microSD_ を入力してください。  
 
 
 * カメラをローカルネットワークに接続し、カメラの電源を入れます。
@@ -139,21 +131,24 @@ APIドキュメントはここで見ることができます：
 * ファル `cd /opt/media/mmcblk0p1;./install.sh`
 
 
-* URL _https://IP_ (ユーザー _admin_、パスワード _ismart21_)に接続できます。
+* カメラが再開されます：（°1°1
 
 
-* SSH (ユーザー _admin_、パスワード _ismart12_)で接続できます。
+    * URL _https://IP_ (ユーザー _admin_、パスワード _ismart21_)に接続できます。
 
 
-* プライマリビデオ電流は _rtsp://admin:ismart21@IP/stream1_でアクセス可能です。 （°3°3
+    * SSH (ユーザー _admin_、パスワード _ismart12_)で接続できます。
 
 
-* 二次ビデオ電流は _rtsp://admin:ismart21@IP/stream2_でアクセス可能です。 （°3°3
+    * プライマリビデオ電流は _rtsp://admin:ismart21@IP/stream1_でアクセス可能です。 （°3°3
+
+
+    * 二次ビデオ電流は _rtsp://admin:ismart21@IP/stream2_でアクセス可能です。 （°3°3
 
 
 （°1°1°1 WiFi APモードがデフォルトで活性化されます。
-** SSID：IPCAM100-XXXXXX
-** °5°）WPA2キー：ISMART21
+    ** SSID：IPCAM100-XXXXXX
+    ** °5°）WPA2キー：ISMART21
 カメラのIPアドレス：172.25.0.1
 
 ## 代替ファームウェアのアンインストール：
@@ -175,7 +170,7 @@ APIドキュメントはここで見ることができます：
 # 興味深い文書
 
 プロセッサ _ingenic T20_ を搭載したカメラ用の多くの作業が行われました。
-* 修正ファームウェア： <https://github.com/ilílístotlyar/xiaomi- Dafang -Haks>>
-修正ファームウェアのソース： <https://github.com/dafang-hacks/main>11°12°）その他のファームウェア <https://github.com/openmiko/openmiko>
-* * ファームウェアを変更せずにプログラムを起動します：（°17° 17°17：// https://github.com/thatusenameAnameexist/ju-pm203-fisheye-iningEnic-t20-p2p-Camera-Hacks>
+* 修正ファームウェア： <https://github.com/ilílístotlyar/xiaomi- DAFANG -HAK>>
+修正ファームウェアのソース： <https://github.com/dafang-hacks/main>
+）17°) HTTPS：//Github.com/ThatusEnameAnamexist/jco-pm203-fisheye-ininic-t20-p2p-カメラ - ハック>
 

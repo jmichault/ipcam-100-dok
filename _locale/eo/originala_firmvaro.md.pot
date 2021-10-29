@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-10-29 14:46+0200\n"
+"POT-Creation-Date: 2021-10-29 23:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,7 +31,7 @@ msgstr ""
 #. type: YAML Front Matter: lang-ref
 #: originala_firmvaro.md:1
 #, no-wrap
-msgid "001-originala_firmvaro"
+msgid "071-originala_firmvaro"
 msgstr ""
 
 #. type: YAML Front Matter: layout

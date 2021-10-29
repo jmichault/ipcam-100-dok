@@ -1,7 +1,7 @@
 ---
 lang: en
 lang-niv: auto
-lang-ref: 020-elpurigi
+lang-ref: 060-elpurigi
 layout: page
 title: Purify
 ---

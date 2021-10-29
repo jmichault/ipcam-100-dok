@@ -1,3 +1,22 @@
+---
+lang: ru
+lang-niv: auto
+lang-ref: 051-IMP-programigo_gvidilo
+layout: page
+title: 'Руководство по программированию IMP'
+---
+
+
+Документация API можно увидеть здесь: (° 1 ° 1  
+* [Оригинальная версия на китайском](../../zh/includes.zh/html/)
+
+
+* [Русская версия](../../en/includes.en/html/)
+
+
+* (° 1 ° 1 ° 1 ° 1 ° 1 ° Французская версия переведена Google](../../fr/includes.fr/html/)
+
+
 
 
 # IMP (Ingenic Media Platform) (см. Имп_system.h)

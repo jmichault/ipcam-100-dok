@@ -1,7 +1,7 @@
 ---
 lang: eo
 lang-niv: auto
-lang-ref: 099-alternativa_firmvaro
+lang-ref: 010-alternativa_firmvaro
 layout: page
 title: 'Alternativa firmvaro'
 ---
@@ -28,8 +28,6 @@ title: 'Alternativa firmvaro'
   * alidirektiloj _/bin/busybox_ , _/etc_ kaj _/root_ al la SDa karto.
 
   * pravalorizi la _CRONTAB_ se necese
-
-  * startservo _crond_, reto, servo _ntpd_, reteja servo
 
   * komenci servojn (en _config/autostart_)
 

@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-10-29 14:46+0200\n"
+"POT-Creation-Date: 2021-10-29 23:28+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -80,19 +80,19 @@ msgstr "インターネットインターフェースに表示される情報：
 #: index.md:16
 #, no-wrap
 msgid ""
-"DeviceName: _INGENIC-V01_\n"
-"DeviceModel: _IPCAM-100_\n"
-"DeviceSN: _12345678901_\n"
-"KernelVersion: _Thu Jul 9 15:46:54 CST 2015_\n"
-"ServerVersion: _WS3.53.1243-20190717-DANALE-GEN_\n"
-"WebVersion: _V2.3.4-20190709_\n"
+"DeviceName: INGENIC-V01\n"
+"DeviceModel: IPCAM-100\n"
+"DeviceSN: 12345678901\n"
+"KernelVersion: Thu Jul 9 15:46:54 CST 2015\n"
+"ServerVersion: WS3.53.1243-20190717-DANALE-GEN\n"
+"WebVersion: V2.3.4-20190709\n"
 msgstr ""
-"DeviceName: _INGENIC-V01_\n"
-"DeviceModel: _IPCAM-100_\n"
-"DeviceSN: _12345678901_\n"
-"KernelVersion: _Thu Jul 9 15:46:54 CST 2015_\n"
-"ServerVersion: _WS3.53.1243-20190717-DANALE-GEN_\n"
-"WebVersion: _V2.3.4-20190709_\n"
+"DeviceName: INGENIC-V01\n"
+"DeviceModel: IPCAM-100\n"
+"DeviceSN: 12345678901\n"
+"KernelVersion: Thu Jul 9 15:46:54 CST 2015\n"
+"ServerVersion: WS3.53.1243-20190717-DANALE-GEN\n"
+"WebVersion: V2.3.4-20190709\n"
 
 #. type: Plain text
 #: index.md:27
@@ -104,328 +104,433 @@ msgstr ""
 "プロセッサー： _ingenic T21_\n"
 "ビデオセンサー： _GC2053_\n"
 
-#. type: Plain text
-#: index.md:28
-#, fuzzy, no-wrap
-msgid "API-dokumentaro videblas ĉi tie:  \n"
-msgstr "APIドキュメントはここで見ることができます：  \n"
-
-#. type: Bullet: '* '
-#: index.md:30
-#, fuzzy, no-wrap
-msgid "[originala versio en la ĉina](../zh/includes.zh/html/)\n"
-msgstr "[中国語のオリジナルバージョン](../zh/includes.zh/html/)\n"
-
-#. type: Bullet: '* '
-#: index.md:32
-#, fuzzy, no-wrap
-msgid "[Angla versio](../en/includes.en/html/)\n"
-msgstr "[英語版](../en/includes.en/html/)\n"
-
-#. type: Bullet: '* '
-#: index.md:34
-#, fuzzy, no-wrap
-msgid "[Franca versio tradukita de google](../fr/includes.fr/html/)\n"
-msgstr "[グーグル翻訳のフランス語版](../fr/includes.fr/html/)\n"
-
 #. type: Title #
-#: index.md:36
+#: index.md:28
 #, fuzzy, no-wrap
 msgid "Alternativa firmvaro"
 msgstr "代替ファームウェア"
 
 #. type: Title ##
-#: index.md:38
+#: index.md:30
 #, fuzzy, no-wrap
 msgid "Kio Funkcias en Alternativa Firmware:"
 msgstr "代替ファームウェアで機能するもの："
 
 #. type: Bullet: '* '
-#: index.md:41
-#, fuzzy, no-wrap
-msgid "LAN kaj WLAN\n"
-msgstr "LANおよびWLAN\n"
+#: index.md:33
+#, no-wrap
+#, fuzzy
+msgid "_LAN_ kaj _WLAN_\n"
+msgstr "_LAN_ と _WLAN_\n"
 
 #. type: Bullet: '* '
-#: index.md:43
-#, fuzzy, no-wrap
-msgid "DRTSP Dual Flow Server: 1920x1080 H264 kaj 640x360 MJpeg defaŭlte.\n"
-msgstr "DRTTSPデュアルフローサーバー：デフォルトで1920 x 1080 H 264および640 x 360 MJPEG。\n"
+#: index.md:35
+#, no-wrap
+#, fuzzy
+msgid "Servilo (° 1 ° duobla-fluo: _1920x1080 H264_ kaj _640x360 MJPEG_ defaŭlte. \n"
+msgstr "サーバー (°1°二重流： _1920x1080 H264_ 、 _640x360 MJPEG_ デフォルトで。  \n"
 
 #. type: Bullet: '* '
-#: index.md:45
+#: index.md:37
 #, fuzzy, no-wrap
 msgid "Vidaj parametroj\n"
 msgstr "視覚的パラメータ\n"
 
 #. type: Bullet: '* '
-#: index.md:47
-#, fuzzy, no-wrap
-msgid "HTTP-servilo\n"
-msgstr "HTTPサーバー\n"
+#: index.md:39
+#, no-wrap
+#, fuzzy
+msgid "Servilo _HTTP_\n"
+msgstr "サーバー _HTTP_\n"
 
 #. type: Bullet: '* '
-#: index.md:49
+#: index.md:41
 #, fuzzy, no-wrap
 msgid "motora kontrolo\n"
 msgstr "エンジン制御\n"
 
 #. type: Bullet: '* '
-#: index.md:51
+#: index.md:43
 #, fuzzy, no-wrap
 msgid "motora kalibrado\n"
 msgstr "エンジンキャリブレーション\n"
 
 #. type: Bullet: '* '
+#: index.md:45
+#, no-wrap
+#, fuzzy
+msgid "Parametroj _PTZ_\n"
+msgstr "パラメータ _PTZ_\n"
+
+#. type: Bullet: '* '
+#: index.md:47
+#, no-wrap
+#, fuzzy
+msgid "Kliento _NTP_\n"
+msgstr "クライアント _NTP_（°3°3\n"
+
+#. type: Bullet: '* '
+#: index.md:49
+#, no-wrap
+#, fuzzy
+msgid "Pasvorta administrado _http_, _rtsp_ kaj sistemo. \n"
+msgstr "パスワード管理 _http_、 _rtsp_ およびシステム。  \n"
+
+#. type: Bullet: '* '
+#: index.md:51
+#, no-wrap
+#, fuzzy
+msgid "Blanka LED-Kontrolo kaj IR\n"
+msgstr "白色LED制御とIR\n"
+
+#. type: Bullet: '* '
 #: index.md:53
-#, fuzzy, no-wrap
-msgid "Agordoj de PTZ\n"
-msgstr "PTZ設定\n"
+#, no-wrap
+#, fuzzy
+msgid "Blanka LED-Kontrolo kaj IR _ftp_\n"
+msgstr "白色LED制御とIR _ftp_\n"
 
 #. type: Bullet: '* '
 #: index.md:55
-#, fuzzy, no-wrap
-msgid "NTP-kliento\n"
-msgstr "NTPクライアント\n"
+#, no-wrap
+#, fuzzy
+msgid "Blanka LED-Kontrolo kaj IR _telnet_\n"
+msgstr "白色LED制御とIR _telnet_\n"
 
 #. type: Bullet: '* '
 #: index.md:57
-#, fuzzy, no-wrap
-msgid "pasvorta ŝanĝo por http-aliro\n"
-msgstr "httpアクセスのパスワード変更\n"
+#, no-wrap
+#, fuzzy
+msgid "Servilo kaj kliento _ssh_\n"
+msgstr "サーバーとクライアント _ssh_（°3°3\n"
 
 #. type: Bullet: '* '
 #: index.md:59
-#, fuzzy, no-wrap
-msgid "blua LED kaj IR-kontrolo\n"
-msgstr "青色LEDおよびIR制御\n"
-
-#. type: Bullet: '* '
-#: index.md:61
-#, fuzzy, no-wrap
-msgid "Ftp-servilo\n"
-msgstr "FTPサーバー\n"
-
-#. type: Bullet: '* '
-#: index.md:63
-#, fuzzy, no-wrap
-msgid "Telnet-servilo\n"
-msgstr "Telnetサーバー\n"
-
-#. type: Bullet: '* '
-#: index.md:65
-#, fuzzy, no-wrap
-msgid "SSH-servilo kaj kliento\n"
-msgstr "SSHサーバーとクライアント\n"
-
-#. type: Bullet: '* '
-#: index.md:67
 #, fuzzy, no-wrap
 msgid "movado-detekto\n"
 msgstr "動き検出\n"
 
 #. type: Bullet: '* '
-#: index.md:69
+#: index.md:61
 #, fuzzy, no-wrap
 msgid "sendante retpoŝton\n"
 msgstr "メール送信\n"
 
+#. type: Bullet: '* '
+#: index.md:63
+#, no-wrap
+#, fuzzy
+msgid "Sendi _«telegram»_\n"
+msgstr " _«telegram»_を送る\n"
+
+#. type: Bullet: '* '
+#: index.md:65
+#, no-wrap
+#, fuzzy
+msgid "Aŭtomata nokta reĝimo\n"
+msgstr "自動ナイトレジーム\n"
+
 #. type: Title ##
-#: index.md:71
+#: index.md:67
 #, fuzzy, no-wrap
 msgid "Kio ne estas efektivigita en la alternativa firmware:"
 msgstr "代替ファームウェアでは何が実行されていないもの："
 
 #. type: Bullet: '* '
-#: index.md:74
+#: index.md:70
 #, fuzzy, no-wrap
 msgid "sondosistemo\n"
 msgstr "サウンドシステム\n"
 
 #. type: Bullet: '* '
-#: index.md:76
+#: index.md:72
 #, fuzzy, no-wrap
 msgid "_OSD_\n"
 msgstr "_OSD_\n"
 
 #. type: Bullet: '* '
-#: index.md:78
-#, fuzzy, no-wrap
-msgid "Administrado de Pasvortoj kaj Sistemo de RTSP.\n"
-msgstr "管理管理とRTSPシステム\n"
-
-#. type: Bullet: '* '
-#: index.md:80
+#: index.md:74
 #, fuzzy, no-wrap
 msgid "ĝisdatigo de firmvaro\n"
 msgstr "ファームウェアアップデート\n"
 
 #. type: Bullet: '* '
-#: index.md:82
-#, fuzzy, no-wrap
-msgid "aŭtomata nokta detekto\n"
-msgstr "自動夜間検出\n"
-
-#. type: Bullet: '* '
-#: index.md:84
+#: index.md:76
 #, fuzzy, no-wrap
 msgid "movado-detekto_ir-cut_\n"
 msgstr "動き検出_ir-cut_\n"
 
 #. type: Bullet: '* '
-#: index.md:86
+#: index.md:78
 #, fuzzy, no-wrap
 msgid "sendante retpoŝton_mqtt_\n"
 msgstr "メールの送信_mqtt_\n"
 
 #. type: Bullet: '* '
-#: index.md:88
+#: index.md:80
+#, no-wrap
+#, fuzzy
+msgid "Sendante bildojn kaj videojn en nubo\n"
+msgstr "画像とビデオをクラウドで送信する（°1°1\n"
+
+#. type: Bullet: '* '
+#: index.md:82
 #, fuzzy, no-wrap
 msgid "ktp ...\n"
 msgstr "など...\n"
 
 #. type: Title ##
-#: index.md:90
+#: index.md:84
 #, fuzzy, no-wrap
 msgid "Instalante Alternativan Firmware"
 msgstr "代替ファームウェアのインストール"
 
 #. type: Bullet: '* '
-#: index.md:93
+#: index.md:87
 #, fuzzy, no-wrap
 msgid "Kopiu ĉion en la dosierujo [ _karto_ ](https://github.com/jmichault/ipcam-100/tree/master/karto) ĉe la radiko de la karto microSD.\n"
 msgstr "microSDカードのルートにある [ _karto_ ](https://github.com/jmichault/ipcam-100/tree/master/karto) フォルダーにすべてをコピーします。\n"
 
 #. type: Bullet: '* '
-#: index.md:95
+#: index.md:89
 #, fuzzy, no-wrap
 msgid "Eble agordi la reton ( _www/ipcam/config.dist/reto.conf_ )\n"
 msgstr "おそらくネットワーク ( _www/ipcam/config.dist/reto.conf_ )を設定します\n"
 
 #. type: Bullet: '* '
-#: index.md:97
-#, fuzzy, no-wrap
-msgid "Enmetu la karton microSD.\n"
-msgstr "microSDカードを挿入します。\n"
+#: index.md:91
+#, no-wrap
+#, fuzzy
+msgid "Enmetu la karton _microSD_ en la fotilon. \n"
+msgstr "カメラにカード _microSD_ を入力してください。  \n"
 
 #. type: Bullet: '* '
-#: index.md:99
+#: index.md:93
 #, fuzzy, no-wrap
 msgid "Konekti la fotilon al via loka reto kaj ŝalti la fotilon.\n"
 msgstr "カメラをローカルネットワークに接続し、カメラの電源を入れます。\n"
 
 #. type: Bullet: '* '
-#: index.md:101
+#: index.md:95
 #, fuzzy, no-wrap
 msgid "Trovu la IP-adreson de la fotilo. Vi ankaŭ povas konektiĝi al la WiFi de la fotilo (SSID: _HSIPC-******_), en tiu kazo la IP-adreso estas _172.25.0.1_.\n"
 msgstr "カメラのIPアドレスを見つけます。カメラWiFi (SSIDに接続することもできます。 _HSIPC-******_), en tiu kazo la IP-adreso estas _172.25.0.1_。\n"
 
 #. type: Bullet: '* '
-#: index.md:103
+#: index.md:97
 #, fuzzy, no-wrap
 msgid "Konekti al la fotilo per `telnet IP 9527` (uzanto _root_, pasvorto _jco66688_), ene de 5 minutoj post turnado sur la fotilo.\n"
 msgstr "カメラで回転してから5分以内に、 `telnet IP 9527` (のユーザー _root_のユーザー _root_、パスワード _jco66688_)でカメラに接続します。\n"
 
 #. type: Bullet: '* '
-#: index.md:105
+#: index.md:99
 #, fuzzy, no-wrap
 msgid "Faru `killall -9 auto_run.sh` por eviti perdi la ligon.\n"
 msgstr "リーグを失うことを避けるために `killall -9 auto_run.sh` を作ります。\n"
 
 #. type: Bullet: '* '
-#: index.md:107
+#: index.md:101
 #, fuzzy, no-wrap
 msgid "Faru `cd /opt/media/mmcblk0p1;./install.sh`\n"
 msgstr "ファル `cd /opt/media/mmcblk0p1;./install.sh`\n"
 
 #. type: Bullet: '* '
-#: index.md:109
+#: index.md:103
+#, no-wrap
+#, fuzzy
+msgid "La fotilo rekomencas, nun:\n"
+msgstr "カメラが再開されます：（°1°1\n"
+
+#. type: Bullet: '    * '
+#: index.md:105
 #, fuzzy, no-wrap
 msgid "Vi povas konektiĝi al la URL _https://IP_ (uzanto _admin_, pasvorto _ismart21_).\n"
 msgstr "URL _https://IP_ (ユーザー _admin_、パスワード _ismart21_)に接続できます。\n"
 
-#. type: Bullet: '* '
-#: index.md:111
+#. type: Bullet: '    * '
+#: index.md:107
 #, fuzzy, no-wrap
 msgid "Vi povas konektiĝi en SSH (uzanto _admin_, pasvorto _ismart12_).\n"
 msgstr "SSH (ユーザー _admin_、パスワード _ismart12_)で接続できます。\n"
 
-#. type: Bullet: '* '
-#: index.md:113
+#. type: Bullet: '    * '
+#: index.md:109
 #, fuzzy, no-wrap
 msgid "La primara video-fluo estas alirebla ĉe _rtsp://admin:ismart21@IP/stream1_.\n"
 msgstr "プライマリビデオ電流は _rtsp://admin:ismart21@IP/stream1_でアクセス可能です。 （°3°3\n"
 
-#. type: Bullet: '* '
-#: index.md:115
+#. type: Bullet: '    * '
+#: index.md:111
 #, fuzzy, no-wrap
 msgid "La sekundara video-fluo estas alirebla ĉe _rtsp://admin:ismart21@IP/stream2_.\n"
 msgstr "二次ビデオ電流は _rtsp://admin:ismart21@IP/stream2_でアクセス可能です。 （°3°3\n"
 
 #. type: Plain text
-#: index.md:120
-#, fuzzy, no-wrap
+#: index.md:116
+#, no-wrap
+#, fuzzy
 msgid ""
 "(° 1 ° WiFi AP-reĝimo estas aktivigita defaŭlte:\n"
-"** SSID: IPCAM100-XXXXXX\n"
-"** WPA2-ŝlosilo: ismart21\n"
+"    ** SSID: IPCAM100-XXXXXX\n"
+"    ** WPA2-ŝlosilo: ismart21\n"
 "IP-adreso de la fotilo: 172.25.0.1\n"
-msgstr ""
-"（°1°1°1 WiFi APモードがデフォルトで活性化されます。\n"
-"** SSID：IPCAM100-XXXXXX\n"
-"** °5°）WPA2キー：ISMART21\n"
-"カメラのIPアドレス：172.25.0.1\n"
+msgstr "（°1°1°1 WiFi APモードがデフォルトで活性化されます。\n    ** SSID：IPCAM100-XXXXXX\n    ** °5°）WPA2キー：ISMART21\nカメラのIPアドレス：172.25.0.1\n"
 
 #. type: Title ##
-#: index.md:121
+#: index.md:117
 #, fuzzy, no-wrap
 msgid "Malinstalanta Alternativan Firmware:"
 msgstr "代替ファームウェアのアンインストール："
 
 #. type: Bullet: '* '
-#: index.md:124
+#: index.md:120
 #, fuzzy, no-wrap
 msgid "Lanĉu la servon SSH sur la fotilo tra la defaŭlta interfaco).\n"
 msgstr "デフォルトインターフェイス)を介してカメラ上のSSHサービスを起動します。\n"
 
 #. type: Bullet: '* '
-#: index.md:126
+#: index.md:122
 #, fuzzy, no-wrap
 msgid "Ensalutu al la fotilo per `ssh root@IP` (pasvorto _ismart12_).\n"
 msgstr " `ssh root@IP` (パスワード _ismart12_)でカメラにログインします。\n"
 
 #. type: Bullet: '* '
-#: index.md:128
+#: index.md:124
 #, fuzzy, no-wrap
 msgid "komencu la telnet-servon per la fotilo per la interreta interfaco. `cd /opt/media/mmcblk0p1;./uninstall.sh;reboot`\n"
 msgstr "インターネットインターフェイスを介してカメラでtelnetサービスを開始します。 `cd /opt/media/mmcblk0p1;./uninstall.sh;reboot`\n"
 
 #. type: Bullet: '* '
-#: index.md:131
+#: index.md:127
 #, fuzzy, no-wrap
 msgid "Vi ankaŭ povas simple forigi la karton microSD.\n"
 msgstr "microSDカードを取り外すこともできます。\n"
 
 #. type: Title #
-#: index.md:133
+#: index.md:129
 #, fuzzy, no-wrap
 msgid "Interesaj dokumentoj"
 msgstr "興味深い文書"
 
 #. type: Plain text
-#: index.md:140
-#, fuzzy, no-wrap
+#: index.md:135
+#, no-wrap
+#, fuzzy
 msgid ""
 "Multa laboro estis farita por fotiloj ekipitaj per procesoro _ingenic T20_ :\n"
 "* modifita firmware: <https://github.com/eliaskotlyar/xiaomi- dafang -Hacks>\n"
 "* Fontoj de la modifita firmware: <https://github.com/dafang-hacks/main>\n"
-"* Aliaj firmware <https://github.com/openmiko/openmiko>\n"
-"* lanĉo de programoj sen ŝanĝi la firmware: (° 17 ° Https://github.com/thatusenameAlreadyExist/jco-pm203-fisheye-ingenic-t20-p2p-camera-hacks>\n"
-msgstr ""
-"プロセッサ _ingenic T20_ を搭載したカメラ用の多くの作業が行われました。\n"
-"* 修正ファームウェア： <https://github.com/ilílístotlyar/xiaomi- Dafang -Haks>>\n"
-"修正ファームウェアのソース： <https://github.com/dafang-hacks/main>11°12°）その他のファームウェア <https://github.com/openmiko/openmiko>\n"
-"* * ファームウェアを変更せずにプログラムを起動します：（°17° 17°17：// https://github.com/thatusenameAnameexist/ju-pm203-fisheye-iningEnic-t20-p2p-Camera-Hacks>\n"
+"17 °) https://github.com/thatusenameAlreadyExist/Jco-pm203-fisheye-ingenic-t20-p2p-camera-hacks>\n"
+msgstr "プロセッサ _ingenic T20_ を搭載したカメラ用の多くの作業が行われました。\n* 修正ファームウェア： <https://github.com/ilílístotlyar/xiaomi- DAFANG -HAK>>\n修正ファームウェアのソース： <https://github.com/dafang-hacks/main>\n）17°) HTTPS：//Github.com/ThatusEnameAnamexist/jco-pm203-fisheye-ininic-t20-p2p-カメラ - ハック>\n"
+
+#, no-wrap
+#~ msgid ""
+#~ "DeviceName: _INGENIC-V01_\n"
+#~ "DeviceModel: _IPCAM-100_\n"
+#~ "DeviceSN: _12345678901_\n"
+#~ "KernelVersion: _Thu Jul 9 15:46:54 CST 2015_\n"
+#~ "ServerVersion: _WS3.53.1243-20190717-DANALE-GEN_\n"
+#~ "WebVersion: _V2.3.4-20190709_\n"
+#~ msgstr ""
+#~ "DeviceName: _INGENIC-V01_\n"
+#~ "DeviceModel: _IPCAM-100_\n"
+#~ "DeviceSN: _12345678901_\n"
+#~ "KernelVersion: _Thu Jul 9 15:46:54 CST 2015_\n"
+#~ "ServerVersion: _WS3.53.1243-20190717-DANALE-GEN_\n"
+#~ "WebVersion: _V2.3.4-20190709_\n"
+
+#, fuzzy, no-wrap
+#~ msgid "API-dokumentaro videblas ĉi tie:  \n"
+#~ msgstr "APIドキュメントはここで見ることができます：  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "[originala versio en la ĉina](../zh/includes.zh/html/)\n"
+#~ msgstr "[中国語のオリジナルバージョン](../zh/includes.zh/html/)\n"
+
+#, fuzzy, no-wrap
+#~ msgid "[Angla versio](../en/includes.en/html/)\n"
+#~ msgstr "[英語版](../en/includes.en/html/)\n"
+
+#, fuzzy, no-wrap
+#~ msgid "[Franca versio tradukita de google](../fr/includes.fr/html/)\n"
+#~ msgstr "[グーグル翻訳のフランス語版](../fr/includes.fr/html/)\n"
+
+#, fuzzy, no-wrap
+#~ msgid "LAN kaj WLAN\n"
+#~ msgstr "LANおよびWLAN\n"
+
+#, fuzzy, no-wrap
+#~ msgid "DRTSP Dual Flow Server: 1920x1080 H264 kaj 640x360 MJpeg defaŭlte.\n"
+#~ msgstr "DRTTSPデュアルフローサーバー：デフォルトで1920 x 1080 H 264および640 x 360 MJPEG。\n"
+
+#, fuzzy, no-wrap
+#~ msgid "HTTP-servilo\n"
+#~ msgstr "HTTPサーバー\n"
+
+#, fuzzy, no-wrap
+#~ msgid "Agordoj de PTZ\n"
+#~ msgstr "PTZ設定\n"
+
+#, fuzzy, no-wrap
+#~ msgid "NTP-kliento\n"
+#~ msgstr "NTPクライアント\n"
+
+#, fuzzy, no-wrap
+#~ msgid "pasvorta ŝanĝo por http-aliro\n"
+#~ msgstr "httpアクセスのパスワード変更\n"
+
+#, fuzzy, no-wrap
+#~ msgid "blua LED kaj IR-kontrolo\n"
+#~ msgstr "青色LEDおよびIR制御\n"
+
+#, fuzzy, no-wrap
+#~ msgid "Ftp-servilo\n"
+#~ msgstr "FTPサーバー\n"
+
+#, fuzzy, no-wrap
+#~ msgid "Telnet-servilo\n"
+#~ msgstr "Telnetサーバー\n"
+
+#, fuzzy, no-wrap
+#~ msgid "SSH-servilo kaj kliento\n"
+#~ msgstr "SSHサーバーとクライアント\n"
+
+#, fuzzy, no-wrap
+#~ msgid "Administrado de Pasvortoj kaj Sistemo de RTSP.\n"
+#~ msgstr "管理管理とRTSPシステム\n"
+
+#, fuzzy, no-wrap
+#~ msgid "aŭtomata nokta detekto\n"
+#~ msgstr "自動夜間検出\n"
+
+#, fuzzy, no-wrap
+#~ msgid "Enmetu la karton microSD.\n"
+#~ msgstr "microSDカードを挿入します。\n"
+
+#, fuzzy, no-wrap
+#~ msgid ""
+#~ "(° 1 ° WiFi AP-reĝimo estas aktivigita defaŭlte:\n"
+#~ "** SSID: IPCAM100-XXXXXX\n"
+#~ "** WPA2-ŝlosilo: ismart21\n"
+#~ "IP-adreso de la fotilo: 172.25.0.1\n"
+#~ msgstr ""
+#~ "（°1°1°1 WiFi APモードがデフォルトで活性化されます。\n"
+#~ "** SSID：IPCAM100-XXXXXX\n"
+#~ "** °5°）WPA2キー：ISMART21\n"
+#~ "カメラのIPアドレス：172.25.0.1\n"
+
+#, fuzzy, no-wrap
+#~ msgid ""
+#~ "Multa laboro estis farita por fotiloj ekipitaj per procesoro _ingenic T20_ :\n"
+#~ "* modifita firmware: <https://github.com/eliaskotlyar/xiaomi- dafang -Hacks>\n"
+#~ "* Fontoj de la modifita firmware: <https://github.com/dafang-hacks/main>\n"
+#~ "* Aliaj firmware <https://github.com/openmiko/openmiko>\n"
+#~ "* lanĉo de programoj sen ŝanĝi la firmware: (° 17 ° Https://github.com/thatusenameAlreadyExist/jco-pm203-fisheye-ingenic-t20-p2p-camera-hacks>\n"
+#~ msgstr ""
+#~ "プロセッサ _ingenic T20_ を搭載したカメラ用の多くの作業が行われました。\n"
+#~ "* 修正ファームウェア： <https://github.com/ilílístotlyar/xiaomi- Dafang -Haks>>\n"
+#~ "修正ファームウェアのソース： <https://github.com/dafang-hacks/main>11°12°）その他のファームウェア <https://github.com/openmiko/openmiko>\n"
+#~ "* * ファームウェアを変更せずにプログラムを起動します：（°17° 17°17：// https://github.com/thatusenameAnameexist/ju-pm203-fisheye-iningEnic-t20-p2p-Camera-Hacks>\n"
 
 #, fuzzy, no-wrap
 #~ msgid ""

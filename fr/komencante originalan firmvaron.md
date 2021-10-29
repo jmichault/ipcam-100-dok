@@ -1,3 +1,11 @@
+---
+lang: fr
+lang-niv: fonto
+lang-ref: 061-originala_firmvaro
+layout: page
+title: 'Fonctionnement du micrologiciel originel'
+---
+
 
 
 la firmvaro konsistas el 6 sekcioj :

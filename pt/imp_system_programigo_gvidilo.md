@@ -1,3 +1,22 @@
+---
+lang: pt
+lang-niv: auto
+lang-ref: 051-IMP-programigo_gvidilo
+layout: page
+title: 'Guia de programação do Imp.'
+---
+
+
+A documentação da APIs pode ser vista aqui: (° 1 ° 1  
+* [Versão original em Chinês](../../zh/includes.zh/html/)
+
+
+* [Versão em inglês](../../en/includes.en/html/)
+
+
+* (° 1 ° 1 ° 1 ° 1 ° 1 ° 1 ° 1 ° French Versão traduzida por Google](../../fr/includes.fr/html/)
+
+
 
 
 # IMP (Plataforma de meio genético) (ver imp_system.h)

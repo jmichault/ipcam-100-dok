@@ -1,3 +1,22 @@
+---
+lang: it
+lang-niv: auto
+lang-ref: 051-IMP-programigo_gvidilo
+layout: page
+title: 'Guida alla programmazione IMP.'
+---
+
+
+La documentazione di Apis può essere vista qui: (° 1 ° 1  
+* [Versione originale in Cinese](../../zh/includes.zh/html/)
+
+
+* [Versione inglese](../../en/includes.en/html/)
+
+
+* (° 1 ° 1 ° 1 ° 1 ° 1 ° Versione francese Tradotto da Google](../../fr/includes.fr/html/)
+
+
 
 
 # IMP (Ingenic Media Platform) (vedi imp_system.h)

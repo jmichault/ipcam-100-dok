@@ -1,3 +1,22 @@
+---
+lang: ar
+lang-niv: auto
+lang-ref: 051-IMP-programigo_gvidilo
+layout: page
+title: 'دليل البرمجة IMP.'
+---
+
+
+يمكن رؤية وثائق APIS هنا: (° 1 ° 1  
+* [النسخة الأصلية باللغة الصينية](../../zh/includes.zh/html/)
+
+
+* [إصدار اللغة الإنجليزية](../../en/includes.en/html/)
+
+
+* (° 1 ° 1 ° 1 ° 1 ° 1 ° نسخة فرنسية ترجمتها جوجل](../../fr/includes.fr/html/)
+
+
 
 
 # IMP (Ingenic Media Platform) (انظر عفريت_system.h)

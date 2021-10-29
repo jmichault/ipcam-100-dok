@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-03-04 16:45+0100\n"
+"POT-Creation-Date: 2021-10-29 23:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,249 +16,255 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#. type: Title #
-#: ./imp_system_programigo_gvidilo.md:3
-#, markdown-text, no-wrap
+#. type: YAML Front Matter: lang
+#: imp_system_programigo_gvidilo.md:1
+#, no-wrap
+msgid "eo"
+msgstr "de"
+
+#. type: YAML Front Matter: lang-niv
+#: imp_system_programigo_gvidilo.md:1
+#, no-wrap
+msgid "auto"
+msgstr "auto"
+
+#. type: YAML Front Matter: lang-ref
+#: imp_system_programigo_gvidilo.md:1
+#, no-wrap
+msgid "051-IMP-programigo_gvidilo"
+msgstr "051-IMP-programigo_gvidilo"
+
+#. type: YAML Front Matter: layout
+#: imp_system_programigo_gvidilo.md:1
+#, no-wrap
+msgid "page"
+msgstr "page"
+
+#. type: YAML Front Matter: title
+#: imp_system_programigo_gvidilo.md:1
+#, fuzzy, no-wrap
+msgid "IMP-Programado-Gvidilo"
+msgstr "Imp-Programmierhandbuch."
+
+#. type: Plain text
+#: imp_system_programigo_gvidilo.md:10
+#, fuzzy, no-wrap
+msgid "La dokumentado de APIs povas esti vidata ĉi tie:  \n"
+msgstr "APIs 'Dokumentation ist hier zu sehen:  \n"
+
+#. type: Bullet: '* '
+#: imp_system_programigo_gvidilo.md:12
+#, no-wrap
 #, fuzzy
+msgid "[originala versio en la ĉina](../../zh/includes.zh/html/)\n"
+msgstr "[Originalversion auf Chinesisch](../../zh/includes.zh/html/)\n"
+
+#. type: Bullet: '* '
+#: imp_system_programigo_gvidilo.md:14
+#, no-wrap
+#, fuzzy
+msgid "[Angla versio](../../en/includes.en/html/)\n"
+msgstr "[Englische Version](../../en/includes.en/html/)\n"
+
+#. type: Bullet: '* '
+#: imp_system_programigo_gvidilo.md:16
+#, no-wrap
+#, fuzzy
+msgid "(° 1 ° 1 ° franca versio Tradukita per google](../../fr/includes.fr/html/)\n"
+msgstr "(° 1 ° 1 ° 1 ° 1 ° 1 ° Französische Version von Google übersetzt](../../fr/includes.fr/html/)\n"
+
+#. type: Title #
+#: imp_system_programigo_gvidilo.md:19
+#, fuzzy, no-wrap
 msgid "IMP (Ingenic Media Platform) (vidu imp_system.h)"
 msgstr "IMP (Ingenic Media Platform) (siehe imp_system.h)"
 
 #. type: Title ##
-#: ./imp_system_programigo_gvidilo.md:5
-#, markdown-text, no-wrap
-#, fuzzy
+#: imp_system_programigo_gvidilo.md:21
+#, fuzzy, no-wrap
 msgid "bazaj konceptoj"
 msgstr "grundlegendes Konzept"
 
 #. type: Plain text
-#: ./imp_system_programigo_gvidilo.md:7
-#, markdown-text, no-wrap
-#, fuzzy
+#: imp_system_programigo_gvidilo.md:23
+#, fuzzy, no-wrap
 msgid ""
 "Programado T20 / T21 baziĝas sur jenaj konceptoj:\n"
 "1. Periferia (= Aparato)  \n"
-msgstr "Die T20 / T21-Programmierung basiert auf folgenden Konzepten:\n1. Peripheriegerät (= Gerät)  \n"
+msgstr ""
+"Die T20 / T21-Programmierung basiert auf folgenden Konzepten:\n"
+"1. Peripheriegerät (= Gerät)  \n"
 
 #. type: Plain text
-#: ./imp_system_programigo_gvidilo.md:11
-#, markdown-text, no-wrap
-#, fuzzy
+#: imp_system_programigo_gvidilo.md:27
+#, fuzzy, no-wrap
 msgid ""
 "    La ekstercentra kompletigas funkcion. Ekzemploj:\n"
 "     *  Frama fonto: finas la eliron de videodatenoj.\n"
 "     *  Kodilo: kompletigas la videokodan aŭ bildan kodan funkcion.\n"
 "2. Grupo  \n"
-msgstr "    Das Peripheriegerät führt eine Funktion aus. Beispiele:\n     *  Bildquelle: Beendet die Ausgabe von Videodaten.\n     *  Encoder: Vervollständigt die Videokodierungs- oder Bildcodierungsfunktion.\n2. Gruppe  \n"
+msgstr ""
+"    Das Peripheriegerät führt eine Funktion aus. Beispiele:\n"
+"     *  Bildquelle: Beendet die Ausgabe von Videodaten.\n"
+"     *  Encoder: Vervollständigt die Videokodierungs- oder Bildcodierungsfunktion.\n"
+"2. Gruppe  \n"
 
 #. type: Plain text
-#: ./imp_system_programigo_gvidilo.md:12
-#, markdown-text, no-wrap
-#, fuzzy
-msgid ""
-"    La grupo estas la plej malgranda datum-eniga unuo. Aparato povas havi "
-"plurajn grupojn kaj ĉiu grupo povas ricevi nur unu datuman enigan "
-"kanalon. La grupo povas havi plurajn rezultojn.  \n"
+#: imp_system_programigo_gvidilo.md:28
+#, fuzzy, no-wrap
+msgid "    La grupo estas la plej malgranda datum-eniga unuo. Aparato povas havi plurajn grupojn kaj ĉiu grupo povas ricevi nur unu datuman enigan kanalon. La grupo povas havi plurajn rezultojn.  \n"
 msgstr "    Die Gruppe ist die kleinste Dateneingabeeinheit. Ein Gerät kann mehrere Gruppen haben und jede Gruppe kann nur einen Dateneingabekanal empfangen. Die Gruppe kann mehrere Ergebnisse haben.  \n"
 
 #. type: Plain text
-#: ./imp_system_programigo_gvidilo.md:14
-#, markdown-text, no-wrap
-#, fuzzy
+#: imp_system_programigo_gvidilo.md:30
+#, fuzzy, no-wrap
 msgid ""
-"    La grupo ankaŭ estas ujo por specifaj \"funkcioj\". Vidu la klarigon en "
-"la kanala sekcio por pliaj detaloj.\n"
+"    La grupo ankaŭ estas ujo por specifaj \"funkcioj\". Vidu la klarigon en la kanala sekcio por pliaj detaloj.\n"
 "3. Eliro  \n"
-msgstr "    Die Gruppe ist auch ein Behälter für bestimmte \"Funktionen\". Weitere Informationen finden Sie in der Erläuterung im Abschnitt \"Kanal\".\n3. Ausfahrt  \n"
+msgstr ""
+"    Die Gruppe ist auch ein Behälter für bestimmte \"Funktionen\". Weitere Informationen finden Sie in der Erläuterung im Abschnitt \"Kanal\".\n"
+"3. Ausfahrt  \n"
 
 #. type: Plain text
-#: ./imp_system_programigo_gvidilo.md:16
-#, markdown-text, no-wrap
-#, fuzzy
+#: imp_system_programigo_gvidilo.md:32
+#, fuzzy, no-wrap
 msgid ""
-"    La eligo estas la plej malgranda unuo de datuma eligo por grupo. Grupo "
-"povas havi plurajn elirojn kaj ĉiu eligo povas produkti nur unu datuman "
-"kanalon.\n"
+"    La eligo estas la plej malgranda unuo de datuma eligo por grupo. Grupo povas havi plurajn elirojn kaj ĉiu eligo povas produkti nur unu datuman kanalon.\n"
 "4. Ĉelo  \n"
-msgstr "    Die Ausgabe ist die kleinste Einheit der Datenausgabe pro Gruppe. Eine Gruppe kann mehrere Ausgänge haben und jeder Ausgang kann nur einen Datenkanal erzeugen.\n4. Zelle  \n"
+msgstr ""
+"    Die Ausgabe ist die kleinste Einheit der Datenausgabe pro Gruppe. Eine Gruppe kann mehrere Ausgänge haben und jeder Ausgang kann nur einen Datenkanal erzeugen.\n"
+"4. Zelle  \n"
 
 #. type: Plain text
-#: ./imp_system_programigo_gvidilo.md:20
-#, markdown-text, no-wrap
-#, fuzzy
+#: imp_system_programigo_gvidilo.md:36
+#, fuzzy, no-wrap
 msgid ""
-"    La ĉelo rilatas al kolekto enhavanta informojn pri la aparato, la grupo "
-"kaj la eligo. Ĝi estas prezentita en la datuma strukturo de IMPCell.\n"
-"La ĉelo estas ĉefe uzata por Bind (@ref bind). Laŭ la difino de Aparato, "
-"Grupo kaj Eligo, Eligo estas la nodo por datuma eligo kaj Grupo estas la "
-"nodo por datuma enigo.\n"
-"En Bind, la ĉela indekso de la datuma eliga nodo estas ĉe la Eliga eligo, "
-"kaj la ĉela indekso de la datuma eniga nodo estas ĉe la eniga grupo (de tiel "
-"ke la Ĉelo, Eliga datuma eniro estas sensenca valoro).\n"
+"    La ĉelo rilatas al kolekto enhavanta informojn pri la aparato, la grupo kaj la eligo. Ĝi estas prezentita en la datuma strukturo de IMPCell.\n"
+"La ĉelo estas ĉefe uzata por Bind (@ref bind). Laŭ la difino de Aparato, Grupo kaj Eligo, Eligo estas la nodo por datuma eligo kaj Grupo estas la nodo por datuma enigo.\n"
+"En Bind, la ĉela indekso de la datuma eliga nodo estas ĉe la Eliga eligo, kaj la ĉela indekso de la datuma eniga nodo estas ĉe la eniga grupo (de tiel ke la Ĉelo, Eliga datuma eniro estas sensenca valoro).\n"
 "5. Kanalo  \n"
-msgstr "    Die Zelle bezieht sich auf eine Sammlung, die Informationen über das Gerät, die Gruppe und die Ausgabe enthält. Es wird in der IMPCell-Datenstruktur dargestellt.\nDie Zelle wird hauptsächlich zum Binden (@ref Binden)verwendet. Gemäß der Definition von Gerät, Gruppe und Ausgabe ist die Ausgabe der Knoten für die Datenausgabe und die Gruppe der Knoten für die Dateneingabe.\nIn Bind befindet sich der Zellenindex des Datenausgabeknotens am Ausgabeausgang, und der Zellenindex des Dateneingabeknotens befindet sich in der Eingabegruppe (, sodass sich die Dateneingabe Zelle, Ausgabe befindet ein unsinniger Wert).\n5. Kanal  \n"
+msgstr ""
+"    Die Zelle bezieht sich auf eine Sammlung, die Informationen über das Gerät, die Gruppe und die Ausgabe enthält. Es wird in der IMPCell-Datenstruktur dargestellt.\n"
+"Die Zelle wird hauptsächlich zum Binden (@ref Binden)verwendet. Gemäß der Definition von Gerät, Gruppe und Ausgabe ist die Ausgabe der Knoten für die Datenausgabe und die Gruppe der Knoten für die Dateneingabe.\n"
+"In Bind befindet sich der Zellenindex des Datenausgabeknotens am Ausgabeausgang, und der Zellenindex des Dateneingabeknotens befindet sich in der Eingabegruppe (, sodass sich die Dateneingabe Zelle, Ausgabe befindet ein unsinniger Wert).\n"
+"5. Kanal  \n"
 
 #. type: Plain text
-#: ./imp_system_programigo_gvidilo.md:21
-#, markdown-text, no-wrap
-#, fuzzy
-msgid ""
-"    La kanalo ĝenerale rilatas al unuo kun ununura funkcio. La kanalo "
-"ricevas specifan funkcion kiam ĝi estas kreita (instantiation).  \n"
+#: imp_system_programigo_gvidilo.md:37
+#, fuzzy, no-wrap
+msgid "    La kanalo ĝenerale rilatas al unuo kun ununura funkcio. La kanalo ricevas specifan funkcion kiam ĝi estas kreita (instantiation).  \n"
 msgstr "    Der Kanal bezieht sich im Allgemeinen auf eine Einheit mit einer einzelnen Funktion. Der Kanal erhält eine bestimmte Funktion, wenn eine Instanziierung ()erstellt wird.  \n"
 
 #. type: Plain text
-#: ./imp_system_programigo_gvidilo.md:22
-#, markdown-text, no-wrap
-#, fuzzy
+#: imp_system_programigo_gvidilo.md:38
+#, fuzzy, no-wrap
 msgid "    Ekzemple:  \n"
 msgstr "    Zum Beispiel:  \n"
 
 #. type: Bullet: '     -  '
-#: ./imp_system_programigo_gvidilo.md:24
-#, markdown-text, no-wrap
-#, fuzzy
-msgid ""
-"Por la kodilo, unu kanalo kompletigas la kodon H264 aŭ kodan funkcion "
-"JPEG. La specifa kodiga funkcio (tipo, parametro) estas specifita kiam oni "
-"kreas la kanalon\n"
+#: imp_system_programigo_gvidilo.md:40
+#, fuzzy, no-wrap
+msgid "Por la kodilo, unu kanalo kompletigas la kodon H264 aŭ kodan funkcion JPEG. La specifa kodiga funkcio (tipo, parametro) estas specifita kiam oni kreas la kanalon\n"
 msgstr "Für den Encoder ergänzt ein Kanal die H264-Code- oder JPEG-Codierungsfunktion. Der spezifische Codierungsfunktionstyp (, Parameter) wird beim Erstellen des Kanals angegeben.\n"
 
 #. type: Bullet: '     -  '
-#: ./imp_system_programigo_gvidilo.md:26
-#, markdown-text, no-wrap
-#, fuzzy
-msgid ""
-"Por IVS, kanalo kompletigas la funkcion de specifa algoritmo kaj specifaj "
-"algoritmaj tipparametroj estas specifitaj dum kreado de la kanalo\n"
+#: imp_system_programigo_gvidilo.md:42
+#, fuzzy, no-wrap
+msgid "Por IVS, kanalo kompletigas la funkcion de specifa algoritmo kaj specifaj algoritmaj tipparametroj estas specifitaj dum kreado de la kanalo\n"
 msgstr "Bei IVS vervollständigt ein Kanal die Funktion eines bestimmten Algorithmus, und beim Erstellen des Kanals werden bestimmte algorithmische Typparameter angegeben.\n"
 
 #. type: Bullet: '     -  '
-#: ./imp_system_programigo_gvidilo.md:28
-#, markdown-text, no-wrap
-#, fuzzy
-msgid ""
-"Por OSD, ekzistas regiono simila al Kanalo, regiono estas specifa "
-"supermetita areo, kiu povas esti PIC (bildo), KOVRILO (fermado), ktp.\n"
+#: imp_system_programigo_gvidilo.md:44
+#, fuzzy, no-wrap
+msgid "Por OSD, ekzistas regiono simila al Kanalo, regiono estas specifa supermetita areo, kiu povas esti PIC (bildo), KOVRILO (fermado), ktp.\n"
 msgstr "Für OSD gibt es einen Bereich ähnlich dem Kanal. Der Bereich ist ein spezifischer Überlagerungsbereich, der PIC-Bild (), ABDECKUNG (, Verschluss)usw. sein kann .\n"
 
 #. type: Bullet: '     -  '
-#: ./imp_system_programigo_gvidilo.md:30
-#, markdown-text, no-wrap
-#, fuzzy
-msgid ""
-"Por FrameSource, kanalo produktas originalan bildon kaj la "
-"FrameSource-kanalo fakte estas grupo\n"
+#: imp_system_programigo_gvidilo.md:46
+#, fuzzy, no-wrap
+msgid "Por FrameSource, kanalo produktas originalan bildon kaj la FrameSource-kanalo fakte estas grupo\n"
 msgstr "Bei FrameSource erzeugt ein Kanal ein Originalbild und der FrameSource-Kanal ist tatsächlich eine Gruppe.\n"
 
 #. type: Plain text
-#: ./imp_system_programigo_gvidilo.md:33
-#, markdown-text, no-wrap
-#, fuzzy
-msgid ""
-"     La kanalo, kiel funkcia unuo, devas ĝenerale esti registrita en la "
-"grupo (krom FrameSource) por ricevi datumojn. Post kiam la kanalo estas "
-"registrita en la grupo, ĝi ricevos la datumojn enigitajn de la grupo.\n"
+#: imp_system_programigo_gvidilo.md:49
+#, fuzzy, no-wrap
+msgid "     La kanalo, kiel funkcia unuo, devas ĝenerale esti registrita en la grupo (krom FrameSource) por ricevi datumojn. Post kiam la kanalo estas registrita en la grupo, ĝi ricevos la datumojn enigitajn de la grupo.\n"
 msgstr "     Der Kanal als Funktionseinheit muss im Allgemeinen zusätzlich zu FrameSource) in der Gruppe (registriert sein, um Daten zu empfangen. Nachdem der Kanal in der Gruppe registriert wurde, empfängt er die von der Gruppe eingegebenen Daten.\n"
 
 #. type: Plain text
-#: ./imp_system_programigo_gvidilo.md:35
-#, markdown-text, no-wrap
-#, fuzzy
-msgid ""
-"    La nombro de kanaloj, kiuj povas esti registritaj de la grupo de "
-"diversaj aparatoj, estas ankaŭ malsama.\n"
+#: imp_system_programigo_gvidilo.md:51
+#, fuzzy, no-wrap
+msgid "    La nombro de kanaloj, kiuj povas esti registritaj de la grupo de diversaj aparatoj, estas ankaŭ malsama.\n"
 msgstr "    Die Anzahl der Kanäle, die von der Gruppe verschiedener Geräte aufgezeichnet werden können, ist ebenfalls unterschiedlich.\n"
 
 #. type: Title ##
-#: ./imp_system_programigo_gvidilo.md:36
-#, markdown-text, no-wrap
-#, fuzzy
+#: imp_system_programigo_gvidilo.md:52
+#, fuzzy, no-wrap
 msgid "Moduloj ligantaj (Bind)"
 msgstr "Bindemodule (Binden)"
 
 #. type: Plain text
-#: ./imp_system_programigo_gvidilo.md:38
-#, markdown-text, no-wrap
-#, fuzzy
-msgid ""
-"Post kiam du grupoj estas konektitaj de Bind, la datumoj de la fonta grupo "
-"aŭtomate estos senditaj al la celloka grupo.  \n"
+#: imp_system_programigo_gvidilo.md:54
+#, fuzzy, no-wrap
+msgid "Post kiam du grupoj estas konektitaj de Bind, la datumoj de la fonta grupo aŭtomate estos senditaj al la celloka grupo.  \n"
 msgstr "Sobald zwei Gruppen durch Binden verbunden sind, werden die Daten aus der Quellgruppe automatisch an die Zielgruppe gesendet.  \n"
 
 #. type: Plain text
-#: ./imp_system_programigo_gvidilo.md:39
-#, markdown-text, no-wrap
-#, fuzzy
-msgid ""
-"Ĉar la grupo estas la plej malgranda eniga unuo de datumoj kaj la eligo "
-"estas la plej malgranda unuo de datuma eligo, la aparatoID, groupID kaj "
-"outputID de srcCell en ambaŭ parametroj de IMP_System_Bind (IMPCell * "
-"srcCell, IMPCell * dstCell) validas.  \n"
+#: imp_system_programigo_gvidilo.md:55
+#, fuzzy, no-wrap
+msgid "Ĉar la grupo estas la plej malgranda eniga unuo de datumoj kaj la eligo estas la plej malgranda unuo de datuma eligo, la aparatoID, groupID kaj outputID de srcCell en ambaŭ parametroj de IMP_System_Bind (IMPCell * srcCell, IMPCell * dstCell) validas.  \n"
 msgstr "Da die Gruppe die kleinste Dateneingabeeinheit und die Ausgabe die kleinste Datenausgabeeinheit ist, werden die Geräte-ID, die Gruppen-ID und die Ausgabe-ID von srcCell in beiden Parametern von IMP_System_Bind (IMPCell * angegeben. srcCell, IMPCell * dstCell) gültig.  \n"
 
 #. type: Plain text
-#: ./imp_system_programigo_gvidilo.md:42
-#, markdown-text, no-wrap
-#, fuzzy
-msgid ""
-"Dum dstCell validas nur por deviceID kaj groupID, outputID ne havas sencon "
-"kiel datuma eniro.\n"
+#: imp_system_programigo_gvidilo.md:58
+#, fuzzy, no-wrap
+msgid "Dum dstCell validas nur por deviceID kaj groupID, outputID ne havas sencon kiel datuma eniro.\n"
 msgstr "Während dstCell nur für Geräte-ID und Gruppen-ID gültig ist, ist die Ausgabe-ID als Dateneingabe nicht sinnvoll.\n"
 
 #. type: Plain text
-#: ./imp_system_programigo_gvidilo.md:44
-#, markdown-text, no-wrap
-#, fuzzy
+#: imp_system_programigo_gvidilo.md:60
+#, fuzzy, no-wrap
 msgid "Ekzemplo 1: \n"
 msgstr "Beispiel 1: \n"
 
 #. type: Fenced code block
-#: ./imp_system_programigo_gvidilo.md:44
+#: imp_system_programigo_gvidilo.md:60
 #, no-wrap
 msgid ""
-"IMPCell fs_chn0 = {DEV_ID_FS, 0, 0};    // FrameSource deviceID: DEV_ID_FS "
-"groupID: 0 outputID: 0\n"
-"IMPCell enc_grp0 = {DEV_ID_ENC, 0, 0}; // ENC deviceID: DEV_ID_ENC groupID : "
-"0 outputID: 0, où le troisième paramètre de enc_grp0 n'a pas de sens. \n"
+"IMPCell fs_chn0 = {DEV_ID_FS, 0, 0};    // FrameSource deviceID: DEV_ID_FS groupID: 0 outputID: 0\n"
+"IMPCell enc_grp0 = {DEV_ID_ENC, 0, 0}; // ENC deviceID: DEV_ID_ENC groupID : 0 outputID: 0, où le troisième paramètre de enc_grp0 n'a pas de sens. \n"
 "int ret = IMP_System_Bind (& fs_chn0, & enc_grp0);\n"
 "if(ret <0>)\n"
 "  printf (\"Bind FrameSource Channel0 and Encoder Group0 failed \\ n\");\n"
 "\n"
 msgstr ""
-"IMPCell fs_chn0 = {DEV_ID_FS, 0, 0};    // FrameSource deviceID: DEV_ID_FS "
-"groupID: 0 outputID: 0\n"
-"IMPCell enc_grp0 = {DEV_ID_ENC, 0, 0}; // ENC deviceID: DEV_ID_ENC groupID : "
-"0 outputID: 0, où le troisième paramètre de enc_grp0 n'a pas de sens. \n"
+"IMPCell fs_chn0 = {DEV_ID_FS, 0, 0};    // FrameSource deviceID: DEV_ID_FS groupID: 0 outputID: 0\n"
+"IMPCell enc_grp0 = {DEV_ID_ENC, 0, 0}; // ENC deviceID: DEV_ID_ENC groupID : 0 outputID: 0, où le troisième paramètre de enc_grp0 n'a pas de sens. \n"
 "int ret = IMP_System_Bind (& fs_chn0, & enc_grp0);\n"
 "if(ret <0>)\n"
 "  printf (\"Bind FrameSource Channel0 and Encoder Group0 failed \\ n\");\n"
 "\n"
 
 #. type: Bullet: '* '
-#: ./imp_system_programigo_gvidilo.md:54
-#, markdown-text, no-wrap
-#, fuzzy
+#: imp_system_programigo_gvidilo.md:70
+#, fuzzy, no-wrap
 msgid "realiĝas grupo, kiu generas ligon de FrameSource al Encoder.\n"
 msgstr "Es wird eine Gruppe generiert, die eine Verknüpfung von FrameSource zu Encoder generiert.\n"
 
 #. type: Bullet: '* '
-#: ./imp_system_programigo_gvidilo.md:56
-#, markdown-text, no-wrap
-#, fuzzy
-msgid ""
-"Du kanaloj estas registritaj en Encoder Group, do Encoder Group havas du "
-"elirojn H264 kaj JPEG.\n"
+#: imp_system_programigo_gvidilo.md:72
+#, fuzzy, no-wrap
+msgid "Du kanaloj estas registritaj en Encoder Group, do Encoder Group havas du elirojn H264 kaj JPEG.\n"
 msgstr "In der Encoder Group werden zwei Kanäle aufgezeichnet, sodass die Encoder Group über zwei Ausgänge H264 und JPEG verfügt.\n"
 
 #. type: Plain text
-#: ./imp_system_programigo_gvidilo.md:59
-#, markdown-text, no-wrap
-#, fuzzy
+#: imp_system_programigo_gvidilo.md:75
+#, fuzzy, no-wrap
 msgid "Ekzemplo 2:\n"
 msgstr "Beispiel 2:\n"
 
 #. type: Fenced code block
-#: ./imp_system_programigo_gvidilo.md:59
+#: imp_system_programigo_gvidilo.md:75
 #, no-wrap
 msgid ""
 "// flux de données principal\n"
@@ -322,258 +328,230 @@ msgstr ""
 "    printf(\"Bind OSD Group1 and Encoder Group1 failed\\n\");\n"
 
 #. type: Plain text
-#: ./imp_system_programigo_gvidilo.md:95
-#, markdown-text, no-wrap
-#, fuzzy
+#: imp_system_programigo_gvidilo.md:111
+#, fuzzy, no-wrap
 msgid ""
 "Ĉi tio estas tipa programo Bind: du-kanala koda fluo.\n"
-" * FrameSource havas du elirojn, nome la ĉefa rivereto Channel0 (1280x720) "
-"kaj la sklava rivereto Channel1 (640x360).\n"
-"   *   Ĉefa rivereto: Channel0 Bind OSD Group.0 de FrameSource, OSD Group.0 "
-"Bind Encoder Group.0. Inter ili: \n"
-"       * OSD-Grupo.0 registris du regionojn, kiuj estas uzataj por montri "
-"informojn pri tempostampo kaj signoŝnuro respektive\n"
-"       * Kodigila Grupo .0 registris du kanalojn. , kiuj estas kodado H264 "
-"kaj kodado JPEG respektive. Inter ili, se la bilda grandeco de la koda "
-"kanalo JPEG ne egalas al la eniga parametro (Kanalo0 de FrameSource), tiam "
-"ĝi estos skalita (programaro ĉe T10) ) atingi la celon kapti ĉe iu ajn "
-"rezolucio.\n"
-msgstr "Dies ist ein typisches Bind-Programm: ein zweikanaliger Codestream.\n * FrameSource verfügt über zwei Ausgänge, nämlich den Hauptstrom Channel0 (1280x720) und den Slave-Stream Channel1 (640x360).\n   *   Hauptstrom: Channel0 Bind OSD Group.0 von FrameSource, OSD Group.0 Bind Encoder Group.0. Darunter: \n       * OSD Group.0 zeichnete zwei Regionen auf, die zum Anzeigen von Zeitstempel- bzw. Zeichenfolgeninformationen verwendet werden.\n       * Encoder Group .0 zeichnete zwei Kanäle auf. , die H264-Codierung bzw. JPEG-Codierung sind. Wenn die Bildgröße des JPEG-Codierungskanals nicht mit dem Eingabeparameter (von FrameSource Channel0)übereinstimmt, wird die Software bei T10) skaliert (.) erreichen das Ziel, bei jeder Auflösung zu erfassen.\n"
+" * FrameSource havas du elirojn, nome la ĉefa rivereto Channel0 (1280x720) kaj la sklava rivereto Channel1 (640x360).\n"
+"   *   Ĉefa rivereto: Channel0 Bind OSD Group.0 de FrameSource, OSD Group.0 Bind Encoder Group.0. Inter ili: \n"
+"       * OSD-Grupo.0 registris du regionojn, kiuj estas uzataj por montri informojn pri tempostampo kaj signoŝnuro respektive\n"
+"       * Kodigila Grupo .0 registris du kanalojn. , kiuj estas kodado H264 kaj kodado JPEG respektive. Inter ili, se la bilda grandeco de la koda kanalo JPEG ne egalas al la eniga parametro (Kanalo0 de FrameSource), tiam ĝi estos skalita (programaro ĉe T10) ) atingi la celon kapti ĉe iu ajn rezolucio.\n"
+msgstr ""
+"Dies ist ein typisches Bind-Programm: ein zweikanaliger Codestream.\n"
+" * FrameSource verfügt über zwei Ausgänge, nämlich den Hauptstrom Channel0 (1280x720) und den Slave-Stream Channel1 (640x360).\n"
+"   *   Hauptstrom: Channel0 Bind OSD Group.0 von FrameSource, OSD Group.0 Bind Encoder Group.0. Darunter: \n"
+"       * OSD Group.0 zeichnete zwei Regionen auf, die zum Anzeigen von Zeitstempel- bzw. Zeichenfolgeninformationen verwendet werden.\n"
+"       * Encoder Group .0 zeichnete zwei Kanäle auf. , die H264-Codierung bzw. JPEG-Codierung sind. Wenn die Bildgröße des JPEG-Codierungskanals nicht mit dem Eingabeparameter (von FrameSource Channel0)übereinstimmt, wird die Software bei T10) skaliert (.) erreichen das Ziel, bei jeder Auflösung zu erfassen.\n"
 
 #. type: Plain text
-#: ./imp_system_programigo_gvidilo.md:99
-#, markdown-text, no-wrap
-#, fuzzy
+#: imp_system_programigo_gvidilo.md:115
+#, fuzzy, no-wrap
 msgid ""
 "Notoj:\n"
-"* oni rekomendas, ke ĉiuj ligaj operacioj estu faritaj dum "
-"sistemo-inicialigo.\n"
-"* Operacioj Bind kaj UnBind ne povas esti nomataj dinamike post kiam "
-"_FrameSource_ estas aktivigita. UnBind fariĝas nur post malaktivigo "
-"_FrameSource_.\n"
-msgstr "Hinweise:\n* Es wird empfohlen, alle Verbindungsvorgänge während der Systeminitialisierung auszuführen.\n* Bind- und UnBind-Vorgänge können nach Aktivierung von _FrameSource_ nicht dynamisch aufgerufen werden. Das Aufheben der Bindung erfolgt erst nach Deaktivierung _FrameSource_.\n"
+"* oni rekomendas, ke ĉiuj ligaj operacioj estu faritaj dum sistemo-inicialigo.\n"
+"* Operacioj Bind kaj UnBind ne povas esti nomataj dinamike post kiam _FrameSource_ estas aktivigita. UnBind fariĝas nur post malaktivigo _FrameSource_.\n"
+msgstr ""
+"Hinweise:\n"
+"* Es wird empfohlen, alle Verbindungsvorgänge während der Systeminitialisierung auszuführen.\n"
+"* Bind- und UnBind-Vorgänge können nach Aktivierung von _FrameSource_ nicht dynamisch aufgerufen werden. Das Aufheben der Bindung erfolgt erst nach Deaktivierung _FrameSource_.\n"
 
 #. type: Title ##
-#: ./imp_system_programigo_gvidilo.md:100
-#, markdown-text, no-wrap
-#, fuzzy
+#: imp_system_programigo_gvidilo.md:116
+#, fuzzy, no-wrap
 msgid "Funkcioj"
 msgstr "Funktionen"
 
 #. type: Title ###
-#: ./imp_system_programigo_gvidilo.md:102
-#, markdown-text, no-wrap
-#, fuzzy
+#: imp_system_programigo_gvidilo.md:118
+#, fuzzy, no-wrap
 msgid "int IMP\\_Sistemo\\_Init (malplena )"
 msgstr "int IMP\\_System\\_Init (leer )"
 
 #. type: Plain text
-#: ./imp_system_programigo_gvidilo.md:107
-#, markdown-text, no-wrap
-#, fuzzy
+#: imp_system_programigo_gvidilo.md:123
+#, fuzzy, no-wrap
 msgid ""
 "Inicialigo de la IMP-sistemo.\n"
 "redonas 0 se ĝi sukcesas.\n"
-"Post ĉi tiu API-alvoko, la baza datuma strukturo estos pravalorizita, sed la "
-"aparataro ne estos pravalorizita.\n"
-"atento: Ĉi tiu funkcio devas esti alvokita por komencigo antaŭ iu ajn alia "
-"operacio.\n"
-msgstr "Initialisierung des IMP-Systems.\ngibt bei Erfolg 0 zurück.\nNach diesem API-Aufruf wird die grundlegende Datenstruktur initialisiert, die Hardware jedoch nicht.\nAchtung: Diese Funktion muss vor jeder anderen Operation zur Initiierung aufgerufen werden.\n"
+"Post ĉi tiu API-alvoko, la baza datuma strukturo estos pravalorizita, sed la aparataro ne estos pravalorizita.\n"
+"atento: Ĉi tiu funkcio devas esti alvokita por komencigo antaŭ iu ajn alia operacio.\n"
+msgstr ""
+"Initialisierung des IMP-Systems.\n"
+"gibt bei Erfolg 0 zurück.\n"
+"Nach diesem API-Aufruf wird die grundlegende Datenstruktur initialisiert, die Hardware jedoch nicht.\n"
+"Achtung: Diese Funktion muss vor jeder anderen Operation zur Initiierung aufgerufen werden.\n"
 
 #. type: Title ###
-#: ./imp_system_programigo_gvidilo.md:107
-#, markdown-text, no-wrap
-#, fuzzy
+#: imp_system_programigo_gvidilo.md:123
+#, fuzzy, no-wrap
 msgid "int IMP_System_Elirejo (malplena)"
 msgstr "int IMP_System_Ausgang (leer)"
 
 #. type: Plain text
-#: ./imp_system_programigo_gvidilo.md:111
-#, markdown-text, no-wrap
-#, fuzzy
+#: imp_system_programigo_gvidilo.md:127
+#, fuzzy, no-wrap
 msgid ""
-"Post vokado de ĉi tiu funkcio, ĉiu memoro kaj IMP _handles_ estos "
-"liberigitaj, kaj la aparataro estos fermita. \n"
-"Noto: Post voki ĉi tiun API, se vi volas uzi IMP denove, vi devas reagordi "
-"la IMP-sistemon.\n"
-msgstr "Nach dem Aufruf dieser Funktion werden der gesamte Speicher und IMP _handles_ freigegeben und die Hardware heruntergefahren. \nHinweis: Wenn Sie nach dem Aufrufen dieser API IMP erneut verwenden möchten, müssen Sie das IMP-System zurücksetzen.\n"
+"Post vokado de ĉi tiu funkcio, ĉiu memoro kaj IMP _handles_ estos liberigitaj, kaj la aparataro estos fermita. \n"
+"Noto: Post voki ĉi tiun API, se vi volas uzi IMP denove, vi devas reagordi la IMP-sistemon.\n"
+msgstr ""
+"Nach dem Aufruf dieser Funktion werden der gesamte Speicher und IMP _handles_ freigegeben und die Hardware heruntergefahren. \n"
+"Hinweis: Wenn Sie nach dem Aufrufen dieser API IMP erneut verwenden möchten, müssen Sie das IMP-System zurücksetzen.\n"
 
 #. type: Title ###
-#: ./imp_system_programigo_gvidilo.md:112
-#, markdown-text, no-wrap
-#, fuzzy
+#: imp_system_programigo_gvidilo.md:128
+#, fuzzy, no-wrap
 msgid "int64_t IMP_Sistemo_GetTimeStamp (void)"
 msgstr "int64_t IMP_System_GetTimeStamp (void)"
 
 #. type: Plain text
-#: ./imp_system_programigo_gvidilo.md:114
-#, markdown-text, no-wrap
-#, fuzzy
+#: imp_system_programigo_gvidilo.md:130
+#, fuzzy, no-wrap
 msgid "Akiru la IMP-sisteman tempostampon en mikrosekundoj.  \n"
 msgstr "Holen Sie sich den Zeitstempel des IMP-Systems in Mikrosekunden.  \n"
 
 #. type: Plain text
-#: ./imp_system_programigo_gvidilo.md:116
-#, markdown-text, no-wrap
-#, fuzzy
+#: imp_system_programigo_gvidilo.md:132
+#, fuzzy, no-wrap
 msgid "Reveno: tempo en mikrosekundoj.\n"
 msgstr "Rückgabe: Zeit in Mikrosekunden.\n"
 
 #. type: Title ###
-#: ./imp_system_programigo_gvidilo.md:117
-#, markdown-text, no-wrap
-#, fuzzy
+#: imp_system_programigo_gvidilo.md:133
+#, fuzzy, no-wrap
 msgid "int IMP_System_RebaseTimeStamp (bazoj int64_t)"
 msgstr "int IMP_System_RebaseTimeStamp (Basen int64_t)"
 
 #. type: Plain text
-#: ./imp_system_programigo_gvidilo.md:118
-#, markdown-text, no-wrap
-#, fuzzy
+#: imp_system_programigo_gvidilo.md:134
+#, fuzzy, no-wrap
 msgid "Agordu la tempan markon de la sistemo IMP en mikrosekundoj.  \n"
 msgstr "Stellen Sie den Zeitstempel des IMP-Systems in Mikrosekunden ein.  \n"
 
 #. type: Plain text
-#: ./imp_system_programigo_gvidilo.md:120
-#, markdown-text, no-wrap
-#, fuzzy
+#: imp_system_programigo_gvidilo.md:136
+#, fuzzy, no-wrap
 msgid "Reveno: 0 se sukcesas.\n"
 msgstr "Rückgabe: 0 bei Erfolg.\n"
 
 #. type: Title ###
-#: ./imp_system_programigo_gvidilo.md:121
-#, markdown-text, no-wrap
-#, fuzzy
+#: imp_system_programigo_gvidilo.md:137
+#, fuzzy, no-wrap
 msgid "uint32_t IMP_Sistemo_ReadReg32 (uint32_t u32Addr)"
 msgstr "uint32_t IMP_System_ReadReg32 (uint32_t u32Addr)"
 
 #. type: Plain text
-#: ./imp_system_programigo_gvidilo.md:123
-#, markdown-text, no-wrap
-#, fuzzy
+#: imp_system_programigo_gvidilo.md:139
+#, fuzzy, no-wrap
 msgid "Legu la valoron de 32-bita registro.  \n"
 msgstr "Lesen Sie den Wert eines 32-Bit-Registers.  \n"
 
 #. type: Title ###
-#: ./imp_system_programigo_gvidilo.md:125
-#, markdown-text, no-wrap
-#, fuzzy
+#: imp_system_programigo_gvidilo.md:141
+#, fuzzy, no-wrap
 msgid "malplena IMP_System_WriteReg32 (uint32_t regAddr, valeur uint32_t)"
 msgstr "leer IMP_System_WriteReg32 (uint32_t regAddr, valeur uint32_t)"
 
 #. type: Plain text
-#: ./imp_system_programigo_gvidilo.md:127
-#, markdown-text, no-wrap
-#, fuzzy
+#: imp_system_programigo_gvidilo.md:143
+#, fuzzy, no-wrap
 msgid "Skribu la valoron al la 32-bita registro.\n"
 msgstr "Schreiben Sie den Wert in das 32-Bit-Register.\n"
 
 #. type: Plain text
-#: ./imp_system_programigo_gvidilo.md:129
-#, markdown-text, no-wrap
-#, fuzzy
-msgid ""
-"Noto: Bonvolu telefoni al ĉi tiu API zorge kaj kontroli la signifon de la "
-"registro, alie ĝi povas kaŭzi sistemajn erarojn.\n"
+#: imp_system_programigo_gvidilo.md:145
+#, fuzzy, no-wrap
+msgid "Noto: Bonvolu telefoni al ĉi tiu API zorge kaj kontroli la signifon de la registro, alie ĝi povas kaŭzi sistemajn erarojn.\n"
 msgstr "Hinweis: Rufen Sie diese API sorgfältig auf und überprüfen Sie die Bedeutung der Registrierung. Andernfalls kann es zu Systemfehlern kommen.\n"
 
 #. type: Title ###
-#: ./imp_system_programigo_gvidilo.md:130
-#, markdown-text, no-wrap
-#, fuzzy
+#: imp_system_programigo_gvidilo.md:146
+#, fuzzy, no-wrap
 msgid "int IMP_System_GetVersion (IMPVersion * pstVersion) "
 msgstr "int IMP_System_GetVersion (IMPVersion * pstVersion) "
 
 #. type: Plain text
-#: ./imp_system_programigo_gvidilo.md:133
-#, markdown-text, no-wrap
-#, fuzzy
+#: imp_system_programigo_gvidilo.md:149
+#, fuzzy, no-wrap
 msgid "Akiru la versian numeron de la IMP-sistemo.\n"
 msgstr "Rufen Sie die Versionsnummer des IMP-Systems ab.\n"
 
 #. type: Title ###
-#: ./imp_system_programigo_gvidilo.md:134
-#, markdown-text, no-wrap
-#, fuzzy
+#: imp_system_programigo_gvidilo.md:150
+#, fuzzy, no-wrap
 msgid "const char * IMP_System_GetCPUInfo (malplena)"
 msgstr "const char * IMP_System_GetCPUInfo (leer)"
 
 #. type: Plain text
-#: ./imp_system_programigo_gvidilo.md:135
-#, markdown-text, no-wrap
-#, fuzzy
+#: imp_system_programigo_gvidilo.md:151
+#, fuzzy, no-wrap
 msgid "Akiru informojn pri la CPU-modelo.  \n"
 msgstr "Informationen zum CPU-Modell abrufen.  \n"
 
 #. type: Plain text
-#: ./imp_system_programigo_gvidilo.md:137
-#, markdown-text, no-wrap
-#, fuzzy
-msgid ""
-"Noto: La revenvaloro estas ĉeno de CPU-modelo, ekzemple, por T10 ekzistas "
-"\"T10\"kaj \"T10-Lite\".\n"
+#: imp_system_programigo_gvidilo.md:153
+#, fuzzy, no-wrap
+msgid "Noto: La revenvaloro estas ĉeno de CPU-modelo, ekzemple, por T10 ekzistas \"T10\"kaj \"T10-Lite\".\n"
 msgstr "Hinweis: Der Rückgabewert ist eine Zeichenfolge des CPU-Modells. Für T10 gibt es beispielsweise \"T10\"und \"T10-Lite\".\n"
 
 #. type: Title ###
-#: ./imp_system_programigo_gvidilo.md:138
-#, markdown-text, no-wrap
-#, fuzzy
+#: imp_system_programigo_gvidilo.md:154
+#, fuzzy, no-wrap
 msgid "int IMP_System_Bind (IMPCell * srcCell, IMPCell * dstCell)"
 msgstr "int IMP_System_Binden (IMPCell * srcCell, IMPCell * dstCell)"
 
 #. type: Plain text
-#: ./imp_system_programigo_gvidilo.md:141
-#, markdown-text, no-wrap
-#, fuzzy
+#: imp_system_programigo_gvidilo.md:157
+#, fuzzy, no-wrap
 msgid "Ligo inter fonta ĉelo kaj celloko.\n"
 msgstr "Verbindung zwischen Quellzelle und Ziel.\n"
 
 #. type: Plain text
-#: ./imp_system_programigo_gvidilo.md:143
-#, markdown-text, no-wrap
-#, fuzzy
-msgid ""
-"Noto 1: Laŭ la konceptoj de Aparato, Grupo kaj Eligo, ĉiu aparato povas havi "
-"plurajn grupojn, kaj ĉiu grupo povas havi plurajn elirojn, Grupo estas uzata "
-"kiel Aparata eniga interfaco, kaj Eliro estas uzata kiel Aparata produkta "
-"interfaco. Tial la ligo fakte konektas certan eliron de la eliga aparato al "
-"certa Grupo de la eniga aparato.\n"
+#: imp_system_programigo_gvidilo.md:159
+#, fuzzy, no-wrap
+msgid "Noto 1: Laŭ la konceptoj de Aparato, Grupo kaj Eligo, ĉiu aparato povas havi plurajn grupojn, kaj ĉiu grupo povas havi plurajn elirojn, Grupo estas uzata kiel Aparata eniga interfaco, kaj Eliro estas uzata kiel Aparata produkta interfaco. Tial la ligo fakte konektas certan eliron de la eliga aparato al certa Grupo de la eniga aparato.\n"
 msgstr "Hinweis 1: Gemäß den Konzepten von Gerät, Gruppe und Ausgabe kann jedes Gerät mehrere Gruppen und jede Gruppe mehrere Ausgänge haben. Die Gruppe wird als Geräteeingabeschnittstelle und die Ausgabe als Geräteproduktschnittstelle verwendet. Daher verbindet die Verbindung tatsächlich einen bestimmten Ausgang des Ausgabegeräts mit einer bestimmten Gruppe des Eingabegeräts.\n"
 
 #. type: Plain text
-#: ./imp_system_programigo_gvidilo.md:145
-#, markdown-text, no-wrap
-#, fuzzy
-msgid ""
-"Noto 2: Post sukcesa ligilo, la datumoj generitaj de srcCell (Eliro) estos "
-"aŭtomate transdonitaj al la celloka Ĉela (Grupo).\n"
+#: imp_system_programigo_gvidilo.md:161
+#, fuzzy, no-wrap
+msgid "Noto 2: Post sukcesa ligilo, la datumoj generitaj de srcCell (Eliro) estos aŭtomate transdonitaj al la celloka Ĉela (Grupo).\n"
 msgstr "Hinweis 2: Nach einer erfolgreichen Verknüpfung werden die von srcCell (Output) generierten Daten automatisch an die Zielzellengruppe ()übertragen.\n"
 
 #. type: Title ###
-#: ./imp_system_programigo_gvidilo.md:146
-#, markdown-text, no-wrap
-#, fuzzy
+#: imp_system_programigo_gvidilo.md:162
+#, fuzzy, no-wrap
 msgid "int IMP_System_UnBind (IMPCell * srcCell, IMPCell * dstCell)"
 msgstr "int IMP_System_UnBind (IMPCell * srcCell, IMPCell * dstCell)"
 
 #. type: Plain text
-#: ./imp_system_programigo_gvidilo.md:148
-#, markdown-text, no-wrap
-#, fuzzy
+#: imp_system_programigo_gvidilo.md:164
+#, fuzzy, no-wrap
 msgid "Malgrupigu la fontajn kaj cellokojn. \n"
 msgstr "Gruppieren Sie die Quellen und Ziele auf. \n"
 
 #. type: Title ###
-#: ./imp_system_programigo_gvidilo.md:149
-#, markdown-text, no-wrap
-#, fuzzy
+#: imp_system_programigo_gvidilo.md:165
+#, fuzzy, no-wrap
 msgid "int IMP_System_GetBindbyDest (IMPCell * dstCell, IMPCell * srcCell)"
 msgstr "int IMP_System_GetBindbyDest (IMPCell * dstCell, IMPCell * srcCell)"
 
 #. type: Plain text
-#: ./imp_system_programigo_gvidilo.md:152
-#, markdown-text, no-wrap
-#, fuzzy
+#: imp_system_programigo_gvidilo.md:168
+#, fuzzy, no-wrap
 msgid "Rekuperas informojn de la fonta ĉelo rilate al la celloko.\n"
 msgstr "Ruft Informationen aus der Quellzelle ab, die sich auf das Ziel beziehen.\n"
 
+#, fuzzy
+#~ msgid "[originala versio en la ĉina](../zh/includes.zh/html/)\n"
+#~ msgstr "[Originalversion auf Chinesisch](../zh/includes.zh/html/)\n"
+
+#, fuzzy
+#~ msgid "[Angla versio](../en/includes.en/html/)\n"
+#~ msgstr "[Englische Version](../en/includes.en/html/)\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "(° 1 ° 1 ° franca versio Tradukita per google](../fr/includes.fr/html/)\n"
+#~ msgstr ""
+#~ "(° 1 ° 1 ° 1 ° 1 ° 1 ° Französische Version von Google übersetzt](../fr/"
+#~ "includes.fr/html/)\n"

@@ -14,42 +14,31 @@ distinzione: _1080P_
 
 Informazioni visualizzate nell'interfaccia Internet:
 ```
-DeviceName: _INGENIC-V01_
-DeviceModel: _IPCAM-100_
-DeviceSN: _12345678901_
-KernelVersion: _Thu Jul 9 15:46:54 CST 2015_
-ServerVersion: _WS3.53.1243-20190717-DANALE-GEN_
-WebVersion: _V2.3.4-20190709_
+DeviceName: INGENIC-V01
+DeviceModel: IPCAM-100
+DeviceSN: 12345678901
+KernelVersion: Thu Jul 9 15:46:54 CST 2015
+ServerVersion: WS3.53.1243-20190717-DANALE-GEN
+WebVersion: V2.3.4-20190709
 ```
 
 processore: _ingenic T21_
 sensore video: _GC2053_
 
-La documentazione API può essere visualizzata qui:  
-* [versione originale in cinese](../zh/includes.zh/html/)
-
-
-* [Versione inglese](../en/includes.en/html/)
-
-
-* [Versione francese tradotta da google](../fr/includes.fr/html/)
-
-
-
 # Firmware alternativo
 
 ## Cosa funziona in un firmware alternativo:
 
-* LAN e WLAN
+* _LAN_ e _WLAN_
 
 
-* DRTTSP Dual Flow Flow Server: 1920x1080 H264 e 640x360 MJPEG per impostazione predefinita.
+* Server (° 1 ° Doppio flusso: _1920x1080 H264_ e _640x360 MJPEG_ per impostazione predefinita.  
 
 
 * Parametri visivi
 
 
-* Server HTTP
+* Server _HTTP_
 
 
 * controllo motore
@@ -58,31 +47,37 @@ La documentazione API può essere visualizzata qui:
 * taratura motore
 
 
-* Impostazioni PTZ
+* Parametri _PTZ_(° 3 ° 3
 
 
-* Cliente NTP
+* Cliente _NTP_(° 3 ° 3
 
 
-* cambio password per accesso http
+* Amministrazione password _http_, _rtsp_ e sistema.  
 
 
-* LED blu e controllo IR
+* Controllo a LED bianco e IR
 
 
-* Server ftp
+* Controllo a LED bianco e IR _ftp_
 
 
-* Server Telnet
+* Controllo a LED bianco e IR _telnet_
 
 
-* Server ssh e client
+* Server e client _ssh_(° 3 ° 3
 
 
 * rilevamento del movimento
 
 
 * invio email
+
+
+* Invia _«telegram»_
+
+
+* Regime notturno automatico
 
 
 
@@ -94,19 +89,16 @@ La documentazione API può essere visualizzata qui:
 * _OSD_
 
 
-* Gestione amministrativa e sistema RTSP.
-
-
 * aggiornamento firmware
-
-
-* rilevamento notturno automatico
 
 
 * rilevamento del movimento_ir-cut_
 
 
 * invio email_mqtt_
+
+
+* Invio di immagini e video nel cloud (° 1 ° 1
 
 
 * ecc ...
@@ -121,7 +113,7 @@ La documentazione API può essere visualizzata qui:
 * Forse impostare la rete ( _www/ipcam/config.dist/reto.conf_ )
 
 
-* Inserisci la scheda microSD.
+* Immettere la scheda _microSD_ nella fotocamera.  
 
 
 * Collega la videocamera alla rete locale e accendi la videocamera.
@@ -139,21 +131,24 @@ La documentazione API può essere visualizzata qui:
 * Faru `cd /opt/media/mmcblk0p1;./install.sh`
 
 
-* È possibile collegare all'URL _https://IP_ (utente _admin_, password _ismart21_).
+* La fotocamera riprende, ora: (° 1 ° 1
 
 
-* È possibile connettersi in Utente SSH ( _admin_, password _ismart12_).
+    * È possibile collegare all'URL _https://IP_ (utente _admin_, password _ismart21_).
 
 
-* La corrente video primaria è accessibile a _rtsp://admin:ismart21@IP/stream1_. (° 3 ° 3
+    * È possibile connettersi in Utente SSH ( _admin_, password _ismart12_).
 
 
-* La corrente video secondaria è accessibile a _rtsp://admin:ismart21@IP/stream2_. (° 3 ° 3
+    * La corrente video primaria è accessibile a _rtsp://admin:ismart21@IP/stream1_. (° 3 ° 3
+
+
+    * La corrente video secondaria è accessibile a _rtsp://admin:ismart21@IP/stream2_. (° 3 ° 3
 
 
 (° 1 ° 1 ° 1 WiFi Modalità AP è attivata per impostazione predefinita:
-** SSID: IPCAM100-XXXXXX
-** Chiave WPA2: ISMART21
+    ** SSID: IPCAM100-XXXXXX
+    ** Chiave WPA2: ISMART21
 Indirizzo IP della fotocamera: 172.25.0.1
 
 ## Disinstallazione del firmware alternativo:
@@ -176,7 +171,6 @@ Indirizzo IP della fotocamera: 172.25.0.1
 
 Molto lavoro è stato realizzato per telecamere dotato di un processore _ingenic T20_ :
 * Firmware modificato: <https://github.com/ilílístotlyar/xiaomi- Dafang -Haks>
-Fonti del firmware modificato: <https://github.com/dafang-hacks/main>>
-Altro firmware <https://github.com/openmiko/openmiko>
-* Avvio dei programmi senza modificare il firmware: (° 17 ° 17 ° 17: // https://github.com/thatusenameanameexist/jco-pm203-fiseye-ingenic-t20-P2P-camera-Hacks>
+Fonti del firmware modificato: <https://github.com/dafang-hacks/main>
+17 °) https://github.com/thatusenameanamexist/jco-pm203-fishiseye-ininic-t20-P2P-camer-Hacks>
 

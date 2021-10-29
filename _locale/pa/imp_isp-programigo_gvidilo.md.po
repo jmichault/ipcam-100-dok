@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-03-04 16:48+0100\n"
+"POT-Creation-Date: 2021-10-29 23:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,49 +16,72 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+#. type: YAML Front Matter: lang
+#: imp_isp-programigo_gvidilo.md:1
+#, no-wrap
+msgid "eo"
+msgstr "pa"
+
+#. type: YAML Front Matter: lang-niv
+#: imp_isp-programigo_gvidilo.md:1
+#, no-wrap
+msgid "auto"
+msgstr "auto"
+
+#. type: YAML Front Matter: lang-ref
+#: imp_isp-programigo_gvidilo.md:1
+#, no-wrap
+msgid "052-ISP-programigo_gvidilo"
+msgstr "052-ISP-programigo_gvidilo"
+
+#. type: YAML Front Matter: layout
+#: imp_isp-programigo_gvidilo.md:1
+#, no-wrap
+msgid "page"
+msgstr "page"
+
+#. type: YAML Front Matter: title
+#: imp_isp-programigo_gvidilo.md:1
+#, fuzzy, no-wrap
+msgid "Gvidilo pri video-programado"
+msgstr "ਵੀਡੀਓ ਪ੍ਰੋਗਰਾਮਿੰਗ ਗਾਈਡ"
+
 #. type: Title #
-#: ./imp_isp-programigo_gvidilo.md:1
-#, markdown-text, no-wrap
-#, fuzzy
+#: imp_isp-programigo_gvidilo.md:9
+#, fuzzy, no-wrap
 msgid "IMP_ISP (voir imp_isp.h)"
 msgstr "ਆਈਐਮਪੀ_ISP (voir imp_isp.h)"
 
 #. type: Plain text
-#: ./imp_isp-programigo_gvidilo.md:3
-#, markdown-text, no-wrap
-#, fuzzy
-msgid ""
-"Bildosigna prilaborado. Ĉefe inkluzivas agordojn de bildaj efikoj, "
-"reĝimoŝaltilo kaj registrado, aldono kaj forigo de sensilo.\n"
+#: imp_isp-programigo_gvidilo.md:11
+#, fuzzy, no-wrap
+msgid "Bildosigna prilaborado. Ĉefe inkluzivas agordojn de bildaj efikoj, reĝimoŝaltilo kaj registrado, aldono kaj forigo de sensilo.\n"
 msgstr "ਚਿੱਤਰ ਪ੍ਰੋਸੈਸਿੰਗ. ਮੁੱਖ ਤੌਰ ਤੇ ਚਿੱਤਰ ਪ੍ਰਭਾਵਾਂ ਦੀ ਸੈਟਿੰਗ, ਮੋਡ ਸਵਿੱਚ ਅਤੇ ਰਿਕਾਰਡਿੰਗ, ਸੰਵੇਦਕ ਨੂੰ ਜੋੜ ਅਤੇ ਹਟਾਉਣ ਸ਼ਾਮਲ ਹਨ.\n"
 
 #. type: Plain text
-#: ./imp_isp-programigo_gvidilo.md:5
-#, markdown-text, no-wrap
-#, fuzzy
-msgid ""
-"La ISP-modulo havas nenion komunan kun datuma fluo kaj ne bezonas esti "
-"ligita, ĝi nur funkcias laŭ efektagordo kaj sensila kontrolo.\n"
+#: imp_isp-programigo_gvidilo.md:13
+#, fuzzy, no-wrap
+msgid "La ISP-modulo havas nenion komunan kun datuma fluo kaj ne bezonas esti ligita, ĝi nur funkcias laŭ efektagordo kaj sensila kontrolo.\n"
 msgstr "ਆਈਐਸਪੀ ਮੈਡਿ .ਲ ਦਾ ਡੇਟਾ ਪ੍ਰਵਾਹ ਨਾਲ ਕੋਈ ਲੈਣਾ ਦੇਣਾ ਨਹੀਂ ਹੈ ਅਤੇ ਨਾ ਜੁੜਣ ਦੀ ਜ਼ਰੂਰਤ ਹੈ, ਇਹ ਸਿਰਫ ਪ੍ਰਭਾਵ ਕੌਂਫਿਗਰੇਸ਼ਨ ਅਤੇ ਸੈਂਸਰ ਨਿਯੰਤਰਣ ਦੇ ਰੂਪ ਵਿੱਚ ਕੰਮ ਕਰਦਾ ਹੈ.\n"
 
 #. type: Title ##
-#: ./imp_isp-programigo_gvidilo.md:6
-#, markdown-text, no-wrap
-#, fuzzy
+#: imp_isp-programigo_gvidilo.md:14
+#, fuzzy, no-wrap
 msgid "Aktivigo"
 msgstr "ਐਕਟੀਵੇਸ਼ਨ"
 
 #. type: Plain text
-#: ./imp_isp-programigo_gvidilo.md:10
-#, markdown-text, no-wrap
-#, fuzzy
+#: imp_isp-programigo_gvidilo.md:18
+#, fuzzy, no-wrap
 msgid ""
 "La paŝoj de aktivigo de ISP-modulo estas jenaj:\n"
 "* paŝo 1: Kreu ISP-modulon\n"
-msgstr "ਇੱਕ ISP ਮੋਡੀ moduleਲ ਨੂੰ ਸਰਗਰਮ ਕਰਨ ਲਈ ਕਦਮ ਇਸ ਤਰਾਂ ਹਨ:\n* ਕਦਮ 1: ਇੱਕ ISP ਮੋਡੀ moduleਲਬਣਾਓ\n"
+msgstr ""
+"ਇੱਕ ISP ਮੋਡੀ moduleਲ ਨੂੰ ਸਰਗਰਮ ਕਰਨ ਲਈ ਕਦਮ ਇਸ ਤਰਾਂ ਹਨ:\n"
+"* ਕਦਮ 1: ਇੱਕ ISP ਮੋਡੀ moduleਲਬਣਾਓ\n"
 
 #. type: Fenced code block
-#: ./imp_isp-programigo_gvidilo.md:11
+#: imp_isp-programigo_gvidilo.md:19
 #, no-wrap
 msgid ""
 "int ret = 0;\n"
@@ -78,32 +101,26 @@ msgstr ""
 "  }\n"
 
 #. type: Bullet: '* '
-#: ./imp_isp-programigo_gvidilo.md:21
-#, markdown-text, no-wrap
-#, fuzzy
-msgid ""
-"2a paŝo: Aldonu sensilon, la sensila pelilo estis aldonita al la kerno antaŭ "
-"ĉi tiu operacio.\n"
+#: imp_isp-programigo_gvidilo.md:29
+#, fuzzy, no-wrap
+msgid "2a paŝo: Aldonu sensilon, la sensila pelilo estis aldonita al la kerno antaŭ ĉi tiu operacio.\n"
 msgstr "ਕਦਮ 2: ਸੈਂਸਰ ਸ਼ਾਮਲ ਕਰੋ, ਇਸ ਕਾਰਵਾਈ ਤੋਂ ਪਹਿਲਾਂ ਸੈਂਸਰ ਡਰਾਈਵਰ ਨੂੰ ਕਰਨਲ ਵਿੱਚ ਜੋੜਿਆ ਗਿਆ ਸੀ.\n"
 
 #. type: Fenced code block
-#: ./imp_isp-programigo_gvidilo.md:23
+#: imp_isp-programigo_gvidilo.md:31
 #, no-wrap
 msgid ""
 "  IMPSensorInfo sensor[2];\n"
 "  sensor[0].name = \"xxx\";\n"
-"  sensor[0].cbus_type = SENSOR_CONTROL_INTERFACE_I2C; // OU "
-"SENSOR_CONTROL_INTERFACE_SPI\n"
+"  sensor[0].cbus_type = SENSOR_CONTROL_INTERFACE_I2C; // OU SENSOR_CONTROL_INTERFACE_SPI\n"
 "  sensor[0].i2c = {\n"
-"    .type = \"xxx\", // nom du périphérique I2C, qui doit être cohérent avec "
-"le nom de la structure i2c_device_id dans le pilote du capteur.\n"
+"    .type = \"xxx\", // nom du périphérique I2C, qui doit être cohérent avec le nom de la structure i2c_device_id dans le pilote du capteur.\n"
 "    .addr = xx, // adresse I2C\n"
 "    .i2c_adapter_id = xx, // ID du contrôleur I2C où se trouve le capteur\n"
 "  }\n"
 "  /* OU\n"
 "   * sensor[0].spi = {\n"
-"   *   .modalias = \"xx\", // nom du périphérique SPI, doit être cohérent "
-"avec le nom de la structure spi_device_id dans le pilote du capteur.\n"
+"   *   .modalias = \"xx\", // nom du périphérique SPI, doit être cohérent avec le nom de la structure spi_device_id dans le pilote du capteur.\n"
 "   *     .bus_num = xx, // adresse du bus SPI\n"
 "   *}\n"
 "   */\n"
@@ -116,18 +133,15 @@ msgid ""
 msgstr ""
 "  IMPSensorInfo sensor[2];\n"
 "  sensor[0].name = \"xxx\";\n"
-"  sensor[0].cbus_type = SENSOR_CONTROL_INTERFACE_I2C; // OU "
-"SENSOR_CONTROL_INTERFACE_SPI\n"
+"  sensor[0].cbus_type = SENSOR_CONTROL_INTERFACE_I2C; // OU SENSOR_CONTROL_INTERFACE_SPI\n"
 "  sensor[0].i2c = {\n"
-"    .type = \"xxx\", // nom du périphérique I2C, qui doit être cohérent avec "
-"le nom de la structure i2c_device_id dans le pilote du capteur.\n"
+"    .type = \"xxx\", // nom du périphérique I2C, qui doit être cohérent avec le nom de la structure i2c_device_id dans le pilote du capteur.\n"
 "    .addr = xx, // adresse I2C\n"
 "    .i2c_adapter_id = xx, // ID du contrôleur I2C où se trouve le capteur\n"
 "  }\n"
 "  /* OU\n"
 "   * sensor[0].spi = {\n"
-"   *   .modalias = \"xx\", // nom du périphérique SPI, doit être cohérent "
-"avec le nom de la structure spi_device_id dans le pilote du capteur.\n"
+"   *   .modalias = \"xx\", // nom du périphérique SPI, doit être cohérent avec le nom de la structure spi_device_id dans le pilote du capteur.\n"
 "   *     .bus_num = xx, // adresse du bus SPI\n"
 "   *}\n"
 "   */\n"
@@ -139,14 +153,13 @@ msgstr ""
 "  }\n"
 
 #. type: Bullet: '* '
-#: ./imp_isp-programigo_gvidilo.md:46
-#, markdown-text, no-wrap
-#, fuzzy
+#: imp_isp-programigo_gvidilo.md:54
+#, fuzzy, no-wrap
 msgid "Paŝo 3: Aktivigu la sensilon, ĝi komencos produkti bildojn.\n"
 msgstr "ਕਦਮ 3: ਸੈਂਸਰ ਨੂੰ ਸਰਗਰਮ ਕਰੋ, ਇਹ ਚਿੱਤਰ ਤਿਆਰ ਕਰਨਾ ਸ਼ੁਰੂ ਕਰੇਗਾ.\n"
 
 #. type: Fenced code block
-#: ./imp_isp-programigo_gvidilo.md:48
+#: imp_isp-programigo_gvidilo.md:56
 #, no-wrap
 msgid ""
 "  ret = IMP_ISP_EnableSensor (void);\n"
@@ -162,14 +175,13 @@ msgstr ""
 " }\n"
 
 #. type: Bullet: '* '
-#: ./imp_isp-programigo_gvidilo.md:56
-#, markdown-text, no-wrap
-#, fuzzy
+#: imp_isp-programigo_gvidilo.md:64
+#, fuzzy, no-wrap
 msgid "paŝo 4: Aktivigu la agordojn:\n"
 msgstr "ਕਦਮ 4: ਸੈਟਿੰਗਾਂ ਨੂੰ ਸਰਗਰਮ ਕਰੋ:\n"
 
 #. type: Fenced code block
-#: ./imp_isp-programigo_gvidilo.md:58
+#: imp_isp-programigo_gvidilo.md:66
 #, no-wrap
 msgid ""
 "  ret = IMP_ISP_EnableTuning (); \n"
@@ -185,32 +197,29 @@ msgstr ""
 " }\n"
 
 #. type: Bullet: '* '
-#: ./imp_isp-programigo_gvidilo.md:66
-#, markdown-text, no-wrap
-#, fuzzy
-msgid ""
-"Paŝo 5: Alvoki ISP-elpurigan interfacon: Bonvolu raporti al la dokumentado "
-"de ISP-elpuriga interfaco.\n"
+#: imp_isp-programigo_gvidilo.md:74
+#, fuzzy, no-wrap
+msgid "Paŝo 5: Alvoki ISP-elpurigan interfacon: Bonvolu raporti al la dokumentado de ISP-elpuriga interfaco.\n"
 msgstr "ਕਦਮ 5: ਆਈਐਸਪੀ ਡੀਬੱਗਿੰਗ ਇੰਟਰਫੇਸ ਨੂੰ ਬੁਲਾਓ: ਕਿਰਪਾ ਕਰਕੇ ਆਈਐਸਪੀ ਡੀਬੱਗਿੰਗ ਇੰਟਰਫੇਸ ਦਸਤਾਵੇਜ਼ ਵੇਖੋ.\n"
 
 #. type: Title ##
-#: ./imp_isp-programigo_gvidilo.md:69
-#, markdown-text, no-wrap
-#, fuzzy
+#: imp_isp-programigo_gvidilo.md:77
+#, fuzzy, no-wrap
 msgid "Senaktivigo de ISP-modulo"
 msgstr "ਇੱਕ ISP ਮੋਡੀ .ਲ ਨੂੰ ਅਸਮਰੱਥ ਬਣਾ ਰਿਹਾ ਹੈ"
 
 #. type: Plain text
-#: ./imp_isp-programigo_gvidilo.md:73
-#, markdown-text, no-wrap
-#, fuzzy
+#: imp_isp-programigo_gvidilo.md:81
+#, fuzzy, no-wrap
 msgid ""
 "La paŝoj por malinstali la ISP-modulon estas jenaj:\n"
 "* paŝo 1: Malŝalti la ISP-agordon\n"
-msgstr "ਆਈਐਸਪੀ ਮੈਡਿ uninਲ ਨੂੰ ਅਣਇੰਸਟੌਲ ਕਰਨ ਲਈ ਕਦਮ ਇਸ ਪ੍ਰਕਾਰ ਹਨ:\n* ਕਦਮ 1: ਆਈਐਸਪੀ ਕੌਂਫਿਗਰੇਸ਼ਨਨੂੰ ਅਯੋਗ ਕਰੋ\n"
+msgstr ""
+"ਆਈਐਸਪੀ ਮੈਡਿ uninਲ ਨੂੰ ਅਣਇੰਸਟੌਲ ਕਰਨ ਲਈ ਕਦਮ ਇਸ ਪ੍ਰਕਾਰ ਹਨ:\n"
+"* ਕਦਮ 1: ਆਈਐਸਪੀ ਕੌਂਫਿਗਰੇਸ਼ਨਨੂੰ ਅਯੋਗ ਕਰੋ\n"
 
 #. type: Fenced code block
-#: ./imp_isp-programigo_gvidilo.md:74
+#: imp_isp-programigo_gvidilo.md:82
 #, no-wrap
 msgid ""
 "int ret = 0;\n"
@@ -234,16 +243,13 @@ msgstr ""
 " }\n"
 
 #. type: Bullet: '* '
-#: ./imp_isp-programigo_gvidilo.md:86
-#, markdown-text, no-wrap
-#, fuzzy
-msgid ""
-"2a paŝo: fermu la sensilojn. (FrameSource devas esti fermita antaŭ ĉi tiu "
-"operacio)\n"
+#: imp_isp-programigo_gvidilo.md:94
+#, fuzzy, no-wrap
+msgid "2a paŝo: fermu la sensilojn. (FrameSource devas esti fermita antaŭ ĉi tiu operacio)\n"
 msgstr "ਕਦਮ 2: ਸੈਂਸਰ ਬੰਦ ਕਰੋ. (ਇਸ ਓਪਰੇਸ਼ਨ)ਤੋਂ ਪਹਿਲਾਂ ਫਰੇਮ ਸਰੋਤ ਨੂੰ ਬੰਦ ਕਰਨਾ ਲਾਜ਼ਮੀ ਹੈ\n"
 
 #. type: Fenced code block
-#: ./imp_isp-programigo_gvidilo.md:88
+#: imp_isp-programigo_gvidilo.md:96
 #, no-wrap
 msgid ""
 "ret = IMP_ISP_DisableSensor (); \n"
@@ -259,16 +265,13 @@ msgstr ""
 " }\n"
 
 #. type: Bullet: '* '
-#: ./imp_isp-programigo_gvidilo.md:97
-#, markdown-text, no-wrap
-#, fuzzy
-msgid ""
-"3a paŝo: forigu la sensilojn, la sensiloj devas esti fermitaj antaŭ ĉi tiu "
-"operacio.\n"
+#: imp_isp-programigo_gvidilo.md:105
+#, fuzzy, no-wrap
+msgid "3a paŝo: forigu la sensilojn, la sensiloj devas esti fermitaj antaŭ ĉi tiu operacio.\n"
 msgstr "ਕਦਮ 3: ਸੈਂਸਰਾਂ ਨੂੰ ਹਟਾਓ, ਇਸ ਕਾਰਵਾਈ ਤੋਂ ਪਹਿਲਾਂ ਸੈਂਸਰਾਂ ਨੂੰ ਬੰਦ ਕਰ ਦੇਣਾ ਚਾਹੀਦਾ ਹੈ.\n"
 
 #. type: Fenced code block
-#: ./imp_isp-programigo_gvidilo.md:99
+#: imp_isp-programigo_gvidilo.md:107
 #, no-wrap
 msgid ""
 "ret = IMP_ISP_DelSensor (& sensor); \n"
@@ -284,16 +287,13 @@ msgstr ""
 " }\n"
 
 #. type: Bullet: '* '
-#: ./imp_isp-programigo_gvidilo.md:107
-#, markdown-text, no-wrap
-#, fuzzy
-msgid ""
-"Paŝo 4: Purigu la ISP-modulon, ĉiuj sensiloj devas esti forigitaj antaŭ ĉi "
-"tiu operacio.\n"
+#: imp_isp-programigo_gvidilo.md:115
+#, fuzzy, no-wrap
+msgid "Paŝo 4: Purigu la ISP-modulon, ĉiuj sensiloj devas esti forigitaj antaŭ ĉi tiu operacio.\n"
 msgstr "ਕਦਮ 4: ਆਈਐਸਪੀ ਮੈਡਿ Cleanਲ ਨੂੰ ਸਾਫ਼ ਕਰੋ, ਇਸ ਕਾਰਵਾਈ ਤੋਂ ਪਹਿਲਾਂ ਸਾਰੇ ਸੈਂਸਰਾਂ ਨੂੰ ਹਟਾ ਦਿੱਤਾ ਜਾਣਾ ਚਾਹੀਦਾ ਹੈ.\n"
 
 #. type: Fenced code block
-#: ./imp_isp-programigo_gvidilo.md:109
+#: imp_isp-programigo_gvidilo.md:117
 #, no-wrap
 msgid ""
 "ret = IMP_ISP_Close ();\n"
@@ -309,16 +309,14 @@ msgstr ""
 " }\n"
 
 #. type: Title ##
-#: ./imp_isp-programigo_gvidilo.md:119
-#, markdown-text, no-wrap
-#, fuzzy
+#: imp_isp-programigo_gvidilo.md:127
+#, fuzzy, no-wrap
 msgid "listo de funkcioj"
 msgstr "ਫੰਕਸ਼ਨ ਦੀ ਸੂਚੀ"
 
 #. type: Plain text
-#: ./imp_isp-programigo_gvidilo.md:193
-#, markdown-text, no-wrap
-#, fuzzy
+#: imp_isp-programigo_gvidilo.md:201
+#, fuzzy, no-wrap
 msgid ""
 "int IMP_ISP_Malferma(malplena);\n"
 "int IMP_ISP_Fermi(malplenan);\n"
@@ -392,5 +390,72 @@ msgid ""
 "int IMP_ISP_Agordo_SetDPStrength(uint32_t-proporcio);\n"
 "int IMP_ISP_Agordo_SetAntiFogAttr(IMPISPAntiFogAttr attr);\n"
 "int IMP_ISP_Tuning_GetEVAttr(IMPISPEVAttr *attr);\n"
-msgstr "ਇੰਟ ਆਈ ਐਮ ਪੀ_ISP_ਖਾਲੀ(ਖਾਲੀ);\nਇੰਟ IMP_ISP_ਬੰਦ ((ਖਾਲੀ);\nਇੰਟ ਆਈਐਮਪੀ (° 11 Add) ਐਡਸੈਂਸਰ(ਆਈ ਐਮ ਪੀਐਸਸੈਂਸਰਇੰਫੋ *ਪਿੰਨਫੋ);\nਇੰਟ ਆਈਐਮਪੀ_ISP_ਡੈਲਸੈਂਸਰ(ਆਈ ਐਮ ਪੀਐਸਸੈਂਸਰਇੰਫੋ *ਪਿੰਨਫੋ);\nਇੰਟੈਂਡਰ ਆਈਐਮਪੀ (° 23 S) ਯੋਗ ਸੈਂਸਰ(ਖਾਲੀ);\nਇੰਟ IMP_ISP_ਡਿਸਏਬਲਸੈਂਸਰ(ਖਾਲੀ);\nਇੰਟ ਆਈਐਮਪੀ_ISP_ਸੈੱਟਸੈਂਸਰ ਰਜਿਸਟਰ(ਯੂਇੰਟ 32_t reg, uint32_ਟੀ ਵੈਲਯੂ);\nਇੰਟ ਆਈਐਮਪੀ_ISP_ਗੇਟਸੈਂਸਰ ਰਜਿਸਟਰ(ਯੂਇੰਟ 32_t reg, uint32_ਟੀ *ਵੈਲਯੂ);\nਇੰਟੈਂਡਰ ਆਈਐਮਪੀ_ISP_ਯੋਗ ਯੋਗਦਾਨ (un 50 °) ਖਾਲੀ);\nਇੰਟ IMP_ISP_ਡਿਸੇਬਲ ਟਿunਨਿੰਗ(ਖਾਲੀ);\nਇੰਟ ਆਈਐਮਪੀ (° 58 Config) ਕੌਨਫਿਗਰੇਸ਼ਨ_SetSensorFPS(uint32_ਟੀ ਐਫਪੀਐਸ_num, uint32_ਟੀ ਐਫਪੀਐਸ_den);\nint IMP_ਆਈਐਸਪੀ_Tuning_ਗੇਟਸੈਂਸਰਐਫਪੀਐਸ(uint32_t *fps_ਨੰਬਰ, uint32_t *fps_ਡੇਨ);\nਇੰਟ ਆਈਐਮਪੀ (° 80 Config) ਕੌਨਫਿਗਰੇਸ਼ਨ_SetAntiFlickerAttr(IMPISPAntiflickerAttr attr);\nint IMP_ਆਈਐਸਪੀ_Tuning_ਗੇਟਅੰਟੀਫਲਿਕਅਟਰ(ਆਈਐਮਪੀਆਈਐਸਪੀਐਨਟੀਫਲਿਕਟਰਐਟਰ *ਪੈਟਰ);\nਇੰਟ ਆਈਐਮਪੀ_ISP_ਕੌਨਫਿਗਰੇਸ਼ਨ_SetRawDRC(IMPISPDrcAttr *pinfo);\nint IMP_ਆਈਐਸਪੀ_Tuning_ਗੇਟਆਰਓਡੀਆਰਸੀ(ਆਈਐਮਪੀਆਈਐਸਪੀਆਰਸੀਐਟਰ *ਪਿੰਨਫੋ);\nਇੰਟ ਆਈਐਮਪੀ (° 107 Config) ਕੌਨਫਿਗਰੇਸ਼ਨ (° 109 IS) ਆਈਐਸਪੀ_Tuning_ਗੇਟਸਿੰਟਰਡਰਨਸੈਟਰ(ਆਈਐਮਪੀਆਈਐਸਪੀਨਸਟਰਡੇਨੋਆਇਸਟਰ *ਪਿੰਨਫੋ);\nਇੰਟ ਆਈ ਐਮ ਪੀ_ISP_ਕੌਨਫਿਗਰੇਸ਼ਨ_SetTemperDnsCtl(IMPISPTemperDenoiseAttr *pinfo);\nint IMP_ਆਈ ਐੱਸ ਪੀ_Tuning_ਸੈੱਟਟੈਂਪਰਡਨਸੈਟਰ(ਆਈ ਐਮ ਪੀ ਆਈ ਐਸ ਪੀ ਟੈਂਪਰਡੈਨੋਇਸ ਏਟਰ *ਪਿੰਨਫੋ);\nਇੰਟ ਆਈਐਮਪੀ (5 135 Config) ਕੌਨਫਿਗਰੇਸ਼ਨ (° 137 IS) ਆਈਐਸਪੀ_Tuning_ਸੈਟ ਡਬਲਯੂ ਡੀ ਡਰਾਟਰ(ਆਈ ਐਮ ਪੀ ਆਈ ਐਸ ਪੀ ਟਿingਨਿੰਗ ਓਪਸਮੋਡ ਮੋਡ);\nਇੰਟ IMP_ISP_ਸੈਟਿੰਗ_GetWDRAttr(IMPISPTuningOpsMode *pmode);\nint IMP_ਆਈਐਸਪੀ_Tuning_ਸੈੱਟਸਨਮੋਡ(ਆਈਐਮਪੀਆਈਐਸਪੀਸਨਮੋਡ ਮੋਡ);\nਇੰਟ ਆਈਐਮਪੀ_ISP_ਸੈਟਿੰਗ_GetSceneMode(IMPISPSceneMode *pmode);\nint IMP_ਆਈਐਸਪੀ_Tuning_ਸੇਟਕਾਲਫੋਰਕਸਮੋਡ(ਆਈਐਮਪੀਆਈਐਸਪੀਐਲਆਰਪੀਐਕਸਮੋਡ ਮੋਡ);\nਇੰਟ ਆਈਐਮਪੀ_ISP_ਸੈਟਿੰਗ_GetColorfxMode(IMPISPColorfxMode *pmode);\nint IMP_ਆਈਐਸਪੀ_Tuning_ਬ੍ਰਾਇਟਨੇਸ(ਨਿਰਧਾਰਤ ਨਿਸ਼ਾਨ ਚਮਕਦਾਰ);\nਇੰਟ ਆਈਐਮਪੀ (° 187 Config) ਕੌਨਫਿਗਰੇਸ਼ਨ_GetBrightness(unsigned char *pbright);\nint IMP_ਆਈਐਸਪੀ_Tuning_ਸੇਟ ਕੰਟ੍ਰਾਸਟ(ਨਾਮ ਰਹਿਤ ਚਰਿੱਤਰ ਦੇ ਉਲਟ ();\nਇੰਟ ਆਈਐਮਪੀ (° 200 Config) ਕੌਨਫਿਗਰੇਸ਼ਨ_GetContrast(unsigned char *pcontrast);\nint IMP_ਆਈਐਸਪੀ_Tuning_ਸੇਟ ਸ਼ਾਰਪਨੇਸ(ਨਾਮ ਰਹਿਤ ਤਿੱਖਾਪਨ ਸ਼ਾਰਪਨ);\nਇੰਟ ਆਈ ਐਮ ਪੀ_ISP_ਕੌਨਫਿਗਰੇਸ਼ਨ_GetSharpness(unsigned char *psharpness);\nint IMP_ਆਈ ਐੱਸ ਪੀ_Tuning_ਸੈਟਸੈਟੇਸ਼ਨ(ਅਣਜਾਣ ਨਿਸ਼ਾਨ (ਤੋਂ 22 °);\nਇੰਟ ਆਈ ਐਮ ਪੀ_ISP_ਕੌਨਫਿਗਰੇਸ਼ਨ_GetSaturation(unsigned char *psat);\nint IMP_ਆਈ ਐੱਸ ਪੀ_Tuning_ਸੇਟ ਆਈ ਐਸ ਪੀ ਪ੍ਰੌਸੈੱਸ(ਆਈ ਐਮ ਪੀ ਆਈ ਐਸ ਪੀ ਟਿingਨਿੰਗ ਓਪਸਮੋਡ ਮੋਡ);\nਇੰਟ ਆਈਐਮਪੀ_ISP_ਕੌਂਫਿਗਰੇਸ਼ਨ_SetFWFreeze(IMPISPTuningOpsMode mode);\nint IMP_ਆਈਐਸਪੀ_Tuning_ਸੇਵ ਆੱਲਪਾਰਮ(ਚਾਰ *ਮਾਰਗ);\nਇੰਟ ਆਈਐਮਪੀ_ISP_ਸੈਟਅਪ_SetISPBypass(IMPISPTuningOpsMode enable);\nint IMP_ਆਈਐਸਪੀ (° 260 T) ਗੇਟਟੋਟਲਗੈਨ(uint32_t *gain);\nint IMP_ਆਈਐਸਪੀ(ਆਈਐਸਪੀਐਫਐਲਪ(ਆਈਐਸਪੀਐਸਪੀਟਿਓਨਿੰਗ ਮੋਡ);\nਇੰਟ ਆਈਐਮਪੀ (3 273 Config) ਕੌਂਫਿਗਰੇਸ਼ਨ_GetISPHflip(IMPISPTuningOpsMode *pmode);\nint IMP_ਆਈਐਸਪੀ_Tuning_ਸੈੱਟ ਆਈਐਸਪੀਵੀਫਲਿਪ(ਆਈ ਐਮ ਪੀ ਆਈ ਐਸ ਪੀ ਟਿTਨਿੰਗ ਓਪਸਮੋਡ ਮੋਡ);\nਇੰਟ ਆਈਐਮਪੀ_ISP_ਕੌਂਫਿਗਰੇਸ਼ਨ_GetISPVflip(IMPISPTuningOpsMode *pmode);\nint IMP_ਆਈਐਸਪੀ_Tuning_ਸੈੱਟ ਆਈਐਸਪੀਰਨਿੰਗਮੋਡ(ਆਈਐਮਪੀਆਈਐਸਪੀਰਨਿੰਗਮੋਡ ਮੋਡ);\nਇੰਟ ਆਈਐਮਪੀ_ISP_ਕੌਨਫਿਗਰੇਸ਼ਨ_GetISPRunningMode(IMPISPRunningMode *pmode);\nint IMP_ਆਈਐਸਪੀ_Tuning_ਸੇਟਏਸਟ੍ਰੈਟਜੀ(ਆਈਐਮਪੀਆਈਐਸਪੀਐਸਟਰੈਟਜੀ ਰਣਨੀਤੀ);\nਇੰਟ ਆਈ ਐਮ ਪੀ_ISP_ਕੌਨਫਿਗਰੇਸ਼ਨ_GetAeStrategy(IMPISPAeStrategy *pstrategy);\nint IMP_ਆਈ ਐੱਸ ਪੀ_Tuning_ਸੇਟਗਾਮਾ(ਆਈ ਐਮ ਪੀ ਆਈ ਐਸ ਪੀ ਗਾਮਾ *ਸੀਮਾ);\nਇੰਟ ਆਈਐਮਪੀ_ISP_ਕੌਨਫਿਗਰੇਸ਼ਨ_GetGamma(IMPISPGamma *gamma);\nint IMP_ਆਈਐਸਪੀ_Tuning_ਸੇਟਏਕੌਮਪ(ਇੰਟ ਕੰਪਿ ;ਟਰ);\nਇੰਟ ਆਈਐਮਪੀ_ISP_ਕੌਨਫਿਗਰੇਸ਼ਨ_GetAeComp(int *comp);\nint IMP_ਆਈਐਸਪੀ_Tuning_ਸੇਟਐਕਸਪ੍ਰਾਂਪ(ਆਈਐਮਪੀਆਈਐਸਪੀਐਕਸਪੀਆਰਪੀ *ਐਕਸਪੀਆਰ);\nਇੰਟ ਆਈਐਮਪੀ_ISP_ਕੌਂਫਿਗਰੇਸ਼ਨ_GetExpr(IMPISPExpr *expr);\nint IMP_ਆਈਐਸਪੀ_Tuning_ਏਈ_GetROI(IMPISPAERoi *isp_ਏਈ_roi);\nint IMP_ਆਈਐਸਪੀ_Tuning_ਏਈ_SetROI(IMPISPAERoi *isp_ਏ ( ° 377 IS) ਆਈਐਸਪੀ_Tuning_ਸੈਟ ਡਬਲਯੂ ਬੀ(ਆਈ ਐਮ ਪੀ ਆਈ ਐਸ ਪੀ ਡਬਲਯੂ ਬੀ *ਡਬਲਯੂ ਬੀ);\nਇੰਟ ਆਈ ਐਮ ਪੀ_ISP_ਕੌਂਫਿਗਰੇਸ਼ਨ_GetWB(IMPISPWB *wb);\nint IMP_ਆਈ ਐੱਸ ਪੀ_Tuning_ਗੇਟ ਡਬਲਯੂ ਬੀ_Statis(IMPISPWB *wb);\nint IMP_ਆਈ ਐੱਸ ਪੀ_Tuning_ਆੱਬ_GetCwfShift(IMPISPWB *isp_ਡਬਲਯੂ ਬੀ_attr);\nint IMP_ਆਈ ਐਸ ਪੀ_Tuning_bਬ_SetCwfShift(IMPISPWB *isp_ਡਬਲਯੂਬੀ_attr);\nint IMP_ਆਈ ਐੱਸ ਪੀ_Tuning_ਸੇਟ ਮੈਕਸਗੈਨ(ਯੂਇੰਟ 32_t gain);\nint IMP_ਆਈ ਐਸ ਪੀ_Tuning_ਗੇਟਮੈਕਸਗੈਗਨ(uint32_t *gain);\nint IMP_) °) ਆਈਐਸਪੀ_Tuning_ਸੈੱਟਮੈਕਸਡਗੈਨ(uint32_t gain);\nint IMP_ਆਈਐਸਪੀ_Tuning_ਗੇਟਮੈਕਸਡਗੈਨ(uint32_t *gain);\nint IMP_ਆਈਐਸਪੀ_Tuning_ਸੈਟਵਿਡਿਓ ਡ੍ਰੌਪ() ਖਾਲੀ (*ਸੀਬੀ)(ਖਾਲੀ));\nਇੰਟ ਆਈ ਐਮ ਪੀ_ISP_ਕੌਨਫਿਗਰੇਸ਼ਨ_SetHiLightDepress(uint32_ਟੀ ਫੋਰਸ);\nਇੰਟ ਆਈ ਐਮ ਪੀ_ISP_ਕੌਨਫਿਗਰੇਸ਼ਨ_SetTemperStrength(uint32_ਟੀ-ਰੇਸ਼ੋ);\nਇੰਟ ਆਈ ਐਮ ਪੀ_ISP_ਕੌਨਫਿਗਰੇਸ਼ਨ_SetSinterStrength(uint32_ਟੀ-ਰੇਸ਼ੋ);\nਇੰਟ ਆਈ ਐਮ ਪੀ_ISP_ਕੌਨਫਿਗਰੇਸ਼ਨ_SetDPStrength(uint32_ਟੀ-ਰੇਸ਼ੋ);\nਇੰਟ ਆਈਐਮਪੀ (° 488 Config) ਕੌਨਫਿਗਰੇਸ਼ਨ (° 490 IS) ਆਈਐਸਪੀ (° 495 Get) ਗੈਰੀ ਈਵੀਏਟਰ(ਆਈ ਐਮ ਪੀ ਆਈ ਐਸ ਪੀ ਏ ਟੀ ਐਟਰ *ਅਟਾਰ);\n"
-
+msgstr ""
+"ਇੰਟ ਆਈ ਐਮ ਪੀ_ISP_ਖਾਲੀ(ਖਾਲੀ);\n"
+"ਇੰਟ IMP_ISP_ਬੰਦ ((ਖਾਲੀ);\n"
+"ਇੰਟ ਆਈਐਮਪੀ (° 11 Add) ਐਡਸੈਂਸਰ(ਆਈ ਐਮ ਪੀਐਸਸੈਂਸਰਇੰਫੋ *ਪਿੰਨਫੋ);\n"
+"ਇੰਟ ਆਈਐਮਪੀ_ISP_ਡੈਲਸੈਂਸਰ(ਆਈ ਐਮ ਪੀਐਸਸੈਂਸਰਇੰਫੋ *ਪਿੰਨਫੋ);\n"
+"ਇੰਟੈਂਡਰ ਆਈਐਮਪੀ (° 23 S) ਯੋਗ ਸੈਂਸਰ(ਖਾਲੀ);\n"
+"ਇੰਟ IMP_ISP_ਡਿਸਏਬਲਸੈਂਸਰ(ਖਾਲੀ);\n"
+"ਇੰਟ ਆਈਐਮਪੀ_ISP_ਸੈੱਟਸੈਂਸਰ ਰਜਿਸਟਰ(ਯੂਇੰਟ 32_t reg, uint32_ਟੀ ਵੈਲਯੂ);\n"
+"ਇੰਟ ਆਈਐਮਪੀ_ISP_ਗੇਟਸੈਂਸਰ ਰਜਿਸਟਰ(ਯੂਇੰਟ 32_t reg, uint32_ਟੀ *ਵੈਲਯੂ);\n"
+"ਇੰਟੈਂਡਰ ਆਈਐਮਪੀ_ISP_ਯੋਗ ਯੋਗਦਾਨ (un 50 °) ਖਾਲੀ);\n"
+"ਇੰਟ IMP_ISP_ਡਿਸੇਬਲ ਟਿunਨਿੰਗ(ਖਾਲੀ);\n"
+"ਇੰਟ ਆਈਐਮਪੀ (° 58 Config) ਕੌਨਫਿਗਰੇਸ਼ਨ_SetSensorFPS(uint32_ਟੀ ਐਫਪੀਐਸ_num, uint32_ਟੀ ਐਫਪੀਐਸ_den);\n"
+"int IMP_ਆਈਐਸਪੀ_Tuning_ਗੇਟਸੈਂਸਰਐਫਪੀਐਸ(uint32_t *fps_ਨੰਬਰ, uint32_t *fps_ਡੇਨ);\n"
+"ਇੰਟ ਆਈਐਮਪੀ (° 80 Config) ਕੌਨਫਿਗਰੇਸ਼ਨ_SetAntiFlickerAttr(IMPISPAntiflickerAttr attr);\n"
+"int IMP_ਆਈਐਸਪੀ_Tuning_ਗੇਟਅੰਟੀਫਲਿਕਅਟਰ(ਆਈਐਮਪੀਆਈਐਸਪੀਐਨਟੀਫਲਿਕਟਰਐਟਰ *ਪੈਟਰ);\n"
+"ਇੰਟ ਆਈਐਮਪੀ_ISP_ਕੌਨਫਿਗਰੇਸ਼ਨ_SetRawDRC(IMPISPDrcAttr *pinfo);\n"
+"int IMP_ਆਈਐਸਪੀ_Tuning_ਗੇਟਆਰਓਡੀਆਰਸੀ(ਆਈਐਮਪੀਆਈਐਸਪੀਆਰਸੀਐਟਰ *ਪਿੰਨਫੋ);\n"
+"ਇੰਟ ਆਈਐਮਪੀ (° 107 Config) ਕੌਨਫਿਗਰੇਸ਼ਨ (° 109 IS) ਆਈਐਸਪੀ_Tuning_ਗੇਟਸਿੰਟਰਡਰਨਸੈਟਰ(ਆਈਐਮਪੀਆਈਐਸਪੀਨਸਟਰਡੇਨੋਆਇਸਟਰ *ਪਿੰਨਫੋ);\n"
+"ਇੰਟ ਆਈ ਐਮ ਪੀ_ISP_ਕੌਨਫਿਗਰੇਸ਼ਨ_SetTemperDnsCtl(IMPISPTemperDenoiseAttr *pinfo);\n"
+"int IMP_ਆਈ ਐੱਸ ਪੀ_Tuning_ਸੈੱਟਟੈਂਪਰਡਨਸੈਟਰ(ਆਈ ਐਮ ਪੀ ਆਈ ਐਸ ਪੀ ਟੈਂਪਰਡੈਨੋਇਸ ਏਟਰ *ਪਿੰਨਫੋ);\n"
+"ਇੰਟ ਆਈਐਮਪੀ (5 135 Config) ਕੌਨਫਿਗਰੇਸ਼ਨ (° 137 IS) ਆਈਐਸਪੀ_Tuning_ਸੈਟ ਡਬਲਯੂ ਡੀ ਡਰਾਟਰ(ਆਈ ਐਮ ਪੀ ਆਈ ਐਸ ਪੀ ਟਿingਨਿੰਗ ਓਪਸਮੋਡ ਮੋਡ);\n"
+"ਇੰਟ IMP_ISP_ਸੈਟਿੰਗ_GetWDRAttr(IMPISPTuningOpsMode *pmode);\n"
+"int IMP_ਆਈਐਸਪੀ_Tuning_ਸੈੱਟਸਨਮੋਡ(ਆਈਐਮਪੀਆਈਐਸਪੀਸਨਮੋਡ ਮੋਡ);\n"
+"ਇੰਟ ਆਈਐਮਪੀ_ISP_ਸੈਟਿੰਗ_GetSceneMode(IMPISPSceneMode *pmode);\n"
+"int IMP_ਆਈਐਸਪੀ_Tuning_ਸੇਟਕਾਲਫੋਰਕਸਮੋਡ(ਆਈਐਮਪੀਆਈਐਸਪੀਐਲਆਰਪੀਐਕਸਮੋਡ ਮੋਡ);\n"
+"ਇੰਟ ਆਈਐਮਪੀ_ISP_ਸੈਟਿੰਗ_GetColorfxMode(IMPISPColorfxMode *pmode);\n"
+"int IMP_ਆਈਐਸਪੀ_Tuning_ਬ੍ਰਾਇਟਨੇਸ(ਨਿਰਧਾਰਤ ਨਿਸ਼ਾਨ ਚਮਕਦਾਰ);\n"
+"ਇੰਟ ਆਈਐਮਪੀ (° 187 Config) ਕੌਨਫਿਗਰੇਸ਼ਨ_GetBrightness(unsigned char *pbright);\n"
+"int IMP_ਆਈਐਸਪੀ_Tuning_ਸੇਟ ਕੰਟ੍ਰਾਸਟ(ਨਾਮ ਰਹਿਤ ਚਰਿੱਤਰ ਦੇ ਉਲਟ ();\n"
+"ਇੰਟ ਆਈਐਮਪੀ (° 200 Config) ਕੌਨਫਿਗਰੇਸ਼ਨ_GetContrast(unsigned char *pcontrast);\n"
+"int IMP_ਆਈਐਸਪੀ_Tuning_ਸੇਟ ਸ਼ਾਰਪਨੇਸ(ਨਾਮ ਰਹਿਤ ਤਿੱਖਾਪਨ ਸ਼ਾਰਪਨ);\n"
+"ਇੰਟ ਆਈ ਐਮ ਪੀ_ISP_ਕੌਨਫਿਗਰੇਸ਼ਨ_GetSharpness(unsigned char *psharpness);\n"
+"int IMP_ਆਈ ਐੱਸ ਪੀ_Tuning_ਸੈਟਸੈਟੇਸ਼ਨ(ਅਣਜਾਣ ਨਿਸ਼ਾਨ (ਤੋਂ 22 °);\n"
+"ਇੰਟ ਆਈ ਐਮ ਪੀ_ISP_ਕੌਨਫਿਗਰੇਸ਼ਨ_GetSaturation(unsigned char *psat);\n"
+"int IMP_ਆਈ ਐੱਸ ਪੀ_Tuning_ਸੇਟ ਆਈ ਐਸ ਪੀ ਪ੍ਰੌਸੈੱਸ(ਆਈ ਐਮ ਪੀ ਆਈ ਐਸ ਪੀ ਟਿingਨਿੰਗ ਓਪਸਮੋਡ ਮੋਡ);\n"
+"ਇੰਟ ਆਈਐਮਪੀ_ISP_ਕੌਂਫਿਗਰੇਸ਼ਨ_SetFWFreeze(IMPISPTuningOpsMode mode);\n"
+"int IMP_ਆਈਐਸਪੀ_Tuning_ਸੇਵ ਆੱਲਪਾਰਮ(ਚਾਰ *ਮਾਰਗ);\n"
+"ਇੰਟ ਆਈਐਮਪੀ_ISP_ਸੈਟਅਪ_SetISPBypass(IMPISPTuningOpsMode enable);\n"
+"int IMP_ਆਈਐਸਪੀ (° 260 T) ਗੇਟਟੋਟਲਗੈਨ(uint32_t *gain);\n"
+"int IMP_ਆਈਐਸਪੀ(ਆਈਐਸਪੀਐਫਐਲਪ(ਆਈਐਸਪੀਐਸਪੀਟਿਓਨਿੰਗ ਮੋਡ);\n"
+"ਇੰਟ ਆਈਐਮਪੀ (3 273 Config) ਕੌਂਫਿਗਰੇਸ਼ਨ_GetISPHflip(IMPISPTuningOpsMode *pmode);\n"
+"int IMP_ਆਈਐਸਪੀ_Tuning_ਸੈੱਟ ਆਈਐਸਪੀਵੀਫਲਿਪ(ਆਈ ਐਮ ਪੀ ਆਈ ਐਸ ਪੀ ਟਿTਨਿੰਗ ਓਪਸਮੋਡ ਮੋਡ);\n"
+"ਇੰਟ ਆਈਐਮਪੀ_ISP_ਕੌਂਫਿਗਰੇਸ਼ਨ_GetISPVflip(IMPISPTuningOpsMode *pmode);\n"
+"int IMP_ਆਈਐਸਪੀ_Tuning_ਸੈੱਟ ਆਈਐਸਪੀਰਨਿੰਗਮੋਡ(ਆਈਐਮਪੀਆਈਐਸਪੀਰਨਿੰਗਮੋਡ ਮੋਡ);\n"
+"ਇੰਟ ਆਈਐਮਪੀ_ISP_ਕੌਨਫਿਗਰੇਸ਼ਨ_GetISPRunningMode(IMPISPRunningMode *pmode);\n"
+"int IMP_ਆਈਐਸਪੀ_Tuning_ਸੇਟਏਸਟ੍ਰੈਟਜੀ(ਆਈਐਮਪੀਆਈਐਸਪੀਐਸਟਰੈਟਜੀ ਰਣਨੀਤੀ);\n"
+"ਇੰਟ ਆਈ ਐਮ ਪੀ_ISP_ਕੌਨਫਿਗਰੇਸ਼ਨ_GetAeStrategy(IMPISPAeStrategy *pstrategy);\n"
+"int IMP_ਆਈ ਐੱਸ ਪੀ_Tuning_ਸੇਟਗਾਮਾ(ਆਈ ਐਮ ਪੀ ਆਈ ਐਸ ਪੀ ਗਾਮਾ *ਸੀਮਾ);\n"
+"ਇੰਟ ਆਈਐਮਪੀ_ISP_ਕੌਨਫਿਗਰੇਸ਼ਨ_GetGamma(IMPISPGamma *gamma);\n"
+"int IMP_ਆਈਐਸਪੀ_Tuning_ਸੇਟਏਕੌਮਪ(ਇੰਟ ਕੰਪਿ ;ਟਰ);\n"
+"ਇੰਟ ਆਈਐਮਪੀ_ISP_ਕੌਨਫਿਗਰੇਸ਼ਨ_GetAeComp(int *comp);\n"
+"int IMP_ਆਈਐਸਪੀ_Tuning_ਸੇਟਐਕਸਪ੍ਰਾਂਪ(ਆਈਐਮਪੀਆਈਐਸਪੀਐਕਸਪੀਆਰਪੀ *ਐਕਸਪੀਆਰ);\n"
+"ਇੰਟ ਆਈਐਮਪੀ_ISP_ਕੌਂਫਿਗਰੇਸ਼ਨ_GetExpr(IMPISPExpr *expr);\n"
+"int IMP_ਆਈਐਸਪੀ_Tuning_ਏਈ_GetROI(IMPISPAERoi *isp_ਏਈ_roi);\n"
+"int IMP_ਆਈਐਸਪੀ_Tuning_ਏਈ_SetROI(IMPISPAERoi *isp_ਏ ( ° 377 IS) ਆਈਐਸਪੀ_Tuning_ਸੈਟ ਡਬਲਯੂ ਬੀ(ਆਈ ਐਮ ਪੀ ਆਈ ਐਸ ਪੀ ਡਬਲਯੂ ਬੀ *ਡਬਲਯੂ ਬੀ);\n"
+"ਇੰਟ ਆਈ ਐਮ ਪੀ_ISP_ਕੌਂਫਿਗਰੇਸ਼ਨ_GetWB(IMPISPWB *wb);\n"
+"int IMP_ਆਈ ਐੱਸ ਪੀ_Tuning_ਗੇਟ ਡਬਲਯੂ ਬੀ_Statis(IMPISPWB *wb);\n"
+"int IMP_ਆਈ ਐੱਸ ਪੀ_Tuning_ਆੱਬ_GetCwfShift(IMPISPWB *isp_ਡਬਲਯੂ ਬੀ_attr);\n"
+"int IMP_ਆਈ ਐਸ ਪੀ_Tuning_bਬ_SetCwfShift(IMPISPWB *isp_ਡਬਲਯੂਬੀ_attr);\n"
+"int IMP_ਆਈ ਐੱਸ ਪੀ_Tuning_ਸੇਟ ਮੈਕਸਗੈਨ(ਯੂਇੰਟ 32_t gain);\n"
+"int IMP_ਆਈ ਐਸ ਪੀ_Tuning_ਗੇਟਮੈਕਸਗੈਗਨ(uint32_t *gain);\n"
+"int IMP_) °) ਆਈਐਸਪੀ_Tuning_ਸੈੱਟਮੈਕਸਡਗੈਨ(uint32_t gain);\n"
+"int IMP_ਆਈਐਸਪੀ_Tuning_ਗੇਟਮੈਕਸਡਗੈਨ(uint32_t *gain);\n"
+"int IMP_ਆਈਐਸਪੀ_Tuning_ਸੈਟਵਿਡਿਓ ਡ੍ਰੌਪ() ਖਾਲੀ (*ਸੀਬੀ)(ਖਾਲੀ));\n"
+"ਇੰਟ ਆਈ ਐਮ ਪੀ_ISP_ਕੌਨਫਿਗਰੇਸ਼ਨ_SetHiLightDepress(uint32_ਟੀ ਫੋਰਸ);\n"
+"ਇੰਟ ਆਈ ਐਮ ਪੀ_ISP_ਕੌਨਫਿਗਰੇਸ਼ਨ_SetTemperStrength(uint32_ਟੀ-ਰੇਸ਼ੋ);\n"
+"ਇੰਟ ਆਈ ਐਮ ਪੀ_ISP_ਕੌਨਫਿਗਰੇਸ਼ਨ_SetSinterStrength(uint32_ਟੀ-ਰੇਸ਼ੋ);\n"
+"ਇੰਟ ਆਈ ਐਮ ਪੀ_ISP_ਕੌਨਫਿਗਰੇਸ਼ਨ_SetDPStrength(uint32_ਟੀ-ਰੇਸ਼ੋ);\n"
+"ਇੰਟ ਆਈਐਮਪੀ (° 488 Config) ਕੌਨਫਿਗਰੇਸ਼ਨ (° 490 IS) ਆਈਐਸਪੀ (° 495 Get) ਗੈਰੀ ਈਵੀਏਟਰ(ਆਈ ਐਮ ਪੀ ਆਈ ਐਸ ਪੀ ਏ ਟੀ ਐਟਰ *ਅਟਾਰ);\n"

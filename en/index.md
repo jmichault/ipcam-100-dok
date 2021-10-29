@@ -14,42 +14,31 @@ distinction: _1080P_
 
 Information displayed in the Internet interface:
 ```
-DeviceName: _INGENIC-V01_
-DeviceModel: _IPCAM-100_
-DeviceSN: _12345678901_
-KernelVersion: _Thu Jul 9 15:46:54 CST 2015_
-ServerVersion: _WS3.53.1243-20190717-DANALE-GEN_
-WebVersion: _V2.3.4-20190709_
+DeviceName: INGENIC-V01
+DeviceModel: IPCAM-100
+DeviceSN: 12345678901
+KernelVersion: Thu Jul 9 15:46:54 CST 2015
+ServerVersion: WS3.53.1243-20190717-DANALE-GEN
+WebVersion: V2.3.4-20190709
 ```
 
 processor: _ingenic T21_
 video sensor: _GC2053_
 
-API documentation can be viewed here:  
-* [original version in Chinese](../zh/includes.zh/html/)
-
-
-* [English version](../en/includes.en/html/)
-
-
-* [French version translated by google](../fr/includes.fr/html/)
-
-
-
 # Alternative firmware
 
 ## What Works in Alternative Firmware:
 
-* LAN and WLAN
+* _LAN_ and _WLAN_
 
 
-* DRTTSP Dual Flow Server: 1920x1080 H264 and 640x360 MJPEG by default.
+* Server (° 1 ° double-flow: _1920x1080 H264_ and _640x360 MJPEG_ by default.  
 
 
 * Visual parameters
 
 
-* HTTP server
+* Server _HTTP_
 
 
 * engine control
@@ -58,31 +47,37 @@ API documentation can be viewed here:
 * engine calibration
 
 
-* PTZ settings
+* Parameters _PTZ_(° 3 ° 3
 
 
-* NTP client
+* Client _NTP_(° 3 ° 3
 
 
-* password change for http access
+* Password administration _http_, _rtsp_ and system.  
 
 
-* blue LED and IR control
+* White LED control and IR
 
 
-* Ftp server
+* White LED control and IR _ftp_
 
 
-* Telnet server
+* White LED control and IR _telnet_
 
 
-* SSH server and client
+* Server and Client _ssh_(° 3 ° 3
 
 
 * motion detection
 
 
 * sending email
+
+
+* Send _«telegram»_
+
+
+* Automatic Night Regime
 
 
 
@@ -94,19 +89,16 @@ API documentation can be viewed here:
 * _OSD_
 
 
-* Administration management and RTSP system.
-
-
 * firmware update
-
-
-* automatic night detection
 
 
 * motion detection_ir-cut_
 
 
 * sending email_mqtt_
+
+
+* Sending images and videos in cloud (° 1 ° 1
 
 
 * etc ...
@@ -121,7 +113,7 @@ API documentation can be viewed here:
 * Perhaps set the network ( _www/ipcam/config.dist/reto.conf_ )
 
 
-* Insert the microSD card.
+* Enter the card _microSD_ in the camera.  
 
 
 * Connect the camera to your local network and turn on the camera.
@@ -139,21 +131,24 @@ API documentation can be viewed here:
 * Faru `cd /opt/media/mmcblk0p1;./install.sh`
 
 
-* You can connect to the URL _https://IP_ (user _admin_, password _ismart21_).
+* The camera resumes, now: (° 1 ° 1
 
 
-* You can connect in SSH (user _admin_, password _ismart12_).
+    * You can connect to the URL _https://IP_ (user _admin_, password _ismart21_).
 
 
-* The primary video current is accessible at _rtsp://admin:ismart21@IP/stream1_. (° 3 ° 3
+    * You can connect in SSH (user _admin_, password _ismart12_).
 
 
-* The secondary video current is accessible at _rtsp://admin:ismart21@IP/stream2_. (° 3 ° 3
+    * The primary video current is accessible at _rtsp://admin:ismart21@IP/stream1_. (° 3 ° 3
+
+
+    * The secondary video current is accessible at _rtsp://admin:ismart21@IP/stream2_. (° 3 ° 3
 
 
 (° 1 ° 1 ° 1 WiFi AP mode is activated by default:
-** SSID: ipcam100-xxxxxx
-** WPA2 key: ismart21 (° 6 ° 6 ° 6
+    ** SSID: ipcam100-xxxxxx
+    ** WPA2 key: ismart21 (° 6 ° 6 ° 6 
 
 ## Uninstalling Alternative Firmware:
 
@@ -174,5 +169,5 @@ API documentation can be viewed here:
 # Interesting documents
 
 Much work was made for cameras equipped with a processor _ingenic T20_ :
-* modified firmware: <https://github.com/Ilílístotlyar/xiaomi- Dafang -Haks (°
+* modified firmware: <https://github.com/Ilílístotlyar/xiaomi- Dafang -Haks (° 
 

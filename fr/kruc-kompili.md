@@ -1,7 +1,7 @@
 ---
 lang: fr
 lang-niv: fonto
-lang-ref: 005-kruc-compili
+lang-ref: 050-kruc-compili
 layout: page
 title: 'Compilation croisée'
 ---

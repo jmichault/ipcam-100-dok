@@ -1,7 +1,7 @@
 ---
 lang: fr
 lang-niv: fonto
-lang-ref: 001-originala_firmvaro
+lang-ref: 071-originala_firmvaro
 layout: page
 title: 'Micrologiciel originel'
 ---

@@ -1,3 +1,22 @@
+---
+lang: de
+lang-niv: auto
+lang-ref: 051-IMP-programigo_gvidilo
+layout: page
+title: Imp-Programmierhandbuch.
+---
+
+
+APIs 'Dokumentation ist hier zu sehen:  
+* [Originalversion auf Chinesisch](../../zh/includes.zh/html/)
+
+
+* [Englische Version](../../en/includes.en/html/)
+
+
+* (° 1 ° 1 ° 1 ° 1 ° 1 ° Französische Version von Google übersetzt](../../fr/includes.fr/html/)
+
+
 
 
 # IMP (Ingenic Media Platform) (siehe imp_system.h)

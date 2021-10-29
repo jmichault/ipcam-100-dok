@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-03-04 16:48+0100\n"
+"POT-Creation-Date: 2021-10-29 23:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,49 +16,72 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+#. type: YAML Front Matter: lang
+#: imp_isp-programigo_gvidilo.md:1
+#, no-wrap
+msgid "eo"
+msgstr "zh"
+
+#. type: YAML Front Matter: lang-niv
+#: imp_isp-programigo_gvidilo.md:1
+#, no-wrap
+msgid "auto"
+msgstr "auto"
+
+#. type: YAML Front Matter: lang-ref
+#: imp_isp-programigo_gvidilo.md:1
+#, no-wrap
+msgid "052-ISP-programigo_gvidilo"
+msgstr "052-ISP-programigo_gvidilo"
+
+#. type: YAML Front Matter: layout
+#: imp_isp-programigo_gvidilo.md:1
+#, no-wrap
+msgid "page"
+msgstr "page"
+
+#. type: YAML Front Matter: title
+#: imp_isp-programigo_gvidilo.md:1
+#, fuzzy, no-wrap
+msgid "Gvidilo pri video-programado"
+msgstr "视频编程指南"
+
 #. type: Title #
-#: ./imp_isp-programigo_gvidilo.md:1
-#, markdown-text, no-wrap
-#, fuzzy
+#: imp_isp-programigo_gvidilo.md:9
+#, fuzzy, no-wrap
 msgid "IMP_ISP (voir imp_isp.h)"
 msgstr "IMP_ISP (voir imp_isp.h)"
 
 #. type: Plain text
-#: ./imp_isp-programigo_gvidilo.md:3
-#, markdown-text, no-wrap
-#, fuzzy
-msgid ""
-"Bildosigna prilaborado. Ĉefe inkluzivas agordojn de bildaj efikoj, "
-"reĝimoŝaltilo kaj registrado, aldono kaj forigo de sensilo.\n"
+#: imp_isp-programigo_gvidilo.md:11
+#, fuzzy, no-wrap
+msgid "Bildosigna prilaborado. Ĉefe inkluzivas agordojn de bildaj efikoj, reĝimoŝaltilo kaj registrado, aldono kaj forigo de sensilo.\n"
 msgstr "图像处理。主要包括图像效果的设置，模式切换和记录，传感器的添加和删除。\n"
 
 #. type: Plain text
-#: ./imp_isp-programigo_gvidilo.md:5
-#, markdown-text, no-wrap
-#, fuzzy
-msgid ""
-"La ISP-modulo havas nenion komunan kun datuma fluo kaj ne bezonas esti "
-"ligita, ĝi nur funkcias laŭ efektagordo kaj sensila kontrolo.\n"
+#: imp_isp-programigo_gvidilo.md:13
+#, fuzzy, no-wrap
+msgid "La ISP-modulo havas nenion komunan kun datuma fluo kaj ne bezonas esti ligita, ĝi nur funkcias laŭ efektagordo kaj sensila kontrolo.\n"
 msgstr "ISP模块与数据流无关，不需要连接，仅在效果配置和传感器控制方面起作用。\n"
 
 #. type: Title ##
-#: ./imp_isp-programigo_gvidilo.md:6
-#, markdown-text, no-wrap
-#, fuzzy
+#: imp_isp-programigo_gvidilo.md:14
+#, fuzzy, no-wrap
 msgid "Aktivigo"
 msgstr "激活"
 
 #. type: Plain text
-#: ./imp_isp-programigo_gvidilo.md:10
-#, markdown-text, no-wrap
-#, fuzzy
+#: imp_isp-programigo_gvidilo.md:18
+#, fuzzy, no-wrap
 msgid ""
 "La paŝoj de aktivigo de ISP-modulo estas jenaj:\n"
 "* paŝo 1: Kreu ISP-modulon\n"
-msgstr "激活ISP模块的步骤如下：\n* 步骤1：创建ISP模块\n"
+msgstr ""
+"激活ISP模块的步骤如下：\n"
+"* 步骤1：创建ISP模块\n"
 
 #. type: Fenced code block
-#: ./imp_isp-programigo_gvidilo.md:11
+#: imp_isp-programigo_gvidilo.md:19
 #, no-wrap
 msgid ""
 "int ret = 0;\n"
@@ -78,32 +101,26 @@ msgstr ""
 "  }\n"
 
 #. type: Bullet: '* '
-#: ./imp_isp-programigo_gvidilo.md:21
-#, markdown-text, no-wrap
-#, fuzzy
-msgid ""
-"2a paŝo: Aldonu sensilon, la sensila pelilo estis aldonita al la kerno antaŭ "
-"ĉi tiu operacio.\n"
+#: imp_isp-programigo_gvidilo.md:29
+#, fuzzy, no-wrap
+msgid "2a paŝo: Aldonu sensilon, la sensila pelilo estis aldonita al la kerno antaŭ ĉi tiu operacio.\n"
 msgstr "步骤2：添加传感器，此操作之前已将传感器驱动程序添加到内核中。\n"
 
 #. type: Fenced code block
-#: ./imp_isp-programigo_gvidilo.md:23
+#: imp_isp-programigo_gvidilo.md:31
 #, no-wrap
 msgid ""
 "  IMPSensorInfo sensor[2];\n"
 "  sensor[0].name = \"xxx\";\n"
-"  sensor[0].cbus_type = SENSOR_CONTROL_INTERFACE_I2C; // OU "
-"SENSOR_CONTROL_INTERFACE_SPI\n"
+"  sensor[0].cbus_type = SENSOR_CONTROL_INTERFACE_I2C; // OU SENSOR_CONTROL_INTERFACE_SPI\n"
 "  sensor[0].i2c = {\n"
-"    .type = \"xxx\", // nom du périphérique I2C, qui doit être cohérent avec "
-"le nom de la structure i2c_device_id dans le pilote du capteur.\n"
+"    .type = \"xxx\", // nom du périphérique I2C, qui doit être cohérent avec le nom de la structure i2c_device_id dans le pilote du capteur.\n"
 "    .addr = xx, // adresse I2C\n"
 "    .i2c_adapter_id = xx, // ID du contrôleur I2C où se trouve le capteur\n"
 "  }\n"
 "  /* OU\n"
 "   * sensor[0].spi = {\n"
-"   *   .modalias = \"xx\", // nom du périphérique SPI, doit être cohérent "
-"avec le nom de la structure spi_device_id dans le pilote du capteur.\n"
+"   *   .modalias = \"xx\", // nom du périphérique SPI, doit être cohérent avec le nom de la structure spi_device_id dans le pilote du capteur.\n"
 "   *     .bus_num = xx, // adresse du bus SPI\n"
 "   *}\n"
 "   */\n"
@@ -116,18 +133,15 @@ msgid ""
 msgstr ""
 "  IMPSensorInfo sensor[2];\n"
 "  sensor[0].name = \"xxx\";\n"
-"  sensor[0].cbus_type = SENSOR_CONTROL_INTERFACE_I2C; // OU "
-"SENSOR_CONTROL_INTERFACE_SPI\n"
+"  sensor[0].cbus_type = SENSOR_CONTROL_INTERFACE_I2C; // OU SENSOR_CONTROL_INTERFACE_SPI\n"
 "  sensor[0].i2c = {\n"
-"    .type = \"xxx\", // nom du périphérique I2C, qui doit être cohérent avec "
-"le nom de la structure i2c_device_id dans le pilote du capteur.\n"
+"    .type = \"xxx\", // nom du périphérique I2C, qui doit être cohérent avec le nom de la structure i2c_device_id dans le pilote du capteur.\n"
 "    .addr = xx, // adresse I2C\n"
 "    .i2c_adapter_id = xx, // ID du contrôleur I2C où se trouve le capteur\n"
 "  }\n"
 "  /* OU\n"
 "   * sensor[0].spi = {\n"
-"   *   .modalias = \"xx\", // nom du périphérique SPI, doit être cohérent "
-"avec le nom de la structure spi_device_id dans le pilote du capteur.\n"
+"   *   .modalias = \"xx\", // nom du périphérique SPI, doit être cohérent avec le nom de la structure spi_device_id dans le pilote du capteur.\n"
 "   *     .bus_num = xx, // adresse du bus SPI\n"
 "   *}\n"
 "   */\n"
@@ -139,14 +153,13 @@ msgstr ""
 "  }\n"
 
 #. type: Bullet: '* '
-#: ./imp_isp-programigo_gvidilo.md:46
-#, markdown-text, no-wrap
-#, fuzzy
+#: imp_isp-programigo_gvidilo.md:54
+#, fuzzy, no-wrap
 msgid "Paŝo 3: Aktivigu la sensilon, ĝi komencos produkti bildojn.\n"
 msgstr "步骤3：激活传感器，它将开始生成图像。\n"
 
 #. type: Fenced code block
-#: ./imp_isp-programigo_gvidilo.md:48
+#: imp_isp-programigo_gvidilo.md:56
 #, no-wrap
 msgid ""
 "  ret = IMP_ISP_EnableSensor (void);\n"
@@ -162,14 +175,13 @@ msgstr ""
 " }\n"
 
 #. type: Bullet: '* '
-#: ./imp_isp-programigo_gvidilo.md:56
-#, markdown-text, no-wrap
-#, fuzzy
+#: imp_isp-programigo_gvidilo.md:64
+#, fuzzy, no-wrap
 msgid "paŝo 4: Aktivigu la agordojn:\n"
 msgstr "步骤4：激活设置：\n"
 
 #. type: Fenced code block
-#: ./imp_isp-programigo_gvidilo.md:58
+#: imp_isp-programigo_gvidilo.md:66
 #, no-wrap
 msgid ""
 "  ret = IMP_ISP_EnableTuning (); \n"
@@ -185,32 +197,29 @@ msgstr ""
 " }\n"
 
 #. type: Bullet: '* '
-#: ./imp_isp-programigo_gvidilo.md:66
-#, markdown-text, no-wrap
-#, fuzzy
-msgid ""
-"Paŝo 5: Alvoki ISP-elpurigan interfacon: Bonvolu raporti al la dokumentado "
-"de ISP-elpuriga interfaco.\n"
+#: imp_isp-programigo_gvidilo.md:74
+#, fuzzy, no-wrap
+msgid "Paŝo 5: Alvoki ISP-elpurigan interfacon: Bonvolu raporti al la dokumentado de ISP-elpuriga interfaco.\n"
 msgstr "步骤5：调用ISP调试界面：请参阅ISP调试界面文档。\n"
 
 #. type: Title ##
-#: ./imp_isp-programigo_gvidilo.md:69
-#, markdown-text, no-wrap
-#, fuzzy
+#: imp_isp-programigo_gvidilo.md:77
+#, fuzzy, no-wrap
 msgid "Senaktivigo de ISP-modulo"
 msgstr "禁用ISP模块"
 
 #. type: Plain text
-#: ./imp_isp-programigo_gvidilo.md:73
-#, markdown-text, no-wrap
-#, fuzzy
+#: imp_isp-programigo_gvidilo.md:81
+#, fuzzy, no-wrap
 msgid ""
 "La paŝoj por malinstali la ISP-modulon estas jenaj:\n"
 "* paŝo 1: Malŝalti la ISP-agordon\n"
-msgstr "卸载ISP模块的步骤如下：\n* 步骤1：禁用ISP配置\n"
+msgstr ""
+"卸载ISP模块的步骤如下：\n"
+"* 步骤1：禁用ISP配置\n"
 
 #. type: Fenced code block
-#: ./imp_isp-programigo_gvidilo.md:74
+#: imp_isp-programigo_gvidilo.md:82
 #, no-wrap
 msgid ""
 "int ret = 0;\n"
@@ -234,16 +243,13 @@ msgstr ""
 " }\n"
 
 #. type: Bullet: '* '
-#: ./imp_isp-programigo_gvidilo.md:86
-#, markdown-text, no-wrap
-#, fuzzy
-msgid ""
-"2a paŝo: fermu la sensilojn. (FrameSource devas esti fermita antaŭ ĉi tiu "
-"operacio)\n"
+#: imp_isp-programigo_gvidilo.md:94
+#, fuzzy, no-wrap
+msgid "2a paŝo: fermu la sensilojn. (FrameSource devas esti fermita antaŭ ĉi tiu operacio)\n"
 msgstr "步骤2：关闭传感器。 (必须在此操作之前关闭FrameSource)\n"
 
 #. type: Fenced code block
-#: ./imp_isp-programigo_gvidilo.md:88
+#: imp_isp-programigo_gvidilo.md:96
 #, no-wrap
 msgid ""
 "ret = IMP_ISP_DisableSensor (); \n"
@@ -259,16 +265,13 @@ msgstr ""
 " }\n"
 
 #. type: Bullet: '* '
-#: ./imp_isp-programigo_gvidilo.md:97
-#, markdown-text, no-wrap
-#, fuzzy
-msgid ""
-"3a paŝo: forigu la sensilojn, la sensiloj devas esti fermitaj antaŭ ĉi tiu "
-"operacio.\n"
+#: imp_isp-programigo_gvidilo.md:105
+#, fuzzy, no-wrap
+msgid "3a paŝo: forigu la sensilojn, la sensiloj devas esti fermitaj antaŭ ĉi tiu operacio.\n"
 msgstr "步骤3：卸下传感器，在执行此操作之前必须关闭传感器。\n"
 
 #. type: Fenced code block
-#: ./imp_isp-programigo_gvidilo.md:99
+#: imp_isp-programigo_gvidilo.md:107
 #, no-wrap
 msgid ""
 "ret = IMP_ISP_DelSensor (& sensor); \n"
@@ -284,16 +287,13 @@ msgstr ""
 " }\n"
 
 #. type: Bullet: '* '
-#: ./imp_isp-programigo_gvidilo.md:107
-#, markdown-text, no-wrap
-#, fuzzy
-msgid ""
-"Paŝo 4: Purigu la ISP-modulon, ĉiuj sensiloj devas esti forigitaj antaŭ ĉi "
-"tiu operacio.\n"
+#: imp_isp-programigo_gvidilo.md:115
+#, fuzzy, no-wrap
+msgid "Paŝo 4: Purigu la ISP-modulon, ĉiuj sensiloj devas esti forigitaj antaŭ ĉi tiu operacio.\n"
 msgstr "步骤4：清洁ISP模块，在执行此操作之前必须卸下所有传感器。\n"
 
 #. type: Fenced code block
-#: ./imp_isp-programigo_gvidilo.md:109
+#: imp_isp-programigo_gvidilo.md:117
 #, no-wrap
 msgid ""
 "ret = IMP_ISP_Close ();\n"
@@ -309,16 +309,14 @@ msgstr ""
 " }\n"
 
 #. type: Title ##
-#: ./imp_isp-programigo_gvidilo.md:119
-#, markdown-text, no-wrap
-#, fuzzy
+#: imp_isp-programigo_gvidilo.md:127
+#, fuzzy, no-wrap
 msgid "listo de funkcioj"
 msgstr "功能清单"
 
 #. type: Plain text
-#: ./imp_isp-programigo_gvidilo.md:193
-#, markdown-text, no-wrap
-#, fuzzy
+#: imp_isp-programigo_gvidilo.md:201
+#, fuzzy, no-wrap
 msgid ""
 "int IMP_ISP_Malferma(malplena);\n"
 "int IMP_ISP_Fermi(malplenan);\n"
@@ -392,5 +390,76 @@ msgid ""
 "int IMP_ISP_Agordo_SetDPStrength(uint32_t-proporcio);\n"
 "int IMP_ISP_Agordo_SetAntiFogAttr(IMPISPAntiFogAttr attr);\n"
 "int IMP_ISP_Tuning_GetEVAttr(IMPISPEVAttr *attr);\n"
-msgstr "int IMP_ISP_打开(空);\nint IMP_ISP_关闭(空);\nint IMP_ISP_AddSensor(IMPSensorInfo *pinfo);\n内部IMP_ISP_DelSensor(IMPSensorInfo *pinfo);\nint IMP_ISP_EnableSensor(空);\nint IMP_ISP_DisableSensor(空);\nint IMP_ISP_SetSensorRegister(uint32_t reg, uint32_t值);\nint IMP_ISP_GetSensorRegister(uint32_t reg, uint32_t *值);\nint IMP_ISP_EnableTuning(空白);\n内置IMP_ISP_禁用调谐(挡片);\n内置IMP_ISP_配置_SetSensorFPS(uint32_t fps_num, uint32_t fps_den);\nint IMP_ISP_Tuning_GetSensorFPS(uint32_t *fps_num，uint32_t *fps_den);\nint IMP_ISP_配置_SetAntiFlickerAttr(IMPISPAntiflickerAttr attr);\nint IMP_ISP_Tuning_GetAntiFlickerAttr(IMPISPAntiflickerAttr *模式);\nint IMP_ISP_配置_SetRawDRC(IMPISPDrcAttr *pinfo);\nint IMP_ISP_Tuning_GetRawDRC(IMPISPDrcAttr *pinfo);\nint IMP_ISP_配置_SetSinterDnsAttr(IMPISPSinterDenoiseAttr *pinfo);\nint IMP_ISP_Tuning_GetSinterDnsAttr(IMPISPSinterDenoiseAttr *pinfo);\nint IMP_ISP_配置_SetTemperDnsCtl(IMPISPTemperDenoiseAttr *pinfo);\nint IMP_ISP_Tuning_SetTemperDnsAttr(IMPISPTemperDenoiseAttr *pinfo);\nint IMP_ISP_配置_GetTemperDnsAttr(IMPISPTemperDenoiseAttr *pinfo);\nint IMP_ISP_Tuning_SetWDRAttr(IMPISPTuningOpsMode模式);\nint IMP_ISP_设置_GetWDRAttr(IMPISPTuningOpsMode *pmode);\nint IMP_ISP_Tuning_SetSceneMode(IMPISPSce​​neMode模式);\nint IMP_ISP_设置_GetSceneMode(IMPISPSceneMode *pmode);\nint IMP_ISP_Tuning_SetColorfxMode(IMPISPColorfxMode模式);\nint IMP_ISP_设置_GetColorfxMode(IMPISPColorfxMode *pmode);\nint IMP_ISP_Tuning_设置亮度(无名标志亮);\nint IMP_ISP_配置_GetBrightness(unsigned char *pbright);\nint IMP_ISP_Tuning_SetContrast(无名字符对比度);\nint IMP_ISP_配置_GetContrast(unsigned char *pcontrast);\nint IMP_ISP_Tuning_SetSharpness(无名锐度锐度);\nint IMP_ISP_配置_GetSharpness(unsigned char *psharpness);\nint IMP_ISP_Tuning_SetSaturation(无名符号 (至22°);\nint IMP_ISP_配置_GetSaturation(unsigned char *psat);\nint IMP_ISP_Tuning_SetISPProcess(IMPISPTuningOpsMode模式);\n内部IMP_ISP_配置_SetFWFreeze(IMPISPTuningOpsMode mode);\nint IMP_ISP_Tuning_SaveAllParam(字符 *路径);\nint IMP_ISP_设置_SetISPBypass(IMPISPTuningOpsMode enable);\nint IMP_ISP_Tuning_GetTotalGain(uint32_t *gain);\nint IMP_ISP_Tuning_设置ISPHflip(IMPISPTuningOpsMode模式);\nint IMP_ISP_配置_GetISPHflip(IMPISPTuningOpsMode *pmode);\nint IMP_ISP_Tuning_SetISPVflip(IMPISPTuningOpsMode模式);\nint IMP_ISP_配置_GetISPVflip(IMPISPTuningOpsMode *pmode);\nint IMP_ISP_Tuning_SetISPRunningMode(IMPISPRunningMode模式);\n内部IMP_ISP_配置_GetISPRunningMode(IMPISPRunningMode *pmode);\nint IMP_ISP_Tuning_SetAeStrategy(IMPISPAeStrategy策略);\nint IMP_ISP_配置_GetAeStrategy(IMPISPAeStrategy *pstrategy);\nint IMP_ISP_Tuning_SetGamma(IMPISPGamma *范围);\nint IMP_ISP_配置_GetGamma(IMPISPGamma *gamma);\nint IMP_ISP_Tuning_SetAeComp(int comp);\n内部IMP_ISP_配置_GetAeComp(int *comp);\nint IMP_ISP_Tuning_SetExpr(IMPISPExpr *ekspr);\n内置IMP_ISP_配置_GetExpr(IMPISPExpr *expr);\nint IMP_ISP_Tuning_AE_GetROI(IMPISPAERoi *isp_ae_roi);\nint IMP_ISP_Tuning_AE_SetROI(IMPISPAERoi *isp_ae_roi);\nint IMP_ISP_Tuning_SetWB(IMPISPWB *wb);\n内置IMP_ISP_配置_GetWB(IMPISPWB *wb);\nint IMP_ISP_Tuning_GetWB_Statis(IMPISPWB *wb);\nint IMP_ISP_Tuning_Awb_GetCwfShift(IMPISPWB *isp_wb_attr);\nint IMP_ISP_Tuning_Awb_SetCwfShift(IMPISPWB *isp_wb_attr);\nint IMP_ISP_Tuning_SetMaxAgain(uint32_t gain);\nint IMP_ISP_Tuning_GetMaxAgain(uint32_t *gain);\nint IMP_）°）ISP_Tuning_SetMaxDgain(uint32_t gain);\nint IMP_ISP_Tuning_GetMaxDgain(uint32_t *gain);\nint IMP_ISP_Tuning_SetVideoDrop(）空 (*cb)(空));\nint IMP_ISP_配置_SetHiLightDepress(uint32_t力);\n内部IMP_ISP_配置_SetTemperStrength(uint32_t比);\n内部IMP_ISP_配置_SetSinterStrength(uint32_t比);\nint IMP_ISP_配置_SetDPStrength(uint32_t比);\n内部IMP_ISP_配置_SetAntiFogAttr(IMPISPAntiFogAttr attr);\nint IMP_ISP_Tuning_GetEVAttr(IMPISPEVAttr *attr);\n"
-
+msgstr ""
+"int IMP_ISP_打开(空);\n"
+"int IMP_ISP_关闭(空);\n"
+"int IMP_ISP_AddSensor(IMPSensorInfo *pinfo);\n"
+"内部IMP_ISP_DelSensor(IMPSensorInfo *pinfo);\n"
+"int IMP_ISP_EnableSensor(空);\n"
+"int IMP_ISP_DisableSensor(空);\n"
+"int IMP_ISP_SetSensorRegister(uint32_t reg, uint32_t值);\n"
+"int IMP_ISP_GetSensorRegister(uint32_t reg, uint32_t *值);\n"
+"int IMP_ISP_EnableTuning(空白);\n"
+"内置IMP_ISP_禁用调谐(挡片);\n"
+"内置IMP_ISP_配置_SetSensorFPS(uint32_t fps_num, uint32_t fps_den);\n"
+"int IMP_ISP_Tuning_GetSensorFPS(uint32_t *fps_num，uint32_t *fps_den);\n"
+"int IMP_ISP_配置_SetAntiFlickerAttr(IMPISPAntiflickerAttr attr);\n"
+"int IMP_ISP_Tuning_GetAntiFlickerAttr(IMPISPAntiflickerAttr *模式);\n"
+"int IMP_ISP_配置_SetRawDRC(IMPISPDrcAttr *pinfo);\n"
+"int IMP_ISP_Tuning_GetRawDRC(IMPISPDrcAttr *pinfo);\n"
+"int IMP_ISP_配置_SetSinterDnsAttr(IMPISPSinterDenoiseAttr *pinfo);\n"
+"int IMP_ISP_Tuning_GetSinterDnsAttr(IMPISPSinterDenoiseAttr *pinfo);\n"
+"int IMP_ISP_配置_SetTemperDnsCtl(IMPISPTemperDenoiseAttr *pinfo);\n"
+"int IMP_ISP_Tuning_SetTemperDnsAttr(IMPISPTemperDenoiseAttr *pinfo);\n"
+"int IMP_ISP_配置_GetTemperDnsAttr(IMPISPTemperDenoiseAttr *pinfo);\n"
+"int IMP_ISP_Tuning_SetWDRAttr(IMPISPTuningOpsMode模式);\n"
+"int IMP_ISP_设置_GetWDRAttr(IMPISPTuningOpsMode *pmode);\n"
+"int IMP_ISP_Tuning_SetSceneMode(IMPISPSce​​neMode模式);\n"
+"int IMP_ISP_设置_GetSceneMode(IMPISPSceneMode *pmode);\n"
+"int IMP_ISP_Tuning_SetColorfxMode(IMPISPColorfxMode模式);\n"
+"int IMP_ISP_设置_GetColorfxMode(IMPISPColorfxMode *pmode);\n"
+"int IMP_ISP_Tuning_设置亮度(无名标志亮);\n"
+"int IMP_ISP_配置_GetBrightness(unsigned char *pbright);\n"
+"int IMP_ISP_Tuning_SetContrast(无名字符对比度);\n"
+"int IMP_ISP_配置_GetContrast(unsigned char *pcontrast);\n"
+"int IMP_ISP_Tuning_SetSharpness(无名锐度锐度);\n"
+"int IMP_ISP_配置_GetSharpness(unsigned char *psharpness);\n"
+"int IMP_ISP_Tuning_SetSaturation(无名符号 (至22°);\n"
+"int IMP_ISP_配置_GetSaturation(unsigned char *psat);\n"
+"int IMP_ISP_Tuning_SetISPProcess(IMPISPTuningOpsMode模式);\n"
+"内部IMP_ISP_配置_SetFWFreeze(IMPISPTuningOpsMode mode);\n"
+"int IMP_ISP_Tuning_SaveAllParam(字符 *路径);\n"
+"int IMP_ISP_设置_SetISPBypass(IMPISPTuningOpsMode enable);\n"
+"int IMP_ISP_Tuning_GetTotalGain(uint32_t *gain);\n"
+"int IMP_ISP_Tuning_设置ISPHflip(IMPISPTuningOpsMode模式);\n"
+"int IMP_ISP_配置_GetISPHflip(IMPISPTuningOpsMode *pmode);\n"
+"int IMP_ISP_Tuning_SetISPVflip(IMPISPTuningOpsMode模式);\n"
+"int IMP_ISP_配置_GetISPVflip(IMPISPTuningOpsMode *pmode);\n"
+"int IMP_ISP_Tuning_SetISPRunningMode(IMPISPRunningMode模式);\n"
+"内部IMP_ISP_配置_GetISPRunningMode(IMPISPRunningMode *pmode);\n"
+"int IMP_ISP_Tuning_SetAeStrategy(IMPISPAeStrategy策略);\n"
+"int IMP_ISP_配置_GetAeStrategy(IMPISPAeStrategy *pstrategy);\n"
+"int IMP_ISP_Tuning_SetGamma(IMPISPGamma *范围);\n"
+"int IMP_ISP_配置_GetGamma(IMPISPGamma *gamma);\n"
+"int IMP_ISP_Tuning_SetAeComp(int comp);\n"
+"内部IMP_ISP_配置_GetAeComp(int *comp);\n"
+"int IMP_ISP_Tuning_SetExpr(IMPISPExpr *ekspr);\n"
+"内置IMP_ISP_配置_GetExpr(IMPISPExpr *expr);\n"
+"int IMP_ISP_Tuning_AE_GetROI(IMPISPAERoi *isp_ae_roi);\n"
+"int IMP_ISP_Tuning_AE_SetROI(IMPISPAERoi *isp_ae_roi);\n"
+"int IMP_ISP_Tuning_SetWB(IMPISPWB *wb);\n"
+"内置IMP_ISP_配置_GetWB(IMPISPWB *wb);\n"
+"int IMP_ISP_Tuning_GetWB_Statis(IMPISPWB *wb);\n"
+"int IMP_ISP_Tuning_Awb_GetCwfShift(IMPISPWB *isp_wb_attr);\n"
+"int IMP_ISP_Tuning_Awb_SetCwfShift(IMPISPWB *isp_wb_attr);\n"
+"int IMP_ISP_Tuning_SetMaxAgain(uint32_t gain);\n"
+"int IMP_ISP_Tuning_GetMaxAgain(uint32_t *gain);\n"
+"int IMP_）°）ISP_Tuning_SetMaxDgain(uint32_t gain);\n"
+"int IMP_ISP_Tuning_GetMaxDgain(uint32_t *gain);\n"
+"int IMP_ISP_Tuning_SetVideoDrop(）空 (*cb)(空));\n"
+"int IMP_ISP_配置_SetHiLightDepress(uint32_t力);\n"
+"内部IMP_ISP_配置_SetTemperStrength(uint32_t比);\n"
+"内部IMP_ISP_配置_SetSinterStrength(uint32_t比);\n"
+"int IMP_ISP_配置_SetDPStrength(uint32_t比);\n"
+"内部IMP_ISP_配置_SetAntiFogAttr(IMPISPAntiFogAttr attr);\n"
+"int IMP_ISP_Tuning_GetEVAttr(IMPISPEVAttr *attr);\n"

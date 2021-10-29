@@ -1,3 +1,11 @@
+---
+lang: ja
+lang-niv: auto
+lang-ref: 052-ISP-programigo_gvidilo
+layout: page
+title: ビデオプログラミングガイド
+---
+
 # IMP_ISP (voir imp_isp.h)
 画像処理。主に画像効果の設定、モード切り替えと記録、センサーの追加と削除が含まれます。
 

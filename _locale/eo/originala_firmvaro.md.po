@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-10-28 22:28+0200\n"
+"POT-Creation-Date: 2021-10-29 23:09+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,8 +31,8 @@ msgstr "auto"
 #. type: YAML Front Matter: lang-ref
 #: originala_firmvaro.md:1
 #, no-wrap
-msgid "001-originala_firmvaro"
-msgstr "001-originala_firmvaro"
+msgid "071-originala_firmvaro"
+msgstr "071-originala_firmvaro"
 
 #. type: YAML Front Matter: layout
 #: originala_firmvaro.md:1
@@ -490,26 +490,27 @@ msgstr "haveno 81 = bluaj LEDoj.\n"
 
 #. type: Title #
 #: originala_firmvaro.md:148
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "examen du noyau :"
 msgstr "Kerna recenzo:"
 
 #. type: Plain text
 #: originala_firmvaro.md:153
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "* informations :\n"
 "    `binwalk mtdblock2.bin`\n"
 "    * résultat :\n"
 "DECIMAL       HEXADECIMAL     DESCRIPTION\n"
-msgstr "(° 1 ° Informo:\n    `binwalk mtdblock2.bin`\n    * Rezulto:\ndecimala deksesuma priskribo\n"
+msgstr ""
+"(° 1 ° Informo:\n"
+"    `binwalk mtdblock2.bin`\n"
+"    * Rezulto:\n"
+"decimala deksesuma priskribo\n"
 
 #. type: Plain text
 #: originala_firmvaro.md:156
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "0             0x0             uImage header, header size: 64 bytes, header CRC: 0x7B9DE864, created: 2019-06-22 02:41:00, image size: 1466358 bytes, Data Address: 0x80010000, Entry Point: 0x80388340, data CRC: 0xB83DCA15, OS: Linux, CPU: MIPS, image type: OS Kernel Image, compression type: lzma, image name: \"Linux-3.10.14__isvp_turkey_1.0__]\"\n"
 "64            0x40            LZMA compressed data, properties: 0x5D, dictionary size: 16777216 bytes, uncompressed size: -1 bytes\n"
@@ -517,8 +518,7 @@ msgstr "0 0x0 Uimage Header, Header Grandeco: 64 Bajtoj, Header CRC: 0x7b9DE864,
 
 #. type: Plain text
 #: originala_firmvaro.md:167
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "* extraction des données de mtdblock2 :\n"
 "    `tail -c+65  < mtdblock2.bin >mtdblock2.dataz`\n"
@@ -531,150 +531,24 @@ msgid ""
 "* liste des symboles\n"
 "https://github.com/marin-m/vmlinux-to-elf devrait permettre de trouver les symboles, mais il n'y arrive pas\n"
 "début possible de kallsyms_token_table : 0x3AA1B4\n"
-msgstr "(° 1 ° eltiro de datumoj de MTDBlock2:\n    `tail -c+65  < mtdblock2.bin >mtdblock2.dataz`\n\nKerna eltiro:\n    `cat mtdblock2.dataz|lzma -d -c -f - >kernel`\n(° 13 ° ° Listo de ŝoforoj inkluzivita:    `strings kernel|grep \"^drivers\"`\n\nListo de dosieroj:\n    `strings kernel|grep \"\\.[cChTsS]$\"`\n\n\n\n\n\n\n\n\n\n(° 30 ° ° 31 ° Listo de simboloj (° 32 ° 32 ° Https://github.com/marin-m/vmlinux-to-lf devus permesi trovi la simbolojn, sed ĝi ne atingas\n. Tablo_token_: 0x3AA1B4\n"
-
-#, fuzzy
-#~ msgid ""
-#~ "TCP : 80(http), 443(http aussi !), 554(rtsp), 8004, 8006, 9527(telnetd), "
-#~ "9999\n"
-#~ "UDP : 67(dhcp), 3702, 8002, 39642\n"
-#~ msgstr ""
-#~ "TCP: 80(http), 443(http ankaŭ!), 554(rtsp), 8004, 8006, 9527(telnet), "
-#~ "9999\n"
-#~ "UDP: 67(dhcp), 3702, 8002, 39642\n"
-
-#, fuzzy
-#~ msgid ""
-#~ "port 80 : http\n"
-#~ "http://IP : login : _admin:_, mot de passe : _admin_\n"
-#~ msgstr ""
-#~ "haveno 80: http\n"
-#~ "http: // IP: ensaluto: _admin:_, pasvorto: _admin_\n"
-
-#, fuzzy
-#~ msgid ""
-#~ "port 443 : http\n"
-#~ "http://IP:443 : login : _admin:_, mot de passe : _admin_\n"
-#~ msgstr ""
-#~ "haveno 443: http\n"
-#~ "http: // IP: 443: ensaluto: _admin:_, pasvorto: _admin_\n"
-
-#, fuzzy
-#~ msgid ""
-#~ "port 554 : rtsp\n"
-#~ "* flux principal : \n"
-#~ msgstr ""
-#~ "haveno 554: rtsp\n"
-#~ "* ĉefa rivereto: \n"
-
-#, fuzzy
-#~ msgid ""
-#~ "port 9527 : telnet\n"
-#~ "`telnetd IP 9527` : login : _root_, mot de passe : _jco66688_, accessible "
-#~ "pendant 5 minutes, fermé après.\n"
-#~ "pour ne pas être déconnecté au bout des 5 minutes : `killall -9 auto_run."
-#~ "sh`\n"
-#~ "pour arrêter jco_server : \n"
-#~ msgstr ""
-#~ "haveno 9527: telnet\n"
-#~ "`telnetd IP 9527` : ensaluto: _root_, pasvorto: _jco66688_, alirebla dum "
-#~ "5 minutoj, fermita post.\n"
-#~ "por ne esti malkonektita post 5 minutoj: `killall -9 auto_run.sh`\n"
-#~ "por haltigi jco_server : \n"
-#~ " \n"
-
-#, fuzzy
-#~ msgid ""
-#~ "note : libimp.so est différente de celle livrée pour le T20, et celle "
-#~ "fournie avec le T20 ne convient pas.\n"
-#~ msgstr ""
-#~ "noto: libimp.so diferencas de tiu liverita por la T20, kaj tiu liverita "
-#~ "kun la T20 ne taŭgas.\n"
-
-#, fuzzy
-#~ msgid ""
-#~ "fichiers notables dans _/ipc_ :\n"
-#~ "* _/ipc/app/jco\\_server_\n"
-#~ "  * ĉefa programo. \n"
-#~ "* _/ipc/drv_ : drivers linux\n"
-#~ "  * motor.ko\n"
-#~ "* _/ipc/lib_ : bibliothéques\n"
-#~ "  * libimp.so : bibliothèque _ingenic_ _IMP_ ( _Ingenic Media "
-#~ "Platform_ )\n"
-#~ msgstr ""
-#~ "notable files in _/ipc_ :\n"
-#~ "* _/ipc/app/jco\\_server_\n"
-#~ "  * ĉefa programo. \n"
-#~ "* _/ipc/drv_ : linux-peliloj\n"
-#~ "  * motor.ko\n"
-#~ "* _/ipc/lib_ : bibliotekoj\n"
-#~ "  * libimp.so: biblioteko _ingenic_ _IMP_ ( _Ingenic Media Platform_ )\n"
-
-#, fuzzy
-#~ msgid ""
-#~ "fichiers notables dans / :\n"
-#~ "* /bin/busybox : \n"
-#~ "  *     [, [[, ash, awk, base64, basename, blockdev, bootchartd, bunzip2, "
-#~ "bzcat, bzip2, cat, chmod, chown, cmp, cp, cut, date, dd, depmod, devmem, "
-#~ "df,\n"
-#~ "  *     dhcprelay, diff, dirname, dmesg, dnsdomainname, du, dumpleases, "
-#~ "echo, egrep, expr, fdflush, fdformat, fdisk, fgrep, find, flash"
-#~ "\\_eraseall,\n"
-#~ "  *     flock, free, fuser, getty, grep, gzip, halt, hd, head, hexdump, "
-#~ "hostname, hwclock, ifconfig, init, insmod, iostat, kill, killall, klogd, "
-#~ "less,\n"
-#~ "  *     linuxrc, ln, logger, login, logread, ls, lsmod, md5sum, mdev, "
-#~ "mesg, mkdir, mkdosfs, mkfs.vfat, mknod, mktemp, modinfo, modprobe, "
-#~ "mount,\n"
-#~ "  *     mountpoint, mpstat, mv, nc, netstat, passwd, ping, pmap, "
-#~ "poweroff, powertop, printf, ps, pstree, pwd, pwdx, readahead, reboot, "
-#~ "rev, rm, rmdir,\n"
-#~ "  *     rmmod, route, sed, sh, sleep, smemcap, sort, stat, strings, "
-#~ "swapoff, swapon, sync, sysctl, syslogd, tail, tar, tee, telnetd, test, "
-#~ "tftp, time,\n"
-#~ "  *     timeout, top, touch, tr, true, tty, udhcpc, udhcpd, umount, unxz, "
-#~ "unzip, uptime, users, usleep, vi, volname, watch, wc, which, xargs, xz,\n"
-#~ "  *     xzcat\n"
-#~ msgstr ""
-#~ "Rimarkindaj dosieroj en /:\n"
-#~ "* / bin / busybox: \n"
-#~ "  *     [, [[, cindro, awk, base64, baznomo, blockdev, bootchartd, "
-#~ "bunzip2, bzcat, bzip2, cat, chmod, chown, cmp, cp, cut, date, dd, depmod, "
-#~ "devmem, df,\n"
-#~ "  *     dhcprelay, diff, dirname, dmesg, dnsdomainname, du, dumpleases, "
-#~ "echo, egrep, expr, fdflush, fdformat, fdisk, fgrep, find, flash"
-#~ "\\_eraseall,\n"
-#~ "  *     grego, libera, fuzilo, getty, grep, gzip, halt, hd, head, "
-#~ "hexdump, hostname, hwclock, ifconfig, init, insmod, iostat, kill, "
-#~ "killall, klogd, less,\n"
-#~ "  *     linuxrc, ln, logger, login, logread, ls, lsmod, md5sum, mdev, "
-#~ "mesg, mkdir, mkdosfs, mkfs.vfat, mknod, mktemp, modinfo, modprobe, "
-#~ "mount,\n"
-#~ "  *     mountpoint, mpstat, mv, nc, netstat, passwd, ping, pmap, "
-#~ "poweroff, powertop, printf, ps, pstree, pwd, pwdx, readahead, reboot, "
-#~ "rev, rm, rmdir,\n"
-#~ "  *     rmmod, route, sed, sh, sleep, smemcap, ordigi, stat, kordoj, "
-#~ "interŝanĝi, interŝanĝi, sinkronigi, sistemon, sistemon, voston, gudron, "
-#~ "ekrankopion, telnet, teston, tftp, tim e,\n"
-#~ "  *     paŭzo, supro, tuŝo, tr, vera, tty, udhcpc, udhcpd, umount, unxz, "
-#~ "unzip, uptime, uzantoj, usleep, vi, volname, watch, wc, kiu, xargs, xz,\n"
-#~ "  *     xzcat\n"
-
-#, fuzzy
-#~ msgid ""
-#~ "fichiers notables dans _/ipc_ :\n"
-#~ "* /ipc/app/jco\\_server\n"
-#~ "  * ĉefa programo. \n"
-#~ "* /ipc/drv : drivers linux\n"
-#~ "  * motor.ko\n"
-#~ "* /ipc/lib : bibliothéques\n"
-#~ "  * libimp.so : bibliothèque _ingenic_ _IMP_ ( _Ingenic Media "
-#~ "Platform_ )\n"
-#~ msgstr ""
-#~ "notable files in _/ipc_ :\n"
-#~ "* / ipc / app / jco\\_server\n"
-#~ "  * ĉefa programo. \n"
-#~ "* / ipc / drv: linux-peliloj\n"
-#~ "  * motor.ko\n"
-#~ "* / ipc / lib: bibliotekoj\n"
-#~ "  * libimp.so: biblioteko _ingenic_ _IMP_ ( _Ingenic Media Platform_ )\n"
+msgstr ""
+"(° 1 ° eltiro de datumoj de MTDBlock2:\n"
+"    `tail -c+65  < mtdblock2.bin >mtdblock2.dataz`\n"
+"\n"
+"Kerna eltiro:\n"
+"    `cat mtdblock2.dataz|lzma -d -c -f - >kernel`\n"
+"(° 13 ° ° Listo de ŝoforoj inkluzivita:    `strings kernel|grep \"^drivers\"`\n"
+"\n"
+"Listo de dosieroj:\n"
+"    `strings kernel|grep \"\\.[cChTsS]$\"`\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"(° 30 ° ° 31 ° Listo de simboloj (° 32 ° 32 ° Https://github.com/marin-m/vmlinux-to-lf devus permesi trovi la simbolojn, sed ĝi ne atingas\n"
+". Tablo_token_: 0x3AA1B4\n"

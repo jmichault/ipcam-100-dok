@@ -1,3 +1,22 @@
+---
+lang: ja
+lang-niv: auto
+lang-ref: 051-IMP-programigo_gvidilo
+layout: page
+title: IMPプログラミングガイド
+---
+
+
+APIのドキュメンテーションはここで見ることができます：（°1°1  
+* [中国語](../../zh/includes.zh/html/)のオリジナルバージョン
+
+
+* [英語版](../../en/includes.en/html/)
+
+
+* （°1°1°1°1°1°1°フレンチバージョンGoogle](../../fr/includes.fr/html/)
+
+
 
 
 # IMP (Ingenic Media Platform) (imp_system.h)を参照

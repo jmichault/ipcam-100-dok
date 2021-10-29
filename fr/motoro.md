@@ -1,7 +1,7 @@
 ---
 lang: fr
 lang-niv: fonto
-lang-ref: 010-motoro
+lang-ref: 054-motoro
 layout: page
 title: 'Le moteur'
 ---

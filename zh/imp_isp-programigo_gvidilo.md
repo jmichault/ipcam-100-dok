@@ -1,3 +1,11 @@
+---
+lang: zh
+lang-niv: auto
+lang-ref: 052-ISP-programigo_gvidilo
+layout: page
+title: 视频编程指南
+---
+
 # IMP_ISP (voir imp_isp.h)
 图像处理。主要包括图像效果的设置，模式切换和记录，传感器的添加和删除。
 

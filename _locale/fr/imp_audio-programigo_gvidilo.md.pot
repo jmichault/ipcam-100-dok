@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-03-04 16:44+0100\n"
+"POT-Creation-Date: 2021-10-29 23:10+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,83 +16,92 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+#. type: YAML Front Matter: lang
+#: imp_audio-programigo_gvidilo.md:1
+#, no-wrap
+msgid "fr"
+msgstr ""
+
+#. type: YAML Front Matter: lang-niv
+#: imp_audio-programigo_gvidilo.md:1
+#, no-wrap
+msgid "fonto"
+msgstr ""
+
+#. type: YAML Front Matter: lang-ref
+#: imp_audio-programigo_gvidilo.md:1
+#, no-wrap
+msgid "053-audio-programigo_gvidilo"
+msgstr ""
+
+#. type: YAML Front Matter: layout
+#: imp_audio-programigo_gvidilo.md:1
+#, no-wrap
+msgid "page"
+msgstr ""
+
+#. type: YAML Front Matter: title
+#: imp_audio-programigo_gvidilo.md:1
+#, no-wrap
+msgid "Guide de programmation du son"
+msgstr ""
+
 #. type: Title #
-#: ./imp_audio-programigo_gvidilo.md:1
-#, markdown-text, no-wrap
+#: imp_audio-programigo_gvidilo.md:9
+#, no-wrap
 msgid "IMP_Audio (voir imp_audio.h)"
 msgstr ""
 
 #. type: Plain text
-#: ./imp_audio-programigo_gvidilo.md:4
-#, markdown-text, no-wrap
-msgid ""
-"Module audio, comprenant l'enregistrement et la lecture, le codec audio, les "
-"paramètres de volume et de gain, l'annulation d'écho, le gain automatique et "
-"d'autres fonctions.\n"
+#: imp_audio-programigo_gvidilo.md:12
+#, no-wrap
+msgid "Module audio, comprenant l'enregistrement et la lecture, le codec audio, les paramètres de volume et de gain, l'annulation d'écho, le gain automatique et d'autres fonctions.\n"
 msgstr ""
 
 #. type: Title ##
-#: ./imp_audio-programigo_gvidilo.md:5
-#, markdown-text, no-wrap
+#: imp_audio-programigo_gvidilo.md:13
+#, no-wrap
 msgid "Présentation"
 msgstr ""
 
 #. type: Bullet: '* '
-#: ./imp_audio-programigo_gvidilo.md:12
-#, markdown-text, no-wrap
-msgid ""
-"La fonction audio comprend 5 modules: entrée audio, sortie audio, annulation "
-"d'écho, encodage audio et décodage audio.\n"
+#: imp_audio-programigo_gvidilo.md:20
+#, no-wrap
+msgid "La fonction audio comprend 5 modules: entrée audio, sortie audio, annulation d'écho, encodage audio et décodage audio.\n"
 msgstr ""
 
 #. type: Bullet: ' * '
-#: ./imp_audio-programigo_gvidilo.md:12
-#, markdown-text, no-wrap
-msgid ""
-"Parmi eux, l'entrée audio et la sortie audio ont le concept de périphérique "
-"et de canal. L'un des MIC est considéré comme un périphérique et un MIC peut "
-"avoir plusieurs entrées de canal.\n"
+#: imp_audio-programigo_gvidilo.md:20
+#, no-wrap
+msgid "Parmi eux, l'entrée audio et la sortie audio ont le concept de périphérique et de canal. L'un des MIC est considéré comme un périphérique et un MIC peut avoir plusieurs entrées de canal.\n"
 msgstr ""
 
 #. type: Bullet: ' * '
-#: ./imp_audio-programigo_gvidilo.md:12
-#, markdown-text, no-wrap
-msgid ""
-"Le même SPK est considéré comme un périphérique de lecture, et un SPK peut "
-"également avoir plusieurs sorties de canal.\n"
+#: imp_audio-programigo_gvidilo.md:20
+#, no-wrap
+msgid "Le même SPK est considéré comme un périphérique de lecture, et un SPK peut également avoir plusieurs sorties de canal.\n"
 msgstr ""
 
 #. type: Bullet: ' * '
-#: ./imp_audio-programigo_gvidilo.md:12
-#, markdown-text, no-wrap
-msgid ""
-"La version actuelle de l'API audio ne prend en charge qu'un seul canal par "
-"appareil.\n"
+#: imp_audio-programigo_gvidilo.md:20
+#, no-wrap
+msgid "La version actuelle de l'API audio ne prend en charge qu'un seul canal par appareil.\n"
 msgstr ""
 
 #. type: Bullet: ' * '
-#: ./imp_audio-programigo_gvidilo.md:12
-#, markdown-text, no-wrap
-msgid ""
-"L'annulation d'écho se trouve dans l'interface d'entrée audio et les "
-"instructions spécifiques sont reflétées dans la description de la "
-"fonction.\n"
+#: imp_audio-programigo_gvidilo.md:20
+#, no-wrap
+msgid "L'annulation d'écho se trouve dans l'interface d'entrée audio et les instructions spécifiques sont reflétées dans la description de la fonction.\n"
 msgstr ""
 
 #. type: Bullet: ' * '
-#: ./imp_audio-programigo_gvidilo.md:12
-#, markdown-text, no-wrap
-msgid ""
-"Encodage audio : L'API audio actuelle prend en charge l'encodage audio aux "
-"formats PT_G711A, PT_G711U et PT_G726. Si vous devez ajouter une nouvelle "
-"méthode d'encodage, vous devez enregistrer l'encodeur.\n"
+#: imp_audio-programigo_gvidilo.md:20
+#, no-wrap
+msgid "Encodage audio : L'API audio actuelle prend en charge l'encodage audio aux formats PT_G711A, PT_G711U et PT_G726. Si vous devez ajouter une nouvelle méthode d'encodage, vous devez enregistrer l'encodeur.\n"
 msgstr ""
 
 #. type: Bullet: ' * '
-#: ./imp_audio-programigo_gvidilo.md:12
-#, markdown-text, no-wrap
-msgid ""
-"Décodage audio : L'API audio actuelle prend en charge le décodage audio aux "
-"formats PT_G711A, PT_G711U et PT_G726. Si vous devez ajouter une nouvelle "
-"méthode de décodage, vous devez enregistrer le décodeur.\n"
+#: imp_audio-programigo_gvidilo.md:20
+#, no-wrap
+msgid "Décodage audio : L'API audio actuelle prend en charge le décodage audio aux formats PT_G711A, PT_G711U et PT_G726. Si vous devez ajouter une nouvelle méthode de décodage, vous devez enregistrer le décodeur.\n"
 msgstr ""

@@ -1,3 +1,11 @@
+---
+lang: fr
+lang-niv: fonto
+lang-ref: 053-audio-programigo_gvidilo
+layout: page
+title: 'Guide de programmation du son'
+---
+
 # IMP_Audio (voir imp_audio.h)
 
 Module audio, comprenant l'enregistrement et la lecture, le codec audio, les paramètres de volume et de gain, l'annulation d'écho, le gain automatique et d'autres fonctions.

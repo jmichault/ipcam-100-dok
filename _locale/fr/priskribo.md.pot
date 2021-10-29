@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-10-29 14:34+0200\n"
+"POT-Creation-Date: 2021-10-29 23:25+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,17 +16,52 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#. type: Title #
-#: priskribo.md:3
+#. type: YAML Front Matter: lang
+#: priskribo.md:1
 #, no-wrap
-msgid "Priskribo :"
+msgid "fr"
+msgstr ""
+
+#. type: YAML Front Matter: lang-niv
+#: priskribo.md:1
+#, no-wrap
+msgid "fonto"
+msgstr ""
+
+#. type: YAML Front Matter: lang-ref
+#: priskribo.md:1
+#, no-wrap
+msgid "070-kamerao-priskribo"
+msgstr ""
+
+#. type: YAML Front Matter: layout
+#: priskribo.md:1
+#, no-wrap
+msgid "page"
+msgstr ""
+
+#. type: YAML Front Matter: title
+#: priskribo.md:1
+#, no-wrap
+msgid "Description de la caméra"
+msgstr ""
+
+#. type: Title #
+#: priskribo.md:11
+#, no-wrap
+msgid "Description :"
 msgstr ""
 
 #. type: Plain text
-#: priskribo.md:40
+#: priskribo.md:13
+#, no-wrap
+msgid "https://fr.aliexpress.com/item/4000146161270.html\n"
+msgstr ""
+
+#. type: Fenced code block
+#: priskribo.md:13
 #, no-wrap
 msgid ""
-"https://fr.aliexpress.com/item/4000146161270.html\n"
 "    Brand Name: shiningpo\n"
 "    Style: Dome Camera\n"
 "    Type: IP Camera\n"
@@ -64,11 +99,16 @@ msgid ""
 "    ptz: camara ip ptz\n"
 msgstr ""
 
-#. type: Plain text
-#: priskribo.md:49
+#. type: Title #
+#: priskribo.md:51
+#, no-wrap
+msgid "Inscriptions sur l'étiquette"
+msgstr ""
+
+#. type: Fenced code block
+#: priskribo.md:52
 #, no-wrap
 msgid ""
-"Surskriboj sur la etikedo:\n"
 "WIFI CARAM\n"
 "Model : WF-HD820-ZS\n"
 "Résolution : 1080P\n"
@@ -79,80 +119,178 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: priskribo.md:53
-#, no-wrap
-msgid ""
-"Kunligante ĝin per Eterreto, ĝi akiras DHCP-adreson kaj ni povas konekti al la retejo:\n"
-"defaŭlta uzanto: admin\n"
-"defaŭlta pasvorto: admin\n"
-msgstr ""
-
-#. type: Plain text
-#: priskribo.md:59
-#, no-wrap
-msgid ""
-"dum 5 minutoj, vi povas konekti per telnet al la haveno 9527\n"
-"defaŭlta uzanto: root\n"
-"defaŭlta pasvorto: jco66688\n"
-"por resti konektita preter 5 minutoj : «killall -9 auto_run.sh»\n"
-"(jco = http://www.cnjabsco.com/ )\n"
-msgstr ""
-
-#. type: Plain text
-#: priskribo.md:60
-#, no-wrap
-msgid "malfermaj havenoj :  \n"
-msgstr ""
-
-#. type: Plain text
-#: priskribo.md:61
-#, no-wrap
-msgid "  tcp : 80(http), 443(http ankaŭ !), 554(rtsp), 8004, 8006, 9527(telnetd), 9999  \n"
-msgstr ""
-
-#. type: Plain text
 #: priskribo.md:62
 #, no-wrap
-msgid "  udp : 67(dhcp), 3702, 8002, 39642  \n"
+msgid "Kunligante ĝin per Eterreto, ĝi akiras DHCP-adreson kaj ni povas konekti al la retejo:  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:63
+#, no-wrap
+msgid "defaŭlta uzanto: admin  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:64
+#, no-wrap
+msgid "defaŭlta pasvorto: admin  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:66
+#, no-wrap
+msgid "dum 5 minutoj, vi povas konekti per telnet al la haveno 9527  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:67
+#, no-wrap
+msgid "defaŭlta uzanto: root  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:68
+#, no-wrap
+msgid "defaŭlta pasvorto: jco66688  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:69
+#, no-wrap
+msgid "por resti konektita preter 5 minutoj : «killall -9 auto_run.sh»  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:70
+#, no-wrap
+msgid "(jco = http://www.cnjabsco.com/ )  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:75
+#, no-wrap
+msgid ""
+"malfermaj havenoj :    \n"
+"  tcp : 80(http), 443(http ankaŭ !), 554(rtsp), 8004, 8006, 9527(telnetd), 9999    \n"
+"  udp : 67(dhcp), 3702, 8002, 39642    \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:76
+#, no-wrap
+msgid "reta konduto kiam oni lanĉas jco_server:  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:77
+#, no-wrap
+msgid "pridemandas la servilon dns pri: www.163.com kaj dns.ictun.com  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:78
+#, no-wrap
+msgid "demando 114.114.114.114 por dns.ictun.com  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:79
+#, no-wrap
+msgid "konekti al la haveno udp/993 de dns.ictun.com  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:80
+#, no-wrap
+msgid "konekti al udp/993-haveno de 120.25.129.41  \n"
 msgstr ""
 
 #. type: Plain text
 #: priskribo.md:81
 #, no-wrap
-msgid ""
-"reta konduto kiam oni lanĉas jco_server:\n"
-"pridemandas la servilon dns pri: www.163.com kaj dns.ictun.com\n"
-"demando 114.114.114.114 por dns.ictun.com\n"
-"konekti al la haveno udp/993 de dns.ictun.com\n"
-"konekti al udp/993-haveno de 120.25.129.41\n"
-"pridemandu la servilon dns pri: conn-policy.ictun.com\n"
-"pridemandu la servilon dns pri: video-policy.ictun.com\n"
-"konekti al udp/80-haveno de 52.29.45.252\n"
-"konektas al udp/1210-haveno de 52.29.45.252\n"
-"ligas al udp/21-haveno de 52.57.135.134\n"
-"konektas al udp/1053-haveno de 52.28.62.20\n"
-"konektas al udp/443-haveno de 52.29.58.225\n"
-"konektas al udp/123 (ntp) haveno de 112.74.204.233 (video-policy.ictun.com)\n"
-"ligas al udp/993-haveno de 47.52.99.182\n"
-"konektas al udp/1054-haveno de 52.57.127.207\n"
-"...\n"
-"noto: ŝanĝu la defaŭltan itineron metante tiun de la interreta skatolo.\n"
+msgid "pridemandu la servilon dns pri: conn-policy.ictun.com  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:82
+#, no-wrap
+msgid "pridemandu la servilon dns pri: video-policy.ictun.com  \n"
 msgstr ""
 
 #. type: Plain text
 #: priskribo.md:83
 #, no-wrap
-msgid "haltigi jco_server sen kaŭzi restartigi:\n"
+msgid "konekti al udp/80-haveno de 52.29.45.252  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:84
+#, no-wrap
+msgid "konektas al udp/1210-haveno de 52.29.45.252  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:85
+#, no-wrap
+msgid "ligas al udp/21-haveno de 52.57.135.134  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:86
+#, no-wrap
+msgid "konektas al udp/1053-haveno de 52.28.62.20  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:87
+#, no-wrap
+msgid "konektas al udp/443-haveno de 52.29.58.225  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:88
+#, no-wrap
+msgid "konektas al udp/123 (ntp) haveno de 112.74.204.233 (video-policy.ictun.com)  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:89
+#, no-wrap
+msgid "ligas al udp/993-haveno de 47.52.99.182  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:90
+#, no-wrap
+msgid "konektas al udp/1054-haveno de 52.57.127.207  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:91
+#, no-wrap
+msgid "...  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:92
+#, no-wrap
+msgid "noto: ŝanĝu la defaŭltan itineron metante tiun de la interreta skatolo.  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:94
+#, no-wrap
+msgid "haltigi jco_server sen kaŭzi restartigi:  \n"
 msgstr ""
 
 #. type: Title ##
-#: priskribo.md:83
+#: priskribo.md:95
 #, no-wrap
-msgid "stop_cloud :"
+msgid "stop_cloud :  "
 msgstr ""
 
 #. type: Fenced code block
-#: priskribo.md:84
+#: priskribo.md:96
 #, no-wrap
 msgid ""
 "ps | awk '/[a]uto_run.sh/ {print $1}' | while read PID; do kill -9 $PID; done;\n"
@@ -163,29 +301,44 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: priskribo.md:96
+#: priskribo.md:104
+#, no-wrap
+msgid "vi povas vidi la ĉefan video-rivereton (laŭ 1080P aŭ alia agordo) per:  \n"
+msgstr ""
+
+#. type: Fenced code block
+#: priskribo.md:105
 #, no-wrap
 msgid ""
-"vi povas vidi la ĉefan video-rivereton (laŭ 1080P aŭ alia agordo) per:\n"
 "ffplay -i rtsp://admin:admin@192.168.24.111/stream1\n"
 "ffplay -i rtsp://admin:admin@192.168.24.39:554/stream1\n"
 "ffplay -i rtsp://admin:admin@192.168.24.39:554/mpeg4/ch0/main/av_stream\n"
 msgstr ""
 
 #. type: Plain text
-#: priskribo.md:100
+#: priskribo.md:112
+#, no-wrap
+msgid "kaj la duaranga :\n"
+msgstr ""
+
+#. type: Fenced code block
+#: priskribo.md:112
 #, no-wrap
 msgid ""
-"kaj la duaranga :\n"
 "ffplay -i rtsp://admin:admin@192.168.24.39/stream2\n"
 "ffplay -i rtsp://admin:admin@192.168.24.39:554/stream2\n"
 msgstr ""
 
 #. type: Plain text
-#: priskribo.md:109
+#: priskribo.md:118
+#, no-wrap
+msgid "la instalita firmvaro indikas:\n"
+msgstr ""
+
+#. type: Fenced code block
+#: priskribo.md:118
 #, no-wrap
 msgid ""
-"la instalita firmvaro indikas:\n"
 "DeviceName:     INGENIC-V01\n"
 "DeviceModel:    IPCAM-100\n"
 "DeviceSN:       12345678901\n"
@@ -196,80 +349,163 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: priskribo.md:113
-#, no-wrap
-msgid ""
-"la procesoro estas : ingenic T21\n"
-"http://www.ingenic.com.cn/en/?product/id/11.html\n"
-"https://fr.indasina.com/ingenic-t21-extreme-2-megapixel-encoding-processor_p16.html\n"
-msgstr ""
-
-#. type: Plain text
-#: priskribo.md:116
-#, no-wrap
-msgid ""
-"la CMOS-sensilo estas : gc2053.\n"
-"ŝofora fonto : https://github.com/mrfixit2001/rk-kernel-fork/blob/develop-4.4/drivers/media/i2c/gc2053.c\n"
-msgstr ""
-
-#. type: Plain text
-#: priskribo.md:118
-#, no-wrap
-msgid "RAM : 42MiB entute, 36 MiB havebla.\n"
-msgstr ""
-
-#. type: Plain text
-#: priskribo.md:124
-#, no-wrap
-msgid ""
-"la haveno 9999 estas malfermita kaj permesas regi la fotilon:\n"
-"echo \"checkuser -act set -user admin -password admin\" | nc 192.168.1.155 9999\n"
-"echo \"list\" | nc 192.168.1.155 9999\n"
-"echo \"pelcod20ctrl -?\" | nc 192.168.1.155 9999\n"
-"echo \"pelcod20ctrl -type 1\" | nc 192.168.1.155 9999\n"
-msgstr ""
-
-#. type: Plain text
 #: priskribo.md:128
 #, no-wrap
-msgid ""
-"gpio-havenoj:\n"
-"46 = infraruĝaj LEDoj.\n"
-"81 = bluaj LEDoj.\n"
+msgid "la procesoro estas : ingenic T21  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:129
+#, no-wrap
+msgid "http://www.ingenic.com.cn/en/?product/id/11.html  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:130
+#, no-wrap
+msgid "https://fr.indasina.com/ingenic-t21-extreme-2-megapixel-encoding-processor_p16.html  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:132
+#, no-wrap
+msgid "la CMOS-sensilo estas : gc2053.  \n"
 msgstr ""
 
 #. type: Plain text
 #: priskribo.md:133
 #, no-wrap
-msgid ""
-"GPIO-havenoj blokitaj por studado:\n"
-"blokita de motor.ko: 18? 38 39 40 41 47 48 49 60?\n"
-"blokita de audio.ko: 63?\n"
-"52 64\n"
+msgid "ŝofora fonto : https://github.com/mrfixit2001/rk-kernel-fork/blob/develop-4.4/drivers/media/i2c/gc2053.c  \n"
 msgstr ""
 
 #. type: Plain text
 #: priskribo.md:135
 #, no-wrap
-msgid "Ptz-kontrolo:\n"
+msgid "RAM : 42MiB entute, 36 MiB havebla.  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:137
+#, no-wrap
+msgid "la haveno 9999 estas malfermita kaj permesas regi la fotilon:  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:138
+#, no-wrap
+msgid "echo \"checkuser -act set -user admin -password admin\" | nc 192.168.1.155 9999  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:139
+#, no-wrap
+msgid "echo \"list\" | nc 192.168.1.155 9999  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:140
+#, no-wrap
+msgid "echo \"pelcod20ctrl -?\" | nc 192.168.1.155 9999  \n"
 msgstr ""
 
 #. type: Plain text
 #: priskribo.md:141
 #, no-wrap
-msgid ""
-"supro: http://admin:admin@192.168.24.39/?jcpcmd=pelcod20ctrl -type 1 -cmd 1 -data1 24 -data2 24\n"
-"malsupre: http://admin:admin@192.168.24.39/?jcpcmd=pelcod20ctrl -type 1 -cmd 2 -data1 24 -data2 24\n"
-"maldekstre: http://admin:admin@192.168.24.39/?jcpcmd=pelcod20ctrl -type 1 -cmd 3 -data1 24 -data2 24\n"
-"dekstre: http://admin:admin@192.168.24.39/?jcpcmd=pelcod20ctrl -type 1 -cmd 4 -data1 24 -data2 24\n"
-"halto: http://admin:admin@192.168.24.39/?jcpcmd=pelcod20ctrl -type 1 -cmd 9 -data1 24 -data2 24\n"
+msgid "echo \"pelcod20ctrl -type 1\" | nc 192.168.1.155 9999  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:143
+#, no-wrap
+msgid "gpio-havenoj:  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:144
+#, no-wrap
+msgid "46 = infraruĝaj LEDoj.  \n"
 msgstr ""
 
 #. type: Plain text
 #: priskribo.md:145
 #, no-wrap
-msgid ""
-"starigu pozicion 2: http://192.168.24.39/?jcpcmd=pelcod20ctrl -type 2 -cmd 1 -data2 2\n"
-"iru al 1: http://192.168.24.39/?jcpcmd=pelcod20ctrl -type 2 -cmd 2 -data2 1\n"
-"forigi 2: http://192.168.24.39/?jcpcmd=pelcod20ctrl -type 2 -cmd 3 -data2 2\n"
+msgid "81 = bluaj LEDoj.  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:147
+#, no-wrap
+msgid "GPIO-havenoj blokitaj por studado:  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:148
+#, no-wrap
+msgid "blokita de motor.ko: 18? 38 39 40 41 47 48 49 60?  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:149
+#, no-wrap
+msgid "blokita de audio.ko: 63?  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:150
+#, no-wrap
+msgid "52 64  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:152
+#, no-wrap
+msgid "Ptz-kontrolo:  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:154
+#, no-wrap
+msgid "supro: http://admin:admin@192.168.24.39/?jcpcmd=pelcod20ctrl -type 1 -cmd 1 -data1 24 -data2 24  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:155
+#, no-wrap
+msgid "malsupre: http://admin:admin@192.168.24.39/?jcpcmd=pelcod20ctrl -type 1 -cmd 2 -data1 24 -data2 24  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:156
+#, no-wrap
+msgid "maldekstre: http://admin:admin@192.168.24.39/?jcpcmd=pelcod20ctrl -type 1 -cmd 3 -data1 24 -data2 24  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:157
+#, no-wrap
+msgid "dekstre: http://admin:admin@192.168.24.39/?jcpcmd=pelcod20ctrl -type 1 -cmd 4 -data1 24 -data2 24  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:158
+#, no-wrap
+msgid "halto: http://admin:admin@192.168.24.39/?jcpcmd=pelcod20ctrl -type 1 -cmd 9 -data1 24 -data2 24  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:160
+#, no-wrap
+msgid "starigu pozicion 2: http://192.168.24.39/?jcpcmd=pelcod20ctrl -type 2 -cmd 1 -data2 2  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:161
+#, no-wrap
+msgid "iru al 1: http://192.168.24.39/?jcpcmd=pelcod20ctrl -type 2 -cmd 2 -data2 1  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:162
+#, no-wrap
+msgid "forigi 2: http://192.168.24.39/?jcpcmd=pelcod20ctrl -type 2 -cmd 3 -data2 2  \n"
 msgstr ""

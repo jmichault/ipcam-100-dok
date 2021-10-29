@@ -1,7 +1,7 @@
 ---
 lang: hi
 lang-niv: auto
-lang-ref: 010-motoro
+lang-ref: 054-motoro
 layout: page
 title: यन्त्र
 ---

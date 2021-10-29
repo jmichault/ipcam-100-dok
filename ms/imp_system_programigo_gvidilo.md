@@ -1,3 +1,22 @@
+---
+lang: ms
+lang-niv: auto
+lang-ref: 051-IMP-programigo_gvidilo
+layout: page
+title: 'Panduan Pengaturcaraan IMP.'
+---
+
+
+Dokumentasi API boleh dilihat di sini: (° 1 ° 1  
+* [Versi asal dalam bahasa Cina](../../zh/includes.zh/html/)
+
+
+* [Versi Bahasa Inggeris](../../en/includes.en/html/)
+
+
+* (° 1 ° 1 ° 1 ° 1 1 ° 1 ° Versi Perancis Diterjemahkan oleh Google](../../fr/includes.fr/html/)
+
+
 
 
 # IMP (Platform Media Ingenic) (lihat imp_system.h)

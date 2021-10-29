@@ -1,3 +1,22 @@
+---
+lang: bn
+lang-niv: auto
+lang-ref: 051-IMP-programigo_gvidilo
+layout: page
+title: 'IMP প্রোগ্রামিং গাইড'
+---
+
+
+APIS 'ডকুমেন্টেশন এখানে দেখা যাবে: (° 1 ° 1  
+* [চীনা মধ্যে মূল সংস্করণ](../../zh/includes.zh/html/)
+
+
+* [ইংরেজি সংস্করণ](../../en/includes.en/html/)
+
+
+* (° 1 ° 1 ° 1 ° 1 ° 1 ° ফরাসি সংস্করণ Google দ্বারা অনুবাদ করা হয়েছে](../../fr/includes.fr/html/)
+
+
 
 
 # আইএমপি (ইনজেনিক মিডিয়া প্ল্যাটফর্ম) (দেখুন_system.h)

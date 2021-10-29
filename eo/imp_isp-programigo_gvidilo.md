@@ -1,3 +1,11 @@
+---
+lang: eo
+lang-niv: auto
+lang-ref: 052-ISP-programigo_gvidilo
+layout: page
+title: 'Gvidilo pri video-programado'
+---
+
 # IMP_ISP (voir imp_isp.h)
 Bildosigna prilaborado. Ĉefe inkluzivas agordojn de bildaj efikoj, reĝimoŝaltilo kaj registrado, aldono kaj forigo de sensilo.
 

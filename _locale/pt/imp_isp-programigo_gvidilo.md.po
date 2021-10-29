@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-03-04 16:48+0100\n"
+"POT-Creation-Date: 2021-10-29 23:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,49 +16,72 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+#. type: YAML Front Matter: lang
+#: imp_isp-programigo_gvidilo.md:1
+#, no-wrap
+msgid "eo"
+msgstr "pt"
+
+#. type: YAML Front Matter: lang-niv
+#: imp_isp-programigo_gvidilo.md:1
+#, no-wrap
+msgid "auto"
+msgstr "auto"
+
+#. type: YAML Front Matter: lang-ref
+#: imp_isp-programigo_gvidilo.md:1
+#, no-wrap
+msgid "052-ISP-programigo_gvidilo"
+msgstr "052-ISP-programigo_gvidilo"
+
+#. type: YAML Front Matter: layout
+#: imp_isp-programigo_gvidilo.md:1
+#, no-wrap
+msgid "page"
+msgstr "page"
+
+#. type: YAML Front Matter: title
+#: imp_isp-programigo_gvidilo.md:1
+#, fuzzy, no-wrap
+msgid "Gvidilo pri video-programado"
+msgstr "Guia de programação de vídeo."
+
 #. type: Title #
-#: ./imp_isp-programigo_gvidilo.md:1
-#, markdown-text, no-wrap
-#, fuzzy
+#: imp_isp-programigo_gvidilo.md:9
+#, fuzzy, no-wrap
 msgid "IMP_ISP (voir imp_isp.h)"
 msgstr "IMP_ISP (voir imp_isp.h)"
 
 #. type: Plain text
-#: ./imp_isp-programigo_gvidilo.md:3
-#, markdown-text, no-wrap
-#, fuzzy
-msgid ""
-"Bildosigna prilaborado. Ĉefe inkluzivas agordojn de bildaj efikoj, "
-"reĝimoŝaltilo kaj registrado, aldono kaj forigo de sensilo.\n"
+#: imp_isp-programigo_gvidilo.md:11
+#, fuzzy, no-wrap
+msgid "Bildosigna prilaborado. Ĉefe inkluzivas agordojn de bildaj efikoj, reĝimoŝaltilo kaj registrado, aldono kaj forigo de sensilo.\n"
 msgstr "Processamento de imagem. Inclui principalmente configurações de efeitos de imagem, troca de modo e gravação, adição e remoção de sensor.\n"
 
 #. type: Plain text
-#: ./imp_isp-programigo_gvidilo.md:5
-#, markdown-text, no-wrap
-#, fuzzy
-msgid ""
-"La ISP-modulo havas nenion komunan kun datuma fluo kaj ne bezonas esti "
-"ligita, ĝi nur funkcias laŭ efektagordo kaj sensila kontrolo.\n"
+#: imp_isp-programigo_gvidilo.md:13
+#, fuzzy, no-wrap
+msgid "La ISP-modulo havas nenion komunan kun datuma fluo kaj ne bezonas esti ligita, ĝi nur funkcias laŭ efektagordo kaj sensila kontrolo.\n"
 msgstr "O módulo ISP não tem nada a ver com fluxo de dados e não precisa ser conectado, ele só funciona em termos de configuração de efeito e controle de sensor.\n"
 
 #. type: Title ##
-#: ./imp_isp-programigo_gvidilo.md:6
-#, markdown-text, no-wrap
-#, fuzzy
+#: imp_isp-programigo_gvidilo.md:14
+#, fuzzy, no-wrap
 msgid "Aktivigo"
 msgstr "Ativação"
 
 #. type: Plain text
-#: ./imp_isp-programigo_gvidilo.md:10
-#, markdown-text, no-wrap
-#, fuzzy
+#: imp_isp-programigo_gvidilo.md:18
+#, fuzzy, no-wrap
 msgid ""
 "La paŝoj de aktivigo de ISP-modulo estas jenaj:\n"
 "* paŝo 1: Kreu ISP-modulon\n"
-msgstr "As etapas para ativar um módulo ISP são as seguintes:\n* etapa 1: Crie um módulo ISP\n"
+msgstr ""
+"As etapas para ativar um módulo ISP são as seguintes:\n"
+"* etapa 1: Crie um módulo ISP\n"
 
 #. type: Fenced code block
-#: ./imp_isp-programigo_gvidilo.md:11
+#: imp_isp-programigo_gvidilo.md:19
 #, no-wrap
 msgid ""
 "int ret = 0;\n"
@@ -78,32 +101,26 @@ msgstr ""
 "  }\n"
 
 #. type: Bullet: '* '
-#: ./imp_isp-programigo_gvidilo.md:21
-#, markdown-text, no-wrap
-#, fuzzy
-msgid ""
-"2a paŝo: Aldonu sensilon, la sensila pelilo estis aldonita al la kerno antaŭ "
-"ĉi tiu operacio.\n"
+#: imp_isp-programigo_gvidilo.md:29
+#, fuzzy, no-wrap
+msgid "2a paŝo: Aldonu sensilon, la sensila pelilo estis aldonita al la kerno antaŭ ĉi tiu operacio.\n"
 msgstr "Etapa 2: Adicionar sensor, o driver do sensor foi adicionado ao kernel antes desta operação.\n"
 
 #. type: Fenced code block
-#: ./imp_isp-programigo_gvidilo.md:23
+#: imp_isp-programigo_gvidilo.md:31
 #, no-wrap
 msgid ""
 "  IMPSensorInfo sensor[2];\n"
 "  sensor[0].name = \"xxx\";\n"
-"  sensor[0].cbus_type = SENSOR_CONTROL_INTERFACE_I2C; // OU "
-"SENSOR_CONTROL_INTERFACE_SPI\n"
+"  sensor[0].cbus_type = SENSOR_CONTROL_INTERFACE_I2C; // OU SENSOR_CONTROL_INTERFACE_SPI\n"
 "  sensor[0].i2c = {\n"
-"    .type = \"xxx\", // nom du périphérique I2C, qui doit être cohérent avec "
-"le nom de la structure i2c_device_id dans le pilote du capteur.\n"
+"    .type = \"xxx\", // nom du périphérique I2C, qui doit être cohérent avec le nom de la structure i2c_device_id dans le pilote du capteur.\n"
 "    .addr = xx, // adresse I2C\n"
 "    .i2c_adapter_id = xx, // ID du contrôleur I2C où se trouve le capteur\n"
 "  }\n"
 "  /* OU\n"
 "   * sensor[0].spi = {\n"
-"   *   .modalias = \"xx\", // nom du périphérique SPI, doit être cohérent "
-"avec le nom de la structure spi_device_id dans le pilote du capteur.\n"
+"   *   .modalias = \"xx\", // nom du périphérique SPI, doit être cohérent avec le nom de la structure spi_device_id dans le pilote du capteur.\n"
 "   *     .bus_num = xx, // adresse du bus SPI\n"
 "   *}\n"
 "   */\n"
@@ -116,18 +133,15 @@ msgid ""
 msgstr ""
 "  IMPSensorInfo sensor[2];\n"
 "  sensor[0].name = \"xxx\";\n"
-"  sensor[0].cbus_type = SENSOR_CONTROL_INTERFACE_I2C; // OU "
-"SENSOR_CONTROL_INTERFACE_SPI\n"
+"  sensor[0].cbus_type = SENSOR_CONTROL_INTERFACE_I2C; // OU SENSOR_CONTROL_INTERFACE_SPI\n"
 "  sensor[0].i2c = {\n"
-"    .type = \"xxx\", // nom du périphérique I2C, qui doit être cohérent avec "
-"le nom de la structure i2c_device_id dans le pilote du capteur.\n"
+"    .type = \"xxx\", // nom du périphérique I2C, qui doit être cohérent avec le nom de la structure i2c_device_id dans le pilote du capteur.\n"
 "    .addr = xx, // adresse I2C\n"
 "    .i2c_adapter_id = xx, // ID du contrôleur I2C où se trouve le capteur\n"
 "  }\n"
 "  /* OU\n"
 "   * sensor[0].spi = {\n"
-"   *   .modalias = \"xx\", // nom du périphérique SPI, doit être cohérent "
-"avec le nom de la structure spi_device_id dans le pilote du capteur.\n"
+"   *   .modalias = \"xx\", // nom du périphérique SPI, doit être cohérent avec le nom de la structure spi_device_id dans le pilote du capteur.\n"
 "   *     .bus_num = xx, // adresse du bus SPI\n"
 "   *}\n"
 "   */\n"
@@ -139,14 +153,13 @@ msgstr ""
 "  }\n"
 
 #. type: Bullet: '* '
-#: ./imp_isp-programigo_gvidilo.md:46
-#, markdown-text, no-wrap
-#, fuzzy
+#: imp_isp-programigo_gvidilo.md:54
+#, fuzzy, no-wrap
 msgid "Paŝo 3: Aktivigu la sensilon, ĝi komencos produkti bildojn.\n"
 msgstr "Passo 3: Ative o sensor, ele começará a produzir imagens.\n"
 
 #. type: Fenced code block
-#: ./imp_isp-programigo_gvidilo.md:48
+#: imp_isp-programigo_gvidilo.md:56
 #, no-wrap
 msgid ""
 "  ret = IMP_ISP_EnableSensor (void);\n"
@@ -162,14 +175,13 @@ msgstr ""
 " }\n"
 
 #. type: Bullet: '* '
-#: ./imp_isp-programigo_gvidilo.md:56
-#, markdown-text, no-wrap
-#, fuzzy
+#: imp_isp-programigo_gvidilo.md:64
+#, fuzzy, no-wrap
 msgid "paŝo 4: Aktivigu la agordojn:\n"
 msgstr "Etapa 4: Ative as configurações:\n"
 
 #. type: Fenced code block
-#: ./imp_isp-programigo_gvidilo.md:58
+#: imp_isp-programigo_gvidilo.md:66
 #, no-wrap
 msgid ""
 "  ret = IMP_ISP_EnableTuning (); \n"
@@ -185,32 +197,29 @@ msgstr ""
 " }\n"
 
 #. type: Bullet: '* '
-#: ./imp_isp-programigo_gvidilo.md:66
-#, markdown-text, no-wrap
-#, fuzzy
-msgid ""
-"Paŝo 5: Alvoki ISP-elpurigan interfacon: Bonvolu raporti al la dokumentado "
-"de ISP-elpuriga interfaco.\n"
+#: imp_isp-programigo_gvidilo.md:74
+#, fuzzy, no-wrap
+msgid "Paŝo 5: Alvoki ISP-elpurigan interfacon: Bonvolu raporti al la dokumentado de ISP-elpuriga interfaco.\n"
 msgstr "Etapa 5: invocar a interface de depuração do ISP: consulte a documentação da interface de depuração do ISP.\n"
 
 #. type: Title ##
-#: ./imp_isp-programigo_gvidilo.md:69
-#, markdown-text, no-wrap
-#, fuzzy
+#: imp_isp-programigo_gvidilo.md:77
+#, fuzzy, no-wrap
 msgid "Senaktivigo de ISP-modulo"
 msgstr "Desativando um módulo ISP"
 
 #. type: Plain text
-#: ./imp_isp-programigo_gvidilo.md:73
-#, markdown-text, no-wrap
-#, fuzzy
+#: imp_isp-programigo_gvidilo.md:81
+#, fuzzy, no-wrap
 msgid ""
 "La paŝoj por malinstali la ISP-modulon estas jenaj:\n"
 "* paŝo 1: Malŝalti la ISP-agordon\n"
-msgstr "As etapas para desinstalar o módulo ISP são as seguintes:\n* etapa 1: Desative a configuração do ISP\n"
+msgstr ""
+"As etapas para desinstalar o módulo ISP são as seguintes:\n"
+"* etapa 1: Desative a configuração do ISP\n"
 
 #. type: Fenced code block
-#: ./imp_isp-programigo_gvidilo.md:74
+#: imp_isp-programigo_gvidilo.md:82
 #, no-wrap
 msgid ""
 "int ret = 0;\n"
@@ -234,16 +243,13 @@ msgstr ""
 " }\n"
 
 #. type: Bullet: '* '
-#: ./imp_isp-programigo_gvidilo.md:86
-#, markdown-text, no-wrap
-#, fuzzy
-msgid ""
-"2a paŝo: fermu la sensilojn. (FrameSource devas esti fermita antaŭ ĉi tiu "
-"operacio)\n"
+#: imp_isp-programigo_gvidilo.md:94
+#, fuzzy, no-wrap
+msgid "2a paŝo: fermu la sensilojn. (FrameSource devas esti fermita antaŭ ĉi tiu operacio)\n"
 msgstr "Etapa 2: Feche os sensores. (FrameSource deve ser fechado antes desta operação)\n"
 
 #. type: Fenced code block
-#: ./imp_isp-programigo_gvidilo.md:88
+#: imp_isp-programigo_gvidilo.md:96
 #, no-wrap
 msgid ""
 "ret = IMP_ISP_DisableSensor (); \n"
@@ -259,16 +265,13 @@ msgstr ""
 " }\n"
 
 #. type: Bullet: '* '
-#: ./imp_isp-programigo_gvidilo.md:97
-#, markdown-text, no-wrap
-#, fuzzy
-msgid ""
-"3a paŝo: forigu la sensilojn, la sensiloj devas esti fermitaj antaŭ ĉi tiu "
-"operacio.\n"
+#: imp_isp-programigo_gvidilo.md:105
+#, fuzzy, no-wrap
+msgid "3a paŝo: forigu la sensilojn, la sensiloj devas esti fermitaj antaŭ ĉi tiu operacio.\n"
 msgstr "Passo 3: remova os sensores, os sensores devem ser fechados antes desta operação.\n"
 
 #. type: Fenced code block
-#: ./imp_isp-programigo_gvidilo.md:99
+#: imp_isp-programigo_gvidilo.md:107
 #, no-wrap
 msgid ""
 "ret = IMP_ISP_DelSensor (& sensor); \n"
@@ -284,16 +287,13 @@ msgstr ""
 " }\n"
 
 #. type: Bullet: '* '
-#: ./imp_isp-programigo_gvidilo.md:107
-#, markdown-text, no-wrap
-#, fuzzy
-msgid ""
-"Paŝo 4: Purigu la ISP-modulon, ĉiuj sensiloj devas esti forigitaj antaŭ ĉi "
-"tiu operacio.\n"
+#: imp_isp-programigo_gvidilo.md:115
+#, fuzzy, no-wrap
+msgid "Paŝo 4: Purigu la ISP-modulon, ĉiuj sensiloj devas esti forigitaj antaŭ ĉi tiu operacio.\n"
 msgstr "Etapa 4: Limpe o módulo ISP, todos os sensores devem ser removidos antes desta operação.\n"
 
 #. type: Fenced code block
-#: ./imp_isp-programigo_gvidilo.md:109
+#: imp_isp-programigo_gvidilo.md:117
 #, no-wrap
 msgid ""
 "ret = IMP_ISP_Close ();\n"
@@ -309,16 +309,14 @@ msgstr ""
 " }\n"
 
 #. type: Title ##
-#: ./imp_isp-programigo_gvidilo.md:119
-#, markdown-text, no-wrap
-#, fuzzy
+#: imp_isp-programigo_gvidilo.md:127
+#, fuzzy, no-wrap
 msgid "listo de funkcioj"
 msgstr "lista de funções"
 
 #. type: Plain text
-#: ./imp_isp-programigo_gvidilo.md:193
-#, markdown-text, no-wrap
-#, fuzzy
+#: imp_isp-programigo_gvidilo.md:201
+#, fuzzy, no-wrap
 msgid ""
 "int IMP_ISP_Malferma(malplena);\n"
 "int IMP_ISP_Fermi(malplenan);\n"
@@ -392,5 +390,76 @@ msgid ""
 "int IMP_ISP_Agordo_SetDPStrength(uint32_t-proporcio);\n"
 "int IMP_ISP_Agordo_SetAntiFogAttr(IMPISPAntiFogAttr attr);\n"
 "int IMP_ISP_Tuning_GetEVAttr(IMPISPEVAttr *attr);\n"
-msgstr "int IMP_ISP_Aberto(vazio);\nint IMP_ISP_Fechar(vazio);\nint IMP_ISP_AddSensor(IMPSensorInfo *pinfo);\nint IMP_ISP_DelSensor(IMPSensorInfo *pinfo);\nint IMP_ISP_EnableSensor(vazio);\nint IMP_ISP_DisableSensor(vazio);\nint IMP_ISP_SetSensorRegister(uint32_t reg, uint32_valor t);\nint IMP_ISP_GetSensorRegister(uint32_t reg, uint32_t *valor);\nint IMP_ISP_EnableTuning(em branco);\nint IMP_ISP_DisableTuning(em branco);\nint IMP_ISP_Configuração_SetSensorFPS(uint32_t fps_num, uint32_t fps_den);\nint IMP_ISP_Tuning_GetSensorFPS(uint32_t *fps_num, uint32_t *fps_den);\nint IMP_ISP_Configuração_SetAntiFlickerAttr(IMPISPAntiflickerAttr attr);\nint IMP_ISP_Tuning_GetAntiFlickerAttr(IMPISPAntiflickerAttr *pattr);\nint IMP_ISP_Configuração_SetRawDRC(IMPISPDrcAttr *pinfo);\nint IMP_ISP_Tuning_GetRawDRC(IMPISPDrcAttr *pinfo);\nint IMP_ISP_Configuração_SetSinterDnsAttr(IMPISPSinterDenoiseAttr *pinfo);\nint IMP_ISP_Tuning_GetSinterDnsAttr(IMPISPSinterDenoiseAttr *pinfo);\nint IMP_ISP_Configuração_SetTemperDnsCtl(IMPISPTemperDenoiseAttr *pinfo);\nint IMP_ISP_Tuning_SetTemperDnsAttr(IMPISPTemperDenoiseAttr *pinfo);\nint IMP_ISP_Configuração_GetTemperDnsAttr(IMPISPTemperDenoiseAttr *pinfo);\nint IMP_ISP_Tuning_SetWDRAttr(IMPISPT modo deuningOpsMode);\nint IMP_ISP_Configuração_GetWDRAttr(IMPISPTuningOpsMode *pmode);\nint IMP_ISP_Tuning_SetSceneMode(modo IMPISPSceneMode);\nint IMP_ISP_Configuração_GetSceneMode(IMPISPSceneMode *pmode);\nint IMP_ISP_Tuning_SetColorfxMode(IMPISPColorfxMode mode);\nint IMP_ISP_Configuração_GetColorfxMode(IMPISPColorfxMode *pmode);\nint IMP_ISP_Tuning_Definir brilho(sinal sem nome brilhante);\nint IMP_ISP_Configuração_GetBrightness(unsigned char *pbright);\nint IMP_ISP_Tuning_SetContrast(contraste de caractere sem nome);\nint IMP_ISP_Configuração_GetContrast(unsigned char *pcontrast);\nint IMP_ISP_Tuning_Definir nitidez(nitidez sem nome nitidez);\nint IMP_ISP_Configuração_GetSharpness(unsigned char *psharpness);\nint IMP_ISP_Tuning_Definir Saturação(sinal sem nome (a 22 °);\nint IMP_ISP_Configuração_GetSaturation(unsigned char *psat);\nint IMP_ISP_Tuning_SetISPProcess(modo IMPISPTuningOpsMode);\nint IMP_ISP_Configuração_SetFWFreeze(IMPISPTuningOpsMode mode);\nint IMP_ISP_Tuning_SaveAllParam(char *caminho);\nint IMP_ISP_Configuração_SetISPBypass(IMPISPTuningOpsMode enable);\nint IMP_ISP_Tuning_GetTotalGain(uint32_t *gain);\nint IMP_ISP_Tuning_Definir ISPHflip(IMPISPTuningOpsMode modo);\nint IMP_ISP_Configuração_GetISPHflip(IMPISPTuningOpsMode *pmode);\nint IMP_ISP_Tuning_SetISPVflip(IMPISPT modo deuningOpsMode);\nint IMP_ISP_Configuração_GetISPVflip(IMPISPTuningOpsMode *pmode);\nint IMP_ISP_Tuning_SetISPRunningMode(modo IMPISPRunningMode);\nint IMP_ISP_Configuração_GetISPRunningMode(IMPISPRunningMode *pmode);\nint IMP_ISP_Tuning_SetAeStrategy(Estratégia IMPISPAeStrategy);\nint IMP_ISP_Configuração_GetAeStrategy(IMPISPAeStrategy *pstrategy);\nint IMP_ISP_Tuning_SetGamma(IMPISPGamma *intervalo);\nint IMP_ISP_Configuração_GetGamma(IMPISPGamma *gamma);\nint IMP_ISP_Tuning_SetAeComp(int comp);\nint IMP_ISP_Configuração_GetAeComp(int *comp);\nint IMP_ISP_Tuning_SetExpr(IMPISPExpr *ekspr);\nint IMP_ISP_Configuração_GetExpr(IMPISPExpr *expr);\nint IMP_ISP_Tuning_AE_GetROI(IMPISPAERoi *isp_ae_roi);\nint IMP_ISP_Tuning_AE_SetROI(IMPISPAERoi *isp_ae_roi);\nint IMP_ISP_Tuning_SetWB(IMPISPWB *wb);\nint IMP_ISP_Configuração_GetWB(IMPISPWB *wb);\nint IMP_ISP_Tuning_GetWB_Statis(IMPISPWB *wb);\nint IMP_ISP_Tuning_Awb_GetCwfShift(IMPISPWB *isp_wb_attr);\nint IMP_ISP_Tuning_Awb_SetCwfShift(IMPISPWB *isp_wb_attr);\nint IMP_ISP_Tuning_SetMaxAgain(uint32_t gain);\nint IMP_ISP_Tuning_GetMaxAgain(uint32_t *gain);\nint IMP_°) ISP_Tuning_SetMaxDgain(uint32_t gain);\nint IMP_ISP_Tuning_GetMaxDgain(uint32_t *gain);\nint IMP_ISP_Tuning_SetVideoDrop() vazio (*cb)(vazio));\nint IMP_ISP_Configuração_SetHiLightDepress(uint32_t força);\nint IMP_ISP_Configuração_SetTemperStrength(uint32_relação t);\nint IMP_ISP_Configuração_SetSinterStrength(uint32_relação t);\nint IMP_ISP_Configuração_SetDPStrength(uint32_relação t);\nint IMP_ISP_Configuração_SetAntiFogAttr(IMPISPAntiFogAttr attr);\nint IMP_ISP_Tuning_GetEVAttr(IMPISPEVAttr *atr);\n"
-
+msgstr ""
+"int IMP_ISP_Aberto(vazio);\n"
+"int IMP_ISP_Fechar(vazio);\n"
+"int IMP_ISP_AddSensor(IMPSensorInfo *pinfo);\n"
+"int IMP_ISP_DelSensor(IMPSensorInfo *pinfo);\n"
+"int IMP_ISP_EnableSensor(vazio);\n"
+"int IMP_ISP_DisableSensor(vazio);\n"
+"int IMP_ISP_SetSensorRegister(uint32_t reg, uint32_valor t);\n"
+"int IMP_ISP_GetSensorRegister(uint32_t reg, uint32_t *valor);\n"
+"int IMP_ISP_EnableTuning(em branco);\n"
+"int IMP_ISP_DisableTuning(em branco);\n"
+"int IMP_ISP_Configuração_SetSensorFPS(uint32_t fps_num, uint32_t fps_den);\n"
+"int IMP_ISP_Tuning_GetSensorFPS(uint32_t *fps_num, uint32_t *fps_den);\n"
+"int IMP_ISP_Configuração_SetAntiFlickerAttr(IMPISPAntiflickerAttr attr);\n"
+"int IMP_ISP_Tuning_GetAntiFlickerAttr(IMPISPAntiflickerAttr *pattr);\n"
+"int IMP_ISP_Configuração_SetRawDRC(IMPISPDrcAttr *pinfo);\n"
+"int IMP_ISP_Tuning_GetRawDRC(IMPISPDrcAttr *pinfo);\n"
+"int IMP_ISP_Configuração_SetSinterDnsAttr(IMPISPSinterDenoiseAttr *pinfo);\n"
+"int IMP_ISP_Tuning_GetSinterDnsAttr(IMPISPSinterDenoiseAttr *pinfo);\n"
+"int IMP_ISP_Configuração_SetTemperDnsCtl(IMPISPTemperDenoiseAttr *pinfo);\n"
+"int IMP_ISP_Tuning_SetTemperDnsAttr(IMPISPTemperDenoiseAttr *pinfo);\n"
+"int IMP_ISP_Configuração_GetTemperDnsAttr(IMPISPTemperDenoiseAttr *pinfo);\n"
+"int IMP_ISP_Tuning_SetWDRAttr(IMPISPT modo deuningOpsMode);\n"
+"int IMP_ISP_Configuração_GetWDRAttr(IMPISPTuningOpsMode *pmode);\n"
+"int IMP_ISP_Tuning_SetSceneMode(modo IMPISPSceneMode);\n"
+"int IMP_ISP_Configuração_GetSceneMode(IMPISPSceneMode *pmode);\n"
+"int IMP_ISP_Tuning_SetColorfxMode(IMPISPColorfxMode mode);\n"
+"int IMP_ISP_Configuração_GetColorfxMode(IMPISPColorfxMode *pmode);\n"
+"int IMP_ISP_Tuning_Definir brilho(sinal sem nome brilhante);\n"
+"int IMP_ISP_Configuração_GetBrightness(unsigned char *pbright);\n"
+"int IMP_ISP_Tuning_SetContrast(contraste de caractere sem nome);\n"
+"int IMP_ISP_Configuração_GetContrast(unsigned char *pcontrast);\n"
+"int IMP_ISP_Tuning_Definir nitidez(nitidez sem nome nitidez);\n"
+"int IMP_ISP_Configuração_GetSharpness(unsigned char *psharpness);\n"
+"int IMP_ISP_Tuning_Definir Saturação(sinal sem nome (a 22 °);\n"
+"int IMP_ISP_Configuração_GetSaturation(unsigned char *psat);\n"
+"int IMP_ISP_Tuning_SetISPProcess(modo IMPISPTuningOpsMode);\n"
+"int IMP_ISP_Configuração_SetFWFreeze(IMPISPTuningOpsMode mode);\n"
+"int IMP_ISP_Tuning_SaveAllParam(char *caminho);\n"
+"int IMP_ISP_Configuração_SetISPBypass(IMPISPTuningOpsMode enable);\n"
+"int IMP_ISP_Tuning_GetTotalGain(uint32_t *gain);\n"
+"int IMP_ISP_Tuning_Definir ISPHflip(IMPISPTuningOpsMode modo);\n"
+"int IMP_ISP_Configuração_GetISPHflip(IMPISPTuningOpsMode *pmode);\n"
+"int IMP_ISP_Tuning_SetISPVflip(IMPISPT modo deuningOpsMode);\n"
+"int IMP_ISP_Configuração_GetISPVflip(IMPISPTuningOpsMode *pmode);\n"
+"int IMP_ISP_Tuning_SetISPRunningMode(modo IMPISPRunningMode);\n"
+"int IMP_ISP_Configuração_GetISPRunningMode(IMPISPRunningMode *pmode);\n"
+"int IMP_ISP_Tuning_SetAeStrategy(Estratégia IMPISPAeStrategy);\n"
+"int IMP_ISP_Configuração_GetAeStrategy(IMPISPAeStrategy *pstrategy);\n"
+"int IMP_ISP_Tuning_SetGamma(IMPISPGamma *intervalo);\n"
+"int IMP_ISP_Configuração_GetGamma(IMPISPGamma *gamma);\n"
+"int IMP_ISP_Tuning_SetAeComp(int comp);\n"
+"int IMP_ISP_Configuração_GetAeComp(int *comp);\n"
+"int IMP_ISP_Tuning_SetExpr(IMPISPExpr *ekspr);\n"
+"int IMP_ISP_Configuração_GetExpr(IMPISPExpr *expr);\n"
+"int IMP_ISP_Tuning_AE_GetROI(IMPISPAERoi *isp_ae_roi);\n"
+"int IMP_ISP_Tuning_AE_SetROI(IMPISPAERoi *isp_ae_roi);\n"
+"int IMP_ISP_Tuning_SetWB(IMPISPWB *wb);\n"
+"int IMP_ISP_Configuração_GetWB(IMPISPWB *wb);\n"
+"int IMP_ISP_Tuning_GetWB_Statis(IMPISPWB *wb);\n"
+"int IMP_ISP_Tuning_Awb_GetCwfShift(IMPISPWB *isp_wb_attr);\n"
+"int IMP_ISP_Tuning_Awb_SetCwfShift(IMPISPWB *isp_wb_attr);\n"
+"int IMP_ISP_Tuning_SetMaxAgain(uint32_t gain);\n"
+"int IMP_ISP_Tuning_GetMaxAgain(uint32_t *gain);\n"
+"int IMP_°) ISP_Tuning_SetMaxDgain(uint32_t gain);\n"
+"int IMP_ISP_Tuning_GetMaxDgain(uint32_t *gain);\n"
+"int IMP_ISP_Tuning_SetVideoDrop() vazio (*cb)(vazio));\n"
+"int IMP_ISP_Configuração_SetHiLightDepress(uint32_t força);\n"
+"int IMP_ISP_Configuração_SetTemperStrength(uint32_relação t);\n"
+"int IMP_ISP_Configuração_SetSinterStrength(uint32_relação t);\n"
+"int IMP_ISP_Configuração_SetDPStrength(uint32_relação t);\n"
+"int IMP_ISP_Configuração_SetAntiFogAttr(IMPISPAntiFogAttr attr);\n"
+"int IMP_ISP_Tuning_GetEVAttr(IMPISPEVAttr *atr);\n"

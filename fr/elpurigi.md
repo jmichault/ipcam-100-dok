@@ -1,7 +1,7 @@
 ---
 lang: fr
 lang-niv: fonto
-lang-ref: 020-elpurigi
+lang-ref: 060-elpurigi
 layout: page
 title: 'Déboguer'
 ---
