@@ -1,0 +1,310 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-10-29 14:46+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Title #
+#: ./priskribo.md:3
+#, markdown-text, no-wrap
+#, fuzzy
+msgid "Priskribo:"
+msgstr "説明："
+
+#. type: Plain text
+#: ./priskribo.md:40
+#, markdown-text, no-wrap
+#, fuzzy
+msgid ""
+"https://fr.aliexpress.com/item/4000146161270.html\n"
+"Markonomo: shiningpo\n"
+"Stilo: Kupola Fotilo\n"
+"Tipo: IP-Fotilo\n"
+"Konektebleco: IP / Reta Sendrata\n"
+"Subtenataj Operaciumoj: Ne\n"
+"Alta Difino: 1080P(Plena HD)\n"
+"Lenso (mm): 3.6mm\n"
+"Instalado: Flanka\n"
+"Elektroprovizo(V): DC12V 2A\n"
+"Reta Interfaco: RJ-45 10 / 100Mb Ethernet Slot\n"
+"Mura Krampo: Plafono\n"
+"Subtenitaj Poŝtelefonaj Sistemoj: Android\n"
+"Subtenataj Poŝtelefonaj Sistemoj: ios\n"
+"IR Distanco(m): 30M- 50M\n"
+"Specialaj Ecoj: Akvorezista / Veterrezista\n"
+"Vidanta Angulo: 140 °\n"
+"Megapikseloj: 2MP\n"
+"Potenca Konsumo(W): 12W\n"
+"Stokado: Neniu\n"
+"Sensila Marko: SONY\n"
+"Alarma Agado: Retpoŝta Foto\n"
+"Alarmiga Ago: Loka Alarmo\n"
+"Formato de Kunprema Video: H.264\n"
+"estas_customized: Yes\n"
+"    Technology: Pan Tilt Zoom\n"
+"    Power Supply: Normal\n"
+"    TF Card: None\n"
+"    Color: White\n"
+"    Audio Output: Two Way Audio\n"
+"    Sensor: CMOS\n"
+"    wifi camera: ip camera\n"
+"    camara wifi: camara ip\n"
+"    camera ip: camera wifi\n"
+"    ip camera wifi: camara vigilancia exterior\n"
+"    ptz: camara ip ptz\n"
+msgstr "https://fr.alivexpress.com/item/4000146161270.html�\n��スタイル：Cupolaカメラ�\n��タイプ：IPカメラ�\n��接続性：IP / Reta Wireless�\n��サポートされているオペレーティングシステム：NO�\n��高精細度：1080p�(��フルHD�)���\n��レンズ� (��mm�)��：3.6mm�\n��設置：横方向�\n��電気供給�(��V�)��：DC12V II�\n��ネットワークインターフェース：RJ-45 10 / 100MBイーサネットスロット�\n��ムラブラケット：天井�\n��サポートされているモバイルシステム：Android�\n��サポートされているモバイルシステム：iOS�\n��IR距離�(��M�)��M�)��：30m~50m�\n��特殊特徴：防水/ヴェロツィスタ�\n��視野角：140°�\n��メガピクセル：2mp�\n��W�)��：12W�\n��貯蔵：なし�\n��SENSILEブランド：ソニー�\n��アラームアクション：Eメール写真＼�警報処置：圧縮ビデオの局所警報�\n��フォーマット：H.264�\n��は�_customized: Yes\n    Technology: Pan Tilt Zoom\n    Power Supply: Normal\n    TF Card: None\n    Color: White\n    Audio Output: Two Way Audio\n    Sensor: CMOS\n    wifi camera: ip camera\n    camara wifi: camara ip\n    camera ip: camera wifi\n    ip camera wifi: camara vigilancia exterior\n    ptz: camara ip ptz\n��\n"
+
+#. type: Plain text
+#: ./priskribo.md:50
+#, markdown-text, no-wrap
+#, fuzzy
+msgid ""
+"Surskriboj pri la etikedo:\n"
+"WIFI CARAM\n"
+"Modelo: WF-HD820-ZS\n"
+"Rezolucio: 1080P\n"
+"Elektroprovizo: DC12V / 1A\n"
+"SSID: HSIPC-******\n"
+"Pasvorto: 12345678\n"
+"MAC: 00:88:09:**:**:**\n"
+msgstr "タグに関する碑文：�\n��WiFiカラム�\n��モデル：WF-HD820-ZS（°3°3°3°3°3880p�\n�� °4°4°4°6°エレクトロポジション：DC12V / I�\n��SSID：HSIPC - �******��パスワード：12345678（°8°8°8°8:88:09 �**��：�**��：�**��＼�\n"
+
+#. type: Plain text
+#: ./priskribo.md:54
+#, markdown-text, no-wrap
+#, fuzzy
+msgid ""
+"Kunligante ĝin por Eterreto, ĝi akiras DHCP-adreson kaj nek povas konekti al "
+"la retejo:\n"
+"defaŭlta uzanto: admin\n"
+"defaŭlta pasvorto: admin\n"
+msgstr "イーサネットに接続することで、DHCPアドレスを取得し、サイトに接続できません。�\n��デフォルトユーザー：admin�\n��デフォルトパスワード： admin＼�\n"
+
+#. type: Plain text
+#: ./priskribo.md:60
+#, markdown-text, no-wrap
+#, fuzzy
+msgid ""
+"dum 5 minutoj, vi povas konekti per telnet al la haveno 9527\n"
+"defaŭlta uzanto: root\n"
+"defaŭlta pasvorto: jco66688\n"
+"por resti konektita preter 5 minutoj: \"killall -9 auto_run.sh»\n"
+"(jco = http://www.cnjabsco.com/ )\n"
+msgstr "5分間、Port 9527�\n��デフォルトユーザーにTelnetと接続できます。root�\n��デフォルトパスワード：JCO66688�\n�� 5分以内に接続したまま� \"��killall - 9 auto�_run.sh»\n(jco = http://www.cnjabsco.com/ )\n��\n"
+
+#. type: Plain text
+#: ./priskribo.md:62
+#, markdown-text, no-wrap
+#, fuzzy
+msgid "malfermaj havenoj:  \n"
+msgstr "オープンポート:(°1°1  \n"
+
+#. type: Plain text
+#: ./priskribo.md:63
+#, markdown-text, no-wrap
+#, fuzzy
+msgid ""
+"  tcp: 80(http), 443(http ankaŭ!), 554(rtsp), 8004, 8006, 9527(telnet), 9999  "
+"\n"
+msgstr "�  ��TCP：80�(��HTTP�)��、443�(��HTTP！   \n"
+
+#. type: Plain text
+#: ./priskribo.md:64
+#, markdown-text, no-wrap
+#, fuzzy
+msgid "  udp: 67(dhcp), 3702, 8002, 39642  \n"
+msgstr "�  ��UDP：67�(��DHCP�)��、3702,8002,39642＼�  \n"
+
+#. type: Plain text
+#: ./priskribo.md:83
+#, markdown-text, no-wrap
+#, fuzzy
+msgid ""
+"reta konduto kiam oni lanĉas jco_server:\n"
+"pridemandas la servilon dns pri: www.163.com kaj dns.ictun.com\n"
+"demando 114.114.114.114 por dns.ictun.com\n"
+"konekti al la haveno udp/993 de dns.ictun.com\n"
+"konekti al udp/993-haveno de 120.25.129.41\n"
+"pridemandu la servilon dns pri: conn-policy.ictun.com\n"
+"pridemandu la servilon dns pri: video-policy.ictun.com\n"
+"konekti al udp/80-haveno de 52.29.45.252\n"
+"konektas al udp/1210-haveno de 52.29.45.252\n"
+"ligas al udp/21-haveno de 52.57.135.134\n"
+"konektas al udp/1053-haveno de 52.28.62.20\n"
+"konektas al udp/443-haveno de 52.29.58.225\n"
+"konektas al udp/123 (ntp) haveno de 112.74.204.233 "
+"(video-policy.ictun.com)\n"
+"ligas al udp/993-haveno de 47.52.99.182\n"
+"konektas al udp/1054-haveno de 52.57.127.207\n"
+"...\n"
+"noto: ŝanĝu la defaŭltan itineron metante tiun de la interreta skatolo.\n"
+msgstr "JCO�_server:\npridemandas la servilon dns pri: www.163.com kaj dns.ictun.com\ndemando 114.114.114.114 por dns.ictun.com\nkonekti al la haveno udp/993 de dns.ictun.com\nkonekti al udp/993-haveno de 120.25.129.41\npridemandu la servilon dns pri: conn-policy.ictun.com\npridemandu la servilon dns pri: video-policy.ictun.com\nkonekti al udp/80-haveno de 52.29.45.252\nkonektas al udp/1210-haveno de 52.29.45.252\nligas al udp/21-haveno de 52.57.135.134\nkonektas al udp/1053-haveno de 52.28.62.20\nkonektas al udp/443-haveno de 52.29.58.225\nkonektas al udp/123 (ntp) haveno de 112.74.204.233 (video-policy.ictun.com)\nligas al udp/993-haveno de 47.52.99.182\nkonektas al udp/1054-haveno de 52.57.127.207\n...\nnoto: ŝanĝu la defaŭltan itineron metante tiun de la interreta skatolo.\n��を発表したときのWebの動作\n"
+
+#. type: Plain text
+#: ./priskribo.md:86
+#, markdown-text, no-wrap
+#, fuzzy
+msgid "haltigi jco_server sen kaŭzi restartigi:\n"
+msgstr "JCO�_server sen kaŭzi restartigi:\n��を停止\n"
+
+#. type: Title ##
+#: ./priskribo.md:87
+#, markdown-text, no-wrap
+#, fuzzy
+msgid "halti_cloud :"
+msgstr "停止�_cloud :��"
+
+#. type: Fenced code block
+#: ./priskribo.md:88
+#, no-wrap
+msgid "PS | \n"
+msgstr "PS | \n"
+
+#. type: Plain text
+#: ./priskribo.md:96
+#, markdown-text, no-wrap
+#, fuzzy
+msgid ""
+"vi povas vidi la ĉefan video-rivereton (laŭ 1080P aŭ aliaj agordo) per:\n"
+"ffplay -i rtsp: // admin: admin@192.168.24.111/stream1\n"
+"ffplay -i rtsp: // admin: admin@192.168.24.39: 554 / stream1\n"
+"ffplay -i rtsp: // admin: admin@192.168.24.39: 554 / mpeg4 / ch0 / main / "
+"av_stream\n"
+msgstr "1080pまたはその他の構成�) ��に従ってメインビデオストリーム� (��を見ることができます。�\n��FFPlay -i RTSP：// admin：admin@192.168.24.111/ Stream1�\n��FFPlay -I RTSP：// admin：admin@192.168.24.39：554 / Stream1（°5°5°5°5°5°5°5°5°5°5°5°ON）0：// admin ：admin@192.168.24.39：554 / MPEG4 / CH0 /メイン/ AV�_stream\n��\n"
+
+#. type: Plain text
+#: ./priskribo.md:101
+#, markdown-text, no-wrap
+#, fuzzy
+msgid ""
+"kaj la duaranga:\n"
+"ffplay -i rtsp: // admin: admin@192.168.24.39/stream2\n"
+"ffplay -i rtsp: // admin: admin@192.168.24.39: 554 / stream2\n"
+msgstr "�\n��ffplay -i RTSP：// admin：admin@192.168.24.39/stream2�\n��FFPlay -i RTSP：// admin：admin@192.168.24.39： 554 / Stream2＼�\n"
+
+#. type: Plain text
+#: ./priskribo.md:110
+#, markdown-text, no-wrap
+#, fuzzy
+msgid ""
+"la instalita firmvaro indikas:\n"
+"DeviceName: INGENIC-V01\n"
+"DeviceModel: IPCAM-100\n"
+"DeviceSN: 12345678901\n"
+"KernelVersion: Thu Jul 9 15:46:54 CST 2015\n"
+"Servila Versio: WS3.53.1243-20190717-DANALE-GEN\n"
+"Retversio: V2.3.4-20190709\n"
+"OCX-Versio: -1\n"
+msgstr "インストールされているファームウェアは次のことを示しています。�\n��デバイス：Ingenic-V01�\n��Devicemodel：IPCAM-100�\n���\n��サーバーバージョン：WS3.53.1243-20190717-ダナレ - gen（°6°6°6°6°6°6°6°02-3-20190709�\n��OCXバージョン：-1＼�\n"
+
+#. type: Plain text
+#: ./priskribo.md:114
+#, markdown-text, no-wrap
+#, fuzzy
+msgid ""
+"la procesoro estas: inĝenia T21\n"
+"http://www.ingenic.com.cn/en/?product/id/11.html\n"
+"https://fr.indasina.com/ingenic- "
+"t21-ekstrema-2-megapixela-koda-procesoro_p16.html\n"
+msgstr "プロセッサは次のとおりです。エンジニアT21�\n��http://www.ininic.com.cn/en/?product/id/11.html�\n��https://fr.indasina.com/ingenic- T21 END-2-Megapixelaコードプロセッサ（°3°3\n"
+
+#. type: Plain text
+#: ./priskribo.md:118
+#, markdown-text, no-wrap
+#, fuzzy
+msgid ""
+"the CMOS-sensilo estas: gc2053.\n"
+"ŝofora fonto: "
+"https://github.com/mrfixit2001/rk-kernel-fork/blob/develop-4.4/drivers/media/i2c/gc2053.c\n"
+msgstr "CMOSセンサーは次のとおりです.GC2053。 \n"
+
+#. type: Plain text
+#: ./priskribo.md:120
+#, markdown-text, no-wrap
+#, fuzzy
+msgid "RAM: 42MiB entute, 36 MiB havebla.\n"
+msgstr "RAM：42mib全体、36 MIBが利用可能です。 \n"
+
+#. type: Plain text
+#: ./priskribo.md:126
+#, markdown-text, no-wrap
+#, fuzzy
+msgid ""
+"la haveno 9999 estas malfermita kaj permesas regi la fotilon:\n"
+"echo \"checkuser -act set -user admin -password admin\"| nc 192.168.1.155 "
+"9999\n"
+"e echa \"listo\"| nc 192.168.1.155 9999\n"
+"eoo \"pelcod20ctrl -?\"| nc 192.168.1.155 9999\n"
+"eoo \"pelcod20ctrl -tipo 1\"| nc 192.168.1.155 9999\n"
+msgstr "9999ポートが開いていてカメラを制御することができます。（°1°1°1°1°1°2°2°2°2°2°2°2°2°2°2°2°2°SET -USER ADMIN-PASSWORD ADMIN�\"��| \n"
+
+#. type: Plain text
+#: ./priskribo.md:130
+#, markdown-text, no-wrap
+#, fuzzy
+msgid ""
+"gpio-havenoj:\n"
+"46 = infruĝaj LEDoj.\n"
+"81 = bluaj LEDoj.\n"
+msgstr "GPIOポート：�\n��46 =赤外製レザー。 \n"
+
+#. type: Plain text
+#: ./priskribo.md:135
+#, markdown-text, no-wrap
+#, fuzzy
+msgid ""
+"GPIO-havenoj blokitaj por studado:\n"
+"blokita de motor.ko: 18? 38 39 40 41 47 48 49 60?\n"
+"blokita de audio.ko: 63?\n"
+"52 64\n"
+msgstr "GPIOポートは研究のために遮断された：�\n��Motor.koによってブロックされました：18？ \n"
+
+#. type: Plain text
+#: ./priskribo.md:137
+#, markdown-text, no-wrap
+#, fuzzy
+msgid "Ptz-kontrolo:\n"
+msgstr "PTZ制御：＼�\n"
+
+#. type: Plain text
+#: ./priskribo.md:143
+#, markdown-text, no-wrap
+#, fuzzy
+msgid ""
+"supro: http: // admin: admin@192.168.24.39/? jcpcmd = pelcod20ctrl -type 1 "
+"-cmd 1 -data1 24 -data2 24\n"
+"malsupre: http: // admin: admin@192.168.24.39/? jcpcmd = pelcod20ctrl -type "
+"1 -cmd 2 -data1 24 -data2 24\n"
+"maldekstre: http: // admin: admin@192.168.24.39/? jcpcmd = pelcod20ctrl "
+"-type 1 -cmd 3 -data1 24 -data2 24\n"
+"dekstre: http: // admin: admin@192.168.24.39/? Jcpcmd = pelcod20ctrl -type 1 "
+"-cmd 4 -data1 24 -data2 24\n"
+"halto: http: // admin: admin @ 192.168.24.39/?jcpcmd=pelcod20ctrl -speco 1 "
+"-cmd 9 -data1 24 -data2 24\n"
+msgstr "上：http：// admin：admin@192.168.24.39/？ \n"
+
+#. type: Plain text
+#: ./priskribo.md:147
+#, markdown-text, no-wrap
+#, fuzzy
+msgid ""
+"starigu pozicion 2: http://192.168.24.39/?jcpcmd=pelcod20ctrl -type 2 -cmd 1 "
+"-data2 2\n"
+"iru al 1: http://192.168.24.39/?jcpcmd=pelcod20ctrl -type 2 - cmd 2 -data2 "
+"1\n"
+"forigi 2: http://192.168.24.39/?jcpcmd=pelcod20ctrl -type 2 -cmd 3 -data2 "
+"2\n"
+msgstr "セット位置2：http://192.168.24.39/ CMD 2 -Data2 1�\n��REMOVE 2：http://192.168.24.39/?jcpcmd=pelcod20ctrl -type 2 -cmd 3 -Data2 2＼�\n"
+

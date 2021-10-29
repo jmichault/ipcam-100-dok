@@ -1,0 +1,474 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-10-29 23:30+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: YAML Front Matter: lang
+#: priskribo.md:1
+#, no-wrap
+msgid "eo"
+msgstr ""
+
+#. type: YAML Front Matter: lang-niv
+#: priskribo.md:1
+#, no-wrap
+msgid "auto"
+msgstr ""
+
+#. type: YAML Front Matter: lang-ref
+#: priskribo.md:1
+#, no-wrap
+msgid "070-kamerao-priskribo"
+msgstr ""
+
+#. type: YAML Front Matter: layout
+#: priskribo.md:1
+#, no-wrap
+msgid "page"
+msgstr ""
+
+#. type: YAML Front Matter: title
+#: priskribo.md:1
+#, no-wrap
+msgid "Priskribo de la fotilo"
+msgstr ""
+
+#. type: Title #
+#: priskribo.md:11
+#, no-wrap
+msgid "Priskribo:"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:13
+#, no-wrap
+msgid "https://en.aliexpress.com/item/4000146161270.html\n"
+msgstr ""
+
+#. type: Fenced code block
+#: priskribo.md:13
+#, no-wrap
+msgid ""
+"    Brand Name: shiningpo\n"
+"    Style: Dome Camera\n"
+"    Type: IP Camera\n"
+"    Connectivity: IP/Network Wireless\n"
+"    Supported Operating Systems: No\n"
+"    High Definition: 1080P(Full-HD)\n"
+"    Lens (mm): 3.6mm\n"
+"    Installation: Side\n"
+"    Power Supply(V): DC12V 2A\n"
+"    Network Interface: RJ-45 10/100Mb Ethernet Slot\n"
+"    Wall Bracket: Ceiling\n"
+"    Supported Mobile Systems: Android\n"
+"    Supported Mobile Systems: ios\n"
+"    IR Distance(m): 30M-50M\n"
+"    Special Features: Waterproof / Weatherproof\n"
+"    Viewing Angle : 140°\n"
+"    Megapixels: 2MP\n"
+"    Power Consumption(W): 12W\n"
+"    Storage: None\n"
+"    Sensor Brand: SONY\n"
+"    Alarm Action: Email Photo\n"
+"    Alarm Action: Local Alarm\n"
+"    Video Compression Format: H.264\n"
+"    is_customized: Yes\n"
+"    Technology: Pan Tilt Zoom\n"
+"    Power Supply: Normal\n"
+"    TF Card: None\n"
+"    Color: White\n"
+"    Audio Output: Two Way Audio\n"
+"    Sensor: CMOS\n"
+"    wifi camera: ip camera\n"
+"    camara wifi: camara ip\n"
+"    camera ip: camera wifi\n"
+"    ip camera wifi: camara vigilancia exterior\n"
+"    ptz: camara ip ptz\n"
+msgstr ""
+
+#. type: Title #
+#: priskribo.md:51
+#, no-wrap
+msgid "Etikedaj surskriboj"
+msgstr ""
+
+#. type: Fenced code block
+#: priskribo.md:52
+#, no-wrap
+msgid ""
+"WIFI CARAM\n"
+"Model : WF-HD820-ZS\n"
+"Résolution : 1080P\n"
+"Power Supply : DC12V/1A\n"
+"SSID : HSIPC-******\n"
+"Password : 12345678\n"
+"MAC : 00:88:09:**:**:**\n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:62
+#, no-wrap
+msgid "Kunlicante ĝin por Eterreto, ĝi Akiras DHCP-ADRESON KAJ NI POVO KONEKTI AL LA REGETO:  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:63
+#, no-wrap
+msgid "DefAŭlta Uzanto: Admin  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:64
+#, no-wrap
+msgid "DefAŭlta Pasvorto: Admin  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:66
+#, no-wrap
+msgid "Dum 5 Minutoj, VI Povas Konekti per Telnet al la Haveso 9527  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:67
+#, no-wrap
+msgid "DefAŭlta Uzanto: Radiko  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:68
+#, no-wrap
+msgid "DefAŭlta Pasvorto: jco66688  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:69
+#, no-wrap
+msgid "Por resti konektita Preter 5 Minutoj: \"Killall -9 aŭtomata_run.sh»  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:71
+#, no-wrap
+msgid "(JCO = http://www.cnjabsco.com/ )  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:75
+#, no-wrap
+msgid ""
+"Malfermaj Arenoj:    \n"
+"TCP: 80(http), 443(http ankaŭ!     \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:76
+#, no-wrap
+msgid "Reta Konduto Kiam Oni LANĉAS JCO_server:  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:78
+#, no-wrap
+msgid "Pridemandas La servilon DNS PRI: www.163.com Kaj DNS.ICTun.com  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:79
+#, no-wrap
+msgid "Apliko 114.114.114.114 por DNS.ICTun.com  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:80
+#, no-wrap
+msgid "KONEKTI AL LA HAVEN UDP / 993 DNS.ICTUNC.com  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:81
+#, no-wrap
+msgid "Konekti al UDP / 993-havenuso de 120,25.129.41  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:82
+#, no-wrap
+msgid "PrideMandu la servilon DNS PRI: Conn-policy.ICTun.com  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:83
+#, no-wrap
+msgid "PrideMandu The Servilon DNS PRI: Video-policy.ICTun.com  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:84
+#, no-wrap
+msgid "KONEKTI AL UDP / 80-Haveno de 52.29.45.252  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:85
+#, no-wrap
+msgid "Konektas al UDP / 1210-havenuso de 52.29.45.252  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:86
+#, no-wrap
+msgid "Ligoj al UDP / 21-havenoj de 52,57.135.134  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:87
+#, no-wrap
+msgid "Konektas al UDP / 1053-havenes de 52.28.62.20  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:88
+#, no-wrap
+msgid "KONEKTAS AL UDP / 443-Havas de 52.29.58.225  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:89
+#, no-wrap
+msgid "Konektas al UDP / 123 (NTP) havenuso de 112,74.204.233 (Video-policy.ICTun.com)  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:90
+#, no-wrap
+msgid "Ligoj al UDP / 993-havenoj de 47.52.99.182  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:91
+#, no-wrap
+msgid "Konektas al UDP / 1054-havenes de 52.57.127.207  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:92
+#, no-wrap
+msgid "...  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:94
+#, no-wrap
+msgid "Noto: ŝanĝu la DefAŭltan Itineron Tian signifis ke la interrila skatolo.   \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:95
+#, no-wrap
+msgid "Haltigi JCO_server sen kaŭzi restartigi:  \n"
+msgstr ""
+
+#. type: Title ##
+#: priskribo.md:97
+#, no-wrap
+msgid "Haltu_cloud :  "
+msgstr ""
+
+#. type: Fenced code block
+#: priskribo.md:98
+#, no-wrap
+msgid "PS | \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:102
+#, no-wrap
+msgid "VI POVO VIDI LA BEFAN VIDEO-Riverton (LAŭ 1080p Aŭ ALIA AGORDO) per:  \n"
+msgstr ""
+
+#. type: Fenced code block
+#: priskribo.md:103
+#, no-wrap
+msgid ""
+"ffplay -i rtsp://admin:admin@192.168.24.111/stream1\n"
+"ffplay -i rtsp://admin:admin@192.168.24.39:554/stream1\n"
+"ffplay -i rtsp://admin:admin@192.168.24.39:554/mpeg4/ch0/main/av_stream\n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:110
+#, no-wrap
+msgid "Kaj la durangana:\n"
+msgstr ""
+
+#. type: Fenced code block
+#: priskribo.md:110
+#, no-wrap
+msgid ""
+"ffplay -i rtsp://admin:admin@192.168.24.39/stream2\n"
+"ffplay -i rtsp://admin:admin@192.168.24.39:554/stream2\n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:116
+#, no-wrap
+msgid "La instalita firmvaro Indikas:\n"
+msgstr ""
+
+#. type: Fenced code block
+#: priskribo.md:116
+#, no-wrap
+msgid ""
+"DeviceName:     INGENIC-V01\n"
+"DeviceModel:    IPCAM-100\n"
+"DeviceSN:       12345678901\n"
+"KernelVersion:  Thu Jul 9 15:46:54 CST 2015\n"
+"ServerVersion:  WS3.53.1243-20190717-DANALE-GEN\n"
+"WebVersion:     V2.3.4-20190709\n"
+"OCXVersion:     -1\n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:126
+#, no-wrap
+msgid "La Procesoro estas: Ingenic T21  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:127
+#, no-wrap
+msgid "http://www.ingenic.com.cn/en/?product/id/11.html  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:128
+#, no-wrap
+msgid "https://en.indasina.com/ingenic-t21-extreme-2-megapixel-encoding-processor_p16.html  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:132
+#, no-wrap
+msgid ""
+"La CMOS-sensilo estas: GC2053.   \n"
+"ŝofora Fonto: https://github.com/mrfixit2001/rk-kernel-fork/blob/develop-4.4/drivers/media/i2c/gc2053.c  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:135
+#, no-wrap
+msgid "RAM: 42Mib Intt, 36 MIB Havebla.   \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:136
+#, no-wrap
+msgid "La Havedo 9999 estas Malfermita kaj Permesas Regi la Fotilon:  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:141
+#, no-wrap
+msgid ""
+"Echo (° 1 ° Checuser -Act Set -USER Admin -Password Admin\"|   \n"
+"Eo (° 1 ° 1 ° listo\"|   \n"
+"Eo (° 1 ° Pelcod203dRL -?   \n"
+"Eo (° 1 ° 1 ° Pelcod203ctrl -type 1\"|   \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:142
+#, no-wrap
+msgid "GPIO-HADENOJ:  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:145
+#, no-wrap
+msgid ""
+"46 = Infraredĝaj legoj.   \n"
+"81 = Bluaj leĝoj.   \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:146
+#, no-wrap
+msgid "GPIO-HADENOJ BLOKITAJ POR SLUDO:  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:149
+#, no-wrap
+msgid ""
+"Blokita de Motor.ko: 18?   \n"
+"Blokita de Audio.ko: 63?   \n"
+"52 64  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:151
+#, no-wrap
+msgid "Ptz-Kontrolo:  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:153
+#, no-wrap
+msgid "Supro: http: // admin: admin@192.168.24.39/? Jcpcmd = pelcod20ctrl -type 1 -cmd 1 -gata1 24 -gata2 24  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:154
+#, no-wrap
+msgid "Msalru: http: // admin: admin@192.168.24.39/? Jcpcmd = pelcod203crl -type 1 -cmd 2 -gata1 24-gafu2 24  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:155
+#, no-wrap
+msgid "Maldekstre: http: // admin: admin@192.168.24.39/? Jcpcmd = pelcod203crl -type 1 -cmd 3 -gata1 24 -gata2 24  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:156
+#, no-wrap
+msgid "Dekstre: http: // admin: admin@192.168.24.39/? JCPCMD = Pelcod203crl -Type 1 -CMD 4 -Data1 24 -Atata2 24  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:157
+#, no-wrap
+msgid "Halto: http: // admin: admin@192.168.24.39/? Jcpcmd = pelcod203crl -type 1 -cmd 9 -gata1 24-Data2 24  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:159
+#, no-wrap
+msgid "Starigigu pozicion 2: http://192.168.24.39/?jcpcmd=pelcod20ctl -type 2 -cmd 1 -gata2 2  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:160
+#, no-wrap
+msgid "Iru al 1: http://192.168.24.39/?JJcpcmd=pelcod203trl -type 2 -cmd 2 -gata2 1  \n"
+msgstr ""
+
+#. type: Plain text
+#: priskribo.md:161
+#, no-wrap
+msgid "Forigi 2: http://192.168.24.39/?jcpcmd=pelCod203trl -Type 2 -CMD 3 -Data2 2  \n"
+msgstr ""
