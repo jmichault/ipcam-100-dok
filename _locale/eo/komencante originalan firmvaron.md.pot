@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-10-29 14:52+0200\n"
+"POT-Creation-Date: 2021-10-30 11:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,9 +16,39 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+#. type: YAML Front Matter: lang
+#: komencante originalan firmvaron.md:1
+#, no-wrap
+msgid "eo"
+msgstr ""
+
+#. type: YAML Front Matter: lang-niv
+#: komencante originalan firmvaron.md:1
+#, no-wrap
+msgid "auto"
+msgstr ""
+
+#. type: YAML Front Matter: lang-ref
+#: komencante originalan firmvaron.md:1
+#, no-wrap
+msgid "061-originala_firmvaro"
+msgstr ""
+
+#. type: YAML Front Matter: layout
+#: komencante originalan firmvaron.md:1
+#, no-wrap
+msgid "page"
+msgstr ""
+
+#. type: YAML Front Matter: title
+#: komencante originalan firmvaron.md:1
+#, no-wrap
+msgid "Funkciado de la originala firmware"
+msgstr ""
+
 #. type: Plain text
-#: ./komencante originalan firmvaron.md:10
-#, markdown-text, no-wrap
+#: komencante originalan firmvaron.md:18
+#, no-wrap
 msgid ""
 "La firstvaro konsistas el 6 sektoroj:\n"
 "mtdblock0 = u-boot ŝargilo\n"
@@ -30,7 +60,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: ./komencante originalan firmvaron.md:12
-#, markdown-text, no-wrap
+#: komencante originalan firmvaron.md:20
+#, no-wrap
 msgid "La startprogramo estas \"/ linuxrc\". \n"
 msgstr ""

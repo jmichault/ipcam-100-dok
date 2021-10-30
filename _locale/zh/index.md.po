@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-10-29 23:29+0200\n"
+"POT-Creation-Date: 2021-10-30 11:06+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -118,15 +118,13 @@ msgstr "在替代固件中有效的方法："
 
 #. type: Bullet: '* '
 #: index.md:33
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "_LAN_ kaj _WLAN_\n"
 msgstr "_LAN_ 和 _WLAN_\n"
 
 #. type: Bullet: '* '
 #: index.md:35
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Servilo (° 1 ° duobla-fluo: _1920x1080 H264_ kaj _640x360 MJPEG_ defaŭlte. \n"
 msgstr "服务器 (°1°双流： _1920x1080 H264_ 和 _640x360 MJPEG_ 默认情况下。  \n"
 
@@ -138,8 +136,7 @@ msgstr "视觉参数\n"
 
 #. type: Bullet: '* '
 #: index.md:39
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Servilo _HTTP_\n"
 msgstr "服务器 _HTTP_\n"
 
@@ -157,50 +154,43 @@ msgstr "发动机校准\n"
 
 #. type: Bullet: '* '
 #: index.md:45
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Parametroj _PTZ_\n"
 msgstr "参数 _PTZ_（°3°3\n"
 
 #. type: Bullet: '* '
 #: index.md:47
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Kliento _NTP_\n"
 msgstr "客户 _NTP_（°3°3\n"
 
 #. type: Bullet: '* '
 #: index.md:49
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Pasvorta administrado _http_, _rtsp_ kaj sistemo. \n"
 msgstr "密码管理 _http_， _rtsp_ 和系统。  \n"
 
 #. type: Bullet: '* '
 #: index.md:51
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Blanka LED-Kontrolo kaj IR\n"
 msgstr "白色LED控制和IR\n"
 
 #. type: Bullet: '* '
 #: index.md:53
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Blanka LED-Kontrolo kaj IR _ftp_\n"
 msgstr "白色LED控制和IR _ftp_\n"
 
 #. type: Bullet: '* '
 #: index.md:55
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Blanka LED-Kontrolo kaj IR _telnet_\n"
 msgstr "白色LED控制和IR _telnet_\n"
 
 #. type: Bullet: '* '
 #: index.md:57
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Servilo kaj kliento _ssh_\n"
 msgstr "服务器和客户端 _ssh_（°3°3\n"
 
@@ -218,15 +208,13 @@ msgstr "发送电子邮件\n"
 
 #. type: Bullet: '* '
 #: index.md:63
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Sendi _«telegram»_\n"
 msgstr "发送 _«telegram»_\n"
 
 #. type: Bullet: '* '
 #: index.md:65
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Aŭtomata nokta reĝimo\n"
 msgstr "自动夜间政权\n"
 
@@ -268,8 +256,7 @@ msgstr "发送电子邮件_mqtt_\n"
 
 #. type: Bullet: '* '
 #: index.md:80
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Sendante bildojn kaj videojn en nubo\n"
 msgstr "在云中发送图像和视频（°1°1\n"
 
@@ -299,8 +286,7 @@ msgstr "也许设置网络 ( _www/ipcam/config.dist/reto.conf_ ))\n"
 
 #. type: Bullet: '* '
 #: index.md:91
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Enmetu la karton _microSD_ en la fotilon. \n"
 msgstr "在相机中输入卡 _microSD_ 。  \n"
 
@@ -336,8 +322,7 @@ msgstr "Faru `cd /opt/media/mmcblk0p1;./install.sh`\n"
 
 #. type: Bullet: '* '
 #: index.md:103
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "La fotilo rekomencas, nun:\n"
 msgstr "相机简历，现在：（°1°1\n"
 
@@ -367,14 +352,17 @@ msgstr "辅助视频电流可在 _rtsp://admin:ismart21@IP/stream2_处访问。 
 
 #. type: Plain text
 #: index.md:116
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "(° 1 ° WiFi AP-reĝimo estas aktivigita defaŭlte:\n"
 "    ** SSID: IPCAM100-XXXXXX\n"
 "    ** WPA2-ŝlosilo: ismart21\n"
 "IP-adreso de la fotilo: 172.25.0.1\n"
-msgstr "（°1°1°1°1 WiFi AP模式默认激活：\n    ** SSID：IPCAM100-XXXXXX\n    ** WPA2键：ISMart21\n相机的IP地址：172.25.0.1\n"
+msgstr ""
+"（°1°1°1°1 WiFi AP模式默认激活：\n"
+"    ** SSID：IPCAM100-XXXXXX\n"
+"    ** WPA2键：ISMart21\n"
+"相机的IP地址：172.25.0.1\n"
 
 #. type: Title ##
 #: index.md:117
@@ -414,14 +402,17 @@ msgstr "有趣的文件"
 
 #. type: Plain text
 #: index.md:135
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "Multa laboro estis farita por fotiloj ekipitaj per procesoro _ingenic T20_ :\n"
 "* modifita firmware: <https://github.com/eliaskotlyar/xiaomi- dafang -Hacks>\n"
 "* Fontoj de la modifita firmware: <https://github.com/dafang-hacks/main>\n"
 "17 °) https://github.com/thatusenameAlreadyExist/Jco-pm203-fisheye-ingenic-t20-p2p-camera-hacks>\n"
-msgstr "适用于配备处理器 _ingenic T20_ 的摄像机\n* 修改固件： <https://github.com/ilílístotlyar/xiaomi-大丰 - 哈哈>>\n修改固件的来源： <https://github.com/dafang-hacks/main>\n17°) https://github.com/thatusenameanamexist/jco-pm203-fisheye-ininic-t20-p2p-camera-hacks>\n"
+msgstr ""
+"适用于配备处理器 _ingenic T20_ 的摄像机\n"
+"* 修改固件： <https://github.com/ilílístotlyar/xiaomi-大丰 - 哈哈>>\n"
+"修改固件的来源： <https://github.com/dafang-hacks/main>\n"
+"17°) https://github.com/thatusenameanamexist/jco-pm203-fisheye-ininic-t20-p2p-camera-hacks>\n"
 
 #, no-wrap
 #~ msgid ""

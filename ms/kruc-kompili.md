@@ -1,7 +1,7 @@
 ---
 lang: ms
 lang-niv: auto
-lang-ref: 005-kruc-compili
+lang-ref: 050-kruc-compili
 layout: page
 title: 'Penyusunan silang'
 ---

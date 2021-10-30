@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-10-29 23:32+0200\n"
+"POT-Creation-Date: 2021-10-30 11:06+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,8 +42,7 @@ msgstr "page"
 
 #. type: YAML Front Matter: title
 #: priskribo.md:1
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Priskribo de la fotilo"
 msgstr "Beschreibung der Kamera"
 
@@ -55,8 +54,7 @@ msgstr "Beschreibung:"
 
 #. type: Plain text
 #: priskribo.md:13
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "https://en.aliexpress.com/item/4000146161270.html\n"
 msgstr "https://en.alivexpress.com/item/4000146161270.html\n"
 
@@ -138,8 +136,7 @@ msgstr ""
 
 #. type: Title #
 #: priskribo.md:51
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Etikedaj surskriboj"
 msgstr "Tag Inschriften"
 
@@ -165,199 +162,179 @@ msgstr ""
 
 #. type: Plain text
 #: priskribo.md:62
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Kunlicante ĝin por Eterreto, ĝi Akiras DHCP-ADRESON KAJ NI POVO KONEKTI AL LA REGETO:  \n"
 msgstr "Verlegen Sie es für Ethernreto, er bekommt eine DHCP-Adresse und wir können mit dem Regene herstellen: (° 1 ° 1  \n"
 
 #. type: Plain text
 #: priskribo.md:63
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "DefAŭlta Uzanto: Admin  \n"
 msgstr "Standardbenutzer: admin  \n"
 
 #. type: Plain text
 #: priskribo.md:64
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "DefAŭlta Pasvorto: Admin  \n"
 msgstr "Standardkennwort: admin  \n"
 
 #. type: Plain text
 #: priskribo.md:66
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Dum 5 Minutoj, VI Povas Konekti per Telnet al la Haveso 9527  \n"
 msgstr "Bei 5 Minuten können Sie sich mit Telnet an den Port von 9527verbinden  \n"
 
 #. type: Plain text
 #: priskribo.md:67
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "DefAŭlta Uzanto: Radiko  \n"
 msgstr "Standardbenutzer: root  \n"
 
 #. type: Plain text
 #: priskribo.md:68
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "DefAŭlta Pasvorto: jco66688  \n"
 msgstr "Standardkennwort: JCO66688  \n"
 
 #. type: Plain text
 #: priskribo.md:69
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Por resti konektita Preter 5 Minutoj: \"Killall -9 aŭtomata_run.sh»  \n"
-msgstr "Um über 5 Minuten übernommen zu bleiben: \"Killall -9 Automatik_run.sh»  \n  \n"
+msgstr ""
+"Um über 5 Minuten übernommen zu bleiben: \"Killall -9 Automatik_run.sh»  \n"
+"  \n"
 
 #. type: Plain text
 #: priskribo.md:71
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "(JCO = http://www.cnjabsco.com/ )  \n"
 msgstr "(jco = http://www.cnjabsco.com/ )  \n"
 
 #. type: Plain text
 #: priskribo.md:75
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "Malfermaj Arenoj:    \n"
 "TCP: 80(http), 443(http ankaŭ!     \n"
-msgstr "Offene Sande:    \nTCP: 80(http), 443(http!      \n"
+msgstr ""
+"Offene Sande:    \n"
+"TCP: 80(http), 443(http!      \n"
 
 #. type: Plain text
 #: priskribo.md:76
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Reta Konduto Kiam Oni LANĉAS JCO_server:  \n"
-msgstr "Webverhalten beim Start von JCO_server:  \n  \n"
+msgstr ""
+"Webverhalten beim Start von JCO_server:  \n"
+"  \n"
 
 #. type: Plain text
 #: priskribo.md:78
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Pridemandas La servilon DNS PRI: www.163.com Kaj DNS.ICTun.com  \n"
 msgstr "Der DNS-Server wird abgefragt über: www.163.com und dns.ictun.com  \n"
 
 #. type: Plain text
 #: priskribo.md:79
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Apliko 114.114.114.114 por DNS.ICTun.com  \n"
 msgstr "Anwendung 114.114.114.114 für dns.ittun.com  \n"
 
 #. type: Plain text
 #: priskribo.md:80
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "KONEKTI AL LA HAVEN UDP / 993 DNS.ICTUNC.com  \n"
 msgstr "Verbinden Sie sich mit dem Haven UDP / 993 DNS.ITTUNC.com  \n"
 
 #. type: Plain text
 #: priskribo.md:81
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Konekti al UDP / 993-havenuso de 120,25.129.41  \n"
 msgstr "Verbindung zu UDP / 993-Anschlüssen von 120.25.129.41  \n"
 
 #. type: Plain text
 #: priskribo.md:82
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "PrideMandu la servilon DNS PRI: Conn-policy.ICTun.com  \n"
 msgstr "Den DNS-Server abfragen auf: conn-policy.itun.com  \n"
 
 #. type: Plain text
 #: priskribo.md:83
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "PrideMandu The Servilon DNS PRI: Video-policy.ICTun.com  \n"
 msgstr "Frage des DNS-Servers auf: Video-Policy.ittun.com  \n"
 
 #. type: Plain text
 #: priskribo.md:84
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "KONEKTI AL UDP / 80-Haveno de 52.29.45.252  \n"
 msgstr "Verbindung zu UDP / 80-Port von 52.29.45.252  \n"
 
 #. type: Plain text
 #: priskribo.md:85
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Konektas al UDP / 1210-havenuso de 52.29.45.252  \n"
 msgstr "Verbindet sich mit dem UDP / 1210-Port von 52.29.45.252  \n"
 
 #. type: Plain text
 #: priskribo.md:86
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Ligoj al UDP / 21-havenoj de 52,57.135.134  \n"
 msgstr "Links zu UDP / 21-Ports von 52.57.135.134  \n"
 
 #. type: Plain text
 #: priskribo.md:87
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Konektas al UDP / 1053-havenes de 52.28.62.20  \n"
 msgstr "Verbindet sich mit UDP / 1053-Havones von 52.28.62.20  \n"
 
 #. type: Plain text
 #: priskribo.md:88
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "KONEKTAS AL UDP / 443-Havas de 52.29.58.225  \n"
 msgstr "Verbindet sich mit UDP / 443-Habe von 52.29.58.225  \n"
 
 #. type: Plain text
 #: priskribo.md:89
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Konektas al UDP / 123 (NTP) havenuso de 112,74.204.233 (Video-policy.ICTun.com)  \n"
 msgstr "Verbindet sich mit UDP / 123 (NTP) -Anhafen von 112.74.204.233 (° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 0 tun.com)  \n"
 
 #. type: Plain text
 #: priskribo.md:90
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Ligoj al UDP / 993-havenoj de 47.52.99.182  \n"
 msgstr "Links zu UDP / 993-Ports von 47.52.99.182  \n"
 
 #. type: Plain text
 #: priskribo.md:91
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Konektas al UDP / 1054-havenes de 52.57.127.207  \n"
 msgstr "Verbindet sich mit UDP / 1054-Havones von 52.57.127.207  \n"
 
 #. type: Plain text
 #: priskribo.md:92
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "...  \n"
 msgstr "...  \n"
 
 #. type: Plain text
 #: priskribo.md:94
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Noto: ŝanĝu la DefAŭltan Itineron Tian signifis ke la interrila skatolo.   \n"
 msgstr "HINWEIS: Legen Sie die Standardroute fest, die dies bedeutet, dass die miteinander verknüpfte Box ist.    \n"
 
 #. type: Plain text
 #: priskribo.md:95
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Haltigi JCO_server sen kaŭzi restartigi:  \n"
-msgstr "Stoppen Sie JCO_server sen kaŭzi restartigi:  \n  \n"
+msgstr ""
+"Stoppen Sie JCO_server sen kaŭzi restartigi:  \n"
+"  \n"
 
 #. type: Title ##
 #: priskribo.md:97
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Haltu_cloud :  "
 msgstr "Anschlag_cloud :  "
 
@@ -369,8 +346,7 @@ msgstr "PS | \n"
 
 #. type: Plain text
 #: priskribo.md:102
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "VI POVO VIDI LA BEFAN VIDEO-Riverton (LAŭ 1080p Aŭ ALIA AGORDO) per:  \n"
 msgstr "Sie können das BEFAN-Video-Rivert (gemäß 1080p oder anderen Konfiguration) sehen.  \n"
 
@@ -388,8 +364,7 @@ msgstr ""
 
 #. type: Plain text
 #: priskribo.md:110
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Kaj la durangana:\n"
 msgstr "Und das Durangana:\n"
 
@@ -405,8 +380,7 @@ msgstr ""
 
 #. type: Plain text
 #: priskribo.md:116
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "La instalita firmvaro Indikas:\n"
 msgstr "Die installierte Firmware zeigt an: (° 1 ° 1\n"
 
@@ -432,29 +406,27 @@ msgstr ""
 
 #. type: Plain text
 #: priskribo.md:126
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "La Procesoro estas: Ingenic T21  \n"
 msgstr "Der Prozessor ist: Ingenic T21  \n"
 
 #. type: Plain text
 #: priskribo.md:127
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "http://www.ingenic.com.cn/en/?product/id/11.html  \n"
 msgstr "http://www.ininic.com.cn/de/?product/id/11.html  \n"
 
 #. type: Plain text
 #: priskribo.md:128
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "https://en.indasina.com/ingenic-t21-extreme-2-megapixel-encoding-processor_p16.html  \n"
-msgstr "https://en.indasina.com/ingenic-t21-xtreme-2-megapixel-coding-Prozessor_p16.html  \n  \n"
+msgstr ""
+"https://en.indasina.com/ingenic-t21-xtreme-2-megapixel-coding-Prozessor_p16.html  \n"
+"  \n"
 
 #. type: Plain text
 #: priskribo.md:132
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "La CMOS-sensilo estas: GC2053.   \n"
 "ŝofora Fonto: https://github.com/mrfixit2001/rk-kernel-fork/blob/develop-4.4/drivers/media/i2c/gc2053.c  \n"
@@ -462,22 +434,19 @@ msgstr "Der CMOS-Sensor ist: GC2053.   \n"
 
 #. type: Plain text
 #: priskribo.md:135
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "RAM: 42Mib Intt, 36 MIB Havebla.   \n"
 msgstr "RAM: 42 MB INTT, 36 MIB verfügbar.    \n"
 
 #. type: Plain text
 #: priskribo.md:136
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "La Havedo 9999 estas Malfermita kaj Permesas Regi la Fotilon:  \n"
 msgstr "Der 9999 haedo ist geöffnet und ermöglicht die Steuerung der Kamera:  \n"
 
 #. type: Plain text
 #: priskribo.md:141
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "Echo (° 1 ° Checuser -Act Set -USER Admin -Password Admin\"|   \n"
 "Eo (° 1 ° 1 ° listo\"|   \n"
@@ -487,15 +456,13 @@ msgstr "Echo (° 1 ° 1 ° 1 ° Checuser -AC Set -UER Administration - Password 
 
 #. type: Plain text
 #: priskribo.md:142
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "GPIO-HADENOJ:  \n"
 msgstr "GPO-HADENS:  \n"
 
 #. type: Plain text
 #: priskribo.md:145
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "46 = Infraredĝaj legoj.   \n"
 "81 = Bluaj leĝoj.   \n"
@@ -503,15 +470,13 @@ msgstr "46 = Infrarisierungsinterpretationen.    \n"
 
 #. type: Plain text
 #: priskribo.md:146
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "GPIO-HADENOJ BLOKITAJ POR SLUDO:  \n"
 msgstr "GPIO-HADEN zum Schreien blockiert:  \n"
 
 #. type: Plain text
 #: priskribo.md:149
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "Blokita de Motor.ko: 18?   \n"
 "Blokita de Audio.ko: 63?   \n"
@@ -520,64 +485,55 @@ msgstr "Von motor.ko: 18 blockiert?   \n"
 
 #. type: Plain text
 #: priskribo.md:151
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Ptz-Kontrolo:  \n"
 msgstr "PTZ-Steuerung:  \n"
 
 #. type: Plain text
 #: priskribo.md:153
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Supro: http: // admin: admin@192.168.24.39/? Jcpcmd = pelcod20ctrl -type 1 -cmd 1 -gata1 24 -gata2 24  \n"
 msgstr "Oben: http: // admin: admin@192.168.24.39/?   \n"
 
 #. type: Plain text
 #: priskribo.md:154
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Msalru: http: // admin: admin@192.168.24.39/? Jcpcmd = pelcod203crl -type 1 -cmd 2 -gata1 24-gafu2 24  \n"
 msgstr "Msalkru: http: // admin: admin@192.168.24.39/?   \n"
 
 #. type: Plain text
 #: priskribo.md:155
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Maldekstre: http: // admin: admin@192.168.24.39/? Jcpcmd = pelcod203crl -type 1 -cmd 3 -gata1 24 -gata2 24  \n"
 msgstr "Links: http: // admin: admin@192.168.24.39/?   \n"
 
 #. type: Plain text
 #: priskribo.md:156
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Dekstre: http: // admin: admin@192.168.24.39/? JCPCMD = Pelcod203crl -Type 1 -CMD 4 -Data1 24 -Atata2 24  \n"
 msgstr "Nach rechts: http: // admin: admin@192.168.24.39/?   \n"
 
 #. type: Plain text
 #: priskribo.md:157
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Halto: http: // admin: admin@192.168.24.39/? Jcpcmd = pelcod203crl -type 1 -cmd 9 -gata1 24-Data2 24  \n"
 msgstr "Halt: http: // admin: admin@192.168.24.39/?   \n"
 
 #. type: Plain text
 #: priskribo.md:159
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Starigigu pozicion 2: http://192.168.24.39/?jcpcmd=pelcod20ctl -type 2 -cmd 1 -gata2 2  \n"
 msgstr "Position 2: http://192.168.24.39/  \n"
 
 #. type: Plain text
 #: priskribo.md:160
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Iru al 1: http://192.168.24.39/?JJcpcmd=pelcod203trl -type 2 -cmd 2 -gata2 1  \n"
 msgstr "Gehen Sie zu 1: http://192.168.24.39/?jjcpcmd=Pelcod203TRL -Typ 2 -cmd 2 -Gata2 1  \n"
 
 #. type: Plain text
 #: priskribo.md:161
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Forigi 2: http://192.168.24.39/?jcpcmd=pelCod203trl -Type 2 -CMD 3 -Data2 2  \n"
 msgstr "Entfernen Sie 2: http://192.168.24.39/?jcpcmd=Pelcod203TRL -Typ 2 -CMD 3 -Data2 2  \n"
 

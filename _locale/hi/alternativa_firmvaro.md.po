@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-03-04 16:52+0100\n"
+"POT-Creation-Date: 2021-10-30 11:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,133 +17,117 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. type: YAML Front Matter: lang
-#: ./alternativa_firmvaro.md:1
+#: alternativa_firmvaro.md:1
 #, no-wrap
 msgid "eo"
 msgstr "hi"
 
 #. type: YAML Front Matter: lang-niv
-#: ./alternativa_firmvaro.md:1
+#: alternativa_firmvaro.md:1
 #, no-wrap
 msgid "auto"
 msgstr "auto"
 
 #. type: YAML Front Matter: lang-ref
-#: ./alternativa_firmvaro.md:1
+#: alternativa_firmvaro.md:1
 #, no-wrap
-msgid "099-alternativa_firmvaro"
-msgstr "099-alternativa_firmvaro"
+msgid "010-alternativa_firmvaro"
+msgstr "010-alternativa_firmvaro"
 
 #. type: YAML Front Matter: layout
-#: ./alternativa_firmvaro.md:1
+#: alternativa_firmvaro.md:1
 #, no-wrap
 msgid "page"
 msgstr "page"
 
 #. type: YAML Front Matter: title
-#: ./alternativa_firmvaro.md:1
-#, no-wrap
-#, fuzzy
+#: alternativa_firmvaro.md:1
+#, fuzzy, no-wrap
 msgid "Alternativa firmvaro"
 msgstr "वैकल्पिक फर्मवेयर"
 
 #. type: Title #
-#: ./alternativa_firmvaro.md:9
-#, markdown-text, no-wrap
-#, fuzzy
+#: alternativa_firmvaro.md:9
+#, fuzzy, no-wrap
 msgid "Ekfunkciigo"
 msgstr "चालू होना"
 
 #. type: Bullet: '* '
-#: ./alternativa_firmvaro.md:12
-#, markdown-text, no-wrap
-#, fuzzy
-msgid ""
-"La instalado kreas la dosieron _/opt/etc/local.rc_, kiun lanĉas la originala "
-"firmvaro.\n"
+#: alternativa_firmvaro.md:12
+#, fuzzy, no-wrap
+msgid "La instalado kreas la dosieron _/opt/etc/local.rc_, kiun lanĉas la originala firmvaro.\n"
 msgstr "स्थापना फ़ाइल _/opt/etc/local.rc_बनाता है, जिसे मूल फर्मवेयर द्वारा लॉन्च किया जाता है।\n"
 
 #. type: Bullet: '* '
-#: ./alternativa_firmvaro.md:14
-#, markdown-text, no-wrap
-#, fuzzy
+#: alternativa_firmvaro.md:14
+#, fuzzy, no-wrap
 msgid "_local.rc_ lanĉas _run.sh_ de la SD-karto.\n"
 msgstr "_local.rc_ एसडी कार्ड से _run.sh_ लॉन्च होता है।\n"
 
 #. type: Title #
-#: ./alternativa_firmvaro.md:16
-#, markdown-text, no-wrap
-#, fuzzy
+#: alternativa_firmvaro.md:16
+#, fuzzy, no-wrap
 msgid "_run.sh_"
 msgstr "_run.sh_"
 
 #. type: Bullet: '  * '
-#: ./alternativa_firmvaro.md:19
-#, markdown-text, no-wrap
-#, fuzzy
+#: alternativa_firmvaro.md:19
+#, fuzzy, no-wrap
 msgid "malkonekti la reton\n"
 msgstr "डिस्कनेक्ट नेटवर्क\n"
 
 #. type: Bullet: '  * '
-#: ./alternativa_firmvaro.md:21
-#, markdown-text, no-wrap
-#, fuzzy
+#: alternativa_firmvaro.md:21
+#, fuzzy, no-wrap
 msgid "haltigi _jco_servilon_ kaj _autorun.sh_.\n"
 msgstr "रोक _jco_सर्वर_ और _autorun.sh_।\n"
 
 #. type: Bullet: '  * '
-#: ./alternativa_firmvaro.md:23
-#, markdown-text, no-wrap
-#, fuzzy
+#: alternativa_firmvaro.md:23
+#, fuzzy, no-wrap
 msgid "malaktivigas _/dev/watchdog_ kaj _/dev/watchdog0_\n"
 msgstr "निष्क्रिय _/dev/watchdog_ और _/dev/watchdog0_\n"
 
 #. type: Bullet: '  * '
-#: ./alternativa_firmvaro.md:25
-#, markdown-text, no-wrap
-#, fuzzy
+#: alternativa_firmvaro.md:25
+#, fuzzy, no-wrap
 msgid "pravalorizas la LEDojn kaj la motoron\n"
 msgstr "एल ई डी और मोटर को इनिशियलाइज़ करता है\n"
 
 #. type: Bullet: '  * '
-#: ./alternativa_firmvaro.md:27
-#, markdown-text, no-wrap
-#, fuzzy
+#: alternativa_firmvaro.md:27
+#, fuzzy, no-wrap
 msgid "pravalorizas la adresaron ktp se necese\n"
 msgstr "यदि आवश्यक हो तो निर्देशिका आदि को आरंभ करें\n"
 
 #. type: Bullet: '  * '
-#: ./alternativa_firmvaro.md:29
-#, markdown-text, no-wrap
-#, fuzzy
+#: alternativa_firmvaro.md:29
+#, fuzzy, no-wrap
 msgid "alidirektiloj _/bin/busybox_ , _/etc_ kaj _/root_ al la SDa karto.\n"
 msgstr "एसडी कार्ड में रीडायरेक्ट _/bin/busybox_ , _/etc_ और _/root_ ।\n"
 
 #. type: Bullet: '  * '
-#: ./alternativa_firmvaro.md:31
-#, markdown-text, no-wrap
-#, fuzzy
+#: alternativa_firmvaro.md:31
+#, fuzzy, no-wrap
 msgid "pravalorizi la _CRONTAB_ se necese\n"
 msgstr "डिफ़ॉल्ट _CRONTAB_ आवश्यक है\n"
 
 #. type: Bullet: '  * '
-#: ./alternativa_firmvaro.md:33
-#, markdown-text, no-wrap
-#, fuzzy
-msgid "startservo _crond_, reto, servo _ntpd_, reteja servo\n"
-msgstr "प्रारंभ सेवा _crond_, नेटवर्क, सेवा _ntpd_, वेब सेवा\n"
-
-#. type: Bullet: '  * '
-#: ./alternativa_firmvaro.md:35
-#, markdown-text, no-wrap
-#, fuzzy
+#: alternativa_firmvaro.md:33
+#, fuzzy, no-wrap
 msgid "komenci servojn (en _config/autostart_)\n"
 msgstr "आरंभ सेवाएं ( _config/autostart_)\n"
 
 #. type: Bullet: '  * '
-#: ./alternativa_firmvaro.md:37
-#, markdown-text, no-wrap
-#, fuzzy
+#: alternativa_firmvaro.md:35
+#, fuzzy, no-wrap
 msgid "komenci uzantajn skriptojn (en _config/userscripts_)\n"
 msgstr "लिपियों ( _config/userscripts_)का उपयोग करना शुरू करें\n"
 
+#, no-wrap
+#~ msgid "099-alternativa_firmvaro"
+#~ msgstr "099-alternativa_firmvaro"
+
+#, fuzzy
+#~ msgid "startservo _crond_, reto, servo _ntpd_, reteja servo\n"
+#~ msgstr "प्रारंभ सेवा _crond_, नेटवर्क, सेवा _ntpd_, वेब सेवा\n"

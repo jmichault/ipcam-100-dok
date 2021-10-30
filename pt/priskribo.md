@@ -1,29 +1,40 @@
+---
+lang: pt
+lang-niv: auto
+lang-ref: 070-kamerao-priskribo
+layout: page
+title: 'Descrição da câmera'
+---
+
 
 
 # Descrição:
-https://fr.alivexpress.com/item/4000146161270.html
-Estilo: Câmera cupola
-Tipo: IP Camera
-Conectividade : IP / Reta Sem Fio
-Sistemas operacionais suportados: Não
-Alta definição: 1080p(Full hd)
-Lente (MM): 3.6mm
-Instalação: lateral
-Electro fornecimento(V): DC12V II
-Interface de rede: RJ-45 10 / 100MB Ethernet Slot
-Mura Bracket: Teto
-Sistemas móveis suportados: Android
-Sistemas móveis suportados: iOS
-Distância IV(M): 30m- 50m
-Características especiais: À prova d'água / veterrezista
-Ângulo de visualização: 140 °
-Megapixels: 2MP
-W): 12w
-Armazenagem: Nenhum
-Sensile Marca: Sony
-Ação de alarme: Email Photo (° 322 Ação alarmante: alarme local
-Formato de compressiva Vídeo: H.264
-é_customized: Yes
+https://en.alivexpress.com/item/4000146161270.html
+```
+    Brand Name: shiningpo
+    Style: Dome Camera
+    Type: IP Camera
+    Connectivity: IP/Network Wireless
+    Supported Operating Systems: No
+    High Definition: 1080P(Full-HD)
+    Lens (mm): 3.6mm
+    Installation: Side
+    Power Supply(V): DC12V 2A
+    Network Interface: RJ-45 10/100Mb Ethernet Slot
+    Wall Bracket: Ceiling
+    Supported Mobile Systems: Android
+    Supported Mobile Systems: ios
+    IR Distance(m): 30M-50M
+    Special Features: Waterproof / Weatherproof
+    Viewing Angle : 140°
+    Megapixels: 2MP
+    Power Consumption(W): 12W
+    Storage: None
+    Sensor Brand: SONY
+    Alarm Action: Email Photo
+    Alarm Action: Local Alarm
+    Video Compression Format: H.264
+    is_customized: Yes
     Technology: Pan Tilt Zoom
     Power Supply: Normal
     TF Card: None
@@ -35,98 +46,116 @@ Formato de compressiva Vídeo: H.264
     camera ip: camera wifi
     ip camera wifi: camara vigilancia exterior
     ptz: camara ip ptz
+```
 
+# Inscrições de tags.
+```
+WIFI CARAM
+Model : WF-HD820-ZS
+Résolution : 1080P
+Power Supply : DC12V/1A
+SSID : HSIPC-******
+Password : 12345678
+MAC : 00:88:09:**:**:**
+```
 
+Colocando-o para Etherreto, obtém um endereço DHCP e podemos nos conectar ao Regeno: (° 1 ° 1  
+Usuário padrão: admin  
+Senha padrão: admin  
 
-Inscrições sobre o tag:
-wifi caram
-modelo: wf-hd820-zs (° 3 ° 3 ° 3 ° 3 ° 3880p (° 4 ° 4 ° 4 ° 4 ° 4 ° 4 ° 4 ° 4 ° 4 ° 4 ° 4 ° 4 ° 4 ° 6 ° Elétroposição: DC12V / I
-SSID: HSIPC -******Password: 12345678 (° 8 ° 8:09:**:**:**
+Por 5 minutos, você pode se conectar com Telnet à porta de 9527  
+Usuário padrão: raiz  
+Senha padrão: JCO66688  
+Para ficar ligado além de 5 minutos: "Killall -9 automático_run.sh»  
+  
+  
+(JCO = http://www.cnjabsco.com/ )  (° 3 ° 3
 
-Ao conectá-lo a uma Ethernet, ele obtém um endereço DHCP e não pode se conectar ao site:
-Usuário padrão: admin
-Password padrão: Admin
+Sands abertos:    
+TCP: 80(HTTP), 443(HTTP!      
 
-Por 5 minutos, você pode se conectar com telnet à porta 9527
-Usuário padrão: raiz
-Password padrão: JCO66688
-para Fique conectado além de 5 minutos: "Killall - 9 Auto_run.sh»
-(jco = http://www.cnjabsco.com/ )
+Comportamento da Web quando inicia JCO_server:  
+  
+  
+O servidor DNS é interrogado por: www.163.com e dns.ictun.com (° 1 ° 1  
+Aplicação 114.114.114.114 para dns.ittun.com  
+Conecte-se ao refúgio UDP / 993 dns.ittunc.com (° 1 ° 1  
+Conecte-se a portas UDP / 993 de 120.25.129.41  
+Interrogar o servidor DNS em: connect-policy.itun.com  
+Pergunta o servidor DNS em: video-policy.ittun.com  
+Conecte-se a UDP / 80-Porto de 52.29.45.252 (° 1 ° 1  
+Conecta-se ao porto UDP / 1210 de 52.29.45.252 (° 1 ° 1  
+Links para portas UDP / 21 de 52.57.135.134  
+Conecta-se a UDP / 1053-Tomários de 52.28.62.20 (° 1 ° 1  
+Conecta-se a UDP / 443 - tem de 52.29.58.225 (° 1 ° 1  
+Ligações a UDP / 123 (de NTP) de porta de 112,74.204.233 (3 ° ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° ° 3 ° 3 3 ° 3 ° 3 ° 3 ° 0Tun.com)  
+Links para portas UDP / 993 de 47.52.99.182 (° 1 ° 1  
+Conecta-se a UDP / 1054-Thones de 52.57.127.207 (° 1 ° 1  
+...  
+Nota: Defina a rota padrão, tal significava que a caixa inter-relacionada.    
 
-
-
-Portas abertas: (° 1 ° 1  
-  TCP: 80(HTTP), 443(HTTP!   
-  UDP: 67(DHCP), 3702, 8002, 39642 (° 4 ° 4  
-
-Comportamento da Web quando inicia JCO_server:
-pridemandas la servilon dns pri: www.163.com kaj dns.ictun.com
-demando 114.114.114.114 por dns.ictun.com
-konekti al la haveno udp/993 de dns.ictun.com
-konekti al udp/993-haveno de 120.25.129.41
-pridemandu la servilon dns pri: conn-policy.ictun.com
-pridemandu la servilon dns pri: video-policy.ictun.com
-konekti al udp/80-haveno de 52.29.45.252
-konektas al udp/1210-haveno de 52.29.45.252
-ligas al udp/21-haveno de 52.57.135.134
-konektas al udp/1053-haveno de 52.28.62.20
-konektas al udp/443-haveno de 52.29.58.225
-konektas al udp/123 (ntp) haveno de 112.74.204.233 (video-policy.ictun.com)
-ligas al udp/993-haveno de 47.52.99.182
-konektas al udp/1054-haveno de 52.57.127.207
-...
-noto: ŝanĝu la defaŭltan itineron metante tiun de la interreta skatolo.
-
-
-
-Parar JCO_server sen kaŭzi restartigi:
-
-
-## Parar_cloud :
+Parar JCO_server sen kaŭzi restartigi:  
+  
+  
+## Pare_cloud :  
 ```
 PS | 
 ```
 
-Você pode ver o fluxo de vídeo principal (de acordo com 1080p ou outra configuração) por:
-FfPlay -i RTSP: // admin: admin@192.168.24.111/ Stream1
-FfPlay -i RTSP: // admin: admin@192.168.24.39: 554 / stream1 (° 5 ° 5 ° 5 ° 5 ° 5 ° 5 ° 5 ° 5 ° 5 ° 5 ° 5 ° 5 ° 5 ° 5 ° 5 ° 5 ° 5 ° 5 ° 5 ° 5 ° 5 ° 5 ° 5 ° 0: admin : admin@192.168.24.39: 554 / MPEG4 / CH0 / Principal / Av_stream
+Você pode ver o Befan Video Rivert (de acordo com 1080p ou outra configuração) por: (° 3 ° 3  
+```
+ffplay -i rtsp://admin:admin@192.168.24.111/stream1
+ffplay -i rtsp://admin:admin@192.168.24.39:554/stream1
+ffplay -i rtsp://admin:admin@192.168.24.39:554/mpeg4/ch0/main/av_stream
+```
 
+E o Durangana: (° 1 ° 1
+```
+ffplay -i rtsp://admin:admin@192.168.24.39/stream2
+ffplay -i rtsp://admin:admin@192.168.24.39:554/stream2
+```
 
+O firmware instalado indica: (° 1 ° 1
+```
+DeviceName:     INGENIC-V01
+DeviceModel:    IPCAM-100
+DeviceSN:       12345678901
+KernelVersion:  Thu Jul 9 15:46:54 CST 2015
+ServerVersion:  WS3.53.1243-20190717-DANALE-GEN
+WebVersion:     V2.3.4-20190709
+OCXVersion:     -1
+```
 
-E o secundário:
-ffplay -i RTSP: // admin: admin@192.168.24.39/stream2
-ffplay -i RTSP: // admin: admin@192.168.24.39: 554 / stream2
+O processador é: Ingênico T21 (° 1 ° 1  
+http://www.ininic.com.cn/i/?product/id/11.html  
+https://en.indasina.com/ingenic-t21-xtreme-2-megapixel-encoding-processador_p16.html  
+  
+  
 
-O firmware instalado indica:
-Dispositivo: INGENIC-V01
-DeviceModelo: IPCAM-100
+O sensor CMOS é: GC2053.   
 
-Versão do servidor : WS3.53.1243-20190717-Danale-Gen (° 6 ° 6 ° 6 ° 6 ° 6 ° 6 ° 6 ° 6 ° 6-20190709
-OCX Versão: -1
+RAM: 42MB INTT, 36 MIB disponíveis.    
 
-O processador é: engenheiro T21
-http://www.ininic.com.cn/en/?product/id/11.html
-https://fr.indasina.com/ingenic- T21 Fim-2-Megapixela Código Processador (° 3 ° 3
+O 9999 Haedo está aberto e permite controlar a câmera: (° 1 ° 1  
+ECHO (° 1 ° 1 ° 1 ° 1 ° Checuser -ac Set -User admin -Password admin"|    
 
+GPO-HADENS:  
+46 = Instruindo interpretações.    
 
-O sensor CMOS é: GC2053. 
+GPIO-HADEN bloqueado para gritar:  
+Bloqueado por motor.ko: 18?   
 
-RAM: 42MB no geral, 36 MIB disponíveis. 
+PTZ CONTROL:  
 
-A porta 9999 está aberta e permite controlar a câmera: (° 1 ° 1 ° 1 ° 1 ° 2 ° 2 ° 2 ° 2 ° 2 ° 2 ° 2 ° 2 ° 2º Conjunto -User admin -Password admin 3) | 
+Top: http: // admin: admin@192.168.24.39/?   
+MSALKRU: http: // admin: admin@192.168.24.39/?   
+Esquerda: http: // admin: admin@192.168.24.39/?   
+À direita: http: // admin: admin@192.168.24.39/?   
+Parar: http: // admin: admin@192.168.24.39/?   
 
-Portas GPIO:
-46 = couro de infruit. 
-
-Portas GPIO bloqueadas para estudo:
-bloqueado por motor.ko: 18? 
-
-PTZ CONTROL:
-
-Top: http: // admin: admin@192.168.24.39/? 
-
-Posição 2: http://192.168.24.39/ CMD 2 -Data2 1
-Remove 2: http://192.168.24.39/?jcpcmd=pelcod20ctrl -Type 2 -cmd 3 -data2 2
+Definir posição 2: http://192.168.24.39/  
+Ir para 1: http://192.168.24.39/?jjcpcmd=pelcod203Trl -type 2 -cmd 2 -gata2 1  
+Remover 2: http://192.168.24.39/?jcpcmd=pelcod203Trl -type 2 -cmd 3 -data2 2  
 
 
 

@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-10-29 14:46+0200\n"
+"POT-Creation-Date: 2021-10-30 11:10+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,43 +16,78 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#. type: Title #
-#: ./priskribo.md:3
-#, markdown-text, no-wrap
+#. type: YAML Front Matter: lang
+#: priskribo.md:1
+#, no-wrap
+msgid "eo"
+msgstr "ms"
+
+#. type: YAML Front Matter: lang-niv
+#: priskribo.md:1
+#, no-wrap
+msgid "auto"
+msgstr "auto"
+
+#. type: YAML Front Matter: lang-ref
+#: priskribo.md:1
+#, no-wrap
+msgid "070-kamerao-priskribo"
+msgstr "070-kamerao-priskribo"
+
+#. type: YAML Front Matter: layout
+#: priskribo.md:1
+#, no-wrap
+msgid "page"
+msgstr "page"
+
+#. type: YAML Front Matter: title
+#: priskribo.md:1
+#, no-wrap
 #, fuzzy
+msgid "Priskribo de la fotilo"
+msgstr "Keterangan kamera"
+
+#. type: Title #
+#: priskribo.md:11
+#, fuzzy, no-wrap
 msgid "Priskribo:"
 msgstr "Penerangan:"
 
 #. type: Plain text
-#: ./priskribo.md:40
-#, markdown-text, no-wrap
+#: priskribo.md:13
+#, no-wrap
 #, fuzzy
+msgid "https://en.aliexpress.com/item/4000146161270.html\n"
+msgstr "https://en.alivexpress.com/item/4000146161270.html\n"
+
+#. type: Fenced code block
+#: priskribo.md:13
+#, no-wrap
 msgid ""
-"https://fr.aliexpress.com/item/4000146161270.html\n"
-"Markonomo: shiningpo\n"
-"Stilo: Kupola Fotilo\n"
-"Tipo: IP-Fotilo\n"
-"Konektebleco: IP / Reta Sendrata\n"
-"Subtenataj Operaciumoj: Ne\n"
-"Alta Difino: 1080P(Plena HD)\n"
-"Lenso (mm): 3.6mm\n"
-"Instalado: Flanka\n"
-"Elektroprovizo(V): DC12V 2A\n"
-"Reta Interfaco: RJ-45 10 / 100Mb Ethernet Slot\n"
-"Mura Krampo: Plafono\n"
-"Subtenitaj Poŝtelefonaj Sistemoj: Android\n"
-"Subtenataj Poŝtelefonaj Sistemoj: ios\n"
-"IR Distanco(m): 30M- 50M\n"
-"Specialaj Ecoj: Akvorezista / Veterrezista\n"
-"Vidanta Angulo: 140 °\n"
-"Megapikseloj: 2MP\n"
-"Potenca Konsumo(W): 12W\n"
-"Stokado: Neniu\n"
-"Sensila Marko: SONY\n"
-"Alarma Agado: Retpoŝta Foto\n"
-"Alarmiga Ago: Loka Alarmo\n"
-"Formato de Kunprema Video: H.264\n"
-"estas_customized: Yes\n"
+"    Brand Name: shiningpo\n"
+"    Style: Dome Camera\n"
+"    Type: IP Camera\n"
+"    Connectivity: IP/Network Wireless\n"
+"    Supported Operating Systems: No\n"
+"    High Definition: 1080P(Full-HD)\n"
+"    Lens (mm): 3.6mm\n"
+"    Installation: Side\n"
+"    Power Supply(V): DC12V 2A\n"
+"    Network Interface: RJ-45 10/100Mb Ethernet Slot\n"
+"    Wall Bracket: Ceiling\n"
+"    Supported Mobile Systems: Android\n"
+"    Supported Mobile Systems: ios\n"
+"    IR Distance(m): 30M-50M\n"
+"    Special Features: Waterproof / Weatherproof\n"
+"    Viewing Angle : 140°\n"
+"    Megapixels: 2MP\n"
+"    Power Consumption(W): 12W\n"
+"    Storage: None\n"
+"    Sensor Brand: SONY\n"
+"    Alarm Action: Email Photo\n"
+"    Alarm Action: Local Alarm\n"
+"    Video Compression Format: H.264\n"
+"    is_customized: Yes\n"
 "    Technology: Pan Tilt Zoom\n"
 "    Power Supply: Normal\n"
 "    TF Card: None\n"
@@ -64,247 +99,799 @@ msgid ""
 "    camera ip: camera wifi\n"
 "    ip camera wifi: camara vigilancia exterior\n"
 "    ptz: camara ip ptz\n"
-msgstr "https://fr.alivexpress.com/item/4000146161270.html\nGaya: Kamera Cupola\nJenis: Kamera IP\nSambungan : IP / Reta Wireless\nSistem pengendalian yang disokong: No\nDefinisi tinggi: 1080p(Penuh HD)\nLens\nLens\n (mm)Pemasangan: Lateral\nBekalan elektronik(V): DC12V II\nRangkaian antara muka: RJ-45 10 / 100MB Ethernet Slot\nMura Bracket: siling\nSistem mudah alih yang disokong: Android\nSistem mudah alih yang disokong: iOS\nSaya(m): 30m- 50m\nCiri-ciri Khas: Waterproof / veterrezista\nMelihat Angle: 140 °\nMegapixels: 2MP\nW)Simpanan: Tiada\nJenama Sensile: Sony\nPenggera Tindakan: Foto E-melTindakan yang membimbangkan: penggera tempatan\nFormat video mampat: H.264\nadalah_customized: Yes\n    Technology: Pan Tilt Zoom\n    Power Supply: Normal\n    TF Card: None\n    Color: White\n    Audio Output: Two Way Audio\n    Sensor: CMOS\n    wifi camera: ip camera\n    camara wifi: camara ip\n    camera ip: camera wifi\n    ip camera wifi: camara vigilancia exterior\n    ptz: camara ip ptz\n\n"
+msgstr ""
+"    Brand Name: shiningpo\n"
+"    Style: Dome Camera\n"
+"    Type: IP Camera\n"
+"    Connectivity: IP/Network Wireless\n"
+"    Supported Operating Systems: No\n"
+"    High Definition: 1080P(Full-HD)\n"
+"    Lens (mm): 3.6mm\n"
+"    Installation: Side\n"
+"    Power Supply(V): DC12V 2A\n"
+"    Network Interface: RJ-45 10/100Mb Ethernet Slot\n"
+"    Wall Bracket: Ceiling\n"
+"    Supported Mobile Systems: Android\n"
+"    Supported Mobile Systems: ios\n"
+"    IR Distance(m): 30M-50M\n"
+"    Special Features: Waterproof / Weatherproof\n"
+"    Viewing Angle : 140°\n"
+"    Megapixels: 2MP\n"
+"    Power Consumption(W): 12W\n"
+"    Storage: None\n"
+"    Sensor Brand: SONY\n"
+"    Alarm Action: Email Photo\n"
+"    Alarm Action: Local Alarm\n"
+"    Video Compression Format: H.264\n"
+"    is_customized: Yes\n"
+"    Technology: Pan Tilt Zoom\n"
+"    Power Supply: Normal\n"
+"    TF Card: None\n"
+"    Color: White\n"
+"    Audio Output: Two Way Audio\n"
+"    Sensor: CMOS\n"
+"    wifi camera: ip camera\n"
+"    camara wifi: camara ip\n"
+"    camera ip: camera wifi\n"
+"    ip camera wifi: camara vigilancia exterior\n"
+"    ptz: camara ip ptz\n"
 
-#. type: Plain text
-#: ./priskribo.md:50
-#, markdown-text, no-wrap
+#. type: Title #
+#: priskribo.md:51
+#, no-wrap
 #, fuzzy
-msgid ""
-"Surskriboj pri la etikedo:\n"
-"WIFI CARAM\n"
-"Modelo: WF-HD820-ZS\n"
-"Rezolucio: 1080P\n"
-"Elektroprovizo: DC12V / 1A\n"
-"SSID: HSIPC-******\n"
-"Pasvorto: 12345678\n"
-"MAC: 00:88:09:**:**:**\n"
-msgstr "Tulisan mengenai tag:\nWiFi Caram\nModel: WF-HD820-Zs (° 3 ° 3 ° 3 ° 3 ° 3880p (° 4 ° 4 ° 4 ° 4 ° 4 ° 4 ° 4 ° 4 ° 4 ° 6 ° Elektroposisi: DC12V / I\nSSID: HSIPC -******Kata laluan: 12345678 (° 8 ° 8 ° 8 ° 8:88:09:**:**:**\n"
-
-#. type: Plain text
-#: ./priskribo.md:54
-#, markdown-text, no-wrap
-#, fuzzy
-msgid ""
-"Kunligante ĝin por Eterreto, ĝi akiras DHCP-adreson kaj nek povas konekti al "
-"la retejo:\n"
-"defaŭlta uzanto: admin\n"
-"defaŭlta pasvorto: admin\n"
-msgstr "Dengan menyambungkannya untuk Ethernet, ia mendapat alamat DHCP dan tidak boleh menyambung ke laman web:\nPengguna lalai: admin\nKata laluan lalai: Admin\n"
-
-#. type: Plain text
-#: ./priskribo.md:60
-#, markdown-text, no-wrap
-#, fuzzy
-msgid ""
-"dum 5 minutoj, vi povas konekti per telnet al la haveno 9527\n"
-"defaŭlta uzanto: root\n"
-"defaŭlta pasvorto: jco66688\n"
-"por resti konektita preter 5 minutoj: \"killall -9 auto_run.sh»\n"
-"(jco = http://www.cnjabsco.com/ )\n"
-msgstr "Selama 5 minit, anda boleh menyambung dengan telnet ke port 9527\nPengguna lalai: root\nKata laluan lalai: JCO66688\nke Tinggal terhubung melebihi 5 minit: \"Killall - 9 auto_run.sh»\n(jco = http://www.cnjabsco.com/ )\n\n"
-
-#. type: Plain text
-#: ./priskribo.md:62
-#, markdown-text, no-wrap
-#, fuzzy
-msgid "malfermaj havenoj:  \n"
-msgstr "Port Terbuka: (° 1 ° 1  \n"
-
-#. type: Plain text
-#: ./priskribo.md:63
-#, markdown-text, no-wrap
-#, fuzzy
-msgid ""
-"  tcp: 80(http), 443(http ankaŭ!), 554(rtsp), 8004, 8006, 9527(telnet), 9999  "
-"\n"
-msgstr "  TCP: 80(HTTP), 443(HTTP!   \n"
-
-#. type: Plain text
-#: ./priskribo.md:64
-#, markdown-text, no-wrap
-#, fuzzy
-msgid "  udp: 67(dhcp), 3702, 8002, 39642  \n"
-msgstr "  UDP: 67(DHCP), 3702, 8002, 39642 (° 4 ° 4  \n"
-
-#. type: Plain text
-#: ./priskribo.md:83
-#, markdown-text, no-wrap
-#, fuzzy
-msgid ""
-"reta konduto kiam oni lanĉas jco_server:\n"
-"pridemandas la servilon dns pri: www.163.com kaj dns.ictun.com\n"
-"demando 114.114.114.114 por dns.ictun.com\n"
-"konekti al la haveno udp/993 de dns.ictun.com\n"
-"konekti al udp/993-haveno de 120.25.129.41\n"
-"pridemandu la servilon dns pri: conn-policy.ictun.com\n"
-"pridemandu la servilon dns pri: video-policy.ictun.com\n"
-"konekti al udp/80-haveno de 52.29.45.252\n"
-"konektas al udp/1210-haveno de 52.29.45.252\n"
-"ligas al udp/21-haveno de 52.57.135.134\n"
-"konektas al udp/1053-haveno de 52.28.62.20\n"
-"konektas al udp/443-haveno de 52.29.58.225\n"
-"konektas al udp/123 (ntp) haveno de 112.74.204.233 "
-"(video-policy.ictun.com)\n"
-"ligas al udp/993-haveno de 47.52.99.182\n"
-"konektas al udp/1054-haveno de 52.57.127.207\n"
-"...\n"
-"noto: ŝanĝu la defaŭltan itineron metante tiun de la interreta skatolo.\n"
-msgstr "Kelakuan Web apabila melancarkan JCO_server:\npridemandas la servilon dns pri: www.163.com kaj dns.ictun.com\ndemando 114.114.114.114 por dns.ictun.com\nkonekti al la haveno udp/993 de dns.ictun.com\nkonekti al udp/993-haveno de 120.25.129.41\npridemandu la servilon dns pri: conn-policy.ictun.com\npridemandu la servilon dns pri: video-policy.ictun.com\nkonekti al udp/80-haveno de 52.29.45.252\nkonektas al udp/1210-haveno de 52.29.45.252\nligas al udp/21-haveno de 52.57.135.134\nkonektas al udp/1053-haveno de 52.28.62.20\nkonektas al udp/443-haveno de 52.29.58.225\nkonektas al udp/123 (ntp) haveno de 112.74.204.233 (video-policy.ictun.com)\nligas al udp/993-haveno de 47.52.99.182\nkonektas al udp/1054-haveno de 52.57.127.207\n...\nnoto: ŝanĝu la defaŭltan itineron metante tiun de la interreta skatolo.\n\n"
-
-#. type: Plain text
-#: ./priskribo.md:86
-#, markdown-text, no-wrap
-#, fuzzy
-msgid "haltigi jco_server sen kaŭzi restartigi:\n"
-msgstr "Hentikan JCO_server sen kaŭzi restartigi:\n\n"
-
-#. type: Title ##
-#: ./priskribo.md:87
-#, markdown-text, no-wrap
-#, fuzzy
-msgid "halti_cloud :"
-msgstr "Berhenti_cloud :"
+msgid "Etikedaj surskriboj"
+msgstr "Tag inskripsi"
 
 #. type: Fenced code block
-#: ./priskribo.md:88
+#: priskribo.md:52
+#, no-wrap
+msgid ""
+"WIFI CARAM\n"
+"Model : WF-HD820-ZS\n"
+"Résolution : 1080P\n"
+"Power Supply : DC12V/1A\n"
+"SSID : HSIPC-******\n"
+"Password : 12345678\n"
+"MAC : 00:88:09:**:**:**\n"
+msgstr ""
+"WIFI CARAM\n"
+"Model : WF-HD820-ZS\n"
+"Résolution : 1080P\n"
+"Power Supply : DC12V/1A\n"
+"SSID : HSIPC-******\n"
+"Password : 12345678\n"
+"MAC : 00:88:09:**:**:**\n"
+
+#. type: Plain text
+#: priskribo.md:62
+#, no-wrap
+#, fuzzy
+msgid "Kunlicante ĝin por Eterreto, ĝi Akiras DHCP-ADRESON KAJ NI POVO KONEKTI AL LA REGETO:  \n"
+msgstr "Meletakkannya untuk EtherReto, ia mendapat alamat DHCP dan kami boleh menyambung ke Regene: (° 1 ° 1  \n"
+
+#. type: Plain text
+#: priskribo.md:63
+#, no-wrap
+#, fuzzy
+msgid "DefAŭlta Uzanto: Admin  \n"
+msgstr "Pengguna lalai: admin  \n"
+
+#. type: Plain text
+#: priskribo.md:64
+#, no-wrap
+#, fuzzy
+msgid "DefAŭlta Pasvorto: Admin  \n"
+msgstr "Kata laluan lalai: admin  \n"
+
+#. type: Plain text
+#: priskribo.md:66
+#, no-wrap
+#, fuzzy
+msgid "Dum 5 Minutoj, VI Povas Konekti per Telnet al la Haveso 9527  \n"
+msgstr "Selama 5 minit, anda boleh berhubung dengan Telnet ke port 9527  \n"
+
+#. type: Plain text
+#: priskribo.md:67
+#, no-wrap
+#, fuzzy
+msgid "DefAŭlta Uzanto: Radiko  \n"
+msgstr "Pengguna lalai: Root  \n"
+
+#. type: Plain text
+#: priskribo.md:68
+#, no-wrap
+#, fuzzy
+msgid "DefAŭlta Pasvorto: jco66688  \n"
+msgstr "Kata Laluan Lalai: JCO66688  \n"
+
+#. type: Plain text
+#: priskribo.md:69
+#, no-wrap
+#, fuzzy
+msgid "Por resti konektita Preter 5 Minutoj: \"Killall -9 aŭtomata_run.sh»  \n"
+msgstr "Untuk terus berhubung melebihi 5 minit: \"Killall -9 automatik_run.sh»  \n  \n"
+
+#. type: Plain text
+#: priskribo.md:71
+#, no-wrap
+#, fuzzy
+msgid "(JCO = http://www.cnjabsco.com/ )  \n"
+msgstr "(jco = http://www.cnjabsco.com/ )  (° 3 ° 3\n"
+
+#. type: Plain text
+#: priskribo.md:75
+#, no-wrap
+#, fuzzy
+msgid ""
+"Malfermaj Arenoj:    \n"
+"TCP: 80(http), 443(http ankaŭ!     \n"
+msgstr "Terbuka Sands:    \nTCP: 80(HTTP), 443(HTTP!      \n"
+
+#. type: Plain text
+#: priskribo.md:76
+#, no-wrap
+#, fuzzy
+msgid "Reta Konduto Kiam Oni LANĉAS JCO_server:  \n"
+msgstr "Kelakuan Web apabila melancarkan JCO_server:  \n  \n"
+
+#. type: Plain text
+#: priskribo.md:78
+#, no-wrap
+#, fuzzy
+msgid "Pridemandas La servilon DNS PRI: www.163.com Kaj DNS.ICTun.com  \n"
+msgstr "Pelayan DNS disoal siasat tentang: www.163.com dan dns.ictun.com (° 1 ° 1  \n"
+
+#. type: Plain text
+#: priskribo.md:79
+#, no-wrap
+#, fuzzy
+msgid "Apliko 114.114.114.114 por DNS.ICTun.com  \n"
+msgstr "Permohonan 114.114.114.114 for Dns.ittun.com  \n"
+
+#. type: Plain text
+#: priskribo.md:80
+#, no-wrap
+#, fuzzy
+msgid "KONEKTI AL LA HAVEN UDP / 993 DNS.ICTUNC.com  \n"
+msgstr "Sambungkan ke Haven UDP / 993 Dns.ittunc.com (° 1 ° 1  \n"
+
+#. type: Plain text
+#: priskribo.md:81
+#, no-wrap
+#, fuzzy
+msgid "Konekti al UDP / 993-havenuso de 120,25.129.41  \n"
+msgstr "Sambung ke UDP / 993 port 120.25.129.41  \n"
+
+#. type: Plain text
+#: priskribo.md:82
+#, no-wrap
+#, fuzzy
+msgid "PrideMandu la servilon DNS PRI: Conn-policy.ICTun.com  \n"
+msgstr "Menyoal pelayan DNS pada: Conn-policy.itun.com  \n"
+
+#. type: Plain text
+#: priskribo.md:83
+#, no-wrap
+#, fuzzy
+msgid "PrideMandu The Servilon DNS PRI: Video-policy.ICTun.com  \n"
+msgstr "Soalan DNS Server On: Video-policy.ittun.com  \n"
+
+#. type: Plain text
+#: priskribo.md:84
+#, no-wrap
+#, fuzzy
+msgid "KONEKTI AL UDP / 80-Haveno de 52.29.45.252  \n"
+msgstr "Sambung ke UDP / 80-Port sebanyak 52.29.45.252 (° 1 ° 1  \n"
+
+#. type: Plain text
+#: priskribo.md:85
+#, no-wrap
+#, fuzzy
+msgid "Konektas al UDP / 1210-havenuso de 52.29.45.252  \n"
+msgstr "Menyambung ke UDP / 1210 port 52.29.45.252 (° 1 ° 1  \n"
+
+#. type: Plain text
+#: priskribo.md:86
+#, no-wrap
+#, fuzzy
+msgid "Ligoj al UDP / 21-havenoj de 52,57.135.134  \n"
+msgstr "Pautan ke UDP / 21 port 52.57.135.134  \n"
+
+#. type: Plain text
+#: priskribo.md:87
+#, no-wrap
+#, fuzzy
+msgid "Konektas al UDP / 1053-havenes de 52.28.62.20  \n"
+msgstr "Menyambung ke UDP / 1053-Haveones of 52.28.62.20 (° 1 ° 1  \n"
+
+#. type: Plain text
+#: priskribo.md:88
+#, no-wrap
+#, fuzzy
+msgid "KONEKTAS AL UDP / 443-Havas de 52.29.58.225  \n"
+msgstr "Menyambung ke UDP / 443-mempunyai 52.29.58.225 (° 1 ° 1  \n"
+
+#. type: Plain text
+#: priskribo.md:89
+#, no-wrap
+#, fuzzy
+msgid "Konektas al UDP / 123 (NTP) havenuso de 112,74.204.233 (Video-policy.ICTun.com)  \n"
+msgstr "Menghubungkan ke UDP / 123 (NTP) Port of 112,74.204.233 (° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 0Tun.com)  \n"
+
+#. type: Plain text
+#: priskribo.md:90
+#, no-wrap
+#, fuzzy
+msgid "Ligoj al UDP / 993-havenoj de 47.52.99.182  \n"
+msgstr "Pautan ke UDP / 993 port 47.52.99.182 (° 1 ° 1  \n"
+
+#. type: Plain text
+#: priskribo.md:91
+#, no-wrap
+#, fuzzy
+msgid "Konektas al UDP / 1054-havenes de 52.57.127.207  \n"
+msgstr "Menyambung ke UDP / 1054-Haveones of 52.57.127.207 (° 1 ° 1  \n"
+
+#. type: Plain text
+#: priskribo.md:92
+#, no-wrap
+#, fuzzy
+msgid "...  \n"
+msgstr "...  \n"
+
+#. type: Plain text
+#: priskribo.md:94
+#, no-wrap
+#, fuzzy
+msgid "Noto: ŝanĝu la DefAŭltan Itineron Tian signifis ke la interrila skatolo.   \n"
+msgstr "Nota: Tetapkan laluan lalai seperti itu bermakna kotak yang saling berkaitan.    \n"
+
+#. type: Plain text
+#: priskribo.md:95
+#, no-wrap
+#, fuzzy
+msgid "Haltigi JCO_server sen kaŭzi restartigi:  \n"
+msgstr "Hentikan JCO_server sen kaŭzi restartigi:  \n  \n"
+
+#. type: Title ##
+#: priskribo.md:97
+#, no-wrap
+#, fuzzy
+msgid "Haltu_cloud :  "
+msgstr "Berhenti_cloud :  "
+
+#. type: Fenced code block
+#: priskribo.md:98
 #, no-wrap
 msgid "PS | \n"
 msgstr "PS | \n"
 
 #. type: Plain text
-#: ./priskribo.md:96
-#, markdown-text, no-wrap
+#: priskribo.md:102
+#, no-wrap
+#, fuzzy
+msgid "VI POVO VIDI LA BEFAN VIDEO-Riverton (LAŭ 1080p Aŭ ALIA AGORDO) per:  \n"
+msgstr "Anda boleh melihat befan video rivert (mengikut 1080p atau konfigurasi lain) oleh: (° 3 ° 3  \n"
+
+#. type: Fenced code block
+#: priskribo.md:103
+#, no-wrap
+msgid ""
+"ffplay -i rtsp://admin:admin@192.168.24.111/stream1\n"
+"ffplay -i rtsp://admin:admin@192.168.24.39:554/stream1\n"
+"ffplay -i rtsp://admin:admin@192.168.24.39:554/mpeg4/ch0/main/av_stream\n"
+msgstr ""
+"ffplay -i rtsp://admin:admin@192.168.24.111/stream1\n"
+"ffplay -i rtsp://admin:admin@192.168.24.39:554/stream1\n"
+"ffplay -i rtsp://admin:admin@192.168.24.39:554/mpeg4/ch0/main/av_stream\n"
+
+#. type: Plain text
+#: priskribo.md:110
+#, no-wrap
+#, fuzzy
+msgid "Kaj la durangana:\n"
+msgstr "Dan Datanga: (° 1 ° 1\n"
+
+#. type: Fenced code block
+#: priskribo.md:110
+#, no-wrap
+msgid ""
+"ffplay -i rtsp://admin:admin@192.168.24.39/stream2\n"
+"ffplay -i rtsp://admin:admin@192.168.24.39:554/stream2\n"
+msgstr ""
+"ffplay -i rtsp://admin:admin@192.168.24.39/stream2\n"
+"ffplay -i rtsp://admin:admin@192.168.24.39:554/stream2\n"
+
+#. type: Plain text
+#: priskribo.md:116
+#, no-wrap
+#, fuzzy
+msgid "La instalita firmvaro Indikas:\n"
+msgstr "Firmware yang dipasang menunjukkan: (° 1 ° 1\n"
+
+#. type: Fenced code block
+#: priskribo.md:116
+#, no-wrap
+msgid ""
+"DeviceName:     INGENIC-V01\n"
+"DeviceModel:    IPCAM-100\n"
+"DeviceSN:       12345678901\n"
+"KernelVersion:  Thu Jul 9 15:46:54 CST 2015\n"
+"ServerVersion:  WS3.53.1243-20190717-DANALE-GEN\n"
+"WebVersion:     V2.3.4-20190709\n"
+"OCXVersion:     -1\n"
+msgstr ""
+"DeviceName:     INGENIC-V01\n"
+"DeviceModel:    IPCAM-100\n"
+"DeviceSN:       12345678901\n"
+"KernelVersion:  Thu Jul 9 15:46:54 CST 2015\n"
+"ServerVersion:  WS3.53.1243-20190717-DANALE-GEN\n"
+"WebVersion:     V2.3.4-20190709\n"
+"OCXVersion:     -1\n"
+
+#. type: Plain text
+#: priskribo.md:126
+#, no-wrap
+#, fuzzy
+msgid "La Procesoro estas: Ingenic T21  \n"
+msgstr "Pemproses adalah: Ingenik T21 (° 1 ° 1  \n"
+
+#. type: Plain text
+#: priskribo.md:127
+#, no-wrap
+#, fuzzy
+msgid "http://www.ingenic.com.cn/en/?product/id/11.html  \n"
+msgstr "http://www.ininic.com.cn/en/?product/id/11.html  \n"
+
+#. type: Plain text
+#: priskribo.md:128
+#, no-wrap
+#, fuzzy
+msgid "https://en.indasina.com/ingenic-t21-extreme-2-megapixel-encoding-processor_p16.html  \n"
+msgstr "https://en.indasina.com/ingenic-t21-xtreme-2-megapixel-encoding-processor_p16.html  \n  \n"
+
+#. type: Plain text
+#: priskribo.md:132
+#, no-wrap
 #, fuzzy
 msgid ""
-"vi povas vidi la ĉefan video-rivereton (laŭ 1080P aŭ aliaj agordo) per:\n"
-"ffplay -i rtsp: // admin: admin@192.168.24.111/stream1\n"
-"ffplay -i rtsp: // admin: admin@192.168.24.39: 554 / stream1\n"
-"ffplay -i rtsp: // admin: admin@192.168.24.39: 554 / mpeg4 / ch0 / main / "
-"av_stream\n"
-msgstr "Anda boleh melihat strim video utama (mengikut 1080p atau konfigurasi lain) oleh:\nFFplay -i RTSP: // admin: admin@192.168.24.111/ Stream1\nFFplay -i RTSP: // Admin: admin@192.168.24.39: 554 / Stream1 (° 5 ° 5 ° 5 ° 5 ° 5 ° 5 ° 5 ° 5: // Admin : admin@192.168.34.39: 554 / mpeg4 / ch0 / Main / Av_stream\n\n"
+"La CMOS-sensilo estas: GC2053.   \n"
+"ŝofora Fonto: https://github.com/mrfixit2001/rk-kernel-fork/blob/develop-4.4/drivers/media/i2c/gc2053.c  \n"
+msgstr "Sensor CMOS adalah: GC2053.   \n"
 
 #. type: Plain text
-#: ./priskribo.md:101
-#, markdown-text, no-wrap
+#: priskribo.md:135
+#, no-wrap
+#, fuzzy
+msgid "RAM: 42Mib Intt, 36 MIB Havebla.   \n"
+msgstr "RAM: 42MB Intt, 36 MIB tersedia.    \n"
+
+#. type: Plain text
+#: priskribo.md:136
+#, no-wrap
+#, fuzzy
+msgid "La Havedo 9999 estas Malfermita kaj Permesas Regi la Fotilon:  \n"
+msgstr "The 9999 Haedo dibuka dan membolehkan untuk mengawal kamera: (° 1 ° 1  \n"
+
+#. type: Plain text
+#: priskribo.md:141
+#, no-wrap
 #, fuzzy
 msgid ""
-"kaj la duaranga:\n"
-"ffplay -i rtsp: // admin: admin@192.168.24.39/stream2\n"
-"ffplay -i rtsp: // admin: admin@192.168.24.39: 554 / stream2\n"
-msgstr "Dan sekunder:\nFFplay -i RTSP: // admin: admin@192.168.39/stream2\nFFplay -i RTSP: // admin: admin@192.168.24.39: 554 / Stream2\n"
+"Echo (° 1 ° Checuser -Act Set -USER Admin -Password Admin\"|   \n"
+"Eo (° 1 ° 1 ° listo\"|   \n"
+"Eo (° 1 ° Pelcod203dRL -?   \n"
+"Eo (° 1 ° 1 ° Pelcod203ctrl -type 1\"|   \n"
+msgstr "Echo (° 1 ° 1 ° 1 ° Checuser -ac set -user admin -password admin\"|    \n"
 
 #. type: Plain text
-#: ./priskribo.md:110
-#, markdown-text, no-wrap
+#: priskribo.md:142
+#, no-wrap
+#, fuzzy
+msgid "GPIO-HADENOJ:  \n"
+msgstr "GPO-HADENS:  \n"
+
+#. type: Plain text
+#: priskribo.md:145
+#, no-wrap
 #, fuzzy
 msgid ""
-"la instalita firmvaro indikas:\n"
-"DeviceName: INGENIC-V01\n"
-"DeviceModel: IPCAM-100\n"
-"DeviceSN: 12345678901\n"
-"KernelVersion: Thu Jul 9 15:46:54 CST 2015\n"
-"Servila Versio: WS3.53.1243-20190717-DANALE-GEN\n"
-"Retversio: V2.3.4-20190709\n"
-"OCX-Versio: -1\n"
-msgstr "Firmware yang dipasang menunjukkan:\nPeranti: IngiceModel: Ipcam-100\n\nVersi pelayan : WS3.53.1243-20190717-Danale-Gen (° 6 ° 6 ° 6 ° 6 ° 6 ° 6 ° 6 ° 6 ° 6 ° 6 ° 02-3-20190709\nOCX Version: -1\n"
+"46 = Infraredĝaj legoj.   \n"
+"81 = Bluaj leĝoj.   \n"
+msgstr "46 = tafsiran inframerah.    \n"
 
 #. type: Plain text
-#: ./priskribo.md:114
-#, markdown-text, no-wrap
+#: priskribo.md:146
+#, no-wrap
+#, fuzzy
+msgid "GPIO-HADENOJ BLOKITAJ POR SLUDO:  \n"
+msgstr "GPIO-HADEN disekat untuk menjerit:  \n"
+
+#. type: Plain text
+#: priskribo.md:149
+#, no-wrap
 #, fuzzy
 msgid ""
-"la procesoro estas: inĝenia T21\n"
-"http://www.ingenic.com.cn/en/?product/id/11.html\n"
-"https://fr.indasina.com/ingenic- "
-"t21-ekstrema-2-megapixela-koda-procesoro_p16.html\n"
-msgstr "Pemproses adalah: Jurutera T21\nhttp://www.ininic.com.cn/en/?product/id/11.html\nhttps://fr.indasina.com/ingenic- T21 End-2-Megapixela Pemproses kod (° 3 ° 3\n"
+"Blokita de Motor.ko: 18?   \n"
+"Blokita de Audio.ko: 63?   \n"
+"52 64  \n"
+msgstr "Disekat oleh Motor.ko: 18?   \n"
 
 #. type: Plain text
-#: ./priskribo.md:118
-#, markdown-text, no-wrap
+#: priskribo.md:151
+#, no-wrap
 #, fuzzy
-msgid ""
-"the CMOS-sensilo estas: gc2053.\n"
-"ŝofora fonto: "
-"https://github.com/mrfixit2001/rk-kernel-fork/blob/develop-4.4/drivers/media/i2c/gc2053.c\n"
-msgstr "Sensor CMOS adalah: GC2053. \n"
+msgid "Ptz-Kontrolo:  \n"
+msgstr "Kawalan PTZ:  \n"
 
 #. type: Plain text
-#: ./priskribo.md:120
-#, markdown-text, no-wrap
+#: priskribo.md:153
+#, no-wrap
 #, fuzzy
-msgid "RAM: 42MiB entute, 36 MiB havebla.\n"
-msgstr "RAM: 42Mib Secara keseluruhan, 36 MIB tersedia. \n"
+msgid "Supro: http: // admin: admin@192.168.24.39/? Jcpcmd = pelcod20ctrl -type 1 -cmd 1 -gata1 24 -gata2 24  \n"
+msgstr "Top: http: // admin: admin@192.168.39/?   \n"
 
 #. type: Plain text
-#: ./priskribo.md:126
-#, markdown-text, no-wrap
+#: priskribo.md:154
+#, no-wrap
 #, fuzzy
-msgid ""
-"la haveno 9999 estas malfermita kaj permesas regi la fotilon:\n"
-"echo \"checkuser -act set -user admin -password admin\"| nc 192.168.1.155 "
-"9999\n"
-"e echa \"listo\"| nc 192.168.1.155 9999\n"
-"eoo \"pelcod20ctrl -?\"| nc 192.168.1.155 9999\n"
-"eoo \"pelcod20ctrl -tipo 1\"| nc 192.168.1.155 9999\n"
-msgstr "Pelabuhan 9999 dibuka dan membolehkan untuk mengawal kamera: (° 1 ° 1 ° 1 ° 1 ° 2 ° 2 ° 2 ° 2 ° 2 ° 2 ° 2 ° 2 ° 2ACT Set -user admin -Password admin\"| \n"
+msgid "Msalru: http: // admin: admin@192.168.24.39/? Jcpcmd = pelcod203crl -type 1 -cmd 2 -gata1 24-gafu2 24  \n"
+msgstr "Msalkru: http: // admin: admin@192.168.24.39/?   \n"
 
 #. type: Plain text
-#: ./priskribo.md:130
-#, markdown-text, no-wrap
+#: priskribo.md:155
+#, no-wrap
 #, fuzzy
-msgid ""
-"gpio-havenoj:\n"
-"46 = infruĝaj LEDoj.\n"
-"81 = bluaj LEDoj.\n"
-msgstr "Pelabuhan GPIO:\n46 = kulit infruit. \n"
+msgid "Maldekstre: http: // admin: admin@192.168.24.39/? Jcpcmd = pelcod203crl -type 1 -cmd 3 -gata1 24 -gata2 24  \n"
+msgstr "Kiri: http: // admin: admin@192.168.2.39/?   \n"
 
 #. type: Plain text
-#: ./priskribo.md:135
-#, markdown-text, no-wrap
+#: priskribo.md:156
+#, no-wrap
 #, fuzzy
-msgid ""
-"GPIO-havenoj blokitaj por studado:\n"
-"blokita de motor.ko: 18? 38 39 40 41 47 48 49 60?\n"
-"blokita de audio.ko: 63?\n"
-"52 64\n"
-msgstr "Pelabuhan GPIO disekat untuk belajar:\nDisekat oleh Motor.ko: 18? \n"
+msgid "Dekstre: http: // admin: admin@192.168.24.39/? JCPCMD = Pelcod203crl -Type 1 -CMD 4 -Data1 24 -Atata2 24  \n"
+msgstr "Ke kanan: http: // admin: admin@192.168.24.39/?   \n"
 
 #. type: Plain text
-#: ./priskribo.md:137
-#, markdown-text, no-wrap
+#: priskribo.md:157
+#, no-wrap
 #, fuzzy
-msgid "Ptz-kontrolo:\n"
-msgstr "Kawalan PTZ:\n"
+msgid "Halto: http: // admin: admin@192.168.24.39/? Jcpcmd = pelcod203crl -type 1 -cmd 9 -gata1 24-Data2 24  \n"
+msgstr "Berhenti: http: // admin: admin@192.168.24.39/?   \n"
 
 #. type: Plain text
-#: ./priskribo.md:143
-#, markdown-text, no-wrap
+#: priskribo.md:159
+#, no-wrap
 #, fuzzy
-msgid ""
-"supro: http: // admin: admin@192.168.24.39/? jcpcmd = pelcod20ctrl -type 1 "
-"-cmd 1 -data1 24 -data2 24\n"
-"malsupre: http: // admin: admin@192.168.24.39/? jcpcmd = pelcod20ctrl -type "
-"1 -cmd 2 -data1 24 -data2 24\n"
-"maldekstre: http: // admin: admin@192.168.24.39/? jcpcmd = pelcod20ctrl "
-"-type 1 -cmd 3 -data1 24 -data2 24\n"
-"dekstre: http: // admin: admin@192.168.24.39/? Jcpcmd = pelcod20ctrl -type 1 "
-"-cmd 4 -data1 24 -data2 24\n"
-"halto: http: // admin: admin @ 192.168.24.39/?jcpcmd=pelcod20ctrl -speco 1 "
-"-cmd 9 -data1 24 -data2 24\n"
-msgstr "Top: http: // admin: admin@192.168.39/? \n"
+msgid "Starigigu pozicion 2: http://192.168.24.39/?jcpcmd=pelcod20ctl -type 2 -cmd 1 -gata2 2  \n"
+msgstr "Tetapkan kedudukan 2: http://192.168.39/  \n"
 
 #. type: Plain text
-#: ./priskribo.md:147
-#, markdown-text, no-wrap
+#: priskribo.md:160
+#, no-wrap
 #, fuzzy
-msgid ""
-"starigu pozicion 2: http://192.168.24.39/?jcpcmd=pelcod20ctrl -type 2 -cmd 1 "
-"-data2 2\n"
-"iru al 1: http://192.168.24.39/?jcpcmd=pelcod20ctrl -type 2 - cmd 2 -data2 "
-"1\n"
-"forigi 2: http://192.168.24.39/?jcpcmd=pelcod20ctrl -type 2 -cmd 3 -data2 "
-"2\n"
-msgstr "Tetapkan kedudukan 2: http://192.168.39//192.31 1\nAlih keluar 2: http://19.168.39.39/?jcpcmd=pelcod20ctrl -type 2 -cmd 3 -Data2 2\n"
+msgid "Iru al 1: http://192.168.24.39/?JJcpcmd=pelcod203trl -type 2 -cmd 2 -gata2 1  \n"
+msgstr "Pergi ke 1: http://192.168.39/?jjcpcmd=pelcod203trl -type 2 -cmd 2 -gata2 1  \n"
 
+#. type: Plain text
+#: priskribo.md:161
+#, no-wrap
+#, fuzzy
+msgid "Forigi 2: http://192.168.24.39/?jcpcmd=pelCod203trl -Type 2 -CMD 3 -Data2 2  \n"
+msgstr "Buang 2: http://192.168.24.39/?jcpcmd=pelcod203trl -type 2 -cmd 3 -Data2 2  \n"
+
+#, fuzzy
+#~ msgid ""
+#~ "https://fr.aliexpress.com/item/4000146161270.html\n"
+#~ "Markonomo: shiningpo\n"
+#~ "Stilo: Kupola Fotilo\n"
+#~ "Tipo: IP-Fotilo\n"
+#~ "Konektebleco: IP / Reta Sendrata\n"
+#~ "Subtenataj Operaciumoj: Ne\n"
+#~ "Alta Difino: 1080P(Plena HD)\n"
+#~ "Lenso (mm): 3.6mm\n"
+#~ "Instalado: Flanka\n"
+#~ "Elektroprovizo(V): DC12V 2A\n"
+#~ "Reta Interfaco: RJ-45 10 / 100Mb Ethernet Slot\n"
+#~ "Mura Krampo: Plafono\n"
+#~ "Subtenitaj Poŝtelefonaj Sistemoj: Android\n"
+#~ "Subtenataj Poŝtelefonaj Sistemoj: ios\n"
+#~ "IR Distanco(m): 30M- 50M\n"
+#~ "Specialaj Ecoj: Akvorezista / Veterrezista\n"
+#~ "Vidanta Angulo: 140 °\n"
+#~ "Megapikseloj: 2MP\n"
+#~ "Potenca Konsumo(W): 12W\n"
+#~ "Stokado: Neniu\n"
+#~ "Sensila Marko: SONY\n"
+#~ "Alarma Agado: Retpoŝta Foto\n"
+#~ "Alarmiga Ago: Loka Alarmo\n"
+#~ "Formato de Kunprema Video: H.264\n"
+#~ "estas_customized: Yes\n"
+#~ "    Technology: Pan Tilt Zoom\n"
+#~ "    Power Supply: Normal\n"
+#~ "    TF Card: None\n"
+#~ "    Color: White\n"
+#~ "    Audio Output: Two Way Audio\n"
+#~ "    Sensor: CMOS\n"
+#~ "    wifi camera: ip camera\n"
+#~ "    camara wifi: camara ip\n"
+#~ "    camera ip: camera wifi\n"
+#~ "    ip camera wifi: camara vigilancia exterior\n"
+#~ "    ptz: camara ip ptz\n"
+#~ msgstr ""
+#~ "https://fr.alivexpress.com/item/4000146161270.html\n"
+#~ "Gaya: Kamera Cupola\n"
+#~ "Jenis: Kamera IP\n"
+#~ "Sambungan : IP / Reta Wireless\n"
+#~ "Sistem pengendalian yang disokong: No\n"
+#~ "Definisi tinggi: 1080p(Penuh HD)\n"
+#~ "Lens\n"
+#~ "Lens\n"
+#~ " (mm)Pemasangan: Lateral\n"
+#~ "Bekalan elektronik(V): DC12V II\n"
+#~ "Rangkaian antara muka: RJ-45 10 / 100MB Ethernet Slot\n"
+#~ "Mura Bracket: siling\n"
+#~ "Sistem mudah alih yang disokong: Android\n"
+#~ "Sistem mudah alih yang disokong: iOS\n"
+#~ "Saya(m): 30m- 50m\n"
+#~ "Ciri-ciri Khas: Waterproof / veterrezista\n"
+#~ "Melihat Angle: 140 °\n"
+#~ "Megapixels: 2MP\n"
+#~ "W)Simpanan: Tiada\n"
+#~ "Jenama Sensile: Sony\n"
+#~ "Penggera Tindakan: Foto E-melTindakan yang membimbangkan: penggera "
+#~ "tempatan\n"
+#~ "Format video mampat: H.264\n"
+#~ "adalah_customized: Yes\n"
+#~ "    Technology: Pan Tilt Zoom\n"
+#~ "    Power Supply: Normal\n"
+#~ "    TF Card: None\n"
+#~ "    Color: White\n"
+#~ "    Audio Output: Two Way Audio\n"
+#~ "    Sensor: CMOS\n"
+#~ "    wifi camera: ip camera\n"
+#~ "    camara wifi: camara ip\n"
+#~ "    camera ip: camera wifi\n"
+#~ "    ip camera wifi: camara vigilancia exterior\n"
+#~ "    ptz: camara ip ptz\n"
+#~ "\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "Surskriboj pri la etikedo:\n"
+#~ "WIFI CARAM\n"
+#~ "Modelo: WF-HD820-ZS\n"
+#~ "Rezolucio: 1080P\n"
+#~ "Elektroprovizo: DC12V / 1A\n"
+#~ "SSID: HSIPC-******\n"
+#~ "Pasvorto: 12345678\n"
+#~ "MAC: 00:88:09:**:**:**\n"
+#~ msgstr ""
+#~ "Tulisan mengenai tag:\n"
+#~ "WiFi Caram\n"
+#~ "Model: WF-HD820-Zs (° 3 ° 3 ° 3 ° 3 ° 3880p (° 4 ° 4 ° 4 ° 4 ° 4 ° 4 ° 4 "
+#~ "° 4 ° 4 ° 6 ° Elektroposisi: DC12V / I\n"
+#~ "SSID: HSIPC -******Kata laluan: 12345678 (° 8 ° 8 ° 8 ° 8:88:09:**:**:**\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "Kunligante ĝin por Eterreto, ĝi akiras DHCP-adreson kaj nek povas konekti "
+#~ "al la retejo:\n"
+#~ "defaŭlta uzanto: admin\n"
+#~ "defaŭlta pasvorto: admin\n"
+#~ msgstr ""
+#~ "Dengan menyambungkannya untuk Ethernet, ia mendapat alamat DHCP dan tidak "
+#~ "boleh menyambung ke laman web:\n"
+#~ "Pengguna lalai: admin\n"
+#~ "Kata laluan lalai: Admin\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "dum 5 minutoj, vi povas konekti per telnet al la haveno 9527\n"
+#~ "defaŭlta uzanto: root\n"
+#~ "defaŭlta pasvorto: jco66688\n"
+#~ "por resti konektita preter 5 minutoj: \"killall -9 auto_run.sh»\n"
+#~ "(jco = http://www.cnjabsco.com/ )\n"
+#~ msgstr ""
+#~ "Selama 5 minit, anda boleh menyambung dengan telnet ke port 9527\n"
+#~ "Pengguna lalai: root\n"
+#~ "Kata laluan lalai: JCO66688\n"
+#~ "ke Tinggal terhubung melebihi 5 minit: \"Killall - 9 auto_run.sh»\n"
+#~ "(jco = http://www.cnjabsco.com/ )\n"
+#~ "\n"
+
+#, fuzzy
+#~ msgid "malfermaj havenoj:  \n"
+#~ msgstr "Port Terbuka: (° 1 ° 1  \n"
+
+#, fuzzy
+#~ msgid ""
+#~ "  tcp: 80(http), 443(http ankaŭ!), 554(rtsp), 8004, 8006, 9527(telnet), "
+#~ "9999  \n"
+#~ msgstr "  TCP: 80(HTTP), 443(HTTP!   \n"
+
+#, fuzzy
+#~ msgid "  udp: 67(dhcp), 3702, 8002, 39642  \n"
+#~ msgstr "  UDP: 67(DHCP), 3702, 8002, 39642 (° 4 ° 4  \n"
+
+#, fuzzy
+#~ msgid ""
+#~ "reta konduto kiam oni lanĉas jco_server:\n"
+#~ "pridemandas la servilon dns pri: www.163.com kaj dns.ictun.com\n"
+#~ "demando 114.114.114.114 por dns.ictun.com\n"
+#~ "konekti al la haveno udp/993 de dns.ictun.com\n"
+#~ "konekti al udp/993-haveno de 120.25.129.41\n"
+#~ "pridemandu la servilon dns pri: conn-policy.ictun.com\n"
+#~ "pridemandu la servilon dns pri: video-policy.ictun.com\n"
+#~ "konekti al udp/80-haveno de 52.29.45.252\n"
+#~ "konektas al udp/1210-haveno de 52.29.45.252\n"
+#~ "ligas al udp/21-haveno de 52.57.135.134\n"
+#~ "konektas al udp/1053-haveno de 52.28.62.20\n"
+#~ "konektas al udp/443-haveno de 52.29.58.225\n"
+#~ "konektas al udp/123 (ntp) haveno de 112.74.204.233 (video-policy.ictun."
+#~ "com)\n"
+#~ "ligas al udp/993-haveno de 47.52.99.182\n"
+#~ "konektas al udp/1054-haveno de 52.57.127.207\n"
+#~ "...\n"
+#~ "noto: ŝanĝu la defaŭltan itineron metante tiun de la interreta skatolo.\n"
+#~ msgstr ""
+#~ "Kelakuan Web apabila melancarkan JCO_server:\n"
+#~ "pridemandas la servilon dns pri: www.163.com kaj dns.ictun.com\n"
+#~ "demando 114.114.114.114 por dns.ictun.com\n"
+#~ "konekti al la haveno udp/993 de dns.ictun.com\n"
+#~ "konekti al udp/993-haveno de 120.25.129.41\n"
+#~ "pridemandu la servilon dns pri: conn-policy.ictun.com\n"
+#~ "pridemandu la servilon dns pri: video-policy.ictun.com\n"
+#~ "konekti al udp/80-haveno de 52.29.45.252\n"
+#~ "konektas al udp/1210-haveno de 52.29.45.252\n"
+#~ "ligas al udp/21-haveno de 52.57.135.134\n"
+#~ "konektas al udp/1053-haveno de 52.28.62.20\n"
+#~ "konektas al udp/443-haveno de 52.29.58.225\n"
+#~ "konektas al udp/123 (ntp) haveno de 112.74.204.233 (video-policy.ictun."
+#~ "com)\n"
+#~ "ligas al udp/993-haveno de 47.52.99.182\n"
+#~ "konektas al udp/1054-haveno de 52.57.127.207\n"
+#~ "...\n"
+#~ "noto: ŝanĝu la defaŭltan itineron metante tiun de la interreta skatolo.\n"
+#~ "\n"
+
+#, fuzzy
+#~ msgid "haltigi jco_server sen kaŭzi restartigi:\n"
+#~ msgstr ""
+#~ "Hentikan JCO_server sen kaŭzi restartigi:\n"
+#~ "\n"
+
+#, fuzzy
+#~ msgid "halti_cloud :"
+#~ msgstr "Berhenti_cloud :"
+
+#, fuzzy
+#~ msgid ""
+#~ "vi povas vidi la ĉefan video-rivereton (laŭ 1080P aŭ aliaj agordo) per:\n"
+#~ "ffplay -i rtsp: // admin: admin@192.168.24.111/stream1\n"
+#~ "ffplay -i rtsp: // admin: admin@192.168.24.39: 554 / stream1\n"
+#~ "ffplay -i rtsp: // admin: admin@192.168.24.39: 554 / mpeg4 / ch0 / main / "
+#~ "av_stream\n"
+#~ msgstr ""
+#~ "Anda boleh melihat strim video utama (mengikut 1080p atau konfigurasi "
+#~ "lain) oleh:\n"
+#~ "FFplay -i RTSP: // admin: admin@192.168.24.111/ Stream1\n"
+#~ "FFplay -i RTSP: // Admin: admin@192.168.24.39: 554 / Stream1 (° 5 ° 5 ° 5 "
+#~ "° 5 ° 5 ° 5 ° 5 ° 5: // Admin : admin@192.168.34.39: 554 / mpeg4 / ch0 / "
+#~ "Main / Av_stream\n"
+#~ "\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "kaj la duaranga:\n"
+#~ "ffplay -i rtsp: // admin: admin@192.168.24.39/stream2\n"
+#~ "ffplay -i rtsp: // admin: admin@192.168.24.39: 554 / stream2\n"
+#~ msgstr ""
+#~ "Dan sekunder:\n"
+#~ "FFplay -i RTSP: // admin: admin@192.168.39/stream2\n"
+#~ "FFplay -i RTSP: // admin: admin@192.168.24.39: 554 / Stream2\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "la instalita firmvaro indikas:\n"
+#~ "DeviceName: INGENIC-V01\n"
+#~ "DeviceModel: IPCAM-100\n"
+#~ "DeviceSN: 12345678901\n"
+#~ "KernelVersion: Thu Jul 9 15:46:54 CST 2015\n"
+#~ "Servila Versio: WS3.53.1243-20190717-DANALE-GEN\n"
+#~ "Retversio: V2.3.4-20190709\n"
+#~ "OCX-Versio: -1\n"
+#~ msgstr ""
+#~ "Firmware yang dipasang menunjukkan:\n"
+#~ "Peranti: IngiceModel: Ipcam-100\n"
+#~ "\n"
+#~ "Versi pelayan : WS3.53.1243-20190717-Danale-Gen (° 6 ° 6 ° 6 ° 6 ° 6 ° 6 "
+#~ "° 6 ° 6 ° 6 ° 6 ° 02-3-20190709\n"
+#~ "OCX Version: -1\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "la procesoro estas: inĝenia T21\n"
+#~ "http://www.ingenic.com.cn/en/?product/id/11.html\n"
+#~ "https://fr.indasina.com/ingenic- t21-ekstrema-2-megapixela-koda-"
+#~ "procesoro_p16.html\n"
+#~ msgstr ""
+#~ "Pemproses adalah: Jurutera T21\n"
+#~ "http://www.ininic.com.cn/en/?product/id/11.html\n"
+#~ "https://fr.indasina.com/ingenic- T21 End-2-Megapixela Pemproses kod (° 3 "
+#~ "° 3\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "the CMOS-sensilo estas: gc2053.\n"
+#~ "ŝofora fonto: https://github.com/mrfixit2001/rk-kernel-fork/blob/"
+#~ "develop-4.4/drivers/media/i2c/gc2053.c\n"
+#~ msgstr "Sensor CMOS adalah: GC2053. \n"
+
+#, fuzzy
+#~ msgid "RAM: 42MiB entute, 36 MiB havebla.\n"
+#~ msgstr "RAM: 42Mib Secara keseluruhan, 36 MIB tersedia. \n"
+
+#, fuzzy
+#~ msgid ""
+#~ "la haveno 9999 estas malfermita kaj permesas regi la fotilon:\n"
+#~ "echo \"checkuser -act set -user admin -password admin\"| nc 192.168.1.155 "
+#~ "9999\n"
+#~ "e echa \"listo\"| nc 192.168.1.155 9999\n"
+#~ "eoo \"pelcod20ctrl -?\"| nc 192.168.1.155 9999\n"
+#~ "eoo \"pelcod20ctrl -tipo 1\"| nc 192.168.1.155 9999\n"
+#~ msgstr ""
+#~ "Pelabuhan 9999 dibuka dan membolehkan untuk mengawal kamera: (° 1 ° 1 ° 1 "
+#~ "° 1 ° 2 ° 2 ° 2 ° 2 ° 2 ° 2 ° 2 ° 2 ° 2ACT Set -user admin -Password admin"
+#~ "\"| \n"
+
+#, fuzzy
+#~ msgid ""
+#~ "gpio-havenoj:\n"
+#~ "46 = infruĝaj LEDoj.\n"
+#~ "81 = bluaj LEDoj.\n"
+#~ msgstr ""
+#~ "Pelabuhan GPIO:\n"
+#~ "46 = kulit infruit. \n"
+
+#, fuzzy
+#~ msgid ""
+#~ "GPIO-havenoj blokitaj por studado:\n"
+#~ "blokita de motor.ko: 18? 38 39 40 41 47 48 49 60?\n"
+#~ "blokita de audio.ko: 63?\n"
+#~ "52 64\n"
+#~ msgstr ""
+#~ "Pelabuhan GPIO disekat untuk belajar:\n"
+#~ "Disekat oleh Motor.ko: 18? \n"
+
+#, fuzzy
+#~ msgid "Ptz-kontrolo:\n"
+#~ msgstr "Kawalan PTZ:\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "supro: http: // admin: admin@192.168.24.39/? jcpcmd = pelcod20ctrl -type "
+#~ "1 -cmd 1 -data1 24 -data2 24\n"
+#~ "malsupre: http: // admin: admin@192.168.24.39/? jcpcmd = pelcod20ctrl -"
+#~ "type 1 -cmd 2 -data1 24 -data2 24\n"
+#~ "maldekstre: http: // admin: admin@192.168.24.39/? jcpcmd = pelcod20ctrl -"
+#~ "type 1 -cmd 3 -data1 24 -data2 24\n"
+#~ "dekstre: http: // admin: admin@192.168.24.39/? Jcpcmd = pelcod20ctrl -"
+#~ "type 1 -cmd 4 -data1 24 -data2 24\n"
+#~ "halto: http: // admin: admin @ 192.168.24.39/?jcpcmd=pelcod20ctrl -speco "
+#~ "1 -cmd 9 -data1 24 -data2 24\n"
+#~ msgstr "Top: http: // admin: admin@192.168.39/? \n"
+
+#, fuzzy
+#~ msgid ""
+#~ "starigu pozicion 2: http://192.168.24.39/?jcpcmd=pelcod20ctrl -type 2 -"
+#~ "cmd 1 -data2 2\n"
+#~ "iru al 1: http://192.168.24.39/?jcpcmd=pelcod20ctrl -type 2 - cmd 2 -"
+#~ "data2 1\n"
+#~ "forigi 2: http://192.168.24.39/?jcpcmd=pelcod20ctrl -type 2 -cmd 3 -data2 "
+#~ "2\n"
+#~ msgstr ""
+#~ "Tetapkan kedudukan 2: http://192.168.39//192.31 1\n"
+#~ "Alih keluar 2: http://19.168.39.39/?jcpcmd=pelcod20ctrl -type 2 -cmd 3 -"
+#~ "Data2 2\n"

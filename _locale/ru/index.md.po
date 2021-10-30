@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-10-29 23:29+0200\n"
+"POT-Creation-Date: 2021-10-30 11:06+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -118,15 +118,13 @@ msgstr "Что работает в альтернативных прошивка
 
 #. type: Bullet: '* '
 #: index.md:33
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "_LAN_ kaj _WLAN_\n"
 msgstr "_LAN_ и _WLAN_\n"
 
 #. type: Bullet: '* '
 #: index.md:35
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Servilo (° 1 ° duobla-fluo: _1920x1080 H264_ kaj _640x360 MJPEG_ defaŭlte. \n"
 msgstr "Сервер (° 1 ° Двойной поток: _1920x1080 H264_ и _640x360 MJPEG_ по умолчанию.  \n"
 
@@ -138,8 +136,7 @@ msgstr "Визуальные параметры\n"
 
 #. type: Bullet: '* '
 #: index.md:39
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Servilo _HTTP_\n"
 msgstr "Сервер _HTTP_\n"
 
@@ -157,50 +154,43 @@ msgstr "калибровка двигателя\n"
 
 #. type: Bullet: '* '
 #: index.md:45
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Parametroj _PTZ_\n"
 msgstr "Параметры _PTZ_(° 3 ° 3\n"
 
 #. type: Bullet: '* '
 #: index.md:47
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Kliento _NTP_\n"
 msgstr "Клиент _NTP_(° 3 ° 3\n"
 
 #. type: Bullet: '* '
 #: index.md:49
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Pasvorta administrado _http_, _rtsp_ kaj sistemo. \n"
 msgstr "Администрирование пароля _http_, _rtsp_ и система.  \n"
 
 #. type: Bullet: '* '
 #: index.md:51
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Blanka LED-Kontrolo kaj IR\n"
 msgstr "Белый светодиодный контроль и IR\n"
 
 #. type: Bullet: '* '
 #: index.md:53
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Blanka LED-Kontrolo kaj IR _ftp_\n"
 msgstr "Белый светодиодный контроль и IR _ftp_\n"
 
 #. type: Bullet: '* '
 #: index.md:55
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Blanka LED-Kontrolo kaj IR _telnet_\n"
 msgstr "Белый светодиодный контроль и IR _telnet_\n"
 
 #. type: Bullet: '* '
 #: index.md:57
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Servilo kaj kliento _ssh_\n"
 msgstr "Сервер и клиент _ssh_(° 3 ° 3\n"
 
@@ -218,15 +208,13 @@ msgstr "отправка электронной почты\n"
 
 #. type: Bullet: '* '
 #: index.md:63
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Sendi _«telegram»_\n"
 msgstr "Отправить _«telegram»_\n"
 
 #. type: Bullet: '* '
 #: index.md:65
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Aŭtomata nokta reĝimo\n"
 msgstr "Автоматический ночной режим\n"
 
@@ -268,8 +256,7 @@ msgstr "отправка электронной почты_mqtt_\n"
 
 #. type: Bullet: '* '
 #: index.md:80
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Sendante bildojn kaj videojn en nubo\n"
 msgstr "Отправка изображений и видео в облаке (° 1 ° 1\n"
 
@@ -299,8 +286,7 @@ msgstr "Возможно установить сеть ( _www/ipcam/config.dist/
 
 #. type: Bullet: '* '
 #: index.md:91
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Enmetu la karton _microSD_ en la fotilon. \n"
 msgstr "Введите карту _microSD_ в камере.  \n"
 
@@ -336,8 +322,7 @@ msgstr "Фару `cd /opt/media/mmcblk0p1;./install.sh`\n"
 
 #. type: Bullet: '* '
 #: index.md:103
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "La fotilo rekomencas, nun:\n"
 msgstr "Камера возобновляется, теперь: (° 1 ° 1\n"
 
@@ -367,14 +352,17 @@ msgstr "Вторичный ток видео доступен в _rtsp://admin:i
 
 #. type: Plain text
 #: index.md:116
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "(° 1 ° WiFi AP-reĝimo estas aktivigita defaŭlte:\n"
 "    ** SSID: IPCAM100-XXXXXX\n"
 "    ** WPA2-ŝlosilo: ismart21\n"
 "IP-adreso de la fotilo: 172.25.0.1\n"
-msgstr "(° 1 ° 1 ° 1 Режим AP WiFi активирован по умолчанию:\n    **     ** SSID: IPCAM100-XXXXXX\n    ** Ключ WPA2: ISMART21\nIP-адрес камеры: 172.25.0.1\n"
+msgstr ""
+"(° 1 ° 1 ° 1 Режим AP WiFi активирован по умолчанию:\n"
+"    **     ** SSID: IPCAM100-XXXXXX\n"
+"    ** Ключ WPA2: ISMART21\n"
+"IP-адрес камеры: 172.25.0.1\n"
 
 #. type: Title ##
 #: index.md:117
@@ -414,14 +402,18 @@ msgstr "Интересные документы"
 
 #. type: Plain text
 #: index.md:135
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "Multa laboro estis farita por fotiloj ekipitaj per procesoro _ingenic T20_ :\n"
 "* modifita firmware: <https://github.com/eliaskotlyar/xiaomi- dafang -Hacks>\n"
 "* Fontoj de la modifita firmware: <https://github.com/dafang-hacks/main>\n"
 "17 °) https://github.com/thatusenameAlreadyExist/Jco-pm203-fisheye-ingenic-t20-p2p-camera-hacks>\n"
-msgstr "Большая работа была сделана для камер, оснащенных процессором _ingenic T20_ :\n\n* Модифицированная прошивка: <https://github.com/ilílístotlyar/xiaomi- Dafang -haks>\nИсточники модифицированной прошивки: <https://github.com/dafang-hacks/main>\n17 °) https://github.com/thatusenameanamexist/jco-pm203-fisheye-ininic-t20-p2p-camera-hacks>\n"
+msgstr ""
+"Большая работа была сделана для камер, оснащенных процессором _ingenic T20_ :\n"
+"\n"
+"* Модифицированная прошивка: <https://github.com/ilílístotlyar/xiaomi- Dafang -haks>\n"
+"Источники модифицированной прошивки: <https://github.com/dafang-hacks/main>\n"
+"17 °) https://github.com/thatusenameanamexist/jco-pm203-fisheye-ininic-t20-p2p-camera-hacks>\n"
 
 #, no-wrap
 #~ msgid ""

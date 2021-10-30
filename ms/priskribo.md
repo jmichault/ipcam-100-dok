@@ -1,29 +1,40 @@
+---
+lang: ms
+lang-niv: auto
+lang-ref: 070-kamerao-priskribo
+layout: page
+title: 'Keterangan kamera'
+---
+
 
 
 # Penerangan:
-https://fr.alivexpress.com/item/4000146161270.html
-Gaya: Kamera Cupola
-Jenis: Kamera IP
-Sambungan : IP / Reta Wireless
-Sistem pengendalian yang disokong: No
-Definisi tinggi: 1080p(Penuh HD)
-Lens
-Lens
- (mm)Pemasangan: Lateral
-Bekalan elektronik(V): DC12V II
-Rangkaian antara muka: RJ-45 10 / 100MB Ethernet Slot
-Mura Bracket: siling
-Sistem mudah alih yang disokong: Android
-Sistem mudah alih yang disokong: iOS
-Saya(m): 30m- 50m
-Ciri-ciri Khas: Waterproof / veterrezista
-Melihat Angle: 140 °
-Megapixels: 2MP
-W)Simpanan: Tiada
-Jenama Sensile: Sony
-Penggera Tindakan: Foto E-melTindakan yang membimbangkan: penggera tempatan
-Format video mampat: H.264
-adalah_customized: Yes
+https://en.alivexpress.com/item/4000146161270.html
+```
+    Brand Name: shiningpo
+    Style: Dome Camera
+    Type: IP Camera
+    Connectivity: IP/Network Wireless
+    Supported Operating Systems: No
+    High Definition: 1080P(Full-HD)
+    Lens (mm): 3.6mm
+    Installation: Side
+    Power Supply(V): DC12V 2A
+    Network Interface: RJ-45 10/100Mb Ethernet Slot
+    Wall Bracket: Ceiling
+    Supported Mobile Systems: Android
+    Supported Mobile Systems: ios
+    IR Distance(m): 30M-50M
+    Special Features: Waterproof / Weatherproof
+    Viewing Angle : 140°
+    Megapixels: 2MP
+    Power Consumption(W): 12W
+    Storage: None
+    Sensor Brand: SONY
+    Alarm Action: Email Photo
+    Alarm Action: Local Alarm
+    Video Compression Format: H.264
+    is_customized: Yes
     Technology: Pan Tilt Zoom
     Power Supply: Normal
     TF Card: None
@@ -35,97 +46,116 @@ adalah_customized: Yes
     camera ip: camera wifi
     ip camera wifi: camara vigilancia exterior
     ptz: camara ip ptz
+```
 
+# Tag inskripsi
+```
+WIFI CARAM
+Model : WF-HD820-ZS
+Résolution : 1080P
+Power Supply : DC12V/1A
+SSID : HSIPC-******
+Password : 12345678
+MAC : 00:88:09:**:**:**
+```
 
+Meletakkannya untuk EtherReto, ia mendapat alamat DHCP dan kami boleh menyambung ke Regene: (° 1 ° 1  
+Pengguna lalai: admin  
+Kata laluan lalai: admin  
 
-Tulisan mengenai tag:
-WiFi Caram
-Model: WF-HD820-Zs (° 3 ° 3 ° 3 ° 3 ° 3880p (° 4 ° 4 ° 4 ° 4 ° 4 ° 4 ° 4 ° 4 ° 4 ° 6 ° Elektroposisi: DC12V / I
-SSID: HSIPC -******Kata laluan: 12345678 (° 8 ° 8 ° 8 ° 8:88:09:**:**:**
+Selama 5 minit, anda boleh berhubung dengan Telnet ke port 9527  
+Pengguna lalai: Root  
+Kata Laluan Lalai: JCO66688  
+Untuk terus berhubung melebihi 5 minit: "Killall -9 automatik_run.sh»  
+  
+  
+(jco = http://www.cnjabsco.com/ )  (° 3 ° 3
 
-Dengan menyambungkannya untuk Ethernet, ia mendapat alamat DHCP dan tidak boleh menyambung ke laman web:
-Pengguna lalai: admin
-Kata laluan lalai: Admin
+Terbuka Sands:    
+TCP: 80(HTTP), 443(HTTP!      
 
-Selama 5 minit, anda boleh menyambung dengan telnet ke port 9527
-Pengguna lalai: root
-Kata laluan lalai: JCO66688
-ke Tinggal terhubung melebihi 5 minit: "Killall - 9 auto_run.sh»
-(jco = http://www.cnjabsco.com/ )
+Kelakuan Web apabila melancarkan JCO_server:  
+  
+  
+Pelayan DNS disoal siasat tentang: www.163.com dan dns.ictun.com (° 1 ° 1  
+Permohonan 114.114.114.114 for Dns.ittun.com  
+Sambungkan ke Haven UDP / 993 Dns.ittunc.com (° 1 ° 1  
+Sambung ke UDP / 993 port 120.25.129.41  
+Menyoal pelayan DNS pada: Conn-policy.itun.com  
+Soalan DNS Server On: Video-policy.ittun.com  
+Sambung ke UDP / 80-Port sebanyak 52.29.45.252 (° 1 ° 1  
+Menyambung ke UDP / 1210 port 52.29.45.252 (° 1 ° 1  
+Pautan ke UDP / 21 port 52.57.135.134  
+Menyambung ke UDP / 1053-Haveones of 52.28.62.20 (° 1 ° 1  
+Menyambung ke UDP / 443-mempunyai 52.29.58.225 (° 1 ° 1  
+Menghubungkan ke UDP / 123 (NTP) Port of 112,74.204.233 (° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 0Tun.com)  
+Pautan ke UDP / 993 port 47.52.99.182 (° 1 ° 1  
+Menyambung ke UDP / 1054-Haveones of 52.57.127.207 (° 1 ° 1  
+...  
+Nota: Tetapkan laluan lalai seperti itu bermakna kotak yang saling berkaitan.    
 
-
-
-Port Terbuka: (° 1 ° 1  
-  TCP: 80(HTTP), 443(HTTP!   
-  UDP: 67(DHCP), 3702, 8002, 39642 (° 4 ° 4  
-
-Kelakuan Web apabila melancarkan JCO_server:
-pridemandas la servilon dns pri: www.163.com kaj dns.ictun.com
-demando 114.114.114.114 por dns.ictun.com
-konekti al la haveno udp/993 de dns.ictun.com
-konekti al udp/993-haveno de 120.25.129.41
-pridemandu la servilon dns pri: conn-policy.ictun.com
-pridemandu la servilon dns pri: video-policy.ictun.com
-konekti al udp/80-haveno de 52.29.45.252
-konektas al udp/1210-haveno de 52.29.45.252
-ligas al udp/21-haveno de 52.57.135.134
-konektas al udp/1053-haveno de 52.28.62.20
-konektas al udp/443-haveno de 52.29.58.225
-konektas al udp/123 (ntp) haveno de 112.74.204.233 (video-policy.ictun.com)
-ligas al udp/993-haveno de 47.52.99.182
-konektas al udp/1054-haveno de 52.57.127.207
-...
-noto: ŝanĝu la defaŭltan itineron metante tiun de la interreta skatolo.
-
-
-
-Hentikan JCO_server sen kaŭzi restartigi:
-
-
-## Berhenti_cloud :
+Hentikan JCO_server sen kaŭzi restartigi:  
+  
+  
+## Berhenti_cloud :  
 ```
 PS | 
 ```
 
-Anda boleh melihat strim video utama (mengikut 1080p atau konfigurasi lain) oleh:
-FFplay -i RTSP: // admin: admin@192.168.24.111/ Stream1
-FFplay -i RTSP: // Admin: admin@192.168.24.39: 554 / Stream1 (° 5 ° 5 ° 5 ° 5 ° 5 ° 5 ° 5 ° 5: // Admin : admin@192.168.34.39: 554 / mpeg4 / ch0 / Main / Av_stream
+Anda boleh melihat befan video rivert (mengikut 1080p atau konfigurasi lain) oleh: (° 3 ° 3  
+```
+ffplay -i rtsp://admin:admin@192.168.24.111/stream1
+ffplay -i rtsp://admin:admin@192.168.24.39:554/stream1
+ffplay -i rtsp://admin:admin@192.168.24.39:554/mpeg4/ch0/main/av_stream
+```
 
+Dan Datanga: (° 1 ° 1
+```
+ffplay -i rtsp://admin:admin@192.168.24.39/stream2
+ffplay -i rtsp://admin:admin@192.168.24.39:554/stream2
+```
 
+Firmware yang dipasang menunjukkan: (° 1 ° 1
+```
+DeviceName:     INGENIC-V01
+DeviceModel:    IPCAM-100
+DeviceSN:       12345678901
+KernelVersion:  Thu Jul 9 15:46:54 CST 2015
+ServerVersion:  WS3.53.1243-20190717-DANALE-GEN
+WebVersion:     V2.3.4-20190709
+OCXVersion:     -1
+```
 
-Dan sekunder:
-FFplay -i RTSP: // admin: admin@192.168.39/stream2
-FFplay -i RTSP: // admin: admin@192.168.24.39: 554 / Stream2
+Pemproses adalah: Ingenik T21 (° 1 ° 1  
+http://www.ininic.com.cn/en/?product/id/11.html  
+https://en.indasina.com/ingenic-t21-xtreme-2-megapixel-encoding-processor_p16.html  
+  
+  
 
-Firmware yang dipasang menunjukkan:
-Peranti: IngiceModel: Ipcam-100
+Sensor CMOS adalah: GC2053.   
 
-Versi pelayan : WS3.53.1243-20190717-Danale-Gen (° 6 ° 6 ° 6 ° 6 ° 6 ° 6 ° 6 ° 6 ° 6 ° 6 ° 02-3-20190709
-OCX Version: -1
+RAM: 42MB Intt, 36 MIB tersedia.    
 
-Pemproses adalah: Jurutera T21
-http://www.ininic.com.cn/en/?product/id/11.html
-https://fr.indasina.com/ingenic- T21 End-2-Megapixela Pemproses kod (° 3 ° 3
+The 9999 Haedo dibuka dan membolehkan untuk mengawal kamera: (° 1 ° 1  
+Echo (° 1 ° 1 ° 1 ° Checuser -ac set -user admin -password admin"|    
 
+GPO-HADENS:  
+46 = tafsiran inframerah.    
 
-Sensor CMOS adalah: GC2053. 
+GPIO-HADEN disekat untuk menjerit:  
+Disekat oleh Motor.ko: 18?   
 
-RAM: 42Mib Secara keseluruhan, 36 MIB tersedia. 
+Kawalan PTZ:  
 
-Pelabuhan 9999 dibuka dan membolehkan untuk mengawal kamera: (° 1 ° 1 ° 1 ° 1 ° 2 ° 2 ° 2 ° 2 ° 2 ° 2 ° 2 ° 2 ° 2ACT Set -user admin -Password admin"| 
+Top: http: // admin: admin@192.168.39/?   
+Msalkru: http: // admin: admin@192.168.24.39/?   
+Kiri: http: // admin: admin@192.168.2.39/?   
+Ke kanan: http: // admin: admin@192.168.24.39/?   
+Berhenti: http: // admin: admin@192.168.24.39/?   
 
-Pelabuhan GPIO:
-46 = kulit infruit. 
-
-Pelabuhan GPIO disekat untuk belajar:
-Disekat oleh Motor.ko: 18? 
-
-Kawalan PTZ:
-
-Top: http: // admin: admin@192.168.39/? 
-
-Tetapkan kedudukan 2: http://192.168.39//192.31 1
-Alih keluar 2: http://19.168.39.39/?jcpcmd=pelcod20ctrl -type 2 -cmd 3 -Data2 2
+Tetapkan kedudukan 2: http://192.168.39/  
+Pergi ke 1: http://192.168.39/?jjcpcmd=pelcod203trl -type 2 -cmd 2 -gata2 1  
+Buang 2: http://192.168.24.39/?jcpcmd=pelcod203trl -type 2 -cmd 3 -Data2 2  
 
 
 

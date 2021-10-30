@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-10-29 23:27+0200\n"
+"POT-Creation-Date: 2021-10-30 11:05+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -54,22 +54,19 @@ msgstr "这里可以看到API的文件：（°1°1  \n"
 
 #. type: Bullet: '* '
 #: imp_system_programigo_gvidilo.md:12
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "[originala versio en la ĉina](../../zh/includes.zh/html/)\n"
 msgstr "[原始版本中文](../../zh/includes.zh/html/)\n"
 
 #. type: Bullet: '* '
 #: imp_system_programigo_gvidilo.md:14
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "[Angla versio](../../en/includes.en/html/)\n"
 msgstr "[英文版](../../en/includes.en/html/)\n"
 
 #. type: Bullet: '* '
 #: imp_system_programigo_gvidilo.md:16
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "(° 1 ° 1 ° franca versio Tradukita per google](../../fr/includes.fr/html/)\n"
 msgstr "（°1°1°1°1°1°1°法式版由谷歌](../../fr/includes.fr/html/)翻译\n"
 

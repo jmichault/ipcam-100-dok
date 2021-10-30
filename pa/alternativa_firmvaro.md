@@ -1,7 +1,7 @@
 ---
 lang: pa
 lang-niv: auto
-lang-ref: 099-alternativa_firmvaro
+lang-ref: 010-alternativa_firmvaro
 layout: page
 title: 'ਵਿਕਲਪਿਕ ਫਰਮਵੇਅਰ'
 ---
@@ -36,9 +36,6 @@ title: 'ਵਿਕਲਪਿਕ ਫਰਮਵੇਅਰ'
 
 
   * ਮੂਲ ਰੂਪ ਵਿੱਚ _CRONTAB_ ਜੇ ਜਰੂਰੀ ਹੋਵੇ
-
-
-  * ਸੇਵਾ ਅਰੰਭ ਕਰੋ _crond_, ਨੈਟਵਰਕ, ਸੇਵਾ _ntpd_, ਵੈੱਬ ਸਰਵਿਸ
 
 
   *  _config/autostart_)ਵਿਚ ਸੇਵਾਵਾਂ (ਚਾਲੂ ਕਰੋ

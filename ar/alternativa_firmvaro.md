@@ -1,7 +1,7 @@
 ---
 lang: ar
 lang-niv: auto
-lang-ref: 099-alternativa_firmvaro
+lang-ref: 010-alternativa_firmvaro
 layout: page
 title: 'البرامج الثابتة البديلة'
 ---
@@ -36,9 +36,6 @@ title: 'البرامج الثابتة البديلة'
 
 
   * افتراضي إلى _CRONTAB_ إذا لزم الأمر
-
-
-  * بدء الخدمة _crond_، الشبكة ، الخدمة _ntpd_، خدمة الويب
 
 
   * بدء الخدمات (في _config/autostart_)

@@ -1,30 +1,40 @@
+---
+lang: ru
+lang-niv: auto
+lang-ref: 070-kamerao-priskribo
+layout: page
+title: 'Описание камеры'
+---
+
 
 
 # Описание:
-https://fr.alivexpress.com/item/4000146161270.html
-Стиль: CAPOLA CAMERA
-Тип: IP-камера
-: IP / Reta Wireless
-Поддерживаемые операционные системы: NO
-Высокое разрешение: 1080P(Full HD)
-° 10 °) мм): 3,6 мм
-: 3,6 мм
-Установка: боковая
-Электронастройки(v): DC12V II
-Сеть интерфейс: rj-45 10/100 МБ слот Ethernet
-Mura Кронштейн: потолок
-Поддерживаемые мобильные системы: Android
-Поддерживаемые мобильные системы: iOS
-ИК Расстояние(m): 30 м- 50 м
-Специальные особенности: водонепроницаемый / ветерризиста
-Угол обзора: 140 °
-Мегапиксел: 2mp
-W): 12 Вт
-Хранение: Нет
-Садовая марка: Sony
-Аварийный сигнал: Email PhotoТревожные действия: локальная сигнализация
-Формат сжатия видео: H.264
-IS_customized: Yes
+https://en.alivexpress.com/item/4000146161270.html
+```
+    Brand Name: shiningpo
+    Style: Dome Camera
+    Type: IP Camera
+    Connectivity: IP/Network Wireless
+    Supported Operating Systems: No
+    High Definition: 1080P(Full-HD)
+    Lens (mm): 3.6mm
+    Installation: Side
+    Power Supply(V): DC12V 2A
+    Network Interface: RJ-45 10/100Mb Ethernet Slot
+    Wall Bracket: Ceiling
+    Supported Mobile Systems: Android
+    Supported Mobile Systems: ios
+    IR Distance(m): 30M-50M
+    Special Features: Waterproof / Weatherproof
+    Viewing Angle : 140°
+    Megapixels: 2MP
+    Power Consumption(W): 12W
+    Storage: None
+    Sensor Brand: SONY
+    Alarm Action: Email Photo
+    Alarm Action: Local Alarm
+    Video Compression Format: H.264
+    is_customized: Yes
     Technology: Pan Tilt Zoom
     Power Supply: Normal
     TF Card: None
@@ -36,98 +46,116 @@ IS_customized: Yes
     camera ip: camera wifi
     ip camera wifi: camara vigilancia exterior
     ptz: camara ip ptz
+```
 
+# Теги надписи
+```
+WIFI CARAM
+Model : WF-HD820-ZS
+Résolution : 1080P
+Power Supply : DC12V/1A
+SSID : HSIPC-******
+Password : 12345678
+MAC : 00:88:09:**:**:**
+```
 
+Укладка его для Etherreto, он получает адрес DHCP, и мы можем подключиться к регене: (° 1 ° 1  
+По умолчанию пользователя: admin  
+Пароль по умолчанию: admin  
 
-Надписи о теге:
-WiFi Caram
-Модель: WF-HD820-ZS (° 3 ° 3 ° 3 ° 3 ° 3880P (° 4 ° 4 ° 4 ° 4 ° 4 ° 4 ° 4 ° 4 ° 4 ° 6 ° Электропозиции: DC12V / I
-SSID: HSIPC -******Пароль: 12345678 (° 8 ° 8 ° 8 ° 8:88:09:**:**:**
+В течение 5 минут вы можете подключиться к Telnet в порт 9527  
+По умолчанию пользователя: root  
+Пароль по умолчанию: JCO66688  
+Чтобы оставаться на связи за 5 минут: "Killiall -9 Автоматический_run.sh»  
+  
+  
+(JCO = http://www.cnjabsco.com/ )  (° 3 ° 3
 
-Подключив его для Ethernet, он получает адрес DHCP и не может подключаться к сайту:
-По умолчанию Пользователь: admin
-Пароль по умолчанию: Admin
+Открытые пески:    
+TCP: 80(HTTP), 443(http!      
 
-В течение 5 минут вы можете подключиться к Telnet к порту 9527
-По умолчанию Пользователь: root
-Пароль по умолчанию: JCO66688
-Оставайтесь на связи за 5 минут: "Killlall - 9 AUTO_run.sh»
-(jco = http://www.cnjabsco.com/ )
+Веб-поведение при запуске JCO_server:  
+  
+  
+DNS-сервер допрашивается о: www.163.com и dns.ictun.com (° 1 ° 1  
+Приложение 114.114.114.114 для dns.itsitun.com  
+Подключитесь к Haven udp / 993 dns.itsitc.com (° 1 ° 1  
+Подключитесь к порту UDP / 993 120.25.129.41  
+Замежьте DNS-сервер на: conn-policy.itun.com  
+Вопрос вопросу о DNS-сервере на: Video-Policy.ittun.com  
+Подключитесь к UDP / 80-порту 52.29.45.252 (° 1 ° 1  
+Подключается к порту UDP / 1210 52.29.45.252 (° 1 ° 1  
+Ссылки на UDP / 21 порты 52.57.135.134  
+Подключается к UDP / 1053-oneones из 52,28,62,20 (° 1 ° 1  
+Подключается к UDP / 443-имеет 52.29.58.225 (° 1 ° 1  
+Подключается к UDP / 123 (NTP) порта 112 74.204,233 (° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 °. 3 ° 3 ° 3 ° 3 ° 3 ° 0.com)  
+Ссылки на порты UDP / 993 47.52.99.182 (° 1 ° 1  
+Подключается к UDP / 1054-oneones из 52.57.127.207 (° 1 ° 1  
+...  
+ПРИМЕЧАНИЕ. Настройте маршрут по умолчанию, который означает, что взаимосвязанная коробка.    
 
-
-
-Открытые порты: (° 1 ° 1  
-  TCP: 80(HTTP), 443(http!   
-  UDP: 67(DHCP), 3702, 8002, 39642 (° 4 ° 4  
-
-Веб-поведение при запуске JCO_server:
-pridemandas la servilon dns pri: www.163.com kaj dns.ictun.com
-demando 114.114.114.114 por dns.ictun.com
-konekti al la haveno udp/993 de dns.ictun.com
-konekti al udp/993-haveno de 120.25.129.41
-pridemandu la servilon dns pri: conn-policy.ictun.com
-pridemandu la servilon dns pri: video-policy.ictun.com
-konekti al udp/80-haveno de 52.29.45.252
-konektas al udp/1210-haveno de 52.29.45.252
-ligas al udp/21-haveno de 52.57.135.134
-konektas al udp/1053-haveno de 52.28.62.20
-konektas al udp/443-haveno de 52.29.58.225
-konektas al udp/123 (ntp) haveno de 112.74.204.233 (video-policy.ictun.com)
-ligas al udp/993-haveno de 47.52.99.182
-konektas al udp/1054-haveno de 52.57.127.207
-...
-noto: ŝanĝu la defaŭltan itineron metante tiun de la interreta skatolo.
-
-
-
-Остановите JCO_server sen kaŭzi restartigi:
-
-
-## Стоп_cloud :
+Остановите JCO_server sen kaŭzi restartigi:  
+  
+  
+## Стоп_cloud :  
 ```
 PS | 
 ```
 
-Вы можете увидеть основной видеопоток (в соответствии с 1080P или другой конфигурацией) путем:
-Ffplay -i RTSP: // admin: admin @ 192.168.24.111/ Stream1
-FFPLAY -I RTSP: // admin: admin @ 192.168.24.39: 554 / Stream1 (° 5 ° 5 ° 5 ° 5 ° 5 ° 5 ° 5 ° 5 ° 5 ° 5 ° 0: // admin : admin @ 192.168.24.39: 554 / MPEG4 / CH0 / MAIN / AV_stream
+Вы можете увидеть BEFAN Video Rivert (в соответствии с 1080P или другой конфигурацией) : (° 3 ° 3  
+```
+ffplay -i rtsp://admin:admin@192.168.24.111/stream1
+ffplay -i rtsp://admin:admin@192.168.24.39:554/stream1
+ffplay -i rtsp://admin:admin@192.168.24.39:554/mpeg4/ch0/main/av_stream
+```
 
+И дурангана: (° 1 ° 1
+```
+ffplay -i rtsp://admin:admin@192.168.24.39/stream2
+ffplay -i rtsp://admin:admin@192.168.24.39:554/stream2
+```
 
+Установленная прошивка указывает: (° 1 ° 1
+```
+DeviceName:     INGENIC-V01
+DeviceModel:    IPCAM-100
+DeviceSN:       12345678901
+KernelVersion:  Thu Jul 9 15:46:54 CST 2015
+ServerVersion:  WS3.53.1243-20190717-DANALE-GEN
+WebVersion:     V2.3.4-20190709
+OCXVersion:     -1
+```
 
-И вторичный:
-ffplay --i RTSP: // admin: admin @ 192.168.24.39/stream2
-ffplay -i rtsp: // admin: admin @ 192.168.24.39: 554 / Stream2
+Процессор: INGenic T21 (° 1 ° 1  
+http://www.ininic.com.cn/ru/ruproduct/id/11.html  
+https://en.indasina.com/ingenic-t21-xtreme-2-megapixel-encoding-Processor_p16.html  
+  
+  
 
-Установленная прошивка указывает:
-Устройство: Ingenic-V01
-DeviceModel: IPCAM-100
+Датчик CMOS: GC2053.   
 
-: Ws3.53.1243-20190717-Danale-gen (° 6 ° 6 ° 6 ° 6 ° 6 ° 6 ° 6 ° 02-3-20190709
-ocx версия: -1
+RAM: 42 МБ INTT, 36 MIB доступна.    
 
-Процессор: инженер T21
-http://www.ininic.com.cn/ru/ruproduct/id/11.html
-https://fr.indasina.com/ engenic- Процессор кода End-2-Megapixela T21 (° 3 ° 3
+Haedo 9999 открыт и позволяет управлять камерой: (° 1 ° 1  
+ECHO (° 1 ° 1 ° 1 ° CHECUSER -AC Set -User admin-password admin"|    
 
+GPO-HADENS:  
+46 = инфракрасные интерпретации.    
 
-Датчик CMOS: GC2053. 
+Gpio-Haden заблокирован для криков:  
+Заблокирован Motor.ko: 18?   
 
-RAM: 42MIB в целом, 36 MIB доступны. 
+Управление PTZ:  
 
-Порт 9999 открыт и позволяет управлять камерой: (° 1 ° 1 ° 1 ° 1 ° 2 ° 2 ° 2 ° 2 ° 2 ° 2 ° 2 ° 2 ° 2 ° 2 ° 2 ° 2 ° 2 ° 2ACT набор -USER Admin-Password Admin"|. 
+Вершина: http: // admin: admin @ 192.168.24.39/?   
+MSALKRU: http: // admin: admin @ 192.168.24.39/?   
+Слева: http: // admin: admin @ 192.168.24.39/?   
+Право: http: // admin: admin @ 192.168.24.39/?   
+Стоп: http: // admin: admin @ 92.168.24.39/?   
 
-Порты GPIO:
-46 = инкрустичная кожа. 
-
-Порты GPIO заблокированы для изучения:
-, заблокированные Motor.ko: 18? 
-
-Управление PTZ:
-
-Вершина: http: // admin: admin @ 192.168.24.39/? 
-
-Установить положение 2: http://192.168.24.39/ cmd 2 -data2 1
-Удалить 2: http://192.168.24.39/?jcppcmd=pelcod20ctrl -type 2 -cmd 3 -data2 2
+Установить положение 2: http://192.168.24.39/  
+Перейти к 1: http://192.168.24.39/?jjcppcmd=pelcod203trl -type 2 -cmd 2 -gata2 1  
+Удалить 2: http://192.168.24.39/?jcppcmd=pelcod203trl -type 2 -cmd 3 -data2 2  
 
 
 

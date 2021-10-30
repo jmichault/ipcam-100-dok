@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-10-29 14:46+0200\n"
+"POT-Creation-Date: 2021-10-30 11:07+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,43 +16,78 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#. type: Title #
-#: ./priskribo.md:3
-#, markdown-text, no-wrap
+#. type: YAML Front Matter: lang
+#: priskribo.md:1
+#, no-wrap
+msgid "eo"
+msgstr "hi"
+
+#. type: YAML Front Matter: lang-niv
+#: priskribo.md:1
+#, no-wrap
+msgid "auto"
+msgstr "auto"
+
+#. type: YAML Front Matter: lang-ref
+#: priskribo.md:1
+#, no-wrap
+msgid "070-kamerao-priskribo"
+msgstr "070-kamerao-priskribo"
+
+#. type: YAML Front Matter: layout
+#: priskribo.md:1
+#, no-wrap
+msgid "page"
+msgstr "page"
+
+#. type: YAML Front Matter: title
+#: priskribo.md:1
+#, no-wrap
 #, fuzzy
+msgid "Priskribo de la fotilo"
+msgstr "कैमरा का विवरण"
+
+#. type: Title #
+#: priskribo.md:11
+#, fuzzy, no-wrap
 msgid "Priskribo:"
 msgstr "विवरण:"
 
 #. type: Plain text
-#: ./priskribo.md:40
-#, markdown-text, no-wrap
+#: priskribo.md:13
+#, no-wrap
 #, fuzzy
+msgid "https://en.aliexpress.com/item/4000146161270.html\n"
+msgstr "https://en.alivexpress.com/item/4000146161270.html\n"
+
+#. type: Fenced code block
+#: priskribo.md:13
+#, no-wrap
 msgid ""
-"https://fr.aliexpress.com/item/4000146161270.html\n"
-"Markonomo: shiningpo\n"
-"Stilo: Kupola Fotilo\n"
-"Tipo: IP-Fotilo\n"
-"Konektebleco: IP / Reta Sendrata\n"
-"Subtenataj Operaciumoj: Ne\n"
-"Alta Difino: 1080P(Plena HD)\n"
-"Lenso (mm): 3.6mm\n"
-"Instalado: Flanka\n"
-"Elektroprovizo(V): DC12V 2A\n"
-"Reta Interfaco: RJ-45 10 / 100Mb Ethernet Slot\n"
-"Mura Krampo: Plafono\n"
-"Subtenitaj Poŝtelefonaj Sistemoj: Android\n"
-"Subtenataj Poŝtelefonaj Sistemoj: ios\n"
-"IR Distanco(m): 30M- 50M\n"
-"Specialaj Ecoj: Akvorezista / Veterrezista\n"
-"Vidanta Angulo: 140 °\n"
-"Megapikseloj: 2MP\n"
-"Potenca Konsumo(W): 12W\n"
-"Stokado: Neniu\n"
-"Sensila Marko: SONY\n"
-"Alarma Agado: Retpoŝta Foto\n"
-"Alarmiga Ago: Loka Alarmo\n"
-"Formato de Kunprema Video: H.264\n"
-"estas_customized: Yes\n"
+"    Brand Name: shiningpo\n"
+"    Style: Dome Camera\n"
+"    Type: IP Camera\n"
+"    Connectivity: IP/Network Wireless\n"
+"    Supported Operating Systems: No\n"
+"    High Definition: 1080P(Full-HD)\n"
+"    Lens (mm): 3.6mm\n"
+"    Installation: Side\n"
+"    Power Supply(V): DC12V 2A\n"
+"    Network Interface: RJ-45 10/100Mb Ethernet Slot\n"
+"    Wall Bracket: Ceiling\n"
+"    Supported Mobile Systems: Android\n"
+"    Supported Mobile Systems: ios\n"
+"    IR Distance(m): 30M-50M\n"
+"    Special Features: Waterproof / Weatherproof\n"
+"    Viewing Angle : 140°\n"
+"    Megapixels: 2MP\n"
+"    Power Consumption(W): 12W\n"
+"    Storage: None\n"
+"    Sensor Brand: SONY\n"
+"    Alarm Action: Email Photo\n"
+"    Alarm Action: Local Alarm\n"
+"    Video Compression Format: H.264\n"
+"    is_customized: Yes\n"
 "    Technology: Pan Tilt Zoom\n"
 "    Power Supply: Normal\n"
 "    TF Card: None\n"
@@ -64,247 +99,777 @@ msgid ""
 "    camera ip: camera wifi\n"
 "    ip camera wifi: camara vigilancia exterior\n"
 "    ptz: camara ip ptz\n"
-msgstr "https://fr.alivexpress.com/item/4000146161270.html\nब्रेकल: SHININGPO (° 0002 डिग्री) शैली: कपोल कैमरा (डिग्री डिग्री 0003 डिग्री) टाइप: आईपी कैमरा (डिग्री डिग्री 0004 डिग्री ) कनेक्टिविटी: आईपी / रेटा वायरलेस\nउच्च परिभाषा: 1080p(पूर्ण HD)\nलेंस (° 00010 00010 °) मिमी): 3.6 मिमी\nस्थापना: पार्श्व(वी): DC12V द्वितीय\nनेटवर्क इंटरफ़ेस: आरजे -45 10/100 एमबी ईथरनेट स्लॉट (° ° 00017 डिग्री) मुरा ब्रैकेट: छतसमर्थित मोबाइल सिस्टम: एंड्रॉइड\nसमर्थित मोबाइल सिस्टम: आईओएस\nआईआर दूरी (° 00021 डिग्री) एम (° 00022 डिग्री): 30 मीटर- 50 मीटर (डिग्री 00023 डिग्री) विशेष विशेषताएं / Veternezista (° 00024 डिग्री) कोण देखना: 140 ° (° ° 00025 डिग्री) मेगापिक्सेल: 2 एमपी (डिग्री 00026 °) बिजली की खपत(डब्ल्यू): 12W\nभंडारण: नहीं\nSensile ब्रांड: सोनी\nअलार्म एक्शन: ईमेल फोटो (° ° 00032 डिग्री) खतरनाक कार्रवाई: स्थानीय अलार्म (डिग्री 00033 डिग्री) संपीड़न वीडियो का प्रारूप: एच .264 (डिग्री 00034 डिग्री) है ( \n"
+msgstr ""
+"    Brand Name: shiningpo\n"
+"    Style: Dome Camera\n"
+"    Type: IP Camera\n"
+"    Connectivity: IP/Network Wireless\n"
+"    Supported Operating Systems: No\n"
+"    High Definition: 1080P(Full-HD)\n"
+"    Lens (mm): 3.6mm\n"
+"    Installation: Side\n"
+"    Power Supply(V): DC12V 2A\n"
+"    Network Interface: RJ-45 10/100Mb Ethernet Slot\n"
+"    Wall Bracket: Ceiling\n"
+"    Supported Mobile Systems: Android\n"
+"    Supported Mobile Systems: ios\n"
+"    IR Distance(m): 30M-50M\n"
+"    Special Features: Waterproof / Weatherproof\n"
+"    Viewing Angle : 140°\n"
+"    Megapixels: 2MP\n"
+"    Power Consumption(W): 12W\n"
+"    Storage: None\n"
+"    Sensor Brand: SONY\n"
+"    Alarm Action: Email Photo\n"
+"    Alarm Action: Local Alarm\n"
+"    Video Compression Format: H.264\n"
+"    is_customized: Yes\n"
+"    Technology: Pan Tilt Zoom\n"
+"    Power Supply: Normal\n"
+"    TF Card: None\n"
+"    Color: White\n"
+"    Audio Output: Two Way Audio\n"
+"    Sensor: CMOS\n"
+"    wifi camera: ip camera\n"
+"    camara wifi: camara ip\n"
+"    camera ip: camera wifi\n"
+"    ip camera wifi: camara vigilancia exterior\n"
+"    ptz: camara ip ptz\n"
 
-#. type: Plain text
-#: ./priskribo.md:50
-#, markdown-text, no-wrap
+#. type: Title #
+#: priskribo.md:51
+#, no-wrap
 #, fuzzy
-msgid ""
-"Surskriboj pri la etikedo:\n"
-"WIFI CARAM\n"
-"Modelo: WF-HD820-ZS\n"
-"Rezolucio: 1080P\n"
-"Elektroprovizo: DC12V / 1A\n"
-"SSID: HSIPC-******\n"
-"Pasvorto: 12345678\n"
-"MAC: 00:88:09:**:**:**\n"
-msgstr "टैग के बारे में शिलालेख:\nवाईफ़ाई कैरम (डिग्री 0002 डिग्री) मॉडल: डब्ल्यूएफ-एचडी 820-जेडएस (डिग्री डिग्री 0003 डिग्री डिग्री डिग्री 0003 डिग्री) संकल्प: 1080 पी (डिग्री 0004 डिग्री) विद्युत प्रावधान: डीसी 12 वी / मैं (डिग्री 0005 °) SSID: HSIPC -******\nपासवर्ड: 12345678\nमैक: 00:88:09: (° 000 9 °): (° 00010 डिग्री): (° 00011 डिग्री)\n"
-
-#. type: Plain text
-#: ./priskribo.md:54
-#, markdown-text, no-wrap
-#, fuzzy
-msgid ""
-"Kunligante ĝin por Eterreto, ĝi akiras DHCP-adreson kaj nek povas konekti al "
-"la retejo:\n"
-"defaŭlta uzanto: admin\n"
-"defaŭlta pasvorto: admin\n"
-msgstr "इसे ईथरनेट के लिए कनेक्ट करना, इसे एक डीएचसीपी पता मिलता है और साइट से कनेक्ट नहीं हो सकता है: (° 0001 डिग्री) डिफ़ॉल्ट उपयोगकर्ता: व्यवस्थापक (° 0002 डिग्री) डिफ़ॉल्ट पासवर्ड: व्यवस्थापक (0003 डिग्री)\n"
-
-#. type: Plain text
-#: ./priskribo.md:60
-#, markdown-text, no-wrap
-#, fuzzy
-msgid ""
-"dum 5 minutoj, vi povas konekti per telnet al la haveno 9527\n"
-"defaŭlta uzanto: root\n"
-"defaŭlta pasvorto: jco66688\n"
-"por resti konektita preter 5 minutoj: \"killall -9 auto_run.sh»\n"
-"(jco = http://www.cnjabsco.com/ )\n"
-msgstr "5 मिनट के लिए, आप टेलनेट से पोर्ट 9527\nसे कनेक्ट कर सकते हैं डिफ़ॉल्ट उपयोगकर्ता: रूट\nडिफ़ॉल्ट पासवर्ड: JCO66688\nरहने के लिए 5 मिनट से अधिक जुड़ा हुआ: (° 0004 डिग्री) किलॉल - 9 ऑटो (डिग्री 0005 डिग्री)\n"
-
-#. type: Plain text
-#: ./priskribo.md:62
-#, markdown-text, no-wrap
-#, fuzzy
-msgid "malfermaj havenoj:  \n"
-msgstr "खुले बंदरगाहों: (° 0001 डिग्री)  \n"
-
-#. type: Plain text
-#: ./priskribo.md:63
-#, markdown-text, no-wrap
-#, fuzzy
-msgid ""
-"  tcp: 80(http), 443(http ankaŭ!), 554(rtsp), 8004, 8006, 9527(telnet), 9999  "
-"\n"
-msgstr "(° 0001 डिग्री) टीसीपी: 80 (डिग्री 0002 डिग्री) HTTP (° 0003 डिग्री), 443 (डिग्री 0004 डिग्री) HTTP भी!   \n"
-
-#. type: Plain text
-#: ./priskribo.md:64
-#, markdown-text, no-wrap
-#, fuzzy
-msgid "  udp: 67(dhcp), 3702, 8002, 39642  \n"
-msgstr "  udp: 67 (° 0002 डिग्री) डीएचसीपी (डिग्री 0003 डिग्री), 3702, 8002, 39642 (डिग्री 0004 डिग्री)  \n"
-
-#. type: Plain text
-#: ./priskribo.md:83
-#, markdown-text, no-wrap
-#, fuzzy
-msgid ""
-"reta konduto kiam oni lanĉas jco_server:\n"
-"pridemandas la servilon dns pri: www.163.com kaj dns.ictun.com\n"
-"demando 114.114.114.114 por dns.ictun.com\n"
-"konekti al la haveno udp/993 de dns.ictun.com\n"
-"konekti al udp/993-haveno de 120.25.129.41\n"
-"pridemandu la servilon dns pri: conn-policy.ictun.com\n"
-"pridemandu la servilon dns pri: video-policy.ictun.com\n"
-"konekti al udp/80-haveno de 52.29.45.252\n"
-"konektas al udp/1210-haveno de 52.29.45.252\n"
-"ligas al udp/21-haveno de 52.57.135.134\n"
-"konektas al udp/1053-haveno de 52.28.62.20\n"
-"konektas al udp/443-haveno de 52.29.58.225\n"
-"konektas al udp/123 (ntp) haveno de 112.74.204.233 "
-"(video-policy.ictun.com)\n"
-"ligas al udp/993-haveno de 47.52.99.182\n"
-"konektas al udp/1054-haveno de 52.57.127.207\n"
-"...\n"
-"noto: ŝanĝu la defaŭltan itineron metante tiun de la interreta skatolo.\n"
-msgstr "नेटवर्क आचरण जब JCO_server:\npridemandas la servilon dns pri: www.163.com kaj dns.ictun.com\ndemando 114.114.114.114 por dns.ictun.com\nkonekti al la haveno udp/993 de dns.ictun.com\nkonekti al udp/993-haveno de 120.25.129.41\npridemandu la servilon dns pri: conn-policy.ictun.com\npridemandu la servilon dns pri: video-policy.ictun.com\nkonekti al udp/80-haveno de 52.29.45.252\nkonektas al udp/1210-haveno de 52.29.45.252\nligas al udp/21-haveno de 52.57.135.134\nkonektas al udp/1053-haveno de 52.28.62.20\nkonektas al udp/443-haveno de 52.29.58.225\nkonektas al udp/123 (ntp) haveno de 112.74.204.233 (video-policy.ictun.com)\nligas al udp/993-haveno de 47.52.99.182\nkonektas al udp/1054-haveno de 52.57.127.207\n...\nnoto: ŝanĝu la defaŭltan itineron metante tiun de la interreta skatolo.\nलॉन्च करता है\n"
-
-#. type: Plain text
-#: ./priskribo.md:86
-#, markdown-text, no-wrap
-#, fuzzy
-msgid "haltigi jco_server sen kaŭzi restartigi:\n"
-msgstr "JCO को रोकें_server sen kaŭzi restartigi:\n\n"
-
-#. type: Title ##
-#: ./priskribo.md:87
-#, markdown-text, no-wrap
-#, fuzzy
-msgid "halti_cloud :"
-msgstr "रोकें_cloud :"
+msgid "Etikedaj surskriboj"
+msgstr "टैग शिलालेख"
 
 #. type: Fenced code block
-#: ./priskribo.md:88
+#: priskribo.md:52
+#, no-wrap
+msgid ""
+"WIFI CARAM\n"
+"Model : WF-HD820-ZS\n"
+"Résolution : 1080P\n"
+"Power Supply : DC12V/1A\n"
+"SSID : HSIPC-******\n"
+"Password : 12345678\n"
+"MAC : 00:88:09:**:**:**\n"
+msgstr ""
+"WIFI CARAM\n"
+"Model : WF-HD820-ZS\n"
+"Résolution : 1080P\n"
+"Power Supply : DC12V/1A\n"
+"SSID : HSIPC-******\n"
+"Password : 12345678\n"
+"MAC : 00:88:09:**:**:**\n"
+
+#. type: Plain text
+#: priskribo.md:62
+#, no-wrap
+#, fuzzy
+msgid "Kunlicante ĝin por Eterreto, ĝi Akiras DHCP-ADRESON KAJ NI POVO KONEKTI AL LA REGETO:  \n"
+msgstr "Eteretro के लिए इसे रखना, यह एक डीएचसीपी पता मिलता है और हम रीजन से कनेक्ट कर सकते हैं:  \n"
+
+#. type: Plain text
+#: priskribo.md:63
+#, no-wrap
+#, fuzzy
+msgid "DefAŭlta Uzanto: Admin  \n"
+msgstr "डिफ़ॉल्ट उपयोगकर्ता: व्यवस्थापक (° 0001 डिग्री)  \n"
+
+#. type: Plain text
+#: priskribo.md:64
+#, no-wrap
+#, fuzzy
+msgid "DefAŭlta Pasvorto: Admin  \n"
+msgstr "डिफ़ॉल्ट पासवर्ड: व्यवस्थापक (° 0001 डिग्री)  \n"
+
+#. type: Plain text
+#: priskribo.md:66
+#, no-wrap
+#, fuzzy
+msgid "Dum 5 Minutoj, VI Povas Konekti per Telnet al la Haveso 9527  \n"
+msgstr "5 मिनट के लिए, आप टेलनेट से 9527 (° ° 0001 डिग्री) के बंदरगाह से कनेक्ट कर सकते हैं  \n"
+
+#. type: Plain text
+#: priskribo.md:67
+#, no-wrap
+#, fuzzy
+msgid "DefAŭlta Uzanto: Radiko  \n"
+msgstr "डिफ़ॉल्ट उपयोगकर्ता: रूट (° ° 0001 डिग्री)  \n"
+
+#. type: Plain text
+#: priskribo.md:68
+#, no-wrap
+#, fuzzy
+msgid "DefAŭlta Pasvorto: jco66688  \n"
+msgstr "डिफ़ॉल्ट पासवर्ड: जेसीओ 66688 (डिग्री डिग्री 0001 डिग्री)  \n"
+
+#. type: Plain text
+#: priskribo.md:69
+#, no-wrap
+#, fuzzy
+msgid "Por resti konektita Preter 5 Minutoj: \"Killall -9 aŭtomata_run.sh»  \n"
+msgstr "5 मिनट से आगे जुड़े रहने के लिए: (° ° 0001 डिग्री) किलॉल -9 स्वचालित (° ° 0002 डिग्री)  \n"
+
+#. type: Plain text
+#: priskribo.md:71
+#, no-wrap
+#, fuzzy
+msgid "(JCO = http://www.cnjabsco.com/ )  \n"
+msgstr "(jco = http://www.cnjabsco.com/ (° 0002 डिग्री)\n"
+
+#. type: Plain text
+#: priskribo.md:75
+#, no-wrap
+#, fuzzy
+msgid ""
+"Malfermaj Arenoj:    \n"
+"TCP: 80(http), 443(http ankaŭ!     \n"
+msgstr "ओपन एरिना: (° 0001 डिग्री) टीसीपी: 80 (डिग्री 0002 डिग्री) HTTP), 443 (° 0004 डिग्री) http!      \n"
+
+#. type: Plain text
+#: priskribo.md:76
+#, no-wrap
+#, fuzzy
+msgid "Reta Konduto Kiam Oni LANĉAS JCO_server:  \n"
+msgstr "नेटवर्क आचरण जब JCO_server:  \nलॉन्च करता है  \n"
+
+#. type: Plain text
+#: priskribo.md:78
+#, no-wrap
+#, fuzzy
+msgid "Pridemandas La servilon DNS PRI: www.163.com Kaj DNS.ICTun.com  \n"
+msgstr "DNS सर्वर के बारे में पूछताछ की गई है: www.163.com और dns.ictun.com (° 0001 डिग्री)  \n"
+
+#. type: Plain text
+#: priskribo.md:79
+#, no-wrap
+#, fuzzy
+msgid "Apliko 114.114.114.114 por DNS.ICTun.com  \n"
+msgstr "DNS.attun.comके लिए आवेदन 114.114.114.114  \n"
+
+#. type: Plain text
+#: priskribo.md:80
+#, no-wrap
+#, fuzzy
+msgid "KONEKTI AL LA HAVEN UDP / 993 DNS.ICTUNC.com  \n"
+msgstr "Haven UDP / 993 DNS.itunc.com से कनेक्ट करें  \n"
+
+#. type: Plain text
+#: priskribo.md:81
+#, no-wrap
+#, fuzzy
+msgid "Konekti al UDP / 993-havenuso de 120,25.129.41  \n"
+msgstr "120.25.129.41 के यूडीपी / 993 बंदरगाह से कनेक्ट करें (डिग्री डिग्री 0001 डिग्री)  \n"
+
+#. type: Plain text
+#: priskribo.md:82
+#, no-wrap
+#, fuzzy
+msgid "PrideMandu la servilon DNS PRI: Conn-policy.ICTun.com  \n"
+msgstr "DNS सर्वर पर पूछताछ: conn-policy.itun.com (° 0001 डिग्री)  \n"
+
+#. type: Plain text
+#: priskribo.md:83
+#, no-wrap
+#, fuzzy
+msgid "PrideMandu The Servilon DNS PRI: Video-policy.ICTun.com  \n"
+msgstr "DNS सर्वर पर प्रश्न: video-policy.itun.com (° 0001 डिग्री)  \n"
+
+#. type: Plain text
+#: priskribo.md:84
+#, no-wrap
+#, fuzzy
+msgid "KONEKTI AL UDP / 80-Haveno de 52.29.45.252  \n"
+msgstr "52.2 9.45.252 के यूडीपी / 80-पोर्ट से कनेक्ट करें (डिग्री ° 0001 डिग्री)  \n"
+
+#. type: Plain text
+#: priskribo.md:85
+#, no-wrap
+#, fuzzy
+msgid "Konektas al UDP / 1210-havenuso de 52.29.45.252  \n"
+msgstr "52.29.45.252 के UDP / 1210 पोर्ट से कनेक्ट करें  \n"
+
+#. type: Plain text
+#: priskribo.md:86
+#, no-wrap
+#, fuzzy
+msgid "Ligoj al UDP / 21-havenoj de 52,57.135.134  \n"
+msgstr "52.57.135.134 के यूडीपी / 21 बंदरगाहों के लिंक (डिग्री 0001 डिग्री)  \n"
+
+#. type: Plain text
+#: priskribo.md:87
+#, no-wrap
+#, fuzzy
+msgid "Konektas al UDP / 1053-havenes de 52.28.62.20  \n"
+msgstr "52.28.62.20 के यूडीपी / 1053-केनों से जुड़ता है (° ° 0001 डिग्री)  \n"
+
+#. type: Plain text
+#: priskribo.md:88
+#, no-wrap
+#, fuzzy
+msgid "KONEKTAS AL UDP / 443-Havas de 52.29.58.225  \n"
+msgstr "UDP / 443 से जुड़ता है 52.29.58.225  \n"
+
+#. type: Plain text
+#: priskribo.md:89
+#, no-wrap
+#, fuzzy
+msgid "Konektas al UDP / 123 (NTP) havenuso de 112,74.204.233 (Video-policy.ICTun.com)  \n"
+msgstr "यूडीपी / 123 (डिग्री 0001 डिग्री) एनटीपी (° ° ° 0002 डिग्री) बंदरगाह से कनेक्ट करें 112.74.204.233 (वीडियो- policy.ittun.com (डिग्री 0004 डिग्री) (डिग्री 0005 डिग्री)\n"
+
+#. type: Plain text
+#: priskribo.md:90
+#, no-wrap
+#, fuzzy
+msgid "Ligoj al UDP / 993-havenoj de 47.52.99.182  \n"
+msgstr "47.52.99.182 के यूडीपी / 993 बंदरगाहों के लिंक (डिग्री 0001 डिग्री)  \n"
+
+#. type: Plain text
+#: priskribo.md:91
+#, no-wrap
+#, fuzzy
+msgid "Konektas al UDP / 1054-havenes de 52.57.127.207  \n"
+msgstr "52.57.127.207 के यूडीपी / 1054-केनों से जुड़ता है (डिग्री 0001 डिग्री)  \n"
+
+#. type: Plain text
+#: priskribo.md:92
+#, no-wrap
+#, fuzzy
+msgid "...  \n"
+msgstr "...  \n"
+
+#. type: Plain text
+#: priskribo.md:94
+#, no-wrap
+#, fuzzy
+msgid "Noto: ŝanĝu la DefAŭltan Itineron Tian signifis ke la interrila skatolo.   \n"
+msgstr "नोट: डिफ़ॉल्ट मार्ग सेट करें जैसे कि अंतःसंबंधित बॉक्स।    \n"
+
+#. type: Plain text
+#: priskribo.md:95
+#, no-wrap
+#, fuzzy
+msgid "Haltigi JCO_server sen kaŭzi restartigi:  \n"
+msgstr "JCO को रोकें_server sen kaŭzi restartigi:  \n  \n"
+
+#. type: Title ##
+#: priskribo.md:97
+#, no-wrap
+#, fuzzy
+msgid "Haltu_cloud :  "
+msgstr "रोकें_cloud :  "
+
+#. type: Fenced code block
+#: priskribo.md:98
 #, no-wrap
 msgid "PS | \n"
 msgstr "PS | \n"
 
 #. type: Plain text
-#: ./priskribo.md:96
-#, markdown-text, no-wrap
+#: priskribo.md:102
+#, no-wrap
+#, fuzzy
+msgid "VI POVO VIDI LA BEFAN VIDEO-Riverton (LAŭ 1080p Aŭ ALIA AGORDO) per:  \n"
+msgstr "आप 1080 पी या अन्य कॉन्फ़िगरेशन (° ° 0002 डिग्री) के अनुसार बेफान वीडियो रिवर्ट (° ° 0001 डिग्री) देख सकते हैं: तक  \n"
+
+#. type: Fenced code block
+#: priskribo.md:103
+#, no-wrap
+msgid ""
+"ffplay -i rtsp://admin:admin@192.168.24.111/stream1\n"
+"ffplay -i rtsp://admin:admin@192.168.24.39:554/stream1\n"
+"ffplay -i rtsp://admin:admin@192.168.24.39:554/mpeg4/ch0/main/av_stream\n"
+msgstr ""
+"ffplay -i rtsp://admin:admin@192.168.24.111/stream1\n"
+"ffplay -i rtsp://admin:admin@192.168.24.39:554/stream1\n"
+"ffplay -i rtsp://admin:admin@192.168.24.39:554/mpeg4/ch0/main/av_stream\n"
+
+#. type: Plain text
+#: priskribo.md:110
+#, no-wrap
+#, fuzzy
+msgid "Kaj la durangana:\n"
+msgstr "और दुरंगाना:\n"
+
+#. type: Fenced code block
+#: priskribo.md:110
+#, no-wrap
+msgid ""
+"ffplay -i rtsp://admin:admin@192.168.24.39/stream2\n"
+"ffplay -i rtsp://admin:admin@192.168.24.39:554/stream2\n"
+msgstr ""
+"ffplay -i rtsp://admin:admin@192.168.24.39/stream2\n"
+"ffplay -i rtsp://admin:admin@192.168.24.39:554/stream2\n"
+
+#. type: Plain text
+#: priskribo.md:116
+#, no-wrap
+#, fuzzy
+msgid "La instalita firmvaro Indikas:\n"
+msgstr "स्थापित फर्मवेयर इंगित करता है: (° ° 0001 डिग्री)\n"
+
+#. type: Fenced code block
+#: priskribo.md:116
+#, no-wrap
+msgid ""
+"DeviceName:     INGENIC-V01\n"
+"DeviceModel:    IPCAM-100\n"
+"DeviceSN:       12345678901\n"
+"KernelVersion:  Thu Jul 9 15:46:54 CST 2015\n"
+"ServerVersion:  WS3.53.1243-20190717-DANALE-GEN\n"
+"WebVersion:     V2.3.4-20190709\n"
+"OCXVersion:     -1\n"
+msgstr ""
+"DeviceName:     INGENIC-V01\n"
+"DeviceModel:    IPCAM-100\n"
+"DeviceSN:       12345678901\n"
+"KernelVersion:  Thu Jul 9 15:46:54 CST 2015\n"
+"ServerVersion:  WS3.53.1243-20190717-DANALE-GEN\n"
+"WebVersion:     V2.3.4-20190709\n"
+"OCXVersion:     -1\n"
+
+#. type: Plain text
+#: priskribo.md:126
+#, no-wrap
+#, fuzzy
+msgid "La Procesoro estas: Ingenic T21  \n"
+msgstr "प्रोसेसर है: इंजेनिक टी 21 (डिग्री 0001 डिग्री)  \n"
+
+#. type: Plain text
+#: priskribo.md:127
+#, no-wrap
+#, fuzzy
+msgid "http://www.ingenic.com.cn/en/?product/id/11.html  \n"
+msgstr "http://www.ininic.com.cn/en/?product/id/11.html  \n"
+
+#. type: Plain text
+#: priskribo.md:128
+#, no-wrap
+#, fuzzy
+msgid "https://en.indasina.com/ingenic-t21-extreme-2-megapixel-encoding-processor_p16.html  \n"
+msgstr "https://en.indasina.com/ingenic-t21-xtremegy-megapixel-encoding-processor (° 0001 डिग्री)  \n"
+
+#. type: Plain text
+#: priskribo.md:132
+#, no-wrap
 #, fuzzy
 msgid ""
-"vi povas vidi la ĉefan video-rivereton (laŭ 1080P aŭ aliaj agordo) per:\n"
-"ffplay -i rtsp: // admin: admin@192.168.24.111/stream1\n"
-"ffplay -i rtsp: // admin: admin@192.168.24.39: 554 / stream1\n"
-"ffplay -i rtsp: // admin: admin@192.168.24.39: 554 / mpeg4 / ch0 / main / "
-"av_stream\n"
-msgstr "आप 1080 पी या अन्य कॉन्फ़िगरेशन (° ° 0002 डिग्री) के अनुसार मुख्य वीडियो स्ट्रीम (देख सकते हैं:\nffply -i rtsp: // admin: admin@192.168.24.111/stream1\nffplay -i rtsp: // admin: admin@192.168.24.39: 554 / stream1 (° 0005 ° ° 0005 °) ffply -i rtsp: // admin: admin@192.168.24.39: 554 / MPEG4 / Ch0 / मुख्य / एवी (° 0006 डिग्री)\n"
+"La CMOS-sensilo estas: GC2053.   \n"
+"ŝofora Fonto: https://github.com/mrfixit2001/rk-kernel-fork/blob/develop-4.4/drivers/media/i2c/gc2053.c  \n"
+msgstr "सीएमओएस सेंसर है: जीसी 2053।   \n"
 
 #. type: Plain text
-#: ./priskribo.md:101
-#, markdown-text, no-wrap
+#: priskribo.md:135
+#, no-wrap
+#, fuzzy
+msgid "RAM: 42Mib Intt, 36 MIB Havebla.   \n"
+msgstr "राम: 42 एमबी intt, 36 एमआईबी उपलब्ध है।    \n"
+
+#. type: Plain text
+#: priskribo.md:136
+#, no-wrap
+#, fuzzy
+msgid "La Havedo 9999 estas Malfermita kaj Permesas Regi la Fotilon:  \n"
+msgstr "9999 हाडो खुला है और कैमरे को नियंत्रित करने की अनुमति देता है: (° ° 0001 डिग्री)  \n"
+
+#. type: Plain text
+#: priskribo.md:141
+#, no-wrap
 #, fuzzy
 msgid ""
-"kaj la duaranga:\n"
-"ffplay -i rtsp: // admin: admin@192.168.24.39/stream2\n"
-"ffplay -i rtsp: // admin: admin@192.168.24.39: 554 / stream2\n"
-msgstr "और द्वितीयक:\nffplay -i rtsp: // admin: admin@192.168.24.39/stream2\nffplay -i rtsp: // admin: admin@192.168.24.39: 554 / स्ट्रीम 2\n"
+"Echo (° 1 ° Checuser -Act Set -USER Admin -Password Admin\"|   \n"
+"Eo (° 1 ° 1 ° listo\"|   \n"
+"Eo (° 1 ° Pelcod203dRL -?   \n"
+"Eo (° 1 ° 1 ° Pelcod203ctrl -type 1\"|   \n"
+msgstr "इको (000 0001 डिग्री) ° 1 ° checuser -ac सेट -User व्यवस्थापक- password व्यवस्थापक (° 0002 डिग्री) |    \n"
 
 #. type: Plain text
-#: ./priskribo.md:110
-#, markdown-text, no-wrap
+#: priskribo.md:142
+#, no-wrap
+#, fuzzy
+msgid "GPIO-HADENOJ:  \n"
+msgstr "GPO-HADENS:  \n"
+
+#. type: Plain text
+#: priskribo.md:145
+#, no-wrap
 #, fuzzy
 msgid ""
-"la instalita firmvaro indikas:\n"
-"DeviceName: INGENIC-V01\n"
-"DeviceModel: IPCAM-100\n"
-"DeviceSN: 12345678901\n"
-"KernelVersion: Thu Jul 9 15:46:54 CST 2015\n"
-"Servila Versio: WS3.53.1243-20190717-DANALE-GEN\n"
-"Retversio: V2.3.4-20190709\n"
-"OCX-Versio: -1\n"
-msgstr "स्थापित फर्मवेयर इंगित करता है:सर्वर संस्करण: WS3.53.1243-20190717-Danale-Gen\nरेट संस्करण: v2.3.4-20190709\nओसीएक्स संस्करण: -1 (डिग्री 0008 डिग्री)\n"
+"46 = Infraredĝaj legoj.   \n"
+"81 = Bluaj leĝoj.   \n"
+msgstr "46 = infraring व्याख्या।    \n"
 
 #. type: Plain text
-#: ./priskribo.md:114
-#, markdown-text, no-wrap
+#: priskribo.md:146
+#, no-wrap
+#, fuzzy
+msgid "GPIO-HADENOJ BLOKITAJ POR SLUDO:  \n"
+msgstr "चिल्लाने के लिए जीपीआईओ-हेडेन अवरुद्ध: (° 0001 डिग्री)  \n"
+
+#. type: Plain text
+#: priskribo.md:149
+#, no-wrap
 #, fuzzy
 msgid ""
-"la procesoro estas: inĝenia T21\n"
-"http://www.ingenic.com.cn/en/?product/id/11.html\n"
-"https://fr.indasina.com/ingenic- "
-"t21-ekstrema-2-megapixela-koda-procesoro_p16.html\n"
-msgstr "प्रोसेसर है: अभियंता टी 21 (डिग्री 0001 डिग्री) http://www.ininic.com.cn/en/?product/id/11.html (° 0002 डिग्री) https://fr.indasina.com/ingenic- टी 21 एंड -2-मेगापिक्सेला कोड प्रोसेसर (डिग्री ° 0003 डिग्री)\n"
+"Blokita de Motor.ko: 18?   \n"
+"Blokita de Audio.ko: 63?   \n"
+"52 64  \n"
+msgstr "Motor.ko द्वारा अवरुद्ध: 18?   \n"
 
 #. type: Plain text
-#: ./priskribo.md:118
-#, markdown-text, no-wrap
+#: priskribo.md:151
+#, no-wrap
 #, fuzzy
-msgid ""
-"the CMOS-sensilo estas: gc2053.\n"
-"ŝofora fonto: "
-"https://github.com/mrfixit2001/rk-kernel-fork/blob/develop-4.4/drivers/media/i2c/gc2053.c\n"
-msgstr "सीएमओएस सेंसर है: जीसी 2053। \n"
+msgid "Ptz-Kontrolo:  \n"
+msgstr "पीटीजेड नियंत्रण: (° 0001 डिग्री)  \n"
 
 #. type: Plain text
-#: ./priskribo.md:120
-#, markdown-text, no-wrap
+#: priskribo.md:153
+#, no-wrap
 #, fuzzy
-msgid "RAM: 42MiB entute, 36 MiB havebla.\n"
-msgstr "राम: 42 एमआईबी समग्र, 36 एमआईबी उपलब्ध है। \n"
+msgid "Supro: http: // admin: admin@192.168.24.39/? Jcpcmd = pelcod20ctrl -type 1 -cmd 1 -gata1 24 -gata2 24  \n"
+msgstr "शीर्ष: http: // admin: admin@192.168.24.39/?   \n"
 
 #. type: Plain text
-#: ./priskribo.md:126
-#, markdown-text, no-wrap
+#: priskribo.md:154
+#, no-wrap
 #, fuzzy
-msgid ""
-"la haveno 9999 estas malfermita kaj permesas regi la fotilon:\n"
-"echo \"checkuser -act set -user admin -password admin\"| nc 192.168.1.155 "
-"9999\n"
-"e echa \"listo\"| nc 192.168.1.155 9999\n"
-"eoo \"pelcod20ctrl -?\"| nc 192.168.1.155 9999\n"
-"eoo \"pelcod20ctrl -tipo 1\"| nc 192.168.1.155 9999\n"
-msgstr "99 99 पोर्ट खुला है और कैमरे को नियंत्रित करने की अनुमति देता है:\nइको (° ° 0002 डिग्री) CHECKUSER -ACT सेट -User व्यवस्थापक- password व्यवस्थापक\"| \n"
+msgid "Msalru: http: // admin: admin@192.168.24.39/? Jcpcmd = pelcod203crl -type 1 -cmd 2 -gata1 24-gafu2 24  \n"
+msgstr "Msalkru: http: // admin: admin@192.168.24.39/?   \n"
 
 #. type: Plain text
-#: ./priskribo.md:130
-#, markdown-text, no-wrap
+#: priskribo.md:155
+#, no-wrap
 #, fuzzy
-msgid ""
-"gpio-havenoj:\n"
-"46 = infruĝaj LEDoj.\n"
-"81 = bluaj LEDoj.\n"
-msgstr "जीपीआईओ बंदरगाहों: (डिग्री 0001 डिग्री) 46 = इन्फ्रिट चमड़ा। \n"
+msgid "Maldekstre: http: // admin: admin@192.168.24.39/? Jcpcmd = pelcod203crl -type 1 -cmd 3 -gata1 24 -gata2 24  \n"
+msgstr "बाएं: http: // admin: admin@192.168.24.39/?   \n"
 
 #. type: Plain text
-#: ./priskribo.md:135
-#, markdown-text, no-wrap
+#: priskribo.md:156
+#, no-wrap
 #, fuzzy
-msgid ""
-"GPIO-havenoj blokitaj por studado:\n"
-"blokita de motor.ko: 18? 38 39 40 41 47 48 49 60?\n"
-"blokita de audio.ko: 63?\n"
-"52 64\n"
-msgstr "जीपीआईओ बंदरगाहों ने अध्ययन के लिए अवरुद्ध:\nmotor.ko: 18 द्वारा अवरुद्ध? \n"
+msgid "Dekstre: http: // admin: admin@192.168.24.39/? JCPCMD = Pelcod203crl -Type 1 -CMD 4 -Data1 24 -Atata2 24  \n"
+msgstr "दाईं ओर: http: // admin: admin@192.168.24.39/?   \n"
 
 #. type: Plain text
-#: ./priskribo.md:137
-#, markdown-text, no-wrap
+#: priskribo.md:157
+#, no-wrap
 #, fuzzy
-msgid "Ptz-kontrolo:\n"
-msgstr "पीटीजेड नियंत्रण: (° 0001 डिग्री)\n"
+msgid "Halto: http: // admin: admin@192.168.24.39/? Jcpcmd = pelcod203crl -type 1 -cmd 9 -gata1 24-Data2 24  \n"
+msgstr "रोकें: http: // admin: admin@192.168.24.39/?   \n"
 
 #. type: Plain text
-#: ./priskribo.md:143
-#, markdown-text, no-wrap
+#: priskribo.md:159
+#, no-wrap
 #, fuzzy
-msgid ""
-"supro: http: // admin: admin@192.168.24.39/? jcpcmd = pelcod20ctrl -type 1 "
-"-cmd 1 -data1 24 -data2 24\n"
-"malsupre: http: // admin: admin@192.168.24.39/? jcpcmd = pelcod20ctrl -type "
-"1 -cmd 2 -data1 24 -data2 24\n"
-"maldekstre: http: // admin: admin@192.168.24.39/? jcpcmd = pelcod20ctrl "
-"-type 1 -cmd 3 -data1 24 -data2 24\n"
-"dekstre: http: // admin: admin@192.168.24.39/? Jcpcmd = pelcod20ctrl -type 1 "
-"-cmd 4 -data1 24 -data2 24\n"
-"halto: http: // admin: admin @ 192.168.24.39/?jcpcmd=pelcod20ctrl -speco 1 "
-"-cmd 9 -data1 24 -data2 24\n"
-msgstr "शीर्ष: http: // admin: admin@192.168.24.39/? \n"
+msgid "Starigigu pozicion 2: http://192.168.24.39/?jcpcmd=pelcod20ctl -type 2 -cmd 1 -gata2 2  \n"
+msgstr "सेट स्थिति 2: http://192.168.24.39/0jcpcmd=pelcod20ctl -type 2 -cmd 1 -gata2 2  \n"
 
 #. type: Plain text
-#: ./priskribo.md:147
-#, markdown-text, no-wrap
+#: priskribo.md:160
+#, no-wrap
 #, fuzzy
-msgid ""
-"starigu pozicion 2: http://192.168.24.39/?jcpcmd=pelcod20ctrl -type 2 -cmd 1 "
-"-data2 2\n"
-"iru al 1: http://192.168.24.39/?jcpcmd=pelcod20ctrl -type 2 - cmd 2 -data2 "
-"1\n"
-"forigi 2: http://192.168.24.39/?jcpcmd=pelcod20ctrl -type 2 -cmd 3 -data2 "
-"2\n"
-msgstr "सेट स्थिति 2: http://192.168.24.39/ cmd 2 -data2 1\nनिकालें 2: http://192.168.24.39/?jcpcmd=pelcod20ctrl -type 2 -cmd 3 -data2 2\n"
+msgid "Iru al 1: http://192.168.24.39/?JJcpcmd=pelcod203trl -type 2 -cmd 2 -gata2 1  \n"
+msgstr "1 पर जाएं: http://192.168.24.39/?jjcpcmd=pelcod203trl -type 2 -cmd 2 -gata2 1  \n"
 
+#. type: Plain text
+#: priskribo.md:161
+#, no-wrap
+#, fuzzy
+msgid "Forigi 2: http://192.168.24.39/?jcpcmd=pelCod203trl -Type 2 -CMD 3 -Data2 2  \n"
+msgstr "निकालें 2: http://192.168.24.39/?jcpcmd=pelcod203trl -type 2 -cmd 3 -data2 2  \n"
+
+#, fuzzy
+#~ msgid ""
+#~ "https://fr.aliexpress.com/item/4000146161270.html\n"
+#~ "Markonomo: shiningpo\n"
+#~ "Stilo: Kupola Fotilo\n"
+#~ "Tipo: IP-Fotilo\n"
+#~ "Konektebleco: IP / Reta Sendrata\n"
+#~ "Subtenataj Operaciumoj: Ne\n"
+#~ "Alta Difino: 1080P(Plena HD)\n"
+#~ "Lenso (mm): 3.6mm\n"
+#~ "Instalado: Flanka\n"
+#~ "Elektroprovizo(V): DC12V 2A\n"
+#~ "Reta Interfaco: RJ-45 10 / 100Mb Ethernet Slot\n"
+#~ "Mura Krampo: Plafono\n"
+#~ "Subtenitaj Poŝtelefonaj Sistemoj: Android\n"
+#~ "Subtenataj Poŝtelefonaj Sistemoj: ios\n"
+#~ "IR Distanco(m): 30M- 50M\n"
+#~ "Specialaj Ecoj: Akvorezista / Veterrezista\n"
+#~ "Vidanta Angulo: 140 °\n"
+#~ "Megapikseloj: 2MP\n"
+#~ "Potenca Konsumo(W): 12W\n"
+#~ "Stokado: Neniu\n"
+#~ "Sensila Marko: SONY\n"
+#~ "Alarma Agado: Retpoŝta Foto\n"
+#~ "Alarmiga Ago: Loka Alarmo\n"
+#~ "Formato de Kunprema Video: H.264\n"
+#~ "estas_customized: Yes\n"
+#~ "    Technology: Pan Tilt Zoom\n"
+#~ "    Power Supply: Normal\n"
+#~ "    TF Card: None\n"
+#~ "    Color: White\n"
+#~ "    Audio Output: Two Way Audio\n"
+#~ "    Sensor: CMOS\n"
+#~ "    wifi camera: ip camera\n"
+#~ "    camara wifi: camara ip\n"
+#~ "    camera ip: camera wifi\n"
+#~ "    ip camera wifi: camara vigilancia exterior\n"
+#~ "    ptz: camara ip ptz\n"
+#~ msgstr ""
+#~ "https://fr.alivexpress.com/item/4000146161270.html\n"
+#~ "ब्रेकल: SHININGPO (° 0002 डिग्री) शैली: कपोल कैमरा (डिग्री डिग्री 0003 डिग्री) "
+#~ "टाइप: आईपी कैमरा (डिग्री डिग्री 0004 डिग्री ) कनेक्टिविटी: आईपी / रेटा वायरलेस\n"
+#~ "उच्च परिभाषा: 1080p(पूर्ण HD)\n"
+#~ "लेंस (° 00010 00010 °) मिमी): 3.6 मिमी\n"
+#~ "स्थापना: पार्श्व(वी): DC12V द्वितीय\n"
+#~ "नेटवर्क इंटरफ़ेस: आरजे -45 10/100 एमबी ईथरनेट स्लॉट (° ° 00017 डिग्री) मुरा ब्रैकेट: "
+#~ "छतसमर्थित मोबाइल सिस्टम: एंड्रॉइड\n"
+#~ "समर्थित मोबाइल सिस्टम: आईओएस\n"
+#~ "आईआर दूरी (° 00021 डिग्री) एम (° 00022 डिग्री): 30 मीटर- 50 मीटर (डिग्री "
+#~ "00023 डिग्री) विशेष विशेषताएं / Veternezista (° 00024 डिग्री) कोण देखना: 140 ° "
+#~ "(° ° 00025 डिग्री) मेगापिक्सेल: 2 एमपी (डिग्री 00026 °) बिजली की खपत(डब्ल्यू): "
+#~ "12W\n"
+#~ "भंडारण: नहीं\n"
+#~ "Sensile ब्रांड: सोनी\n"
+#~ "अलार्म एक्शन: ईमेल फोटो (° ° 00032 डिग्री) खतरनाक कार्रवाई: स्थानीय अलार्म "
+#~ "(डिग्री 00033 डिग्री) संपीड़न वीडियो का प्रारूप: एच .264 (डिग्री 00034 डिग्री) है "
+#~ "( \n"
+
+#, fuzzy
+#~ msgid ""
+#~ "Surskriboj pri la etikedo:\n"
+#~ "WIFI CARAM\n"
+#~ "Modelo: WF-HD820-ZS\n"
+#~ "Rezolucio: 1080P\n"
+#~ "Elektroprovizo: DC12V / 1A\n"
+#~ "SSID: HSIPC-******\n"
+#~ "Pasvorto: 12345678\n"
+#~ "MAC: 00:88:09:**:**:**\n"
+#~ msgstr ""
+#~ "टैग के बारे में शिलालेख:\n"
+#~ "वाईफ़ाई कैरम (डिग्री 0002 डिग्री) मॉडल: डब्ल्यूएफ-एचडी 820-जेडएस (डिग्री डिग्री "
+#~ "0003 डिग्री डिग्री डिग्री 0003 डिग्री) संकल्प: 1080 पी (डिग्री 0004 डिग्री) विद्युत "
+#~ "प्रावधान: डीसी 12 वी / मैं (डिग्री 0005 °) SSID: HSIPC -******\n"
+#~ "पासवर्ड: 12345678\n"
+#~ "मैक: 00:88:09: (° 000 9 °): (° 00010 डिग्री): (° 00011 डिग्री)\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "Kunligante ĝin por Eterreto, ĝi akiras DHCP-adreson kaj nek povas konekti "
+#~ "al la retejo:\n"
+#~ "defaŭlta uzanto: admin\n"
+#~ "defaŭlta pasvorto: admin\n"
+#~ msgstr ""
+#~ "इसे ईथरनेट के लिए कनेक्ट करना, इसे एक डीएचसीपी पता मिलता है और साइट से कनेक्ट नहीं "
+#~ "हो सकता है: (° 0001 डिग्री) डिफ़ॉल्ट उपयोगकर्ता: व्यवस्थापक (° 0002 डिग्री) "
+#~ "डिफ़ॉल्ट पासवर्ड: व्यवस्थापक (0003 डिग्री)\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "dum 5 minutoj, vi povas konekti per telnet al la haveno 9527\n"
+#~ "defaŭlta uzanto: root\n"
+#~ "defaŭlta pasvorto: jco66688\n"
+#~ "por resti konektita preter 5 minutoj: \"killall -9 auto_run.sh»\n"
+#~ "(jco = http://www.cnjabsco.com/ )\n"
+#~ msgstr ""
+#~ "5 मिनट के लिए, आप टेलनेट से पोर्ट 9527\n"
+#~ "से कनेक्ट कर सकते हैं डिफ़ॉल्ट उपयोगकर्ता: रूट\n"
+#~ "डिफ़ॉल्ट पासवर्ड: JCO66688\n"
+#~ "रहने के लिए 5 मिनट से अधिक जुड़ा हुआ: (° 0004 डिग्री) किलॉल - 9 ऑटो (डिग्री 0005 "
+#~ "डिग्री)\n"
+
+#, fuzzy
+#~ msgid "malfermaj havenoj:  \n"
+#~ msgstr "खुले बंदरगाहों: (° 0001 डिग्री)  \n"
+
+#, fuzzy
+#~ msgid ""
+#~ "  tcp: 80(http), 443(http ankaŭ!), 554(rtsp), 8004, 8006, 9527(telnet), "
+#~ "9999  \n"
+#~ msgstr ""
+#~ "(° 0001 डिग्री) टीसीपी: 80 (डिग्री 0002 डिग्री) HTTP (° 0003 डिग्री), 443 "
+#~ "(डिग्री 0004 डिग्री) HTTP भी!   \n"
+
+#, fuzzy
+#~ msgid "  udp: 67(dhcp), 3702, 8002, 39642  \n"
+#~ msgstr ""
+#~ "  udp: 67 (° 0002 डिग्री) डीएचसीपी (डिग्री 0003 डिग्री), 3702, 8002, 39642 "
+#~ "(डिग्री 0004 डिग्री)  \n"
+
+#, fuzzy
+#~ msgid ""
+#~ "reta konduto kiam oni lanĉas jco_server:\n"
+#~ "pridemandas la servilon dns pri: www.163.com kaj dns.ictun.com\n"
+#~ "demando 114.114.114.114 por dns.ictun.com\n"
+#~ "konekti al la haveno udp/993 de dns.ictun.com\n"
+#~ "konekti al udp/993-haveno de 120.25.129.41\n"
+#~ "pridemandu la servilon dns pri: conn-policy.ictun.com\n"
+#~ "pridemandu la servilon dns pri: video-policy.ictun.com\n"
+#~ "konekti al udp/80-haveno de 52.29.45.252\n"
+#~ "konektas al udp/1210-haveno de 52.29.45.252\n"
+#~ "ligas al udp/21-haveno de 52.57.135.134\n"
+#~ "konektas al udp/1053-haveno de 52.28.62.20\n"
+#~ "konektas al udp/443-haveno de 52.29.58.225\n"
+#~ "konektas al udp/123 (ntp) haveno de 112.74.204.233 (video-policy.ictun."
+#~ "com)\n"
+#~ "ligas al udp/993-haveno de 47.52.99.182\n"
+#~ "konektas al udp/1054-haveno de 52.57.127.207\n"
+#~ "...\n"
+#~ "noto: ŝanĝu la defaŭltan itineron metante tiun de la interreta skatolo.\n"
+#~ msgstr ""
+#~ "नेटवर्क आचरण जब JCO_server:\n"
+#~ "pridemandas la servilon dns pri: www.163.com kaj dns.ictun.com\n"
+#~ "demando 114.114.114.114 por dns.ictun.com\n"
+#~ "konekti al la haveno udp/993 de dns.ictun.com\n"
+#~ "konekti al udp/993-haveno de 120.25.129.41\n"
+#~ "pridemandu la servilon dns pri: conn-policy.ictun.com\n"
+#~ "pridemandu la servilon dns pri: video-policy.ictun.com\n"
+#~ "konekti al udp/80-haveno de 52.29.45.252\n"
+#~ "konektas al udp/1210-haveno de 52.29.45.252\n"
+#~ "ligas al udp/21-haveno de 52.57.135.134\n"
+#~ "konektas al udp/1053-haveno de 52.28.62.20\n"
+#~ "konektas al udp/443-haveno de 52.29.58.225\n"
+#~ "konektas al udp/123 (ntp) haveno de 112.74.204.233 (video-policy.ictun."
+#~ "com)\n"
+#~ "ligas al udp/993-haveno de 47.52.99.182\n"
+#~ "konektas al udp/1054-haveno de 52.57.127.207\n"
+#~ "...\n"
+#~ "noto: ŝanĝu la defaŭltan itineron metante tiun de la interreta skatolo.\n"
+#~ "लॉन्च करता है\n"
+
+#, fuzzy
+#~ msgid "haltigi jco_server sen kaŭzi restartigi:\n"
+#~ msgstr ""
+#~ "JCO को रोकें_server sen kaŭzi restartigi:\n"
+#~ "\n"
+
+#, fuzzy
+#~ msgid "halti_cloud :"
+#~ msgstr "रोकें_cloud :"
+
+#, fuzzy
+#~ msgid ""
+#~ "vi povas vidi la ĉefan video-rivereton (laŭ 1080P aŭ aliaj agordo) per:\n"
+#~ "ffplay -i rtsp: // admin: admin@192.168.24.111/stream1\n"
+#~ "ffplay -i rtsp: // admin: admin@192.168.24.39: 554 / stream1\n"
+#~ "ffplay -i rtsp: // admin: admin@192.168.24.39: 554 / mpeg4 / ch0 / main / "
+#~ "av_stream\n"
+#~ msgstr ""
+#~ "आप 1080 पी या अन्य कॉन्फ़िगरेशन (° ° 0002 डिग्री) के अनुसार मुख्य वीडियो स्ट्रीम (देख "
+#~ "सकते हैं:\n"
+#~ "ffply -i rtsp: // admin: admin@192.168.24.111/stream1\n"
+#~ "ffplay -i rtsp: // admin: admin@192.168.24.39: 554 / stream1 (° 0005 ° ° "
+#~ "0005 °) ffply -i rtsp: // admin: admin@192.168.24.39: 554 / MPEG4 / Ch0 / "
+#~ "मुख्य / एवी (° 0006 डिग्री)\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "kaj la duaranga:\n"
+#~ "ffplay -i rtsp: // admin: admin@192.168.24.39/stream2\n"
+#~ "ffplay -i rtsp: // admin: admin@192.168.24.39: 554 / stream2\n"
+#~ msgstr ""
+#~ "और द्वितीयक:\n"
+#~ "ffplay -i rtsp: // admin: admin@192.168.24.39/stream2\n"
+#~ "ffplay -i rtsp: // admin: admin@192.168.24.39: 554 / स्ट्रीम 2\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "la instalita firmvaro indikas:\n"
+#~ "DeviceName: INGENIC-V01\n"
+#~ "DeviceModel: IPCAM-100\n"
+#~ "DeviceSN: 12345678901\n"
+#~ "KernelVersion: Thu Jul 9 15:46:54 CST 2015\n"
+#~ "Servila Versio: WS3.53.1243-20190717-DANALE-GEN\n"
+#~ "Retversio: V2.3.4-20190709\n"
+#~ "OCX-Versio: -1\n"
+#~ msgstr ""
+#~ "स्थापित फर्मवेयर इंगित करता है:सर्वर संस्करण: WS3.53.1243-20190717-Danale-Gen\n"
+#~ "रेट संस्करण: v2.3.4-20190709\n"
+#~ "ओसीएक्स संस्करण: -1 (डिग्री 0008 डिग्री)\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "la procesoro estas: inĝenia T21\n"
+#~ "http://www.ingenic.com.cn/en/?product/id/11.html\n"
+#~ "https://fr.indasina.com/ingenic- t21-ekstrema-2-megapixela-koda-"
+#~ "procesoro_p16.html\n"
+#~ msgstr ""
+#~ "प्रोसेसर है: अभियंता टी 21 (डिग्री 0001 डिग्री) http://www.ininic.com.cn/en/?"
+#~ "product/id/11.html (° 0002 डिग्री) https://fr.indasina.com/ingenic- टी 21 "
+#~ "एंड -2-मेगापिक्सेला कोड प्रोसेसर (डिग्री ° 0003 डिग्री)\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "the CMOS-sensilo estas: gc2053.\n"
+#~ "ŝofora fonto: https://github.com/mrfixit2001/rk-kernel-fork/blob/"
+#~ "develop-4.4/drivers/media/i2c/gc2053.c\n"
+#~ msgstr "सीएमओएस सेंसर है: जीसी 2053। \n"
+
+#, fuzzy
+#~ msgid "RAM: 42MiB entute, 36 MiB havebla.\n"
+#~ msgstr "राम: 42 एमआईबी समग्र, 36 एमआईबी उपलब्ध है। \n"
+
+#, fuzzy
+#~ msgid ""
+#~ "la haveno 9999 estas malfermita kaj permesas regi la fotilon:\n"
+#~ "echo \"checkuser -act set -user admin -password admin\"| nc 192.168.1.155 "
+#~ "9999\n"
+#~ "e echa \"listo\"| nc 192.168.1.155 9999\n"
+#~ "eoo \"pelcod20ctrl -?\"| nc 192.168.1.155 9999\n"
+#~ "eoo \"pelcod20ctrl -tipo 1\"| nc 192.168.1.155 9999\n"
+#~ msgstr ""
+#~ "99 99 पोर्ट खुला है और कैमरे को नियंत्रित करने की अनुमति देता है:\n"
+#~ "इको (° ° 0002 डिग्री) CHECKUSER -ACT सेट -User व्यवस्थापक- password व्यवस्थापक"
+#~ "\"| \n"
+
+#, fuzzy
+#~ msgid ""
+#~ "gpio-havenoj:\n"
+#~ "46 = infruĝaj LEDoj.\n"
+#~ "81 = bluaj LEDoj.\n"
+#~ msgstr "जीपीआईओ बंदरगाहों: (डिग्री 0001 डिग्री) 46 = इन्फ्रिट चमड़ा। \n"
+
+#, fuzzy
+#~ msgid ""
+#~ "GPIO-havenoj blokitaj por studado:\n"
+#~ "blokita de motor.ko: 18? 38 39 40 41 47 48 49 60?\n"
+#~ "blokita de audio.ko: 63?\n"
+#~ "52 64\n"
+#~ msgstr ""
+#~ "जीपीआईओ बंदरगाहों ने अध्ययन के लिए अवरुद्ध:\n"
+#~ "motor.ko: 18 द्वारा अवरुद्ध? \n"
+
+#, fuzzy
+#~ msgid "Ptz-kontrolo:\n"
+#~ msgstr "पीटीजेड नियंत्रण: (° 0001 डिग्री)\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "supro: http: // admin: admin@192.168.24.39/? jcpcmd = pelcod20ctrl -type "
+#~ "1 -cmd 1 -data1 24 -data2 24\n"
+#~ "malsupre: http: // admin: admin@192.168.24.39/? jcpcmd = pelcod20ctrl -"
+#~ "type 1 -cmd 2 -data1 24 -data2 24\n"
+#~ "maldekstre: http: // admin: admin@192.168.24.39/? jcpcmd = pelcod20ctrl -"
+#~ "type 1 -cmd 3 -data1 24 -data2 24\n"
+#~ "dekstre: http: // admin: admin@192.168.24.39/? Jcpcmd = pelcod20ctrl -"
+#~ "type 1 -cmd 4 -data1 24 -data2 24\n"
+#~ "halto: http: // admin: admin @ 192.168.24.39/?jcpcmd=pelcod20ctrl -speco "
+#~ "1 -cmd 9 -data1 24 -data2 24\n"
+#~ msgstr "शीर्ष: http: // admin: admin@192.168.24.39/? \n"
+
+#, fuzzy
+#~ msgid ""
+#~ "starigu pozicion 2: http://192.168.24.39/?jcpcmd=pelcod20ctrl -type 2 -"
+#~ "cmd 1 -data2 2\n"
+#~ "iru al 1: http://192.168.24.39/?jcpcmd=pelcod20ctrl -type 2 - cmd 2 -"
+#~ "data2 1\n"
+#~ "forigi 2: http://192.168.24.39/?jcpcmd=pelcod20ctrl -type 2 -cmd 3 -data2 "
+#~ "2\n"
+#~ msgstr ""
+#~ "सेट स्थिति 2: http://192.168.24.39/ cmd 2 -data2 1\n"
+#~ "निकालें 2: http://192.168.24.39/?jcpcmd=pelcod20ctrl -type 2 -cmd 3 -data2 "
+#~ "2\n"

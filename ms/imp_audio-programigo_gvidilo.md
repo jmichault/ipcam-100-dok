@@ -1,3 +1,11 @@
+---
+lang: ms
+lang-niv: auto
+lang-ref: 053-audio-programigo_gvidilo
+layout: page
+title: 'Panduan pengaturcaraan pepejal'
+---
+
 # IMP_Audio (voir imp_audio.h)
 
 Modul audio, termasuk rakaman dan main balik, kodek audio, tetapan kelantangan dan keuntungan, pembatalan gema, keuntungan automatik dan fungsi lain.

@@ -1,7 +1,7 @@
 ---
 lang: hi
 lang-niv: auto
-lang-ref: 099-alternativa_firmvaro
+lang-ref: 010-alternativa_firmvaro
 layout: page
 title: 'वैकल्पिक फर्मवेयर'
 ---
@@ -36,9 +36,6 @@ title: 'वैकल्पिक फर्मवेयर'
 
 
   * डिफ़ॉल्ट _CRONTAB_ आवश्यक है
-
-
-  * प्रारंभ सेवा _crond_, नेटवर्क, सेवा _ntpd_, वेब सेवा
 
 
   * आरंभ सेवाएं ( _config/autostart_)

@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-03-04 16:52+0100\n"
+"POT-Creation-Date: 2021-10-30 11:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,90 +16,97 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#. type: Title #
-#: ./imp_audio-programigo_gvidilo.md:1
-#, markdown-text, no-wrap
+#. type: YAML Front Matter: lang
+#: imp_audio-programigo_gvidilo.md:1
+#, no-wrap
+msgid "eo"
+msgstr "en"
+
+#. type: YAML Front Matter: lang-niv
+#: imp_audio-programigo_gvidilo.md:1
+#, no-wrap
+msgid "auto"
+msgstr "auto"
+
+#. type: YAML Front Matter: lang-ref
+#: imp_audio-programigo_gvidilo.md:1
+#, no-wrap
+msgid "053-audio-programigo_gvidilo"
+msgstr "053-audio-programigo_gvidilo"
+
+#. type: YAML Front Matter: layout
+#: imp_audio-programigo_gvidilo.md:1
+#, no-wrap
+msgid "page"
+msgstr "page"
+
+#. type: YAML Front Matter: title
+#: imp_audio-programigo_gvidilo.md:1
+#, no-wrap
 #, fuzzy
+msgid "Gvidilo pri Solida Programado"
+msgstr "Solid programming guide"
+
+#. type: Title #
+#: imp_audio-programigo_gvidilo.md:9
+#, fuzzy, no-wrap
 msgid "IMP_Audio (voir imp_audio.h)"
 msgstr "IMP_Audio (voir imp_audio.h)"
 
 #. type: Plain text
-#: ./imp_audio-programigo_gvidilo.md:4
-#, markdown-text, no-wrap
-#, fuzzy
-msgid ""
-"Audio-modulo, inkluzive de registrado kaj reprodukto, audio-kodeko, volumena "
-"kaj gajna agordoj, e echa nuligo, aŭtomata gajno kaj aliaj funkcioj.\n"
+#: imp_audio-programigo_gvidilo.md:12
+#, fuzzy, no-wrap
+msgid "Audio-modulo, inkluzive de registrado kaj reprodukto, audio-kodeko, volumena kaj gajna agordoj, e echa nuligo, aŭtomata gajno kaj aliaj funkcioj.\n"
 msgstr "Audio module, including recording and playback, audio codec, volume and gain settings, e echo cancellation, automatic gain and other functions.\n"
 
 #. type: Title ##
-#: ./imp_audio-programigo_gvidilo.md:5
-#, markdown-text, no-wrap
-#, fuzzy
+#: imp_audio-programigo_gvidilo.md:13
+#, fuzzy, no-wrap
 msgid "Prezento"
 msgstr "Presentation"
 
 #. type: Bullet: '* '
-#: ./imp_audio-programigo_gvidilo.md:7
-#, markdown-text, no-wrap
-#, fuzzy
-msgid ""
-"La sonfunkcio inkluzivas 5 modulojn: aŭd-enigo, aŭd-eliga, eoa nuligo, "
-"aŭd-kodado kaj aŭd-malkodado.\n"
+#: imp_audio-programigo_gvidilo.md:15
+#, fuzzy, no-wrap
+msgid "La sonfunkcio inkluzivas 5 modulojn: aŭd-enigo, aŭd-eliga, eoa nuligo, aŭd-kodado kaj aŭd-malkodado.\n"
 msgstr "The sound function includes 5 modules: audio input, audio output, audio cancellation, audio encoding and audio decoding.\n"
 
 #. type: Bullet: ' * '
-#: ./imp_audio-programigo_gvidilo.md:9
-#, markdown-text, no-wrap
-#, fuzzy
-msgid ""
-"Inter ili, audio-enigo kaj audio-eliro havas la koncepton de aparato kaj "
-"kanalo. Unu el la MICoj estas konsiderata aparato, kaj MIC povas havi "
-"multoblajn kanalajn enigaĵojn.\n"
+#: imp_audio-programigo_gvidilo.md:17
+#, fuzzy, no-wrap
+msgid "Inter ili, audio-enigo kaj audio-eliro havas la koncepton de aparato kaj kanalo. Unu el la MICoj estas konsiderata aparato, kaj MIC povas havi multoblajn kanalajn enigaĵojn.\n"
 msgstr "Among them, audio input and audio output have the concept of device and channel. One of the MICs is considered a device, and a MIC can have multiple channel inputs.\n"
 
 #. type: Bullet: ' * '
-#: ./imp_audio-programigo_gvidilo.md:11
-#, markdown-text, no-wrap
-#, fuzzy
-msgid ""
-"La sama SPK estas konsiderata reprodukta aparato, kaj SPK ankaŭ povas havi "
-"plurajn kanalajn elirojn.\n"
+#: imp_audio-programigo_gvidilo.md:19
+#, fuzzy, no-wrap
+msgid "La sama SPK estas konsiderata reprodukta aparato, kaj SPK ankaŭ povas havi plurajn kanalajn elirojn.\n"
 msgstr "The same SPK is considered a breeding device, and an SPK can also have multiple channel outputs.\n"
 
 #. type: Bullet: ' * '
-#: ./imp_audio-programigo_gvidilo.md:13
-#, markdown-text, no-wrap
-#, fuzzy
+#: imp_audio-programigo_gvidilo.md:21
+#, fuzzy, no-wrap
 msgid "La nuna versio de la audio API nur subtenas unu kanalon por aparato.\n"
 msgstr "The lunar version of the audio API only supports one channel per device.\n"
 
 #. type: Bullet: ' * '
-#: ./imp_audio-programigo_gvidilo.md:15
-#, markdown-text, no-wrap
-#, fuzzy
-msgid ""
-"Echoa nuligo troviĝas en la aŭd-eniga interfaco kaj specifaj instrukcioj "
-"reflektiĝas en la priskribo de la funkcio.\n"
+#: imp_audio-programigo_gvidilo.md:23
+#, fuzzy, no-wrap
+msgid "Echoa nuligo troviĝas en la aŭd-eniga interfaco kaj specifaj instrukcioj reflektiĝas en la priskribo de la funkcio.\n"
 msgstr "Echoa cancellation is found in the audio input interface and specific instructions are reflected in the description of the function.\n"
 
 #. type: Bullet: ' * '
-#: ./imp_audio-programigo_gvidilo.md:17
-#, markdown-text, no-wrap
-#, fuzzy
-msgid ""
-"Audio-kodado: La nuna audio-API subtenas audio-kodadon en formatoj PT_G711A, "
-"PT_G711U kaj PT_G726. Si vous devez ajouter une nouvelle méthode d'encodage, "
-"vous devez enregistrer l'encodeur.\n"
-msgstr "Audio encoding: The current audio API supports audio encoding in PT_G711A, PT_G711U and PT_G726. Si vous devez ajouter une nouvelle méthode d'encodage, vous devez enregistrer l'encodeur.\nformats\n"
+#: imp_audio-programigo_gvidilo.md:25
+#, fuzzy, no-wrap
+msgid "Audio-kodado: La nuna audio-API subtenas audio-kodadon en formatoj PT_G711A, PT_G711U kaj PT_G726. Si vous devez ajouter une nouvelle méthode d'encodage, vous devez enregistrer l'encodeur.\n"
+msgstr ""
+"Audio encoding: The current audio API supports audio encoding in PT_G711A, PT_G711U and PT_G726. Si vous devez ajouter une nouvelle méthode d'encodage, vous devez enregistrer l'encodeur.\n"
+"formats\n"
 
 #. type: Bullet: ' * '
-#: ./imp_audio-programigo_gvidilo.md:20
-#, markdown-text, no-wrap
-#, fuzzy
-msgid ""
-"Audio-malkodado: La nuna audio-API subtenas son-malkodadon en formatoj "
-"PT_G711A, PT_G711U kaj PT_G726. Si vous devez ajouter une nouvelle méthode "
-"de décodage, vous devez enregistrer le décodeur.\n"
-msgstr "Audio decoding: The current audio API supports audio decoding in PT_G711A, PT_G711U and PT_G726. Si vous devez ajouter une nouvelle méthode de décodage, vous devez enregistrer le décodeur.\nformats\n"
-
+#: imp_audio-programigo_gvidilo.md:28
+#, fuzzy, no-wrap
+msgid "Audio-malkodado: La nuna audio-API subtenas son-malkodadon en formatoj PT_G711A, PT_G711U kaj PT_G726. Si vous devez ajouter une nouvelle méthode de décodage, vous devez enregistrer le décodeur.\n"
+msgstr ""
+"Audio decoding: The current audio API supports audio decoding in PT_G711A, PT_G711U and PT_G726. Si vous devez ajouter une nouvelle méthode de décodage, vous devez enregistrer le décodeur.\n"
+"formats\n"

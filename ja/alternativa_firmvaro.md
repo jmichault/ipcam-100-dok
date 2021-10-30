@@ -1,7 +1,7 @@
 ---
 lang: ja
 lang-niv: auto
-lang-ref: 099-alternativa_firmvaro
+lang-ref: 010-alternativa_firmvaro
 layout: page
 title: 代替ファームウェア
 ---
@@ -36,9 +36,6 @@ title: 代替ファームウェア
 
 
   * 必要に応じてデフォルトで _CRONTAB_ 
-
-
-  * サービス開始 _crond_、ネットワーク、サービス _ntpd_、Webサービス
 
 
   *  _config/autostart_)でサービスを開始 (

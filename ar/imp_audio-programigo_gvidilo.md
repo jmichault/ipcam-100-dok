@@ -1,3 +1,11 @@
+---
+lang: ar
+lang-niv: auto
+lang-ref: 053-audio-programigo_gvidilo
+layout: page
+title: 'دليل البرمجة الصلبة'
+---
+
 # IMP_Audio (voir imp_audio.h)
 
 وحدة الصوت ، بما في ذلك التسجيل والتشغيل ، وترميز الصوت ، وإعدادات الصوت والكسب ، وإلغاء الصدى الإلكتروني ، والكسب التلقائي والوظائف الأخرى.

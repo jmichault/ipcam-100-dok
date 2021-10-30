@@ -1,3 +1,11 @@
+---
+lang: eo
+lang-niv: homa
+lang-ref: 061-originala_firmvaro
+layout: page
+title: 'Funkciado de la originala firmware'
+---
+
 
 
 La firstvaro konsistas el 6 sektoroj:

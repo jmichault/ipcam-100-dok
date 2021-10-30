@@ -1,7 +1,7 @@
 ---
 lang: zh
 lang-niv: auto
-lang-ref: 099-alternativa_firmvaro
+lang-ref: 010-alternativa_firmvaro
 layout: page
 title: 备用固件
 ---
@@ -36,9 +36,6 @@ title: 备用固件
 
 
   * 如果需要，默认为 _CRONTAB_ 
-
-
-  * 启动服务 _crond_，网络，服务 _ntpd_，网络服务
 
 
   * 启动服务 (在 _config/autostart_)

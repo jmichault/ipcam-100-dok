@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-10-29 14:53+0200\n"
+"POT-Creation-Date: 2021-10-30 11:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,8 +31,8 @@ msgstr "auto"
 #. type: YAML Front Matter: lang-ref
 #: kruc-kompili.md:1
 #, no-wrap
-msgid "005-kruc-compili"
-msgstr "005-kruc-compili"
+msgid "050-kruc-compili"
+msgstr "050-kruc-compili"
 
 #. type: YAML Front Matter: layout
 #: kruc-kompili.md:1
@@ -97,6 +97,10 @@ msgstr ""
 "\n"
 "\n"
 "/200 ° 5 ° 5 °)\n"
+
+#, no-wrap
+#~ msgid "005-kruc-compili"
+#~ msgstr "005-kruc-compili"
 
 #, fuzzy, no-wrap
 #~ msgid ""

@@ -1,7 +1,7 @@
 ---
 lang: bn
 lang-niv: auto
-lang-ref: 099-alternativa_firmvaro
+lang-ref: 010-alternativa_firmvaro
 layout: page
 title: 'বিকল্প ফার্মওয়্যার'
 ---
@@ -36,9 +36,6 @@ title: 'বিকল্প ফার্মওয়্যার'
 
 
   * ডিফল্ট _CRONTAB_ প্রয়োজন হলে
-
-
-  * পরিষেবা শুরু করুন _crond_, নেটওয়ার্ক, পরিষেবা _ntpd_, ওয়েব পরিষেবা (° 5 start)
 
 
   *  _config/autostart_)এ পরিষেবা (শুরু করুন

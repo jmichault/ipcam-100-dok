@@ -1,7 +1,7 @@
 ---
 lang: ru
 lang-niv: auto
-lang-ref: 099-alternativa_firmvaro
+lang-ref: 010-alternativa_firmvaro
 layout: page
 title: 'Альтернативная прошивка'
 ---
@@ -36,9 +36,6 @@ title: 'Альтернативная прошивка'
 
 
   * по умолчанию _CRONTAB_ , если требуется
-
-
-  * запуск службы _crond_, сеть, служба _ntpd_, веб-служба
 
 
   * запуск сервисов (через _config/autostart_)

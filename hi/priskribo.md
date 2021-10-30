@@ -1,98 +1,158 @@
+---
+lang: hi
+lang-niv: auto
+lang-ref: 070-kamerao-priskribo
+layout: page
+title: 'कैमरा का विवरण'
+---
+
 
 
 # विवरण:
-https://fr.alivexpress.com/item/4000146161270.html
-ब्रेकल: SHININGPO (° 0002 डिग्री) शैली: कपोल कैमरा (डिग्री डिग्री 0003 डिग्री) टाइप: आईपी कैमरा (डिग्री डिग्री 0004 डिग्री ) कनेक्टिविटी: आईपी / रेटा वायरलेस
-उच्च परिभाषा: 1080p(पूर्ण HD)
-लेंस (° 00010 00010 °) मिमी): 3.6 मिमी
-स्थापना: पार्श्व(वी): DC12V द्वितीय
-नेटवर्क इंटरफ़ेस: आरजे -45 10/100 एमबी ईथरनेट स्लॉट (° ° 00017 डिग्री) मुरा ब्रैकेट: छतसमर्थित मोबाइल सिस्टम: एंड्रॉइड
-समर्थित मोबाइल सिस्टम: आईओएस
-आईआर दूरी (° 00021 डिग्री) एम (° 00022 डिग्री): 30 मीटर- 50 मीटर (डिग्री 00023 डिग्री) विशेष विशेषताएं / Veternezista (° 00024 डिग्री) कोण देखना: 140 ° (° ° 00025 डिग्री) मेगापिक्सेल: 2 एमपी (डिग्री 00026 °) बिजली की खपत(डब्ल्यू): 12W
-भंडारण: नहीं
-Sensile ब्रांड: सोनी
-अलार्म एक्शन: ईमेल फोटो (° ° 00032 डिग्री) खतरनाक कार्रवाई: स्थानीय अलार्म (डिग्री 00033 डिग्री) संपीड़न वीडियो का प्रारूप: एच .264 (डिग्री 00034 डिग्री) है ( 
+https://en.alivexpress.com/item/4000146161270.html
+```
+    Brand Name: shiningpo
+    Style: Dome Camera
+    Type: IP Camera
+    Connectivity: IP/Network Wireless
+    Supported Operating Systems: No
+    High Definition: 1080P(Full-HD)
+    Lens (mm): 3.6mm
+    Installation: Side
+    Power Supply(V): DC12V 2A
+    Network Interface: RJ-45 10/100Mb Ethernet Slot
+    Wall Bracket: Ceiling
+    Supported Mobile Systems: Android
+    Supported Mobile Systems: ios
+    IR Distance(m): 30M-50M
+    Special Features: Waterproof / Weatherproof
+    Viewing Angle : 140°
+    Megapixels: 2MP
+    Power Consumption(W): 12W
+    Storage: None
+    Sensor Brand: SONY
+    Alarm Action: Email Photo
+    Alarm Action: Local Alarm
+    Video Compression Format: H.264
+    is_customized: Yes
+    Technology: Pan Tilt Zoom
+    Power Supply: Normal
+    TF Card: None
+    Color: White
+    Audio Output: Two Way Audio
+    Sensor: CMOS
+    wifi camera: ip camera
+    camara wifi: camara ip
+    camera ip: camera wifi
+    ip camera wifi: camara vigilancia exterior
+    ptz: camara ip ptz
+```
 
+# टैग शिलालेख
+```
+WIFI CARAM
+Model : WF-HD820-ZS
+Résolution : 1080P
+Power Supply : DC12V/1A
+SSID : HSIPC-******
+Password : 12345678
+MAC : 00:88:09:**:**:**
+```
 
-टैग के बारे में शिलालेख:
-वाईफ़ाई कैरम (डिग्री 0002 डिग्री) मॉडल: डब्ल्यूएफ-एचडी 820-जेडएस (डिग्री डिग्री 0003 डिग्री डिग्री डिग्री 0003 डिग्री) संकल्प: 1080 पी (डिग्री 0004 डिग्री) विद्युत प्रावधान: डीसी 12 वी / मैं (डिग्री 0005 °) SSID: HSIPC -******
-पासवर्ड: 12345678
-मैक: 00:88:09: (° 000 9 °): (° 00010 डिग्री): (° 00011 डिग्री)
+Eteretro के लिए इसे रखना, यह एक डीएचसीपी पता मिलता है और हम रीजन से कनेक्ट कर सकते हैं:  
+डिफ़ॉल्ट उपयोगकर्ता: व्यवस्थापक (° 0001 डिग्री)  
+डिफ़ॉल्ट पासवर्ड: व्यवस्थापक (° 0001 डिग्री)  
 
-इसे ईथरनेट के लिए कनेक्ट करना, इसे एक डीएचसीपी पता मिलता है और साइट से कनेक्ट नहीं हो सकता है: (° 0001 डिग्री) डिफ़ॉल्ट उपयोगकर्ता: व्यवस्थापक (° 0002 डिग्री) डिफ़ॉल्ट पासवर्ड: व्यवस्थापक (0003 डिग्री)
+5 मिनट के लिए, आप टेलनेट से 9527 (° ° 0001 डिग्री) के बंदरगाह से कनेक्ट कर सकते हैं  
+डिफ़ॉल्ट उपयोगकर्ता: रूट (° ° 0001 डिग्री)  
+डिफ़ॉल्ट पासवर्ड: जेसीओ 66688 (डिग्री डिग्री 0001 डिग्री)  
+5 मिनट से आगे जुड़े रहने के लिए: (° ° 0001 डिग्री) किलॉल -9 स्वचालित (° ° 0002 डिग्री)  
+  
+(jco = http://www.cnjabsco.com/ (° 0002 डिग्री)
 
-5 मिनट के लिए, आप टेलनेट से पोर्ट 9527
-से कनेक्ट कर सकते हैं डिफ़ॉल्ट उपयोगकर्ता: रूट
-डिफ़ॉल्ट पासवर्ड: JCO66688
-रहने के लिए 5 मिनट से अधिक जुड़ा हुआ: (° 0004 डिग्री) किलॉल - 9 ऑटो (डिग्री 0005 डिग्री)
+ओपन एरिना: (° 0001 डिग्री) टीसीपी: 80 (डिग्री 0002 डिग्री) HTTP), 443 (° 0004 डिग्री) http!      
 
+नेटवर्क आचरण जब JCO_server:  
+लॉन्च करता है  
+  
+DNS सर्वर के बारे में पूछताछ की गई है: www.163.com और dns.ictun.com (° 0001 डिग्री)  
+DNS.attun.comके लिए आवेदन 114.114.114.114  
+Haven UDP / 993 DNS.itunc.com से कनेक्ट करें  
+120.25.129.41 के यूडीपी / 993 बंदरगाह से कनेक्ट करें (डिग्री डिग्री 0001 डिग्री)  
+DNS सर्वर पर पूछताछ: conn-policy.itun.com (° 0001 डिग्री)  
+DNS सर्वर पर प्रश्न: video-policy.itun.com (° 0001 डिग्री)  
+52.2 9.45.252 के यूडीपी / 80-पोर्ट से कनेक्ट करें (डिग्री ° 0001 डिग्री)  
+52.29.45.252 के UDP / 1210 पोर्ट से कनेक्ट करें  
+52.57.135.134 के यूडीपी / 21 बंदरगाहों के लिंक (डिग्री 0001 डिग्री)  
+52.28.62.20 के यूडीपी / 1053-केनों से जुड़ता है (° ° 0001 डिग्री)  
+UDP / 443 से जुड़ता है 52.29.58.225  
+यूडीपी / 123 (डिग्री 0001 डिग्री) एनटीपी (° ° ° 0002 डिग्री) बंदरगाह से कनेक्ट करें 112.74.204.233 (वीडियो- policy.ittun.com (डिग्री 0004 डिग्री) (डिग्री 0005 डिग्री)
+47.52.99.182 के यूडीपी / 993 बंदरगाहों के लिंक (डिग्री 0001 डिग्री)  
+52.57.127.207 के यूडीपी / 1054-केनों से जुड़ता है (डिग्री 0001 डिग्री)  
+...  
+नोट: डिफ़ॉल्ट मार्ग सेट करें जैसे कि अंतःसंबंधित बॉक्स।    
 
-खुले बंदरगाहों: (° 0001 डिग्री)  
-(° 0001 डिग्री) टीसीपी: 80 (डिग्री 0002 डिग्री) HTTP (° 0003 डिग्री), 443 (डिग्री 0004 डिग्री) HTTP भी!   
-  udp: 67 (° 0002 डिग्री) डीएचसीपी (डिग्री 0003 डिग्री), 3702, 8002, 39642 (डिग्री 0004 डिग्री)  
-
-नेटवर्क आचरण जब JCO_server:
-pridemandas la servilon dns pri: www.163.com kaj dns.ictun.com
-demando 114.114.114.114 por dns.ictun.com
-konekti al la haveno udp/993 de dns.ictun.com
-konekti al udp/993-haveno de 120.25.129.41
-pridemandu la servilon dns pri: conn-policy.ictun.com
-pridemandu la servilon dns pri: video-policy.ictun.com
-konekti al udp/80-haveno de 52.29.45.252
-konektas al udp/1210-haveno de 52.29.45.252
-ligas al udp/21-haveno de 52.57.135.134
-konektas al udp/1053-haveno de 52.28.62.20
-konektas al udp/443-haveno de 52.29.58.225
-konektas al udp/123 (ntp) haveno de 112.74.204.233 (video-policy.ictun.com)
-ligas al udp/993-haveno de 47.52.99.182
-konektas al udp/1054-haveno de 52.57.127.207
-...
-noto: ŝanĝu la defaŭltan itineron metante tiun de la interreta skatolo.
-लॉन्च करता है
-
-
-JCO को रोकें_server sen kaŭzi restartigi:
-
-
-## रोकें_cloud :
+JCO को रोकें_server sen kaŭzi restartigi:  
+  
+  
+## रोकें_cloud :  
 ```
 PS | 
 ```
 
-आप 1080 पी या अन्य कॉन्फ़िगरेशन (° ° 0002 डिग्री) के अनुसार मुख्य वीडियो स्ट्रीम (देख सकते हैं:
-ffply -i rtsp: // admin: admin@192.168.24.111/stream1
-ffplay -i rtsp: // admin: admin@192.168.24.39: 554 / stream1 (° 0005 ° ° 0005 °) ffply -i rtsp: // admin: admin@192.168.24.39: 554 / MPEG4 / Ch0 / मुख्य / एवी (° 0006 डिग्री)
+आप 1080 पी या अन्य कॉन्फ़िगरेशन (° ° 0002 डिग्री) के अनुसार बेफान वीडियो रिवर्ट (° ° 0001 डिग्री) देख सकते हैं: तक  
+```
+ffplay -i rtsp://admin:admin@192.168.24.111/stream1
+ffplay -i rtsp://admin:admin@192.168.24.39:554/stream1
+ffplay -i rtsp://admin:admin@192.168.24.39:554/mpeg4/ch0/main/av_stream
+```
 
+और दुरंगाना:
+```
+ffplay -i rtsp://admin:admin@192.168.24.39/stream2
+ffplay -i rtsp://admin:admin@192.168.24.39:554/stream2
+```
 
-और द्वितीयक:
-ffplay -i rtsp: // admin: admin@192.168.24.39/stream2
-ffplay -i rtsp: // admin: admin@192.168.24.39: 554 / स्ट्रीम 2
+स्थापित फर्मवेयर इंगित करता है: (° ° 0001 डिग्री)
+```
+DeviceName:     INGENIC-V01
+DeviceModel:    IPCAM-100
+DeviceSN:       12345678901
+KernelVersion:  Thu Jul 9 15:46:54 CST 2015
+ServerVersion:  WS3.53.1243-20190717-DANALE-GEN
+WebVersion:     V2.3.4-20190709
+OCXVersion:     -1
+```
 
-स्थापित फर्मवेयर इंगित करता है:सर्वर संस्करण: WS3.53.1243-20190717-Danale-Gen
-रेट संस्करण: v2.3.4-20190709
-ओसीएक्स संस्करण: -1 (डिग्री 0008 डिग्री)
+प्रोसेसर है: इंजेनिक टी 21 (डिग्री 0001 डिग्री)  
+http://www.ininic.com.cn/en/?product/id/11.html  
+https://en.indasina.com/ingenic-t21-xtremegy-megapixel-encoding-processor (° 0001 डिग्री)  
+  
 
-प्रोसेसर है: अभियंता टी 21 (डिग्री 0001 डिग्री) http://www.ininic.com.cn/en/?product/id/11.html (° 0002 डिग्री) https://fr.indasina.com/ingenic- टी 21 एंड -2-मेगापिक्सेला कोड प्रोसेसर (डिग्री ° 0003 डिग्री)
+सीएमओएस सेंसर है: जीसी 2053।   
 
+राम: 42 एमबी intt, 36 एमआईबी उपलब्ध है।    
 
-सीएमओएस सेंसर है: जीसी 2053। 
+9999 हाडो खुला है और कैमरे को नियंत्रित करने की अनुमति देता है: (° ° 0001 डिग्री)  
+इको (000 0001 डिग्री) ° 1 ° checuser -ac सेट -User व्यवस्थापक- password व्यवस्थापक (° 0002 डिग्री) |    
 
-राम: 42 एमआईबी समग्र, 36 एमआईबी उपलब्ध है। 
+GPO-HADENS:  
+46 = infraring व्याख्या।    
 
-99 99 पोर्ट खुला है और कैमरे को नियंत्रित करने की अनुमति देता है:
-इको (° ° 0002 डिग्री) CHECKUSER -ACT सेट -User व्यवस्थापक- password व्यवस्थापक"| 
+चिल्लाने के लिए जीपीआईओ-हेडेन अवरुद्ध: (° 0001 डिग्री)  
+Motor.ko द्वारा अवरुद्ध: 18?   
 
-जीपीआईओ बंदरगाहों: (डिग्री 0001 डिग्री) 46 = इन्फ्रिट चमड़ा। 
+पीटीजेड नियंत्रण: (° 0001 डिग्री)  
 
-जीपीआईओ बंदरगाहों ने अध्ययन के लिए अवरुद्ध:
-motor.ko: 18 द्वारा अवरुद्ध? 
+शीर्ष: http: // admin: admin@192.168.24.39/?   
+Msalkru: http: // admin: admin@192.168.24.39/?   
+बाएं: http: // admin: admin@192.168.24.39/?   
+दाईं ओर: http: // admin: admin@192.168.24.39/?   
+रोकें: http: // admin: admin@192.168.24.39/?   
 
-पीटीजेड नियंत्रण: (° 0001 डिग्री)
-
-शीर्ष: http: // admin: admin@192.168.24.39/? 
-
-सेट स्थिति 2: http://192.168.24.39/ cmd 2 -data2 1
-निकालें 2: http://192.168.24.39/?jcpcmd=pelcod20ctrl -type 2 -cmd 3 -data2 2
+सेट स्थिति 2: http://192.168.24.39/0jcpcmd=pelcod20ctl -type 2 -cmd 1 -gata2 2  
+1 पर जाएं: http://192.168.24.39/?jjcpcmd=pelcod203trl -type 2 -cmd 2 -gata2 1  
+निकालें 2: http://192.168.24.39/?jcpcmd=pelcod203trl -type 2 -cmd 3 -data2 2  
 
 
 

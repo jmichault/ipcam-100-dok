@@ -1,7 +1,7 @@
 ---
 lang: it
 lang-niv: auto
-lang-ref: 099-alternativa_firmvaro
+lang-ref: 010-alternativa_firmvaro
 layout: page
 title: 'Firmware alternativo'
 ---
@@ -36,9 +36,6 @@ title: 'Firmware alternativo'
 
 
   * predefinito a _CRONTAB_ se necessario
-
-
-  * inizio servizio _crond_, rete, servizio _ntpd_, servizio web
 
 
   * inizio servizi (in _config/autostart_)

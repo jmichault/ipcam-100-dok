@@ -1,7 +1,7 @@
 ---
 lang: ms
 lang-niv: auto
-lang-ref: 099-alternativa_firmvaro
+lang-ref: 010-alternativa_firmvaro
 layout: page
 title: 'Firmware alternatif'
 ---
@@ -36,9 +36,6 @@ title: 'Firmware alternatif'
 
 
   * lalai ke _CRONTAB_ jika diperlukan
-
-
-  * memulakan perkhidmatan _crond_, rangkaian, perkhidmatan _ntpd_, perkhidmatan web
 
 
   * memulakan perkhidmatan (dalam _config/autostart_)

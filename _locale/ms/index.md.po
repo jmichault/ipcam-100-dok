@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-10-29 23:28+0200\n"
+"POT-Creation-Date: 2021-10-30 11:06+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -118,15 +118,13 @@ msgstr "Apa yang Berfungsi dalam Firmware Alternatif:"
 
 #. type: Bullet: '* '
 #: index.md:33
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "_LAN_ kaj _WLAN_\n"
 msgstr "_LAN_ dan _WLAN_\n"
 
 #. type: Bullet: '* '
 #: index.md:35
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Servilo (° 1 ° duobla-fluo: _1920x1080 H264_ kaj _640x360 MJPEG_ defaŭlte. \n"
 msgstr "Server (° 1 ° Double-Flow: _1920x1080 H264_ dan _640x360 MJPEG_ secara lalai.  \n"
 
@@ -138,8 +136,7 @@ msgstr "Parameter visual\n"
 
 #. type: Bullet: '* '
 #: index.md:39
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Servilo _HTTP_\n"
 msgstr "Server _HTTP_\n"
 
@@ -157,50 +154,43 @@ msgstr "penentukuran enjin\n"
 
 #. type: Bullet: '* '
 #: index.md:45
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Parametroj _PTZ_\n"
 msgstr "Parameter _PTZ_(° 3 ° 3\n"
 
 #. type: Bullet: '* '
 #: index.md:47
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Kliento _NTP_\n"
 msgstr "Pelanggan _NTP_(° 3 ° 3\n"
 
 #. type: Bullet: '* '
 #: index.md:49
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Pasvorta administrado _http_, _rtsp_ kaj sistemo. \n"
 msgstr "Pentadbiran Kata Laluan _http_, _rtsp_ dan sistem.  \n"
 
 #. type: Bullet: '* '
 #: index.md:51
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Blanka LED-Kontrolo kaj IR\n"
 msgstr "Kawalan LED Putih dan Ir\n"
 
 #. type: Bullet: '* '
 #: index.md:53
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Blanka LED-Kontrolo kaj IR _ftp_\n"
 msgstr "Kawalan LED Putih dan Ir _ftp_\n"
 
 #. type: Bullet: '* '
 #: index.md:55
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Blanka LED-Kontrolo kaj IR _telnet_\n"
 msgstr "Kawalan LED Putih dan Ir _telnet_\n"
 
 #. type: Bullet: '* '
 #: index.md:57
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Servilo kaj kliento _ssh_\n"
 msgstr "Pelayan dan pelanggan _ssh_(° 3 ° 3\n"
 
@@ -218,15 +208,13 @@ msgstr "menghantar e-mel\n"
 
 #. type: Bullet: '* '
 #: index.md:63
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Sendi _«telegram»_\n"
 msgstr "Hantar _«telegram»_\n"
 
 #. type: Bullet: '* '
 #: index.md:65
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Aŭtomata nokta reĝimo\n"
 msgstr "Rejim Malam Automatik\n"
 
@@ -268,8 +256,7 @@ msgstr "menghantar e-mel_mqtt_\n"
 
 #. type: Bullet: '* '
 #: index.md:80
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Sendante bildojn kaj videojn en nubo\n"
 msgstr "Menghantar imej dan video dalam awan (° 1 ° 1\n"
 
@@ -299,8 +286,7 @@ msgstr "Mungkin menetapkan rangkaian ( _www/ipcam/config.dist/reto.conf_ )\n"
 
 #. type: Bullet: '* '
 #: index.md:91
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Enmetu la karton _microSD_ en la fotilon. \n"
 msgstr "Masukkan kad _microSD_ dalam kamera.  \n"
 
@@ -336,8 +322,7 @@ msgstr "Faru `cd /opt/media/mmcblk0p1;./install.sh`\n"
 
 #. type: Bullet: '* '
 #: index.md:103
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "La fotilo rekomencas, nun:\n"
 msgstr "Kamera ini resume, sekarang: (° 1 ° 1\n"
 
@@ -367,14 +352,17 @@ msgstr "Arus video menengah boleh diakses pada _rtsp://admin:ismart21@IP/stream2
 
 #. type: Plain text
 #: index.md:116
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "(° 1 ° WiFi AP-reĝimo estas aktivigita defaŭlte:\n"
 "    ** SSID: IPCAM100-XXXXXX\n"
 "    ** WPA2-ŝlosilo: ismart21\n"
 "IP-adreso de la fotilo: 172.25.0.1\n"
-msgstr "(° 1 ° 1 ° 1 Wifi AP Mode diaktifkan oleh lalai:\nSSID: IPCAM100-XXXXXX\n    ** WPA2 Key: Ismart21\nAlamat IP kamera: 172.25.0.1\n"
+msgstr ""
+"(° 1 ° 1 ° 1 Wifi AP Mode diaktifkan oleh lalai:\n"
+"SSID: IPCAM100-XXXXXX\n"
+"    ** WPA2 Key: Ismart21\n"
+"Alamat IP kamera: 172.25.0.1\n"
 
 #. type: Title ##
 #: index.md:117
@@ -414,14 +402,16 @@ msgstr "Dokumen yang menarik"
 
 #. type: Plain text
 #: index.md:135
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "Multa laboro estis farita por fotiloj ekipitaj per procesoro _ingenic T20_ :\n"
 "* modifita firmware: <https://github.com/eliaskotlyar/xiaomi- dafang -Hacks>\n"
 "* Fontoj de la modifita firmware: <https://github.com/dafang-hacks/main>\n"
 "17 °) https://github.com/thatusenameAlreadyExist/Jco-pm203-fisheye-ingenic-t20-p2p-camera-hacks>\n"
-msgstr "Banyak kerja dibuat untuk kamera yang dilengkapi dengan pemproses _ingenic T20_ :* Diubahsuai firmware: <https://github.com/ilítístotlyar/xiaomi- Dafang -Haks>\nSumber firmware yang diubahsuai: <https://github.com/dafang-hacks/main>\n17 °) https://github.com/thuatenameanameexist/jco-pm203-fisheye-ininic-t20-p2p-camera-hacks>\n"
+msgstr ""
+"Banyak kerja dibuat untuk kamera yang dilengkapi dengan pemproses _ingenic T20_ :* Diubahsuai firmware: <https://github.com/ilítístotlyar/xiaomi- Dafang -Haks>\n"
+"Sumber firmware yang diubahsuai: <https://github.com/dafang-hacks/main>\n"
+"17 °) https://github.com/thuatenameanameexist/jco-pm203-fisheye-ininic-t20-p2p-camera-hacks>\n"
 
 #, no-wrap
 #~ msgid ""

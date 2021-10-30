@@ -1,3 +1,11 @@
+---
+lang: it
+lang-niv: auto
+lang-ref: 053-audio-programigo_gvidilo
+layout: page
+title: 'Guida di programmazione solida'
+---
+
 # IMP_Audio (voir imp_audio.h)
 
 Modulo audio, inclusa registrazione e riproduzione, codec audio, impostazioni di volume e guadagno, cancellazione dell'eco, guadagno automatico e altre funzioni.

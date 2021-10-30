@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-10-29 23:28+0200\n"
+"POT-Creation-Date: 2021-10-30 11:06+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -118,15 +118,13 @@ msgstr "वैकल्पिक फर्मवेयर में क्या
 
 #. type: Bullet: '* '
 #: index.md:33
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "_LAN_ kaj _WLAN_\n"
 msgstr "(° 0001 डिग्री) और (° 0003 डिग्री) (° 0005 डिग्री)\n"
 
 #. type: Bullet: '* '
 #: index.md:35
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Servilo (° 1 ° duobla-fluo: _1920x1080 H264_ kaj _640x360 MJPEG_ defaŭlte. \n"
 msgstr "सर्वर (° ° ° ° ° ° ° 1 ° 1 ° डबल प्रवाह: _1920x1080 H264_ और डिफ़ॉल्ट रूप से (° 0004 डिग्री)।  \n"
 
@@ -138,8 +136,7 @@ msgstr "दृश्य पैरामीटर\n"
 
 #. type: Bullet: '* '
 #: index.md:39
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Servilo _HTTP_\n"
 msgstr "सर्वर (° 0001 डिग्री) (° ° 0003 डिग्री)\n"
 
@@ -157,50 +154,43 @@ msgstr "इंजन अंशांकन\n"
 
 #. type: Bullet: '* '
 #: index.md:45
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Parametroj _PTZ_\n"
 msgstr "पैरामीटर (° 0001 डिग्री)\n"
 
 #. type: Bullet: '* '
 #: index.md:47
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Kliento _NTP_\n"
 msgstr "ग्राहक (° 0001 डिग्री)\n"
 
 #. type: Bullet: '* '
 #: index.md:49
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Pasvorta administrado _http_, _rtsp_ kaj sistemo. \n"
 msgstr "पासवर्ड प्रबंधन (डिग्री डिग्री 0001 डिग्री), (डिग्री ° 0003 डिग्री) और सिस्टम।  \n"
 
 #. type: Bullet: '* '
 #: index.md:51
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Blanka LED-Kontrolo kaj IR\n"
 msgstr "सफेद एलईडी नियंत्रण और आईआर (° ° 0001 डिग्री)\n"
 
 #. type: Bullet: '* '
 #: index.md:53
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Blanka LED-Kontrolo kaj IR _ftp_\n"
 msgstr "सफेद एलईडी नियंत्रण और आईआर (डिग्री 0001 डिग्री) (डिग्री 0003 डिग्री)\n"
 
 #. type: Bullet: '* '
 #: index.md:55
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Blanka LED-Kontrolo kaj IR _telnet_\n"
 msgstr "सफेद एलईडी नियंत्रण और आईआर (डिग्री 0001 डिग्री) (डिग्री 0003 डिग्री)\n"
 
 #. type: Bullet: '* '
 #: index.md:57
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Servilo kaj kliento _ssh_\n"
 msgstr "सर्वर और ग्राहक (° ° 0001 डिग्री) (° ° 0003 डिग्री)\n"
 
@@ -218,15 +208,13 @@ msgstr "ईमेल भेजना\n"
 
 #. type: Bullet: '* '
 #: index.md:63
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Sendi _«telegram»_\n"
 msgstr "भेजें _«telegram»_\n"
 
 #. type: Bullet: '* '
 #: index.md:65
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Aŭtomata nokta reĝimo\n"
 msgstr "स्वचालित नाइट शासन (° ° 0001 डिग्री)\n"
 
@@ -268,8 +256,7 @@ msgstr "ईमेल भेजना_mqtt_\n"
 
 #. type: Bullet: '* '
 #: index.md:80
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Sendante bildojn kaj videojn en nubo\n"
 msgstr "क्लाउड में चित्र और वीडियो भेजना (° ° 0001 डिग्री)\n"
 
@@ -299,8 +286,7 @@ msgstr "शायद नेटवर्क (° ° ° 0001 डिग्री) (�
 
 #. type: Bullet: '* '
 #: index.md:91
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Enmetu la karton _microSD_ en la fotilon. \n"
 msgstr "कैमरे में कार्ड (° ° ° 0001 डिग्री) डालें।  \n"
 
@@ -336,8 +322,7 @@ msgstr "फ़ारू `cd /opt/media/mmcblk0p1;./install.sh`\n"
 
 #. type: Bullet: '* '
 #: index.md:103
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "La fotilo rekomencas, nun:\n"
 msgstr "कैमरा फिर से शुरू होता है, अब: (° 0001 डिग्री)\n"
 
@@ -367,14 +352,16 @@ msgstr "माध्यमिक वीडियो प्रवाह (° ° 00
 
 #. type: Plain text
 #: index.md:116
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "(° 1 ° WiFi AP-reĝimo estas aktivigita defaŭlte:\n"
 "    ** SSID: IPCAM100-XXXXXX\n"
 "    ** WPA2-ŝlosilo: ismart21\n"
 "IP-adreso de la fotilo: 172.25.0.1\n"
-msgstr "(° ° ° ° ° ° 1 ° 1 वाईफ़ाई एपी मोड डिफ़ॉल्ट रूप से सक्रिय होता है: (° ° ° 0002 डिग्री)    ** SSID: IPCAM100-XXXXXX\n    **     ** WPA2 कुंजी: ISMART21\nकैमरे का आईपी पता: 172.25.0.1 (डिग्री ° 0007 डिग्री)\n"
+msgstr ""
+"(° ° ° ° ° ° 1 ° 1 वाईफ़ाई एपी मोड डिफ़ॉल्ट रूप से सक्रिय होता है: (° ° ° 0002 डिग्री)    ** SSID: IPCAM100-XXXXXX\n"
+"    **     ** WPA2 कुंजी: ISMART21\n"
+"कैमरे का आईपी पता: 172.25.0.1 (डिग्री ° 0007 डिग्री)\n"
 
 #. type: Title ##
 #: index.md:117
@@ -414,14 +401,15 @@ msgstr "दिलचस्प दस्तावेज"
 
 #. type: Plain text
 #: index.md:135
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "Multa laboro estis farita por fotiloj ekipitaj per procesoro _ingenic T20_ :\n"
 "* modifita firmware: <https://github.com/eliaskotlyar/xiaomi- dafang -Hacks>\n"
 "* Fontoj de la modifita firmware: <https://github.com/dafang-hacks/main>\n"
 "17 °) https://github.com/thatusenameAlreadyExist/Jco-pm203-fisheye-ingenic-t20-p2p-camera-hacks>\n"
-msgstr "एक प्रोसेसर (° ° ° ° 0003 डिग्री) (° ° 0004 डिग्री) (° ° 0004 डिग्री) (° ° 0004 डिग्री) (° ° 000 ° ° 0005 °) https://github.com/ilicultoutallyar के साथ बहुत अधिक काम किया गया था / xiaomi- dafang -haks>\n(डिग्री 0008 डिग्री) (डिग्री 0008 डिग्री) संशोधित फर्मवेयर के स्रोत: (° 000 9 °) https://github.com/dafang-hacks/main (° 00010 डिग्री) (° 00011 डिग्री) 17 °) https://github.com/thatusenameanamexist/jco-pm203-fisheyeee-ineenic-t20-p2p-camera-hacks (° 00013 डिग्री)\n"
+msgstr ""
+"एक प्रोसेसर (° ° ° ° 0003 डिग्री) (° ° 0004 डिग्री) (° ° 0004 डिग्री) (° ° 0004 डिग्री) (° ° 000 ° ° 0005 °) https://github.com/ilicultoutallyar के साथ बहुत अधिक काम किया गया था / xiaomi- dafang -haks>\n"
+"(डिग्री 0008 डिग्री) (डिग्री 0008 डिग्री) संशोधित फर्मवेयर के स्रोत: (° 000 9 °) https://github.com/dafang-hacks/main (° 00010 डिग्री) (° 00011 डिग्री) 17 °) https://github.com/thatusenameanamexist/jco-pm203-fisheyeee-ineenic-t20-p2p-camera-hacks (° 00013 डिग्री)\n"
 
 #, no-wrap
 #~ msgid ""
