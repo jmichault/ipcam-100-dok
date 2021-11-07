@@ -29,6 +29,4 @@ Jika anda perlu memulihkan perpustakaan, memberi inspirasi skrip berikut:
 
 
 Jika anda perlu menyusun _«toolchain»_, anda boleh menyemak laman web berikut:
- * https://github.com/anmped/openfang
-
-
+ * https://github.com/anmaped/openfang

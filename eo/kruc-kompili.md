@@ -25,6 +25,4 @@ Se vi bezonas rekompili bibliotekon, inspiri la sekvajn skriptojn:
 
 
 Se vi iam bezonos kompili la _«toolchain»_, vi povas konsulti la sekvan retejon:
- * https://github.com/anmped/openfang
-
-
+ * https://github.com/anmaped/openfang

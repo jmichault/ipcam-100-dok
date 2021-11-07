@@ -93,10 +93,10 @@ msgstr ""
 #, fuzzy, no-wrap
 msgid ""
 "Se vi iam bezonos kompili la _«toolchain»_, vi povas konsulti la sekvan retejon:\n"
-" * https://github.com/anmped/openfang\n"
+" * https://github.com/anmaped/openfang\n"
 msgstr ""
 "إذا كنت بحاجة إلى ترجمة _«toolchain»_، يمكنك التحقق من موقع الويب التالي:\n"
-" * https://github.com/anmped/openfang\n"
+" * https://github.com/anmaped/openfang\n"
 
 #, no-wrap
 #~ msgid "005-kruc-compili"

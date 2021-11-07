@@ -29,6 +29,4 @@ If you need to recover a library, inspire the following scripts:
 
 
 If you ever need to compile the _«toolchain»_, you can check the following website:
- * https://github.com/anmped/openfang
-
-
+ * https://github.com/anmaped/openfang

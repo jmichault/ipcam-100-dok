@@ -81,5 +81,5 @@ msgstr ""
 #, no-wrap
 msgid ""
 "Se vi iam bezonos kompili la _«toolchain»_, vi povas konsulti la sekvan retejon:\n"
-" * https://github.com/anmped/openfang\n"
+" * https://github.com/anmaped/openfang\n"
 msgstr ""

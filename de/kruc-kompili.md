@@ -29,6 +29,4 @@ Wenn Sie eine Bibliothek wiederherstellen müssen, inspirieren Sie die folgenden
 
 
 Wenn Sie jemals die _«toolchain»_kompilieren müssen, können Sie die folgende Website überprüfen:
- * https://github.com/anmped/openfang
-
-
+ * https://github.com/anmaped/openfang

@@ -21,6 +21,4 @@ title: 'क्रॉस संकलन'
 
 
 यदि आप कभी
-https://github.com/anmped/openfang
-
-
+https://github.com/anmaped/openfang

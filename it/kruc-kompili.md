@@ -29,6 +29,4 @@ Se è necessario recuperare una libreria, ispirare i seguenti script:
 
 
 Se è mai necessario compilare il _«toolchain»_, è possibile verificare il seguente sito web:
- * https://github.com/anmped/openfang
-
-
+ * https://github.com/anmaped/openfang

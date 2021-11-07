@@ -29,6 +29,4 @@ Ils ont été compilés pour debian buster x64.
 
 
 Если вам когда-либо нужно скомпилировать _«toolchain»_, вы можете проверить следующий веб-сайт:
- * https://github.com/anmped/Openfang
-
-
+ * https://github.com/anmaped/openfang
