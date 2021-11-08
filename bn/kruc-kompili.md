@@ -29,6 +29,4 @@ Ils ont été compilés pour debian buster x64.
 
 
 আপনি যদি কখনও কখনও _«toolchain»_কম্পাইল করতে পারেন:
- * https://github.com/anmped/Openfang
-
-
+ * https://github.com/anmaped/openfang

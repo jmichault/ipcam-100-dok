@@ -95,7 +95,7 @@ msgstr ""
 msgid ""
 "Si jamais vous avez besoin de recompiler la _«toolchain»_, vous pouvez consulter le site suivant :\n"
 " * https://github.com/anmaped/openfang\n"
-msgstr "Se vi iam bezonos kompili la _«toolchain»_, vi povas konsulti la sekvan retejon:\n * https://github.com/anmped/openfang\n"
+msgstr "Se vi iam bezonos kompili la _«toolchain»_, vi povas konsulti la sekvan retejon:\n * https://github.com/anmaped/openfang\n"
 
 #
 #~ msgid ""

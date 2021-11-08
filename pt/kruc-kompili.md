@@ -29,6 +29,4 @@ Se você precisar recuperar uma biblioteca, inspire os seguintes scripts:
 
 
 Se você precisar compilar o _«toolchain»_, você pode verificar o seguinte site:
- * https://github.com/anmped/openfang
-
-
+ * https://github.com/anmaped/openfang

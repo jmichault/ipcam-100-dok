@@ -29,6 +29,4 @@ Ils ont été compilés pour debian buster x64.
 
 
  _«toolchain»_をコンパイルする必要がある場合は、次のWebサイトを確認できます。
- * https://github.com/anmped/openfang
-
-
+ * https://github.com/anmaped/openfang
