@@ -77,6 +77,7 @@ do
     then
       echo "ĝisdatigi traduko ${FIC} al ${lang}"
       po4a-updatepo --msgmerge-opt --no-fuzzy-matching --wrap-po no -m "${FIC}" --master-charset "UTF-8" $OPTIONS --po "../_locale/${lang}/${FIC}.po"
+      touch "../_locale/${lang}/${FIC}.po"
     fi
     ../_scripts/lib/traduki_po.sh "../_locale/${lang}/${FIC}.po"
     if diff "../_locale/${lang}/${FIC}.po.nova" "../_locale/${lang}/${FIC}.po" >/dev/null
