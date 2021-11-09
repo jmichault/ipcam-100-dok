@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-10-30 11:06+0200\n"
+"POT-Creation-Date: 2021-11-09 15:13+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -50,7 +50,7 @@ msgstr "प्रस्तुतीकरण"
 #: index.md:10
 #, fuzzy, no-wrap
 msgid "La celo de ĉi tiu projekto estas krei alternativan firmvaron por ĉi tiu kamerao:\n"
-msgstr "इस परियोजना का उद्देश्य इस कैमरे के लिए एक वैकल्पिक फर्मवेयर बनाना है: (° ° 0001 डिग्री)\n"
+msgstr "इस परियोजना का उद्देश्य इस कैमरे के लिए एक वैकल्पिक फर्मवेयर बनाना है: \n"
 
 #. type: Plain text
 #: index.md:11
@@ -119,14 +119,14 @@ msgstr "वैकल्पिक फर्मवेयर में क्या
 #. type: Bullet: '* '
 #: index.md:33
 #, fuzzy, no-wrap
-msgid "_LAN_ kaj _WLAN_\n"
-msgstr "(° 0001 डिग्री) और (° 0003 डिग्री) (° 0005 डिग्री)\n"
+msgid "_LAN_  kaj  _WLAN_ \n"
+msgstr "_LAN_   और   _WLAN_  \n"
 
 #. type: Bullet: '* '
 #: index.md:35
 #, fuzzy, no-wrap
-msgid "Servilo (° 1 ° duobla-fluo: _1920x1080 H264_ kaj _640x360 MJPEG_ defaŭlte. \n"
-msgstr "सर्वर (° ° ° ° ° ° ° 1 ° 1 ° डबल प्रवाह: _1920x1080 H264_ और डिफ़ॉल्ट रूप से (° 0004 डिग्री)।  \n"
+msgid "Servilo  _RTSP_  Duobla-rivereto:  _1920x1080 H264_  kaj  _640x360 MJPEG_  Defaŭlte. \n"
+msgstr "सर्वर   _RTSP_   डबल स्ट्रीम:   _1920x1080 H264_   और   _640x360 MJPEG_   डिफ़ॉल्ट रूप से।  \n"
 
 #. type: Bullet: '* '
 #: index.md:37
@@ -137,8 +137,8 @@ msgstr "दृश्य पैरामीटर\n"
 #. type: Bullet: '* '
 #: index.md:39
 #, fuzzy, no-wrap
-msgid "Servilo _HTTP_\n"
-msgstr "सर्वर (° 0001 डिग्री) (° ° 0003 डिग्री)\n"
+msgid "Servilo  _HTTP_ \n"
+msgstr "सर्वर   _HTTP_  \n"
 
 #. type: Bullet: '* '
 #: index.md:41
@@ -155,44 +155,44 @@ msgstr "इंजन अंशांकन\n"
 #. type: Bullet: '* '
 #: index.md:45
 #, fuzzy, no-wrap
-msgid "Parametroj _PTZ_\n"
-msgstr "पैरामीटर (° 0001 डिग्री)\n"
+msgid "Agordoj  _PTZ_ \n"
+msgstr "सेटिंग्स   _PTZ_  \n"
 
 #. type: Bullet: '* '
 #: index.md:47
 #, fuzzy, no-wrap
-msgid "Kliento _NTP_\n"
-msgstr "ग्राहक (° 0001 डिग्री)\n"
+msgid "Kliento  _NTP_ \n"
+msgstr "क्लाइंट   _NTP_  \n"
 
 #. type: Bullet: '* '
 #: index.md:49
 #, fuzzy, no-wrap
-msgid "Pasvorta administrado _http_, _rtsp_ kaj sistemo. \n"
-msgstr "पासवर्ड प्रबंधन (डिग्री डिग्री 0001 डिग्री), (डिग्री ° 0003 डिग्री) और सिस्टम।  \n"
+msgid "administri pasvortoj  _http_,  _rtsp_  kaj sistemo. \n"
+msgstr "पासवर्ड   _http_,   _rtsp_   और सिस्टम प्रबंधित करें।  \n"
 
 #. type: Bullet: '* '
 #: index.md:51
 #, fuzzy, no-wrap
-msgid "Blanka LED-Kontrolo kaj IR\n"
-msgstr "सफेद एलईडी नियंत्रण और आईआर (° ° 0001 डिग्री)\n"
+msgid "blankaj LED kontrolo kaj IR \n"
+msgstr "सफेद एलईडी नियंत्रण और आईआर <एच 1> \n"
 
 #. type: Bullet: '* '
 #: index.md:53
 #, fuzzy, no-wrap
-msgid "Blanka LED-Kontrolo kaj IR _ftp_\n"
-msgstr "सफेद एलईडी नियंत्रण और आईआर (डिग्री 0001 डिग्री) (डिग्री 0003 डिग्री)\n"
+msgid "blankaj LED kontrolo kaj IR  _ftp_\n"
+msgstr "सफेद एलईडी नियंत्रण और आईआर <एच 1> <एच 3>\n"
 
 #. type: Bullet: '* '
 #: index.md:55
 #, fuzzy, no-wrap
-msgid "Blanka LED-Kontrolo kaj IR _telnet_\n"
-msgstr "सफेद एलईडी नियंत्रण और आईआर (डिग्री 0001 डिग्री) (डिग्री 0003 डिग्री)\n"
+msgid "blankaj LED kontrolo kaj IR  _telnet_\n"
+msgstr "सफेद एलईडी नियंत्रण और आईआर <एच 1> <एच 3>\n"
 
 #. type: Bullet: '* '
 #: index.md:57
 #, fuzzy, no-wrap
-msgid "Servilo kaj kliento _ssh_\n"
-msgstr "सर्वर और ग्राहक (° ° 0001 डिग्री) (° ° 0003 डिग्री)\n"
+msgid "Servilo kaj Kliento  _ssh_ \n"
+msgstr "सर्वर और क्लाइंट   _ssh_  \n"
 
 #. type: Bullet: '* '
 #: index.md:59
@@ -209,14 +209,14 @@ msgstr "ईमेल भेजना\n"
 #. type: Bullet: '* '
 #: index.md:63
 #, fuzzy, no-wrap
-msgid "Sendi _«telegram»_\n"
-msgstr "भेजें _«telegram»_\n"
+msgid "Sendante  _«telegram»_ \n"
+msgstr "  _«telegram»_   भेजना\n"
 
 #. type: Bullet: '* '
 #: index.md:65
 #, fuzzy, no-wrap
-msgid "Aŭtomata nokta reĝimo\n"
-msgstr "स्वचालित नाइट शासन (° ° 0001 डिग्री)\n"
+msgid "aŭtomata nokto mode \n"
+msgstr "स्वचालित रात मोड  \n"
 
 #. type: Title ##
 #: index.md:67
@@ -257,8 +257,8 @@ msgstr "ईमेल भेजना_mqtt_\n"
 #. type: Bullet: '* '
 #: index.md:80
 #, fuzzy, no-wrap
-msgid "Sendante bildojn kaj videojn en nubo\n"
-msgstr "क्लाउड में चित्र और वीडियो भेजना (° ° 0001 डिग्री)\n"
+msgid "sendo bildojn kaj filmetoj en la nubo \n"
+msgstr "क्लाउड  में शिपमेंट छवियों और वीडियो \n"
 
 #. type: Bullet: '* '
 #: index.md:82
@@ -282,13 +282,13 @@ msgstr "माइक्रोएसडी कार्ड की जड़ म�
 #: index.md:89
 #, fuzzy, no-wrap
 msgid "Eble agordi la reton ( _www/ipcam/config.dist/reto.conf_ )\n"
-msgstr "शायद नेटवर्क (° ° ° 0001 डिग्री) (° 0002 डिग्री) (डिग्री 0004 डिग्री) (डिग्री 0005 डिग्री) सेट करें\n"
+msgstr "शायद  (  _www/ipcam/config.dist/reto.conf_  )   (  सेट करना\n"
 
 #. type: Bullet: '* '
 #: index.md:91
 #, fuzzy, no-wrap
-msgid "Enmetu la karton _microSD_ en la fotilon. \n"
-msgstr "कैमरे में कार्ड (° ° ° 0001 डिग्री) डालें।  \n"
+msgid "Enmeti la karton  _microSD_  en la fotilo. \n"
+msgstr "कैमरे में कार्ड   _microSD_   डालें।  \n"
 
 #. type: Bullet: '* '
 #: index.md:93
@@ -300,13 +300,13 @@ msgstr "कैमरे को अपने स्थानीय नेटव�
 #: index.md:95
 #, fuzzy, no-wrap
 msgid "Trovu la IP-adreson de la fotilo. Vi ankaŭ povas konektiĝi al la WiFi de la fotilo (SSID: _HSIPC-******_), en tiu kazo la IP-adreso estas _172.25.0.1_.\n"
-msgstr "कैमरा का आईपी पता खोजें। आप कैमरे वाईफाई (डिग्री ° 0001 डिग्री) SSID से भी कनेक्ट कर सकते हैं: (° 0002 डिग्री)।\n"
+msgstr "कैमरा का आईपी पता खोजें। आप कैमरे के वाईफाई से भी कनेक्ट कर सकते हैं  ( SSID:  _HSIPC-******_), en tiu kazo la IP-adreso estas _172.25.0.1_। \n"
 
 #. type: Bullet: '* '
 #: index.md:97
 #, fuzzy, no-wrap
 msgid "Konekti al la fotilo per `telnet IP 9527` (uzanto _root_, pasvorto _jco66688_), ene de 5 minutoj post turnado sur la fotilo.\n"
-msgstr "कैमरे पर घूमने के 5 मिनट के भीतर, (° ° 0001 डिग्री ° ° ° 0004 डिग्री), पासवर्ड (° 0006 डिग्री) द्वारा कैमरे से कनेक्ट करें।\n"
+msgstr "कैमरे पर घूमने के 5 मिनट के भीतर  `telnet IP 9527`  ( उपयोगकर्ता  _root_, पासवर्ड  _jco66688_) द्वारा कैमरे से कनेक्ट करें। \n"
 
 #. type: Bullet: '* '
 #: index.md:99
@@ -323,45 +323,46 @@ msgstr "फ़ारू `cd /opt/media/mmcblk0p1;./install.sh`\n"
 #. type: Bullet: '* '
 #: index.md:103
 #, fuzzy, no-wrap
-msgid "La fotilo rekomencas, nun:\n"
-msgstr "कैमरा फिर से शुरू होता है, अब: (° 0001 डिग्री)\n"
+msgid "La fotilo reboots nun: \n"
+msgstr "अब रीबूट कैमरा:  \n"
 
 #. type: Bullet: '    * '
 #: index.md:105
 #, fuzzy, no-wrap
 msgid "Vi povas konektiĝi al la URL _https://IP_ (uzanto _admin_, pasvorto _ismart21_).\n"
-msgstr "आप यूआरएल (° ° ° ° 0003 डिग्री) उपयोगकर्ता (° ° 0004 डिग्री), पासवर्ड (° ° 0006 डिग्री) से कनेक्ट कर सकते हैं।\n"
+msgstr "आप URL  _https://IP_  ( उपयोगकर्ता  _admin_, पासवर्ड  _ismart21_) से कनेक्ट कर सकते हैं। \n"
 
 #. type: Bullet: '    * '
 #: index.md:107
 #, fuzzy, no-wrap
 msgid "Vi povas konektiĝi en SSH (uzanto _admin_, pasvorto _ismart12_).\n"
-msgstr "आप एसएसएच (° ° 0001 डिग्री) उपयोगकर्ता (° ° 0002 डिग्री), पासवर्ड (° ° 0004 डिग्री) में जोड़ सकते हैं।\n"
+msgstr "आप एसएसएच  ( उपयोगकर्ता  _admin_, पासवर्ड  _ismart12_) में कनेक्ट कर सकते हैं। \n"
 
 #. type: Bullet: '    * '
 #: index.md:109
 #, fuzzy, no-wrap
 msgid "La primara video-fluo estas alirebla ĉe _rtsp://admin:ismart21@IP/stream1_.\n"
-msgstr "प्राथमिक वीडियो प्रवाह (° ° 0001 डिग्री) पर पहुंच योग्य है।\n"
+msgstr "प्राथमिक वीडियो वर्तमान  _rtsp://admin:ismart21@IP/stream1_ पर पहुंच योग्य है। \n"
 
 #. type: Bullet: '    * '
 #: index.md:111
 #, fuzzy, no-wrap
 msgid "La sekundara video-fluo estas alirebla ĉe _rtsp://admin:ismart21@IP/stream2_.\n"
-msgstr "माध्यमिक वीडियो प्रवाह (° ° 0001 डिग्री) पर पहुंच योग्य है।\n"
+msgstr "माध्यमिक वीडियो प्रवाह  _rtsp://admin:ismart21@IP/stream2_ पर पहुंच योग्य है। \n"
 
 #. type: Plain text
 #: index.md:116
 #, fuzzy, no-wrap
 msgid ""
-"(° 1 ° WiFi AP-reĝimo estas aktivigita defaŭlte:\n"
-"    ** SSID: IPCAM100-XXXXXX\n"
-"    ** WPA2-ŝlosilo: ismart21\n"
-"IP-adreso de la fotilo: 172.25.0.1\n"
+"    *  WiFi AP-reĝimo estas ebligita defaŭlte: \n"
+"     **  SSID: IPCAM100-XXXXX \n"
+"     **  WPA2-klavo: ismart21 \n"
+"     **  IP-adreso de la fotilo: 172.25.0.1 \n"
 msgstr ""
-"(° ° ° ° ° ° 1 ° 1 वाईफ़ाई एपी मोड डिफ़ॉल्ट रूप से सक्रिय होता है: (° ° ° 0002 डिग्री)    ** SSID: IPCAM100-XXXXXX\n"
-"    **     ** WPA2 कुंजी: ISMART21\n"
-"कैमरे का आईपी पता: 172.25.0.1 (डिग्री ° 0007 डिग्री)\n"
+"    *   वाईफ़ाई एपी मोड डिफ़ॉल्ट रूप से सक्षम है:  \n"
+"      **   ssid: ipcam100-xxxxx  \n"
+"      **   wpa2 कुंजी: ismart21  \n"
+"      **   कैमरा का आईपी पता: 172.25.0.1  \n"
 
 #. type: Title ##
 #: index.md:117
@@ -373,13 +374,13 @@ msgstr "वैकल्पिक फर्मवेयर की स्थाप
 #: index.md:120
 #, fuzzy, no-wrap
 msgid "Lanĉu la servon SSH sur la fotilo tra la defaŭlta interfaco).\n"
-msgstr "डिफ़ॉल्ट इंटरफ़ेस (° ° ° 0001 डिग्री) के माध्यम से कैमरे पर एसएसएच सेवा लॉन्च करें।\n"
+msgstr "डिफ़ॉल्ट इंटरफ़ेस ) के माध्यम से कैमरे पर एसएसएच सेवा लॉन्च करें। \n"
 
 #. type: Bullet: '* '
 #: index.md:122
 #, fuzzy, no-wrap
 msgid "Ensalutu al la fotilo per `ssh root@IP` (pasvorto _ismart12_).\n"
-msgstr "(° ° 0001 डिग्री) (° ° 0003 डिग्री) पासवर्ड _ismart12_)द्वारा कैमरे में लॉगिन करें।\n"
+msgstr " `ssh root@IP`  ( पासवर्ड  _ismart12_) द्वारा कैमरे में लॉगिन करें। \n"
 
 #. type: Bullet: '* '
 #: index.md:124
@@ -400,16 +401,88 @@ msgid "Interesaj dokumentoj"
 msgstr "दिलचस्प दस्तावेज"
 
 #. type: Plain text
-#: index.md:135
+#: index.md:136
 #, fuzzy, no-wrap
 msgid ""
-"Multa laboro estis farita por fotiloj ekipitaj per procesoro _ingenic T20_ :\n"
-"* modifita firmware: <https://github.com/eliaskotlyar/xiaomi- dafang -Hacks>\n"
-"* Fontoj de la modifita firmware: <https://github.com/dafang-hacks/main>\n"
-"17 °) https://github.com/thatusenameAlreadyExist/Jco-pm203-fisheye-ingenic-t20-p2p-camera-hacks>\n"
+"Multa laboro estis farita por fotiloj ekipitaj per procesoro  _ingenic T20_ : \n"
+" *  modifita firmware:  <https://github.com/EliasKotlyar/Xiaomi-Dafang-Hacks> \n"
+" *  Fontoj de la modifita firmware:  <https://github.com/Dafang-Hacks/Main> \n"
+" *  Aliaj firmware:  <https://github.com/openmiko/openmiko> \n"
+" *  Lanĉaj Programoj Sen Ŝanĝi la Firmware:  <https://github.com/ThatUsernameAlreadyExist/JCO-PM203-Fisheye-Ingenic-T20-P2P-camera-hacks> \n"
 msgstr ""
-"एक प्रोसेसर (° ° ° ° 0003 डिग्री) (° ° 0004 डिग्री) (° ° 0004 डिग्री) (° ° 0004 डिग्री) (° ° 000 ° ° 0005 °) https://github.com/ilicultoutallyar के साथ बहुत अधिक काम किया गया था / xiaomi- dafang -haks>\n"
-"(डिग्री 0008 डिग्री) (डिग्री 0008 डिग्री) संशोधित फर्मवेयर के स्रोत: (° 000 9 °) https://github.com/dafang-hacks/main (° 00010 डिग्री) (° 00011 डिग्री) 17 °) https://github.com/thatusenameanamexist/jco-pm203-fisheyeee-ineenic-t20-p2p-camera-hacks (° 00013 डिग्री)\n"
+"एक प्रोसेसर   _ingenic T20_   \n"
+"  *   संशोधित फर्मवेयर:   <https://github.com/EliasKotlyar/Xiaomi-Dafang-Hacks>  \n"
+"  *   संशोधित फर्मवेयर के स्रोतों के लिए बहुत अधिक काम किया गया है:   <https://github.com/Dafang-Hacks/Main>  \n"
+"  *   अन्य फर्मवेयर:   <https://github.com/openmiko/openmiko>  \n"
+"  *   फर्मवेयर को बदले बिना प्रोग्राम लॉन्च करें:   <https://github.com/ThatUsernameAlreadyExist/JCO-PM203-Fisheye-Ingenic-T20-P2P-camera-hacks>  \n"
+
+#, fuzzy
+#~ msgid ""
+#~ "Servilo  _RTSP_  Duoble rivereto:  _1920x1080 H264_  kaj  _640x360 "
+#~ "MJPEG_  defaŭlte. \n"
+#~ msgstr ""
+#~ "सर्वर   _RTSP_   डबल स्ट्रीम:   _1920x1080 H264_   और   _640x360 MJPEG_   "
+#~ "डिफ़ॉल्ट रूप से।  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Blanka LED-Kontrolo kaj IR _ftp_\n"
+#~ msgstr "सफेद एलईडी नियंत्रण और आईआर (डिग्री 0001 डिग्री) (डिग्री 0003 डिग्री)\n"
+
+#, fuzzy, no-wrap
+#~ msgid "Blanka LED-Kontrolo kaj IR _telnet_\n"
+#~ msgstr "सफेद एलईडी नियंत्रण और आईआर (डिग्री 0001 डिग्री) (डिग्री 0003 डिग्री)\n"
+
+#, fuzzy, no-wrap
+#~ msgid "Sendi _«telegram»_\n"
+#~ msgstr "भेजें _«telegram»_\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "Multa laboro estis farita por fotiloj ekipitaj per procesoro  _ingenic "
+#~ "T20_ : \n"
+#~ " *  modifita firmware:  < https://github.com/eliaskotlyar/xiaomi-dafang-"
+#~ "hacks > \n"
+#~ " *  Fontoj de la modifita firmware:  < https://github.com/dafang-hacks/"
+#~ "main > \n"
+#~ " *  Aliaj firmware:  < https://github.com/openmiko/ OpenMIKO > \n"
+#~ " *  PROGRAMO LEGIN sen ŝanĝi la firmware:  < https://github.com/"
+#~ "thatusernameAlreadyExist/Jco-pm203-fisheyE-ingenic-t20-p2p-camera-hacks > "
+#~ "<h19 >\n"
+#~ msgstr ""
+#~ "एक प्रोसेसर से सुसज्जित कैमरों के लिए अधिक काम किया गया है   _ingenic T20_   \n"
+#~ "  *   संशोधित फर्मवेयर:   <  https://github.com/ilistotlyar/xiami-dafang-"
+#~ "hacks  >  \n"
+#~ "  *   संशोधित फर्मवेयर के स्रोत:   <  https://github.com/dafang-hacks/main  "
+#~ ">  \n"
+#~ "  *   अन्य फर्मवेयर:   <  https://github.com/openmiko/ openmiko <h14 > \n"
+#~ "  *   प्रोग्राम फर्मवेयर को बदले बिना पढ़े:   <  https://github.com/"
+#~ "thatusernameanameanameexist/jco-pm203-fisheye-iningenic-t20-p2p-camera-"
+#~ "hacks  >  < h19 < एच 1 9 <एच 1 9 <एच 1 9 <एच 1 9 <एच 11 <एच 20> <एच 21>\n"
+
+#, fuzzy, no-wrap
+#~ msgid "Servilo (° 1 ° duobla-fluo: _1920x1080 H264_ kaj _640x360 MJPEG_ defaŭlte. \n"
+#~ msgstr "सर्वर (° ° ° ° ° ° ° 1 ° 1 ° डबल प्रवाह: _1920x1080 H264_ और डिफ़ॉल्ट रूप से (° 0004 डिग्री)।  \n"
+
+#, fuzzy, no-wrap
+#~ msgid ""
+#~ "(° 1 ° WiFi AP-reĝimo estas aktivigita defaŭlte:\n"
+#~ "    ** SSID: IPCAM100-XXXXXX\n"
+#~ "    ** WPA2-ŝlosilo: ismart21\n"
+#~ "IP-adreso de la fotilo: 172.25.0.1\n"
+#~ msgstr ""
+#~ "(° ° ° ° ° ° 1 ° 1 वाईफ़ाई एपी मोड डिफ़ॉल्ट रूप से सक्रिय होता है: (° ° ° 0002 डिग्री)    ** SSID: IPCAM100-XXXXXX\n"
+#~ "    **     ** WPA2 कुंजी: ISMART21\n"
+#~ "कैमरे का आईपी पता: 172.25.0.1 (डिग्री ° 0007 डिग्री)\n"
+
+#, fuzzy, no-wrap
+#~ msgid ""
+#~ "Multa laboro estis farita por fotiloj ekipitaj per procesoro _ingenic T20_ :\n"
+#~ "* modifita firmware: <https://github.com/eliaskotlyar/xiaomi- dafang -Hacks>\n"
+#~ "* Fontoj de la modifita firmware: <https://github.com/dafang-hacks/main>\n"
+#~ "17 °) https://github.com/thatusenameAlreadyExist/Jco-pm203-fisheye-ingenic-t20-p2p-camera-hacks>\n"
+#~ msgstr ""
+#~ "एक प्रोसेसर (° ° ° ° 0003 डिग्री) (° ° 0004 डिग्री) (° ° 0004 डिग्री) (° ° 0004 डिग्री) (° ° 000 ° ° 0005 °) https://github.com/ilicultoutallyar के साथ बहुत अधिक काम किया गया था / xiaomi- dafang -haks>\n"
+#~ "(डिग्री 0008 डिग्री) (डिग्री 0008 डिग्री) संशोधित फर्मवेयर के स्रोत: (° 000 9 °) https://github.com/dafang-hacks/main (° 00010 डिग्री) (° 00011 डिग्री) 17 °) https://github.com/thatusenameanamexist/jco-pm203-fisheyeee-ineenic-t20-p2p-camera-hacks (° 00013 डिग्री)\n"
 
 #, no-wrap
 #~ msgid ""

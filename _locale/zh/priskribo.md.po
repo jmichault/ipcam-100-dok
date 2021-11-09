@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-10-29 14:46+0200\n"
+"POT-Creation-Date: 2021-11-09 15:13+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,43 +16,76 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+#. type: YAML Front Matter: lang
+#: priskribo.md:1
+#, no-wrap
+msgid "eo"
+msgstr "zh"
+
+#. type: YAML Front Matter: lang-niv
+#: priskribo.md:1
+#, no-wrap
+msgid "auto"
+msgstr "auto"
+
+#. type: YAML Front Matter: lang-ref
+#: priskribo.md:1
+#, no-wrap
+msgid "070-kamerao-priskribo"
+msgstr "070-kamerao-priskribo"
+
+#. type: YAML Front Matter: layout
+#: priskribo.md:1
+#, no-wrap
+msgid "page"
+msgstr "page"
+
+#. type: YAML Front Matter: title
+#: priskribo.md:1
+#, fuzzy, no-wrap
+msgid "Priskribo de la fotilo"
+msgstr "相机的描述"
+
 #. type: Title #
-#: ./priskribo.md:3
-#, markdown-text, no-wrap
-#, fuzzy
+#: priskribo.md:11
+#, fuzzy, no-wrap
 msgid "Priskribo:"
 msgstr "描述："
 
 #. type: Plain text
-#: ./priskribo.md:40
-#, markdown-text, no-wrap
-#, fuzzy
+#: priskribo.md:13
+#, fuzzy, no-wrap
+msgid "<https://fr.aliexpress.com/item/4000146161270.html> \n"
+msgstr "<https://fr.aliexpress.com/item/4000146161270.html>  \n"
+
+#. type: Fenced code block
+#: priskribo.md:13
+#, no-wrap
 msgid ""
-"https://fr.aliexpress.com/item/4000146161270.html\n"
-"Markonomo: shiningpo\n"
-"Stilo: Kupola Fotilo\n"
-"Tipo: IP-Fotilo\n"
-"Konektebleco: IP / Reta Sendrata\n"
-"Subtenataj Operaciumoj: Ne\n"
-"Alta Difino: 1080P(Plena HD)\n"
-"Lenso (mm): 3.6mm\n"
-"Instalado: Flanka\n"
-"Elektroprovizo(V): DC12V 2A\n"
-"Reta Interfaco: RJ-45 10 / 100Mb Ethernet Slot\n"
-"Mura Krampo: Plafono\n"
-"Subtenitaj Poŝtelefonaj Sistemoj: Android\n"
-"Subtenataj Poŝtelefonaj Sistemoj: ios\n"
-"IR Distanco(m): 30M- 50M\n"
-"Specialaj Ecoj: Akvorezista / Veterrezista\n"
-"Vidanta Angulo: 140 °\n"
-"Megapikseloj: 2MP\n"
-"Potenca Konsumo(W): 12W\n"
-"Stokado: Neniu\n"
-"Sensila Marko: SONY\n"
-"Alarma Agado: Retpoŝta Foto\n"
-"Alarmiga Ago: Loka Alarmo\n"
-"Formato de Kunprema Video: H.264\n"
-"estas_customized: Yes\n"
+"    Brand Name: shiningpo\n"
+"    Style: Dome Camera\n"
+"    Type: IP Camera\n"
+"    Connectivity: IP/Network Wireless\n"
+"    Supported Operating Systems: No\n"
+"    High Definition: 1080P(Full-HD)\n"
+"    Lens (mm): 3.6mm\n"
+"    Installation: Side\n"
+"    Power Supply(V): DC12V 2A\n"
+"    Network Interface: RJ-45 10/100Mb Ethernet Slot\n"
+"    Wall Bracket: Ceiling\n"
+"    Supported Mobile Systems: Android\n"
+"    Supported Mobile Systems: ios\n"
+"    IR Distance(m): 30M-50M\n"
+"    Special Features: Waterproof / Weatherproof\n"
+"    Viewing Angle : 140°\n"
+"    Megapixels: 2MP\n"
+"    Power Consumption(W): 12W\n"
+"    Storage: None\n"
+"    Sensor Brand: SONY\n"
+"    Alarm Action: Email Photo\n"
+"    Alarm Action: Local Alarm\n"
+"    Video Compression Format: H.264\n"
+"    is_customized: Yes\n"
 "    Technology: Pan Tilt Zoom\n"
 "    Power Supply: Normal\n"
 "    TF Card: None\n"
@@ -64,247 +97,290 @@ msgid ""
 "    camera ip: camera wifi\n"
 "    ip camera wifi: camara vigilancia exterior\n"
 "    ptz: camara ip ptz\n"
-msgstr "https://fr.alivexpress.com/ITEM/4000146161270.HTML�\n��风格：圆顶摄像机�\n��型号：IP摄像机�\n��连接：IP / RETA无线�\n��支持的操作系统：NO�\n��高清晰度：1080p�(��全高清�)���\n��镜头� (��mm�)��：3.6mm�\n��安装：横向�\n��电源�(��V�)��：DC12V II�\n��网络接口：RJ-45 10 / 100MB以太网插槽�\n��Mura支架：天花板�\n��支持的移动系统：Android�\n��支持的移动系统：iOS�\n��IR距离�(��m�)��：30m-50m�\n��特殊功能：防水/ veterrezista�\n��可视角度：140°�\n��百万像素：2mp�\n��W�)��：12W�\n��储存：无�\n��敏感品牌：索尼�\n��报警动作：电子邮件照片＼�警报动作：局部警报�\n��压缩视频的格式：H.264�\n���_customized: Yes\n    Technology: Pan Tilt Zoom\n    Power Supply: Normal\n    TF Card: None\n    Color: White\n    Audio Output: Two Way Audio\n    Sensor: CMOS\n    wifi camera: ip camera\n    camara wifi: camara ip\n    camera ip: camera wifi\n    ip camera wifi: camara vigilancia exterior\n    ptz: camara ip ptz\n��\n"
+msgstr ""
+"    Brand Name: shiningpo\n"
+"    Style: Dome Camera\n"
+"    Type: IP Camera\n"
+"    Connectivity: IP/Network Wireless\n"
+"    Supported Operating Systems: No\n"
+"    High Definition: 1080P(Full-HD)\n"
+"    Lens (mm): 3.6mm\n"
+"    Installation: Side\n"
+"    Power Supply(V): DC12V 2A\n"
+"    Network Interface: RJ-45 10/100Mb Ethernet Slot\n"
+"    Wall Bracket: Ceiling\n"
+"    Supported Mobile Systems: Android\n"
+"    Supported Mobile Systems: ios\n"
+"    IR Distance(m): 30M-50M\n"
+"    Special Features: Waterproof / Weatherproof\n"
+"    Viewing Angle : 140°\n"
+"    Megapixels: 2MP\n"
+"    Power Consumption(W): 12W\n"
+"    Storage: None\n"
+"    Sensor Brand: SONY\n"
+"    Alarm Action: Email Photo\n"
+"    Alarm Action: Local Alarm\n"
+"    Video Compression Format: H.264\n"
+"    is_customized: Yes\n"
+"    Technology: Pan Tilt Zoom\n"
+"    Power Supply: Normal\n"
+"    TF Card: None\n"
+"    Color: White\n"
+"    Audio Output: Two Way Audio\n"
+"    Sensor: CMOS\n"
+"    wifi camera: ip camera\n"
+"    camara wifi: camara ip\n"
+"    camera ip: camera wifi\n"
+"    ip camera wifi: camara vigilancia exterior\n"
+"    ptz: camara ip ptz\n"
 
-#. type: Plain text
-#: ./priskribo.md:50
-#, markdown-text, no-wrap
-#, fuzzy
-msgid ""
-"Surskriboj pri la etikedo:\n"
-"WIFI CARAM\n"
-"Modelo: WF-HD820-ZS\n"
-"Rezolucio: 1080P\n"
-"Elektroprovizo: DC12V / 1A\n"
-"SSID: HSIPC-******\n"
-"Pasvorto: 12345678\n"
-"MAC: 00:88:09:**:**:**\n"
-msgstr "标签的铭文：�\n��WiFi Caram�\n��型号：WF-HD820-ZS（°3°3°3°3°3880P（°4°4°4°4°4°4 °4°4°4°6°电质：DC12V / I�\n��SSID：HSIPC - �******��密码：12345678（°8°8°8°8:88:09： �**��:**��：�**��＼�\n"
-
-#. type: Plain text
-#: ./priskribo.md:54
-#, markdown-text, no-wrap
-#, fuzzy
-msgid ""
-"Kunligante ĝin por Eterreto, ĝi akiras DHCP-adreson kaj nek povas konekti al "
-"la retejo:\n"
-"defaŭlta uzanto: admin\n"
-"defaŭlta pasvorto: admin\n"
-msgstr "通过将其连接到以太网，它得到了DHCP地址，无法连接到网站：�\n��默认用户：Admin�\n��默认密码：管理员＼�\n"
-
-#. type: Plain text
-#: ./priskribo.md:60
-#, markdown-text, no-wrap
-#, fuzzy
-msgid ""
-"dum 5 minutoj, vi povas konekti per telnet al la haveno 9527\n"
-"defaŭlta uzanto: root\n"
-"defaŭlta pasvorto: jco66688\n"
-"por resti konektita preter 5 minutoj: \"killall -9 auto_run.sh»\n"
-"(jco = http://www.cnjabsco.com/ )\n"
-msgstr "5分钟，您可以与Telnet连接到端口9527�\n��默认用户：根�\n��默认密码：JCo66688�\n��到保持超过5分钟的连接：� \"��Killall - 9自动�_run.sh»\n(jco = http://www.cnjabsco.com/ )\n��\n"
-
-#. type: Plain text
-#: ./priskribo.md:62
-#, markdown-text, no-wrap
-#, fuzzy
-msgid "malfermaj havenoj:  \n"
-msgstr "打开端口：（°1°1  \n"
-
-#. type: Plain text
-#: ./priskribo.md:63
-#, markdown-text, no-wrap
-#, fuzzy
-msgid ""
-"  tcp: 80(http), 443(http ankaŭ!), 554(rtsp), 8004, 8006, 9527(telnet), 9999  "
-"\n"
-msgstr "�  ��TCP：80�(��HTTP�)��，443�(��HTTP！   \n"
-
-#. type: Plain text
-#: ./priskribo.md:64
-#, markdown-text, no-wrap
-#, fuzzy
-msgid "  udp: 67(dhcp), 3702, 8002, 39642  \n"
-msgstr "�  ��UDP：67�(��DHCP�)��，3702,8002,39642（°4°4  \n"
-
-#. type: Plain text
-#: ./priskribo.md:83
-#, markdown-text, no-wrap
-#, fuzzy
-msgid ""
-"reta konduto kiam oni lanĉas jco_server:\n"
-"pridemandas la servilon dns pri: www.163.com kaj dns.ictun.com\n"
-"demando 114.114.114.114 por dns.ictun.com\n"
-"konekti al la haveno udp/993 de dns.ictun.com\n"
-"konekti al udp/993-haveno de 120.25.129.41\n"
-"pridemandu la servilon dns pri: conn-policy.ictun.com\n"
-"pridemandu la servilon dns pri: video-policy.ictun.com\n"
-"konekti al udp/80-haveno de 52.29.45.252\n"
-"konektas al udp/1210-haveno de 52.29.45.252\n"
-"ligas al udp/21-haveno de 52.57.135.134\n"
-"konektas al udp/1053-haveno de 52.28.62.20\n"
-"konektas al udp/443-haveno de 52.29.58.225\n"
-"konektas al udp/123 (ntp) haveno de 112.74.204.233 "
-"(video-policy.ictun.com)\n"
-"ligas al udp/993-haveno de 47.52.99.182\n"
-"konektas al udp/1054-haveno de 52.57.127.207\n"
-"...\n"
-"noto: ŝanĝu la defaŭltan itineron metante tiun de la interreta skatolo.\n"
-msgstr "启动JCO时的Web行为�_server:\npridemandas la servilon dns pri: www.163.com kaj dns.ictun.com\ndemando 114.114.114.114 por dns.ictun.com\nkonekti al la haveno udp/993 de dns.ictun.com\nkonekti al udp/993-haveno de 120.25.129.41\npridemandu la servilon dns pri: conn-policy.ictun.com\npridemandu la servilon dns pri: video-policy.ictun.com\nkonekti al udp/80-haveno de 52.29.45.252\nkonektas al udp/1210-haveno de 52.29.45.252\nligas al udp/21-haveno de 52.57.135.134\nkonektas al udp/1053-haveno de 52.28.62.20\nkonektas al udp/443-haveno de 52.29.58.225\nkonektas al udp/123 (ntp) haveno de 112.74.204.233 (video-policy.ictun.com)\nligas al udp/993-haveno de 47.52.99.182\nkonektas al udp/1054-haveno de 52.57.127.207\n...\nnoto: ŝanĝu la defaŭltan itineron metante tiun de la interreta skatolo.\n��\n"
-
-#. type: Plain text
-#: ./priskribo.md:86
-#, markdown-text, no-wrap
-#, fuzzy
-msgid "haltigi jco_server sen kaŭzi restartigi:\n"
-msgstr "停止JCO�_server sen kaŭzi restartigi:\n��\n"
-
-#. type: Title ##
-#: ./priskribo.md:87
-#, markdown-text, no-wrap
-#, fuzzy
-msgid "halti_cloud :"
-msgstr "停止�_cloud :��"
+#. type: Title #
+#: priskribo.md:51
+#, fuzzy, no-wrap
+msgid "Etikedaj surskriboj"
+msgstr "标签铭文"
 
 #. type: Fenced code block
-#: ./priskribo.md:88
+#: priskribo.md:52
+#, no-wrap
+msgid ""
+"WIFI CARAM\n"
+"Model : WF-HD820-ZS\n"
+"Résolution : 1080P\n"
+"Power Supply : DC12V/1A\n"
+"SSID : HSIPC-******\n"
+"Password : 12345678\n"
+"MAC : 00:88:09:**:**:**\n"
+msgstr ""
+"WIFI CARAM\n"
+"Model : WF-HD820-ZS\n"
+"Résolution : 1080P\n"
+"Power Supply : DC12V/1A\n"
+"SSID : HSIPC-******\n"
+"Password : 12345678\n"
+"MAC : 00:88:09:**:**:**\n"
+
+#. type: Plain text
+#: priskribo.md:65
+#, fuzzy, no-wrap
+msgid ""
+"Konektante la fotilon al Ethorn-reto, ĝi ricevas IP-adreson, kaj vi povas konektiĝi al ĝi ĉe http:   \n"
+"Defaŭlta Uzanto:  _admin_   \n"
+"Defaŭlta Pasvorto:  _admin_ \n"
+msgstr ""
+"它连接录像机网络摄像头，收到IP地址，您可以在HTTP：   \n"
+"默认用户：  _admin_    \n"
+"默认密码：  _admin_  \n"
+
+#. type: Plain text
+#: priskribo.md:67
+#, fuzzy, no-wrap
+msgid ""
+"Dum 5 minutoj, ni povas konekti per  _telnet_  al haveno 9527:   \n"
+"Defaŭlta Uzanto:  _root  \n"
+msgstr ""
+"5分钟，我们可以将  _telnet_  连接到端口9527：   \n"
+"默认用户：  _root  \n"
+"  \n"
+
+#. type: Plain text
+#: priskribo.md:69
+#, fuzzy, no-wrap
+msgid "Defaŭlta Pasvorto:  _jco66688  \n"
+msgstr ""
+"默认密码：  _jco66688  \n"
+"  \n"
+
+#. type: Plain text
+#: priskribo.md:73
+#, fuzzy, no-wrap
+msgid ""
+"Por resti konektita post ĉi tiuj 5 minutoj:  `killall -9 auto_run.sh`     \n"
+" _( JCO = http://www.cnjabsco.com/  )   _\n"
+msgstr ""
+"在这5分钟后保持联系：  `killall -9 auto_run.sh`      \n"
+"  _(  JCO = http://www.cnjabsco.com/   )    _\n"
+"\n"
+
+#. type: Plain text
+#: priskribo.md:77
+#, fuzzy, no-wrap
+msgid ""
+"Malfermu havenojn:   \n"
+"  _tcp_ : 80 (_ http _), 443 (_ http _  ankaŭ!     \n"
+msgstr ""
+"打开端口：   \n"
+"   _tcp_ ：80  (_  HTTP  _)，443  (_  HTTP  _  也！      \n"
+
+#. type: Plain text
+#: priskribo.md:80
+#, fuzzy, no-wrap
+msgid "Halti  _jco_ servilo _  sen kaŭzi reboot:   \n"
+msgstr "停止  _jco_ 服务器 _  而不导致重启：   \n"
+
+#. type: Fenced code block
+#: priskribo.md:80
 #, no-wrap
 msgid "PS | \n"
 msgstr "PS | \n"
 
 #. type: Plain text
-#: ./priskribo.md:96
-#, markdown-text, no-wrap
-#, fuzzy
+#: priskribo.md:85
+#, fuzzy, no-wrap
+msgid "La ĉefa kanalo povas esti bildigita per:   \n"
+msgstr "主频道可以通过以下方式描绘：   \n"
+
+#. type: Fenced code block
+#: priskribo.md:85
+#, no-wrap
 msgid ""
-"vi povas vidi la ĉefan video-rivereton (laŭ 1080P aŭ aliaj agordo) per:\n"
-"ffplay -i rtsp: // admin: admin@192.168.24.111/stream1\n"
-"ffplay -i rtsp: // admin: admin@192.168.24.39: 554 / stream1\n"
-"ffplay -i rtsp: // admin: admin@192.168.24.39: 554 / mpeg4 / ch0 / main / "
-"av_stream\n"
-msgstr "您可以通过以下1080p或其他配置�) ��查看主视频流� (��:\n��ffplay -i rtsp：// admin：admin@192.168.24.111/192 Stream1�\n��FFPLAY -I RTSP：// Admin：Admin@192.168.24.39：554 / Stream1�\n��// admin ：Admin@192.168.24.39：554 / mpeg4 / ch0 / main / av�_stream\n��\n"
+"ffplay -i rtsp://admin:admin@192.168.24.111/stream1\n"
+"ffplay -i rtsp://admin:admin@192.168.24.39:554/stream1\n"
+"ffplay -i rtsp://admin:admin@192.168.24.39:554/mpeg4/ch0/main/av_stream\n"
+msgstr ""
+"ffplay -i rtsp://admin:admin@192.168.24.111/stream1\n"
+"ffplay -i rtsp://admin:admin@192.168.24.39:554/stream1\n"
+"ffplay -i rtsp://admin:admin@192.168.24.39:554/mpeg4/ch0/main/av_stream\n"
 
 #. type: Plain text
-#: ./priskribo.md:101
-#, markdown-text, no-wrap
-#, fuzzy
+#: priskribo.md:92
+#, fuzzy, no-wrap
+msgid "kaj sekundara:   \n"
+msgstr "和中学：   \n"
+
+#. type: Fenced code block
+#: priskribo.md:92
+#, no-wrap
 msgid ""
-"kaj la duaranga:\n"
-"ffplay -i rtsp: // admin: admin@192.168.24.39/stream2\n"
-"ffplay -i rtsp: // admin: admin@192.168.24.39: 554 / stream2\n"
-msgstr "和次级：�\n��FFPLAY-I RTSP：// admin：admin@192.168.24.39/stream2�\n��ffplay -i rtsp：// admin：admin@192.168.24.39： 554 / Stream2＼�\n"
+"ffplay -i rtsp://admin:admin@192.168.24.39/stream2\n"
+"ffplay -i rtsp://admin:admin@192.168.24.39:554/stream2\n"
+msgstr ""
+"ffplay -i rtsp://admin:admin@192.168.24.39/stream2\n"
+"ffplay -i rtsp://admin:admin@192.168.24.39:554/stream2\n"
 
 #. type: Plain text
-#: ./priskribo.md:110
-#, markdown-text, no-wrap
-#, fuzzy
+#: priskribo.md:98
+#, fuzzy, no-wrap
+msgid "La informoj montritaj en la interreta interfaco:   \n"
+msgstr "在线界面中显示的信息：   \n"
+
+#. type: Fenced code block
+#: priskribo.md:98
+#, no-wrap
 msgid ""
-"la instalita firmvaro indikas:\n"
-"DeviceName: INGENIC-V01\n"
-"DeviceModel: IPCAM-100\n"
-"DeviceSN: 12345678901\n"
-"KernelVersion: Thu Jul 9 15:46:54 CST 2015\n"
-"Servila Versio: WS3.53.1243-20190717-DANALE-GEN\n"
-"Retversio: V2.3.4-20190709\n"
-"OCX-Versio: -1\n"
-msgstr "已安装的固件指示：�\n��设备：Ingenic-V01�\n��DeviceModel：IPCAM-100�\n���\n��服务器版本：WS3.53.1243-20190717-Danale-Gen（°6°6°6°6°6°6°6°6°6°6°02-3-20190709�\n��OCX版本：-1＼�\n"
+"DeviceName:     INGENIC-V01\n"
+"DeviceModel:    IPCAM-100\n"
+"DeviceSN:       12345678901\n"
+"KernelVersion:  Thu Jul 9 15:46:54 CST 2015\n"
+"ServerVersion:  WS3.53.1243-20190717-DANALE-GEN\n"
+"WebVersion:     V2.3.4-20190709\n"
+"OCXVersion:     -1\n"
+msgstr ""
+"DeviceName:     INGENIC-V01\n"
+"DeviceModel:    IPCAM-100\n"
+"DeviceSN:       12345678901\n"
+"KernelVersion:  Thu Jul 9 15:46:54 CST 2015\n"
+"ServerVersion:  WS3.53.1243-20190717-DANALE-GEN\n"
+"WebVersion:     V2.3.4-20190709\n"
+"OCXVersion:     -1\n"
 
 #. type: Plain text
-#: ./priskribo.md:114
-#, markdown-text, no-wrap
-#, fuzzy
+#: priskribo.md:111
+#, fuzzy, no-wrap
 msgid ""
-"la procesoro estas: inĝenia T21\n"
-"http://www.ingenic.com.cn/en/?product/id/11.html\n"
-"https://fr.indasina.com/ingenic- "
-"t21-ekstrema-2-megapixela-koda-procesoro_p16.html\n"
-msgstr "处理器是：工程师T21�\n��http://www.ininic.com.cn/en/?product/id/11.html�\n��https://fr.indasina.com/ingenic- T21端-2-Megapixela代码处理器（°3°3\n"
+"La procesoro estas:  _ingenic T21_ \n"
+" <http://www.ingenic.com.cn/en/?product/id/11.html>   \n"
+"La procesoro estas: <https://fr.indasina.com/ingenic-t21-extreme-2-megapixel-encoding-processor_p16.html>     \n"
+msgstr ""
+"处理器是：  _ingenic T21_  \n"
+"  < http://www.ininic.com.cn/en/?product/id/11.html >    \n"
+"处理器是： < https： //fr.indasina.com/ingeric-t21-xtreme-2-megapixel-encoding-processor _p16.html>     \n"
+"\n"
 
 #. type: Plain text
-#: ./priskribo.md:118
-#, markdown-text, no-wrap
-#, fuzzy
+#: priskribo.md:114
+#, fuzzy, no-wrap
 msgid ""
-"the CMOS-sensilo estas: gc2053.\n"
-"ŝofora fonto: "
-"https://github.com/mrfixit2001/rk-kernel-fork/blob/develop-4.4/drivers/media/i2c/gc2053.c\n"
-msgstr "CMOS传感器是：GC2053。 \n"
+"La sensor  _CMOS_  estas:  _gc2053_.   \n"
+"Fontoj:  < https://github.com/mrfixit2001/rk-kernel-for-/blob/develop-4.4/drivers/media/i2c/gc2053.c >   \n"
+msgstr "  _CMOS_  传感器是：  _gc2053_。 \n"
 
 #. type: Plain text
-#: ./priskribo.md:120
-#, markdown-text, no-wrap
-#, fuzzy
-msgid "RAM: 42MiB entute, 36 MiB havebla.\n"
-msgstr "RAM：42MIB整体，36间MIB可用。 \n"
+#: priskribo.md:116
+#, fuzzy, no-wrap
+msgid "Memoro  _RAM_ :  _42 MiB_  Totalo,  _36 MiB_  Uzebla.   \n"
+msgstr "内存  _RAM_ ：  _42 MiB_  总计，  _36 MiB_  可用。    \n"
 
 #. type: Plain text
-#: ./priskribo.md:126
-#, markdown-text, no-wrap
-#, fuzzy
+#: priskribo.md:118
+#, fuzzy, no-wrap
+msgid "La aveno de 9999 permesas vin kontroli la fotilon:   \n"
+msgstr "9999的燕麦允许您检查相机：   \n"
+
+#. type: Fenced code block
+#: priskribo.md:118
+#, no-wrap
 msgid ""
-"la haveno 9999 estas malfermita kaj permesas regi la fotilon:\n"
-"echo \"checkuser -act set -user admin -password admin\"| nc 192.168.1.155 "
-"9999\n"
-"e echa \"listo\"| nc 192.168.1.155 9999\n"
-"eoo \"pelcod20ctrl -?\"| nc 192.168.1.155 9999\n"
-"eoo \"pelcod20ctrl -tipo 1\"| nc 192.168.1.155 9999\n"
-msgstr "9999端口打开，允许控制相机：（°1°1°1°1°2°2°2°2°2°2°2°2°2°2°2°2°2°2°2°2°2°SET-PASER -PARMORDOWN Admin�\"��| \n"
+"echo \"checkuser -act set -user admin -password admin\" | nc 192.168.1.155 9999  \n"
+"echo \"list\" | nc 192.168.1.155 9999  \n"
+"echo \"pelcod20ctrl -?\" | nc 192.168.1.155 9999  \n"
+"echo \"pelcod20ctrl -type 1\" | nc 192.168.1.155 9999  \n"
+msgstr ""
+"echo \"checkuser -act set -user admin -password admin\" | nc 192.168.1.155 9999  \n"
+"echo \"list\" | nc 192.168.1.155 9999  \n"
+"echo \"pelcod20ctrl -?\" | nc 192.168.1.155 9999  \n"
+"echo \"pelcod20ctrl -type 1\" | nc 192.168.1.155 9999  \n"
 
 #. type: Plain text
-#: ./priskribo.md:130
-#, markdown-text, no-wrap
-#, fuzzy
+#: priskribo.md:128
+#, fuzzy, no-wrap
 msgid ""
-"gpio-havenoj:\n"
-"46 = infruĝaj LEDoj.\n"
-"81 = bluaj LEDoj.\n"
-msgstr "GPIO端口：�\n��46 =衬坡皮革。 \n"
+"Havenoj  _GPIO_ :   \n"
+"46 = Transruĝa LED.   \n"
+"81 = Blanka LED. \n"
+msgstr ""
+"端口  _GPIO_ ：   \n"
+" 46 =红外LED。  \n"
 
 #. type: Plain text
-#: ./priskribo.md:135
-#, markdown-text, no-wrap
-#, fuzzy
+#: priskribo.md:129
+#, fuzzy, no-wrap
+msgid "GPIO-HADENOJ BLOKITAJ POR SLUDO:  \n"
+msgstr "GPIO-HARDEN被尖叫叫：  \n"
+
+#. type: Plain text
+#: priskribo.md:132
+#, fuzzy, no-wrap
 msgid ""
-"GPIO-havenoj blokitaj por studado:\n"
-"blokita de motor.ko: 18? 38 39 40 41 47 48 49 60?\n"
-"blokita de audio.ko: 63?\n"
-"52 64\n"
-msgstr "GPIO端口被阻止用于学习：�\n��由Motor.ko阻止：18？ \n"
+"Blokita de Motor.ko: 18?   \n"
+"Blokita de Audio.ko: 63?   \n"
+"52 64  \n"
+msgstr "由Motor.ko封锁：18？   \n"
 
 #. type: Plain text
-#: ./priskribo.md:137
-#, markdown-text, no-wrap
-#, fuzzy
-msgid "Ptz-kontrolo:\n"
-msgstr "PTZ控制：＼�\n"
+#: priskribo.md:135
+#, fuzzy, no-wrap
+msgid "Kontroloj  _PTZ_ :   \n"
+msgstr "控制  _PTZ_ ：   \n"
 
 #. type: Plain text
-#: ./priskribo.md:143
-#, markdown-text, no-wrap
-#, fuzzy
+#: priskribo.md:144
+#, fuzzy, no-wrap
 msgid ""
-"supro: http: // admin: admin@192.168.24.39/? jcpcmd = pelcod20ctrl -type 1 "
-"-cmd 1 -data1 24 -data2 24\n"
-"malsupre: http: // admin: admin@192.168.24.39/? jcpcmd = pelcod20ctrl -type "
-"1 -cmd 2 -data1 24 -data2 24\n"
-"maldekstre: http: // admin: admin@192.168.24.39/? jcpcmd = pelcod20ctrl "
-"-type 1 -cmd 3 -data1 24 -data2 24\n"
-"dekstre: http: // admin: admin@192.168.24.39/? Jcpcmd = pelcod20ctrl -type 1 "
-"-cmd 4 -data1 24 -data2 24\n"
-"halto: http: // admin: admin @ 192.168.24.39/?jcpcmd=pelcod20ctrl -speco 1 "
-"-cmd 9 -data1 24 -data2 24\n"
-msgstr "TOP：http：// admin：admin@192.168.24.39/ \n"
-
-#. type: Plain text
-#: ./priskribo.md:147
-#, markdown-text, no-wrap
-#, fuzzy
-msgid ""
-"starigu pozicion 2: http://192.168.24.39/?jcpcmd=pelcod20ctrl -type 2 -cmd 1 "
-"-data2 2\n"
-"iru al 1: http://192.168.24.39/?jcpcmd=pelcod20ctrl -type 2 - cmd 2 -data2 "
-"1\n"
-"forigi 2: http://192.168.24.39/?jcpcmd=pelcod20ctrl -type 2 -cmd 3 -data2 "
-"2\n"
-msgstr "设置位置2：http：//192.168.24.39/39/39/2-data2 1�\n��删除2：http：//192.168.24.39/?jcpcmd=pelcod20ctrl -type 2 -cmd 3 -data2 2＼�\n"
-
+"Supro:  _http://admin:admin@192.168.24.39/?jcpcmd=pelcod20ctrl -type 1 -cmd 1 -data1 24 -data2 24_   \n"
+"Fundo:  _http://admin:admin@192.168.24.39/?jcpcmd=pelcod20ctrl -type 1 -cmd 2 -data1 24 -data2 24_   \n"
+"Maldekstra:  _http://admin:admin@192.168.24.39/?jcpcmd=pelcod20ctrl -type 1 -cmd 3 -data1 24 -data2 24_   \n"
+"Uste:  _http://admin:admin@192.168.24.39/?jcpcmd=pelcod20ctrl -type 1 -cmd 4 -data1 24 -data2 24_   \n"
+"Haltu:  _http://admin:admin@192.168.24.39/?jcpcmd=pelcod20ctrl -type 1 -cmd 9 -data1 24 -data2 24_   \n"
+"Pozicio 2:  _http://192.168.24.39/?jcpcmd=pelcod20ctrl -type 2 -cmd 1 -data2 2_   \n"
+"Pozicio 1:  _http://192.168.24.39/?jcpcmd=pelcod20ctrl -type 2 -cmd 2 -data2 1_   \n"
+"Klara pozicio 2:  _http://192.168.24.39/?jcpcmd=pelcod20ctrl -type 2 -cmd 3 -data2 2_   \n"
+msgstr ""
+"顶部：  _http://admin:admin@192.168.24.39/?jcpcmd=pelcod20ctrl -type 1 -cmd 1 -data1 24 -data2 24_    \n"
+"底部：  _http://admin:admin@192.168.24.39/?jcpcmd=pelcod20ctrl -type 1 -cmd 2 -data1 24 -data2 24_    \n"
+"左：  _http://admin:admin@192.168.24.39/?jcpcmd=pelcod20ctrl -type 1 -cmd 3 -data1 24 -data2 24_    \n"
+"右：  _http://admin:admin@192.168.24.39/?jcpcmd=pelcod20ctrl -type 1 -cmd 4 -data1 24 -data2 24_    \n"
+" STOP：  _http://admin:admin@192.168.24.39/?jcpcmd=pelcod20ctrl -type 1 -cmd 9 -data1 24 -data2 24_    \n"
+"位置2：  _http://192.168.24.39/?jcpcmd=pelcod20ctrl -type 2 -cmd 1 -data2 2_    \n"
+"位置1：  _http://192.168.24.39/?jcpcmd=pelcod20ctrl -type 2 -cmd 2 -data2 1_    \n"
+"清除位置2：  _http://192.168.24.39/?jcpcmd=pelcod20ctrl -type 2 -cmd 3 -data2 2_    \n"

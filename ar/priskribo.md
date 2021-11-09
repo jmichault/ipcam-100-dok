@@ -9,7 +9,7 @@ title: 'وصف الكاميرا'
 
 
 # وصف:
-https://en.alievexpress.com/item/4000146161270.html
+<https://fr.aliexpress.com/item/4000146161270.html>  
 ```
     Brand Name: shiningpo
     Style: Dome Camera
@@ -59,63 +59,45 @@ Password : 12345678
 MAC : 00:88:09:**:**:**
 ```
 
-وضعه في Etherreto، يحصل على عنوان DHCP ويمكننا الاتصال بهيا: (° 1 ° 1  
-المستخدم الافتراضي: المسؤول  
-كلمة المرور الافتراضية: المسؤول  
+توصيل كاميرا شبكة Ethorn، وهو يتلقى عنوان IP، ويمكنك الاتصال به على http:    
+ المستخدم الافتراضي:   _admin_    
+ كلمة المرور الافتراضية:   _admin_  
 
-لمدة 5 دقائق، يمكنك الاتصال ب Telnet إلى ميناء 9527  
-المستخدم الافتراضي: الجذر  
-كلمة المرور الافتراضية: JCO66688  
-البقاء على اتصال أكثر من 5 دقائق: "killall -9 تلقائي_run.sh»  
+لمدة 5 دقائق، يمكننا التواصل مع   _telnet_   إلى Port 9527:    
+ المستخدم الافتراضي:   _root  
   
   
-(jco = http://www.cnjabsco.com/ )  (° 3 ° 3
+كلمة المرور الافتراضية:   _jco66688  
+  
+  
+للبقاء على اتصال بعد هذه الدقائق 5:   `killall -9 auto_run.sh`      
+  _(  jco = http://www.cnjabsco.com/   )    _
 
-الرمال المفتوحة:    
-TCP: 80(http)، 443(http!      
 
-سلوك الويب عند إطلاق JCO_server:  
-  
-  
-يتم استجواب خادم DNS حول: www.163.com و dns.ictun.com (° 1 ° 1  
-التطبيق 114.1114.114.114 ل dns.ittun.com  
-الاتصال بملاذ UDP / 993 dns.ittunc.com (° 1 ° 1  
-الاتصال بمنافذ UDP / 993 من 120.25.129.41  
-استجواب خادم DNS على: conn-policy.itun.com  
-سؤال خادم DNS على: Video-policy.ittun.com  
-الاتصال ب UDP / 80-منفذ 52.29.45.252 (° 1 ° 1  
-يتصل بمنفذ USDP / 1210 من 52.29.45.252 (° 1 ° 1  
-روابط إلى منافذ UDP / 21 من 52.57.135.134  
-يتصل بنظام UDP / 1053-Hasones من 52.28.62.20 (° 1 ° 1  
-يتصل ب UDP / 443-52.29.29.225 (° 1 ° 1  
-يتصل UDP / 123 (NTP) منفذ 112،74.204.233 (° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 3 ° 3 ° 3 ° 3 ° 0Tun.Com)  
-روابط إلى منافذ UDP / 993 من 47.52.99.182 (° 1 ° 1  
-يتصل بنظام UDP / 1054-92.57.127.207 (° 1 ° 1  
-...  
-ملاحظة: قم بتعيين المسار الافتراضي هذا يعني أن المربع المترابطة.    
 
-وقف JCO_server sen kaŭzi restartigi:  
-  
-  
-## توقف_cloud :  
+المنافذ المفتوحة:    
+   _tcp_ : 80  (_  http  _)، 443  (_  http  _   أيضا!      
+
+
+إيقاف   _jco_  الخادم  _   دون التسبب في إعادة التشغيل:    
 ```
 PS | 
 ```
 
-يمكنك رؤية Rivert Befan Video (وفقا ل 1080 بكسل أو غيرها من التكوين) بقلم: (° 3 ° 3  
+يمكن تصوير القناة الرئيسية بقلم:    
 ```
 ffplay -i rtsp://admin:admin@192.168.24.111/stream1
 ffplay -i rtsp://admin:admin@192.168.24.39:554/stream1
 ffplay -i rtsp://admin:admin@192.168.24.39:554/mpeg4/ch0/main/av_stream
 ```
 
-و Durangana: (° 1 ° 1
+والثانوي:    
 ```
 ffplay -i rtsp://admin:admin@192.168.24.39/stream2
 ffplay -i rtsp://admin:admin@192.168.24.39:554/stream2
 ```
 
-تشير البرامج الثابتة المثبتة إلى: (° 1 ° 1
+المعلومات المعروضة في الواجهة عبر الإنترنت:    
 ```
 DeviceName:     INGENIC-V01
 DeviceModel:    IPCAM-100
@@ -126,36 +108,37 @@ WebVersion:     V2.3.4-20190709
 OCXVersion:     -1
 ```
 
-المعالج هو: إغراء T21 (° 1 ° 1  
-http://www.ininic.com.cn/en/؟product/id/11.html  
-https://en.indasina.com/ingenic-t21-xtreme-2-megapixel-encoding-processor_p16.html  
-  
-  
+المعالج هو:   _ingenic T21_  
+  < http://www.ininic.com.cn/en/؟product/Id/11.html >    
+ المعالج هو:  < https: //fr.indasina.com/ingeric-t21-xtreme-2-megapixel-encoding-processor _p16.html>     
 
-مستشعر CMOS هو: GC2053.   
 
-RAM: 42 ميغابايت، 36 ميغابايت متاح.    
+جهاز استشعار   _CMOS_   هو:   _gc2053_. 
 
-يتم فتح 9999 Haedo ويسمح بالتحكم في الكاميرا: (° 1 ° 1  
-الصدى (° 1 ° 1 ° 1 ° 1 ° ° checuser -ac    
+الذاكرة   _RAM_ :   _42 MiB_   المجموع،   _36 MiB_   قابلة للاستخدام.    
 
-GPO-Hadens:  
-46 = تفسيرات الأشعة تحت الحمراء.    
+الشوفان 9999 يسمح لك للتحقق من الكاميرا:    
+```
+echo "checkuser -act set -user admin -password admin" | nc 192.168.1.155 9999  
+echo "list" | nc 192.168.1.155 9999  
+echo "pelcod20ctrl -?" | nc 192.168.1.155 9999  
+echo "pelcod20ctrl -type 1" | nc 192.168.1.155 9999  
+```
+
+المنافذ   _GPIO_ :    
+ 46 = LED الأشعة تحت الحمراء.  
 
 منعت GPIO-Haden للصراخ:  
 منعت بواسطة motor.ko: 18؟   
 
-PTZ Control:  
+الضوابط   _PTZ_ :    
 
-أعلى: http: // admin: admin@192.168.24.39/؟   
-Msalkru: http: // admin: admin@192.168.24.39/؟   
-اليسار: http: // admin: admin@192.168.24.39/؟   
-إلى اليمين: http: // admin: admin@192.168.24.39/؟   
-توقف: http: // admin: admin@192.168.24.39/؟   
-
-تعيين الموضع 2: http://192.168.24.39/  
-انتقل إلى 1: http://192.168.24.39/؟jjcpcmd=pelcod203trl -tonpe 2 -cmd 2 -Gata2 1  
-إزالة 2: http://192.168.24.39/؟jcpcmd=pelcod203trl -type 2 -cmd 3 -data2 2  
-
-
+أعلى:   _http://admin:admin@192.168.24.39/?jcpcmd=pelcod20ctrl -type 1 -cmd 1 -data1 24 -data2 24_    
+ أسفل:   _http://admin:admin@192.168.24.39/?jcpcmd=pelcod20ctrl -type 1 -cmd 2 -data1 24 -data2 24_    
+ اليسار:   _http://admin:admin@192.168.24.39/?jcpcmd=pelcod20ctrl -type 1 -cmd 3 -data1 24 -data2 24_    
+ right:   _http://admin:admin@192.168.24.39/?jcpcmd=pelcod20ctrl -type 1 -cmd 4 -data1 24 -data2 24_    
+ stop:   _http://admin:admin@192.168.24.39/?jcpcmd=pelcod20ctrl -type 1 -cmd 9 -data1 24 -data2 24_    
+ موضع 2:   _http://192.168.24.39/?jcpcmd=pelcod20ctrl -type 2 -cmd 1 -data2 2_    
+ موضع 1:   _http://192.168.24.39/?jcpcmd=pelcod20ctrl -type 2 -cmd 2 -data2 1_    
+ واضح الموقف 2:   _http://192.168.24.39/?jcpcmd=pelcod20ctrl -type 2 -cmd 3 -data2 2_    
 

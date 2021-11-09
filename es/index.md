@@ -6,7 +6,7 @@ layout: page
 title: Presentación
 ---
 
-El propósito de este proyecto es crear firmware alternativo para esta cámara: (° 1 ° 1 1
+El propósito de este proyecto es crear un firmware alternativo para esta cámara: 
 
 marca = _WIFI CARAM_  
 modelo: _WF-HD820-ZS_  
@@ -29,16 +29,16 @@ sensor de video: _GC2053_
 
 ## Qué funciona en firmware alternativo:
 
-* _LAN_ y _WLAN_
+* _LAN_   y   _WLAN_  
 
 
-* Servidor (° 1 ° Doble flujo: _1920x1080 H264_ y _640x360 MJPEG_ de forma predeterminada.  
+* Servidor   _RTSP_   Double Stream:   _1920x1080 H264_   y   _640x360 MJPEG_   de forma predeterminada.  
 
 
 * Parámetros visuales
 
 
-* Servidor _HTTP_
+* Servidor   _HTTP_  
 
 
 * control del motor
@@ -47,25 +47,25 @@ sensor de video: _GC2053_
 * calibración del motor
 
 
-* Parámetros _PTZ_(° 3 ° 3
+* Configuraciones   _PTZ_  
 
 
-* Cliente _NTP_(° 3 ° 3
+* Cliente   _NTP_  
 
 
-* Administración de contraseña _http_, _rtsp_ y sistema.  
+* Gestione las contraseñas   _http_,   _rtsp_   y el sistema.  
 
 
-* Control LED blanco e IR
+* Control LED blanco e IR  
 
 
-* Control LED blanco e IR _ftp_
+* Control LED blanco e IR   _ftp_ 
 
 
-* Control LED blanco e IR _telnet_
+* Control LED blanco e IR   _telnet_ 
 
 
-* Servidor y cliente _ssh_(° 3 ° 3
+* Servidor y cliente   _ssh_  
 
 
 * detección de movimiento
@@ -74,10 +74,10 @@ sensor de video: _GC2053_
 * envío de correo electrónico
 
 
-* Enviar _«telegram»_
+* Enviando   _«telegram»_  
 
 
-* Régimen de noche automático
+* Modo de noche automático  
 
 
 
@@ -98,7 +98,7 @@ sensor de video: _GC2053_
 * envío de correo electrónico_mqtt_
 
 
-* Enviando imágenes y videos en la nube (° 1 ° 1
+* Imágenes y videos en la nube  
 
 
 * etc ...
@@ -113,7 +113,7 @@ sensor de video: _GC2053_
 * Tal vez establezca la red ( _www/ipcam/config.dist/reto.conf_ )
 
 
-* Introduzca la tarjeta _microSD_ en la cámara.  
+* Inserte la tarjeta   _microSD_   en la cámara.  
 
 
 * Conecte la cámara a su red local y encienda la cámara.
@@ -131,7 +131,7 @@ sensor de video: _GC2053_
 * Faru `cd /opt/media/mmcblk0p1;./install.sh`
 
 
-* La cámara se reanuda, ahora: (° 1 ° 1
+* La cámara reinicia ahora:  
 
 
     * Puede conectarse a la URL _https://IP_ (usuario _admin_, contraseña _ismart21_).
@@ -140,16 +140,16 @@ sensor de video: _GC2053_
     * Puede conectarse en el usuario ssh ( _admin_, contraseña _ismart12_).
 
 
-    * La corriente de video primaria es accesible en _rtsp://admin:ismart21@IP/stream1_. (° 3 ° 3
+    * La corriente primaria de video es accesible en  _rtsp://admin:ismart21@IP/stream1_. 
 
 
-    * La corriente de video secundaria es accesible en _rtsp://admin:ismart21@IP/stream2_. (° 3 ° 3
+    * El flujo de video secundario es accesible en  _rtsp://admin:ismart21@IP/stream2_. 
 
 
-(° 1 ° 1 ° 1 WiFi AP El modo se activa por defecto:
-    ** SSID: IPCAM100-XXXXXX
-    ** Llave WPA2: ISMART21
-Dirección IP de la cámara: 172.25.0.1
+    *   El modo WiFi AP está habilitado de forma predeterminada:  
+      **   SSID: IPCAM100-XXXXX  
+      **   WPA2 Tecla: ISMART21  
+      **   Dirección IP de la cámara: 172.25.0.1  
 
 ## Desinstalación de firmware alternativo:
 
@@ -169,8 +169,9 @@ Dirección IP de la cámara: 172.25.0.1
 
 # Documentos interesantes
 
-Se hizo mucho trabajo para cámaras equipadas con un procesador _ingenic T20_ :
-* * Firmware modificado: <https://github.com/ilílístotlyar/xiomi- Dafang -Haks>
-Fuentes del firmware modificado: <https://github.com/dafang-hacks/main>
-17 °) https://github.com/thatusenameanamexist/jco-pm203-feyeye-ininic-t20-p2p-camera-hacks>
+Se ha realizado mucho trabajo para cámaras equipadas con un procesador   _ingenic T20_   
+  *   Firmware modificado:   <https://github.com/EliasKotlyar/Xiaomi-Dafang-Hacks>  
+  *   Fuentes del firmware modificado:   <https://github.com/Dafang-Hacks/Main>  
+  *   Otro firmware:   <https://github.com/openmiko/openmiko>  
+  *   Lanzamiento de programas sin cambiar el firmware:   <https://github.com/ThatUsernameAlreadyExist/JCO-PM203-Fisheye-Ingenic-T20-P2P-camera-hacks>  
 

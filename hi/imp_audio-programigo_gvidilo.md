@@ -3,10 +3,10 @@ lang: hi
 lang-niv: auto
 lang-ref: 053-audio-programigo_gvidilo
 layout: page
-title: 'ठोस प्रोग्रामिंग गाइड'
+title: 'ध्वनि प्रोग्रामिंग गाइड'
 ---
 
-# IMP_Audio (voir imp_ऑडियो। H)
+# छोटा सा भूत  _Audio \(voir imp_  ऑडियो। H4>
 
 ऑडियो मॉड्यूल, रिकॉर्डिंग और प्लेबैक, ऑडियो कोडेक, वॉल्यूम और लाभ सेटिंग्स, ई गूंज रद्द, स्वचालित लाभ और अन्य कार्यों सहित।
 

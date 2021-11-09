@@ -3,65 +3,56 @@ lang: en
 lang-niv: auto
 lang-ref: 051-IMP-programigo_gvidilo
 layout: page
-title: 'Imp Programming Guide'
+title: 'Programming Guide   _IMP_'
 ---
 
 
-APIs' documentation can be seen here: (° 1 ° 1  
-* [Original version in Chinese](../../zh/includes.zh/html/)
+APIs' documentation can be seen here:   
+* [  Original version in Chinese  ](../../zh/includes.zh/html/)  
 
 
-* [English version](../../en/includes.en/html/)
+* [  English  ](../../en/includes.en/html/)  
 
 
-* (° 1 ° 1 ° 1 ° 1 ° 1 ° French version Translated by Google](../../fr/includes.fr/html/)
+* [  French version Translated by Google  ](../../fr/includes.fr/html/)  
 
 
 
 
-# IMP (Ingenic Media Platform) (see imp_system.h)
+# _IMP_   \(  _Ingenic Media Platform_  \)   \( See   _imp\_system.h_  \)
 
 ## basic concepts
-T20 / T21 programming is based on the following concepts:
-1. Peripheral (= Device)  
-    The peripheral completes a function. Examples:
-     *  Frame source: ends the output of video data.
-     *  Encoder: completes the video encoding or image encoding function.
-2. Group  
-    The group is the smallest data input unit. A device can have several groups and each group can receive only one data input channel. The group can have several results.  
-    The group is also a container for specific "functions". See the explanation in the channel section for more details.
-3. Exit  
-    The output is the smallest unit of data output per group. A group can have several outputs and each output can produce only one data channel.
-4. Cell  
-    The cell refers to a collection containing information about the device, the group, and the output. It is presented in the IMPCell data structure.
-The cell is mainly used for Bind (@ref bind). According to the definition of Device, Group and Output, Output is the node for data output and Group is the node for data input.
-In Bind, the cell index of the data output node is at the Output output, and the cell index of the data input node is at the input group (so that the Cell, Output data input is a nonsensical value).
-5. Channel  
-    The channel generally refers to a unit with a single function. The channel receives a specific function when it is created (instantiation).  
-    For example:  
-     -  For the encoder, one channel complements the H264 code or JPEG encoding function. The specific encoding function (type, parameter) is specified when creating the channel
+The T20 / T21 program is based on the following concepts:  
+ 1. Device   \( =  _Device_  \)    
+ The device completes function.   
+      The group is also a container for specific   " Functions  ". See the explanation in the channel section for more details.  
+ 3. Eligo   \( =  _Output_  \)    
+ The output is the smallest data output unit per group.    
+ The channel is usually related to a single functional unit.    
+ For example:   
+     -  For the Codel, channel completes the   _H264_   or code function   _JPEG_.  
 
 
-     -  For IVS, a channel completes the function of a specific algorithm and specific algorithmic type parameters are specified when creating the channel
+     -  For   _IVS_, a channel completes the function of a specific algorithm and the specific algorithm typical parameters are specified during creating the channel 
 
 
-     -  For OSD, there is a region similar to Channel, region is a specific overlay area, which can be PIC (image), COVER (closure), and so on.
+     -  For  _OSD_, there is a region similar to   _Channel_, a region is a specific supermetated area that can be a top   \( image  \) cover   \( occlusion  \), etc.  
 
 
-     -  For FrameSource, a channel produces an original image and the FrameSource channel is actually a group
+     -  For   _FrameSource_, a channel produces an original image and the channel   _FrameSource_   is actually a group  
 
 
-     
-     The channel, as a functional unit, must generally be registered in the group (in addition to FrameSource) to receive data. After the channel is registered in the group, it will receive the data entered by the group.
+    
+       The channel, as a functional unit, usually be preserved in the   \( group except   _FrameSource_  \) Receive data.  
 
     The number of channels that can be recorded by the group of various devices is also different.
 
-## Binding modules (Bind)
+## Module link   \(  _Bind_  \)
 
-Once two groups are connected by Bind, the data from the source group will be automatically sent to the destination group.  
-Because the group is the smallest data input unit and the output is the smallest data output unit, the deviceID, groupID and outputID of srcCell in both parameters of IMP_System_Bind (IMPCell * srcCell, IMPCell * dstCell) valid.  
+After two groups are linked by   _Bind_, data from the source group will automatically send to the destination.    
+ Since the group is the smallest data input unit and the output is the smallest data output unit, the   _deviceID_,   _groupID_   and   _outputID_    _srcCell_   in the two parameters of   _IMP\_System\_Bind \(IMPCell * srcCell, IMPCell * dstCell\)_   are valid.    
 
-While dstCell is valid only for deviceID and groupID, outputID does not make sense as a data entry.
+ 
 
 Example 1: 
 ```
@@ -72,11 +63,10 @@ if(ret <0>)
   printf ("Bind FrameSource Channel0 and Encoder Group0 failed \ n");
 
 ```
+Result:    
+ *  A group generates a group that generates a link from Framesource to Encoder. 
 
-* a group is generated that generates a link from FrameSource to Encoder.
-
-
-* Two channels are recorded in Encoder Group, so Encoder Group has two outputs H264 and JPEG.
+*  
 
 
 
@@ -112,69 +102,55 @@ int ret = IMP_System_Bind(&osd_grp1, &enc_grp1);
 if (ret < 0)
     printf("Bind OSD Group1 and Encoder Group1 failed\n");
 ```
-This is a typical Bind program: a two-channel code stream.
- * FrameSource has two outputs, namely the main stream Channel0 (1280x720) and the slave stream Channel1 (640x360).
-   *   Main stream: FrameSource Channel0 Bind OSD Group.0, OSD Group.0 Bind Encoder Group.0. Among them: 
-       * OSD Group.0 recorded two regions that are used to display timestamp and string information respectively
-       * Encoder Group .0 recorded two channels . , which are H264 encoding and JPEG encoding respectively. Among them, if the image size of the JPEG encoding channel does not match the input parameter (of FrameSource Channel0), then it will be scaled (software at T10) ) achieve the goal of capturing at any resolution.
-       
-Notes:
-* it is recommended that all link operations be performed during system initialization.
-* Bind and UnBind operations cannot be called dynamically after _FrameSource_ is activated. UnBind is done only after deactivation _FrameSource_.
+Apply is a typical application   _Bind_ : two-channel code.  
+
+Notes:  
+  *   It is recommended that all link operations are made when initializing the system.  
 
 ## Functions
 
-### int IMP\_System\_Init (empty )
-Initialization of the IMP system.
-returns 0 if successful.
-After this API call, the basic data structure will be initialized, but the hardware will not be initialized.
-Attention: This function must be called for initiation before any other operation.
-### int IMP_System_Exit (empty)
+### _int IMP\_System\_Init \(void \)_
+Beginning of the   _IMP_ system.  
+### _int IMP\_System\_Exit \(void\)_
 
-After calling this function, all memory and IMP _handles_ will be released, and the hardware will be shut down. 
-Note: After calling this API, if you want to use IMP again, you need to reset the IMP system.
+After calling this function, all the memory and   _handles_   _IMP_   will be released, and the hardware unit will be closed.  
 
-### int64_t IMP_System_GetTimeStamp (void)
+### _int64\_t IMP\_System\_GetTimeStamp \(void\)_
 
-Get the IMP system timestamp in microseconds.  
-Return: time in microseconds.
+Get the timing field of the   _IMP_   system in microseconds. 
 
-### int IMP_System_RebaseTimeStamp (bases int64_t)
-Set the IMP system timestamp in microseconds.  
-Return: 0 if successful.
+### _int IMP\_System\_RebaseTimeStamp \(bases int64\_t\)_
+Define the Timestamp   _IMP_   system in microseconds. 
 
-### uint32_t IMP_System_ReadReg32 (uint32_t u32Addr)
+### _uint32\_t IMP\_System\_ReadReg32 \(uint32\_t u32Addr\)_
 
 Read the value of a 32-bit register.  
 
-### blank IMP_System_WriteReg32 (uint32_t regAddr, valeur uint32_t)
-Write the value to the 32-bit register.
+### _void IMP\_System\_WriteReg32 \(uint32_  t regaddr, value uint32  _t\)_
+Write the value in the 32-bit register.  
 
 Note: Please call this API carefully and check the meaning of the registry, otherwise it may cause system errors.
 
-### int IMP_System_GetVersion (IMPVersion * pstVersion) 
+### _int IMP_  System  _GetVersion \(IMPVersion * pstVersion\)_ T Regaddr, Value Uint32 \)
 
-Get the version number of the IMP system.
+Get the system of the   _IMP_ system.  
 
-### const char * IMP_System_GetCPUInfo (empty)
+### _const char * IMP_  System  _GetCPUInfo \(void\)_
 Get information about the CPU model.  
 Note: The return value is a string of CPU model, for example, for T10 there is "T10"and "T10-Lite".
 
-### int IMP_System_Bind (IMPCell * srcCell, IMPCell * dstCell)
+### _int IMP_  System   \(
 
 Link between source cell and destination.
 
 Note 1: According to the concepts of Device, Group and Output, each device can have several groups, and each group can have several outputs, Group is used as Device input interface, and Output is used as Device product interface. Therefore the link actually connects a certain output of the output device to a certain Group of the input device.
 
-Note 2: After a successful link, the data generated by srcCell (Output) will be automatically transmitted to the destination Cell (Group).
+Note 2: After a successful link, the data generated by   _srcCell_   (  Eligo  )   will be automatically transferred to the destination   (  Group  ).  
 
-### int IMP_System_UnBind (IMPCell * srcCell, IMPCell * dstCell)
+### _int IMP_  System   \(
 Ungroup the sources and destinations. 
 
-### int IMP_System_GetBindbyDest (IMPCell * dstCell, IMPCell * srcCell)
+### _int IMP_  System   \(
 
 Retrieves information from the source cell related to the destination.
-
-
-
 

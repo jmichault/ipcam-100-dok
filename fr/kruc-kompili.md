@@ -7,20 +7,20 @@ title: 'Compilation croisée'
 ---
 
 
-Les outils de compilation croisés se trouvent dans programada_medio/toolchain.
-Ils ont été compilés pour debian buster x64.
+Les outils de compilation croisée se trouvent dans _programada\_medio/toolchain_.
+Ils ont été compilés pour _debian buster x64_.
 
-les librairies partagées sont dans programada_medio/lib
+les librairies partagées sont dans _programada\_medio/lib_
 
-les include sont dans programada_medio/include.
+les _include_ sont dans _programada\_medio/include_.
 
 Si vous avez besoin de recompiler une librairie, inspirez-vous des scripts suivants :
-* programada_medio/fontoj/01-buildssl.sh , pour la librairie openssl.
-* programada_medio/fontoj/02-buildlive.sh , pour la librairie live555.
-* programada_medio/fontoj/03-pcre.sh , pour la librairie pcre.
+* _programada\_medio/fontoj/01-buildssl.sh_ , pour la librairie _openssl_.
+* _programada\_medio/fontoj/02-buildlive.sh_ , pour la librairie _live555_.
+* _programada\_medio/fontoj/03-pcre.sh_ , pour la librairie _pcre_.
 
 
 Si jamais vous avez besoin de recompiler la _«toolchain»_, vous pouvez consulter le site suivant :
- * https://github.com/anmaped/openfang
+ * <https://github.com/anmaped/openfang>
 
 

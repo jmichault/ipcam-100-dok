@@ -3,10 +3,10 @@ lang: de
 lang-niv: auto
 lang-ref: 053-audio-programigo_gvidilo
 layout: page
-title: 'Solide Programmieranleitung.'
+title: Sound-Programmieranleitung.
 ---
 
-# IMP_Audio (voir imp_audio.h)
+# IMP  _Audio \(voir imp_  AUDIO.H  \)
 
 Audiomodul, einschließlich Aufnahme und Wiedergabe, Audio-Codec, Lautstärke- und Verstärkungseinstellungen, E-Echo-Unterdrückung, automatische Verstärkung und andere Funktionen.
 

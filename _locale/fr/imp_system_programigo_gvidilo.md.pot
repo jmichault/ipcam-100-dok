@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-10-29 23:24+0200\n"
+"POT-Creation-Date: 2021-11-08 21:01+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -43,7 +43,7 @@ msgstr ""
 #. type: YAML Front Matter: title
 #: imp_system_programigo_gvidilo.md:1
 #, no-wrap
-msgid "Guide de programmation IMP"
+msgid "Guide de programmation _IMP_"
 msgstr ""
 
 #. type: Plain text
@@ -73,7 +73,7 @@ msgstr ""
 #. type: Title #
 #: imp_system_programigo_gvidilo.md:16
 #, no-wrap
-msgid "IMP (Ingenic Media Platform) (voir imp_system.h)"
+msgid "_IMP_ \\(_Ingenic Media Platform_\\) \\(voir _imp\\_system.h_\\)"
 msgstr ""
 
 #. type: Title ##
@@ -87,7 +87,7 @@ msgstr ""
 #, no-wrap
 msgid ""
 "la programmation du T20/T21 repose sur les concepts suivants :\n"
-" 1. Périphérique (=Device)  \n"
+" 1. Périphérique \\(=_Device_\\)  \n"
 msgstr ""
 
 #. type: Plain text
@@ -95,9 +95,9 @@ msgstr ""
 #, no-wrap
 msgid ""
 "    Le périphérique complète une fonction. Exemples :\n"
-"     *  Framesource : termine la sortie des données vidéo.\n"
-"     *  Encoder : complète la fonction d'encodage vidéo ou d'encodage d'image.\n"
-" 2. Groupe  \n"
+"     *  _Framesource_ : complète la sortie des données vidéo.\n"
+"     *  _Encoder_ : complète la fonction d'encodage vidéo ou d'encodage d'image.\n"
+" 2. Groupe \\(=_Group_\\)  \n"
 msgstr ""
 
 #. type: Plain text
@@ -111,31 +111,25 @@ msgstr ""
 #, no-wrap
 msgid ""
 "    Le groupe est également un conteneur pour des \"fonctions\" spécifiques. Voir l'explication dans la section canal pour plus de détails.\n"
-" 3. Sortie  \n"
-msgstr ""
-
-#. type: Plain text
-#: imp_system_programigo_gvidilo.md:29
-#, no-wrap
-msgid ""
-"    La sortie est la plus petite unité de sortie de données pour un groupe. Un groupe peut avoir plusieurs sorties et chaque sortie ne peut produire qu'un seul canal de données.\n"
-" 4. Cellule  \n"
+" 3. Sortie \\(=_Output_\\)  \n"
 msgstr ""
 
 #. type: Plain text
 #: imp_system_programigo_gvidilo.md:33
 #, no-wrap
 msgid ""
-"    La cellule fait référence à une collection contenant des informations sur le périphérique, le groupe et la sortie. Il est présenté dans la structure de données de IMPCell.\n"
-"    La cellule est principalement utilisée pour Bind (@ref bind). Selon la définition de Device, Group et Output, Output est le nœud pour la sortie de données et Group est le nœud pour l'entrée de données.\n"
-"    Dans Bind, l'index de cellule du noeud de sortie de données est à la sortie Output, et l'index de cellule du noeud d'entrée de données est au groupe d'entrée (de sorte que l'entrée de données Cell, Output est une valeur sans signification).\n"
-" 5. Canal  \n"
+"    La sortie est la plus petite unité de sortie de données pour un groupe. Un groupe peut avoir plusieurs sorties et chaque sortie ne peut produire qu'un seul canal de données.\n"
+" 4. Cellule \\(=_Cell_\\) \n"
+"    La cellule fait référence à une collection contenant des informations sur le périphérique, le groupe et la sortie. Il est présenté dans la structure de données de _IMPCell_.\n"
+"    La cellule est principalement utilisée pour _Bind \\(@ref bind\\)_. Selon la définition de _Device_, _Group_ et _Output_, _Output_ est le nœud pour la sortie de données et _Group_ est le nœud pour l'entrée de données.\n"
+"    Dans _Bind_, l'index de cellule du noeud de sortie de données est à la sortie _Output_, et l'index de cellule du noeud d'entrée de données est au groupe d'entrée \\(de sorte que l'entrée de données _Cell_, _Output_ est une valeur sans signification\\).\n"
+" 5. Canal \\(=_Channel_\\)  \n"
 msgstr ""
 
 #. type: Plain text
 #: imp_system_programigo_gvidilo.md:34
 #, no-wrap
-msgid "    Le canal fait généralement référence à une unité avec une seule fonction. Le canal se voit attribuer une fonction spécifique lors de sa création (instanciation).  \n"
+msgid "    Le canal fait généralement référence à une unité avec une seule fonction. Le canal se voit attribuer une fonction spécifique lors de sa création \\(instanciation\\).  \n"
 msgstr ""
 
 #. type: Plain text
@@ -147,31 +141,31 @@ msgstr ""
 #. type: Bullet: '     -  '
 #: imp_system_programigo_gvidilo.md:40
 #, no-wrap
-msgid "Pour l'encodeur, un canal complète la fonction d'encodage H264 ou d'encodage JPEG. La fonction d'encodage spécifique (type, paramètre) est spécifiée lors de la création du canal\n"
+msgid "Pour l'encodeur, un canal complète la fonction d'encodage _H264_ ou d'encodage _JPEG_. La fonction d'encodage spécifique \\(type, paramètre\\) est spécifiée lors de la création du canal\n"
 msgstr ""
 
 #. type: Bullet: '     -  '
 #: imp_system_programigo_gvidilo.md:40
 #, no-wrap
-msgid "Pour IVS, un canal complète la fonction d'un algorithme spécifique et les paramètres de type d'algorithme spécifiques sont spécifiés lors de la création du canal\n"
+msgid "Pour _IVS_, un canal complète la fonction d'un algorithme spécifique et les paramètres de type d'algorithme spécifiques sont spécifiés lors de la création du canal\n"
 msgstr ""
 
 #. type: Bullet: '     -  '
 #: imp_system_programigo_gvidilo.md:40
 #, no-wrap
-msgid "Pour l'OSD, il existe une région similaire à Channel, une région est une zone superposée spécifique, qui peut être PIC (image), COVER (occlusion), etc.\n"
+msgid "Pour l'_OSD_, il existe une région similaire à _Channel_, une région est une zone superposée spécifique, qui peut être PIC \\(image\\), COVER \\(occlusion\\), etc.\n"
 msgstr ""
 
 #. type: Bullet: '     -  '
 #: imp_system_programigo_gvidilo.md:40
 #, no-wrap
-msgid "Pour FrameSource, un canal produit une image originale et le canal de FrameSource est en fait un groupe\n"
+msgid "Pour _FrameSource_, un canal produit une image originale et le canal de _FrameSource_ est en fait un groupe\n"
 msgstr ""
 
 #. type: Plain text
 #: imp_system_programigo_gvidilo.md:42
 #, no-wrap
-msgid "     Le canal, en tant qu'unité fonctionnelle, doit généralement être enregistré dans le groupe (sauf FrameSource) pour recevoir des données. Une fois que le canal est enregistré dans le groupe, il obtiendra les données saisies par le groupe.\n"
+msgid "     Le canal, en tant qu'unité fonctionnelle, doit généralement être enregistré dans le groupe \\(sauf _FrameSource_\\) pour recevoir des données. Une fois que le canal est enregistré dans le groupe, il obtiendra les données d'entrée du groupe.\n"
 msgstr ""
 
 #. type: Plain text
@@ -183,25 +177,25 @@ msgstr ""
 #. type: Title ##
 #: imp_system_programigo_gvidilo.md:45
 #, no-wrap
-msgid "Liaison de modules (Bind)"
+msgid "Liaison de modules \\(_Bind_\\)"
 msgstr ""
 
 #. type: Plain text
 #: imp_system_programigo_gvidilo.md:47
 #, no-wrap
-msgid "Une fois que deux groupes sont connectés par Bind, les données du groupe source seront automatiquement envoyées au groupe de destination.  \n"
+msgid "Une fois que deux groupes sont connectés par _Bind_, les données du groupe source seront automatiquement envoyées au groupe de destination.  \n"
 msgstr ""
 
 #. type: Plain text
 #: imp_system_programigo_gvidilo.md:48
 #, no-wrap
-msgid "Puisque le groupe est la plus petite unité d'entrée de données et que la sortie est la plus petite unité de sortie de données, le deviceID, groupID et outputID du srcCell dans les deux paramètres de IMP_System_Bind (IMPCell * srcCell, IMPCell * dstCell) sont valides.  \n"
+msgid "Puisque le groupe est la plus petite unité d'entrée de données et que la sortie est la plus petite unité de sortie de données, le _deviceID_, _groupID_ et _outputID_ du _srcCell_ dans les deux paramètres de _IMP\\_System\\_Bind \\(IMPCell * srcCell, IMPCell * dstCell\\)_ sont valides.  \n"
 msgstr ""
 
 #. type: Plain text
 #: imp_system_programigo_gvidilo.md:51
 #, no-wrap
-msgid "Alors que dstCell n'est valide que pour deviceID et groupID, outputID n'a pas de sens en tant qu'entrée de données.\n"
+msgid "Alors que _dstCell_ n'est valide que pour _deviceID_ et _groupID_, _outputID_ n'a pas de sens en tant qu'entrée de données.\n"
 msgstr ""
 
 #. type: Plain text
@@ -222,6 +216,12 @@ msgid ""
 "\n"
 msgstr ""
 
+#. type: Plain text
+#: imp_system_programigo_gvidilo.md:61
+#, no-wrap
+msgid "résultat :  \n"
+msgstr ""
+
 #. type: Bullet: '* '
 #: imp_system_programigo_gvidilo.md:64
 #, no-wrap
@@ -231,7 +231,7 @@ msgstr ""
 #. type: Bullet: '* '
 #: imp_system_programigo_gvidilo.md:64
 #, no-wrap
-msgid "Deux canaux sont enregistrés dans Encoder Group, donc Encoder Group a deux sorties H264 et JPEG.\n"
+msgid "Deux canaux sont enregistrés dans Encoder Group, donc Encoder Group a deux sorties : _H264_ et _JPEG_.\n"
 msgstr ""
 
 #. type: Plain text
@@ -279,11 +279,11 @@ msgstr ""
 #: imp_system_programigo_gvidilo.md:102
 #, no-wrap
 msgid ""
-"C'est une application typique Bind : flux de code à deux canaux.\n"
-" * FrameSource a deux sorties, à savoir le flux principal Channel0 (1280x720) et le flux esclave Channel1 (640x360).\n"
-"   *   Flux principal: Channel0 Bind OSD Group.0 de FrameSource, OSD Group.0 Bind Encoder Group.0. Parmi eux: \n"
-"       * OSD Group.0 a enregistré deux régions, qui sont utilisées pour afficher respectivement les informations d'horodatage et de chaîne de caractères\n"
-"       * Encoder Group.0 a enregistré deux canaux, qui sont respectivement l'encodage H264 et l'encodage JPEG. Parmi eux, si la taille de l'image du canal de codage JPEG n'est pas égale au paramètre d'entrée (Channel0 de FrameSource), alors elle sera mise à l'échelle (logiciel à T10) pour atteindre l'objectif de capturer à n'importe quelle résolution.\n"
+"C'est une application typique _Bind_ : flux de code à deux canaux.\n"
+"* FrameSource a deux sorties, à savoir le flux principal _Channel0 (1280x720)_ et le flux esclave _Channel1 (640x360)_.\n"
+"*   Flux principal: Channel0 Bind OSD Group.0 de FrameSource, OSD Group.0 Bind Encoder Group.0. Parmi eux: \n"
+"* OSD Group.0 a enregistré deux régions, qui sont utilisées pour afficher respectivement les informations d'horodatage et de chaîne de caractères\n"
+"* Encoder Group.0 a enregistré deux canaux, qui sont respectivement l'encodage H264 et l'encodage JPEG. Parmi eux, si la taille de l'image du canal de codage JPEG n'est pas égale au paramètre d'entrée (Channel0 de FrameSource), alors elle sera mise à l'échelle (logiciel à T10) pour atteindre l'objectif de capturer à n'importe quelle résolution.\n"
 msgstr ""
 
 #. type: Plain text
@@ -292,7 +292,7 @@ msgstr ""
 msgid ""
 "Notes :\n"
 "* on recommande que toutes les opérations de liaison soient effectuées lors de l'initialisation du système.\n"
-"* Les opérations Bind et UnBind ne peuvent pas être appelées dynamiquement une fois le _FrameSource_ activé. UnBind ne peut être effectué qu'après avoir désactivé le _FrameSource_.\n"
+"* Les opérations _Bind_ et _UnBind_ ne peuvent pas être appelées dynamiquement une fois le _FrameSource_ activé. _UnBind_ ne peut être effectué qu'après avoir désactivé le _FrameSource_.\n"
 msgstr ""
 
 #. type: Title ##
@@ -304,14 +304,14 @@ msgstr ""
 #. type: Title ###
 #: imp_system_programigo_gvidilo.md:109
 #, no-wrap
-msgid "int IMP\\_System\\_Init (void )"
+msgid "_int IMP\\_System\\_Init \\(void \\)_"
 msgstr ""
 
 #. type: Plain text
 #: imp_system_programigo_gvidilo.md:114
 #, no-wrap
 msgid ""
-"Initialisation du système IMP.\n"
+"Initialisation du système _IMP_.\n"
 "renvoie 0 si succès.\n"
 "Après cet appel d'API, la structure de données de base sera initialisée, mais l'unité matérielle ne sera pas initialisée.\n"
 "attention : Cette fonction doit être appelée pour l'initialisation avant toute autre opération.\n"
@@ -320,27 +320,27 @@ msgstr ""
 #. type: Title ###
 #: imp_system_programigo_gvidilo.md:114
 #, no-wrap
-msgid "int IMP_System_Exit (void)"
+msgid "_int IMP\\_System\\_Exit \\(void\\)_"
 msgstr ""
 
 #. type: Plain text
 #: imp_system_programigo_gvidilo.md:118
 #, no-wrap
 msgid ""
-"Après avoir appelé cette fonction, toute la mémoire et les _handles_ d'IMP seront libérées, et l'unité matérielle sera fermée. \n"
-"Note : Après avoir appelé cette API, si vous voulez utiliser à nouveau IMP, vous devez réinitialisez le système IMP.\n"
+"Après avoir appelé cette fonction, toute la mémoire et les _handles_ d'_IMP_ seront libérées, et l'unité matérielle sera fermée. \n"
+"Note : Après avoir appelé cette API, si vous voulez utiliser à nouveau _IMP_, vous devez réinitialisez le système _IMP_.\n"
 msgstr ""
 
 #. type: Title ###
 #: imp_system_programigo_gvidilo.md:119
 #, no-wrap
-msgid "int64_t IMP_System_GetTimeStamp (void)"
+msgid "_int64\\_t IMP\\_System\\_GetTimeStamp \\(void\\)_"
 msgstr ""
 
 #. type: Plain text
 #: imp_system_programigo_gvidilo.md:121
 #, no-wrap
-msgid "Obtenez l'horodatage du système IMP en microsecondes.  \n"
+msgid "Obtenez l'horodatage du système _IMP_ en microsecondes.  \n"
 msgstr ""
 
 #. type: Plain text
@@ -352,13 +352,13 @@ msgstr ""
 #. type: Title ###
 #: imp_system_programigo_gvidilo.md:124
 #, no-wrap
-msgid "int IMP_System_RebaseTimeStamp (bases int64_t)"
+msgid "_int IMP\\_System\\_RebaseTimeStamp \\(bases int64\\_t\\)_"
 msgstr ""
 
 #. type: Plain text
 #: imp_system_programigo_gvidilo.md:125
 #, no-wrap
-msgid "Définissez l'horodatage du système IMP en microsecondes.  \n"
+msgid "Définissez l'horodatage du système _IMP_ en microsecondes.  \n"
 msgstr ""
 
 #. type: Plain text
@@ -370,7 +370,7 @@ msgstr ""
 #. type: Title ###
 #: imp_system_programigo_gvidilo.md:128
 #, no-wrap
-msgid "uint32_t IMP_System_ReadReg32 (uint32_t u32Addr)"
+msgid "_uint32\\_t IMP\\_System\\_ReadReg32 \\(uint32\\_t u32Addr\\)_"
 msgstr ""
 
 #. type: Plain text
@@ -382,13 +382,13 @@ msgstr ""
 #. type: Title ###
 #: imp_system_programigo_gvidilo.md:132
 #, no-wrap
-msgid "void IMP_System_WriteReg32 (uint32_t regAddr, valeur uint32_t)"
+msgid "_void IMP\\_System\\_WriteReg32 \\(uint32_t regAddr, valeur uint32_t\\)_"
 msgstr ""
 
 #. type: Plain text
 #: imp_system_programigo_gvidilo.md:134
 #, no-wrap
-msgid "Ecrire la valeur dans le registre 32 bits.\n"
+msgid "Écrire la valeur dans le registre 32 bits.\n"
 msgstr ""
 
 #. type: Plain text
@@ -400,19 +400,19 @@ msgstr ""
 #. type: Title ###
 #: imp_system_programigo_gvidilo.md:137
 #, no-wrap
-msgid "int IMP_System_GetVersion (IMPVersion * pstVersion) "
+msgid "_int IMP_System_GetVersion \\(IMPVersion * pstVersion\\)_"
 msgstr ""
 
 #. type: Plain text
 #: imp_system_programigo_gvidilo.md:140
 #, no-wrap
-msgid "Obtenir le numéro de version du système IMP.\n"
+msgid "Obtenir le numéro de version du système _IMP_.\n"
 msgstr ""
 
 #. type: Title ###
 #: imp_system_programigo_gvidilo.md:141
 #, no-wrap
-msgid "const char * IMP_System_GetCPUInfo (void)"
+msgid "_const char * IMP_System_GetCPUInfo \\(void\\)_"
 msgstr ""
 
 #. type: Plain text
@@ -430,7 +430,7 @@ msgstr ""
 #. type: Title ###
 #: imp_system_programigo_gvidilo.md:145
 #, no-wrap
-msgid "int IMP_System_Bind (IMPCell * srcCell, IMPCell * dstCell)"
+msgid "_int IMP_System_Bind \\(IMPCell * srcCell, IMPCell * dstCell\\)_"
 msgstr ""
 
 #. type: Plain text
@@ -448,13 +448,13 @@ msgstr ""
 #. type: Plain text
 #: imp_system_programigo_gvidilo.md:152
 #, no-wrap
-msgid "Note 2 : Après une liaison réussie, les données générées par srcCell (Sortie) seront automatiquement transférées vers la Cellule de destination (Groupe).\n"
+msgid "Note 2 : Après une liaison réussie, les données générées par _srcCell_ (Sortie) seront automatiquement transférées vers la Cellule de destination (Groupe).\n"
 msgstr ""
 
 #. type: Title ###
 #: imp_system_programigo_gvidilo.md:153
 #, no-wrap
-msgid "int IMP_System_UnBind (IMPCell * srcCell, IMPCell * dstCell)"
+msgid "_int IMP_System_UnBind \\(IMPCell * srcCell, IMPCell * dstCell\\)_"
 msgstr ""
 
 #. type: Plain text
@@ -466,7 +466,7 @@ msgstr ""
 #. type: Title ###
 #: imp_system_programigo_gvidilo.md:156
 #, no-wrap
-msgid "int IMP_System_GetBindbyDest (IMPCell * dstCell, IMPCell * srcCell)"
+msgid "_int IMP_System_GetBindbyDest \\(IMPCell * dstCell, IMPCell * srcCell\\)_"
 msgstr ""
 
 #. type: Plain text

@@ -29,8 +29,8 @@ Dann, unabhängig von der Firmware:
 * Start "gdbserver"der Kamera, z. :  
 
 
-     `/opt/media/mmcblk0p1/bin/gdbserver localhost:2000 /opt/media/mmcblk0p1/bin/motor`
-* Starten Sie gdb auf dem Computer, zum Beispiel:
+     `/opt/media/mmcblk0p1/bin/gdbserver localhost:2000 /opt/media/mmcblk0p1/bin/motor`  
+  *   GDB auf dem Computer starten, zum Beispiel:  
 
     ```
     cd programada_medio/toolchain
@@ -40,7 +40,7 @@ Dann, unabhängig von der Firmware:
     handle SIG32 nostop
     break xxx
     continue 
-    ```
+    ```  
 
 
 

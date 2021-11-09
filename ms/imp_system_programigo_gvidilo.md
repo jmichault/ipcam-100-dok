@@ -3,65 +3,60 @@ lang: ms
 lang-niv: auto
 lang-ref: 051-IMP-programigo_gvidilo
 layout: page
-title: 'Panduan Pengaturcaraan IMP.'
+title: 'Panduan Pengaturcaraan   _IMP_'
 ---
 
 
-Dokumentasi API boleh dilihat di sini: (° 1 ° 1  
-* [Versi asal dalam bahasa Cina](../../zh/includes.zh/html/)
+Dokumentasi API boleh dilihat di sini:   
+* [  Versi asal dalam Bahasa Cina  ](../../zh/includes.zh/html/)  
 
 
-* [Versi Bahasa Inggeris](../../en/includes.en/html/)
+* [  Bahasa Inggeris  ](../../en/includes.en/html/)  
 
 
-* (° 1 ° 1 ° 1 ° 1 1 ° 1 ° Versi Perancis Diterjemahkan oleh Google](../../fr/includes.fr/html/)
+* [  Versi Perancis Diterjemahkan oleh Google  ](../../fr/includes.fr/html/)  
 
 
 
 
-# IMP (Platform Media Ingenic) (lihat imp_system.h)
+# _IMP_   \(  _Ingenic Media Platform_  \)   \( lihat   _imp\_system.h_  \)
 
 ## konsep asas
-Pengaturcaraan T20 / T21 berdasarkan konsep berikut:
-1. Periferal (= Peranti)  
-    Periferal melengkapkan fungsi. Contoh:
-     *  Sumber bingkai: mengakhiri output data video.
-     *  Encoder: melengkapkan fungsi pengekodan video atau pengekodan gambar.
-2. Kumpulan  
-    Kumpulan adalah unit input data terkecil. Peranti boleh mempunyai beberapa kumpulan dan setiap kumpulan hanya dapat menerima satu saluran input data. Kumpulan tersebut dapat memperoleh beberapa hasil.  
-    Kumpulan ini juga merupakan wadah untuk fungsi "tertentu". Lihat penjelasan di bahagian saluran untuk maklumat lebih lanjut.
-3. Keluar  
-    Output adalah unit output data terkecil bagi setiap kumpulan. Satu kumpulan boleh mempunyai beberapa output dan setiap output hanya dapat menghasilkan satu saluran data.
-4. Sel  
-    Sel merujuk kepada koleksi yang mengandungi maklumat mengenai peranti, kumpulan, dan keluarannya. Ia disajikan dalam struktur data IMPCell.
-Sel digunakan terutamanya untuk Bind (@ref bind). Menurut definisi Peranti, Kumpulan dan Output, Output adalah node untuk output data dan Group adalah node untuk input data.
-Di Bind, indeks sel dari simpul output data berada pada output Output, dan indeks sel dari simpul input data berada pada kelompok input (sehingga sel, input data Output adalah nilai tidak masuk akal).
-5. Saluran  
-    Saluran umumnya merujuk kepada unit dengan fungsi tunggal. Saluran menerima fungsi tertentu ketika dibuat (instantiasi).  
-    Contohnya:  
-     -  Untuk pengekod, satu saluran melengkapkan kod H264 atau fungsi pengekodan JPEG. Jenis fungsi pengekodan khusus (, parameter) ditentukan semasa membuat saluran
+Program T20 / T21 didasarkan pada konsep-konsep berikut:  
+ 1. Peranti   \( =  _Device_  \)    
+ Peranti melengkapkan fungsi. Contoh:  
+       *    _Framesource_ : Lengkapkan output klip video.  
+       *    _Encoder_ : Lengkapkan kod video atau fungsi kod imej.  
+ 2. Kumpulan   \( =  _Group_  \)    
+ Kumpulan ialah unit input data terkecil. Peranti boleh mempunyai pelbagai kumpulan dan setiap kumpulan boleh menerima hanya satu saluran input data. Kumpulan boleh mempunyai beberapa keputusan.   
+      Kumpulan juga merupakan bekas untuk fungsi   " khusus  ". Lihat penjelasan di bahagian saluran untuk maklumat lanjut.  
+ 3. Eligo   \( =  _Output_  \)    
+ output adalah unit output data terkecil bagi setiap kumpulan.    
+ Saluran biasanya berkaitan dengan satu unit fungsi tunggal.    
+ Sebagai contoh:   
+     -  Untuk CODEL, Saluran melengkapkan fungsi   _H264_   atau kod   _JPEG_.  
 
 
-     -  Untuk IVS, saluran menyelesaikan fungsi algoritma tertentu dan parameter jenis algoritma tertentu ditentukan semasa membuat saluran
+     -  Untuk   _IVS_, saluran melengkapkan fungsi algoritma tertentu dan parameter algoritma tertentu yang ditentukan semasa membuat saluran 
 
 
-     -  Untuk OSD, terdapat kawasan yang serupa dengan Saluran, wilayah adalah kawasan lapisan khas, yang boleh berupa gambar PIC (), penutupan COVER (), dan sebagainya .
+     -  Untuk  _OSD_, terdapat rantau yang serupa dengan   _Channel_, sebuah rantau adalah kawasan yang supermetated tertentu yang boleh menjadi Atas   \( Image  \) Cover   \( Occlusion  \), dll.  
 
 
-     -  Untuk FrameSource, saluran menghasilkan gambar asal dan saluran FrameSource sebenarnya adalah kumpulan
+     -  Untuk   _FrameSource_, saluran menghasilkan imej asal dan saluran   _FrameSource_   sebenarnya adalah kumpulan  
 
 
-     
-     Saluran, sebagai unit berfungsi, umumnya mesti didaftarkan dalam kumpulan (sebagai tambahan kepada FrameSource) untuk menerima data. Setelah saluran didaftarkan dalam kumpulan, ia akan menerima data yang dimasukkan oleh kumpulan.
+    
+       Saluran, sebagai unit berfungsi, biasanya dipelihara dalam kumpulan   \( kecuali   _FrameSource_  \) menerima data.  
 
     Bilangan saluran yang dapat dirakam oleh kumpulan pelbagai peranti juga berbeza.
 
-## Modul pengikat (Ikatan)
+## Pautan Modul   \(  _Bind_  \)
 
-Setelah dua kumpulan dihubungkan oleh Bind, data dari kumpulan sumber akan dihantar secara automatik ke kumpulan tujuan.  
-Kerana kumpulan adalah unit input data terkecil dan outputnya adalah unit output data terkecil, deviceID, groupID, dan outputID srcCell dalam kedua-dua parameter IMP_System_Bind (IMPCell * srcCell, IMPCell * dstCell) sah.  
+Selepas dua kumpulan dikaitkan dengan   _Bind_, data dari kumpulan sumber secara automatik akan menghantar ke destinasi.    
+ Oleh kerana kumpulan itu adalah unit input data terkecil dan output adalah unit output data terkecil,   _deviceID_,   _groupID_   dan   _outputID_    _srcCell_   dalam dua parameter   _IMP\_System\_Bind \(IMPCell * srcCell, IMPCell * dstCell\)_   adalah sah.    
 
-Walaupun dstCell hanya berlaku untuk deviceID dan groupID, outputID tidak masuk akal sebagai entri data.
+Walaupun   _dstCell_   hanya sah untuk   _deviceID_   dan   _groupID_,   _outputID_   tidak masuk akal seperti pintu masuk data.  
 
 Contoh 1: 
 ```
@@ -72,11 +67,10 @@ if(ret <0>)
   printf ("Bind FrameSource Channel0 and Encoder Group0 failed \ n");
 
 ```
+Keputusan:    
+ *  Kumpulan menjana satu kumpulan yang menghasilkan pautan dari Framesource to Encoder. 
 
-* kumpulan dihasilkan yang menghasilkan pautan dari FrameSource ke Encoder.
-
-
-* Dua saluran direkodkan dalam Kumpulan Encoder, jadi Kumpulan Encoder mempunyai dua output H264 dan JPEG.
+* Dua saluran didaftarkan dalam kumpulan Encoder, jadi kumpulan encoder mempunyai dua produk:   _H264_   dan   _JPEG_.  
 
 
 
@@ -112,69 +106,57 @@ int ret = IMP_System_Bind(&osd_grp1, &enc_grp1);
 if (ret < 0)
     printf("Bind OSD Group1 and Encoder Group1 failed\n");
 ```
-Ini adalah program khas Bind: aliran kod dua saluran.
- * FrameSource mempunyai dua output, iaitu aliran utama Channel0 (1280x720) dan saluran budak Channel1 (640x360).
-   *   Aliran utama: FrameSource's Channel0 Bind OSD Group.0, OSD Group.0 Bind Encoder Group.0. Antaranya: 
-       * OSD Group.0 merakam dua wilayah yang masing-masing digunakan untuk memaparkan cap waktu dan maklumat rentetan
-       * Kumpulan Encoder .0 merakam dua saluran. , yang masing-masing adalah pengekodan H264 dan pengekodan JPEG. Antaranya, jika ukuran gambar saluran pengekodan JPEG tidak sesuai dengan parameter input (dari FrameSource Channel0), maka ia akan skala (perisian pada T10) ) mencapai matlamat untuk menangkap sebarang resolusi.
-       
-Catatan:
-* disarankan agar semua operasi pautan dilakukan semasa inisialisasi sistem.
-* Operasi pengikat dan pengikat tidak dapat dipanggil secara dinamik setelah _FrameSource_ diaktifkan. Unbind dilakukan hanya selepas penyahaktifan _FrameSource_.
+Memohon adalah aplikasi biasa   _Bind_ : Kod dua saluran.  
+
+Nota:  
+  *   Adalah disyorkan bahawa semua operasi pautan dibuat apabila memulakan sistem.  
 
 ## Fungsi
 
-### int IMP\_Sistem\_Init (kosong )
-Permulaan sistem IMP.
-mengembalikan 0 jika berjaya.
-Selepas panggilan API ini, struktur data asas akan diinisialisasi, tetapi perkakasan tidak akan diinisialisasi.
-Perhatian: Fungsi ini mesti dipanggil untuk memulakan sebelum operasi lain.
-### int IMP_System_Keluar (kosong)
+### _int IMP\_System\_Init \(void \)_
+Permulaan sistem   _IMP_.  
+### Permulaan sistem _int IMP\_System\_Exit \(void\)_. \_
 
-Setelah memanggil fungsi ini, semua memori dan IMP _handles_ akan dilepaskan, dan perkakasan akan dimatikan. 
-Catatan: Setelah memanggil API ini, jika anda ingin menggunakan IMP sekali lagi, anda perlu menetapkan semula sistem IMP.
+Selepas memanggil fungsi ini, semua memori dan   _handles_   _IMP_   akan dikeluarkan, dan unit perkakasan akan ditutup.  
 
-### int64_t IMP_Sistem_GetTimeStamp (void)
+### Selepas memanggil fungsi ini, semua memori dan _int64\_t IMP\_System\_GetTimeStamp \(void\)_ \_ akan dikeluarkan, dan unit perkakasan akan ditutup.  \(
 
-Dapatkan cap waktu sistem IMP dalam mikrodetik.  
-Kembali: masa dalam mikrodetik.
+Dapatkan medan masa sistem   _IMP_   dalam mikrosecond.    
+ Pulangan: Masa di mikroekond. 
 
-### int IMP_System_asas RebaseTimeStamp (int64_t)
-Tetapkan cap waktu sistem IMP dalam mikrodetik.  
-Pulangkan: 0 jika berjaya.
+### Dapatkan medan masa sistem _int IMP\_System\_RebaseTimeStamp \(bases int64\_t\)_ dalam mikrosecond. \_ Pulangan: Masa di mikroekond.  \(
+Tentukan Sistem Timestamp   _IMP_   dalam Mikroseconds.    
+ Pulangan: 0 jika berjaya. 
 
-### uint32_t IMP_Sistem_ReadReg32 (uint32_t u32Addr)
+### Tentukan Sistem Timestamp _uint32\_t IMP\_System\_ReadReg32 \(uint32\_t u32Addr\)_ dalam Mikroseconds. \_ Pulangan: 0 jika berjaya. \_
 
 Baca nilai daftar 32-bit.  
 
-### kosong IMP_System_WriteReg32 (uint32_t regAddr, valeur uint32_t)
-Tuliskan nilai ke daftar 32-bit.
+### _void IMP\_System\_WriteReg32 \(uint32_  t regaddr, nilai uint32  _t\)_
+Tulis nilai dalam pendaftaran 32-bit.  
 
 Catatan: Sila panggil API ini dengan teliti dan periksa makna pendaftaran, jika tidak, ia boleh menyebabkan kesalahan sistem.
 
-### int IMP_System_GetVersion (IMPVersion * pstVersion) 
+### _int IMP_  sistem  _GetVersion \(IMPVersion * pstVersion\)_
 
-Dapatkan nombor versi sistem IMP.
+Dapatkan sistem sistem   _IMP_.  
 
-### const char * IMP_System_GetCPUInfo (kosong)
+### _const char * IMP_  sistem  _GetCPUInfo \(void\)_
 Dapatkan maklumat mengenai model CPU.  
 Catatan: Nilai kembali adalah rentetan model CPU, misalnya, untuk T10 terdapat "T10"dan "T10-Lite".
 
-### int IMP_System_Ikatan (IMPCell * srcCell, IMPCell * dstCell)
+### _int IMP_  sistem   \(
 
 Pautan antara sel sumber dan destinasi.
 
 Catatan 1: Menurut konsep Perangkat, Kelompok dan Keluaran, setiap perangkat dapat memiliki beberapa kelompok, dan setiap kelompok dapat memiliki beberapa output, Grup digunakan sebagai antara muka input Perangkat, dan Keluaran digunakan sebagai antara muka produk Peranti. Oleh itu pautan itu sebenarnya menghubungkan output peranti output tertentu ke Kumpulan peranti input tertentu.
 
-Catatan 2: Setelah pautan berjaya, data yang dihasilkan oleh srcCell (Output) akan dihantar secara automatik ke Kumpulan sel (destinasi).
+Nota 2: Selepas pautan yang berjaya, data yang dihasilkan oleh   _srcCell_   (  ELEGO  )   akan dipindahkan secara automatik ke destinasi   (  Kumpulan  ).  
 
-### int IMP_System_Unbind (IMPCell * srcCell, IMPCell * dstCell)
+### _int IMP_  sistem   \(
 Nyahpasang sumber dan destinasi. 
 
-### int IMP_System_GetBindbyDest (IMPCell * dstCell, IMPCell * srcCell)
+### _int IMP_  sistem   \(
 
 Mengambil maklumat dari sel sumber yang berkaitan dengan tujuan.
-
-
-
 

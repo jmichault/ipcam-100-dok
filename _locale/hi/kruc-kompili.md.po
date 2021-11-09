@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-10-30 11:15+0200\n"
+"POT-Creation-Date: 2021-11-09 15:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -48,43 +48,122 @@ msgstr "क्रॉस संकलन"
 
 #. type: Plain text
 #: kruc-kompili.md:12
+#, no-wrap
+#, fuzzy
+msgid ""
+"Trans-kompilaĵaj iloj estas en  _programada\\_medio/toolchain_. \n"
+" ili estis kompilitaj por  _debian buster x64_. \n"
+msgstr "ट्रांस-संकलन उपकरण   _programada\\_medio/toolchain_ में हैं।  \n उन्हें   _debian buster x64_ के लिए संकलित किया गया था।  \n"
+
+#. type: Plain text
+#: kruc-kompili.md:14
+#, fuzzy, no-wrap
+msgid "Dividitaj bibliotekoj estas en  _programada\\_medio/lib_ \n"
+msgstr "विभाजित पुस्तकालय   _programada\\_medio/lib_   में हैं\n"
+
+#. type: Plain text
+#: kruc-kompili.md:16
+#, fuzzy, no-wrap
+msgid "La  _include_  estas en  _programada\\_medio/include_. \n"
+msgstr "  _include_     _programada\\_medio/include_ में है।  \n"
+
+#. type: Plain text
+#: kruc-kompili.md:21
 #, fuzzy, no-wrap
 msgid ""
-"La transiritaj kompilaĵoj iloj estas en programado_medio/toolchain.\n"
-"Ils ont été compilés pour debian buster x64.\n"
-msgstr "ट्रांजिट संकलन उपकरण प्रोग्रामिंग में हैं (° ° 0001 डिग्री)\n"
-
-#. type: Plain text
-#: kruc-kompili.md:15
-#, fuzzy, no-wrap
-msgid "Komparaj bibliotekoj estas en prograda_medio/lib\n"
-msgstr "तुलनात्मक पुस्तकालय प्रोग्रेस में हैं (° ° 0001 डिग्री)\n"
-
-#. type: Plain text
-#: kruc-kompili.md:18
-#, fuzzy, no-wrap
-msgid "Inkluzivas estas en programado_medio/include.\n"
-msgstr "शामिल है प्रोग्रामिंग में (° ° 0001 डिग्री)\n"
-
-#. type: Plain text
-#: kruc-kompili.md:24
-#, fuzzy, no-wrap
-msgid ""
-"Se vi bezonas rekompili bibliotekon, inspiri la sekvajn skriptojn:\n"
-"* Programada_medio/fontoj/01-buildssl.sh , pour la librairie openssl.\n"
-"* programada_Medio / fontoj / 02-buildive.sh, por Live555-biblioteko.\n"
-"* Programada_medio/fontoj/03-pcre.sh , pour la librairie pcre.\n"
-msgstr "यदि आपको लाइब्रेरी को पुन: संयोजित करने की आवश्यकता है, तो निम्न स्क्रिप्ट को प्रेरित करें: (° ° 0001 डिग्री) (डिग्री 0002 डिग्री) प्रोग्रामडा (डिग्री 0003 डिग्री) पर्यावरण / स्रोत / 02-buildive.sh, Live555 लाइब्रेरी के लिए। (° 0007 डिग्री) (° 0008 डिग्री) प्रोग्रामडा (डिग्री 000 9 डिग्री डिग्री)\n"
-
-#. type: Plain text
-#: kruc-kompili.md:29
-#, fuzzy, no-wrap
-msgid ""
-"Se vi iam bezonos kompili la _«toolchain»_, vi povas konsulti la sekvan retejon:\n"
-" * https://github.com/anmaped/openfang\n"
+"Se vi bezonas rekompili librovendejon, inspiri la jenajn skriptojn: \n"
+" *  _programada\\_medio/fontoj/01-buildssl.sh_ , por la biblioteko  _openssl_. \n"
+" *  _programada\\_medio/fontoj/02-buildlive.sh_ , por la biblioteko  _live555_. \n"
+" *  _programada\\_medio/fontoj/03-pcre.sh_ , por la biblioteko  _pcre_. \n"
 msgstr ""
-"यदि आप कभी\n"
-"https://github.com/anmaped/openfang\n"
+"यदि आपको किताबों की दुकान को फिर से शुरू करने की आवश्यकता है, तो निम्न स्क्रिप्ट को प्रेरित करें:  \n"
+"  *   _programada\\_medio/fontoj/01-buildssl.sh_ , पुस्तकालय   _openssl_ के लिए।  \n"
+"  *   _programada\\_medio/fontoj/02-buildlive.sh_ , पुस्तकालय के लिए   _live555_।  \n"
+"  *   _programada\\_medio/fontoj/03-pcre.sh_ , पुस्तकालय   _pcre_ के लिए।  \n"
+
+#. type: Plain text
+#: kruc-kompili.md:25
+#, fuzzy, no-wrap
+msgid ""
+"Se vi iam bezonos rekompili la  _«toolchain»_, vi povas vidi la sekvan retejon: \n"
+"  *  <https://github.com/anmaped/openfang> \n"
+msgstr ""
+"यदि आपको कभी भी   _«toolchain»_ को पुनः संकलित करने की आवश्यकता है, तो आप निम्न वेबसाइट देख सकते हैं:  \n"
+"   *   <https://github.com/anmaped/openfang>  \n"
+
+#, fuzzy, no-wrap
+#~ msgid ""
+#~ "La transiritaj kompilaj iloj estas en  _programada\\_medio/toolchain_. \n"
+#~ " ili estis kompilitaj por  _debian buster x64_. \n"
+#~ msgstr ""
+#~ "ट्रांजिट संकलन उपकरण   _programada\\_medio/toolchain_ में हैं।  \n"
+#~ " उन्हें   _debian buster x64_ के लिए संकलित किया गया था।  \n"
+
+#, fuzzy, no-wrap
+#~ msgid ""
+#~ "Les outils de compilation croisés se trouvent dans _programada\\_medio/toolchain_.\n"
+#~ "Ils ont été compilés pour _debian buster x64_.\n"
+#~ msgstr ""
+#~ "यदि संकट DANS  _programada\\_medio/toolchain_ है तो संकलन क्रॉइस के लेस नोटिल। \n"
+#~ " ils ont été पूर्ण डालो  _debian buster x64_। \n"
+
+#, fuzzy, no-wrap
+#~ msgid "les librairies partagées sont dans _programada\\_medio/lib_\n"
+#~ msgstr "Les librairies partagées sont dans  _programada\\_medio/lib_ \n"
+
+#, fuzzy, no-wrap
+#~ msgid "les _include_ sont dans _programada\\_medio/include_.\n"
+#~ msgstr "Les  _include_  sont dans  _programada\\_medio/include_। \n"
+
+#, fuzzy, no-wrap
+#~ msgid ""
+#~ "Si vous avez besoin de recompiler une librairie, inspirez-vous des scripts suivants :\n"
+#~ "* _programada\\_medio/fontoj/01-buildssl.sh_ , pour la librairie _openssl_.\n"
+#~ "* _programada\\_medio/fontoj/02-buildlive.sh_ , pour la librairie _live555_.\n"
+#~ "* _programada\\_medio/fontoj/03-pcre.sh_ , pour la librairie _pcre_.\n"
+#~ msgstr ""
+#~ "यदि vous avez besoin recompiler une librairie, inspirez-vous des scripts suivants: \n"
+#~ " *  _programada\\_medio/fontoj/01-buildssl.sh_ , librairie  _openssl_ डालो। \n"
+#~ " *  _programada\\_medio/fontoj/02-buildlive.sh_ , librairie  _live555_ डालो। \n"
+#~ " *  _programada\\_medio/fontoj/03-pcre.sh_ , librairie  _pcre_ डालो। \n"
+
+#, fuzzy, no-wrap
+#~ msgid ""
+#~ "Si jamais vous avez besoin de recompiler la _«toolchain»_, vous pouvez consulter le site suivant :\n"
+#~ " * <https://github.com/anmaped/openfang>\n"
+#~ msgstr ""
+#~ "Si jamais vous avez besoin recompile करने के लिए  _«toolchain»_, vous pouvez consulter le साइट suivant: \n"
+#~ "  *  <https://github.com/anmaped/openfang> \n"
+
+#, fuzzy, no-wrap
+#~ msgid ""
+#~ "La transiritaj kompilaĵoj iloj estas en programado_medio/toolchain.\n"
+#~ "Ils ont été compilés pour debian buster x64.\n"
+#~ msgstr "ट्रांजिट संकलन उपकरण प्रोग्रामिंग में हैं (° ° 0001 डिग्री)\n"
+
+#, fuzzy, no-wrap
+#~ msgid "Komparaj bibliotekoj estas en prograda_medio/lib\n"
+#~ msgstr "तुलनात्मक पुस्तकालय प्रोग्रेस में हैं (° ° 0001 डिग्री)\n"
+
+#, fuzzy, no-wrap
+#~ msgid "Inkluzivas estas en programado_medio/include.\n"
+#~ msgstr "शामिल है प्रोग्रामिंग में (° ° 0001 डिग्री)\n"
+
+#, fuzzy, no-wrap
+#~ msgid ""
+#~ "Se vi bezonas rekompili bibliotekon, inspiri la sekvajn skriptojn:\n"
+#~ "* Programada_medio/fontoj/01-buildssl.sh , pour la librairie openssl.\n"
+#~ "* programada_Medio / fontoj / 02-buildive.sh, por Live555-biblioteko.\n"
+#~ "* Programada_medio/fontoj/03-pcre.sh , pour la librairie pcre.\n"
+#~ msgstr "यदि आपको लाइब्रेरी को पुन: संयोजित करने की आवश्यकता है, तो निम्न स्क्रिप्ट को प्रेरित करें: (° ° 0001 डिग्री) (डिग्री 0002 डिग्री) प्रोग्रामडा (डिग्री 0003 डिग्री) पर्यावरण / स्रोत / 02-buildive.sh, Live555 लाइब्रेरी के लिए। (° 0007 डिग्री) (° 0008 डिग्री) प्रोग्रामडा (डिग्री 000 9 डिग्री डिग्री)\n"
+
+#, fuzzy, no-wrap
+#~ msgid ""
+#~ "Se vi iam bezonos kompili la _«toolchain»_, vi povas konsulti la sekvan retejon:\n"
+#~ " * https://github.com/anmaped/openfang\n"
+#~ msgstr ""
+#~ "यदि आप कभी\n"
+#~ "https://github.com/anmaped/openfang\n"
 
 #, no-wrap
 #~ msgid "005-kruc-compili"

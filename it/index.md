@@ -6,7 +6,7 @@ layout: page
 title: Presentazione
 ---
 
-Lo scopo di questo progetto è creare firmware alternativo per questa fotocamera: (° 1 ° 1
+Lo scopo di questo progetto è creare un firmware alternativo per questa fotocamera: 
 
 segno = _WIFI CARAM_  
 modello: _WF-HD820-ZS_  
@@ -29,16 +29,16 @@ sensore video: _GC2053_
 
 ## Cosa funziona in un firmware alternativo:
 
-* _LAN_ e _WLAN_
+* _LAN_   e   _WLAN_  
 
 
-* Server (° 1 ° Doppio flusso: _1920x1080 H264_ e _640x360 MJPEG_ per impostazione predefinita.  
+* Server   _RTSP_   Doppio flusso:   _1920x1080 H264_   e   _640x360 MJPEG_   per impostazione predefinita. . 
 
 
 * Parametri visivi
 
 
-* Server _HTTP_
+* Server   _HTTP_  
 
 
 * controllo motore
@@ -47,25 +47,25 @@ sensore video: _GC2053_
 * taratura motore
 
 
-* Parametri _PTZ_(° 3 ° 3
+* Impostazioni   _PTZ_  
 
 
-* Cliente _NTP_(° 3 ° 3
+* Cliente   _NTP_  
 
 
-* Amministrazione password _http_, _rtsp_ e sistema.  
+* Gestisci le password   _http_,   _rtsp_   e System. . 
 
 
-* Controllo a LED bianco e IR
+* Controllo a LED bianco e IR  
 
 
-* Controllo a LED bianco e IR _ftp_
+* Controllo a LED bianco e IR   _ftp_ 
 
 
-* Controllo a LED bianco e IR _telnet_
+* Controllo a LED bianco e IR   _telnet_ 
 
 
-* Server e client _ssh_(° 3 ° 3
+* Server e client   _ssh_  
 
 
 * rilevamento del movimento
@@ -74,10 +74,10 @@ sensore video: _GC2053_
 * invio email
 
 
-* Invia _«telegram»_
+* Invio   _«telegram»_  
 
 
-* Regime notturno automatico
+* Modalità notturna automatica  
 
 
 
@@ -98,7 +98,7 @@ sensore video: _GC2053_
 * invio email_mqtt_
 
 
-* Invio di immagini e video nel cloud (° 1 ° 1
+* Immagini e video di spedizione nel cloud  
 
 
 * ecc ...
@@ -113,7 +113,7 @@ sensore video: _GC2053_
 * Forse impostare la rete ( _www/ipcam/config.dist/reto.conf_ )
 
 
-* Immettere la scheda _microSD_ nella fotocamera.  
+* Inserire la scheda   _microSD_   nella fotocamera. . 
 
 
 * Collega la videocamera alla rete locale e accendi la videocamera.
@@ -131,7 +131,7 @@ sensore video: _GC2053_
 * Faru `cd /opt/media/mmcblk0p1;./install.sh`
 
 
-* La fotocamera riprende, ora: (° 1 ° 1
+* La fotocamera riavvia ora:  
 
 
     * È possibile collegare all'URL _https://IP_ (utente _admin_, password _ismart21_).
@@ -140,16 +140,16 @@ sensore video: _GC2053_
     * È possibile connettersi in Utente SSH ( _admin_, password _ismart12_).
 
 
-    * La corrente video primaria è accessibile a _rtsp://admin:ismart21@IP/stream1_. (° 3 ° 3
+    * La corrente video primaria è accessibile a  _rtsp://admin:ismart21@IP/stream1_. .
 
 
-    * La corrente video secondaria è accessibile a _rtsp://admin:ismart21@IP/stream2_. (° 3 ° 3
+    * Il flusso video secondario è accessibile a  _rtsp://admin:ismart21@IP/stream2_. .
 
 
-(° 1 ° 1 ° 1 WiFi Modalità AP è attivata per impostazione predefinita:
-    ** SSID: IPCAM100-XXXXXX
-    ** Chiave WPA2: ISMART21
-Indirizzo IP della fotocamera: 172.25.0.1
+    *   La modalità AP WiFi è abilitata per impostazione predefinita:  
+      **   SSID: IPCAM100-XXXXX  
+      **   Tasto WPA2: ISMART21  
+      **   Indirizzo IP della fotocamera: 172.25.0.1  
 
 ## Disinstallazione del firmware alternativo:
 
@@ -169,8 +169,9 @@ Indirizzo IP della fotocamera: 172.25.0.1
 
 # Documenti interessanti
 
-Molto lavoro è stato realizzato per telecamere dotato di un processore _ingenic T20_ :
-* Firmware modificato: <https://github.com/ilílístotlyar/xiaomi- Dafang -Haks>
-Fonti del firmware modificato: <https://github.com/dafang-hacks/main>
-17 °) https://github.com/thatusenameanamexist/jco-pm203-fishiseye-ininic-t20-P2P-camer-Hacks>
+Molto lavoro è stato realizzato per le telecamere dotate di un processore   _ingenic T20_   
+  *   Firmware modificato:   <https://github.com/EliasKotlyar/Xiaomi-Dafang-Hacks>  
+  *   Fonti del firmware modificato:   <https://github.com/Dafang-Hacks/Main>  
+  *   Altro firmware:   <https://github.com/openmiko/openmiko>  
+  *   Avvia i programmi senza modificare il firmware:   <https://github.com/ThatUsernameAlreadyExist/JCO-PM203-Fisheye-Ingenic-T20-P2P-camera-hacks>  
 

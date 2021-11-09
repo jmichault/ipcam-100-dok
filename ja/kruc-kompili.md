@@ -7,26 +7,20 @@ title: クロスコンパイル
 ---
 
 
-トランジットコンパイルツールはプログラミング_medio/toolchain.
-Ils ont été compilés pour debian buster x64.
-です。
+トランスコンパイルツールは  _programada\_medio/toolchain_です。  
+それらは  _debian buster x64_のために編集された。  
+
+分割ライブラリは  _programada\_medio/lib_  です。
+
+  _include_  は  _programada\_medio/include_にある。  
+
+書店を再コンパイルする必要がある場合は、ライブラリ  _openssl_の次のスクリプトを次のスクリプト： 
+  *   _programada\_medio/fontoj/01-buildssl.sh_ 。ライブラリー  _live555_について、 
+  *   _programada\_medio/fontoj/02-buildlive.sh_ 。  
+  *   _programada\_medio/fontoj/03-pcre.sh_ は、ライブラリー<H 2 O>である。  
 
 
-比較図書館は進行中_medio/lib
+  _«toolchain»_を再コンパイルする必要がある場合は、次のWebサイトを確認できます。 
+   *   <https://github.com/anmaped/openfang>  
 
 
-
-プログラミング_medio/include.
-が含まれています
-
-
-ライブラリを回復する必要がある場合は、
-* プログラム_medio/fontoj/01-buildssl.sh , pour la librairie openssl.
-* programada_環境/ソース/ 02-BUILDIVE.SH、Live555ライブラリー用です。
-* Progionada_medio/fontoj/03-pcre.sh , pour la librairie pcre.
-
-
-
-
- _«toolchain»_をコンパイルする必要がある場合は、次のWebサイトを確認できます。
- * https://github.com/anmaped/openfang

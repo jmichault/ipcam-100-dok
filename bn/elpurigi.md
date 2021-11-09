@@ -8,7 +8,7 @@ title: 'শুদ্ধ করা'
 
 মূল ফার্মওয়্যার সহ:
 
-* প্রারম্ভের 5 মিনিটের মধ্যে `telnet IP 9527` (ব্যবহারকারী _root_, পাসওয়ার্ড (to 6 °) দিয়ে ক্যামেরায় লগ ইন করুন।
+*  `telnet IP 9527`  ( ব্যবহারকারী  _root_, পাসওয়ার্ড  _jco66688_)  দ্বারা ক্যামেরাতে লগ ইন করুন 5 মিনিটের মধ্যে 5 মিনিটের মধ্যে। .
 
 
 * সংযোগটি বন্ধ না করার জন্য `killall -9 auto_run.sh` টিপুন।
@@ -29,8 +29,8 @@ title: 'শুদ্ধ করা'
 * ক্যামেরাটির "gdbserver"শুরু করুন, উদাঃ :  
 
 
-     `/opt/media/mmcblk0p1/bin/gdbserver localhost:2000 /opt/media/mmcblk0p1/bin/motor`
-* কম্পিউটারে জিডিবি শুরু করুন, উদাহরণস্বরূপ:
+     `/opt/media/mmcblk0p1/bin/gdbserver localhost:2000 /opt/media/mmcblk0p1/bin/motor`  
+  *   কম্পিউটারে GDB শুরু করুন, উদাহরণস্বরূপ:  
 
     ```
     cd programada_medio/toolchain
@@ -40,7 +40,7 @@ title: 'শুদ্ধ করা'
     handle SIG32 nostop
     break xxx
     continue 
-    ```
+    ```  
 
 
 

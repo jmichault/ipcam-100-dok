@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-10-30 11:06+0200\n"
+"POT-Creation-Date: 2021-11-09 15:13+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -119,14 +119,14 @@ msgstr "ਵਿਕਲਪਿਕ ਫਰਮਵੇਅਰ ਵਿੱਚ ਕੀ ਕੰ�
 #. type: Bullet: '* '
 #: index.md:33
 #, fuzzy, no-wrap
-msgid "_LAN_ kaj _WLAN_\n"
-msgstr "_LAN_ ਅਤੇ _WLAN_ _WLAN_\n"
+msgid "_LAN_  kaj  _WLAN_ \n"
+msgstr "_LAN_   ਅਤੇ   _WLAN_  \n"
 
 #. type: Bullet: '* '
 #: index.md:35
 #, fuzzy, no-wrap
-msgid "Servilo (° 1 ° duobla-fluo: _1920x1080 H264_ kaj _640x360 MJPEG_ defaŭlte. \n"
-msgstr "ਸਰਵਰ (° 1 ° ਡਬਲ-ਪ੍ਰਵਾਹ: _1920x1080 H264_ ਅਤੇ _640x360 MJPEG_ ਮੂਲ ਰੂਪ ਵਿੱਚ.  \n"
+msgid "Servilo  _RTSP_  Duobla-rivereto:  _1920x1080 H264_  kaj  _640x360 MJPEG_  Defaŭlte. \n"
+msgstr "ਸਰਵਰ   _RTSP_   ਡਬਲ ਸਟ੍ਰੀਮ:   _1920x1080 H264_   ਅਤੇ   _640x360 MJPEG_   ਮੂਲ ਰੂਪ ਵਿੱਚ.  \n"
 
 #. type: Bullet: '* '
 #: index.md:37
@@ -137,8 +137,8 @@ msgstr "ਵਿਜ਼ੂਅਲ ਪੈਰਾਮੀਟਰ\n"
 #. type: Bullet: '* '
 #: index.md:39
 #, fuzzy, no-wrap
-msgid "Servilo _HTTP_\n"
-msgstr "ਸਰਵਰ _HTTP_\n"
+msgid "Servilo  _HTTP_ \n"
+msgstr "ਸਰਵਰ   _HTTP_  \n"
 
 #. type: Bullet: '* '
 #: index.md:41
@@ -155,44 +155,44 @@ msgstr "ਇੰਜਨ ਕੈਲੀਬ੍ਰੇਸ਼ਨ\n"
 #. type: Bullet: '* '
 #: index.md:45
 #, fuzzy, no-wrap
-msgid "Parametroj _PTZ_\n"
-msgstr "ਪੈਰਾਮੀਟਰ _PTZ_ਪੈਰਾਮੀਟਰ\n"
+msgid "Agordoj  _PTZ_ \n"
+msgstr "ਸੈਟਿੰਗਜ਼   _PTZ_  \n"
 
 #. type: Bullet: '* '
 #: index.md:47
 #, fuzzy, no-wrap
-msgid "Kliento _NTP_\n"
-msgstr "ਕਲਾਇੰਟ _NTP_\n"
+msgid "Kliento  _NTP_ \n"
+msgstr "ਕਲਾਇੰਟ   _NTP_  \n"
 
 #. type: Bullet: '* '
 #: index.md:49
 #, fuzzy, no-wrap
-msgid "Pasvorta administrado _http_, _rtsp_ kaj sistemo. \n"
-msgstr "ਪਾਸਵਰਡ ਪ੍ਰਸ਼ਾਸਨ _http_, _rtsp_ ਅਤੇ ਸਿਸਟਮ.  \n"
+msgid "administri pasvortoj  _http_,  _rtsp_  kaj sistemo. \n"
+msgstr "ਪਾਸਵਰਡ ਪ੍ਰਬੰਧਿਤ ਕਰੋ   _http_   _rtsp_   ਅਤੇ ਸਿਸਟਮ.  \n"
 
 #. type: Bullet: '* '
 #: index.md:51
 #, fuzzy, no-wrap
-msgid "Blanka LED-Kontrolo kaj IR\n"
-msgstr "ਵ੍ਹਾਈਟ ਐਲਈਡੀ ਕੰਟਰੋਲ ਅਤੇ ਆਈਆਰ\n"
+msgid "blankaj LED kontrolo kaj IR \n"
+msgstr "ਵ੍ਹਾਈਟ ਐਲਈਡੀ ਕੰਟਰੋਲ ਅਤੇ IR  \n"
 
 #. type: Bullet: '* '
 #: index.md:53
 #, fuzzy, no-wrap
-msgid "Blanka LED-Kontrolo kaj IR _ftp_\n"
-msgstr "ਵ੍ਹਾਈਟ ਐਲਈਡੀ ਨਿਯੰਤਰਣ ਅਤੇ ਆਈਆਰ _ftp_\n"
+msgid "blankaj LED kontrolo kaj IR  _ftp_\n"
+msgstr "ਵ੍ਹਾਈਟ ਐਲਈਡੀ ਨਿਯੰਤਰਣ ਅਤੇ IR   _ftp_ \n"
 
 #. type: Bullet: '* '
 #: index.md:55
 #, fuzzy, no-wrap
-msgid "Blanka LED-Kontrolo kaj IR _telnet_\n"
-msgstr "ਵ੍ਹਾਈਟ ਐਲਈਡੀ ਨਿਯੰਤਰਣ ਅਤੇ ਆਈਆਰ _telnet_\n"
+msgid "blankaj LED kontrolo kaj IR  _telnet_\n"
+msgstr "ਵ੍ਹਾਈਟ ਐਲਈਡੀ ਨਿਯੰਤਰਣ ਅਤੇ IR   _telnet_ \n"
 
 #. type: Bullet: '* '
 #: index.md:57
 #, fuzzy, no-wrap
-msgid "Servilo kaj kliento _ssh_\n"
-msgstr "ਸਰਵਰ ਅਤੇ ਕਲਾਇੰਟ _ssh_\n"
+msgid "Servilo kaj Kliento  _ssh_ \n"
+msgstr "ਸਰਵਰ ਅਤੇ ਕਲਾਇੰਟ   _ssh_  \n"
 
 #. type: Bullet: '* '
 #: index.md:59
@@ -209,14 +209,14 @@ msgstr "ਈਮੇਲ ਭੇਜਣਾ\n"
 #. type: Bullet: '* '
 #: index.md:63
 #, fuzzy, no-wrap
-msgid "Sendi _«telegram»_\n"
-msgstr " _«telegram»_ਭੇਜੋਭੇਜੋ\n"
+msgid "Sendante  _«telegram»_ \n"
+msgstr "  _«telegram»_   ਭੇਜ ਰਿਹਾ ਹਾਂ\n"
 
 #. type: Bullet: '* '
 #: index.md:65
 #, fuzzy, no-wrap
-msgid "Aŭtomata nokta reĝimo\n"
-msgstr "ਆਟੋਮੈਟਿਕ ਨਾਈਟ ਸ਼ਾਸਨ\n"
+msgid "aŭtomata nokto mode \n"
+msgstr "ਆਟੋਮੈਟਿਕ ਨਾਈਟ ਮੋਡ  \n"
 
 #. type: Title ##
 #: index.md:67
@@ -257,8 +257,8 @@ msgstr "ਈਮੇਲ ਭੇਜਣਾ_mqtt_\n"
 #. type: Bullet: '* '
 #: index.md:80
 #, fuzzy, no-wrap
-msgid "Sendante bildojn kaj videojn en nubo\n"
-msgstr "ਬੱਦਲ ਵਿਚ ਚਿੱਤਰਾਂ ਅਤੇ ਵੀਡਿਓ ਭੇਜਣਾ\n"
+msgid "sendo bildojn kaj filmetoj en la nubo \n"
+msgstr "ਬੱਦਲ ਵਿਚ ਸ਼ਿਪਮੈਂਟ ਦੀਆਂ ਤਸਵੀਰਾਂ ਅਤੇ ਵੀਡਿਓ  \n"
 
 #. type: Bullet: '* '
 #: index.md:82
@@ -287,8 +287,8 @@ msgstr "ਸ਼ਾਇਦ ਨੈੱਟਵਰਕ (  ( _www/ipcam/config.dist/reto.c
 #. type: Bullet: '* '
 #: index.md:91
 #, fuzzy, no-wrap
-msgid "Enmetu la karton _microSD_ en la fotilon. \n"
-msgstr "ਕੈਮਰਾ ਵਿੱਚ ਕਾਰਡ _microSD_ ਦਾਖਲ ਕਰੋ.  \n"
+msgid "Enmeti la karton  _microSD_  en la fotilo. \n"
+msgstr "ਕੈਮਰੇ ਵਿੱਚ ਕਾਰਡ   _microSD_   ਪਾਓ.  \n"
 
 #. type: Bullet: '* '
 #: index.md:93
@@ -323,8 +323,8 @@ msgstr "ਫਰੂ `cd /opt/media/mmcblk0p1;./install.sh`\n"
 #. type: Bullet: '* '
 #: index.md:103
 #, fuzzy, no-wrap
-msgid "La fotilo rekomencas, nun:\n"
-msgstr "ਕੈਮਰਾ ਮੁੜ ਚਾਲੂ ਕਰਦਾ ਹੈ, ਹੁਣ:\n"
+msgid "La fotilo reboots nun: \n"
+msgstr "ਮੁੜ ਚਾਲੂ ਕੈਮਰਾ ਹੁਣ:  \n"
 
 #. type: Bullet: '    * '
 #: index.md:105
@@ -354,11 +354,15 @@ msgstr "ਸੈਕੰਡਰੀ ਵੀਡੀਓ ਮੌਜੂਦਾ _rtsp://admin:i
 #: index.md:116
 #, fuzzy, no-wrap
 msgid ""
-"(° 1 ° WiFi AP-reĝimo estas aktivigita defaŭlte:\n"
-"    ** SSID: IPCAM100-XXXXXX\n"
-"    ** WPA2-ŝlosilo: ismart21\n"
-"IP-adreso de la fotilo: 172.25.0.1\n"
-msgstr "(° 1 ° 1 ° 1 ਵਾਈਫਾਈ ਏਪੀ ਮੋਡ ਨੂੰ ਮੂਲ ਰੂਪ ਵਿੱਚ ਸਰਗਰਮ ਕੀਤਾ ਗਿਆ ਹੈ: ° 2 ° 2 °) SSID: IPcam100-XXXXX    ** ° 5 °) wpa2 ਕੁੰਜੀ: ਕੈਮਰਾ ਦਾ IP ਐਡਰੈੱਸ: 172.25.0.1\n"
+"    *  WiFi AP-reĝimo estas ebligita defaŭlte: \n"
+"     **  SSID: IPCAM100-XXXXX \n"
+"     **  WPA2-klavo: ismart21 \n"
+"     **  IP-adreso de la fotilo: 172.25.0.1 \n"
+msgstr ""
+"    *   WiFi AP ਮੋਡ ਮੂਲ ਰੂਪ ਵਿੱਚ ਸਮਰੱਥ ਕੀਤਾ ਗਿਆ ਹੈ:  \n"
+"      **   SSID: IPcam100-XXXXX  \n"
+"      **    \n"
+"      **  )  \n"
 
 #. type: Title ##
 #: index.md:117
@@ -376,7 +380,7 @@ msgstr "ਡਿਫਾਲਟ ਇੰਟਰਫੇਸ ਦੁਆਰਾ ਕੈਮਰੇ
 #: index.md:122
 #, fuzzy, no-wrap
 msgid "Ensalutu al la fotilo per `ssh root@IP` (pasvorto _ismart12_).\n"
-msgstr " `ssh root@IP`  `ssh root@IP` ਪਾਸਵਰਡ (° 3 ° ਪਾਸਵਰਡ _ismart12_)ਦੁਆਰਾ ਕੈਮਰੇ 'ਤੇ ਲੌਗਇਨ ਕਰੋ.\n"
+msgstr " `ssh root@IP`  ( ਪਾਸਵਰਡ  _ismart12_) ਦੁਆਰਾ ਕੈਮਰਾ ਤੇ ਲੌਗਇਨ ਕਰੋ. \n"
 
 #. type: Bullet: '* '
 #: index.md:124
@@ -397,17 +401,126 @@ msgid "Interesaj dokumentoj"
 msgstr "ਦਿਲਚਸਪ ਦਸਤਾਵੇਜ਼"
 
 #. type: Plain text
-#: index.md:135
+#: index.md:136
 #, fuzzy, no-wrap
 msgid ""
-"Multa laboro estis farita por fotiloj ekipitaj per procesoro _ingenic T20_ :\n"
-"* modifita firmware: <https://github.com/eliaskotlyar/xiaomi- dafang -Hacks>\n"
-"* Fontoj de la modifita firmware: <https://github.com/dafang-hacks/main>\n"
-"17 °) https://github.com/thatusenameAlreadyExist/Jco-pm203-fisheye-ingenic-t20-p2p-camera-hacks>\n"
+"Multa laboro estis farita por fotiloj ekipitaj per procesoro  _ingenic T20_ : \n"
+" *  modifita firmware:  <https://github.com/EliasKotlyar/Xiaomi-Dafang-Hacks> \n"
+" *  Fontoj de la modifita firmware:  <https://github.com/Dafang-Hacks/Main> \n"
+" *  Aliaj firmware:  <https://github.com/openmiko/openmiko> \n"
+" *  Lanĉaj Programoj Sen Ŝanĝi la Firmware:  <https://github.com/ThatUsernameAlreadyExist/JCO-PM203-Fisheye-Ingenic-T20-P2P-camera-hacks> \n"
 msgstr ""
-"ਇੱਕ ਪ੍ਰੋਸੈਸਰ _ingenic T20_ ਦੇ ਨਾਲ ਲੈਸ ਕੈਮਰਾ ਲਈ ਬਹੁਤ ਕੰਮ ਕੀਤਾ ਗਿਆ ਸੀ:\n"
-"ਸੋਧਿਆ ਫਰਮਵੇਅਰ: <https://github.com/ilílístotlyar/xiaomi- ਡੈਫੰਗ-ਸ਼ਕਸ>\n"
-"ਸੋਧੀ ਫਰਮਵੇਅਰ ਦੇ ਸਰੋਤ: <https://github.com/dafang/main>>)) 17 °) https://github.com)\n"
+"ਇੱਕ ਪ੍ਰੋਸੈਸਰ   _ingenic T20_   \n"
+" ਸੋਧਿਆ ਫਰਮਵੇਅਰ:   <https://github.com/EliasKotlyar/Xiaomi-Dafang-Hacks>    <https://github.com/ThatUsernameAlreadyExist/JCO-PM203-Fisheye-Ingenic-T20-P2P-camera-hacks>   *   ਹੋਰ ਫਰਮਵੇਅਰ:   <https://github.com/openmiko/openmiko>  \n"
+"  *   ਪ੍ਰੋਗਰਾਮਾਂ ਨੂੰ ਫਰਮਵੇਅਰ ਨੂੰ ਬਦਲਣ ਤੋਂ ਬਿਨਾਂ ਲਾਂਚ ਕਰੋ:   <https://github.com/ThatUsernameAlreadyExist/JCO-PM203-Fisheye-Ingenic-T20-P2P-camera-hacks>  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "_LAN_ kaj _WLAN_\n"
+#~ msgstr "_LAN_ ਅਤੇ _WLAN_ _WLAN_\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "Servilo  _RTSP_  Duoble rivereto:  _1920x1080 H264_  kaj  _640x360 "
+#~ "MJPEG_  defaŭlte. \n"
+#~ msgstr ""
+#~ "ਸਰਵਰ   _RTSP_   ਡਬਲ ਸਟ੍ਰੀਮ:   _1920x1080 H264_   ਅਤੇ   _640x360 MJPEG_   ਮੂਲ "
+#~ "ਰੂਪ ਵਿੱਚ.  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Servilo _HTTP_\n"
+#~ msgstr "ਸਰਵਰ _HTTP_\n"
+
+#, fuzzy, no-wrap
+#~ msgid "Parametroj _PTZ_\n"
+#~ msgstr "ਪੈਰਾਮੀਟਰ _PTZ_ਪੈਰਾਮੀਟਰ\n"
+
+#, fuzzy, no-wrap
+#~ msgid "Kliento _NTP_\n"
+#~ msgstr "ਕਲਾਇੰਟ _NTP_\n"
+
+#, fuzzy, no-wrap
+#~ msgid "Pasvorta administrado _http_, _rtsp_ kaj sistemo. \n"
+#~ msgstr "ਪਾਸਵਰਡ ਪ੍ਰਸ਼ਾਸਨ _http_, _rtsp_ ਅਤੇ ਸਿਸਟਮ.  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Blanka LED-Kontrolo kaj IR\n"
+#~ msgstr "ਵ੍ਹਾਈਟ ਐਲਈਡੀ ਕੰਟਰੋਲ ਅਤੇ ਆਈਆਰ\n"
+
+#, fuzzy, no-wrap
+#~ msgid "Blanka LED-Kontrolo kaj IR _ftp_\n"
+#~ msgstr "ਵ੍ਹਾਈਟ ਐਲਈਡੀ ਨਿਯੰਤਰਣ ਅਤੇ ਆਈਆਰ _ftp_\n"
+
+#, fuzzy, no-wrap
+#~ msgid "Blanka LED-Kontrolo kaj IR _telnet_\n"
+#~ msgstr "ਵ੍ਹਾਈਟ ਐਲਈਡੀ ਨਿਯੰਤਰਣ ਅਤੇ ਆਈਆਰ _telnet_\n"
+
+#, fuzzy, no-wrap
+#~ msgid "Servilo kaj kliento _ssh_\n"
+#~ msgstr "ਸਰਵਰ ਅਤੇ ਕਲਾਇੰਟ _ssh_\n"
+
+#, fuzzy, no-wrap
+#~ msgid "Sendi _«telegram»_\n"
+#~ msgstr " _«telegram»_ਭੇਜੋਭੇਜੋ\n"
+
+#, fuzzy, no-wrap
+#~ msgid "Aŭtomata nokta reĝimo\n"
+#~ msgstr "ਆਟੋਮੈਟਿਕ ਨਾਈਟ ਸ਼ਾਸਨ\n"
+
+#, fuzzy, no-wrap
+#~ msgid "Sendante bildojn kaj videojn en nubo\n"
+#~ msgstr "ਬੱਦਲ ਵਿਚ ਚਿੱਤਰਾਂ ਅਤੇ ਵੀਡਿਓ ਭੇਜਣਾ\n"
+
+#, fuzzy, no-wrap
+#~ msgid "Enmetu la karton _microSD_ en la fotilon. \n"
+#~ msgstr "ਕੈਮਰਾ ਵਿੱਚ ਕਾਰਡ _microSD_ ਦਾਖਲ ਕਰੋ.  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "La fotilo rekomencas, nun:\n"
+#~ msgstr "ਕੈਮਰਾ ਮੁੜ ਚਾਲੂ ਕਰਦਾ ਹੈ, ਹੁਣ:\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "Multa laboro estis farita por fotiloj ekipitaj per procesoro  _ingenic "
+#~ "T20_ : \n"
+#~ " *  modifita firmware:  < https://github.com/eliaskotlyar/xiaomi-dafang-"
+#~ "hacks > \n"
+#~ " *  Fontoj de la modifita firmware:  < https://github.com/dafang-hacks/"
+#~ "main > \n"
+#~ " *  Aliaj firmware:  < https://github.com/openmiko/ OpenMIKO > \n"
+#~ " *  PROGRAMO LEGIN sen ŝanĝi la firmware:  < https://github.com/"
+#~ "thatusernameAlreadyExist/Jco-pm203-fisheyE-ingenic-t20-p2p-camera-hacks > "
+#~ "<h19 >\n"
+#~ msgstr ""
+#~ "ਇੱਕ ਪ੍ਰੋਸੈਸਰ   _ingenic T20_   \n"
+#~ " ਸੋਧਿਆ ਫਰਮਵੇਅਰ ਨਾਲ ਲੈਸ ਕੈਮਰੇ ਲਈ ਬਹੁਤ ਕੰਮ ਕੀਤਾ ਗਿਆ ਹੈ:   <  https:/hithitlub.com/"
+#~ "iltististotolyar/xica ਫੰਗ- h6> \n"
+#~ "  *   ਸੋਧੀ ਫਰਮਵੇਅਰ ਤੋਂ ਸਰੋਤ:   <  htts://github.com/dafang-hacks/main  >  ਹੋਰ "
+#~ "ਫਰਮਵੇਅਰ:   <  Frittub.com/upenmiko/ ਓਪਨਮਿਕੋ <H14 > \n"
+#~ " ਪ੍ਰੋਗਰਾਮ ਫਰਮਵੇਅਰ ਨੂੰ ਬਦਲਣ ਤੋਂ ਬਗੈਰ ਪੜ੍ਹੋ:   <  htthusnameanamee- f20-p2p-caema-t20-"
+#~ "p2p-cishae- h19 < H19 <H19 <H19 <H20  > \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Servilo (° 1 ° duobla-fluo: _1920x1080 H264_ kaj _640x360 MJPEG_ defaŭlte. \n"
+#~ msgstr "ਸਰਵਰ (° 1 ° ਡਬਲ-ਪ੍ਰਵਾਹ: _1920x1080 H264_ ਅਤੇ _640x360 MJPEG_ ਮੂਲ ਰੂਪ ਵਿੱਚ.  \n"
+
+#, fuzzy, no-wrap
+#~ msgid ""
+#~ "(° 1 ° WiFi AP-reĝimo estas aktivigita defaŭlte:\n"
+#~ "    ** SSID: IPCAM100-XXXXXX\n"
+#~ "    ** WPA2-ŝlosilo: ismart21\n"
+#~ "IP-adreso de la fotilo: 172.25.0.1\n"
+#~ msgstr "(° 1 ° 1 ° 1 ਵਾਈਫਾਈ ਏਪੀ ਮੋਡ ਨੂੰ ਮੂਲ ਰੂਪ ਵਿੱਚ ਸਰਗਰਮ ਕੀਤਾ ਗਿਆ ਹੈ: ° 2 ° 2 °) SSID: IPcam100-XXXXX    ** ° 5 °) wpa2 ਕੁੰਜੀ: ਕੈਮਰਾ ਦਾ IP ਐਡਰੈੱਸ: 172.25.0.1\n"
+
+#, fuzzy, no-wrap
+#~ msgid ""
+#~ "Multa laboro estis farita por fotiloj ekipitaj per procesoro _ingenic T20_ :\n"
+#~ "* modifita firmware: <https://github.com/eliaskotlyar/xiaomi- dafang -Hacks>\n"
+#~ "* Fontoj de la modifita firmware: <https://github.com/dafang-hacks/main>\n"
+#~ "17 °) https://github.com/thatusenameAlreadyExist/Jco-pm203-fisheye-ingenic-t20-p2p-camera-hacks>\n"
+#~ msgstr ""
+#~ "ਇੱਕ ਪ੍ਰੋਸੈਸਰ _ingenic T20_ ਦੇ ਨਾਲ ਲੈਸ ਕੈਮਰਾ ਲਈ ਬਹੁਤ ਕੰਮ ਕੀਤਾ ਗਿਆ ਸੀ:\n"
+#~ "ਸੋਧਿਆ ਫਰਮਵੇਅਰ: <https://github.com/ilílístotlyar/xiaomi- ਡੈਫੰਗ-ਸ਼ਕਸ>\n"
+#~ "ਸੋਧੀ ਫਰਮਵੇਅਰ ਦੇ ਸਰੋਤ: <https://github.com/dafang/main>>)) 17 °) https://github.com)\n"
 
 #, no-wrap
 #~ msgid ""

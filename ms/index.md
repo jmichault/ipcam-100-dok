@@ -6,7 +6,7 @@ layout: page
 title: Pembentangan
 ---
 
-Tujuan projek ini adalah untuk mewujudkan firmware alternatif untuk kamera ini: (° 1 ° 1
+Tujuan projek ini adalah untuk mewujudkan firmware alternatif untuk kamera ini: 
 
 tanda = _WIFI CARAM_  
 model: _WF-HD820-ZS_  
@@ -29,16 +29,16 @@ sensor video: _GC2053_
 
 ## Apa yang Berfungsi dalam Firmware Alternatif:
 
-* _LAN_ dan _WLAN_
+* _LAN_   dan   _WLAN_  
 
 
-* Server (° 1 ° Double-Flow: _1920x1080 H264_ dan _640x360 MJPEG_ secara lalai.  
+* Pelayan   _RTSP_   aliran double:   _1920x1080 H264_   dan   _640x360 MJPEG_   secara lalai.  
 
 
 * Parameter visual
 
 
-* Server _HTTP_
+* Pelayan   _HTTP_  
 
 
 * kawalan enjin
@@ -47,25 +47,25 @@ sensor video: _GC2053_
 * penentukuran enjin
 
 
-* Parameter _PTZ_(° 3 ° 3
+* Tetapan   _PTZ_  
 
 
-* Pelanggan _NTP_(° 3 ° 3
+* Pelanggan   _NTP_  
 
 
-* Pentadbiran Kata Laluan _http_, _rtsp_ dan sistem.  
+* Urus kata laluan   _http_,   _rtsp_   dan sistem.  
 
 
-* Kawalan LED Putih dan Ir
+* Kawalan LED Putih dan IR  
 
 
-* Kawalan LED Putih dan Ir _ftp_
+* Kawalan LED Putih dan IR   _ftp_ 
 
 
-* Kawalan LED Putih dan Ir _telnet_
+* Kawalan LED Putih dan IR   _telnet_ 
 
 
-* Pelayan dan pelanggan _ssh_(° 3 ° 3
+* Pelayan dan Pelanggan   _ssh_  
 
 
 * pengesanan gerakan
@@ -74,10 +74,10 @@ sensor video: _GC2053_
 * menghantar e-mel
 
 
-* Hantar _«telegram»_
+* Menghantar   _«telegram»_  
 
 
-* Rejim Malam Automatik
+* Mod Malam Automatik  
 
 
 
@@ -98,7 +98,7 @@ sensor video: _GC2053_
 * menghantar e-mel_mqtt_
 
 
-* Menghantar imej dan video dalam awan (° 1 ° 1
+* Imej penghantaran dan video di awan  
 
 
 * dll ...
@@ -113,7 +113,7 @@ sensor video: _GC2053_
 * Mungkin menetapkan rangkaian ( _www/ipcam/config.dist/reto.conf_ )
 
 
-* Masukkan kad _microSD_ dalam kamera.  
+* Masukkan kad   _microSD_   dalam kamera.  
 
 
 * Sambungkan kamera ke rangkaian tempatan anda dan hidupkan kamera.
@@ -131,7 +131,7 @@ sensor video: _GC2053_
 * Faru `cd /opt/media/mmcblk0p1;./install.sh`
 
 
-* Kamera ini resume, sekarang: (° 1 ° 1
+* Kamera reboot sekarang:  
 
 
     * Anda boleh menyambung ke URL _https://IP_ (, kata laluan _admin_, kata laluan _ismart21_).
@@ -140,16 +140,16 @@ sensor video: _GC2053_
     * Anda boleh menyambung dalam SSH (pengguna _admin_, kata laluan _ismart12_).
 
 
-    * Arus video utama boleh diakses pada _rtsp://admin:ismart21@IP/stream1_. (° 3 ° 3
+    * Arus video utama boleh diakses di  _rtsp://admin:ismart21@IP/stream1_. 
 
 
-    * Arus video menengah boleh diakses pada _rtsp://admin:ismart21@IP/stream2_. (° 3 ° 3
+    * Aliran video sekunder boleh diakses di  _rtsp://admin:ismart21@IP/stream2_. 
 
 
-(° 1 ° 1 ° 1 Wifi AP Mode diaktifkan oleh lalai:
-SSID: IPCAM100-XXXXXX
-    ** WPA2 Key: Ismart21
-Alamat IP kamera: 172.25.0.1
+    *   Mod Wifi AP diaktifkan secara lalai:  
+      **   SSID: IPCAM100-XXXXX  
+      **   WPA2 Key: ISMART21  
+      **   Alamat IP kamera: 172.25.0.1  
 
 ## Menyahpasang Firmware Alternatif:
 
@@ -169,7 +169,9 @@ Alamat IP kamera: 172.25.0.1
 
 # Dokumen yang menarik
 
-Banyak kerja dibuat untuk kamera yang dilengkapi dengan pemproses _ingenic T20_ :* Diubahsuai firmware: <https://github.com/ilítístotlyar/xiaomi- Dafang -Haks>
-Sumber firmware yang diubahsuai: <https://github.com/dafang-hacks/main>
-17 °) https://github.com/thuatenameanameexist/jco-pm203-fisheye-ininic-t20-p2p-camera-hacks>
+Banyak kerja telah dibuat untuk kamera yang dilengkapi dengan pemproses   _ingenic T20_   
+  *   firmware yang diubahsuai:   <https://github.com/EliasKotlyar/Xiaomi-Dafang-Hacks>  
+  *   Sumber firmware yang diubahsuai:   <https://github.com/Dafang-Hacks/Main>  
+  *   firmware lain:   <https://github.com/openmiko/openmiko>  
+  *   Program pelancaran tanpa mengubah firmware:   <https://github.com/ThatUsernameAlreadyExist/JCO-PM203-Fisheye-Ingenic-T20-P2P-camera-hacks>  
 

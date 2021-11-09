@@ -6,7 +6,7 @@ layout: page
 title: 'वीडियो प्रोग्रामिंग गाइड'
 ---
 
-# IMP_ISP (voir imp_isp.h)
+# _IMP\_ISP_   \( देखें   _imp\_isp.h\_)
 इमेज प्रोसेसिंग। मुख्य रूप से छवि प्रभाव, मोड स्विच और रिकॉर्डिंग, इसके अलावा और सेंसर को हटाने की सेटिंग्स शामिल हैं।
 
 आईएसपी मॉड्यूल का डेटा प्रवाह से कोई लेना-देना नहीं है और इसे कनेक्ट करने की आवश्यकता नहीं है, यह केवल प्रभाव कॉन्फ़िगरेशन और सेंसर नियंत्रण के रूप में काम करता है।
@@ -51,7 +51,7 @@ int ret = 0;
     return -1;
   }
 ```
-* चरण 3: सेंसर को सक्रिय करें, यह छवियों का उत्पादन शुरू कर देगा।
+* चरण 3: सेंसर को सक्रिय करें, यह छवियों का उत्पादन शुरू कर देगा। 
 
 
 
@@ -73,12 +73,12 @@ int ret = 0;
   return -1;
  }
 ```
-* चरण 5: ISP डिबगिंग इंटरफ़ेस लागू करें: कृपया ISP डीबगिंग इंटरफ़ेस दस्तावेज़ देखें।
+* चरण 5: एक आईएसपी डीबगिंग इंटरफ़ेस को कॉल करें: कृपया एक आईएसपी डीबगिंग इंटरफ़ेस के दस्तावेज़ देखें। 
 
 
 
 
-## ISP मॉड्यूल को अक्षम करना
+## आईएसपी मॉड्यूल निष्क्रियता
 
 ISP मॉड्यूल की स्थापना रद्द करने के चरण इस प्रकार हैं:
 * चरण 1: ISP कॉन्फ़िगरेशन को अक्षम करें
@@ -94,7 +94,7 @@ int ret = 0;
   return -1;
  }
 ```
-* चरण 2: सेंसर बंद करें। (फ़्रेमसोर्स इस ऑपरेशन)से पहले बंद होना चाहिए
+* चरण 2: सेंसर बंद करें।   \( फ्रेम को इस ऑपरेशन से पहले बंद किया जाना चाहिए  \)  
 
 
 
@@ -117,7 +117,7 @@ ret = IMP_ISP_DelSensor (& sensor);
   return -1;
  }
 ```
-* चरण 4: ISP मॉड्यूल को साफ करें, इस ऑपरेशन से पहले सभी सेंसर हटा दिए जाने चाहिए।
+* चरण 4: आईएसपी मॉड्यूल को साफ करें, इस ऑपरेशन से पहले सभी सेंसर को हटा दिया जाना चाहिए। 
 
 
 
@@ -133,75 +133,78 @@ ret = IMP_ISP_Close ();
 
 ## कार्यों की सूची
 
-int छोटा सा भूत_ISP_खुला(खाली);
-int छोटा सा भूत_ISP_बंद(खाली);
-int छोटा सा भूत_ISP_AddSensor(IMPSensorInfo *pinfo);
-int छोटा सा भूत_ISP_DelSensor(IMPSensorInfo *pinfo);
-int छोटा सा भूत_ISP_EnableSensor(खाली);
-int छोटा सा भूत_ISP_DisableSensor(खाली);
-int छोटा सा भूत_ISP_SetSensorRegister(uint32_t reg, uint32_टी मान);
-int IMP_ISP_GetSensorRegister(uint32_t reg, uint32_t *मान);
-int छोटा सा भूत_ISP_EnableTuning(खाली);
-int छोटा सा भूत_ISP_DisableTuning(खाली);
-int IMP_ISP_विन्यास_SetSensorFPS(uint32_t एफपीएस_num, uint32_t एफपीएस_den);
-int IMP_ISP_Tuning_GetSensorFPS(uint32_t *fps_संख्या, uint32_t *fps_डेन);
-int IMP_ISP_विन्यास_SetAntiFlickerAttr(IMPISPAntiflickerAttr attr);
+```
+int IMP_ISP_Open(void);
+int IMP_ISP_Close(void);
+int IMP_ISP_AddSensor(IMPSensorInfo *pinfo);
+int IMP_ISP_DelSensor(IMPSensorInfo *pinfo);
+int IMP_ISP_EnableSensor(void);
+int IMP_ISP_DisableSensor(void);
+int IMP_ISP_SetSensorRegister(uint32_t reg, uint32_t value);
+int IMP_ISP_GetSensorRegister(uint32_t reg, uint32_t *value);
+int IMP_ISP_EnableTuning(void);
+int IMP_ISP_DisableTuning(void);
+int IMP_ISP_Tuning_SetSensorFPS(uint32_t fps_num, uint32_t fps_den);
+int IMP_ISP_Tuning_GetSensorFPS(uint32_t *fps_num, uint32_t *fps_den);
+int IMP_ISP_Tuning_SetAntiFlickerAttr(IMPISPAntiflickerAttr attr);
 int IMP_ISP_Tuning_GetAntiFlickerAttr(IMPISPAntiflickerAttr *pattr);
-int छोटा सा भूत_ISP_विन्यास_SetRawDRC(IMPISPDrcAttr *pinfo);
-int IMP_ISP_Tuning_GetRawDRC(IMPISPDrcAttr *: pinfo);
-int छोटा सा भूत_ISP_विन्यास_SetSinterDnsAttr(IMPISPSinterDenoiseAttr *pinfo);
-int IMP_ISP_Tuning_GetSinterDnsAttr(IMPISPSinterDenoiseArr *पिनोफ़);
-int छोटा सा भूत_ISP_विन्यास_SetTemperDnsCtl(IMPISPTemperDenoiseAttr *pinfo);
-int IMP_ISP_Tuning_सेटटेम्परडॉनसेंटर(IMPISPTemperDenoiseArr *पिनोफ़);
-int छोटा सा भूत_ISP_विन्यास_GetTemperDnsAttr(IMPISPTemperDenoiseAttr *pinfo);
-int IMP_ISP_Tuning_SetWDRAttr(IMPISPTuningOpsMode मोड);
-int छोटा सा भूत_ISP_विन्यास_GetWDRAttr(IMPISPTuningOpsMode *pmode);
-int IMP_ISP_Tuning_SetSceneMode(IMPISPSceneMode मोड);
-int छोटा सा भूत_ISP_विन्यास_GetSceneMode(IMPISPSceneMode *pmode);
-int IMP_ISP_Tuning_SetColorfxMode(IMPISPColorfxMode मोड);
-int छोटा सा भूत_ISP_विन्यास_GetColorfxMode(IMPISPColorfxMode *pmode);
-int IMP_ISP_Tuning_सेट चमक(अनाम वर्ण उज्ज्वल);
-int छोटा सा भूत_ISP_विन्यास_GetBrightness(unsigned char *pbright);
-int IMP_ISP_Tuning_SetContrast(अनाम संकेत विपरीत);
-int छोटा सा भूत_ISP_विन्यास_GetContrast(unsigned char *pcontrast);
-int IMP_ISP_Tuning_सेटशरपनेस(नमनीय तीक्ष्णता तीक्ष्णता);
-int छोटा सा भूत_ISP_विन्यास_GetSharpness(unsigned char *psharpness);
-int IMP_ISP_Tuning_SetSaturation(अनाम चिह्न (से 22 °);
-int छोटा सा भूत_ISP_विन्यास_GetSaturation(unsigned char *psat);
-int IMP_ISP_Tuning_सेटिसप्रोसेस(IMPISPTuningOpsMode मोड);
-int छोटा सा भूत_ISP_विन्यास_SetFWFreeze(IMPISPTuningOpsMode mode);
-int IMP_ISP_Tuning_SaveAllParam(चार *पथ_;
-int IMP_ISP_सेटिंग_SetISPBypass(IMPISPTuningOpsMode enable);
+int IMP_ISP_Tuning_SetRawDRC(IMPISPDrcAttr *pinfo);
+int IMP_ISP_Tuning_GetRawDRC(IMPISPDrcAttr *pinfo);
+int IMP_ISP_Tuning_SetSinterDnsAttr(IMPISPSinterDenoiseAttr *pinfo);
+int IMP_ISP_Tuning_GetSinterDnsAttr(IMPISPSinterDenoiseAttr *pinfo);
+int IMP_ISP_Tuning_SetTemperDnsCtl(IMPISPTemperDenoiseAttr *pinfo);
+int IMP_ISP_Tuning_SetTemperDnsAttr(IMPISPTemperDenoiseAttr *pinfo);
+int IMP_ISP_Tuning_GetTemperDnsAttr(IMPISPTemperDenoiseAttr *pinfo);
+int IMP_ISP_Tuning_SetWDRAttr(IMPISPTuningOpsMode mode);
+int IMP_ISP_Tuning_GetWDRAttr(IMPISPTuningOpsMode *pmode);
+int IMP_ISP_Tuning_SetSceneMode(IMPISPSceneMode mode);
+int IMP_ISP_Tuning_GetSceneMode(IMPISPSceneMode *pmode);
+int IMP_ISP_Tuning_SetColorfxMode(IMPISPColorfxMode mode);
+int IMP_ISP_Tuning_GetColorfxMode(IMPISPColorfxMode *pmode);
+int IMP_ISP_Tuning_SetBrightness(unsigned char bright);
+int IMP_ISP_Tuning_GetBrightness(unsigned char *pbright);
+int IMP_ISP_Tuning_SetContrast(unsigned char contrast);
+int IMP_ISP_Tuning_GetContrast(unsigned char *pcontrast);
+int IMP_ISP_Tuning_SetSharpness(unsigned char sharpness);
+int IMP_ISP_Tuning_GetSharpness(unsigned char *psharpness);
+int IMP_ISP_Tuning_SetSaturation(unsigned char sat);
+int IMP_ISP_Tuning_GetSaturation(unsigned char *psat);
+int IMP_ISP_Tuning_SetISPProcess(IMPISPTuningOpsMode mode);
+int IMP_ISP_Tuning_SetFWFreeze(IMPISPTuningOpsMode mode);
+int IMP_ISP_Tuning_SaveAllParam(char *path);
+int IMP_ISP_Tuning_SetISPBypass(IMPISPTuningOpsMode enable);
 int IMP_ISP_Tuning_GetTotalGain(uint32_t *gain);
-int IMP_ISP_Tuning_सेटिंग ISPHflip(IMPISPTuningMps मोड);
-int छोटा सा भूत_ISP_विन्यास_GetISPHflip(IMPISPTuningOpsMode *pmode);
-int IMP_ISP_Tuning_SetISPVflip(IMPISPTuningOpsMode मोड);
-int छोटा सा भूत_ISP_विन्यास_GetISPVflip(IMPISPTuningOpsMode *pmode);
-int IMP_ISP_Tuning_SetISPRunningMode(IMPISPRunningMode मोड_;
-int छोटा सा भूत_ISP_विन्यास_GetISPRunningMode(IMPISPRunningMode *pmode);
-int IMP_ISP_Tuning_SetAeStrategy(IMPISPAeStrategy रणनीति);
-int IMP_ISP_सेटअप_GetAeStrategy(IMPISPAeStrategy *pstrategy);
-int IMP_ISP_Tuning_सेटगम्मा(IMPISPGamma *गामा);
-int छोटा सा भूत_ISP_विन्यास_GetGamma(IMPISPGamma *gamma);
-int IMP_ISP_Tuning_SetAeComp(int COMP);
-int छोटा सा भूत_ISP_विन्यास_GetAeComp(int *comp);
-int IMP_ISP_Tuning_SetExpr(IMPISPExpr *एक्स्कप्र);
-int छोटा सा भूत_ISP_विन्यास_GetExpr(IMPISPExpr *expr);
-int IMP_ISP_Tuning_AE_GetROI(IMPISPAERoi *isp_AE_roi);
-int IMP_ISP_SetROI(IMPISPAERoi *isp_AE_SetROI(IMPISPAERoi *isp_AE_SetROI(IMPISPAERoi *isp_° 000377 °) ISP_Tuning_SetWB(IMPISPWB *wb);
-int छोटा सा भूत_ISP_विन्यास_GetWB(IMPISPWB *wb);
+int IMP_ISP_Tuning_SetISPHflip(IMPISPTuningOpsMode mode);
+int IMP_ISP_Tuning_GetISPHflip(IMPISPTuningOpsMode *pmode);
+int IMP_ISP_Tuning_SetISPVflip(IMPISPTuningOpsMode mode);
+int IMP_ISP_Tuning_GetISPVflip(IMPISPTuningOpsMode *pmode);
+int IMP_ISP_Tuning_SetISPRunningMode(IMPISPRunningMode mode);
+int IMP_ISP_Tuning_GetISPRunningMode(IMPISPRunningMode *pmode);
+int IMP_ISP_Tuning_SetAeStrategy(IMPISPAeStrategy strategy);
+int IMP_ISP_Tuning_GetAeStrategy(IMPISPAeStrategy *pstrategy);
+int IMP_ISP_Tuning_SetGamma(IMPISPGamma *gamma);
+int IMP_ISP_Tuning_GetGamma(IMPISPGamma *gamma);
+int IMP_ISP_Tuning_SetAeComp(int comp);
+int IMP_ISP_Tuning_GetAeComp(int *comp);
+int IMP_ISP_Tuning_SetExpr(IMPISPExpr *expr);
+int IMP_ISP_Tuning_GetExpr(IMPISPExpr *expr);
+int IMP_ISP_Tuning_AE_GetROI(IMPISPAERoi *isp_ae_roi);
+int IMP_ISP_Tuning_AE_SetROI(IMPISPAERoi *isp_ae_roi);
+int IMP_ISP_Tuning_SetWB(IMPISPWB *wb);
+int IMP_ISP_Tuning_GetWB(IMPISPWB *wb);
 int IMP_ISP_Tuning_GetWB_Statis(IMPISPWB *wb);
-int IMP_ISP_Tuning_Awb)wb_attr);
-int IMP_ISP° 000413 °) अब्ब_SetCwfShift(IMPISPWB *isp_wb_attr);
-int IMP_ISP_Tuning_सेटमैक्सएगैन(uint32_t gain);
-int IMP_ISP_Tuning_गेटमैक्सैन(uint32() °) ISP_Tuning_SetMaxDgain(uint32_t gain);
+int IMP_ISP_Tuning_Awb_GetCwfShift(IMPISPWB *isp_wb_attr);
+int IMP_ISP_Tuning_Awb_SetCwfShift(IMPISPWB *isp_wb_attr);
+int IMP_ISP_Tuning_SetMaxAgain(uint32_t gain);
+int IMP_ISP_Tuning_GetMaxAgain(uint32_t *gain);
+int IMP_ISP_Tuning_SetMaxDgain(uint32_t gain);
 int IMP_ISP_Tuning_GetMaxDgain(uint32_t *gain);
-int IMP_ISP_Tuning_ISV_Tuning_SetVideoDrop *) खाली (*cb)(खाली));
-int छोटा सा भूत_ISP_विन्यास_SetHiLightDepress(uint32_टी बल);
-int छोटा सा भूत_ISP_विन्यास_SetTemperStrength(uint32_टी-अनुपात);
-int छोटा सा भूत_ISP_विन्यास_SetSinterStrength(uint32_टी-अनुपात);
-int छोटा सा भूत_ISP_विन्यास_SetDPStrength(uint32_टी-अनुपात);
-int छोटा सा भूत_ISP_सेटअप_SetAntiFogAttr(IMPISPAntiFogAttr attr);
+int IMP_ISP_Tuning_SetVideoDrop(void (*cb)(void));
+int IMP_ISP_Tuning_SetHiLightDepress(uint32_t strength);
+int IMP_ISP_Tuning_SetTemperStrength(uint32_t ratio);
+int IMP_ISP_Tuning_SetSinterStrength(uint32_t ratio);
+int IMP_ISP_Tuning_SetDPStrength(uint32_t ratio);
+int IMP_ISP_Tuning_SetAntiFogAttr(IMPISPAntiFogAttr attr);
 int IMP_ISP_Tuning_GetEVAttr(IMPISPEVAttr *attr);
-
+```
 

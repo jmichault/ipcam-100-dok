@@ -20,7 +20,7 @@ title: تنقية
 * قم بتشغيل خدمة SSH لواجهة الإنترنت
 
 
-* قم بالاتصال بالكاميرا بواسطة مستخدم `ssh IP` (° 3 درجة) _root_، كلمة المرور _ismart12_).
+* الاتصال بالكاميرا حسب  `ssh IP`  ( المستخدم  _root_، كلمة المرور  _ismart12_). 
 
 
 
@@ -29,8 +29,8 @@ title: تنقية
 * بدء "gdbserver"للكاميرا ، على سبيل المثال :  
 
 
-     `/opt/media/mmcblk0p1/bin/gdbserver localhost:2000 /opt/media/mmcblk0p1/bin/motor`
-* ابدأ gdb على الكمبيوتر ، على سبيل المثال:
+     `/opt/media/mmcblk0p1/bin/gdbserver localhost:2000 /opt/media/mmcblk0p1/bin/motor`  
+  *   ابدأ GDB على الكمبيوتر، على سبيل المثال:  
 
     ```
     cd programada_medio/toolchain
@@ -40,7 +40,7 @@ title: تنقية
     handle SIG32 nostop
     break xxx
     continue 
-    ```
+    ```  
 
 
 

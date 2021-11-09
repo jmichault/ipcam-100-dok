@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-10-30 11:06+0200\n"
+"POT-Creation-Date: 2021-11-09 15:13+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -50,7 +50,7 @@ msgstr "عرض"
 #: index.md:10
 #, fuzzy, no-wrap
 msgid "La celo de ĉi tiu projekto estas krei alternativan firmvaron por ĉi tiu kamerao:\n"
-msgstr "الغرض من هذا المشروع هو إنشاء برامج ثابتة بديلة لهذه الكاميرا: (° 1 ° 1\n"
+msgstr "الغرض من هذا المشروع هو إنشاء برنامج ثابت بديل لهذه الكاميرا: \n"
 
 #. type: Plain text
 #: index.md:11
@@ -119,14 +119,14 @@ msgstr "ما الذي يعمل في البرامج الثابتة البديلة
 #. type: Bullet: '* '
 #: index.md:33
 #, fuzzy, no-wrap
-msgid "_LAN_ kaj _WLAN_\n"
-msgstr "_LAN_ و _WLAN_\n"
+msgid "_LAN_  kaj  _WLAN_ \n"
+msgstr "_LAN_   و   _WLAN_  \n"
 
 #. type: Bullet: '* '
 #: index.md:35
 #, fuzzy, no-wrap
-msgid "Servilo (° 1 ° duobla-fluo: _1920x1080 H264_ kaj _640x360 MJPEG_ defaŭlte. \n"
-msgstr "الخادم (° 1 ° تدفق مزدوج: _1920x1080 H264_ و _640x360 MJPEG_ بشكل افتراضي.  \n"
+msgid "Servilo  _RTSP_  Duobla-rivereto:  _1920x1080 H264_  kaj  _640x360 MJPEG_  Defaŭlte. \n"
+msgstr "الخادم   _RTSP_   دفق مزدوج:   _1920x1080 H264_   و   _640x360 MJPEG_   افتراضيا.  \n"
 
 #. type: Bullet: '* '
 #: index.md:37
@@ -137,8 +137,8 @@ msgstr "المعلمات المرئية\n"
 #. type: Bullet: '* '
 #: index.md:39
 #, fuzzy, no-wrap
-msgid "Servilo _HTTP_\n"
-msgstr "خادم _HTTP_\n"
+msgid "Servilo  _HTTP_ \n"
+msgstr "الخادم   _HTTP_  \n"
 
 #. type: Bullet: '* '
 #: index.md:41
@@ -155,44 +155,44 @@ msgstr "معايرة المحرك\n"
 #. type: Bullet: '* '
 #: index.md:45
 #, fuzzy, no-wrap
-msgid "Parametroj _PTZ_\n"
-msgstr "المعلمات _PTZ_(° 3 ° 3\n"
+msgid "Agordoj  _PTZ_ \n"
+msgstr "الإعدادات   _PTZ_  \n"
 
 #. type: Bullet: '* '
 #: index.md:47
 #, fuzzy, no-wrap
-msgid "Kliento _NTP_\n"
-msgstr "العميل _NTP_(° 3 ° 3\n"
+msgid "Kliento  _NTP_ \n"
+msgstr "العميل   _NTP_  \n"
 
 #. type: Bullet: '* '
 #: index.md:49
 #, fuzzy, no-wrap
-msgid "Pasvorta administrado _http_, _rtsp_ kaj sistemo. \n"
-msgstr "إدارة كلمة المرور _http_، _rtsp_ ونظام.  \n"
+msgid "administri pasvortoj  _http_,  _rtsp_  kaj sistemo. \n"
+msgstr "إدارة كلمات المرور   _http_،   _rtsp_   ونظامها.  \n"
 
 #. type: Bullet: '* '
 #: index.md:51
 #, fuzzy, no-wrap
-msgid "Blanka LED-Kontrolo kaj IR\n"
-msgstr "سيطرة LED بيضاء و IR\n"
+msgid "blankaj LED kontrolo kaj IR \n"
+msgstr "سيطرة LED بيضاء و IR  \n"
 
 #. type: Bullet: '* '
 #: index.md:53
 #, fuzzy, no-wrap
-msgid "Blanka LED-Kontrolo kaj IR _ftp_\n"
-msgstr "سيطرة LED بيضاء و IR _ftp_\n"
+msgid "blankaj LED kontrolo kaj IR  _ftp_\n"
+msgstr "التحكم الصمام الأبيض والأحرف IR   _ftp_ \n"
 
 #. type: Bullet: '* '
 #: index.md:55
 #, fuzzy, no-wrap
-msgid "Blanka LED-Kontrolo kaj IR _telnet_\n"
-msgstr "سيطرة LED بيضاء و IR _telnet_\n"
+msgid "blankaj LED kontrolo kaj IR  _telnet_\n"
+msgstr "التحكم الصمام الأبيض والأحرف IR   _telnet_ \n"
 
 #. type: Bullet: '* '
 #: index.md:57
 #, fuzzy, no-wrap
-msgid "Servilo kaj kliento _ssh_\n"
-msgstr "الخادم والعميل _ssh_(° 3 ° 3\n"
+msgid "Servilo kaj Kliento  _ssh_ \n"
+msgstr "الخادم والعميل   _ssh_  \n"
 
 #. type: Bullet: '* '
 #: index.md:59
@@ -209,14 +209,14 @@ msgstr "إرسال بريد إلكتروني\n"
 #. type: Bullet: '* '
 #: index.md:63
 #, fuzzy, no-wrap
-msgid "Sendi _«telegram»_\n"
-msgstr "إرسال _«telegram»_\n"
+msgid "Sendante  _«telegram»_ \n"
+msgstr "إرسال   _«telegram»_  \n"
 
 #. type: Bullet: '* '
 #: index.md:65
 #, fuzzy, no-wrap
-msgid "Aŭtomata nokta reĝimo\n"
-msgstr "نظام ليلي التلقائي\n"
+msgid "aŭtomata nokto mode \n"
+msgstr "الوضع الليلي التلقائي  \n"
 
 #. type: Title ##
 #: index.md:67
@@ -257,8 +257,8 @@ msgstr "إرسال بريد إلكتروني_mqtt_\n"
 #. type: Bullet: '* '
 #: index.md:80
 #, fuzzy, no-wrap
-msgid "Sendante bildojn kaj videojn en nubo\n"
-msgstr "إرسال الصور ومقاطع الفيديو في سحابة (° 1 ° 1\n"
+msgid "sendo bildojn kaj filmetoj en la nubo \n"
+msgstr "شحنة الصور ومقاطع الفيديو في السحابة  \n"
 
 #. type: Bullet: '* '
 #: index.md:82
@@ -287,8 +287,8 @@ msgstr "ربما تعيين الشبكة ( _www/ipcam/config.dist/reto.conf_ )\n
 #. type: Bullet: '* '
 #: index.md:91
 #, fuzzy, no-wrap
-msgid "Enmetu la karton _microSD_ en la fotilon. \n"
-msgstr "أدخل البطاقة _microSD_ في الكاميرا.  \n"
+msgid "Enmeti la karton  _microSD_  en la fotilo. \n"
+msgstr "أدخل البطاقة   _microSD_   في الكاميرا.  \n"
 
 #. type: Bullet: '* '
 #: index.md:93
@@ -306,13 +306,13 @@ msgstr "ابحث عن عنوان IP للكاميرا. يمكنك أيضا الا
 #: index.md:97
 #, fuzzy, no-wrap
 msgid "Konekti al la fotilo per `telnet IP 9527` (uzanto _root_, pasvorto _jco66688_), ene de 5 minutoj post turnado sur la fotilo.\n"
-msgstr "قم بالاتصال بالكاميرا بواسطة مستخدم (° 1 درجة) (° 3 درجة) _root_، كلمة المرور _jco66688_)، في غضون 5 دقائق بعد التدوير على الكاميرا.\n"
+msgstr "الاتصال بالكاميرا حسب  `telnet IP 9527`  ( المستخدم  _root_، كلمة المرور  _jco66688_)، في غضون 5 دقائق بعد التدوير على الكاميرا. \n"
 
 #. type: Bullet: '* '
 #: index.md:99
 #, fuzzy, no-wrap
 msgid "Faru `killall -9 auto_run.sh` por eviti perdi la ligon.\n"
-msgstr "جعل (° 1 درجة) لتجنب فقدان الدوري.\n"
+msgstr "افعل  `killall -9 auto_run.sh`  لتجنب فقدان الرابط. \n"
 
 #. type: Bullet: '* '
 #: index.md:101
@@ -323,46 +323,46 @@ msgstr "فارو `cd /opt/media/mmcblk0p1;./install.sh`\n"
 #. type: Bullet: '* '
 #: index.md:103
 #, fuzzy, no-wrap
-msgid "La fotilo rekomencas, nun:\n"
-msgstr "يستأنف الكاميرا الآن: (° 1 ° 1\n"
+msgid "La fotilo reboots nun: \n"
+msgstr "إعادة تمهيد الكاميرا الآن:  \n"
 
 #. type: Bullet: '    * '
 #: index.md:105
 #, fuzzy, no-wrap
 msgid "Vi povas konektiĝi al la URL _https://IP_ (uzanto _admin_, pasvorto _ismart21_).\n"
-msgstr "يمكنك الاتصال بعنوان URL (° 1 درجة)(المستخدم _admin_، كلمة المرور _ismart21_).\n"
+msgstr "يمكنك الاتصال بعنوان URL  _https://IP_  ( المستخدم  _admin_، كلمة المرور  _ismart21_). \n"
 
 #. type: Bullet: '    * '
 #: index.md:107
 #, fuzzy, no-wrap
 msgid "Vi povas konektiĝi en SSH (uzanto _admin_, pasvorto _ismart12_).\n"
-msgstr "يمكنك الاتصال في مستخدم SSH (° 1 درجة) _admin_، كلمة المرور _ismart12_).\n"
+msgstr "يمكنك الاتصال في SSH  ( المستخدم  _admin_، كلمة المرور  _ismart12_). \n"
 
 #. type: Bullet: '    * '
 #: index.md:109
 #, fuzzy, no-wrap
 msgid "La primara video-fluo estas alirebla ĉe _rtsp://admin:ismart21@IP/stream1_.\n"
-msgstr "يمكن الوصول إلى تيار الفيديو الأساسي عند (° 1 درجة). (° 3 ° 3\n"
+msgstr "يمكن الوصول إلى Video Video الحالي في  _rtsp://admin:ismart21@IP/stream1_. \n"
 
 #. type: Bullet: '    * '
 #: index.md:111
 #, fuzzy, no-wrap
 msgid "La sekundara video-fluo estas alirebla ĉe _rtsp://admin:ismart21@IP/stream2_.\n"
-msgstr "يتم الوصول إلى الفيديو الثانوي الحالي عند _rtsp://admin:ismart21@IP/stream2_. (° 3 ° 3\n"
+msgstr "يمكن الوصول إلى تدفق الفيديو الثانوي في  _rtsp://admin:ismart21@IP/stream2_. \n"
 
 #. type: Plain text
 #: index.md:116
 #, fuzzy, no-wrap
 msgid ""
-"(° 1 ° WiFi AP-reĝimo estas aktivigita defaŭlte:\n"
-"    ** SSID: IPCAM100-XXXXXX\n"
-"    ** WPA2-ŝlosilo: ismart21\n"
-"IP-adreso de la fotilo: 172.25.0.1\n"
+"    *  WiFi AP-reĝimo estas ebligita defaŭlte: \n"
+"     **  SSID: IPCAM100-XXXXX \n"
+"     **  WPA2-klavo: ismart21 \n"
+"     **  IP-adreso de la fotilo: 172.25.0.1 \n"
 msgstr ""
-"(° 1 ° 1 ° 1 ° 1 ° افتراضي:\n"
-"    ** SSID: IPCAM100-XXXXXX\n"
-"    ** مفتاح WPA2: ISMART21\n"
-"عنوان IP للكاميرا: 172.25.0.1\n"
+"    *   يتم تمكين وضع WiFi AP بشكل افتراضي:  \n"
+"      **   SSID: IPCAM100-XXXXX  \n"
+"      **   مفتاح WPA2: ISMART21  \n"
+"      **   عنوان IP للكاميرا: 172.25.0.1  \n"
 
 #. type: Title ##
 #: index.md:117
@@ -374,13 +374,13 @@ msgstr "إلغاء تثبيت البرامج الثابتة البديلة:"
 #: index.md:120
 #, fuzzy, no-wrap
 msgid "Lanĉu la servon SSH sur la fotilo tra la defaŭlta interfaco).\n"
-msgstr "قم بتشغيل خدمة SSH على الكاميرا من خلال الواجهة الافتراضية (° 1 درجة).\n"
+msgstr "قم بتشغيل خدمة SSH على الكاميرا من خلال الواجهة الافتراضية ). \n"
 
 #. type: Bullet: '* '
 #: index.md:122
 #, fuzzy, no-wrap
 msgid "Ensalutu al la fotilo per `ssh root@IP` (pasvorto _ismart12_).\n"
-msgstr "تسجيل الدخول إلى الكاميرا بواسطة (° 1 درجة)(كلمة المرور _ismart12_).\n"
+msgstr "تسجيل الدخول إلى الكاميرا حسب  `ssh root@IP`  ( كلمة المرور  _ismart12_). \n"
 
 #. type: Bullet: '* '
 #: index.md:124
@@ -401,18 +401,116 @@ msgid "Interesaj dokumentoj"
 msgstr "وثائق مثيرة للاهتمام"
 
 #. type: Plain text
-#: index.md:135
+#: index.md:136
 #, fuzzy, no-wrap
 msgid ""
-"Multa laboro estis farita por fotiloj ekipitaj per procesoro _ingenic T20_ :\n"
-"* modifita firmware: <https://github.com/eliaskotlyar/xiaomi- dafang -Hacks>\n"
-"* Fontoj de la modifita firmware: <https://github.com/dafang-hacks/main>\n"
-"17 °) https://github.com/thatusenameAlreadyExist/Jco-pm203-fisheye-ingenic-t20-p2p-camera-hacks>\n"
+"Multa laboro estis farita por fotiloj ekipitaj per procesoro  _ingenic T20_ : \n"
+" *  modifita firmware:  <https://github.com/EliasKotlyar/Xiaomi-Dafang-Hacks> \n"
+" *  Fontoj de la modifita firmware:  <https://github.com/Dafang-Hacks/Main> \n"
+" *  Aliaj firmware:  <https://github.com/openmiko/openmiko> \n"
+" *  Lanĉaj Programoj Sen Ŝanĝi la Firmware:  <https://github.com/ThatUsernameAlreadyExist/JCO-PM203-Fisheye-Ingenic-T20-P2P-camera-hacks> \n"
 msgstr ""
-"تم صنع الكثير من الأعمال لكاميرات مجهزة معالج _ingenic T20_ :\n"
-"* البرامج الثابتة المعدلة: <https://github.com/ilílístotlyar/xiaomi- DAFANG -HAKS>\n"
-"مصادر البرامج الثابتة المعدلة: <https://github.com/dafang-hacks/main>\n"
-"17 °) https://github.com/thatusenameanamexist/jco-pm203-fisheye-ininic-t20-p2p-camera-Camera-hacks (° 13 ° 13 ° 14 ° 14 ° 14\n"
+"تم إجراء الكثير من العمل للكاميرات المزودة بمعالج   _ingenic T20_   \n"
+"  *    *   تعديل البرامج الثابتة:   <https://github.com/EliasKotlyar/Xiaomi-Dafang-Hacks>  \n"
+"  *   مصادر البرامج الثابتة المعدلة:   <https://github.com/Dafang-Hacks/Main>  \n"
+"  *   البرامج الثابتة الأخرى:   <https://github.com/openmiko/openmiko>  \n"
+"  *   قم بإطلاق برامج دون تغيير البرامج الثابتة:   <https://github.com/ThatUsernameAlreadyExist/JCO-PM203-Fisheye-Ingenic-T20-P2P-camera-hacks>  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "_LAN_ kaj _WLAN_\n"
+#~ msgstr "_LAN_ و _WLAN_\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "Servilo  _RTSP_  Duoble rivereto:  _1920x1080 H264_  kaj  _640x360 "
+#~ "MJPEG_  defaŭlte. \n"
+#~ msgstr ""
+#~ "الخادم   _RTSP_   دفق مزدوج:   _1920x1080 H264_   و   _640x360 MJPEG_   "
+#~ "افتراضيا.  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Servilo _HTTP_\n"
+#~ msgstr "خادم _HTTP_\n"
+
+#, fuzzy, no-wrap
+#~ msgid "Pasvorta administrado _http_, _rtsp_ kaj sistemo. \n"
+#~ msgstr "إدارة كلمة المرور _http_، _rtsp_ ونظام.  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Blanka LED-Kontrolo kaj IR\n"
+#~ msgstr "سيطرة LED بيضاء و IR\n"
+
+#, fuzzy, no-wrap
+#~ msgid "Blanka LED-Kontrolo kaj IR _ftp_\n"
+#~ msgstr "سيطرة LED بيضاء و IR _ftp_\n"
+
+#, fuzzy, no-wrap
+#~ msgid "Blanka LED-Kontrolo kaj IR _telnet_\n"
+#~ msgstr "سيطرة LED بيضاء و IR _telnet_\n"
+
+#, fuzzy, no-wrap
+#~ msgid "Sendi _«telegram»_\n"
+#~ msgstr "إرسال _«telegram»_\n"
+
+#, fuzzy, no-wrap
+#~ msgid "Aŭtomata nokta reĝimo\n"
+#~ msgstr "نظام ليلي التلقائي\n"
+
+#, fuzzy, no-wrap
+#~ msgid "Enmetu la karton _microSD_ en la fotilon. \n"
+#~ msgstr "أدخل البطاقة _microSD_ في الكاميرا.  \n"
+
+#, fuzzy
+#~ msgid ""
+#~ "Multa laboro estis farita por fotiloj ekipitaj per procesoro  _ingenic "
+#~ "T20_ : \n"
+#~ " *  modifita firmware:  < https://github.com/eliaskotlyar/xiaomi-dafang-"
+#~ "hacks > \n"
+#~ " *  Fontoj de la modifita firmware:  < https://github.com/dafang-hacks/"
+#~ "main > \n"
+#~ " *  Aliaj firmware:  < https://github.com/openmiko/ OpenMIKO > \n"
+#~ " *  PROGRAMO LEGIN sen ŝanĝi la firmware:  < https://github.com/"
+#~ "thatusernameAlreadyExist/Jco-pm203-fisheyE-ingenic-t20-p2p-camera-hacks > "
+#~ "<h19 >\n"
+#~ msgstr ""
+#~ "تم إجراء الكثير من العمل للكاميرات المجهزة بمعالج   _ingenic T20_   \n"
+#~ "  *   المعدلات البرامج الثابتة:   <  https://github.com/ilistotlyar/xiami-"
+#~ "dafang-hacks  >  \n"
+#~ "  *   مصادر من البرامج الثابتة المعدلة:   <  https://github.com/dafang-"
+#~ "hacks/main  >  \n"
+#~ "  *   البرامج الثابتة الأخرى:   <  https://github.com/openmiko/ openmiko "
+#~ "<h14 \n"
+#~ "  *    *   قام بها البرنامج دون تغيير البرامج الثابتة:   <  https://"
+#~ "github.com/thatusernameanameanameExist/jco-pm203-fisheye-iningenic-t20-"
+#~ "p2p-camera-hacks  >  < h19 < h19 < H19 <h19 <h19 <h19 <h11  > \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Servilo (° 1 ° duobla-fluo: _1920x1080 H264_ kaj _640x360 MJPEG_ defaŭlte. \n"
+#~ msgstr "الخادم (° 1 ° تدفق مزدوج: _1920x1080 H264_ و _640x360 MJPEG_ بشكل افتراضي.  \n"
+
+#, fuzzy, no-wrap
+#~ msgid ""
+#~ "(° 1 ° WiFi AP-reĝimo estas aktivigita defaŭlte:\n"
+#~ "    ** SSID: IPCAM100-XXXXXX\n"
+#~ "    ** WPA2-ŝlosilo: ismart21\n"
+#~ "IP-adreso de la fotilo: 172.25.0.1\n"
+#~ msgstr ""
+#~ "(° 1 ° 1 ° 1 ° 1 ° افتراضي:\n"
+#~ "    ** SSID: IPCAM100-XXXXXX\n"
+#~ "    ** مفتاح WPA2: ISMART21\n"
+#~ "عنوان IP للكاميرا: 172.25.0.1\n"
+
+#, fuzzy, no-wrap
+#~ msgid ""
+#~ "Multa laboro estis farita por fotiloj ekipitaj per procesoro _ingenic T20_ :\n"
+#~ "* modifita firmware: <https://github.com/eliaskotlyar/xiaomi- dafang -Hacks>\n"
+#~ "* Fontoj de la modifita firmware: <https://github.com/dafang-hacks/main>\n"
+#~ "17 °) https://github.com/thatusenameAlreadyExist/Jco-pm203-fisheye-ingenic-t20-p2p-camera-hacks>\n"
+#~ msgstr ""
+#~ "تم صنع الكثير من الأعمال لكاميرات مجهزة معالج _ingenic T20_ :\n"
+#~ "* البرامج الثابتة المعدلة: <https://github.com/ilílístotlyar/xiaomi- DAFANG -HAKS>\n"
+#~ "مصادر البرامج الثابتة المعدلة: <https://github.com/dafang-hacks/main>\n"
+#~ "17 °) https://github.com/thatusenameanamexist/jco-pm203-fisheye-ininic-t20-p2p-camera-Camera-hacks (° 13 ° 13 ° 14 ° 14 ° 14\n"
 
 #, no-wrap
 #~ msgid ""

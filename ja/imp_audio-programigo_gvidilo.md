@@ -3,10 +3,10 @@ lang: ja
 lang-niv: auto
 lang-ref: 053-audio-programigo_gvidilo
 layout: page
-title: ソリッドプログラミングガイド
+title: サウンドプログラミングガイド
 ---
 
-# IMP_Audio (voir imp_audio.h)
+# imp  _Audio \(voir imp_  audio.h  \)
 
 録音と再生、オーディオコーデック、音量とゲインの設定、エコーキャンセレーション、自動ゲイン、その他の機能を含むオーディオモジュール。
 

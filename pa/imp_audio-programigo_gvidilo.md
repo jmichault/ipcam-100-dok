@@ -3,10 +3,10 @@ lang: pa
 lang-niv: auto
 lang-ref: 053-audio-programigo_gvidilo
 layout: page
-title: 'ਠੋਸ ਪ੍ਰੋਗਰਾਮਿੰਗ ਗਾਈਡ'
+title: 'ਸਾ sound ਂਡ ਪ੍ਰੋਗਰਾਮਿੰਗ ਗਾਈਡ'
 ---
 
-# ਆਈਐਮਪੀ_Audio (voir imp_ਆਡਿਓ. ਐਚ.)
+# ਭਾਵ  _Audio \(voir imp_  ਆਡੀਓ.  \)
 
 Audioਡੀਓ ਮੋਡੀ moduleਲ, ਜਿਸ ਵਿੱਚ ਰਿਕਾਰਡਿੰਗ ਅਤੇ ਪਲੇਬੈਕ, ਆਡੀਓ ਕੋਡੇਕ, ਵਾਲੀਅਮ ਅਤੇ ਲਾਭ ਸੈਟਿੰਗਜ਼, ਈਕੋ ਰੱਦ, ਆਟੋਮੈਟਿਕ ਲਾਭ ਅਤੇ ਹੋਰ ਫੰਕਸ਼ਨ ਸ਼ਾਮਲ ਹਨ.
 

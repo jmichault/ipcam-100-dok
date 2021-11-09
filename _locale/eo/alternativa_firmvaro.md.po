@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-10-29 23:10+0200\n"
+"POT-Creation-Date: 2021-11-09 13:36+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -96,9 +96,9 @@ msgstr "pravalorizas la LEDojn kaj la motoron\n"
 
 #. type: Bullet: '  * '
 #: alternativa_firmvaro.md:24
-#, fuzzy, no-wrap
-msgid "initialise le répertoire etc si nécessaire\n"
-msgstr "pravalorizas la adresaron ktp se necese\n"
+#, fuzzy
+msgid "initialise le répertoire _etc_ si nécessaire\n"
+msgstr "Komencas la dosieron  _etc_  se necese \n"
 
 #. type: Bullet: '  * '
 #: alternativa_firmvaro.md:24

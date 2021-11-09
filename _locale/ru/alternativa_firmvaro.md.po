@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-10-30 11:15+0200\n"
+"POT-Creation-Date: 2021-11-09 15:13+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -97,8 +97,8 @@ msgstr "светодиоды и двигатель инициализируют�
 #. type: Bullet: '  * '
 #: alternativa_firmvaro.md:27
 #, fuzzy, no-wrap
-msgid "pravalorizas la adresaron ktp se necese\n"
-msgstr "при необходимости инициализировать каталог и т. д.\n"
+msgid "Komencas la dosieron  _etc_  se necese \n"
+msgstr "Запускает файл   _etc_   при необходимости  \n"
 
 #. type: Bullet: '  * '
 #: alternativa_firmvaro.md:29
@@ -123,6 +123,10 @@ msgstr "запуск сервисов (через _config/autostart_)\n"
 #, fuzzy, no-wrap
 msgid "komenci uzantajn skriptojn (en _config/userscripts_)\n"
 msgstr "начать использовать скрипты (в _config/userscripts_)\n"
+
+#, fuzzy, no-wrap
+#~ msgid "pravalorizas la adresaron ktp se necese\n"
+#~ msgstr "при необходимости инициализировать каталог и т. д.\n"
 
 #, no-wrap
 #~ msgid "099-alternativa_firmvaro"

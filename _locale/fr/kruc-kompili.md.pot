@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-10-29 23:10+0200\n"
+"POT-Creation-Date: 2021-11-09 15:12+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -50,20 +50,20 @@ msgstr ""
 #: kruc-kompili.md:12
 #, no-wrap
 msgid ""
-"Les outils de compilation croisés se trouvent dans programada_medio/toolchain.\n"
-"Ils ont été compilés pour debian buster x64.\n"
+"Les outils de compilation croisée se trouvent dans _programada\\_medio/toolchain_.\n"
+"Ils ont été compilés pour _debian buster x64_.\n"
 msgstr ""
 
 #. type: Plain text
 #: kruc-kompili.md:14
 #, no-wrap
-msgid "les librairies partagées sont dans programada_medio/lib\n"
+msgid "les librairies partagées sont dans _programada\\_medio/lib_\n"
 msgstr ""
 
 #. type: Plain text
 #: kruc-kompili.md:16
 #, no-wrap
-msgid "les include sont dans programada_medio/include.\n"
+msgid "les _include_ sont dans _programada\\_medio/include_.\n"
 msgstr ""
 
 #. type: Plain text
@@ -71,9 +71,9 @@ msgstr ""
 #, no-wrap
 msgid ""
 "Si vous avez besoin de recompiler une librairie, inspirez-vous des scripts suivants :\n"
-"* programada_medio/fontoj/01-buildssl.sh , pour la librairie openssl.\n"
-"* programada_medio/fontoj/02-buildlive.sh , pour la librairie live555.\n"
-"* programada_medio/fontoj/03-pcre.sh , pour la librairie pcre.\n"
+"* _programada\\_medio/fontoj/01-buildssl.sh_ , pour la librairie _openssl_.\n"
+"* _programada\\_medio/fontoj/02-buildlive.sh_ , pour la librairie _live555_.\n"
+"* _programada\\_medio/fontoj/03-pcre.sh_ , pour la librairie _pcre_.\n"
 msgstr ""
 
 #. type: Plain text
@@ -81,5 +81,5 @@ msgstr ""
 #, no-wrap
 msgid ""
 "Si jamais vous avez besoin de recompiler la _«toolchain»_, vous pouvez consulter le site suivant :\n"
-" * https://github.com/anmaped/openfang\n"
+" * <https://github.com/anmaped/openfang>\n"
 msgstr ""

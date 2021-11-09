@@ -29,7 +29,7 @@ title: 'Firmware alternatif'
   * LED dan motor diinisialisasi
 
 
-  * memulakan direktori dll jika perlu
+  * Memulakan fail   _etc_   jika perlu  
 
 
   * mengarahkan _/bin/busybox_ , _/etc_ dan _/root_ ke kad SD.

@@ -3,65 +3,59 @@ lang: zh
 lang-niv: auto
 lang-ref: 051-IMP-programigo_gvidilo
 layout: page
-title: IMP编程指南
+title: '编程指南  _IMP_'
 ---
 
 
-这里可以看到API的文件：（°1°1  
-* [原始版本中文](../../zh/includes.zh/html/)
+APIS的文档可以在这里看到：  
+* [ 中文 ](../../zh/includes.zh/html/)  的原始版本
 
 
-* [英文版](../../en/includes.en/html/)
+* [ 英文 ](../../en/includes.en/html/)  
 
 
-* （°1°1°1°1°1°1°法式版由谷歌](../../fr/includes.fr/html/)翻译
+* [ 法语版本由Google  ](../../fr/includes.fr/html/)  翻译
 
 
 
 
-# IMP (Ingenic Media Platform) (参见imp_system.h)
+# _IMP_   \(  _Ingenic Media Platform_  \)   \(见  _imp\_system.h_  \)
 
 ## 基本概念
-T20 / T21编程基于以下概念：
-1.外围设备 (=设备)  
-    外围设备完成功能。示例：
-     *  帧源：结束视频数据的输出。
-     *  编码器：完成视频编码或图像编码功能。
-2.组  
-    该组是最小的数据输入单位。一个设备可以有多个组，每个组只能接收一个数据输入通道。该组可以有几个结果。  
-    该组也是特定 "功能"的容器。有关更多详细信息，请参见通道部分中的说明。
-3.出口  
-    输出是每组数据输出的最小单位。一组可以有多个输出，每个输出只能产生一个数据通道。
-4.电池  
-    单元格是指包含有关设备，组和输出的信息的集合。它以IMPCell数据结构表示。
-单元格主要用于绑定 (@ref绑定)。根据设备，组和输出的定义，输出是数据输出的节点，组是数据输入的节点。
-在Bind中，数据输出节点的单元格索引在输出输出，数据输入节点的单元格索引在输入组 (，因此，单元格，输出数据输入为无意义的值)。
-5.通道  
-    通道通常是指具有单个功能的单元。在创建实例 (实例化)时，通道会接收特定功能。  
-    例如：  
-     -  对于编码器，一个通道是H264代码或JPEG编码功能的补充。创建通道时，指定了特定的编码功能 (类型，参数) 
+T20 / T21程序基于以下概念： 
+ 1.设备  \( =  _Device_  \)    
+该设备完成功能。示例： 
+       *    _Framesource_ ：完成视频剪辑的输出。  
+       *    _Encoder_ ：完成视频代码或图像代码功能。  
+ 2.组  \( =  _Group_  \) \)本组是最小的数据输入单元。设备可以具有多个组，并且每个组只能接收一个数据输入通道。该组可以有几个结果。   
+     该组也是特定  "功能 "的容器。有关更多详细信息，请参阅“通道”部分中的说明。  
+ 3. Eligo   \( =  _Output_  \)    
+输出是每组最小的数据输出单元。    
+信道通常与单个功能单元相关。    
+例如：  
+     -  对于Codel，通道完成  _H264_  或代码功能  _JPEG_。  
 
 
-     -  对于IVS，通道可完成特定算法的功能，并在创建通道时指定特定的算法类型参数
+     -  对于  _IVS_，通道完成特定算法的功能，并且在创建通道期间指定了特定算法典型参数
 
 
-     -  对于OSD，有一个类似于Channel的区域，该区域是特定的覆盖区域，可以是PIC (图像)，COVER (闭合)等。 。
+     -  对于 _OSD_，存在类似于  _Channel_的区域，区域是可以是顶部  \(图像 \)盖子  \(遮挡 \)等的特定的超细化区域。  
 
 
-     -  对于FrameSource，通道产生原始图像，而FrameSource通道实际上是一个组
+     -  对于  _FrameSource_，频道产生原始图像，并且通道  _FrameSource_  实际上是一个组 
 
 
-     
-     通道，除FrameSource) 外，通常还必须在组 (中注册为功能单元，以接收数据。频道在组中注册后，它将接收该组输入的数据。
+    
+      作为功能单元的信道通常保留在  _FrameSource_  \)接收数据之外的  \(组中。  
 
     各种设备组可以记录的通道数也不同。
 
-## 装订模块 (装订)
+## 模块链接  \(  _Bind_  \)
 
-通过绑定连接两个组后，源组中的数据将自动发送到目标组。  
-因为组是最小的数据输入单位，而输出是最小的数据输出单位，所以在两个IMP_System_，bind (和IMPCell * 两个参数中srcCell的deviceID，groupID和outputID srcCell，IMPCell * dstCell) 有效。  
+通过  _Bind_链接两组后，来自源组的数据将自动发送到目标。    
+因为组是最小的数据输入单元和输出是最小的数据输出单元，所述  _deviceID_，  _groupID_  和  _outputID_    _srcCell_  在  _IMP\_System\_Bind \(IMPCell * srcCell, IMPCell * dstCell\)_  的两个参数是有效的。    
 
-虽然dstCell仅对deviceID和groupID有效，但outputID作为数据条目没有意义。
+虽然  _dstCell_  仅对  _deviceID_  和  _groupID_有效，但是  _outputID_  不喜欢数据入口。  
 
 范例1： 
 ```
@@ -72,11 +66,10 @@ if(ret <0>)
   printf ("Bind FrameSource Channel0 and Encoder Group0 failed \ n");
 
 ```
+结果：   
+ * 组生成一个组，该组生成从框架到编码器的链接。 
 
-* 生成一个组，该组生成从FrameSource到Encoder的链接。
-
-
-* 编码器组中记录了两个通道，因此编码器组具有两个输出H264和JPEG。
+* 在编码器组中注册了两个通道，因此编码器组有两种产品：  _H264_  和  _JPEG_。  
 
 
 
@@ -112,69 +105,57 @@ int ret = IMP_System_Bind(&osd_grp1, &enc_grp1);
 if (ret < 0)
     printf("Bind OSD Group1 and Encoder Group1 failed\n");
 ```
-这是一个典型的Bind程序：两通道代码流。
- * FrameSource具有两个输出，即主流Channel0 (1280x720) 和从属流Channel1 (640x360)。
-   *   主码流：FrameSource的Channel0绑定OSD Group.0，OSD Group.0绑定编码器Group.0。其中： 
-       * OSD Group.0记录了两个区域，分别用于显示时间戳和字符串信息
-       * 编码器Group.0记录了两个通道。 ，分别是H264编码和JPEG编码。其中，如果JPEG编码通道的图像尺寸与FrameSource Channel0)的输入参数 (不匹配，则它将在T10) 进行软件缩放 (。) 达到在任何分辨率下拍摄的目的。
-       
-注意：
-* 建议在系统初始化期间执行所有链接操作。
-* 激活 _FrameSource_ 后，不能动态调用绑定和取消绑定操作。仅在取消激活 _FrameSource_后才能取消绑定。
+应用是一个典型的应用程序  _Bind_ ：双通道代码。  
+
+注意： 
+  *  建议在初始化系统时进行所有链路操作。  
 
 ## 功能
 
-### int IMP\_系统\_初始 (空 )
-IMP系统的初始化。如果成功，
-将返回0。
-此API调用后，将初始化基本数据结构，但不会初始化硬件。
-注意：必须在执行任何其他操作之前调用此功能以进行初始化。
-### int IMP_System_出口 (空)
+### _int IMP\_System\_Init \(void \)_
+  _IMP_系统的开头。  
+### _int IMP\_System\_Exit \(void\)_系统的开头。 \_
 
-调用此函数后，将释放所有内存和IMP _handles_ ，并且将关闭硬件。 
-注：调用此API后，如果要再次使用IMP，则需要重置IMP系统。
+调用此功能后，将释放所有内存和  _handles_   _IMP_  ，硬件单元将关闭。  
 
-### int64_t IMP_系统_GetTimeStamp (void)
+### 调用此功能后，将释放所有内存和_int64\_t IMP\_System\_GetTimeStamp \(void\)_ \_，硬件单元将关闭。  \(
 
-获取IMP系统时间戳（以微秒为单位）。  
-返回值：时间（以微秒为单位）。
+获取microSeconds中  _IMP_  系统的定时字段。    
+返回：微量的时间。 
 
-### int IMP_System_RebaseTimeStamp (以int64_t)为基准
-设置IMP系统的时间戳（以微秒为单位）。  
-返回：如果成功，则返回0。
+### 获取microSeconds中_int IMP\_System\_RebaseTimeStamp \(bases int64\_t\)_系统的定时字段。 \_返回：微量的时间。  \(
+以微秒为单位定义时间戳  _IMP_  系统。    
+返回：如果成功，则为0。 
 
-### uint32_t IMP_系统_ReadReg32 (uint32_t u32Addr)
+### 以微秒为单位定义时间戳_uint32\_t IMP\_System\_ReadReg32 \(uint32\_t u32Addr\)_系统。 \_返回：如果成功，则为0。 \_
 
 读取32位寄存器的值。  
 
-### 空白IMP_System_WriteReg32 (uint32_t regAddr, valeur uint32_t)
-将该值写入32位寄存器。
+### _void IMP\_System\_WriteReg32 \(uint32_  t regaddr，值uint32  _t\)_
+在32位寄存器中写入值。  
 
 注意：请仔细调用此API并检查注册表的含义，否则可能导致系统错误。
 
-### int IMP_System_GetVersion (IMPVersion * pstVersion) 
+### _int IMP_ 系统 _GetVersion \(IMPVersion * pstVersion\)_
 
-获取IMP系统的版本号。
+获取  _IMP_系统的系统。  
 
-### const char * IMP_System_GetCPUInfo (空)
+### _const char * IMP_ 系统 _GetCPUInfo \(void\)_
 获取有关CPU型号的信息。  
 注意：返回值是一串CPU模型，例如，对于T10，存在 "T10"和 "T10-Lite"。
 
-### int IMP_System_绑定 (IMPCell * srcCell，IMPCell * dstCell)
+### _int IMP_ 系统  \(
 
 源单元格和目标之间的链接。
 
 注1：根据设备，组和输出的概念，每个设备可以有多个组，每个组可以有多个输出，组用作设备输入接口，输出用作设备产品接口。因此，链接实际上将输出设备的特定输出连接到输入设备的特定组。
 
-注2：成功链接后，由srcCell (输出) 生成的数据将自动传输到目标Cell (组)。
+注2：成功链接后，由  _srcCell_   (  eligo  )  生成的数据将自动传送到目标  ( 组 )。  
 
-### int IMP_System_UnBind (IMPCell * srcCell，IMPCell * dstCell)
+### _int IMP_ 系统  \(
 取消分组源和目标。 
 
-### int IMP_System_GetBindbyDest (IMPCell * dstCell，IMPCell * srcCell)
+### _int IMP_ 系统  \(
 
 从源单元中检索与目标相关的信息。
-
-
-
 

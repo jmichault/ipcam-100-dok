@@ -7,28 +7,20 @@ title: 'ਪਾਰ ਸੰਕਲਨ'
 ---
 
 
-ਪਾਰਗਮਨ ਸੰਗ੍ਰਿਹ ਸੰਦ ਪ੍ਰੋਗਰਾਮਿੰਗ ਵਿੱਚ ਹਨ_medio/toolchain.
-Ils ont été compilés pour debian buster x64.
+ਟ੍ਰਾਂਸ-ਸੰਕਲਨ ਟੂਲ   _programada\_medio/toolchain_ ਵਿੱਚ ਹਨ.  
+ ਉਹ   _debian buster x64_ ਲਈ ਕੰਪਾਇਲ ਕੀਤੇ ਗਏ ਸਨ.  
+
+ਵੰਡੀਆਂ ਲਾਇਬ੍ਰੇਰੀਆਂ   _programada\_medio/lib_   ਵਿੱਚ ਹਨ
+
+  _include_     _programada\_medio/include_ ਵਿਚ ਹੈ.  
+
+ਜੇ ਤੁਹਾਨੂੰ ਕਿਸੇ ਕਿਤਾਬਾਂ ਦੀ ਦੁਕਾਨ ਨੂੰ ਪ੍ਰਾਪਤ ਕਰਨ ਦੀ ਜ਼ਰੂਰਤ ਹੈ, ਹੇਠ ਲਿਖੀਆਂ ਸਕ੍ਰਿਪਟਾਂ: ​​ 
+  *   _programada\_medio/fontoj/01-buildssl.sh_ , ਲਾਇਬ੍ਰੇਰੀ   _openssl_ ਲਈ.  
+  *   _programada\_medio/fontoj/02-buildlive.sh_ , ਲਾਇਬ੍ਰੇਰੀ   _live555_ ਲਈ.  
+  *   _programada\_medio/fontoj/03-pcre.sh_ , ਲਾਇਬ੍ਰੇਰੀ   _pcre_ ਲਈ.  
 
 
-
-ਤੁਲਨਾਤਮਕ ਲਾਇਬ੍ਰੇਰੀਆਂ,_medio/lib
-ਵਿੱਚ ਹਨ
-
-
-ਸ਼ਾਮਲ ਕਰਨਾ_medio/include.
-
-
-
-ਜੇ ਤੁਹਾਨੂੰ ਕਿਸੇ ਲਾਇਬ੍ਰੇਰੀ ਨੂੰ ਮੁੜ ਪ੍ਰਾਪਤ ਕਰਨ ਦੀ ਜ਼ਰੂਰਤ ਹੈ, ਤਾਂ ਹੇਠ ਲਿਖੀਆਂ ਸਕ੍ਰਿਪਟਾਂ ਨੂੰ ਪ੍ਰੇਰਿਤ ਕਰੋ:
-* ਪ੍ਰੋਗਰਾਮਾਂ_medio/fontoj/03-pcre.sh , pour la librairie pcre.
-
-
-
-
-ਜੇ ਤੁਹਾਨੂੰ ਕਦੇ _«toolchain»_ਨੂੰ ਰੀਟਰ ਕਰਨ ਦੀ ਜ਼ਰੂਰਤ ਹੈ, ਤਾਂ ਤੁਸੀਂ ਹੇਠ ਦਿੱਤੀ ਵੈਬਸਾਈਟ ਨੂੰ ਚੈੱਕ ਕਰ ਸਕਦੇ ਹੋ:
-
-
-/200 ° 5 ° 5 °)
+ਜੇ ਤੁਹਾਨੂੰ ਕਦੇ   _«toolchain»_ ਨੂੰ ਦੁਬਾਰਾ ਕੰਪਾਇਲ ਕਰਨ ਦੀ ਜ਼ਰੂਰਤ ਹੈ, ਤਾਂ ਤੁਸੀਂ ਹੇਠ ਦਿੱਤੀ ਵੈਬਸਾਈਟ ਦੇਖ ਸਕਦੇ ਹੋ:  
+ <https://github.com/anmaped/openfang>  
 
 

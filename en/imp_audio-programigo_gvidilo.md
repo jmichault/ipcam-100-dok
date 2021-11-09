@@ -3,10 +3,10 @@ lang: en
 lang-niv: auto
 lang-ref: 053-audio-programigo_gvidilo
 layout: page
-title: 'Solid programming guide'
+title: 'Sound programming Guide'
 ---
 
-# IMP_Audio (voir imp_audio.h)
+# Imp  _Audio \(voir imp_  Audio.h  \)
 
 Audio module, including recording and playback, audio codec, volume and gain settings, e echo cancellation, automatic gain and other functions.
 

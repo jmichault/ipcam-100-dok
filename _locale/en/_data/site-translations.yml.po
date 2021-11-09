@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-03-04 13:56+0100\n"
+"POT-Creation-Date: 2021-11-09 13:18+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -60,8 +60,7 @@ msgstr "Read this page in another language"
 
 #. type: Hash Value - Key: priskribo
 #: >lang
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Alternativa firmvaro por ipcam-100-fotilo"
 msgstr "An alternative firmware for ipcam-100 camera"
 
@@ -91,8 +90,7 @@ msgstr "Search Google."
 
 #. type: Hash Value - Key: titolo
 #: >lang
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Fotilo Ipcam-100"
 msgstr "Ipcam-100 camera"
 
@@ -101,6 +99,72 @@ msgstr "Ipcam-100 camera"
 #, fuzzy, no-wrap
 msgid "Bonvolu noti: ĉi tiu paĝo estis tradukita aŭtomate. Se vi povas, vi devas legi ĝin en unu el ĉi tiuj lingvoj:"
 msgstr "Please note: this page has been translated automatically. If you can, you should read it in one of these languages:"
+
+#, fuzzy
+#~ msgid "Propulsé par"
+#~ msgstr "Propulsé par"
+
+#, fuzzy
+#~ msgid "Tous les messages"
+#~ msgstr "Tous Les Messages"
+
+#, fuzzy
+#~ msgid "Choisissez votre langue"
+#~ msgstr "Choisissez Votre Langue"
+
+#, fuzzy
+#~ msgid "a commenté le "
+#~ msgstr "a commenté le"
+
+#, fuzzy
+#~ msgid "Ajouter un commentaire (sur github)"
+#~ msgstr "AJOUTER UN Commentire  ( on GitHub )"
+
+#, fuzzy
+#~ msgid "Commentaires :"
+#~ msgstr "Commentaires:"
+
+#, fuzzy
+#~ msgid "Lire cette page dans une autre langue"
+#~ msgstr "Lire cette page dans une autre langue"
+
+#, fuzzy
+#~ msgid "Micrologiciel alternatif pour la caméra ipcam-100"
+#~ msgstr "Micrologiciel Alternatif Pour the Caméra IPCAM-100"
+
+#, fuzzy
+#~ msgid ""
+#~ "Licence <a rel=\"license\" href=\"https://creativecommons.org/licenses/by-"
+#~ "sa/4.0/\"><img alt =\"Licence Creative Commons\" style=\"display:inline;"
+#~ "border-width:0\" src=\"https://i.creativecommons.org/l/by-sa/4.0/88x31.png"
+#~ "\" title=\"CC-BY-SA 4.0\"/></ a>"
+#~ msgstr ""
+#~ "License  <a rel=\"license\" href=\"https://creativecommons.org/licenses/"
+#~ "by-sa/4.0/\"> <img  Alt = \" License Creative Commons \"  style=\"display:"
+#~ "inline;border-width:0\"  src=\"https://i.creativecommons.org/l/by-"
+#~ "sa/4.0/88x31.png\"  title= \" CC-BY-SA 4.0 \" /> </ a>"
+
+#, fuzzy
+#~ msgid "Regarder dans"
+#~ msgstr "Regarder Dans"
+
+#, fuzzy
+#~ msgid "Articles Similaires"
+#~ msgstr "Articles Similaries"
+
+#, fuzzy
+#~ msgid "Recherche google."
+#~ msgstr "Recherche Google."
+
+#, fuzzy
+#~ msgid "Caméra ipcam-100"
+#~ msgstr "Caméra IPCam-100"
+
+#, fuzzy
+#~ msgid ""
+#~ "Attention: cette page a été traduite automatiquement. Si vous le pouvez, "
+#~ "vous devriez la lire dans l'une de ces langues:"
+#~ msgstr "ATTENTION: CETTE PAGE A Été Traduite Automatiquement. "
 
 #, fuzzy
 #~ msgid "Priskribo."

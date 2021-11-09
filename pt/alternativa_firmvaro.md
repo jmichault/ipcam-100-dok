@@ -29,7 +29,7 @@ title: 'Firmware alternativo'
   * os LEDs e o motor são inicializados
 
 
-  * inicialize o diretório etc. se necessário
+  * Inicia o arquivo   _etc_   se necessário  
 
 
   * redireciona _/bin/busybox_ , _/etc_ e _/root_ para o cartão SD.

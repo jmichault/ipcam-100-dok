@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-10-30 11:06+0200\n"
+"POT-Creation-Date: 2021-11-09 15:12+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -98,8 +98,8 @@ msgstr ""
 #: elpurigi.md:29
 #, no-wrap
 msgid ""
-"     `/opt/media/mmcblk0p1/bin/gdbserver localhost:2000 /opt/media/mmcblk0p1/bin/motor`\n"
-"* startu gdb en la komputilo, ekzemple:\n"
+"     `/opt/media/mmcblk0p1/bin/gdbserver localhost:2000 /opt/media/mmcblk0p1/bin/motor` \n"
+" *  Komencu GDB en la komputilo, ekzemple: \n"
 msgstr ""
 
 #. type: Plain text
@@ -114,5 +114,5 @@ msgid ""
 "    handle SIG32 nostop\n"
 "    break xxx\n"
 "    continue \n"
-"    ```\n"
+"    ``` \n"
 msgstr ""

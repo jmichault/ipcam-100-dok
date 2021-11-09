@@ -7,26 +7,20 @@ title: 'Cross compilation'
 ---
 
 
-The transit compilations tools are in programming_medio/toolchain.
-Ils ont été compilés pour debian buster x64.
+Trans-compilation tools are in   _programada\_medio/toolchain_.  
+ They were compiled for   _debian buster x64_.  
+
+Divided libraries are in   _programada\_medio/lib_  
+
+The   _include_   is in   _programada\_medio/include_.  
+
+If you need to recompile a bookstore, inspire the following scripts:  
+  *   _programada\_medio/fontoj/01-buildssl.sh_ , for the library   _openssl_.  
+  *   _programada\_medio/fontoj/02-buildlive.sh_ , for the library   _live555_.  
+  *   _programada\_medio/fontoj/03-pcre.sh_ , for the library   _pcre_.  
 
 
-
-Comparative libraries are in prograde_medio/lib
-
-
-
-Includes is in programming_medio/include.
+If you ever need to recompile the   _«toolchain»_, you can see the following website:  
+   *   <https://github.com/anmaped/openfang>  
 
 
-
-If you need to recover a library, inspire the following scripts:
-* programmed_medio/fontoj/01-buildssl.sh , pour la librairie openssl.
-* programada_environment / sources / 02-buildive.sh, for a Live555 library.
-* Programada_medio/fontoj/03-pcre.sh , pour la librairie pcre.
-
-
-
-
-If you ever need to compile the _«toolchain»_, you can check the following website:
- * https://github.com/anmaped/openfang

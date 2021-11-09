@@ -7,26 +7,20 @@ title: 'Compilazione incrociata'
 ---
 
 
-Gli strumenti di compilation di transito sono in programmazione_medio/toolchain.
-Ils ont été compilés pour debian buster x64.
+Gli strumenti di trans-compilazione sono in   _programada\_medio/toolchain_.  
+ Sono stati compilati per   _debian buster x64_. . 
+
+Le biblioteche divise sono in   _programada\_medio/lib_  
+
+  _include_   è in   _programada\_medio/include_. . 
+
+Se è necessario ricompilare una libreria, ispirare i seguenti script:  
+  *   _programada\_medio/fontoj/01-buildssl.sh_ , per la libreria   _openssl_.  
+  *   _programada\_medio/fontoj/02-buildlive.sh_ , per la libreria   _live555_.  
+  *   _programada\_medio/fontoj/03-pcre.sh_ , per la libreria   _pcre_. . 
 
 
-
-Le librerie comparative sono in programma_medio/lib
-
-
-
-Include è in programmazione_medio/include.
+Se hai mai bisogno di ricompilare il   _«toolchain»_, puoi vedere il seguente sito web:  
+   *   <https://github.com/anmaped/openfang>  
 
 
-
-Se è necessario recuperare una libreria, ispirare i seguenti script:
-* Programmato_medio/fontoj/01-buildssl.sh , pour la librairie openssl.
-* programada_Ambiente / Fonti / 02-Buildive.SH, per una libreria Live555.
-* Programmada_medio/fontoj/03-pcre.sh , pour la librairie pcre.
-
-
-
-
-Se è mai necessario compilare il _«toolchain»_, è possibile verificare il seguente sito web:
- * https://github.com/anmaped/openfang

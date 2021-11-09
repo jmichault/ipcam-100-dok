@@ -6,7 +6,7 @@ layout: page
 title: 'Guide de programmation vidéo'
 ---
 
-# IMP_ISP (voir imp_isp.h)
+# _IMP\_ISP_ \(voir _imp\_isp.h\_)
 Unité de traitement du signal d'image. Inclut principalement les paramètres d'effet d'image, le changement de mode et l'enregistrement, l'ajout et la suppression du capteur.
 
 Le module ISP n'a rien à voir avec le flux de données et n'a pas besoin d'être lié, il n'agit que sur le paramétrage de l'effet et le contrôle du capteur.
@@ -86,7 +86,7 @@ int ret = 0;
   return -1;
  }
 ```
-* étape 2 : fermer les capteurs. (FrameSource doit être fermé avant cette opération)
+* étape 2 : fermer les capteurs. \(FrameSource doit être fermé avant cette opération\)
 
 ```
 ret = IMP_ISP_DisableSensor (); 
@@ -119,6 +119,7 @@ ret = IMP_ISP_Close ();
 
 ## liste des fonctions
 
+```
 int IMP_ISP_Open(void);
 int IMP_ISP_Close(void);
 int IMP_ISP_AddSensor(IMPSensorInfo *pinfo);
@@ -191,5 +192,5 @@ int IMP_ISP_Tuning_SetSinterStrength(uint32_t ratio);
 int IMP_ISP_Tuning_SetDPStrength(uint32_t ratio);
 int IMP_ISP_Tuning_SetAntiFogAttr(IMPISPAntiFogAttr attr);
 int IMP_ISP_Tuning_GetEVAttr(IMPISPEVAttr *attr);
-
+```
 

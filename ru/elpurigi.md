@@ -29,8 +29,8 @@ title: Очистить
 * start "gdbserver"камеры, например :  
 
 
-     `/opt/media/mmcblk0p1/bin/gdbserver localhost:2000 /opt/media/mmcblk0p1/bin/motor`
-* запустить GDB на компьютере, например:
+     `/opt/media/mmcblk0p1/bin/gdbserver localhost:2000 /opt/media/mmcblk0p1/bin/motor`  
+  *   Запустите GDB на компьютере, например:  
 
     ```
     cd programada_medio/toolchain
@@ -40,7 +40,7 @@ title: Очистить
     handle SIG32 nostop
     break xxx
     continue 
-    ```
+    ```  
 
 
 

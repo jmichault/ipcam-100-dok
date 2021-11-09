@@ -17,7 +17,7 @@ title: 'Le micrologiciel alternatif'
   * arrête _jco_server_ et _autorun.sh_.
   * désactive _/dev/watchdog_ et _/dev/watchdog0_
   * initialise les LED et le moteur
-  * initialise le répertoire etc si nécessaire
+  * initialise le répertoire _etc_ si nécessaire
   * redirige _/bin/busybox_ , _/etc_ et _/root_ vers la carte SD.
   * initialise la _CRONTAB_ si nécessaire
   * démarre les services (dans _config/autostart_)

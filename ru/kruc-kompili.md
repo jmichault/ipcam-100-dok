@@ -7,26 +7,20 @@ title: Кросс-компиляция
 ---
 
 
-Инструменты Transit Compilations в программировании_medio/toolchain.
-Ils ont été compilés pour debian buster x64.
+Транспиляционные инструменты находятся в   _programada\_medio/toolchain_.  
+ Они были скомпилированы для   _debian buster x64_.  
+
+Разделенные библиотеки в   _programada\_medio/lib_  
+
+  _include_   находится в   _programada\_medio/include_.  
+
+Если вам нужно перекомпилировать книжный магазин, вдохновлять следующие скрипты:  
+  *   _programada\_medio/fontoj/01-buildssl.sh_ , для библиотеки   _openssl_.  
+  *   _programada\_medio/fontoj/02-buildlive.sh_ , для библиотеки   _live555_.  
+  *   _programada\_medio/fontoj/03-pcre.sh_ , для библиотеки   _pcre_.  
 
 
-
-Сравнительные библиотеки в программах_medio/lib
-
-
-
-Включает в себя программирование_medio/include.
+Если вам когда-либо нужно перекомпилировать   _«toolchain»_, вы можете увидеть следующий веб-сайт:  
+   *   <https://github.com/anmaped/openfang>  
 
 
-
-Если вам нужно восстановить библиотеку, вдохновляйте следующие скрипты:
-* , запрограммированные_medio/fontoj/01-buildssl.sh , pour la librairie openssl.
-* programada_Среда / источники / 02-buildive.sh, для библиотеки Live555.
-* Программадада_medio/fontoj/03-pcre.sh , pour la librairie pcre.
-
-
-
-
-Если вам когда-либо нужно скомпилировать _«toolchain»_, вы можете проверить следующий веб-сайт:
- * https://github.com/anmaped/openfang

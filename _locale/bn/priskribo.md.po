@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-10-30 11:06+0200\n"
+"POT-Creation-Date: 2021-11-09 15:13+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -55,8 +55,8 @@ msgstr "বর্ণনা:"
 #. type: Plain text
 #: priskribo.md:13
 #, fuzzy, no-wrap
-msgid "https://en.aliexpress.com/item/4000146161270.html\n"
-msgstr "https://en.alivexpress.com/item/4000146161270.HTML\n"
+msgid "<https://fr.aliexpress.com/item/4000146161270.html> \n"
+msgstr "<https://fr.aliexpress.com/item/4000146161270.html>  \n"
 
 #. type: Fenced code block
 #: priskribo.md:13
@@ -161,197 +161,77 @@ msgstr ""
 "MAC : 00:88:09:**:**:**\n"
 
 #. type: Plain text
-#: priskribo.md:62
+#: priskribo.md:65
 #, fuzzy, no-wrap
-msgid "Kunlicante ĝin por Eterreto, ĝi Akiras DHCP-ADRESON KAJ NI POVO KONEKTI AL LA REGETO:  \n"
-msgstr "Etherreto এর জন্য এটি স্থাপন করা, এটি একটি DHCP ঠিকানা পায় এবং আমরা রেজিনে সংযোগ করতে পারি: (° 1 ° 1  \n"
-
-#. type: Plain text
-#: priskribo.md:63
-#, fuzzy, no-wrap
-msgid "DefAŭlta Uzanto: Admin  \n"
-msgstr "ডিফল্ট ব্যবহারকারী: অ্যাডমিন  \n"
-
-#. type: Plain text
-#: priskribo.md:64
-#, fuzzy, no-wrap
-msgid "DefAŭlta Pasvorto: Admin  \n"
-msgstr "ডিফল্ট পাসওয়ার্ড: অ্যাডমিন  \n"
-
-#. type: Plain text
-#: priskribo.md:66
-#, fuzzy, no-wrap
-msgid "Dum 5 Minutoj, VI Povas Konekti per Telnet al la Haveso 9527  \n"
-msgstr "5 মিনিটের জন্য, আপনি টেলনেটের সাথে 95২7 এর পোর্টে সংযোগ করতে পারেন  \n"
+msgid ""
+"Konektante la fotilon al Ethorn-reto, ĝi ricevas IP-adreson, kaj vi povas konektiĝi al ĝi ĉe http:   \n"
+"Defaŭlta Uzanto:  _admin_   \n"
+"Defaŭlta Pasvorto:  _admin_ \n"
+msgstr ""
+"Enthorn নেটওয়ার্ক ক্যামেরাটি সংযুক্ত করে, এটি একটি আইপি ঠিকানা পায়, এবং আপনি এটিতে সংযোগ করতে পারেন http:    \n"
+" ডিফল্ট ব্যবহারকারী:   _admin_    \n"
+" ডিফল্ট পাসওয়ার্ড:   _admin_  \n"
 
 #. type: Plain text
 #: priskribo.md:67
 #, fuzzy, no-wrap
-msgid "DefAŭlta Uzanto: Radiko  \n"
-msgstr "ডিফল্ট ব্যবহারকারী: রুট  \n"
-
-#. type: Plain text
-#: priskribo.md:68
-#, fuzzy, no-wrap
-msgid "DefAŭlta Pasvorto: jco66688  \n"
-msgstr "ডিফল্ট পাসওয়ার্ড: JCO66688  \n"
+msgid ""
+"Dum 5 minutoj, ni povas konekti per  _telnet_  al haveno 9527:   \n"
+"Defaŭlta Uzanto:  _root  \n"
+msgstr ""
+"5 মিনিটের জন্য, আমরা   _telnet_   থেকে পোর্ট 9527:    \n"
+" ডিফল্ট ব্যবহারকারী:   _root  \n"
+" এর সাথে সংযোগ করতে পারি  \n"
 
 #. type: Plain text
 #: priskribo.md:69
 #, fuzzy, no-wrap
-msgid "Por resti konektita Preter 5 Minutoj: \"Killall -9 aŭtomata_run.sh»  \n"
+msgid "Defaŭlta Pasvorto:  _jco66688  \n"
 msgstr ""
-"5 মিনিটের মধ্যে সংযুক্ত থাকার জন্য: \"killall -9 স্বয়ংক্রিয়_run.sh»  \n"
+"ডিফল্ট পাসওয়ার্ড:   _jco66688  \n"
 "  \n"
 
 #. type: Plain text
-#: priskribo.md:71
-#, fuzzy, no-wrap
-msgid "(JCO = http://www.cnjabsco.com/ )  \n"
-msgstr "(JCO = http://www.cnjabsco.com/ )  (° 3 ° 3\n"
-
-#. type: Plain text
-#: priskribo.md:75
+#: priskribo.md:73
 #, fuzzy, no-wrap
 msgid ""
-"Malfermaj Arenoj:    \n"
-"TCP: 80(http), 443(http ankaŭ!     \n"
+"Por resti konektita post ĉi tiuj 5 minutoj:  `killall -9 auto_run.sh`     \n"
+" _( JCO = http://www.cnjabsco.com/  )   _\n"
 msgstr ""
-"খোলা Sands:    \n"
-"TCP: 80(HTTP), 443(HTTP!      \n"
+"এই 5 মিনিটের পরে সংযুক্ত থাকার জন্য:   `killall -9 auto_run.sh`      \n"
+"  _(  jco = http://www.cnjabsco.com/   )    _\n"
+"\n"
 
 #. type: Plain text
-#: priskribo.md:76
+#: priskribo.md:77
 #, fuzzy, no-wrap
-msgid "Reta Konduto Kiam Oni LANĉAS JCO_server:  \n"
+msgid ""
+"Malfermu havenojn:   \n"
+"  _tcp_ : 80 (_ http _), 443 (_ http _  ankaŭ!     \n"
 msgstr ""
-"ওয়েব আচরণ যখন জেসিও চালু করে_server:  \n"
-"  \n"
-
-#. type: Plain text
-#: priskribo.md:78
-#, fuzzy, no-wrap
-msgid "Pridemandas La servilon DNS PRI: www.163.com Kaj DNS.ICTun.com  \n"
-msgstr "DNS সার্ভার সম্পর্কে জিজ্ঞাসাবাদ করা হয়: www.163.com এবং dns.ictun.com (° 1 ° 1  \n"
-
-#. type: Plain text
-#: priskribo.md:79
-#, fuzzy, no-wrap
-msgid "Apliko 114.114.114.114 por DNS.ICTun.com  \n"
-msgstr "অ্যাপ্লিকেশন 114.114.114.114 DNS.ittun.com  \n"
+"ওপেন পোর্টস:    \n"
+"   _tcp_ : 80  (_  HTTP  _), 443  (_  HTTP  _   এছাড়াও!      \n"
 
 #. type: Plain text
 #: priskribo.md:80
 #, fuzzy, no-wrap
-msgid "KONEKTI AL LA HAVEN UDP / 993 DNS.ICTUNC.com  \n"
-msgstr "হেনেন UDP / 993 DNS.ittunc.com এর সাথে সংযোগ করুন (° 1 ° 1  \n"
-
-#. type: Plain text
-#: priskribo.md:81
-#, fuzzy, no-wrap
-msgid "Konekti al UDP / 993-havenuso de 120,25.129.41  \n"
-msgstr "120.25.129.41এর UDP / 993 পোর্টে সংযুক্ত করুন  \n"
-
-#. type: Plain text
-#: priskribo.md:82
-#, fuzzy, no-wrap
-msgid "PrideMandu la servilon DNS PRI: Conn-policy.ICTun.com  \n"
-msgstr "DNS সার্ভারটি জিজ্ঞাসাবাদ করুন: Conn-policy.itun.com  \n"
-
-#. type: Plain text
-#: priskribo.md:83
-#, fuzzy, no-wrap
-msgid "PrideMandu The Servilon DNS PRI: Video-policy.ICTun.com  \n"
-msgstr "প্রশ্ন DNS সার্ভার অন: ভিডিও- policy.ittun.com  \n"
-
-#. type: Plain text
-#: priskribo.md:84
-#, fuzzy, no-wrap
-msgid "KONEKTI AL UDP / 80-Haveno de 52.29.45.252  \n"
-msgstr "ইউডিপি / 80-পোর্টের 52.29.45.252 এর সাথে সংযোগ করুন (° 1 ° 1  \n"
-
-#. type: Plain text
-#: priskribo.md:85
-#, fuzzy, no-wrap
-msgid "Konektas al UDP / 1210-havenuso de 52.29.45.252  \n"
-msgstr "52.29.45.252 এর UDP / 1210 পোর্টে সংযোগ করে (° 1 ° 1  \n"
-
-#. type: Plain text
-#: priskribo.md:86
-#, fuzzy, no-wrap
-msgid "Ligoj al UDP / 21-havenoj de 52,57.135.134  \n"
-msgstr "52.57.135.134এর UDP / 21 পোর্টের লিঙ্ক  \n"
-
-#. type: Plain text
-#: priskribo.md:87
-#, fuzzy, no-wrap
-msgid "Konektas al UDP / 1053-havenes de 52.28.62.20  \n"
-msgstr "52.28.62.20 এর UDP / 1053-HENOREONES সংযুক্ত করে (° 1 ° 1  \n"
-
-#. type: Plain text
-#: priskribo.md:88
-#, fuzzy, no-wrap
-msgid "KONEKTAS AL UDP / 443-Havas de 52.29.58.225  \n"
-msgstr "UDP / 443 এর সাথে সংযোগ করে - 52.29.58.225 (° 1 ° 1  \n"
-
-#. type: Plain text
-#: priskribo.md:89
-#, fuzzy, no-wrap
-msgid "Konektas al UDP / 123 (NTP) havenuso de 112,74.204.233 (Video-policy.ICTun.com)  \n"
-msgstr "ইউডিপি / 123 (° 1 ° 1 ° 3.204.233 (° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 °। 3 ° 3 ° 3 ° 3 ° 0tun.com)  \n"
-
-#. type: Plain text
-#: priskribo.md:90
-#, fuzzy, no-wrap
-msgid "Ligoj al UDP / 993-havenoj de 47.52.99.182  \n"
-msgstr "UDP / 993 পোর্টের লিঙ্ক 47.52.99.182 (° 1 ° 1  \n"
-
-#. type: Plain text
-#: priskribo.md:91
-#, fuzzy, no-wrap
-msgid "Konektas al UDP / 1054-havenes de 52.57.127.207  \n"
-msgstr "52.57.127.207 এর UDP / 1054-HENOREONES সংযুক্ত করে (° 1 ° 1  \n"
-
-#. type: Plain text
-#: priskribo.md:92
-#, fuzzy, no-wrap
-msgid "...  \n"
-msgstr "...  \n"
-
-#. type: Plain text
-#: priskribo.md:94
-#, fuzzy, no-wrap
-msgid "Noto: ŝanĝu la DefAŭltan Itineron Tian signifis ke la interrila skatolo.   \n"
-msgstr "দ্রষ্টব্য: ডিফল্ট রুট সেট করুন যেমন বোঝানো বাক্সটি।    \n"
-
-#. type: Plain text
-#: priskribo.md:95
-#, fuzzy, no-wrap
-msgid "Haltigi JCO_server sen kaŭzi restartigi:  \n"
-msgstr ""
-"JCO বন্ধ করুন_server sen kaŭzi restartigi:  \n"
-"  \n"
-
-#. type: Title ##
-#: priskribo.md:97
-#, fuzzy, no-wrap
-msgid "Haltu_cloud :  "
-msgstr "বন্ধ করুন_cloud :  "
+msgid "Halti  _jco_ servilo _  sen kaŭzi reboot:   \n"
+msgstr "  _jco_  সার্ভার  _   রিবুট ছাড়াই বন্ধ করুন:    \n"
 
 #. type: Fenced code block
-#: priskribo.md:98
+#: priskribo.md:80
 #, no-wrap
 msgid "PS | \n"
 msgstr "PS | \n"
 
 #. type: Plain text
-#: priskribo.md:102
+#: priskribo.md:85
 #, fuzzy, no-wrap
-msgid "VI POVO VIDI LA BEFAN VIDEO-Riverton (LAŭ 1080p Aŭ ALIA AGORDO) per:  \n"
-msgstr "আপনি 1080p বা অন্য কনফিগারেশন) অনুসারে Befan ভিডিও রাইভার্ট (দেখতে পারেন: (° 3 ° 3  \n"
+msgid "La ĉefa kanalo povas esti bildigita per:   \n"
+msgstr "প্রধান চ্যানেলটি চিত্রিত করা যেতে পারে:    \n"
 
 #. type: Fenced code block
-#: priskribo.md:103
+#: priskribo.md:85
 #, no-wrap
 msgid ""
 "ffplay -i rtsp://admin:admin@192.168.24.111/stream1\n"
@@ -363,13 +243,13 @@ msgstr ""
 "ffplay -i rtsp://admin:admin@192.168.24.39:554/mpeg4/ch0/main/av_stream\n"
 
 #. type: Plain text
-#: priskribo.md:110
+#: priskribo.md:92
 #, fuzzy, no-wrap
-msgid "Kaj la durangana:\n"
-msgstr "এবং দুরঙ্গানাঃ (° 1 ° 1\n"
+msgid "kaj sekundara:   \n"
+msgstr "এবং সেকেন্ডারি:    \n"
 
 #. type: Fenced code block
-#: priskribo.md:110
+#: priskribo.md:92
 #, no-wrap
 msgid ""
 "ffplay -i rtsp://admin:admin@192.168.24.39/stream2\n"
@@ -379,13 +259,13 @@ msgstr ""
 "ffplay -i rtsp://admin:admin@192.168.24.39:554/stream2\n"
 
 #. type: Plain text
-#: priskribo.md:116
+#: priskribo.md:98
 #, fuzzy, no-wrap
-msgid "La instalita firmvaro Indikas:\n"
-msgstr "ইনস্টল করা ফার্মওয়্যার নির্দেশ করে: (° 1 ° 1\n"
+msgid "La informoj montritaj en la interreta interfaco:   \n"
+msgstr "অনলাইন ইন্টারফেসে প্রদর্শিত তথ্য:    \n"
 
 #. type: Fenced code block
-#: priskribo.md:116
+#: priskribo.md:98
 #, no-wrap
 msgid ""
 "DeviceName:     INGENIC-V01\n"
@@ -405,77 +285,71 @@ msgstr ""
 "OCXVersion:     -1\n"
 
 #. type: Plain text
-#: priskribo.md:126
+#: priskribo.md:111
 #, fuzzy, no-wrap
-msgid "La Procesoro estas: Ingenic T21  \n"
-msgstr "প্রসেসর হল: ইং্যানিক টি 21 (° 1 ° 1  \n"
+msgid ""
+"La procesoro estas:  _ingenic T21_ \n"
+" <http://www.ingenic.com.cn/en/?product/id/11.html>   \n"
+"La procesoro estas: <https://fr.indasina.com/ingenic-t21-extreme-2-megapixel-encoding-processor_p16.html>     \n"
+msgstr ""
+"প্রসেসর হল:   _ingenic T21_  \n"
+"  < http://www.ininic.com.cn/en/?product/id/11.HTML >    \n"
+" প্রসেসর হল:  < HTTPS: //fr.indasina.com/ingeric-t21-xtreme-2-megapixel-encoding-processor _p16.html>     \n"
+"\n"
 
 #. type: Plain text
-#: priskribo.md:127
+#: priskribo.md:114
 #, fuzzy, no-wrap
-msgid "http://www.ingenic.com.cn/en/?product/id/11.html  \n"
-msgstr "http://www.ininic.com.cn/en/?product/id/11.html  \n"
+msgid ""
+"La sensor  _CMOS_  estas:  _gc2053_.   \n"
+"Fontoj:  < https://github.com/mrfixit2001/rk-kernel-for-/blob/develop-4.4/drivers/media/i2c/gc2053.c >   \n"
+msgstr "  _CMOS_   সেন্সরটি হল:   _gc2053_। \n"
+
+#. type: Plain text
+#: priskribo.md:116
+#, fuzzy, no-wrap
+msgid "Memoro  _RAM_ :  _42 MiB_  Totalo,  _36 MiB_  Uzebla.   \n"
+msgstr "মেমরি   _RAM_ :   _42 MiB_   মোট,   _36 MiB_   ব্যবহারযোগ্য।    \n"
+
+#. type: Plain text
+#: priskribo.md:118
+#, fuzzy, no-wrap
+msgid "La aveno de 9999 permesas vin kontroli la fotilon:   \n"
+msgstr "9999 এর ওটগুলি আপনাকে ক্যামেরাটি পরীক্ষা করার অনুমতি দেয়:    \n"
+
+#. type: Fenced code block
+#: priskribo.md:118
+#, no-wrap
+msgid ""
+"echo \"checkuser -act set -user admin -password admin\" | nc 192.168.1.155 9999  \n"
+"echo \"list\" | nc 192.168.1.155 9999  \n"
+"echo \"pelcod20ctrl -?\" | nc 192.168.1.155 9999  \n"
+"echo \"pelcod20ctrl -type 1\" | nc 192.168.1.155 9999  \n"
+msgstr ""
+"echo \"checkuser -act set -user admin -password admin\" | nc 192.168.1.155 9999  \n"
+"echo \"list\" | nc 192.168.1.155 9999  \n"
+"echo \"pelcod20ctrl -?\" | nc 192.168.1.155 9999  \n"
+"echo \"pelcod20ctrl -type 1\" | nc 192.168.1.155 9999  \n"
 
 #. type: Plain text
 #: priskribo.md:128
 #, fuzzy, no-wrap
-msgid "https://en.indasina.com/ingenic-t21-extreme-2-megapixel-encoding-processor_p16.html  \n"
+msgid ""
+"Havenoj  _GPIO_ :   \n"
+"46 = Transruĝa LED.   \n"
+"81 = Blanka LED. \n"
 msgstr ""
-"https://en.indasina.com/ingenic-t21-xtreme-2-megapixel-encoding-processor_p16.html  \n"
-"  \n"
+"পোর্ট   _GPIO_ :    \n"
+" 46 = ইনফ্রারেড LED।  \n"
 
 #. type: Plain text
-#: priskribo.md:132
-#, fuzzy, no-wrap
-msgid ""
-"La CMOS-sensilo estas: GC2053.   \n"
-"ŝofora Fonto: https://github.com/mrfixit2001/rk-kernel-fork/blob/develop-4.4/drivers/media/i2c/gc2053.c  \n"
-msgstr "সিএমওএস সেন্সরটি হল: GC2053।   \n"
-
-#. type: Plain text
-#: priskribo.md:135
-#, fuzzy, no-wrap
-msgid "RAM: 42Mib Intt, 36 MIB Havebla.   \n"
-msgstr "র্যাম: 42 এমবি ইন্টিট, 36 টি এমআইবি উপলব্ধ।    \n"
-
-#. type: Plain text
-#: priskribo.md:136
-#, fuzzy, no-wrap
-msgid "La Havedo 9999 estas Malfermita kaj Permesas Regi la Fotilon:  \n"
-msgstr "9999 হেইডো খোলা থাকে এবং ক্যামেরাটি নিয়ন্ত্রণ করার অনুমতি দেয়: (° 1 ° 1  \n"
-
-#. type: Plain text
-#: priskribo.md:141
-#, fuzzy, no-wrap
-msgid ""
-"Echo (° 1 ° Checuser -Act Set -USER Admin -Password Admin\"|   \n"
-"Eo (° 1 ° 1 ° listo\"|   \n"
-"Eo (° 1 ° Pelcod203dRL -?   \n"
-"Eo (° 1 ° 1 ° Pelcod203ctrl -type 1\"|   \n"
-msgstr "ইকো (° 1 ° 1 ° 1 ° Checuser -ac সেট -USER অ্যাডমিন -প্যাড অ্যাডমিনওয়ার্ড অ্যাডমিন\"|    \n"
-
-#. type: Plain text
-#: priskribo.md:142
-#, fuzzy, no-wrap
-msgid "GPIO-HADENOJ:  \n"
-msgstr "জিপিও-হাদেনস:  \n"
-
-#. type: Plain text
-#: priskribo.md:145
-#, fuzzy, no-wrap
-msgid ""
-"46 = Infraredĝaj legoj.   \n"
-"81 = Bluaj leĝoj.   \n"
-msgstr "46 = infraring ব্যাখ্যা।    \n"
-
-#. type: Plain text
-#: priskribo.md:146
+#: priskribo.md:129
 #, fuzzy, no-wrap
 msgid "GPIO-HADENOJ BLOKITAJ POR SLUDO:  \n"
 msgstr "জিপিও-হাদেন স্ক্রেটিংয়ের জন্য অবরুদ্ধ:  \n"
 
 #. type: Plain text
-#: priskribo.md:149
+#: priskribo.md:132
 #, fuzzy, no-wrap
 msgid ""
 "Blokita de Motor.ko: 18?   \n"
@@ -484,58 +358,250 @@ msgid ""
 msgstr "Motor.ko দ্বারা অবরুদ্ধ: 18?   \n"
 
 #. type: Plain text
-#: priskribo.md:151
+#: priskribo.md:135
 #, fuzzy, no-wrap
-msgid "Ptz-Kontrolo:  \n"
-msgstr "PTZ নিয়ন্ত্রণ:  \n"
+msgid "Kontroloj  _PTZ_ :   \n"
+msgstr "নিয়ন্ত্রণ   _PTZ_ :    \n"
 
 #. type: Plain text
-#: priskribo.md:153
+#: priskribo.md:144
 #, fuzzy, no-wrap
-msgid "Supro: http: // admin: admin@192.168.24.39/? Jcpcmd = pelcod20ctrl -type 1 -cmd 1 -gata1 24 -gata2 24  \n"
-msgstr "শীর্ষ: http: // admin: admin@192.168.24.39/?   \n"
+msgid ""
+"Supro:  _http://admin:admin@192.168.24.39/?jcpcmd=pelcod20ctrl -type 1 -cmd 1 -data1 24 -data2 24_   \n"
+"Fundo:  _http://admin:admin@192.168.24.39/?jcpcmd=pelcod20ctrl -type 1 -cmd 2 -data1 24 -data2 24_   \n"
+"Maldekstra:  _http://admin:admin@192.168.24.39/?jcpcmd=pelcod20ctrl -type 1 -cmd 3 -data1 24 -data2 24_   \n"
+"Uste:  _http://admin:admin@192.168.24.39/?jcpcmd=pelcod20ctrl -type 1 -cmd 4 -data1 24 -data2 24_   \n"
+"Haltu:  _http://admin:admin@192.168.24.39/?jcpcmd=pelcod20ctrl -type 1 -cmd 9 -data1 24 -data2 24_   \n"
+"Pozicio 2:  _http://192.168.24.39/?jcpcmd=pelcod20ctrl -type 2 -cmd 1 -data2 2_   \n"
+"Pozicio 1:  _http://192.168.24.39/?jcpcmd=pelcod20ctrl -type 2 -cmd 2 -data2 1_   \n"
+"Klara pozicio 2:  _http://192.168.24.39/?jcpcmd=pelcod20ctrl -type 2 -cmd 3 -data2 2_   \n"
+msgstr ""
+"শীর্ষ:   _http://admin:admin@192.168.24.39/?jcpcmd=pelcod20ctrl -type 1 -cmd 1 -data1 24 -data2 24_    \n"
+" নীচে:   _http://admin:admin@192.168.24.39/?jcpcmd=pelcod20ctrl -type 1 -cmd 2 -data1 24 -data2 24_    \n"
+" বাম:   _http://admin:admin@192.168.24.39/?jcpcmd=pelcod20ctrl -type 1 -cmd 4 -data1 24 -data2 24_      _http://192.168.24.39/?jcpcmd=pelcod20ctrl -type 2 -cmd 2 -data2 1_    DISHE:   _http://admin:admin@192.168.24.39/?jcpcmd=pelcod20ctrl -type 1 -cmd 9 -data1 24 -data2 24_    \n"
+" অবস্থান 2:   _http://192.168.24.39/?jcpcmd=pelcod20ctrl -type 2 -cmd 1 -data2 2_    \n"
+" অবস্থান 1:   _http://192.168.24.39/?jcpcmd=pelcod20ctrl -type 2 -cmd 2 -data2 1_    \n"
+" সাফ অবস্থান 2:   _http://192.168.24.39/?jcpcmd=pelcod20ctrl -type 2 -cmd 3 -data2 2_    \n"
 
-#. type: Plain text
-#: priskribo.md:154
 #, fuzzy, no-wrap
-msgid "Msalru: http: // admin: admin@192.168.24.39/? Jcpcmd = pelcod203crl -type 1 -cmd 2 -gata1 24-gafu2 24  \n"
-msgstr "Msalkru: http: // admin: admin@192.168.24.39/?   \n"
+#~ msgid "https://en.aliexpress.com/item/4000146161270.html\n"
+#~ msgstr "https://en.alivexpress.com/item/4000146161270.HTML\n"
 
-#. type: Plain text
-#: priskribo.md:155
 #, fuzzy, no-wrap
-msgid "Maldekstre: http: // admin: admin@192.168.24.39/? Jcpcmd = pelcod203crl -type 1 -cmd 3 -gata1 24 -gata2 24  \n"
-msgstr "বাম: http: // admin: admin@192.168.24.39/?   \n"
+#~ msgid "Kunlicante ĝin por Eterreto, ĝi Akiras DHCP-ADRESON KAJ NI POVO KONEKTI AL LA REGETO:  \n"
+#~ msgstr "Etherreto এর জন্য এটি স্থাপন করা, এটি একটি DHCP ঠিকানা পায় এবং আমরা রেজিনে সংযোগ করতে পারি: (° 1 ° 1  \n"
 
-#. type: Plain text
-#: priskribo.md:156
 #, fuzzy, no-wrap
-msgid "Dekstre: http: // admin: admin@192.168.24.39/? JCPCMD = Pelcod203crl -Type 1 -CMD 4 -Data1 24 -Atata2 24  \n"
-msgstr "ডানদিকে: http: // admin: admin@192.168.24.39/?   \n"
+#~ msgid "DefAŭlta Uzanto: Admin  \n"
+#~ msgstr "ডিফল্ট ব্যবহারকারী: অ্যাডমিন  \n"
 
-#. type: Plain text
-#: priskribo.md:157
 #, fuzzy, no-wrap
-msgid "Halto: http: // admin: admin@192.168.24.39/? Jcpcmd = pelcod203crl -type 1 -cmd 9 -gata1 24-Data2 24  \n"
-msgstr "স্টপ করুন: http: // admin: admin@192.168.24.39/?   \n"
+#~ msgid "DefAŭlta Pasvorto: Admin  \n"
+#~ msgstr "ডিফল্ট পাসওয়ার্ড: অ্যাডমিন  \n"
 
-#. type: Plain text
-#: priskribo.md:159
 #, fuzzy, no-wrap
-msgid "Starigigu pozicion 2: http://192.168.24.39/?jcpcmd=pelcod20ctl -type 2 -cmd 1 -gata2 2  \n"
-msgstr "সেট অবস্থান 2: http://192.168.24.39/  \n"
+#~ msgid "Dum 5 Minutoj, VI Povas Konekti per Telnet al la Haveso 9527  \n"
+#~ msgstr "5 মিনিটের জন্য, আপনি টেলনেটের সাথে 95২7 এর পোর্টে সংযোগ করতে পারেন  \n"
 
-#. type: Plain text
-#: priskribo.md:160
 #, fuzzy, no-wrap
-msgid "Iru al 1: http://192.168.24.39/?JJcpcmd=pelcod203trl -type 2 -cmd 2 -gata2 1  \n"
-msgstr "1: http://192.168.24.39//192.168.24.39/?jJCPCMD=PELCOD203TRL -TYPE 2 -CMD 2 -GATA2 1  \n"
+#~ msgid "DefAŭlta Uzanto: Radiko  \n"
+#~ msgstr "ডিফল্ট ব্যবহারকারী: রুট  \n"
 
-#. type: Plain text
-#: priskribo.md:161
 #, fuzzy, no-wrap
-msgid "Forigi 2: http://192.168.24.39/?jcpcmd=pelCod203trl -Type 2 -CMD 3 -Data2 2  \n"
-msgstr "অপসারণ 2: http://192.168.24.39/?jcpcmd=pelcod203trl -type 2 -CMD 3 -DATA2 2  \n"
+#~ msgid "DefAŭlta Pasvorto: jco66688  \n"
+#~ msgstr "ডিফল্ট পাসওয়ার্ড: JCO66688  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Por resti konektita Preter 5 Minutoj: \"Killall -9 aŭtomata_run.sh»  \n"
+#~ msgstr ""
+#~ "5 মিনিটের মধ্যে সংযুক্ত থাকার জন্য: \"killall -9 স্বয়ংক্রিয়_run.sh»  \n"
+#~ "  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "(JCO = http://www.cnjabsco.com/ )  \n"
+#~ msgstr "(JCO = http://www.cnjabsco.com/ )  (° 3 ° 3\n"
+
+#, fuzzy, no-wrap
+#~ msgid ""
+#~ "Malfermaj Arenoj:    \n"
+#~ "TCP: 80(http), 443(http ankaŭ!     \n"
+#~ msgstr ""
+#~ "খোলা Sands:    \n"
+#~ "TCP: 80(HTTP), 443(HTTP!      \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Reta Konduto Kiam Oni LANĉAS JCO_server:  \n"
+#~ msgstr ""
+#~ "ওয়েব আচরণ যখন জেসিও চালু করে_server:  \n"
+#~ "  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Pridemandas La servilon DNS PRI: www.163.com Kaj DNS.ICTun.com  \n"
+#~ msgstr "DNS সার্ভার সম্পর্কে জিজ্ঞাসাবাদ করা হয়: www.163.com এবং dns.ictun.com (° 1 ° 1  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Apliko 114.114.114.114 por DNS.ICTun.com  \n"
+#~ msgstr "অ্যাপ্লিকেশন 114.114.114.114 DNS.ittun.com  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "KONEKTI AL LA HAVEN UDP / 993 DNS.ICTUNC.com  \n"
+#~ msgstr "হেনেন UDP / 993 DNS.ittunc.com এর সাথে সংযোগ করুন (° 1 ° 1  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Konekti al UDP / 993-havenuso de 120,25.129.41  \n"
+#~ msgstr "120.25.129.41এর UDP / 993 পোর্টে সংযুক্ত করুন  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "PrideMandu la servilon DNS PRI: Conn-policy.ICTun.com  \n"
+#~ msgstr "DNS সার্ভারটি জিজ্ঞাসাবাদ করুন: Conn-policy.itun.com  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "PrideMandu The Servilon DNS PRI: Video-policy.ICTun.com  \n"
+#~ msgstr "প্রশ্ন DNS সার্ভার অন: ভিডিও- policy.ittun.com  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "KONEKTI AL UDP / 80-Haveno de 52.29.45.252  \n"
+#~ msgstr "ইউডিপি / 80-পোর্টের 52.29.45.252 এর সাথে সংযোগ করুন (° 1 ° 1  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Konektas al UDP / 1210-havenuso de 52.29.45.252  \n"
+#~ msgstr "52.29.45.252 এর UDP / 1210 পোর্টে সংযোগ করে (° 1 ° 1  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Ligoj al UDP / 21-havenoj de 52,57.135.134  \n"
+#~ msgstr "52.57.135.134এর UDP / 21 পোর্টের লিঙ্ক  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Konektas al UDP / 1053-havenes de 52.28.62.20  \n"
+#~ msgstr "52.28.62.20 এর UDP / 1053-HENOREONES সংযুক্ত করে (° 1 ° 1  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "KONEKTAS AL UDP / 443-Havas de 52.29.58.225  \n"
+#~ msgstr "UDP / 443 এর সাথে সংযোগ করে - 52.29.58.225 (° 1 ° 1  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Konektas al UDP / 123 (NTP) havenuso de 112,74.204.233 (Video-policy.ICTun.com)  \n"
+#~ msgstr "ইউডিপি / 123 (° 1 ° 1 ° 3.204.233 (° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 °। 3 ° 3 ° 3 ° 3 ° 0tun.com)  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Ligoj al UDP / 993-havenoj de 47.52.99.182  \n"
+#~ msgstr "UDP / 993 পোর্টের লিঙ্ক 47.52.99.182 (° 1 ° 1  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Konektas al UDP / 1054-havenes de 52.57.127.207  \n"
+#~ msgstr "52.57.127.207 এর UDP / 1054-HENOREONES সংযুক্ত করে (° 1 ° 1  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "...  \n"
+#~ msgstr "...  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Noto: ŝanĝu la DefAŭltan Itineron Tian signifis ke la interrila skatolo.   \n"
+#~ msgstr "দ্রষ্টব্য: ডিফল্ট রুট সেট করুন যেমন বোঝানো বাক্সটি।    \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Haltigi JCO_server sen kaŭzi restartigi:  \n"
+#~ msgstr ""
+#~ "JCO বন্ধ করুন_server sen kaŭzi restartigi:  \n"
+#~ "  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Haltu_cloud :  "
+#~ msgstr "বন্ধ করুন_cloud :  "
+
+#, fuzzy, no-wrap
+#~ msgid "VI POVO VIDI LA BEFAN VIDEO-Riverton (LAŭ 1080p Aŭ ALIA AGORDO) per:  \n"
+#~ msgstr "আপনি 1080p বা অন্য কনফিগারেশন) অনুসারে Befan ভিডিও রাইভার্ট (দেখতে পারেন: (° 3 ° 3  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Kaj la durangana:\n"
+#~ msgstr "এবং দুরঙ্গানাঃ (° 1 ° 1\n"
+
+#, fuzzy, no-wrap
+#~ msgid "La instalita firmvaro Indikas:\n"
+#~ msgstr "ইনস্টল করা ফার্মওয়্যার নির্দেশ করে: (° 1 ° 1\n"
+
+#, fuzzy, no-wrap
+#~ msgid "La Procesoro estas: Ingenic T21  \n"
+#~ msgstr "প্রসেসর হল: ইং্যানিক টি 21 (° 1 ° 1  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "http://www.ingenic.com.cn/en/?product/id/11.html  \n"
+#~ msgstr "http://www.ininic.com.cn/en/?product/id/11.html  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "https://en.indasina.com/ingenic-t21-extreme-2-megapixel-encoding-processor_p16.html  \n"
+#~ msgstr ""
+#~ "https://en.indasina.com/ingenic-t21-xtreme-2-megapixel-encoding-processor_p16.html  \n"
+#~ "  \n"
+
+#, fuzzy, no-wrap
+#~ msgid ""
+#~ "La CMOS-sensilo estas: GC2053.   \n"
+#~ "ŝofora Fonto: https://github.com/mrfixit2001/rk-kernel-fork/blob/develop-4.4/drivers/media/i2c/gc2053.c  \n"
+#~ msgstr "সিএমওএস সেন্সরটি হল: GC2053।   \n"
+
+#, fuzzy, no-wrap
+#~ msgid "RAM: 42Mib Intt, 36 MIB Havebla.   \n"
+#~ msgstr "র্যাম: 42 এমবি ইন্টিট, 36 টি এমআইবি উপলব্ধ।    \n"
+
+#, fuzzy, no-wrap
+#~ msgid "La Havedo 9999 estas Malfermita kaj Permesas Regi la Fotilon:  \n"
+#~ msgstr "9999 হেইডো খোলা থাকে এবং ক্যামেরাটি নিয়ন্ত্রণ করার অনুমতি দেয়: (° 1 ° 1  \n"
+
+#, fuzzy, no-wrap
+#~ msgid ""
+#~ "Echo (° 1 ° Checuser -Act Set -USER Admin -Password Admin\"|   \n"
+#~ "Eo (° 1 ° 1 ° listo\"|   \n"
+#~ "Eo (° 1 ° Pelcod203dRL -?   \n"
+#~ "Eo (° 1 ° 1 ° Pelcod203ctrl -type 1\"|   \n"
+#~ msgstr "ইকো (° 1 ° 1 ° 1 ° Checuser -ac সেট -USER অ্যাডমিন -প্যাড অ্যাডমিনওয়ার্ড অ্যাডমিন\"|    \n"
+
+#, fuzzy, no-wrap
+#~ msgid "GPIO-HADENOJ:  \n"
+#~ msgstr "জিপিও-হাদেনস:  \n"
+
+#, fuzzy, no-wrap
+#~ msgid ""
+#~ "46 = Infraredĝaj legoj.   \n"
+#~ "81 = Bluaj leĝoj.   \n"
+#~ msgstr "46 = infraring ব্যাখ্যা।    \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Ptz-Kontrolo:  \n"
+#~ msgstr "PTZ নিয়ন্ত্রণ:  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Supro: http: // admin: admin@192.168.24.39/? Jcpcmd = pelcod20ctrl -type 1 -cmd 1 -gata1 24 -gata2 24  \n"
+#~ msgstr "শীর্ষ: http: // admin: admin@192.168.24.39/?   \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Msalru: http: // admin: admin@192.168.24.39/? Jcpcmd = pelcod203crl -type 1 -cmd 2 -gata1 24-gafu2 24  \n"
+#~ msgstr "Msalkru: http: // admin: admin@192.168.24.39/?   \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Maldekstre: http: // admin: admin@192.168.24.39/? Jcpcmd = pelcod203crl -type 1 -cmd 3 -gata1 24 -gata2 24  \n"
+#~ msgstr "বাম: http: // admin: admin@192.168.24.39/?   \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Dekstre: http: // admin: admin@192.168.24.39/? JCPCMD = Pelcod203crl -Type 1 -CMD 4 -Data1 24 -Atata2 24  \n"
+#~ msgstr "ডানদিকে: http: // admin: admin@192.168.24.39/?   \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Halto: http: // admin: admin@192.168.24.39/? Jcpcmd = pelcod203crl -type 1 -cmd 9 -gata1 24-Data2 24  \n"
+#~ msgstr "স্টপ করুন: http: // admin: admin@192.168.24.39/?   \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Starigigu pozicion 2: http://192.168.24.39/?jcpcmd=pelcod20ctl -type 2 -cmd 1 -gata2 2  \n"
+#~ msgstr "সেট অবস্থান 2: http://192.168.24.39/  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Iru al 1: http://192.168.24.39/?JJcpcmd=pelcod203trl -type 2 -cmd 2 -gata2 1  \n"
+#~ msgstr "1: http://192.168.24.39//192.168.24.39/?jJCPCMD=PELCOD203TRL -TYPE 2 -CMD 2 -GATA2 1  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Forigi 2: http://192.168.24.39/?jcpcmd=pelCod203trl -Type 2 -CMD 3 -Data2 2  \n"
+#~ msgstr "অপসারণ 2: http://192.168.24.39/?jcpcmd=pelcod203trl -type 2 -CMD 3 -DATA2 2  \n"
 
 #, fuzzy
 #~ msgid ""

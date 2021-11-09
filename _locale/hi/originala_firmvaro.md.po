@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-10-30 11:05+0200\n"
+"POT-Creation-Date: 2021-11-09 15:12+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -56,7 +56,7 @@ msgstr "खुले बंदरगाह"
 #: originala_firmvaro.md:11
 #, fuzzy, no-wrap
 msgid "TCP: 80(http), 443(HTP ankaŭ!), 554(RTSP), 8004, 8006, 9527(Telnetd), 9999  \n"
-msgstr "टीसीपी: 80 (डिग्री 0001 डिग्री) HTTP (° 0002 डिग्री), 443 (डिग्री 0003 डिग्री) एचटीपी भी! (° 0004 डिग्री), 554 (000 0005 डिग्री) आरटीएसपी (डिग्री 0006 डिग्री), 8004, 8006, 9527 (डिग्री 0007 डिग्री) टेलिडीड (डिग्री 0008 डिग्री), 99 99 (डिग्री 000 9 डिग्री)  \n"
+msgstr "टीसीपी: 80 <एच 1> http ), 443 ( htp भी!   \n"
 
 #. type: Plain text
 #: originala_firmvaro.md:13
@@ -86,7 +86,7 @@ msgstr "पोर्ट 443: HTTP  \n"
 #: originala_firmvaro.md:19
 #, fuzzy, no-wrap
 msgid "http: // ip: 443: ensaluto: _admin:_, pasvorto: _admin_\n"
-msgstr "http: // आईपी: 443: लॉगिन: (डिग्री 0001 डिग्री), पासवर्ड: (° 0003 डिग्री) (डिग्री 0005 डिग्री)\n"
+msgstr "http: // ip: 443: लॉगिन:  _admin:_, पासवर्ड:  _admin_ \n"
 
 #. type: Plain text
 #: originala_firmvaro.md:20
@@ -98,7 +98,7 @@ msgstr "पोर्ट 554: आरटीएसपी (डिग्री 0001 �
 #: originala_firmvaro.md:22
 #, fuzzy, no-wrap
 msgid "Ĉefa fluo: \n"
-msgstr "मुख्य वर्तमान: (° 0001 डिग्री) \n"
+msgstr "मुख्य वर्तमान:  \n"
 
 #. type: Plain text
 #: originala_firmvaro.md:28
@@ -168,13 +168,13 @@ msgstr "पोर्ट 9527: टेलनेट (डिग्री 0001 डि
 #: originala_firmvaro.md:48
 #, fuzzy, no-wrap
 msgid "`telnetd IP 9527` : Ensalutu: _root_, pasvorto: _jco66688_, alirebla dum 5 minutoj, fermiĝis post.  \n"
-msgstr "`telnetd IP 9527` : लॉगिन: (° 0003 डिग्री), पासवर्ड: (डिग्री 0005 डिग्री), 5 मिनट के लिए सुलभ, के बाद बंद।  \n"
+msgstr "`telnetd IP 9527` : लॉगिन:  _root_, पासवर्ड:  _jco66688_, 5 मिनट के लिए सुलभ, बंद के बाद।   \n"
 
 #. type: Plain text
 #: originala_firmvaro.md:49
 #, fuzzy, no-wrap
 msgid "Ne esti malkonektita post 5 minutoj: `killall -9 auto_run.sh`  \n"
-msgstr "5 मिनट के बाद डिस्कनेक्ट नहीं होना चाहिए: (° 0001 डिग्री) (° ° 0004 डिग्री)\n"
+msgstr "5 मिनट के बाद डिस्कनेक्ट नहीं किया जाना चाहिए:  `killall -9 auto_run.sh`   \n"
 
 #. type: Plain text
 #: originala_firmvaro.md:51
@@ -358,21 +358,9 @@ msgid ""
 "* devinfo = jcoxa***************************************************\n"
 "* bootargs = konzolo = ttyS1,115200n8 mem = 42M @ 0x0 rmem = 22M @ 0x2A00000 init = / linuxrc rootfstype = squashfs root = / dev / mtdblock3 flash = SF sensor = GC2053 maxheight = 1080 device\\_id =*********** ethaddr =**:**:**:**:**:** devinfo = jcoxa*************************************************** cpu = T21 ddr = 64M mtdparts = jz\\_sfc: 256K @ 0K(sf-bootloader), 32K @ 256K(sf-bootenv), 1440K @ 288K(sf-kernel), 832K @ 1728K(sf-rootfs), 4928K @ 2560K(sf-ipcfs), 704K @ 7488 K(sf-miscfs)\n"
 msgstr ""
-"mtdblock1 में विकल्प:\n"
-"* बॉड दर = 115200\n"
-"* bootcmd = sf जांच; sf 0x80600000 0x48000 0x280000 पढ़ें; bootm 0x80600000\n"
-"* bootdelay = 1\n"
-"* ethact = Jz4775-9161\n"
-"* गेटवे = 192.168.2.1\n"
-"* ipaddr = 192.168.2.84\n"
-"* लोड\\_eoo = 1\n"
-"* (net 00017 °) नेटमीटर = 255.255.255.0\n"
-"° 00019 °) सर्वरिप = 192.168.2.81\n"
-"* stderr = श्रृंखला\n"
-"* स्टड = श्रृंखला\n"
-"* stdout = श्रृंखला00026 °)* ethaddr =**:**:**:**:**:****\n"
-"* डिवाइस\\_id =***********\n"
-"* devinfo = jcoxa**************************************************************) बूटारग्स = कंसोल = ttyS1,115200n8 मेम = 42M @ 0x0 rmem = 22M @ 0x2A00000 init = / linuxrc rootfstype = squashfs root = / dev / mtdblock3 फ़्लैश = SF सेंसर = GC2053 मैक्सहाइट = 1080 डिवाइस\\_आईडी = = 00044 °) ethaddr =**:**:**:**:**:**:** : devinfo = jcoxa*************************************************** cpu = T21 ddr = 64M mtdparts = j z\\_sfc: 256K @ 0K(sf-bootloader), 32K @ 256K(sf-bootenv (° 00056 °, 1440K @ 288K() sf-kernel), 832K @ 1728K(sf-rootfs), 4928K @ 2560K(sf-ipcfs), 704K @ 7488 K() °) sf-miscfs)\n"
+"MTDBLOCK1 में विकल्प: \n"
+" *  Baurato = 115200 \n"
+" *  bootcmd = एस एफ जांच; \n"
 
 #. type: Plain text
 #: originala_firmvaro.md:128
@@ -384,7 +372,7 @@ msgstr "लिनक्स संस्करण:  \n"
 #: originala_firmvaro.md:130
 #, fuzzy, no-wrap
 msgid "Linukso-versio 3.10.14\\_\\_isvp\\_meleagro\\_1.0\\_\\_ (root@localhost.localdomain) (gcc-versio 4.7.2 (Ingenic r2.3.3 2016.12) ) # 3 PREEMPT Sab Jun 22 10:40:55 CST 2019\n"
-msgstr "लिनक्स संस्करण 3.10.14\\_\\_isvp\\_टर्की\\_1.0\\_\\_ (मूल -localhost.localdomain0008 °)(gcc संस्करण 4.7.2 (Ingenic r2.3.3 2016.12) ) # 3 PREEMPT शनि 22 जून 10:40:55 CBS 2019)\n"
+msgstr "लिनक्स संस्करण 3.10.14 \\_ \\_ isvp \\_ melaegro \\_ 1.0 \\_ \\_  ( root@localhost.localdomain )  ( GCC संस्करण 4.7.2  ( इंजेनिक आर 2 .3.3 2016.12 )  )  # 3 Preemp SAB जून 22 10:40:55 CST 2019 \n"
 
 #. type: Plain text
 #: originala_firmvaro.md:142
@@ -431,13 +419,12 @@ msgid ""
 "* _/ipc/lib_ : bibliotekoj\n"
 "  * libimp.so: biblioteko _ingenic_ _IMP_ ( _Ingenic Media Platform_ )\n"
 msgstr ""
-" _/ipc_ (उल्लेखनीय 0003 °)* _/ipc/app/jco\\_server_\n"
-"\n"
-"\n"
-"  * मुख्य कार्यक्रम में उल्लेखनीय फाइलें, मुख्य रूप से http सर्वर, rsp। .. °)* _/ipc/drv_ : लिनक्स चालक\n"
-"  * मोटर।को\n"
-"* * _/ipc/lib_ : पुस्तकालय\n"
-"°)\n"
+" _/ipc_  \n"
+" *  _/ipc/app/jco\\_server_ \n"
+"   *  मुख्य प्रोग्राम में उल्लेखनीय फ़ाइलें, एक ही समय में किए गए सर्वर http, rtsp, ... \n"
+" *  _/ipc/drv_ : लिनक्स ड्राइवर < H14>   *  motor.ko \n"
+" *  _/ipc/lib_ : पुस्तकालय \n"
+"   *  libimp.so: लाइब्रेरी  _ingenic_  _IMP_  (  _Ingenic Media Platform_  )  <h30 >\n"
 
 #. type: Plain text
 #: originala_firmvaro.md:156
@@ -497,56 +484,147 @@ msgstr "कोर समीक्षा:"
 #: originala_firmvaro.md:177
 #, fuzzy, no-wrap
 msgid ""
-"(° 1 ° Informo:\n"
-"    `binwalk mtdblock2.bin`\n"
-"    * Rezulto:\n"
-"decimala deksesuma priskribo\n"
+"*  Informo: \n"
+"     `binwalk mtdblock2.bin` \n"
+"     *  Rezulto: \n"
+" Dekuma deksesuma priskribo \n"
 msgstr ""
-"(° 1 ° 1 ° 1 ° सूचना:\n"
-"    `binwalk mtdblock2.bin`\n"
-"    * परिणाम:\n"
-"परिणाम: दशमलव हेक्साडेसिमल विवरण\n"
+"*   जानकारी:  \n"
+"      `binwalk mtdblock2.bin`  \n"
+"      *   परिणाम:  \n"
+" दशमलव हेक्साडेसिमल विवरण  \n"
 
 #. type: Plain text
-#: originala_firmvaro.md:179
-#, fuzzy, no-wrap
-msgid "0 0x0 Uimage Header, Header Grandeco: 64 Bajtoj, Header CRC: 0x7b9DE864, kreita: 2019-06-22 02:41:00, Bildo Grandeco: 1466358 BYTES, DATA Adreso: 0x80010000, Eniro Punkto: 0x80388340, Datumoj CRC: 0xb83DCA15, OS: Linukso, CPU: MIPS, Bildo Tipo: OS Kernel Bildo, Kunpremo Tipo: LZMA, Bildo Nomo: \"Linukso-3.10.14__. 1.0__]\"(° 7 ° 7 ° 64 0x40 lzma kunpremitaj datumoj, ecoj: 0x5d, vortaro Grandeco: 16777216 bajtoj, nekompresita grandeco: -1 bajtoj\n"
-msgstr "0 0x0 uiMage हेडर, हेडर आकार: 64 बाइट्स, हेडर सीआरसी: 0x7b9de864, बनाया गया: 2019-06-22 02:41:00, छवि का आकार: 1466358 बाइट्स, डेटा पता: 0x80010000, प्रवेश बिंदु: 0x80388340, सीआरसी डेटा: 0xb83dca15, ओएस: लिनक्स, सीपीयू: एमआईपीएस, छवि का प्रकार: ओएस कर्नेल छवि, संपीड़न प्रकार: एलजेएमए, छवि का नाम: (डिग्री 0001 डिग्री) लिनक्स -3.10.14 (डिग्री 0002 डिग्री)।\n"
-
-#. type: Plain text
-#: originala_firmvaro.md:182
+#: originala_firmvaro.md:180
 #, fuzzy, no-wrap
 msgid ""
-"(° 1 ° eltiro de datumoj de MTDBlock2:\n"
-"    `tail -c+65  < mtdblock2.bin >mtdblock2.dataz`\n"
-msgstr "(° 1 MTDBLOCK2 डेटा का निष्कर्षण: (° 0002 डिग्री) (डिग्री 0003 डिग्री) (डिग्री 0007 डिग्री)\n"
+"0 0x0 Uimage Header, Header Grandeco: 64 Bajtoj, Header CRC: 0x7b9DE864, kreita: 2019-06-22 02:41:00, Bildo Grandeco: 1466358 BYTES, DATA Adreso: 0x80010000, Eniro Punkto: 0x80388340, Datumoj CRC: 0xb83DCA15, OS: Linukso, CPU: MIPS, Bildo Tipo: OS Kernel Bildo, Kunpremo Tipo: LZMA, Bildo Nomo:  \" Linux-3.10.14 __ ISVP _turkey_ 1.0 __] \" \n"
+" 64 0X40 LZMA kunpremitaj datumoj, Propraĵoj: 0x5d, vortaro Grandeco: 16777216 bajtoj, kunpremita grandeco: -1 bajtoj \n"
+msgstr "0 0x0 uiMage हेडर, हेडर आकार: 64 बाइट्स, हेडर सीआरसी: 0x7b9de864, बनाया गया: 2019-06-22 02:41:00, छवि का आकार: 1466358 बाइट्स, डेटा पता: 0x80010000, प्रवेश बिंदु: 0x80388340, सीआरसी डेटा: 0xb83dca15, ओएस: लिनक्स, सीपीयू: एमआईपीएस, छवि का प्रकार: ओएस कर्नेल छवि, संपीड़न प्रकार: एलजेएमए, छवि का नाम: <एच 1> लिनक्स -3.10.14  __  आईएसवीपी <एच 3> 1.0 <एच 5> <एच 6> <एच 7> 64 0x40 Lzma संपीड़ित डेटा, गुण: 0x5 डी, शब्दकोश आकार: 16777216 बाइट्स, संपीड़ित आकार: -1 बाइट्स  \n"
 
 #. type: Plain text
-#: originala_firmvaro.md:186
+#: originala_firmvaro.md:184
 #, fuzzy, no-wrap
 msgid ""
-"Kerna eltiro:\n"
-"    `cat mtdblock2.dataz|lzma -d -c -f - >kernel`\n"
-"(° 13 ° ° Listo de ŝoforoj inkluzivita:    `strings kernel|grep \"^drivers\"`\n"
-msgstr "कोर निष्कर्षण: (° 0001 डिग्री) (° 0002 डिग्री) (° 0005 डिग्री) (° 0006 डिग्री)((डिग्री 0006 डिग्री)((° 0006 ° 0 ° 13 ° 13 डिग्री ड्राइवरों की सूची शामिल हैं:    `strings kernel|grep \"^drivers\"`\n"
-
-#. type: Plain text
-#: originala_firmvaro.md:189
-#, fuzzy, no-wrap
-msgid ""
-"Listo de dosieroj:\n"
-"    `strings kernel|grep \"\\.[cChTsS]$\"`\n"
-msgstr "फ़ाइलों की सूची: (° 0001 डिग्री) (डिग्री 0002 डिग्री) (डिग्री 000 9 डिग्री डिग्री)\n"
-
-#. type: Plain text
-#: originala_firmvaro.md:199
-#, fuzzy, no-wrap
-msgid ""
-"(° 30 ° ° 31 ° Listo de simboloj (° 32 ° 32 ° Https://github.com/marin-m/vmlinux-to-lf devus permesi trovi la simbolojn, sed ĝi ne atingas\n"
-". Tablo_token_: 0x3AA1B4\n"
+"*  mtdblock2 data eltiro: \n"
+"     `tail -c+65  < mtdblock2.bin >mtdblock2.dataz` \n"
+" *  Kerna Eltiro: \n"
+" *  \n"
 msgstr ""
-"(° ° ° ° ° ° °। पहुँचता है\n"
-"।\n"
+"*   mtdblock2 तिथि निष्कर्षण:  \n"
+"      `tail -c+65  < mtdblock2.bin >mtdblock2.dataz`  \n"
+"  *   कोर निष्कर्षण:  \n"
+"  *   \n"
+
+#. type: Plain text
+#: originala_firmvaro.md:190
+#, fuzzy, no-wrap
+msgid ""
+" *  Listo de Drivers Inkluditaj: \n"
+"     `strings kernel|grep \"^drivers\"` \n"
+" <H21 > Listo de fontaj dosieroj: \n"
+"     `strings kernel|grep \"\\.[cChTsS]$\"` \n"
+" *  Simbolo-Listo \n"
+" https://github.com/marin-m/vmlinux-to-elf devus helpi trovi simbolojn sed ne ekzistas <H33 > Komenci ebla de kallsyms _token_ Tablo: 0x3AA1B4 \n"
+msgstr ""
+" *   ड्राइवरों की सूची शामिल:  \n"
+"      `strings kernel|grep \"^drivers\"`  \n"
+"  < h21  >  स्रोत फ़ाइलों की सूची:  \n"
+"      `strings kernel|grep \"\\.[cChTsS]$\"`  \n"
+"  *   प्रतीक सूची  \n"
+" https: / / github.com/marin-m/vmlinux-to- प्रतीकों को खोजने में मदद करनी चाहिए, लेकिन kallsyms से  < h33  >  संभव नहीं है  _token_  तालिका: 0x3aaa1b4  \n"
+
+#, fuzzy, no-wrap
+#~ msgid ""
+#~ "(° 1 ° Informo:\n"
+#~ "    `binwalk mtdblock2.bin`\n"
+#~ "    * Rezulto:\n"
+#~ "decimala deksesuma priskribo\n"
+#~ msgstr ""
+#~ "(° 1 ° 1 ° 1 ° सूचना:\n"
+#~ "    `binwalk mtdblock2.bin`\n"
+#~ "    * परिणाम:\n"
+#~ "परिणाम: दशमलव हेक्साडेसिमल विवरण\n"
+
+#, fuzzy, no-wrap
+#~ msgid "0 0x0 Uimage Header, Header Grandeco: 64 Bajtoj, Header CRC: 0x7b9DE864, kreita: 2019-06-22 02:41:00, Bildo Grandeco: 1466358 BYTES, DATA Adreso: 0x80010000, Eniro Punkto: 0x80388340, Datumoj CRC: 0xb83DCA15, OS: Linukso, CPU: MIPS, Bildo Tipo: OS Kernel Bildo, Kunpremo Tipo: LZMA, Bildo Nomo: \"Linukso-3.10.14__. 1.0__]\"(° 7 ° 7 ° 64 0x40 lzma kunpremitaj datumoj, ecoj: 0x5d, vortaro Grandeco: 16777216 bajtoj, nekompresita grandeco: -1 bajtoj\n"
+#~ msgstr "0 0x0 uiMage हेडर, हेडर आकार: 64 बाइट्स, हेडर सीआरसी: 0x7b9de864, बनाया गया: 2019-06-22 02:41:00, छवि का आकार: 1466358 बाइट्स, डेटा पता: 0x80010000, प्रवेश बिंदु: 0x80388340, सीआरसी डेटा: 0xb83dca15, ओएस: लिनक्स, सीपीयू: एमआईपीएस, छवि का प्रकार: ओएस कर्नेल छवि, संपीड़न प्रकार: एलजेएमए, छवि का नाम: (डिग्री 0001 डिग्री) लिनक्स -3.10.14 (डिग्री 0002 डिग्री)।\n"
+
+#, fuzzy, no-wrap
+#~ msgid ""
+#~ "(° 1 ° eltiro de datumoj de MTDBlock2:\n"
+#~ "    `tail -c+65  < mtdblock2.bin >mtdblock2.dataz`\n"
+#~ msgstr "(° 1 MTDBLOCK2 डेटा का निष्कर्षण: (° 0002 डिग्री) (डिग्री 0003 डिग्री) (डिग्री 0007 डिग्री)\n"
+
+#, fuzzy, no-wrap
+#~ msgid ""
+#~ "Kerna eltiro:\n"
+#~ "    `cat mtdblock2.dataz|lzma -d -c -f - >kernel`\n"
+#~ "(° 13 ° ° Listo de ŝoforoj inkluzivita:    `strings kernel|grep \"^drivers\"`\n"
+#~ msgstr "कोर निष्कर्षण: (° 0001 डिग्री) (° 0002 डिग्री) (° 0005 डिग्री) (° 0006 डिग्री)((डिग्री 0006 डिग्री)((° 0006 ° 0 ° 13 ° 13 डिग्री ड्राइवरों की सूची शामिल हैं:    `strings kernel|grep \"^drivers\"`\n"
+
+#, fuzzy, no-wrap
+#~ msgid ""
+#~ "(° 30 ° ° 31 ° Listo de simboloj (° 32 ° 32 ° Https://github.com/marin-m/vmlinux-to-lf devus permesi trovi la simbolojn, sed ĝi ne atingas\n"
+#~ ". Tablo_token_: 0x3AA1B4\n"
+#~ msgstr ""
+#~ "(° ° ° ° ° ° °। पहुँचता है\n"
+#~ "।\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "*  Informo \n"
+#~ "     `binwalk mtdblock2.bin` \n"
+#~ "     *  Rezulto \n"
+#~ " Dekuma deksesuma Priskribo \n"
+#~ msgstr ""
+#~ "*   जानकारी  \n"
+#~ "      `binwalk mtdblock2.bin`  \n"
+#~ "      *   परिणाम  \n"
+#~ " दशमलव हेक्साडेसिमल विवरण  \n"
+
+#, fuzzy
+#~ msgid ""
+#~ "0 0x0 Uimage Header, Header Grandeco: 64 bajtoj, Header CRC: 0x7b9de864, "
+#~ "Kreita: 2019-06-22 02:41:00, bildo Grandeco: 1466358 Bytes, Datumoj "
+#~ "adreso: 0x80010000, Entry Punkto: 0x80388340, Datumoj CRC: 0xb83dca15, "
+#~ "OS: Linukso, CPU: MIPS, Bildo Tipo: VIN Kernel Bildo, Kunpremo Tipo: "
+#~ "LZMA, Bildo Nomo:  \" Linukso-3.10.14 __ ISVP _turkey_ 1.0 __] \" \n"
+#~ " 64 0x40 LZMA Compressed Datumoj: Propraĵoj: 0x5d, Vortaro Grandeco: "
+#~ "16777216 bytes, Kunpremitaj Grandeco: -1 bajtoj \n"
+#~ msgstr ""
+#~ "0 0x0 uiMage हेडर, हेडर आकार: 64 बाइट्स, हेडर सीआरसी: 0x7b9de864, बनाया गया: "
+#~ "2019-06-22 02:41:00, छवि का आकार: 1466358 बाइट्स, डेटा पता: 0x80010000, "
+#~ "प्रवेश बिंदु: 0x80388340, सीआरसी डेटा: 0xb83dca15, ओएस: लिनक्स, सीपीयू: "
+#~ "एमआईपीएस, छवि का प्रकार: विन कर्नेल छवि, संपीड़न प्रकार: एलजेएमए, छवि का नाम:   "
+#~ "\" Linux-3.10.14  __  आईएसवीपी  _turkey_  1.0  __]  \"  \n"
+#~ " 64 0x40 Lzma संपीड़ित डेटा: गुण: 0x5d, शब्दकोश आकार: 16777216 बाइट्स, संपीड़ित "
+#~ "आकार: -1 बाइट्स  \n"
+
+#, fuzzy
+#~ msgid ""
+#~ "*  Datumoj: \n"
+#~ "     `tail -c+65  < mtdblock2.bin >mtdblock2.dataz` \n"
+#~ " *  eltiro: \n"
+#~ "     `cat mtdblock2.dataz|lzma -d -c -f - >kernel` \n"
+#~ " *  listo de \n"
+#~ "     `strings kernel|grep \"^drivers\"` \n"
+#~ " <h21 listo de \n"
+#~ "     `strings kernel|grep \"\\.[cChTsS]$\"` \n"
+#~ " *  liston de \n"
+#~ " sed li ne povas h33> povas komenci kallsyms _token_ tablo: 0x3AA1B4 \n"
+#~ msgstr ""
+#~ "*   डेटा:  \n"
+#~ "      `tail -c+65  < mtdblock2.bin >mtdblock2.dataz`  \n"
+#~ "  *   निष्कर्षण:  \n"
+#~ "      `cat mtdblock2.dataz|lzma -d -c -f - >kernel`  \n"
+#~ "  *    \n"
+#~ "      `strings kernel|grep \"^drivers\"`       `strings kernel|grep "
+#~ "\"^drivers\"`   < H16> <H22 की सूची >      `strings kernel|grep \"\\."
+#~ "[cChTsS]$\"`  \n"
+#~ "  *    \n"
+#~ " की सूची लेकिन वह h33 >  kallsyms प्रारंभ कर सकते हैं  _token_  तालिका: "
+#~ "0x3aaa1b4  \n"
 
 #, no-wrap
 #~ msgid "001-originala_firmvaro"

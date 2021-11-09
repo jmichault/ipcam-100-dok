@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-10-30 11:14+0200\n"
+"POT-Creation-Date: 2021-11-09 15:13+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,16 +42,15 @@ msgstr "page"
 
 #. type: YAML Front Matter: title
 #: imp_audio-programigo_gvidilo.md:1
-#, no-wrap
-#, fuzzy
-msgid "Gvidilo pri Solida Programado"
-msgstr "دليل البرمجة الصلبة"
+#, fuzzy, no-wrap
+msgid "Sono Programado Guide"
+msgstr "دليل البرمجة الصوتية"
 
 #. type: Title #
 #: imp_audio-programigo_gvidilo.md:9
 #, fuzzy, no-wrap
-msgid "IMP_Audio (voir imp_audio.h)"
-msgstr "IMP_Audio (voir imp_audio.h)"
+msgid "Imp _Audio \\(voir imp_ audio.h \\)"
+msgstr "IMP  _Audio \\(voir imp_  Audio.h  \\)"
 
 #. type: Plain text
 #: imp_audio-programigo_gvidilo.md:12
@@ -110,3 +109,11 @@ msgid "Audio-malkodado: La nuna audio-API subtenas son-malkodadon en formatoj PT
 msgstr ""
 "فك تشفير الصوت: تدعم واجهة برمجة تطبيقات الصوت الحالية فك تشفير الصوت بتنسيقات PT_G711A, PT_G711U و PT_G726. Si vous devez ajouter une nouvelle méthode de décodage, vous devez enregistrer le décodeur.\n"
 "\n"
+
+#, fuzzy, no-wrap
+#~ msgid "Gvidilo pri Solida Programado"
+#~ msgstr "دليل البرمجة الصلبة"
+
+#, fuzzy, no-wrap
+#~ msgid "IMP_Audio (voir imp_audio.h)"
+#~ msgstr "IMP_Audio (voir imp_audio.h)"

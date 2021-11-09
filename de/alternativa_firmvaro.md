@@ -29,7 +29,7 @@ title: 'Alternative Firmware'
   * Die LEDs und der Motor werden initialisiert
 
 
-  * Initialisieren Sie ggf. das Verzeichnis usw.
+  * Startet bei Bedarf die   _etc_   -e  
 
 
   * leitet _/bin/busybox_ , _/etc_ und _/root_ auf die SD-Karte um.

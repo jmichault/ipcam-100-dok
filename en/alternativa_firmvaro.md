@@ -29,7 +29,7 @@ title: 'Alternative firmware'
   * the LEDs and the motor are initialized
 
 
-  * initialize the directory etc. if necessary
+  * Starts the   _etc_   file if necessary  
 
 
   * redirects _/bin/busybox_ , _/etc_ and _/root_ to the SD card.

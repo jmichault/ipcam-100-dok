@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-10-30 11:06+0200\n"
+"POT-Creation-Date: 2021-11-09 15:12+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -74,13 +74,13 @@ msgstr "वैकल्पिक फर्मवेयर के साथ:\n"
 #: elpurigi.md:19
 #, fuzzy, no-wrap
 msgid "Lanĉu la SSH-servon de la interreta interfaco\n"
-msgstr "इंटरनेट इंटरफ़ेस (° ° 0001 डिग्री) की एसएसएच सेवा लॉन्च करें\n"
+msgstr "इंटरनेट इंटरफ़ेस  की एसएसएच सेवा लॉन्च करें\n"
 
 #. type: Bullet: '* '
 #: elpurigi.md:21
 #, fuzzy, no-wrap
 msgid "Konekti al la fotilo per `ssh IP` (uzanto _root_, pasvorto _ismart12_).\n"
-msgstr "कैमरे से (° 000 0001 डिग्री) (° 0003 डिग्री) उपयोगकर्ता (° 000 0004 डिग्री), पासवर्ड _ismart12_)द्वारा कनेक्ट करें।\n"
+msgstr " `ssh IP`  ( उपयोगकर्ता  _root_, पासवर्ड  _ismart12_) द्वारा कैमरे से कनेक्ट करें। \n"
 
 #. type: Plain text
 #: elpurigi.md:24
@@ -98,11 +98,11 @@ msgstr "कैमरे का प्रारंभ \"gdbserver\":  \n"
 #: elpurigi.md:29
 #, fuzzy, no-wrap
 msgid ""
-"     `/opt/media/mmcblk0p1/bin/gdbserver localhost:2000 /opt/media/mmcblk0p1/bin/motor`\n"
-"* startu gdb en la komputilo, ekzemple:\n"
+"     `/opt/media/mmcblk0p1/bin/gdbserver localhost:2000 /opt/media/mmcblk0p1/bin/motor` \n"
+" *  Komencu GDB en la komputilo, ekzemple: \n"
 msgstr ""
-"     `/opt/media/mmcblk0p1/bin/gdbserver localhost:2000 /opt/media/mmcblk0p1/bin/motor`\n"
-"* कंप्यूटर पर gdb शुरू करते हैं, उदाहरण के लिए:\n"
+"     `/opt/media/mmcblk0p1/bin/gdbserver localhost:2000 /opt/media/mmcblk0p1/bin/motor`  \n"
+"  *   कंप्यूटर पर जीडीबी शुरू करें, उदाहरण के लिए:  \n"
 
 #. type: Plain text
 #: elpurigi.md:39
@@ -116,7 +116,7 @@ msgid ""
 "    handle SIG32 nostop\n"
 "    break xxx\n"
 "    continue \n"
-"    ```\n"
+"    ``` \n"
 msgstr ""
 "    ```\n"
 "    cd programada_medio/toolchain\n"
@@ -126,7 +126,46 @@ msgstr ""
 "    handle SIG32 nostop\n"
 "    break xxx\n"
 "    continue \n"
-"    ```\n"
+"    ```  \n"
+
+#, fuzzy, no-wrap
+#~ msgid ""
+#~ "     `/opt/media/mmcblk0p1/bin/gdbserver localhost:2000 /opt/media/mmcblk0p1/bin/rtsp_server /opt/media/mmcblk0p1/www/ipcam/config\n"
+#~ "* démarrer gdb sur l'ordinateur, par exemple :\n"
+#~ msgstr ""
+#~ "     `/opt/media/mmcblk0p1/bin/gdbserver localhost:2000 /opt/media/mmcblk0p1/bin/rtsp_server /opt/media/mmcblk0p1/www/ipcam/config\n"
+#~ "* démarrer gdb sur l'ordinateur, par exemple :\n"
+#~ "\n"
+
+#, fuzzy, no-wrap
+#~ msgid ""
+#~ "     `/opt/media/mmcblk0p1/bin/gdbserver localhost:2000 /opt/media/mmcblk0p1/bin/motor`\n"
+#~ "* startu gdb en la komputilo, ekzemple:\n"
+#~ msgstr ""
+#~ "     `/opt/media/mmcblk0p1/bin/gdbserver localhost:2000 /opt/media/mmcblk0p1/bin/motor`\n"
+#~ "* कंप्यूटर पर gdb शुरू करते हैं, उदाहरण के लिए:\n"
+
+#, fuzzy, no-wrap
+#~ msgid ""
+#~ "    ```\n"
+#~ "    cd programada_medio/toolchain\n"
+#~ "    bin/mips-linux-uclibc-gnu-gdb ../fontoj/motor/motor \n"
+#~ "    target remote 192.168.xxx.xxx:2000\n"
+#~ "    handle SIGPIPE nostop\n"
+#~ "    handle SIG32 nostop\n"
+#~ "    break xxx\n"
+#~ "    continue \n"
+#~ "    ```\n"
+#~ msgstr ""
+#~ "    ```\n"
+#~ "    cd programada_medio/toolchain\n"
+#~ "    bin/mips-linux-uclibc-gnu-gdb ../fontoj/motor/motor \n"
+#~ "    target remote 192.168.xxx.xxx:2000\n"
+#~ "    handle SIGPIPE nostop\n"
+#~ "    handle SIG32 nostop\n"
+#~ "    break xxx\n"
+#~ "    continue \n"
+#~ "    ```\n"
 
 #, no-wrap
 #~ msgid "020-elpurigi"

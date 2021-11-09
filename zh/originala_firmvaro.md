@@ -9,7 +9,7 @@ title: 原始固件
 # 打开端口
 
 TCP：80(HTTP)，443(HTP也！)，554(RTSP)，8004,8006,9527(，9999  
-UDP：67(DHCP)，3702,8002,39642（°3°3
+UDP：67 ( DHCP )，3702,8002,39642 
 
 端口80：HTTP  
 http：// ip：登录: _admin:_，密码： _admin_
@@ -51,7 +51,7 @@ http：// ip：443：登录: _admin:_，密码： _admin_
 
 端口9527：Telnet  
 `telnetd IP 9527` ：登录: _root_，密码： _jco66688_，可访问5分钟，关闭后。  
-5分钟后不断开： `killall -9 auto_run.sh`  （°4°4
+5分钟后不要断开： `killall -9 auto_run.sh`   
 停止JCO_server : 
  
  
@@ -194,29 +194,21 @@ Linux版本3.10.14\_\_isvp\_火鸡\_1.0\_\_ (root@localhost.localdomain) (gcc版
 
 
 # 核心审查：
-（°1°1°的信息：
-    `binwalk mtdblock2.bin`
-    * 
+*   信息： 
+      `binwalk mtdblock2.bin`  
+      *   结果： 
+ Decimal 十六进制描述  
 --------------------------------------------------------------------------------
-0 0x0 uimage标题，标题大小：64字节，标题CRC：0x7b9de864，创建：2019-06-22 02:41:00，图像尺寸：1466358字节，数据地址：0x80010000，入口点：0x80388340，CRC数据：0xB83DCA15， OS：Linux，CPU：MIPS，图像类型：OS内核图像，压缩类型：LZMA，图像名称： "Linux-3.10.14__。
+0 0x0 Uimage Header, Header Size: 64 Bytes, Header CRC: 0x7b9DE864, created: 2019-06-22 02:41:00, Image Size: 1466358 BYTES, DATE Address: 0x80010000, Entry: 0x80010000, Entry: 0x7b9DE864, 2019-06-22 02:41:00操作系统：Linux，CPU：MIPS，镜像类型：操作系统内核镜像，压缩类型：LZMA，镜像名称：  " Linux-3.10.14  __  ISVP  _turkey_  1.0  __]  "  
+ 64 0X40 LZMA 压缩数据，属性：0x5d，字典大小：16777216 字节，压缩大小：-1 字节  
 
-（°1°1°1°1°提取MTDBLOCK2的数据：
-    `tail -c+65  < mtdblock2.bin >mtdblock2.dataz`
-
-核心提取：
-
-（°5°5°6°13°13°13°导体列表：    `strings kernel|grep "^drivers"`
-
-文件列表：
-    `strings kernel|grep "\.[cChTsS]$"`
-
-
-
-
-
-
-
-
-
-（°1°。到达
-。
+*   mtdblock2 数据提取： 
+      `tail -c+65  < mtdblock2.bin >mtdblock2.dataz`  
+  *   核心提取： 
+  *   
+ *   包含的驱动程序列表： 
+      `strings kernel|grep "^drivers"`  
+  < H21  >  源文件列表： 
+      `strings kernel|grep "\.[cChTsS]$"`  
+  *   符号列表  
+ https:// github.com/marin-m/vmlinux-to-elf 应该有助于查找符号但不存在  < H33  >  开始使用 kallsyms  _token_  表：0x3AA1B4  

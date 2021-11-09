@@ -9,7 +9,7 @@ title: 'Firmware asal'
 # pelabuhan terbuka
 
 TCP: 80(HTTP), 443(HTP juga!), 554(RTSP), 8004, 8006, 9527(, 9999  
-UDP: 67(DHCP), 3702, 8002, 39642 (° 3 ° 3
+UDP: 67 ( DHCP ), 3702, 8002, 39642 
 
 Port 80: http  
 http: // ip: Log masuk: _admin:_, Kata laluan: _admin_
@@ -51,7 +51,7 @@ pelabuhan 8006:? , dibuka oleh jco_server
 
 Port 9527: Telnet  
 `telnetd IP 9527` : Log masuk: _root_, Kata laluan: _jco66688_, boleh diakses selama 5 minit, ditutup selepas.  
-Tidak boleh diputuskan selepas 5 minit: `killall -9 auto_run.sh`  (° 4 ° 4
+Jangan putuskan sambungan selepas 5 minit:  `killall -9 auto_run.sh`   
 Untuk menghentikan JCO_server : 
  
  
@@ -194,27 +194,21 @@ fail terkenal dalam _/ipc_ :
 
 
 # Kajian Teras:
-(
-
+*   Maklumat:  
+      `binwalk mtdblock2.bin`  
+      *   Keputusan:  
+ Perihalan perenambelasan perpuluhan  
 --------------------------------------------------------------------------------
-0 0x0 Header Uimage, Saiz Header: 64 Bytes, Header CRC: 0x7b9de864, Dibuat: 2019-06-22 02:41:00, Saiz Imej: 1466358 Bytes, Data Alamat: 0x80010000, Point Entrance: 0xb83dca15, OS: Linux, CPU: MIPS, Jenis Imej: Imej Kernel OS, Jenis Pemampatan: LZMA, Nama imej: "Linux-3.10.14__.
+Pengepala Uimage 0 0x0, Saiz Pengepala: 64 Bait, CRC Pengepala: 0x7b9DE864, dicipta: 2019-06-22 02:41:00, Saiz Imej: 1466358 BYTES, Alamat TARIKH: 0x80010000, Titik Kemasukan: 0x80010000, Titik Kemasukan: 0x80010000, Titik Kemasukan: 0x8bDC: 8b8x: 8b80x800 OS: Linux, CPU: MIPS, Jenis Imej: Imej Kernel OS, Jenis Mampatan: LZMA, Nama Imej:   " Linux-3.10.14  __  ISVP  _turkey_  1.0  __]  "  
+ 64 0X40 Data mampat LZMA, Sifat: 0x5d, Saiz Kamus: 16777216 bait, saiz mampat: -1 bait  
 
-(° 1 ° 1 ° 1 ° Pengekstrakan data mtdblock2:
-    `tail -c+65  < mtdblock2.bin >mtdblock2.dataz`
-
-Core Extraction:
-(° 5 ° 5 ° 6 ° 13 ° 13 ° Senarai konduktor termasuk:    `strings kernel|grep "^drivers"`
-
-Senarai fail:
-    `strings kernel|grep "\.[cChTsS]$"`
-
-
-
-
-
-
-
-
-
-(° 1 °. Reaches
-.
+*   pengekstrakan data mtdblock2:  
+      `tail -c+65  < mtdblock2.bin >mtdblock2.dataz`  
+  *   Pengekstrakan Teras:  
+  *   
+ *   Senarai Pemacu Disertakan:  
+      `strings kernel|grep "^drivers"`  
+  < H21  >  Senarai fail sumber:  
+      `strings kernel|grep "\.[cChTsS]$"`  
+  *   Senarai Simbol  
+ https: / / github.com/marin-m/vmlinux-to-elf sepatutnya membantu mencari simbol tetapi tidak wujud  < H33  >  Bermula dengan kallsyms  _token_  Jadual: 0x3AA1B4  

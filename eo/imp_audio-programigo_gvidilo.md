@@ -3,10 +3,10 @@ lang: eo
 lang-niv: auto
 lang-ref: 053-audio-programigo_gvidilo
 layout: page
-title: 'Gvidilo pri Solida Programado'
+title: 'Sono Programado Guide'
 ---
 
-# IMP_Audio (voir imp_audio.h)
+# Imp _Audio \(voir imp_ audio.h \)
 
 Audio-modulo, inkluzive de registrado kaj reprodukto, audio-kodeko, volumena kaj gajna agordoj, e echa nuligo, aŭtomata gajno kaj aliaj funkcioj.
 

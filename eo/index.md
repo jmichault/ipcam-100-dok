@@ -29,39 +29,39 @@ videosensilo: _GC2053_
 
 ## Kio Funkcias en Alternativa Firmware:
 
-* _LAN_ kaj _WLAN_
+* _LAN_  kaj  _WLAN_ 
 
-* Servilo (° 1 ° duobla-fluo: _1920x1080 H264_ kaj _640x360 MJPEG_ defaŭlte. 
+* Servilo  _RTSP_  Duobla-rivereto:  _1920x1080 H264_  kaj  _640x360 MJPEG_  Defaŭlte. 
 
 * Vidaj parametroj
 
-* Servilo _HTTP_
+* Servilo  _HTTP_ 
 
 * motora kontrolo
 
 * motora kalibrado
 
-* Parametroj _PTZ_
+* Agordoj  _PTZ_ 
 
-* Kliento _NTP_
+* Kliento  _NTP_ 
 
-* Pasvorta administrado _http_, _rtsp_ kaj sistemo. 
+* administri pasvortoj  _http_,  _rtsp_  kaj sistemo. 
 
-* Blanka LED-Kontrolo kaj IR
+* blankaj LED kontrolo kaj IR 
 
-* Blanka LED-Kontrolo kaj IR _ftp_
+* blankaj LED kontrolo kaj IR  _ftp_
 
-* Blanka LED-Kontrolo kaj IR _telnet_
+* blankaj LED kontrolo kaj IR  _telnet_
 
-* Servilo kaj kliento _ssh_
+* Servilo kaj Kliento  _ssh_ 
 
 * movado-detekto
 
 * sendante retpoŝton
 
-* Sendi _«telegram»_
+* Sendante  _«telegram»_ 
 
-* Aŭtomata nokta reĝimo
+* aŭtomata nokto mode 
 
 
 ## Kio ne estas efektivigita en la alternativa firmware:
@@ -76,7 +76,7 @@ videosensilo: _GC2053_
 
 * sendante retpoŝton_mqtt_
 
-* Sendante bildojn kaj videojn en nubo
+* sendo bildojn kaj filmetoj en la nubo 
 
 * ktp ...
 
@@ -87,7 +87,7 @@ videosensilo: _GC2053_
 
 * Eble agordi la reton ( _www/ipcam/config.dist/reto.conf_ )
 
-* Enmetu la karton _microSD_ en la fotilon. 
+* Enmeti la karton  _microSD_  en la fotilo. 
 
 * Konekti la fotilon al via loka reto kaj ŝalti la fotilon.
 
@@ -99,7 +99,7 @@ videosensilo: _GC2053_
 
 * Faru `cd /opt/media/mmcblk0p1;./install.sh`
 
-* La fotilo rekomencas, nun:
+* La fotilo reboots nun: 
 
     * Vi povas konektiĝi al la URL _https://IP_ (uzanto _admin_, pasvorto _ismart21_).
 
@@ -109,10 +109,10 @@ videosensilo: _GC2053_
 
     * La sekundara video-fluo estas alirebla ĉe _rtsp://admin:ismart21@IP/stream2_.
 
-(° 1 ° WiFi AP-reĝimo estas aktivigita defaŭlte:
-    ** SSID: IPCAM100-XXXXXX
-    ** WPA2-ŝlosilo: ismart21
-IP-adreso de la fotilo: 172.25.0.1
+    *  WiFi AP-reĝimo estas ebligita defaŭlte: 
+     **  SSID: IPCAM100-XXXXX 
+     **  WPA2-klavo: ismart21 
+     **  IP-adreso de la fotilo: 172.25.0.1 
 
 ## Malinstalanta Alternativan Firmware:
 
@@ -128,8 +128,9 @@ IP-adreso de la fotilo: 172.25.0.1
 
 # Interesaj dokumentoj
 
-Multa laboro estis farita por fotiloj ekipitaj per procesoro _ingenic T20_ :
-* modifita firmware: <https://github.com/eliaskotlyar/xiaomi- dafang -Hacks>
-* Fontoj de la modifita firmware: <https://github.com/dafang-hacks/main>
-17 °) https://github.com/thatusenameAlreadyExist/Jco-pm203-fisheye-ingenic-t20-p2p-camera-hacks>
+Multa laboro estis farita por fotiloj ekipitaj per procesoro  _ingenic T20_ : 
+ *  modifita firmware:  <https://github.com/EliasKotlyar/Xiaomi-Dafang-Hacks> 
+ *  Fontoj de la modifita firmware:  <https://github.com/Dafang-Hacks/Main> 
+ *  Aliaj firmware:  <https://github.com/openmiko/openmiko> 
+ *  Lanĉaj Programoj Sen Ŝanĝi la Firmware:  <https://github.com/ThatUsernameAlreadyExist/JCO-PM203-Fisheye-Ingenic-T20-P2P-camera-hacks> 
 

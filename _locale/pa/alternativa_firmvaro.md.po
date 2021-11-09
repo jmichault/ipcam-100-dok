@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-10-30 11:15+0200\n"
+"POT-Creation-Date: 2021-11-09 15:13+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -97,8 +97,8 @@ msgstr "ਐਲ.ਈ.ਡੀ. ਅਤੇ ਮੋਟਰ ਚਾਲੂ ਹੋ ਜਾਂ�
 #. type: Bullet: '  * '
 #: alternativa_firmvaro.md:27
 #, fuzzy, no-wrap
-msgid "pravalorizas la adresaron ktp se necese\n"
-msgstr "ਜੇ ਜਰੂਰੀ ਹੋਵੇ ਤਾਂ ਡਾਇਰੈਕਟਰੀ ਆਦਿ ਅਰੰਭ ਕਰੋ\n"
+msgid "Komencas la dosieron  _etc_  se necese \n"
+msgstr "ਜੇ ਜਰੂਰੀ ਹੈ  \n"
 
 #. type: Bullet: '  * '
 #: alternativa_firmvaro.md:29
@@ -123,6 +123,10 @@ msgstr " _config/autostart_)ਵਿਚ ਸੇਵਾਵਾਂ (ਚਾਲੂ ਕਰ
 #, fuzzy, no-wrap
 msgid "komenci uzantajn skriptojn (en _config/userscripts_)\n"
 msgstr "ਸਕ੍ਰਿਪਟਾਂ ( _config/userscripts_)ਦੀ ਵਰਤੋਂ ਕਰਨਾ ਅਰੰਭ ਕਰੋ\n"
+
+#, fuzzy, no-wrap
+#~ msgid "pravalorizas la adresaron ktp se necese\n"
+#~ msgstr "ਜੇ ਜਰੂਰੀ ਹੋਵੇ ਤਾਂ ਡਾਇਰੈਕਟਰੀ ਆਦਿ ਅਰੰਭ ਕਰੋ\n"
 
 #, no-wrap
 #~ msgid "099-alternativa_firmvaro"

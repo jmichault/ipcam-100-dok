@@ -6,7 +6,7 @@ layout: page
 title: プレゼンテーション
 ---
 
-このプロジェクトの目的は、このカメラの代替のファームウェアを作成することです。（°1°1
+このプロジェクトの目的はこのカメラの代替ファームウェアを作成することです。
 
 マーク= _WIFI CARAM_  
 モデル： _WF-HD820-ZS_  
@@ -29,16 +29,16 @@ WebVersion: V2.3.4-20190709
 
 ## 代替ファームウェアで機能するもの：
 
-* _LAN_ と _WLAN_
+* _LAN_  と  _WLAN_  
 
 
-* サーバー (°1°二重流： _1920x1080 H264_ 、 _640x360 MJPEG_ デフォルトで。  
+* サーバー  _RTSP_   Double Stream：  _1920x1080 H264_  と  _640x360 MJPEG_  デフォルトで。  
 
 
 * 視覚的パラメータ
 
 
-* サーバー _HTTP_
+* サーバー  _HTTP_  
 
 
 * エンジン制御
@@ -47,25 +47,25 @@ WebVersion: V2.3.4-20190709
 * エンジンキャリブレーション
 
 
-* パラメータ _PTZ_
+* 設定  _PTZ_  
 
 
-* クライアント _NTP_（°3°3
+* クライアント  _NTP_  
 
 
-* パスワード管理 _http_、 _rtsp_ およびシステム。  
+* パスワードを管理します。  _http_、  _rtsp_  、およびシステム。  
 
 
-* 白色LED制御とIR
+* 白色LED制御とIR  
 
 
-* 白色LED制御とIR _ftp_
+* 白色LED制御とIR   _ftp_ 
 
 
-* 白色LED制御とIR _telnet_
+* 白色LED制御とIR   _telnet_ 
 
 
-* サーバーとクライアント _ssh_（°3°3
+* サーバーとクライアント  _ssh_  
 
 
 * 動き検出
@@ -74,10 +74,10 @@ WebVersion: V2.3.4-20190709
 * メール送信
 
 
-*  _«telegram»_を送る
+* 送信  _«telegram»_  を送信します
 
 
-* 自動ナイトレジーム
+* 自動ナイトモード 
 
 
 
@@ -98,7 +98,7 @@ WebVersion: V2.3.4-20190709
 * メールの送信_mqtt_
 
 
-* 画像とビデオをクラウドで送信する（°1°1
+* クラウド内の出荷イメージとビデオ 
 
 
 * など...
@@ -113,7 +113,7 @@ WebVersion: V2.3.4-20190709
 * おそらくネットワーク ( _www/ipcam/config.dist/reto.conf_ )を設定します
 
 
-* カメラにカード _microSD_ を入力してください。  
+* カメラにカード  _microSD_  を挿入します。  
 
 
 * カメラをローカルネットワークに接続し、カメラの電源を入れます。
@@ -131,7 +131,7 @@ WebVersion: V2.3.4-20190709
 * ファル `cd /opt/media/mmcblk0p1;./install.sh`
 
 
-* カメラが再開されます：（°1°1
+* 今すぐカメラを再起動します。 
 
 
     * URL _https://IP_ (ユーザー _admin_、パスワード _ismart21_)に接続できます。
@@ -140,16 +140,16 @@ WebVersion: V2.3.4-20190709
     * SSH (ユーザー _admin_、パスワード _ismart12_)で接続できます。
 
 
-    * プライマリビデオ電流は _rtsp://admin:ismart21@IP/stream1_でアクセス可能です。 （°3°3
+    * プライマリビデオ電流は _rtsp://admin:ismart21@IP/stream1_でアクセス可能です。 
 
 
-    * 二次ビデオ電流は _rtsp://admin:ismart21@IP/stream2_でアクセス可能です。 （°3°3
+    * 二次ビデオフローは _rtsp://admin:ismart21@IP/stream2_でアクセス可能です。 
 
 
-（°1°1°1 WiFi APモードがデフォルトで活性化されます。
-    ** SSID：IPCAM100-XXXXXX
-    ** °5°）WPA2キー：ISMART21
-カメラのIPアドレス：172.25.0.1
+    *   WiFi APモードはデフォルトで有効になっています。 
+      **   SSID：IPCAM100-XXXXX  
+      **   wpa2キー：ISMART21  
+      **   IPアドレスカメラのIPアドレス：172.25.0.1  
 
 ## 代替ファームウェアのアンインストール：
 
@@ -169,8 +169,7 @@ WebVersion: V2.3.4-20190709
 
 # 興味深い文書
 
-プロセッサ _ingenic T20_ を搭載したカメラ用の多くの作業が行われました。
-* 修正ファームウェア： <https://github.com/ilílístotlyar/xiaomi- DAFANG -HAK>>
-修正ファームウェアのソース： <https://github.com/dafang-hacks/main>
-）17°) HTTPS：//Github.com/ThatusEnameAnamexist/jco-pm203-fisheye-ininic-t20-p2p-カメラ - ハック>
+修正ファームウェアのプロセッサを搭載したカメラの作業が行われています。  <https://github.com/EliasKotlyar/Xiaomi-Dafang-Hacks>  
+  *    *  その他のファームウェア：   <https://github.com/openmiko/openmiko>  
+  *  ファームウェアを変更せずにプログラムを起動します。  <https://github.com/ThatUsernameAlreadyExist/JCO-PM203-Fisheye-Ingenic-T20-P2P-camera-hacks>  
 

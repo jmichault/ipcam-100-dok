@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-10-30 11:14+0200\n"
+"POT-Creation-Date: 2021-11-09 15:13+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,16 +42,15 @@ msgstr "page"
 
 #. type: YAML Front Matter: title
 #: imp_audio-programigo_gvidilo.md:1
-#, no-wrap
-#, fuzzy
-msgid "Gvidilo pri Solida Programado"
-msgstr "ਠੋਸ ਪ੍ਰੋਗਰਾਮਿੰਗ ਗਾਈਡ"
+#, fuzzy, no-wrap
+msgid "Sono Programado Guide"
+msgstr "ਸਾ sound ਂਡ ਪ੍ਰੋਗਰਾਮਿੰਗ ਗਾਈਡ"
 
 #. type: Title #
 #: imp_audio-programigo_gvidilo.md:9
 #, fuzzy, no-wrap
-msgid "IMP_Audio (voir imp_audio.h)"
-msgstr "ਆਈਐਮਪੀ_Audio (voir imp_ਆਡਿਓ. ਐਚ.)"
+msgid "Imp _Audio \\(voir imp_ audio.h \\)"
+msgstr "ਭਾਵ  _Audio \\(voir imp_  ਆਡੀਓ.  \\)"
 
 #. type: Plain text
 #: imp_audio-programigo_gvidilo.md:12
@@ -110,3 +109,11 @@ msgid "Audio-malkodado: La nuna audio-API subtenas son-malkodadon en formatoj PT
 msgstr ""
 "ਆਡੀਓ ਡੀਕੋਡਿੰਗ: ਮੌਜੂਦਾ ਆਡੀਓ ਏਪੀਆਈ ਪੀਟੀ_G711A, PT_ਜੀ 711 ਯੂ ਅਤੇ ਪੀਟੀ_G726. Si vous devez ajouter une nouvelle méthode de décodage, vous devez enregistrer le décodeur.\n"
 "ਫਾਰਮੈਟਾਂ ਵਿੱਚ ਆਡੀਓ ਡੀਕੋਡਿੰਗ ਦਾ ਸਮਰਥਨ ਕਰਦੀ ਹੈ\n"
+
+#, fuzzy, no-wrap
+#~ msgid "Gvidilo pri Solida Programado"
+#~ msgstr "ਠੋਸ ਪ੍ਰੋਗਰਾਮਿੰਗ ਗਾਈਡ"
+
+#, fuzzy, no-wrap
+#~ msgid "IMP_Audio (voir imp_audio.h)"
+#~ msgstr "ਆਈਐਮਪੀ_Audio (voir imp_ਆਡਿਓ. ਐਚ.)"

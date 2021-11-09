@@ -29,8 +29,8 @@ Quindi, qualunque sia il firmware:
 * inizio "gdbserver"della telecamera, ad es. :  
 
 
-     `/opt/media/mmcblk0p1/bin/gdbserver localhost:2000 /opt/media/mmcblk0p1/bin/motor`
-* avvia gdb sul computer, ad esempio:
+     `/opt/media/mmcblk0p1/bin/gdbserver localhost:2000 /opt/media/mmcblk0p1/bin/motor`  
+  *   Avvia GDB sul computer, ad esempio:  
 
     ```
     cd programada_medio/toolchain
@@ -40,7 +40,7 @@ Quindi, qualunque sia il firmware:
     handle SIG32 nostop
     break xxx
     continue 
-    ```
+    ```  
 
 
 

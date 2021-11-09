@@ -1,20 +1,25 @@
 ---
-lang: eo
-lang-niv: homa
+lang: it
+lang-niv: auto
 lang-ref: 061-originala_firmvaro
 layout: page
-title: 'Funkciado de la originala firmware'
+title: 'Funzionamento del firmware originale'
 ---
 
+Il firmware è composto da 6 vandali:  
 
+| Partizione |. Tipo | Role |.  
+ | ----------- | ------------------------ |. -------------- |  
+ |   _mtdblock0_   |   _u-boot_                 | Avvio |.  
+ |   _mtdblock1_   | Testo |. Impostazioni |.  
+ |   _mtdblock2_   |   _u-boot legacy uImage_   | Core   _linux_   |  
+ |   _mtdblock3_   |   _squashfs_               |   _/_             |  
+ |   _mtdblock4_   |   _squashfs_               |   _/ipc_          |  
+ |   _mtdblock5_   |   _jffs1_                  |   _/opt_          | . 
 
-La firstvaro konsistas el 6 sektoroj:
-mtdblock0 = u-boot ŝargilo
-mtdblock1 = startagordo
-mtdblock2 = "U-boot Legacy UImage", Linukso-Kerno
-mtdblock3 = Squashfs = /
-mtdblock4 = squashfs = / iPC
-mtdblock5 = jffs2 = / elekti
-
-La startprogramo estas "/ linuxrc". 
+Il primo programma eseguito è   _/linuxrc_.    
+ lancia   _/etc/init.d/rcS_.    
+ _/etc/init.d/rcS_   Avvia   _/ipc/etc/auto\_run.sh_.    
+ _/ipc/etc/auto\_run.sh_   LANCO   _/opt/etc/local.rc_   Prima del lancio   _/ipc/app/jco\_server_.    
+ _/ipc/app/jco\_server_   è il programma principale: Serve sia   _rtsp_  Server, Server   _http_, ...  
 

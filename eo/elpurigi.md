@@ -24,8 +24,8 @@ Tiam, kia ajn la firmvaro:
 
 * starti "gdbserver" de la fotilo, ekz. :  
 
-     `/opt/media/mmcblk0p1/bin/gdbserver localhost:2000 /opt/media/mmcblk0p1/bin/motor`
-* startu gdb en la komputilo, ekzemple:
+     `/opt/media/mmcblk0p1/bin/gdbserver localhost:2000 /opt/media/mmcblk0p1/bin/motor` 
+ *  Komencu GDB en la komputilo, ekzemple: 
 
     ```
     cd programada_medio/toolchain
@@ -35,7 +35,7 @@ Tiam, kia ajn la firmvaro:
     handle SIG32 nostop
     break xxx
     continue 
-    ```
+    ``` 
 
 
 

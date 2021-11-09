@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-10-30 11:05+0200\n"
+"POT-Creation-Date: 2021-11-09 15:12+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -43,38 +43,38 @@ msgstr "page"
 #. type: YAML Front Matter: title
 #: imp_system_programigo_gvidilo.md:1
 #, fuzzy, no-wrap
-msgid "IMP-Programado-Gvidilo"
-msgstr "IMP编程指南"
+msgid "Programado gvidas  _IMP_"
+msgstr "编程指南  _IMP_"
 
 #. type: Plain text
 #: imp_system_programigo_gvidilo.md:10
 #, fuzzy, no-wrap
 msgid "La dokumentado de APIs povas esti vidata ĉi tie:  \n"
-msgstr "这里可以看到API的文件：（°1°1  \n"
+msgstr "APIS的文档可以在这里看到：  \n"
 
 #. type: Bullet: '* '
 #: imp_system_programigo_gvidilo.md:12
 #, fuzzy, no-wrap
-msgid "[originala versio en la ĉina](../../zh/includes.zh/html/)\n"
-msgstr "[原始版本中文](../../zh/includes.zh/html/)\n"
+msgid "[ originala versio en la ĉina ](../../zh/includes.zh/html/) \n"
+msgstr "[ 中文 ](../../zh/includes.zh/html/)  的原始版本\n"
 
 #. type: Bullet: '* '
 #: imp_system_programigo_gvidilo.md:14
 #, fuzzy, no-wrap
-msgid "[Angla versio](../../en/includes.en/html/)\n"
-msgstr "[英文版](../../en/includes.en/html/)\n"
+msgid "[ angla ](../../en/includes.en/html/) \n"
+msgstr "[ 英文 ](../../en/includes.en/html/)  \n"
 
 #. type: Bullet: '* '
 #: imp_system_programigo_gvidilo.md:16
 #, fuzzy, no-wrap
-msgid "(° 1 ° 1 ° franca versio Tradukita per google](../../fr/includes.fr/html/)\n"
-msgstr "（°1°1°1°1°1°1°法式版由谷歌](../../fr/includes.fr/html/)翻译\n"
+msgid "[ franca versio tradukita de Google ](../../fr/includes.fr/html/) \n"
+msgstr "[ 法语版本由Google  ](../../fr/includes.fr/html/)  翻译\n"
 
 #. type: Title #
 #: imp_system_programigo_gvidilo.md:19
 #, fuzzy, no-wrap
-msgid "IMP (Ingenic Media Platform) (vidu imp_system.h)"
-msgstr "IMP (Ingenic Media Platform) (参见imp_system.h)"
+msgid "_IMP_  \\( _Ingenic Media Platform_ \\)  \\( Vidu  _imp\\_system.h_ \\)"
+msgstr "_IMP_   \\(  _Ingenic Media Platform_  \\)   \\(见  _imp\\_system.h_  \\)"
 
 #. type: Title ##
 #: imp_system_programigo_gvidilo.md:21
@@ -83,149 +83,106 @@ msgid "bazaj konceptoj"
 msgstr "基本概念"
 
 #. type: Plain text
-#: imp_system_programigo_gvidilo.md:23
-#, fuzzy, no-wrap
-msgid ""
-"Programado T20 / T21 baziĝas sur jenaj konceptoj:\n"
-"1. Periferia (= Aparato)  \n"
-msgstr ""
-"T20 / T21编程基于以下概念：\n"
-"1.外围设备 (=设备)  \n"
-
-#. type: Plain text
-#: imp_system_programigo_gvidilo.md:27
-#, fuzzy, no-wrap
-msgid ""
-"    La ekstercentra kompletigas funkcion. Ekzemploj:\n"
-"     *  Frama fonto: finas la eliron de videodatenoj.\n"
-"     *  Kodilo: kompletigas la videokodan aŭ bildan kodan funkcion.\n"
-"2. Grupo  \n"
-msgstr ""
-"    外围设备完成功能。示例：\n"
-"     *  帧源：结束视频数据的输出。\n"
-"     *  编码器：完成视频编码或图像编码功能。\n"
-"2.组  \n"
-
-#. type: Plain text
 #: imp_system_programigo_gvidilo.md:28
 #, fuzzy, no-wrap
-msgid "    La grupo estas la plej malgranda datum-eniga unuo. Aparato povas havi plurajn grupojn kaj ĉiu grupo povas ricevi nur unu datuman enigan kanalon. La grupo povas havi plurajn rezultojn.  \n"
-msgstr "    该组是最小的数据输入单位。一个设备可以有多个组，每个组只能接收一个数据输入通道。该组可以有几个结果。  \n"
+msgid ""
+"La programado T20 / T21 baziĝas sur la sekvaj konceptoj: \n"
+" 1. Aparato  \\( = _Device_ \\)   \n"
+"     La aparato kompletigas funkcion. Ekzemploj: \n"
+"      *   _Framesource_ : kompletigu la eligon de videodatenoj. \n"
+"      *   _Encoder_ : kompletigu la videokodigon aŭ bildkodigan funkcion. \n"
+" 2. Grupo  \\( = _Group_ \\)   \n"
+"    La grupo estas la plej malgranda datum-eniga unuo. Aparato povas havi plurajn grupojn kaj ĉiu grupo povas ricevi nur unu datuman enigan kanalon. La grupo povas havi plurajn rezultojn.  \n"
+msgstr ""
+"T20 / T21程序基于以下概念： \n"
+" 1.设备  \\( =  _Device_  \\)    \n"
+"该设备完成功能。示例： \n"
+"       *    _Framesource_ ：完成视频剪辑的输出。  \n"
+"       *    _Encoder_ ：完成视频代码或图像代码功能。  \n"
+" 2.组  \\( =  _Group_  \\) \\)本组是最小的数据输入单元。设备可以具有多个组，并且每个组只能接收一个数据输入通道。该组可以有几个结果。   \n"
 
 #. type: Plain text
-#: imp_system_programigo_gvidilo.md:30
+#: imp_system_programigo_gvidilo.md:33
 #, fuzzy, no-wrap
 msgid ""
-"    La grupo ankaŭ estas ujo por specifaj \"funkcioj\". Vidu la klarigon en la kanala sekcio por pliaj detaloj.\n"
-"3. Eliro  \n"
+"     La grupo ankaŭ estas ujo por specifaj  \" funkcioj \". Vidu la klarigon en la kanala sekcio por pliaj detaloj. \n"
+" 3. Eligo  \\( = _Output_ \\)   \n"
+"     La eligo estas la plej malgranda datuma eliga unuo por grupo.   \n"
+"     La kanalo kutime rilatas al unu sola funkcia unuo.   \n"
+"    Ekzemple:  \n"
 msgstr ""
-"    该组也是特定 \"功能\"的容器。有关更多详细信息，请参见通道部分中的说明。\n"
-"3.出口  \n"
+"     该组也是特定  \"功能 \"的容器。有关更多详细信息，请参阅“通道”部分中的说明。  \n"
+" 3. Eligo   \\( =  _Output_  \\)    \n"
+"输出是每组最小的数据输出单元。    \n"
+"信道通常与单个功能单元相关。    \n"
+"例如：  \n"
 
-#. type: Plain text
-#: imp_system_programigo_gvidilo.md:32
+#. type: Bullet: '     -  '
+#: imp_system_programigo_gvidilo.md:35
 #, fuzzy, no-wrap
-msgid ""
-"    La eligo estas la plej malgranda unuo de datuma eligo por grupo. Grupo povas havi plurajn elirojn kaj ĉiu eligo povas produkti nur unu datuman kanalon.\n"
-"4. Ĉelo  \n"
-msgstr ""
-"    输出是每组数据输出的最小单位。一组可以有多个输出，每个输出只能产生一个数据通道。\n"
-"4.电池  \n"
+msgid "Por la kodilo, kanalo kompletigas la  _H264_  aŭ koda funkcio  _JPEG_. \n"
+msgstr "对于Codel，通道完成  _H264_  或代码功能  _JPEG_。  \n"
 
-#. type: Plain text
-#: imp_system_programigo_gvidilo.md:36
-#, fuzzy, no-wrap
-msgid ""
-"    La ĉelo rilatas al kolekto enhavanta informojn pri la aparato, la grupo kaj la eligo. Ĝi estas prezentita en la datuma strukturo de IMPCell.\n"
-"La ĉelo estas ĉefe uzata por Bind (@ref bind). Laŭ la difino de Aparato, Grupo kaj Eligo, Eligo estas la nodo por datuma eligo kaj Grupo estas la nodo por datuma enigo.\n"
-"En Bind, la ĉela indekso de la datuma eliga nodo estas ĉe la Eliga eligo, kaj la ĉela indekso de la datuma eniga nodo estas ĉe la eniga grupo (de tiel ke la Ĉelo, Eliga datuma eniro estas sensenca valoro).\n"
-"5. Kanalo  \n"
-msgstr ""
-"    单元格是指包含有关设备，组和输出的信息的集合。它以IMPCell数据结构表示。\n"
-"单元格主要用于绑定 (@ref绑定)。根据设备，组和输出的定义，输出是数据输出的节点，组是数据输入的节点。\n"
-"在Bind中，数据输出节点的单元格索引在输出输出，数据输入节点的单元格索引在输入组 (，因此，单元格，输出数据输入为无意义的值)。\n"
-"5.通道  \n"
-
-#. type: Plain text
+#. type: Bullet: '     -  '
 #: imp_system_programigo_gvidilo.md:37
 #, fuzzy, no-wrap
-msgid "    La kanalo ĝenerale rilatas al unuo kun ununura funkcio. La kanalo ricevas specifan funkcion kiam ĝi estas kreita (instantiation).  \n"
-msgstr "    通道通常是指具有单个功能的单元。在创建实例 (实例化)时，通道会接收特定功能。  \n"
+msgid "Por  _IVS_, kanalo kompletigas la funkcion de specifa algoritmo kaj la specifaj algoritmaj tipaj parametroj estas specifitaj dum kreado de la  kanalo\n"
+msgstr "对于  _IVS_，通道完成特定算法的功能，并且在创建通道期间指定了特定算法典型参数\n"
+
+#. type: Bullet: '     -  '
+#: imp_system_programigo_gvidilo.md:39
+#, fuzzy, no-wrap
+msgid "Por _OSD_, estas regiono simila al  _Channel_, regiono estas specifa supermetita areo, kiu povas esti pinto  \\( bildo \\) kovrilo  \\( okludo \\), ktp. \n"
+msgstr "对于 _OSD_，存在类似于  _Channel_的区域，区域是可以是顶部  \\(图像 \\)盖子  \\(遮挡 \\)等的特定的超细化区域。  \n"
+
+#. type: Bullet: '     -  '
+#: imp_system_programigo_gvidilo.md:41
+#, fuzzy, no-wrap
+msgid "Por  _FrameSource_, kanalo produktas originalan bildon kaj la kanalon  _FrameSource_  estas fakte grupo \n"
+msgstr "对于  _FrameSource_，频道产生原始图像，并且通道  _FrameSource_  实际上是一个组 \n"
 
 #. type: Plain text
-#: imp_system_programigo_gvidilo.md:38
-#, fuzzy, no-wrap
-msgid "    Ekzemple:  \n"
-msgstr "    例如：  \n"
-
-#. type: Bullet: '     -  '
-#: imp_system_programigo_gvidilo.md:40
-#, fuzzy, no-wrap
-msgid "Por la kodilo, unu kanalo kompletigas la kodon H264 aŭ kodan funkcion JPEG. La specifa kodiga funkcio (tipo, parametro) estas specifita kiam oni kreas la kanalon\n"
-msgstr "对于编码器，一个通道是H264代码或JPEG编码功能的补充。创建通道时，指定了特定的编码功能 (类型，参数) \n"
-
-#. type: Bullet: '     -  '
-#: imp_system_programigo_gvidilo.md:42
-#, fuzzy, no-wrap
-msgid "Por IVS, kanalo kompletigas la funkcion de specifa algoritmo kaj specifaj algoritmaj tipparametroj estas specifitaj dum kreado de la kanalo\n"
-msgstr "对于IVS，通道可完成特定算法的功能，并在创建通道时指定特定的算法类型参数\n"
-
-#. type: Bullet: '     -  '
 #: imp_system_programigo_gvidilo.md:44
 #, fuzzy, no-wrap
-msgid "Por OSD, ekzistas regiono simila al Kanalo, regiono estas specifa supermetita areo, kiu povas esti PIC (bildo), KOVRILO (fermado), ktp.\n"
-msgstr "对于OSD，有一个类似于Channel的区域，该区域是特定的覆盖区域，可以是PIC (图像)，COVER (闭合)等。 。\n"
+msgid "      La kanalo, kiel funkcia unuo, kutime estu konservita en la grupo  \\( krom  _FrameSource_ \\) ricevi datumojn. \n"
+msgstr "      作为功能单元的信道通常保留在  _FrameSource_  \\)接收数据之外的  \\(组中。  \n"
 
-#. type: Bullet: '     -  '
+#. type: Plain text
 #: imp_system_programigo_gvidilo.md:46
-#, fuzzy, no-wrap
-msgid "Por FrameSource, kanalo produktas originalan bildon kaj la FrameSource-kanalo fakte estas grupo\n"
-msgstr "对于FrameSource，通道产生原始图像，而FrameSource通道实际上是一个组\n"
-
-#. type: Plain text
-#: imp_system_programigo_gvidilo.md:49
-#, fuzzy, no-wrap
-msgid "     La kanalo, kiel funkcia unuo, devas ĝenerale esti registrita en la grupo (krom FrameSource) por ricevi datumojn. Post kiam la kanalo estas registrita en la grupo, ĝi ricevos la datumojn enigitajn de la grupo.\n"
-msgstr "     通道，除FrameSource) 外，通常还必须在组 (中注册为功能单元，以接收数据。频道在组中注册后，它将接收该组输入的数据。\n"
-
-#. type: Plain text
-#: imp_system_programigo_gvidilo.md:51
 #, fuzzy, no-wrap
 msgid "    La nombro de kanaloj, kiuj povas esti registritaj de la grupo de diversaj aparatoj, estas ankaŭ malsama.\n"
 msgstr "    各种设备组可以记录的通道数也不同。\n"
 
 #. type: Title ##
-#: imp_system_programigo_gvidilo.md:52
+#: imp_system_programigo_gvidilo.md:47
 #, fuzzy, no-wrap
-msgid "Moduloj ligantaj (Bind)"
-msgstr "装订模块 (装订)"
+msgid "Modulo-ligilo  \\( _Bind_ \\)"
+msgstr "模块链接  \\(  _Bind_  \\)"
 
 #. type: Plain text
-#: imp_system_programigo_gvidilo.md:54
+#: imp_system_programigo_gvidilo.md:51
 #, fuzzy, no-wrap
-msgid "Post kiam du grupoj estas konektitaj de Bind, la datumoj de la fonta grupo aŭtomate estos senditaj al la celloka grupo.  \n"
-msgstr "通过绑定连接两个组后，源组中的数据将自动发送到目标组。  \n"
+msgid ""
+"Post kiam du grupoj estas ligitaj per  _Bind_, datumoj de la fonta grupo aŭtomate sendos al la celloko.   \n"
+"Ekde la grupo estas la plej malgranda datuma eniga unuo kaj la eligo estas la plej malgranda datuma eliga unuo, la  _deviceID_,  _groupID_  kaj  _outputID_   _srcCell_  en la du parametroj de  _IMP\\_System\\_Bind \\(IMPCell * srcCell, IMPCell * dstCell\\)_  estas validaj.   \n"
+msgstr ""
+"通过  _Bind_链接两组后，来自源组的数据将自动发送到目标。    \n"
+"因为组是最小的数据输入单元和输出是最小的数据输出单元，所述  _deviceID_，  _groupID_  和  _outputID_    _srcCell_  在  _IMP\\_System\\_Bind \\(IMPCell * srcCell, IMPCell * dstCell\\)_  的两个参数是有效的。    \n"
+
+#. type: Plain text
+#: imp_system_programigo_gvidilo.md:53
+#, fuzzy, no-wrap
+msgid "Dum  _dstCell_  estas nur valida por  _deviceID_  kaj  _groupID_,  _outputID_  ne havas sencon kiel enirejo de datumoj. \n"
+msgstr "虽然  _dstCell_  仅对  _deviceID_  和  _groupID_有效，但是  _outputID_  不喜欢数据入口。  \n"
 
 #. type: Plain text
 #: imp_system_programigo_gvidilo.md:55
-#, fuzzy, no-wrap
-msgid "Ĉar la grupo estas la plej malgranda eniga unuo de datumoj kaj la eligo estas la plej malgranda unuo de datuma eligo, la aparatoID, groupID kaj outputID de srcCell en ambaŭ parametroj de IMP_System_Bind (IMPCell * srcCell, IMPCell * dstCell) validas.  \n"
-msgstr "因为组是最小的数据输入单位，而输出是最小的数据输出单位，所以在两个IMP_System_，bind (和IMPCell * 两个参数中srcCell的deviceID，groupID和outputID srcCell，IMPCell * dstCell) 有效。  \n"
-
-#. type: Plain text
-#: imp_system_programigo_gvidilo.md:58
-#, fuzzy, no-wrap
-msgid "Dum dstCell validas nur por deviceID kaj groupID, outputID ne havas sencon kiel datuma eniro.\n"
-msgstr "虽然dstCell仅对deviceID和groupID有效，但outputID作为数据条目没有意义。\n"
-
-#. type: Plain text
-#: imp_system_programigo_gvidilo.md:60
 #, fuzzy, no-wrap
 msgid "Ekzemplo 1: \n"
 msgstr "范例1： \n"
 
 #. type: Fenced code block
-#: imp_system_programigo_gvidilo.md:60
+#: imp_system_programigo_gvidilo.md:55
 #, no-wrap
 msgid ""
 "IMPCell fs_chn0 = {DEV_ID_FS, 0, 0};    // FrameSource deviceID: DEV_ID_FS groupID: 0 outputID: 0\n"
@@ -242,26 +199,30 @@ msgstr ""
 "  printf (\"Bind FrameSource Channel0 and Encoder Group0 failed \\ n\");\n"
 "\n"
 
-#. type: Bullet: '* '
-#: imp_system_programigo_gvidilo.md:70
+#. type: Plain text
+#: imp_system_programigo_gvidilo.md:65
 #, fuzzy, no-wrap
-msgid "realiĝas grupo, kiu generas ligon de FrameSource al Encoder.\n"
-msgstr "生成一个组，该组生成从FrameSource到Encoder的链接。\n"
+msgid ""
+"Rezulto:   \n"
+"* realiĝas grupo, kiu generas ligon de FrameSource al Encoder.\n"
+msgstr ""
+"结果：   \n"
+" * 组生成一个组，该组生成从框架到编码器的链接。 \n"
 
 #. type: Bullet: '* '
-#: imp_system_programigo_gvidilo.md:72
+#: imp_system_programigo_gvidilo.md:67
 #, fuzzy, no-wrap
-msgid "Du kanaloj estas registritaj en Encoder Group, do Encoder Group havas du elirojn H264 kaj JPEG.\n"
-msgstr "编码器组中记录了两个通道，因此编码器组具有两个输出H264和JPEG。\n"
+msgid "Du kanaloj estas registritaj en Encoder Group, do Encoder Group havas du produktojn:  _H264_  kaj  _JPEG_. \n"
+msgstr "在编码器组中注册了两个通道，因此编码器组有两种产品：  _H264_  和  _JPEG_。  \n"
 
 #. type: Plain text
-#: imp_system_programigo_gvidilo.md:75
+#: imp_system_programigo_gvidilo.md:70
 #, fuzzy, no-wrap
 msgid "Ekzemplo 2:\n"
 msgstr "示例2：\n"
 
 #. type: Fenced code block
-#: imp_system_programigo_gvidilo.md:75
+#: imp_system_programigo_gvidilo.md:70
 #, no-wrap
 msgid ""
 "// flux de données principal\n"
@@ -325,228 +286,412 @@ msgstr ""
 "    printf(\"Bind OSD Group1 and Encoder Group1 failed\\n\");\n"
 
 #. type: Plain text
-#: imp_system_programigo_gvidilo.md:111
+#: imp_system_programigo_gvidilo.md:102
 #, fuzzy, no-wrap
-msgid ""
-"Ĉi tio estas tipa programo Bind: du-kanala koda fluo.\n"
-" * FrameSource havas du elirojn, nome la ĉefa rivereto Channel0 (1280x720) kaj la sklava rivereto Channel1 (640x360).\n"
-"   *   Ĉefa rivereto: Channel0 Bind OSD Group.0 de FrameSource, OSD Group.0 Bind Encoder Group.0. Inter ili: \n"
-"       * OSD-Grupo.0 registris du regionojn, kiuj estas uzataj por montri informojn pri tempostampo kaj signoŝnuro respektive\n"
-"       * Kodigila Grupo .0 registris du kanalojn. , kiuj estas kodado H264 kaj kodado JPEG respektive. Inter ili, se la bilda grandeco de la koda kanalo JPEG ne egalas al la eniga parametro (Kanalo0 de FrameSource), tiam ĝi estos skalita (programaro ĉe T10) ) atingi la celon kapti ĉe iu ajn rezolucio.\n"
-msgstr ""
-"这是一个典型的Bind程序：两通道代码流。\n"
-" * FrameSource具有两个输出，即主流Channel0 (1280x720) 和从属流Channel1 (640x360)。\n"
-"   *   主码流：FrameSource的Channel0绑定OSD Group.0，OSD Group.0绑定编码器Group.0。其中： \n"
-"       * OSD Group.0记录了两个区域，分别用于显示时间戳和字符串信息\n"
-"       * 编码器Group.0记录了两个通道。 ，分别是H264编码和JPEG编码。其中，如果JPEG编码通道的图像尺寸与FrameSource Channel0)的输入参数 (不匹配，则它将在T10) 进行软件缩放 (。) 达到在任何分辨率下拍摄的目的。\n"
+msgid "Apliki estas tipa apliko  _Bind_ : du-kanala kodo. \n"
+msgstr "应用是一个典型的应用程序  _Bind_ ：双通道代码。  \n"
 
 #. type: Plain text
-#: imp_system_programigo_gvidilo.md:115
+#: imp_system_programigo_gvidilo.md:105
 #, fuzzy, no-wrap
 msgid ""
-"Notoj:\n"
-"* oni rekomendas, ke ĉiuj ligaj operacioj estu faritaj dum sistemo-inicialigo.\n"
-"* Operacioj Bind kaj UnBind ne povas esti nomataj dinamike post kiam _FrameSource_ estas aktivigita. UnBind fariĝas nur post malaktivigo _FrameSource_.\n"
+"Notoj: \n"
+" *  Estas rekomendite, ke ĉiuj ligaj operacioj estas faritaj kiam inicializado de la sistemo. \n"
 msgstr ""
-"注意：\n"
-"* 建议在系统初始化期间执行所有链接操作。\n"
-"* 激活 _FrameSource_ 后，不能动态调用绑定和取消绑定操作。仅在取消激活 _FrameSource_后才能取消绑定。\n"
+"注意： \n"
+"  *  建议在初始化系统时进行所有链路操作。  \n"
 
 #. type: Title ##
-#: imp_system_programigo_gvidilo.md:116
+#: imp_system_programigo_gvidilo.md:106
 #, fuzzy, no-wrap
 msgid "Funkcioj"
 msgstr "功能"
 
 #. type: Title ###
+#: imp_system_programigo_gvidilo.md:108
+#, fuzzy, no-wrap
+msgid "_int IMP\\_System\\_Init \\(void \\)_"
+msgstr "_int IMP\\_System\\_Init \\(void \\)_"
+
+#. type: Plain text
+#: imp_system_programigo_gvidilo.md:110
+#, fuzzy, no-wrap
+msgid "Komenco de la sistemo  _IMP_. \n"
+msgstr "  _IMP_系统的开头。  \n"
+
+#. type: Title ###
+#: imp_system_programigo_gvidilo.md:110
+#, fuzzy, no-wrap
+msgid "_int IMP\\_System\\_Exit \\(void\\)_"
+msgstr "_int IMP\\_System\\_Exit \\(void\\)_系统的开头。 \\_"
+
+#. type: Plain text
+#: imp_system_programigo_gvidilo.md:113
+#, fuzzy, no-wrap
+msgid "Post voki ĉi tiun funkcion, la tuta memoro kaj  _handles_  _IMP_  estos publikigitaj, kaj la aparataro-unuo estos fermita. \n"
+msgstr "调用此功能后，将释放所有内存和  _handles_   _IMP_  ，硬件单元将关闭。  \n"
+
+#. type: Title ###
+#: imp_system_programigo_gvidilo.md:114
+#, fuzzy, no-wrap
+msgid "_int64\\_t IMP\\_System\\_GetTimeStamp \\(void\\)_"
+msgstr "调用此功能后，将释放所有内存和_int64\\_t IMP\\_System\\_GetTimeStamp \\(void\\)_ \\_，硬件单元将关闭。  \\("
+
+#. type: Plain text
 #: imp_system_programigo_gvidilo.md:118
 #, fuzzy, no-wrap
-msgid "int IMP\\_Sistemo\\_Init (malplena )"
-msgstr "int IMP\\_系统\\_初始 (空 )"
+msgid ""
+"Akiru la tempokampon de la sistemo  _IMP_  en mikrosekundoj.   \n"
+"Reveno: tempo en mikrosekundoj.\n"
+msgstr ""
+"获取microSeconds中  _IMP_  系统的定时字段。    \n"
+"返回：微量的时间。 \n"
+
+#. type: Title ###
+#: imp_system_programigo_gvidilo.md:119
+#, fuzzy, no-wrap
+msgid "_int IMP\\_System\\_RebaseTimeStamp \\(bases int64\\_t\\)_"
+msgstr "获取microSeconds中_int IMP\\_System\\_RebaseTimeStamp \\(bases int64\\_t\\)_系统的定时字段。 \\_返回：微量的时间。  \\("
 
 #. type: Plain text
-#: imp_system_programigo_gvidilo.md:123
+#: imp_system_programigo_gvidilo.md:122
 #, fuzzy, no-wrap
 msgid ""
-"Inicialigo de la IMP-sistemo.\n"
-"redonas 0 se ĝi sukcesas.\n"
-"Post ĉi tiu API-alvoko, la baza datuma strukturo estos pravalorizita, sed la aparataro ne estos pravalorizita.\n"
-"atento: Ĉi tiu funkcio devas esti alvokita por komencigo antaŭ iu ajn alia operacio.\n"
+"Difini la sistemon Timestamp  _IMP_  en mikrosekundoj.   \n"
+"Reveno: 0 se sukcesas.\n"
 msgstr ""
-"IMP系统的初始化。如果成功，\n"
-"将返回0。\n"
-"此API调用后，将初始化基本数据结构，但不会初始化硬件。\n"
-"注意：必须在执行任何其他操作之前调用此功能以进行初始化。\n"
+"以微秒为单位定义时间戳  _IMP_  系统。    \n"
+"返回：如果成功，则为0。 \n"
 
 #. type: Title ###
 #: imp_system_programigo_gvidilo.md:123
 #, fuzzy, no-wrap
-msgid "int IMP_System_Elirejo (malplena)"
-msgstr "int IMP_System_出口 (空)"
+msgid "_uint32\\_t IMP\\_System\\_ReadReg32 \\(uint32\\_t u32Addr\\)_"
+msgstr "以微秒为单位定义时间戳_uint32\\_t IMP\\_System\\_ReadReg32 \\(uint32\\_t u32Addr\\)_系统。 \\_返回：如果成功，则为0。 \\_"
 
 #. type: Plain text
-#: imp_system_programigo_gvidilo.md:127
-#, fuzzy, no-wrap
-msgid ""
-"Post vokado de ĉi tiu funkcio, ĉiu memoro kaj IMP _handles_ estos liberigitaj, kaj la aparataro estos fermita. \n"
-"Noto: Post voki ĉi tiun API, se vi volas uzi IMP denove, vi devas reagordi la IMP-sistemon.\n"
-msgstr ""
-"调用此函数后，将释放所有内存和IMP _handles_ ，并且将关闭硬件。 \n"
-"注：调用此API后，如果要再次使用IMP，则需要重置IMP系统。\n"
-
-#. type: Title ###
-#: imp_system_programigo_gvidilo.md:128
-#, fuzzy, no-wrap
-msgid "int64_t IMP_Sistemo_GetTimeStamp (void)"
-msgstr "int64_t IMP_系统_GetTimeStamp (void)"
-
-#. type: Plain text
-#: imp_system_programigo_gvidilo.md:130
-#, fuzzy, no-wrap
-msgid "Akiru la IMP-sisteman tempostampon en mikrosekundoj.  \n"
-msgstr "获取IMP系统时间戳（以微秒为单位）。  \n"
-
-#. type: Plain text
-#: imp_system_programigo_gvidilo.md:132
-#, fuzzy, no-wrap
-msgid "Reveno: tempo en mikrosekundoj.\n"
-msgstr "返回值：时间（以微秒为单位）。\n"
-
-#. type: Title ###
-#: imp_system_programigo_gvidilo.md:133
-#, fuzzy, no-wrap
-msgid "int IMP_System_RebaseTimeStamp (bazoj int64_t)"
-msgstr "int IMP_System_RebaseTimeStamp (以int64_t)为基准"
-
-#. type: Plain text
-#: imp_system_programigo_gvidilo.md:134
-#, fuzzy, no-wrap
-msgid "Agordu la tempan markon de la sistemo IMP en mikrosekundoj.  \n"
-msgstr "设置IMP系统的时间戳（以微秒为单位）。  \n"
-
-#. type: Plain text
-#: imp_system_programigo_gvidilo.md:136
-#, fuzzy, no-wrap
-msgid "Reveno: 0 se sukcesas.\n"
-msgstr "返回：如果成功，则返回0。\n"
-
-#. type: Title ###
-#: imp_system_programigo_gvidilo.md:137
-#, fuzzy, no-wrap
-msgid "uint32_t IMP_Sistemo_ReadReg32 (uint32_t u32Addr)"
-msgstr "uint32_t IMP_系统_ReadReg32 (uint32_t u32Addr)"
-
-#. type: Plain text
-#: imp_system_programigo_gvidilo.md:139
+#: imp_system_programigo_gvidilo.md:125
 #, fuzzy, no-wrap
 msgid "Legu la valoron de 32-bita registro.  \n"
 msgstr "读取32位寄存器的值。  \n"
 
 #. type: Title ###
-#: imp_system_programigo_gvidilo.md:141
+#: imp_system_programigo_gvidilo.md:127
 #, fuzzy, no-wrap
-msgid "malplena IMP_System_WriteReg32 (uint32_t regAddr, valeur uint32_t)"
-msgstr "空白IMP_System_WriteReg32 (uint32_t regAddr, valeur uint32_t)"
+msgid "_void IMP\\_System\\_WriteReg32 \\(uint32_ t regaddr, valoro uint32 _t\\)_"
+msgstr "_void IMP\\_System\\_WriteReg32 \\(uint32_  t regaddr，值uint32  _t\\)_"
 
 #. type: Plain text
-#: imp_system_programigo_gvidilo.md:143
+#: imp_system_programigo_gvidilo.md:129
 #, fuzzy, no-wrap
-msgid "Skribu la valoron al la 32-bita registro.\n"
-msgstr "将该值写入32位寄存器。\n"
+msgid "Skribu la valoron en la 32-bita registro. \n"
+msgstr "在32位寄存器中写入值。  \n"
 
 #. type: Plain text
-#: imp_system_programigo_gvidilo.md:145
+#: imp_system_programigo_gvidilo.md:131
 #, fuzzy, no-wrap
 msgid "Noto: Bonvolu telefoni al ĉi tiu API zorge kaj kontroli la signifon de la registro, alie ĝi povas kaŭzi sistemajn erarojn.\n"
 msgstr "注意：请仔细调用此API并检查注册表的含义，否则可能导致系统错误。\n"
 
 #. type: Title ###
-#: imp_system_programigo_gvidilo.md:146
+#: imp_system_programigo_gvidilo.md:132
 #, fuzzy, no-wrap
-msgid "int IMP_System_GetVersion (IMPVersion * pstVersion) "
-msgstr "int IMP_System_GetVersion (IMPVersion * pstVersion) "
+msgid "_int IMP_ System _GetVersion \\(IMPVersion * pstVersion\\)_"
+msgstr "_int IMP_ 系统 _GetVersion \\(IMPVersion * pstVersion\\)_"
 
 #. type: Plain text
-#: imp_system_programigo_gvidilo.md:149
+#: imp_system_programigo_gvidilo.md:135
 #, fuzzy, no-wrap
-msgid "Akiru la versian numeron de la IMP-sistemo.\n"
-msgstr "获取IMP系统的版本号。\n"
+msgid "Akiru la numeron de la sistemo  _IMP_. \n"
+msgstr "获取  _IMP_系统的系统。  \n"
 
 #. type: Title ###
-#: imp_system_programigo_gvidilo.md:150
+#: imp_system_programigo_gvidilo.md:136
 #, fuzzy, no-wrap
-msgid "const char * IMP_System_GetCPUInfo (malplena)"
-msgstr "const char * IMP_System_GetCPUInfo (空)"
+msgid "_const char * IMP_ sistemo _GetCPUInfo \\(void\\)_"
+msgstr "_const char * IMP_ 系统 _GetCPUInfo \\(void\\)_"
 
 #. type: Plain text
-#: imp_system_programigo_gvidilo.md:151
+#: imp_system_programigo_gvidilo.md:137
 #, fuzzy, no-wrap
 msgid "Akiru informojn pri la CPU-modelo.  \n"
 msgstr "获取有关CPU型号的信息。  \n"
 
 #. type: Plain text
-#: imp_system_programigo_gvidilo.md:153
+#: imp_system_programigo_gvidilo.md:139
 #, fuzzy, no-wrap
 msgid "Noto: La revenvaloro estas ĉeno de CPU-modelo, ekzemple, por T10 ekzistas \"T10\"kaj \"T10-Lite\".\n"
 msgstr "注意：返回值是一串CPU模型，例如，对于T10，存在 \"T10\"和 \"T10-Lite\"。\n"
 
 #. type: Title ###
-#: imp_system_programigo_gvidilo.md:154
+#: imp_system_programigo_gvidilo.md:140 imp_system_programigo_gvidilo.md:148
+#: imp_system_programigo_gvidilo.md:151
 #, fuzzy, no-wrap
-msgid "int IMP_System_Bind (IMPCell * srcCell, IMPCell * dstCell)"
-msgstr "int IMP_System_绑定 (IMPCell * srcCell，IMPCell * dstCell)"
+msgid "_int IMP_ sistemo  \\("
+msgstr "_int IMP_ 系统  \\("
 
 #. type: Plain text
-#: imp_system_programigo_gvidilo.md:157
+#: imp_system_programigo_gvidilo.md:143
 #, fuzzy, no-wrap
 msgid "Ligo inter fonta ĉelo kaj celloko.\n"
 msgstr "源单元格和目标之间的链接。\n"
 
 #. type: Plain text
-#: imp_system_programigo_gvidilo.md:159
+#: imp_system_programigo_gvidilo.md:145
 #, fuzzy, no-wrap
 msgid "Noto 1: Laŭ la konceptoj de Aparato, Grupo kaj Eligo, ĉiu aparato povas havi plurajn grupojn, kaj ĉiu grupo povas havi plurajn elirojn, Grupo estas uzata kiel Aparata eniga interfaco, kaj Eliro estas uzata kiel Aparata produkta interfaco. Tial la ligo fakte konektas certan eliron de la eliga aparato al certa Grupo de la eniga aparato.\n"
 msgstr "注1：根据设备，组和输出的概念，每个设备可以有多个组，每个组可以有多个输出，组用作设备输入接口，输出用作设备产品接口。因此，链接实际上将输出设备的特定输出连接到输入设备的特定组。\n"
 
 #. type: Plain text
-#: imp_system_programigo_gvidilo.md:161
+#: imp_system_programigo_gvidilo.md:147
 #, fuzzy, no-wrap
-msgid "Noto 2: Post sukcesa ligilo, la datumoj generitaj de srcCell (Eliro) estos aŭtomate transdonitaj al la celloka Ĉela (Grupo).\n"
-msgstr "注2：成功链接后，由srcCell (输出) 生成的数据将自动传输到目标Cell (组)。\n"
-
-#. type: Title ###
-#: imp_system_programigo_gvidilo.md:162
-#, fuzzy, no-wrap
-msgid "int IMP_System_UnBind (IMPCell * srcCell, IMPCell * dstCell)"
-msgstr "int IMP_System_UnBind (IMPCell * srcCell，IMPCell * dstCell)"
+msgid "Noto 2: Post sukcesa ligo, la datumoj generitaj de  _srcCell_  ( eligo )  estos aŭtomate transdonitaj al la celloko  ( Grupo ). \n"
+msgstr "注2：成功链接后，由  _srcCell_   (  eligo  )  生成的数据将自动传送到目标  ( 组 )。  \n"
 
 #. type: Plain text
-#: imp_system_programigo_gvidilo.md:164
+#: imp_system_programigo_gvidilo.md:150
 #, fuzzy, no-wrap
 msgid "Malgrupigu la fontajn kaj cellokojn. \n"
 msgstr "取消分组源和目标。 \n"
 
-#. type: Title ###
-#: imp_system_programigo_gvidilo.md:165
-#, fuzzy, no-wrap
-msgid "int IMP_System_GetBindbyDest (IMPCell * dstCell, IMPCell * srcCell)"
-msgstr "int IMP_System_GetBindbyDest (IMPCell * dstCell，IMPCell * srcCell)"
-
 #. type: Plain text
-#: imp_system_programigo_gvidilo.md:168
+#: imp_system_programigo_gvidilo.md:154
 #, fuzzy, no-wrap
 msgid "Rekuperas informojn de la fonta ĉelo rilate al la celloko.\n"
 msgstr "从源单元中检索与目标相关的信息。\n"
 
-#, fuzzy
-#~ msgid "[originala versio en la ĉina](../zh/includes.zh/html/)\n"
-#~ msgstr "[原始版本中文](../zh/includes.zh/html/)\n"
+#, fuzzy, no-wrap
+#~ msgid "IMP-Programado-Gvidilo"
+#~ msgstr "IMP编程指南"
 
-#, fuzzy
-#~ msgid "[Angla versio](../en/includes.en/html/)\n"
-#~ msgstr "[英文版](../en/includes.en/html/)\n"
+#, fuzzy, no-wrap
+#~ msgid "[originala versio en la ĉina](../../zh/includes.zh/html/)\n"
+#~ msgstr "[原始版本中文](../../zh/includes.zh/html/)\n"
 
-#, fuzzy
+#, fuzzy, no-wrap
+#~ msgid "[Angla versio](../../en/includes.en/html/)\n"
+#~ msgstr "[英文版](../../en/includes.en/html/)\n"
+
+#, fuzzy, no-wrap
+#~ msgid "IMP (Ingenic Media Platform) (vidu imp_system.h)"
+#~ msgstr "IMP (Ingenic Media Platform) (参见imp_system.h)"
+
+#, fuzzy, no-wrap
 #~ msgid ""
-#~ "(° 1 ° 1 ° franca versio Tradukita per google](../fr/includes.fr/html/)\n"
-#~ msgstr "（°1°1°1°1°1°1°法式版由谷歌](../fr/includes.fr/html/)翻译\n"
+#~ "Programado T20 / T21 baziĝas sur jenaj konceptoj:\n"
+#~ "1. Periferia (= Aparato)  \n"
+#~ msgstr ""
+#~ "T20 / T21编程基于以下概念：\n"
+#~ "1.外围设备 (=设备)  \n"
+
+#, fuzzy, no-wrap
+#~ msgid ""
+#~ "    La ekstercentra kompletigas funkcion. Ekzemploj:\n"
+#~ "     *  Frama fonto: finas la eliron de videodatenoj.\n"
+#~ "     *  Kodilo: kompletigas la videokodan aŭ bildan kodan funkcion.\n"
+#~ "2. Grupo  \n"
+#~ msgstr ""
+#~ "    外围设备完成功能。示例：\n"
+#~ "     *  帧源：结束视频数据的输出。\n"
+#~ "     *  编码器：完成视频编码或图像编码功能。\n"
+#~ "2.组  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "    La grupo estas la plej malgranda datum-eniga unuo. Aparato povas havi plurajn grupojn kaj ĉiu grupo povas ricevi nur unu datuman enigan kanalon. La grupo povas havi plurajn rezultojn.  \n"
+#~ msgstr "    该组是最小的数据输入单位。一个设备可以有多个组，每个组只能接收一个数据输入通道。该组可以有几个结果。  \n"
+
+#, fuzzy, no-wrap
+#~ msgid ""
+#~ "    La grupo ankaŭ estas ujo por specifaj \"funkcioj\". Vidu la klarigon en la kanala sekcio por pliaj detaloj.\n"
+#~ "3. Eliro  \n"
+#~ msgstr ""
+#~ "    该组也是特定 \"功能\"的容器。有关更多详细信息，请参见通道部分中的说明。\n"
+#~ "3.出口  \n"
+
+#, fuzzy, no-wrap
+#~ msgid ""
+#~ "    La eligo estas la plej malgranda unuo de datuma eligo por grupo. Grupo povas havi plurajn elirojn kaj ĉiu eligo povas produkti nur unu datuman kanalon.\n"
+#~ "4. Ĉelo  \n"
+#~ msgstr ""
+#~ "    输出是每组数据输出的最小单位。一组可以有多个输出，每个输出只能产生一个数据通道。\n"
+#~ "4.电池  \n"
+
+#, fuzzy, no-wrap
+#~ msgid ""
+#~ "    La ĉelo rilatas al kolekto enhavanta informojn pri la aparato, la grupo kaj la eligo. Ĝi estas prezentita en la datuma strukturo de IMPCell.\n"
+#~ "La ĉelo estas ĉefe uzata por Bind (@ref bind). Laŭ la difino de Aparato, Grupo kaj Eligo, Eligo estas la nodo por datuma eligo kaj Grupo estas la nodo por datuma enigo.\n"
+#~ "En Bind, la ĉela indekso de la datuma eliga nodo estas ĉe la Eliga eligo, kaj la ĉela indekso de la datuma eniga nodo estas ĉe la eniga grupo (de tiel ke la Ĉelo, Eliga datuma eniro estas sensenca valoro).\n"
+#~ "5. Kanalo  \n"
+#~ msgstr ""
+#~ "    单元格是指包含有关设备，组和输出的信息的集合。它以IMPCell数据结构表示。\n"
+#~ "单元格主要用于绑定 (@ref绑定)。根据设备，组和输出的定义，输出是数据输出的节点，组是数据输入的节点。\n"
+#~ "在Bind中，数据输出节点的单元格索引在输出输出，数据输入节点的单元格索引在输入组 (，因此，单元格，输出数据输入为无意义的值)。\n"
+#~ "5.通道  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "    La kanalo ĝenerale rilatas al unuo kun ununura funkcio. La kanalo ricevas specifan funkcion kiam ĝi estas kreita (instantiation).  \n"
+#~ msgstr "    通道通常是指具有单个功能的单元。在创建实例 (实例化)时，通道会接收特定功能。  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "    Ekzemple:  \n"
+#~ msgstr "    例如：  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Por la kodilo, unu kanalo kompletigas la kodon H264 aŭ kodan funkcion JPEG. La specifa kodiga funkcio (tipo, parametro) estas specifita kiam oni kreas la kanalon\n"
+#~ msgstr "对于编码器，一个通道是H264代码或JPEG编码功能的补充。创建通道时，指定了特定的编码功能 (类型，参数) \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Por IVS, kanalo kompletigas la funkcion de specifa algoritmo kaj specifaj algoritmaj tipparametroj estas specifitaj dum kreado de la kanalo\n"
+#~ msgstr "对于IVS，通道可完成特定算法的功能，并在创建通道时指定特定的算法类型参数\n"
+
+#, fuzzy, no-wrap
+#~ msgid "Por OSD, ekzistas regiono simila al Kanalo, regiono estas specifa supermetita areo, kiu povas esti PIC (bildo), KOVRILO (fermado), ktp.\n"
+#~ msgstr "对于OSD，有一个类似于Channel的区域，该区域是特定的覆盖区域，可以是PIC (图像)，COVER (闭合)等。 。\n"
+
+#, fuzzy, no-wrap
+#~ msgid "Por FrameSource, kanalo produktas originalan bildon kaj la FrameSource-kanalo fakte estas grupo\n"
+#~ msgstr "对于FrameSource，通道产生原始图像，而FrameSource通道实际上是一个组\n"
+
+#, fuzzy, no-wrap
+#~ msgid "     La kanalo, kiel funkcia unuo, devas ĝenerale esti registrita en la grupo (krom FrameSource) por ricevi datumojn. Post kiam la kanalo estas registrita en la grupo, ĝi ricevos la datumojn enigitajn de la grupo.\n"
+#~ msgstr "     通道，除FrameSource) 外，通常还必须在组 (中注册为功能单元，以接收数据。频道在组中注册后，它将接收该组输入的数据。\n"
+
+#, fuzzy, no-wrap
+#~ msgid "Moduloj ligantaj (Bind)"
+#~ msgstr "装订模块 (装订)"
+
+#, fuzzy, no-wrap
+#~ msgid "Post kiam du grupoj estas konektitaj de Bind, la datumoj de la fonta grupo aŭtomate estos senditaj al la celloka grupo.  \n"
+#~ msgstr "通过绑定连接两个组后，源组中的数据将自动发送到目标组。  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Ĉar la grupo estas la plej malgranda eniga unuo de datumoj kaj la eligo estas la plej malgranda unuo de datuma eligo, la aparatoID, groupID kaj outputID de srcCell en ambaŭ parametroj de IMP_System_Bind (IMPCell * srcCell, IMPCell * dstCell) validas.  \n"
+#~ msgstr "因为组是最小的数据输入单位，而输出是最小的数据输出单位，所以在两个IMP_System_，bind (和IMPCell * 两个参数中srcCell的deviceID，groupID和outputID srcCell，IMPCell * dstCell) 有效。  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Dum dstCell validas nur por deviceID kaj groupID, outputID ne havas sencon kiel datuma eniro.\n"
+#~ msgstr "虽然dstCell仅对deviceID和groupID有效，但outputID作为数据条目没有意义。\n"
+
+#, fuzzy, no-wrap
+#~ msgid "realiĝas grupo, kiu generas ligon de FrameSource al Encoder.\n"
+#~ msgstr "生成一个组，该组生成从FrameSource到Encoder的链接。\n"
+
+#, fuzzy, no-wrap
+#~ msgid "Du kanaloj estas registritaj en Encoder Group, do Encoder Group havas du elirojn H264 kaj JPEG.\n"
+#~ msgstr "编码器组中记录了两个通道，因此编码器组具有两个输出H264和JPEG。\n"
+
+#, fuzzy, no-wrap
+#~ msgid ""
+#~ "Ĉi tio estas tipa programo Bind: du-kanala koda fluo.\n"
+#~ " * FrameSource havas du elirojn, nome la ĉefa rivereto Channel0 (1280x720) kaj la sklava rivereto Channel1 (640x360).\n"
+#~ "   *   Ĉefa rivereto: Channel0 Bind OSD Group.0 de FrameSource, OSD Group.0 Bind Encoder Group.0. Inter ili: \n"
+#~ "       * OSD-Grupo.0 registris du regionojn, kiuj estas uzataj por montri informojn pri tempostampo kaj signoŝnuro respektive\n"
+#~ "       * Kodigila Grupo .0 registris du kanalojn. , kiuj estas kodado H264 kaj kodado JPEG respektive. Inter ili, se la bilda grandeco de la koda kanalo JPEG ne egalas al la eniga parametro (Kanalo0 de FrameSource), tiam ĝi estos skalita (programaro ĉe T10) ) atingi la celon kapti ĉe iu ajn rezolucio.\n"
+#~ msgstr ""
+#~ "这是一个典型的Bind程序：两通道代码流。\n"
+#~ " * FrameSource具有两个输出，即主流Channel0 (1280x720) 和从属流Channel1 (640x360)。\n"
+#~ "   *   主码流：FrameSource的Channel0绑定OSD Group.0，OSD Group.0绑定编码器Group.0。其中： \n"
+#~ "       * OSD Group.0记录了两个区域，分别用于显示时间戳和字符串信息\n"
+#~ "       * 编码器Group.0记录了两个通道。 ，分别是H264编码和JPEG编码。其中，如果JPEG编码通道的图像尺寸与FrameSource Channel0)的输入参数 (不匹配，则它将在T10) 进行软件缩放 (。) 达到在任何分辨率下拍摄的目的。\n"
+
+#, fuzzy, no-wrap
+#~ msgid ""
+#~ "Notoj:\n"
+#~ "* oni rekomendas, ke ĉiuj ligaj operacioj estu faritaj dum sistemo-inicialigo.\n"
+#~ "* Operacioj Bind kaj UnBind ne povas esti nomataj dinamike post kiam _FrameSource_ estas aktivigita. UnBind fariĝas nur post malaktivigo _FrameSource_.\n"
+#~ msgstr ""
+#~ "注意：\n"
+#~ "* 建议在系统初始化期间执行所有链接操作。\n"
+#~ "* 激活 _FrameSource_ 后，不能动态调用绑定和取消绑定操作。仅在取消激活 _FrameSource_后才能取消绑定。\n"
+
+#, fuzzy, no-wrap
+#~ msgid "int IMP\\_Sistemo\\_Init (malplena )"
+#~ msgstr "int IMP\\_系统\\_初始 (空 )"
+
+#, fuzzy, no-wrap
+#~ msgid ""
+#~ "Inicialigo de la IMP-sistemo.\n"
+#~ "redonas 0 se ĝi sukcesas.\n"
+#~ "Post ĉi tiu API-alvoko, la baza datuma strukturo estos pravalorizita, sed la aparataro ne estos pravalorizita.\n"
+#~ "atento: Ĉi tiu funkcio devas esti alvokita por komencigo antaŭ iu ajn alia operacio.\n"
+#~ msgstr ""
+#~ "IMP系统的初始化。如果成功，\n"
+#~ "将返回0。\n"
+#~ "此API调用后，将初始化基本数据结构，但不会初始化硬件。\n"
+#~ "注意：必须在执行任何其他操作之前调用此功能以进行初始化。\n"
+
+#, fuzzy, no-wrap
+#~ msgid "int IMP_System_Elirejo (malplena)"
+#~ msgstr "int IMP_System_出口 (空)"
+
+#, fuzzy, no-wrap
+#~ msgid ""
+#~ "Post vokado de ĉi tiu funkcio, ĉiu memoro kaj IMP _handles_ estos liberigitaj, kaj la aparataro estos fermita. \n"
+#~ "Noto: Post voki ĉi tiun API, se vi volas uzi IMP denove, vi devas reagordi la IMP-sistemon.\n"
+#~ msgstr ""
+#~ "调用此函数后，将释放所有内存和IMP _handles_ ，并且将关闭硬件。 \n"
+#~ "注：调用此API后，如果要再次使用IMP，则需要重置IMP系统。\n"
+
+#, fuzzy, no-wrap
+#~ msgid "int64_t IMP_Sistemo_GetTimeStamp (void)"
+#~ msgstr "int64_t IMP_系统_GetTimeStamp (void)"
+
+#, fuzzy, no-wrap
+#~ msgid "Akiru la IMP-sisteman tempostampon en mikrosekundoj.  \n"
+#~ msgstr "获取IMP系统时间戳（以微秒为单位）。  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Reveno: tempo en mikrosekundoj.\n"
+#~ msgstr "返回值：时间（以微秒为单位）。\n"
+
+#, fuzzy, no-wrap
+#~ msgid "int IMP_System_RebaseTimeStamp (bazoj int64_t)"
+#~ msgstr "int IMP_System_RebaseTimeStamp (以int64_t)为基准"
+
+#, fuzzy, no-wrap
+#~ msgid "Agordu la tempan markon de la sistemo IMP en mikrosekundoj.  \n"
+#~ msgstr "设置IMP系统的时间戳（以微秒为单位）。  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Reveno: 0 se sukcesas.\n"
+#~ msgstr "返回：如果成功，则返回0。\n"
+
+#, fuzzy, no-wrap
+#~ msgid "uint32_t IMP_Sistemo_ReadReg32 (uint32_t u32Addr)"
+#~ msgstr "uint32_t IMP_系统_ReadReg32 (uint32_t u32Addr)"
+
+#, fuzzy, no-wrap
+#~ msgid "malplena IMP_System_WriteReg32 (uint32_t regAddr, valeur uint32_t)"
+#~ msgstr "空白IMP_System_WriteReg32 (uint32_t regAddr, valeur uint32_t)"
+
+#, fuzzy, no-wrap
+#~ msgid "Skribu la valoron al la 32-bita registro.\n"
+#~ msgstr "将该值写入32位寄存器。\n"
+
+#, fuzzy, no-wrap
+#~ msgid "int IMP_System_GetVersion (IMPVersion * pstVersion) "
+#~ msgstr "int IMP_System_GetVersion (IMPVersion * pstVersion) "
+
+#, fuzzy, no-wrap
+#~ msgid "Akiru la versian numeron de la IMP-sistemo.\n"
+#~ msgstr "获取IMP系统的版本号。\n"
+
+#, fuzzy, no-wrap
+#~ msgid "const char * IMP_System_GetCPUInfo (malplena)"
+#~ msgstr "const char * IMP_System_GetCPUInfo (空)"
+
+#, fuzzy, no-wrap
+#~ msgid "int IMP_System_Bind (IMPCell * srcCell, IMPCell * dstCell)"
+#~ msgstr "int IMP_System_绑定 (IMPCell * srcCell，IMPCell * dstCell)"
+
+#, fuzzy, no-wrap
+#~ msgid "Noto 2: Post sukcesa ligilo, la datumoj generitaj de srcCell (Eliro) estos aŭtomate transdonitaj al la celloka Ĉela (Grupo).\n"
+#~ msgstr "注2：成功链接后，由srcCell (输出) 生成的数据将自动传输到目标Cell (组)。\n"
+
+#, fuzzy, no-wrap
+#~ msgid "int IMP_System_UnBind (IMPCell * srcCell, IMPCell * dstCell)"
+#~ msgstr "int IMP_System_UnBind (IMPCell * srcCell，IMPCell * dstCell)"
+
+#, fuzzy, no-wrap
+#~ msgid "int IMP_System_GetBindbyDest (IMPCell * dstCell, IMPCell * srcCell)"
+#~ msgstr "int IMP_System_GetBindbyDest (IMPCell * dstCell，IMPCell * srcCell)"

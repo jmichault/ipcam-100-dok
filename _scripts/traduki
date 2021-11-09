@@ -60,6 +60,7 @@ do
   fi
   for lang in $LINGVOJ
   do
+    # ne traduki se fina dosiero ekzistas, sed ne la "po" dosiero 
     if [ ! -f "../_locale/${lang}/${FIC}.po" -a -f "../${lang}/${FIC}" ]
     then
       continue;

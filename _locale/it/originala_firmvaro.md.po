@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-10-30 11:05+0200\n"
+"POT-Creation-Date: 2021-11-09 15:12+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -62,7 +62,7 @@ msgstr "TCP: 80(HTTP), 443(HTP anche!), 554(RTSP), 8004, 8006, 9527(, 9999  \n"
 #: originala_firmvaro.md:13
 #, fuzzy, no-wrap
 msgid "UDP: 67(DHCP), 3702, 8002, 39642\n"
-msgstr "UDP: 67(DHCP), 3702, 8002, 39642 (° 3 ° 3\n"
+msgstr "UDP: 67 ( DHCP ), 3702, 8002, 39642 \n"
 
 #. type: Plain text
 #: originala_firmvaro.md:14
@@ -174,7 +174,7 @@ msgstr "`telnetd IP 9527` : Login: _root_, Password: _jco66688_, accessibile per
 #: originala_firmvaro.md:49
 #, fuzzy, no-wrap
 msgid "Ne esti malkonektita post 5 minutoj: `killall -9 auto_run.sh`  \n"
-msgstr "Non essere disconnesso dopo 5 minuti: `killall -9 auto_run.sh`  (° 4 ° 4\n"
+msgstr "Non disconnettersi dopo 5 minuti:  `killall -9 auto_run.sh`   \n"
 
 #. type: Plain text
 #: originala_firmvaro.md:51
@@ -498,65 +498,164 @@ msgstr "Revisione principale:"
 #: originala_firmvaro.md:177
 #, fuzzy, no-wrap
 msgid ""
-"(° 1 ° Informo:\n"
-"    `binwalk mtdblock2.bin`\n"
-"    * Rezulto:\n"
-"decimala deksesuma priskribo\n"
+"*  Informo: \n"
+"     `binwalk mtdblock2.bin` \n"
+"     *  Rezulto: \n"
+" Dekuma deksesuma priskribo \n"
 msgstr ""
-"(° 1 ° 1 ° Informazioni:\n"
-"    `binwalk mtdblock2.bin`\n"
-"\n"
-"\n"
-"    * \n"
+"*   Informazioni:  \n"
+"      `binwalk mtdblock2.bin`  \n"
+"      *   Risultato:  \n"
+" Descrizione decimale esadecimale  \n"
 
 #. type: Plain text
-#: originala_firmvaro.md:179
-#, fuzzy, no-wrap
-msgid "0 0x0 Uimage Header, Header Grandeco: 64 Bajtoj, Header CRC: 0x7b9DE864, kreita: 2019-06-22 02:41:00, Bildo Grandeco: 1466358 BYTES, DATA Adreso: 0x80010000, Eniro Punkto: 0x80388340, Datumoj CRC: 0xb83DCA15, OS: Linukso, CPU: MIPS, Bildo Tipo: OS Kernel Bildo, Kunpremo Tipo: LZMA, Bildo Nomo: \"Linukso-3.10.14__. 1.0__]\"(° 7 ° 7 ° 64 0x40 lzma kunpremitaj datumoj, ecoj: 0x5d, vortaro Grandeco: 16777216 bajtoj, nekompresita grandeco: -1 bajtoj\n"
-msgstr "0 0x0 Intestazione di uImage, Intestazione Dimensione: 64 Bytes, intestazione CRC: 0x7b9de864, Creato: 2019-06-22 02:41:00, Dimensione dell'immagine: 1466358 Bytes, Indirizzo dati: 0x80010000, Punto d'ingresso: 0x80388340, CRC Dati: 0xb83dca15, OS: Linux, CPU: MIPS, Tipo di immagine: OS Kernel Image, Tipo di compressione: LZMA, Nome immagine: \"Linux-3.10.14__.\n"
-
-#. type: Plain text
-#: originala_firmvaro.md:182
+#: originala_firmvaro.md:180
 #, fuzzy, no-wrap
 msgid ""
-"(° 1 ° eltiro de datumoj de MTDBlock2:\n"
-"    `tail -c+65  < mtdblock2.bin >mtdblock2.dataz`\n"
+"0 0x0 Uimage Header, Header Grandeco: 64 Bajtoj, Header CRC: 0x7b9DE864, kreita: 2019-06-22 02:41:00, Bildo Grandeco: 1466358 BYTES, DATA Adreso: 0x80010000, Eniro Punkto: 0x80388340, Datumoj CRC: 0xb83DCA15, OS: Linukso, CPU: MIPS, Bildo Tipo: OS Kernel Bildo, Kunpremo Tipo: LZMA, Bildo Nomo:  \" Linux-3.10.14 __ ISVP _turkey_ 1.0 __] \" \n"
+" 64 0X40 LZMA kunpremitaj datumoj, Propraĵoj: 0x5d, vortaro Grandeco: 16777216 bajtoj, kunpremita grandeco: -1 bajtoj \n"
 msgstr ""
-"(° 1 ° 1 ° 1 ° Estrazione di dati di MTDBLOCK2:\n"
-"    `tail -c+65  < mtdblock2.bin >mtdblock2.dataz`\n"
+"0 0x0 Uimage Header, Header Size: 64 Bytes, Header CRC: 0x7b9DE864, creato: 2019-06-22 02:41:00, Image Size: 1466358 BYTES, DATE Address: 0x80010000, Entry Point: 0x80388340, Data CRC: 0xb83DCA15, Sistema operativo: Linux, CPU: MIPS, Tipo immagine: Immagine kernel sistema operativo, Tipo compressione: LZMA, Nome immagine:   \" Linux-3.10.14  __  ISVP  _turkey_  1.0  __]  \"  \n"
+" 64 0X40 Dati compressi LZMA, Proprietà: 0x5d, Dimensione dizionario: 16777216 byte, Dimensione compressa: -1 byte  \n"
 
 #. type: Plain text
-#: originala_firmvaro.md:186
+#: originala_firmvaro.md:184
 #, fuzzy, no-wrap
 msgid ""
-"Kerna eltiro:\n"
-"    `cat mtdblock2.dataz|lzma -d -c -f - >kernel`\n"
-"(° 13 ° ° Listo de ŝoforoj inkluzivita:    `strings kernel|grep \"^drivers\"`\n"
+"*  mtdblock2 data eltiro: \n"
+"     `tail -c+65  < mtdblock2.bin >mtdblock2.dataz` \n"
+" *  Kerna Eltiro: \n"
+" *  \n"
 msgstr ""
-"Estrazione del nucleo:\n"
-"\n"
-"\n"
-"(° 5 ° 5 ° 6 ° 13 ° 13 ° Elenco dei conduttori inclusi:    `strings kernel|grep \"^drivers\"`\n"
+"*   Estrazione dati mtdblock2:  \n"
+"      `tail -c+65  < mtdblock2.bin >mtdblock2.dataz`  \n"
+"  *   Estrazione Core:  \n"
+"  *   \n"
 
 #. type: Plain text
-#: originala_firmvaro.md:189
+#: originala_firmvaro.md:190
 #, fuzzy, no-wrap
 msgid ""
-"Listo de dosieroj:\n"
-"    `strings kernel|grep \"\\.[cChTsS]$\"`\n"
+" *  Listo de Drivers Inkluditaj: \n"
+"     `strings kernel|grep \"^drivers\"` \n"
+" <H21 > Listo de fontaj dosieroj: \n"
+"     `strings kernel|grep \"\\.[cChTsS]$\"` \n"
+" *  Simbolo-Listo \n"
+" https://github.com/marin-m/vmlinux-to-elf devus helpi trovi simbolojn sed ne ekzistas <H33 > Komenci ebla de kallsyms _token_ Tablo: 0x3AA1B4 \n"
 msgstr ""
-"Elenco dei file:\n"
-"    `strings kernel|grep \"\\.[cChTsS]$\"`\n"
+" *   Elenco dei driver inclusi:  \n"
+"      `strings kernel|grep \"^drivers\"`  \n"
+"  < H21  >  Elenco dei file di origine:  \n"
+"      `strings kernel|grep \"\\.[cChTsS]$\"`  \n"
+"  *   Elenco dei simboli  \n"
+" https: / / github.com/marin-m/vmlinux-to-elf dovrebbe aiutare a trovare i simboli ma non esistono  < H33  >  Inizia con kallsyms  _token_  Tabella: 0x3AA1B4  \n"
 
-#. type: Plain text
-#: originala_firmvaro.md:199
 #, fuzzy, no-wrap
-msgid ""
-"(° 30 ° ° 31 ° Listo de simboloj (° 32 ° 32 ° Https://github.com/marin-m/vmlinux-to-lf devus permesi trovi la simbolojn, sed ĝi ne atingas\n"
-". Tablo_token_: 0x3AA1B4\n"
-msgstr ""
-"(° 1 °. Raggiunge\n"
-".\n"
+#~ msgid ""
+#~ "(° 1 ° Informo:\n"
+#~ "    `binwalk mtdblock2.bin`\n"
+#~ "    * Rezulto:\n"
+#~ "decimala deksesuma priskribo\n"
+#~ msgstr ""
+#~ "(° 1 ° 1 ° Informazioni:\n"
+#~ "    `binwalk mtdblock2.bin`\n"
+#~ "\n"
+#~ "\n"
+#~ "    * \n"
+
+#, fuzzy, no-wrap
+#~ msgid "0 0x0 Uimage Header, Header Grandeco: 64 Bajtoj, Header CRC: 0x7b9DE864, kreita: 2019-06-22 02:41:00, Bildo Grandeco: 1466358 BYTES, DATA Adreso: 0x80010000, Eniro Punkto: 0x80388340, Datumoj CRC: 0xb83DCA15, OS: Linukso, CPU: MIPS, Bildo Tipo: OS Kernel Bildo, Kunpremo Tipo: LZMA, Bildo Nomo: \"Linukso-3.10.14__. 1.0__]\"(° 7 ° 7 ° 64 0x40 lzma kunpremitaj datumoj, ecoj: 0x5d, vortaro Grandeco: 16777216 bajtoj, nekompresita grandeco: -1 bajtoj\n"
+#~ msgstr "0 0x0 Intestazione di uImage, Intestazione Dimensione: 64 Bytes, intestazione CRC: 0x7b9de864, Creato: 2019-06-22 02:41:00, Dimensione dell'immagine: 1466358 Bytes, Indirizzo dati: 0x80010000, Punto d'ingresso: 0x80388340, CRC Dati: 0xb83dca15, OS: Linux, CPU: MIPS, Tipo di immagine: OS Kernel Image, Tipo di compressione: LZMA, Nome immagine: \"Linux-3.10.14__.\n"
+
+#, fuzzy, no-wrap
+#~ msgid ""
+#~ "(° 1 ° eltiro de datumoj de MTDBlock2:\n"
+#~ "    `tail -c+65  < mtdblock2.bin >mtdblock2.dataz`\n"
+#~ msgstr ""
+#~ "(° 1 ° 1 ° 1 ° Estrazione di dati di MTDBLOCK2:\n"
+#~ "    `tail -c+65  < mtdblock2.bin >mtdblock2.dataz`\n"
+
+#, fuzzy, no-wrap
+#~ msgid ""
+#~ "Kerna eltiro:\n"
+#~ "    `cat mtdblock2.dataz|lzma -d -c -f - >kernel`\n"
+#~ "(° 13 ° ° Listo de ŝoforoj inkluzivita:    `strings kernel|grep \"^drivers\"`\n"
+#~ msgstr ""
+#~ "Estrazione del nucleo:\n"
+#~ "\n"
+#~ "\n"
+#~ "(° 5 ° 5 ° 6 ° 13 ° 13 ° Elenco dei conduttori inclusi:    `strings kernel|grep \"^drivers\"`\n"
+
+#, fuzzy, no-wrap
+#~ msgid ""
+#~ "Listo de dosieroj:\n"
+#~ "    `strings kernel|grep \"\\.[cChTsS]$\"`\n"
+#~ msgstr ""
+#~ "Elenco dei file:\n"
+#~ "    `strings kernel|grep \"\\.[cChTsS]$\"`\n"
+
+#, fuzzy, no-wrap
+#~ msgid ""
+#~ "(° 30 ° ° 31 ° Listo de simboloj (° 32 ° 32 ° Https://github.com/marin-m/vmlinux-to-lf devus permesi trovi la simbolojn, sed ĝi ne atingas\n"
+#~ ". Tablo_token_: 0x3AA1B4\n"
+#~ msgstr ""
+#~ "(° 1 °. Raggiunge\n"
+#~ ".\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "*  Informo \n"
+#~ "     `binwalk mtdblock2.bin` \n"
+#~ "     *  Rezulto \n"
+#~ " Dekuma deksesuma Priskribo \n"
+#~ msgstr ""
+#~ "*   Informazioni  \n"
+#~ "      `binwalk mtdblock2.bin`  \n"
+#~ "      *   Risultato  \n"
+#~ " Decimale esadecimale Descrizione  \n"
+
+#, fuzzy
+#~ msgid ""
+#~ "0 0x0 Uimage Header, Header Grandeco: 64 bajtoj, Header CRC: 0x7b9de864, "
+#~ "Kreita: 2019-06-22 02:41:00, bildo Grandeco: 1466358 Bytes, Datumoj "
+#~ "adreso: 0x80010000, Entry Punkto: 0x80388340, Datumoj CRC: 0xb83dca15, "
+#~ "OS: Linukso, CPU: MIPS, Bildo Tipo: VIN Kernel Bildo, Kunpremo Tipo: "
+#~ "LZMA, Bildo Nomo:  \" Linukso-3.10.14 __ ISVP _turkey_ 1.0 __] \" \n"
+#~ " 64 0x40 LZMA Compressed Datumoj: Propraĵoj: 0x5d, Vortaro Grandeco: "
+#~ "16777216 bytes, Kunpremitaj Grandeco: -1 bajtoj \n"
+#~ msgstr ""
+#~ "0 0x0 Intestazione di uImage, Intestazione Dimensione: 64 Bytes, "
+#~ "intestazione CRC: 0x7b9de864, Creato: 2019-06-22 02:41:00, Dimensione "
+#~ "dell'immagine: 1466358 Bytes, Indirizzo dati: 0x80010000, Punto di "
+#~ "ingresso: 0x80388340, CRC Dati: 0xb83dca15, OS: Linux, CPU: MIPS, Tipo "
+#~ "immagine: Vin Kernel Image, Tipo di compressione: LZMA, Nome immagine:   "
+#~ "\" Linux-3.10.14  __  ISVP  _turkey_  1.0  __]  \"  \n"
+#~ " 64 0x40 Dati compressi lzma: Proprietà: 0x5D, Dimensione del dizionario: "
+#~ "16777216 Bytes, Dimensioni compressi: -1 Bytes  \n"
+
+#, fuzzy
+#~ msgid ""
+#~ "*  Datumoj: \n"
+#~ "     `tail -c+65  < mtdblock2.bin >mtdblock2.dataz` \n"
+#~ " *  eltiro: \n"
+#~ "     `cat mtdblock2.dataz|lzma -d -c -f - >kernel` \n"
+#~ " *  listo de \n"
+#~ "     `strings kernel|grep \"^drivers\"` \n"
+#~ " <h21 listo de \n"
+#~ "     `strings kernel|grep \"\\.[cChTsS]$\"` \n"
+#~ " *  liston de \n"
+#~ " sed li ne povas h33> povas komenci kallsyms _token_ tablo: 0x3AA1B4 \n"
+#~ msgstr ""
+#~ "*   Dati:  \n"
+#~ "      `tail -c+65  < mtdblock2.bin >mtdblock2.dataz`  \n"
+#~ "      `tail -c+65  < mtdblock2.bin >mtdblock2.dataz`  Estrazione:  \n"
+#~ "      `cat mtdblock2.dataz|lzma -d -c -f - >kernel`  \n"
+#~ "      `cat mtdblock2.dataz|lzma -d -c -f - >kernel`  \n"
+#~ "  *   Elenco di  \n"
+#~ "  *    \n"
+#~ "  < Elenco H21 di <H22 >      `strings kernel|grep \"\\.[cChTsS]$\"`  \n"
+#~ "  *   Elenco di  \n"
+#~ " Ma non può H33 >  può avviare Kallsyms  _token_  Tabella: 0x3AAA1b4  \n"
 
 #, no-wrap
 #~ msgid "001-originala_firmvaro"

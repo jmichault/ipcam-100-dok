@@ -9,7 +9,7 @@ title: 'Original firmware'
 # open ports
 
 TCP: 80(HTTP), 443(HTP too!), 554(RTSP), 8004, 8006, 9527(, 9999  
-UDP: 67(DHCP), 3702, 8002, 39642 (° 3 ° 3
+UDP: 67 ( DHCP ), 3702, 8002, 39642 
 
 Port 80: HTTP  
 http: // IP: login: _admin:_, Password: _admin_
@@ -51,7 +51,7 @@ port 8006:? , opened by jco_server
 
 Port 9527: Telnet  
 `telnetd IP 9527` : Login: _root_, Password: _jco66688_, accessible for 5 minutes, closed after.  
-Not be disconnected after 5 minutes: `killall -9 auto_run.sh`  (° 4 ° 4
+Not be disconnected after 5 minutes:  `killall -9 auto_run.sh`   
 To stop JCO_server : 
  
  
@@ -194,28 +194,20 @@ notable files in _/ipc_ :
 
 
 # Core review:
-(° 1 ° 1 ° Information:
-    `binwalk mtdblock2.bin`
-    * 
+*   Information:  
+      `binwalk mtdblock2.bin`  
+      *   Result:  
+ Decimal Hexadecimal Description  
 --------------------------------------------------------------------------------
-0 0x0 UIMAGE Header, Header Size: 64 bytes, Header CRC: 0x7b9de864, Created: 2019-06-22 02:41:00, Image Size: 1466358 bytes, Data Address: 0x80010000, Entrance point: 0x80388340, CRC data: 0xb83dca15,
+0 0x0 UIMAGE Header, Header Size: 64 bytes, Header CRC: 0x7b9de864, Created: 2019-06-22 02:41:00, Image Size: 1466358 bytes, Data Address: 0x80010000, Entrance point: 0x80388340, CRC data: 0xb83dca15,  
 
-(° 1 ° 1 ° 1 ° Extraction of data of Mtdblock2:
-    `tail -c+65  < mtdblock2.bin >mtdblock2.dataz`
-
-Core extraction:
-
-(° 5 ° 5 ° 6 ° 13 ° 13 ° List of conductors included:    `strings kernel|grep "^drivers"`
-
-List of files:
-    `strings kernel|grep "\.[cChTsS]$"`
-
-
-
-
-
-
-
-
-
-(° 1 °.
+*   MTDBLOCK2 DATE extraction:  
+      `tail -c+65  < mtdblock2.bin >mtdblock2.dataz`  
+  *   Core extraction:  
+  *   
+ *   List of drivers included:  
+      `strings kernel|grep "^drivers"`  
+  < H21  >  List of source files:  
+      `strings kernel|grep "\.[cChTsS]$"`  
+  *   Symbol list  
+ HTTPS: /  

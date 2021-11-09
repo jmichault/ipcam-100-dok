@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-10-30 11:06+0200\n"
+"POT-Creation-Date: 2021-11-09 15:13+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -119,14 +119,14 @@ msgstr "Was funktioniert in alternativer Firmware:"
 #. type: Bullet: '* '
 #: index.md:33
 #, fuzzy, no-wrap
-msgid "_LAN_ kaj _WLAN_\n"
-msgstr "_LAN_ und _WLAN_\n"
+msgid "_LAN_  kaj  _WLAN_ \n"
+msgstr "_LAN_   und   _WLAN_  \n"
 
 #. type: Bullet: '* '
 #: index.md:35
 #, fuzzy, no-wrap
-msgid "Servilo (° 1 ° duobla-fluo: _1920x1080 H264_ kaj _640x360 MJPEG_ defaŭlte. \n"
-msgstr "Server (° 1 ° Doppelfluss: _1920x1080 H264_ und _640x360 MJPEG_ standardmäßig.  \n"
+msgid "Servilo  _RTSP_  Duobla-rivereto:  _1920x1080 H264_  kaj  _640x360 MJPEG_  Defaŭlte. \n"
+msgstr "Server   _RTSP_   Doppelstrom:   _1920x1080 H264_   und   _640x360 MJPEG_   standardmäßig.  \n"
 
 #. type: Bullet: '* '
 #: index.md:37
@@ -137,8 +137,8 @@ msgstr "Visuelle Parameter\n"
 #. type: Bullet: '* '
 #: index.md:39
 #, fuzzy, no-wrap
-msgid "Servilo _HTTP_\n"
-msgstr "Server _HTTP_\n"
+msgid "Servilo  _HTTP_ \n"
+msgstr "Server   _HTTP_  \n"
 
 #. type: Bullet: '* '
 #: index.md:41
@@ -155,44 +155,44 @@ msgstr "Motorkalibrierung\n"
 #. type: Bullet: '* '
 #: index.md:45
 #, fuzzy, no-wrap
-msgid "Parametroj _PTZ_\n"
-msgstr "Parameter _PTZ_\n"
+msgid "Agordoj  _PTZ_ \n"
+msgstr "Einstellungen   _PTZ_  \n"
 
 #. type: Bullet: '* '
 #: index.md:47
 #, fuzzy, no-wrap
-msgid "Kliento _NTP_\n"
-msgstr "Kunde _NTP_\n"
+msgid "Kliento  _NTP_ \n"
+msgstr "Client   _NTP_  \n"
 
 #. type: Bullet: '* '
 #: index.md:49
 #, fuzzy, no-wrap
-msgid "Pasvorta administrado _http_, _rtsp_ kaj sistemo. \n"
-msgstr "Passwortverwaltung _http_, _rtsp_ und System.  \n"
+msgid "administri pasvortoj  _http_,  _rtsp_  kaj sistemo. \n"
+msgstr "Verwalten Sie Kennwörter   _http_,   _rtsp_   und -system.  \n"
 
 #. type: Bullet: '* '
 #: index.md:51
 #, fuzzy, no-wrap
-msgid "Blanka LED-Kontrolo kaj IR\n"
-msgstr "Weiße LED-Steuerung und IR\n"
+msgid "blankaj LED kontrolo kaj IR \n"
+msgstr "Weiße LED-Steuerung und IR  \n"
 
 #. type: Bullet: '* '
 #: index.md:53
 #, fuzzy, no-wrap
-msgid "Blanka LED-Kontrolo kaj IR _ftp_\n"
-msgstr "Weiße LED-Steuerung und IR _ftp_\n"
+msgid "blankaj LED kontrolo kaj IR  _ftp_\n"
+msgstr "Weiße LED-Steuerung und IR   _ftp_ \n"
 
 #. type: Bullet: '* '
 #: index.md:55
 #, fuzzy, no-wrap
-msgid "Blanka LED-Kontrolo kaj IR _telnet_\n"
-msgstr "Weiße LED-Steuerung und IR _telnet_\n"
+msgid "blankaj LED kontrolo kaj IR  _telnet_\n"
+msgstr "Weiße LED-Steuerung und IR   _telnet_ \n"
 
 #. type: Bullet: '* '
 #: index.md:57
 #, fuzzy, no-wrap
-msgid "Servilo kaj kliento _ssh_\n"
-msgstr "Server und Client _ssh_\n"
+msgid "Servilo kaj Kliento  _ssh_ \n"
+msgstr "Server und Client   _ssh_  \n"
 
 #. type: Bullet: '* '
 #: index.md:59
@@ -209,14 +209,14 @@ msgstr "E-Mail senden\n"
 #. type: Bullet: '* '
 #: index.md:63
 #, fuzzy, no-wrap
-msgid "Sendi _«telegram»_\n"
-msgstr "Senden _«telegram»_\n"
+msgid "Sendante  _«telegram»_ \n"
+msgstr "Senden   _«telegram»_  \n"
 
 #. type: Bullet: '* '
 #: index.md:65
 #, fuzzy, no-wrap
-msgid "Aŭtomata nokta reĝimo\n"
-msgstr "Automatisches Nachtregime\n"
+msgid "aŭtomata nokto mode \n"
+msgstr "Automatischer Nachtmodus  \n"
 
 #. type: Title ##
 #: index.md:67
@@ -257,8 +257,8 @@ msgstr "E-Mail senden_mqtt_\n"
 #. type: Bullet: '* '
 #: index.md:80
 #, fuzzy, no-wrap
-msgid "Sendante bildojn kaj videojn en nubo\n"
-msgstr "Senden von Bildern und Videos in Cloud\n"
+msgid "sendo bildojn kaj filmetoj en la nubo \n"
+msgstr "Sendungsbilder und Videos in der Cloud  \n"
 
 #. type: Bullet: '* '
 #: index.md:82
@@ -287,8 +287,8 @@ msgstr "Stellen Sie vielleicht das Netzwerk ( _www/ipcam/config.dist/reto.conf_ 
 #. type: Bullet: '* '
 #: index.md:91
 #, fuzzy, no-wrap
-msgid "Enmetu la karton _microSD_ en la fotilon. \n"
-msgstr "Geben Sie die Karte _microSD_ in der Kamera ein.  \n"
+msgid "Enmeti la karton  _microSD_  en la fotilo. \n"
+msgstr "Legen Sie die Karte   _microSD_   in die Kamera ein.  \n"
 
 #. type: Bullet: '* '
 #: index.md:93
@@ -323,8 +323,8 @@ msgstr "Faru `cd /opt/media/mmcblk0p1;./install.sh`\n"
 #. type: Bullet: '* '
 #: index.md:103
 #, fuzzy, no-wrap
-msgid "La fotilo rekomencas, nun:\n"
-msgstr "Die Kamera setzt sich nun fort: (° 1 ° 1\n"
+msgid "La fotilo reboots nun: \n"
+msgstr "Die Neustarts-Kamera jetzt:  \n"
 
 #. type: Bullet: '    * '
 #: index.md:105
@@ -342,27 +342,27 @@ msgstr "Sie können in SSH (Benutzer _admin_, Passwort _ismart12_)verbinden.\n"
 #: index.md:109
 #, fuzzy, no-wrap
 msgid "La primara video-fluo estas alirebla ĉe _rtsp://admin:ismart21@IP/stream1_.\n"
-msgstr "Der primäre Videostrom ist bei _rtsp://admin:ismart21@IP/stream1_erreichbar. (° 3 ° 3\n"
+msgstr "Der primäre Videostrom ist bei  _rtsp://admin:ismart21@IP/stream1_ zugänglich. \n"
 
 #. type: Bullet: '    * '
 #: index.md:111
 #, fuzzy, no-wrap
 msgid "La sekundara video-fluo estas alirebla ĉe _rtsp://admin:ismart21@IP/stream2_.\n"
-msgstr "Der sekundäre Videostrom ist bei _rtsp://admin:ismart21@IP/stream2_erreichbar. (° 3 ° 3\n"
+msgstr "Der sekundäre Videostrom ist bei  _rtsp://admin:ismart21@IP/stream2_ zugänglich. \n"
 
 #. type: Plain text
 #: index.md:116
 #, fuzzy, no-wrap
 msgid ""
-"(° 1 ° WiFi AP-reĝimo estas aktivigita defaŭlte:\n"
-"    ** SSID: IPCAM100-XXXXXX\n"
-"    ** WPA2-ŝlosilo: ismart21\n"
-"IP-adreso de la fotilo: 172.25.0.1\n"
+"    *  WiFi AP-reĝimo estas ebligita defaŭlte: \n"
+"     **  SSID: IPCAM100-XXXXX \n"
+"     **  WPA2-klavo: ismart21 \n"
+"     **  IP-adreso de la fotilo: 172.25.0.1 \n"
 msgstr ""
-"(° 1 ° 1 ° 1 WiFi AP-Modus wird standardmäßig aktiviert:\n"
-"    ** SSID: IPCAM100-XXXXXX\n"
-"    ** WPA2-Taste: ismart21\n"
-"IP-Adresse der Kamera: 172.25.0.1\n"
+"    *   WiFi AP-Modus ist standardmäßig aktiviert:  \n"
+"      **   SSID: IPCAM100-XXXXX  \n"
+"      **   WPA2-Taste: ISMART21  \n"
+"      **   IP-Adresse der Kamera: 172.25.0.1  \n"
 
 #. type: Title ##
 #: index.md:117
@@ -401,18 +401,133 @@ msgid "Interesaj dokumentoj"
 msgstr "Interessante Dokumente"
 
 #. type: Plain text
-#: index.md:135
+#: index.md:136
 #, fuzzy, no-wrap
 msgid ""
-"Multa laboro estis farita por fotiloj ekipitaj per procesoro _ingenic T20_ :\n"
-"* modifita firmware: <https://github.com/eliaskotlyar/xiaomi- dafang -Hacks>\n"
-"* Fontoj de la modifita firmware: <https://github.com/dafang-hacks/main>\n"
-"17 °) https://github.com/thatusenameAlreadyExist/Jco-pm203-fisheye-ingenic-t20-p2p-camera-hacks>\n"
+"Multa laboro estis farita por fotiloj ekipitaj per procesoro  _ingenic T20_ : \n"
+" *  modifita firmware:  <https://github.com/EliasKotlyar/Xiaomi-Dafang-Hacks> \n"
+" *  Fontoj de la modifita firmware:  <https://github.com/Dafang-Hacks/Main> \n"
+" *  Aliaj firmware:  <https://github.com/openmiko/openmiko> \n"
+" *  Lanĉaj Programoj Sen Ŝanĝi la Firmware:  <https://github.com/ThatUsernameAlreadyExist/JCO-PM203-Fisheye-Ingenic-T20-P2P-camera-hacks> \n"
 msgstr ""
-"Es wurde viel Arbeit für Kameras hergestellt, die mit einem Prozessor ausgestattet sind _ingenic T20_ :\n"
-"* modifizierte Firmware: <https://github.com/ilílístoTlyar/xiaomi- Dafang -Haks>\n"
-"Quellen der modifizierten Firmware: <https://github.com/dafang-hacks/main>\n"
-") 17 °) https://github.com/thatenenameEnamexist/jco-pm203-fisheye-ininic-t20-p2p-amera-hracks>\n"
+"Für Kameras wurde viel Arbeit gemacht, die mit einem Prozessor-Firmware mit Prozessor   _ingenic T20_   \n"
+"  *   ausgestattet sind:   <https://github.com/EliasKotlyar/Xiaomi-Dafang-Hacks>  \n"
+"  *   Quellen der modifizierten Firmware:   <https://github.com/Dafang-Hacks/Main>  \n"
+"  *   Andere Firmware:   <https://github.com/openmiko/openmiko>  \n"
+"  *   Startprogramme ohne Änderung der Firmware:   <https://github.com/ThatUsernameAlreadyExist/JCO-PM203-Fisheye-Ingenic-T20-P2P-camera-hacks>  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "_LAN_ kaj _WLAN_\n"
+#~ msgstr "_LAN_ und _WLAN_\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "Servilo  _RTSP_  Duoble rivereto:  _1920x1080 H264_  kaj  _640x360 "
+#~ "MJPEG_  defaŭlte. \n"
+#~ msgstr ""
+#~ "Server   _RTSP_   Doppelstrom:   _1920x1080 H264_   und   _640x360 "
+#~ "MJPEG_   standardmäßig.  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Servilo _HTTP_\n"
+#~ msgstr "Server _HTTP_\n"
+
+#, fuzzy, no-wrap
+#~ msgid "Parametroj _PTZ_\n"
+#~ msgstr "Parameter _PTZ_\n"
+
+#, fuzzy, no-wrap
+#~ msgid "Kliento _NTP_\n"
+#~ msgstr "Kunde _NTP_\n"
+
+#, fuzzy, no-wrap
+#~ msgid "Pasvorta administrado _http_, _rtsp_ kaj sistemo. \n"
+#~ msgstr "Passwortverwaltung _http_, _rtsp_ und System.  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Blanka LED-Kontrolo kaj IR\n"
+#~ msgstr "Weiße LED-Steuerung und IR\n"
+
+#, fuzzy, no-wrap
+#~ msgid "Blanka LED-Kontrolo kaj IR _ftp_\n"
+#~ msgstr "Weiße LED-Steuerung und IR _ftp_\n"
+
+#, fuzzy, no-wrap
+#~ msgid "Blanka LED-Kontrolo kaj IR _telnet_\n"
+#~ msgstr "Weiße LED-Steuerung und IR _telnet_\n"
+
+#, fuzzy, no-wrap
+#~ msgid "Servilo kaj kliento _ssh_\n"
+#~ msgstr "Server und Client _ssh_\n"
+
+#, fuzzy, no-wrap
+#~ msgid "Sendi _«telegram»_\n"
+#~ msgstr "Senden _«telegram»_\n"
+
+#, fuzzy, no-wrap
+#~ msgid "Aŭtomata nokta reĝimo\n"
+#~ msgstr "Automatisches Nachtregime\n"
+
+#, fuzzy, no-wrap
+#~ msgid "Sendante bildojn kaj videojn en nubo\n"
+#~ msgstr "Senden von Bildern und Videos in Cloud\n"
+
+#, fuzzy, no-wrap
+#~ msgid "Enmetu la karton _microSD_ en la fotilon. \n"
+#~ msgstr "Geben Sie die Karte _microSD_ in der Kamera ein.  \n"
+
+#, fuzzy
+#~ msgid ""
+#~ "Multa laboro estis farita por fotiloj ekipitaj per procesoro  _ingenic "
+#~ "T20_ : \n"
+#~ " *  modifita firmware:  < https://github.com/eliaskotlyar/xiaomi-dafang-"
+#~ "hacks > \n"
+#~ " *  Fontoj de la modifita firmware:  < https://github.com/dafang-hacks/"
+#~ "main > \n"
+#~ " *  Aliaj firmware:  < https://github.com/openmiko/ OpenMIKO > \n"
+#~ " *  PROGRAMO LEGIN sen ŝanĝi la firmware:  < https://github.com/"
+#~ "thatusernameAlreadyExist/Jco-pm203-fisheyE-ingenic-t20-p2p-camera-hacks > "
+#~ "<h19 >\n"
+#~ msgstr ""
+#~ "Für Kameras wurde viel Arbeit gemacht, die mit einem Prozessor-Firmware "
+#~ "mit Prozessor   _ingenic T20_   \n"
+#~ "  *   ausgestattet ist:   <  https://github.com/ilistotlyar/xiami-dafang-"
+#~ "hacks  >  \n"
+#~ "  *   Quellen aus der modifizierten Firmware:   <  https://github.com/"
+#~ "dafang-hacks/main  >  \n"
+#~ "  *   Andere Firmware:   <  https://github.com/openmiko/ openMiko <H14 "
+#~ "> \n"
+#~ "  *   Programm lesen ohne Änderung der Firmware:   <  https://github.com/"
+#~ "thatusernameAnameEnameExist/jco-pm203-fisheye-insenex-t20-p2P-Camera-"
+#~ "Hacks  >  < H19 < H19 <H19 <H19 <H19 <H11  > \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Servilo (° 1 ° duobla-fluo: _1920x1080 H264_ kaj _640x360 MJPEG_ defaŭlte. \n"
+#~ msgstr "Server (° 1 ° Doppelfluss: _1920x1080 H264_ und _640x360 MJPEG_ standardmäßig.  \n"
+
+#, fuzzy, no-wrap
+#~ msgid ""
+#~ "(° 1 ° WiFi AP-reĝimo estas aktivigita defaŭlte:\n"
+#~ "    ** SSID: IPCAM100-XXXXXX\n"
+#~ "    ** WPA2-ŝlosilo: ismart21\n"
+#~ "IP-adreso de la fotilo: 172.25.0.1\n"
+#~ msgstr ""
+#~ "(° 1 ° 1 ° 1 WiFi AP-Modus wird standardmäßig aktiviert:\n"
+#~ "    ** SSID: IPCAM100-XXXXXX\n"
+#~ "    ** WPA2-Taste: ismart21\n"
+#~ "IP-Adresse der Kamera: 172.25.0.1\n"
+
+#, fuzzy, no-wrap
+#~ msgid ""
+#~ "Multa laboro estis farita por fotiloj ekipitaj per procesoro _ingenic T20_ :\n"
+#~ "* modifita firmware: <https://github.com/eliaskotlyar/xiaomi- dafang -Hacks>\n"
+#~ "* Fontoj de la modifita firmware: <https://github.com/dafang-hacks/main>\n"
+#~ "17 °) https://github.com/thatusenameAlreadyExist/Jco-pm203-fisheye-ingenic-t20-p2p-camera-hacks>\n"
+#~ msgstr ""
+#~ "Es wurde viel Arbeit für Kameras hergestellt, die mit einem Prozessor ausgestattet sind _ingenic T20_ :\n"
+#~ "* modifizierte Firmware: <https://github.com/ilílístoTlyar/xiaomi- Dafang -Haks>\n"
+#~ "Quellen der modifizierten Firmware: <https://github.com/dafang-hacks/main>\n"
+#~ ") 17 °) https://github.com/thatenenameEnamexist/jco-pm203-fisheye-ininic-t20-p2p-amera-hracks>\n"
 
 #, no-wrap
 #~ msgid ""

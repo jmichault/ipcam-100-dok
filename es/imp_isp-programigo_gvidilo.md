@@ -6,7 +6,7 @@ layout: page
 title: 'Guía de programación de video'
 ---
 
-# IMP_ISP (voir imp_isp.h)
+# _IMP\_ISP_   \( Ver   _imp\_isp.h\_)
 Procesamiento de imágenes. Incluye principalmente ajustes de efectos de imagen, cambio de modo y grabación, adición y eliminación de sensor.
 
 El módulo ISP no tiene nada que ver con el flujo de datos y no necesita estar conectado, solo funciona en términos de configuración de efectos y control de sensores.
@@ -51,7 +51,7 @@ int ret = 0;
     return -1;
   }
 ```
-* Paso 3: Activa el sensor, comenzará a producir imágenes.
+* Paso 3: Active el sensor, comenzará a producir imágenes. 
 
 
 
@@ -73,12 +73,12 @@ int ret = 0;
   return -1;
  }
 ```
-* Paso 5: Invocar la interfaz de depuración del ISP: consulte la documentación de la interfaz de depuración del ISP.
+* Paso 5: Llame a una interfaz de depuración ISP: consulte la documentación de una interfaz de depuración ISP. 
 
 
 
 
-## Deshabilitar un módulo ISP
+## Módulo ISP Desactivación
 
 Los pasos para desinstalar el módulo ISP son los siguientes:
 * paso 1: Desactive la configuración del ISP
@@ -94,7 +94,7 @@ int ret = 0;
   return -1;
  }
 ```
-* Paso 2: cierra los sensores. (FrameSource debe estar cerrado antes de esta operación)
+* Paso 2: Cierre los sensores.   \( Los marcos deben cerrarse antes de esta operación  \)  
 
 
 
@@ -117,7 +117,7 @@ ret = IMP_ISP_DelSensor (& sensor);
   return -1;
  }
 ```
-* Paso 4: Limpie el módulo ISP, todos los sensores deben quitarse antes de esta operación.
+* Paso 4: Limpie el módulo ISP, todos los sensores deben retirarse antes de esta operación. 
 
 
 
@@ -133,77 +133,78 @@ ret = IMP_ISP_Close ();
 
 ## lista de funciones
 
-int IMP_ISP_Abierto(vacío);
-int IMP_ISP_Cerrar(vacío);
+```
+int IMP_ISP_Open(void);
+int IMP_ISP_Close(void);
 int IMP_ISP_AddSensor(IMPSensorInfo *pinfo);
 int IMP_ISP_DelSensor(IMPSensorInfo *pinfo);
-int IMP_ISP_EnableSensor(vacío);
-int IMP_ISP_DisableSensor(vacío);
-int IMP_ISP_SetSensorRegister(uint32_t reg, uint32_valor t);
-int IMP_ISP_GetSensorRegister(uint32_t reg, uint32_t *valor);
-int IMP_ISP_EnableTuning(en blanco);
-int IMP_ISP_DisableTuning(en blanco);
-int IMP_ISP_Configuración_SetSensorFPS(uint32_t fps_num, uint32_t fps_den);
+int IMP_ISP_EnableSensor(void);
+int IMP_ISP_DisableSensor(void);
+int IMP_ISP_SetSensorRegister(uint32_t reg, uint32_t value);
+int IMP_ISP_GetSensorRegister(uint32_t reg, uint32_t *value);
+int IMP_ISP_EnableTuning(void);
+int IMP_ISP_DisableTuning(void);
+int IMP_ISP_Tuning_SetSensorFPS(uint32_t fps_num, uint32_t fps_den);
 int IMP_ISP_Tuning_GetSensorFPS(uint32_t *fps_num, uint32_t *fps_den);
-int IMP_ISP_Configuración_SetAntiFlickerAttr(IMPISPAntiflickerAttr attr);
+int IMP_ISP_Tuning_SetAntiFlickerAttr(IMPISPAntiflickerAttr attr);
 int IMP_ISP_Tuning_GetAntiFlickerAttr(IMPISPAntiflickerAttr *pattr);
-int IMP_ISP_Configuración_SetRawDRC(IMPISPDrcAttr *pinfo);
+int IMP_ISP_Tuning_SetRawDRC(IMPISPDrcAttr *pinfo);
 int IMP_ISP_Tuning_GetRawDRC(IMPISPDrcAttr *pinfo);
-int IMP_ISP_Configuración_SetSinterDnsAttr(IMPISPSinterDenoiseAttr *pinfo);
+int IMP_ISP_Tuning_SetSinterDnsAttr(IMPISPSinterDenoiseAttr *pinfo);
 int IMP_ISP_Tuning_GetSinterDnsAttr(IMPISPSinterDenoiseAttr *pinfo);
-int IMP_ISP_Configuración_SetTemperDnsCtl(IMPISPTemperDenoiseAttr *pinfo);
+int IMP_ISP_Tuning_SetTemperDnsCtl(IMPISPTemperDenoiseAttr *pinfo);
 int IMP_ISP_Tuning_SetTemperDnsAttr(IMPISPTemperDenoiseAttr *pinfo);
-int IMP_ISP_Configuración_GetTemperDnsAttr(IMPISPTemperDenoiseAttr *pinfo);
-int IMP_ISP_Tuning_SetWDRAttr(IMPISPTuningOpsMode modo);
-int IMP_ISP_Ajuste_GetWDRAttr(IMPISPTuningOpsMode *pmode);
-int IMP_ISP_Tuning_SetSceneMode(IMPISPSceneMode modo);
-int IMP_ISP_Configuración_GetSceneMode(IMPISPSceneMode *pmode);
-int IMP_ISP_Tuning_SetColorfxMode(IMPISPColorfxMode modo);
-int IMP_ISP_Configuración_GetColorfxMode(IMPISPColorfxMode *pmode);
-int IMP_ISP_Tuning_Establecer brillo(signo sin nombre brillante);
-int IMP_ISP_Configuración_GetBrightness(unsigned char *pbright);
-int IMP_ISP_Tuning_SetContrast(contraste de caracteres sin nombre);
-int IMP_ISP_Configuración_GetContrast(unsigned char *pcontrast);
-int IMP_ISP_Tuning_SetSharpness(nitidez sin nombre nitidez);
-int IMP_ISP_Configuración_GetSharpness(unsigned char *psharpness);
-int IMP_ISP_Tuning_Establezca la saturación(signo sin nombre (en 22 °);
-int IMP_ISP_Configuración_GetSaturation(unsigned char *psat);
+int IMP_ISP_Tuning_GetTemperDnsAttr(IMPISPTemperDenoiseAttr *pinfo);
+int IMP_ISP_Tuning_SetWDRAttr(IMPISPTuningOpsMode mode);
+int IMP_ISP_Tuning_GetWDRAttr(IMPISPTuningOpsMode *pmode);
+int IMP_ISP_Tuning_SetSceneMode(IMPISPSceneMode mode);
+int IMP_ISP_Tuning_GetSceneMode(IMPISPSceneMode *pmode);
+int IMP_ISP_Tuning_SetColorfxMode(IMPISPColorfxMode mode);
+int IMP_ISP_Tuning_GetColorfxMode(IMPISPColorfxMode *pmode);
+int IMP_ISP_Tuning_SetBrightness(unsigned char bright);
+int IMP_ISP_Tuning_GetBrightness(unsigned char *pbright);
+int IMP_ISP_Tuning_SetContrast(unsigned char contrast);
+int IMP_ISP_Tuning_GetContrast(unsigned char *pcontrast);
+int IMP_ISP_Tuning_SetSharpness(unsigned char sharpness);
+int IMP_ISP_Tuning_GetSharpness(unsigned char *psharpness);
+int IMP_ISP_Tuning_SetSaturation(unsigned char sat);
+int IMP_ISP_Tuning_GetSaturation(unsigned char *psat);
 int IMP_ISP_Tuning_SetISPProcess(IMPISPTuningOpsMode mode);
-int IMP_ISP_Configuración_SetFWFreeze(IMPISPTuningOpsMode mode);
-int IMP_ISP_Tuning_SaveAllParam(char *ruta);
-int IMP_ISP_Configuración_SetISPBypass(IMPISPTuningOpsMode enable);
+int IMP_ISP_Tuning_SetFWFreeze(IMPISPTuningOpsMode mode);
+int IMP_ISP_Tuning_SaveAllParam(char *path);
+int IMP_ISP_Tuning_SetISPBypass(IMPISPTuningOpsMode enable);
 int IMP_ISP_Tuning_GetTotalGain(uint32_t *gain);
-int IMP_ISP_Tuning_Establecer ISPHflip(IMPISPTuningOpsMode modo);
-int IMP_ISP_Configuración_GetISPHflip(IMPISPTuningOpsMode *pmode);
+int IMP_ISP_Tuning_SetISPHflip(IMPISPTuningOpsMode mode);
+int IMP_ISP_Tuning_GetISPHflip(IMPISPTuningOpsMode *pmode);
 int IMP_ISP_Tuning_SetISPVflip(IMPISPTuningOpsMode mode);
-int IMP_ISP_Configuración_GetISPVflip(IMPISPTuningOpsMode *pmode);
+int IMP_ISP_Tuning_GetISPVflip(IMPISPTuningOpsMode *pmode);
 int IMP_ISP_Tuning_SetISPRunningMode(IMPISPRunningMode mode);
-int IMP_ISP_Configuración_GetISPRunningMode(IMPISPRunningMode *pmode);
-int IMP_ISP_Tuning_SetAeStrategy(Estrategia IMPISPAeStrategy);
-int IMP_ISP_Configuración_GetAeStrategy(IMPISPAeStrategy *pstrategy);
-int IMP_ISP_Tuning_SetGamma(IMPISPGamma *rango);
-int IMP_ISP_Configuración_GetGamma(IMPISPGamma *gamma);
+int IMP_ISP_Tuning_GetISPRunningMode(IMPISPRunningMode *pmode);
+int IMP_ISP_Tuning_SetAeStrategy(IMPISPAeStrategy strategy);
+int IMP_ISP_Tuning_GetAeStrategy(IMPISPAeStrategy *pstrategy);
+int IMP_ISP_Tuning_SetGamma(IMPISPGamma *gamma);
+int IMP_ISP_Tuning_GetGamma(IMPISPGamma *gamma);
 int IMP_ISP_Tuning_SetAeComp(int comp);
-int IMP_ISP_Configuración_GetAeComp(int *comp);
-int IMP_ISP_Tuning_SetExpr(IMPISPExpr *ekspr);
-int IMP_ISP_Configuración_GetExpr(IMPISPExpr *expr);
+int IMP_ISP_Tuning_GetAeComp(int *comp);
+int IMP_ISP_Tuning_SetExpr(IMPISPExpr *expr);
+int IMP_ISP_Tuning_GetExpr(IMPISPExpr *expr);
 int IMP_ISP_Tuning_AE_GetROI(IMPISPAERoi *isp_ae_roi);
 int IMP_ISP_Tuning_AE_SetROI(IMPISPAERoi *isp_ae_roi);
 int IMP_ISP_Tuning_SetWB(IMPISPWB *wb);
-int IMP_ISP_Configuración_GetWB(IMPISPWB *wb);
+int IMP_ISP_Tuning_GetWB(IMPISPWB *wb);
 int IMP_ISP_Tuning_GetWB_Statis(IMPISPWB *wb);
 int IMP_ISP_Tuning_Awb_GetCwfShift(IMPISPWB *isp_wb_attr);
 int IMP_ISP_Tuning_Awb_SetCwfShift(IMPISPWB *isp_wb_attr);
 int IMP_ISP_Tuning_SetMaxAgain(uint32_t gain);
 int IMP_ISP_Tuning_GetMaxAgain(uint32_t *gain);
-int IMP_°) ISP_Tuning_SetMaxDgain(uint32_t gain);
+int IMP_ISP_Tuning_SetMaxDgain(uint32_t gain);
 int IMP_ISP_Tuning_GetMaxDgain(uint32_t *gain);
-int IMP_ISP_Tuning_SetVideoDrop(vacío (*cb)(vacío));
-int IMP_ISP_Configuración_SetHiLightDepress(uint32_t fuerza);
-int IMP_ISP_Configuración_SetTemperStrength(uint32_Relación t);
-int IMP_ISP_Configuración_SetSinterStrength(uint32_Relación t);
-int IMP_ISP_Configuración_SetDPStrength(uint32_relación t);
-int IMP_ISP_Configuración_SetAntiFogAttr(IMPISPAntiFogAttr attr);
+int IMP_ISP_Tuning_SetVideoDrop(void (*cb)(void));
+int IMP_ISP_Tuning_SetHiLightDepress(uint32_t strength);
+int IMP_ISP_Tuning_SetTemperStrength(uint32_t ratio);
+int IMP_ISP_Tuning_SetSinterStrength(uint32_t ratio);
+int IMP_ISP_Tuning_SetDPStrength(uint32_t ratio);
+int IMP_ISP_Tuning_SetAntiFogAttr(IMPISPAntiFogAttr attr);
 int IMP_ISP_Tuning_GetEVAttr(IMPISPEVAttr *attr);
-
+```
 

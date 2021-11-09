@@ -9,7 +9,7 @@ title: 'Beschreibung der Kamera'
 
 
 # Beschreibung:
-https://en.alivexpress.com/item/4000146161270.html
+<https://fr.aliexpress.com/item/4000146161270.html>  
 ```
     Brand Name: shiningpo
     Style: Dome Camera
@@ -59,63 +59,45 @@ Password : 12345678
 MAC : 00:88:09:**:**:**
 ```
 
-Verlegen Sie es für Ethernreto, er bekommt eine DHCP-Adresse und wir können mit dem Regene herstellen: (° 1 ° 1  
-Standardbenutzer: admin  
-Standardkennwort: admin  
+Anschließen der Ethorn-Netzwerkkamera, empfängt er eine IP-Adresse, und Sie können sich unter http:    
+ Standard-Benutzer anschließen:   _admin_    
+ Standardkennwort:   _admin_  
 
-Bei 5 Minuten können Sie sich mit Telnet an den Port von 9527verbinden  
-Standardbenutzer: root  
-Standardkennwort: JCO66688  
-Um über 5 Minuten übernommen zu bleiben: "Killall -9 Automatik_run.sh»  
+Für 5 Minuten können wir mit   _telnet_   an Port 9527 herstellen:    
+ Standardbenutzer:   _root  
   
   
-(jco = http://www.cnjabsco.com/ )  
+Standardkennwort:   _jco66688  
+  
+  
+Bleiben Sie nach diesen 5 Minuten verbunden:   `killall -9 auto_run.sh`      
+  _(  JCO = http://www.cnjabsco.com/   )    _
 
-Offene Sande:    
-TCP: 80(http), 443(http!      
 
-Webverhalten beim Start von JCO_server:  
-  
-  
-Der DNS-Server wird abgefragt über: www.163.com und dns.ictun.com  
-Anwendung 114.114.114.114 für dns.ittun.com  
-Verbinden Sie sich mit dem Haven UDP / 993 DNS.ITTUNC.com  
-Verbindung zu UDP / 993-Anschlüssen von 120.25.129.41  
-Den DNS-Server abfragen auf: conn-policy.itun.com  
-Frage des DNS-Servers auf: Video-Policy.ittun.com  
-Verbindung zu UDP / 80-Port von 52.29.45.252  
-Verbindet sich mit dem UDP / 1210-Port von 52.29.45.252  
-Links zu UDP / 21-Ports von 52.57.135.134  
-Verbindet sich mit UDP / 1053-Havones von 52.28.62.20  
-Verbindet sich mit UDP / 443-Habe von 52.29.58.225  
-Verbindet sich mit UDP / 123 (NTP) -Anhafen von 112.74.204.233 (° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 0 tun.com)  
-Links zu UDP / 993-Ports von 47.52.99.182  
-Verbindet sich mit UDP / 1054-Havones von 52.57.127.207  
-...  
-HINWEIS: Legen Sie die Standardroute fest, die dies bedeutet, dass die miteinander verknüpfte Box ist.    
 
-Stoppen Sie JCO_server sen kaŭzi restartigi:  
-  
-  
-## Anschlag_cloud :  
+Öffnen von Ports:    
+   _tcp_ : 80  (_  http  _), 443  (_  http  _   auch!      
+
+
+Stop   _jco_  Server  _  , ohne zum Neustart zu führen:    
 ```
 PS | 
 ```
 
-Sie können das BEFAN-Video-Rivert (gemäß 1080p oder anderen Konfiguration) sehen.  
+Der Hauptkanal kann von:  dargestellt werden   
 ```
 ffplay -i rtsp://admin:admin@192.168.24.111/stream1
 ffplay -i rtsp://admin:admin@192.168.24.39:554/stream1
 ffplay -i rtsp://admin:admin@192.168.24.39:554/mpeg4/ch0/main/av_stream
 ```
 
-Und das Durangana:
+und sekundär:    
 ```
 ffplay -i rtsp://admin:admin@192.168.24.39/stream2
 ffplay -i rtsp://admin:admin@192.168.24.39:554/stream2
 ```
 
-Die installierte Firmware zeigt an: (° 1 ° 1
+Die in der Online-Schnittstelle angezeigten Informationen:    
 ```
 DeviceName:     INGENIC-V01
 DeviceModel:    IPCAM-100
@@ -126,36 +108,37 @@ WebVersion:     V2.3.4-20190709
 OCXVersion:     -1
 ```
 
-Der Prozessor ist: Ingenic T21  
-http://www.ininic.com.cn/de/?product/id/11.html  
-https://en.indasina.com/ingenic-t21-xtreme-2-megapixel-coding-Prozessor_p16.html  
-  
-  
+Der Prozessor lautet:   _ingenic T21_  
+  < http://www.ininic.com.cn/de/?product/id/11.html >    
+ Der Prozessor lautet:  < https: //fr.indassina.com/ingic-t21-xtreme-2-megapixel-coding-Prozessor _p16.html>     
 
-Der CMOS-Sensor ist: GC2053.   
 
-RAM: 42 MB INTT, 36 MIB verfügbar.    
+Der   _CMOS_   SENSOR lautet:   _gc2053_. 
 
-Der 9999 haedo ist geöffnet und ermöglicht die Steuerung der Kamera:  
-Echo (° 1 ° 1 ° 1 ° Checuser -AC Set -UER Administration - Password Admin"|    
+Speicher   _RAM_ :   _42 MiB_   Summe,   _36 MiB_   nutzbar.    
 
-GPO-HADENS:  
-46 = Infrarisierungsinterpretationen.    
+Mit dem Hafer von 9999 können Sie die Kamera überprüfen:    
+```
+echo "checkuser -act set -user admin -password admin" | nc 192.168.1.155 9999  
+echo "list" | nc 192.168.1.155 9999  
+echo "pelcod20ctrl -?" | nc 192.168.1.155 9999  
+echo "pelcod20ctrl -type 1" | nc 192.168.1.155 9999  
+```
+
+Ports   _GPIO_ :    
+ 46 = Infrarot-LED.  
 
 GPIO-HADEN zum Schreien blockiert:  
 Von motor.ko: 18 blockiert?   
 
-PTZ-Steuerung:  
+Steuerelemente   _PTZ_ :    
 
-Oben: http: // admin: admin@192.168.24.39/?   
-Msalkru: http: // admin: admin@192.168.24.39/?   
-Links: http: // admin: admin@192.168.24.39/?   
-Nach rechts: http: // admin: admin@192.168.24.39/?   
-Halt: http: // admin: admin@192.168.24.39/?   
-
-Position 2: http://192.168.24.39/  
-Gehen Sie zu 1: http://192.168.24.39/?jjcpcmd=Pelcod203TRL -Typ 2 -cmd 2 -Gata2 1  
-Entfernen Sie 2: http://192.168.24.39/?jcpcmd=Pelcod203TRL -Typ 2 -CMD 3 -Data2 2  
-
-
+Oben:   _http://admin:admin@192.168.24.39/?jcpcmd=pelcod20ctrl -type 1 -cmd 1 -data1 24 -data2 24_    
+ unten:   _http://admin:admin@192.168.24.39/?jcpcmd=pelcod20ctrl -type 1 -cmd 2 -data1 24 -data2 24_    
+ links:   _http://admin:admin@192.168.24.39/?jcpcmd=pelcod20ctrl -type 1 -cmd 3 -data1 24 -data2 24_    
+ Rechts:   _http://admin:admin@192.168.24.39/?jcpcmd=pelcod20ctrl -type 1 -cmd 4 -data1 24 -data2 24_    
+ Anschlag:   _http://admin:admin@192.168.24.39/?jcpcmd=pelcod20ctrl -type 1 -cmd 9 -data1 24 -data2 24_    
+ Position 2:   _http://192.168.24.39/?jcpcmd=pelcod20ctrl -type 2 -cmd 1 -data2 2_    
+ Position 1:   _http://192.168.24.39/?jcpcmd=pelcod20ctrl -type 2 -cmd 2 -data2 1_    
+ Löschen Position 2:   _http://192.168.24.39/?jcpcmd=pelcod20ctrl -type 2 -cmd 3 -data2 2_    
 

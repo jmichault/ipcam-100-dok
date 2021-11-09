@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-10-30 11:15+0200\n"
+"POT-Creation-Date: 2021-11-09 15:13+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -50,36 +50,36 @@ msgstr ""
 #: kruc-kompili.md:12
 #, no-wrap
 msgid ""
-"La transiritaj kompilaĵoj iloj estas en programado_medio/toolchain.\n"
-"Ils ont été compilés pour debian buster x64.\n"
+"Trans-kompilaĵaj iloj estas en  _programada\\_medio/toolchain_. \n"
+" ili estis kompilitaj por  _debian buster x64_. \n"
 msgstr ""
 
 #. type: Plain text
-#: kruc-kompili.md:15
+#: kruc-kompili.md:14
 #, no-wrap
-msgid "Komparaj bibliotekoj estas en prograda_medio/lib\n"
+msgid "Dividitaj bibliotekoj estas en  _programada\\_medio/lib_ \n"
 msgstr ""
 
 #. type: Plain text
-#: kruc-kompili.md:18
+#: kruc-kompili.md:16
 #, no-wrap
-msgid "Inkluzivas estas en programado_medio/include.\n"
+msgid "La  _include_  estas en  _programada\\_medio/include_. \n"
 msgstr ""
 
 #. type: Plain text
-#: kruc-kompili.md:24
-#, no-wrap
-msgid ""
-"Se vi bezonas rekompili bibliotekon, inspiri la sekvajn skriptojn:\n"
-"* Programada_medio/fontoj/01-buildssl.sh , pour la librairie openssl.\n"
-"* programada_Medio / fontoj / 02-buildive.sh, por Live555-biblioteko.\n"
-"* Programada_medio/fontoj/03-pcre.sh , pour la librairie pcre.\n"
-msgstr ""
-
-#. type: Plain text
-#: kruc-kompili.md:29
+#: kruc-kompili.md:21
 #, no-wrap
 msgid ""
-"Se vi iam bezonos kompili la _«toolchain»_, vi povas konsulti la sekvan retejon:\n"
-" * https://github.com/anmaped/openfang\n"
+"Se vi bezonas rekompili librovendejon, inspiri la jenajn skriptojn: \n"
+" *  _programada\\_medio/fontoj/01-buildssl.sh_ , por la biblioteko  _openssl_. \n"
+" *  _programada\\_medio/fontoj/02-buildlive.sh_ , por la biblioteko  _live555_. \n"
+" *  _programada\\_medio/fontoj/03-pcre.sh_ , por la biblioteko  _pcre_. \n"
+msgstr ""
+
+#. type: Plain text
+#: kruc-kompili.md:25
+#, no-wrap
+msgid ""
+"Se vi iam bezonos rekompili la  _«toolchain»_, vi povas vidi la sekvan retejon: \n"
+"  *  <https://github.com/anmaped/openfang> \n"
 msgstr ""

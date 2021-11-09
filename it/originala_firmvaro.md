@@ -9,7 +9,7 @@ title: 'Firmware originale'
 # porte aperte
 
 TCP: 80(HTTP), 443(HTP anche!), 554(RTSP), 8004, 8006, 9527(, 9999  
-UDP: 67(DHCP), 3702, 8002, 39642 (° 3 ° 3
+UDP: 67 ( DHCP ), 3702, 8002, 39642 
 
 Porta 80: http  
 http: // IP: Login: _admin:_, Password: _admin_
@@ -51,7 +51,7 @@ porta 8006 :? , aperto da jco_server
 
 Porta 9527: Telnet  
 `telnetd IP 9527` : Login: _root_, Password: _jco66688_, accessibile per 5 minuti, chiuso dopo.  
-Non essere disconnesso dopo 5 minuti: `killall -9 auto_run.sh`  (° 4 ° 4
+Non disconnettersi dopo 5 minuti:  `killall -9 auto_run.sh`   
 Per fermare JCO_server : 
  
  
@@ -194,32 +194,21 @@ file importanti in _/ipc_ :
 
 
 # Revisione principale:
-(° 1 ° 1 ° Informazioni:
-    `binwalk mtdblock2.bin`
-
-
-    * 
+*   Informazioni:  
+      `binwalk mtdblock2.bin`  
+      *   Risultato:  
+ Descrizione decimale esadecimale  
 --------------------------------------------------------------------------------
-0 0x0 Intestazione di uImage, Intestazione Dimensione: 64 Bytes, intestazione CRC: 0x7b9de864, Creato: 2019-06-22 02:41:00, Dimensione dell'immagine: 1466358 Bytes, Indirizzo dati: 0x80010000, Punto d'ingresso: 0x80388340, CRC Dati: 0xb83dca15, OS: Linux, CPU: MIPS, Tipo di immagine: OS Kernel Image, Tipo di compressione: LZMA, Nome immagine: "Linux-3.10.14__.
+0 0x0 Uimage Header, Header Size: 64 Bytes, Header CRC: 0x7b9DE864, creato: 2019-06-22 02:41:00, Image Size: 1466358 BYTES, DATE Address: 0x80010000, Entry Point: 0x80388340, Data CRC: 0xb83DCA15, Sistema operativo: Linux, CPU: MIPS, Tipo immagine: Immagine kernel sistema operativo, Tipo compressione: LZMA, Nome immagine:   " Linux-3.10.14  __  ISVP  _turkey_  1.0  __]  "  
+ 64 0X40 Dati compressi LZMA, Proprietà: 0x5d, Dimensione dizionario: 16777216 byte, Dimensione compressa: -1 byte  
 
-(° 1 ° 1 ° 1 ° Estrazione di dati di MTDBLOCK2:
-    `tail -c+65  < mtdblock2.bin >mtdblock2.dataz`
-
-Estrazione del nucleo:
-
-
-(° 5 ° 5 ° 6 ° 13 ° 13 ° Elenco dei conduttori inclusi:    `strings kernel|grep "^drivers"`
-
-Elenco dei file:
-    `strings kernel|grep "\.[cChTsS]$"`
-
-
-
-
-
-
-
-
-
-(° 1 °. Raggiunge
-.
+*   Estrazione dati mtdblock2:  
+      `tail -c+65  < mtdblock2.bin >mtdblock2.dataz`  
+  *   Estrazione Core:  
+  *   
+ *   Elenco dei driver inclusi:  
+      `strings kernel|grep "^drivers"`  
+  < H21  >  Elenco dei file di origine:  
+      `strings kernel|grep "\.[cChTsS]$"`  
+  *   Elenco dei simboli  
+ https: / / github.com/marin-m/vmlinux-to-elf dovrebbe aiutare a trovare i simboli ma non esistono  < H33  >  Inizia con kallsyms  _token_  Tabella: 0x3AA1B4  

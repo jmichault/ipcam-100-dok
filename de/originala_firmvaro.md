@@ -9,7 +9,7 @@ title: 'Original Firmware'
 # offene Ports
 
 TCP: 80(http), 443(HTP auch!), 554(RTSP), 8004, 8006, 9527(, 9999  
-UDP: 67(DHCP), 3702, 8002, 39642 (° 3 ° 3
+UDP: 67 ( DHCP ), 3702, 8002, 39642 
 
 Port 80: HTTP  
 http: // IP: Login: _admin:_, Passwort: _admin_
@@ -194,29 +194,21 @@ Bemerkenswerte Dateien in _/ipc_ :
 
 
 # Kernprüfung:
-(° 1 ° 1 ° Information:
-    `binwalk mtdblock2.bin`
-    * 
+*   Information:  
+      `binwalk mtdblock2.bin`  
+      *   Ergebnis:  
+ Dezimal-Hexadezimalbeschreibung  
 --------------------------------------------------------------------------------
-0 0x0 UIMAGE-Header, Kopfzeile Größe: 64 Bytes, Header CRC: 0x7B9DE864, Erstellt: 2019-06-22 02:41:00, Bildgröße: 1466358 Bytes, Datenadresse: 0x80010000, Eingangspunkt: 0x80388340, CRC-Daten: 0xB83DCA15, OS: Linux, CPU: MIPS, Bildtyp: OS Kernel Image, Komprimierungstyp: LZMA, Bildname: "Linux-3.10.14__.
+0 0x0 UIMAGE-Header, Kopfzeile Größe: 64 Bytes, Header CRC: 0x7B9DE864, Erstellt: 2019-06-22 02:41:00, Bildgröße: 1466358 Bytes, Datenadresse: 0x80010000, Eingangspunkt: 0x80388340, CRC-Daten: 0xB83DCA15, OS: Linux, CPU: MIPS, Bildtyp: OS Kernel-Image, Komprimierungstyp: LZMA, Bildname:   " Linux-3.10.14  __  ISVP  _turkey_  1,0  __]  "  
+ 64 0x40 LZMA-komprimierte Daten, Eigenschaften: 0x5d, Wörterbuch Größe: 16777216 Bytes, Druckgröße: -1 Bytes  
 
-(° 1 ° 1 ° 1 ° Extraktion von Daten von MTDBLOCK2:
-    `tail -c+65  < mtdblock2.bin >mtdblock2.dataz`
-
-Kern-Extraktion:
-
-(° 5 ° 5 ° 6 ° 13 ° 13 ° Liste der Leitern enthalten:    `strings kernel|grep "^drivers"`
-
-Liste der Dateien:
-    `strings kernel|grep "\.[cChTsS]$"`
-
-
-
-
-
-
-
-
-
-(° 1 °. Reicht
-.
+*   MTDBLOCK2 Datumsxtraktion:  
+      `tail -c+65  < mtdblock2.bin >mtdblock2.dataz`  
+  *   Kerngewinnung:  
+  *   
+ *   Liste der Treiber enthalten:  
+      `strings kernel|grep "^drivers"`  
+  < H21  >  Liste der Quelldateien:  
+      `strings kernel|grep "\.[cChTsS]$"`  
+  *   Symboldliste  
+ https: / / Github.com/marin-m/vmlinux-to-Fürfft sollten Sie dazu beitragen, Symbole zu finden, aber es gibt keinen  < H33  >  mit dem Start von Kallsyms  _token_  -Tabelle: 0x3AAAA1B4  

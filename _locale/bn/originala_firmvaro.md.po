@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-10-30 11:05+0200\n"
+"POT-Creation-Date: 2021-11-09 15:12+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -56,13 +56,13 @@ msgstr "খোলা বন্দর"
 #: originala_firmvaro.md:11
 #, fuzzy, no-wrap
 msgid "TCP: 80(http), 443(HTP ankaŭ!), 554(RTSP), 8004, 8006, 9527(Telnetd), 9999  \n"
-msgstr "টিসিপি: 80(http), 443(HTP খুব!), 554 (° 5 ° 5 ° 5006, 9527(, 9999  \n"
+msgstr "টিসিপি: 80 ( HTTP ), 443 ( খুব HTP!   \n"
 
 #. type: Plain text
 #: originala_firmvaro.md:13
 #, fuzzy, no-wrap
 msgid "UDP: 67(DHCP), 3702, 8002, 39642\n"
-msgstr "UDP: 67(DHCP), 3702, 8002, 39642 (° 3 ° 3\n"
+msgstr "UDP: 67 ( DHCP ), 3702, 8002, 39642 \n"
 
 #. type: Plain text
 #: originala_firmvaro.md:14
@@ -174,7 +174,7 @@ msgstr "`telnetd IP 9527` : লগইন: _root_, পাসওয়ার্ড
 #: originala_firmvaro.md:49
 #, fuzzy, no-wrap
 msgid "Ne esti malkonektita post 5 minutoj: `killall -9 auto_run.sh`  \n"
-msgstr "5 মিনিটের পর সংযোগ বিচ্ছিন্ন করা যাবে না: `killall -9 auto_run.sh`  (° 4 ° 4\n"
+msgstr "5 মিনিটের পরে সংযোগ বিচ্ছিন্ন করা যাবে না:  `killall -9 auto_run.sh`   \n"
 
 #. type: Plain text
 #: originala_firmvaro.md:51
@@ -497,54 +497,153 @@ msgstr "কোর রিভিউ:"
 #: originala_firmvaro.md:177
 #, fuzzy, no-wrap
 msgid ""
-"(° 1 ° Informo:\n"
-"    `binwalk mtdblock2.bin`\n"
-"    * Rezulto:\n"
-"decimala deksesuma priskribo\n"
-msgstr "((° 3 ° 6 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 Dhrgগ্রী 7 ° 8 ° 8 °)\n"
-
-#. type: Plain text
-#: originala_firmvaro.md:179
-#, fuzzy, no-wrap
-msgid "0 0x0 Uimage Header, Header Grandeco: 64 Bajtoj, Header CRC: 0x7b9DE864, kreita: 2019-06-22 02:41:00, Bildo Grandeco: 1466358 BYTES, DATA Adreso: 0x80010000, Eniro Punkto: 0x80388340, Datumoj CRC: 0xb83DCA15, OS: Linukso, CPU: MIPS, Bildo Tipo: OS Kernel Bildo, Kunpremo Tipo: LZMA, Bildo Nomo: \"Linukso-3.10.14__. 1.0__]\"(° 7 ° 7 ° 64 0x40 lzma kunpremitaj datumoj, ecoj: 0x5d, vortaro Grandeco: 16777216 bajtoj, nekompresita grandeco: -1 bajtoj\n"
-msgstr "0x0 UIMAGE হেডার, হেডার ফাইলের আকার: 64 বাইট, হেডার সিআরসি: 0X7B9DE864, তৈরি: চিত্রের আকার: 1466358 বাইট, তথ্য ঠিকানা: 0x80010000, প্রবেশ পয়েন্ট: 0x80388340, সিআরসি ডাটা: 0xB83DCA15, ওএস: লিনাক্স, সিপিইউ: ম্যাপ, চিত্র প্রকার: ওএস কার্নেল ইমেজ, কম্প্রেশন প্রকার: লজমা, ইমেজ নাম: \"লিনাক্স-3.10.14__।\n"
-
-#. type: Plain text
-#: originala_firmvaro.md:182
-#, fuzzy, no-wrap
-msgid ""
-"(° 1 ° eltiro de datumoj de MTDBlock2:\n"
-"    `tail -c+65  < mtdblock2.bin >mtdblock2.dataz`\n"
-msgstr "(° 1 ° 1 ° 1 ডিগ্রি 1 ডিগ্রি ডা। এর ডেটা এক্সট্রাকশন 2: (° ২)    `tail -c+65  < mtdblock2.bin >mtdblock2.dataz`\n"
-
-#. type: Plain text
-#: originala_firmvaro.md:186
-#, fuzzy, no-wrap
-msgid ""
-"Kerna eltiro:\n"
-"    `cat mtdblock2.dataz|lzma -d -c -f - >kernel`\n"
-"(° 13 ° ° Listo de ŝoforoj inkluzivita:    `strings kernel|grep \"^drivers\"`\n"
-msgstr "কোর এক্সট্রাকশন: (° 1 ° 5 ° 6 ° 6 ° 13 ° 13 ° 13 ° 13 ° Condertors অন্তর্ভুক্ত:    `strings kernel|grep \"^drivers\"`\n"
-
-#. type: Plain text
-#: originala_firmvaro.md:189
-#, fuzzy, no-wrap
-msgid ""
-"Listo de dosieroj:\n"
-"    `strings kernel|grep \"\\.[cChTsS]$\"`\n"
+"*  Informo: \n"
+"     `binwalk mtdblock2.bin` \n"
+"     *  Rezulto: \n"
+" Dekuma deksesuma priskribo \n"
 msgstr ""
-"ফাইলের তালিকা:\n"
-"    `strings kernel|grep \"\\.[cChTsS]$\"`\n"
+"*   তথ্য:  \n"
+"      `binwalk mtdblock2.bin`  \n"
+"      *   ফলাফল:  \n"
+" দশমিক হেক্সাডেসিমাল বর্ণনা  \n"
 
 #. type: Plain text
-#: originala_firmvaro.md:199
+#: originala_firmvaro.md:180
 #, fuzzy, no-wrap
 msgid ""
-"(° 30 ° ° 31 ° Listo de simboloj (° 32 ° 32 ° Https://github.com/marin-m/vmlinux-to-lf devus permesi trovi la simbolojn, sed ĝi ne atingas\n"
-". Tablo_token_: 0x3AA1B4\n"
+"0 0x0 Uimage Header, Header Grandeco: 64 Bajtoj, Header CRC: 0x7b9DE864, kreita: 2019-06-22 02:41:00, Bildo Grandeco: 1466358 BYTES, DATA Adreso: 0x80010000, Eniro Punkto: 0x80388340, Datumoj CRC: 0xb83DCA15, OS: Linukso, CPU: MIPS, Bildo Tipo: OS Kernel Bildo, Kunpremo Tipo: LZMA, Bildo Nomo:  \" Linux-3.10.14 __ ISVP _turkey_ 1.0 __] \" \n"
+" 64 0X40 LZMA kunpremitaj datumoj, Propraĵoj: 0x5d, vortaro Grandeco: 16777216 bajtoj, kunpremita grandeco: -1 bajtoj \n"
 msgstr ""
-"(° 1 °। পৌঁছেছেন\n"
-"।\n"
+"0x0 UIMAGE হেডার, হেডার ফাইলের আকার: 64 বাইট, হেডার সিআরসি: 0X7B9DE864, তৈরি: চিত্রের আকার: 1466358 বাইট, তথ্য ঠিকানা: 0x80010000, প্রবেশ পয়েন্ট: 0x80388340, সিআরসি ডাটা: 0xB83DCA15, ওএস: লিনাক্স, সিপিইউ: ম্যাপ, চিত্র প্রকার: ওএস কার্নেল ইমেজ, কম্প্রেশন প্রকার: LZMA, চিত্র নাম:   \" Linux-3.10.14  __  ISVP  _turkey_  1.0  __]  \"  \n"
+" 64 0x40 LZMA সংকুচিত তথ্য, বৈশিষ্ট্যাবলী: 0x5d, অভিধান আয়তন: 1677216 বাইট, সংকুচিত আকার: -1 বাইট  \n"
+
+#. type: Plain text
+#: originala_firmvaro.md:184
+#, fuzzy, no-wrap
+msgid ""
+"*  mtdblock2 data eltiro: \n"
+"     `tail -c+65  < mtdblock2.bin >mtdblock2.dataz` \n"
+" *  Kerna Eltiro: \n"
+" *  \n"
+msgstr ""
+"*   mtdblock2 তারিখ নিষ্কাশন:  \n"
+"      `tail -c+65  < mtdblock2.bin >mtdblock2.dataz`  \n"
+"  *   কোর এক্সট্রাকশন:  \n"
+"  *   \n"
+
+#. type: Plain text
+#: originala_firmvaro.md:190
+#, fuzzy, no-wrap
+msgid ""
+" *  Listo de Drivers Inkluditaj: \n"
+"     `strings kernel|grep \"^drivers\"` \n"
+" <H21 > Listo de fontaj dosieroj: \n"
+"     `strings kernel|grep \"\\.[cChTsS]$\"` \n"
+" *  Simbolo-Listo \n"
+" https://github.com/marin-m/vmlinux-to-elf devus helpi trovi simbolojn sed ne ekzistas <H33 > Komenci ebla de kallsyms _token_ Tablo: 0x3AA1B4 \n"
+msgstr ""
+" *   ড্রাইভারগুলির তালিকা অন্তর্ভুক্ত:  \n"
+"      `strings kernel|grep \"^drivers\"`  \n"
+"  < h21  >  উৎস ফাইলগুলির তালিকা:  \n"
+"      `strings kernel|grep \"\\.[cChTsS]$\"`  \n"
+"      `strings kernel|grep \"\\.[cChTsS]$\"`  প্রতীক তালিকা  \n"
+" HTTPS: / / github.com/marin-m/vmlinux-to-thelf প্রতীক খুঁজে পেতে সহায়তা করবে কিন্তু কোনও  _token_  H33  >  Kallsyms থেকে সম্ভাব্য শুরু করুন  _token_  টেবিল: 0x3aaaa1b4  \n"
+
+#, fuzzy, no-wrap
+#~ msgid ""
+#~ "(° 1 ° Informo:\n"
+#~ "    `binwalk mtdblock2.bin`\n"
+#~ "    * Rezulto:\n"
+#~ "decimala deksesuma priskribo\n"
+#~ msgstr "((° 3 ° 6 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 ° 7 Dhrgগ্রী 7 ° 8 ° 8 °)\n"
+
+#, fuzzy, no-wrap
+#~ msgid "0 0x0 Uimage Header, Header Grandeco: 64 Bajtoj, Header CRC: 0x7b9DE864, kreita: 2019-06-22 02:41:00, Bildo Grandeco: 1466358 BYTES, DATA Adreso: 0x80010000, Eniro Punkto: 0x80388340, Datumoj CRC: 0xb83DCA15, OS: Linukso, CPU: MIPS, Bildo Tipo: OS Kernel Bildo, Kunpremo Tipo: LZMA, Bildo Nomo: \"Linukso-3.10.14__. 1.0__]\"(° 7 ° 7 ° 64 0x40 lzma kunpremitaj datumoj, ecoj: 0x5d, vortaro Grandeco: 16777216 bajtoj, nekompresita grandeco: -1 bajtoj\n"
+#~ msgstr "0x0 UIMAGE হেডার, হেডার ফাইলের আকার: 64 বাইট, হেডার সিআরসি: 0X7B9DE864, তৈরি: চিত্রের আকার: 1466358 বাইট, তথ্য ঠিকানা: 0x80010000, প্রবেশ পয়েন্ট: 0x80388340, সিআরসি ডাটা: 0xB83DCA15, ওএস: লিনাক্স, সিপিইউ: ম্যাপ, চিত্র প্রকার: ওএস কার্নেল ইমেজ, কম্প্রেশন প্রকার: লজমা, ইমেজ নাম: \"লিনাক্স-3.10.14__।\n"
+
+#, fuzzy, no-wrap
+#~ msgid ""
+#~ "(° 1 ° eltiro de datumoj de MTDBlock2:\n"
+#~ "    `tail -c+65  < mtdblock2.bin >mtdblock2.dataz`\n"
+#~ msgstr "(° 1 ° 1 ° 1 ডিগ্রি 1 ডিগ্রি ডা। এর ডেটা এক্সট্রাকশন 2: (° ২)    `tail -c+65  < mtdblock2.bin >mtdblock2.dataz`\n"
+
+#, fuzzy, no-wrap
+#~ msgid ""
+#~ "Kerna eltiro:\n"
+#~ "    `cat mtdblock2.dataz|lzma -d -c -f - >kernel`\n"
+#~ "(° 13 ° ° Listo de ŝoforoj inkluzivita:    `strings kernel|grep \"^drivers\"`\n"
+#~ msgstr "কোর এক্সট্রাকশন: (° 1 ° 5 ° 6 ° 6 ° 13 ° 13 ° 13 ° 13 ° Condertors অন্তর্ভুক্ত:    `strings kernel|grep \"^drivers\"`\n"
+
+#, fuzzy, no-wrap
+#~ msgid ""
+#~ "Listo de dosieroj:\n"
+#~ "    `strings kernel|grep \"\\.[cChTsS]$\"`\n"
+#~ msgstr ""
+#~ "ফাইলের তালিকা:\n"
+#~ "    `strings kernel|grep \"\\.[cChTsS]$\"`\n"
+
+#, fuzzy, no-wrap
+#~ msgid ""
+#~ "(° 30 ° ° 31 ° Listo de simboloj (° 32 ° 32 ° Https://github.com/marin-m/vmlinux-to-lf devus permesi trovi la simbolojn, sed ĝi ne atingas\n"
+#~ ". Tablo_token_: 0x3AA1B4\n"
+#~ msgstr ""
+#~ "(° 1 °। পৌঁছেছেন\n"
+#~ "।\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "*  Informo \n"
+#~ "     `binwalk mtdblock2.bin` \n"
+#~ "     *  Rezulto \n"
+#~ " Dekuma deksesuma Priskribo \n"
+#~ msgstr ""
+#~ "*   তথ্য  \n"
+#~ "      `binwalk mtdblock2.bin`  \n"
+#~ "      *   ফলাফল  \n"
+#~ " হেক্সাডেসিমাল বর্ণনা  \n"
+
+#, fuzzy
+#~ msgid ""
+#~ "0 0x0 Uimage Header, Header Grandeco: 64 bajtoj, Header CRC: 0x7b9de864, "
+#~ "Kreita: 2019-06-22 02:41:00, bildo Grandeco: 1466358 Bytes, Datumoj "
+#~ "adreso: 0x80010000, Entry Punkto: 0x80388340, Datumoj CRC: 0xb83dca15, "
+#~ "OS: Linukso, CPU: MIPS, Bildo Tipo: VIN Kernel Bildo, Kunpremo Tipo: "
+#~ "LZMA, Bildo Nomo:  \" Linukso-3.10.14 __ ISVP _turkey_ 1.0 __] \" \n"
+#~ " 64 0x40 LZMA Compressed Datumoj: Propraĵoj: 0x5d, Vortaro Grandeco: "
+#~ "16777216 bytes, Kunpremitaj Grandeco: -1 bajtoj \n"
+#~ msgstr ""
+#~ "0x0 UIMAGE হেডার, হেডার ফাইলের আকার: 64 বাইট, হেডার সিআরসি: 0x7B9DE864, "
+#~ "তৈরি: 2019-06-22 02:41:00, চিত্রের আকার: 1466358 বাইট, ডেটা ঠিকানা: "
+#~ "0x80010000, এন্ট্রি পয়েন্ট: 0x80388340, সিআরসি ডাটা: 0xB83DCA15, ওএস: "
+#~ "লিনাক্স, সিপিইউ: ম্যাপ, চিত্র প্রকার: ভিন কার্নেল চিত্র, কম্প্রেশন প্রকার: LZMA, "
+#~ "চিত্র নাম:   \" Linux-3.10.14  __  ISVP  _turkey_  1.0  __]  \"  \n"
+#~ " 64 0x40 LZMA সংকুচিত তথ্য: বৈশিষ্ট্যাবলী: 0X5D, অভিধান আয়তন: 16777216 বাইট, "
+#~ "সংকুচিত আকার: -1 বাইট  \n"
+
+#, fuzzy
+#~ msgid ""
+#~ "*  Datumoj: \n"
+#~ "     `tail -c+65  < mtdblock2.bin >mtdblock2.dataz` \n"
+#~ " *  eltiro: \n"
+#~ "     `cat mtdblock2.dataz|lzma -d -c -f - >kernel` \n"
+#~ " *  listo de \n"
+#~ "     `strings kernel|grep \"^drivers\"` \n"
+#~ " <h21 listo de \n"
+#~ "     `strings kernel|grep \"\\.[cChTsS]$\"` \n"
+#~ " *  liston de \n"
+#~ " sed li ne povas h33> povas komenci kallsyms _token_ tablo: 0x3AA1B4 \n"
+#~ msgstr ""
+#~ "*   ডাটা:  \n"
+#~ "      `tail -c+65  < mtdblock2.bin >mtdblock2.dataz`  \n"
+#~ "  *   নিষ্কাশন:  \n"
+#~ "      `cat mtdblock2.dataz|lzma -d -c -f - >kernel`  \n"
+#~ "  *    \n"
+#~ "      `strings kernel|grep \"^drivers\"`       `strings kernel|grep "
+#~ "\"^drivers\"`   < H21 <H22 এর তালিকা <H22 >      `strings kernel|grep "
+#~ "\"\\.[cChTsS]$\"`  \n"
+#~ "  *   তালিকা  \n"
+#~ " এর তালিকা কিন্তু তিনি H33 >  Kallsymsগুলি শুরু করতে পারেন  _token_  টেবিল: "
+#~ "0x3aaa1b4  \n"
 
 #, no-wrap
 #~ msgid "001-originala_firmvaro"

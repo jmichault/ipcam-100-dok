@@ -29,8 +29,8 @@ title: ਸ਼ੁੱਧ
 * ਕੈਮਰੇ ਦਾ ਸਟਾਰਟ "ਜੀਡੀਬਸਰਵਰ", ਉਦਾ. :  
 
 
-     `/opt/media/mmcblk0p1/bin/gdbserver localhost:2000 /opt/media/mmcblk0p1/bin/motor`
-* ਕੰਪਿdਟਰ ਤੇ ਜੀਡੀਬੀ ਚਾਲੂ ਕਰੋ, ਉਦਾਹਰਣ ਵਜੋਂ:
+     `/opt/media/mmcblk0p1/bin/gdbserver localhost:2000 /opt/media/mmcblk0p1/bin/motor`  
+  *   ਕੰਪਿ on ਟਰ ਤੇ ਜੀਡੀਬੀ ਸ਼ੁਰੂ ਕਰੋ, ਉਦਾਹਰਣ ਲਈ:  
 
     ```
     cd programada_medio/toolchain
@@ -40,7 +40,7 @@ title: ਸ਼ੁੱਧ
     handle SIG32 nostop
     break xxx
     continue 
-    ```
+    ```  
 
 
 

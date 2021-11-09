@@ -51,7 +51,7 @@ http：// IP：443：ログイン： _admin:_、パスワード： _admin_
 
 ポート9527：Telnet  
 `telnetd IP 9527` ：ログイン： _root_、パスワード： _jco66688_、5分間アクセス可能で、後に閉じます。  
-5分後に切断されない： `killall -9 auto_run.sh`  （°4°4
+5分後に切断しないでください： `killall -9 auto_run.sh`   
 JCO_server : 
 を停止する 
  
@@ -194,30 +194,21 @@ Linuxバージョン3.10.14\_\_isvp\_turkey\_1.0\_\_ (root@localhost.localdomain
 
 
 # コアレビュー：
-（°1°1°情報：
-    `binwalk mtdblock2.bin`
-
-    * 
+*  情報： 
+      `binwalk mtdblock2.bin`  
+      *  結果： 
+ 10進数の16進数の説明 
 --------------------------------------------------------------------------------
-0 0x0 uimageヘッダー、ヘッダーサイズ：64バイト、ヘッダーCRC：0x7b9de864、作成：2019-06-22 02:41:00、画像サイズ：1466358バイト、データアドレス：0x80010000、エントランスポイント：0x8038340、CRCデータ：0xB83DCA15、 OS：Linux、CPU：MIPS、画像タイプ：OSカーネル画像、圧縮タイプ：LZMA、画像名： "Linux-3.10.14__。
+0 0x0 Uimageヘッダー、ヘッダーサイズ：64バイト、ヘッダーCRC：0x7b9DE864、作成：2019-06-22 02:41:00、画像サイズ：1466358バイト、日付アドレス：0x80010000、エントリポイント：0x80388340、データCRC：0xb83DCA15、 OS：Linux、CPU：MIPS、イメージタイプ：OSカーネルイメージ、圧縮タイプ：LZMA、イメージ名：  " Linux-3.10.14  __  ISVP  _turkey_  1.0  __]  "  
+ 64 0X40 LZMA圧縮データ、プロパティ：0x5d、ディクショナリサイズ：16777216バイト、圧縮サイズ：-1バイト 
 
-（°1°1°1°1°MTDBLOCK2のデータの抽出：
-    `tail -c+65  < mtdblock2.bin >mtdblock2.dataz`
-
-コア抽出：
-
-
-（°5°5°6°13°13°13°含まれる導体の一覧：    `strings kernel|grep "^drivers"`
-
-ファイルのリスト：
-    `strings kernel|grep "\.[cChTsS]$"`
-
-
-
-
-
-
-
-
-
-(。
+*   mtdblock2データ抽出： 
+      `tail -c+65  < mtdblock2.bin >mtdblock2.dataz`  
+  *  コア抽出： 
+  *   
+ *  含まれているドライバーのリスト： 
+      `strings kernel|grep "^drivers"`  
+  < H21  > ソースファイルのリスト： 
+      `strings kernel|grep "\.[cChTsS]$"`  
+  *  シンボルリスト 
+ https：/ / github.com/marin-m/vmlinux-to-elfはシンボルの検索に役立つはずですが、存在しません < H33  >  kallsymsから始めましょう _token_ 表：0x3AA1B4  

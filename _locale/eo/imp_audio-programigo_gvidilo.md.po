@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-10-29 23:10+0200\n"
+"POT-Creation-Date: 2021-11-08 18:07+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,15 +42,15 @@ msgstr "page"
 
 #. type: YAML Front Matter: title
 #: imp_audio-programigo_gvidilo.md:1
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Guide de programmation du son"
-msgstr "Gvidilo pri Solida Programado"
+msgstr "Sono Programado Guide"
 
 #. type: Title #
 #: imp_audio-programigo_gvidilo.md:9
-#, fuzzy, no-wrap
-msgid "IMP_Audio (voir imp_audio.h)"
-msgstr "IMP_Audio (voir imp_audio.h)"
+#, fuzzy
+msgid "IMP_Audio \\(voir imp_audio.h\\)"
+msgstr "Imp _Audio \\(voir imp_ audio.h \\)"
 
 #. type: Plain text
 #: imp_audio-programigo_gvidilo.md:12

@@ -3,65 +3,54 @@ lang: de
 lang-niv: auto
 lang-ref: 051-IMP-programigo_gvidilo
 layout: page
-title: Imp-Programmierhandbuch.
+title: 'Programmierhandbuch   _IMP_'
 ---
 
 
 APIs 'Dokumentation ist hier zu sehen:  
-* [Originalversion auf Chinesisch](../../zh/includes.zh/html/)
+* [  Originalversion in Chinesisch  ](../../zh/includes.zh/html/)  
 
 
-* [Englische Version](../../en/includes.en/html/)
+* [  Englisch  ](../../en/includes.en/html/)  
 
 
-* (° 1 ° 1 ° 1 ° 1 ° 1 ° Französische Version von Google übersetzt](../../fr/includes.fr/html/)
+* [  Französische Version übersetzt von Google  ](../../fr/includes.fr/html/)  
 
 
 
 
-# IMP (Ingenic Media Platform) (siehe imp_system.h)
+# _IMP_   \(  _Ingenic Media Platform_  \)   \( siehe   _imp\_system.h_  \)
 
 ## grundlegendes Konzept
-Die T20 / T21-Programmierung basiert auf folgenden Konzepten:
-1. Peripheriegerät (= Gerät)  
-    Das Peripheriegerät führt eine Funktion aus. Beispiele:
-     *  Bildquelle: Beendet die Ausgabe von Videodaten.
-     *  Encoder: Vervollständigt die Videokodierungs- oder Bildcodierungsfunktion.
-2. Gruppe  
-    Die Gruppe ist die kleinste Dateneingabeeinheit. Ein Gerät kann mehrere Gruppen haben und jede Gruppe kann nur einen Dateneingabekanal empfangen. Die Gruppe kann mehrere Ergebnisse haben.  
-    Die Gruppe ist auch ein Behälter für bestimmte "Funktionen". Weitere Informationen finden Sie in der Erläuterung im Abschnitt "Kanal".
-3. Ausfahrt  
-    Die Ausgabe ist die kleinste Einheit der Datenausgabe pro Gruppe. Eine Gruppe kann mehrere Ausgänge haben und jeder Ausgang kann nur einen Datenkanal erzeugen.
-4. Zelle  
-    Die Zelle bezieht sich auf eine Sammlung, die Informationen über das Gerät, die Gruppe und die Ausgabe enthält. Es wird in der IMPCell-Datenstruktur dargestellt.
-Die Zelle wird hauptsächlich zum Binden (@ref Binden)verwendet. Gemäß der Definition von Gerät, Gruppe und Ausgabe ist die Ausgabe der Knoten für die Datenausgabe und die Gruppe der Knoten für die Dateneingabe.
-In Bind befindet sich der Zellenindex des Datenausgabeknotens am Ausgabeausgang, und der Zellenindex des Dateneingabeknotens befindet sich in der Eingabegruppe (, sodass sich die Dateneingabe Zelle, Ausgabe befindet ein unsinniger Wert).
-5. Kanal  
-    Der Kanal bezieht sich im Allgemeinen auf eine Einheit mit einer einzelnen Funktion. Der Kanal erhält eine bestimmte Funktion, wenn eine Instanziierung ()erstellt wird.  
-    Zum Beispiel:  
-     -  Für den Encoder ergänzt ein Kanal die H264-Code- oder JPEG-Codierungsfunktion. Der spezifische Codierungsfunktionstyp (, Parameter) wird beim Erstellen des Kanals angegeben.
+  
+      Die Gruppe ist auch ein Container für bestimmte   " -Funktionen  ". Weitere Informationen finden Sie in der Erläuterung im Kanalbereich.  
+ 3. ELIGO   \( =  _Output_  \)    
+ Der Ausgang ist die kleinste Datenausgabeeinheit pro Gruppe.    
+ Der Kanal bezieht sich normalerweise auf eine einzige Funktionseinheit.    
+ Zum Beispiel:   
+     -   
 
 
-     -  Bei IVS vervollständigt ein Kanal die Funktion eines bestimmten Algorithmus, und beim Erstellen des Kanals werden bestimmte algorithmische Typparameter angegeben.
+     -  Für   _IVS_ schließt ein Kanal die Funktion eines bestimmten Algorithmus ab und der spezifische Algorithmus typische Parameter werden beim Erstellen des Kanals  angegeben
 
 
-     -  Für OSD gibt es einen Bereich ähnlich dem Kanal. Der Bereich ist ein spezifischer Überlagerungsbereich, der PIC-Bild (), ABDECKUNG (, Verschluss)usw. sein kann .
+     -  Für  _OSD_ gibt es eine Region, die dem   _Channel_ ähnlich ist, ein Bereich ist ein spezifischer oberstetierter Bereich, der ein oberes   \( -V-Bild  \) ist   \( Okklusion  \) usw.  
 
 
-     -  Bei FrameSource erzeugt ein Kanal ein Originalbild und der FrameSource-Kanal ist tatsächlich eine Gruppe.
+     -   
 
 
-     
-     Der Kanal als Funktionseinheit muss im Allgemeinen zusätzlich zu FrameSource) in der Gruppe (registriert sein, um Daten zu empfangen. Nachdem der Kanal in der Gruppe registriert wurde, empfängt er die von der Gruppe eingegebenen Daten.
+    
+       Der Kanal, als Funktionseinheit, normalerweise in der   \( -Gruppe aufbewahrt, außer   _FrameSource_  \) Empfangsdaten.  
 
     Die Anzahl der Kanäle, die von der Gruppe verschiedener Geräte aufgezeichnet werden können, ist ebenfalls unterschiedlich.
 
-## Bindemodule (Binden)
+## Modulverbindung   \(  _Bind_  \)
 
-Sobald zwei Gruppen durch Binden verbunden sind, werden die Daten aus der Quellgruppe automatisch an die Zielgruppe gesendet.  
-Da die Gruppe die kleinste Dateneingabeeinheit und die Ausgabe die kleinste Datenausgabeeinheit ist, werden die Geräte-ID, die Gruppen-ID und die Ausgabe-ID von srcCell in beiden Parametern von IMP_System_Bind (IMPCell * angegeben. srcCell, IMPCell * dstCell) gültig.  
+Nachdem zwei Gruppen mit   _Bind_ verknüpft sind, senden Daten aus der Quellgruppe automatisch an das Ziel.    
+ Da die Gruppe die kleinste Dateneingabeeinheit ist und der Ausgang die kleinste Datenausgabeinheit ist, ist der   _deviceID_,   _groupID_   und   _outputID_    _srcCell_   in den beiden Parametern von   _IMP\_System\_Bind \(IMPCell * srcCell, IMPCell * dstCell\)_   gültig.    
 
-Während dstCell nur für Geräte-ID und Gruppen-ID gültig ist, ist die Ausgabe-ID als Dateneingabe nicht sinnvoll.
+ 
 
 Beispiel 1: 
 ```
@@ -72,11 +61,10 @@ if(ret <0>)
   printf ("Bind FrameSource Channel0 and Encoder Group0 failed \ n");
 
 ```
+Ergebnis:    
+ *  Eine Gruppe erzeugt eine Gruppe, die einen Link von FramesOurce zum Codierer erzeugt. 
 
-* Es wird eine Gruppe generiert, die eine Verknüpfung von FrameSource zu Encoder generiert.
-
-
-* In der Encoder Group werden zwei Kanäle aufgezeichnet, sodass die Encoder Group über zwei Ausgänge H264 und JPEG verfügt.
+*  
 
 
 
@@ -112,69 +100,56 @@ int ret = IMP_System_Bind(&osd_grp1, &enc_grp1);
 if (ret < 0)
     printf("Bind OSD Group1 and Encoder Group1 failed\n");
 ```
-Dies ist ein typisches Bind-Programm: ein zweikanaliger Codestream.
- * FrameSource verfügt über zwei Ausgänge, nämlich den Hauptstrom Channel0 (1280x720) und den Slave-Stream Channel1 (640x360).
-   *   Hauptstrom: Channel0 Bind OSD Group.0 von FrameSource, OSD Group.0 Bind Encoder Group.0. Darunter: 
-       * OSD Group.0 zeichnete zwei Regionen auf, die zum Anzeigen von Zeitstempel- bzw. Zeichenfolgeninformationen verwendet werden.
-       * Encoder Group .0 zeichnete zwei Kanäle auf. , die H264-Codierung bzw. JPEG-Codierung sind. Wenn die Bildgröße des JPEG-Codierungskanals nicht mit dem Eingabeparameter (von FrameSource Channel0)übereinstimmt, wird die Software bei T10) skaliert (.) erreichen das Ziel, bei jeder Auflösung zu erfassen.
-       
-Hinweise:
-* Es wird empfohlen, alle Verbindungsvorgänge während der Systeminitialisierung auszuführen.
-* Bind- und UnBind-Vorgänge können nach Aktivierung von _FrameSource_ nicht dynamisch aufgerufen werden. Das Aufheben der Bindung erfolgt erst nach Deaktivierung _FrameSource_.
+ 
+
+ 
 
 ## Funktionen
 
-### int IMP\_System\_Init (leer )
-Initialisierung des IMP-Systems.
-gibt bei Erfolg 0 zurück.
-Nach diesem API-Aufruf wird die grundlegende Datenstruktur initialisiert, die Hardware jedoch nicht.
-Achtung: Diese Funktion muss vor jeder anderen Operation zur Initiierung aufgerufen werden.
-### int IMP_System_Ausgang (leer)
+### _int IMP\_System\_Init \(void \)_
+ 
+### _int IMP\_System\_Exit \(void\)_
 
-Nach dem Aufruf dieser Funktion werden der gesamte Speicher und IMP _handles_ freigegeben und die Hardware heruntergefahren. 
-Hinweis: Wenn Sie nach dem Aufrufen dieser API IMP erneut verwenden möchten, müssen Sie das IMP-System zurücksetzen.
+ 
 
-### int64_t IMP_System_GetTimeStamp (void)
+### _int64\_t IMP\_System\_GetTimeStamp \(void\)_
 
-Holen Sie sich den Zeitstempel des IMP-Systems in Mikrosekunden.  
-Rückgabe: Zeit in Mikrosekunden.
+Holen Sie sich das Timing-Bereich des   _IMP_   -Systems in Mikrosekunden.    
+ Rückkehr: Zeit in Mikrokunden. 
 
-### int IMP_System_RebaseTimeStamp (Basen int64_t)
-Stellen Sie den Zeitstempel des IMP-Systems in Mikrosekunden ein.  
-Rückgabe: 0 bei Erfolg.
+### Holen Sie sich das Timing-Bereich des _int IMP\_System\_RebaseTimeStamp \(bases int64\_t\)_ -Systems in Mikrosekunden. \_ Rückkehr: Zeit in Mikrokunden.  \(
+Definieren Sie das Timestamp   _IMP_   -System in Mikrosekunden.    
+ Rückgabe: 0, falls erfolgreich. 
 
-### uint32_t IMP_System_ReadReg32 (uint32_t u32Addr)
+### Definieren Sie das Timestamp _uint32\_t IMP\_System\_ReadReg32 \(uint32\_t u32Addr\)_ -System in Mikrosekunden. \_ Rückgabe: 0, falls erfolgreich. \_
 
 Lesen Sie den Wert eines 32-Bit-Registers.  
 
-### leer IMP_System_WriteReg32 (uint32_t regAddr, valeur uint32_t)
-Schreiben Sie den Wert in das 32-Bit-Register.
+### _void IMP\_System\_WriteReg32 \(uint32_  T REGADDR, Wert UINT32  _t\)_
+ 
 
 Hinweis: Rufen Sie diese API sorgfältig auf und überprüfen Sie die Bedeutung der Registrierung. Andernfalls kann es zu Systemfehlern kommen.
 
-### int IMP_System_GetVersion (IMPVersion * pstVersion) 
+### _int IMP_  System  _GetVersion \(IMPVersion * pstVersion\)_
 
-Rufen Sie die Versionsnummer des IMP-Systems ab.
+ 
 
-### const char * IMP_System_GetCPUInfo (leer)
+### _const char * IMP_  System  _GetCPUInfo \(void\)_
 Informationen zum CPU-Modell abrufen.  
 Hinweis: Der Rückgabewert ist eine Zeichenfolge des CPU-Modells. Für T10 gibt es beispielsweise "T10"und "T10-Lite".
 
-### int IMP_System_Binden (IMPCell * srcCell, IMPCell * dstCell)
+### _int IMP_  System   \(
 
 Verbindung zwischen Quellzelle und Ziel.
 
 Hinweis 1: Gemäß den Konzepten von Gerät, Gruppe und Ausgabe kann jedes Gerät mehrere Gruppen und jede Gruppe mehrere Ausgänge haben. Die Gruppe wird als Geräteeingabeschnittstelle und die Ausgabe als Geräteproduktschnittstelle verwendet. Daher verbindet die Verbindung tatsächlich einen bestimmten Ausgang des Ausgabegeräts mit einer bestimmten Gruppe des Eingabegeräts.
 
-Hinweis 2: Nach einer erfolgreichen Verknüpfung werden die von srcCell (Output) generierten Daten automatisch an die Zielzellengruppe ()übertragen.
+ 
 
-### int IMP_System_UnBind (IMPCell * srcCell, IMPCell * dstCell)
+### _int IMP_  System   \(
 Gruppieren Sie die Quellen und Ziele auf. 
 
-### int IMP_System_GetBindbyDest (IMPCell * dstCell, IMPCell * srcCell)
+### _int IMP_  System   \(
 
 Ruft Informationen aus der Quellzelle ab, die sich auf das Ziel beziehen.
-
-
-
 

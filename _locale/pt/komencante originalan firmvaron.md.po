@@ -1,0 +1,114 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-11-09 15:13+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: pt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: YAML Front Matter: lang
+#: komencante originalan firmvaron.md:1
+#, no-wrap
+msgid "eo"
+msgstr "pt"
+
+#. type: YAML Front Matter: lang-niv
+#: komencante originalan firmvaron.md:1
+#, no-wrap
+msgid "auto"
+msgstr "auto"
+
+#. type: YAML Front Matter: lang-ref
+#: komencante originalan firmvaron.md:1
+#, no-wrap
+msgid "061-originala_firmvaro"
+msgstr "061-originala_firmvaro"
+
+#. type: YAML Front Matter: layout
+#: komencante originalan firmvaron.md:1
+#, no-wrap
+msgid "page"
+msgstr "page"
+
+#. type: YAML Front Matter: title
+#: komencante originalan firmvaron.md:1
+#, fuzzy, no-wrap
+msgid "Funkciado de la originala firmware"
+msgstr "Operação do firmware original"
+
+#. type: Plain text
+#: komencante originalan firmvaron.md:10
+#, fuzzy, no-wrap
+msgid "La firmware konsistas el 6 vandoj: \n"
+msgstr "O firmware consiste em 6 vândalos:  \n"
+
+#. type: Plain text
+#: komencante originalan firmvaron.md:19
+#, fuzzy, no-wrap
+msgid ""
+"| Dispartigo | Tipo | Rolo | \n"
+" | ----------- | ---------------------- | ------------- | \n"
+" |  _mtdblock0_  |  _u-boot_                | Komencante | \n"
+" |  _mtdblock1_  | Teksto | Agordoj | \n"
+" |  _mtdblock2_  |  _u-boot legacy uImage_  | Kerno  _linux_  | \n"
+" |  _mtdblock3_  |  _squashfs_              |  _/_            | \n"
+" |  _mtdblock4_  |  _squashfs_              |  _/ipc_         | \n"
+" |  _mtdblock5_  |  _jffs1_                 |  _/opt_         | \n"
+msgstr ""
+"| Partição. Tipo | Função  \n"
+" | ----------- | ---------------------- | ------------- |  \n"
+" |   _mtdblock0_   |   _u-boot_                 | Iniciando  \n"
+" |   _mtdblock1_   | Texto Configurações |  \n"
+" |   _mtdblock2_   |   _u-boot legacy uImage_   | Core   _linux_   |  \n"
+" |   _mtdblock3_   |   _squashfs_               |   _/_             |  \n"
+" |   _mtdblock4_   |   _squashfs_               |   _/ipc_          |  \n"
+" |   _mtdblock5_   |   _jffs1_                  |   _/opt_          |  \n"
+
+#. type: Plain text
+#: komencante originalan firmvaron.md:25
+#, fuzzy, no-wrap
+msgid ""
+"La unua programo ekzekutita estas  _/linuxrc_.   \n"
+"Li lanĉas  _/etc/init.d/rcS_.   \n"
+"_/etc/init.d/rcS_  lanĉas  _/ipc/etc/auto\\_run.sh_.   \n"
+"_/ipc/etc/auto\\_run.sh_  lanco  _/opt/etc/local.rc_  Antaŭ ol lanĉi  _/ipc/app/jco\\_server_.   \n"
+"_/ipc/app/jco\\_server_  estas la ĉefa programo: i servas ambaŭ  _rtsp_ servilo, servilo  _http_, ... \n"
+msgstr ""
+"O primeiro programa executado é   _/linuxrc_.    \n"
+" Ele lança   _/etc/init.d/rcS_.    \n"
+" _/etc/init.d/rcS_   lança   _/ipc/etc/auto\\_run.sh_.    \n"
+" _/ipc/etc/auto\\_run.sh_   LANCO   _/opt/etc/local.rc_   antes de lançar   _/ipc/app/jco\\_server_.    \n"
+" _/ipc/app/jco\\_server_   é o programa principal: serve tanto   _rtsp_  server, servidor   _http_, ...  \n"
+
+#, fuzzy
+#~ msgid ""
+#~ "La unua programo ekzekutita estas  _/linuxrc_.   \n"
+#~ "Li lanĉas  _/etc/init.d/rcS_.   \n"
+#~ "_/etc/init.d/rcS_  lanco  _/ipc/etc/auto_ run.sh _.  \n"
+#~ msgstr ""
+#~ "O primeiro programa executado é   _/linuxrc_.    \n"
+#~ " Ele lança   _/etc/init.d/rcS_.    \n"
+#~ " _/etc/init.d/rcS_   spear   _/ipc/etc/auto_  run.sh  _.  \n"
+#~ "  \n"
+
+#, fuzzy
+#~ msgid ""
+#~ "_/ipc/etc/auto\\_run.sh_  lanco  _/opt/etc/local.rc_  Antaŭ ol lanĉi  _/"
+#~ "ipc/app/jco\\_server_.   \n"
+#~ "_/ipc/app/jco\\_server_  estas la ĉefa programo: i servas ambaŭ  _rtsp_ "
+#~ "servilo, servilo  _http_, ... \n"
+#~ msgstr ""
+#~ "_/ipc/etc/auto\\_run.sh_   LANCO   _/opt/etc/local.rc_   antes de "
+#~ "lançar   _/ipc/app/jco\\_server_.    \n"
+#~ " _/ipc/app/jco\\_server_   é o programa principal: serve tanto   _rtsp_  "
+#~ "server, servidor   _http_, ...  \n"

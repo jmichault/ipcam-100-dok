@@ -29,8 +29,8 @@ Kemudian, apa sahaja firmware:
 * mula "gdbserver"kamera, mis. :  
 
 
-     `/opt/media/mmcblk0p1/bin/gdbserver localhost:2000 /opt/media/mmcblk0p1/bin/motor`
-* mulakan gdb di komputer, contohnya:
+     `/opt/media/mmcblk0p1/bin/gdbserver localhost:2000 /opt/media/mmcblk0p1/bin/motor`  
+  *   Mula GDB di komputer, sebagai contoh:  
 
     ```
     cd programada_medio/toolchain
@@ -40,7 +40,7 @@ Kemudian, apa sahaja firmware:
     handle SIG32 nostop
     break xxx
     continue 
-    ```
+    ```  
 
 
 

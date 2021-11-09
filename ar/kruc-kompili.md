@@ -7,26 +7,20 @@ title: 'عبر التجميع'
 ---
 
 
-أدوات تجميع العبور في البرمجة_medio/toolchain.
-Ils ont été compilés pour debian buster x64.
+أدوات الترجمة عبر   _programada\_medio/toolchain_.  
+ تم تجميعها ل   _debian buster x64_.  
+
+المكتبات المقسمة في   _programada\_medio/lib_  
+
+  _include_   في   _programada\_medio/include_.  
+
+إذا كنت بحاجة إلى إعادة ترجمة مكتبة، إلهام البرامج النصية التالية:  
+  *   _programada\_medio/fontoj/01-buildssl.sh_ ، للمكتبة   _openssl_.  
+  *   _programada\_medio/fontoj/02-buildlive.sh_ ، للمكتبة   _live555_.  
+  *   _programada\_medio/fontoj/03-pcre.sh_ ، للمكتبة   _pcre_.  
 
 
-
-المكتبات المقارنة في المقدمة_medio/lib
-
-
-
-يشمل في البرمجة_medio/include.
+إذا كنت بحاجة إلى إعادة ترجمة   _«toolchain»_، يمكنك رؤية الموقع التالي:  
+   *   <https://github.com/anmaped/openfang>  
 
 
-
-إذا كنت بحاجة إلى استرداد مكتبة، إلهام البرامج النصية التالية:
-* مبرمجة_medio/fontoj/01-buildssl.sh , pour la librairie openssl.
-* programada_البيئة / المصادر / 02-buildive.sh، لمكتبة Live555.
-* البرامج_medio/fontoj/03-pcre.sh , pour la librairie pcre.
-
-
-
-
-إذا كنت بحاجة إلى ترجمة _«toolchain»_، يمكنك التحقق من موقع الويب التالي:
- * https://github.com/anmaped/openfang

@@ -7,22 +7,20 @@ title: 'Kruca kompilo'
 ---
 
 
-La transiritaj kompilaĵoj iloj estas en programado_medio/toolchain.
-Ils ont été compilés pour debian buster x64.
+Trans-kompilaĵaj iloj estas en  _programada\_medio/toolchain_. 
+ ili estis kompilitaj por  _debian buster x64_. 
+
+Dividitaj bibliotekoj estas en  _programada\_medio/lib_ 
+
+La  _include_  estas en  _programada\_medio/include_. 
+
+Se vi bezonas rekompili librovendejon, inspiri la jenajn skriptojn: 
+ *  _programada\_medio/fontoj/01-buildssl.sh_ , por la biblioteko  _openssl_. 
+ *  _programada\_medio/fontoj/02-buildlive.sh_ , por la biblioteko  _live555_. 
+ *  _programada\_medio/fontoj/03-pcre.sh_ , por la biblioteko  _pcre_. 
 
 
-Komparaj bibliotekoj estas en prograda_medio/lib
+Se vi iam bezonos rekompili la  _«toolchain»_, vi povas vidi la sekvan retejon: 
+  *  <https://github.com/anmaped/openfang> 
 
 
-Inkluzivas estas en programado_medio/include.
-
-
-Se vi bezonas rekompili bibliotekon, inspiri la sekvajn skriptojn:
-* Programada_medio/fontoj/01-buildssl.sh , pour la librairie openssl.
-* programada_Medio / fontoj / 02-buildive.sh, por Live555-biblioteko.
-* Programada_medio/fontoj/03-pcre.sh , pour la librairie pcre.
-
-
-
-Se vi iam bezonos kompili la _«toolchain»_, vi povas konsulti la sekvan retejon:
- * https://github.com/anmaped/openfang

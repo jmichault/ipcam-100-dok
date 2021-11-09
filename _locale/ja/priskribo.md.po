@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-10-29 14:46+0200\n"
+"POT-Creation-Date: 2021-11-09 15:13+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,43 +16,76 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+#. type: YAML Front Matter: lang
+#: priskribo.md:1
+#, no-wrap
+msgid "eo"
+msgstr "ja"
+
+#. type: YAML Front Matter: lang-niv
+#: priskribo.md:1
+#, no-wrap
+msgid "auto"
+msgstr "auto"
+
+#. type: YAML Front Matter: lang-ref
+#: priskribo.md:1
+#, no-wrap
+msgid "070-kamerao-priskribo"
+msgstr "070-kamerao-priskribo"
+
+#. type: YAML Front Matter: layout
+#: priskribo.md:1
+#, no-wrap
+msgid "page"
+msgstr "page"
+
+#. type: YAML Front Matter: title
+#: priskribo.md:1
+#, fuzzy, no-wrap
+msgid "Priskribo de la fotilo"
+msgstr "カメラの説明"
+
 #. type: Title #
-#: ./priskribo.md:3
-#, markdown-text, no-wrap
-#, fuzzy
+#: priskribo.md:11
+#, fuzzy, no-wrap
 msgid "Priskribo:"
 msgstr "説明："
 
 #. type: Plain text
-#: ./priskribo.md:40
-#, markdown-text, no-wrap
-#, fuzzy
+#: priskribo.md:13
+#, fuzzy, no-wrap
+msgid "<https://fr.aliexpress.com/item/4000146161270.html> \n"
+msgstr "<https://fr.aliexpress.com/item/4000146161270.html>  \n"
+
+#. type: Fenced code block
+#: priskribo.md:13
+#, no-wrap
 msgid ""
-"https://fr.aliexpress.com/item/4000146161270.html\n"
-"Markonomo: shiningpo\n"
-"Stilo: Kupola Fotilo\n"
-"Tipo: IP-Fotilo\n"
-"Konektebleco: IP / Reta Sendrata\n"
-"Subtenataj Operaciumoj: Ne\n"
-"Alta Difino: 1080P(Plena HD)\n"
-"Lenso (mm): 3.6mm\n"
-"Instalado: Flanka\n"
-"Elektroprovizo(V): DC12V 2A\n"
-"Reta Interfaco: RJ-45 10 / 100Mb Ethernet Slot\n"
-"Mura Krampo: Plafono\n"
-"Subtenitaj Poŝtelefonaj Sistemoj: Android\n"
-"Subtenataj Poŝtelefonaj Sistemoj: ios\n"
-"IR Distanco(m): 30M- 50M\n"
-"Specialaj Ecoj: Akvorezista / Veterrezista\n"
-"Vidanta Angulo: 140 °\n"
-"Megapikseloj: 2MP\n"
-"Potenca Konsumo(W): 12W\n"
-"Stokado: Neniu\n"
-"Sensila Marko: SONY\n"
-"Alarma Agado: Retpoŝta Foto\n"
-"Alarmiga Ago: Loka Alarmo\n"
-"Formato de Kunprema Video: H.264\n"
-"estas_customized: Yes\n"
+"    Brand Name: shiningpo\n"
+"    Style: Dome Camera\n"
+"    Type: IP Camera\n"
+"    Connectivity: IP/Network Wireless\n"
+"    Supported Operating Systems: No\n"
+"    High Definition: 1080P(Full-HD)\n"
+"    Lens (mm): 3.6mm\n"
+"    Installation: Side\n"
+"    Power Supply(V): DC12V 2A\n"
+"    Network Interface: RJ-45 10/100Mb Ethernet Slot\n"
+"    Wall Bracket: Ceiling\n"
+"    Supported Mobile Systems: Android\n"
+"    Supported Mobile Systems: ios\n"
+"    IR Distance(m): 30M-50M\n"
+"    Special Features: Waterproof / Weatherproof\n"
+"    Viewing Angle : 140°\n"
+"    Megapixels: 2MP\n"
+"    Power Consumption(W): 12W\n"
+"    Storage: None\n"
+"    Sensor Brand: SONY\n"
+"    Alarm Action: Email Photo\n"
+"    Alarm Action: Local Alarm\n"
+"    Video Compression Format: H.264\n"
+"    is_customized: Yes\n"
 "    Technology: Pan Tilt Zoom\n"
 "    Power Supply: Normal\n"
 "    TF Card: None\n"
@@ -64,247 +97,504 @@ msgid ""
 "    camera ip: camera wifi\n"
 "    ip camera wifi: camara vigilancia exterior\n"
 "    ptz: camara ip ptz\n"
-msgstr "https://fr.alivexpress.com/item/4000146161270.html�\n��スタイル：Cupolaカメラ�\n��タイプ：IPカメラ�\n��接続性：IP / Reta Wireless�\n��サポートされているオペレーティングシステム：NO�\n��高精細度：1080p�(��フルHD�)���\n��レンズ� (��mm�)��：3.6mm�\n��設置：横方向�\n��電気供給�(��V�)��：DC12V II�\n��ネットワークインターフェース：RJ-45 10 / 100MBイーサネットスロット�\n��ムラブラケット：天井�\n��サポートされているモバイルシステム：Android�\n��サポートされているモバイルシステム：iOS�\n��IR距離�(��M�)��M�)��：30m~50m�\n��特殊特徴：防水/ヴェロツィスタ�\n��視野角：140°�\n��メガピクセル：2mp�\n��W�)��：12W�\n��貯蔵：なし�\n��SENSILEブランド：ソニー�\n��アラームアクション：Eメール写真＼�警報処置：圧縮ビデオの局所警報�\n��フォーマット：H.264�\n��は�_customized: Yes\n    Technology: Pan Tilt Zoom\n    Power Supply: Normal\n    TF Card: None\n    Color: White\n    Audio Output: Two Way Audio\n    Sensor: CMOS\n    wifi camera: ip camera\n    camara wifi: camara ip\n    camera ip: camera wifi\n    ip camera wifi: camara vigilancia exterior\n    ptz: camara ip ptz\n��\n"
+msgstr ""
+"    Brand Name: shiningpo\n"
+"    Style: Dome Camera\n"
+"    Type: IP Camera\n"
+"    Connectivity: IP/Network Wireless\n"
+"    Supported Operating Systems: No\n"
+"    High Definition: 1080P(Full-HD)\n"
+"    Lens (mm): 3.6mm\n"
+"    Installation: Side\n"
+"    Power Supply(V): DC12V 2A\n"
+"    Network Interface: RJ-45 10/100Mb Ethernet Slot\n"
+"    Wall Bracket: Ceiling\n"
+"    Supported Mobile Systems: Android\n"
+"    Supported Mobile Systems: ios\n"
+"    IR Distance(m): 30M-50M\n"
+"    Special Features: Waterproof / Weatherproof\n"
+"    Viewing Angle : 140°\n"
+"    Megapixels: 2MP\n"
+"    Power Consumption(W): 12W\n"
+"    Storage: None\n"
+"    Sensor Brand: SONY\n"
+"    Alarm Action: Email Photo\n"
+"    Alarm Action: Local Alarm\n"
+"    Video Compression Format: H.264\n"
+"    is_customized: Yes\n"
+"    Technology: Pan Tilt Zoom\n"
+"    Power Supply: Normal\n"
+"    TF Card: None\n"
+"    Color: White\n"
+"    Audio Output: Two Way Audio\n"
+"    Sensor: CMOS\n"
+"    wifi camera: ip camera\n"
+"    camara wifi: camara ip\n"
+"    camera ip: camera wifi\n"
+"    ip camera wifi: camara vigilancia exterior\n"
+"    ptz: camara ip ptz\n"
 
-#. type: Plain text
-#: ./priskribo.md:50
-#, markdown-text, no-wrap
-#, fuzzy
-msgid ""
-"Surskriboj pri la etikedo:\n"
-"WIFI CARAM\n"
-"Modelo: WF-HD820-ZS\n"
-"Rezolucio: 1080P\n"
-"Elektroprovizo: DC12V / 1A\n"
-"SSID: HSIPC-******\n"
-"Pasvorto: 12345678\n"
-"MAC: 00:88:09:**:**:**\n"
-msgstr "タグに関する碑文：�\n��WiFiカラム�\n��モデル：WF-HD820-ZS（°3°3°3°3°3880p�\n�� °4°4°4°6°エレクトロポジション：DC12V / I�\n��SSID：HSIPC - �******��パスワード：12345678（°8°8°8°8:88:09 �**��：�**��：�**��＼�\n"
-
-#. type: Plain text
-#: ./priskribo.md:54
-#, markdown-text, no-wrap
-#, fuzzy
-msgid ""
-"Kunligante ĝin por Eterreto, ĝi akiras DHCP-adreson kaj nek povas konekti al "
-"la retejo:\n"
-"defaŭlta uzanto: admin\n"
-"defaŭlta pasvorto: admin\n"
-msgstr "イーサネットに接続することで、DHCPアドレスを取得し、サイトに接続できません。�\n��デフォルトユーザー：admin�\n��デフォルトパスワード： admin＼�\n"
-
-#. type: Plain text
-#: ./priskribo.md:60
-#, markdown-text, no-wrap
-#, fuzzy
-msgid ""
-"dum 5 minutoj, vi povas konekti per telnet al la haveno 9527\n"
-"defaŭlta uzanto: root\n"
-"defaŭlta pasvorto: jco66688\n"
-"por resti konektita preter 5 minutoj: \"killall -9 auto_run.sh»\n"
-"(jco = http://www.cnjabsco.com/ )\n"
-msgstr "5分間、Port 9527�\n��デフォルトユーザーにTelnetと接続できます。root�\n��デフォルトパスワード：JCO66688�\n�� 5分以内に接続したまま� \"��killall - 9 auto�_run.sh»\n(jco = http://www.cnjabsco.com/ )\n��\n"
-
-#. type: Plain text
-#: ./priskribo.md:62
-#, markdown-text, no-wrap
-#, fuzzy
-msgid "malfermaj havenoj:  \n"
-msgstr "オープンポート:(°1°1  \n"
-
-#. type: Plain text
-#: ./priskribo.md:63
-#, markdown-text, no-wrap
-#, fuzzy
-msgid ""
-"  tcp: 80(http), 443(http ankaŭ!), 554(rtsp), 8004, 8006, 9527(telnet), 9999  "
-"\n"
-msgstr "�  ��TCP：80�(��HTTP�)��、443�(��HTTP！   \n"
-
-#. type: Plain text
-#: ./priskribo.md:64
-#, markdown-text, no-wrap
-#, fuzzy
-msgid "  udp: 67(dhcp), 3702, 8002, 39642  \n"
-msgstr "�  ��UDP：67�(��DHCP�)��、3702,8002,39642＼�  \n"
-
-#. type: Plain text
-#: ./priskribo.md:83
-#, markdown-text, no-wrap
-#, fuzzy
-msgid ""
-"reta konduto kiam oni lanĉas jco_server:\n"
-"pridemandas la servilon dns pri: www.163.com kaj dns.ictun.com\n"
-"demando 114.114.114.114 por dns.ictun.com\n"
-"konekti al la haveno udp/993 de dns.ictun.com\n"
-"konekti al udp/993-haveno de 120.25.129.41\n"
-"pridemandu la servilon dns pri: conn-policy.ictun.com\n"
-"pridemandu la servilon dns pri: video-policy.ictun.com\n"
-"konekti al udp/80-haveno de 52.29.45.252\n"
-"konektas al udp/1210-haveno de 52.29.45.252\n"
-"ligas al udp/21-haveno de 52.57.135.134\n"
-"konektas al udp/1053-haveno de 52.28.62.20\n"
-"konektas al udp/443-haveno de 52.29.58.225\n"
-"konektas al udp/123 (ntp) haveno de 112.74.204.233 "
-"(video-policy.ictun.com)\n"
-"ligas al udp/993-haveno de 47.52.99.182\n"
-"konektas al udp/1054-haveno de 52.57.127.207\n"
-"...\n"
-"noto: ŝanĝu la defaŭltan itineron metante tiun de la interreta skatolo.\n"
-msgstr "JCO�_server:\npridemandas la servilon dns pri: www.163.com kaj dns.ictun.com\ndemando 114.114.114.114 por dns.ictun.com\nkonekti al la haveno udp/993 de dns.ictun.com\nkonekti al udp/993-haveno de 120.25.129.41\npridemandu la servilon dns pri: conn-policy.ictun.com\npridemandu la servilon dns pri: video-policy.ictun.com\nkonekti al udp/80-haveno de 52.29.45.252\nkonektas al udp/1210-haveno de 52.29.45.252\nligas al udp/21-haveno de 52.57.135.134\nkonektas al udp/1053-haveno de 52.28.62.20\nkonektas al udp/443-haveno de 52.29.58.225\nkonektas al udp/123 (ntp) haveno de 112.74.204.233 (video-policy.ictun.com)\nligas al udp/993-haveno de 47.52.99.182\nkonektas al udp/1054-haveno de 52.57.127.207\n...\nnoto: ŝanĝu la defaŭltan itineron metante tiun de la interreta skatolo.\n��を発表したときのWebの動作\n"
-
-#. type: Plain text
-#: ./priskribo.md:86
-#, markdown-text, no-wrap
-#, fuzzy
-msgid "haltigi jco_server sen kaŭzi restartigi:\n"
-msgstr "JCO�_server sen kaŭzi restartigi:\n��を停止\n"
-
-#. type: Title ##
-#: ./priskribo.md:87
-#, markdown-text, no-wrap
-#, fuzzy
-msgid "halti_cloud :"
-msgstr "停止�_cloud :��"
+#. type: Title #
+#: priskribo.md:51
+#, fuzzy, no-wrap
+msgid "Etikedaj surskriboj"
+msgstr "タグ碑文"
 
 #. type: Fenced code block
-#: ./priskribo.md:88
+#: priskribo.md:52
+#, no-wrap
+msgid ""
+"WIFI CARAM\n"
+"Model : WF-HD820-ZS\n"
+"Résolution : 1080P\n"
+"Power Supply : DC12V/1A\n"
+"SSID : HSIPC-******\n"
+"Password : 12345678\n"
+"MAC : 00:88:09:**:**:**\n"
+msgstr ""
+"WIFI CARAM\n"
+"Model : WF-HD820-ZS\n"
+"Résolution : 1080P\n"
+"Power Supply : DC12V/1A\n"
+"SSID : HSIPC-******\n"
+"Password : 12345678\n"
+"MAC : 00:88:09:**:**:**\n"
+
+#. type: Plain text
+#: priskribo.md:65
+#, fuzzy, no-wrap
+msgid ""
+"Konektante la fotilon al Ethorn-reto, ĝi ricevas IP-adreson, kaj vi povas konektiĝi al ĝi ĉe http:   \n"
+"Defaŭlta Uzanto:  _admin_   \n"
+"Defaŭlta Pasvorto:  _admin_ \n"
+msgstr ""
+"Ethornネットワークカメラを接続すると、IPアドレスを受け取り、http：   \n"
+"デフォルトのユーザー：  _admin_    \n"
+"デフォルトのパスワード：  _admin_  で接続できます。\n"
+
+#. type: Plain text
+#: priskribo.md:67
+#, fuzzy, no-wrap
+msgid ""
+"Dum 5 minutoj, ni povas konekti per  _telnet_  al haveno 9527:   \n"
+"Defaŭlta Uzanto:  _root  \n"
+msgstr ""
+"5分間、  _telnet_  からポート9527に接続できます。   \n"
+"デフォルトユーザー：  _root  \n"
+"  \n"
+
+#. type: Plain text
+#: priskribo.md:69
+#, fuzzy, no-wrap
+msgid "Defaŭlta Pasvorto:  _jco66688  \n"
+msgstr ""
+"デフォルトのパスワード：  _jco66688  \n"
+"  \n"
+
+#. type: Plain text
+#: priskribo.md:73
+#, fuzzy, no-wrap
+msgid ""
+"Por resti konektita post ĉi tiuj 5 minutoj:  `killall -9 auto_run.sh`     \n"
+" _( JCO = http://www.cnjabsco.com/  )   _\n"
+msgstr ""
+"5分後に接続したままにするには：  `killall -9 auto_run.sh`      \n"
+"  _(  jco = http://www.cnjabsco.com/   )    _\n"
+"\n"
+
+#. type: Plain text
+#: priskribo.md:77
+#, fuzzy, no-wrap
+msgid ""
+"Malfermu havenojn:   \n"
+"  _tcp_ : 80 (_ http _), 443 (_ http _  ankaŭ!     \n"
+msgstr ""
+"オープンポート：   \n"
+"   _tcp_ ：80  (_  http  _)、443  (_  HTTP  _  も！      \n"
+
+#. type: Plain text
+#: priskribo.md:80
+#, fuzzy, no-wrap
+msgid "Halti  _jco_ servilo _  sen kaŭzi reboot:   \n"
+msgstr "再起動を発生させずに  _jco_  Server  _  を停止します。   \n"
+
+#. type: Fenced code block
+#: priskribo.md:80
 #, no-wrap
 msgid "PS | \n"
 msgstr "PS | \n"
 
 #. type: Plain text
-#: ./priskribo.md:96
-#, markdown-text, no-wrap
-#, fuzzy
+#: priskribo.md:85
+#, fuzzy, no-wrap
+msgid "La ĉefa kanalo povas esti bildigita per:   \n"
+msgstr "メインチャネルは次のように表すことができます。   \n"
+
+#. type: Fenced code block
+#: priskribo.md:85
+#, no-wrap
 msgid ""
-"vi povas vidi la ĉefan video-rivereton (laŭ 1080P aŭ aliaj agordo) per:\n"
-"ffplay -i rtsp: // admin: admin@192.168.24.111/stream1\n"
-"ffplay -i rtsp: // admin: admin@192.168.24.39: 554 / stream1\n"
-"ffplay -i rtsp: // admin: admin@192.168.24.39: 554 / mpeg4 / ch0 / main / "
-"av_stream\n"
-msgstr "1080pまたはその他の構成�) ��に従ってメインビデオストリーム� (��を見ることができます。�\n��FFPlay -i RTSP：// admin：admin@192.168.24.111/ Stream1�\n��FFPlay -I RTSP：// admin：admin@192.168.24.39：554 / Stream1（°5°5°5°5°5°5°5°5°5°5°5°ON）0：// admin ：admin@192.168.24.39：554 / MPEG4 / CH0 /メイン/ AV�_stream\n��\n"
+"ffplay -i rtsp://admin:admin@192.168.24.111/stream1\n"
+"ffplay -i rtsp://admin:admin@192.168.24.39:554/stream1\n"
+"ffplay -i rtsp://admin:admin@192.168.24.39:554/mpeg4/ch0/main/av_stream\n"
+msgstr ""
+"ffplay -i rtsp://admin:admin@192.168.24.111/stream1\n"
+"ffplay -i rtsp://admin:admin@192.168.24.39:554/stream1\n"
+"ffplay -i rtsp://admin:admin@192.168.24.39:554/mpeg4/ch0/main/av_stream\n"
 
 #. type: Plain text
-#: ./priskribo.md:101
-#, markdown-text, no-wrap
-#, fuzzy
+#: priskribo.md:92
+#, fuzzy, no-wrap
+msgid "kaj sekundara:   \n"
+msgstr "そして二次：   \n"
+
+#. type: Fenced code block
+#: priskribo.md:92
+#, no-wrap
 msgid ""
-"kaj la duaranga:\n"
-"ffplay -i rtsp: // admin: admin@192.168.24.39/stream2\n"
-"ffplay -i rtsp: // admin: admin@192.168.24.39: 554 / stream2\n"
-msgstr "�\n��ffplay -i RTSP：// admin：admin@192.168.24.39/stream2�\n��FFPlay -i RTSP：// admin：admin@192.168.24.39： 554 / Stream2＼�\n"
+"ffplay -i rtsp://admin:admin@192.168.24.39/stream2\n"
+"ffplay -i rtsp://admin:admin@192.168.24.39:554/stream2\n"
+msgstr ""
+"ffplay -i rtsp://admin:admin@192.168.24.39/stream2\n"
+"ffplay -i rtsp://admin:admin@192.168.24.39:554/stream2\n"
 
 #. type: Plain text
-#: ./priskribo.md:110
-#, markdown-text, no-wrap
-#, fuzzy
+#: priskribo.md:98
+#, fuzzy, no-wrap
+msgid "La informoj montritaj en la interreta interfaco:   \n"
+msgstr "オンラインインターフェイスに表示される情報：   \n"
+
+#. type: Fenced code block
+#: priskribo.md:98
+#, no-wrap
 msgid ""
-"la instalita firmvaro indikas:\n"
-"DeviceName: INGENIC-V01\n"
-"DeviceModel: IPCAM-100\n"
-"DeviceSN: 12345678901\n"
-"KernelVersion: Thu Jul 9 15:46:54 CST 2015\n"
-"Servila Versio: WS3.53.1243-20190717-DANALE-GEN\n"
-"Retversio: V2.3.4-20190709\n"
-"OCX-Versio: -1\n"
-msgstr "インストールされているファームウェアは次のことを示しています。�\n��デバイス：Ingenic-V01�\n��Devicemodel：IPCAM-100�\n���\n��サーバーバージョン：WS3.53.1243-20190717-ダナレ - gen（°6°6°6°6°6°6°6°02-3-20190709�\n��OCXバージョン：-1＼�\n"
+"DeviceName:     INGENIC-V01\n"
+"DeviceModel:    IPCAM-100\n"
+"DeviceSN:       12345678901\n"
+"KernelVersion:  Thu Jul 9 15:46:54 CST 2015\n"
+"ServerVersion:  WS3.53.1243-20190717-DANALE-GEN\n"
+"WebVersion:     V2.3.4-20190709\n"
+"OCXVersion:     -1\n"
+msgstr ""
+"DeviceName:     INGENIC-V01\n"
+"DeviceModel:    IPCAM-100\n"
+"DeviceSN:       12345678901\n"
+"KernelVersion:  Thu Jul 9 15:46:54 CST 2015\n"
+"ServerVersion:  WS3.53.1243-20190717-DANALE-GEN\n"
+"WebVersion:     V2.3.4-20190709\n"
+"OCXVersion:     -1\n"
 
 #. type: Plain text
-#: ./priskribo.md:114
-#, markdown-text, no-wrap
-#, fuzzy
+#: priskribo.md:111
+#, fuzzy, no-wrap
 msgid ""
-"la procesoro estas: inĝenia T21\n"
-"http://www.ingenic.com.cn/en/?product/id/11.html\n"
-"https://fr.indasina.com/ingenic- "
-"t21-ekstrema-2-megapixela-koda-procesoro_p16.html\n"
-msgstr "プロセッサは次のとおりです。エンジニアT21�\n��http://www.ininic.com.cn/en/?product/id/11.html�\n��https://fr.indasina.com/ingenic- T21 END-2-Megapixelaコードプロセッサ（°3°3\n"
+"La procesoro estas:  _ingenic T21_ \n"
+" <http://www.ingenic.com.cn/en/?product/id/11.html>   \n"
+"La procesoro estas: <https://fr.indasina.com/ingenic-t21-extreme-2-megapixel-encoding-processor_p16.html>     \n"
+msgstr ""
+"プロセッサは次のとおりです。  _ingenic T21_  \n"
+"  < http://www.ininic.com.cn/en/?product/id/11.html >    \n"
+"プロセッサは次のとおりです。 < https： //fr.indasina.com/ingeric-t21-xtreme-2-megapixel-encoding-processor _p16.html>     \n"
+"\n"
 
 #. type: Plain text
-#: ./priskribo.md:118
-#, markdown-text, no-wrap
-#, fuzzy
+#: priskribo.md:114
+#, fuzzy, no-wrap
 msgid ""
-"the CMOS-sensilo estas: gc2053.\n"
-"ŝofora fonto: "
-"https://github.com/mrfixit2001/rk-kernel-fork/blob/develop-4.4/drivers/media/i2c/gc2053.c\n"
-msgstr "CMOSセンサーは次のとおりです.GC2053。 \n"
+"La sensor  _CMOS_  estas:  _gc2053_.   \n"
+"Fontoj:  < https://github.com/mrfixit2001/rk-kernel-for-/blob/develop-4.4/drivers/media/i2c/gc2053.c >   \n"
+msgstr "  _CMOS_  センサーは次のとおりです。 \n"
 
 #. type: Plain text
-#: ./priskribo.md:120
-#, markdown-text, no-wrap
-#, fuzzy
-msgid "RAM: 42MiB entute, 36 MiB havebla.\n"
-msgstr "RAM：42mib全体、36 MIBが利用可能です。 \n"
+#: priskribo.md:116
+#, fuzzy, no-wrap
+msgid "Memoro  _RAM_ :  _42 MiB_  Totalo,  _36 MiB_  Uzebla.   \n"
+msgstr "メモリ  _RAM_ ：  _42 MiB_  合計、  _36 MiB_  使用可能。    \n"
 
 #. type: Plain text
-#: ./priskribo.md:126
-#, markdown-text, no-wrap
-#, fuzzy
+#: priskribo.md:118
+#, fuzzy, no-wrap
+msgid "La aveno de 9999 permesas vin kontroli la fotilon:   \n"
+msgstr "9999のOATSを使用すると、カメラを確認できます。   \n"
+
+#. type: Fenced code block
+#: priskribo.md:118
+#, no-wrap
 msgid ""
-"la haveno 9999 estas malfermita kaj permesas regi la fotilon:\n"
-"echo \"checkuser -act set -user admin -password admin\"| nc 192.168.1.155 "
-"9999\n"
-"e echa \"listo\"| nc 192.168.1.155 9999\n"
-"eoo \"pelcod20ctrl -?\"| nc 192.168.1.155 9999\n"
-"eoo \"pelcod20ctrl -tipo 1\"| nc 192.168.1.155 9999\n"
-msgstr "9999ポートが開いていてカメラを制御することができます。（°1°1°1°1°1°2°2°2°2°2°2°2°2°2°2°2°2°SET -USER ADMIN-PASSWORD ADMIN�\"��| \n"
+"echo \"checkuser -act set -user admin -password admin\" | nc 192.168.1.155 9999  \n"
+"echo \"list\" | nc 192.168.1.155 9999  \n"
+"echo \"pelcod20ctrl -?\" | nc 192.168.1.155 9999  \n"
+"echo \"pelcod20ctrl -type 1\" | nc 192.168.1.155 9999  \n"
+msgstr ""
+"echo \"checkuser -act set -user admin -password admin\" | nc 192.168.1.155 9999  \n"
+"echo \"list\" | nc 192.168.1.155 9999  \n"
+"echo \"pelcod20ctrl -?\" | nc 192.168.1.155 9999  \n"
+"echo \"pelcod20ctrl -type 1\" | nc 192.168.1.155 9999  \n"
 
 #. type: Plain text
-#: ./priskribo.md:130
-#, markdown-text, no-wrap
-#, fuzzy
+#: priskribo.md:128
+#, fuzzy, no-wrap
 msgid ""
-"gpio-havenoj:\n"
-"46 = infruĝaj LEDoj.\n"
-"81 = bluaj LEDoj.\n"
-msgstr "GPIOポート：�\n��46 =赤外製レザー。 \n"
+"Havenoj  _GPIO_ :   \n"
+"46 = Transruĝa LED.   \n"
+"81 = Blanka LED. \n"
+msgstr ""
+"ポート  _GPIO_ ：   \n"
+" 46 =赤外線LED。  \n"
 
 #. type: Plain text
-#: ./priskribo.md:135
-#, markdown-text, no-wrap
-#, fuzzy
+#: priskribo.md:129
+#, fuzzy, no-wrap
+msgid "GPIO-HADENOJ BLOKITAJ POR SLUDO:  \n"
+msgstr "GPIO - SCREAMINGのためにブロックされた：0xDAC1BEAG.  \n"
+
+#. type: Plain text
+#: priskribo.md:132
+#, fuzzy, no-wrap
 msgid ""
-"GPIO-havenoj blokitaj por studado:\n"
-"blokita de motor.ko: 18? 38 39 40 41 47 48 49 60?\n"
-"blokita de audio.ko: 63?\n"
-"52 64\n"
-msgstr "GPIOポートは研究のために遮断された：�\n��Motor.koによってブロックされました：18？ \n"
+"Blokita de Motor.ko: 18?   \n"
+"Blokita de Audio.ko: 63?   \n"
+"52 64  \n"
+msgstr "Motor.ko：18？   \n"
 
 #. type: Plain text
-#: ./priskribo.md:137
-#, markdown-text, no-wrap
-#, fuzzy
-msgid "Ptz-kontrolo:\n"
-msgstr "PTZ制御：＼�\n"
+#: priskribo.md:135
+#, fuzzy, no-wrap
+msgid "Kontroloj  _PTZ_ :   \n"
+msgstr "コントロール  _PTZ_ ：   \n"
 
 #. type: Plain text
-#: ./priskribo.md:143
-#, markdown-text, no-wrap
-#, fuzzy
+#: priskribo.md:144
+#, fuzzy, no-wrap
 msgid ""
-"supro: http: // admin: admin@192.168.24.39/? jcpcmd = pelcod20ctrl -type 1 "
-"-cmd 1 -data1 24 -data2 24\n"
-"malsupre: http: // admin: admin@192.168.24.39/? jcpcmd = pelcod20ctrl -type "
-"1 -cmd 2 -data1 24 -data2 24\n"
-"maldekstre: http: // admin: admin@192.168.24.39/? jcpcmd = pelcod20ctrl "
-"-type 1 -cmd 3 -data1 24 -data2 24\n"
-"dekstre: http: // admin: admin@192.168.24.39/? Jcpcmd = pelcod20ctrl -type 1 "
-"-cmd 4 -data1 24 -data2 24\n"
-"halto: http: // admin: admin @ 192.168.24.39/?jcpcmd=pelcod20ctrl -speco 1 "
-"-cmd 9 -data1 24 -data2 24\n"
-msgstr "上：http：// admin：admin@192.168.24.39/？ \n"
+"Supro:  _http://admin:admin@192.168.24.39/?jcpcmd=pelcod20ctrl -type 1 -cmd 1 -data1 24 -data2 24_   \n"
+"Fundo:  _http://admin:admin@192.168.24.39/?jcpcmd=pelcod20ctrl -type 1 -cmd 2 -data1 24 -data2 24_   \n"
+"Maldekstra:  _http://admin:admin@192.168.24.39/?jcpcmd=pelcod20ctrl -type 1 -cmd 3 -data1 24 -data2 24_   \n"
+"Uste:  _http://admin:admin@192.168.24.39/?jcpcmd=pelcod20ctrl -type 1 -cmd 4 -data1 24 -data2 24_   \n"
+"Haltu:  _http://admin:admin@192.168.24.39/?jcpcmd=pelcod20ctrl -type 1 -cmd 9 -data1 24 -data2 24_   \n"
+"Pozicio 2:  _http://192.168.24.39/?jcpcmd=pelcod20ctrl -type 2 -cmd 1 -data2 2_   \n"
+"Pozicio 1:  _http://192.168.24.39/?jcpcmd=pelcod20ctrl -type 2 -cmd 2 -data2 1_   \n"
+"Klara pozicio 2:  _http://192.168.24.39/?jcpcmd=pelcod20ctrl -type 2 -cmd 3 -data2 2_   \n"
+msgstr ""
+"上：  _http://admin:admin@192.168.24.39/?jcpcmd=pelcod20ctrl -type 1 -cmd 1 -data1 24 -data2 24_    \n"
+"底：  _http://admin:admin@192.168.24.39/?jcpcmd=pelcod20ctrl -type 1 -cmd 2 -data1 24 -data2 24_    \n"
+"左：  _http://admin:admin@192.168.24.39/?jcpcmd=pelcod20ctrl -type 1 -cmd 3 -data1 24 -data2 24_    \n"
+"右：  _http://admin:admin@192.168.24.39/?jcpcmd=pelcod20ctrl -type 1 -cmd 4 -data1 24 -data2 24_    \n"
+"停止：  _http://admin:admin@192.168.24.39/?jcpcmd=pelcod20ctrl -type 1 -cmd 9 -data1 24 -data2 24_    \n"
+"位置2：  _http://192.168.24.39/?jcpcmd=pelcod20ctrl -type 2 -cmd 1 -data2 2_    \n"
+"位置1：  _http://192.168.24.39/?jcpcmd=pelcod20ctrl -type 2 -cmd 2 -data2 1_    \n"
+"透明位置2：  _http://192.168.24.39/?jcpcmd=pelcod20ctrl -type 2 -cmd 3 -data2 2_    \n"
 
-#. type: Plain text
-#: ./priskribo.md:147
-#, markdown-text, no-wrap
-#, fuzzy
-msgid ""
-"starigu pozicion 2: http://192.168.24.39/?jcpcmd=pelcod20ctrl -type 2 -cmd 1 "
-"-data2 2\n"
-"iru al 1: http://192.168.24.39/?jcpcmd=pelcod20ctrl -type 2 - cmd 2 -data2 "
-"1\n"
-"forigi 2: http://192.168.24.39/?jcpcmd=pelcod20ctrl -type 2 -cmd 3 -data2 "
-"2\n"
-msgstr "セット位置2：http://192.168.24.39/ CMD 2 -Data2 1�\n��REMOVE 2：http://192.168.24.39/?jcpcmd=pelcod20ctrl -type 2 -cmd 3 -Data2 2＼�\n"
+#, fuzzy, no-wrap
+#~ msgid "https://en.aliexpress.com/item/4000146161270.html\n"
+#~ msgstr "https://en.alivexpress.com/item/4000146161270.html .\n"
 
+#, fuzzy, no-wrap
+#~ msgid "Kunlicante ĝin por Eterreto, ĝi Akiras DHCP-ADRESON KAJ NI POVO KONEKTI AL LA REGETO:  \n"
+#~ msgstr "EtherRetoの編み物、それはDHCPアドレスを取得し、私たちはリージェントに接続することができます：0xdac1beab  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "DefAŭlta Uzanto: Admin  \n"
+#~ msgstr "デフォルトユーザー：admin   \n"
+
+#, fuzzy, no-wrap
+#~ msgid "DefAŭlta Pasvorto: Admin  \n"
+#~ msgstr "デフォルトのパスワード：admin 0xdac1beaf  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Dum 5 Minutoj, VI Povas Konekti per Telnet al la Haveso 9527  \n"
+#~ msgstr "5分間、あなたは9527 0xDAC1BeafのポートにTelnetと接続することができます  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "DefAŭlta Uzanto: Radiko  \n"
+#~ msgstr "デフォルトユーザー：ルート0xDAEC1BEAF  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "DefAŭlta Pasvorto: jco66688  \n"
+#~ msgstr "デフォルトのパスワード：JCO66688 0xDAC1BEAG  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Por resti konektita Preter 5 Minutoj: \"Killall -9 aŭtomata_run.sh»  \n"
+#~ msgstr "5分以内に接続したままにする： \" Killall -9自動0xDaec2beab  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "(JCO = http://www.cnjabsco.com/ )  \n"
+#~ msgstr "( JCO = http://www.cnjabsco.com/ )   .\n"
+
+#, fuzzy, no-wrap
+#~ msgid ""
+#~ "Malfermaj Arenoj:    \n"
+#~ "TCP: 80(http), 443(http ankaŭ!     \n"
+#~ msgstr "オープンサンド：0xDAC1Beaf TCP：80 0xDAC2BEAG HTTP 0XDAEC3BEAF、443 0xDAEC4BEAF HTTP！      \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Reta Konduto Kiam Oni LANĉAS JCO_server:  \n"
+#~ msgstr "JCO 0xDAC1BEAGを起動するとネットワーク行動  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Pridemandas La servilon DNS PRI: www.163.com Kaj DNS.ICTun.com  \n"
+#~ msgstr "DNSサーバーは次のように尋問されています.www.163.comおよびdns.ictun.com 0xdaec1beab  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Apliko 114.114.114.114 por DNS.ICTun.com  \n"
+#~ msgstr "アプリケーション114.114.114.114 DNS.Itun.com   \n"
+
+#, fuzzy, no-wrap
+#~ msgid "KONEKTI AL LA HAVEN UDP / 993 DNS.ICTUNC.com  \n"
+#~ msgstr "haven udp / 993 dns.ittunc.com 0xdac1beafに接続します  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Konekti al UDP / 993-havenuso de 120,25.129.41  \n"
+#~ msgstr "UDP / 993ポート120.25.129.41 0xDAC1BEAGに接続します  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "PrideMandu la servilon DNS PRI: Conn-policy.ICTun.com  \n"
+#~ msgstr "DNSサーバーをON：conn-policy.ittun.com に問い合わせてください  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "PrideMandu The Servilon DNS PRI: Video-policy.ICTun.com  \n"
+#~ msgstr "質問DNSサーバーon：video-policy.ittun.com .  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "KONEKTI AL UDP / 80-Haveno de 52.29.45.252  \n"
+#~ msgstr "UDP / 80ポートの52.29.45.252 0xDAC1BEAFに接続  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Konektas al UDP / 1210-havenuso de 52.29.45.252  \n"
+#~ msgstr "UDP / 1210ポート52.29.45.252 0xDAC1BEAGに接続します  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Ligoj al UDP / 21-havenoj de 52,57.135.134  \n"
+#~ msgstr "UDP / 21ポートへのリンク52.57.1​​35.134 0xDAC1BEAG.  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Konektas al UDP / 1053-havenes de 52.28.62.20  \n"
+#~ msgstr "UDP / 1053-HASONESの52.28.62.20 0xDAC1BEAFに接続  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "KONEKTAS AL UDP / 443-Havas de 52.29.58.225  \n"
+#~ msgstr "UDP / 443に接続します.52.29.58.225 0xDAC1BEAG  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Konektas al UDP / 123 (NTP) havenuso de 112,74.204.233 (Video-policy.ICTun.com)  \n"
+#~ msgstr "UDP / 123 0xDAC1Beaf NTP 0xDAC2BEAFポート112.74.204.233 0xDAEC3BEAF Video-Policy.ITTUN.com 0xDAEC4BEAF 0xDAC5Beaf\n"
+
+#, fuzzy, no-wrap
+#~ msgid "Ligoj al UDP / 993-havenoj de 47.52.99.182  \n"
+#~ msgstr "UDP / 993ポート47.52.99.182 0xDAEC1BEAGへのリンク  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Konektas al UDP / 1054-havenes de 52.57.127.207  \n"
+#~ msgstr "UDP / 1054-Havonesの52.57.1​​27.207 に接続  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "...  \n"
+#~ msgstr "... 0xDAC1Beaf  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Noto: ŝanĝu la DefAŭltan Itineron Tian signifis ke la interrila skatolo.   \n"
+#~ msgstr "注：相互参照ボックスを意味するデフォルトルートを設定してください。    \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Haltigi JCO_server sen kaŭzi restartigi:  \n"
+#~ msgstr ""
+#~ "JCO _server sen kaŭzi restartigi:  \n"
+#~ "を停止します  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Haltu_cloud :  "
+#~ msgstr "_cloud :  を停止します"
+
+#, fuzzy, no-wrap
+#~ msgid "VI POVO VIDI LA BEFAN VIDEO-Riverton (LAŭ 1080p Aŭ ALIA AGORDO) per:  \n"
+#~ msgstr "Befan Video Ritge 0xdaec1Beabは、1080pまたはその他の設定0xDAC2Beafで表示されます.0XDAEC3BEAF  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Kaj la durangana:\n"
+#~ msgstr "そしてDurangana：\n"
+
+#, fuzzy, no-wrap
+#~ msgid "La instalita firmvaro Indikas:\n"
+#~ msgstr "インストールされているファームウェアは、次のものを示します.0xDAC1Beaf\n"
+
+#, fuzzy, no-wrap
+#~ msgid "La Procesoro estas: Ingenic T21  \n"
+#~ msgstr "プロセッサは次のとおりです.Ingenic T21 0xDAC1Beaf  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "http://www.ingenic.com.cn/en/?product/id/11.html  \n"
+#~ msgstr "http://www.ininic.com.cn/en/?product/id/11.html .  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "https://en.indasina.com/ingenic-t21-extreme-2-megapixel-encoding-processor_p16.html  \n"
+#~ msgstr ""
+#~ "https://en.indasina.com/ininic-t21-xtreme-0-megapixel-encoding-processor _p16.html  \n"
+#~ "  \n"
+
+#, fuzzy, no-wrap
+#~ msgid ""
+#~ "La CMOS-sensilo estas: GC2053.   \n"
+#~ "ŝofora Fonto: https://github.com/mrfixit2001/rk-kernel-fork/blob/develop-4.4/drivers/media/i2c/gc2053.c  \n"
+#~ msgstr "CMOSセンサーは次のとおりです.GC2053。   \n"
+
+#, fuzzy, no-wrap
+#~ msgid "RAM: 42Mib Intt, 36 MIB Havebla.   \n"
+#~ msgstr "RAM：42MB ITT、36 MIBが利用可能です。    \n"
+
+#, fuzzy, no-wrap
+#~ msgid "La Havedo 9999 estas Malfermita kaj Permesas Regi la Fotilon:  \n"
+#~ msgstr "Harbour 9999が開き、カメラを制御できます.0XDAEC1BEAF  \n"
+
+#, fuzzy, no-wrap
+#~ msgid ""
+#~ "Echo (° 1 ° Checuser -Act Set -USER Admin -Password Admin\"|   \n"
+#~ "Eo (° 1 ° 1 ° listo\"|   \n"
+#~ "Eo (° 1 ° Pelcod203dRL -?   \n"
+#~ "Eo (° 1 ° 1 ° Pelcod203ctrl -type 1\"|   \n"
+#~ msgstr "Echo 0xDaec1Beaf°Cecuser -act set -user admin -password admin 0xdac2beaf |    \n"
+
+#, fuzzy, no-wrap
+#~ msgid "GPIO-HADENOJ:  \n"
+#~ msgstr "GPO-Hadens：  \n"
+
+#, fuzzy, no-wrap
+#~ msgid ""
+#~ "46 = Infraredĝaj legoj.   \n"
+#~ "81 = Bluaj leĝoj.   \n"
+#~ msgstr "46 =赤外線解釈   \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Ptz-Kontrolo:  \n"
+#~ msgstr "PTZコントロール：0xDAC1BEAG  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Supro: http: // admin: admin@192.168.24.39/? Jcpcmd = pelcod20ctrl -type 1 -cmd 1 -gata1 24 -gata2 24  \n"
+#~ msgstr "上：http：// admin：admin@192.168.24.39/？   \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Msalru: http: // admin: admin@192.168.24.39/? Jcpcmd = pelcod203crl -type 1 -cmd 2 -gata1 24-gafu2 24  \n"
+#~ msgstr "MSALKRU：http：// admin：admin@192.168.24.39/？   \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Maldekstre: http: // admin: admin@192.168.24.39/? Jcpcmd = pelcod203crl -type 1 -cmd 3 -gata1 24 -gata2 24  \n"
+#~ msgstr "左：http：// admin：admin@192.168.24.39/？   \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Dekstre: http: // admin: admin@192.168.24.39/? JCPCMD = Pelcod203crl -Type 1 -CMD 4 -Data1 24 -Atata2 24  \n"
+#~ msgstr "右側に：http：// admin：admin@192.168.24.39/？   \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Halto: http: // admin: admin@192.168.24.39/? Jcpcmd = pelcod203crl -type 1 -cmd 9 -gata1 24-Data2 24  \n"
+#~ msgstr "停止：http：// admin：admin@192.168.24.39/？   \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Starigigu pozicion 2: http://192.168.24.39/?jcpcmd=pelcod20ctl -type 2 -cmd 1 -gata2 2  \n"
+#~ msgstr "位置2：http://192.168.24.39/  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Iru al 1: http://192.168.24.39/?JJcpcmd=pelcod203trl -type 2 -cmd 2 -gata2 1  \n"
+#~ msgstr "1：http://192.168.24.39/?jjcpcmd=pelcod203trl -type 2 -cmd 2 -gata2 1   \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Forigi 2: http://192.168.24.39/?jcpcmd=pelCod203trl -Type 2 -CMD 3 -Data2 2  \n"
+#~ msgstr "削除2：http：//192.168.24.39/  \n"

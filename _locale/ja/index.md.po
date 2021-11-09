@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-10-30 11:06+0200\n"
+"POT-Creation-Date: 2021-11-09 15:13+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -50,7 +50,7 @@ msgstr "プレゼンテーション"
 #: index.md:10
 #, fuzzy, no-wrap
 msgid "La celo de ĉi tiu projekto estas krei alternativan firmvaron por ĉi tiu kamerao:\n"
-msgstr "このプロジェクトの目的は、このカメラの代替のファームウェアを作成することです。（°1°1\n"
+msgstr "このプロジェクトの目的はこのカメラの代替ファームウェアを作成することです。\n"
 
 #. type: Plain text
 #: index.md:11
@@ -119,14 +119,14 @@ msgstr "代替ファームウェアで機能するもの："
 #. type: Bullet: '* '
 #: index.md:33
 #, fuzzy, no-wrap
-msgid "_LAN_ kaj _WLAN_\n"
-msgstr "_LAN_ と _WLAN_\n"
+msgid "_LAN_  kaj  _WLAN_ \n"
+msgstr "_LAN_  と  _WLAN_  \n"
 
 #. type: Bullet: '* '
 #: index.md:35
 #, fuzzy, no-wrap
-msgid "Servilo (° 1 ° duobla-fluo: _1920x1080 H264_ kaj _640x360 MJPEG_ defaŭlte. \n"
-msgstr "サーバー (°1°二重流： _1920x1080 H264_ 、 _640x360 MJPEG_ デフォルトで。  \n"
+msgid "Servilo  _RTSP_  Duobla-rivereto:  _1920x1080 H264_  kaj  _640x360 MJPEG_  Defaŭlte. \n"
+msgstr "サーバー  _RTSP_   Double Stream：  _1920x1080 H264_  と  _640x360 MJPEG_  デフォルトで。  \n"
 
 #. type: Bullet: '* '
 #: index.md:37
@@ -137,8 +137,8 @@ msgstr "視覚的パラメータ\n"
 #. type: Bullet: '* '
 #: index.md:39
 #, fuzzy, no-wrap
-msgid "Servilo _HTTP_\n"
-msgstr "サーバー _HTTP_\n"
+msgid "Servilo  _HTTP_ \n"
+msgstr "サーバー  _HTTP_  \n"
 
 #. type: Bullet: '* '
 #: index.md:41
@@ -155,44 +155,44 @@ msgstr "エンジンキャリブレーション\n"
 #. type: Bullet: '* '
 #: index.md:45
 #, fuzzy, no-wrap
-msgid "Parametroj _PTZ_\n"
-msgstr "パラメータ _PTZ_\n"
+msgid "Agordoj  _PTZ_ \n"
+msgstr "設定  _PTZ_  \n"
 
 #. type: Bullet: '* '
 #: index.md:47
 #, fuzzy, no-wrap
-msgid "Kliento _NTP_\n"
-msgstr "クライアント _NTP_（°3°3\n"
+msgid "Kliento  _NTP_ \n"
+msgstr "クライアント  _NTP_  \n"
 
 #. type: Bullet: '* '
 #: index.md:49
 #, fuzzy, no-wrap
-msgid "Pasvorta administrado _http_, _rtsp_ kaj sistemo. \n"
-msgstr "パスワード管理 _http_、 _rtsp_ およびシステム。  \n"
+msgid "administri pasvortoj  _http_,  _rtsp_  kaj sistemo. \n"
+msgstr "パスワードを管理します。  _http_、  _rtsp_  、およびシステム。  \n"
 
 #. type: Bullet: '* '
 #: index.md:51
 #, fuzzy, no-wrap
-msgid "Blanka LED-Kontrolo kaj IR\n"
-msgstr "白色LED制御とIR\n"
+msgid "blankaj LED kontrolo kaj IR \n"
+msgstr "白色LED制御とIR  \n"
 
 #. type: Bullet: '* '
 #: index.md:53
 #, fuzzy, no-wrap
-msgid "Blanka LED-Kontrolo kaj IR _ftp_\n"
-msgstr "白色LED制御とIR _ftp_\n"
+msgid "blankaj LED kontrolo kaj IR  _ftp_\n"
+msgstr "白色LED制御とIR   _ftp_ \n"
 
 #. type: Bullet: '* '
 #: index.md:55
 #, fuzzy, no-wrap
-msgid "Blanka LED-Kontrolo kaj IR _telnet_\n"
-msgstr "白色LED制御とIR _telnet_\n"
+msgid "blankaj LED kontrolo kaj IR  _telnet_\n"
+msgstr "白色LED制御とIR   _telnet_ \n"
 
 #. type: Bullet: '* '
 #: index.md:57
 #, fuzzy, no-wrap
-msgid "Servilo kaj kliento _ssh_\n"
-msgstr "サーバーとクライアント _ssh_（°3°3\n"
+msgid "Servilo kaj Kliento  _ssh_ \n"
+msgstr "サーバーとクライアント  _ssh_  \n"
 
 #. type: Bullet: '* '
 #: index.md:59
@@ -209,14 +209,14 @@ msgstr "メール送信\n"
 #. type: Bullet: '* '
 #: index.md:63
 #, fuzzy, no-wrap
-msgid "Sendi _«telegram»_\n"
-msgstr " _«telegram»_を送る\n"
+msgid "Sendante  _«telegram»_ \n"
+msgstr "送信  _«telegram»_  を送信します\n"
 
 #. type: Bullet: '* '
 #: index.md:65
 #, fuzzy, no-wrap
-msgid "Aŭtomata nokta reĝimo\n"
-msgstr "自動ナイトレジーム\n"
+msgid "aŭtomata nokto mode \n"
+msgstr "自動ナイトモード \n"
 
 #. type: Title ##
 #: index.md:67
@@ -257,8 +257,8 @@ msgstr "メールの送信_mqtt_\n"
 #. type: Bullet: '* '
 #: index.md:80
 #, fuzzy, no-wrap
-msgid "Sendante bildojn kaj videojn en nubo\n"
-msgstr "画像とビデオをクラウドで送信する（°1°1\n"
+msgid "sendo bildojn kaj filmetoj en la nubo \n"
+msgstr "クラウド内の出荷イメージとビデオ \n"
 
 #. type: Bullet: '* '
 #: index.md:82
@@ -287,8 +287,8 @@ msgstr "おそらくネットワーク ( _www/ipcam/config.dist/reto.conf_ )を�
 #. type: Bullet: '* '
 #: index.md:91
 #, fuzzy, no-wrap
-msgid "Enmetu la karton _microSD_ en la fotilon. \n"
-msgstr "カメラにカード _microSD_ を入力してください。  \n"
+msgid "Enmeti la karton  _microSD_  en la fotilo. \n"
+msgstr "カメラにカード  _microSD_  を挿入します。  \n"
 
 #. type: Bullet: '* '
 #: index.md:93
@@ -323,8 +323,8 @@ msgstr "ファル `cd /opt/media/mmcblk0p1;./install.sh`\n"
 #. type: Bullet: '* '
 #: index.md:103
 #, fuzzy, no-wrap
-msgid "La fotilo rekomencas, nun:\n"
-msgstr "カメラが再開されます：（°1°1\n"
+msgid "La fotilo reboots nun: \n"
+msgstr "今すぐカメラを再起動します。 \n"
 
 #. type: Bullet: '    * '
 #: index.md:105
@@ -342,27 +342,27 @@ msgstr "SSH (ユーザー _admin_、パスワード _ismart12_)で接続でき�
 #: index.md:109
 #, fuzzy, no-wrap
 msgid "La primara video-fluo estas alirebla ĉe _rtsp://admin:ismart21@IP/stream1_.\n"
-msgstr "プライマリビデオ電流は _rtsp://admin:ismart21@IP/stream1_でアクセス可能です。 （°3°3\n"
+msgstr "プライマリビデオ電流は _rtsp://admin:ismart21@IP/stream1_でアクセス可能です。 \n"
 
 #. type: Bullet: '    * '
 #: index.md:111
 #, fuzzy, no-wrap
 msgid "La sekundara video-fluo estas alirebla ĉe _rtsp://admin:ismart21@IP/stream2_.\n"
-msgstr "二次ビデオ電流は _rtsp://admin:ismart21@IP/stream2_でアクセス可能です。 （°3°3\n"
+msgstr "二次ビデオフローは _rtsp://admin:ismart21@IP/stream2_でアクセス可能です。 \n"
 
 #. type: Plain text
 #: index.md:116
 #, fuzzy, no-wrap
 msgid ""
-"(° 1 ° WiFi AP-reĝimo estas aktivigita defaŭlte:\n"
-"    ** SSID: IPCAM100-XXXXXX\n"
-"    ** WPA2-ŝlosilo: ismart21\n"
-"IP-adreso de la fotilo: 172.25.0.1\n"
+"    *  WiFi AP-reĝimo estas ebligita defaŭlte: \n"
+"     **  SSID: IPCAM100-XXXXX \n"
+"     **  WPA2-klavo: ismart21 \n"
+"     **  IP-adreso de la fotilo: 172.25.0.1 \n"
 msgstr ""
-"（°1°1°1 WiFi APモードがデフォルトで活性化されます。\n"
-"    ** SSID：IPCAM100-XXXXXX\n"
-"    ** °5°）WPA2キー：ISMART21\n"
-"カメラのIPアドレス：172.25.0.1\n"
+"    *   WiFi APモードはデフォルトで有効になっています。 \n"
+"      **   SSID：IPCAM100-XXXXX  \n"
+"      **   wpa2キー：ISMART21  \n"
+"      **   IPアドレスカメラのIPアドレス：172.25.0.1  \n"
 
 #. type: Title ##
 #: index.md:117
@@ -401,18 +401,118 @@ msgid "Interesaj dokumentoj"
 msgstr "興味深い文書"
 
 #. type: Plain text
-#: index.md:135
+#: index.md:136
 #, fuzzy, no-wrap
 msgid ""
-"Multa laboro estis farita por fotiloj ekipitaj per procesoro _ingenic T20_ :\n"
-"* modifita firmware: <https://github.com/eliaskotlyar/xiaomi- dafang -Hacks>\n"
-"* Fontoj de la modifita firmware: <https://github.com/dafang-hacks/main>\n"
-"17 °) https://github.com/thatusenameAlreadyExist/Jco-pm203-fisheye-ingenic-t20-p2p-camera-hacks>\n"
+"Multa laboro estis farita por fotiloj ekipitaj per procesoro  _ingenic T20_ : \n"
+" *  modifita firmware:  <https://github.com/EliasKotlyar/Xiaomi-Dafang-Hacks> \n"
+" *  Fontoj de la modifita firmware:  <https://github.com/Dafang-Hacks/Main> \n"
+" *  Aliaj firmware:  <https://github.com/openmiko/openmiko> \n"
+" *  Lanĉaj Programoj Sen Ŝanĝi la Firmware:  <https://github.com/ThatUsernameAlreadyExist/JCO-PM203-Fisheye-Ingenic-T20-P2P-camera-hacks> \n"
 msgstr ""
-"プロセッサ _ingenic T20_ を搭載したカメラ用の多くの作業が行われました。\n"
-"* 修正ファームウェア： <https://github.com/ilílístotlyar/xiaomi- DAFANG -HAK>>\n"
-"修正ファームウェアのソース： <https://github.com/dafang-hacks/main>\n"
-"）17°) HTTPS：//Github.com/ThatusEnameAnamexist/jco-pm203-fisheye-ininic-t20-p2p-カメラ - ハック>\n"
+"修正ファームウェアのプロセッサを搭載したカメラの作業が行われています。  <https://github.com/EliasKotlyar/Xiaomi-Dafang-Hacks>  \n"
+"  *    *  その他のファームウェア：   <https://github.com/openmiko/openmiko>  \n"
+"  *  ファームウェアを変更せずにプログラムを起動します。  <https://github.com/ThatUsernameAlreadyExist/JCO-PM203-Fisheye-Ingenic-T20-P2P-camera-hacks>  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "_LAN_ kaj _WLAN_\n"
+#~ msgstr "_LAN_ と _WLAN_\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "Servilo  _RTSP_  Duoble rivereto:  _1920x1080 H264_  kaj  _640x360 "
+#~ "MJPEG_  defaŭlte. \n"
+#~ msgstr ""
+#~ "サーバー  _RTSP_   Double Stream：  _1920x1080 H264_  と  _640x360 "
+#~ "MJPEG_  デフォルトで。  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Servilo _HTTP_\n"
+#~ msgstr "サーバー _HTTP_\n"
+
+#, fuzzy, no-wrap
+#~ msgid "Parametroj _PTZ_\n"
+#~ msgstr "パラメータ _PTZ_\n"
+
+#, fuzzy, no-wrap
+#~ msgid "Pasvorta administrado _http_, _rtsp_ kaj sistemo. \n"
+#~ msgstr "パスワード管理 _http_、 _rtsp_ およびシステム。  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Blanka LED-Kontrolo kaj IR\n"
+#~ msgstr "白色LED制御とIR\n"
+
+#, fuzzy, no-wrap
+#~ msgid "Blanka LED-Kontrolo kaj IR _ftp_\n"
+#~ msgstr "白色LED制御とIR _ftp_\n"
+
+#, fuzzy, no-wrap
+#~ msgid "Blanka LED-Kontrolo kaj IR _telnet_\n"
+#~ msgstr "白色LED制御とIR _telnet_\n"
+
+#, fuzzy, no-wrap
+#~ msgid "Sendi _«telegram»_\n"
+#~ msgstr " _«telegram»_を送る\n"
+
+#, fuzzy, no-wrap
+#~ msgid "Aŭtomata nokta reĝimo\n"
+#~ msgstr "自動ナイトレジーム\n"
+
+#, fuzzy, no-wrap
+#~ msgid "Enmetu la karton _microSD_ en la fotilon. \n"
+#~ msgstr "カメラにカード _microSD_ を入力してください。  \n"
+
+#, fuzzy
+#~ msgid ""
+#~ "Multa laboro estis farita por fotiloj ekipitaj per procesoro  _ingenic "
+#~ "T20_ : \n"
+#~ " *  modifita firmware:  < https://github.com/eliaskotlyar/xiaomi-dafang-"
+#~ "hacks > \n"
+#~ " *  Fontoj de la modifita firmware:  < https://github.com/dafang-hacks/"
+#~ "main > \n"
+#~ " *  Aliaj firmware:  < https://github.com/openmiko/ OpenMIKO > \n"
+#~ " *  PROGRAMO LEGIN sen ŝanĝi la firmware:  < https://github.com/"
+#~ "thatusernameAlreadyExist/Jco-pm203-fisheyE-ingenic-t20-p2p-camera-hacks > "
+#~ "<h19 >\n"
+#~ msgstr ""
+#~ "プロセッサ  _ingenic T20_   \n"
+#~ "  *  修正ファームウェア：  <  https：//github.com/ilistotlyar/xiami-"
+#~ "dafang-hacks  >  \n"
+#~ "  *  修正ファームウェアからのソース：  <  https://github.com/dafang-hacks/"
+#~ "main  >  \n"
+#~ "  *  その他のファームウェア：  <  https://github.com/openmiko/ openmiko "
+#~ "<H14 > \n"
+#~ "  *  プログラムはファームウェアを変更せずに読み取られます。  <  https://"
+#~ "github.com/thatusernameanameAnexist/jco-pm203-fisheye-iningEnic-t20-p2p-"
+#~ "Camera-Hacks  >  H19 < H19 <H19 <H19 <H19 <H11  > \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Servilo (° 1 ° duobla-fluo: _1920x1080 H264_ kaj _640x360 MJPEG_ defaŭlte. \n"
+#~ msgstr "サーバー (°1°二重流： _1920x1080 H264_ 、 _640x360 MJPEG_ デフォルトで。  \n"
+
+#, fuzzy, no-wrap
+#~ msgid ""
+#~ "(° 1 ° WiFi AP-reĝimo estas aktivigita defaŭlte:\n"
+#~ "    ** SSID: IPCAM100-XXXXXX\n"
+#~ "    ** WPA2-ŝlosilo: ismart21\n"
+#~ "IP-adreso de la fotilo: 172.25.0.1\n"
+#~ msgstr ""
+#~ "（°1°1°1 WiFi APモードがデフォルトで活性化されます。\n"
+#~ "    ** SSID：IPCAM100-XXXXXX\n"
+#~ "    ** °5°）WPA2キー：ISMART21\n"
+#~ "カメラのIPアドレス：172.25.0.1\n"
+
+#, fuzzy, no-wrap
+#~ msgid ""
+#~ "Multa laboro estis farita por fotiloj ekipitaj per procesoro _ingenic T20_ :\n"
+#~ "* modifita firmware: <https://github.com/eliaskotlyar/xiaomi- dafang -Hacks>\n"
+#~ "* Fontoj de la modifita firmware: <https://github.com/dafang-hacks/main>\n"
+#~ "17 °) https://github.com/thatusenameAlreadyExist/Jco-pm203-fisheye-ingenic-t20-p2p-camera-hacks>\n"
+#~ msgstr ""
+#~ "プロセッサ _ingenic T20_ を搭載したカメラ用の多くの作業が行われました。\n"
+#~ "* 修正ファームウェア： <https://github.com/ilílístotlyar/xiaomi- DAFANG -HAK>>\n"
+#~ "修正ファームウェアのソース： <https://github.com/dafang-hacks/main>\n"
+#~ "）17°) HTTPS：//Github.com/ThatusEnameAnamexist/jco-pm203-fisheye-ininic-t20-p2p-カメラ - ハック>\n"
 
 #, no-wrap
 #~ msgid ""

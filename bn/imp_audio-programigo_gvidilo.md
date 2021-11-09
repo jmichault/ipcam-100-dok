@@ -3,10 +3,10 @@ lang: bn
 lang-niv: auto
 lang-ref: 053-audio-programigo_gvidilo
 layout: page
-title: 'কঠিন প্রোগ্রামিং গাইড'
+title: 'সাউন্ড প্রোগ্রামিং গাইড'
 ---
 
-# আইএমপি_Audio (voir imp_অডিও.h)
+# IMP  _Audio \(voir imp_  audio.h  \)
 
 রেকর্ডিং এবং প্লেব্যাক, অডিও কোডেক, ভলিউম এবং লাভ সেটিংস, ইকো বাতিলকরণ, স্বয়ংক্রিয় লাভ এবং অন্যান্য ফাংশন সহ অডিও মডিউল।
 

@@ -29,16 +29,16 @@ Videosensor: _GC2053_
 
 ## Was funktioniert in alternativer Firmware:
 
-* _LAN_ und _WLAN_
+* _LAN_   und   _WLAN_  
 
 
-* Server (° 1 ° Doppelfluss: _1920x1080 H264_ und _640x360 MJPEG_ standardmäßig.  
+* Server   _RTSP_   Doppelstrom:   _1920x1080 H264_   und   _640x360 MJPEG_   standardmäßig.  
 
 
 * Visuelle Parameter
 
 
-* Server _HTTP_
+* Server   _HTTP_  
 
 
 * Motorsteuerung
@@ -47,25 +47,25 @@ Videosensor: _GC2053_
 * Motorkalibrierung
 
 
-* Parameter _PTZ_
+* Einstellungen   _PTZ_  
 
 
-* Kunde _NTP_
+* Client   _NTP_  
 
 
-* Passwortverwaltung _http_, _rtsp_ und System.  
+* Verwalten Sie Kennwörter   _http_,   _rtsp_   und -system.  
 
 
-* Weiße LED-Steuerung und IR
+* Weiße LED-Steuerung und IR  
 
 
-* Weiße LED-Steuerung und IR _ftp_
+* Weiße LED-Steuerung und IR   _ftp_ 
 
 
-* Weiße LED-Steuerung und IR _telnet_
+* Weiße LED-Steuerung und IR   _telnet_ 
 
 
-* Server und Client _ssh_
+* Server und Client   _ssh_  
 
 
 * Bewegungserkennung
@@ -74,10 +74,10 @@ Videosensor: _GC2053_
 * E-Mail senden
 
 
-* Senden _«telegram»_
+* Senden   _«telegram»_  
 
 
-* Automatisches Nachtregime
+* Automatischer Nachtmodus  
 
 
 
@@ -98,7 +98,7 @@ Videosensor: _GC2053_
 * E-Mail senden_mqtt_
 
 
-* Senden von Bildern und Videos in Cloud
+* Sendungsbilder und Videos in der Cloud  
 
 
 * etc ...
@@ -113,7 +113,7 @@ Videosensor: _GC2053_
 * Stellen Sie vielleicht das Netzwerk ( _www/ipcam/config.dist/reto.conf_ )einstellen
 
 
-* Geben Sie die Karte _microSD_ in der Kamera ein.  
+* Legen Sie die Karte   _microSD_   in die Kamera ein.  
 
 
 * Schließen Sie die Kamera an Ihr lokales Netzwerk an und schalten Sie die Kamera ein.
@@ -131,7 +131,7 @@ Videosensor: _GC2053_
 * Faru `cd /opt/media/mmcblk0p1;./install.sh`
 
 
-* Die Kamera setzt sich nun fort: (° 1 ° 1
+* Die Neustarts-Kamera jetzt:  
 
 
     * Sie können eine Verbindung mit der URL _https://IP_ (benutzer _admin_verbinden, Passwort _ismart21_).
@@ -140,16 +140,16 @@ Videosensor: _GC2053_
     * Sie können in SSH (Benutzer _admin_, Passwort _ismart12_)verbinden.
 
 
-    * Der primäre Videostrom ist bei _rtsp://admin:ismart21@IP/stream1_erreichbar. (° 3 ° 3
+    * Der primäre Videostrom ist bei  _rtsp://admin:ismart21@IP/stream1_ zugänglich. 
 
 
-    * Der sekundäre Videostrom ist bei _rtsp://admin:ismart21@IP/stream2_erreichbar. (° 3 ° 3
+    * Der sekundäre Videostrom ist bei  _rtsp://admin:ismart21@IP/stream2_ zugänglich. 
 
 
-(° 1 ° 1 ° 1 WiFi AP-Modus wird standardmäßig aktiviert:
-    ** SSID: IPCAM100-XXXXXX
-    ** WPA2-Taste: ismart21
-IP-Adresse der Kamera: 172.25.0.1
+    *   WiFi AP-Modus ist standardmäßig aktiviert:  
+      **   SSID: IPCAM100-XXXXX  
+      **   WPA2-Taste: ISMART21  
+      **   IP-Adresse der Kamera: 172.25.0.1  
 
 ## Alternative Firmware deinstallieren:
 
@@ -169,8 +169,9 @@ IP-Adresse der Kamera: 172.25.0.1
 
 # Interessante Dokumente
 
-Es wurde viel Arbeit für Kameras hergestellt, die mit einem Prozessor ausgestattet sind _ingenic T20_ :
-* modifizierte Firmware: <https://github.com/ilílístoTlyar/xiaomi- Dafang -Haks>
-Quellen der modifizierten Firmware: <https://github.com/dafang-hacks/main>
-) 17 °) https://github.com/thatenenameEnamexist/jco-pm203-fisheye-ininic-t20-p2p-amera-hracks>
+Für Kameras wurde viel Arbeit gemacht, die mit einem Prozessor-Firmware mit Prozessor   _ingenic T20_   
+  *   ausgestattet sind:   <https://github.com/EliasKotlyar/Xiaomi-Dafang-Hacks>  
+  *   Quellen der modifizierten Firmware:   <https://github.com/Dafang-Hacks/Main>  
+  *   Andere Firmware:   <https://github.com/openmiko/openmiko>  
+  *   Startprogramme ohne Änderung der Firmware:   <https://github.com/ThatUsernameAlreadyExist/JCO-PM203-Fisheye-Ingenic-T20-P2P-camera-hacks>  
 

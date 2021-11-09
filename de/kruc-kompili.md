@@ -7,26 +7,20 @@ title: Kreuzzusammenstellung
 ---
 
 
-Die Transit-Compilations-Tools sind in der Programmierung_medio/toolchain.
-Ils ont été compilés pour debian buster x64.
+Transcompilierungswerkzeuge sind in   _programada\_medio/toolchain_.  
+ Sie wurden für   _debian buster x64_ kompiliert.  
+
+Dividierte Bibliotheken sind in   _programada\_medio/lib_  
+
+Das   _include_   ist in   _programada\_medio/include_.  
+
+Wenn Sie eine Buchhandlung neu kompilieren müssen, inspirieren Sie die folgenden Skripts:  
+  *   _programada\_medio/fontoj/01-buildssl.sh_ , für die Bibliothek   _openssl_.  
+  *   _programada\_medio/fontoj/02-buildlive.sh_ , für die Bibliothek   _live555_.  
+  *   _programada\_medio/fontoj/03-pcre.sh_ , für die Bibliothek   _pcre_.  
 
 
-
-Vergleichsbibliotheken sind in der Täglich_medio/lib
-
-
-
-Inklusive ist in der Programmierung_medio/include.
+Wenn Sie jemals den   _«toolchain»_ neu kompilieren müssen, können Sie die folgende Website sehen:  
+   *   <https://github.com/anmaped/openfang>  
 
 
-
-Wenn Sie eine Bibliothek wiederherstellen müssen, inspirieren Sie die folgenden Skripts:
-* programmiert_medio/fontoj/01-buildssl.sh , pour la librairie openssl.
-* programada_Umwelt / Quellen / 02-buildive.sh, für eine Live555-Bibliothek.
-* Programada_medio/fontoj/03-pcre.sh , pour la librairie pcre.
-
-
-
-
-Wenn Sie jemals die _«toolchain»_kompilieren müssen, können Sie die folgende Website überprüfen:
- * https://github.com/anmaped/openfang

@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-10-29 23:09+0200\n"
+"POT-Creation-Date: 2021-11-08 18:07+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -49,7 +49,7 @@ msgstr ""
 #. type: Title #
 #: imp_isp-programigo_gvidilo.md:9
 #, no-wrap
-msgid "IMP_ISP (voir imp_isp.h)"
+msgid "_IMP\\_ISP_ \\(voir _imp\\_isp.h\\_)"
 msgstr ""
 
 #. type: Plain text
@@ -195,7 +195,7 @@ msgstr ""
 #. type: Bullet: '* '
 #: imp_isp-programigo_gvidilo.md:90
 #, no-wrap
-msgid "étape 2 : fermer les capteurs. (FrameSource doit être fermé avant cette opération)\n"
+msgid "étape 2 : fermer les capteurs. \\(FrameSource doit être fermé avant cette opération\\)\n"
 msgstr ""
 
 #. type: Fenced code block
@@ -249,8 +249,8 @@ msgstr ""
 msgid "liste des fonctions"
 msgstr ""
 
-#. type: Plain text
-#: imp_isp-programigo_gvidilo.md:194
+#. type: Fenced code block
+#: imp_isp-programigo_gvidilo.md:122
 #, no-wrap
 msgid ""
 "int IMP_ISP_Open(void);\n"

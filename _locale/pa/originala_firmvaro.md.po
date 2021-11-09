@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-10-30 11:05+0200\n"
+"POT-Creation-Date: 2021-11-09 15:12+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -56,7 +56,7 @@ msgstr "ਖੁੱਲੇ ਪੋਰਟਾਂ"
 #: originala_firmvaro.md:11
 #, fuzzy, no-wrap
 msgid "TCP: 80(http), 443(HTP ankaŭ!), 554(RTSP), 8004, 8006, 9527(Telnetd), 9999  \n"
-msgstr "ਟੀਸੀਪੀ: 80 ° 1 ° 1 1) HTTP), 443(HTP ਵੀ!), 554(rsp(, 8004, 8006, 9527  \n"
+msgstr "TCP: 80 ( http ), 443 ( HTP ਵੀ! ), 554 ( RTSP ), 8004, 8006, 9527 ( ਟੇਲਨੈੱਟ ), 9999   \n"
 
 #. type: Plain text
 #: originala_firmvaro.md:13
@@ -198,7 +198,7 @@ msgstr ""
 #: originala_firmvaro.md:59
 #, fuzzy, no-wrap
 msgid "haveno 9999: uzata por regi la fotilon, ekzemplo:\n"
-msgstr "ਪੋਰਟ 9999: ਕੈਮਰੇ ਨੂੰ ਨਿਯੰਤਰਿਤ ਕਰਨ ਲਈ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ, ਉਦਾਹਰਣ: (example 1 °)\n"
+msgstr "ਪੋਰਟ 9999: ਕੈਮਰੇ ਨੂੰ ਕੰਟਰੋਲ ਕਰਨ ਲਈ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ, ਉਦਾਹਰਨ: \n"
 
 #. type: Fenced code block
 #: originala_firmvaro.md:60
@@ -358,23 +358,21 @@ msgid ""
 "* devinfo = jcoxa***************************************************\n"
 "* bootargs = konzolo = ttyS1,115200n8 mem = 42M @ 0x0 rmem = 22M @ 0x2A00000 init = / linuxrc rootfstype = squashfs root = / dev / mtdblock3 flash = SF sensor = GC2053 maxheight = 1080 device\\_id =*********** ethaddr =**:**:**:**:**:** devinfo = jcoxa*************************************************** cpu = T21 ddr = 64M mtdparts = jz\\_sfc: 256K @ 0K(sf-bootloader), 32K @ 256K(sf-bootenv), 1440K @ 288K(sf-kernel), 832K @ 1728K(sf-rootfs), 4928K @ 2560K(sf-ipcfs), 704K @ 7488 K(sf-miscfs)\n"
 msgstr ""
-"mtd block1 ਵਿੱਚ ਵਿਕਲਪ:\n"
-"* ਬਾਉਡ ਰੇਟ = 115200\n"
-"* ਬੂਟ ਸੀਡੀਡੀ = sf ਪੜਤਾਲ; ਐਸ ਐਫ 0x80600000 0x48000 0x280000 ਪੜ੍ਹੋ; ਬੂਟਮ 0x80600000\n"
-"* ਬੂਟਡੇਲੇ = 1\n"
-"* ਐਥੇਕਟ = ਜੇਜ਼ 4775-9161\n"
-"* ਗੇਟਵੇਇਪ = 192.168.2.1\n"
-"* ਆਈਪੈਡਡਰ = 192.168.2.84\n"
-"* ਲੋਡ\\_ਈਓ = 1\n"
-"* ਨੈੱਟਮਾਸਕ = 255.255.255.0\n"
-"* ਸਰਵਰਿਪ = 192.168.2.81\n"
-"* ਸਟਡਰਰ = ਲੜੀ\n"
-"* ਸਟੈਡੀਨ = ਸੀਰੀਜ਼\n"
-"* ਸਟੈਡਾਉਟ = ਸੀਰੀਜ਼\n"
-"* ਏਥੇਦ੍ਰ =**:**:**:**:**:**\n"
-"* ਡਿਵਾਈਸ\\_ਆਈਡੀ =***********\n"
-"* ਡਿਵਿਨਫੋ = ਜੇਕੋਕਸਾ***************************************************\n"
-"* ਬੂਟ੍ਰਾਗਸ = ਕੰਸੋਲ = ttyS1,115200n8 ਮੈਮ = 42M @ 0x0 rmem = 22M @ 0x2A00000 init = / linuxrc ਰੂਟਸਟਾਈਪ = ਸਕਵੈਸ਼ਫ ਰੂਟ = / ਦੇਵ / mtd block3 ਫਲੈਸ਼ = ਐਸਐਫ ਸੈਂਸਰ = ਜੀਸੀ2053 ਅਧਿਕਤਮ = 1080 ਉਪਕਰਣ\\_ਆਈਡੀ = (° 44 et) ਐਥਡਡਰ =**:**:**:**:**:** ਡਿਵਿਨਫੋ = ਜੇਕੋਕਸਾ*************************************************** ਸੀਪੀਯੂ = ਟੀ 21 ਡੀਡੀਆਰ = 64 ਐਮ ਐਮਡੀਪੀਆਰਟਸ = ਜੇਜ਼\\_ਐਸਐਫਸੀ: 256 ਕੇ @ 0 ਕੇ(ਐੱਸ ਐੱਫ-ਬੂਟਲੋਡਰ), 32 ਕੇ @ 256 ਕੇ(ਐੱਸ ਐੱਫ-ਬੂਟੇਨਵ), 1440 ਕੇ @ 288 ਕੇ()) ਐਸਐਫ-ਕਰਨਲ), 832 ਕੇ @ 172 8 ਕੇ(ਐਸਐਫ-ਰੂਟਐਫਐਸ), 4928K @ 2560K(ਐਸਐਫ-ਆਈਪੀਸੀਐਫਐਸ), 704 ਕੇ @ 7488 ਕੇ(ਐੱਸ ਐੱਫ-ਮਿਸਕੈਫਸ)\n"
+"mtdblock1 ਵਿੱਚ ਵਿਕਲਪ: \n"
+" *  ਬੌਡ ਰੇਟ = 115200 \n"
+" *  bootcmd = sf ਪੜਤਾਲ; sf ਪੜ੍ਹੋ 0x80600000 0x48000 0x280000; bootm 0x80600000 \n"
+" *  bootdelay = 1 \n"
+" *  ethact = Jz4775-9161 \n"
+" *  ਗੇਟਵੇਅਪ = 192.168.2.1 \n"
+" *  ipaddr = 198> <418> <h12. ਲੋਡ ਕਰਦਾ ਹੈ \\_ eoo = 1 \n"
+" *  ਨੈੱਟਮਾਸਕ = 255.255.255.0 \n"
+" *  ਸਰਵਰਿਪ = 192.168.2.81 \n"
+" *  stderr = ਸੀਰੀਅਲ \n"
+" *  std4> *  stdout = ਲੜੀ \n"
+" *  ethaddr = **: **: **: **: **: ** \n"
+" *  ਡਿਵਾਈਸ \\_ id = < h37> \n"
+" *  devinfo = jcoxa *************************************************** \n"
+" *  bootargs = ਕੰਸੋਲ = ttyS1,115200n8 mem = 42M @ 0x0 rmem = 22M @ 0x2A00000 init = / linstquast ਰੂਟ = / linspeux ਰੂਟ = / sd3c ਰੂਟ. ਫਲੈਸ਼ = SF ਸੈਂਸਰ = GC2053 ਅਧਿਕਤਮ ਉਚਾਈ = 1080 ਡਿਵਾਈਸ \\_ id = ***********  ethaddr = **: **: **: **: **: **  devinfo = jcoxa ***************************************************  cpu = T21 ddr = 64M mtdparts = jz \\_ sfc: 256K @ 0K ( sf-ਬੂਟਲੋਡਰ ), 32K @ 256K ( sf-bootenv ), 1440K @f8 8 ਕੇਰ <f7> >, 832K @ 1728K ( sf-rootfs ), 4928K @ 2560K ( sf-ipcf. s ), 704K @ 7488 K ( sf-miscfs ) \n"
 
 #. type: Plain text
 #: originala_firmvaro.md:128
@@ -432,13 +430,13 @@ msgid ""
 "* _/ipc/lib_ : bibliotekoj\n"
 "  * libimp.so: biblioteko _ingenic_ _IMP_ ( _Ingenic Media Platform_ )\n"
 msgstr ""
-" _/ipc_ :\n"
-"* _/ipc/app/jco\\_server_\n"
-"  * ਦੇ ਮੁੱਖ ਪ੍ਰੋਗਰਾਮ ਵਿਚ ਇਕੋ ਸਮੇਂ ਸਰਵਰ http, rtsp, ...\n"
-"ਬਣੀਆਂ ਹਨ. °)* _/ipc/drv_ : ਲਿਨਕਸ ਡਰਾਈਵਰ\n"
-"  * ਮੋਟਰ.ਕੋ\n"
-"* _/ipc/lib_ : ਲਾਇਬ੍ਰੇਰੀਆਂ\n"
-")  * ਲਿਬਿੰਪ.ਸੋ: ਬਿਬਲਿਓਟੇਕੋ _ingenic_ _IMP_ ( _Ingenic Media Platform_ )\n"
+" _/ipc_  ਵਿੱਚ ਮਹੱਤਵਪੂਰਨ ਫਾਈਲਾਂ: \n"
+" *  _/ipc/app/jco\\_server_ \n"
+"   *  ਮੁੱਖ ਪ੍ਰੋਗਰਾਮ, ਇੱਕੋ ਸਮੇਂ ਸਰਵਰ http, rtsp, ... \n"
+" *  _/ipc/drv_ : linux ਡਰਾਈਵਰ \n"
+"   *  motor.ko \n"
+" *  _/ipc/lib_ : ਲਾਇਬ੍ਰੇਰੀਆਂ \n"
+"   *  libimp.so: library  _ingenic_  _IMP_  (  _Ingenic Media Platform_  ) \n"
 
 #. type: Plain text
 #: originala_firmvaro.md:156
@@ -498,59 +496,149 @@ msgstr "ਕੋਰ ਸਮੀਖਿਆ:"
 #: originala_firmvaro.md:177
 #, fuzzy, no-wrap
 msgid ""
-"(° 1 ° Informo:\n"
-"    `binwalk mtdblock2.bin`\n"
-"    * Rezulto:\n"
-"decimala deksesuma priskribo\n"
-msgstr ". 7 ° 8 ° 8 °)\n"
+"*  Informo: \n"
+"     `binwalk mtdblock2.bin` \n"
+"     *  Rezulto: \n"
+" Dekuma deksesuma priskribo \n"
+msgstr ""
+"*   ਜਾਣਕਾਰੀ:  \n"
+"      `binwalk mtdblock2.bin`  \n"
+"      *   ਨਤੀਜਾ:  \n"
+" ਦਸ਼ਮਲਵ ਹੈਕਸਾਡੈਸੀਮਲ ਵੇਰਵਾ  \n"
 
 #. type: Plain text
-#: originala_firmvaro.md:179
-#, fuzzy, no-wrap
-msgid "0 0x0 Uimage Header, Header Grandeco: 64 Bajtoj, Header CRC: 0x7b9DE864, kreita: 2019-06-22 02:41:00, Bildo Grandeco: 1466358 BYTES, DATA Adreso: 0x80010000, Eniro Punkto: 0x80388340, Datumoj CRC: 0xb83DCA15, OS: Linukso, CPU: MIPS, Bildo Tipo: OS Kernel Bildo, Kunpremo Tipo: LZMA, Bildo Nomo: \"Linukso-3.10.14__. 1.0__]\"(° 7 ° 7 ° 64 0x40 lzma kunpremitaj datumoj, ecoj: 0x5d, vortaro Grandeco: 16777216 bajtoj, nekompresita grandeco: -1 bajtoj\n"
-msgstr "0 0 0x0 uImage ਸਿਰਲੇਖ, ਸਿਰਲੇਖ ਦਾ ਆਕਾਰ: 64 ਬਾਈਟਸ, ਹੈਡਰ ਸੀਆਰਸੀ: 2019-06-22004, 0x80010000, ਸੀਆਰਸੀ ਡੇਟਾ: 0xB83d 740, ਓਐਸ: ਲੀਨਕਸ, ਸੀਪੀਯੂ: ਮਿਪਸ, ਚਿੱਤਰ ਕਿਸਮ: ਓਐਸ ਕਰਨਲ ਚਿੱਤਰ, ਕੰਪਰੈਸ਼ਨਿਵ, ਚਿੱਤਰ ਨਾਮ: \"3.10.14__.\n"
-
-#. type: Plain text
-#: originala_firmvaro.md:182
+#: originala_firmvaro.md:180
 #, fuzzy, no-wrap
 msgid ""
-"(° 1 ° eltiro de datumoj de MTDBlock2:\n"
-"    `tail -c+65  < mtdblock2.bin >mtdblock2.dataz`\n"
+"0 0x0 Uimage Header, Header Grandeco: 64 Bajtoj, Header CRC: 0x7b9DE864, kreita: 2019-06-22 02:41:00, Bildo Grandeco: 1466358 BYTES, DATA Adreso: 0x80010000, Eniro Punkto: 0x80388340, Datumoj CRC: 0xb83DCA15, OS: Linukso, CPU: MIPS, Bildo Tipo: OS Kernel Bildo, Kunpremo Tipo: LZMA, Bildo Nomo:  \" Linux-3.10.14 __ ISVP _turkey_ 1.0 __] \" \n"
+" 64 0X40 LZMA kunpremitaj datumoj, Propraĵoj: 0x5d, vortaro Grandeco: 16777216 bajtoj, kunpremita grandeco: -1 bajtoj \n"
 msgstr ""
-"(° 1 ° 1 ° 1 ° 1 ° Mtdblock ਦੇ ਡੇਟਾ ਦਾ ਕੱ raction ਣਾ:\n"
-"    `tail -c+65  < mtdblock2.bin >mtdblock2.dataz`\n"
+"0 0x0 Uimage ਸਿਰਲੇਖ, ਸਿਰਲੇਖ ਦਾ ਆਕਾਰ: 64 ਬਾਈਟ, ਸਿਰਲੇਖ CRC: 0x7b9DE864, ਬਣਾਇਆ ਗਿਆ: 2019-06-22 02:41:00, ਚਿੱਤਰ ਦਾ ਆਕਾਰ: 1466358 BYTES, ਮਿਤੀ ਪਤਾ: 0x800100, CRC: 0x8001000D3808080intry, 330800, 300, ਡੀ. OS: Linux, CPU: MIPS, ਚਿੱਤਰ ਦੀ ਕਿਸਮ: OS ਕਰਨਲ ਚਿੱਤਰ, ਕੰਪਰੈਸ਼ਨ ਕਿਸਮ: LZMA, ਚਿੱਤਰ ਦਾ ਨਾਮ:   \" Linux-3.10.14  __  ISVP  _turkey_  1.0  __]  \"  \n"
+" 64 0X40 LZMA ਸੰਕੁਚਿਤ ਡੇਟਾ, ਵਿਸ਼ੇਸ਼ਤਾ: 0x5d, ਸ਼ਬਦਕੋਸ਼ ਆਕਾਰ: 16777216 ਬਾਈਟਸ, ਸੰਕੁਚਿਤ ਆਕਾਰ: -1 ਬਾਈਟਸ  \n"
 
 #. type: Plain text
-#: originala_firmvaro.md:186
+#: originala_firmvaro.md:184
 #, fuzzy, no-wrap
 msgid ""
-"Kerna eltiro:\n"
-"    `cat mtdblock2.dataz|lzma -d -c -f - >kernel`\n"
-"(° 13 ° ° Listo de ŝoforoj inkluzivita:    `strings kernel|grep \"^drivers\"`\n"
+"*  mtdblock2 data eltiro: \n"
+"     `tail -c+65  < mtdblock2.bin >mtdblock2.dataz` \n"
+" *  Kerna Eltiro: \n"
+" *  \n"
 msgstr ""
-"ਕੋਰ ਕੱ raction ਣਾ:\n"
-"\n"
-"ਸ਼ਾਮਲ ਹਨ:\n"
+"*   mtdblock2 ਡੇਟਾ ਐਕਸਟਰੈਕਸ਼ਨ:  \n"
+"      `tail -c+65  < mtdblock2.bin >mtdblock2.dataz`  \n"
+"  *   ਕੋਰ ਐਕਸਟਰੈਕਸ਼ਨ:  \n"
+"  *   \n"
 
 #. type: Plain text
-#: originala_firmvaro.md:189
+#: originala_firmvaro.md:190
 #, fuzzy, no-wrap
 msgid ""
-"Listo de dosieroj:\n"
-"    `strings kernel|grep \"\\.[cChTsS]$\"`\n"
+" *  Listo de Drivers Inkluditaj: \n"
+"     `strings kernel|grep \"^drivers\"` \n"
+" <H21 > Listo de fontaj dosieroj: \n"
+"     `strings kernel|grep \"\\.[cChTsS]$\"` \n"
+" *  Simbolo-Listo \n"
+" https://github.com/marin-m/vmlinux-to-elf devus helpi trovi simbolojn sed ne ekzistas <H33 > Komenci ebla de kallsyms _token_ Tablo: 0x3AA1B4 \n"
 msgstr ""
-"ਫਾਈਲਾਂ ਦੀ ਸੂਚੀ:\n"
-"    `strings kernel|grep \"\\.[cChTsS]$\"`    `strings kernel|grep \"\\.[cChTsS]$\"`\n"
+" *   ਸ਼ਾਮਲ ਡਰਾਈਵਰਾਂ ਦੀ ਸੂਚੀ:  \n"
+"      `strings kernel|grep \"^drivers\"`  \n"
+"  < H21  >  ਸਰੋਤ ਫਾਈਲਾਂ ਦੀ ਸੂਚੀ:  \n"
+"      `strings kernel|grep \"\\.[cChTsS]$\"`  \n"
+"  *   ਚਿੰਨ੍ਹ ਸੂਚੀ  \n"
+" https:// github.com/marin-m/vmlinux-to-elf ਨੂੰ ਚਿੰਨ੍ਹ ਲੱਭਣ ਵਿੱਚ ਮਦਦ ਕਰਨੀ ਚਾਹੀਦੀ ਹੈ ਪਰ ਮੌਜੂਦ ਨਹੀਂ ਹੈ  < H33  >  kallsyms  _token_  ਸਾਰਣੀ: 0x3AA1B4  ਦੁਆਰਾ ਸ਼ੁਰੂਆਤ ਕਰੋ \n"
 
-#. type: Plain text
-#: originala_firmvaro.md:199
 #, fuzzy, no-wrap
-msgid ""
-"(° 30 ° ° 31 ° Listo de simboloj (° 32 ° 32 ° Https://github.com/marin-m/vmlinux-to-lf devus permesi trovi la simbolojn, sed ĝi ne atingas\n"
-". Tablo_token_: 0x3AA1B4\n"
-msgstr ""
-"(° 1 °. ਪਹੁੰਚਦਾ ਹੈ\n"
-".\n"
+#~ msgid ""
+#~ "(° 1 ° Informo:\n"
+#~ "    `binwalk mtdblock2.bin`\n"
+#~ "    * Rezulto:\n"
+#~ "decimala deksesuma priskribo\n"
+#~ msgstr ". 7 ° 8 ° 8 °)\n"
+
+#, fuzzy, no-wrap
+#~ msgid "0 0x0 Uimage Header, Header Grandeco: 64 Bajtoj, Header CRC: 0x7b9DE864, kreita: 2019-06-22 02:41:00, Bildo Grandeco: 1466358 BYTES, DATA Adreso: 0x80010000, Eniro Punkto: 0x80388340, Datumoj CRC: 0xb83DCA15, OS: Linukso, CPU: MIPS, Bildo Tipo: OS Kernel Bildo, Kunpremo Tipo: LZMA, Bildo Nomo: \"Linukso-3.10.14__. 1.0__]\"(° 7 ° 7 ° 64 0x40 lzma kunpremitaj datumoj, ecoj: 0x5d, vortaro Grandeco: 16777216 bajtoj, nekompresita grandeco: -1 bajtoj\n"
+#~ msgstr "0 0 0x0 uImage ਸਿਰਲੇਖ, ਸਿਰਲੇਖ ਦਾ ਆਕਾਰ: 64 ਬਾਈਟਸ, ਹੈਡਰ ਸੀਆਰਸੀ: 2019-06-22004, 0x80010000, ਸੀਆਰਸੀ ਡੇਟਾ: 0xB83d 740, ਓਐਸ: ਲੀਨਕਸ, ਸੀਪੀਯੂ: ਮਿਪਸ, ਚਿੱਤਰ ਕਿਸਮ: ਓਐਸ ਕਰਨਲ ਚਿੱਤਰ, ਕੰਪਰੈਸ਼ਨਿਵ, ਚਿੱਤਰ ਨਾਮ: \"3.10.14__.\n"
+
+#, fuzzy, no-wrap
+#~ msgid ""
+#~ "(° 1 ° eltiro de datumoj de MTDBlock2:\n"
+#~ "    `tail -c+65  < mtdblock2.bin >mtdblock2.dataz`\n"
+#~ msgstr ""
+#~ "(° 1 ° 1 ° 1 ° 1 ° Mtdblock ਦੇ ਡੇਟਾ ਦਾ ਕੱ raction ਣਾ:\n"
+#~ "    `tail -c+65  < mtdblock2.bin >mtdblock2.dataz`\n"
+
+#, fuzzy, no-wrap
+#~ msgid ""
+#~ "Kerna eltiro:\n"
+#~ "    `cat mtdblock2.dataz|lzma -d -c -f - >kernel`\n"
+#~ "(° 13 ° ° Listo de ŝoforoj inkluzivita:    `strings kernel|grep \"^drivers\"`\n"
+#~ msgstr ""
+#~ "ਕੋਰ ਕੱ raction ਣਾ:\n"
+#~ "\n"
+#~ "ਸ਼ਾਮਲ ਹਨ:\n"
+
+#, fuzzy, no-wrap
+#~ msgid ""
+#~ "Listo de dosieroj:\n"
+#~ "    `strings kernel|grep \"\\.[cChTsS]$\"`\n"
+#~ msgstr ""
+#~ "ਫਾਈਲਾਂ ਦੀ ਸੂਚੀ:\n"
+#~ "    `strings kernel|grep \"\\.[cChTsS]$\"`    `strings kernel|grep \"\\.[cChTsS]$\"`\n"
+
+#, fuzzy, no-wrap
+#~ msgid ""
+#~ "(° 30 ° ° 31 ° Listo de simboloj (° 32 ° 32 ° Https://github.com/marin-m/vmlinux-to-lf devus permesi trovi la simbolojn, sed ĝi ne atingas\n"
+#~ ". Tablo_token_: 0x3AA1B4\n"
+#~ msgstr ""
+#~ "(° 1 °. ਪਹੁੰਚਦਾ ਹੈ\n"
+#~ ".\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "*  Informo \n"
+#~ "     `binwalk mtdblock2.bin` \n"
+#~ "     *  Rezulto \n"
+#~ " Dekuma deksesuma Priskribo \n"
+#~ msgstr ""
+#~ "*   ਜਾਣਕਾਰੀ  \n"
+#~ "      `binwalk mtdblock2.bin`       *   ਦਾ ਨਤੀਜਾ  \n"
+#~ " ਦਸ਼ਮਲਵ ਹੈਕਸਾਡੈਸੀਮਲ ਵੇਰਵਾ  \n"
+
+#, fuzzy
+#~ msgid ""
+#~ "0 0x0 Uimage Header, Header Grandeco: 64 bajtoj, Header CRC: 0x7b9de864, "
+#~ "Kreita: 2019-06-22 02:41:00, bildo Grandeco: 1466358 Bytes, Datumoj "
+#~ "adreso: 0x80010000, Entry Punkto: 0x80388340, Datumoj CRC: 0xb83dca15, "
+#~ "OS: Linukso, CPU: MIPS, Bildo Tipo: VIN Kernel Bildo, Kunpremo Tipo: "
+#~ "LZMA, Bildo Nomo:  \" Linukso-3.10.14 __ ISVP _turkey_ 1.0 __] \" \n"
+#~ " 64 0x40 LZMA Compressed Datumoj: Propraĵoj: 0x5d, Vortaro Grandeco: "
+#~ "16777216 bytes, Kunpremitaj Grandeco: -1 bajtoj \n"
+#~ msgstr ""
+#~ "0 0 0x0 uImage ਸਿਰਲੇਖ, ਸਿਰਲੇਖ ਦਾ ਆਕਾਰ: 64 ਬਾਈਟਸ, ਹੈਡਰ ਸੀਆਰਸੀ: 0x700-22, "
+#~ "0x80010000, ਸੀਆਰਸੀ ਡੇਟਾ: 0xB83d 740, ਓਐਸ: ਲੀਨਕਸ, ਸੀਪੀਯੂ: ਮਿਪਸ, ਚਿੱਤਰ ਕਿਸਮ: "
+#~ "ਵਿਨੋਜ਼ਲ ਚਿੱਤਰ, ਕੰਪਰੈਸ਼ਨਿਵ, ਚਿੱਤਰ ਨਾਮ: <h zma,  __]  \"  \n"
+#~ " 64 0x40 LZMA ਸੰਕੁਚਿਤ ਡੇਟਾ: ਜਾਇਦਾਦ: 0x5d, ਸ਼ਬਦਕੋਸ਼ ਦਾ ਆਕਾਰ: 167777216 ਬਾਈਟਸ, "
+#~ "ਕੰਪ੍ਰੈਸਡ ਆਕਾਰ: -1 ਬਾਈਟ  \n"
+
+#, fuzzy
+#~ msgid ""
+#~ "*  Datumoj: \n"
+#~ "     `tail -c+65  < mtdblock2.bin >mtdblock2.dataz` \n"
+#~ " *  eltiro: \n"
+#~ "     `cat mtdblock2.dataz|lzma -d -c -f - >kernel` \n"
+#~ " *  listo de \n"
+#~ "     `strings kernel|grep \"^drivers\"` \n"
+#~ " <h21 listo de \n"
+#~ "     `strings kernel|grep \"\\.[cChTsS]$\"` \n"
+#~ " *  liston de \n"
+#~ " sed li ne povas h33> povas komenci kallsyms _token_ tablo: 0x3AA1B4 \n"
+#~ msgstr ""
+#~ "*   ਡਾਟਾ:  \n"
+#~ "      `tail -c+65  < mtdblock2.bin >mtdblock2.dataz`   *   ਕੱ ext ਣ ਲਈ \n"
+#~ "      `strings kernel|grep \"^drivers\"`   < H21> <H21) ਦੀ ਸੂਚੀ >      "
+#~ "`strings kernel|grep \"\\.[cChTsS]$\"`   *    \n"
+#~ " ਦੀ ਸੂਚੀ H33 >  ਟੇਬਲ  _token_  ਟੇਬਲ: 0x3aa1b4  ਚਾਲੂ ਕਰ ਸਕਦਾ ਹੈ. \n"
 
 #, no-wrap
 #~ msgid "001-originala_firmvaro"

@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-10-30 11:15+0200\n"
+"POT-Creation-Date: 2021-11-09 15:13+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -48,55 +48,134 @@ msgstr "Kreuzzusammenstellung"
 
 #. type: Plain text
 #: kruc-kompili.md:12
+#, no-wrap
+#, fuzzy
+msgid ""
+"Trans-kompilaĵaj iloj estas en  _programada\\_medio/toolchain_. \n"
+" ili estis kompilitaj por  _debian buster x64_. \n"
+msgstr "Transcompilierungswerkzeuge sind in   _programada\\_medio/toolchain_.  \n Sie wurden für   _debian buster x64_ kompiliert.  \n"
+
+#. type: Plain text
+#: kruc-kompili.md:14
+#, fuzzy, no-wrap
+msgid "Dividitaj bibliotekoj estas en  _programada\\_medio/lib_ \n"
+msgstr "Dividierte Bibliotheken sind in   _programada\\_medio/lib_  \n"
+
+#. type: Plain text
+#: kruc-kompili.md:16
+#, fuzzy, no-wrap
+msgid "La  _include_  estas en  _programada\\_medio/include_. \n"
+msgstr "Das   _include_   ist in   _programada\\_medio/include_.  \n"
+
+#. type: Plain text
+#: kruc-kompili.md:21
 #, fuzzy, no-wrap
 msgid ""
-"La transiritaj kompilaĵoj iloj estas en programado_medio/toolchain.\n"
-"Ils ont été compilés pour debian buster x64.\n"
+"Se vi bezonas rekompili librovendejon, inspiri la jenajn skriptojn: \n"
+" *  _programada\\_medio/fontoj/01-buildssl.sh_ , por la biblioteko  _openssl_. \n"
+" *  _programada\\_medio/fontoj/02-buildlive.sh_ , por la biblioteko  _live555_. \n"
+" *  _programada\\_medio/fontoj/03-pcre.sh_ , por la biblioteko  _pcre_. \n"
 msgstr ""
-"Die Transit-Compilations-Tools sind in der Programmierung_medio/toolchain.\n"
-"Ils ont été compilés pour debian buster x64.\n"
-"\n"
+"Wenn Sie eine Buchhandlung neu kompilieren müssen, inspirieren Sie die folgenden Skripts:  \n"
+"  *   _programada\\_medio/fontoj/01-buildssl.sh_ , für die Bibliothek   _openssl_.  \n"
+"  *   _programada\\_medio/fontoj/02-buildlive.sh_ , für die Bibliothek   _live555_.  \n"
+"  *   _programada\\_medio/fontoj/03-pcre.sh_ , für die Bibliothek   _pcre_.  \n"
 
 #. type: Plain text
-#: kruc-kompili.md:15
-#, fuzzy, no-wrap
-msgid "Komparaj bibliotekoj estas en prograda_medio/lib\n"
-msgstr ""
-"Vergleichsbibliotheken sind in der Täglich_medio/lib\n"
-"\n"
-
-#. type: Plain text
-#: kruc-kompili.md:18
-#, fuzzy, no-wrap
-msgid "Inkluzivas estas en programado_medio/include.\n"
-msgstr ""
-"Inklusive ist in der Programmierung_medio/include.\n"
-"\n"
-
-#. type: Plain text
-#: kruc-kompili.md:24
+#: kruc-kompili.md:25
 #, fuzzy, no-wrap
 msgid ""
-"Se vi bezonas rekompili bibliotekon, inspiri la sekvajn skriptojn:\n"
-"* Programada_medio/fontoj/01-buildssl.sh , pour la librairie openssl.\n"
-"* programada_Medio / fontoj / 02-buildive.sh, por Live555-biblioteko.\n"
-"* Programada_medio/fontoj/03-pcre.sh , pour la librairie pcre.\n"
+"Se vi iam bezonos rekompili la  _«toolchain»_, vi povas vidi la sekvan retejon: \n"
+"  *  <https://github.com/anmaped/openfang> \n"
 msgstr ""
-"Wenn Sie eine Bibliothek wiederherstellen müssen, inspirieren Sie die folgenden Skripts:\n"
-"* programmiert_medio/fontoj/01-buildssl.sh , pour la librairie openssl.\n"
-"* programada_Umwelt / Quellen / 02-buildive.sh, für eine Live555-Bibliothek.\n"
-"* Programada_medio/fontoj/03-pcre.sh , pour la librairie pcre.\n"
-"\n"
+"Wenn Sie jemals den   _«toolchain»_ neu kompilieren müssen, können Sie die folgende Website sehen:  \n"
+"   *   <https://github.com/anmaped/openfang>  \n"
 
-#. type: Plain text
-#: kruc-kompili.md:29
 #, fuzzy, no-wrap
-msgid ""
-"Se vi iam bezonos kompili la _«toolchain»_, vi povas konsulti la sekvan retejon:\n"
-" * https://github.com/anmaped/openfang\n"
-msgstr ""
-"Wenn Sie jemals die _«toolchain»_kompilieren müssen, können Sie die folgende Website überprüfen:\n"
-" * https://github.com/anmaped/openfang\n"
+#~ msgid ""
+#~ "La transiritaj kompilaj iloj estas en  _programada\\_medio/toolchain_. \n"
+#~ " ili estis kompilitaj por  _debian buster x64_. \n"
+#~ msgstr ""
+#~ "Die Transit-Kompilierungswerkzeuge sind in   _programada\\_medio/toolchain_.  \n"
+#~ " Sie wurden für   _debian buster x64_ kompiliert.  \n"
+
+#, fuzzy, no-wrap
+#~ msgid ""
+#~ "Les outils de compilation croisés se trouvent dans _programada\\_medio/toolchain_.\n"
+#~ "Ils ont été compilés pour _debian buster x64_.\n"
+#~ msgstr ""
+#~ "Les Nicels of Compilation Croisés, wenn Truente dans  _programada\\_medio/toolchain_. \n"
+#~ " ILS ONT Été Complete Gießen Sie  _debian buster x64_. \n"
+
+#, fuzzy, no-wrap
+#~ msgid "les librairies partagées sont dans _programada\\_medio/lib_\n"
+#~ msgstr "Les Wibrairies Partagées Sont Dans  _programada\\_medio/lib_ \n"
+
+#, fuzzy, no-wrap
+#~ msgid "les _include_ sont dans _programada\\_medio/include_.\n"
+#~ msgstr "Les  _include_  sont dans  _programada\\_medio/include_. \n"
+
+#, fuzzy, no-wrap
+#~ msgid ""
+#~ "Si vous avez besoin de recompiler une librairie, inspirez-vous des scripts suivants :\n"
+#~ "* _programada\\_medio/fontoj/01-buildssl.sh_ , pour la librairie _openssl_.\n"
+#~ "* _programada\\_medio/fontoj/02-buildlive.sh_ , pour la librairie _live555_.\n"
+#~ "* _programada\\_medio/fontoj/03-pcre.sh_ , pour la librairie _pcre_.\n"
+#~ msgstr ""
+#~ "Wenn Vous Avez Besoin-Recompiler une librarie, inspirez-vous des Skripts SUIVANTS: \n"
+#~ " *  _programada\\_medio/fontoj/01-buildssl.sh_ , gießen Sie die Librairie  _openssl_. \n"
+#~ " *  _programada\\_medio/fontoj/02-buildlive.sh_ , gießen Sie die Librairie  _live555_. \n"
+#~ " *  _programada\\_medio/fontoj/03-pcre.sh_ , Gießen Sie die Wibliotheu  _pcre_. \n"
+
+#, fuzzy, no-wrap
+#~ msgid ""
+#~ "Si jamais vous avez besoin de recompiler la _«toolchain»_, vous pouvez consulter le site suivant :\n"
+#~ " * <https://github.com/anmaped/openfang>\n"
+#~ msgstr ""
+#~ "Si Jamais Vios Avez Besoin, um den  _«toolchain»_, Vous Pouvez Consulter Le Site Site Suivant zu kompilieren: \n"
+#~ "  *  <https://github.com/anmaped/openfang> \n"
+
+#, fuzzy, no-wrap
+#~ msgid ""
+#~ "La transiritaj kompilaĵoj iloj estas en programado_medio/toolchain.\n"
+#~ "Ils ont été compilés pour debian buster x64.\n"
+#~ msgstr ""
+#~ "Die Transit-Compilations-Tools sind in der Programmierung_medio/toolchain.\n"
+#~ "Ils ont été compilés pour debian buster x64.\n"
+#~ "\n"
+
+#, fuzzy, no-wrap
+#~ msgid "Komparaj bibliotekoj estas en prograda_medio/lib\n"
+#~ msgstr ""
+#~ "Vergleichsbibliotheken sind in der Täglich_medio/lib\n"
+#~ "\n"
+
+#, fuzzy, no-wrap
+#~ msgid "Inkluzivas estas en programado_medio/include.\n"
+#~ msgstr ""
+#~ "Inklusive ist in der Programmierung_medio/include.\n"
+#~ "\n"
+
+#, fuzzy, no-wrap
+#~ msgid ""
+#~ "Se vi bezonas rekompili bibliotekon, inspiri la sekvajn skriptojn:\n"
+#~ "* Programada_medio/fontoj/01-buildssl.sh , pour la librairie openssl.\n"
+#~ "* programada_Medio / fontoj / 02-buildive.sh, por Live555-biblioteko.\n"
+#~ "* Programada_medio/fontoj/03-pcre.sh , pour la librairie pcre.\n"
+#~ msgstr ""
+#~ "Wenn Sie eine Bibliothek wiederherstellen müssen, inspirieren Sie die folgenden Skripts:\n"
+#~ "* programmiert_medio/fontoj/01-buildssl.sh , pour la librairie openssl.\n"
+#~ "* programada_Umwelt / Quellen / 02-buildive.sh, für eine Live555-Bibliothek.\n"
+#~ "* Programada_medio/fontoj/03-pcre.sh , pour la librairie pcre.\n"
+#~ "\n"
+
+#, fuzzy, no-wrap
+#~ msgid ""
+#~ "Se vi iam bezonos kompili la _«toolchain»_, vi povas konsulti la sekvan retejon:\n"
+#~ " * https://github.com/anmaped/openfang\n"
+#~ msgstr ""
+#~ "Wenn Sie jemals die _«toolchain»_kompilieren müssen, können Sie die folgende Website überprüfen:\n"
+#~ " * https://github.com/anmaped/openfang\n"
 
 #, no-wrap
 #~ msgid "005-kruc-compili"

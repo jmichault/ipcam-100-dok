@@ -7,26 +7,20 @@ title: 'ক্রস সংকলন'
 ---
 
 
-ট্রানজিট কম্পাইলালেশন সরঞ্জাম প্রোগ্রামিং হয়_medio/toolchain.
-Ils ont été compilés pour debian buster x64.
+ট্রান্স-কম্পাইলেশন সরঞ্জাম   _programada\_medio/toolchain_ হয়।  
+ তারা   _debian buster x64_ এর জন্য সংকলিত হয়েছিল। . 
+
+বিভক্ত লাইব্রেরি   _programada\_medio/lib_   এ
+
+  _include_     _programada\_medio/include_ এ। . 
+
+যদি আপনি একটি বইয়ের দোকানে পুনরায় কম্পাইল করতে চান তবে নীচের স্ক্রিপ্টগুলি অনুপ্রাণিত করুন:  
+  *   _programada\_medio/fontoj/01-buildssl.sh_ , লাইব্রেরির জন্য   _openssl_।  
+  *   _programada\_medio/fontoj/02-buildlive.sh_ , লাইব্রেরির জন্য   _live555_।  
+  *   _programada\_medio/fontoj/03-pcre.sh_ , লাইব্রেরির জন্য   _pcre_। . 
 
 
-
-তুলনামূলক লাইব্রেরি প্রগতিতে_medio/lib
-হয়
-
-
-অন্তর্ভুক্ত প্রোগ্রামিং_medio/include.
+যদি আপনি কখনও   _«toolchain»_ এর পুনঃকোচন করতে চান তবে আপনি নিম্নলিখিত ওয়েবসাইটটি দেখতে পারেন:  
+   *   <https://github.com/anmaped/openfang>  
 
 
-
-যদি আপনি একটি লাইব্রেরি পুনরুদ্ধার করতে চান তবে নিম্নলিখিত স্ক্রিপ্টগুলি অনুপ্রাণিত করুন:
-* প্রোগ্রামেড_medio/fontoj/01-buildssl.sh , pour la librairie openssl.
-* programada_এনভায়রনমেন্ট / সোর্স / 02-buildive.sh, Live555 লাইব্রেরির জন্য।
-* Programada_medio/fontoj/03-pcre.sh , pour la librairie pcre.
-
-
-
-
-আপনি যদি কখনও কখনও _«toolchain»_কম্পাইল করতে পারেন:
- * https://github.com/anmaped/openfang

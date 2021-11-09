@@ -3,10 +3,10 @@ lang: zh
 lang-niv: auto
 lang-ref: 053-audio-programigo_gvidilo
 layout: page
-title: 实心编程指南
+title: 声音编程指南
 ---
 
-# IMP_Audio (voir imp_音频.h)
+# Imp  _Audio \(voir imp_  Audio.h  \)
 
 音频模块，包括记录和回放，音频编解码器，音量和增益设置，回声消除，自动增益等功能。
 

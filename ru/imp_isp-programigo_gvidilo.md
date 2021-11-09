@@ -6,7 +6,7 @@ layout: page
 title: 'Руководство по видео программированию'
 ---
 
-# IMP_ISP (voir imp_isp.h)
+# _IMP\_ISP_   \( см.   _imp\_isp.h\_)
 Обработка изображений. В основном включает настройки эффектов изображения, переключения режимов и записи, добавления и удаления сенсора.
 
 Модуль ISP не имеет ничего общего с потоком данных и не требует подключения, он работает только с точки зрения настройки эффектов и управления датчиками.
@@ -51,7 +51,7 @@ int ret = 0;
     return -1;
   }
 ```
-* Шаг 3: Активируйте датчик, он начнет создавать изображения.
+* Шаг 3: Активируйте датчик, он начнет производить изображения. 
 
 
 
@@ -73,12 +73,12 @@ int ret = 0;
   return -1;
  }
 ```
-* Шаг 5: Вызовите интерфейс отладки ISP: обратитесь к документации по интерфейсу отладки ISP.
+* Шаг 5: Вызовите интерфейс отладки ISP: пожалуйста, обратитесь к документации интерфейса отладки ISP. 
 
 
 
 
-## Отключение модуля ISP
+## ИСП модуль дезактивации
 
 Шаги для удаления модуля ISP следующие:
 * шаг 1: Отключить конфигурацию ISP
@@ -94,7 +94,7 @@ int ret = 0;
   return -1;
  }
 ```
-* Шаг 2: Закройте датчики. (FrameSource должен быть закрыт перед этой операцией)
+* Шаг 2: Закройте датчики.   \( Рамы должны быть закрыты до этой операции  \)  
 
 
 
@@ -117,7 +117,7 @@ ret = IMP_ISP_DelSensor (& sensor);
   return -1;
  }
 ```
-* Шаг 4: Очистите модуль ISP, перед этой операцией необходимо снять все датчики.
+* Шаг 4: Очистите модуль ISP, все датчики должны быть удалены до этой операции. 
 
 
 
@@ -133,77 +133,78 @@ ret = IMP_ISP_Close ();
 
 ## список функций
 
-int IMP_ISP_Открытый(пустой);
-int IMP_ISP_Закрыть(пустой);
+```
+int IMP_ISP_Open(void);
+int IMP_ISP_Close(void);
 int IMP_ISP_AddSensor(IMPSensorInfo *pinfo);
 int IMP_ISP_DelSensor(IMPSensorInfo *pinfo);
-int IMP_ISP_EnableSensor(пусто);
-int IMP_ISP_DisableSensor(пустой);
-int IMP_ISP_SetSensorRegister(uint32_t reg, uint32_значение t);
-int IMP_ISP_GetSensorRegister(uint32_t reg, uint32_t *значение);
-int IMP_ISP_EnableTuning(пустой);
-int IMP_ISP_DisableTuning(пустой);
-int IMP_ISP_Конфигурация_SetSensorFPS(uint32_t fps_num, uint32_t fps_den);
-int IMP_ISP_Tuning_GetSensorFPS(uint32_t *fps_число, uint32_t *fps_den);
-int IMP_ISP_Конфигурация_SetAntiFlickerAttr(IMPISPAntiflickerAttr attr);
+int IMP_ISP_EnableSensor(void);
+int IMP_ISP_DisableSensor(void);
+int IMP_ISP_SetSensorRegister(uint32_t reg, uint32_t value);
+int IMP_ISP_GetSensorRegister(uint32_t reg, uint32_t *value);
+int IMP_ISP_EnableTuning(void);
+int IMP_ISP_DisableTuning(void);
+int IMP_ISP_Tuning_SetSensorFPS(uint32_t fps_num, uint32_t fps_den);
+int IMP_ISP_Tuning_GetSensorFPS(uint32_t *fps_num, uint32_t *fps_den);
+int IMP_ISP_Tuning_SetAntiFlickerAttr(IMPISPAntiflickerAttr attr);
 int IMP_ISP_Tuning_GetAntiFlickerAttr(IMPISPAntiflickerAttr *pattr);
-int IMP_ISP_Конфигурация_SetRawDRC(IMPISPDrcAttr *pinfo);
+int IMP_ISP_Tuning_SetRawDRC(IMPISPDrcAttr *pinfo);
 int IMP_ISP_Tuning_GetRawDRC(IMPISPDrcAttr *pinfo);
-int IMP_ISP_Конфигурация_SetSinterDnsAttr(IMPISPSinterDenoiseAttr *pinfo);
+int IMP_ISP_Tuning_SetSinterDnsAttr(IMPISPSinterDenoiseAttr *pinfo);
 int IMP_ISP_Tuning_GetSinterDnsAttr(IMPISPSinterDenoiseAttr *pinfo);
-int IMP_ISP_Конфигурация_SetTemperDnsCtl(IMPISPTemperDenoiseAttr *pinfo);
+int IMP_ISP_Tuning_SetTemperDnsCtl(IMPISPTemperDenoiseAttr *pinfo);
 int IMP_ISP_Tuning_SetTemperDnsAttr(IMPISPTemperDenoiseAttr *pinfo);
-int IMP_ISP_Конфигурация_GetTemperDnsAttr(IMPISPTemperDenoiseAttr *pinfo);
+int IMP_ISP_Tuning_GetTemperDnsAttr(IMPISPTemperDenoiseAttr *pinfo);
 int IMP_ISP_Tuning_SetWDRAttr(IMPISPTuningOpsMode mode);
-int IMP_ISP_Настройка_GetWDRAttr(IMPISPTuningOpsMode *pmode);
+int IMP_ISP_Tuning_GetWDRAttr(IMPISPTuningOpsMode *pmode);
 int IMP_ISP_Tuning_SetSceneMode(IMPISPSceneMode mode);
-int IMP_ISP_Настройка_GetSceneMode(IMPISPSceneMode *pmode);
+int IMP_ISP_Tuning_GetSceneMode(IMPISPSceneMode *pmode);
 int IMP_ISP_Tuning_SetColorfxMode(IMPISPColorfxMode mode);
-int IMP_ISP_Настройка_GetColorfxMode(IMPISPColorfxMode *pmode);
-int IMP_ISP_Tuning_Установить яркость(безымянный знак яркий);
-int IMP_ISP_Конфигурация_GetBrightness(unsigned char *pbright);
-int IMP_ISP_Tuning_SetContrast(безымянный контраст символов);
-int IMP_ISP_Конфигурация_GetContrast(unsigned char *pcontrast);
-int IMP_ISP_Tuning_SetSharpness(безымянная резкость резкость);
-int IMP_ISP_Конфигурация_GetSharpness(unsigned char *psharpness);
-int IMP_ISP_Tuning_SetSaturation(безымянный знак (до 22 °);
-int IMP_ISP_Конфигурация_GetSaturation(unsigned char *psat);
+int IMP_ISP_Tuning_GetColorfxMode(IMPISPColorfxMode *pmode);
+int IMP_ISP_Tuning_SetBrightness(unsigned char bright);
+int IMP_ISP_Tuning_GetBrightness(unsigned char *pbright);
+int IMP_ISP_Tuning_SetContrast(unsigned char contrast);
+int IMP_ISP_Tuning_GetContrast(unsigned char *pcontrast);
+int IMP_ISP_Tuning_SetSharpness(unsigned char sharpness);
+int IMP_ISP_Tuning_GetSharpness(unsigned char *psharpness);
+int IMP_ISP_Tuning_SetSaturation(unsigned char sat);
+int IMP_ISP_Tuning_GetSaturation(unsigned char *psat);
 int IMP_ISP_Tuning_SetISPProcess(IMPISPTuningOpsMode mode);
-int IMP_ISP_Конфигурация_SetFWFreeze(IMPISPTuningOpsMode mode);
-int IMP_ISP_Tuning_SaveAllParam(char *путь);
-int IMP_ISP_Настройка_SetISPBypass(IMPISPTuningOpsMode enable);
+int IMP_ISP_Tuning_SetFWFreeze(IMPISPTuningOpsMode mode);
+int IMP_ISP_Tuning_SaveAllParam(char *path);
+int IMP_ISP_Tuning_SetISPBypass(IMPISPTuningOpsMode enable);
 int IMP_ISP_Tuning_GetTotalGain(uint32_t *gain);
-int IMP_ISP_Tuning_Установить ISPHflip(IMPISPTuningOpsMode режим);
-int IMP_ISP_Конфигурация_GetISPHflip(IMPISPTuningOpsMode *pmode);
+int IMP_ISP_Tuning_SetISPHflip(IMPISPTuningOpsMode mode);
+int IMP_ISP_Tuning_GetISPHflip(IMPISPTuningOpsMode *pmode);
 int IMP_ISP_Tuning_SetISPVflip(IMPISPTuningOpsMode mode);
-int IMP_ISP_Конфигурация_GetISPVflip(IMPISPTuningOpsMode *pmode);
+int IMP_ISP_Tuning_GetISPVflip(IMPISPTuningOpsMode *pmode);
 int IMP_ISP_Tuning_SetISPRunningMode(IMPISPRunningMode mode);
-int IMP_ISP_Конфигурация_GetISPRunningMode(IMPISPRunningMode *pmode);
-int IMP_ISP_Tuning_SetAeStrategy(Стратегия IMPISPAeStrategy);
-int IMP_ISP_Конфигурация_GetAeStrategy(IMPISPAeStrategy *pstrategy);
-int IMP_ISP_Tuning_SetGamma(IMPISPGamma *диапазон);
-int IMP_ISP_Конфигурация_GetGamma(IMPISPGamma *gamma);
+int IMP_ISP_Tuning_GetISPRunningMode(IMPISPRunningMode *pmode);
+int IMP_ISP_Tuning_SetAeStrategy(IMPISPAeStrategy strategy);
+int IMP_ISP_Tuning_GetAeStrategy(IMPISPAeStrategy *pstrategy);
+int IMP_ISP_Tuning_SetGamma(IMPISPGamma *gamma);
+int IMP_ISP_Tuning_GetGamma(IMPISPGamma *gamma);
 int IMP_ISP_Tuning_SetAeComp(int comp);
-int IMP_ISP_Конфигурация_GetAeComp(int *comp);
+int IMP_ISP_Tuning_GetAeComp(int *comp);
 int IMP_ISP_Tuning_SetExpr(IMPISPExpr *expr);
-int IMP_ISP_Конфигурация_GetExpr(IMPISPExpr *expr);
+int IMP_ISP_Tuning_GetExpr(IMPISPExpr *expr);
 int IMP_ISP_Tuning_AE_GetROI(IMPISPAERoi *isp_ae_roi);
 int IMP_ISP_Tuning_AE_SetROI(IMPISPAERoi *isp_ae_roi);
 int IMP_ISP_Tuning_SetWB(IMPISPWB *wb);
-int IMP_ISP_Конфигурация_GetWB(IMPISPWB *wb);
+int IMP_ISP_Tuning_GetWB(IMPISPWB *wb);
 int IMP_ISP_Tuning_GetWB_Statis(IMPISPWB *wb);
 int IMP_ISP_Tuning_Awb_GetCwfShift(IMPISPWB *isp_wb_attr);
 int IMP_ISP_Tuning_Awb_SetCwfShift(IMPISPWB *isp_wb_attr);
 int IMP_ISP_Tuning_SetMaxAgain(uint32_t gain);
 int IMP_ISP_Tuning_GetMaxAgain(uint32_t *gain);
-int IMP_) °) ISP_Tuning_SetMaxDgain(uint32_t gain);
+int IMP_ISP_Tuning_SetMaxDgain(uint32_t gain);
 int IMP_ISP_Tuning_GetMaxDgain(uint32_t *gain);
-int IMP_ISP_Tuning_SetVideoDrop() пустой (*cb)(пустой));
-int IMP_ISP_Конфигурация_SetHiLightDepress(uint32_t сила);
-int IMP_ISP_Конфигурация_SetTemperStrength(uint32_t-отношение);
-int IMP_ISP_Конфигурация_SetSinterStrength(uint32_t-отношение);
-int IMP_ISP_Конфигурация_SetDPStrength(uint32_t-отношение);
-int IMP_ISP_Конфигурация_SetAntiFogAttr(IMPISPAntiFogAttr attr);
+int IMP_ISP_Tuning_SetVideoDrop(void (*cb)(void));
+int IMP_ISP_Tuning_SetHiLightDepress(uint32_t strength);
+int IMP_ISP_Tuning_SetTemperStrength(uint32_t ratio);
+int IMP_ISP_Tuning_SetSinterStrength(uint32_t ratio);
+int IMP_ISP_Tuning_SetDPStrength(uint32_t ratio);
+int IMP_ISP_Tuning_SetAntiFogAttr(IMPISPAntiFogAttr attr);
 int IMP_ISP_Tuning_GetEVAttr(IMPISPEVAttr *attr);
-
+```
 

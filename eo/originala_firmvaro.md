@@ -170,30 +170,21 @@ rimarkindaj dosieroj en _/ipc_ :
 
 
 # Kerna recenzo:
-(° 1 ° Informo:
-    `binwalk mtdblock2.bin`
-    * Rezulto:
-decimala deksesuma priskribo
+*  Informo: 
+     `binwalk mtdblock2.bin` 
+     *  Rezulto: 
+ Dekuma deksesuma priskribo 
 --------------------------------------------------------------------------------
-0 0x0 Uimage Header, Header Grandeco: 64 Bajtoj, Header CRC: 0x7b9DE864, kreita: 2019-06-22 02:41:00, Bildo Grandeco: 1466358 BYTES, DATA Adreso: 0x80010000, Eniro Punkto: 0x80388340, Datumoj CRC: 0xb83DCA15, OS: Linukso, CPU: MIPS, Bildo Tipo: OS Kernel Bildo, Kunpremo Tipo: LZMA, Bildo Nomo: "Linukso-3.10.14__. 1.0__]"(° 7 ° 7 ° 64 0x40 lzma kunpremitaj datumoj, ecoj: 0x5d, vortaro Grandeco: 16777216 bajtoj, nekompresita grandeco: -1 bajtoj
+0 0x0 Uimage Header, Header Grandeco: 64 Bajtoj, Header CRC: 0x7b9DE864, kreita: 2019-06-22 02:41:00, Bildo Grandeco: 1466358 BYTES, DATA Adreso: 0x80010000, Eniro Punkto: 0x80388340, Datumoj CRC: 0xb83DCA15, OS: Linukso, CPU: MIPS, Bildo Tipo: OS Kernel Bildo, Kunpremo Tipo: LZMA, Bildo Nomo:  " Linux-3.10.14 __ ISVP _turkey_ 1.0 __] " 
+ 64 0X40 LZMA kunpremitaj datumoj, Propraĵoj: 0x5d, vortaro Grandeco: 16777216 bajtoj, kunpremita grandeco: -1 bajtoj 
 
-(° 1 ° eltiro de datumoj de MTDBlock2:
-    `tail -c+65  < mtdblock2.bin >mtdblock2.dataz`
-
-Kerna eltiro:
-    `cat mtdblock2.dataz|lzma -d -c -f - >kernel`
-(° 13 ° ° Listo de ŝoforoj inkluzivita:    `strings kernel|grep "^drivers"`
-
-Listo de dosieroj:
-    `strings kernel|grep "\.[cChTsS]$"`
-
-
-
-
-
-
-
-
-
-(° 30 ° ° 31 ° Listo de simboloj (° 32 ° 32 ° Https://github.com/marin-m/vmlinux-to-lf devus permesi trovi la simbolojn, sed ĝi ne atingas
-. Tablo_token_: 0x3AA1B4
+*  mtdblock2 data eltiro: 
+     `tail -c+65  < mtdblock2.bin >mtdblock2.dataz` 
+ *  Kerna Eltiro: 
+ *  
+ *  Listo de Drivers Inkluditaj: 
+     `strings kernel|grep "^drivers"` 
+ <H21 > Listo de fontaj dosieroj: 
+     `strings kernel|grep "\.[cChTsS]$"` 
+ *  Simbolo-Listo 
+ https://github.com/marin-m/vmlinux-to-elf devus helpi trovi simbolojn sed ne ekzistas <H33 > Komenci ebla de kallsyms _token_ Tablo: 0x3AA1B4 

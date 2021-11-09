@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-10-30 11:06+0200\n"
+"POT-Creation-Date: 2021-11-09 15:13+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -55,8 +55,8 @@ msgstr "وصف:"
 #. type: Plain text
 #: priskribo.md:13
 #, fuzzy, no-wrap
-msgid "https://en.aliexpress.com/item/4000146161270.html\n"
-msgstr "https://en.alievexpress.com/item/4000146161270.html\n"
+msgid "<https://fr.aliexpress.com/item/4000146161270.html> \n"
+msgstr "<https://fr.aliexpress.com/item/4000146161270.html>  \n"
 
 #. type: Fenced code block
 #: priskribo.md:13
@@ -161,197 +161,77 @@ msgstr ""
 "MAC : 00:88:09:**:**:**\n"
 
 #. type: Plain text
-#: priskribo.md:62
+#: priskribo.md:65
 #, fuzzy, no-wrap
-msgid "Kunlicante ĝin por Eterreto, ĝi Akiras DHCP-ADRESON KAJ NI POVO KONEKTI AL LA REGETO:  \n"
-msgstr "وضعه في Etherreto، يحصل على عنوان DHCP ويمكننا الاتصال بهيا: (° 1 ° 1  \n"
-
-#. type: Plain text
-#: priskribo.md:63
-#, fuzzy, no-wrap
-msgid "DefAŭlta Uzanto: Admin  \n"
-msgstr "المستخدم الافتراضي: المسؤول  \n"
-
-#. type: Plain text
-#: priskribo.md:64
-#, fuzzy, no-wrap
-msgid "DefAŭlta Pasvorto: Admin  \n"
-msgstr "كلمة المرور الافتراضية: المسؤول  \n"
-
-#. type: Plain text
-#: priskribo.md:66
-#, fuzzy, no-wrap
-msgid "Dum 5 Minutoj, VI Povas Konekti per Telnet al la Haveso 9527  \n"
-msgstr "لمدة 5 دقائق، يمكنك الاتصال ب Telnet إلى ميناء 9527  \n"
+msgid ""
+"Konektante la fotilon al Ethorn-reto, ĝi ricevas IP-adreson, kaj vi povas konektiĝi al ĝi ĉe http:   \n"
+"Defaŭlta Uzanto:  _admin_   \n"
+"Defaŭlta Pasvorto:  _admin_ \n"
+msgstr ""
+"توصيل كاميرا شبكة Ethorn، وهو يتلقى عنوان IP، ويمكنك الاتصال به على http:    \n"
+" المستخدم الافتراضي:   _admin_    \n"
+" كلمة المرور الافتراضية:   _admin_  \n"
 
 #. type: Plain text
 #: priskribo.md:67
 #, fuzzy, no-wrap
-msgid "DefAŭlta Uzanto: Radiko  \n"
-msgstr "المستخدم الافتراضي: الجذر  \n"
-
-#. type: Plain text
-#: priskribo.md:68
-#, fuzzy, no-wrap
-msgid "DefAŭlta Pasvorto: jco66688  \n"
-msgstr "كلمة المرور الافتراضية: JCO66688  \n"
+msgid ""
+"Dum 5 minutoj, ni povas konekti per  _telnet_  al haveno 9527:   \n"
+"Defaŭlta Uzanto:  _root  \n"
+msgstr ""
+"لمدة 5 دقائق، يمكننا التواصل مع   _telnet_   إلى Port 9527:    \n"
+" المستخدم الافتراضي:   _root  \n"
+"  \n"
 
 #. type: Plain text
 #: priskribo.md:69
 #, fuzzy, no-wrap
-msgid "Por resti konektita Preter 5 Minutoj: \"Killall -9 aŭtomata_run.sh»  \n"
+msgid "Defaŭlta Pasvorto:  _jco66688  \n"
 msgstr ""
-"البقاء على اتصال أكثر من 5 دقائق: \"killall -9 تلقائي_run.sh»  \n"
+"كلمة المرور الافتراضية:   _jco66688  \n"
 "  \n"
 
 #. type: Plain text
-#: priskribo.md:71
-#, fuzzy, no-wrap
-msgid "(JCO = http://www.cnjabsco.com/ )  \n"
-msgstr "(jco = http://www.cnjabsco.com/ )  (° 3 ° 3\n"
-
-#. type: Plain text
-#: priskribo.md:75
+#: priskribo.md:73
 #, fuzzy, no-wrap
 msgid ""
-"Malfermaj Arenoj:    \n"
-"TCP: 80(http), 443(http ankaŭ!     \n"
+"Por resti konektita post ĉi tiuj 5 minutoj:  `killall -9 auto_run.sh`     \n"
+" _( JCO = http://www.cnjabsco.com/  )   _\n"
 msgstr ""
-"الرمال المفتوحة:    \n"
-"TCP: 80(http)، 443(http!      \n"
+"للبقاء على اتصال بعد هذه الدقائق 5:   `killall -9 auto_run.sh`      \n"
+"  _(  jco = http://www.cnjabsco.com/   )    _\n"
+"\n"
 
 #. type: Plain text
-#: priskribo.md:76
+#: priskribo.md:77
 #, fuzzy, no-wrap
-msgid "Reta Konduto Kiam Oni LANĉAS JCO_server:  \n"
+msgid ""
+"Malfermu havenojn:   \n"
+"  _tcp_ : 80 (_ http _), 443 (_ http _  ankaŭ!     \n"
 msgstr ""
-"سلوك الويب عند إطلاق JCO_server:  \n"
-"  \n"
-
-#. type: Plain text
-#: priskribo.md:78
-#, fuzzy, no-wrap
-msgid "Pridemandas La servilon DNS PRI: www.163.com Kaj DNS.ICTun.com  \n"
-msgstr "يتم استجواب خادم DNS حول: www.163.com و dns.ictun.com (° 1 ° 1  \n"
-
-#. type: Plain text
-#: priskribo.md:79
-#, fuzzy, no-wrap
-msgid "Apliko 114.114.114.114 por DNS.ICTun.com  \n"
-msgstr "التطبيق 114.1114.114.114 ل dns.ittun.com  \n"
+"المنافذ المفتوحة:    \n"
+"   _tcp_ : 80  (_  http  _)، 443  (_  http  _   أيضا!      \n"
 
 #. type: Plain text
 #: priskribo.md:80
 #, fuzzy, no-wrap
-msgid "KONEKTI AL LA HAVEN UDP / 993 DNS.ICTUNC.com  \n"
-msgstr "الاتصال بملاذ UDP / 993 dns.ittunc.com (° 1 ° 1  \n"
-
-#. type: Plain text
-#: priskribo.md:81
-#, fuzzy, no-wrap
-msgid "Konekti al UDP / 993-havenuso de 120,25.129.41  \n"
-msgstr "الاتصال بمنافذ UDP / 993 من 120.25.129.41  \n"
-
-#. type: Plain text
-#: priskribo.md:82
-#, fuzzy, no-wrap
-msgid "PrideMandu la servilon DNS PRI: Conn-policy.ICTun.com  \n"
-msgstr "استجواب خادم DNS على: conn-policy.itun.com  \n"
-
-#. type: Plain text
-#: priskribo.md:83
-#, fuzzy, no-wrap
-msgid "PrideMandu The Servilon DNS PRI: Video-policy.ICTun.com  \n"
-msgstr "سؤال خادم DNS على: Video-policy.ittun.com  \n"
-
-#. type: Plain text
-#: priskribo.md:84
-#, fuzzy, no-wrap
-msgid "KONEKTI AL UDP / 80-Haveno de 52.29.45.252  \n"
-msgstr "الاتصال ب UDP / 80-منفذ 52.29.45.252 (° 1 ° 1  \n"
-
-#. type: Plain text
-#: priskribo.md:85
-#, fuzzy, no-wrap
-msgid "Konektas al UDP / 1210-havenuso de 52.29.45.252  \n"
-msgstr "يتصل بمنفذ USDP / 1210 من 52.29.45.252 (° 1 ° 1  \n"
-
-#. type: Plain text
-#: priskribo.md:86
-#, fuzzy, no-wrap
-msgid "Ligoj al UDP / 21-havenoj de 52,57.135.134  \n"
-msgstr "روابط إلى منافذ UDP / 21 من 52.57.135.134  \n"
-
-#. type: Plain text
-#: priskribo.md:87
-#, fuzzy, no-wrap
-msgid "Konektas al UDP / 1053-havenes de 52.28.62.20  \n"
-msgstr "يتصل بنظام UDP / 1053-Hasones من 52.28.62.20 (° 1 ° 1  \n"
-
-#. type: Plain text
-#: priskribo.md:88
-#, fuzzy, no-wrap
-msgid "KONEKTAS AL UDP / 443-Havas de 52.29.58.225  \n"
-msgstr "يتصل ب UDP / 443-52.29.29.225 (° 1 ° 1  \n"
-
-#. type: Plain text
-#: priskribo.md:89
-#, fuzzy, no-wrap
-msgid "Konektas al UDP / 123 (NTP) havenuso de 112,74.204.233 (Video-policy.ICTun.com)  \n"
-msgstr "يتصل UDP / 123 (NTP) منفذ 112،74.204.233 (° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 3 ° 3 ° 3 ° 3 ° 0Tun.Com)  \n"
-
-#. type: Plain text
-#: priskribo.md:90
-#, fuzzy, no-wrap
-msgid "Ligoj al UDP / 993-havenoj de 47.52.99.182  \n"
-msgstr "روابط إلى منافذ UDP / 993 من 47.52.99.182 (° 1 ° 1  \n"
-
-#. type: Plain text
-#: priskribo.md:91
-#, fuzzy, no-wrap
-msgid "Konektas al UDP / 1054-havenes de 52.57.127.207  \n"
-msgstr "يتصل بنظام UDP / 1054-92.57.127.207 (° 1 ° 1  \n"
-
-#. type: Plain text
-#: priskribo.md:92
-#, fuzzy, no-wrap
-msgid "...  \n"
-msgstr "...  \n"
-
-#. type: Plain text
-#: priskribo.md:94
-#, fuzzy, no-wrap
-msgid "Noto: ŝanĝu la DefAŭltan Itineron Tian signifis ke la interrila skatolo.   \n"
-msgstr "ملاحظة: قم بتعيين المسار الافتراضي هذا يعني أن المربع المترابطة.    \n"
-
-#. type: Plain text
-#: priskribo.md:95
-#, fuzzy, no-wrap
-msgid "Haltigi JCO_server sen kaŭzi restartigi:  \n"
-msgstr ""
-"وقف JCO_server sen kaŭzi restartigi:  \n"
-"  \n"
-
-#. type: Title ##
-#: priskribo.md:97
-#, fuzzy, no-wrap
-msgid "Haltu_cloud :  "
-msgstr "توقف_cloud :  "
+msgid "Halti  _jco_ servilo _  sen kaŭzi reboot:   \n"
+msgstr "إيقاف   _jco_  الخادم  _   دون التسبب في إعادة التشغيل:    \n"
 
 #. type: Fenced code block
-#: priskribo.md:98
+#: priskribo.md:80
 #, no-wrap
 msgid "PS | \n"
 msgstr "PS | \n"
 
 #. type: Plain text
-#: priskribo.md:102
+#: priskribo.md:85
 #, fuzzy, no-wrap
-msgid "VI POVO VIDI LA BEFAN VIDEO-Riverton (LAŭ 1080p Aŭ ALIA AGORDO) per:  \n"
-msgstr "يمكنك رؤية Rivert Befan Video (وفقا ل 1080 بكسل أو غيرها من التكوين) بقلم: (° 3 ° 3  \n"
+msgid "La ĉefa kanalo povas esti bildigita per:   \n"
+msgstr "يمكن تصوير القناة الرئيسية بقلم:    \n"
 
 #. type: Fenced code block
-#: priskribo.md:103
+#: priskribo.md:85
 #, no-wrap
 msgid ""
 "ffplay -i rtsp://admin:admin@192.168.24.111/stream1\n"
@@ -363,13 +243,13 @@ msgstr ""
 "ffplay -i rtsp://admin:admin@192.168.24.39:554/mpeg4/ch0/main/av_stream\n"
 
 #. type: Plain text
-#: priskribo.md:110
+#: priskribo.md:92
 #, fuzzy, no-wrap
-msgid "Kaj la durangana:\n"
-msgstr "و Durangana: (° 1 ° 1\n"
+msgid "kaj sekundara:   \n"
+msgstr "والثانوي:    \n"
 
 #. type: Fenced code block
-#: priskribo.md:110
+#: priskribo.md:92
 #, no-wrap
 msgid ""
 "ffplay -i rtsp://admin:admin@192.168.24.39/stream2\n"
@@ -379,13 +259,13 @@ msgstr ""
 "ffplay -i rtsp://admin:admin@192.168.24.39:554/stream2\n"
 
 #. type: Plain text
-#: priskribo.md:116
+#: priskribo.md:98
 #, fuzzy, no-wrap
-msgid "La instalita firmvaro Indikas:\n"
-msgstr "تشير البرامج الثابتة المثبتة إلى: (° 1 ° 1\n"
+msgid "La informoj montritaj en la interreta interfaco:   \n"
+msgstr "المعلومات المعروضة في الواجهة عبر الإنترنت:    \n"
 
 #. type: Fenced code block
-#: priskribo.md:116
+#: priskribo.md:98
 #, no-wrap
 msgid ""
 "DeviceName:     INGENIC-V01\n"
@@ -405,77 +285,71 @@ msgstr ""
 "OCXVersion:     -1\n"
 
 #. type: Plain text
-#: priskribo.md:126
+#: priskribo.md:111
 #, fuzzy, no-wrap
-msgid "La Procesoro estas: Ingenic T21  \n"
-msgstr "المعالج هو: إغراء T21 (° 1 ° 1  \n"
+msgid ""
+"La procesoro estas:  _ingenic T21_ \n"
+" <http://www.ingenic.com.cn/en/?product/id/11.html>   \n"
+"La procesoro estas: <https://fr.indasina.com/ingenic-t21-extreme-2-megapixel-encoding-processor_p16.html>     \n"
+msgstr ""
+"المعالج هو:   _ingenic T21_  \n"
+"  < http://www.ininic.com.cn/en/؟product/Id/11.html >    \n"
+" المعالج هو:  < https: //fr.indasina.com/ingeric-t21-xtreme-2-megapixel-encoding-processor _p16.html>     \n"
+"\n"
 
 #. type: Plain text
-#: priskribo.md:127
+#: priskribo.md:114
 #, fuzzy, no-wrap
-msgid "http://www.ingenic.com.cn/en/?product/id/11.html  \n"
-msgstr "http://www.ininic.com.cn/en/؟product/id/11.html  \n"
+msgid ""
+"La sensor  _CMOS_  estas:  _gc2053_.   \n"
+"Fontoj:  < https://github.com/mrfixit2001/rk-kernel-for-/blob/develop-4.4/drivers/media/i2c/gc2053.c >   \n"
+msgstr "جهاز استشعار   _CMOS_   هو:   _gc2053_. \n"
+
+#. type: Plain text
+#: priskribo.md:116
+#, fuzzy, no-wrap
+msgid "Memoro  _RAM_ :  _42 MiB_  Totalo,  _36 MiB_  Uzebla.   \n"
+msgstr "الذاكرة   _RAM_ :   _42 MiB_   المجموع،   _36 MiB_   قابلة للاستخدام.    \n"
+
+#. type: Plain text
+#: priskribo.md:118
+#, fuzzy, no-wrap
+msgid "La aveno de 9999 permesas vin kontroli la fotilon:   \n"
+msgstr "الشوفان 9999 يسمح لك للتحقق من الكاميرا:    \n"
+
+#. type: Fenced code block
+#: priskribo.md:118
+#, no-wrap
+msgid ""
+"echo \"checkuser -act set -user admin -password admin\" | nc 192.168.1.155 9999  \n"
+"echo \"list\" | nc 192.168.1.155 9999  \n"
+"echo \"pelcod20ctrl -?\" | nc 192.168.1.155 9999  \n"
+"echo \"pelcod20ctrl -type 1\" | nc 192.168.1.155 9999  \n"
+msgstr ""
+"echo \"checkuser -act set -user admin -password admin\" | nc 192.168.1.155 9999  \n"
+"echo \"list\" | nc 192.168.1.155 9999  \n"
+"echo \"pelcod20ctrl -?\" | nc 192.168.1.155 9999  \n"
+"echo \"pelcod20ctrl -type 1\" | nc 192.168.1.155 9999  \n"
 
 #. type: Plain text
 #: priskribo.md:128
 #, fuzzy, no-wrap
-msgid "https://en.indasina.com/ingenic-t21-extreme-2-megapixel-encoding-processor_p16.html  \n"
+msgid ""
+"Havenoj  _GPIO_ :   \n"
+"46 = Transruĝa LED.   \n"
+"81 = Blanka LED. \n"
 msgstr ""
-"https://en.indasina.com/ingenic-t21-xtreme-2-megapixel-encoding-processor_p16.html  \n"
-"  \n"
+"المنافذ   _GPIO_ :    \n"
+" 46 = LED الأشعة تحت الحمراء.  \n"
 
 #. type: Plain text
-#: priskribo.md:132
-#, fuzzy, no-wrap
-msgid ""
-"La CMOS-sensilo estas: GC2053.   \n"
-"ŝofora Fonto: https://github.com/mrfixit2001/rk-kernel-fork/blob/develop-4.4/drivers/media/i2c/gc2053.c  \n"
-msgstr "مستشعر CMOS هو: GC2053.   \n"
-
-#. type: Plain text
-#: priskribo.md:135
-#, fuzzy, no-wrap
-msgid "RAM: 42Mib Intt, 36 MIB Havebla.   \n"
-msgstr "RAM: 42 ميغابايت، 36 ميغابايت متاح.    \n"
-
-#. type: Plain text
-#: priskribo.md:136
-#, fuzzy, no-wrap
-msgid "La Havedo 9999 estas Malfermita kaj Permesas Regi la Fotilon:  \n"
-msgstr "يتم فتح 9999 Haedo ويسمح بالتحكم في الكاميرا: (° 1 ° 1  \n"
-
-#. type: Plain text
-#: priskribo.md:141
-#, fuzzy, no-wrap
-msgid ""
-"Echo (° 1 ° Checuser -Act Set -USER Admin -Password Admin\"|   \n"
-"Eo (° 1 ° 1 ° listo\"|   \n"
-"Eo (° 1 ° Pelcod203dRL -?   \n"
-"Eo (° 1 ° 1 ° Pelcod203ctrl -type 1\"|   \n"
-msgstr "الصدى (° 1 ° 1 ° 1 ° 1 ° ° checuser -ac    \n"
-
-#. type: Plain text
-#: priskribo.md:142
-#, fuzzy, no-wrap
-msgid "GPIO-HADENOJ:  \n"
-msgstr "GPO-Hadens:  \n"
-
-#. type: Plain text
-#: priskribo.md:145
-#, fuzzy, no-wrap
-msgid ""
-"46 = Infraredĝaj legoj.   \n"
-"81 = Bluaj leĝoj.   \n"
-msgstr "46 = تفسيرات الأشعة تحت الحمراء.    \n"
-
-#. type: Plain text
-#: priskribo.md:146
+#: priskribo.md:129
 #, fuzzy, no-wrap
 msgid "GPIO-HADENOJ BLOKITAJ POR SLUDO:  \n"
 msgstr "منعت GPIO-Haden للصراخ:  \n"
 
 #. type: Plain text
-#: priskribo.md:149
+#: priskribo.md:132
 #, fuzzy, no-wrap
 msgid ""
 "Blokita de Motor.ko: 18?   \n"
@@ -484,58 +358,252 @@ msgid ""
 msgstr "منعت بواسطة motor.ko: 18؟   \n"
 
 #. type: Plain text
-#: priskribo.md:151
+#: priskribo.md:135
 #, fuzzy, no-wrap
-msgid "Ptz-Kontrolo:  \n"
-msgstr "PTZ Control:  \n"
+msgid "Kontroloj  _PTZ_ :   \n"
+msgstr "الضوابط   _PTZ_ :    \n"
 
 #. type: Plain text
-#: priskribo.md:153
+#: priskribo.md:144
 #, fuzzy, no-wrap
-msgid "Supro: http: // admin: admin@192.168.24.39/? Jcpcmd = pelcod20ctrl -type 1 -cmd 1 -gata1 24 -gata2 24  \n"
-msgstr "أعلى: http: // admin: admin@192.168.24.39/؟   \n"
+msgid ""
+"Supro:  _http://admin:admin@192.168.24.39/?jcpcmd=pelcod20ctrl -type 1 -cmd 1 -data1 24 -data2 24_   \n"
+"Fundo:  _http://admin:admin@192.168.24.39/?jcpcmd=pelcod20ctrl -type 1 -cmd 2 -data1 24 -data2 24_   \n"
+"Maldekstra:  _http://admin:admin@192.168.24.39/?jcpcmd=pelcod20ctrl -type 1 -cmd 3 -data1 24 -data2 24_   \n"
+"Uste:  _http://admin:admin@192.168.24.39/?jcpcmd=pelcod20ctrl -type 1 -cmd 4 -data1 24 -data2 24_   \n"
+"Haltu:  _http://admin:admin@192.168.24.39/?jcpcmd=pelcod20ctrl -type 1 -cmd 9 -data1 24 -data2 24_   \n"
+"Pozicio 2:  _http://192.168.24.39/?jcpcmd=pelcod20ctrl -type 2 -cmd 1 -data2 2_   \n"
+"Pozicio 1:  _http://192.168.24.39/?jcpcmd=pelcod20ctrl -type 2 -cmd 2 -data2 1_   \n"
+"Klara pozicio 2:  _http://192.168.24.39/?jcpcmd=pelcod20ctrl -type 2 -cmd 3 -data2 2_   \n"
+msgstr ""
+"أعلى:   _http://admin:admin@192.168.24.39/?jcpcmd=pelcod20ctrl -type 1 -cmd 1 -data1 24 -data2 24_    \n"
+" أسفل:   _http://admin:admin@192.168.24.39/?jcpcmd=pelcod20ctrl -type 1 -cmd 2 -data1 24 -data2 24_    \n"
+" اليسار:   _http://admin:admin@192.168.24.39/?jcpcmd=pelcod20ctrl -type 1 -cmd 3 -data1 24 -data2 24_    \n"
+" right:   _http://admin:admin@192.168.24.39/?jcpcmd=pelcod20ctrl -type 1 -cmd 4 -data1 24 -data2 24_    \n"
+" stop:   _http://admin:admin@192.168.24.39/?jcpcmd=pelcod20ctrl -type 1 -cmd 9 -data1 24 -data2 24_    \n"
+" موضع 2:   _http://192.168.24.39/?jcpcmd=pelcod20ctrl -type 2 -cmd 1 -data2 2_    \n"
+" موضع 1:   _http://192.168.24.39/?jcpcmd=pelcod20ctrl -type 2 -cmd 2 -data2 1_    \n"
+" واضح الموقف 2:   _http://192.168.24.39/?jcpcmd=pelcod20ctrl -type 2 -cmd 3 -data2 2_    \n"
 
-#. type: Plain text
-#: priskribo.md:154
 #, fuzzy, no-wrap
-msgid "Msalru: http: // admin: admin@192.168.24.39/? Jcpcmd = pelcod203crl -type 1 -cmd 2 -gata1 24-gafu2 24  \n"
-msgstr "Msalkru: http: // admin: admin@192.168.24.39/؟   \n"
+#~ msgid "https://en.aliexpress.com/item/4000146161270.html\n"
+#~ msgstr "https://en.alievexpress.com/item/4000146161270.html\n"
 
-#. type: Plain text
-#: priskribo.md:155
 #, fuzzy, no-wrap
-msgid "Maldekstre: http: // admin: admin@192.168.24.39/? Jcpcmd = pelcod203crl -type 1 -cmd 3 -gata1 24 -gata2 24  \n"
-msgstr "اليسار: http: // admin: admin@192.168.24.39/؟   \n"
+#~ msgid "Kunlicante ĝin por Eterreto, ĝi Akiras DHCP-ADRESON KAJ NI POVO KONEKTI AL LA REGETO:  \n"
+#~ msgstr "وضعه في Etherreto، يحصل على عنوان DHCP ويمكننا الاتصال بهيا: (° 1 ° 1  \n"
 
-#. type: Plain text
-#: priskribo.md:156
 #, fuzzy, no-wrap
-msgid "Dekstre: http: // admin: admin@192.168.24.39/? JCPCMD = Pelcod203crl -Type 1 -CMD 4 -Data1 24 -Atata2 24  \n"
-msgstr "إلى اليمين: http: // admin: admin@192.168.24.39/؟   \n"
+#~ msgid "DefAŭlta Uzanto: Admin  \n"
+#~ msgstr "المستخدم الافتراضي: المسؤول  \n"
 
-#. type: Plain text
-#: priskribo.md:157
 #, fuzzy, no-wrap
-msgid "Halto: http: // admin: admin@192.168.24.39/? Jcpcmd = pelcod203crl -type 1 -cmd 9 -gata1 24-Data2 24  \n"
-msgstr "توقف: http: // admin: admin@192.168.24.39/؟   \n"
+#~ msgid "DefAŭlta Pasvorto: Admin  \n"
+#~ msgstr "كلمة المرور الافتراضية: المسؤول  \n"
 
-#. type: Plain text
-#: priskribo.md:159
 #, fuzzy, no-wrap
-msgid "Starigigu pozicion 2: http://192.168.24.39/?jcpcmd=pelcod20ctl -type 2 -cmd 1 -gata2 2  \n"
-msgstr "تعيين الموضع 2: http://192.168.24.39/  \n"
+#~ msgid "Dum 5 Minutoj, VI Povas Konekti per Telnet al la Haveso 9527  \n"
+#~ msgstr "لمدة 5 دقائق، يمكنك الاتصال ب Telnet إلى ميناء 9527  \n"
 
-#. type: Plain text
-#: priskribo.md:160
 #, fuzzy, no-wrap
-msgid "Iru al 1: http://192.168.24.39/?JJcpcmd=pelcod203trl -type 2 -cmd 2 -gata2 1  \n"
-msgstr "انتقل إلى 1: http://192.168.24.39/؟jjcpcmd=pelcod203trl -tonpe 2 -cmd 2 -Gata2 1  \n"
+#~ msgid "DefAŭlta Uzanto: Radiko  \n"
+#~ msgstr "المستخدم الافتراضي: الجذر  \n"
 
-#. type: Plain text
-#: priskribo.md:161
 #, fuzzy, no-wrap
-msgid "Forigi 2: http://192.168.24.39/?jcpcmd=pelCod203trl -Type 2 -CMD 3 -Data2 2  \n"
-msgstr "إزالة 2: http://192.168.24.39/؟jcpcmd=pelcod203trl -type 2 -cmd 3 -data2 2  \n"
+#~ msgid "DefAŭlta Pasvorto: jco66688  \n"
+#~ msgstr "كلمة المرور الافتراضية: JCO66688  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Por resti konektita Preter 5 Minutoj: \"Killall -9 aŭtomata_run.sh»  \n"
+#~ msgstr ""
+#~ "البقاء على اتصال أكثر من 5 دقائق: \"killall -9 تلقائي_run.sh»  \n"
+#~ "  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "(JCO = http://www.cnjabsco.com/ )  \n"
+#~ msgstr "(jco = http://www.cnjabsco.com/ )  (° 3 ° 3\n"
+
+#, fuzzy, no-wrap
+#~ msgid ""
+#~ "Malfermaj Arenoj:    \n"
+#~ "TCP: 80(http), 443(http ankaŭ!     \n"
+#~ msgstr ""
+#~ "الرمال المفتوحة:    \n"
+#~ "TCP: 80(http)، 443(http!      \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Reta Konduto Kiam Oni LANĉAS JCO_server:  \n"
+#~ msgstr ""
+#~ "سلوك الويب عند إطلاق JCO_server:  \n"
+#~ "  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Pridemandas La servilon DNS PRI: www.163.com Kaj DNS.ICTun.com  \n"
+#~ msgstr "يتم استجواب خادم DNS حول: www.163.com و dns.ictun.com (° 1 ° 1  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Apliko 114.114.114.114 por DNS.ICTun.com  \n"
+#~ msgstr "التطبيق 114.1114.114.114 ل dns.ittun.com  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "KONEKTI AL LA HAVEN UDP / 993 DNS.ICTUNC.com  \n"
+#~ msgstr "الاتصال بملاذ UDP / 993 dns.ittunc.com (° 1 ° 1  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Konekti al UDP / 993-havenuso de 120,25.129.41  \n"
+#~ msgstr "الاتصال بمنافذ UDP / 993 من 120.25.129.41  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "PrideMandu la servilon DNS PRI: Conn-policy.ICTun.com  \n"
+#~ msgstr "استجواب خادم DNS على: conn-policy.itun.com  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "PrideMandu The Servilon DNS PRI: Video-policy.ICTun.com  \n"
+#~ msgstr "سؤال خادم DNS على: Video-policy.ittun.com  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "KONEKTI AL UDP / 80-Haveno de 52.29.45.252  \n"
+#~ msgstr "الاتصال ب UDP / 80-منفذ 52.29.45.252 (° 1 ° 1  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Konektas al UDP / 1210-havenuso de 52.29.45.252  \n"
+#~ msgstr "يتصل بمنفذ USDP / 1210 من 52.29.45.252 (° 1 ° 1  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Ligoj al UDP / 21-havenoj de 52,57.135.134  \n"
+#~ msgstr "روابط إلى منافذ UDP / 21 من 52.57.135.134  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Konektas al UDP / 1053-havenes de 52.28.62.20  \n"
+#~ msgstr "يتصل بنظام UDP / 1053-Hasones من 52.28.62.20 (° 1 ° 1  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "KONEKTAS AL UDP / 443-Havas de 52.29.58.225  \n"
+#~ msgstr "يتصل ب UDP / 443-52.29.29.225 (° 1 ° 1  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Konektas al UDP / 123 (NTP) havenuso de 112,74.204.233 (Video-policy.ICTun.com)  \n"
+#~ msgstr "يتصل UDP / 123 (NTP) منفذ 112،74.204.233 (° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 ° 3 3 ° 3 ° 3 ° 3 ° 0Tun.Com)  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Ligoj al UDP / 993-havenoj de 47.52.99.182  \n"
+#~ msgstr "روابط إلى منافذ UDP / 993 من 47.52.99.182 (° 1 ° 1  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Konektas al UDP / 1054-havenes de 52.57.127.207  \n"
+#~ msgstr "يتصل بنظام UDP / 1054-92.57.127.207 (° 1 ° 1  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "...  \n"
+#~ msgstr "...  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Noto: ŝanĝu la DefAŭltan Itineron Tian signifis ke la interrila skatolo.   \n"
+#~ msgstr "ملاحظة: قم بتعيين المسار الافتراضي هذا يعني أن المربع المترابطة.    \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Haltigi JCO_server sen kaŭzi restartigi:  \n"
+#~ msgstr ""
+#~ "وقف JCO_server sen kaŭzi restartigi:  \n"
+#~ "  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Haltu_cloud :  "
+#~ msgstr "توقف_cloud :  "
+
+#, fuzzy, no-wrap
+#~ msgid "VI POVO VIDI LA BEFAN VIDEO-Riverton (LAŭ 1080p Aŭ ALIA AGORDO) per:  \n"
+#~ msgstr "يمكنك رؤية Rivert Befan Video (وفقا ل 1080 بكسل أو غيرها من التكوين) بقلم: (° 3 ° 3  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Kaj la durangana:\n"
+#~ msgstr "و Durangana: (° 1 ° 1\n"
+
+#, fuzzy, no-wrap
+#~ msgid "La instalita firmvaro Indikas:\n"
+#~ msgstr "تشير البرامج الثابتة المثبتة إلى: (° 1 ° 1\n"
+
+#, fuzzy, no-wrap
+#~ msgid "La Procesoro estas: Ingenic T21  \n"
+#~ msgstr "المعالج هو: إغراء T21 (° 1 ° 1  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "http://www.ingenic.com.cn/en/?product/id/11.html  \n"
+#~ msgstr "http://www.ininic.com.cn/en/؟product/id/11.html  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "https://en.indasina.com/ingenic-t21-extreme-2-megapixel-encoding-processor_p16.html  \n"
+#~ msgstr ""
+#~ "https://en.indasina.com/ingenic-t21-xtreme-2-megapixel-encoding-processor_p16.html  \n"
+#~ "  \n"
+
+#, fuzzy, no-wrap
+#~ msgid ""
+#~ "La CMOS-sensilo estas: GC2053.   \n"
+#~ "ŝofora Fonto: https://github.com/mrfixit2001/rk-kernel-fork/blob/develop-4.4/drivers/media/i2c/gc2053.c  \n"
+#~ msgstr "مستشعر CMOS هو: GC2053.   \n"
+
+#, fuzzy, no-wrap
+#~ msgid "RAM: 42Mib Intt, 36 MIB Havebla.   \n"
+#~ msgstr "RAM: 42 ميغابايت، 36 ميغابايت متاح.    \n"
+
+#, fuzzy, no-wrap
+#~ msgid "La Havedo 9999 estas Malfermita kaj Permesas Regi la Fotilon:  \n"
+#~ msgstr "يتم فتح 9999 Haedo ويسمح بالتحكم في الكاميرا: (° 1 ° 1  \n"
+
+#, fuzzy, no-wrap
+#~ msgid ""
+#~ "Echo (° 1 ° Checuser -Act Set -USER Admin -Password Admin\"|   \n"
+#~ "Eo (° 1 ° 1 ° listo\"|   \n"
+#~ "Eo (° 1 ° Pelcod203dRL -?   \n"
+#~ "Eo (° 1 ° 1 ° Pelcod203ctrl -type 1\"|   \n"
+#~ msgstr "الصدى (° 1 ° 1 ° 1 ° 1 ° ° checuser -ac    \n"
+
+#, fuzzy, no-wrap
+#~ msgid "GPIO-HADENOJ:  \n"
+#~ msgstr "GPO-Hadens:  \n"
+
+#, fuzzy, no-wrap
+#~ msgid ""
+#~ "46 = Infraredĝaj legoj.   \n"
+#~ "81 = Bluaj leĝoj.   \n"
+#~ msgstr "46 = تفسيرات الأشعة تحت الحمراء.    \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Ptz-Kontrolo:  \n"
+#~ msgstr "PTZ Control:  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Supro: http: // admin: admin@192.168.24.39/? Jcpcmd = pelcod20ctrl -type 1 -cmd 1 -gata1 24 -gata2 24  \n"
+#~ msgstr "أعلى: http: // admin: admin@192.168.24.39/؟   \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Msalru: http: // admin: admin@192.168.24.39/? Jcpcmd = pelcod203crl -type 1 -cmd 2 -gata1 24-gafu2 24  \n"
+#~ msgstr "Msalkru: http: // admin: admin@192.168.24.39/؟   \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Maldekstre: http: // admin: admin@192.168.24.39/? Jcpcmd = pelcod203crl -type 1 -cmd 3 -gata1 24 -gata2 24  \n"
+#~ msgstr "اليسار: http: // admin: admin@192.168.24.39/؟   \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Dekstre: http: // admin: admin@192.168.24.39/? JCPCMD = Pelcod203crl -Type 1 -CMD 4 -Data1 24 -Atata2 24  \n"
+#~ msgstr "إلى اليمين: http: // admin: admin@192.168.24.39/؟   \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Halto: http: // admin: admin@192.168.24.39/? Jcpcmd = pelcod203crl -type 1 -cmd 9 -gata1 24-Data2 24  \n"
+#~ msgstr "توقف: http: // admin: admin@192.168.24.39/؟   \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Starigigu pozicion 2: http://192.168.24.39/?jcpcmd=pelcod20ctl -type 2 -cmd 1 -gata2 2  \n"
+#~ msgstr "تعيين الموضع 2: http://192.168.24.39/  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Iru al 1: http://192.168.24.39/?JJcpcmd=pelcod203trl -type 2 -cmd 2 -gata2 1  \n"
+#~ msgstr "انتقل إلى 1: http://192.168.24.39/؟jjcpcmd=pelcod203trl -tonpe 2 -cmd 2 -Gata2 1  \n"
+
+#, fuzzy, no-wrap
+#~ msgid "Forigi 2: http://192.168.24.39/?jcpcmd=pelCod203trl -Type 2 -CMD 3 -Data2 2  \n"
+#~ msgstr "إزالة 2: http://192.168.24.39/؟jcpcmd=pelcod203trl -type 2 -cmd 3 -data2 2  \n"
 
 #, fuzzy
 #~ msgid ""

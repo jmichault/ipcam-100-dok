@@ -29,8 +29,8 @@ title: 净化
 * 相机的启动 "gdbserver"，例如：  
 
 
-     `/opt/media/mmcblk0p1/bin/gdbserver localhost:2000 /opt/media/mmcblk0p1/bin/motor`
-* 在计算机上启动gdb，例如：
+     `/opt/media/mmcblk0p1/bin/gdbserver localhost:2000 /opt/media/mmcblk0p1/bin/motor`  
+  *  在计算机上启动GDB，例如： 
 
     ```
     cd programada_medio/toolchain
@@ -40,7 +40,7 @@ title: 净化
     handle SIG32 nostop
     break xxx
     continue 
-    ```
+    ```  
 
 
 

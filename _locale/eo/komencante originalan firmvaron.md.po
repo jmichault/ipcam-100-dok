@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-10-29 23:10+0200\n"
+"POT-Creation-Date: 2021-11-09 15:05+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,37 +42,64 @@ msgstr "page"
 
 #. type: YAML Front Matter: title
 #: komencante originalan firmvaron.md:1
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Fonctionnement du micrologiciel originel"
 msgstr "Funkciado de la originala firmware"
 
 #. type: Plain text
-#: komencante originalan firmvaron.md:18
+#: komencante originalan firmvaron.md:10
 #, fuzzy, no-wrap
-msgid ""
-"la firmvaro konsistas el 6 sekcioj :\n"
-"mtdblock0 = u-boot ŝargilo\n"
-"mtdblock1 = starta agordo\n"
-"mtdblock2 = \"u-boot legacy uImage\", linux-kerno\n"
-"mtdblock3 = squashfs = /\n"
-"mtdblock4 = squashfs = /ipc\n"
-"mtdblock5 = jffs2 = /opt\n"
-msgstr ""
-"La firstvaro konsistas el 6 sektoroj:\n"
-"mtdblock0 = u-boot ŝargilo\n"
-"mtdblock1 = startagordo\n"
-"mtdblock2 = \"U-boot Legacy UImage\", Linukso-Kerno\n"
-"mtdblock3 = Squashfs = /\n"
-"mtdblock4 = squashfs = / iPC\n"
-"mtdblock5 = jffs2 = / elekti\n"
+msgid "le micrologiciel est constitué de 6 partitions :\n"
+msgstr "La firmware konsistas el 6 vandoj: \n"
 
 #. type: Plain text
-#: komencante originalan firmvaron.md:24
+#: komencante originalan firmvaron.md:19
 #, fuzzy, no-wrap
 msgid ""
-"La startprogramo estas \"/linuxrc\".\n"
-"Ĝi lanĉas precipe /etc/init.d/rcS.\n"
-"/etc/init.d/rcS lanĉas /ipc/etc/auto_run.sh\n"
-"/ipc/etc/auto_run.sh lanĉas /opt/etc/local.rc antaŭ lanĉado de /ipc/app/jco_server.\n"
-"/ipc/app/jco_server estas la ĉefa programo: ĝi faras kaj http-servilon, kaj rtsp-servilon, ktp...\n"
-msgstr "La startprogramo estas \"/ linuxrc\". \n"
+"| partition   | type                   | rôle          |\n"
+"| ----------- | ---------------------- | ------------- |\n"
+"| _mtdblock0_ | _u-boot_               | démarrage     |\n"
+"| _mtdblock1_ | texte                  | paramètres    |\n"
+"| _mtdblock2_ | _u-boot legacy uImage_ | noyau _linux_ |\n"
+"| _mtdblock3_ | _squashfs_             | _/_           |\n"
+"| _mtdblock4_ | _squashfs_             | _/ipc_        |\n"
+"| _mtdblock5_ | _jffs1_                | _/opt_        |\n"
+msgstr ""
+"| Dispartigo | Tipo | Rolo | \n"
+" | ----------- | ---------------------- | ------------- | \n"
+" |  _mtdblock0_  |  _u-boot_                | Komencante | \n"
+" |  _mtdblock1_  | Teksto | Agordoj | \n"
+" |  _mtdblock2_  |  _u-boot legacy uImage_  | Kerno  _linux_  | \n"
+" |  _mtdblock3_  |  _squashfs_              |  _/_            | \n"
+" |  _mtdblock4_  |  _squashfs_              |  _/ipc_         | \n"
+" |  _mtdblock5_  |  _jffs1_                 |  _/opt_         | \n"
+
+#. type: Plain text
+#: komencante originalan firmvaron.md:20
+#, fuzzy, no-wrap
+msgid "Le premier programme exécuté est _/linuxrc_.  \n"
+msgstr "La unua programo ekzekutita estas  _/linuxrc_.   \n"
+
+#. type: Plain text
+#: komencante originalan firmvaron.md:21
+#, fuzzy, no-wrap
+msgid "Il lance _/etc/init.d/rcS_.  \n"
+msgstr "Li lanĉas  _/etc/init.d/rcS_.   \n"
+
+#. type: Plain text
+#: komencante originalan firmvaron.md:22
+#, fuzzy
+msgid "_/etc/init.d/rcS_ lance _/ipc/etc/auto\\_run.sh_.  \n"
+msgstr "_/etc/init.d/rcS_  lanĉas  _/ipc/etc/auto\\_run.sh_.   \n"
+
+#. type: Plain text
+#: komencante originalan firmvaron.md:23
+#, fuzzy, no-wrap
+msgid "_/ipc/etc/auto\\_run.sh_ lance _/opt/etc/local.rc_ avant de lancer _/ipc/app/jco\\_server_.  \n"
+msgstr "_/ipc/etc/auto\\_run.sh_  lanco  _/opt/etc/local.rc_  Antaŭ ol lanĉi  _/ipc/app/jco\\_server_.   \n"
+
+#. type: Plain text
+#: komencante originalan firmvaron.md:25
+#, fuzzy, no-wrap
+msgid "_/ipc/app/jco\\_server_ est le programme principal : il sert à la fois de serveur _rtsp_, de serveur _http_, ...\n"
+msgstr "_/ipc/app/jco\\_server_  estas la ĉefa programo: i servas ambaŭ  _rtsp_ servilo, servilo  _http_, ... \n"

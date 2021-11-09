@@ -23,7 +23,7 @@ title: 'Alternativa firmvaro'
 
   * pravalorizas la LEDojn kaj la motoron
 
-  * pravalorizas la adresaron ktp se necese
+  * Komencas la dosieron  _etc_  se necese 
 
   * alidirektiloj _/bin/busybox_ , _/etc_ kaj _/root_ al la SDa karto.
 

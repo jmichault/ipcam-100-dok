@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-10-29 23:10+0200\n"
+"POT-Creation-Date: 2021-11-09 15:05+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -47,25 +47,51 @@ msgid "Fonctionnement du micrologiciel originel"
 msgstr ""
 
 #. type: Plain text
-#: komencante originalan firmvaron.md:18
+#: komencante originalan firmvaron.md:10
 #, no-wrap
-msgid ""
-"la firmvaro konsistas el 6 sekcioj :\n"
-"mtdblock0 = u-boot ŝargilo\n"
-"mtdblock1 = starta agordo\n"
-"mtdblock2 = \"u-boot legacy uImage\", linux-kerno\n"
-"mtdblock3 = squashfs = /\n"
-"mtdblock4 = squashfs = /ipc\n"
-"mtdblock5 = jffs2 = /opt\n"
+msgid "le micrologiciel est constitué de 6 partitions :\n"
 msgstr ""
 
 #. type: Plain text
-#: komencante originalan firmvaron.md:24
+#: komencante originalan firmvaron.md:19
 #, no-wrap
 msgid ""
-"La startprogramo estas \"/linuxrc\".\n"
-"Ĝi lanĉas precipe /etc/init.d/rcS.\n"
-"/etc/init.d/rcS lanĉas /ipc/etc/auto_run.sh\n"
-"/ipc/etc/auto_run.sh lanĉas /opt/etc/local.rc antaŭ lanĉado de /ipc/app/jco_server.\n"
-"/ipc/app/jco_server estas la ĉefa programo: ĝi faras kaj http-servilon, kaj rtsp-servilon, ktp...\n"
+"| partition   | type                   | rôle          |\n"
+"| ----------- | ---------------------- | ------------- |\n"
+"| _mtdblock0_ | _u-boot_               | démarrage     |\n"
+"| _mtdblock1_ | texte                  | paramètres    |\n"
+"| _mtdblock2_ | _u-boot legacy uImage_ | noyau _linux_ |\n"
+"| _mtdblock3_ | _squashfs_             | _/_           |\n"
+"| _mtdblock4_ | _squashfs_             | _/ipc_        |\n"
+"| _mtdblock5_ | _jffs1_                | _/opt_        |\n"
+msgstr ""
+
+#. type: Plain text
+#: komencante originalan firmvaron.md:20
+#, no-wrap
+msgid "Le premier programme exécuté est _/linuxrc_.  \n"
+msgstr ""
+
+#. type: Plain text
+#: komencante originalan firmvaron.md:21
+#, no-wrap
+msgid "Il lance _/etc/init.d/rcS_.  \n"
+msgstr ""
+
+#. type: Plain text
+#: komencante originalan firmvaron.md:22
+#, no-wrap
+msgid "_/etc/init.d/rcS_ lance _/ipc/etc/auto\\_run.sh_.  \n"
+msgstr ""
+
+#. type: Plain text
+#: komencante originalan firmvaron.md:23
+#, no-wrap
+msgid "_/ipc/etc/auto\\_run.sh_ lance _/opt/etc/local.rc_ avant de lancer _/ipc/app/jco\\_server_.  \n"
+msgstr ""
+
+#. type: Plain text
+#: komencante originalan firmvaron.md:25
+#, no-wrap
+msgid "_/ipc/app/jco\\_server_ est le programme principal : il sert à la fois de serveur _rtsp_, de serveur _http_, ...\n"
 msgstr ""

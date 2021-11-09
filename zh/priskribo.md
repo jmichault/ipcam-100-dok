@@ -1,14 +1,14 @@
 ---
-lang: pt
+lang: zh
 lang-niv: auto
 lang-ref: 070-kamerao-priskribo
 layout: page
-title: 'Descrição da câmera'
+title: 相机的描述
 ---
 
 
 
-# Descrição:
+# 描述：
 <https://fr.aliexpress.com/item/4000146161270.html>  
 ```
     Brand Name: shiningpo
@@ -48,7 +48,7 @@ title: 'Descrição da câmera'
     ptz: camara ip ptz
 ```
 
-# Inscrições de tags.
+# 标签铭文
 ```
 WIFI CARAM
 Model : WF-HD820-ZS
@@ -59,45 +59,45 @@ Password : 12345678
 MAC : 00:88:09:**:**:**
 ```
 
-Conectando a câmera de rede etnorn, recebe um endereço IP e você pode se conectar a ele em http:    
- usuário padrão:   _admin_    
- senha padrão:   _admin_  
+它连接录像机网络摄像头，收到IP地址，您可以在HTTP：   
+默认用户：  _admin_    
+默认密码：  _admin_  
 
-Por 5 minutos, podemos nos conectar com   _telnet_   para a porta 9527:    
- Usuário padrão:   _root  
+5分钟，我们可以将  _telnet_  连接到端口9527：   
+默认用户：  _root  
   
   
-Senha padrão:   _jco66688  
+默认密码：  _jco66688  
   
   
-Para ficar conectado após estes 5 minutos:   `killall -9 auto_run.sh`      
-  _(  jco = http://ww.cnjabsco.com/   )    _
+在这5分钟后保持联系：  `killall -9 auto_run.sh`      
+  _(  JCO = http://www.cnjabsco.com/   )    _
 
 
 
-Portas abertas:    
-   _tcp_ : 80  (_  http  _), 443  (_  http  _   também!      
+打开端口：   
+   _tcp_ ：80  (_  HTTP  _)，443  (_  HTTP  _  也！      
 
 
-Pare   _jco_  Server  _   sem causar reinicialização:    
+停止  _jco_ 服务器 _  而不导致重启：   
 ```
 PS | 
 ```
 
-O canal principal pode ser representado por:    
+主频道可以通过以下方式描绘：   
 ```
 ffplay -i rtsp://admin:admin@192.168.24.111/stream1
 ffplay -i rtsp://admin:admin@192.168.24.39:554/stream1
 ffplay -i rtsp://admin:admin@192.168.24.39:554/mpeg4/ch0/main/av_stream
 ```
 
-e secundário:    
+和中学：   
 ```
 ffplay -i rtsp://admin:admin@192.168.24.39/stream2
 ffplay -i rtsp://admin:admin@192.168.24.39:554/stream2
 ```
 
-As informações exibidas na interface on-line:    
+在线界面中显示的信息：   
 ```
 DeviceName:     INGENIC-V01
 DeviceModel:    IPCAM-100
@@ -108,16 +108,16 @@ WebVersion:     V2.3.4-20190709
 OCXVersion:     -1
 ```
 
-O processador é:   _ingenic T21_  
+处理器是：  _ingenic T21_  
   < http://www.ininic.com.cn/en/?product/id/11.html >    
- O processador é:  < https: //fr.indasina.com/ingeric-t21-xtreme-2-megapixel-encoding-processor _p16.html>     
+处理器是： < https： //fr.indasina.com/ingeric-t21-xtreme-2-megapixel-encoding-processor _p16.html>     
 
 
-O sensor   _CMOS_   é:   _gc2053_. 
+  _CMOS_  传感器是：  _gc2053_。 
 
-Memória   _RAM_ :   _42 MiB_   Total,   _36 MiB_   utilizável.    
+内存  _RAM_ ：  _42 MiB_  总计，  _36 MiB_  可用。    
 
-A aveia de 9999 permite que você verifique a câmera:    
+9999的燕麦允许您检查相机：   
 ```
 echo "checkuser -act set -user admin -password admin" | nc 192.168.1.155 9999  
 echo "list" | nc 192.168.1.155 9999  
@@ -125,20 +125,20 @@ echo "pelcod20ctrl -?" | nc 192.168.1.155 9999
 echo "pelcod20ctrl -type 1" | nc 192.168.1.155 9999  
 ```
 
-Portas   _GPIO_ :    
- 46 = LED infravermelho.  
+端口  _GPIO_ ：   
+ 46 =红外LED。  
 
-GPIO-HADEN bloqueado para gritar:  
-Bloqueado por motor.ko: 18?   
+GPIO-HARDEN被尖叫叫：  
+由Motor.ko封锁：18？   
 
-Controles   _PTZ_ :    
+控制  _PTZ_ ：   
 
-Top:   _http://admin:admin@192.168.24.39/?jcpcmd=pelcod20ctrl -type 1 -cmd 1 -data1 24 -data2 24_    
- Bottom:   _http://admin:admin@192.168.24.39/?jcpcmd=pelcod20ctrl -type 1 -cmd 2 -data1 24 -data2 24_    
- Esquerda:   _http://admin:admin@192.168.24.39/?jcpcmd=pelcod20ctrl -type 1 -cmd 3 -data1 24 -data2 24_    
- Direito:   _http://admin:admin@192.168.24.39/?jcpcmd=pelcod20ctrl -type 1 -cmd 4 -data1 24 -data2 24_    
- Parada:   _http://admin:admin@192.168.24.39/?jcpcmd=pelcod20ctrl -type 1 -cmd 9 -data1 24 -data2 24_    
- Posição 2:   _http://192.168.24.39/?jcpcmd=pelcod20ctrl -type 2 -cmd 1 -data2 2_    
- Posição 1:   _http://192.168.24.39/?jcpcmd=pelcod20ctrl -type 2 -cmd 2 -data2 1_    
- Clear Posição 2:   _http://192.168.24.39/?jcpcmd=pelcod20ctrl -type 2 -cmd 3 -data2 2_    
+顶部：  _http://admin:admin@192.168.24.39/?jcpcmd=pelcod20ctrl -type 1 -cmd 1 -data1 24 -data2 24_    
+底部：  _http://admin:admin@192.168.24.39/?jcpcmd=pelcod20ctrl -type 1 -cmd 2 -data1 24 -data2 24_    
+左：  _http://admin:admin@192.168.24.39/?jcpcmd=pelcod20ctrl -type 1 -cmd 3 -data1 24 -data2 24_    
+右：  _http://admin:admin@192.168.24.39/?jcpcmd=pelcod20ctrl -type 1 -cmd 4 -data1 24 -data2 24_    
+ STOP：  _http://admin:admin@192.168.24.39/?jcpcmd=pelcod20ctrl -type 1 -cmd 9 -data1 24 -data2 24_    
+位置2：  _http://192.168.24.39/?jcpcmd=pelcod20ctrl -type 2 -cmd 1 -data2 2_    
+位置1：  _http://192.168.24.39/?jcpcmd=pelcod20ctrl -type 2 -cmd 2 -data2 1_    
+清除位置2：  _http://192.168.24.39/?jcpcmd=pelcod20ctrl -type 2 -cmd 3 -data2 2_    
 

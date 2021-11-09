@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-10-30 11:05+0200\n"
+"POT-Creation-Date: 2021-11-09 15:12+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -56,13 +56,13 @@ msgstr "منافذ مفتوحة"
 #: originala_firmvaro.md:11
 #, fuzzy, no-wrap
 msgid "TCP: 80(http), 443(HTP ankaŭ!), 554(RTSP), 8004, 8006, 9527(Telnetd), 9999  \n"
-msgstr "TCP: 80(http)، 443(HTP أيضا!)، 554(RTSP)، 8004، 8006، 9527 (° 7 ° 7 ° 7 ° 7 ° شرعة)، 9999  \n"
+msgstr "TCP: 80 ( http: )، 443 ( htp أيضا!   \n"
 
 #. type: Plain text
 #: originala_firmvaro.md:13
 #, fuzzy, no-wrap
 msgid "UDP: 67(DHCP), 3702, 8002, 39642\n"
-msgstr "UDP: 67(DHCP)، 3702، 8002، 39642 (° 3 ° 3\n"
+msgstr "UDP: 67 ( DHCP )، 3702، 8002، 39642 \n"
 
 #. type: Plain text
 #: originala_firmvaro.md:14
@@ -174,7 +174,7 @@ msgstr "`telnetd IP 9527` : تسجيل الدخول: _root_، كلمة المر�
 #: originala_firmvaro.md:49
 #, fuzzy, no-wrap
 msgid "Ne esti malkonektita post 5 minutoj: `killall -9 auto_run.sh`  \n"
-msgstr "لا يتم قطع اتصالها بعد 5 دقائق: `killall -9 auto_run.sh`  (° 4 ° 4\n"
+msgstr "لا يتم قطع اتصالها بعد 5 دقائق:  `killall -9 auto_run.sh`   \n"
 
 #. type: Plain text
 #: originala_firmvaro.md:51
@@ -358,23 +358,9 @@ msgid ""
 "* devinfo = jcoxa***************************************************\n"
 "* bootargs = konzolo = ttyS1,115200n8 mem = 42M @ 0x0 rmem = 22M @ 0x2A00000 init = / linuxrc rootfstype = squashfs root = / dev / mtdblock3 flash = SF sensor = GC2053 maxheight = 1080 device\\_id =*********** ethaddr =**:**:**:**:**:** devinfo = jcoxa*************************************************** cpu = T21 ddr = 64M mtdparts = jz\\_sfc: 256K @ 0K(sf-bootloader), 32K @ 256K(sf-bootenv), 1440K @ 288K(sf-kernel), 832K @ 1728K(sf-rootfs), 4928K @ 2560K(sf-ipcfs), 704K @ 7488 K(sf-miscfs)\n"
 msgstr ""
-"الخيارات في mtdblock1:\n"
-"* معدل البث بالباود = 115200\n"
-"* bootcmd = مسبار سادس ؛ قراءة sf 0x80600000 0x48000 0x280000 ؛ bootm 0x80600000\n"
-"* bootdelay = 1\n"
-"* ethact = Jz4775-9161\n"
-"* gatewayip = 192.168.2.1\n"
-"* ipaddr = 192.168.2.84\n"
-"* الأحمال\\_eoo = 1\n"
-"* قناع الشبكة = 255.255.255.0\n"
-"* serverip = 192.168.2.81\n"
-"* stderr = سلسلة\n"
-"* ستدين = سلسلة\n"
-"* stdout = سلسلة\n"
-"* ethaddr =**:**:**:**:**:**\n"
-"* معرف الجهاز\\_id =***********\n"
-"* devinfo = jcoxa***************************************************\n"
-"* bootargs = وحدة التحكم = ttyS1،115200n8 mem = 42M @ 0x0 rmem = 22M @ 0x2A00000 init = / linuxrc rootfstype = squashfs root = / dev / mtdblock3 flash = SF sensor = GC2053 maxheight = 1080 جهاز\\_id =*********** ethaddr =**:**:**:**:**:** devinfo = jcoxa*************************************************** cpu = T21 ddr = 64M mtdparts = jz\\_sfc: 256K @ 0K(sf-bootloader)، 32K @ 256K(sf-bootenv)، 1440K @ 288K()) sf-kernel)، 832K @ 172 8K(sf-rootfs)، 4928K @ 2560K(sf-ipcfs)، 704K @ 7488 K(sf-miscfs)( ° 65 درجة)\n"
+"الخيارات في mtdblock1: \n"
+" *  baudrato = 115200 \n"
+" *  bootcmd = سادس التحقيق. \n"
 
 #. type: Plain text
 #: originala_firmvaro.md:128
@@ -498,62 +484,161 @@ msgstr "الاستعراض الأساسي:"
 #: originala_firmvaro.md:177
 #, fuzzy, no-wrap
 msgid ""
-"(° 1 ° Informo:\n"
-"    `binwalk mtdblock2.bin`\n"
-"    * Rezulto:\n"
-"decimala deksesuma priskribo\n"
+"*  Informo: \n"
+"     `binwalk mtdblock2.bin` \n"
+"     *  Rezulto: \n"
+" Dekuma deksesuma priskribo \n"
 msgstr ""
-"(° 1 ° 1 ° 1 ° معلومات:\n"
-"    `binwalk mtdblock2.bin`\n"
-"    * \n"
+"*   معلومات:  \n"
+"      `binwalk mtdblock2.bin`  \n"
+"      *   النتيجة:  \n"
+" عشرية الوصف عشري * \n"
 
 #. type: Plain text
-#: originala_firmvaro.md:179
-#, fuzzy, no-wrap
-msgid "0 0x0 Uimage Header, Header Grandeco: 64 Bajtoj, Header CRC: 0x7b9DE864, kreita: 2019-06-22 02:41:00, Bildo Grandeco: 1466358 BYTES, DATA Adreso: 0x80010000, Eniro Punkto: 0x80388340, Datumoj CRC: 0xb83DCA15, OS: Linukso, CPU: MIPS, Bildo Tipo: OS Kernel Bildo, Kunpremo Tipo: LZMA, Bildo Nomo: \"Linukso-3.10.14__. 1.0__]\"(° 7 ° 7 ° 64 0x40 lzma kunpremitaj datumoj, ecoj: 0x5d, vortaro Grandeco: 16777216 bajtoj, nekompresita grandeco: -1 bajtoj\n"
-msgstr "0 0x0 Uimage Header، رأس رأس: 64 بايت، رأس CRC: 0x7b9de864، تم الإنشاء: 2019-06-22 02:41:00، صورة الحجم: 1466358 بايت، عنوان البيانات: 0x80010000، نقطة المدخل: 0x80388340، بيانات CRC: 0xb83dca15، نظام التشغيل: Linux، وحدة المعالجة المركزية: MIPS، نوع الصورة: صورة نواة OS، نوع الضغط: LZMA، اسم الصورة: \"Linux-3.10.14__.\n"
-
-#. type: Plain text
-#: originala_firmvaro.md:182
+#: originala_firmvaro.md:180
 #, fuzzy, no-wrap
 msgid ""
-"(° 1 ° eltiro de datumoj de MTDBlock2:\n"
-"    `tail -c+65  < mtdblock2.bin >mtdblock2.dataz`\n"
+"0 0x0 Uimage Header, Header Grandeco: 64 Bajtoj, Header CRC: 0x7b9DE864, kreita: 2019-06-22 02:41:00, Bildo Grandeco: 1466358 BYTES, DATA Adreso: 0x80010000, Eniro Punkto: 0x80388340, Datumoj CRC: 0xb83DCA15, OS: Linukso, CPU: MIPS, Bildo Tipo: OS Kernel Bildo, Kunpremo Tipo: LZMA, Bildo Nomo:  \" Linux-3.10.14 __ ISVP _turkey_ 1.0 __] \" \n"
+" 64 0X40 LZMA kunpremitaj datumoj, Propraĵoj: 0x5d, vortaro Grandeco: 16777216 bajtoj, kunpremita grandeco: -1 bajtoj \n"
 msgstr ""
-"(° 1 ° 1 ° 1 ° استخراج بيانات mtdblock2:\n"
-"    `tail -c+65  < mtdblock2.bin >mtdblock2.dataz`\n"
+"0 0x0 Uimage Header، رأس رأس: 64 بايت، رأس CRC: 0x7b9de864، تم الإنشاء: 2019-06-22 02:41:00، صورة الحجم: 1466358 بايت، عنوان البيانات: 0x80010000، نقطة المدخل: 0x80388340، بيانات CRC: 0xb83dca15، نظام التشغيل: Linux، وحدة المعالجة المركزية: MIPS، نوع الصورة: OS Kernel Image، نوع الضغط: LZMA، اسم الصورة:   \" Linux-3.10.14  __  isvp  _turkey_  1.0  __]  \"  \n"
+" 64 0x40 بيانات مضغوطة LZMA، خصائص: 0x5D، قاموس الحجم: 16777216 بايت، مضغوط الحجم: -1 بايت  \n"
 
 #. type: Plain text
-#: originala_firmvaro.md:186
+#: originala_firmvaro.md:184
 #, fuzzy, no-wrap
 msgid ""
-"Kerna eltiro:\n"
-"    `cat mtdblock2.dataz|lzma -d -c -f - >kernel`\n"
-"(° 13 ° ° Listo de ŝoforoj inkluzivita:    `strings kernel|grep \"^drivers\"`\n"
+"*  mtdblock2 data eltiro: \n"
+"     `tail -c+65  < mtdblock2.bin >mtdblock2.dataz` \n"
+" *  Kerna Eltiro: \n"
+" *  \n"
 msgstr ""
-"استخراج الأساس:\n"
-"\n"
-"(° 5 ° 5 ° 13 ° 13 ° مكونة من 13 درجات الموصلات المدرجة: (° 7 ° 7 ° 7 ° 11 ° 11 °\n"
+"*   mtdblock2 استخراج التاريخ:  \n"
+"      `tail -c+65  < mtdblock2.bin >mtdblock2.dataz`   *    *   استخراج الأساس:  \n"
+"  *     \n"
 
 #. type: Plain text
-#: originala_firmvaro.md:189
+#: originala_firmvaro.md:190
 #, fuzzy, no-wrap
 msgid ""
-"Listo de dosieroj:\n"
-"    `strings kernel|grep \"\\.[cChTsS]$\"`\n"
+" *  Listo de Drivers Inkluditaj: \n"
+"     `strings kernel|grep \"^drivers\"` \n"
+" <H21 > Listo de fontaj dosieroj: \n"
+"     `strings kernel|grep \"\\.[cChTsS]$\"` \n"
+" *  Simbolo-Listo \n"
+" https://github.com/marin-m/vmlinux-to-elf devus helpi trovi simbolojn sed ne ekzistas <H33 > Komenci ebla de kallsyms _token_ Tablo: 0x3AA1B4 \n"
 msgstr ""
-"قائمة الملفات:\n"
-"    `strings kernel|grep \"\\.[cChTsS]$\"`\n"
+" *   قائمة برامج التشغيل المدرجة:  \n"
+"      `strings kernel|grep \"^drivers\"`  \n"
+"  < h21  >  قائمة الملفات المصدر:  \n"
+"      `strings kernel|grep \"\\.[cChTsS]$\"`  \n"
+"  *    *    \n"
+" https: / https يجب أن تساعد github.com/marin-m/vmlinux-to-elf في العثور على الرموز ولكن لا يوجد  < h33  >  البدء ممكن من kallsyms  _token_  الجدول: 0x3aaa1b4  \n"
 
-#. type: Plain text
-#: originala_firmvaro.md:199
 #, fuzzy, no-wrap
-msgid ""
-"(° 30 ° ° 31 ° Listo de simboloj (° 32 ° 32 ° Https://github.com/marin-m/vmlinux-to-lf devus permesi trovi la simbolojn, sed ĝi ne atingas\n"
-". Tablo_token_: 0x3AA1B4\n"
-msgstr ""
-"(° 1 ° الوصول إليها\n"
-".\n"
+#~ msgid ""
+#~ "(° 1 ° Informo:\n"
+#~ "    `binwalk mtdblock2.bin`\n"
+#~ "    * Rezulto:\n"
+#~ "decimala deksesuma priskribo\n"
+#~ msgstr ""
+#~ "(° 1 ° 1 ° 1 ° معلومات:\n"
+#~ "    `binwalk mtdblock2.bin`\n"
+#~ "    * \n"
+
+#, fuzzy, no-wrap
+#~ msgid "0 0x0 Uimage Header, Header Grandeco: 64 Bajtoj, Header CRC: 0x7b9DE864, kreita: 2019-06-22 02:41:00, Bildo Grandeco: 1466358 BYTES, DATA Adreso: 0x80010000, Eniro Punkto: 0x80388340, Datumoj CRC: 0xb83DCA15, OS: Linukso, CPU: MIPS, Bildo Tipo: OS Kernel Bildo, Kunpremo Tipo: LZMA, Bildo Nomo: \"Linukso-3.10.14__. 1.0__]\"(° 7 ° 7 ° 64 0x40 lzma kunpremitaj datumoj, ecoj: 0x5d, vortaro Grandeco: 16777216 bajtoj, nekompresita grandeco: -1 bajtoj\n"
+#~ msgstr "0 0x0 Uimage Header، رأس رأس: 64 بايت، رأس CRC: 0x7b9de864، تم الإنشاء: 2019-06-22 02:41:00، صورة الحجم: 1466358 بايت، عنوان البيانات: 0x80010000، نقطة المدخل: 0x80388340، بيانات CRC: 0xb83dca15، نظام التشغيل: Linux، وحدة المعالجة المركزية: MIPS، نوع الصورة: صورة نواة OS، نوع الضغط: LZMA، اسم الصورة: \"Linux-3.10.14__.\n"
+
+#, fuzzy, no-wrap
+#~ msgid ""
+#~ "(° 1 ° eltiro de datumoj de MTDBlock2:\n"
+#~ "    `tail -c+65  < mtdblock2.bin >mtdblock2.dataz`\n"
+#~ msgstr ""
+#~ "(° 1 ° 1 ° 1 ° استخراج بيانات mtdblock2:\n"
+#~ "    `tail -c+65  < mtdblock2.bin >mtdblock2.dataz`\n"
+
+#, fuzzy, no-wrap
+#~ msgid ""
+#~ "Kerna eltiro:\n"
+#~ "    `cat mtdblock2.dataz|lzma -d -c -f - >kernel`\n"
+#~ "(° 13 ° ° Listo de ŝoforoj inkluzivita:    `strings kernel|grep \"^drivers\"`\n"
+#~ msgstr ""
+#~ "استخراج الأساس:\n"
+#~ "\n"
+#~ "(° 5 ° 5 ° 13 ° 13 ° مكونة من 13 درجات الموصلات المدرجة: (° 7 ° 7 ° 7 ° 11 ° 11 °\n"
+
+#, fuzzy, no-wrap
+#~ msgid ""
+#~ "Listo de dosieroj:\n"
+#~ "    `strings kernel|grep \"\\.[cChTsS]$\"`\n"
+#~ msgstr ""
+#~ "قائمة الملفات:\n"
+#~ "    `strings kernel|grep \"\\.[cChTsS]$\"`\n"
+
+#, fuzzy, no-wrap
+#~ msgid ""
+#~ "(° 30 ° ° 31 ° Listo de simboloj (° 32 ° 32 ° Https://github.com/marin-m/vmlinux-to-lf devus permesi trovi la simbolojn, sed ĝi ne atingas\n"
+#~ ". Tablo_token_: 0x3AA1B4\n"
+#~ msgstr ""
+#~ "(° 1 ° الوصول إليها\n"
+#~ ".\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "*  Informo \n"
+#~ "     `binwalk mtdblock2.bin` \n"
+#~ "     *  Rezulto \n"
+#~ " Dekuma deksesuma Priskribo \n"
+#~ msgstr ""
+#~ "*   معلومات  \n"
+#~ "      `binwalk mtdblock2.bin`  \n"
+#~ "      *   نتيجة  \n"
+#~ " decimal hexadecimal الوصف  \n"
+
+#, fuzzy
+#~ msgid ""
+#~ "0 0x0 Uimage Header, Header Grandeco: 64 bajtoj, Header CRC: 0x7b9de864, "
+#~ "Kreita: 2019-06-22 02:41:00, bildo Grandeco: 1466358 Bytes, Datumoj "
+#~ "adreso: 0x80010000, Entry Punkto: 0x80388340, Datumoj CRC: 0xb83dca15, "
+#~ "OS: Linukso, CPU: MIPS, Bildo Tipo: VIN Kernel Bildo, Kunpremo Tipo: "
+#~ "LZMA, Bildo Nomo:  \" Linukso-3.10.14 __ ISVP _turkey_ 1.0 __] \" \n"
+#~ " 64 0x40 LZMA Compressed Datumoj: Propraĵoj: 0x5d, Vortaro Grandeco: "
+#~ "16777216 bytes, Kunpremitaj Grandeco: -1 bajtoj \n"
+#~ msgstr ""
+#~ "0 0x0 Uimage Header، رأس رأس: 64 بايت، رأس CRC: 0x7b9de864، تم الانتهاء: "
+#~ "2019-06-22 02:41:00، حجم الصورة: 1466358 بايت، عنوان البيانات: "
+#~ "0x80010000، نقطة الدخول: 0x80388340، بيانات CRC: 0xb83dca15، نظام "
+#~ "التشغيل: Linux، وحدة المعالجة المركزية: MIPS، نوع الصورة: VIN Kernel "
+#~ "Image، ضغط نوع: LZMA، اسم الصورة:   \" Linux-3.10.14  __  ISVP  _turkey_  "
+#~ "1.0  __]  \"  \n"
+#~ " 64 0x40 بيانات مضغوطة LZMA: خصائص: 0x5d، قاموس الحجم: 16777216 بايت، "
+#~ "مضغوط الحجم: -1 بايت  \n"
+
+#, fuzzy
+#~ msgid ""
+#~ "*  Datumoj: \n"
+#~ "     `tail -c+65  < mtdblock2.bin >mtdblock2.dataz` \n"
+#~ " *  eltiro: \n"
+#~ "     `cat mtdblock2.dataz|lzma -d -c -f - >kernel` \n"
+#~ " *  listo de \n"
+#~ "     `strings kernel|grep \"^drivers\"` \n"
+#~ " <h21 listo de \n"
+#~ "     `strings kernel|grep \"\\.[cChTsS]$\"` \n"
+#~ " *  liston de \n"
+#~ " sed li ne povas h33> povas komenci kallsyms _token_ tablo: 0x3AA1B4 \n"
+#~ msgstr ""
+#~ "*   البيانات:  \n"
+#~ "      `tail -c+65  < mtdblock2.bin >mtdblock2.dataz`   *    *   "
+#~ "استخراج:  \n"
+#~ "      `cat mtdblock2.dataz|lzma -d -c -f - >kernel`  \n"
+#~ "  *   قائمة  \n"
+#~ "      `strings kernel|grep \"^drivers\"`       `strings kernel|grep "
+#~ "\"^drivers\"`   < h21 قائمة  < h21 >      `strings kernel|grep \"\\."
+#~ "[cChTsS]$\"`  \n"
+#~ "  *   قائمة  \n"
+#~ " لكنه لا يستطيع H33 >  يمكن أن يبدأ kallsyms  _token_  الجدول: "
+#~ "0x3AAA1B4  \n"
 
 #, no-wrap
 #~ msgid "001-originala_firmvaro"

@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-10-29 23:10+0200\n"
+"POT-Creation-Date: 2021-11-09 15:12+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -48,52 +48,47 @@ msgstr "Kruca kompilo"
 
 #. type: Plain text
 #: kruc-kompili.md:12
-#, fuzzy, no-wrap
+#, fuzzy
 msgid ""
-"Les outils de compilation croisés se trouvent dans programada_medio/toolchain.\n"
-"Ils ont été compilés pour debian buster x64.\n"
+"Les outils de compilation croisée se trouvent dans _programada\\_medio/"
+"toolchain_.\n"
+"Ils ont été compilés pour _debian buster x64_.\n"
 msgstr ""
-"La transiritaj kompilaĵoj iloj estas en programado_medio/toolchain.\n"
-"Ils ont été compilés pour debian buster x64.\n"
-"\n"
+"Trans-kompilaĵaj iloj estas en  _programada\\_medio/toolchain_. \n"
+" ili estis kompilitaj por  _debian buster x64_. \n"
 
 #. type: Plain text
 #: kruc-kompili.md:14
 #, fuzzy, no-wrap
-msgid "les librairies partagées sont dans programada_medio/lib\n"
-msgstr ""
-"Komparaj bibliotekoj estas en prograda_medio/lib\n"
-"\n"
+msgid "les librairies partagées sont dans _programada\\_medio/lib_\n"
+msgstr "Dividitaj bibliotekoj estas en  _programada\\_medio/lib_ \n"
 
 #. type: Plain text
 #: kruc-kompili.md:16
 #, fuzzy, no-wrap
-msgid "les include sont dans programada_medio/include.\n"
-msgstr ""
-"Inkluzivas estas en programado_medio/include.\n"
-"\n"
+msgid "les _include_ sont dans _programada\\_medio/include_.\n"
+msgstr "La  _include_  estas en  _programada\\_medio/include_. \n"
 
 #. type: Plain text
 #: kruc-kompili.md:21
 #, fuzzy, no-wrap
 msgid ""
 "Si vous avez besoin de recompiler une librairie, inspirez-vous des scripts suivants :\n"
-"* programada_medio/fontoj/01-buildssl.sh , pour la librairie openssl.\n"
-"* programada_medio/fontoj/02-buildlive.sh , pour la librairie live555.\n"
-"* programada_medio/fontoj/03-pcre.sh , pour la librairie pcre.\n"
+"* _programada\\_medio/fontoj/01-buildssl.sh_ , pour la librairie _openssl_.\n"
+"* _programada\\_medio/fontoj/02-buildlive.sh_ , pour la librairie _live555_.\n"
+"* _programada\\_medio/fontoj/03-pcre.sh_ , pour la librairie _pcre_.\n"
 msgstr ""
-"Se vi bezonas rekompili bibliotekon, inspiri la sekvajn skriptojn:\n"
-"* Programada_medio/fontoj/01-buildssl.sh , pour la librairie openssl.\n"
-"* programada_Medio / fontoj / 02-buildive.sh, por Live555-biblioteko.\n"
-"* Programada_medio/fontoj/03-pcre.sh , pour la librairie pcre.\n"
-"\n"
+"Se vi bezonas rekompili librovendejon, inspiri la jenajn skriptojn: \n"
+" *  _programada\\_medio/fontoj/01-buildssl.sh_ , por la biblioteko  _openssl_. \n"
+" *  _programada\\_medio/fontoj/02-buildlive.sh_ , por la biblioteko  _live555_. \n"
+" *  _programada\\_medio/fontoj/03-pcre.sh_ , por la biblioteko  _pcre_. \n"
 
 #. type: Plain text
 #: kruc-kompili.md:25
 #, fuzzy, no-wrap
 msgid ""
 "Si jamais vous avez besoin de recompiler la _«toolchain»_, vous pouvez consulter le site suivant :\n"
-" * https://github.com/anmaped/openfang\n"
+" * <https://github.com/anmaped/openfang>\n"
 msgstr ""
-"Se vi iam bezonos kompili la _«toolchain»_, vi povas konsulti la sekvan retejon:\n"
-" * https://github.com/anmaped/openfang\n"
+"Se vi iam bezonos rekompili la  _«toolchain»_, vi povas vidi la sekvan retejon: \n"
+"  *  <https://github.com/anmaped/openfang> \n"

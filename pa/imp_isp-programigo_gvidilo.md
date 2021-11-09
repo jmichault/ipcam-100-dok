@@ -6,7 +6,7 @@ layout: page
 title: 'ਵੀਡੀਓ ਪ੍ਰੋਗਰਾਮਿੰਗ ਗਾਈਡ'
 ---
 
-# ਆਈਐਮਪੀ_ISP (voir imp_isp.h)
+# _IMP\_ISP_   \( ਵੇਖੋ   _imp\_isp.h\_)
 ਚਿੱਤਰ ਪ੍ਰੋਸੈਸਿੰਗ. ਮੁੱਖ ਤੌਰ ਤੇ ਚਿੱਤਰ ਪ੍ਰਭਾਵਾਂ ਦੀ ਸੈਟਿੰਗ, ਮੋਡ ਸਵਿੱਚ ਅਤੇ ਰਿਕਾਰਡਿੰਗ, ਸੰਵੇਦਕ ਨੂੰ ਜੋੜ ਅਤੇ ਹਟਾਉਣ ਸ਼ਾਮਲ ਹਨ.
 
 ਆਈਐਸਪੀ ਮੈਡਿ .ਲ ਦਾ ਡੇਟਾ ਪ੍ਰਵਾਹ ਨਾਲ ਕੋਈ ਲੈਣਾ ਦੇਣਾ ਨਹੀਂ ਹੈ ਅਤੇ ਨਾ ਜੁੜਣ ਦੀ ਜ਼ਰੂਰਤ ਹੈ, ਇਹ ਸਿਰਫ ਪ੍ਰਭਾਵ ਕੌਂਫਿਗਰੇਸ਼ਨ ਅਤੇ ਸੈਂਸਰ ਨਿਯੰਤਰਣ ਦੇ ਰੂਪ ਵਿੱਚ ਕੰਮ ਕਰਦਾ ਹੈ.
@@ -51,7 +51,7 @@ int ret = 0;
     return -1;
   }
 ```
-* ਕਦਮ 3: ਸੈਂਸਰ ਨੂੰ ਸਰਗਰਮ ਕਰੋ, ਇਹ ਚਿੱਤਰ ਤਿਆਰ ਕਰਨਾ ਸ਼ੁਰੂ ਕਰੇਗਾ.
+* ਕਦਮ 3: ਸੈਂਸਰ ਨੂੰ ਸਰਗਰਮ ਕਰੋ, ਇਹ ਚਿੱਤਰ ਤਿਆਰ ਕਰਨਾ ਸ਼ੁਰੂ ਕਰ ਦੇਵੇਗਾ. 
 
 
 
@@ -73,12 +73,12 @@ int ret = 0;
   return -1;
  }
 ```
-* ਕਦਮ 5: ਆਈਐਸਪੀ ਡੀਬੱਗਿੰਗ ਇੰਟਰਫੇਸ ਨੂੰ ਬੁਲਾਓ: ਕਿਰਪਾ ਕਰਕੇ ਆਈਐਸਪੀ ਡੀਬੱਗਿੰਗ ਇੰਟਰਫੇਸ ਦਸਤਾਵੇਜ਼ ਵੇਖੋ.
+* ਕਦਮ 5: ਇੱਕ ਆਈਐਸਪੀ ਡੀਬੱਗਿੰਗ ਇੰਟਰਫੇਸ ਤੇ ਕਾਲ ਕਰੋ: ਕਿਰਪਾ ਕਰਕੇ ISP ਡੀਬੱਗਿੰਗ ਇੰਟਰਫੇਸ ਦੇ ਦਸਤਾਵੇਜ਼ ਵੇਖੋ. 
 
 
 
 
-## ਇੱਕ ISP ਮੋਡੀ .ਲ ਨੂੰ ਅਸਮਰੱਥ ਬਣਾ ਰਿਹਾ ਹੈ
+## ISP ਮੋਡੀ module ਲ ਡੈਡੀਐਕਟਿਵੇਸ਼ਨ
 
 ਆਈਐਸਪੀ ਮੈਡਿ uninਲ ਨੂੰ ਅਣਇੰਸਟੌਲ ਕਰਨ ਲਈ ਕਦਮ ਇਸ ਪ੍ਰਕਾਰ ਹਨ:
 * ਕਦਮ 1: ਆਈਐਸਪੀ ਕੌਂਫਿਗਰੇਸ਼ਨਨੂੰ ਅਯੋਗ ਕਰੋ
@@ -94,7 +94,7 @@ int ret = 0;
   return -1;
  }
 ```
-* ਕਦਮ 2: ਸੈਂਸਰ ਬੰਦ ਕਰੋ. (ਇਸ ਓਪਰੇਸ਼ਨ)ਤੋਂ ਪਹਿਲਾਂ ਫਰੇਮ ਸਰੋਤ ਨੂੰ ਬੰਦ ਕਰਨਾ ਲਾਜ਼ਮੀ ਹੈ
+* ਕਦਮ 2: ਸੈਂਸਰ ਨੂੰ ਬੰਦ ਕਰੋ.   \( ਫਰੇਮ ਇਸ ਓਪਰੇਸ਼ਨ ਤੋਂ ਪਹਿਲਾਂ ਬੰਦ ਕੀਤੇ ਜਾਣੇ ਚਾਹੀਦੇ ਹਨ  \)  
 
 
 
@@ -117,7 +117,7 @@ ret = IMP_ISP_DelSensor (& sensor);
   return -1;
  }
 ```
-* ਕਦਮ 4: ਆਈਐਸਪੀ ਮੈਡਿ Cleanਲ ਨੂੰ ਸਾਫ਼ ਕਰੋ, ਇਸ ਕਾਰਵਾਈ ਤੋਂ ਪਹਿਲਾਂ ਸਾਰੇ ਸੈਂਸਰਾਂ ਨੂੰ ਹਟਾ ਦਿੱਤਾ ਜਾਣਾ ਚਾਹੀਦਾ ਹੈ.
+* ਕਦਮ 4: ਇਸ ਓਪਰੇਸ਼ਨ ਤੋਂ ਪਹਿਲਾਂ ਸਾਰੇ ਸੈਂਸਰਾਂ ਨੂੰ ਹਟਾ ਦੇਣਾ ਲਾਜ਼ਮੀ ਹੈ. 
 
 
 
@@ -133,73 +133,78 @@ ret = IMP_ISP_Close ();
 
 ## ਫੰਕਸ਼ਨ ਦੀ ਸੂਚੀ
 
-ਇੰਟ ਆਈ ਐਮ ਪੀ_ISP_ਖਾਲੀ(ਖਾਲੀ);
-ਇੰਟ IMP_ISP_ਬੰਦ ((ਖਾਲੀ);
-ਇੰਟ ਆਈਐਮਪੀ (° 11 Add) ਐਡਸੈਂਸਰ(ਆਈ ਐਮ ਪੀਐਸਸੈਂਸਰਇੰਫੋ *ਪਿੰਨਫੋ);
-ਇੰਟ ਆਈਐਮਪੀ_ISP_ਡੈਲਸੈਂਸਰ(ਆਈ ਐਮ ਪੀਐਸਸੈਂਸਰਇੰਫੋ *ਪਿੰਨਫੋ);
-ਇੰਟੈਂਡਰ ਆਈਐਮਪੀ (° 23 S) ਯੋਗ ਸੈਂਸਰ(ਖਾਲੀ);
-ਇੰਟ IMP_ISP_ਡਿਸਏਬਲਸੈਂਸਰ(ਖਾਲੀ);
-ਇੰਟ ਆਈਐਮਪੀ_ISP_ਸੈੱਟਸੈਂਸਰ ਰਜਿਸਟਰ(ਯੂਇੰਟ 32_t reg, uint32_ਟੀ ਵੈਲਯੂ);
-ਇੰਟ ਆਈਐਮਪੀ_ISP_ਗੇਟਸੈਂਸਰ ਰਜਿਸਟਰ(ਯੂਇੰਟ 32_t reg, uint32_ਟੀ *ਵੈਲਯੂ);
-ਇੰਟੈਂਡਰ ਆਈਐਮਪੀ_ISP_ਯੋਗ ਯੋਗਦਾਨ (un 50 °) ਖਾਲੀ);
-ਇੰਟ IMP_ISP_ਡਿਸੇਬਲ ਟਿunਨਿੰਗ(ਖਾਲੀ);
-ਇੰਟ ਆਈਐਮਪੀ (° 58 Config) ਕੌਨਫਿਗਰੇਸ਼ਨ_SetSensorFPS(uint32_ਟੀ ਐਫਪੀਐਸ_num, uint32_ਟੀ ਐਫਪੀਐਸ_den);
-int IMP_ਆਈਐਸਪੀ_Tuning_ਗੇਟਸੈਂਸਰਐਫਪੀਐਸ(uint32_t *fps_ਨੰਬਰ, uint32_t *fps_ਡੇਨ);
-ਇੰਟ ਆਈਐਮਪੀ (° 80 Config) ਕੌਨਫਿਗਰੇਸ਼ਨ_SetAntiFlickerAttr(IMPISPAntiflickerAttr attr);
-int IMP_ਆਈਐਸਪੀ_Tuning_ਗੇਟਅੰਟੀਫਲਿਕਅਟਰ(ਆਈਐਮਪੀਆਈਐਸਪੀਐਨਟੀਫਲਿਕਟਰਐਟਰ *ਪੈਟਰ);
-ਇੰਟ ਆਈਐਮਪੀ_ISP_ਕੌਨਫਿਗਰੇਸ਼ਨ_SetRawDRC(IMPISPDrcAttr *pinfo);
-int IMP_ਆਈਐਸਪੀ_Tuning_ਗੇਟਆਰਓਡੀਆਰਸੀ(ਆਈਐਮਪੀਆਈਐਸਪੀਆਰਸੀਐਟਰ *ਪਿੰਨਫੋ);
-ਇੰਟ ਆਈਐਮਪੀ (° 107 Config) ਕੌਨਫਿਗਰੇਸ਼ਨ (° 109 IS) ਆਈਐਸਪੀ_Tuning_ਗੇਟਸਿੰਟਰਡਰਨਸੈਟਰ(ਆਈਐਮਪੀਆਈਐਸਪੀਨਸਟਰਡੇਨੋਆਇਸਟਰ *ਪਿੰਨਫੋ);
-ਇੰਟ ਆਈ ਐਮ ਪੀ_ISP_ਕੌਨਫਿਗਰੇਸ਼ਨ_SetTemperDnsCtl(IMPISPTemperDenoiseAttr *pinfo);
-int IMP_ਆਈ ਐੱਸ ਪੀ_Tuning_ਸੈੱਟਟੈਂਪਰਡਨਸੈਟਰ(ਆਈ ਐਮ ਪੀ ਆਈ ਐਸ ਪੀ ਟੈਂਪਰਡੈਨੋਇਸ ਏਟਰ *ਪਿੰਨਫੋ);
-ਇੰਟ ਆਈਐਮਪੀ (5 135 Config) ਕੌਨਫਿਗਰੇਸ਼ਨ (° 137 IS) ਆਈਐਸਪੀ_Tuning_ਸੈਟ ਡਬਲਯੂ ਡੀ ਡਰਾਟਰ(ਆਈ ਐਮ ਪੀ ਆਈ ਐਸ ਪੀ ਟਿingਨਿੰਗ ਓਪਸਮੋਡ ਮੋਡ);
-ਇੰਟ IMP_ISP_ਸੈਟਿੰਗ_GetWDRAttr(IMPISPTuningOpsMode *pmode);
-int IMP_ਆਈਐਸਪੀ_Tuning_ਸੈੱਟਸਨਮੋਡ(ਆਈਐਮਪੀਆਈਐਸਪੀਸਨਮੋਡ ਮੋਡ);
-ਇੰਟ ਆਈਐਮਪੀ_ISP_ਸੈਟਿੰਗ_GetSceneMode(IMPISPSceneMode *pmode);
-int IMP_ਆਈਐਸਪੀ_Tuning_ਸੇਟਕਾਲਫੋਰਕਸਮੋਡ(ਆਈਐਮਪੀਆਈਐਸਪੀਐਲਆਰਪੀਐਕਸਮੋਡ ਮੋਡ);
-ਇੰਟ ਆਈਐਮਪੀ_ISP_ਸੈਟਿੰਗ_GetColorfxMode(IMPISPColorfxMode *pmode);
-int IMP_ਆਈਐਸਪੀ_Tuning_ਬ੍ਰਾਇਟਨੇਸ(ਨਿਰਧਾਰਤ ਨਿਸ਼ਾਨ ਚਮਕਦਾਰ);
-ਇੰਟ ਆਈਐਮਪੀ (° 187 Config) ਕੌਨਫਿਗਰੇਸ਼ਨ_GetBrightness(unsigned char *pbright);
-int IMP_ਆਈਐਸਪੀ_Tuning_ਸੇਟ ਕੰਟ੍ਰਾਸਟ(ਨਾਮ ਰਹਿਤ ਚਰਿੱਤਰ ਦੇ ਉਲਟ ();
-ਇੰਟ ਆਈਐਮਪੀ (° 200 Config) ਕੌਨਫਿਗਰੇਸ਼ਨ_GetContrast(unsigned char *pcontrast);
-int IMP_ਆਈਐਸਪੀ_Tuning_ਸੇਟ ਸ਼ਾਰਪਨੇਸ(ਨਾਮ ਰਹਿਤ ਤਿੱਖਾਪਨ ਸ਼ਾਰਪਨ);
-ਇੰਟ ਆਈ ਐਮ ਪੀ_ISP_ਕੌਨਫਿਗਰੇਸ਼ਨ_GetSharpness(unsigned char *psharpness);
-int IMP_ਆਈ ਐੱਸ ਪੀ_Tuning_ਸੈਟਸੈਟੇਸ਼ਨ(ਅਣਜਾਣ ਨਿਸ਼ਾਨ (ਤੋਂ 22 °);
-ਇੰਟ ਆਈ ਐਮ ਪੀ_ISP_ਕੌਨਫਿਗਰੇਸ਼ਨ_GetSaturation(unsigned char *psat);
-int IMP_ਆਈ ਐੱਸ ਪੀ_Tuning_ਸੇਟ ਆਈ ਐਸ ਪੀ ਪ੍ਰੌਸੈੱਸ(ਆਈ ਐਮ ਪੀ ਆਈ ਐਸ ਪੀ ਟਿingਨਿੰਗ ਓਪਸਮੋਡ ਮੋਡ);
-ਇੰਟ ਆਈਐਮਪੀ_ISP_ਕੌਂਫਿਗਰੇਸ਼ਨ_SetFWFreeze(IMPISPTuningOpsMode mode);
-int IMP_ਆਈਐਸਪੀ_Tuning_ਸੇਵ ਆੱਲਪਾਰਮ(ਚਾਰ *ਮਾਰਗ);
-ਇੰਟ ਆਈਐਮਪੀ_ISP_ਸੈਟਅਪ_SetISPBypass(IMPISPTuningOpsMode enable);
-int IMP_ਆਈਐਸਪੀ (° 260 T) ਗੇਟਟੋਟਲਗੈਨ(uint32_t *gain);
-int IMP_ਆਈਐਸਪੀ(ਆਈਐਸਪੀਐਫਐਲਪ(ਆਈਐਸਪੀਐਸਪੀਟਿਓਨਿੰਗ ਮੋਡ);
-ਇੰਟ ਆਈਐਮਪੀ (3 273 Config) ਕੌਂਫਿਗਰੇਸ਼ਨ_GetISPHflip(IMPISPTuningOpsMode *pmode);
-int IMP_ਆਈਐਸਪੀ_Tuning_ਸੈੱਟ ਆਈਐਸਪੀਵੀਫਲਿਪ(ਆਈ ਐਮ ਪੀ ਆਈ ਐਸ ਪੀ ਟਿTਨਿੰਗ ਓਪਸਮੋਡ ਮੋਡ);
-ਇੰਟ ਆਈਐਮਪੀ_ISP_ਕੌਂਫਿਗਰੇਸ਼ਨ_GetISPVflip(IMPISPTuningOpsMode *pmode);
-int IMP_ਆਈਐਸਪੀ_Tuning_ਸੈੱਟ ਆਈਐਸਪੀਰਨਿੰਗਮੋਡ(ਆਈਐਮਪੀਆਈਐਸਪੀਰਨਿੰਗਮੋਡ ਮੋਡ);
-ਇੰਟ ਆਈਐਮਪੀ_ISP_ਕੌਨਫਿਗਰੇਸ਼ਨ_GetISPRunningMode(IMPISPRunningMode *pmode);
-int IMP_ਆਈਐਸਪੀ_Tuning_ਸੇਟਏਸਟ੍ਰੈਟਜੀ(ਆਈਐਮਪੀਆਈਐਸਪੀਐਸਟਰੈਟਜੀ ਰਣਨੀਤੀ);
-ਇੰਟ ਆਈ ਐਮ ਪੀ_ISP_ਕੌਨਫਿਗਰੇਸ਼ਨ_GetAeStrategy(IMPISPAeStrategy *pstrategy);
-int IMP_ਆਈ ਐੱਸ ਪੀ_Tuning_ਸੇਟਗਾਮਾ(ਆਈ ਐਮ ਪੀ ਆਈ ਐਸ ਪੀ ਗਾਮਾ *ਸੀਮਾ);
-ਇੰਟ ਆਈਐਮਪੀ_ISP_ਕੌਨਫਿਗਰੇਸ਼ਨ_GetGamma(IMPISPGamma *gamma);
-int IMP_ਆਈਐਸਪੀ_Tuning_ਸੇਟਏਕੌਮਪ(ਇੰਟ ਕੰਪਿ ;ਟਰ);
-ਇੰਟ ਆਈਐਮਪੀ_ISP_ਕੌਨਫਿਗਰੇਸ਼ਨ_GetAeComp(int *comp);
-int IMP_ਆਈਐਸਪੀ_Tuning_ਸੇਟਐਕਸਪ੍ਰਾਂਪ(ਆਈਐਮਪੀਆਈਐਸਪੀਐਕਸਪੀਆਰਪੀ *ਐਕਸਪੀਆਰ);
-ਇੰਟ ਆਈਐਮਪੀ_ISP_ਕੌਂਫਿਗਰੇਸ਼ਨ_GetExpr(IMPISPExpr *expr);
-int IMP_ਆਈਐਸਪੀ_Tuning_ਏਈ_GetROI(IMPISPAERoi *isp_ਏਈ_roi);
-int IMP_ਆਈਐਸਪੀ_Tuning_ਏਈ_SetROI(IMPISPAERoi *isp_ਏ ( ° 377 IS) ਆਈਐਸਪੀ_Tuning_ਸੈਟ ਡਬਲਯੂ ਬੀ(ਆਈ ਐਮ ਪੀ ਆਈ ਐਸ ਪੀ ਡਬਲਯੂ ਬੀ *ਡਬਲਯੂ ਬੀ);
-ਇੰਟ ਆਈ ਐਮ ਪੀ_ISP_ਕੌਂਫਿਗਰੇਸ਼ਨ_GetWB(IMPISPWB *wb);
-int IMP_ਆਈ ਐੱਸ ਪੀ_Tuning_ਗੇਟ ਡਬਲਯੂ ਬੀ_Statis(IMPISPWB *wb);
-int IMP_ਆਈ ਐੱਸ ਪੀ_Tuning_ਆੱਬ_GetCwfShift(IMPISPWB *isp_ਡਬਲਯੂ ਬੀ_attr);
-int IMP_ਆਈ ਐਸ ਪੀ_Tuning_bਬ_SetCwfShift(IMPISPWB *isp_ਡਬਲਯੂਬੀ_attr);
-int IMP_ਆਈ ਐੱਸ ਪੀ_Tuning_ਸੇਟ ਮੈਕਸਗੈਨ(ਯੂਇੰਟ 32_t gain);
-int IMP_ਆਈ ਐਸ ਪੀ_Tuning_ਗੇਟਮੈਕਸਗੈਗਨ(uint32_t *gain);
-int IMP_) °) ਆਈਐਸਪੀ_Tuning_ਸੈੱਟਮੈਕਸਡਗੈਨ(uint32_t gain);
-int IMP_ਆਈਐਸਪੀ_Tuning_ਗੇਟਮੈਕਸਡਗੈਨ(uint32_t *gain);
-int IMP_ਆਈਐਸਪੀ_Tuning_ਸੈਟਵਿਡਿਓ ਡ੍ਰੌਪ() ਖਾਲੀ (*ਸੀਬੀ)(ਖਾਲੀ));
-ਇੰਟ ਆਈ ਐਮ ਪੀ_ISP_ਕੌਨਫਿਗਰੇਸ਼ਨ_SetHiLightDepress(uint32_ਟੀ ਫੋਰਸ);
-ਇੰਟ ਆਈ ਐਮ ਪੀ_ISP_ਕੌਨਫਿਗਰੇਸ਼ਨ_SetTemperStrength(uint32_ਟੀ-ਰੇਸ਼ੋ);
-ਇੰਟ ਆਈ ਐਮ ਪੀ_ISP_ਕੌਨਫਿਗਰੇਸ਼ਨ_SetSinterStrength(uint32_ਟੀ-ਰੇਸ਼ੋ);
-ਇੰਟ ਆਈ ਐਮ ਪੀ_ISP_ਕੌਨਫਿਗਰੇਸ਼ਨ_SetDPStrength(uint32_ਟੀ-ਰੇਸ਼ੋ);
-ਇੰਟ ਆਈਐਮਪੀ (° 488 Config) ਕੌਨਫਿਗਰੇਸ਼ਨ (° 490 IS) ਆਈਐਸਪੀ (° 495 Get) ਗੈਰੀ ਈਵੀਏਟਰ(ਆਈ ਐਮ ਪੀ ਆਈ ਐਸ ਪੀ ਏ ਟੀ ਐਟਰ *ਅਟਾਰ);
-
+```
+int IMP_ISP_Open(void);
+int IMP_ISP_Close(void);
+int IMP_ISP_AddSensor(IMPSensorInfo *pinfo);
+int IMP_ISP_DelSensor(IMPSensorInfo *pinfo);
+int IMP_ISP_EnableSensor(void);
+int IMP_ISP_DisableSensor(void);
+int IMP_ISP_SetSensorRegister(uint32_t reg, uint32_t value);
+int IMP_ISP_GetSensorRegister(uint32_t reg, uint32_t *value);
+int IMP_ISP_EnableTuning(void);
+int IMP_ISP_DisableTuning(void);
+int IMP_ISP_Tuning_SetSensorFPS(uint32_t fps_num, uint32_t fps_den);
+int IMP_ISP_Tuning_GetSensorFPS(uint32_t *fps_num, uint32_t *fps_den);
+int IMP_ISP_Tuning_SetAntiFlickerAttr(IMPISPAntiflickerAttr attr);
+int IMP_ISP_Tuning_GetAntiFlickerAttr(IMPISPAntiflickerAttr *pattr);
+int IMP_ISP_Tuning_SetRawDRC(IMPISPDrcAttr *pinfo);
+int IMP_ISP_Tuning_GetRawDRC(IMPISPDrcAttr *pinfo);
+int IMP_ISP_Tuning_SetSinterDnsAttr(IMPISPSinterDenoiseAttr *pinfo);
+int IMP_ISP_Tuning_GetSinterDnsAttr(IMPISPSinterDenoiseAttr *pinfo);
+int IMP_ISP_Tuning_SetTemperDnsCtl(IMPISPTemperDenoiseAttr *pinfo);
+int IMP_ISP_Tuning_SetTemperDnsAttr(IMPISPTemperDenoiseAttr *pinfo);
+int IMP_ISP_Tuning_GetTemperDnsAttr(IMPISPTemperDenoiseAttr *pinfo);
+int IMP_ISP_Tuning_SetWDRAttr(IMPISPTuningOpsMode mode);
+int IMP_ISP_Tuning_GetWDRAttr(IMPISPTuningOpsMode *pmode);
+int IMP_ISP_Tuning_SetSceneMode(IMPISPSceneMode mode);
+int IMP_ISP_Tuning_GetSceneMode(IMPISPSceneMode *pmode);
+int IMP_ISP_Tuning_SetColorfxMode(IMPISPColorfxMode mode);
+int IMP_ISP_Tuning_GetColorfxMode(IMPISPColorfxMode *pmode);
+int IMP_ISP_Tuning_SetBrightness(unsigned char bright);
+int IMP_ISP_Tuning_GetBrightness(unsigned char *pbright);
+int IMP_ISP_Tuning_SetContrast(unsigned char contrast);
+int IMP_ISP_Tuning_GetContrast(unsigned char *pcontrast);
+int IMP_ISP_Tuning_SetSharpness(unsigned char sharpness);
+int IMP_ISP_Tuning_GetSharpness(unsigned char *psharpness);
+int IMP_ISP_Tuning_SetSaturation(unsigned char sat);
+int IMP_ISP_Tuning_GetSaturation(unsigned char *psat);
+int IMP_ISP_Tuning_SetISPProcess(IMPISPTuningOpsMode mode);
+int IMP_ISP_Tuning_SetFWFreeze(IMPISPTuningOpsMode mode);
+int IMP_ISP_Tuning_SaveAllParam(char *path);
+int IMP_ISP_Tuning_SetISPBypass(IMPISPTuningOpsMode enable);
+int IMP_ISP_Tuning_GetTotalGain(uint32_t *gain);
+int IMP_ISP_Tuning_SetISPHflip(IMPISPTuningOpsMode mode);
+int IMP_ISP_Tuning_GetISPHflip(IMPISPTuningOpsMode *pmode);
+int IMP_ISP_Tuning_SetISPVflip(IMPISPTuningOpsMode mode);
+int IMP_ISP_Tuning_GetISPVflip(IMPISPTuningOpsMode *pmode);
+int IMP_ISP_Tuning_SetISPRunningMode(IMPISPRunningMode mode);
+int IMP_ISP_Tuning_GetISPRunningMode(IMPISPRunningMode *pmode);
+int IMP_ISP_Tuning_SetAeStrategy(IMPISPAeStrategy strategy);
+int IMP_ISP_Tuning_GetAeStrategy(IMPISPAeStrategy *pstrategy);
+int IMP_ISP_Tuning_SetGamma(IMPISPGamma *gamma);
+int IMP_ISP_Tuning_GetGamma(IMPISPGamma *gamma);
+int IMP_ISP_Tuning_SetAeComp(int comp);
+int IMP_ISP_Tuning_GetAeComp(int *comp);
+int IMP_ISP_Tuning_SetExpr(IMPISPExpr *expr);
+int IMP_ISP_Tuning_GetExpr(IMPISPExpr *expr);
+int IMP_ISP_Tuning_AE_GetROI(IMPISPAERoi *isp_ae_roi);
+int IMP_ISP_Tuning_AE_SetROI(IMPISPAERoi *isp_ae_roi);
+int IMP_ISP_Tuning_SetWB(IMPISPWB *wb);
+int IMP_ISP_Tuning_GetWB(IMPISPWB *wb);
+int IMP_ISP_Tuning_GetWB_Statis(IMPISPWB *wb);
+int IMP_ISP_Tuning_Awb_GetCwfShift(IMPISPWB *isp_wb_attr);
+int IMP_ISP_Tuning_Awb_SetCwfShift(IMPISPWB *isp_wb_attr);
+int IMP_ISP_Tuning_SetMaxAgain(uint32_t gain);
+int IMP_ISP_Tuning_GetMaxAgain(uint32_t *gain);
+int IMP_ISP_Tuning_SetMaxDgain(uint32_t gain);
+int IMP_ISP_Tuning_GetMaxDgain(uint32_t *gain);
+int IMP_ISP_Tuning_SetVideoDrop(void (*cb)(void));
+int IMP_ISP_Tuning_SetHiLightDepress(uint32_t strength);
+int IMP_ISP_Tuning_SetTemperStrength(uint32_t ratio);
+int IMP_ISP_Tuning_SetSinterStrength(uint32_t ratio);
+int IMP_ISP_Tuning_SetDPStrength(uint32_t ratio);
+int IMP_ISP_Tuning_SetAntiFogAttr(IMPISPAntiFogAttr attr);
+int IMP_ISP_Tuning_GetEVAttr(IMPISPEVAttr *attr);
+```
 

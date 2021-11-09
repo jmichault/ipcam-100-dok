@@ -6,19 +6,20 @@ layout: page
 title: 'Fonctionnement du micrologiciel originel'
 ---
 
+le micrologiciel est constitué de 6 partitions :
 
+| partition   | type                   | rôle          |
+| ----------- | ---------------------- | ------------- |
+| _mtdblock0_ | _u-boot_               | démarrage     |
+| _mtdblock1_ | texte                  | paramètres    |
+| _mtdblock2_ | _u-boot legacy uImage_ | noyau _linux_ |
+| _mtdblock3_ | _squashfs_             | _/_           |
+| _mtdblock4_ | _squashfs_             | _/ipc_        |
+| _mtdblock5_ | _jffs1_                | _/opt_        |
 
-la firmvaro konsistas el 6 sekcioj :
-mtdblock0 = u-boot ŝargilo
-mtdblock1 = starta agordo
-mtdblock2 = "u-boot legacy uImage", linux-kerno
-mtdblock3 = squashfs = /
-mtdblock4 = squashfs = /ipc
-mtdblock5 = jffs2 = /opt
-
-La startprogramo estas "/linuxrc".
-Ĝi lanĉas precipe /etc/init.d/rcS.
-/etc/init.d/rcS lanĉas /ipc/etc/auto_run.sh
-/ipc/etc/auto_run.sh lanĉas /opt/etc/local.rc antaŭ lanĉado de /ipc/app/jco_server.
-/ipc/app/jco_server estas la ĉefa programo: ĝi faras kaj http-servilon, kaj rtsp-servilon, ktp...
+Le premier programme exécuté est _/linuxrc_.  
+Il lance _/etc/init.d/rcS_.  
+_/etc/init.d/rcS_ lance _/ipc/etc/auto\_run.sh_.  
+_/ipc/etc/auto\_run.sh_ lance _/opt/etc/local.rc_ avant de lancer _/ipc/app/jco\_server_.  
+_/ipc/app/jco\_server_ est le programme principal : il sert à la fois de serveur _rtsp_, de serveur _http_, ...
 

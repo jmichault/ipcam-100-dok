@@ -7,28 +7,20 @@ title: 交叉编译
 ---
 
 
-Transit编译工具在编程_medio/toolchain.
-Ils ont été compilés pour debian buster x64.
-中
+跨编译工具在  _programada\_medio/toolchain_中。  
+它们被编译为  _debian buster x64_。  
+
+划分的库是  _programada\_medio/lib_  
+
+  _include_  在  _programada\_medio/include_中。  
+
+如果您需要重新编译书店，请激励以下脚本： 
+  *   _programada\_medio/fontoj/01-buildssl.sh_ ，用于库  _openssl_。  
+  *   _programada\_medio/fontoj/02-buildlive.sh_ ，用于库  _live555_。  
+  *   _programada\_medio/fontoj/03-pcre.sh_ ，用于库  _pcre_。  
 
 
-比较图书馆在Prograde_medio/lib
-中
-
-
-包括在编程_medio/include.
-中
-
-
-如果您需要恢复库，请激励以下脚本：
-* 编程_medio/fontoj/01-buildssl.sh , pour la librairie openssl.
-* programada_环境/源/ 02-Buildive.sh，用于Live555库。
-* Programada_medio/fontoj/03-pcre.sh , pour la librairie pcre.
-
-
-
-
-如果您需要编译 _«toolchain»_，可以查看以下网站：
- * https://github.com/anmed/openfang
+如果您需要重新编译  _«toolchain»_，您可以看到以下网站： 
+   *   <https://github.com/anmaped/openfang>  
 
 

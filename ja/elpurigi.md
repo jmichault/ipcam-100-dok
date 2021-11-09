@@ -29,8 +29,8 @@ title: 清める
 * カメラの開始 "gdbserver"、例： ：  
 
 
-     `/opt/media/mmcblk0p1/bin/gdbserver localhost:2000 /opt/media/mmcblk0p1/bin/motor`
-* コンピューターでgdbを起動します。例：
+     `/opt/media/mmcblk0p1/bin/gdbserver localhost:2000 /opt/media/mmcblk0p1/bin/motor`  
+  *  コンピュータ上でGDBを起動します。例えば： 
 
     ```
     cd programada_medio/toolchain
@@ -40,7 +40,7 @@ title: 清める
     handle SIG32 nostop
     break xxx
     continue 
-    ```
+    ```  
 
 
 

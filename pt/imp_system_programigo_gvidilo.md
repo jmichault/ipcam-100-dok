@@ -3,65 +3,60 @@ lang: pt
 lang-niv: auto
 lang-ref: 051-IMP-programigo_gvidilo
 layout: page
-title: 'Guia de programação do Imp.'
+title: 'Guia de programação   _IMP_'
 ---
 
 
-A documentação da APIs pode ser vista aqui: (° 1 ° 1  
-* [Versão original em Chinês](../../zh/includes.zh/html/)
+A documentação da APIs pode ser vista aqui:   
+* [  Versão Original em Chinês  ](../../zh/includes.zh/html/)  
 
 
-* [Versão em inglês](../../en/includes.en/html/)
+* [  inglês  ](../../en/includes.en/html/)  
 
 
-* (° 1 ° 1 ° 1 ° 1 ° 1 ° 1 ° 1 ° French Versão traduzida por Google](../../fr/includes.fr/html/)
+* [  Versão francesa traduzida pelo Google  ](../../fr/includes.fr/html/)  
 
 
 
 
-# IMP (Plataforma de meio genético) (ver imp_system.h)
+# _IMP_   \(  _Ingenic Media Platform_  \)   \( ver   _imp\_system.h_  \)
 
 ## Conceitos Básicos
-A programação T20 / T21 é baseada nos seguintes conceitos:
-1. Periférico (= Dispositivo)  
-    O periférico completa uma função. Exemplos:
-     *  Fonte de quadro: finaliza a saída de dados de vídeo.
-     *  Codificador: completa a codificação de vídeo ou a função de codificação de imagem.
-2. Grupo  
-    O grupo é a menor unidade de entrada de dados. Um dispositivo pode ter vários grupos e cada grupo pode receber apenas um canal de entrada de dados. O grupo pode ter vários resultados.  
-    O grupo também é um recipiente para funções específicas "". Veja a explicação na seção do canal para mais detalhes.
-3. Saída  
-    A saída é a menor unidade de saída de dados por grupo. Um grupo pode ter várias saídas e cada saída pode produzir apenas um canal de dados.
-4. Célula  
-    A célula se refere a uma coleção que contém informações sobre o dispositivo, o grupo e a saída. É apresentado na estrutura de dados IMPCell.
-A célula é usada principalmente para Bind (@ref bind). De acordo com a definição de Dispositivo, Grupo e Saída, Saída é o nó para saída de dados e Grupo é o nó para entrada de dados.
-No Bind, o índice de célula do nó de saída de dados está na saída de saída e o índice de célula do nó de entrada de dados está no grupo de entrada (de modo que a célula, entrada de dados de saída é um valor sem sentido).
-5. Canal  
-    O canal geralmente se refere a uma unidade com uma única função. O canal recebe uma função específica ao ser criada (a instanciação).  
-    Por exemplo:  
-     -  Para o codificador, um canal complementa o código H264 ou a função de codificação JPEG. O tipo de função de codificação específica (, parâmetro) é especificado ao criar o canal
+O programa T20 / T21 é baseado nos seguintes conceitos:  
+ 1. Dispositivo   \( =  _Device_  \)    
+ O dispositivo conclui a função. Exemplos:  
+       *    _Framesource_ : complete a saída de clipes de vídeo.  
+       *    _Encoder_ : Complete o código de vídeo ou a função de código de imagem.  
+ 2. Grupo   \( =  _Group_  \)    
+ O grupo é a menor unidade de entrada de dados. Um dispositivo pode ter vários grupos e cada grupo pode receber apenas um canal de entrada de dados. O grupo pode ter vários resultados.   
+      O grupo também é um recipiente para funções específicas   "  ". Veja a explicação na seção Canal para mais detalhes.  
+ 3. Eligo   \( =  _Output_  \)    
+ A saída é a menor unidade de saída de dados por grupo.    
+ O canal é geralmente relacionado a uma única unidade funcional.    
+ Por exemplo:   
+     -  Para o codel, o canal conclui a função   _H264_   ou código   _JPEG_.  
 
 
-     -  Para IVS, um canal completa a função de um algoritmo específico e parâmetros de tipo algorítmico específicos são especificados ao criar o canal
+     -  Para   _IVS_, um canal conclui a função de um algoritmo específico e os parâmetros típicos de algoritmo específicos são especificados durante a criação do canal 
 
 
-     -  Para OSD, há uma região semelhante ao Canal, a região é uma área de sobreposição específica, que pode ser PIC (imagem), COBERTURA (, fechamento)e assim por diante .
+     -  Para  _OSD_, há uma região semelhante a   _Channel_, uma região é uma área supermetada específica que pode ser um top   \( imagem  \) capa   \( oclusão  \), etc.  
 
 
-     -  Para FrameSource, um canal produz uma imagem original e o canal FrameSource é na verdade um grupo
+     -  Para   _FrameSource_, um canal produz uma imagem original e o canal   _FrameSource_   é realmente um grupo  
 
 
-     
-     O canal, como unidade funcional, geralmente deve ser registrado no grupo (além do FrameSource) para receber dados. Após o canal ser registrado no grupo, ele receberá os dados inseridos pelo grupo.
+    
+       O canal, como uma unidade funcional, geralmente ser preservada no grupo   \(, exceto   _FrameSource_  \) recebe dados.  
 
     O número de canais que podem ser gravados pelo grupo de vários dispositivos também é diferente.
 
-## Módulos de ligação (Ligação)
+## Link do módulo   \(  _Bind_  \)
 
-Assim que dois grupos forem conectados pelo Bind, os dados do grupo de origem serão enviados automaticamente ao grupo de destino.  
-Como o grupo é a menor unidade de entrada de dados e a saída é a menor unidade de saída de dados, o deviceID, groupID e outputID de srcCell em ambos os parâmetros de IMP_System_Bind (IMPCell * srcCell, IMPCell * dstCell) válido.  
+Depois que dois grupos estão vinculados por   _Bind_, os dados do grupo de origem enviarão automaticamente para o destino.    
+ Como o grupo é a menor unidade de entrada de dados e a saída é a menor unidade de saída de dados, o   _deviceID_,   _groupID_   e   _outputID_    _srcCell_   nos dois parâmetros de   _IMP\_System\_Bind \(IMPCell * srcCell, IMPCell * dstCell\)_   são válidos.    
 
-Embora dstCell seja válido apenas para deviceID e groupID, outputID não faz sentido como uma entrada de dados.
+Enquanto   _dstCell_   é válido apenas para   _deviceID_   e   _groupID_,   _outputID_   não faz sentido como entrada de dados.  
 
 Exemplo 1: 
 ```
@@ -72,11 +67,10 @@ if(ret <0>)
   printf ("Bind FrameSource Channel0 and Encoder Group0 failed \ n");
 
 ```
+Resultado:    
+ *  Um grupo gera um grupo que gera um link da Framesource ao codificador. 
 
-* é gerado um grupo que gera um link do FrameSource para o Encoder.
-
-
-* Dois canais são gravados no Grupo de Codificadores, portanto, o Grupo de Codificadores tem duas saídas H264 e JPEG.
+* Dois canais são registrados no Grupo Encoder, então o Grupo Encoder tem dois produtos:   _H264_   e   _JPEG_.  
 
 
 
@@ -112,69 +106,57 @@ int ret = IMP_System_Bind(&osd_grp1, &enc_grp1);
 if (ret < 0)
     printf("Bind OSD Group1 and Encoder Group1 failed\n");
 ```
-Este é um programa Bind típico: um fluxo de código de dois canais.
- * FrameSource tem duas saídas, a saber, o stream principal Channel0 (1280x720) e o stream escravo Channel1 (640x360).
-   *   Fluxo principal: Channel0 Bind OSD Group.0 do FrameSource, OSD Group.0 Bind Encoder Group.0. Entre eles: 
-       * OSD Group.0 gravou duas regiões que são usadas para exibir informações de data e hora e string respectivamente
-       * Encoder Group .0 gravou dois canais. , que são codificação H264 e codificação JPEG, respectivamente. Entre eles, se o tamanho da imagem do canal de codificação JPEG não corresponder ao parâmetro de entrada (do FrameSource Channel0), então será dimensionado (software em T10) ) atingir o objetivo de capturar em qualquer resolução.
-       
-Notas:
-* é recomendado que todas as operações de link sejam realizadas durante a inicialização do sistema.
-* As operações Bind e UnBind não podem ser chamadas dinamicamente após _FrameSource_ ser ativado. O UnBind é feito somente após a desativação _FrameSource_.
+Aplicar é um aplicativo típico   _Bind_ : código de dois canais.  
+
+Notas:  
+  *   Recomenda-se que todas as operações de link sejam feitas ao inicializar o sistema.  
 
 ## Funções
 
-### int IMP\_Sistema\_Init (vazio )
-Inicialização do sistema IMP.
-retorna 0 se for bem-sucedido.
-Após esta chamada API, a estrutura básica de dados será inicializada, mas o hardware não será inicializado.
-Atenção: Esta função deve ser chamada para inicialização antes de qualquer outra operação.
-### int IMP_System_Saída (vazio)
+### _int IMP\_System\_Init \(void \)_
+Início do sistema   _IMP_.  
+### Início do sistema _int IMP\_System\_Exit \(void\)_. \_
 
-Após chamar esta função, toda a memória e IMP _handles_ serão liberados e o hardware será desligado. 
-Nota: Depois de chamar este API, se você quiser usar o IMP novamente, é necessário reiniciar o sistema IMP.
+Depois de chamar essa função, toda a memória e   _handles_   _IMP_   será lançada e a unidade de hardware será fechada.  
 
-### int64_t IMP_Sistema_GetTimeStamp (void)
+### Depois de chamar essa função, toda a memória e _int64\_t IMP\_System\_GetTimeStamp \(void\)_ \_ será lançada e a unidade de hardware será fechada.  \(
 
-Obtenha o carimbo de data / hora do sistema IMP em microssegundos.  
-Retorno: tempo em microssegundos.
+Obtenha o campo de temporização do sistema   _IMP_   em microssegundos.    
+ Return: Hora em microeconds. 
 
-### int IMP_System_RebaseTimeStamp (bases int64_t)
-Defina o carimbo de data / hora do sistema IMP em microssegundos.  
-Retorno: 0 se for bem-sucedido.
+### Obtenha o campo de temporização do sistema _int IMP\_System\_RebaseTimeStamp \(bases int64\_t\)_ em microssegundos. \_ Return: Hora em microeconds.  \(
+Defina o sistema Timestamp   _IMP_   em microssegundos.    
+ Return: 0 se for bem sucedido. 
 
-### uint32_t IMP_Sistema_ReadReg32 (uint32_t u32Addr)
+### Defina o sistema Timestamp _uint32\_t IMP\_System\_ReadReg32 \(uint32\_t u32Addr\)_ em microssegundos. \_ Return: 0 se for bem sucedido. \_
 
 Leia o valor de um registro de 32 bits.  
 
-### em branco IMP_System_WriteReg32 (uint32_t regAddr, valeur uint32_t)
-Grave o valor no registro de 32 bits.
+### _void IMP\_System\_WriteReg32 \(uint32_  t regaddr, valor uint32  _t\)_
+Escreva o valor no registro de 32 bits.  
 
 Nota: Por favor, chame esta API com cuidado e verifique o significado do registro, caso contrário, pode causar erros de sistema.
 
-### int IMP_System_GetVersion (IMPVersão * pstVersion) 
+### _int IMP_  System  _GetVersion \(IMPVersion * pstVersion\)_
 
-Obtenha o número da versão do sistema IMP.
+Obtenha o sistema do sistema   _IMP_.  
 
-### const char * IMP_System_GetCPUInfo (vazio)
+### _const char * IMP_  System  _GetCPUInfo \(void\)_
 Obtenha informações sobre o modelo de CPU.  
 Nota: O valor de retorno é uma string do modelo da CPU, por exemplo, para T10 há "T10"e "T10-Lite".
 
-### int IMP_System_Ligação (IMPCell * srcCell, IMPCell * dstCell)
+### _int IMP_  System   \(
 
 Link entre a célula de origem e o destino.
 
 Nota 1: De acordo com os conceitos de Dispositivo, Grupo e Saída, cada dispositivo pode ter vários grupos, e cada grupo pode ter várias saídas, Grupo é usado como interface de entrada do dispositivo e Saída é usado como interface de produto do dispositivo. Portanto, o link realmente conecta uma determinada saída do dispositivo de saída a um determinado Grupo do dispositivo de entrada.
 
-Nota 2: Após um link bem-sucedido, os dados gerados por srcCell (Saída) serão automaticamente transmitidos ao Grupo de Célula de destino ().
+Nota 2: Após um link bem-sucedido, os dados gerados pelo   _srcCell_   (  Eligo  )   serão automaticamente transferidos para o destino   (  Grupo  ).  
 
-### int IMP_System_UnBind (IMPCell * srcCell, IMPCell * dstCell)
+### _int IMP_  System   \(
 Desagrupe as origens e destinos. 
 
-### int IMP_System_GetBindbyDest (IMPCell * dstCell, IMPCell * srcCell)
+### _int IMP_  System   \(
 
 Recupera informações da célula de origem relacionadas ao destino.
-
-
-
 

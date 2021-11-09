@@ -6,7 +6,7 @@ layout: page
 title: 介绍
 ---
 
-该项目的目的是为此相机创建替代固件：（°1°1
+该项目的目的是为此相机创建一个替代固件：
 
 标记= _WIFI CARAM_  
 型号： _WF-HD820-ZS_  
@@ -29,16 +29,16 @@ WebVersion: V2.3.4-20190709
 
 ## 在替代固件中有效的方法：
 
-* _LAN_ 和 _WLAN_
+* _LAN_  和  _WLAN_  
 
 
-* 服务器 (°1°双流： _1920x1080 H264_ 和 _640x360 MJPEG_ 默认情况下。  
+* 服务器  _RTSP_  双流：  _1920x1080 H264_  和  _640x360 MJPEG_  默认情况下。  
 
 
 * 视觉参数
 
 
-* 服务器 _HTTP_
+* 服务器  _HTTP_  
 
 
 * 发动机控制
@@ -47,25 +47,25 @@ WebVersion: V2.3.4-20190709
 * 发动机校准
 
 
-* 参数 _PTZ_（°3°3
+* 设置  _PTZ_  
 
 
-* 客户 _NTP_（°3°3
+* 客户端  _NTP_  
 
 
-* 密码管理 _http_， _rtsp_ 和系统。  
+* 管理密码  _http_，  _rtsp_  和系统。  
 
 
-* 白色LED控制和IR
+* 白色LED控制和IR  
 
 
-* 白色LED控制和IR _ftp_
+* 白色LED控制和IR   _ftp_ 
 
 
-* 白色LED控制和IR _telnet_
+* 白色LED控制和IR   _telnet_ 
 
 
-* 服务器和客户端 _ssh_（°3°3
+* 服务器和客户端  _ssh_  
 
 
 * 移动侦测
@@ -74,10 +74,10 @@ WebVersion: V2.3.4-20190709
 * 发送电子邮件
 
 
-* 发送 _«telegram»_
+* 发送  _«telegram»_  
 
 
-* 自动夜间政权
+* 自动夜间模式 
 
 
 
@@ -98,7 +98,7 @@ WebVersion: V2.3.4-20190709
 * 发送电子邮件_mqtt_
 
 
-* 在云中发送图像和视频（°1°1
+* 云中的装运图像和视频 
 
 
 * 等...
@@ -113,7 +113,7 @@ WebVersion: V2.3.4-20190709
 * 也许设置网络 ( _www/ipcam/config.dist/reto.conf_ ))
 
 
-* 在相机中输入卡 _microSD_ 。  
+* 在相机中插入卡  _microSD_  。  
 
 
 * 将相机连接到本地网络，然后打开相机电源。
@@ -131,7 +131,7 @@ WebVersion: V2.3.4-20190709
 * Faru `cd /opt/media/mmcblk0p1;./install.sh`
 
 
-* 相机简历，现在：（°1°1
+* 现在重新启动相机： 
 
 
     * 您可以连接到URL _https://IP_ (用户 _admin_，密码 _ismart21_)。
@@ -140,16 +140,16 @@ WebVersion: V2.3.4-20190709
     * 您可以在SSH (用户 _admin_，密码 _ismart12_)中连接。
 
 
-    * 初级视频电流可在 _rtsp://admin:ismart21@IP/stream1_上访问。 （°3°3
+    * 主视频电流可在 _rtsp://admin:ismart21@IP/stream1_上访问。 
 
 
-    * 辅助视频电流可在 _rtsp://admin:ismart21@IP/stream2_处访问。 （°3°3
+    * 辅助视频流可在 _rtsp://admin:ismart21@IP/stream2_上访问。 
 
 
-（°1°1°1°1 WiFi AP模式默认激活：
-    ** SSID：IPCAM100-XXXXXX
-    ** WPA2键：ISMart21
-相机的IP地址：172.25.0.1
+    *   WiFi AP模式默认情况下启用： 
+      **   SSID：IPCAM100-XXXXX  
+      **   WPA2键：ISMart21  
+      **  相机的IP地址：172.25.0.1  
 
 ## 卸载备用固件：
 
@@ -169,8 +169,9 @@ WebVersion: V2.3.4-20190709
 
 # 有趣的文件
 
-适用于配备处理器 _ingenic T20_ 的摄像机
-* 修改固件： <https://github.com/ilílístotlyar/xiaomi-大丰 - 哈哈>>
-修改固件的来源： <https://github.com/dafang-hacks/main>
-17°) https://github.com/thatusenameanamexist/jco-pm203-fisheye-ininic-t20-p2p-camera-hacks>
+对于配备处理器  _ingenic T20_   
+  *  修改的固件：  <https://github.com/EliasKotlyar/Xiaomi-Dafang-Hacks>  
+  *  修改固件的摄影器：  <https://github.com/Dafang-Hacks/Main>  
+  *  其他固件：   <https://github.com/openmiko/openmiko>  
+  *  在不改变固件的情况下启动程序：  <https://github.com/ThatUsernameAlreadyExist/JCO-PM203-Fisheye-Ingenic-T20-P2P-camera-hacks>  
 

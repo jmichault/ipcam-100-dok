@@ -3,18 +3,18 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-10-29 23:09+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2021-11-08 18:07+0100\n"
+"PO-Revision-Date: 2021-11-08 21:33+0100\n"
 "Language: eo\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"X-Generator: Poedit 2.4.2\n"
 
 #. type: YAML Front Matter: lang
 #: imp_isp-programigo_gvidilo.md:1
@@ -42,37 +42,36 @@ msgstr "page"
 
 #. type: YAML Front Matter: title
 #: imp_isp-programigo_gvidilo.md:1
-#, fuzzy
+#, no-wrap
 msgid "Guide de programmation vidéo"
-msgstr "Gvidilo pri video-programado"
+msgstr "Video Programado Guide"
 
 #. type: Title #
 #: imp_isp-programigo_gvidilo.md:9
-#, fuzzy, no-wrap
-msgid "IMP_ISP (voir imp_isp.h)"
-msgstr "IMP_ISP (voir imp_isp.h)"
+msgid "_IMP\\_ISP_ \\(voir _imp\\_isp.h\\_)"
+msgstr "_IMP\\_ISP_  \\( vidu  _imp\\_isp.h\\_)"
 
 #. type: Plain text
 #: imp_isp-programigo_gvidilo.md:11
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Unité de traitement du signal d'image. Inclut principalement les paramètres d'effet d'image, le changement de mode et l'enregistrement, l'ajout et la suppression du capteur.\n"
 msgstr "Bildosigna prilaborado. Ĉefe inkluzivas agordojn de bildaj efikoj, reĝimoŝaltilo kaj registrado, aldono kaj forigo de sensilo.\n"
 
 #. type: Plain text
 #: imp_isp-programigo_gvidilo.md:13
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Le module ISP n'a rien à voir avec le flux de données et n'a pas besoin d'être lié, il n'agit que sur le paramétrage de l'effet et le contrôle du capteur.\n"
 msgstr "La ISP-modulo havas nenion komunan kun datuma fluo kaj ne bezonas esti ligita, ĝi nur funkcias laŭ efektagordo kaj sensila kontrolo.\n"
 
 #. type: Title ##
 #: imp_isp-programigo_gvidilo.md:14
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Activation"
 msgstr "Aktivigo"
 
 #. type: Plain text
 #: imp_isp-programigo_gvidilo.md:18
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "Les étapes d'activation du module ISP sont les suivantes:\n"
 "* étape 1 : Créer un module ISP\n"
@@ -102,7 +101,7 @@ msgstr ""
 
 #. type: Bullet: '* '
 #: imp_isp-programigo_gvidilo.md:29
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "étape 2 : Ajouter un capteur, le pilote du capteur a été ajouté au noyau avant cette opération.\n"
 msgstr "2a paŝo: Aldonu sensilon, la sensila pelilo estis aldonita al la kerno antaŭ ĉi tiu operacio.\n"
 
@@ -154,9 +153,9 @@ msgstr ""
 
 #. type: Bullet: '* '
 #: imp_isp-programigo_gvidilo.md:53
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "étape 3 : Activer le capteur, il va commencer à produire des images.\n"
-msgstr "Paŝo 3: Aktivigu la sensilon, ĝi komencos produkti bildojn.\n"
+msgstr "paŝo 3: Aktivigu la sensilon, ĝi komencos produkti bildojn.\n"
 
 #. type: Fenced code block
 #: imp_isp-programigo_gvidilo.md:54
@@ -176,7 +175,7 @@ msgstr ""
 
 #. type: Bullet: '* '
 #: imp_isp-programigo_gvidilo.md:62
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "étape 4 : Activer les réglages :\n"
 msgstr "paŝo 4: Aktivigu la agordojn:\n"
 
@@ -198,19 +197,19 @@ msgstr ""
 
 #. type: Bullet: '* '
 #: imp_isp-programigo_gvidilo.md:71
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "étape 5 : appeler l'interface de débogage ISP :  veuillez vous référer à la documentation de l'interface de débogage ISP.\n"
-msgstr "Paŝo 5: Alvoki ISP-elpurigan interfacon: Bonvolu raporti al la dokumentado de ISP-elpuriga interfaco.\n"
+msgstr "paŝo 5: Alvoki ISP-elpurigan interfacon: Bonvolu raporti al la dokumentado de ISP-elpuriga interfaco.\n"
 
 #. type: Title ##
 #: imp_isp-programigo_gvidilo.md:73
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "désactivation du module ISP"
-msgstr "Senaktivigo de ISP-modulo"
+msgstr "senaktivigo de ISP-modulo"
 
 #. type: Plain text
 #: imp_isp-programigo_gvidilo.md:77
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "Les étapes de désinstallation du module ISP sont les suivantes:\n"
 "* étape 1 : Désactiver le réglage ISP\n"
@@ -244,9 +243,13 @@ msgstr ""
 
 #. type: Bullet: '* '
 #: imp_isp-programigo_gvidilo.md:90
-#, fuzzy, no-wrap
-msgid "étape 2 : fermer les capteurs. (FrameSource doit être fermé avant cette opération)\n"
-msgstr "2a paŝo: fermu la sensilojn. (FrameSource devas esti fermita antaŭ ĉi tiu operacio)\n"
+#, fuzzy
+msgid ""
+"étape 2 : fermer les capteurs. \\(FrameSource doit être fermé avant cette "
+"opération\\)\n"
+msgstr ""
+"Paŝo 2: Fermu la sensilojn.  \\( kadroj devas esti fermita antaŭ ĉi tiu "
+"operacio \\) \n"
 
 #. type: Fenced code block
 #: imp_isp-programigo_gvidilo.md:91
@@ -266,7 +269,7 @@ msgstr ""
 
 #. type: Bullet: '* '
 #: imp_isp-programigo_gvidilo.md:100
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "étape 3 : supprimer les capteurs, les capteurs doivent être fermés avant cette opération.\n"
 msgstr "3a paŝo: forigu la sensilojn, la sensiloj devas esti fermitaj antaŭ ĉi tiu operacio.\n"
 
@@ -288,9 +291,9 @@ msgstr ""
 
 #. type: Bullet: '* '
 #: imp_isp-programigo_gvidilo.md:109
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "étape 4 : Nettoyer le module ISP, tous les capteurs doivent être supprimés avant cette opération.\n"
-msgstr "Paŝo 4: Purigu la ISP-modulon, ĉiuj sensiloj devas esti forigitaj antaŭ ĉi tiu operacio.\n"
+msgstr "paŝo 4: Purigu la ISP-modulon, ĉiuj sensiloj devas esti forigitaj antaŭ ĉi tiu operacio.\n"
 
 #. type: Fenced code block
 #: imp_isp-programigo_gvidilo.md:110
@@ -310,12 +313,12 @@ msgstr ""
 
 #. type: Title ##
 #: imp_isp-programigo_gvidilo.md:120
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "liste des fonctions"
 msgstr "listo de funkcioj"
 
-#. type: Plain text
-#: imp_isp-programigo_gvidilo.md:194
+#. type: Fenced code block
+#: imp_isp-programigo_gvidilo.md:122
 #, fuzzy, no-wrap
 msgid ""
 "int IMP_ISP_Open(void);\n"
@@ -391,64 +394,64 @@ msgid ""
 "int IMP_ISP_Tuning_SetAntiFogAttr(IMPISPAntiFogAttr attr);\n"
 "int IMP_ISP_Tuning_GetEVAttr(IMPISPEVAttr *attr);\n"
 msgstr ""
-"int IMP_ISP_Malferma(malplena);\n"
-"int IMP_ISP_Fermi(malplenan);\n"
+"int IMP_ISP_Open(void);\n"
+"int IMP_ISP_Close(void);\n"
 "int IMP_ISP_AddSensor(IMPSensorInfo *pinfo);\n"
 "int IMP_ISP_DelSensor(IMPSensorInfo *pinfo);\n"
-"int IMP_ISP_EnableSensor(malplena);\n"
-"int IMP_ISP_DisableSensor(malplena);\n"
-"int IMP_ISP_SetSensorRegister(uint32_t reg, uint32_t valoro);\n"
-"int IMP_ISP_GetSensorRegister(uint32_t reg, uint32_t *valoro);\n"
-"int IMP_ISP_EnableTuning(malplena);\n"
-"int IMP_ISP_DisableTuning(malplena);\n"
-"int IMP_ISP_Agordo_SetSensorFPS(uint32_t fps_num, uint32_t fps_den);\n"
+"int IMP_ISP_EnableSensor(void);\n"
+"int IMP_ISP_DisableSensor(void);\n"
+"int IMP_ISP_SetSensorRegister(uint32_t reg, uint32_t value);\n"
+"int IMP_ISP_GetSensorRegister(uint32_t reg, uint32_t *value);\n"
+"int IMP_ISP_EnableTuning(void);\n"
+"int IMP_ISP_DisableTuning(void);\n"
+"int IMP_ISP_Tuning_SetSensorFPS(uint32_t fps_num, uint32_t fps_den);\n"
 "int IMP_ISP_Tuning_GetSensorFPS(uint32_t *fps_num, uint32_t *fps_den);\n"
-"int IMP_ISP_Agordo_SetAntiFlickerAttr(IMPISPAntiflickerAttr attr);\n"
+"int IMP_ISP_Tuning_SetAntiFlickerAttr(IMPISPAntiflickerAttr attr);\n"
 "int IMP_ISP_Tuning_GetAntiFlickerAttr(IMPISPAntiflickerAttr *pattr);\n"
-"int IMP_ISP_Agordo_SetRawDRC(IMPISPDrcAttr *pinfo);\n"
+"int IMP_ISP_Tuning_SetRawDRC(IMPISPDrcAttr *pinfo);\n"
 "int IMP_ISP_Tuning_GetRawDRC(IMPISPDrcAttr *pinfo);\n"
-"int IMP_ISP_Agordo_SetSinterDnsAttr(IMPISPSinterDenoiseAttr *pinfo);\n"
+"int IMP_ISP_Tuning_SetSinterDnsAttr(IMPISPSinterDenoiseAttr *pinfo);\n"
 "int IMP_ISP_Tuning_GetSinterDnsAttr(IMPISPSinterDenoiseAttr *pinfo);\n"
-"int IMP_ISP_Agordo_SetTemperDnsCtl(IMPISPTemperDenoiseAttr *pinfo);\n"
+"int IMP_ISP_Tuning_SetTemperDnsCtl(IMPISPTemperDenoiseAttr *pinfo);\n"
 "int IMP_ISP_Tuning_SetTemperDnsAttr(IMPISPTemperDenoiseAttr *pinfo);\n"
-"int IMP_ISP_Agordo_GetTemperDnsAttr(IMPISPTemperDenoiseAttr *pinfo);\n"
+"int IMP_ISP_Tuning_GetTemperDnsAttr(IMPISPTemperDenoiseAttr *pinfo);\n"
 "int IMP_ISP_Tuning_SetWDRAttr(IMPISPTuningOpsMode mode);\n"
-"int IMP_ISP_Agordo_GetWDRAttr(IMPISPTuningOpsMode *pmode);\n"
+"int IMP_ISP_Tuning_GetWDRAttr(IMPISPTuningOpsMode *pmode);\n"
 "int IMP_ISP_Tuning_SetSceneMode(IMPISPSceneMode mode);\n"
-"int IMP_ISP_Agordo_GetSceneMode(IMPISPSceneMode *pmode);\n"
+"int IMP_ISP_Tuning_GetSceneMode(IMPISPSceneMode *pmode);\n"
 "int IMP_ISP_Tuning_SetColorfxMode(IMPISPColorfxMode mode);\n"
-"int IMP_ISP_Agordo_GetColorfxMode(IMPISPColorfxMode *pmode);\n"
-"int IMP_ISP_Tuning_Agordu Brilecon(sennoma signo brila);\n"
-"int IMP_ISP_Agordo_GetBrightness(unsigned char *pbright);\n"
-"int IMP_ISP_Tuning_SetContrast(sennoma signokontrasto);\n"
-"int IMP_ISP_Agordo_GetContrast(unsigned char *pcontrast);\n"
-"int IMP_ISP_Tuning_SetSharpness(sennoma akra akreco);\n"
-"int IMP_ISP_Agordo_GetSharpness(unsigned char *psharpness);\n"
-"int IMP_ISP_Tuning_SetSaturation(sennoma signo (sat 22 °);\n"
-"int IMP_ISP_Agordo_GetSaturation(unsigned char *psat);\n"
+"int IMP_ISP_Tuning_GetColorfxMode(IMPISPColorfxMode *pmode);\n"
+"int IMP_ISP_Tuning_SetBrightness(unsigned char bright);\n"
+"int IMP_ISP_Tuning_GetBrightness(unsigned char *pbright);\n"
+"int IMP_ISP_Tuning_SetContrast(unsigned char contrast);\n"
+"int IMP_ISP_Tuning_GetContrast(unsigned char *pcontrast);\n"
+"int IMP_ISP_Tuning_SetSharpness(unsigned char sharpness);\n"
+"int IMP_ISP_Tuning_GetSharpness(unsigned char *psharpness);\n"
+"int IMP_ISP_Tuning_SetSaturation(unsigned char sat);\n"
+"int IMP_ISP_Tuning_GetSaturation(unsigned char *psat);\n"
 "int IMP_ISP_Tuning_SetISPProcess(IMPISPTuningOpsMode mode);\n"
-"int IMP_ISP_Agordo_SetFWFreeze(IMPISPTuningOpsMode mode);\n"
-"int IMP_ISP_Tuning_SaveAllParam(char *vojo);\n"
-"int IMP_ISP_Agordo_SetISPBypass(IMPISPTuningOpsMode enable);\n"
+"int IMP_ISP_Tuning_SetFWFreeze(IMPISPTuningOpsMode mode);\n"
+"int IMP_ISP_Tuning_SaveAllParam(char *path);\n"
+"int IMP_ISP_Tuning_SetISPBypass(IMPISPTuningOpsMode enable);\n"
 "int IMP_ISP_Tuning_GetTotalGain(uint32_t *gain);\n"
-"int IMP_ISP_Tuning_Agordu ISPHflip(IMPISPTuningOpsMode mode);\n"
-"int IMP_ISP_Agordo_GetISPHflip(IMPISPTuningOpsMode *pmode);\n"
+"int IMP_ISP_Tuning_SetISPHflip(IMPISPTuningOpsMode mode);\n"
+"int IMP_ISP_Tuning_GetISPHflip(IMPISPTuningOpsMode *pmode);\n"
 "int IMP_ISP_Tuning_SetISPVflip(IMPISPTuningOpsMode mode);\n"
-"int IMP_ISP_Agordo_GetISPVflip(IMPISPTuningOpsMode *pmode);\n"
+"int IMP_ISP_Tuning_GetISPVflip(IMPISPTuningOpsMode *pmode);\n"
 "int IMP_ISP_Tuning_SetISPRunningMode(IMPISPRunningMode mode);\n"
-"int IMP_ISP_Agordo_GetISPRunningMode(IMPISPRunningMode *pmode);\n"
-"int IMP_ISP_Tuning_SetAeStrategy(IMPISPAeStrategy-strategio);\n"
-"int IMP_ISP_Agordo_GetAeStrategy(IMPISPAeStrategy *pstrategy);\n"
-"int IMP_ISP_Tuning_SetGamma(IMPISPGamma *gama);\n"
-"int IMP_ISP_Agordo_GetGamma(IMPISPGamma *gamma);\n"
+"int IMP_ISP_Tuning_GetISPRunningMode(IMPISPRunningMode *pmode);\n"
+"int IMP_ISP_Tuning_SetAeStrategy(IMPISPAeStrategy strategy);\n"
+"int IMP_ISP_Tuning_GetAeStrategy(IMPISPAeStrategy *pstrategy);\n"
+"int IMP_ISP_Tuning_SetGamma(IMPISPGamma *gamma);\n"
+"int IMP_ISP_Tuning_GetGamma(IMPISPGamma *gamma);\n"
 "int IMP_ISP_Tuning_SetAeComp(int comp);\n"
-"int IMP_ISP_Agordo_GetAeComp(int *comp);\n"
-"int IMP_ISP_Tuning_SetExpr(IMPISPExpr *ekspr);\n"
-"int IMP_ISP_Agordo_GetExpr(IMPISPExpr *expr);\n"
+"int IMP_ISP_Tuning_GetAeComp(int *comp);\n"
+"int IMP_ISP_Tuning_SetExpr(IMPISPExpr *expr);\n"
+"int IMP_ISP_Tuning_GetExpr(IMPISPExpr *expr);\n"
 "int IMP_ISP_Tuning_AE_GetROI(IMPISPAERoi *isp_ae_roi);\n"
 "int IMP_ISP_Tuning_AE_SetROI(IMPISPAERoi *isp_ae_roi);\n"
 "int IMP_ISP_Tuning_SetWB(IMPISPWB *wb);\n"
-"int IMP_ISP_Agordo_GetWB(IMPISPWB *wb);\n"
+"int IMP_ISP_Tuning_GetWB(IMPISPWB *wb);\n"
 "int IMP_ISP_Tuning_GetWB_Statis(IMPISPWB *wb);\n"
 "int IMP_ISP_Tuning_Awb_GetCwfShift(IMPISPWB *isp_wb_attr);\n"
 "int IMP_ISP_Tuning_Awb_SetCwfShift(IMPISPWB *isp_wb_attr);\n"
@@ -456,10 +459,10 @@ msgstr ""
 "int IMP_ISP_Tuning_GetMaxAgain(uint32_t *gain);\n"
 "int IMP_ISP_Tuning_SetMaxDgain(uint32_t gain);\n"
 "int IMP_ISP_Tuning_GetMaxDgain(uint32_t *gain);\n"
-"int IMP_ISP_Tuning_SetVideoDrop(malplena (*cb)(malplena));\n"
-"int IMP_ISP_Agordo_SetHiLightDepress(uint32_t forto);\n"
-"int IMP_ISP_Agordo_SetTemperStrength(uint32_t-proporcio);\n"
-"int IMP_ISP_Agordo_SetSinterStrength(uint32_t-proporcio);\n"
-"int IMP_ISP_Agordo_SetDPStrength(uint32_t-proporcio);\n"
-"int IMP_ISP_Agordo_SetAntiFogAttr(IMPISPAntiFogAttr attr);\n"
+"int IMP_ISP_Tuning_SetVideoDrop(void (*cb)(void));\n"
+"int IMP_ISP_Tuning_SetHiLightDepress(uint32_t strength);\n"
+"int IMP_ISP_Tuning_SetTemperStrength(uint32_t ratio);\n"
+"int IMP_ISP_Tuning_SetSinterStrength(uint32_t ratio);\n"
+"int IMP_ISP_Tuning_SetDPStrength(uint32_t ratio);\n"
+"int IMP_ISP_Tuning_SetAntiFogAttr(IMPISPAntiFogAttr attr);\n"
 "int IMP_ISP_Tuning_GetEVAttr(IMPISPEVAttr *attr);\n"
