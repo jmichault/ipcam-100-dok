@@ -4,24 +4,16 @@
 # Ni tiam eltranĉas la tradukenda tekston por forigi la elementojn de la sintakso ~ Markdown ~
 # hiperligoj, kodblokoj kaj teksto kursivigita per "_" ne estas tradukitaj.
 #
-# google web translate konservas  «(°99°)».
+# google web translate konservas ofte «(°99°)», 0xdaec99beaf, <h99>. 
+# 
 # 
 BEGIN {
 #  MARK1="(zzz";
 #  MARK2=")";
 #  MARKEXPR= " *[（\\(] *[zZ]{2,3} *[0-9]+ *[）\\)] *";
-  if ( (dst == "hi") )
-  {
-    MARK1="(°000";
-    MARK2="°)";
-    MARKEXPR=" *[（\\(][ \\.。°]*[0-9]*[ \\.。°]*[）\\)] *";
-  }
-  else
-  {
-    MARK1="(°";
-    MARK2="°)";
-    MARKEXPR=" *[（\\(][ \\.。°0-9]*[°][ \\.。°0-9]*[）\\)] *";
-  }
+    MARK1="<h";
+    MARK2=">";
+    MARKEXPR="< *[Hh][0-9]* *>";
 }
 {
   if ( CONTMSG==1 && substr($1,1,1) != "\"")
@@ -104,14 +96,17 @@ BEGIN {
         printf("msgstr \"");
 	#  anstataŭigi markdown-etikedojn per markoj, kaj jekyll
 	########## construction de l'expression régulière pour split
+	########## tous les séparateurs vont être protégés
 	########## note : contrairement à l'intuition, ce sont les dernières expressions qui sont traitées en premier
 	### protection du code markdown
-	# markdown : tous les caractères spéciaux avec les espaces avant et après
-	regexp=      "[ \t]*[_\\*`<>\\[\\]\\(\\)~]+[ \t]*"; #
+	### caractères spéciaux : \`*_~{}[]()#+-.!|<>
+	# markdown : 
+	regexp=      "[ \t]*[_\\*`<>\\[\\]\\(\\)~]+[ \t]*"; # markdown : tous les caractères spéciaux (sauf {}#\) avec les espaces avant et après
 	regexp=regexp"|^[ \t]*";        # markdown : espaces en début de ligne
 	regexp=regexp"|[ \t]*\\\\\\\\."; # markdown : espaces+\\x
 	regexp=regexp"|[ \t]*\\\\.";    # markdown : espaces+\x
-	regexp=regexp"|[ \t]*!\\[[ \t]*"; # markdown : espaces![espaces : début d'un lien
+	regexp=regexp"|[ \t]*!\\[[ \t]*"; # markdown : espaces![espaces : début d'un lien, on bouclera jusqu'à la fin du lien
+	regexp=regexp"|[ \t]*<http[^>]*>[ \t]*";     # markdown : lien simple html
 	### protection du code jekyll
 	### on repére le début et la fin, on bouclera pour protéger tout le bloc
 	regexp=regexp"|{{ *| *}}|{% *| *%}"; 
@@ -187,7 +182,7 @@ BEGIN {
               {
                 x++;
                 SEPS[x0] = SEPS[x0] MSGS[x] SEPS[x];
-              } while( (x <= MSGSLEN) && (match(SEPS[x] ,"^_[ \t]*")==0));
+              } while( (x <= MSGSLEN) && ( substr(MSGS[x],length(MSGS[x])) =="\\" || match(SEPS[x] ,"^_[ \t]*")==0) );
 	    }
 	    else  if( match(SEPS[ x ] ," *\\]\\( *") )
 	    { # hiperligo : traduku teksto,ne traduku ligo.
@@ -204,6 +199,7 @@ BEGIN {
 	}
         ##print("\nMSG0 " MSG0);	##
         BASEDIR"/traduko.sh " src " " dst " \"" MSG0 "\"" |getline MSG
+        #BASEDIR"/trans -b -s " src " -t " dst " \"" MSG0 "\"" |getline MSG
         ##print("MSG " MSG);		##
         ##print("MSGSLEN=" MSGSLEN);    ##
 	split(MSG, MSGS2, MARKEXPR ,SEPS2);

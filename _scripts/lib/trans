@@ -135,10 +135,12 @@ case "u0026":
 return "&"
 case "u003c":
 return "<"
+case "u003d":
+return "="
 case "u003e":
 return ">"
 case "u200b":
-return ""
+return "\xe2\x80\x8b"
 default:
 return char
 }

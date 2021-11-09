@@ -1,4 +1,7 @@
 #!/bin/bash
+######################################
+# al_eo lingvo [dosiero]*
+######################################
 
 if [ $# -lt 1 ] ; then
   echo "pas assez d'arguments."
@@ -14,8 +17,12 @@ if [ ! -d "$BASEDIR"/../../$lang0 ] ; then
 fi
 cd "$BASEDIR"/../../$lang0
 
-find . -type f -name "*.md" -o -name "*.yml"|egrep -v "/_drafts/|.backup$" \
- | while read FIC
+if [ $# -gt 1 ] ; then 
+  shift
+  echo "$@"
+else
+  find . -type f -name "*.md" -o -name "*.yml"| egrep -v "/_drafts/|.backup$|.swp$"
+fi | while read FIC
 do
   EXT="${FIC##*.}"
   case "$EXT" in

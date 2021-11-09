@@ -2,12 +2,14 @@
 ################################################################
 # skripto por aŭtomate traduki frazon
 ################################################################
+DEBUG=
+#DEBUG=1
 
 src="$1"
 dst="$2"
 txt="$3"
 
-cook=`find _traduko.jar -mmin -15 2>/dev/null`
+cook=`find -maxdepth 1 _traduko.jar -mmin -15 2>/dev/null`
 
 PROVO=0
 
@@ -26,7 +28,7 @@ MSG0=$(curl -b _traduko.jar -A 'Mozilla/5.0 (X11; Linux x86_64; rv:68.0) Gecko/2
 --data-urlencode "q=${txt}" 2>/dev/null \
 )
 
-#echo MSG0=$MSG0
+[ "$DEBUG" ] && echo $src txt=$txt >&2
 
 if echo "$MSG0"|grep "sorry" >/dev/null
 then
@@ -35,15 +37,16 @@ then
   MSG=$("$BASEDIR"/trans -b -s $src -t $dst "$txt" )
 else
 # echo pas sorry
-  MSG=$(echo $MSG0 \
+  MSG=$(echo $MSG0|jq '.[0][][0]'|grep -v "^null$" \
   |sed "s/\\\\u003d/=/g;s/\\\\u003c/</g;s/\\\\u003e/>/g" \
   |sed "s/\\\\u200b/\xe2\x80\x8b/g" \
-  |grep "\",null,null,[0-9]"|egrep -v "\[[1-9],"|sed "s/\",\".*//;s/^[,\[]*\"//" \
+  |sed "s/^\"//;s/\"$//" \
   | tr -d "\n" \
   | sed "s/\\\ [nN]/n/g;s/] (/](/g;s/ __ / __/g" \
   | sed "s/\. \\\n$/.  \\\n/" \
 )
 fi
+[ "$DEBUG" ] && echo $dst txt=$MSG >&2
 
 if [ "x$MSG" = "x" ]
 then
