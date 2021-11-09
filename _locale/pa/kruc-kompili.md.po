@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-11-09 15:14+0100\n"
+"POT-Creation-Date: 2021-11-09 20:24+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -48,12 +48,13 @@ msgstr "ਪਾਰ ਸੰਕਲਨ"
 
 #. type: Plain text
 #: kruc-kompili.md:12
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "Trans-kompilaĵaj iloj estas en  _programada\\_medio/toolchain_. \n"
 " ili estis kompilitaj por  _debian buster x64_. \n"
-msgstr "ਟ੍ਰਾਂਸ-ਸੰਕਲਨ ਟੂਲ   _programada\\_medio/toolchain_ ਵਿੱਚ ਹਨ.  \n ਉਹ   _debian buster x64_ ਲਈ ਕੰਪਾਇਲ ਕੀਤੇ ਗਏ ਸਨ.  \n"
+msgstr ""
+"ਟ੍ਰਾਂਸ-ਸੰਕਲਨ ਟੂਲ   _programada\\_medio/toolchain_ ਵਿੱਚ ਹਨ.  \n"
+" ਉਹ   _debian buster x64_ ਲਈ ਕੰਪਾਇਲ ਕੀਤੇ ਗਏ ਸਨ.  \n"
 
 #. type: Plain text
 #: kruc-kompili.md:14

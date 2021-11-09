@@ -10,3 +10,4 @@ toto*
 _site/*
 Gemfile.lock
 .jekyll-metadata
+_locale/temp*

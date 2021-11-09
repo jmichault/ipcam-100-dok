@@ -3,7 +3,7 @@
 # skripto por aŭtomate traduki frazon
 ################################################################
 DEBUG=
-#DEBUG=1
+DEBUG=1
 
 src="$1"
 dst="$2"
@@ -39,7 +39,8 @@ else
 # echo pas sorry
   MSG=$(echo $MSG0|jq '.[0][][0]'|grep -v "^null$" \
   |sed "s/\\\\u003d/=/g;s/\\\\u003c/</g;s/\\\\u003e/>/g" \
-  |sed "s/\\\\u200b/\xe2\x80\x8b/g" \
+  |sed "s/\\\\u200b//g" \
+  |sed "s/\xe2\x80\x8b//g" \
   |sed "s/^\"//;s/\"$//" \
   | tr -d "\n" \
   | sed "s/\\\ [nN]/n/g;s/] (/](/g;s/ __ / __/g" \
