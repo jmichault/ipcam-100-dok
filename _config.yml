@@ -11,6 +11,8 @@ ne_afisxoj: "true"
 gh_uzanto: "jmichault"
 # Google Analytics tag
 ga_tag: "G-LWXDPT250W"
+# Google Adsense
+ga_adsense: "ca-pub-8796238373525171"
 
 
 # Dependencies
